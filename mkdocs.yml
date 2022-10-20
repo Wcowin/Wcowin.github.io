@@ -1,0 +1,5 @@
+site_name: Wcowin的个人网站
+site_url: https://wcowin.github.io/mymkdocs/
+site_author: 王科文(Wcowin)
+theme:
+  name: material
