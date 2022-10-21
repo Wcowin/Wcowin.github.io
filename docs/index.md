@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+# <ceter>Welcome to 王科文的个人网站  &#x1F4C6;</ceter>
+  
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<font face="宋体" color=orange size=7 >永远相信美好的事情即将发生</font>
+  
+   
+***  
 
-## Commands
+- 通过主题和目录以打开文章  
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+    - PC端 在上方标签栏选择主题 在左侧目录选择文章
+    - 移动端 点击左上角图标选择主题和文章   
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- 搜索关键词以打开文章  
+  
+
+![img](img/WechatIMG198.jpeg "imessage")

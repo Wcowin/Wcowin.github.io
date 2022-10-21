@@ -1,5 +1,155 @@
+#[Info]
 site_name: Wcowin的个人网站
-site_url: https://wcowin.github.io/mymkdocs/
+site_url: https://wcowin.github.io/
 site_author: 王科文(Wcowin)
+#[UI]
 theme:
   name: material
+  palette:
+    #primary: blue grey
+  
+    - scheme: default # 日间模式
+      primary: grey # 上方的
+      accent: cyan # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-night # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - scheme: slate # 夜间模式
+      primary: black 
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
+  features: 
+    - navigation.instant #- header.autohide  #自动隐藏
+    #- announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    #- navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - search.share #搜索分享按钮
+  language: zh # 一些提示性的文字会变成中文
+  
+
+  icon: 
+    repo: fontawesome/brands/github #右上角图标
+edit_uri: edit/main/docs # 编辑按钮跳转的链接 
+repo_url: https://github.com/Wcowin/mymkdocs # 右上角点击跳转的链接
+repo_name: Wcowin.github.io # 右上角的名字
+
+# [Navigtion]
+nav:
+  - 博客:
+    - 好用/好玩网站分享: blog/Webplay.md
+    - What is Github: blog/Github.md
+    - 解决谷歌翻译用不了的问题: blog/googletranslate.md
+    - Mac/windows软件网站汇总: blog/macsoft.md
+    - win11资源分享: blog/win.md
+    - Telegram 群组、频道、机器人 - 汇总分享: blog/TG.md
+    - Python:
+        - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
+        - pip: blog/py/pip.md
+    - C语言: blog/c.md
+    - 科学上网: blog/kexue.md
+  - 开发: 
+    - Markdown: develop/markdown.md
+    - MWeb Pro: develop/MWeb.md
+    - 大厂们的良心软件～: develop/fenxiang.md
+    - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
+  - 闲话:
+    - 原神: relax/game.md
+    - 诗文:
+      - 滕王阁序: relax/shiwen/twgx.md
+      - 望江南·超然台作: relax/shiwen/sjcnh.md
+      - 击鼓: relax/shiwen/jg.md
+      - 雨霖铃·秋别: relax/shiwen/yll.md
+  - 旅行: 
+    - 家乡: trip/LH.md
+    - 重庆: trip/travel.md
+  - 关于:
+    - 个人履历: about/geren.md
+    - 网站制作: about/web.md
+
+  
+  
+copyright: Copyright &copy; 2022王科文 # 左下角的版权声明
+  
+
+extra:
+  generator: false  #删除页脚显示“使用 MkDocs 材料制造”
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/wcowin_
+    - icon: fontawesome/brands/github
+      link: https://github.com/Wcowin
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<1135801806@qq.com> #联系方式
+  
+#cookie 
+  # analytics: 
+  #   provider: google
+  #   property: !ENV GOOGLE_ANALYTICS_KEY
+  #   feedback:
+  #     title: Was this page helpful?
+  #     ratings:
+  #       - icon: material/heart
+  #         name: This page was helpful
+  #         data: 1
+  #         note: >-
+  #           Thanks for your feedback!
+  #       - icon: material/heart-broken
+  #         name: This page could be improved
+  #         data: 0
+  #         note: >- 
+  #           Thanks for your feedback! Help us improve this page by
+  #           using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  # consent:
+  #   title: Cookie consent
+  #   description: >- 
+  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+  #     如果你同意,你可以帮助我们让我们的网站更好~
+    #描述
+      
+plugins:
+  - search
+  - tags  #标签
+markdown_extensions:
+  - abbr
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - md_in_html
+  - pymdownx.arithmatex:  # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      # linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences # 代码块高亮插件
+  - meta # 支持Markdown文件上方自定义标题标签等
+     
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - stylesheets/extra.css
+
+ 
