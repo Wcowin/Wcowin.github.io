@@ -51,6 +51,8 @@ nav:
     - Mac/windows软件网站汇总: blog/macsoft.md
     - win11资源分享: blog/win.md
     - Telegram 群组、频道、机器人 - 汇总分享: blog/TG.md
+    - Mac:
+        - Macbook启动台顽固应用图标删除方法: blog/Mac/shanchu.md
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
@@ -62,6 +64,7 @@ nav:
     - 大厂们的良心软件～: develop/fenxiang.md
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
   - 闲话:
+    - 小米: relax/xiaomo.md
     - 原神: relax/game.md
     - 诗文:
       - 滕王阁序: relax/shiwen/twgx.md

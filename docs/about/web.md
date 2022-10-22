@@ -1,7 +1,12 @@
 # Publish a Website with Material for MkDocs and GitHub Pages  
 
 For example:[Mkdocs静态网站制作](https://squidfunk.github.io/mkdocs-material/)   
-详细文档：[MkDocs](https://www.mkdocs.org/getting-started/) 
+详细文档：[MkDocs](https://www.mkdocs.org/getting-started/)   
+
+CSDN教程：  
+1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501)  
+2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501)
+***
 
 创建一个文件
 ```
