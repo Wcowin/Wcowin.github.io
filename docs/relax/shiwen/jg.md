@@ -1,7 +1,7 @@
 # <center>击鼓</center>
-<center>先秦佚名</center>  
+ <font size=5> <center>先秦佚名</center>  
 
-<center>  
+<center>
 
 击鼓其镗，踊跃用兵。土国城漕，我独南行。  
 

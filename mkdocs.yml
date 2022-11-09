@@ -51,6 +51,7 @@ nav:
     - Mac/windows软件网站汇总: blog/macsoft.md
     - win11资源分享: blog/win.md
     - Telegram 群组、频道、机器人 - 汇总分享: blog/TG.md
+    - 爱心代码: blog/aixin.md
     - Mac:
         - Macbook启动台顽固应用图标删除方法: blog/Mac/shanchu.md
     - Python:
@@ -68,6 +69,7 @@ nav:
     - Apple: relax/Apple.md
     - 原神: relax/game.md
     - 诗文:
+      - 枫桥夜泊: relax/shiwen/fqyb.md
       - 滕王阁序: relax/shiwen/twgx.md
       - 望江南·超然台作: relax/shiwen/sjcnh.md
       - 击鼓: relax/shiwen/jg.md

@@ -1,123 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://wcowin.github.io/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/about/geren/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/about/geren/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/about/web/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/about/web/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/Github/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/Github/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/TG/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/TG/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/Webplay/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/Webplay/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/c/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/aixin/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/googletranslate/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/c/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/kexue/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/googletranslate/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/macsoft/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/kexue/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/win/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/macsoft/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/py/pip/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/win/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/blog/py/python/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/Mac/shanchu/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/develop/MWeb/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/py/pip/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/develop/Mac/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/blog/py/python/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/develop/fenxiang/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/develop/MWeb/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/develop/markdown/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/develop/Mac/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/relax/game/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/develop/fenxiang/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/relax/shiwen/jg/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/develop/markdown/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/relax/shiwen/sjcnh/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/relax/Apple/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/relax/shiwen/twgx/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/relax/game/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/relax/shiwen/yll/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/relax/luv%20letter/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/trip/LH/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/relax/rushiwowen/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wcowin.github.io/trip/travel/</loc>
-         <lastmod>2022-10-21</lastmod>
+         <loc>http://wcowin.work/relax/xiaomo/</loc>
+         <lastmod>2022-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/relax/shiwen/fqyb/</loc>
+         <lastmod>2022-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/relax/shiwen/jg/</loc>
+         <lastmod>2022-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/relax/shiwen/sjcnh/</loc>
+         <lastmod>2022-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/relax/shiwen/twgx/</loc>
+         <lastmod>2022-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/relax/shiwen/yll/</loc>
+         <lastmod>2022-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/trip/LH/</loc>
+         <lastmod>2022-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/trip/travel/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
