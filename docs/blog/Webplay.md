@@ -33,7 +33,8 @@
 - [在线视频解析工具](https://pv.vlogdownloader.com/)  (轻松在线下载视频)  
 
 **学习:**
-* [Github](https://github.com/) (同性交友网站😁)  
+
+- [Github](https://github.com/) (同性交友网站😁)  
 - [Gitee](https://gitee.com/explore) (国内的GitHub)
 - [stack overflow](https://stackoverflow.com/)
 - [菜鸟教程](https://www.runoob.com/) （学习编程语言的好去处）
