@@ -1,5 +1,5 @@
 #[Info]
-site_name: Wcowin的个人网站
+site_name: Wcowin的个人网站(✿╹◡╹)
 site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
 #[UI]
@@ -46,22 +46,30 @@ repo_name: Wcowin.github.io # 右上角的名字
 nav:
   - 博客:
     - 好用/好玩网站分享: blog/Webplay.md
-    - What is Github: blog/Github.md
-    - 解决谷歌翻译用不了的问题: blog/googletranslate.md
     - Mac/windows软件网站汇总: blog/macsoft.md
-    - win11资源分享: blog/win.md
     - Telegram 群组、频道、机器人 - 汇总分享: blog/TG.md
-    - 爱心代码: blog/aixin.md
+    
+    - 技术分享:
+        - Win11镜像下载、壁纸及KMS激活 : blog/技术分享/win.md
+        - 解决谷歌翻译用不了的问题: blog/技术分享/googletranslate.md
+        - 爱心代码: blog/技术分享/aixin.md
+        - 科学上网: blog/技术分享/kexue.md
     - Mac:
         - Macbook启动台顽固应用图标删除方法: blog/Mac/shanchu.md
+        - Homebrew国内如何自动安装(国内地址)(Mac & Linux): blog/Mac/homebrew.md
+    - 学术:
+        - LaTeX常用符号整理: blog/学术/LaTeX.md
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
-    - C语言: blog/c.md
-    - 科学上网: blog/kexue.md
+    - C语言: 
+        - C笔记: blog/C语言/c.md
+    
   - 开发: 
-    - Markdown: develop/markdown.md
-    - MWeb Pro: develop/MWeb.md
+    - Markdown: 
+        - Markdown指南: develop/Markdown/markdown.md
+        - MWeb Pro: develop/Markdown/MWeb.md
+    - What is Github: develop/Github.md
     - 大厂们的良心软件～: develop/fenxiang.md
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
   - 闲话:
@@ -79,7 +87,7 @@ nav:
     - 如是我闻: relax/rushiwowen.md
     - 推荐的Books: relax/tuijianyuedu.md
   - 旅行: 
-    - 家乡: trip/LH.md
+    - Hometown: trip/LH.md
     - 重庆: trip/travel.md
   - 关于:
     - 个人履历: about/geren.md
