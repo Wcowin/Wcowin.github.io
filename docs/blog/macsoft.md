@@ -1,4 +1,4 @@
-<b>Mac:  
+## <b>Mac 
 
 -  <https://macapp.org.cn>(推荐)
 
@@ -21,6 +21,6 @@
 - <https://www.macdo.cn/>
 - <https://store.lizhi.io/>
 ***  
-Windows:  
+## Windows 
  
 - <https://softmall.net/?page=2>

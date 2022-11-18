@@ -1,4 +1,4 @@
-**工具类：**
+## **工具类**
 
 * [万物指南](https://zh.wikihow.com/首页)  （互联网上最值得信赖的指南网站）
 - [空投快传](https://airportal.cn/)   （超级好用的全平台文件隔空投送）  
@@ -16,10 +16,11 @@
 - [在线练习打字网站](https://dazidazi.com/)
 - [OKx](https://www.okx.com/cn) (虚拟货币平台)
 - [尝鲜π](https://betahub.cn/)  （Apple测试版系统发布平台）
-- [KMS激活](https://03k.org/kms.html)  (一句命令激活windows/office)
+- [KMS激活](https://03k.org/kms.html)  (一句命令激活windows/office)  
+- [修改键盘映射](https://karabiner-elements.pqrs.org/)
 
 
-**图像：**  
+## **图像**  
 
 - [徕卡水印](https://www.immers.icu/) （仅限ios快捷指令）
 - [在线抠图软件_图片去除背景](https://www.remove.bg/zh)  
@@ -28,11 +29,11 @@
 - [P站](https://www.pixiv.net/)  （咳咳不解释）
 - [Mac软件icon图标](https://macosicons.com/#/)  （图标资源全的离谱，免费～）
 
-**视频处理/下载：**  
+## **视频处理/下载**  
 
 - [在线视频解析工具](https://pv.vlogdownloader.com/)  (轻松在线下载视频)  
 
-**学习:**
+## **学习**
 
 - [Github](https://github.com/) (同性交友网站😁)  
 - [Gitee](https://gitee.com/explore) (国内的GitHub)
@@ -49,7 +50,7 @@
 - [How to cook](https://cook.aiurs.co/)  （程序员级别的做饭指南）
 - [知性-性教育平台](https://knowsex.net/) <b>（每个人都应该学习的两性知识！）</b>
 
-**观影：**  
+## **观影**  
 
 - [茶杯狐](https://cupfox.app/) （资源多，广告少）  
 - [剧白白](https://jubaibai.cc/) （干净的免费网站）  
@@ -60,10 +61,10 @@
 - [Libvio](https://libvio.fun/)   (推荐)
 - [全民影视vip视频在线解析网](https://www.daga.cc/) (搜片直接看，有广告）
 
-**音乐：**
+## **音乐**
 - [Listen 1](https://listen1.github.io/listen1/)(Listen 1可以搜索和播放来自网易云音乐，QQ音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲，让你的曲库更全面)
 
-**博客/导航：**  
+## **博客/导航**  
 
 - [Wcowin的个人网站](https://wcowin.github.io/mymkdocs/)  （博客分享）
 - [Power-User:Telegram/Surge/Clash](https://congcong0806.github.io/)  （电报Telegram教程--有）

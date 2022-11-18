@@ -1,5 +1,5 @@
 #[Info]
-site_name: Wcowin的个人网站(✿╹◡╹)
+site_name: 王科文的个人网站
 site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
 #[UI]
@@ -54,9 +54,14 @@ nav:
         - 解决谷歌翻译用不了的问题: blog/技术分享/googletranslate.md
         - 爱心代码: blog/技术分享/aixin.md
         - 科学上网: blog/技术分享/kexue.md
+    - MKdocs:
+        - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
+        - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
+        - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
     - Mac:
         - Macbook启动台顽固应用图标删除方法: blog/Mac/shanchu.md
         - Homebrew国内如何自动安装(国内地址)(Mac & Linux): blog/Mac/homebrew.md
+        - Mac的esc键失效的解决方法: blog/Mac/Macesc.md
     - 学术:
         - LaTeX常用符号整理: blog/学术/LaTeX.md
     - Python:
@@ -75,7 +80,6 @@ nav:
   - 闲话:
     - 小米: relax/xiaomo.md
     - Apple: relax/Apple.md
-    - 原神: relax/game.md
     - 诗文:
       - 枫桥夜泊: relax/shiwen/fqyb.md
       - 滕王阁序: relax/shiwen/twgx.md
@@ -83,15 +87,19 @@ nav:
       - 击鼓: relax/shiwen/jg.md
       - 雨霖铃·秋别: relax/shiwen/yll.md
       - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
+    - Game:
+        - 原神: relax/Game/yuanshen.md
+        - 如何玩好《王者荣耀》？: relax/Game/wzry.md
     - luv letter: relax/luv letter.md
     - 如是我闻: relax/rushiwowen.md
     - 推荐的Books: relax/tuijianyuedu.md
   - 旅行: 
     - Hometown: trip/LH.md
-    - 重庆: trip/travel.md
+    - 重庆: trip/CQ.md
   - 关于:
     - 个人履历: about/geren.md
     - 网站制作: about/web.md
+    - 支持作者: about/zcw.md
 
   
   

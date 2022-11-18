@@ -1,4 +1,4 @@
-![img](https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/refurb-trade-in-201912?wid=2712&hei=714&fmt=png-alpha&.v=1579817557120)  
+![img](relaximgs/Apple.png)
 
 苹果一直都不在意成本，也一直在追寻进步，进步不一定是要眼睛看到的，就是那种能感受到，但是看不到的美。信息来源于互联网，未必精准。  
 1.iPhone X的屏幕造价平均下来大概是4000元人民币，要考虑封装，机器，折损等，据说当时良品率只有50%不到。iPhone X是工业史上第一款大规模量产的COP封装屏幕。  
@@ -13,6 +13,8 @@
 10.异性电池，iPhone XS，MacBook。为了塞进去尽可能多的电池。    
 
 Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，外观好像一样的情况下，内部元器件的堆叠甚至是一些微不足道的小更新，都是苹果和他的团队在背后努力研发的成果。  
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=1&height=32"></iframe>
 ***
 <center><b><font size=6>Ethics and Compliance</b>  </font>
 

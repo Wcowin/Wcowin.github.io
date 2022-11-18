@@ -1,4 +1,4 @@
-![xiaomi](https://i1.mifile.cn/f/i/18/about/about_3.jpg)
+![xiaomi](relaximgs/小米.jpg)
 <h2>小米的使命：始终坚持做“感动人心、价格厚道”的好产品，让全球每个人都能享受科技带来的美好生活</h2>
 
 
@@ -9,3 +9,7 @@
 小米的使命是，始终坚持做“感动人心、价格厚道”的好产品，让全球每个人都能享受科技带来的美好生活。</font>
 
 视频：[xiaomi](https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4)
+<iframe frameborder=0 border="0" marginwidth="0" marginheight="0" scrolling="no" height=720 width=1280 src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4"></iframe>
+***
+雷总新专辑：
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=31814005&auto=0&height=66"></iframe>
