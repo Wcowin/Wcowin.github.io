@@ -1,6 +1,6 @@
 # 重是重逢的重，庆是庆幸的庆:octicons-heart-fill-24:{ .heart }
 
-如是我闻：重庆，我要生活四年的城市，准确来说应该是求学四年，重庆是一座有温度的城市。山城，勒是雾都，重庆火锅……我在重庆最大的感叹是:重庆适合生存而不适合生活。这里虽然有着浓浓的烟火气，但一方水土养一方人，出来求学后方才感受到家乡才是真正的“家”，这里没有胡辣汤，没有烩面，没有家乡话，有的是我初来重庆求学所怀揣着的知进的梦想，重庆将是我人生的二次起点，少年终会远行。我爱重庆，爱这里的山水，爱这里每一个平凡的平凡。  
+<!-- 如是我闻：重庆，我要生活四年的城市，准确来说应该是求学四年，重庆是一座有温度的城市。山城，勒是雾都，重庆火锅……我在重庆最大的感叹是:重庆适合生存而不适合生活。这里虽然有着浓浓的烟火气，但一方水土养一方人，出来求学后方才感受到家乡才是真正的“家”，这里没有胡辣汤，没有烩面，没有家乡话，有的是我初来重庆求学所怀揣着的知进的梦想，重庆将是我人生的二次起点，少年终会远行。我爱重庆，爱这里的山水，爱这里每一个平凡的平凡。   -->
 ***
 ## 推荐路线及景点 
 
@@ -12,7 +12,14 @@
 ![img](tripmedias/CQ/WechatIMG180.jpeg)
 ![img](tripmedias/CQ/WechatIMG181.jpeg)
 ![img](tripmedias/CQ/WechatIMG182.jpeg) -->
-
+<div>
+     <iframe width="500" height="400" frameborder="0" src="https://cn.bing.com/maps/embed?h=400&w=500&cp=nxsh64swfc7k&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+     </iframe>
+     <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
+        <a id="largeMapLink" target="_blank" href="https://cn.bing.com/maps?cp=nxsh64swfc7k&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD">查看放大的地图</a> &nbsp; | &nbsp;
+        <a id="dirMapLink" target="_blank" href="https://cn.bing.com/maps/directions?cp=nxsh64swfc7k&amp;sty=r&amp;lvl=16&amp;rtp=~pos.nxsh64_swfc7k____&amp;FORM=MBEDLD">获取路线</a>
+    </div>
+</div>
 ### <b>Day2  
 重庆中国三峡博物馆-鹅岭-李子坝-山城步道</b>  
 博物馆值得一去。鹅岭二厂文创公园，《从你的全世界路过》在这里有取景。以前是一座印刷厂，现在则成了创意市集和小吃聚集地，是一个文艺小清新的地方，适合拍照。鹅岭公园面积很大，背倚山城，处于重庆半岛最高处，环境很好，绿树成荫，可以看看风景，是重庆两江和夜景最好的俯拍圣地。从鹅岭下山来就是李子坝，建议出租车，我有一次徒步下山30min才下来……。在李子坝看轻轨穿楼，楼一层就有一只酸奶牛可以尝尝重庆必打卡“饮品”，不必要挤破头去洪崖洞附近买（不仅人多且可能是假店）。晚上就去山城步道看夜景，体验体验重庆山城市井人家，别在里面买东西，东西贵到离谱。山城步道离解放碑不远，晚饭就去解放碑附近恰火锅撒～  
