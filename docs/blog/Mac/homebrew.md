@@ -37,4 +37,28 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
 ```
 git config --global http.sslVerify false  
 ```
-摘自知乎：[Homebrew国内如何自动安装（国内地址）（Mac & Linux）](https://zhuanlan.zhihu.com/p/111014448)
+摘自知乎：[Homebrew国内如何自动安装（国内地址）（Mac & Linux）](https://zhuanlan.zhihu.com/p/111014448)  
+
+本人被这个brew安装折磨了一周，我只能说多试几次就好，纯玄学的玩意～
+***
+```
+# 要获取最新的包的列表，首先得更新 Homebrew 自己
+brew update
+# 查找需要的包
+brew search xxx
+# 安装包
+brew install xxx
+# 卸载包
+brew uninstall xxx
+# 查看哪些软件需要更新
+brew outdated
+# 更新所有的包
+brew upgrade
+# 更新指定的包
+brew upgrade xxx
+# 清理所有包的旧版本
+brew cleanup
+# 显示某个包的信息
+brew info xxx
+
+```
