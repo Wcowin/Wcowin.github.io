@@ -4,7 +4,8 @@
 来聊聊那些大厂的良心到难以置信的软件叭  
 —————————————————  
 ## 腾讯  
-    [QQ影音](https://player.qq.com/)（无广告全平台解码器）    
+
+[QQ影音](https://player.qq.com/)（无广告全平台解码器）    
     [Foxmail](https://www.foxmail.com/)（轻量化个人邮箱，无限空间，无广告客户端）  
     [VooV](https://voovmeeting.com/)（视频会议平台)  
     [腾讯柠檬清理](https://lemon.qq.com/)（Mac清理工具）  
@@ -54,8 +55,8 @@
 ## Amazon  
 [Amazon SES/SNS](https://aws.amazon.com/cn/free/)（商用免费邮件传递服务，62K/月免费使用量
 
-## IBM  
-[IBM Watson](https://www.ibm.com/cloud/free)®（强大的AI调用库，文字语音互转、文本翻译、语义分析、视觉识别、自然语言处理等应有尽有，每月限额 ) 
+## IBM    
+[IBM Watson](https://www.ibm.com/cloud/free)®（强大的AI调用库，文字语音互转、文本翻译、语义分析、视觉识别、自然语言处理等应有尽有，每月限额 )   
 [IBM® Db2® on Cloud](https://www.ibm.com/cloud/free)（200MB的IBM数据库，永久免费)
 
 ## Adobe  

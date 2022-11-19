@@ -95,8 +95,9 @@ nav:
     - 如是我闻: relax/rushiwowen.md
     - 推荐的Books: relax/tuijianyuedu.md
   - 旅行: 
-    - Hometown: trip/LH.md
     - 重庆: trip/CQ.md
+    - Hometown: trip/LH.md
+    
   - 关于:
     - 个人履历: about/geren.md
     - 网站制作: about/web.md
