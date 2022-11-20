@@ -44,6 +44,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
 nav:
+  - 主页: index.md
   - 博客:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
