@@ -15,7 +15,7 @@
 Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，外观好像一样的情况下，内部元器件的堆叠甚至是一些微不足道的小更新，都是苹果和他的团队在背后努力研发的成果。  
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=1&height=32"></iframe>
-<iframe src="http://player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
 ***
 <center><b><font size=6>Ethics and Compliance</b>  </font>
 
@@ -26,3 +26,4 @@ We believe that how we conduct ourselves is as critical to Apple’s success as 
 <b>We do the right thing, even when it’s not easy.
 
 Tim Cook</b></center>
+
