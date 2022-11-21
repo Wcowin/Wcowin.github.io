@@ -34,6 +34,7 @@
 **相信自己，一往无前！**
 
 关于小米：[xiaomi](https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4)
+<iframe src="//player.bilibili.com/player.html?aid=27087520&bvid=BV1Ps411E7w6&cid=46647207&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
 <!-- <iframe frameborder=0 border="0" marginwidth="0" marginheight="0" scrolling="no" height=720 width=1280 src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4"></iframe> -->
 
 ***
