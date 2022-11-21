@@ -1,7 +1,5 @@
 ![]()
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1979258149&auto=0&height=66"></iframe>
-<iframe src="https://www.acfun.cn/v/ac37372395"></iframe>
-<iframe src="http://player.bilibili.com/player.html?aid=634151915&bvid=BV1Jb4y1t7uv&cid=440784525&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1979258149&auto=1&height=66"></iframe>
 
 ほとばしく香る君のその髪が  
 僕の心を踊らせたんです  
