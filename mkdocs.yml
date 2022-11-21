@@ -87,6 +87,7 @@ nav:
     - What is Github: develop/Github.md
     - 大厂们的良心软件～: develop/fenxiang.md
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
+
   - 闲话:
     - 小米: relax/xiaomo.md
     - Apple: relax/Apple.md
@@ -99,9 +100,14 @@ nav:
       - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
     - 推荐的Books: relax/tuijianyuedu.md
     - 🐈: relax/cat.md
+    - 王冰冰o(^▽^)o: relax/wbb.md
     - 观影:
         - 推荐的番剧: relax/影视/tuijianfanju.md
         - 推荐的电影: relax/影视/tuijiandedianyin.md
+    - 音乐:
+        - 关于郑州的记忆: relax/音乐/gyzzdjy.md
+        - 若把你: relax/音乐/rbn.md
+        - 絶頂讃歌: relax/音乐/jdzg.md
     - Game:
         - 原神: relax/Game/yuanshen.md
         - 如何玩好《王者荣耀》？: relax/Game/wzry.md

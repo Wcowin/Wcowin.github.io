@@ -1,5 +1,5 @@
 ![xiaomi](relaximgs/小米.jpg)
-
+<iframe  src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>
 - <h2>小米的使命：始终坚持做“感动人心、价格厚道”的好产品，让全球每个人都能享受科技带来的美好生活</h2>
 
 
@@ -34,7 +34,9 @@
 **相信自己，一往无前！**
 
 关于小米：[xiaomi](https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4)
-<iframe frameborder=0 border="0" marginwidth="0" marginheight="0" scrolling="no" height=720 width=1280 src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4"></iframe>
+<!-- <iframe frameborder=0 border="0" marginwidth="0" marginheight="0" scrolling="no" height=720 width=1280 src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4"></iframe> -->
+
 ***
 雷总专辑单曲：
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=31814005&auto=0&height=66"></iframe>
+<!-- height=720 width=1280 -->
