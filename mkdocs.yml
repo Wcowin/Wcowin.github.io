@@ -5,16 +5,24 @@ site_author: 王科文(Wcowin)
 #[UI]
 theme:
   name: material
+  font:
+    text: Bitter
+  icon:
+    logo: material/library-shelves
+
+  favicon: img/11.ico
   palette:
     #primary: blue grey
-  
-    - scheme: default # 日间模式
-      primary: grey # 上方的
+    
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      primary: blue grey # 上方的
       accent: cyan # 链接等可交互元件的高亮色
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # 夜间模式
       primary: black 
       accent: cyan
       toggle:
@@ -90,6 +98,7 @@ nav:
       - 雨霖铃·秋别: relax/shiwen/yll.md
       - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
     - 推荐的Books: relax/tuijianyuedu.md
+    - 🐈: relax/cat.md
     - 观影:
         - 推荐的番剧: relax/影视/tuijianfanju.md
         - 推荐的电影: relax/影视/tuijiandedianyin.md
@@ -108,6 +117,7 @@ nav:
     - 个人履历: about/geren.md
     - 网站制作: about/web.md
     - 支持作者: about/zcw.md
+    - Test: about/test.md
 
   
   
@@ -125,41 +135,43 @@ extra:
       link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
     - icon: fontawesome/solid/paper-plane
       link: mailto:<1135801806@qq.com> #联系方式
+
+  analytics: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   
-#cookie 
-  # analytics: 
-  #   provider: google
-  #   property: !ENV GOOGLE_ANALYTICS_KEY
-  #   feedback:
-  #     title: Was this page helpful?
-  #     ratings:
-  #       - icon: material/heart
-  #         name: This page was helpful
-  #         data: 1
-  #         note: >-
-  #           Thanks for your feedback!
-  #       - icon: material/heart-broken
-  #         name: This page could be improved
-  #         data: 0
-  #         note: >- 
-  #           Thanks for your feedback! Help us improve this page by
-  #           using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   # consent:
   #   title: Cookie consent
   #   description: >- 
   #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
-  #     如果你同意,你可以帮助我们让我们的网站更好~
-    #描述
+  #     如果你同意,你可以帮助我们让我们的网站更好~ 
+    #cookie 
       
 plugins:
-  - search
+  - search:
+      separator: '[\s\u200b\-]'
   - tags  #标签
+  
+
 markdown_extensions:
   - abbr
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
   - md_in_html
+  - def_list
   - pymdownx.arithmatex:  # latex支持
       generic: true
   - toc:
@@ -177,6 +189,8 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.superfences # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
+  - footnotes
+  
      
 extra_javascript:
   - javascripts/extra.js
