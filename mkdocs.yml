@@ -9,6 +9,8 @@ theme:
     text: Bitter
   icon:
     logo: material/library-shelves
+    admonition:
+      <type>: material/file-alert-outline
 
   favicon: img/11.ico
   palette:
@@ -41,13 +43,14 @@ theme:
     - navigation.expand # 打开Tab时左侧目录全部展开
     #- navigation.indexes #启用节索引页后，可以将文档直接附加到节
     - search.share #搜索分享按钮
+    - content.tabs.link
   language: zh # 一些提示性的文字会变成中文
   
 
   icon: 
     repo: fontawesome/brands/github #右上角图标
 edit_uri: edit/main/docs # 编辑按钮跳转的链接 
-repo_url: https://github.com/Wcowin/mymkdocs # 右上角点击跳转的链接
+repo_url: https://github.com/Wcowin/Wcowin.github.io # 右上角点击跳转的链接
 repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
@@ -166,6 +169,12 @@ extra:
     #cookie 
       
 plugins:
+  - glightbox:
+      loop: true
+      effect: zoom
+      zoomable: true
+      draggable: true
+      height: auto
   - search:
       separator: '[\s\u200b\-]'
   - tags  #标签
@@ -188,14 +197,23 @@ markdown_extensions:
       # auto_title: true # 显示编程语言名称
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.superfences # 代码块高亮插件
+  
   - meta # 支持Markdown文件上方自定义标题标签等
   - footnotes
+  - pymdownx.superfences # 代码块高亮插件
+      
+  - admonition
+  - pymdownx.details
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   
      
 extra_javascript:

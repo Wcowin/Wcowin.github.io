@@ -3,7 +3,17 @@ pip命令只能用在命令行中；但是不能用在python命令行中。
 一个查找命令的简易方式：直接在命令行中输入pip，就可以得到一个pip主要命令表单
 
 ## 安装pip
+=== "Windows"
 
+    ``` 
+    py -m pip --version
+    ```
+
+=== "Linux"
+
+    ``` 
+    pip install packagemane
+    ```
 检查是否安装了pip，否则你无法使用pip命令。  
 ### 1.Windows 环境下
 使用```py -m pip --version```检查是否安装pip。  

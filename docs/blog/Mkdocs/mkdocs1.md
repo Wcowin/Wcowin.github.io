@@ -1,7 +1,8 @@
 **利用mkdocs部署静态网页至GitHub pages**
-官方网站：[MkDocs](https://www.mkdocs.org/)
+!!! info
+    官方网站：[MkDocs](https://www.mkdocs.org/)
 
-我的个人网站成果：https://wcowin.github.io/mymkdocs/
+    我的个人网站成果：<http://wcowin.work/>
 
 ## 一、准备工作
 

@@ -22,14 +22,15 @@
 <https://gitee.com/cunkai/HomebrewCN/blob/master/error.md>  
 
 ***
-如果遇到 SSL certificate problem: certificate has expired 错误
-具体内容如下：
-Cloning into '/usr/local/Homebrew'...
-fatal: unable to access 'mirrors.ustc.edu.cn/bre': SSL certificate problem: certificate has expired
-m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切换网络'
-[问题分析]：
-该部分原因可能因为在此之前 安装过Git客户端 默认Git客户端安装是开启SSL证书验证功能 需要在终端中关闭该验证
-[解决办法] :
+!!! bug
+    如果遇到 SSL certificate problem: certificate has expired 错误  
+    具体内容如下：  
+    Cloning into '/usr/local/Homebrew'...  
+    fatal: unable to access 'mirrors.ustc.edu.cn/bre': SSL certificate problem: certificate has expired  
+    m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切换网络'  
+[问题分析]：  
+该部分原因可能因为在此之前 安装过Git客户端 默认Git客户端安装是开启SSL证书验证功能 需要在终端中关闭该验证  
+[解决办法] :  
 前面都不是重点，重点是问题描述里面的最后一句 certificate problem: certificate has expired，意思是证书过期了。其实就是SSL卡住了你，因此最快的解决方法就是关掉SSL验证。
 
 
@@ -43,6 +44,7 @@ Gitee地址:<https://gitee.com/cunkai/HomebrewCN>
 
 本人被这个brew安装折磨了一周，我只能说多试几次就好，纯玄学的玩意～
 ***
+附常用brew指令
 ```
 # 要获取最新的包的列表，首先得更新 Homebrew 自己
 brew update

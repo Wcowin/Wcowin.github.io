@@ -23,5 +23,5 @@ office16是office2016，office15就是2013，office14就是2010.
 
 然后目录对的话，该目录下面应该有个OSPP.VBS。  
 ![img](https://03k.org/wp-content/uploads/2015/11/office激活手动教程.png)
-
-详见：[本站上线KMS服务~一句命令激活windows/office](https://03k.org/kms.html)
+!!! note
+    详见：[本站上线KMS服务~一句命令激活windows/office](https://03k.org/kms.html)

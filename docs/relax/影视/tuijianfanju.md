@@ -1,7 +1,7 @@
 
 ## 国产
 ### 百妖谱
-![](https://i03piccdn.sogoucdn.com/c3adf8e7e6f1715b)
+![](https://pic1.zhimg.com/v2-fffe9f90998fdd94ab9dd1ebec1ca994_r.jpg?source=1940ef5c)
 
 灵医桃夭，善恶如谜。金铃过处，片甲不留。  
 讲百种妖怪，述世间沧桑。

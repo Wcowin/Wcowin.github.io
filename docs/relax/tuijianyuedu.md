@@ -26,7 +26,6 @@
 ## 《一往无前》
 
 ![img](https://img.alicdn.com/imgextra/i4/1049653664/O1CN0160dUci1cw9ndiMzTe_!!1049653664.jpg)
-
 “只有直面困难和失败，才会有一往无前的勇气”
 
 “用积极的心态来面对复杂的世界” 
