@@ -71,6 +71,7 @@ nav:
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
         - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
     - Mac:
+        - PD虚拟机: blog/Mac/Pd.md
         - Macbook启动台顽固应用图标删除方法: blog/Mac/shanchu.md
         - Homebrew国内如何自动安装(国内地址)(Mac & Linux): blog/Mac/homebrew.md
         - Mac的esc键失效的解决方法: blog/Mac/Macesc.md
@@ -78,6 +79,11 @@ nav:
         - 小小Mac技巧: blog/Mac/xjiq.md
         - Mac隐藏彩蛋: blog/Mac/maccd.md
         - Mac 键盘快捷键: blog/Mac/kjj.md
+    - WIN:
+        - 彻底卸载360安全卫士的方法: blog/Win/360.md
+        - 三步卸载 Microsoft Edge: blog/Win/edgexz.md
+        - windows快捷键: blog/Win/winkjj.md
+        - 安卓的子系统: blog/Win/anzhuodezixit.md
     - 学术:
         - LaTeX常用符号整理: blog/学术/LaTeX.md
     - Python:
