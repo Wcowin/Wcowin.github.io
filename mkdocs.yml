@@ -183,12 +183,12 @@ extra:
     #cookie 
       
 plugins:
-  - glightbox:
-      loop: true
-      effect: zoom
-      zoomable: true
-      draggable: true
-      height: auto
+  # - glightbox:
+  #     loop: true
+  #     effect: zoom
+  #     zoomable: true
+  #     draggable: true
+  #     height: auto
   - search:
       separator: '[\s\u200b\-]'
   - tags  #标签
