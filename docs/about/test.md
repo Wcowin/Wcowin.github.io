@@ -139,4 +139,6 @@ $$
 \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
 $$
 
+![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" }
+
 [:octicons-arrow-right-24: 点我回到顶部](#)
