@@ -117,7 +117,7 @@ def bubble_sort(items):
 ***
 [Subscribe to our newsletter](#){ .md-button }
 
-[Send :fontawesome-solid-paper-plane:](@Wcowin){ .md-button }
+[Send :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){ .md-button }
 
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
@@ -138,3 +138,5 @@ def bubble_sort(items):
 $$
 \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
 $$
+
+[:octicons-arrow-right-24: 点我回到顶部](#)

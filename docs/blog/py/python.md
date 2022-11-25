@@ -1,6 +1,12 @@
 [点我～原创-最优教程](https://blog.csdn.net/m0_63203517/article/details/124383678?spm=1001.2014.3001.5501)
+![](https://pic1.zhimg.com/v2-9c37b109a2592ace0b100cbb74c61501_1440w.jpeg?source=d16d100b)
 
-下面略提一下  
+.exe是文件扩展名，带有.exe扩展名的文件名按下Enter 键就可运行。这么个意思不就是：不需要装python即可运行python程序了，岂不美哉(^_^)v
+
+这里说一下，本文只说明windows环境下的python打包，如果有macos下打包需求的我们可私下交流切磋一下  
+
+下面**略提**一下  
+
 一、安装Pyinstaller  
 法一：
   

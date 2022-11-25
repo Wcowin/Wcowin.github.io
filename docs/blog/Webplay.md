@@ -4,7 +4,8 @@
 - [空投快传](https://airportal.cn/)   （超级好用的全平台文件隔空投送）  
 - [Snapdrip](https://snapdrop.net/) （在线传文件）
 - [Apk文件下载](https://apkpure.com/cn/)  （安卓应用大全）
-- [PPT大全](https://www.pptsupermarket.com/)
+- [PPT大全](https://www.pptsupermarket.com/)  
+- [PPT素材](https://www.ypppt.com/)  
 - [中国色](http://zhongguose.com/)    
 - [文件转换器](https://convertio.co/zh/)  
 - [在线工具网123](http://www.gjw123.com/)  

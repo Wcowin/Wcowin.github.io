@@ -15,6 +15,7 @@ hide:
         - 移动端 点击左上角图标选择主题和文章   
 
     - 搜索关键词以打开文章    
+[Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){ .md-button }
       
 <!--        
 ![](about/media/名片.jpeg) -->

@@ -8,10 +8,10 @@ title: 支持作者
 
 可以的话 请我喝一杯咖啡吧☕️
 
-**支付宝** **Alipay**
+**:simple-alipay:** **Alipay**
 
 ![](./media/支付宝.png)
 
-**微信支付** **WeChat Pay**
+**:simple-wechat:** **WeChat Pay**
 
 ![](./media/微信.png)

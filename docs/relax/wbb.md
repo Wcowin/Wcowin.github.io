@@ -44,4 +44,16 @@
  
 我们静静期待将来…
 
-（以上内容由[冰学网](https://mywbb.mysxl.cn/)综合各类信息编辑）
+**（以上内容由[冰学网](https://mywbb.mysxl.cn/)综合各类信息编辑）**
+***
+**美图奉上**o(^▽^)o
+
+![](http://user-assets.sxlcdn.com/images/805944/FjE5gIwWJknieTfYvPMWSRs6y84m.jpeg?imageMogr2/strip/auto-orient/thumbnail/!300x300r/gravity/Center/crop/300x300/quality/90!/interlace/1/format/jpeg)
+![](http://user-assets.sxlcdn.com/images/805944/Fl2oW3qEPRL9bZPY1Z64JF__q8jE.png?imageMogr2/strip/auto-orient/thumbnail/!300x300r/gravity/Center/crop/300x300/quality/90!/format/png)
+![](http://user-assets.sxlcdn.com/images/805944/FvQxnEkIj3NIlZ83YfDAV93rLxsh.jpeg?imageMogr2/strip/auto-orient/thumbnail/!300x300r/gravity/Center/crop/300x300/quality/90!/interlace/1/format/jpeg)
+![](http://user-assets.sxlcdn.com/images/805944/FojYbVWHLoJNWAkrX23A45C9D2E6.jpeg?imageMogr2/strip/auto-orient/thumbnail/!300x300r/gravity/Center/crop/300x300/quality/90!/interlace/1/format/jpeg)
+![](http://user-assets.sxlcdn.com/images/805944/FhNP2Flp78YRjFO1bMq0nwAem5px.jpeg?imageMogr2/strip/auto-orient/thumbnail/!300x300r/gravity/Center/crop/300x300/quality/90!/interlace/1/format/jpeg)
+![](http://user-assets.sxlcdn.com/images/805944/FuA2YhHBIyRkCguA3hjDmq_AiHMj.jpeg?imageMogr2/strip/auto-orient/thumbnail/!200x200r/gravity/Center/crop/200x200/quality/90!/interlace/1/format/jpeg)
+![](http://user-assets.sxlcdn.com/images/805944/Fr0b-lZkzH_QiqdQXqjcWH4qufmH.png?imageMogr2/strip/auto-orient/thumbnail/!200x200r/gravity/Center/crop/200x200/quality/90!/format/png)
+![](http://user-assets.sxlcdn.com/images/805944/FtIBw15hQZOF3Xwh8s4XlXY5Npvi.jpeg?imageMogr2/strip/auto-orient/thumbnail/!200x200r/gravity/Center/crop/200x200/interlace/1/format/jpeg)
+![](http://user-assets.sxlcdn.com/images/805944/FvNV5aPOLrFH1aEAoCN7cy-jvmme.jpeg?imageMogr2/strip/auto-orient/thumbnail/!200x200r/gravity/Center/crop/200x200/quality/90!/interlace/1/format/jpeg)

@@ -7,8 +7,8 @@
     1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501)  
     2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501)
 ***
-
-创建一个文件
+MkDocs 的材料是 MkDocs 的主题，MkDocs 是一个面向（技术）项目文档的静态站点生成器。如果你熟悉 Python，你可以使用pip（Python 包管理器）安装 Material for MkDocs。如果没有，我们建议使用docker。  
+创建一个文件  
 ```
 $ mkdocs new mkdocs-site
 INFO     -  Creating project directory: mkdocs-site

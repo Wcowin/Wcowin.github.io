@@ -21,6 +21,6 @@
 - <https://www.macdo.cn/>
 - <https://store.lizhi.io/>
 ***  
-## Windows 
+## Windows :simple-windows:
  
 - <https://softmall.net/?page=2>

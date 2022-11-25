@@ -1,4 +1,4 @@
-Win11镜像下载、壁纸、KMS激活  
+:simple-windows:镜像下载、壁纸、KMS激活  
 我的夸克网盘链接：<https://pan.quark.cn/s/fad94361d9a5> 提取码：XLvV  
 
 [Win11镜像网站](https://latest10.win/)

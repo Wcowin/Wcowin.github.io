@@ -5,6 +5,7 @@ site_author: 王科文(Wcowin)
 #[UI]
 theme:
   name: material
+  custom_dir: custom_theme/
   font:
     text: Bitter
   icon:
@@ -103,6 +104,9 @@ nav:
   - 闲话:
     - 小米: relax/xiaomo.md
     - Apple: relax/Apple.md
+    - 推荐的Books: relax/tuijianyuedu.md
+    - 如是我闻: relax/rushiwowen.md
+    - 王冰冰o(^▽^)o: relax/wbb.md
     - 诗文:
       - 枫桥夜泊: relax/shiwen/fqyb.md
       - 滕王阁序: relax/shiwen/twgx.md
@@ -110,12 +114,16 @@ nav:
       - 击鼓: relax/shiwen/jg.md
       - 雨霖铃·秋别: relax/shiwen/yll.md
       - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
-    - 推荐的Books: relax/tuijianyuedu.md
-    - 🐈: relax/cat.md
-    - 王冰冰o(^▽^)o: relax/wbb.md
+    - 杂文:
+        - 《目送》节选: relax/杂文/musong.md
+        - 大学一个人吃饭很丢人吗？: relax/杂文/dx.md
+        - luv letter: relax/杂文/luv letter.md
+        - 有哪些给男孩子在谈恋爱时的忠告？: relax/杂文/zhonggao.md
+        - 🐈: relax/杂文/cat.md
     - 观影:
         - 推荐的番剧: relax/影视/tuijianfanju.md
         - 推荐的电影: relax/影视/tuijiandedianyin.md
+        - 推荐的电视剧: relax/影视/tuijiandsj.md
     - 音乐:
         - 关于郑州的记忆: relax/音乐/gyzzdjy.md
         - 若把你: relax/音乐/rbn.md
@@ -123,9 +131,7 @@ nav:
     - Game:
         - 原神: relax/Game/yuanshen.md
         - 如何玩好《王者荣耀》？: relax/Game/wzry.md
-    - luv letter: relax/luv letter.md
-    - 如是我闻: relax/rushiwowen.md
-    - 有哪些给男孩子在谈恋爱时的忠告？: relax/zhonggao.md
+    - 入党结业考试题总结: relax/rudang.md
     
   - 旅行: 
     - 重庆: trip/CQ.md
@@ -136,7 +142,7 @@ nav:
     - 网站制作: about/web.md
     - 支持作者: about/zcw.md
     - Test: about/test.md
-
+    - 毕业之前值得去做的30件事: about/biye.md
   
   
 copyright: Copyright &copy; 2022王科文 # 左下角的版权声明
@@ -232,5 +238,6 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/exe.css
 
  

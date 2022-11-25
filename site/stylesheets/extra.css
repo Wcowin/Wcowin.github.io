@@ -1,5 +1,35 @@
 :root > * {
-    --md-primary-fg-color:        #5F9EA0;
-    --md-primary-fg-color--light: #5F9EA0;
-    --md-primary-fg-color--dark:  #5F9EA0;
+    --md-primary-fg-color:        #4b78d8;
+    --md-primary-fg-color--light: #4b78d8;
+    --md-primary-fg-color--dark:  #4b78d8;
+    /* background: rgb(187, 218, 251); */
+    
+
   }
+  /* #5F9EA0 */
+
+  .twitter {
+    color: #1DA1F2;
+  }
+
+  @keyframes heart {
+    0%, 40%, 80%, 100% {
+      transform: scale(1);
+    }
+    20%, 60% {
+      transform: scale(1.15);
+    }
+  }
+  .heart {
+    animation: heart 1000ms infinite;
+  }
+
+  .md-typeset .md-annotation__index > ::before {
+    content: attr(data-md-annotation-id);
+  }
+  .md-typeset :focus-within > .md-annotation__index > ::before {
+    transform: none;
+  }
+  
+  
+  

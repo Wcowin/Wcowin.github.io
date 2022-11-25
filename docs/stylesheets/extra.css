@@ -2,6 +2,9 @@
     --md-primary-fg-color:        #4b78d8;
     --md-primary-fg-color--light: #4b78d8;
     --md-primary-fg-color--dark:  #4b78d8;
+    /* background: rgb(187, 218, 251); */
+    
+
   }
   /* #5F9EA0 */
 
@@ -20,5 +23,13 @@
   .heart {
     animation: heart 1000ms infinite;
   }
+
+  .md-typeset .md-annotation__index > ::before {
+    content: attr(data-md-annotation-id);
+  }
+  .md-typeset :focus-within > .md-annotation__index > ::before {
+    transform: none;
+  }
+  
   
   
