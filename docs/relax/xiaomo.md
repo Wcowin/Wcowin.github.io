@@ -8,7 +8,6 @@
 
     小米的使命是，始终坚持做 **“感动人心、价格厚道”** 的好产品，让全球每个人都能享受科技带来的美好生活。</font>
 ![](https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6f46fb63c119d83d2b4b38505fffbcd.jpg?w=1226&h=450)
-![](https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2c4ec0786726524f2d4d436c811d799e.jpg?w=1226&h=672)
 ![](https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dda571ff4ae30170d4300e177f62af7.jpg?w=1226&h=768)
 ***
 **三条铁律：技术为本  性价比为纲  做最酷的产品**

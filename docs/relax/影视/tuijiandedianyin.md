@@ -4,6 +4,11 @@
 第一部007电影于1962年10月5日公映后，007电影系列风靡全球，历经五十余年长盛不衰。
 ***
 
+## 速度与激情
+![](https://ts1.cn.mm.bing.net/th/id/R-C.ca9c20e8d2eb2e31dad764fcd2f2e958?rik=f%2fDSHZYyoPNJdA&riu=http%3a%2f%2fi.gtimg.cn%2fqqlive%2fimg%2fjpgcache%2ffiles%2fqqvideohori%2fl%2fl9vxrwfdjcw1q4g_a.jpg&ehk=kzRYhNhcTH83AHzqpkbpub%2fXIKnU0tPosL33QTSlLoo%3d&risl=&pid=ImgRaw&r=0)  
+
+《速度与激情》是罗伯·科恩等执导，于2001年至2021年范·迪塞尔、保罗·沃克、米歇尔·罗德里格兹、乔丹娜·布鲁斯特、泰瑞斯·吉布森、卢达·克里斯、成康、道恩·强森、杰森·斯坦森等主演的赛车题材的动作犯罪类电影，截至2021年，一共拍了九部。最后一部续集《速度与激情10》于2023年上映。
+
 ## 肖生克的救赎
 ![](https://user-assets.sxlcdn.com/images/951476/Fo-8EgOI2SFjqwfV30Bz2NW27nvE.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/interlace/1/format/jpeg)
 

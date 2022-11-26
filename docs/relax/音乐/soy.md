@@ -1,0 +1,3 @@
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/shape-of-you/1193701079?i=1193701392"></iframe>
+《Shape of You》是英国男歌手艾德·希兰演唱的一首流行歌曲，该歌曲作为推广专辑的首支单曲，于2017年1月6日通过大西洋唱片发行，后被收录在艾德·希兰的第三张录音室专辑《÷》。  
+《Shape of You》是艾德·希兰在美国公告牌百强单曲榜上的首支冠军单曲，于2017年1月28日拿下该排行榜首位，并成为公告牌百强单曲榜上的第27支“首周冠军单曲”，总计获得12周冠军。2018年，该曲使艾德·希兰获得第60届格莱美奖授予的“最佳流行表演”奖

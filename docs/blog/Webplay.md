@@ -6,7 +6,6 @@
 - [Apk文件下载](https://apkpure.com/cn/)  （安卓应用大全）
 - [PPT大全](https://www.pptsupermarket.com/)  
 - [PPT素材](https://www.ypppt.com/)  
-- [中国色](http://zhongguose.com/)    
 - [文件转换器](https://convertio.co/zh/)  
 - [在线工具网123](http://www.gjw123.com/)  
 - [兔二工具](https://www.amp360.net/index.html)
@@ -62,7 +61,9 @@
 - [全民影视vip视频在线解析网](https://www.daga.cc/) (搜片直接看，有广告）
 
 ## **小说**
-知乎盐选免费在线  
+
+知乎盐选免费在线
+
 - [免费盐选](https://mfyx.top/)  
 - [我不是盐神](https://onehu.xyz/)
 - [知乎搬运工](https://www.sxctp.org/)
@@ -78,3 +79,34 @@
 - [itab标签页](https://go.itab.link/)  （超级超级好用的Edge，chrome启动标签页）
 - [青柠起始页](https://limestart.cn/)  (极简，好看)
 - [利其器导航](https://www.jiceng.org/wzdh) 
+  
+## **技术/IT**
+
+- [Node.js](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+- [Web开发](https://developer.mozilla.org/zh-CN/docs/Web)
+- [Homebrew](https://brew.sh/index_zh-cn)
+- [Jekyll](https://jekyllrb.com/)
+- [Emoji大全](https://www.emojiall.com/zh-hans)
+- [UTM](https://mac.getutm.app/)
+- [文档｜Hexo](https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85-Hexo)
+- [Vue](https://cn.vuejs.org/)
+- [Just the docs](https://just-the-docs.github.io/just-the-docs/)
+- [W3](https://www.w3school.com.cn/)( W3School，你可以找到你所需要的所有的网站建设教程。从基础的 HTML 到 CSS，乃至进阶的 XML、SQL、JS、PHP 和 ASP.NET)
+- [docsify](https://docsify.js.org/#/zh-cn/)
+- [Java](https://mrjokersince1997.github.io/My-Notes/#/)
+- [菜鸟](https://www.runoob.com/)
+- [bootcss](https://www.bootcss.com/)
+- [Typescript](https://typescript.bootcss.com/)
+
+## **设计**
+
+- [Fotor](https://www.fotor.com/cn/)(简单好用的在线图片编辑软件)
+- [Adobe](https://color.adobe.com/zh/explore/newest/)(懂得都懂)
+- [可画](https://www.canva.cn/?display-com-option=true)
+- [UI酷设计](http://uicool123.com/)
+- [稿定设计](https://www.gaoding.com/introduction?hmsr=itab-itab-itab--itab-itab-bdqd)
+- [artstation](https://www.artstation.com/)
+- [Noun Project](https://thenounproject.com/)
+- [配色](https://webgradients.com/)
+- [中国色](http://zhongguose.com/)

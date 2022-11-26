@@ -32,16 +32,16 @@ theme:
         name: 切换至日间模式
   features: 
     - navigation.instant #- header.autohide  #自动隐藏
-    #- announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - navigation.expand # 打开Tab时左侧目录全部展开
-    #- navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
     - search.share #搜索分享按钮
     - content.tabs.link
   language: zh # 一些提示性的文字会变成中文
@@ -59,7 +59,7 @@ nav:
   - 博客:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
-    - Telegram 群组、频道、机器人 - 汇总分享: blog/TG.md
+    - Telegram 群组、频道、机器人  汇总分享: blog/TG.md
     
     - 技术分享:
         - Win11镜像下载、壁纸及KMS激活 : blog/技术分享/win.md
@@ -124,6 +124,9 @@ nav:
         - 推荐的电影: relax/影视/tuijiandedianyin.md
         - 推荐的电视剧: relax/影视/tuijiandsj.md
     - 音乐:
+        - shape of you: relax/音乐/soy.md
+        - Floating: relax/音乐/Floating.md
+        - 朱砂: relax/音乐/zhusha.md
         - 关于郑州的记忆: relax/音乐/gyzzdjy.md
         - 若把你: relax/音乐/rbn.md
         - 絶頂讃歌: relax/音乐/jdzg.md
