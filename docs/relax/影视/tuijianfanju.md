@@ -1,7 +1,7 @@
 
 ## 国产
 ### 百妖谱
-![](https://pic1.zhimg.com/v2-fffe9f90998fdd94ab9dd1ebec1ca994_r.jpg?source=1940ef5c)
+![](https://user-assets.sxlcdn.com/images/951476/FkhUWNR-2rKKr_he7MUU5uIQ8CZA.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
 灵医桃夭，善恶如谜。金铃过处，片甲不留。  
 讲百种妖怪，述世间沧桑。
@@ -99,7 +99,7 @@
 “今天一定要捉弄高木同学，让她害羞！”某所初中里，邻座女生高木同学总是捉弄男生西片。西片为了反过来戏弄高木同学，每天都在奋斗着……高木同学和西片的全力“捉弄”青春之战就此开始。
 ***
 ### 名侦探柯南
-![](https://mkzhou.com/wp-content/uploads/2018/10/115851xdqr0v7qxz5.jpg)
+![](https://user-assets.sxlcdn.com/images/951476/FpTvFTzVkLxfT-DGaZiMT8q7SLr9.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 主角工藤新一原本是一位颇具名声的高中生侦探，在目击黑暗组织的地下交易后，正准备追踪时却被突袭击昏，并被灌下代号为“APTX4869”的不明药物。后来虽然幸免于死，但身体就此缩小为小学时期的模样。之后他化名为江户川柯南，在邻居阿笠博士的建议下，寄住在女友毛利兰的父亲—侦探毛利小五郎家中，继续秘密从事追查黑暗组织的工作，并私下探寻获得解药的管道，希望能够恢复原来新一的样貌。与此同时，柯南凭着自己的推理天份，配合阿笠博士为他发明的道具，帮助毛利小五郎成为出名的大侦探。故事内容当中穿插许多爱情、友情、犯罪、背叛、复仇等情节。
 
 点评：神作，我最爱的柯南，没有之一

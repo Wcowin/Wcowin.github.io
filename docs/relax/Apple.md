@@ -12,7 +12,7 @@ We believe that how we conduct ourselves is as critical to Apple’s success as 
 
 Tim Cook</b></center>
 
-![img](relaximgs/Apple.png)
+![img](https://user-assets.sxlcdn.com/images/951476/FpR4zSBa8kJxXSlkmL3yE9O1PNJB.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png)
 苹果一直都不在意成本，也一直在追寻进步，进步不一定是要眼睛看到的，就是那种能感受到，但是看不到的美。信息来源于互联网，未必精准。  
 1.iPhone X的屏幕造价平均下来大概是4000元人民币，要考虑封装，机器，折损等，据说当时良品率只有50%不到。iPhone X是工业史上第一款大规模量产的COP封装屏幕。  
 2.Apple Pencil，也是艺术品级别的封装，2022年还没有一家科技公司能做到同样的8ms延迟，同样的体积重量。  
@@ -26,7 +26,8 @@ Tim Cook</b></center>
 10.异性电池，iPhone XS，MacBook。为了塞进去尽可能多的电池。    
 
 Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，外观好像一样的情况下，内部元器件的堆叠甚至是一些微不足道的小更新，都是苹果和他的团队在背后努力研发的成果。  
-![](https://www.apple.com.cn/v/apple-events/home/y/images/overview/hero/fall-2022/hero_announce__bwxm3afyufua_large_2x.jpg)
+
+![](https://user-assets.sxlcdn.com/images/951476/FkEoM-JH0F6SYwS6RXR2ZIcSh45Q.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
 <iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=0&height=32"></iframe>

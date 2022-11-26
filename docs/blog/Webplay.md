@@ -40,8 +40,7 @@
 - [Gitee](https://gitee.com/explore) (国内的GitHub)
 - [stack overflow](https://stackoverflow.com/)
 - [菜鸟教程](https://www.runoob.com/) （学习编程语言的好去处）
-- [思否](https://segmentfault.com/
-)(中文技术交流平台)
+- [思否](https://segmentfault.com/) (中文技术交流平台)
 - [36氪](https://www.36kr.com/)
 - [IT之家](https://www.ithome.com/)
 - [米游社](https://bbs.mihoyo.com/ys/)   （我每天必学打卡的好平台）
@@ -61,6 +60,12 @@
 - [555电影](https://5dy6.vip/)    
 - [Libvio](https://libvio.fun/)   (推荐)
 - [全民影视vip视频在线解析网](https://www.daga.cc/) (搜片直接看，有广告）
+
+## **小说**
+知乎盐选免费在线  
+- [免费盐选](https://mfyx.top/)  
+- [我不是盐神](https://onehu.xyz/)
+- [知乎搬运工](https://www.sxctp.org/)
 
 ## **音乐**
 - [Listen 1](https://listen1.github.io/listen1/)(Listen 1可以搜索和播放来自网易云音乐，QQ音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲，让你的曲库更全面)

@@ -10,8 +10,8 @@ title: 支持作者
 
 **:simple-alipay:** **Alipay**
 
-![](./media/支付宝.png)
+![](https://user-assets.sxlcdn.com/images/951476/Ftmzj__CFg8LDIkzyQsF3OLKWeRX.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png)
 
 **:simple-wechat:** **WeChat Pay**
 
-![](./media/微信.png)
+![](https://user-assets.sxlcdn.com/images/951476/FsX9lVAmvPiFVnoBgz7l6AQq5i10.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png)

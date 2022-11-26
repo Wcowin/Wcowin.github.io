@@ -10,7 +10,7 @@ hide:
     * 喜欢村上春树📖，擅长羽毛球🏸️
     * 找到我 &#x1F4A1;→:simple-github:[GitHub](https://github.com/Wcowin"GitHub")
  
-![](media/名片.jpeg)
+![](https://user-assets.sxlcdn.com/images/951476/Fm48yHvthNihBKjulkCq_wVdIW3K.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/interlace/1/format/jpeg)
 ***  
 <!-- <font size=6>感谢我亲爱的家人们。  
 我亲爱的弟弟，他正在读小学</font> -->

@@ -36,7 +36,8 @@
 **相信自己，一往无前！**
 
 关于小米：[xiaomi](https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4)
-![xiaomi](relaximgs/小米.jpg)
+![xiaomi](https://user-assets.sxlcdn.com/images/951476/FhDY4DJUZ76Xz3CJ6sdjBLIZV-si.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
+
 <iframe  src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>  
 小米创业8年内部影像资料，首次公开！
 <iframe src="//player.bilibili.com/player.html?aid=27087520&bvid=BV1Ps411E7w6&cid=46647207&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
