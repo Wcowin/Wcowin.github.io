@@ -110,3 +110,17 @@
 - [Noun Project](https://thenounproject.com/)
 - [配色](https://webgradients.com/)
 - [中国色](http://zhongguose.com/)
+
+## **ios捷径**
+
+✅ ShortCuts - 快捷指令网站合集  
+▎快捷指令
+
+- [捷径社区](https://sharecuts.cn/)  
+- [捷径盒](https://jiejinghe.com/)  
+- [捷径库](https://jiejingku.net/)  
+- [少数派捷径](https://shortcuts.sspai.com/)  
+- [柯基捷径库](https://www.kejicut.com/)  
+- [快捷指令库](https://www.rcuts.com/)  
+- [小良哥捷径](https://iphone8.vip/gz.html)
+ 
