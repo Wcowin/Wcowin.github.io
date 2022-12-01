@@ -62,16 +62,17 @@ nav:
     - Telegram 群组、频道、机器人  汇总分享: blog/TG.md
     
     - 技术分享:
-        - Win11镜像下载、壁纸及KMS激活 : blog/技术分享/win.md
-        - 解决谷歌翻译用不了的问题: blog/技术分享/googletranslate.md
-        - 爱心代码: blog/技术分享/aixin.md
-        - 科学上网: blog/技术分享/kexue.md
+        - Win11镜像下载、壁纸及KMS激活 : blog/technique sharing/win.md
+        - 解决谷歌翻译用不了的问题: blog/technique sharing/googletranslate.md
+        - 爱心代码: blog/technique sharing/aixin.md
+        - 科学上网: blog/technique sharing/kexue.md
     - MKdocs:
         - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
         - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
     - Mac:
         - PD虚拟机: blog/Mac/Pd.md
+        - 提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法: blog/Mac/sunhuai.md
         - Macbook启动台顽固应用图标删除方法: blog/Mac/shanchu.md
         - Homebrew国内如何自动安装(国内地址)(Mac & Linux): blog/Mac/homebrew.md
         - mac 无法访问 github 的解决办法: blog/Mac/jiasugithub.md
@@ -86,12 +87,12 @@ nav:
         - windows快捷键: blog/Win/winkjj.md
         - 安卓的子系统: blog/Win/anzhuodezixit.md
     - 学术:
-        - LaTeX常用符号整理: blog/学术/LaTeX.md
+        - LaTeX常用符号整理: blog/Academic/LaTeX.md
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
     - C语言: 
-        - C笔记: blog/C语言/c.md
+        - C笔记: blog/C language/c.md
     
   - 开发: 
     - Markdown: 
@@ -115,22 +116,22 @@ nav:
       - 雨霖铃·秋别: relax/shiwen/yll.md
       - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
     - 杂文:
-        - 《目送》节选: relax/杂文/musong.md
-        - 大学一个人吃饭很丢人吗？: relax/杂文/dx.md
-        - luv letter: relax/杂文/luv letter.md
-        - 有哪些给男孩子在谈恋爱时的忠告？: relax/杂文/zhonggao.md
-        - 🐈: relax/杂文/cat.md
+        - 《目送》节选: relax/Essay/musong.md
+        - 大学一个人吃饭很丢人吗？: relax/Essay/dx.md
+        - luv letter: relax/Essay/luv letter.md
+        - 有哪些给男孩子在谈恋爱时的忠告？: relax/Essay/zhonggao.md
+        - 🐈: relax/Essay/cat.md
     - 观影:
-        - 推荐的番剧: relax/影视/tuijianfanju.md
-        - 推荐的电影: relax/影视/tuijiandedianyin.md
-        - 推荐的电视剧: relax/影视/tuijiandsj.md
-    - 音乐:
-        - shape of you: relax/音乐/soy.md
-        - Floating: relax/音乐/Floating.md
-        - 朱砂: relax/音乐/zhusha.md
-        - 关于郑州的记忆: relax/音乐/gyzzdjy.md
-        - 若把你: relax/音乐/rbn.md
-        - 絶頂讃歌: relax/音乐/jdzg.md
+        - 推荐的番剧: relax/Movie/tuijianfanju.md
+        - 推荐的电影: relax/Movie/tuijiandedianyin.md
+        - 推荐的电视剧: relax/Movie/tuijiandsj.md
+    - Music:
+        - shape of you: relax/Music/soy.md
+        - Floating: relax/Music/Floating.md
+        - 朱砂: relax/Music/zhusha.md
+        - 关于郑州的记忆: relax/Music/gyzzdjy.md
+        - 若把你: relax/Music/rbn.md
+        - 絶頂讃歌: relax/Music/jdzg.md
     - Game:
         - 原神: relax/Game/yuanshen.md
         - 如何玩好《王者荣耀》？: relax/Game/wzry.md
@@ -241,5 +242,3 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/exe.css
-
- 

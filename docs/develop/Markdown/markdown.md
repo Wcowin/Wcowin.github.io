@@ -2,7 +2,7 @@
 title: Markdown语法学习 精简版
 ---
 
-# :simple-markdown: Markdown语法学习 精简版
+# :simple-markdown: [Markdown语法学习](https://www.markdown.xyz/) 精简版
 
 > <span id="top">**文章开头**</span>  
 
@@ -10,7 +10,9 @@ title: Markdown语法学习 精简版
 Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。  
 Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。  
 
-## 此笔记学习摘抄自[Markdown语法学习 精简版](https://github.com/Yang-Xijie/yang-xijie.github.io/blob/main/docs/BLOG/Markdown/grammars.md?plain=1)，学习借鉴大佬之经验（Ctrl C+V）
+此笔记学习摘抄自[Markdown语法学习 精简版](https://github.com/Yang-Xijie/yang-xijie.github.io/blob/main/docs/BLOG/Markdown/grammars.md?plain=1)，学习借鉴大佬之经验（Ctrl C+V）
+
+**也推荐看:[Markdown中文指南](https://www.markdown.xyz/)**
 
 ## 最常用
 
