@@ -56,7 +56,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
 nav:
-  - 主页: index.md
+  # - 主页/index.md
   - 博客:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
@@ -64,6 +64,7 @@ nav:
     
     - 技术分享:
         - Win11镜像下载、壁纸及KMS激活 : blog/technique sharing/win.md
+        - 实用脚本分享: blog/technique sharing/jiaoben.md
         - 解决谷歌翻译用不了的问题: blog/technique sharing/googletranslate.md
         - 爱心代码: blog/technique sharing/aixin.md
         - 科学上网: blog/technique sharing/kexue.md
@@ -122,6 +123,18 @@ nav:
         - luv letter: relax/Essay/luv letter.md
         - 有哪些给男孩子在谈恋爱时的忠告？: relax/Essay/zhonggao.md
         - 🐈: relax/Essay/cat.md
+    - 写信:
+        - 第一封: relax/Letter/letter1.md
+        - 第二封: relax/Letter/letter2.md
+        - 情书:
+            -   朱生豪与宋清如: relax/Letter/luvletter/sqrzszyz.md
+            - 《朱生豪情书全集摘录》(021): relax/Letter/luvletter/zhushenghao1.md
+            - 《朱生豪情书全集摘录》(031): relax/Letter/luvletter/zhushenghao2.md
+            - 《朱生豪情书全集摘录》(036): relax/Letter/luvletter/zhushenghao3.md
+            - 《朱生豪情书全集摘录》(046): relax/Letter/luvletter/zhushenghao4.md
+            - 《朱生豪情书全集摘录》(053): relax/Letter/luvletter/zhushenghao5.md
+            - 《朱生豪情书全集摘录》(055): relax/Letter/luvletter/zhushenghao6.md
+
     - 观影:
         - 推荐的番剧: relax/Movie/tuijianfanju.md
         - 推荐的电影: relax/Movie/tuijiandedianyin.md
@@ -139,6 +152,7 @@ nav:
     - 入党结业考试题总结: relax/rudang.md
     
   - 旅行: 
+    - trip/index.md
     - 重庆: trip/CQ.md
     - Hometown: trip/LH.md
     
@@ -209,12 +223,18 @@ markdown_extensions:
   - md_in_html
   - meta # 支持Markdown文件上方自定义标题标签等
   - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.superfences # 代码块高亮插件
+  - pymdownx.critic
   - pymdownx.details
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.snippets
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
   - pymdownx.arithmatex:  # latex支持
       generic: true
   - toc:
@@ -242,4 +262,3 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/exe.css

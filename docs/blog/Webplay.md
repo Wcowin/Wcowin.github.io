@@ -3,6 +3,7 @@
 * [万物指南](https://zh.wikihow.com/首页)  （互联网上最值得信赖的指南网站）
 - [空投快传](https://airportal.cn/)   （超级好用的全平台文件隔空投送）  
 - [Snapdrip](https://snapdrop.net/) （在线传文件）
+- [微信文件传输助手网页版](https://filehelper.weixin.qq.com/)  
 - [Apk文件下载](https://apkpure.com/cn/)  （安卓应用大全）
 - [PPT大全](https://www.pptsupermarket.com/)  
 - [PPT素材](https://www.ypppt.com/)  
@@ -76,7 +77,7 @@
 
 ## **博客/导航**  
 
-- [Wcowin的个人网站](https://wcowin.github.io/mymkdocs/)  （博客分享）
+- [Wcowin的个人网站](https://wcowin.github.io/mymkdocs/)  （分享点有趣的技术）
 - [Power-User:Telegram/Surge/Clash](https://congcong0806.github.io/)  （电报Telegram教程--有）
 - [小众技术](https://www.xiaozhongjishu.com/?from=itab)
 - [itab标签页](https://go.itab.link/)  （超级超级好用的Edge，chrome启动标签页）

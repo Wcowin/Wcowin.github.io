@@ -139,6 +139,53 @@ $$
 \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
 $$
 
-![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" }
+<!-- ![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" } -->
 
-[:octicons-arrow-right-24: 点我回到顶部](#)
+ 
+***  
+
+左对齐，右对齐  
+![Image title](media/binggo.jpg){ align=left }
+<!-- ![Image title](media/binggo.jpg){ align=right } -->
+
+
+<figure markdown>
+  ![Image title](media/binggo.jpg){ width="300" }
+  <figcaption>图片说明</figcaption>
+</figure>
+
+**明暗**
+
+![](https://user-assets.sxlcdn.com/images/951476/Ftmzj__CFg8LDIkzyQsF3OLKWeRX.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png#only-light)
+
+![](https://user-assets.sxlcdn.com/images/951476/FsX9lVAmvPiFVnoBgz7l6AQq5i10.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png#only-dark)
+
+``` mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
+```
+
+``` mermaid
+sequenceDiagram
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+      John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
+
+
+!!! pied-piper "Pied Piper"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+    purus auctor massa, nec semper lorem quam in massa.
+
+:octicons-arrow-right-24: [点我回到顶部](#) 
