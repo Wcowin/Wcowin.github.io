@@ -43,5 +43,14 @@
   }
   
 
-  
-  
+/* 鼠标 */
+  body {
+      cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/default.cur),
+          default;
+  }
+  a,
+  img {
+      cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/pointer.cur),
+          default;
+  }
+/* 鼠标 */
