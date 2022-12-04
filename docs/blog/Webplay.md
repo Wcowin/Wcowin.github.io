@@ -18,8 +18,9 @@
 - [尝鲜π](https://betahub.cn/)  （Apple测试版系统发布平台）
 - [KMS激活](https://03k.org/kms.html)  (一句命令激活windows/office)  
 - [修改键盘映射](https://karabiner-elements.pqrs.org/)
-
-
+- [哆啦A梦的神奇口袋](https://baozangku.com/)
+- [ipax下载](https://armconverter.com/decryptedappstore/us)
+- [IPA](https://decrypt.day/)
 ## **图像**  
 
 - [徕卡水印](https://www.immers.icu/) （仅限ios快捷指令）
@@ -47,8 +48,10 @@
 - [高校书苑](https://ebook.hep.com.cn/ebooks/h5/index.html#/)  （超全的大学课本-电子版）
 - [口红极客](http://www.tianlefirstweb.fun/) （口红号色号大全-男同志的福音）   
 - [How to cook](https://cook.aiurs.co/)  （程序员级别的做饭指南）
-- [知性-性教育平台](https://knowsex.net/) <b>（每个人都应该学习的两性知识！）</b>
-
+- [知性-性教育平台](https://knowsex.net/) <b>（每个人都应该学习的两性知识！）</b>  
+- [知否](http://www.daanbar.com/index.html)(一款学霸学渣都不能错过的学习考试神器)  
+- [看历史](http://www.lishiju.net/timeline.html)  
+- 
 ## **观影**  
 
 - [茶杯狐](https://cupfox.app/) （资源多，广告少）  
@@ -79,6 +82,7 @@
 - [itab标签页](https://go.itab.link/)  （超级超级好用的Edge，chrome启动标签页）
 - [青柠起始页](https://limestart.cn/)  (极简，好看)
 - [利其器导航](https://www.jiceng.org/wzdh) 
+- [电报狗](https://www.smsgou.com/)
   
 ## **技术/IT**
 
@@ -98,7 +102,9 @@
 - [菜鸟](https://www.runoob.com/)
 - [bootcss](https://www.bootcss.com/)
 - [Typescript](https://typescript.bootcss.com/)
-
+- [Hexo](https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85-Hexo)
+- [Git](https://git-scm.com/)
+- [Node](https://nodejs.org/en/)
 ## **设计**
 
 - [Fotor](https://www.fotor.com/cn/)(简单好用的在线图片编辑软件)
@@ -124,3 +130,10 @@
 - [快捷指令库](https://www.rcuts.com/)  
 - [小良哥捷径](https://iphone8.vip/gz.html)
  
+
+## **好玩**
+
+- [宇宙的刻度](https://htwins.net/scale2/)
+- [100000stars](http://stars.chromeexperiments.com/)
+- [小霸王](https://www.yikm.net/)
+- [网易云游戏](https://cg.163.com/#/mobile)

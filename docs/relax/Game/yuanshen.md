@@ -1,11 +1,14 @@
 在《原神》里，玩家将扮演一位名为「旅行者」的神秘角色，在异世界旅途中被陌生的神明拦截，苏醒后踏上寻访七神的冒险之旅。在未知的旅行中，玩家将邂逅琴、丽莎、安柏等众多性格各异、能力独特的同伴，与他们共同击败强敌，找回失散的亲人—— 同时，逐步发掘「原神」的真相  
 ![](https://upload-bbs.mihoyo.com/upload/2020/11/29/253851692/06f77bc3895942b064940b018bfcb584_786747886500528861.jpg)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e_F-KHVDOCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ***
 我也勉强算是原神的老玩家了，**UID:187271419**，从16级萌新一路杀到50级  
 
 我主打元素反应（刻晴+烟绯），因为有绫华也会玩永冻流，不过最近发现凯亚早柚香凌打融化也是不错的～  
 
-3.2卡池  八重神子我来了    
+3.2卡池  八重神子我来了(其实抽了公子)    
 
 原神陪伴了我大学的少许闲暇时光,如果让我推荐手游，我毫不犹豫推荐**原神**，不肝不氪不原神~  
 ***
