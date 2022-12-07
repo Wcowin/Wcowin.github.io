@@ -52,7 +52,7 @@
 - [知性-性教育平台](https://knowsex.net/) <b>（每个人都应该学习的两性知识！）</b>  
 - [知否](http://www.daanbar.com/index.html)(一款学霸学渣都不能错过的学习考试神器)  
 - [看历史](http://www.lishiju.net/timeline.html)  
-- 
+- [花语大全](https://www.ip138.com/huayu/)
 ## **观影**  
 
 - [茶杯狐](https://cupfox.app/) （资源多，广告少）  
@@ -73,8 +73,8 @@
 - [知乎搬运工](https://www.sxctp.org/)
 
 ## **音乐**
-- [Listen 1](https://listen1.github.io/listen1/)(Listen 1可以搜索和播放来自网易云音乐，QQ音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲，让你的曲库更全面)
-
+- [Listen 1](https://listen1.github.io/listen1/)(Listen 1可以搜索和播放来自网易云音乐，QQ音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲)
+- [落雪音乐](https://lxmusic.toside.cn/)
 ## **博客/导航**  
 
 - [Wcowin的个人网站](https://wcowin.github.io/mymkdocs/)  （分享点有趣的技术）
