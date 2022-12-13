@@ -22,6 +22,8 @@
 - [哆啦A梦的神奇口袋](https://baozangku.com/)
 - [ipax下载](https://armconverter.com/decryptedappstore/us)
 - [IPA](https://decrypt.day/)
+- [视频人声分离](https://vocalremover.org/)
+- [键盘检测](https://keyboardtester.co/keyboard-tester)
 ## **图像**  
 
 - [徕卡水印](https://www.immers.icu/) （仅限ios快捷指令）
@@ -29,7 +31,8 @@
 - [33搜帧](https://fse.agilestudio.cn/) (搜索到视频素材中的每一帧画面)    
 - [Unsplash](https://www.xiaozhongjishu.com/sites/113.html) (美图)  
 - [P站](https://www.pixiv.net/)  （咳咳不解释）
-- [Mac软件icon图标](https://macosicons.com/#/)  （图标资源全的离谱，免费～）
+- [Mac软件icon图标](https://macosicons.com/#/)  （图标资源全的离谱，免费～）  
+- [Icon](https://www.iconfont.cn/collections/index?spm=a313x.7781069.1998910419.da2e3581b&type=1)  
 
 ## **视频处理/下载**  
 

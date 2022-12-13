@@ -74,7 +74,8 @@
 点评：炮姐YYDS
 ***
 ### 干物妹！小埋
-![](https://tse3-mm.cn.bing.net/th/id/OIP-C.RmUgifbuUWdSClbSLiGwVAHaJ4?pid=ImgDet&rs=1)
+![](https://tse3-mm.cn.bing.net/th/id/OIP-C.RmUgifbuUWdSClbSLiGwVAHaJ4?pid=ImgDet&rs=1)  
+
 我的妹妹小埋16岁，完美的妹妹，完美的高中生，但在家里却是个超懒的干物妹。然而妹妹在家的一切她生活中的朋友并不知道，居住在同一栋楼的天然少女，以及无意间来到我家的冷酷少女，她们会发现小埋的真实面目吗？
 ***
 ### 在下坂本，有何贵干？
