@@ -13,7 +13,8 @@ theme:
     admonition:
       <type>: material/file-alert-outline
 
-  favicon: img/11.ico
+  favicon: img/faxian.png
+  # img/11.ico
   palette:
     #primary: blue grey
     
