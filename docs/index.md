@@ -3,7 +3,9 @@ hide:
   #- navigation # 显示右
   #- toc #显示左
   - footer
+comments: false
 ---
+<!-- <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> -->
 # <font color= #4b78d8 >**你好**</font>
  <font face="宋体" color= #4b78d8 size=7 >Welcome to my [Website](http://wcowin.work/) </font>
   :fontawesome-brands-twitter:{ .twitter }

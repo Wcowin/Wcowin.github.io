@@ -3,6 +3,7 @@ hide:
 #   - navigation
 #   - toc
 ---
+
 # 知足且上进，温柔且坚定
 !!! note "About me"
     * CTBU电子信息工程专业本科在读  
@@ -24,5 +25,3 @@ hide:
     </div>
 </div> -->
 
-My brother：
-![](media/wwx.jpeg)

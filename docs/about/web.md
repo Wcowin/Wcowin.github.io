@@ -86,5 +86,32 @@ GitHub > Repository > Settings > Pages > Source > gh-pages > Click Save
 
 [实现自定义域名访问](https://blog.csdn.net/Passerby_Wang/article/details/121202486?spm=1001.2014.3001.5501)
 
+
 ***
-点击[这里](#top)跳转到开头
+点击[这里](#top)跳转到开头  
+
+
+<p align="center">
+  <a href="https://github.com/squidfunk/mkdocs-material/actions"><img
+    src="https://github.com/squidfunk/mkdocs-material/workflows/build/badge.svg?branch=master"
+    alt="Build"
+  /></a>
+  <a href="https://pypistats.org/packages/mkdocs-material"><img
+    src="https://img.shields.io/pypi/dm/mkdocs-material.svg" 
+    alt="Downloads"
+  /></a>
+  <a href="https://gitter.im/squidfunk/mkdocs-material"><img 
+    src="https://badges.gitter.im/squidfunk/mkdocs-material.svg" 
+    alt="Chat on Gitter"
+  /></a>
+  <a href="https://pypi.org/project/mkdocs-material"><img 
+    src="https://img.shields.io/pypi/v/mkdocs-material.svg" 
+    alt="Python Package Index"
+  /></a>
+  <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/"><img 
+    src="https://img.shields.io/docker/pulls/squidfunk/mkdocs-material" 
+    alt="Docker Pulls"
+  /></a>
+</p>
+
+

@@ -4,6 +4,7 @@ site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
 #[UI]
 theme:
+  # custom_dir: overrrides
   name: material
   # custom_dir: custom_theme
   font:
@@ -265,5 +266,6 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - javascripts/backgroud.js
 extra_css:
   - stylesheets/extra.css
