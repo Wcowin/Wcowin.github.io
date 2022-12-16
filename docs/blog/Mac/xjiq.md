@@ -1,3 +1,7 @@
+---
+tags:
+  - Mac
+---
 只显示当前运行的应用
 
 1. 打开终端（Terminal.app）
@@ -6,9 +10,9 @@
 ```
 defaults write com.apple.dock static-only -bool TRUE; killall Dock
 ```
-5.gif
+***
 
-3. 想恢复原来状态，输入下列指令，按回车键运行即可：
+1. 想恢复原来状态，输入下列指令，按回车键运行即可：
 ```
 defaults write com.apple.dock static-only -bool FALSE; killall Dock
 ```

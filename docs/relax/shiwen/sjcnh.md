@@ -1,3 +1,7 @@
+---
+tags:
+  - 诗文
+---
 # <center>望江南·超然台作</center>
 
 <p align="right"><font size=5>苏轼 〔宋代〕</p>

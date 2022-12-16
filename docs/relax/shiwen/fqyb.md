@@ -1,3 +1,7 @@
+---
+tags:
+  - 诗文
+---
 # <center>枫桥夜泊 / 夜泊枫江</center>
 <p align="right">【唐】张继</p>  
 

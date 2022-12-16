@@ -1,3 +1,7 @@
+---
+tags:
+  - 诗文
+---
 # <center>击鼓</center>
  <font size=5> <center>先秦佚名</center>  
 

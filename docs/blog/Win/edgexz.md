@@ -1,3 +1,7 @@
+---
+tags:
+  - win
+---
 ![](https://edgefrecdn.azureedge.net/shared/edgeweb/img/RE4U3ak.a902b21.jpg)  
 第一步：管理员模式打开 powershell   
 

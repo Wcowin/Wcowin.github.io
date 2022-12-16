@@ -1,4 +1,9 @@
-**Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)**
+---
+title: Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)
+comments: false
+tags:
+  - Mkdocs
+---
 
 官方文件：[Changing the colors - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 

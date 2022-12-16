@@ -3,7 +3,8 @@ hide:
   #- navigation # 显示右
   #- toc #显示左
   - footer
-comments: false
+  - feedback
+comments: true
 ---
 <!-- <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> -->
 # <font color= #4b78d8 >**你好**</font>
@@ -35,3 +36,18 @@ comments: false
     allowfullscreen="true"> 
     </iframe>
 </div> -->
+<!-- <script src="https://giscus.app/client.js"
+        data-repo="Wcowin/Wcowin.github.io"
+        data-repo-id="R_kgDOIQ3gUQ"
+        data-category="General"
+        data-category-id="DIC_kwDOIQ3gUc4CTHCj"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script> -->

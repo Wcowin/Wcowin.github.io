@@ -1,5 +1,7 @@
 ---
 title: Windows基础操作（快捷键）  
+tags:
+  - win
 ---
 
 ## 一、Win键+'X'（+'Y'）

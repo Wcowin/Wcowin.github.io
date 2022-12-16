@@ -1,5 +1,7 @@
 ---
 title: 苹果iphone /iOS 限免网站合集
+tags:
+  - iphone
 ---
 
 mergeek

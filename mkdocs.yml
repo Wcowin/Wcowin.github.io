@@ -74,6 +74,9 @@ nav:
         - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
         - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
+    - Mkdocs美化:
+        - JS实现鼠标样式: blog/websitebeauty/shubiao.md
+        - 背景特效: blog/websitebeauty/backgroud.md
     - Mac:
         - PD虚拟机: blog/Mac/Pd.md
         - 提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法: blog/Mac/sunhuai.md
@@ -161,7 +164,9 @@ nav:
     - trip/index.md
     - 重庆: trip/CQ.md
     - Hometown: trip/LH.md
-    
+
+  - 标签: tag.md
+  - 留言板: messageboard.md
   - 关于:
     - 个人履历: about/geren.md
     - 网站制作: about/web.md
@@ -186,28 +191,31 @@ extra:
       link: mailto:<1135801806@qq.com> #联系方式
 
   analytics: 
+    provider: google
+    property: G-29HZMNR0KG
     feedback:
-      title: Was this page helpful?
+      title: 此页面有帮助吗？
       ratings:
         - icon: material/emoticon-happy-outline
           name: This page was helpful
           data: 1
           note: >-
-            Thanks for your feedback!
+            谢谢你的反馈！
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+            using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
   
-  # consent:
-  #   title: Cookie consent
-  #   description: >- 
-  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
-  #     如果你同意,你可以帮助我们让我们的网站更好~ 
-    #cookie 
-      
+  consent:
+    title: Cookie consent
+    description: >- 
+      我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+      如果你同意,你可以帮助我们让我们的网站更好
+
+    
+
 plugins:
   # - glightbox:
   #     loop: true
@@ -217,7 +225,10 @@ plugins:
   #     height: auto
   - search:
       separator: '[\s\u200b\-]'
-  - tags  #标签
+  # - social
+  - tags:
+      tags_file: tag.md
+
   
 
 markdown_extensions:

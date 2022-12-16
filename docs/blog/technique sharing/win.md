@@ -1,3 +1,8 @@
+---
+tags:
+  - 技术分享
+  - win
+---
 :simple-windows:镜像下载、壁纸、KMS激活  
 我的夸克网盘链接：<https://pan.quark.cn/s/fad94361d9a5> 提取码：XLvV  
 

@@ -1,3 +1,7 @@
+---
+tags:
+  - 诗文
+---
 # <center>雨霖铃·秋别</center>  
 <p align="right"><font size=5> 宋代「柳永」</p>  
 

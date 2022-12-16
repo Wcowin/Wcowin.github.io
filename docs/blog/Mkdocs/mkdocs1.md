@@ -1,4 +1,9 @@
-**利用mkdocs部署静态网页至GitHub pages**
+---
+title: 利用mkdocs部署静态网页至GitHubpages
+tags:
+  - Mkdocs
+---
+
 !!! info
     官方网站：[MkDocs](https://www.mkdocs.org/)
 

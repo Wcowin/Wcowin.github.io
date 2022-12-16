@@ -2,6 +2,7 @@
 hide:
 #   - navigation
 #   - toc
+  - feedback
 ---
 
 # 知足且上进，温柔且坚定

@@ -1,3 +1,7 @@
+---
+tags:
+  - Mac
+---
 ![img](https://img-blog.csdnimg.cn/19fedf7349ca4a73a8374b977832cb78.png)
 类似上图这种情况的……
 

@@ -1,3 +1,7 @@
+---
+tags:
+  - Mkdocs
+---
 # Publish a Website with Material for MkDocs and GitHub Pages  
 !!! Note
     For example:[Mkdocs静态网站制作](https://squidfunk.github.io/mkdocs-material/)   
