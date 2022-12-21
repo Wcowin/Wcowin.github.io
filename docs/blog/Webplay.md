@@ -24,19 +24,28 @@
 - [IPA](https://decrypt.day/)
 - [视频人声分离](https://vocalremover.org/)
 - [键盘检测](https://keyboardtester.co/keyboard-tester)
+- [ios越狱](https://xina.ss03.cn/)    
+- [Google Analytics](https://analytics.google.com/analytics/web/#/p345934440/reports/intelligenthome)
+- [七牛云](https://portal.qiniu.com/home)
+- [浩客](https://app.howxm.com/apps/bb241dcf5625c39207fda32f1542e4f5)
 ## **图像**  
 
 - [徕卡水印](https://www.immers.icu/) （仅限ios快捷指令）
 - [在线抠图软件_图片去除背景](https://www.remove.bg/zh)  
 - [33搜帧](https://fse.agilestudio.cn/) (搜索到视频素材中的每一帧画面)    
 - [Unsplash](https://www.xiaozhongjishu.com/sites/113.html) (美图)  
+- [500px](https://500px.com.cn/user/login?redirect=https%3A%2F%2F500px.com.cn%2Fcommunity%2Findex.html)  (视觉中国旗下网站)
+- [pixabay](https://pixabay.com/zh/)  (免费正版高清图片素材库)
 - [P站](https://www.pixiv.net/)  （咳咳不解释）
-- [Mac软件icon图标](https://macosicons.com/#/)  （图标资源全的离谱，免费～）  
-- [Icon](https://www.iconfont.cn/collections/index?spm=a313x.7781069.1998910419.da2e3581b&type=1)  
+- [高清美女写真](https://yskhd.com/)  (仅供学术交流)
+- [Mac软件icon图标](https://macosicons.com/#/)  （图标资源全的离谱，完全免费～）  
+- [阿里巴巴矢量图标库](https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a)  
 
-## **视频处理/下载**  
+## **视频处理/下载/播放**  
 
-- [在线视频解析工具](https://pv.vlogdownloader.com/)  (轻松在线下载视频)  
+- [在线视频解析工具](https://pv.vlogdownloader.com/)  (轻松在线下载视频) 
+- [Twitter视频下载器](https://www.getfvid.com/zh/twitter)
+- [IINA](https://www.iina.io/)   (IINA 是一款采用现代设计和流线型功能的在线mac视频播放器)
 
 ## **学习**
 
@@ -109,6 +118,7 @@
 - [Hexo](https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85-Hexo)
 - [Git](https://git-scm.com/)
 - [Node](https://nodejs.org/en/)
+- [YAMl](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
 ## **设计**
 
 - [Fotor](https://www.fotor.com/cn/)(简单好用的在线图片编辑软件)
