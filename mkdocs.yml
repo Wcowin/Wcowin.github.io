@@ -166,13 +166,13 @@ nav:
     - Hometown: trip/LH.md
 
   - 标签: tag.md
-  - 留言板: messageboard.md
+  #- 留言板: messageboard.md
   - 关于:
     - 个人履历: about/geren.md
     - 网站制作: about/web.md
     - 支持作者: about/zcw.md
     - Test: about/test.md
-    - 友链: about/link.md
+    #- 友链: about/link.md
     - 毕业之前值得去做的30件事: about/biye.md
   
   
