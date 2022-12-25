@@ -2,6 +2,8 @@
 tags:
   - Telegram
 ---
+[:simple-telegram:](https://web.telegram.org/z/)
+
  <p>更新时间:2022-10-14<br />
 原文出处:<a href="https://congcong0806.github.io/2018/04/24/Telegram">Telegram 群组、频道、机器人 - 汇总分享</a></p>
 

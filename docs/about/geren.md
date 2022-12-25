@@ -7,12 +7,15 @@ hide:
 
 # 知足且上进，温柔且坚定
 !!! note "About me"
-    * CTBU电子信息工程专业本科在读  
-    * 热爱折腾技术💻～
-    * 喜欢村上春树📖，擅长羽毛球🏸️
-    * 找到我 &#x1F4A1;→:simple-github:[GitHub](https://github.com/Wcowin"GitHub")
+    * CTBU电子信息工程专业本科在读  :star2:
+    * 热爱折腾技术 :computer:
+    * 喜欢村上春树📖，擅长羽毛球 :badminton:
+    * [找到我](https://github.com/Wcowin) &#x1F4A1;→:simple-github:[GitHub](https://github.com/Wcowin)  
  
+
 ![](https://user-assets.sxlcdn.com/images/951476/Fm48yHvthNihBKjulkCq_wVdIW3K.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/interlace/1/format/jpeg)
+<!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats)   -->
+
 ***  
 <!-- <font size=6>感谢我亲爱的家人们。  
 我亲爱的弟弟，他正在读小学</font> -->

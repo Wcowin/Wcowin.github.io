@@ -2,7 +2,7 @@
 tags:
   - 技术分享
 ---
-# 什么是github？:smile: 
+# 什么是github？:fontawesome-brands-square-github:
 
 GitHub是全球最大的 ~~同性交友网站~~ 软件开发平台，知名公司和个人都使用它来开发和共享代码。  (由于程序员群体里缺少女性，拥有高纯度男性用户的GitHub，也被戏称为“全球最大的同性交友网站”)
 ***
@@ -25,3 +25,5 @@ GitHub 可以被视为代码的云存储，您还可以在其中轻松协作、�
 与 Sourceforge 相比，GitHub 有一个无广告且最重要的是干净的界面，具有强大且有用的功能，开发人员可以利用这些功能。从那时起，GitHub 已成为使用 Git 的项目的首选托管平台。
 
 截至 2020 年 1 月，GitHub 是世界上最大的源代码宿主，拥有超过 1 亿个软件存储库（其中 2800 万个是公共存储库）和超过 4000 万用户使用其平台。
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats)  

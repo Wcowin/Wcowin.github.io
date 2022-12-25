@@ -25,7 +25,7 @@ tags:
 [飞桨 AI Studio](https://aistudio.baidu.com/aistudio/index)（免费AI、图形相关的GPU算力，量大管饱)  
 [图说](https://tushuo.baidu.com/)（图表编辑器)
 
-## 360    
+## 360   
 [360 Zip](http://www.360totalsecurity.com/360zip/)（无广告、无捆绑压缩软件）  
 [手心输入法](https://www.xinshuru.com/)（无广告，安卓剪贴板兼容性好)
 

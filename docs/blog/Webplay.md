@@ -1,4 +1,4 @@
-## **工具类**
+## **工具类:material-tools:**
 
 * [万物指南](https://zh.wikihow.com/首页)  （互联网上最值得信赖的指南网站）
 - [空投快传](https://airportal.cn/)   （超级好用的全平台文件隔空投送）  
@@ -28,7 +28,7 @@
 - [Google Analytics](https://analytics.google.com/analytics/web/#/p345934440/reports/intelligenthome)
 - [七牛云](https://portal.qiniu.com/home)
 - [浩客](https://app.howxm.com/apps/bb241dcf5625c39207fda32f1542e4f5)
-## **图像**  
+## **图像:material-image:**  
 
 - [徕卡水印](https://www.immers.icu/) （仅限ios快捷指令）
 - [在线抠图软件_图片去除背景](https://www.remove.bg/zh)  
@@ -41,13 +41,13 @@
 - [Mac软件icon图标](https://macosicons.com/#/)  （图标资源全的离谱，完全免费～）  
 - [阿里巴巴矢量图标库](https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a)  
 
-## **视频处理/下载/播放**  
+## **视频处理/下载/播放:fontawesome-solid-video:**  
 
 - [在线视频解析工具](https://pv.vlogdownloader.com/)  (轻松在线下载视频) 
 - [Twitter视频下载器](https://www.getfvid.com/zh/twitter)
 - [IINA](https://www.iina.io/)   (IINA 是一款采用现代设计和流线型功能的在线mac视频播放器)
 
-## **学习**
+## **学习:material-android-studio:**
 
 - [Github](https://github.com/) (同性交友网站😁)  
 - [Gitee](https://gitee.com/explore) (国内的GitHub)
@@ -65,7 +65,7 @@
 - [知否](http://www.daanbar.com/index.html)(一款学霸学渣都不能错过的学习考试神器)  
 - [看历史](http://www.lishiju.net/timeline.html)  
 - [花语大全](https://www.ip138.com/huayu/)
-## **观影**  
+## **观影:material-movie-open:**  
 
 - [茶杯狐](https://cupfox.app/) （资源多，广告少）  
 - [剧白白](https://jubaibai.cc/) （干净的免费网站）  
@@ -76,7 +76,7 @@
 - [Libvio](https://libvio.fun/)   (推荐)
 - [全民影视vip视频在线解析网](https://www.daga.cc/) (搜片直接看，有广告）
 
-## **小说**
+## **小说:octicons-book-16:**
 
 知乎盐选免费在线
 
@@ -84,10 +84,10 @@
 - [我不是盐神](https://onehu.xyz/)
 - [知乎搬运工](https://www.sxctp.org/)
 
-## **音乐**
+## **音乐:material-music:**
 - [Listen 1](https://listen1.github.io/listen1/)(Listen 1可以搜索和播放来自网易云音乐，QQ音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲)
 - [落雪音乐](https://lxmusic.toside.cn/)
-## **博客/导航**  
+## **博客/导航:simple-blogger:**  
 
 - [Wcowin的个人网站](https://wcowin.github.io/mymkdocs/)  （分享点有趣的技术）
 - [Power-User:Telegram/Surge/Clash](https://congcong0806.github.io/)  （电报Telegram教程--有）
@@ -97,7 +97,7 @@
 - [利其器导航](https://www.jiceng.org/wzdh) 
 - [电报狗](https://www.smsgou.com/)
   
-## **技术/IT**
+## **技术/IT:material-star-check-outline:**
 
 - [Node.js](https://nodejs.org/en/)
 - [Git](https://git-scm.com/)
@@ -119,7 +119,7 @@
 - [Git](https://git-scm.com/)
 - [Node](https://nodejs.org/en/)
 - [YAMl](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
-## **设计**
+## **设计:material-material-design:**
 
 - [Fotor](https://www.fotor.com/cn/)(简单好用的在线图片编辑软件)
 - [Adobe](https://color.adobe.com/zh/explore/newest/)(懂得都懂)
@@ -131,7 +131,7 @@
 - [配色](https://webgradients.com/)
 - [中国色](http://zhongguose.com/)
 
-## **ios捷径**
+## **:simple-ios:捷径**
 
 ✅ ShortCuts - 快捷指令网站合集  
 ▎快捷指令
@@ -145,7 +145,7 @@
 - [小良哥捷径](https://iphone8.vip/gz.html)
  
 
-## **好玩**
+## **好玩:simple-funimation:**
 
 - [宇宙的刻度](https://htwins.net/scale2/)
 - [100000stars](http://stars.chromeexperiments.com/)

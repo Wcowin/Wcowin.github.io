@@ -1,7 +1,7 @@
 ---
 title: 我是，我是宋清如至上主义者
 ---
-![](https://www.yyinn.net/wp-content/uploads/2019/04/2019042115312530.jpg)
+![](https://th.bing.com/th/id/R.f4e5fec6c3e254948f1c4474476fd4a7?rik=AJdupK4uER2pZQ&riu=http%3a%2f%2fimg1.gtimg.com%2fcul%2fpics%2fhv1%2f15%2f139%2f2107%2f137043135.jpg&ehk=sKcsuLfFKe0eHJSeluBB%2btPdaNShQXvBTbUNNir0KNE%3d&risl=&pid=ImgRaw&r=0)
 
 要是有人问起我来，“你善于踢足球呢，还是善于写情书？”
 
@@ -165,4 +165,4 @@ I wake up to love you.
 
 “你实在太好，你简直不是女人。”
 
-“傻瓜，我爱你。”
+**“傻瓜，我爱你。”**
