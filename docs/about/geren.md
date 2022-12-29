@@ -13,10 +13,10 @@ hide:
     * [找到我](https://github.com/Wcowin) &#x1F4A1;→:simple-github:[GitHub](https://github.com/Wcowin)  
  
 
-![](https://user-assets.sxlcdn.com/images/951476/Fm48yHvthNihBKjulkCq_wVdIW3K.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/interlace/1/format/jpeg)
+<!-- ![](https://myimgs.pages.dev/IMG/MuseLink分享卡王科文.png) -->
+![](https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png)
 <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats)   -->
 
-***  
 <!-- <font size=6>感谢我亲爱的家人们。  
 我亲爱的弟弟，他正在读小学</font> -->
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=1&height=32"></iframe> -->
