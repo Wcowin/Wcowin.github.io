@@ -4,8 +4,8 @@ site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
 #[UI]
 theme:
-  # custom_dir: overrrides
   name: material
+  # custom_dir: overrrides
   font:
     text: Bitter
   icon:
@@ -161,7 +161,7 @@ nav:
     - 入党结业考试题总结: relax/rudang.md
     
   - 旅行: 
-    - trip/index.md
+    # - trip/index.md
     - 重庆: trip/CQ.md
     - Hometown: trip/LH.md
 
@@ -180,6 +180,10 @@ copyright: Copyright &copy; 2022王科文 # 左下角的版权声明
   
 
 extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
   generator: false  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/twitter 
@@ -218,17 +222,14 @@ extra:
     
 
 plugins:
-  # - glightbox:
-  #     loop: true
-  #     effect: zoom
-  #     zoomable: true
-  #     draggable: true
-  #     height: auto
-  - search:
-      separator: '[\s\u200b\-]'
-  # - social
+  # - git-authors
+  - search
   - tags:
       tags_file: tag.md
+  - git-revision-date-localized:
+      type: datetime
+      #fallback_to_build_date: true
+      enable_creation_date: true
 
   
 
@@ -239,7 +240,7 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - meta # 支持Markdown文件上方自定义标题标签等
+  # - meta # 支持Markdown文件上方自定义标题标签等
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
@@ -247,6 +248,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.snippets
+  - pymdownx.smartsymbols
   - pymdownx.tilde
   - pymdownx.superfences:
       custom_fences:
@@ -281,3 +283,4 @@ extra_javascript:
   # - javascripts/backgroud.js
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/video.css

@@ -14,7 +14,7 @@ hide:
  
 
 <!-- ![](https://myimgs.pages.dev/IMG/MuseLink分享卡王科文.png) -->
-![](https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png)
+![](https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png){: .zoom}
 <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats)   -->
 
 <!-- <font size=6>感谢我亲爱的家人们。  

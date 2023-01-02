@@ -188,4 +188,10 @@ sequenceDiagram
     euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
     purus auctor massa, nec semper lorem quam in massa.
 
+
+<div class="progress progress-60plus">
+    <div class="progress-bar" style="width:50.00%">
+        <p class="progress-label">50%</p>
+    </div>
+</div>
 :octicons-arrow-right-24: [点我回到顶部](#) 
