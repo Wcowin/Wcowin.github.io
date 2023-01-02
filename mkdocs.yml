@@ -226,10 +226,10 @@ plugins:
   - search
   - tags:
       tags_file: tag.md
-  - git-revision-date-localized:
-      type: datetime
-      #fallback_to_build_date: true
-      enable_creation_date: true
+  # - git-revision-date-localized:
+  #     type: datetime
+  #     #fallback_to_build_date: true
+  #     enable_creation_date: true
 
   
 
