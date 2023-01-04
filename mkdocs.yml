@@ -166,7 +166,7 @@ nav:
     - Hometown: trip/LH.md
 
   - 标签: tag.md
-  #- 留言板: messageboard.md
+  # - 留言板: messageboard.md
   - 关于:
     - 个人履历: about/geren.md
     - 网站制作: about/web.md
