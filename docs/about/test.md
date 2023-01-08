@@ -11,8 +11,6 @@
 - :fontawesome-brands-css3: __CSS__ for text running out of boxes
 - :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
 
-***
-
 </div>
 ***
 <div class="grid cards" markdown>
@@ -134,15 +132,12 @@ def bubble_sort(items):
     * [ ] Praesent sed risus massa
 - [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
 
-***
+
 $$
 \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
 $$
 
 <!-- ![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" } -->
-
- 
-***  
 
 左对齐，右对齐  
 ![Image title](media/binggo.jpg){ align=left }
@@ -187,6 +182,8 @@ sequenceDiagram
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
     euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
     purus auctor massa, nec semper lorem quam in massa.
+
+++ctrl+alt+del++  
 
 
 <div class="progress progress-60plus">

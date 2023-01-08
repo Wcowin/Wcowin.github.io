@@ -201,12 +201,12 @@ extra:
     feedback:
       title: 此页面有帮助吗？
       ratings:
-        - icon: material/emoticon-happy-outline
+        - icon: material/thumb-up-outline
           name: This page was helpful
           data: 1
           note: >-
-            谢谢你的反馈！
-        - icon: material/emoticon-sad-outline
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
           note: >- 
@@ -222,14 +222,9 @@ extra:
     
 
 plugins:
-  # - git-authors
   - search
   - tags:
       tags_file: tag.md
-  # - git-revision-date-localized:
-  #     type: datetime
-  #     #fallback_to_build_date: true
-  #     enable_creation_date: true
 
   
 
