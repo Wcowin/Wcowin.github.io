@@ -1,19 +1,32 @@
+## 什么是原神
 在《原神》里，玩家将扮演一位名为「旅行者」的神秘角色，在异世界旅途中被陌生的神明拦截，苏醒后踏上寻访七神的冒险之旅。在未知的旅行中，玩家将邂逅琴、丽莎、安柏等众多性格各异、能力独特的同伴，与他们共同击败强敌，找回失散的亲人—— 同时，逐步发掘「原神」的真相  
-![](https://upload-bbs.mihoyo.com/upload/2020/11/29/253851692/06f77bc3895942b064940b018bfcb584_786747886500528861.jpg)
+
+![img](https://cn.mcecy.com/image/20230108/10e9fea10127f0b8ca2036e144e8e564.jpg)
 
 <!-- <iframe src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%></iframe> -->
-宣传片：
-<iframe  src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>
+
+
 ***
-我也勉强算是原神的老玩家了，**UID:187271419**，从16级萌新一路杀到50级  
+我也勉强算是原神的老玩家了，1.6卡池入的坑（可莉）
 
-我主打元素反应（刻晴+烟绯），因为有绫华也会玩永冻流，不过最近发现凯亚早柚香凌打融化也是不错的～  
-
+## **UID:187271419**  
+不肝不氪不原神~ 
+## 3.2  
 3.2卡池  八重神子我来了(其实抽了公子)    
+## 3.3  
+3.3洒洒水啦,早知道抽流浪者了，后悔死了  
+## 3.4
+3.4版本就要来了，海灯节不容错过，满打满算可以25抽真的香  
 
-原神陪伴了我大学的少许闲暇时光,如果让我推荐手游，我毫不犹豫推荐**原神**，不肝不氪不原神~  
+1.第一期 海哥 魈 （瑶瑶）  
+2.第二期 胡桃 夜兰  
+3.武器池子角色各自的专武  
+4.活动 海灯节大活动包含4个子活动/演武传心
+/蔷薇再开时/璃月自选4星角色/富贵登门（签到10连海灯节答谢活动(邮件发3纠缠)/鬼兜虫斗虫  
+5.新增两个长篇世界大任务  
+6.新皮肤 丽莎（免费） 神里凌华（氪金)
 ***
-下面是 ~~科普~~ 时间
+咳咳，下面是 ~~科普~~ 时间
 ## 原神元素高等反应论（必修学分）  
 
 火、水、风、雷、草、冰、岩
@@ -82,9 +95,26 @@
 「迟滞之水」状态会延长技能冷却时间。如果能通过元素反应将角色附着的水元素消除的话，就能解除这种状态。
 
 ## 探索建议  
-首推打元素反应（见上），角色技能>角色星级，圣遗物+命座，要刷一套匹配的圣遗物  
+角色技能>角色星级，合理配队>圣遗物+命座，要刷一套好的的圣遗物，一句话“肝就完事了”  
 
 ## 好图共赏
 ***
 ![](https://www.tuwoer.com/wp-content/uploads/2022/12/byu-17.jpg)
+![img](https://cn.mcecy.com/image/20230108/3bfb9af581ddc477cf5ac2dafd261b06.jpeg)
+![img](https://cn.mcecy.com/image/20230108/e44aa22df8a9ab5654e227d7f04c04e9.jpeg)
 ![](https://www.tuwoer.com/wp-content/uploads/2013/12/1632247945-2021092118122572_1_post_n9RZZ12303.jpg)
+![img](https://cn.mcecy.com/image/20230108/f0d5cfca068206fd2382becac588ee68.jpeg)
+![img](https://cn.mcecy.com/image/20230108/d3c0e72490ac478d6ce0f13d10f1a844.jpeg)
+![img](https://cn.mcecy.com/image/20230108/e2b4b6ca6592bd0304c45d0d36470c44.jpeg)
+![img](https://cn.mcecy.com/image/20230108/a4460a464c43f1c7da7a512ea33719b2.jpeg)
+![img](https://cn.mcecy.com/image/20230108/e89504d6d7982c47f0cf3443fd2c2a47.jpeg)
+![img](https://cn.mcecy.com/image/20230108/5cd5db6a0f46e266b3ca4026cf28c9bf.jpeg)
+![img](https://cn.mcecy.com/image/20230108/73716ace8d696eee78843bfbb746f469.jpeg)
+![img](https://cn.mcecy.com/image/20230108/c6aecc58d90dcfa5c06dd88b13fdf4c7.jpeg)
+
+## 温馨提醒
+![img](https://cn.mcecy.com/image/20230108/3320ede1dc67e3bda43c96e1824efcb4.jpeg)
+
+## 宣传片
+
+<iframe  src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>

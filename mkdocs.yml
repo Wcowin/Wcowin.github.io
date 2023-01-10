@@ -205,7 +205,7 @@ extra:
           name: This page was helpful
           data: 1
           note: >-
-            Thanks for your feedback!
+            谢谢你的反馈！
         - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0

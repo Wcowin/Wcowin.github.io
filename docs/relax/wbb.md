@@ -3,7 +3,7 @@
 ![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
 ![](http://user-assets.sxlcdn.com/images/805944/FsGMQC5y3tJRIl2dwHaJ0RQ9uYyt.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
-![](https://user-assets.sxlcdn.com/images/805944/Fv7UxZ_JaU7LgcqUh6WrLiJGdGO_.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg)
+
 
 **王冰冰**
 
