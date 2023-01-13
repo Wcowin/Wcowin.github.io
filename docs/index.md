@@ -9,9 +9,9 @@ comments: true
 
 
 <!-- <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> -->
-# <font color= #4b78d8 >**你好**</font>
- <font face="宋体" color= #4b78d8 size=7 >Welcome to my [Website](http://wcowin.work/) </font>
-  :star2:<!-- :fontawesome-brands-twitter:{ .twitter } -->
+# <font color= #4b78d8 >**Hello~**</font>
+ <font face="宋体" color= #4b78d8 size=7 >欢迎访问我的 [个人网站](http://wcowin.work/) </font>
+  <!-- :fontawesome-brands-twitter:{ .twitter } -->
 
 !!! Note "Tip"
     - 通过主题和目录以打开文章  

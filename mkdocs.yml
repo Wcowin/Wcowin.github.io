@@ -61,6 +61,7 @@ nav:
   - 博客:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
+    - 语雀技术分享: blog/yuque.md
     - Telegram 群组、频道、机器人  汇总分享: blog/TG.md
     
     - 技术分享:
@@ -148,13 +149,13 @@ nav:
         - 推荐的番剧: relax/Movie/tuijianfanju.md
         - 推荐的电影: relax/Movie/tuijiandedianyin.md
         - 推荐的电视剧: relax/Movie/tuijiandsj.md
-    - Music:
-        - shape of you: relax/Music/soy.md
-        - Floating: relax/Music/Floating.md
-        - 朱砂: relax/Music/zhusha.md
-        - 关于郑州的记忆: relax/Music/gyzzdjy.md
-        - 若把你: relax/Music/rbn.md
-        - 絶頂讃歌: relax/Music/jdzg.md
+    # - Music:
+    #     - shape of you: relax/Music/soy.md
+    #     - Floating: relax/Music/Floating.md
+    #     - 朱砂: relax/Music/zhusha.md
+    #     - 关于郑州的记忆: relax/Music/gyzzdjy.md
+    #     - 若把你: relax/Music/rbn.md
+    #     - 絶頂讃歌: relax/Music/jdzg.md
     - Game:
         - 原神: relax/Game/yuanshen.md
         - 如何玩好《王者荣耀》？: relax/Game/wzry.md
@@ -169,6 +170,7 @@ nav:
   # - 留言板: messageboard.md
   - 关于:
     - 个人履历: about/geren.md
+    - 个人目标: about/goal.md
     - 网站制作: about/web.md
     - 支持作者: about/zcw.md
     - Test: about/test.md
