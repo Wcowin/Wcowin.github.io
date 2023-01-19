@@ -110,6 +110,8 @@ nav:
     - Markdown: 
         - Markdown指南: develop/Markdown/markdown.md
         - MWeb Pro: develop/Markdown/MWeb.md
+    
+    - 利用Lighthouse测试网站性能: develop/lighthouse.md
     - What is Github: develop/Github.md
     - 大厂们的良心软件～: develop/fenxiang.md
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
@@ -182,10 +184,10 @@ copyright: Copyright &copy; 2022王科文 # 左下角的版权声明
   
 
 extra:
-  alternate:
-    - name: English
-      link: /en/ 
-      lang: en
+  # alternate:
+  #   - name: English
+  #     link: /en/ 
+  #     lang: en
   generator: false  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/twitter 

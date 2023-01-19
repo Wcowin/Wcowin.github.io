@@ -68,7 +68,7 @@ nav:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
     - C语言: blog/c.md
-    - 科学上网: blog/kexue.md
+    - kexueshangwang: blog/kexue.md
   - 开发: 
     - Markdown: develop/markdown.md
     - MWeb Pro: develop/MWeb.md
