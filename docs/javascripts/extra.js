@@ -578,5 +578,3 @@ document.querySelectorAll('.zoom').forEach(item => {
     })
 });
 
-
-
