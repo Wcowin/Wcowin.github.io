@@ -80,7 +80,7 @@ GitHub > Repository > Settings > Actions > General >
 - Click Save
 
 ```
-$ git remote add origin git@github.com:Yang-Xijie/mkdocs-site.git # change to your github repo
+$ git remote add origin git@github.com:Wcowin/Wowin.github.io.git # change to your github repo
 $ git branch -M main
 $ git push -u origin main
 ```

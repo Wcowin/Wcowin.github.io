@@ -66,6 +66,7 @@
 - [知否](http://www.daanbar.com/index.html){target="_blank"}(一款学霸学渣都不能错过的学习考试神器)  
 - [看历史](http://www.lishiju.net/timeline.html){target="_blank"}  
 - [花语大全](https://www.ip138.com/huayu/){target="_blank"}
+- [1024code](https://1024code.com/){target="_blank"}
 ## **观影:material-movie-open:**  
 
 - [茶杯狐](https://cupfox.app/){target="_blank"} （资源多，广告少）  
