@@ -14,12 +14,21 @@ comments: true
   <!-- :fontawesome-brands-twitter:{ .twitter } -->
 
 !!! Note "Tip"
+    - 只分享好玩有趣的东西~
     - 通过主题和目录以打开文章  
-
         - PC端 在上方标签栏选择主题 在左侧目录选择文章
         - 移动端 点击左上角图标选择主题和文章   
 
-    - 搜索关键词以打开文章    
+    - 搜索关键词以打开文章
+        
+
+推荐文章:material-book::  
+
+  - [利用mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
+  - [好用/好玩网站分享](blog/Webplay.md)
+  - [Mac/windows软件网站汇总](blog/macsoft.md )
+  - [个人履历](about/geren.md) 
+   
 [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){ .md-button }
 
 
