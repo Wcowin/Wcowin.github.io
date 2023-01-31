@@ -22,4 +22,5 @@ hide:
   </a>
 </p>
 
+[Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){ .md-button }
 

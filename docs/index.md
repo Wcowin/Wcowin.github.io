@@ -27,9 +27,10 @@ comments: true
   - [利用mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
   - [好用/好玩网站分享](blog/Webplay.md)
   - [Mac/windows软件网站汇总](blog/macsoft.md )
+  - [实用脚本分享](blog/technique sharing/jiaoben.md)
   - [个人履历](about/geren.md) 
    
-[Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){ .md-button }
+
 
 
 
