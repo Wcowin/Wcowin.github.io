@@ -29,6 +29,7 @@
 - [七牛云](https://portal.qiniu.com/home){target="_blank"}
 - [浩客](https://app.howxm.com/apps/bb241dcf5625c39207fda32f1542e4f5){target="_blank"}
 - [JetBrains Mono字体](https://www.jetbrains.com/lp/mono/){target="_blank"}  (为编程而生的字体)
+- [即书](https://www.keysuper.com/){target="_blank"}（在线制作PPT）
 ## **图像:material-image:**  
 
 - [徕卡水印](https://www.immers.icu/){target="_blank"} （仅限ios快捷指令）
@@ -67,6 +68,7 @@
 - [看历史](http://www.lishiju.net/timeline.html){target="_blank"}  
 - [花语大全](https://www.ip138.com/huayu/){target="_blank"}
 - [1024code](https://1024code.com/){target="_blank"}
+- [必看网](https://www.biikan.com/)（人生必看的书籍）{target="_blank"}
 ## **观影:material-movie-open:**  
 
 - [茶杯狐](https://cupfox.app/){target="_blank"} （资源多，广告少）  
@@ -115,6 +117,7 @@
 - [docsify](https://docsify.js.org/#/zh-cn/){target="_blank"}
 - [Java](https://mrjokersince1997.github.io/My-Notes/#/){target="_blank"}
 - [菜鸟](https://www.runoob.com/){target="_blank"}
+- [源码之家](https://www.mycodes.net/){target="_blank"}
 - [bootcss](https://www.bootcss.com/){target="_blank"}
 - [Typescript](https://typescript.bootcss.com/){target="_blank"}
 - [Hexo](https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85-Hexo){target="_blank"}
@@ -122,6 +125,7 @@
 - [Node](https://nodejs.org/en/){target="_blank"}
 - [YAMl](http://www.ruanyifeng.com/blog/2016/07/yaml.html){target="_blank"}
 - [Emmet语法](https://docs.emmet.io/cheat-sheet/){target="_blank"}
+- [在线接口测试](https://getman.cn/){target="_blank"}
 ## **设计:material-material-design:**
 
 - [Fotor](https://www.fotor.com/cn/){target="_blank"}(简单好用的在线图片编辑软件)
@@ -154,3 +158,5 @@
 - [100000stars](http://stars.chromeexperiments.com/){target="_blank"}
 - [小霸王](https://www.yikm.net/){target="_blank"}
 - [网易云游戏](https://cg.163.com/#/mobile){target="_blank"}
+- [渣男-说话的艺术](https://lovelive.tools/){target="_blank"}
+- [上班摸鱼必备](http://fakeupdate.net/){target="_blank"}(假装电脑系统升级)
