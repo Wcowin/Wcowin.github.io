@@ -30,6 +30,8 @@
 - [浩客](https://app.howxm.com/apps/bb241dcf5625c39207fda32f1542e4f5){target="_blank"}
 - [JetBrains Mono字体](https://www.jetbrains.com/lp/mono/){target="_blank"}  (为编程而生的字体)
 - [即书](https://www.keysuper.com/){target="_blank"}（在线制作PPT）
+- [资源分享站](http://fxapp.ga/){target="_blank"}
+- [IP地址查询](https://www.ip138.com/){target="_blank"}
 ## **图像:material-image:**  
 
 - [徕卡水印](https://www.immers.icu/){target="_blank"} （仅限ios快捷指令）
@@ -160,3 +162,4 @@
 - [网易云游戏](https://cg.163.com/#/mobile){target="_blank"}
 - [渣男-说话的艺术](https://lovelive.tools/){target="_blank"}
 - [上班摸鱼必备](http://fakeupdate.net/){target="_blank"}(假装电脑系统升级)
+- [灰机wiki](https://www.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5){target="_blank"}
