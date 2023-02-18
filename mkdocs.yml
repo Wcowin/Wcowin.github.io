@@ -67,6 +67,7 @@ nav:
     - 技术分享:
         - Win11镜像下载、壁纸及KMS激活 : blog/technique sharing/win.md
         - 实用脚本分享: blog/technique sharing/jiaoben.md
+        - 搭建个人图床: blog/technique sharing/tuchuang.md
         - oh-my-zsh 更新: blog/technique sharing/ohmuzsh.md
         - 解决谷歌翻译用不了的问题: blog/technique sharing/googletranslate.md
         - 爱心代码: blog/technique sharing/aixin.md
@@ -107,12 +108,14 @@ nav:
         - C笔记: blog/C language/c.md
     
   - 开发: 
+    - 如何注册ChatGPT: develop/ChatGPT.md
     - Markdown: 
         - Markdown指南: develop/Markdown/markdown.md
         - MWeb Pro: develop/Markdown/MWeb.md
     - 1024code: develop/1024code.md
     - 利用Lighthouse测试网站性能: develop/lighthouse.md
     - What is Github: develop/Github.md
+    - 如何将 github pages 迁移到 vercel 上托管: develop/vercel.md
     - 大厂们的良心软件～: develop/fenxiang.md
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
 
@@ -178,6 +181,7 @@ nav:
     - Test: about/test.md
     #- 友链: about/link.md
     - 毕业之前值得去做的30件事: about/biye.md
+    - 润学之为什么润: about/run.md
   
   
 copyright: Copyright &copy; 2022王科文 # 左下角的版权声明
