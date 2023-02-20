@@ -178,10 +178,12 @@ nav:
     - 个人目标: about/goal.md
     - 网站制作: about/web.md
     - 支持作者: about/zcw.md
-    - Test: about/test.md
+    
     #- 友链: about/link.md
     - 毕业之前值得去做的30件事: about/biye.md
     - 润学之为什么润: about/run.md
+    - 免责声明: about/shengming.md
+    - Test: about/test.md
   
   
 copyright: Copyright &copy; 2022王科文 # 左下角的版权声明

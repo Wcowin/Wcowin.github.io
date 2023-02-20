@@ -32,6 +32,15 @@
 - [即书](https://www.keysuper.com/){target="_blank"}（在线制作PPT）
 - [资源分享站](http://fxapp.ga/){target="_blank"}
 - [IP地址查询](https://www.ip138.com/){target="_blank"}
+- [ChatGPT](https://chat.openai.com/chat){target="_blank"}
+- [虚拟SMS](https://sms-activate.org/download-app){target="_blank"}
+- [iTerm2](https://iterm2.com/documentation.html){target="_blank"}
+- [green-wall](https://green-wall.vercel.app/){target="_blank"}  
+- [一次性邮箱](https://m.kuku.lu/){target="_blank"}
+- [在线工具箱](https://tools.fun/){target="_blank"}
+ 
+ 
+
 ## **图像:material-image:**  
 
 - [徕卡水印](https://www.immers.icu/){target="_blank"} （仅限ios快捷指令）
@@ -71,6 +80,7 @@
 - [花语大全](https://www.ip138.com/huayu/){target="_blank"}
 - [1024code](https://1024code.com/){target="_blank"}
 - [必看网](https://www.biikan.com/)（人生必看的书籍）{target="_blank"}
+- [男孩子武器训练手册](https://jiba.plus/){target="_blank"}(女生勿看) 
 ## **观影:material-movie-open:**  
 
 - [茶杯狐](https://cupfox.app/){target="_blank"} （资源多，广告少）  
@@ -81,6 +91,8 @@
 - [555电影](https://5dy6.vip/){target="_blank"}    
 - [Libvio](https://libvio.fun/){target="_blank"}   (推荐)
 - [全民影视vip视频在线解析网](https://www.daga.cc/){target="_blank"} (搜片直接看，有广告）
+- [泥视频](https://www.nivod.tv/){target="_blank"}
+ 
 
 ## **小说:octicons-book-16:**
 
@@ -102,6 +114,8 @@
 - [青柠起始页](https://limestart.cn/){target="_blank"}  (极简，好看)
 - [利其器导航](https://www.jiceng.org/wzdh){target="_blank"} 
 - [电报狗](https://www.smsgou.com/){target="_blank"}
+- [奈飞小铺](https://www.ihezu.cc/?sid=fSaqZq){target="_blank"}
+- [A姐分享](https://www.ahhhhfs.com/){target="_blank"} 
   
 ## **技术/IT:material-star-check-outline:**
 
@@ -128,6 +142,8 @@
 - [YAMl](http://www.ruanyifeng.com/blog/2016/07/yaml.html){target="_blank"}
 - [Emmet语法](https://docs.emmet.io/cheat-sheet/){target="_blank"}
 - [在线接口测试](https://getman.cn/){target="_blank"}
+- [Docker教]程(https://docker.easydoc.net/doc/81170005/cCewZWoN/lTKfePfP){target="_blank"}
+- [Unity](https://unity.cn/){target="_blank"} 
 ## **设计:material-material-design:**
 
 - [Fotor](https://www.fotor.com/cn/){target="_blank"}(简单好用的在线图片编辑软件)
@@ -139,6 +155,8 @@
 - [Noun Project](https://thenounproject.com/){target="_blank"}
 - [配色](https://webgradients.com/){target="_blank"}
 - [中国色](http://zhongguose.com/){target="_blank"}
+- [Headless UI](https://headlessui.com/){target="_blank"}
+ 
 
 ## **:simple-ios:捷径**
 
@@ -163,3 +181,4 @@
 - [渣男-说话的艺术](https://lovelive.tools/){target="_blank"}
 - [上班摸鱼必备](http://fakeupdate.net/){target="_blank"}(假装电脑系统升级)
 - [灰机wiki](https://www.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5){target="_blank"}
+- [原](https://paimon.moe/){target="_blank"} 
