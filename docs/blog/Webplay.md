@@ -111,6 +111,7 @@
 - [Power-User:Telegram/Surge/Clash](https://congcong0806.github.io/){target="_blank"}  （电报Telegram教程--有）
 - [小众技术](https://www.xiaozhongjishu.com/?from=itab){target="_blank"}
 - [itab标签页](https://go.itab.link/){target="_blank"}  （超级超级好用的Edge，chrome启动标签页）
+- [快一点启始页](https://go.mtab.cc/){target="_blank"}
 - [青柠起始页](https://limestart.cn/){target="_blank"}  (极简，好看)
 - [利其器导航](https://www.jiceng.org/wzdh){target="_blank"} 
 - [电报狗](https://www.smsgou.com/){target="_blank"}
