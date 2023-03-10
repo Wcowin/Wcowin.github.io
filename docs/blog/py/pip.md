@@ -55,5 +55,15 @@ pip默认是从 PyPI
 ```pip list --o```  
 ### 3.查询指定路径下的安装包
 ```pip list --path ```指定路径(必须指定到直接存放包的文件)
+### 4.更新指定包的依赖包
 
+```
+pip install pip-review  # 安装 pip-review
+ 
+pip-review  # 查看可更新的包
+ 
+pip-review --auto  # 自动更新所有包
+ 
+pip-review --local --interactive  # 更新包，提供操作可选项：[Y]es, [N]o, [A]ll, [Q]uit
+```
 

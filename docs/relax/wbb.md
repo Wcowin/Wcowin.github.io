@@ -4,7 +4,7 @@
 
 ![](http://user-assets.sxlcdn.com/images/805944/FsGMQC5y3tJRIl2dwHaJ0RQ9uYyt.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
-
+## 履历
 **王冰冰**
 
 中国内地记者、媒体人。  
@@ -73,14 +73,29 @@
 
 11月下旬至12月中旬，央视频推出《欧雷欧雷陪看团》和《球迷梦之夜》两档卡塔尔世界杯相关直播节目，王冰冰担任嘉宾和主持人；  
 
-12月16日，《闪闪发光的少年》第二季正式在央视频和哔哩哔哩上线！  
-2023年  
+12月16日，《闪闪发光的少年》第二季正式在央视频和哔哩哔哩上线！
 
-我们静静期待将来…
+2023年  
+1月11日至20日，由王冰冰配音的纪录片《奇妙中国》将在CCTV9、央视频等平台播出；  
+
+1月14日小年夜，参加中央广播电视总台2023年《网络春晚》；  
+
+1月15日，央视新闻联合科技部人才与科学普及司、中国科协科普部和总台北京总站举办的《酷啊未来 中国科技创新之夜》，王冰冰参与；  
+
+1月19日，王冰冰作为中央广播电视总台2023央视频重点节目片单发布会主持人，同时发布众多央视频节目；  
+
+癸卯新年前夕，王冰冰参与了中央广播电视总台春节联欢晚会的新媒体衍生节目《春晚进行时》和《young在春晚》；  
+
+春节期间，王冰冰将参与CCTV3《吉聚欢喜》，用七部生活轻喜剧，串联出万千家庭蓬勃锐气的年味故事，烘托出当代中国醇厚馨香的欢乐节庆；  
+
+第二届中国春兰节将于2月16日至2月19日举行，中央民族乐团团长赵聪,知名作家麦家 与总台记者王冰冰化身“春兰使者”，与你相约绍兴柯桥，共赴一场兰花之约；  
+
+3月1日，总台青春分享类节目《青春@2023》在央视新闻、央视网播出，总台记者化身“青春电台”主播。
+
 
 **（以上内容由[冰学网](https://mywbb.mysxl.cn/)综合各类信息编辑）**
 ***
-**美图奉上😘**
+## **美图奉上😘**
 
 ![](http://user-assets.sxlcdn.com/images/805944/FuPmbkF-MeeIgcF7YQJLay7fhp5r.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 ![](http://user-assets.sxlcdn.com/images/805944/Fm0oCwyRA2JHaw-Gu8VmwWjTJ56Q.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png)
@@ -100,4 +115,8 @@
 ![](http://user-assets.sxlcdn.com/images/805944/FtIBw15hQZOF3Xwh8s4XlXY5Npvi.jpeg?imageMogr2/strip/auto-orient/thumbnail/!200x200r/gravity/Center/crop/200x200/interlace/1/format/jpeg)
 ![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)  
 ![](http://user-assets.sxlcdn.com/images/805944/FrqBmLVChZp-Ttjh99l1Z7rkTyIi.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
+![Alt text](https://user-assets.sxlcdn.com/images/805944/FvKN_N6KJ68H25NIy92Hh09fk9QL.jpeg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1200x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FoHMK09eBbwW-lNQsLonpNUmtOLJ.jpeg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/Fr-1dCF-kODT5FdzFFshJXk57PpI.png?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Fformat%2Fpng)
 ![](https://user-assets.sxlcdn.com/images/805944/FmPtQboeRUUUKB0w4V5i181pXyqc.jpeg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FoT9bdBjAhu1GTOqoFK2U4Qa58iO.jpeg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)

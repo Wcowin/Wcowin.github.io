@@ -101,6 +101,8 @@ nav:
         - 安卓的子系统: blog/Win/anzhuodezixit.md
     - 学术:
         - LaTeX常用符号整理: blog/Academic/LaTeX.md
+        - 数学竞赛: 
+          - 第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答: blog/Academic/Math/14.md
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
