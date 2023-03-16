@@ -242,7 +242,6 @@ extra:
 
 plugins:
   - search
-  - glightbox
   - tags:
       tags_file: tag.md
 
