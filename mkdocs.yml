@@ -242,6 +242,7 @@ extra:
 
 plugins:
   - search
+  - glightbox
   - tags:
       tags_file: tag.md
 
@@ -288,7 +289,6 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
       permalink: "\ue157"
   
-     
 extra_javascript:
   - javascripts/extra.js
   - javascripts/mathjax.js
