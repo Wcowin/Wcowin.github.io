@@ -2,12 +2,6 @@
 tags:
   - Mkdocs
 ---
-<p align="center">
-  
-  <a href="https://squidfunk.github.io/mkdocs-material/#gh-dark-mode-only">
-    <img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/logo-dark.svg" width="320" alt="Material for MkDocs">
-  </a>
-</p>
 
 # Publish a Website with Material for MkDocs and GitHub Pages  
 !!! Note

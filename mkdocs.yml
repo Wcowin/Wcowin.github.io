@@ -122,6 +122,7 @@ nav:
     - 如何将 github pages 迁移到 vercel 上托管: develop/vercel.md
     - 大厂们的良心软件～: develop/fenxiang.md
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
+    - 看源码才懂: develop/kanyuanma.md
 
   - 闲话:
     - 小米: relax/xiaomo.md
@@ -142,6 +143,9 @@ nav:
         - luv letter: relax/Essay/luv letter.md
         - 有哪些给男孩子在谈恋爱时的忠告？: relax/Essay/zhonggao.md
         - 🐈: relax/Essay/cat.md
+    - 程序人生:
+        - 《程序员成长历程的四个阶段》: relax/Manong/sigejieduan.md
+        - 《程序员脱单指南》: relax/Manong/tuodanbukeneng.md
     - 写信:
         - 第一封: relax/Letter/letter1.md
         - 第二封: relax/Letter/letter2.md
@@ -169,6 +173,7 @@ nav:
         - 原神: relax/Game/yuanshen.md
         - 如何玩好《王者荣耀》？: relax/Game/wzry.md
     - 入党结业考试题总结: relax/rudang.md
+    - 程序猿神之楷模:一个人,一个网站,5.75亿美元卖掉: relax/kaimo.md
     
   - 旅行: 
     # - trip/index.md

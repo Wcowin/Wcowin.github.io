@@ -70,7 +70,7 @@
 - [36氪](https://www.36kr.com/){target="_blank"}
 - [IT之家](https://www.ithome.com/){target="_blank"}
 - [米游社](https://bbs.mihoyo.com/ys/){target="_blank"}   （我每天必学打卡的好平台）
-- [英语真题](https://zhenti.burningvocabulary.com/){target="_blank"} （全得很)
+- [英语真题](https://zhenti.burningvocabulary.com/){target="_blank"} (全得很)
 - [高校书苑](https://ebook.hep.com.cn/ebooks/h5/index.html#/){target="_blank"}  （超全的大学课本-电子版）
 - [口红极客](http://www.tianlefirstweb.fun/){target="_blank"} （口红号色号大全-男同志的福音）   
 - [How to cook](https://cook.aiurs.co/){target="_blank"}  （程序员级别的做饭指南）
@@ -78,7 +78,7 @@
 - [知否](http://www.daanbar.com/index.html){target="_blank"}(一款学霸学渣都不能错过的学习考试神器)  
 - [看历史](http://www.lishiju.net/timeline.html){target="_blank"}  
 - [花语大全](https://www.ip138.com/huayu/){target="_blank"}
-- [1024code](https://1024code.com/){target="_blank"}
+- [1024code](https://1024code.com/) {target="_blank"}
 - [必看网](https://www.biikan.com/)（人生必看的书籍）{target="_blank"}
 - [男孩子武器训练手册](https://jiba.plus/){target="_blank"}(女生勿看) 
 ## **观影:material-movie-open:**  
