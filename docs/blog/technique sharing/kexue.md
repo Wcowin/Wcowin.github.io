@@ -8,6 +8,9 @@ tags:
     * 将节点导入到科学上网客户端
     * 打开科学上网客户端开始网上冲浪～ 
 
+
+[![https://www.hualigs.cn/image/641496182fe92.jpg](https://www.hualigs.cn/image/641496182fe92.jpg)](https://www.hualigs.cn/image/641496182fe92.jpg)
+
 **客户端下载：  
 ios: 需要使用外区Apple ID购买  
 Shadowrocket:<https://www.rocketgirls.space> (推荐购买地址：https://www.rocketgirls.space/product/)
@@ -20,7 +23,8 @@ Windows第三方客户端Clash教程:<https://flm88.blog/p/docs/windows-clash>
 
 最后可以打开[这个页面](https://www.google.com/?hl=zh-CN&sa=X&ved=0ahUKEwjTmpfQ-u31AhVaEXAKHUcyBmcQnZcCCAc)即为成功：[谷歌](https://www.google.com/?hl=zh-CN&sa=X&ved=0ahUKEwjTmpfQ-u31AhVaEXAKHUcyBmcQnZcCCAc) 
 
-推荐机场:material-vpn:：  
+推荐机场:material-vpn:
+  
 - [一元机场](https://一元机场.com/#/dashboard)  
 - [三分机场](https://三分机场.xyz/)  
 - [魔戒](https://mojie.me/#/dashboard)

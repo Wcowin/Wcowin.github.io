@@ -3,7 +3,10 @@ tags:
   - 技术分享
 ---
 # 爱心代码
-![img](https://img-blog.csdnimg.cn/04c53a90c3404ae38b8d4122c3a9abeb.png)
+
+![Alt text](https://img-blog.csdnimg.cn/04c53a90c3404ae38b8d4122c3a9abeb.png)
+
+
 ```html linenums="1"
 <!doctype html>
 <html>
@@ -241,5 +244,6 @@ var ParticlePool = (function() {
 ```
 文件要以文件名.html的形式命名文件要以文件名.html的形式命名.  
 比如：
-![img](https://img-blog.csdnimg.cn/1f402f17d0204e8ea7c50452bea24c96.png)
+
+![Alt text](https://img-blog.csdnimg.cn/1f402f17d0204e8ea7c50452bea24c96.png)
 双击即可跳转至默认浏览器

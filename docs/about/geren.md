@@ -12,7 +12,6 @@ hide:
     * 热爱(xiā)折腾技术 :computer: 
     * 喜欢村上春树📖，擅长羽毛球 :badminton:
     * [找到我](https://github.com/Wcowin) &#x1F4A1;→:simple-github:[GitHub](https://github.com/Wcowin){target="_blank"}  
-    * [个人网站](http://wcowin.work/){target="_blank"}
 
 <!-- ![](https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png) -->
 <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats)   -->
