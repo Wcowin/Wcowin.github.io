@@ -28,3 +28,23 @@ hide:
 
 [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){ .md-button }
 
+<head>
+  <!-- ... -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+  <!-- ... -->
+</head>
+<body>
+  <!-- ... -->
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://mk-docs-comments.vercel.app/',
+    });
+  </script>
+</body>

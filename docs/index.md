@@ -4,7 +4,8 @@ hide:
   #- toc #显示左
   - footer
   - feedback
-comments: true
+comments: false
+gitalk: false
 ---
 
 
@@ -30,5 +31,5 @@ comments: true
   - [好用/好玩网站分享](blog/Webplay.md)
   - [Mac/windows软件网站汇总](blog/macsoft.md )
   - [实用脚本分享](blog/technique sharing/jiaoben.md)
-   
-   
+  
+
