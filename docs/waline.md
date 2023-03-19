@@ -27,7 +27,7 @@ comments: true
   <div id="waline"></div>
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-
+    
     init({
       el: '#waline',
       serverURL: 'https://mk-docs-comments.vercel.app/',
@@ -47,19 +47,23 @@ comments: true
 </body>
 
 
-<div id="article-info">
-  <!-- ... -->
-  阅读量: <span class="waline-pageview-count" data-path="docs/waline.md" />
-  <!-- ... -->
-</div>
-<!-- 文章内容 -->
-<div id="waline"></div>
+<ul>
+  <li>
+    当前页面浏览量:
+    <span class="waline-pageview-count" />
+  </li>
+</ul>
 <script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+  import { pageviewCount } from 'https://unpkg.com/@waline/client/dist/pageview.mjs';
 
-  init({
-    el: '#waline',
-    // ...
-    pageview: true, // 浏览量统计
+  pageviewCount({
+    serverURL: 'https://mk-docs-comments.vercel.app/',
+    path: window.location.pathname,
+
+    // 可选的，用于自定选择器，默认为 `'.waline-pageview-count'`
+    // selector: 'waline-pageview-count',
+
+    // 可选的，是否在获取时增加访问量，默认为 `true`
+    // update: true,
   });
 </script>

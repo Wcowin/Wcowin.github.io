@@ -35,14 +35,14 @@ hide:
   </li>
   <li>
     主页浏览量:
-    <span class="waline-pageview-count" data-path="docs/index.md" />
+    <span class="waline-pageview-count" data-path="/docs/index.md" />
   </li>
 </ul>
 <script type="module">
   import { pageviewCount } from 'https://unpkg.com/@waline/client/dist/pageview.mjs';
 
   pageviewCount({
-    serverURL: '<YOUR_SERVER_URL>',
+    serverURL: 'https://mk-docs-comments.vercel.app/',
     path: window.location.pathname,
 
     // 可选的，用于自定选择器，默认为 `'.waline-pageview-count'`
