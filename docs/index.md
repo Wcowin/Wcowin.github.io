@@ -25,7 +25,7 @@ gitalk: false
 
 推荐文章:material-book::  
 
-  - [如何如何注册ChatGPT](develop/ChatGPT.md)
+  - [如何注册ChatGPT](develop/ChatGPT.md)
   - [利用mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
   - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md)
   - [好用/好玩网站分享](blog/Webplay.md)
