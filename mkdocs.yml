@@ -301,3 +301,9 @@ extra_css:
   - stylesheets/video.css
   - https://unpkg.com/@waline/client@v2/dist/waline.css
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css
+
+# crisp
+# https://crisp.chat/en/
+crisp:
+  enable: true
+  website_id: 89ded6c2-1a10-47e3-af5d-f12e6a378547
