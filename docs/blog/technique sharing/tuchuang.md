@@ -1,5 +1,5 @@
 ---
-title: 
+title: 搭建个人图床
 tags:
   - 技术分享
 hide:

@@ -5,7 +5,6 @@ hide:
   - footer
   - feedback
 comments: false
-gitalk: false
 ---
 
 <!-- <style>
@@ -48,5 +47,4 @@ body {
   - [实用脚本分享](blog/technique sharing/jiaoben.md)
   - [留言板](waline.md)
   
-
 
