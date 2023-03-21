@@ -1,3 +1,9 @@
+---
+hide:
+  #- navigation # 显示右
+  - toc #显示左
+---
+
 ## <b> :simple-apple:
 
 -  <https://macapp.org.cn>(推荐)

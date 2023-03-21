@@ -1,3 +1,9 @@
+---
+tags:
+    - ChatGPT
+---
+
+
 **注册ChatGPT详细指南**  
 最近ChatGPT真受欢迎，但是有些人注册时会经常面临不服务它们的地区问题，现在我们给你详细问题解决。  
 作者[twitter](https://twitter.com/BoxMrChen)  
@@ -18,9 +24,12 @@
 ![label](https://lh3.googleusercontent.com/g7fMxTmyZN6gl2uY0ZYdWebtbwrOZz7mEtdM3h1WwNGJxMcOVEeASgWk_qHmUYh68nRZ8mTuS5Wm7ZPvm8iAlDP8ChF6fDQZtLJYurScOr0SU8thZP9BKYwMPoRoMdg3OSksBQo_Z01Cxaun2knKymAItvkI51Uz8I9fZoRvDocoDD8jph-E0iJuZtLK3Q)
 充值完成可能需要等一会，就先放着，直接进行下一步。  
 ## 第二步是注册一个OpenAI账号  
-首先打开[ChatGPT的账户注册页面](https://beta.openai.com/signup)。谷歌注册或者邮箱注册都可以，无所谓，我们这里用邮箱注册作为例子。
-![label](https://lh4.googleusercontent.com/5FAoNOuw0v992RG1BreZuHjLJv1TpWYSs8Vk8nfTI4YnuKKgO-54rRHromwVnwjXGvHhdoDj0Lu_yjH2E4G4lOV2pvlgC1G-5g6SpvrVGnoxz6yQWtBiryWutOymCtW2UuHzEooXF1O-ilKMdBknLtEskP3MeaI1RZavvrDCXweIUnhdJ8t6eN1vjFoP3Q)
-用邮箱注册后你要验证邮件。进去邮箱，查看email里的链接。
+首先打开[ChatGPT的账户注册页面](https://beta.openai.com/signup)。谷歌注册或者邮箱注册都可以，无所谓，我们这里用邮箱注册作为例子。  
+
+![label](https://lh4.googleusercontent.com/5FAoNOuw0v992RG1BreZuHjLJv1TpWYSs8Vk8nfTI4YnuKKgO-54rRHromwVnwjXGvHhdoDj0Lu_yjH2E4G4lOV2pvlgC1G-5g6SpvrVGnoxz6yQWtBiryWutOymCtW2UuHzEooXF1O-ilKMdBknLtEskP3MeaI1RZavvrDCXweIUnhdJ8t6eN1vjFoP3Q)  
+
+用邮箱注册后你要验证邮件。进去邮箱，查看email里的链接。  
+
 ![label](https://lh6.googleusercontent.com/8bcYtPuGvpYcfLzGqi4uF1cHeuiYRW0zYwTUc5EX--LVenBC0iDtpp00UWxbvk7aJAyW08RIhpArfDORzd8N8Eko6fK7prIZxBGEcZmYZ6NlAInYo9mls9S85R-rdsos4joQfLS0-l15GIvblEyXLc3jzoht24aecm-m9CeZIui76iZX3FOWapRuigyYYQ)
 
 这里你需要输入需要的信息。  

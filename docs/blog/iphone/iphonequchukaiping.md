@@ -20,9 +20,9 @@ tags:
 
 法二：  
 
-<https://github.com/wubuzhi/AdBlockByIOS>
+<https://github.com/wubuzhi/AdBlockByIOS>{target=“_blank”}
 
 ***
 
-顺便一提安卓手机去除开屏AD的方法：<https://wwe.lanzouw.com/b01v0g3wj>  密码：1233  
+顺便一提安卓手机去除开屏AD的方法：<https://wwe.lanzouw.com/b01v0g3wj>{target=“_blank”}  密码：1233  
 下载李跳跳即可

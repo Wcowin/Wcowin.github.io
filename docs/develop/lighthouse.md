@@ -1,5 +1,7 @@
 ---
 title: 利用Lighthouse测试网站性能
+tags:
+  - 技术分享
 ---
 
 ![img](https://cn.mcecy.com/image/20230113/3b9e713ce6d943055da05986fee1d329.png)

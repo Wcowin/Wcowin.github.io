@@ -1,5 +1,9 @@
-Github地址：<https://github.com/Wcowin/License-plate-recognition/releases/tag/exe>{target=“_blank”}
-
+---
+tags:
+  - 技术分享
+---
+Github :simple-github: 地址：<https://github.com/Wcowin/License-plate-recognition/releases/tag/exe>{target=“_blank”}  
+Bibili :simple-bilibili: 视频教程：<https://www.bilibili.com/video/BV1zM411W7xU/?spm_id_from=333.999.0.0>{target=“_blank”}
 
 ![img](https://cn.mcecy.com/image/20230315/e542cb1cbf91965b87b068dfb4f97a48.png)
 ![img](https://cn.mcecy.com/image/20230315/2936069fd01d56aa902213a060895988.png)

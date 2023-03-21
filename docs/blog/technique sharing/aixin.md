@@ -3,9 +3,13 @@ tags:
   - 技术分享
 ---
 # 爱心代码
+我用夸克网盘分享了「love.html」，点击链接即可保存。链接：<https://pan.quark.cn/s/4534e2134fb9>
 
-![Alt text](https://img-blog.csdnimg.cn/04c53a90c3404ae38b8d4122c3a9abeb.png)
+!!! Note "tip"
+    下载love.html文件，打开即可看到效果。
 
+    
+![img](https://cn.mcecy.com/image/20230321/6c6d5fb5ab24ad31b1e605434e54f1fc.png)
 
 ```html linenums="1"
 <!doctype html>
@@ -245,5 +249,6 @@ var ParticlePool = (function() {
 文件要以文件名.html的形式命名文件要以文件名.html的形式命名.  
 比如：
 
-![Alt text](https://img-blog.csdnimg.cn/1f402f17d0204e8ea7c50452bea24c96.png)
+![img](https://cn.mcecy.com/image/20230321/30e3b0fe1a26259f8a1bb9280f26a0fa.png)
+
 双击即可跳转至默认浏览器

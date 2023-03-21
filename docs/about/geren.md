@@ -28,7 +28,7 @@ hide:
 
 [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){ .md-button }
 
-<ul>
+<!-- <ul>
   <li>
     当前页面浏览量:
     <span class="waline-pageview-count" />
@@ -51,4 +51,4 @@ hide:
     // 可选的，是否在获取时增加访问量，默认为 `true`
     // update: true,
   });
-</script>
+</script> -->

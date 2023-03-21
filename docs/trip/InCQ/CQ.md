@@ -28,7 +28,7 @@
 ![img](https://user-assets.sxlcdn.com/images/951476/FhxvkaLwmWTSzrHzWiaiz6ucMPxo.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 ![img](https://user-assets.sxlcdn.com/images/951476/FmGeEmsPYrTAM1XjDyfsKS-HqCsV.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 ![img](https://user-assets.sxlcdn.com/images/951476/Fqf-8lnBd_SktXV09InWkJr0A0nk.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
-![img](tripmedias/CQ/WechatIMG186.jpeg)
+![img](https://cn.mcecy.com/image/20230321/0f112b2a6da2e2ec2c9e6644dbb912e9.jpeg)
 ![img](https://user-assets.sxlcdn.com/images/951476/FhXRRqdBUPIgbSi5ocHtzkGYV9ud.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
 ### <b>Day3
@@ -50,8 +50,7 @@
 还没吃过  
 4.**豆吉汤圆奶茶**  
 重庆最好的奶茶，没有之一！秒杀一切奶茶品牌  
-![img](tripmedias/CQ/WechatIMG191.jpeg)
-
+![img](https://cn.mcecy.com/image/20230321/e8e6e07f1c0bf78f28734c325b6530dc.jpeg)
 ## 建议  
 
 天气：重庆多雾，易雨多阴潮，带好胃药，带好钱一切OK。    

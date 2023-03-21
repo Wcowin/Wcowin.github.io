@@ -5,12 +5,19 @@ tags:
 
 # Publish a Website with Material for MkDocs and GitHub Pages  
 !!! Note
-    For example:[Mkdocs静态网站制作](https://squidfunk.github.io/mkdocs-material/)   
-    详细文档：[MkDocs](https://www.mkdocs.org/getting-started/)   
+    Mkdocs material主题 :[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}   
+    详细文档：[MkDocs](https://www.mkdocs.org/getting-started/){target=“_blank”}   
 
     CSDN教程：  
-    1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501)  
-    2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501)
+    1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501){target=“_blank”}  
+    2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501){target=“_blank”}
+
+!!! info inline end
+
+    ← 我的网站二维码
+
+![MywebsiteQR](https://cn.mcecy.com/image/20230321/cf398708978588c8d40aeb6628918deb.png)
+
 ***
 MkDocs 的材料是 MkDocs 的主题，MkDocs 是一个面向（技术）项目文档的静态站点生成器。如果你熟悉 Python，你可以使用pip（Python 包管理器）安装 Material for MkDocs。如果没有，我们建议使用docker。  
 创建一个文件  
@@ -85,7 +92,7 @@ GitHub > Repository > Settings > Pages > Source > gh-pages > Click Save
 
 建议下载Github Desktop然后克隆到本地仓库，这样以后pull和push的同步也会方便（个人见解：可能需要科学上网不然速度很慢） 操作详见：[这个视频](https://www.bilibili.com/video/BV194411s7Bq/?spm_id_from=333.880.my_history.page.click&vd_source=4c6908c51297ba49ec55863b71e0d24f)
 
-也可以学习一下git：<https://www.runoob.com/git/git-tutorial.html>
+也可以学习一下git：<https://www.runoob.com/git/git-tutorial.html>{target=“_blank”}
 
 ## 实现自定义域名访问
 
