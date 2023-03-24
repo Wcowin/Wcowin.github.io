@@ -1,5 +1,5 @@
 #[Info]
-site_name: 王科文的个人网站
+site_name: 科文的个人网站
 site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
 #[UI]
@@ -61,7 +61,7 @@ nav:
   - 博客:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
-    - 语雀技术分享: blog/yuque.md
+    - 语雀: blog/yuque.md
     - Telegram 群组、频道、机器人  汇总分享: blog/TG.md
     
     - 技术分享:
@@ -146,6 +146,7 @@ nav:
     - 程序人生:
         - 《程序员成长历程的四个阶段》: relax/Manong/sigejieduan.md
         - 《程序员脱单指南》: relax/Manong/tuodanbukeneng.md
+        - 《printf("❤️\n》: relax/Manong/cxiaoaixin.md
     - 写信:
         - 第一封: relax/Letter/letter1.md
         - 第二封: relax/Letter/letter2.md
@@ -173,6 +174,8 @@ nav:
         - 原神: relax/Game/yuanshen.md
         - 如何玩好《王者荣耀》？: relax/Game/wzry.md
     - 入党结业考试题总结: relax/rudang.md
+    - 润学之为什么润: about/run.md
+    - 让人说话，天塌不下来: about/maozedong.md
     - 程序猿神之楷模:一个人,一个网站,5.75亿美元卖掉: relax/kaimo.md
     
   - 旅行: 
@@ -191,8 +194,7 @@ nav:
     - 留言板: waline.md
     #- 友链: about/link.md
     - 毕业之前值得去做的30件事: about/biye.md
-    - 润学之为什么润: about/run.md
-    - 让人说话，天塌不下来: about/maozedong.md
+    
     - 免责声明: about/shengming.md
     - Test: about/test.md
   

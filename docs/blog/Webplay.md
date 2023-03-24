@@ -1,6 +1,12 @@
+---
+title: 好用/好玩网站分享
+tags:
+  - 技术分享
+---
 ## **工具类:material-tools:**
 
 * [万物指南](https://zh.wikihow.com/首页){target="_blank"}  （互联网上最值得信赖的指南网站）
+- [ChatGPT](https://chat.openai.com/chat){target="_blank"}
 - [空投快传](https://airportal.cn/){target="_blank"}   （超级好用的全平台文件隔空投送）  
 - [Snapdrip](https://snapdrop.net/){target="_blank"} （在线传文件）
 - [微信文件传输助手网页版](https://filehelper.weixin.qq.com/){target="_blank"}  
@@ -66,6 +72,11 @@
 - [Gitee](https://gitee.com/explore){target="_blank"} (国内的GitHub)
 - [stack overflow](https://stackoverflow.com/){target="_blank"}
 - [菜鸟教程](https://www.runoob.com/){target="_blank"} （学习编程语言的好去处）
+- [V2EX](https://www.v2ex.com/){target="_blank"}  (程序员交流社区)
+- [Find your next course](https://www.classcentral.com/){target=“_blank”}
+- [Netlify](https://app.netlify.com/){target="_blank"}  (免费的静态网站托管)
+- [Twikoo](https://twikoo.js.org/){target="_blank"}  (免费的静态网站评论系统)
+- [GitHub Proxy](https://ghproxy.com/){target="_blank"}  (GitHub加速)
 - [思否](https://segmentfault.com/){target="_blank"} (中文技术交流平台)
 - [36氪](https://www.36kr.com/){target="_blank"}
 - [IT之家](https://www.ithome.com/){target="_blank"}
@@ -78,8 +89,8 @@
 - [知否](http://www.daanbar.com/index.html){target="_blank"}(一款学霸学渣都不能错过的学习考试神器)  
 - [看历史](http://www.lishiju.net/timeline.html){target="_blank"}  
 - [花语大全](https://www.ip138.com/huayu/){target="_blank"}
-- [1024code](https://1024code.com/) {target="_blank"}
-- [必看网](https://www.biikan.com/)（人生必看的书籍）{target="_blank"}
+- [1024code](https://1024code.com/){target="_blank"}
+- [必看网](https://www.biikan.com/){target="_blank"}（人生必看的书籍）
 - [男孩子武器训练手册](https://jiba.plus/){target="_blank"}(女生勿看) 
 ## **观影:material-movie-open:**  
 
@@ -90,7 +101,7 @@
 - [69美剧](https://www.69mj.com/){target="_blank"} (看美剧咯)   
 - [555电影](https://5dy6.vip/){target="_blank"}    
 - [Libvio](https://libvio.fun/){target="_blank"}   (推荐)
-- [全民影视vip视频在线解析网](https://www.daga.cc/){target="_blank"} (搜片直接看，有广告）
+- [全民影视vip视频在线解析网](https://www.daga.cc/){target="_blank"} (搜片直接看，有广告)
 - [泥视频](https://www.nivod.tv/){target="_blank"}
  
 
@@ -143,8 +154,9 @@
 - [YAMl](http://www.ruanyifeng.com/blog/2016/07/yaml.html){target="_blank"}
 - [Emmet语法](https://docs.emmet.io/cheat-sheet/){target="_blank"}
 - [在线接口测试](https://getman.cn/){target="_blank"}
-- [Docker教]程(https://docker.easydoc.net/doc/81170005/cCewZWoN/lTKfePfP){target="_blank"}
+- [Docker教程](https://docker.easydoc.net/doc/81170005/cCewZWoN/lTKfePfP){target="_blank"}
 - [Unity](https://unity.cn/){target="_blank"} 
+- [软仓](https://ruancang.net/#/sim?page=0&id=0&q=){target=“_blank”}
 ## **设计:material-material-design:**
 
 - [Fotor](https://www.fotor.com/cn/){target="_blank"}(简单好用的在线图片编辑软件)
@@ -157,6 +169,9 @@
 - [配色](https://webgradients.com/){target="_blank"}
 - [中国色](http://zhongguose.com/){target="_blank"}
 - [Headless UI](https://headlessui.com/){target="_blank"}
+- [UI8](https://ui8.net/){target="_blank"}
+- [Pexels](https://www.pexels.com/zh-cn/){target="_blank"}
+- [标小智](https://www.logosc.cn/logo/favicon){target="_blank"} (免费Favicon.ico图标在线生成器)
  
 
 ## **:simple-ios:捷径**

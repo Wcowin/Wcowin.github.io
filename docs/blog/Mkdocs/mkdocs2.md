@@ -9,7 +9,7 @@ tags:
 
 **建议详细学习一下上面的官方网站↑↑↑**
 
-我把我目前的配置文件mkdocs.yml代码写在下面👇🏻
+我把我目前的部分配置文件mkdocs.yml代码写在下面👇🏻
 ```
 #[Info]
 site_name: #网站名字
@@ -106,34 +106,37 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:<1135801806@qq.com> #联系方式
   
-#cookie 
-  # analytics: 
-  #   provider: google
-  #   property: !ENV GOOGLE_ANALYTICS_KEY
-  #   feedback:
-  #     title: Was this page helpful?
-  #     ratings:
-  #       - icon: material/heart
-  #         name: This page was helpful
-  #         data: 1
-  #         note: >-
-  #           Thanks for your feedback!
-  #       - icon: material/heart-broken
-  #         name: This page could be improved
-  #         data: 0
-  #         note: >- 
-  #           Thanks for your feedback! Help us improve this page by
-  #           using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
-  # consent:
-  #   title: Cookie consent
-  #   description: >- 
-  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
-  #     如果你同意,你可以帮助我们让我们的网站更好~
-    #描述
+  analytics: 
+    provider: google
+    property: G-XXXXXXXXXX # Google Analytics ID
+    feedback:
+      title: 此页面有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            谢谢你的反馈！
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+  
+  consent:
+    title: Cookie consent
+    description: >- 
+      我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+      如果你同意,你可以帮助我们让我们的网站更好
+
       
 plugins:
   - search
-  - tags  #标签
+  - tags:
+      tags_file: tag.md #标签
+
+
 markdown_extensions:
   - abbr
   - pymdownx.caret
@@ -177,22 +180,22 @@ site_name: 网站名字
 site_url: 网站网址
 site_author: 作者名字
 ```
-无须多言
+**无须多言**
 
 ## theme部分  
 
 ### 颜色：
-![img](https://img-blog.csdnimg.cn/d38c49581de5454885b59fe05c9c109a.png)
+![img](https://cn.mcecy.com/image/20230324/0d60c4d1cc6399c654c78769a402ad56.png)
 ```
 theme:
   palette:
     primary: yellow #顶部颜色
 ```
 primary后面是网站顶部栏目的颜色（也用于标题、边栏、文本链接和其他几个组件），目前支持下面几个颜色：
-![img](https://img-blog.csdnimg.cn/44dca59b059f4706be9ab58dc0fdbdc2.png)
+![img](https://cn.mcecy.com/image/20230324/84d4a4194cc575c2a76e6e54b25fbf99.png)
 
 ### 明暗主题按钮：
-![img](https://img-blog.csdnimg.cn/ded49a961da840a1bf59e64880aff976.png)
+![img](https://cn.mcecy.com/image/20230324/8654dc52f8c278bbf29eb94a8ffcb2da.png)
 ```
 theme:
   palette: 
@@ -212,7 +215,8 @@ theme:
 此配置将在搜索栏旁边呈现调色板切换。请注意，您还可以为每个调色板的primary和accent定义单独的设置。
 
 按钮图标可以改变（修改icon后面的代码）：
-![img](https://img-blog.csdnimg.cn/6ab32b739d674c4e997b0288261d0f6c.png)
+![img](https://cn.mcecy.com/image/20230324/9356854051a25e1801c2dcd58002e5fe.png)
+
 ***
 ### features
 ```
@@ -231,13 +235,14 @@ features:
     - search.share   #搜索分享按钮
 ```
 看我所做的注释就很好理解，feature部分让网站拥有了目录，增加了搜索项目的功能，返回顶部等功能，注释里很简明介绍了
-![img](https://img-blog.csdnimg.cn/065f25b084df41178d51384c41be46b8.png)
-![img](https://img-blog.csdnimg.cn/9c567bb22e1541c5abc0aebff8356780.png)
-![img](https://img-blog.csdnimg.cn/db3ecf2275034cda8d56e9886c2bcd5c.png)
+![img](https://cn.mcecy.com/image/20230324/a6912df2c1b809f4c636025bfb753244.png)
+![img](https://cn.mcecy.com/image/20230324/70275057aeaaa055581cdb760ab0932a.png)
+![img](https://cn.mcecy.com/image/20230324/718b3202db2a1259600a0b821e5ec58c.png)
+![img](https://cn.mcecy.com/image/20230324/10f79326e800d429a00fc544ef8f02d7.png)
 ***
 ## nav部分 
 这一部分就是目录
-![img](https://img-blog.csdnimg.cn/b5b0770277204c80b060cda4c8f24a67.png)
+![img](https://cn.mcecy.com/image/20230324/00e36febde9aa1ffac1f5c49fbf2e76b.png)
 ```
 nav: 
   - 博客:
@@ -250,14 +255,14 @@ nav:
 - 内容标题: 文件路径
 ```
 内容标题效果：
-![img](https://img-blog.csdnimg.cn/219a6717013a4fb59049dac5f6094c64.png)
+![img](https://cn.mcecy.com/image/20230324/f58c55d9b7c4a7eba69b55395f4476d3.png)
 
-文件路径：
-![img](https://img-blog.csdnimg.cn/bb272f24af6c463a94a75b377bb8c87f.png)
+.md文件路径(相对路径)：
+![img](https://cn.mcecy.com/image/20230324/2bcb22df954bda4dbe773ad096a039c6.png)
 ***
-这里也注意：所有文件都在docs文件下，文件类型除Css，javascript等都是.md结尾的文件
+这里也注意：**所有文件都在docs文件下，文件类型除CSS，Javascript等都是.md结尾的文件**
 
-所以强烈推荐去学习Maekdown和Html5
+所以强烈推荐去学习Maekdown、Html5、CSS3、Javascript等知识，这样你就可以自定义你的网站了。
 
 到这里先检查一下文件树状图(xx.md代表你的md文件)：
 
@@ -290,36 +295,74 @@ extra:
       link: mailto:<1135801806@qq.com> #联系方式
 ```
 social部分可设置网站右下角的社交链接（icon是小图标，link后填自己链接即可）：
-![img](https://img-blog.csdnimg.cn/7ee80a82d0724706a011669c9eca6597.png)
-cookie部分先不考虑
-***
+![img](https://cn.mcecy.com/image/20230324/551cc1e17058617a8b5787bf6b1ba19a.png)
+
+cookie
+```
+analytics: 
+    provider: google
+    property: G-XXXXXXXXXX  #你的Google Analytics ID
+    feedback:
+      title: 此页面有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            谢谢你的反馈！
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+  
+  consent:
+    title: Cookie consent
+    description: >- 
+      我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+      如果你同意,你可以帮助我们让我们的网站更好
+
+```
+![img](https://cn.mcecy.com/image/20230324/06ffc854ffcae2a4c760a4e32d59d8b9.png)  
+![img](https://cn.mcecy.com/image/20230324/0148782cbe4fe9421afceff0cb57d62e.png)
+![img](https://cn.mcecy.com/image/20230324/7c5415720953dbd9018e5d1f011c7678.png)
+注意property: G-XXXXXXXXXX  #你的Google Analytics ID，这里的G-XXXXXXXXXX是你的Google Analytics ID，你可以在Google Analytics中找到，如果你不想使用Google Analytics，可以删除这一部分。
+
 ## Plugins部分
 ```
 plugins:
   - search
   - tags  #标签
 ```
-`- search开启搜索功能：`
-![img](https://img-blog.csdnimg.cn/065f25b084df41178d51384c41be46b8.png)
 
-`- tags就是标签`
+`- search`开启搜索功能
+![img](https://cn.mcecy.com/image/20230324/a6912df2c1b809f4c636025bfb753244.png)
+
+`- tags`就是标签
 ```
 plugins:
   - tags:
       tags_file: tags.md
 ```
+![img](https://cn.mcecy.com/image/20230324/92fd3f17055fca8fc76f21b5fab5f76a.png)
+docs文件夹下新建tags.md文件，会自动在tags.md文件中生成标签列表
+但是每个.md文件最开始的地方都需要添加标签，否则不会显示在tags.md文件中
+![img](https://cn.mcecy.com/image/20230324/7f0a3213cad72aa11f2185c7cae9a032.png)
+格式：
+
 ```
-plugins:
-  - tags:
-      tags_extra_files:
-        compatibility.md:
-          - compat 
-        web.md:
-          - html
-          - js
-          - css
+---
+title: 
+tags:
+  - 你的标签名字
+hide:
+  #- navigation # 显示右侧导航
+  #- toc #显示左侧导航
+---
+
 ```
-![img](https://img-blog.csdnimg.cn/img_convert/0b1b5515d36c83821a9106dfc5e618b5.png)
+
 ***
 ## markdown_extensions部分
 ```
@@ -359,5 +402,11 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css
 ```
-extra_javascript里有对数学公式的扩展，extra_css里是Css的知识了，及自定义网站格式颜色等
+javascripts/mathjax.js里有对数学公式的扩展，extra_css里是CSS的知识了，及自定义网站格式颜色等  
+
+如果你想自定义网站的样式，可以看这几篇文章：  
+
+[JS实现鼠标样式](../websitebeauty/shubiao.md)   
+
+[背景特效](../websitebeauty/backgroud.md)
 

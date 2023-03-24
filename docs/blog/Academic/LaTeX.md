@@ -1,5 +1,7 @@
 ---
 title: LaTeX常用符号整理
+tags:
+  - Mathematic
 ---
 
 # LaTeX常用符号整理

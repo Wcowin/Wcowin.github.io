@@ -84,4 +84,4 @@ codesign --force --deep --sign - /文件位置（直接将应用拖进去即可�
 
 ## macOS小助手
 
-[如果嫌麻烦，也可以下载 macwk.com 编写的 macos小助手进行快速操作。](https://pan.quark.cn/s/f2302b6789b0)
+[如果嫌麻烦，也可以下载 macwk.com 编写的 macos小助手进行快速操作。](https://pan.quark.cn/s/f2302b6789b0){target=“_blank”}
