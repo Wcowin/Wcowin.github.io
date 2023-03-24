@@ -7,6 +7,13 @@ tags:
 
     以下代码均在`docs/javascripts/extra.js`下复制粘贴
 
+
+
+<head>
+<script src="https://www.lanjie100.com/js/snow.user.js"></script>
+</head>
+
+
 ## 雪花❄️
 
 
