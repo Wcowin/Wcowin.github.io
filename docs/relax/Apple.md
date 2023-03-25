@@ -14,7 +14,7 @@ We believe that how we conduct ourselves is as critical to Apple’s success as 
 ——Tim Cook</b> </font></center>  
 
 ![img](https://user-assets.sxlcdn.com/images/951476/FpR4zSBa8kJxXSlkmL3yE9O1PNJB.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png)
-<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/the-darkness-that-you-fear/1562007433?i=1562007434"></iframe>
+<!-- <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/the-darkness-that-you-fear/1562007433?i=1562007434"></iframe> -->
 
 <b>
 苹果一直都不在意成本，也一直在追寻进步，进步不一定是要眼睛看到的，就是那种能感受到，但是看不到的美。信息来源于互联网，未必精准。  

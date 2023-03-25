@@ -3,6 +3,7 @@ tags:
   - 技术分享
 ---
 # 什么是github？:fontawesome-brands-square-github:
+![img](https://cn.mcecy.com/image/20230104/4d9d920612d35facb4152f54b478adb8.png)
 
 GitHub是全球最大的 ~~同性交友网站~~ 软件开发平台，知名公司和个人都使用它来开发和共享代码。  (由于程序员群体里缺少女性，拥有高纯度男性用户的GitHub，也被戏称为“全球最大的同性交友网站”)
 ***

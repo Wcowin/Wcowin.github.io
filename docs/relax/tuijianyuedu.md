@@ -1,35 +1,35 @@
 **观史知今，当思进退，读书明志可识春秋**
 
 ## 《平凡的世界》  
-![img](https://cn.mcecy.com/image/20230103/943cfcf82d2deb1126de05e8188e1ee9.jpeg)  
+![img](https://cn.mcecy.com/image/20230103/943cfcf82d2deb1126de05e8188e1ee9.jpeg){ loading=lazy }  
 
 平凡就是一种不完美，有缺憾，苦难与抗争的平衡，而生命在缓缓徐行，不会为谁停留
 ***
 ## 《目送》  
-![img](https://cn.mcecy.com/image/20230103/e83bbfe714afff75c23e8d9e3aaee616.jpg)   
+![img](https://cn.mcecy.com/image/20230103/e83bbfe714afff75c23e8d9e3aaee616.jpg){ loading=lazy }   
 
 我慢慢地、慢慢地了解到，所谓父女母子一场，只不过意味着，你和他的缘分就是今生今世不断地在目送他的背影渐行渐远。你站在小路的这一端，看着他逐渐消失在小路转弯的地方，而且，他用背影默默告诉你，不必追。
 ——龙应台《目送》
 ***
 
 ## 《挪威的森林》
-![img](https://cn.mcecy.com/image/20230103/22f3fe77f106c564af242c9afc3ce47f.jpg)
+![img](https://cn.mcecy.com/image/20230103/22f3fe77f106c564af242c9afc3ce47f.jpg){ loading=lazy }
 
 每个人都有属于自己的一片森林，也许我们 从来不曾去过，但它一直在那里，总会在那里。迷失的人迷失了，相逢的人会再相逢
 ***
 ## 《四大名著》  
-![img](https://cn.mcecy.com/image/20230103/ec14a88fb6c0e76d11945f6b6a811a64.jpeg)  
+![img](https://cn.mcecy.com/image/20230103/ec14a88fb6c0e76d11945f6b6a811a64.jpeg){ loading=lazy }  
 
 **《三国演义》/《红楼梦》/《水浒传》/《西游记》**
 ***
 ## 《你当像鸟飞往你的山》
-![img](https://cn.mcecy.com/image/20230103/a1af8f8f085f0bec5bad9abe42469280.jpeg)
+![img](https://cn.mcecy.com/image/20230103/a1af8f8f085f0bec5bad9abe42469280.jpeg){ loading=lazy }
 
 山上的生活给人一种至高无上之感，一种遗世独立，甚至统治之感。在那广阔的空间里，你可以孤身一人几小时畅行无阻，漂浮在松林、灌木和岩石的海洋。那是无边无际的静谧，使人沉静，在它的广袤面前人类显得微不足道。
 
 ***
 ## 《一往无前》
-![img](https://cn.mcecy.com/image/20230103/5e9f8f34bc8116355e702d0b99069ee0.jpg)  
+![img](https://cn.mcecy.com/image/20230103/5e9f8f34bc8116355e702d0b99069ee0.jpg){ loading=lazy }  
 
 “只有直面困难和失败，才会有一往无前的勇气”
 
@@ -37,19 +37,19 @@
 
 ***
 ## 《围城》
-![img](https://cn.mcecy.com/image/20230103/3766e44111ee99bc70240602ccccbaf5.jpeg)
+![img](https://cn.mcecy.com/image/20230103/3766e44111ee99bc70240602ccccbaf5.jpeg){ loading=lazy }
 “结婚仿佛金漆的鸟笼，笼子外面的鸟想住进去，笼内的鸟想飞出来；所以结而离，离而结，没有了局。”  
 ***
 ## 《春山好》  
-![img](https://cn.mcecy.com/image/20230103/1d1b6ac7ee6d9c3b4c77a736323230e7.jpeg)  
+![img](https://cn.mcecy.com/image/20230103/1d1b6ac7ee6d9c3b4c77a736323230e7.jpeg){ loading=lazy }  
 
 苏枕书新出版的《春山好》一书，记录了她在京都十余年间的生活体验与求知历程。京都是她生活直接经验的空间，是汲取、审视和思索的所在地。她结识不同的人，在由书、花、印刷、语言新知为媒介的对话中去认识别样的力量。作家淡豹评价《春山好》是一份在京都写就的当代日本社会气氛和思想状况的报告。书中穿插着许多抗争者的画像，在对这些抗争者的观察背后，是作者个人的觉醒。  
 
 “看，严冬已过，时雨止息，且已过去，绵延群山的风景就在眼前。”
 ***
 ## 《追风筝的人》 
-![img](https://cn.mcecy.com/image/20230103/fba50f05c8fe59f7ea6b7b3d36938096.png)  
+![img](https://cn.mcecy.com/image/20230103/fba50f05c8fe59f7ea6b7b3d36938096.png){ loading=lazy }  
 
-为你，千千万万遍
+**为你，千千万万遍**
 
 ***

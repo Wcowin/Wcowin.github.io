@@ -2,7 +2,7 @@
 
 本文选自毛泽东《在扩大的中央工作会议上的讲话》（一九六二年一月三十日）
 
-![Alt text](https://pic3.zhimg.com/80/v2-ba2a5d0caf41147995280ce2433c7c82_1440w.webp)
+![Alt text](https://pic3.zhimg.com/80/v2-ba2a5d0caf41147995280ce2433c7c82_1440w.webp){ loading=lazy }
 
 
 同志们，我现在讲几点意见。（热烈鼓掌）一并讲六点，中心是讲一个民主集中制的问题，同时也讲到一些其他问题。

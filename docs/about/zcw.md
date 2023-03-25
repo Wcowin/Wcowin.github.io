@@ -22,8 +22,3 @@ title: 支持作者
 **:simple-kofi:ko-fi**
 
 [Touch me!](https://ko-fi.com/U6U5HAO6B){ .md-button }
-
-
-<center>
-![](https://storage.ko-fi.com/cdn/useruploads/U6U5HAO6B/qrcode.png?v=1ffce650-1eeb-4b82-b145-8bbf79a04bea)
-</center>
