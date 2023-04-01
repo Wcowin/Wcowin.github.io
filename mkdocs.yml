@@ -79,6 +79,11 @@ nav:
     - Mkdocs美化:
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md
         - 背景特效: blog/websitebeauty/backgroud.md
+    - 学术:
+        - LaTeX常用符号整理: blog/Academic/LaTeX.md
+        - 数学竞赛: 
+          - 第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答: blog/Academic/Math/14.md
+          - 第十三届全国大学生数学竞赛(非数学类)决赛详细解答: blog/Academic/Math/13js.md    
     - Mac:
         - PD虚拟机: blog/Mac/Pd.md
         - 提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法: blog/Mac/sunhuai.md
@@ -99,10 +104,7 @@ nav:
         - 三步卸载 Microsoft Edge: blog/Win/edgexz.md
         - windows快捷键: blog/Win/winkjj.md
         - 安卓的子系统: blog/Win/anzhuodezixit.md
-    - 学术:
-        - LaTeX常用符号整理: blog/Academic/LaTeX.md
-        - 数学竞赛: 
-          - 第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答: blog/Academic/Math/14.md
+
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
@@ -116,6 +118,7 @@ nav:
         - MWeb Pro: develop/Markdown/MWeb.md
     - 我的作品:
         - 基于百度API和opencv的智能车牌识别程序: develop/Mywork/opencv.md
+        - 玩的设计: develop/Mywork/design.md
     - 1024code: develop/1024code.md
     - 利用Lighthouse测试网站性能: develop/lighthouse.md
     - What is Github: develop/Github.md
@@ -200,7 +203,7 @@ nav:
     - 404 Not Found: about/Foryou.md
   
   
-copyright: Copyright &copy; 2022王科文 # 左下角的版权声明
+copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的版权声明
   
 
 extra:

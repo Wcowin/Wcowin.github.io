@@ -93,7 +93,9 @@ GitHub > Repository > Settings > Pages > Source > gh-pages > Click Save
 建议下载Github Desktop然后克隆到本地仓库，这样以后pull和push的同步也会方便（个人见解：可能需要科学上网不然速度很慢） 操作详见：[这个视频](https://www.bilibili.com/video/BV194411s7Bq/?spm_id_from=333.880.my_history.page.click&vd_source=4c6908c51297ba49ec55863b71e0d24f)
 
 也可以学习一下git：<https://www.runoob.com/git/git-tutorial.html>{target=“_blank”}
-
+***
+这是一个记录[十年之约](https://www.foreverblog.cn/){target=“_blank”}的网站，所以，这个网站会存在十年或者更久:  
+<a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>
 ## 实现自定义域名访问
 
 [实现自定义域名访问](https://blog.csdn.net/Passerby_Wang/article/details/121202486?spm=1001.2014.3001.5501){target=“_blank”}
