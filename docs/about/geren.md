@@ -8,7 +8,8 @@ hide:
 # 知足且上进，温柔且坚定
 !!! note "About me"
     * Bilibili电子信息工程专业本科在读  :star2:
-    * CV工程师（Ctrl+CV）
+    * CV工程师（Ctrl+CV）🧑‍💻
+    * 咖啡重度爱好者 :coffee:
     * 热爱(xiā)折腾技术 :computer: 
     * 喜欢村上春树📖，擅长羽毛球 :badminton:
     * [找到我](https://github.com/Wcowin) &#x1F4A1;→:simple-github:[GitHub](https://github.com/Wcowin){target="_blank"}  

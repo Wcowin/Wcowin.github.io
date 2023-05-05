@@ -10,3 +10,8 @@
 早期购物网站制作  
 ![img](https://cn.mcecy.com/image/20230402/574c2334f9dfc5f88395acebfc630c23.png)
 ![img](https://cn.mcecy.com/image/20230402/8319a9373ecb7a0319f3d8b036bb412b.png)
+
+***
+学习模仿[Austin Li](https://github.com/austin2035/astro-air-blog)大佬的[果味Apple网站](https://wcowinastro.netlify.app/)
+![img](https://cn.mcecy.com/image/20230505/61097d7951b8f10212a5ef7251615771.png)
+![img](https://cn.mcecy.com/image/20230505/7d43a3f6641b35f70c7c1c2e1ac33520.png)
