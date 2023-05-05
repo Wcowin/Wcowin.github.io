@@ -12,3 +12,5 @@
     <img src="https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png" alt="个人名片">
   </a>
 </p>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dae80b95-9b90-4970-a825-e5c020674ee7/deploy-status)](https://app.netlify.com/sites/wcowin/deploys)
