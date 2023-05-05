@@ -8,10 +8,14 @@
   }
   /* #5F9EA0 */
 
+
+
   .twitter {
     color: #1DA1F2;
   }
-
+  .github {
+    color: #121c21;
+  }
   @keyframes heart {
     0%, 40%, 80%, 100% {
       transform: scale(1);

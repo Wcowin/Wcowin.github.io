@@ -46,6 +46,21 @@ comments: true
   </script>
 </body>
 
+<script src="https://giscus.app/client.js"
+        data-repo="Wcowin/hexo-site-comments"
+        data-repo-id="R_kgDOIl9OJA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIl9OJM4CTHDe"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 
 <ul>
   <li>
@@ -67,3 +82,5 @@ comments: true
     // update: true,
   });
 </script>
+
+
