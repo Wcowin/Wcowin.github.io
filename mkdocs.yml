@@ -6,7 +6,7 @@ site_author: 王科文(Wcowin)
 theme:
   name: material
   # custom_dir: overrides
-  custom_dir: material/.overrides
+  # custom_dir: material/.overrides
   font:
     text: Bitter
   icon:
