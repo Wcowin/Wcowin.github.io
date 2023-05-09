@@ -13,4 +13,7 @@
   </a>
 </p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/dae80b95-9b90-4970-a825-e5c020674ee7/deploy-status)](https://app.netlify.com/sites/wcowin/deploys)
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/dae80b95-9b90-4970-a825-e5c020674ee7/deploy-status)](https://app.netlify.com/sites/wcowin/deploys) -->
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Wcowin.github.io&type=Date)](https://star-history.com/#Wcowin/Wcowin.github.io&Date)
