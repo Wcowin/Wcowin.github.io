@@ -10,9 +10,9 @@ theme:
   font:
     text: Bitter
   icon:
-    logo: material/library-shelves
-    admonition:
-      <type>: material/file-alert-outline
+    logo: material/library
+    # admonition:
+    #   <type>: material/file-alert-outline
 
   favicon: img/faxian.png
   # img/11.ico
@@ -47,6 +47,7 @@ theme:
     - navigation.indexes #启用节索引页后，可以将文档直接附加到节
     - search.share #搜索分享按钮
     - content.tabs.link
+    - content.tooltips
   language: zh # 一些提示性的文字会变成中文
   
 
