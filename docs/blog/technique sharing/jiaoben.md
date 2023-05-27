@@ -46,3 +46,4 @@ Edge上油猴下载地址:
 - [骚扰拦截](https://github.com/AirBashX/UserScript){target="_blank"}
 - [自动翻页](https://greasyfork.org/zh-CN/scripts/419215-%E8%87%AA%E5%8A%A8%E6%97%A0%E7%BC%9D%E7%BF%BB%E9%A1%B5){target="_blank"}
 - [双语翻译](https://immersive-translate.owenyoung.com/){target="_blank"}  
+- [KeepChatGPT](https://greasyfork.org/zh-CN/scripts/462804-keepchatgpt){target="_blank"}
