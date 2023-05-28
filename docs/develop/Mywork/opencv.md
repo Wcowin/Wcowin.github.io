@@ -2,8 +2,8 @@
 tags:
   - 技术分享
 ---
-Github :simple-github: 地址：<https://github.com/Wcowin/License-plate-recognition/releases/tag/exe>{target=“_blank”}  
-Bibili :simple-bilibili: 视频教程：<https://www.bilibili.com/video/BV1zM411W7xU/?spm_id_from=333.999.0.0>{target=“_blank”}
+:simple-github:Github地址：<https://github.com/Wcowin/License-plate-recognition/releases/tag/exe>{target=“_blank”}  
+:simple-bilibili:Bilibili[视频教程](https://www.bilibili.com/video/BV1zM411W7xU/?share_source=copy_web&vd_source=4dbf1142085feeb1d5010d6a9e4199be){target=“_blank”}
 
 ![img](https://cn.mcecy.com/image/20230315/e542cb1cbf91965b87b068dfb4f97a48.png)
 ![img](https://cn.mcecy.com/image/20230315/2936069fd01d56aa902213a060895988.png)
@@ -26,4 +26,12 @@ Bibili :simple-bilibili: 视频教程：<https://www.bilibili.com/video/BV1zM411
 3.本声明未涉及之处请参见国家有关法律法规，当本声明与国家有关法律法规冲突时，以国家法律法规为准。
 
 ## 鸣谢
-感谢姚双同学的领导， 感谢[王科文](https://muselink.cc/Wcowin)同学对于本项目代码的构建， 感谢熊麒、彭金森、张云飞、亓文杰、彭金森、黄鹏对于本项目做出的建议及文档编写
+感谢姚双同学的领导， 感谢[王科文](https://muselink.cc/Wcowin){target=“_blank”}同学对于本项目代码的构建， 感谢熊麒、彭金森、张云飞、亓文杰、彭金森、黄鹏对于本项目做出的建议及文档编写
+
+
+## 附视频
+
+<!-- <iframe src="//player.bilibili.com/player.html?aid=526039186&bvid=BV1zM411W7xU&cid=1054475396&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+
+
+<iframe src="//player.bilibili.com/player.html?aid=526039186&bvid=BV1zM411W7xU&cid=1054475396&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>

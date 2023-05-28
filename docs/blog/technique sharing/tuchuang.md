@@ -5,7 +5,8 @@ tags:
 hide:
 ---
 
-
+!!!tip
+    图片加载不出来挂梯子即可
 
 ## 一、Github+cloudflare图床
 比如我的图床：`https://myimgs.pages.dev/IMG/+我的图片名称`  

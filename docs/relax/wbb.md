@@ -1,5 +1,7 @@
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=347852412&bvid=BV1rR4y1f7mA&cid=896199338&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
+![img](https://cn.mcecy.com/image/20230528/d163f04e1bf2f9f1fe5c1e15daef9a97.jpg)
+
 ![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
 ![](http://user-assets.sxlcdn.com/images/805944/FsGMQC5y3tJRIl2dwHaJ0RQ9uYyt.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
@@ -92,6 +94,28 @@
 
 3月1日，总台青春分享类节目《青春@2023》在央视新闻、央视网播出，总台记者化身“青春电台”主播。
 
+3月21日，在泉州参加"好物泉都来"专场带货；  
+
+4月初，水气清，菜花黄，又见一年柳如烟。王冰冰向你发出“春日之约”，在这个清明节，共赴2023中国（开封）清明文化节，共同感受景清气明，万物生长；  
+
+4月2日，王冰冰邀你体验今年踏青新玩法~央视新闻发起青年创作者闪耀计划；  
+
+4月13日，央视频特别节目《乘着大巴看中国》来到成都。总台主持人孟湛东、总台记者王冰冰与你相约蓉城，打卡全国糖酒会，一起诗酒趁年华；  
+
+4月18日，王冰冰向你发出邀请！一起走进全球首个超时空参与式博物馆；  
+
+4月23日，央视新闻《健康公开课》节目。北京协和医院专家陈伟与总台记者王冰冰畅聊减肥方法；  
+
+4月27日，蒙牛携手中国航天20周年之际，央视新闻带来独家直播。总台记者王冰冰担任节目主持人，邀您与中国航天一起共同点亮未来；  
+
+5月2日，《吉聚欢喜》 以喜剧底色演绎温馨、有趣的假期故事，呈现一份欢乐治愈的假日生活图鉴；  
+
+5月19日中国旅游日，2023杭州 •临安吴越文化节开幕晚会播出，围绕“天目叠翠，吴越千年”的主题，多个原创编排内容将亮相开幕晚会，结合沉浸式舞台表演、嘉宾创意推介、创意短片等多种形式，在主持人尼格买提、王冰冰的串联下，呈现千年吴越的文化积淀与文明传承，多维度展现临安之韵、临安之美；  
+
+资深媒体人、制片人王雪纯将在抖音迎来个人IP系列直播《纯游记》的收官场次。  
+
+5月21日 （小满）  
+下午16:30-18:30，雪纯邀请王冰冰担任直播嘉宾，走进中国传媒大学，进行一场主题为“跨越时空共赴青春”的直播。在直播间，两代媒体人跨越时空后现场同框，分享属于自己的校园故事，我们不见不散！  
 
 **（以上内容由[冰学网](https://mywbb.mysxl.cn/){target=“_blank”}综合各类信息编辑）**
 ***
@@ -122,3 +146,12 @@
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FoT9bdBjAhu1GTOqoFK2U4Qa58iO.jpeg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
 ![](http://user-assets.sxlcdn.com/images/805944/FrqBmLVChZp-Ttjh99l1Z7rkTyIi.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FoyL1kxHduJI4WsVPLT6Q9xis4T3.jpeg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](https://user-assets.sxlcdn.com/images/805944/FqUrymeeZPGMBBIRmjp9kzkvKEDQ.jpg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1200x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FiqIxdBMh5wTtKD5XMdx0JC26_s5.JPG?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FvO2ma_nxKzOPpO4f8mGbalKhD1r.JPG?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FhOsqt74gNzc6eLgECqwt28jUFml.JPG?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FtAhD9mbv2dNmTL3Qj9ZM8-bTd5l.JPG?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/Fq1zSM_yKHGZm-IxG5B1wb1PS5Sc.jpg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/Fo5buNDo3ScHKbH333qKF_AqtRiX.jpg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/Foaajf74g57myq9XgaCWkGub3Hb5.jpg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FqTqNdc88iK7tflHNFWy2DOdFDfJ.jpg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)

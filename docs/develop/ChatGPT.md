@@ -3,6 +3,7 @@ tags:
     - ChatGPT
 ---
 
+**2023.5.27昨天又是大规模封号，只能说且行切珍惜你的GPT **   
 
 **注册ChatGPT详细指南**  
 ![img](https://cn.mcecy.com/image/20230325/ab2d0ea74212ffa4fac73e195d7cf3d2.png)  

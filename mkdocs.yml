@@ -121,6 +121,7 @@ nav:
     - 我的作品:
         - 基于百度API和opencv的智能车牌识别程序: develop/Mywork/opencv.md
         - 玩的设计: develop/Mywork/design.md
+        - 利用百度API进行植物识别: develop/Mywork/aizhiwu.md
     - 1024code: develop/1024code.md
     - 利用Lighthouse测试网站性能: develop/lighthouse.md
     - What is Github: develop/Github.md
@@ -245,11 +246,11 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
   
-  consent:
-    title: Cookie consent
-    description: >- 
-      我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
-      如果你同意,你可以帮助我们让我们的网站更好
+  # consent:
+  #   title: Cookie consent
+  #   description: >- 
+  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+  #     如果你同意,你可以帮助我们让我们的网站更好
 
     
 
