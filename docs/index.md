@@ -58,3 +58,16 @@ comments: true
 
 <!-- <script src="https://elephant.ai/static/js/chatbot.js" id="38de9df37a2d4f9db37c9513392ff035"></script> -->
 
+<!-- <link type="text/css" rel="stylesheet" href="ckplayer/css/ckplayer.css" />
+<script type="text/javascript" src="ckplayer/js/ckplayer.js" charset="UTF-8"></script>
+<div class="video" style="width: 600px;height: 400px;">播放器容器</div>
+<script type="text/javascript">
+    //定义一个变量：videoObject，用来做为视频初始化配置
+    var videoObject = {
+        container: '.video', //“#”代表容器的ID，“.”或“”代表容器的class
+        smallWindows:true,//是否启用小窗口模式
+        menu:null,//右键菜单
+        video: 'http://ckplayer-video.oss-cn-shanghai.aliyuncs.com/sample-mp4/05cacb4e02f9d9e.mp4'//视频地址
+    };
+    var player = new ckplayer(videoObject);//初始化播放器
+</script> -->

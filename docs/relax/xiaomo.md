@@ -50,6 +50,21 @@
 
 <!-- <iframe frameborder=0 border="0" marginwidth="0" marginheight="0" scrolling="no" height=720 width=1280 src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4"></iframe> -->
 
+<link type="text/css" rel="stylesheet" href="ckplayer/css/ckplayer.css" />
+<script type="text/javascript" src="ckplayer/js/ckplayer.js" charset="UTF-8"></script>
+<div class="video" style="width: 640px;height: 500px;">播放器容器</div>
+<script type="text/javascript">
+    //定义一个变量：videoObject，用来做为视频初始化配置
+    var videoObject = {
+        container: '.video', //“#”代表容器的ID，“.”或“”代表容器的class
+        smallWindows:null,//是否启用小窗口模式
+        poster: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6f46fb63c119d83d2b4b38505fffbcd.jpg?w=1226&h=450',//封面图片地址
+        webFull:true,//是否启用页面全屏按钮，默认不启用
+        video: 'https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4'//视频地址
+    };
+    var player = new ckplayer(videoObject);//初始化播放器
+</script>
+
 ***
 
 ## 雷总专辑单曲
