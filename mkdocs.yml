@@ -309,6 +309,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   - ckplayer/js/ckplayer.js
+  - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
   # - javascripts/backgroud.js
 extra_css:
   - stylesheets/extra.css
@@ -316,6 +317,7 @@ extra_css:
   - https://unpkg.com/@waline/client@v2/dist/waline.css
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css
   - ckplayer/css/ckplayer.css
+  - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
 
 # crisp
 # https://crisp.chat/en/
