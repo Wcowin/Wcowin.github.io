@@ -50,8 +50,8 @@
 
 <!-- <iframe frameborder=0 border="0" marginwidth="0" marginheight="0" scrolling="no" height=720 width=1280 src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4"></iframe> -->
 
-<link type="text/css" rel="stylesheet" href="ckplayer/css/ckplayer.css" />
-<script type="text/javascript" src="ckplayer/js/ckplayer.js" charset="UTF-8"></script>
+<link type="text/css" rel="stylesheet" href="/ckplayer/css/ckplayer.css" />
+<script type="text/javascript" src="/ckplayer/js/ckplayer.js" charset="UTF-8"></script>
 <div class="video" style="width: 640px;height: 500px;">播放器容器</div>
 <script type="text/javascript">
     //定义一个变量：videoObject，用来做为视频初始化配置

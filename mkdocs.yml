@@ -83,6 +83,7 @@ nav:
         - 背景特效: blog/websitebeauty/backgroud.md
     - 学术:
         - LaTeX常用符号整理: blog/Academic/LaTeX.md
+        - Math: blog/Academic/math.md
         - 数学竞赛: 
           - 第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答: blog/Academic/Math/14.md
           - 第十三届全国大学生数学竞赛(非数学类)决赛详细解答: blog/Academic/Math/13js.md    
@@ -131,9 +132,9 @@ nav:
     - 看源码才懂: develop/kanyuanma.md
     
   - 闲话:
+    - 推荐的Books: relax/tuijianyuedu.md
     - 小米: relax/xiaomo.md
     - Apple: relax/Apple.md
-    - 推荐的Books: relax/tuijianyuedu.md
     - 如是我闻: relax/rushiwowen.md
     - 王冰冰o(^▽^)o: relax/wbb.md
     - 诗文:
