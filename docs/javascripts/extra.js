@@ -591,3 +591,13 @@ t.parentNode.insertBefore(e,t)}})();
 // crisp在线客服
 // window.$crisp=[];window.CRISP_WEBSITE_ID="89ded6c2-1a10-47e3-af5d-f12e6a378547";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
 
+//全屏视频
+var video = document.getElementById("video1");
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (isMobile) {
+  video.style.display = "none";
+  video.muted = true;
+} else {
+  video.volume = 0; // 或者根据需要设置适当的音量值，例如 0.5 表示 50% 的音量
+}

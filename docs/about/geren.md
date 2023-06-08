@@ -6,7 +6,8 @@ hide:
 ---
 
 # 知足且上进，温柔且坚定
-!!! note "About me"
+!!! pied-piper1 "About me"
+    * $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}{}$
     * Bilibili电子信息工程专业本科在读  :star2:
     * CV工程师（Ctrl+CV）🧑‍💻
     * 咖啡重度爱好者 :coffee:
@@ -56,3 +57,4 @@ hide:
 <div align=center> 
          <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" /> 
      </div> 
+

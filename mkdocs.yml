@@ -1,5 +1,5 @@
 #[Info]
-site_name: 科文的个人网站
+site_name: Wcowin的个人网站
 site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
 #[UI]
@@ -206,6 +206,7 @@ nav:
     
     - 免责声明: about/shengming.md
     - Test: about/test.md
+    - video: about/video.md
     - 404 Not Found: about/Foryou.md
   
   
@@ -311,6 +312,7 @@ extra_javascript:
   - ckplayer/js/ckplayer.js
   - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
   # - javascripts/backgroud.js
+  # - javascripts/rellax.min.js
 extra_css:
   - stylesheets/extra.css
   - stylesheets/video.css
