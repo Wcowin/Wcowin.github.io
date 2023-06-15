@@ -286,7 +286,7 @@ markdown文本内的连续两个或多个回车会被替换为一个回车
 
 点击[这里](#top)跳转到开头
 
-点击[这里](#bottom)跳转到结尾
+点击[这里](#bottom)跳转到结尾  
 
 ### 注脚
 
@@ -357,7 +357,12 @@ $$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
 $$x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 $$\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}{1+\frac{e^{-8\pi}} {1+\ldots} } } }$$
+***
+来看看两个重要极限  
 
+$$\displaystyle\lim_{x \rightarrow 0}\frac{\sin x}{x} = 1$$
+
+$$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
 ## 其他
 
 ### 转义字符
@@ -415,3 +420,5 @@ Markdown为以下字符提供反斜杠转义(但是CSDN不太支持)：
 
 ---
 <p>同时推荐这个网站去学习基础markdown语法：<a href="http://www.runoob.com/">runoob.com</a></p>
+
+<span id="bottom"></span>

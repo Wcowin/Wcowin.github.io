@@ -211,3 +211,81 @@ The HTML specification is maintained by the W3C.
 
 
 :fontawesome-brands-twitter:{ .twitter }
+
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+``` py hl_lines="2 3"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+``` py linenums="1"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+``` title=".browserslistrc"
+--8<-- ".browserslistrc"
+Wcowin
+```
+
+
+
+
+
+
+来看看两个重要极限  
+
+$$\displaystyle\lim_{x \rightarrow 0}\frac{\sin x}{x} = 1$$
+
+$$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
+
+
+
+<link type="text/css" rel="stylesheet" href="/ckplayer/css/ckplayer.css" />
+<script type="text/javascript" src="/ckplayer/js/ckplayer.js" charset="UTF-8"></script>
+<div class="video" style="width: 640px;height: 500px;">播放器容器</div>
+<script type="text/javascript">
+    //定义一个变量：videoObject，用来做为视频初始化配置
+    var videoObject = {
+        container: '.video', //“#”代表容器的ID，“.”或“”代表容器的class
+        smallWindows:null,//是否启用小窗口模式
+        poster: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6f46fb63c119d83d2b4b38505fffbcd.jpg?w=1226&h=450',//封面图片地址
+        webFull:true,//是否启用页面全屏按钮，默认不启用
+        video: 'https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4'//视频地址
+    };
+    var player = new ckplayer(videoObject);//初始化播放器
+</script>  
+
+***  
+
+<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+![img](https://cn.mcecy.com/image/20230615/749725b48e5972165d0bce10b364695e.png)
+
+
+
+<div id="grad1"></div>
+
+<button class="buttoncss">按钮</button>
+ <button class="buttonxuan buttonxuan1">Green</button>
+
+ <div class="hide">我是会隐藏的元素。</div>  
+ 
+***  
+
+ <div class="grid-container">
+  <div class="item1">头部</div>
+  <div class="item2">菜单</div>
+  <div class="item3">主要内容区域</div>  
+  <div class="item4">右侧</div>
+  <div class="item5">底部</div>
+</div>

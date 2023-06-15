@@ -7,7 +7,9 @@
 ![](http://user-assets.sxlcdn.com/images/805944/FsGMQC5y3tJRIl2dwHaJ0RQ9uYyt.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
 ## 履历
-**王冰冰**
+<font color=#F09898 size=7>王冰冰</font>  
+
+<font color=#4B91F1>  
 
 中国内地记者、媒体人。  
  
@@ -115,9 +117,15 @@
 资深媒体人、制片人王雪纯将在抖音迎来个人IP系列直播《纯游记》的收官场次。  
 
 5月21日 （小满）  
-下午16:30-18:30，雪纯邀请王冰冰担任直播嘉宾，走进中国传媒大学，进行一场主题为“跨越时空共赴青春”的直播。在直播间，两代媒体人跨越时空后现场同框，分享属于自己的校园故事，我们不见不散！  
+下午16:30-18:30，雪纯邀请王冰冰担任直播嘉宾，走进中国传媒大学，进行一场主题为“跨越时空共赴青春”的直播。在直播间，两代媒体人跨越时空后现场同框，分享属于自己的校园故事。
+6月3日，你好生活第四季正式开始录制，王冰冰参与录制；  
 
-**（以上内容由[冰学网](https://mywbb.mysxl.cn/){target=“_blank”}综合各类信息编辑）**
+6月10日是文化和自然遗产日，王冰冰来到佛山，探索这座岭南古城的非遗魅力。狮头扎作、铜凿剪纸…记录数不清的非遗文化；
+
+6月14日，中国影视之夜举办暨CMG融媒影城启幕，王冰冰饰演薛宝钗。 
+</font>  
+
+**（以上内容由[冰学网](https://mywbb.mysxl.cn/){target=“_blank”}综合各类信息编辑）插一嘴：这站长老哥是真TM喜欢冰冰**
 ***
 ## **美图奉上😘**
 
@@ -155,3 +163,11 @@
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/Fo5buNDo3ScHKbH333qKF_AqtRiX.jpg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/Foaajf74g57myq9XgaCWkGub3Hb5.jpg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FqTqNdc88iK7tflHNFWy2DOdFDfJ.jpg?imageMogr2%2Fstrip%2Fauto-orient%2Fthumbnail%2F1920x9000%3E%2Fquality%2F90%21%2Finterlace%2F1%2Fformat%2Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/Fh4UIml9LRcXvbWxFabWzm-Qrmmn.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FpirI4h0XJlLeKIFAVxzeDv2o2PM.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/Fng7qhVcQlEGQ-BXm8rdkls9Rvmy.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/Fs1nf_zPnIAf5T7E-rAQboKrv31C.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FjwRANM-BPp2cuyAxY0glPPAQhCt.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FqvoaTxeZ0xo6BTCA13THTMmvOmb.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+
+

@@ -7,11 +7,11 @@ hide:
 
 # 知足且上进，温柔且坚定
 !!! pied-piper1 "About me"
-    * $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}{}$
+    * My name: $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}{}$
     * Bilibili电子信息工程专业本科在读  :star2:
-    * CV工程师（Ctrl+CV）🧑‍💻
+    * CV工程师 ++ctrl+c++  (  ++v++  ) 🧑‍💻
     * 咖啡重度爱好者 :coffee:
-    * Math
+    * 痴迷Math  致力于高阶微分方程的研究 :pencil2:
     * 热爱(xiā)折腾技术,读书明智 :computer: 
     * 喜欢村上春树📖，擅长羽毛球 :badminton:
     * [找到我](https://github.com/Wcowin) &#x1F4A1;→:simple-github:[GitHub](https://github.com/Wcowin){target="_blank"}  
@@ -29,8 +29,8 @@ hide:
 
 
 
-[Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button }
-
+<!-- [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button} -->
+<button class="buttonxuan2" style="vertical-align:middle"><span><a target="_blank" href="mailto:1135801806@qq.com">Send Email:fontawesome-solid-paper-plane:</a> </span></button>
 <!-- <ul>
   <li>
     当前页面浏览量:

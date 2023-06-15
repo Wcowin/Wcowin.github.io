@@ -48,6 +48,7 @@ theme:
     - search.share #搜索分享按钮
     - content.tabs.link
     - content.tooltips
+    - content.code.copy
   language: zh # 一些提示性的文字会变成中文
   
 
@@ -59,7 +60,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
 nav:
-  # - 主页/index.md
+  # - 主页: index.md
   - 博客:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
@@ -256,7 +257,10 @@ extra:
     
 
 plugins:
-  - search
+  - search:
+      lang:
+        - en
+        - zh
   - tags:
       tags_file: tag.md
 
