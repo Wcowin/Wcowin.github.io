@@ -13,7 +13,7 @@ comments: true
      </div>  -->
 
 
- <font face="宋体" color= #4b78d8 size=7 >欢迎访问$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$的<a href="https://wcowin.work/" target="_blank">个人网站</a></font>
+ <font face="宋体" color= #4b78d8 size=7 >欢迎访问$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$的个人网站</font>
 
   
 
@@ -46,9 +46,8 @@ comments: true
 </div>
   
 
-<!-- ***
-
-推荐文章:material-book::  
+***
+<strong size=5>推荐文章:material-book::</strong>
 
   - [如何注册ChatGPT](develop/ChatGPT.md)
   - [利用mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
@@ -56,7 +55,7 @@ comments: true
   - [好用/好玩网站分享](blog/Webplay.md)
   - [Mac/windows软件网站汇总](blog/macsoft.md)
   - [实用脚本分享](blog/technique sharing/jiaoben.md)
-  - [留言板](waline.md) -->
+  - [留言板](waline.md)
 
 
 
