@@ -22,14 +22,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
       primary: blue grey # 上方的
-      accent: cyan # 链接等可交互元件的高亮色
+      accent: teal # 链接等可交互元件的高亮色
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - media: "(prefers-color-scheme: dark)"
       scheme: slate # 夜间模式
       primary: black 
-      accent: cyan
+      accent: teal
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
@@ -49,6 +49,8 @@ theme:
     - content.tabs.link
     - content.tooltips
     - content.code.copy
+    - content.action.edit
+    - content.action.view
   language: zh # 一些提示性的文字会变成中文
   
 
@@ -215,10 +217,6 @@ copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的
   
 
 extra:
-  # alternate:
-  #   - name: English
-  #     link: /en/ 
-  #     lang: en
   generator: false  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/twitter 
@@ -228,7 +226,7 @@ extra:
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
     - icon: fontawesome/solid/paper-plane
-      link: mailto:<1135801806@qq.com> #联系方式
+      link: mailto:<wangkewen821@gmail.com> #联系方式
 
   analytics: 
     provider: google
@@ -257,6 +255,9 @@ extra:
     
 
 plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - offline
   - search:
       lang:
         - en
@@ -314,7 +315,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   - ckplayer/js/ckplayer.js
-  - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
   # - javascripts/backgroud.js
   # - javascripts/rellax.min.js
 extra_css:
@@ -323,7 +324,8 @@ extra_css:
   - https://unpkg.com/@waline/client@v2/dist/waline.css
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css
   - ckplayer/css/ckplayer.css
-  - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
+  - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
 
 # crisp
 # https://crisp.chat/en/

@@ -2,6 +2,8 @@
 title: 我的目标
 hide:
 ---
+</p><h1 id="01" name="01"><strong>01</strong></h1><p>  
+
 ## 近期目标  
 
 - [ ] 考研上岸
@@ -16,6 +18,7 @@ hide:
 - [x] 少喝咖啡
 - [ ] 看番
 
+</p><h1 id="01" name="02"><strong>02</strong></h1><p>  
 
 ## 长期目标
 
