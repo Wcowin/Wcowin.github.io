@@ -14,7 +14,7 @@ theme:
     # admonition:
     #   <type>: material/file-alert-outline
 
-  favicon: img/faxian.png
+  favicon: img/apple-line.png
   # img/11.ico
   palette:
     #primary: blue grey
@@ -38,7 +38,7 @@ theme:
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
-    #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
     - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
@@ -257,7 +257,7 @@ extra:
 plugins:
   # - git-revision-date-localized:
   #     enable_creation_date: true
-  - offline
+  # - offline
   - search:
       lang:
         - en
@@ -320,6 +320,7 @@ extra_javascript:
   # - javascripts/rellax.min.js
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/extra1.css
   - stylesheets/video.css
   - https://unpkg.com/@waline/client@v2/dist/waline.css
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css

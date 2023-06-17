@@ -13,7 +13,7 @@ comments: true
      </div>  -->
 
 
- <font face="宋体" color= #4b78d8 size=7 >欢迎访问$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$的个人网站</font>
+ <center><font face="宋体" color= #4b78d8 size=7 >欢迎访问$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$的个人网站</font></center>
 
   
 
@@ -28,7 +28,6 @@ comments: true
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 <div id="rcorners2">
 <div id="rcorners1" >
-<!-- <b>只分享好玩有趣的东西</b> -->
 <i class="fa fa-calendar" style="font-size:100%"></i>
 <b><span id="time"></span></b>
 
@@ -46,7 +45,8 @@ comments: true
 </div>
   
 
-***
+***  
+
 <strong size=5>推荐文章:material-book::</strong>
 
   - [如何注册ChatGPT](develop/ChatGPT.md)
@@ -60,9 +60,6 @@ comments: true
 
 
 <!-- **:material-clock-time-ten-outline: :<span id="time"></span>** -->
-
-
-
 
 
 
