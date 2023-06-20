@@ -76,7 +76,7 @@ nav:
         - oh-my-zsh 更新: blog/technique sharing/ohmuzsh.md
         - 解决谷歌翻译用不了的问题: blog/technique sharing/googletranslate.md
         - 爱心代码: blog/technique sharing/aixin.md
-        - 科学上网: blog/technique sharing/kexue.md
+        # - 科学上网: blog/technique sharing/kexue.md
     - MKdocs:
         - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
@@ -258,10 +258,7 @@ plugins:
   # - git-revision-date-localized:
   #     enable_creation_date: true
   # - offline
-  - search:
-      lang:
-        - en
-        - zh
+  - search
   - tags:
       tags_file: tag.md
 

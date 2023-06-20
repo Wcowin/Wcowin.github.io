@@ -17,3 +17,7 @@
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Wcowin.github.io&type=Date)](https://star-history.com/#Wcowin/Wcowin.github.io&Date)
+
+
+
+<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
