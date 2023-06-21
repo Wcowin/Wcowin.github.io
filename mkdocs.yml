@@ -148,7 +148,8 @@ nav:
       - 雨霖铃·秋别: relax/shiwen/yll.md
       - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
     - 数至十: 
-      - 1: relax/wkwMath/1.md 
+      - 1: relax/wkwMath/1.md
+      - 2: relax/wkwMath/2.md 
       # - 诗经: relax/shiwen/shijing.json
     - 杂文:
         - 《目送》节选: relax/Essay/musong.md
