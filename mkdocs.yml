@@ -97,6 +97,7 @@ nav:
         - Homebrew国内如何自动安装(国内地址)(Mac & Linux): blog/Mac/homebrew.md
         - mac 无法访问 github 的解决办法: blog/Mac/jiasugithub.md
         - Mac的esc键失效的解决方法: blog/Mac/Macesc.md
+        - 启动台图标顺序错乱怎么办: blog/Mac/Launchpad.md
         - Mac小技巧:去除系统截图名的日期后缀: blog/Mac/jietu.md
         - 小小Mac技巧: blog/Mac/xjiq.md
         - Mac隐藏彩蛋: blog/Mac/maccd.md
@@ -150,6 +151,7 @@ nav:
     - 数至十: 
       - 1: relax/wkwMath/1.md
       - 2: relax/wkwMath/2.md 
+      - 3: relax/wkwMath/3.md 
       # - 诗经: relax/shiwen/shijing.json
     - 杂文:
         - 《目送》节选: relax/Essay/musong.md
