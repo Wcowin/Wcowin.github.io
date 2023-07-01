@@ -155,6 +155,12 @@ nav:
       - 4: relax/wkwMath/4.md
       - 5: relax/wkwMath/5.md
       # - 诗经: relax/shiwen/shijing.json
+
+    - 观影:
+        - 推荐的番剧: relax/Movie/tuijianfanju.md
+        - 推荐的电影: relax/Movie/tuijiandedianyin.md
+        - 推荐的电视剧: relax/Movie/tuijiandsj.md
+
     - 杂文:
         - 《目送》节选: relax/Essay/musong.md
         - 大学一个人吃饭很丢人吗？: relax/Essay/dx.md
@@ -178,10 +184,7 @@ nav:
             - 《朱生豪情书全集摘录》(053): relax/Letter/luvletter/zhushenghao5.md
             - 《朱生豪情书全集摘录》(055): relax/Letter/luvletter/zhushenghao6.md
 
-    - 观影:
-        - 推荐的番剧: relax/Movie/tuijianfanju.md
-        - 推荐的电影: relax/Movie/tuijiandedianyin.md
-        - 推荐的电视剧: relax/Movie/tuijiandsj.md
+
     # - Music:
     #     - shape of you: relax/Music/soy.md
     #     - Floating: relax/Music/Floating.md
@@ -195,6 +198,7 @@ nav:
     - 入党结业考试题总结: relax/rudang.md
     - 润学之为什么润: about/run.md
     - 让人说话，天塌不下来: about/maozedong.md
+    - 关于教育革命的谈话: relax/jiaoyu.md
     - 程序猿神之楷模:一个人,一个网站,5.75亿美元卖掉: relax/kaimo.md
     
   - 旅行: 
