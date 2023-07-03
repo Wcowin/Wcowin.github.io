@@ -15,11 +15,12 @@ hide:
     * 痴迷Math/致力于高阶微分方程的研究 :pencil2:
     * 热爱(xiā)折腾技术,读书明智 :computer: 
     * 喜欢村上春树📖，擅长羽毛球 :badminton: 
-    * <a href="https://github.com/Wcowin" target="_blank"><button class="buttonxuan3">找到我:simple-github:</button></a>:material-arrow-right:&#x1F4A1; 
+
     <div align=left> 
          <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" /> 
      </div> 
 
+<!-- * <a href="https://github.com/Wcowin" target="_blank"><button class="buttonxuan3">找到我:simple-github:</button></a>:material-arrow-right:&#x1F4A1;  -->
 
 <!-- ![](https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png) -->
 <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats)   -->
@@ -38,8 +39,13 @@ hide:
 
 
 <!-- [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button} -->
-<a target="_blank" href="mailto:1135801806@qq.com"><button class="buttonxuan2" style="vertical-align:middle"><span>Send Email:fontawesome-solid-paper-plane: </span></button></a>  
-
+<a target="_blank" href="mailto:1135801806@qq.com"><button class="buttonxuan2" style="vertical-align:middle"><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> 
+ 
+<p align="left">
+&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  
+&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
+&nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
+</p>
 <!-- <ul>
   <li>
     当前页面浏览量:
