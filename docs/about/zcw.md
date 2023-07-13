@@ -21,4 +21,4 @@ title: 支持作者
 ***
 **:simple-kofi:ko-fi**
 
-[Touch me!](https://ko-fi.com/U6U5HAO6B){ .md-button }
+[Touch me!](https://ko-fi.com/U6U5HAO6B){ .md-button target=_blank}

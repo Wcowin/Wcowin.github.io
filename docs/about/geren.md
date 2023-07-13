@@ -39,7 +39,7 @@ hide:
 
 
 <!-- [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button} -->
-<a target="_blank" href="mailto:1135801806@qq.com"><button class="buttonxuan2" style="vertical-align:middle"><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> 
+<a target="_blank"  href="mailto:1135801806@qq.com"><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> 
  
 <p align="left">
 &nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  

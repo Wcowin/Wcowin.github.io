@@ -1,18 +1,20 @@
+
+<font face="宋体"  size=80>:flag_cn:<b></font>  
+
 - H~2~O
 - A^T^A
 - ==This was marked==
 - ^^This was inserted^^
 - ~~This was deleted~~
 
-:flag_cn:
+<a href="https://time.is/China" id="time_is_link" rel="nofollow" style="font-size:36px;color:black">中国时间:</a>
+<span id="China_z43d" style="font-size:36px;color:black"></span>
+<script src="//widget.time.is/t.js"></script>
+<script>
+time_is_widget.init({China_z43d:{}});
+</script>
 
-<!-- 关闭自带的自动补全功能 -->
-<form autocomplete="off" action="/action_page.php">
-  <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" placeholder="输入国家或地区英文名...">
-  </div>
-  <input type="submit">
-</form>
+[![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
 
 <!-- 触发弹窗 - 图片改为你的图片地址 -->
 <img id="myImg" src="https://c.runoob.com/wp-content/uploads/2017/01/btotbhpudiagtmvlkyrs.jpg" alt="wkw" width="300" height="200">
