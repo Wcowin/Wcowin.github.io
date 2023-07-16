@@ -1,18 +1,14 @@
 
 <font face="宋体"  size=80>:flag_cn:<b></font>  
 
+$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
+
 - H~2~O
 - A^T^A
 - ==This was marked==
 - ^^This was inserted^^
 - ~~This was deleted~~
 
-<a href="https://time.is/China" id="time_is_link" rel="nofollow" style="font-size:36px;color:black">中国时间:</a>
-<span id="China_z43d" style="font-size:36px;color:black"></span>
-<script src="//widget.time.is/t.js"></script>
-<script>
-time_is_widget.init({China_z43d:{}});
-</script>
 
 [![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
 

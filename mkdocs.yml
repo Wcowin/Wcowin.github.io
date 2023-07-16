@@ -76,7 +76,7 @@ nav:
         - oh-my-zsh 更新: blog/technique sharing/ohmuzsh.md
         - 解决谷歌翻译用不了的问题: blog/technique sharing/googletranslate.md
         - 爱心代码: blog/technique sharing/aixin.md
-        # - 科学上网: blog/technique sharing/kexue.md
+        - 科学上网: blog/technique sharing/kexue.md
     - MKdocs:
         - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
@@ -211,7 +211,7 @@ nav:
   - 标签: tag.md
   
   - 关于:
-    - 个人履历: about/geren.md
+    - 个人简介: about/geren.md
     - 个人目标: about/goal.md
     - 网站制作: about/web.md
     - 支持作者: about/zcw.md

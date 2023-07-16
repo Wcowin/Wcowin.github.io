@@ -1,13 +1,14 @@
 :root > * {
     --md-primary-fg-color:        #518FC1;
-    --md-primary-fg-color--light: #4b78d8;
-    --md-primary-fg-color--dark:  #4b78d8;
+    --md-primary-fg-color--light:#518FC1;
+    --md-primary-fg-color--dark:  #518FC1;
   }
-  /* #5F9EA0 */
+  /* #5F9EA0 #4b78d8*/
 
 
 img.img1 {
-  border-radius: 12px;
+  border-radius: 25px;
+  
 }
 
   .twitter {
@@ -55,7 +56,7 @@ img.img1 {
   }
   .md-typeset .admonition.pied-piper1,
   .md-typeset details.pied-piper1 {
-    border-color: rgb(85,119,209);
+    border-color: rgb(96,141,189);
     font-size: large;
     /* border-radius:25px; */
     border-bottom-left-radius: 25px;
@@ -440,7 +441,7 @@ source{
 
 .buttonxuan2 {
   display: inline-block;
-  background-color: #9CE683;
+  background-color: #ACE48E;
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;

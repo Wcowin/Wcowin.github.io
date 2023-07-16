@@ -37,19 +37,10 @@ hide:
 </p>
 
 
-<a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><button class="buttonxuan2" style="vertical-align:middle; float: right;"><span>Send Email:fontawesome-solid-paper-plane: </span></button></a>
+
 
 <!-- [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button} -->
-<!-- <a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a>  -->
- 
-<p align="left">
-&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="70" /></a>  
-&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="70" /></a>  
-&nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="70" /></a>
-</p>
+<a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> 
 
-<!-- <div align=center> 
-         <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" /> 
-     </div>  -->
 
 
