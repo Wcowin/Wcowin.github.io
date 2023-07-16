@@ -6,14 +6,25 @@ hide:
   - feedback
 comments: true
 ---
+<!-- <div id="grad1" style="text-align:center;margin:auto;color:#f3f3f3;font-size:30px;font-weight:550;padding-top:105px;">
+</div> -->
 
+<!-- <style>
+
+ body {
+background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+} 
+</style> -->
 
 <!-- <div align=center> 
          <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" /> 
      </div>  -->
 
 
- <center><font face="宋体" color= #4b78d8 size=7 >欢迎访问$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$的个人网站</font></center>
+ <center><font face="宋体" color= #518FC1 size=7 >欢迎访问$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$的个人网站</font></center>
 
   
 
@@ -60,7 +71,6 @@ comments: true
 
 
 <!-- **:material-clock-time-ten-outline: :<span id="time"></span>** -->
-
 
 
 

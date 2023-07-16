@@ -1,5 +1,5 @@
 :root > * {
-    --md-primary-fg-color:        #4b78d8;
+    --md-primary-fg-color:        #518FC1;
     --md-primary-fg-color--light: #4b78d8;
     --md-primary-fg-color--dark:  #4b78d8;
   }
@@ -358,7 +358,7 @@ source{
 /*圆角*/
 #rcorners1 {
   border-radius: 25px;
-  background: #EEF3FE;
+  background: #F0EFEB;
   padding: 20px; 
   width: 100%;
   height: 100%;
@@ -370,7 +370,7 @@ source{
 
 #rcorners2 {
   border-radius: 25px;
-  border: 2px solid #5476D0;
+  border: 2px solid #518FC1;
   padding: 20px; 
   width: 100%;
   height: 100%; 
@@ -675,9 +675,6 @@ div.hide {
 .closebtn:hover {
   color: black;
 }
-
-
-
 
 
 

@@ -9,6 +9,11 @@
 ## 简约风格简介
 ![img](https://cn.mcecy.com/image/20230715/8ab6c5061737e364fe9ad6502552c5e4.png)
 ***
+
+## 公众号 logo
+![img](https://cn.mcecy.com/image/20230716/fbb63ff1b98f57f4f2cf92b75cfffb4d.jpeg)
+<img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg">
+***
 ## 早期购物网站制作  
 ![img](https://cn.mcecy.com/image/20230402/574c2334f9dfc5f88395acebfc630c23.png)
 ![img](https://cn.mcecy.com/image/20230402/8319a9373ecb7a0319f3d8b036bb412b.png)
