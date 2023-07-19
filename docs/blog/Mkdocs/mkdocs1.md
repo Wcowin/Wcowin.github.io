@@ -45,11 +45,11 @@ docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题
 
 (建议先执行下面的代码添加一个GitHub Workflow)
 ``` 
-1.$ mkdir .github
-2.$ cd .github
-3.$ mkdir workflows
-4.$ cd workflows
-5.$ vim PublishMySite.yml
+$ mkdir .github
+$ cd .github
+$ mkdir workflows
+$ cd workflows
+$ vim PublishMySite.yml
 ```
 
 在PublishMySite.yml里面输入以下内容

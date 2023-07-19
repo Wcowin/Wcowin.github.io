@@ -8,7 +8,7 @@ hide:
 # 知足且上进，温柔且坚定
 !!! pied-piper1 "About me"
     
-    * Hey, I'm Wcowin! ($\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$)  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+    * Hey, I'm Wcowin!<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
     * Bilibili电子信息工程专业本科在读  :star2:
     * CV工程师 ++ctrl+c++  (  ++v++  ) 🧑‍💻
     * 咖啡重度爱好者 :coffee:

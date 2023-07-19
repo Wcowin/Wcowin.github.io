@@ -83,6 +83,7 @@ nav:
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
         - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
     - Mkdocs美化:
+        - 修改网站字体: blog/websitebeauty/mkdocsfont.md
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md
         - 背景特效: blog/websitebeauty/backgroud.md
     - 学术:
