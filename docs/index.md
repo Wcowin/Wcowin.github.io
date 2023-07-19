@@ -8,7 +8,7 @@ comments: true
 ---
 
 
- <center><font face="宋体" color= #518FC1 size=7 >欢迎访问我的个人网站</font></center>
+ <center><font  color= #518FC1 size=7 >技术探索之旅</font></center>
 
   
 
