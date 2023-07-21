@@ -33,9 +33,20 @@ Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，
 
 ![](https://user-assets.sxlcdn.com/images/951476/FkEoM-JH0F6SYwS6RXR2ZIcSh45Q.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
-<iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
+<!-- <iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=0&height=32"></iframe> -->
 
+<script src='//player.polyv.net/script/player.js'></script>
+<div id='plv_44ee3aee795099c508bb01f6ba11cf4c_4'></div>
+<script>
+var player = polyvPlayer({
+  'wrap':'#plv_44ee3aee795099c508bb01f6ba11cf4c_4',
+  'width':'600',
+  'height':'338',
+  'vid': '44ee3aee795099c508bb01f6ba11cf4c_4',
+  'playsafe': '' // 播放加密视频的凭证, 取值参考文档: https://help.polyv.net/index.html#/vod/api/playsafe/token/create_token 
+});
+</script>
 2019年9月10日苹果发布会开场动画解析↑↑↑
 
 1. 说出hello的Macintosh，代表图形用户界面的交互方式革命。
