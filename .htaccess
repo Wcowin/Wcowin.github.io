@@ -9,10 +9,10 @@
   AddOutputFilterByType DEFLATE application/rss+xml
   AddOutputFilterByType DEFLATE application/javascript
   AddOutputFilterByType DEFLATE application/x-javascript
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript
+  ExpiresActive on
+  ExpiresDefault "access plus 1 month"
 </IfModule>
 
-<IfModule mod_expires.c>
-ExpiresActive on
-ExpiresDefault "access plus 1 month"
-</IfModule>
+
+
+
