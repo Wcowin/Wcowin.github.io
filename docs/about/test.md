@@ -248,7 +248,15 @@ Wcowin
 
 
 
+  <body>
+    <pre class="mermaid">
+  graph LR
+      A --- B
+      B-->C[fa:fa-ban forbidden]
+      B-->D(fa:fa-spinner);
+    </pre>
 
+  </body>
 
 
 来看看两个重要极限  
