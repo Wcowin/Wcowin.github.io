@@ -236,11 +236,11 @@ extra:
       link: https://twitter.com/wcowin_
     - icon: fontawesome/brands/github
       link: https://github.com/Wcowin
-    - icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+    
     - icon: fontawesome/solid/paper-plane
       link: mailto:<wangkewen821@gmail.com> #联系方式
-
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
   analytics: 
     provider: google
     property: G-29HZMNR0KG
@@ -319,8 +319,8 @@ markdown_extensions:
       permalink: "\ue157"
   
 extra_javascript:
-  # - javascripts/extra.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  - javascripts/extra.js
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -331,8 +331,8 @@ extra_javascript:
   # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
 extra_css:
-  # - stylesheets/extra.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
+  - stylesheets/extra.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   - stylesheets/extra1.css
   # - stylesheets/video.css
   - https://unpkg.com/@waline/client@v2/dist/waline.css
