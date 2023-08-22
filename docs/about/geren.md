@@ -32,7 +32,7 @@ hide:
 <p align="center">
   
   <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png" alt="个人名片" class="img1">
+    <img src="https://cn.mcecy.com/image/20230822/24afe45d85f111894db6db75d74d1f1d.png" alt="个人名片" class="img1">
   </a>
 </p>
 
