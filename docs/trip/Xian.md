@@ -30,10 +30,6 @@ D2： 陕历博（预约）一大雁塔/大慈恩寺——大唐不夜城/(大�
 
 D3: 找同学耍
 
-<figure markdown>
-  ![Image title](https://pb.nichi.co/track-cupboard-ski)
-  <figcaption> 在线帮这位美女征婚</figcaption>
-</figure>
 D4: 返程
 
 ## 美食  

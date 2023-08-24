@@ -8,6 +8,17 @@
 最后他们分开了，有点小刀
 
 ***
+
+## 隔窗恋爱
+![img](https://cn.mcecy.com/image/20230716/b8952a4f7f045a5ac5c1b8931f284ae1.png)
+![img](https://cn.mcecy.com/image/20230823/570f920eed17fcbf79539f34eab38cec.png)
+![img](https://cn.mcecy.com/image/20230823/979782f6b81bd108809b2cd018da9d7f.jpg)
+tip:粉红头发是男二(我爱男二,男主太渣)  
+
+拉克尔（克拉拉·加勒饰）疯狂爱上了迷人而神秘的邻居阿瑞斯（胡利奥·佩纳饰），虽然她一直默默关注着阿瑞斯，但他们却从没说过一句话。不过，拉克尔目标明确，那就是让阿瑞斯爱上自己。然而，她不是一个傻白甜女孩，并没想过为此倾尽所有，更不会迷失自我，她需要想办法让阿瑞斯爱上她
+
+
+***
 ## 007
 ![img](https://cn.mcecy.com/image/20230108/3e5d025d0e92c5fa02f4ef7a3aff1b7e.jpeg) 
  

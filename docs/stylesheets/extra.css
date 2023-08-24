@@ -688,4 +688,7 @@ div.hide {
 }
 
 
-
+/* 变灰代码 */
+/* html {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  -webkit-filter: grayscale(100%);} */

@@ -127,10 +127,16 @@
 6月16日，央视新闻联合拼多多带来的百亿补贴带货直播，任鲁豫王冰冰为你推荐四川特色；  
 
 6月22日~24日，每天20:15，关注CCTV-17《生活有点田》，阳光很好，一起开工！
+
+7月14日，《中国短视频大会》开播，王冰冰和尼格买提主持；  
+
+7月中旬，《追时间的厨房》正式开播，王冰冰作为嘉宾；  
+
+7月22日，王冰冰作为嘉宾参与《你好生活》第四季。
  
 </font>  
 
-**（以上内容由[冰学网](https://mywbb.mysxl.cn/){target=“_blank”}综合各类信息编辑）插一嘴：这站长老哥是真TM喜欢冰冰**
+**（以上内容由[冰学网](https://mywbb.mysxl.cn/){target=“_blank”}综合各类信息编辑）插一嘴：这站长老哥是真喜欢冰冰**
 ***
 ## **美图奉上😘**
 
@@ -174,5 +180,4 @@
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/Fs1nf_zPnIAf5T7E-rAQboKrv31C.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FjwRANM-BPp2cuyAxY0glPPAQhCt.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FqvoaTxeZ0xo6BTCA13THTMmvOmb.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
-
-
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FuCfDui64dLhZD3_2XnETzzOwuNE.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)![Alt text](http://user-assets.sxlcdn.com/images/805944/FgrA_oyC1lKcyFWQSbo6UlWw2SjO.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
