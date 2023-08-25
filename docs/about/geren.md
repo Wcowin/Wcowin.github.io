@@ -8,7 +8,7 @@ hide:
 # 知足且上进，温柔且坚定
 !!! pied-piper1 "About me"
     
-    * Hey, I'm Wcowin!<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+    * Hey, I'm [Wcowin](https://bento.me/wcowin)!<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
     * Bilibili电子信息工程专业本科在读  :star2:
     * CV工程师 ++ctrl+c++  (  ++v++  ) 🧑‍💻
     * 咖啡重度爱好者 :coffee:
@@ -30,9 +30,14 @@ hide:
 <img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg">
 
 <a href="https://muselink.cc/Wcowin" target="_blank">
-  <img src="https://cn.mcecy.com/image/20230822/24afe45d85f111894db6db75d74d1f1d.png" alt="个人名片" class="img2">
+  <center>
+    <div style="color:orange; 
+    color: #999;
+    padding: 2px;">我的名片</div>
+  </center>
+  <img class="img" src="https://cn.mcecy.com/image/20230822/24afe45d85f111894db6db75d74d1f1d.png" alt="个人名片">
+  
 </a>
-
 
 
 <!-- [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button} -->

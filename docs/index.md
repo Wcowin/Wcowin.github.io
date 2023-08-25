@@ -24,7 +24,7 @@ comments: true
 
 <div id="rcorners2">
 <div id="rcorners1">
-<!-- <i class="fa fa-calendar" style="font-size:100%"></i> -->
+<!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
 <body>
     <p class="p1"></p>
     <script>
@@ -68,13 +68,15 @@ comments: true
         <li>移动端 点击左上角图标选择主题和文章</li>
       </ul>
   <li>搜索关键词以打开文章</li>
-  <li>如遇到打开文章后无法显示图片的情况,请使用科学上网</li>
+  <li>如遇到网页卡顿/打开文章后无法显示图片的情况,请使用科学上网打破信息壁垒</li>
 </ul>
 
 </div>
   
 
 ***  
+***  
+
 
 <strong>推荐文章:material-book:</strong>
 
@@ -88,7 +90,7 @@ comments: true
 
 
 
-
+[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵
 
 
 <head>
@@ -115,4 +117,15 @@ t.parentNode.insertBefore(e,t)}})();
  
 
  
+
+<center>
+    <img 
+    src="https://cn.mcecy.com/image/20230825/16cd6a66b57a3b97b7c1fa8333420285.jpg">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">我的名片</div>
+</center>
+
 
