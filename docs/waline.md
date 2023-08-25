@@ -22,7 +22,7 @@ comments: true
   
   <!-- ... -->
 </head>
-<body>
+
   <!-- ... -->
   <div id="waline"></div>
   <script type="module">
@@ -44,7 +44,7 @@ comments: true
       pageview: true,
     });
   </script>
-</body>
+
 
 <script src="https://giscus.app/client.js"
         data-repo="Wcowin/hexo-site-comments"

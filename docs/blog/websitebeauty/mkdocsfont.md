@@ -124,8 +124,7 @@ An open-source Chinese font derived from Fontworks' Klee One. 一款开源中文
 ### 基于Mkdocs的网站字体美化用法
 
 1. 在mkdocs.yml中添加以下内容
-```yml
-
+```yaml
 extra_css:
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css

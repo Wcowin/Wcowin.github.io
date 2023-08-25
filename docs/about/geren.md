@@ -29,13 +29,9 @@ hide:
 
 <img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg">
 
-<p align="center">
-  
-  <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://cn.mcecy.com/image/20230822/24afe45d85f111894db6db75d74d1f1d.png" alt="个人名片" class="img1">
-  </a>
-</p>
-
+<a href="https://muselink.cc/Wcowin" target="_blank">
+  <img src="https://cn.mcecy.com/image/20230822/24afe45d85f111894db6db75d74d1f1d.png" alt="个人名片" class="img2">
+</a>
 
 
 

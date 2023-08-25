@@ -184,7 +184,7 @@ site_author: 作者名字
 
 ## theme部分  
 
-### 颜色：
+### 颜色
 ![img](https://cn.mcecy.com/image/20230324/0d60c4d1cc6399c654c78769a402ad56.png)
 ```
 theme:
@@ -194,7 +194,7 @@ theme:
 primary后面是网站顶部栏目的颜色（也用于标题、边栏、文本链接和其他几个组件），目前支持下面几个颜色：
 ![img](https://cn.mcecy.com/image/20230324/84d4a4194cc575c2a76e6e54b25fbf99.png)
 
-### 明暗主题按钮：
+### 明暗主题按钮
 ![img](https://cn.mcecy.com/image/20230324/8654dc52f8c278bbf29eb94a8ffcb2da.png)
 ```
 theme:
@@ -220,7 +220,7 @@ theme:
 ***
 ### features
 ```
-features: 
+features:
     - navigation.instant   #- header.autohide  #自动隐藏
     #- announce.dismiss   #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     - navigation.tracking   #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
@@ -408,5 +408,7 @@ javascripts/mathjax.js里有对数学公式的扩展，extra_css里是CSS的知�
 
 [JS实现鼠标样式](../websitebeauty/shubiao.md)   
 
-[背景特效](../websitebeauty/backgroud.md)
+[背景特效](../websitebeauty/backgroud.md)  
+
+[自定义网站字体](../websitebeauty/mkdocsfont.md)
 
