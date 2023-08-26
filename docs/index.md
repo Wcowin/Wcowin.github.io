@@ -10,7 +10,24 @@ comments: true
 
  <center><font  color= #518FC1 size=7 >技术探索之旅</font></center>
 
-  
+<center>
+<font  color= #608DBD>
+<p id="hitokoto">
+  <a href="#" id="hitokoto_text"></a>
+</p>
+<!-- 本例不能添加链接内容，放在此处只是因为此接口比较方便，也许能够解决大部分的需求-->
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.querySelector('#hitokoto_text')
+      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+</script>
+</font>
+</center>
 
 <!-- ???+Note "$e^{i \pi}+1=0$ :octicons-heart-fill-24:{ .heart }" 
     - 只分享好玩有趣的东西~
@@ -114,7 +131,7 @@ t.parentNode.insertBefore(e,t)}})();
 
  
 
- 
+
 
  
 

@@ -35,7 +35,7 @@ hide:
     color: #999;
     padding: 2px;">我的名片</div>
   </center>
-  <img class="img" src="https://cn.mcecy.com/image/20230822/24afe45d85f111894db6db75d74d1f1d.png" alt="个人名片">
+  <img class="img" src="https://pbxt.replicate.delivery/hlNUcSkvwvYyOVrVC1E4bSWtX5gLQDzd1dAehfgiRAdtzxdRA/out..jpg" alt="个人名片">
   
 </a>
 
