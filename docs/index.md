@@ -118,14 +118,4 @@ t.parentNode.insertBefore(e,t)}})();
 
  
 
-<center>
-    <img 
-    src="https://cn.mcecy.com/image/20230825/16cd6a66b57a3b97b7c1fa8333420285.jpg">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">我的名片</div>
-</center>
-
 
