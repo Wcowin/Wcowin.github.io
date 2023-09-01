@@ -2,7 +2,7 @@
 
 - My personal website:http://wcowin.work
 - Welcome to contact my Email:wangkewen821@gmail.com
-- Hope you can have a good time!
+- 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
 
 <!-- ![](https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png) -->
 

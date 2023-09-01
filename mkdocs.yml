@@ -80,6 +80,7 @@ nav:
         - 爱心代码: blog/technique sharing/aixin.md
         - 用Matlab画玫瑰百合花: blog/technique sharing/matlabrose.md
         - 科学上网: blog/technique sharing/kexue.md
+        - 计算机编年史: blog/technique sharing/jisuanjibiannianshi.md
     - MKdocs:
         - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
