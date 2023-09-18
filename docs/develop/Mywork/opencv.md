@@ -1,6 +1,7 @@
 ---
+title: 基于百度API和opencv的智能车牌识别程序
 tags:
-  - 技术分享
+  - 我的作品
 ---
 :simple-github:Github地址：<https://github.com/Wcowin/License-plate-recognition/releases/tag/exe>{target=“_blank”}  
 :simple-bilibili:Bilibili[视频教程](https://www.bilibili.com/video/BV1zM411W7xU/?share_source=copy_web&vd_source=4dbf1142085feeb1d5010d6a9e4199be){target=“_blank”}

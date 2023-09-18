@@ -1,3 +1,8 @@
+---
+title: 利用百度API进行植物识别
+tags:
+  - 我的作品
+---
 [植物识别_拍照识别植物-百度Al开放平台](https://ai.baidu.com/tech/imagerecognition/plant)
 
 ## 一、首先点上方链接去申请应用
