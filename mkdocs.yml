@@ -130,6 +130,7 @@ nav:
         - MWeb Pro: develop/Markdown/MWeb.md
     - 我的作品:
         - 基于讯飞人脸算法进行人脸比对(调用API): develop/Mywork/face_compare.md
+        - 人脸识别系统: develop/Mywork/face-recognition.md
         - 基于百度API和opencv的智能车牌识别程序: develop/Mywork/opencv.md
         - 利用百度API进行植物识别: develop/Mywork/aizhiwu.md
         - 玩的设计: develop/Mywork/design.md

@@ -226,3 +226,7 @@ root.mainloop()
 <https://github.com/Wcowin/XunFei-Face-compare/releases/tag/exe>
 
 打包好的地址：<https://github.com/Wcowin/XunFei-Face-compare/releases/download/exe/test4.exe.zip>
+
+## 视频
+
+<iframe src="//player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
