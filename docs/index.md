@@ -43,8 +43,10 @@ comments: true
 <div id="rcorners1">
 <!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
 <body>
+    <font  color= #608DBD>
     <p class="p1"></p>
     <script>
+        
         //格式：2020年04月12日 10:20:00 星期二
         function format(newDate) {
             var day = newDate.getDay()
@@ -74,6 +76,7 @@ comments: true
         },1000)
         
   </script>
+  </font>
 </body>
 <!-- <b><span id="time"></span></b> -->
 
