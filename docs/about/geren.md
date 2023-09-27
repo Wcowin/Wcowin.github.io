@@ -39,6 +39,13 @@ hide:
   
 </a>
 
+  <center>
+    <div style="color:orange; 
+    color: #999;
+    padding: 2px;">Github活跃度贪吃蛇</div>
+  </center>
+  <img class="img" src="https://raw.githubusercontent.com/Wcowin/Wcowin/output/github-contribution-grid-snake.svg" alt="个人名片"> 
+
 
 <!-- [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button} -->
 <a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> 

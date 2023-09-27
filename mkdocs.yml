@@ -327,6 +327,7 @@ extra_javascript:
   - javascripts/extra.js
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js
+  - javascripts/mathjax-config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
@@ -335,6 +336,7 @@ extra_javascript:
   # - javascripts/backgroud.js
   # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
+  
 extra_css:
   - stylesheets/extra.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN

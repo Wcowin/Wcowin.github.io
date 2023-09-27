@@ -14,12 +14,6 @@ $\displaystyle7\lim_{n \rightarrow\infty}\frac{n+\sqrt{n}+···\sqrt[n]{n}}{n}$
 
 
 
-
-
-
-<a href="https://music.apple.com/cn/album/%E3%81%99%E3%81%9A%E3%82%81/1656709799?i=1656709800">![img](https://cn.mcecy.com/image/20230530/a955c522e7b6cacb86dd7aa650fd1a0a.png)</a>
-
-
 <a href="https://music.apple.com/cn/album/%E3%81%99%E3%81%9A%E3%82%81/1656709799?i=1656709800" target="_blank">
   <img class="img1" src="https://cn.mcecy.com/image/20230530/a955c522e7b6cacb86dd7aa650fd1a0a.png" alt="">
 </a>
