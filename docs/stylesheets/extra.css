@@ -146,8 +146,7 @@ img {
 } */
 
 
-
-/* 鼠标 */
+/* 鼠标end */
 
 
 /* 滚动条 */
@@ -204,46 +203,7 @@ img {
 }
 
 
-/* 鼠标样式 */
-#cursor {
-  position: fixed;
-  width: 16px;
-  height: 16px;
-  /* 这里改变跟随的底色 */
-  background:  rgb(57, 197, 187);
-  border-radius: 8px;
-  opacity: 0.25;
-  z-index: 10086;
-  pointer-events: none;
-  transition: 0.2s ease-in-out;
-  transition-property: background, opacity, transform;
-}
 
-#cursor.hidden {
-  opacity: 0;
-}
-
-#cursor.hover {
-  opacity: 0.1;
-  transform: scale(2.5);
-  -webkit-transform: scale(2.5);
-  -moz-transform: scale(2.5);
-  -ms-transform: scale(2.5);
-  -o-transform: scale(2.5);
-}
-
-#cursor.active {
-  opacity: 0.5;
-  transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
-}
-#cursor {
-  /* 这里改变跟随的底色 */
-  background: rgb(57, 197, 187);
-}
 
 /*图片放大*/
 /* 图片放大start */
@@ -387,14 +347,13 @@ source{
 /*圆角*/
 #rcorners1 {
   border-radius: 25px;
-  background: #F0EFEB;
+  background: #F5F4F1;
+  /* #F0EFEB; */
   padding: 20px; 
-  width: 100%;
+  width: auto;
   height: 100%;
   text-align: center;
   font-size:16px;
-
-   
 }
 
 #rcorners2 {
@@ -405,6 +364,8 @@ source{
   height: 100%; 
   font-size:16px;
 }
+
+
 
 /* 渐变 */
 #grad1 {

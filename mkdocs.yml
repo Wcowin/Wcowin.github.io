@@ -1,5 +1,5 @@
 #[Info]
-site_name: Wcowin's Blog
+site_name: Wcowin's Website
 site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
 #[UI]
@@ -123,10 +123,7 @@ nav:
     - C语言: 
         - C笔记: blog/C language/c.md
   
-  - Blogger:
-    - index: blog/index.md
-    - wkw: blog/posts/wkw.md
-    - 我的一些见解: blog/posts/post1.md
+
 
   - 开发: 
     - 如何注册ChatGPT: develop/ChatGPT.md
@@ -234,6 +231,11 @@ nav:
     - 免责声明: about/shengming.md
     - Test: about/test.md
     - 404 Not Found: about/Foryou.md
+
+  - Blogger:
+    - index: blog/index.md
+    - wkw: blog/posts/wkw.md
+    - 我的一些见解: blog/posts/post1.md
   
   
 copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的版权声明
@@ -333,10 +335,11 @@ markdown_extensions:
   
 extra_javascript:
   - javascripts/extra.js
+  # - javascripts/lightbox.js
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js
   - javascripts/mathjax-config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   - ckplayer/js/ckplayer.js
@@ -347,8 +350,9 @@ extra_javascript:
   
 extra_css:
   - stylesheets/extra.css
+  # - stylesheets/lightbox.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
-  - stylesheets/extra1.css
+  # - stylesheets/extra1.css
   # - stylesheets/video.css
   - https://unpkg.com/@waline/client@v2/dist/waline.css
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css

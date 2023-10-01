@@ -1,6 +1,8 @@
 ---
 title: 我的博客文章测试
 date: 2023-10-01
+categories:
+  - Hello
 ---
 
 

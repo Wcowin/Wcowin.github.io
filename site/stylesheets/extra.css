@@ -1,13 +1,43 @@
 :root > * {
-    --md-primary-fg-color:        #4b78d8;
-    --md-primary-fg-color--light: #4b78d8;
-    --md-primary-fg-color--dark:  #4b78d8;
+    --md-primary-fg-color:        #518FC1;
+    --md-primary-fg-color--light:#518FC1;
+    --md-primary-fg-color--dark:  #518FC1;
+    /* --md-primary-100:#d4eaf7;
+    --primary-200:#b6ccd8;
+    --primary-300:#3b3c3d;
+    --accent-100:#71c4ef;
+    --accent-200:#00668c;
+    --text-100:#1d1c1c;
+    --text-200:#313d44;
+    --bg-100:#fffefb;
+    --bg-200:#f5f4f1;
+    --bg-300:#cccbc8; */
+      
   }
-  /* #5F9EA0 */
+  /* #5F9EA0 #4b78d8*/
+
+  /* body {
+    font-family: "LXGW WenKai", sans-serif;
+
+  }
+  
+  :root {
+    --md-code-font: "LXGW WenKai"; 
+  } */
+  
+
+:root {
+  --md-text-font: "LXGW WenKai"; 
+}
 
 
 img.img1 {
-  border-radius: 12px;
+  border-radius: 25px;
+  
+}
+img.img2 {
+  border-radius: 25px;
+  
 }
 
   .twitter {
@@ -55,7 +85,7 @@ img.img1 {
   }
   .md-typeset .admonition.pied-piper1,
   .md-typeset details.pied-piper1 {
-    border-color: rgb(85,119,209);
+    border-color: rgb(96,141,189);
     font-size: large;
     /* border-radius:25px; */
     border-bottom-left-radius: 25px;
@@ -72,7 +102,6 @@ img.img1 {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     height: 50px;
-   
     
 
   }
@@ -117,8 +146,7 @@ img {
 } */
 
 
-
-/* 鼠标 */
+/* 鼠标end */
 
 
 /* 滚动条 */
@@ -175,50 +203,11 @@ img {
 }
 
 
-/* 鼠标样式 */
-#cursor {
-  position: fixed;
-  width: 16px;
-  height: 16px;
-  /* 这里改变跟随的底色 */
-  background:  rgb(57, 197, 187);
-  border-radius: 8px;
-  opacity: 0.25;
-  z-index: 10086;
-  pointer-events: none;
-  transition: 0.2s ease-in-out;
-  transition-property: background, opacity, transform;
-}
 
-#cursor.hidden {
-  opacity: 0;
-}
-
-#cursor.hover {
-  opacity: 0.1;
-  transform: scale(2.5);
-  -webkit-transform: scale(2.5);
-  -moz-transform: scale(2.5);
-  -ms-transform: scale(2.5);
-  -o-transform: scale(2.5);
-}
-
-#cursor.active {
-  opacity: 0.5;
-  transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
-}
-#cursor {
-  /* 这里改变跟随的底色 */
-  background: rgb(57, 197, 187);
-}
 
 /*图片放大*/
 /* 图片放大start */
-.shadow {
+/* .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -233,7 +222,7 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 100;
   position: relative;
-}
+} */
 /* 图片放大end*/
 
 .progress-label {
@@ -358,23 +347,35 @@ source{
 /*圆角*/
 #rcorners1 {
   border-radius: 25px;
-  background: #EEF3FE;
+  background: #F5F4F1;
+  /* #F0EFEB; */
   padding: 20px; 
-  width: 100%;
+  width: auto;
   height: 100%;
   text-align: center;
   font-size:16px;
-
-   
 }
 
 #rcorners2 {
   border-radius: 25px;
-  border: 2px solid #5476D0;
+  border: 2px solid #518FC1;
   padding: 20px; 
   width: 100%;
   height: 100%; 
   font-size:16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  #rcorners1 {
+    background: #000000; /* 设置为黑色背景 */
+    color: #FFFFFF; /* 设置文本颜色为白色或其他适合的颜色 */
+  }
+
+  #rcorners2 {
+    background: #000000; /* 设置为黑色背景 */
+    border-color: #FFFFFF; /* 设置边框颜色为白色或其他适合的颜色 */
+    color: #FFFFFF; /* 设置文本颜色为白色或其他适合的颜色 */
+  }
 }
 
 /* 渐变 */
@@ -440,7 +441,7 @@ source{
 
 .buttonxuan2 {
   display: inline-block;
-  background-color: #9CE683;
+  background-color: #ACE48E;
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
@@ -677,7 +678,9 @@ div.hide {
 }
 
 
+/* 变灰代码 */
+/* html {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  -webkit-filter: grayscale(100%);} */
 
-
-
-
+  
