@@ -282,7 +282,6 @@ plugins:
   #     enable_creation_date: true
   # - offline
   - search
-  - git-revision-date-localized
   - blog:
       post_date_format: full
       post_readtime: true
