@@ -16,16 +16,20 @@
   }
   /* #5F9EA0 #4b78d8*/
 
-  body {
+  /* body {
     font-family: "LXGW WenKai", sans-serif;
 
   }
   
   :root {
     --md-code-font: "LXGW WenKai"; 
-  }
+  } */
   
-  
+
+:root {
+  --md-text-font: "LXGW WenKai"; 
+}
+
 
 img.img1 {
   border-radius: 25px;
