@@ -9,21 +9,20 @@ comments: true
 ---
 
 !!!bug
-    - 评论区需要刷新才能使用，正在修复中
+    - 评论区需要刷新才能使用，正在修复中(大概率已修复)
 # 刷新即可加载评论区
 
 
-<head>
-  <!-- ... -->
+<!-- <head>
   <link
     rel="stylesheet"
     href="https://unpkg.com/@waline/client@v2/dist/waline.css"
   />
   
-  <!-- ... -->
+
 </head>
 
-  <!-- ... -->
+
   <div id="waline"></div>
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
@@ -43,7 +42,7 @@ comments: true
       lang: 'zh',
       pageview: true,
     });
-  </script>
+  </script> -->
 
 
 <script src="https://giscus.app/client.js"

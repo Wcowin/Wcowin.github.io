@@ -5,6 +5,7 @@ hide:
   - footer
   - feedback
 comments: true
+authors: [Wcowin]
 ---
 
 
@@ -46,7 +47,6 @@ comments: true
     <font  color= #4351AF>
     <p class="p1"></p>
     <script>
-        
         //格式：2020年04月12日 10:20:00 星期二
         function format(newDate) {
             var day = newDate.getDay()
@@ -56,7 +56,6 @@ comments: true
             var h = newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours()
             var min = newDate.getMinutes() < 10 ? "0" + newDate.getMinutes() : newDate.getMinutes()
             var s = newDate.getSeconds() < 10 ? "0" + newDate.getSeconds() : newDate.getSeconds()
- 
             var dict = {
                 1: "一",
                 2: "二",
@@ -69,7 +68,6 @@ comments: true
             //var week=["日","一","二","三","四","五","六"]
             return y + "年" + m + "月" + d + "日" + h + ":" + min + ":" + s + " 星期" + dict[day]
         }
-        
         var timerId = setInterval(function(){
             var newDate = new Date()
           document.querySelector(".p1").textContent = format(newDate)
@@ -88,7 +86,7 @@ comments: true
         <li>移动端 点击左上角图标选择主题和文章</li>
       </ul>
   <li>搜索关键词以打开文章</li>
-  <li>如遇到网页卡顿/打开文章后无法显示图片的情况,请使用科学上网打破信息壁垒</li>
+  <li>如遇到网页卡顿/打开文章后无法显示图片的情况,请使用<strong> 科学上网</strong>以打破信息壁垒</li>
 </ul>
 
 </div>
@@ -106,7 +104,9 @@ comments: true
   - [好用/好玩网站分享](blog/Webplay.md)
   - [Mac/windows软件网站汇总](blog/macsoft.md)
   - [实用脚本分享](blog/technique sharing/jiaoben.md)
+  - [重庆旅游推荐路线](trip/InCQ/CQ.md)
   - [留言板](waline.md)
+  - [Blogger](blog/index.md)
 
 
 

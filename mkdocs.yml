@@ -23,14 +23,16 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
       primary: blue grey # 上方的
-      accent: teal # 链接等可交互元件的高亮色
+      accent: indigo # 链接等可交互元件的高亮色
+      # teal 
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - media: "(prefers-color-scheme: dark)"
       scheme: slate # 夜间模式
       primary: black 
-      accent: teal
+      accent: indigo
+      # teal
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
@@ -65,7 +67,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 # [Navigtion]
 nav:
   # - 主页: index.md
-  - 博客:
+  - 博文:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
     - 语雀: blog/yuque.md
@@ -236,6 +238,7 @@ nav:
     - index: blog/index.md
     - wkw: blog/posts/wkw.md
     - 我的一些见解: blog/posts/post1.md
+    - Lifecycle: blog/posts/post2.md
   
   
 copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的版权声明
@@ -285,10 +288,21 @@ plugins:
   # - offline
   - search
   - blog:
-      post_date_format: full
+      post_date_format: full #时间
+      draft: true
+      draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
       post_readtime: true
+      post_readtime_words_per_minute: 265  #计算帖子的阅读时间时读者每分钟预计阅读的字数
+      post_url_format: "{date}/{slug}"
+      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      # categories_toc: true
+      # pagination_per_page: 5
+      pagination_url_format: "page/{page}"
+      authors_file: "{blog}/.authors.yml"  #作者信息
   - tags:
-      tags_file: tag.md
+      tags_file: tag.md  #分类标签
 
   
 

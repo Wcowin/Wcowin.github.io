@@ -365,18 +365,7 @@ source{
   font-size:16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  #rcorners1 {
-    background: #000000; /* 设置为黑色背景 */
-    color: #FFFFFF; /* 设置文本颜色为白色或其他适合的颜色 */
-  }
 
-  #rcorners2 {
-    background: #000000; /* 设置为黑色背景 */
-    border-color: #FFFFFF; /* 设置边框颜色为白色或其他适合的颜色 */
-    color: #FFFFFF; /* 设置文本颜色为白色或其他适合的颜色 */
-  }
-}
 
 /* 渐变 */
 #grad1 {

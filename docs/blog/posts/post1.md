@@ -1,6 +1,9 @@
 ---
-title: 文章测试2
-date: 2023-09-30
+title: 文章测试
+authors: [Wcowin]
+date: 2023-10-01
+categories:
+  - Hello
 ---
 
 你还记得喜欢一个人的感觉吗？
