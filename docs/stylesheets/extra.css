@@ -158,7 +158,7 @@ img {
 
 
 /* 滚动条 */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
@@ -190,7 +190,7 @@ img {
 ::-moz-selection {
   color: #fff;
   background-color: #49b1f5;
-}
+} */
 
 /*bilbili*/
 /*哔哩哔哩视频适配*/
@@ -681,4 +681,3 @@ div.hide {
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
   -webkit-filter: grayscale(100%);} */
 
-  
