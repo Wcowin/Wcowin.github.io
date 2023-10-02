@@ -9,7 +9,7 @@ authors: [Wcowin]
 ---
 
 
- <center><font  color= #518FC1 size=7 >技术探索之旅</font></center>
+ <center><font  color= #518FC1 size=7>穿越逆境 抵达繁星</font></center>
 
 <center>
 <font  color= #608DBD>
@@ -30,71 +30,80 @@ authors: [Wcowin]
 </font>
 </center>
 
-<!-- ???+Note "$e^{i \pi}+1=0$ :octicons-heart-fill-24:{ .heart }" 
-    - 只分享好玩有趣的东西~
-    - 通过主题和目录以打开文章  
-        - PC端 在上方标签栏选择主题 在左侧目录选择文章
-        - 移动端 点击左上角图标选择主题和文章   
-
-    - 搜索关键词以打开文章
-    - 如遇到打开文章后无法显示图片的情况,请使用科学上网 -->
-<!-- <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"> -->
 
 <div id="rcorners2">
-<div id="rcorners1">
-<!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
-<body>
-    <font  color= #4351AF>
-    <p class="p1"></p>
-    <script>
-        //格式：2020年04月12日 10:20:00 星期二
-        function format(newDate) {
-            var day = newDate.getDay()
-            var y = newDate.getFullYear()
-            var m = (newDate.getMonth() + 1) < 10 ? "0" + (newDate.getMonth() + 1) : (newDate.getMonth() + 1)
-            var d = newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate()
-            var h = newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours()
-            var min = newDate.getMinutes() < 10 ? "0" + newDate.getMinutes() : newDate.getMinutes()
-            var s = newDate.getSeconds() < 10 ? "0" + newDate.getSeconds() : newDate.getSeconds()
+  <div id="rcorners1">
+    <!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
+    <body>
+      <font color="#4351AF">
+        <p class="p1"></p>
+        <script>
+          //格式：2020年04月12日 10:20:00 星期二
+          function format(newDate) {
+            var day = newDate.getDay();
+            var y = newDate.getFullYear();
+            var m =
+              newDate.getMonth() + 1 < 10
+                ? "0" + (newDate.getMonth() + 1)
+                : newDate.getMonth() + 1;
+            var d =
+              newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
+            var h =
+              newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours();
+            var min =
+              newDate.getMinutes() < 10 ? "0" + newDate.getMinutes() : newDate.getMinutes();
+            var s =
+              newDate.getSeconds() < 10 ? "0" + newDate.getSeconds() : newDate.getSeconds();
             var dict = {
-                1: "一",
-                2: "二",
-                3: "三",
-                4: "四",
-                5: "五",
-                6: "六",
-                0: "天",
-            }
+              1: "一",
+              2: "二",
+              3: "三",
+              4: "四",
+              5: "五",
+              6: "六",
+              0: "天",
+            };
             //var week=["日","一","二","三","四","五","六"]
-            return y + "年" + m + "月" + d + "日" + h + ":" + min + ":" + s + " 星期" + dict[day]
-        }
-        var timerId = setInterval(function(){
-            var newDate = new Date()
-          document.querySelector(".p1").textContent = format(newDate)
-        },1000)
-        
-  </script>
-  </font>
-</body>
-<!-- <b><span id="time"></span></b> -->
-
-</div>
-<ul>
-  <li>通过主题和目录以打开文章</li>
-      <ul>
-        <li>PC端 在上方标签栏选择主题 在左侧目录选择文章</li>
-        <li>移动端 点击左上角图标选择主题和文章</li>
-      </ul>
-  <li>搜索关键词以打开文章</li>
-  <li>如遇到网页卡顿/打开文章后无法显示图片的情况,请使用<strong> 科学上网</strong>以打破信息壁垒</li>
-</ul>
-
-</div>
-  
+            return (
+              y +
+              "年" +
+              m +
+              "月" +
+              d +
+              "日" +
+              " " +
+              h +
+              ":" +
+              min +
+              ":" +
+              s +
+              " 星期" +
+              dict[day]
+            );
+          }
+          var timerId = setInterval(function () {
+            var newDate = new Date();
+            document.querySelector(".p1").textContent = format(newDate);
+          }, 1000);
+        </script>
+      </font>
+    </body>
+    <!-- <b><span id="time"></span></b> -->
+  </div>
+  <ul>
+    <li>通过主题和目录以打开文章</li>
+    <ul>
+      <li>PC端 在上方标签栏选择主题 在左侧目录选择文章</li>
+      <li>移动端 点击左上角图标选择主题和文章</li>
+    </ul>
+    <li>搜索关键词以打开文章</li>
+    <li>
+      如遇到网页卡顿/打开文章后无法显示图片的情况，请使用<strong>科学上网</strong>以打破信息壁垒
+    </li>
+  </ul>
+</div> 
 
 ***  
-***  
-
 
 <strong>推荐文章:material-book:</strong>
 
@@ -110,7 +119,8 @@ authors: [Wcowin]
 
 
 
-[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵
+[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
+[^see-how-much-I-love-you]:All problems in computer science can be solved by another level of indirection
 
 
 <head>
@@ -130,3 +140,22 @@ t.parentNode.insertBefore(e,t)}})();
 </script>
 <!-- End of Howxm client code snippet -->
 </head>
+
+
+
+
+***
+<a href="https://icp.gov.moe/?keyword=20230640" target="_blank">萌ICP备20230640号</a>
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
