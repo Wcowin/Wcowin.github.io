@@ -16,9 +16,7 @@ hide:
     * 热爱(xiā)折腾技术,读书明智 :computer: 
     * 喜欢村上春树📖，擅长羽毛球 :badminton: 
 
-    <div align=left> 
-         <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" /> 
-     </div> 
+
 
 <!-- * <a href="https://github.com/Wcowin" target="_blank"><button class="buttonxuan3">找到我:simple-github:</button></a>:material-arrow-right:&#x1F4A1;  -->
 

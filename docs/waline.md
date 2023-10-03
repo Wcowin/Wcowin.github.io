@@ -7,10 +7,45 @@ hide:
   - feedback
 
 ---
+# 畅所欲言  
 
 !!!bug
     - 评论区需要刷新才能使用，正在修复中
-# 畅所欲言
+
+
+<style>
+  .pushable {
+    background: #3F589B;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: #5476CE;
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+</style>
+<button type="button" onClick="window.location.reload()">
+  <span class="front">
+    刷新当前页面
+  </span>
+</button>
+
+
+
+<html>
+<head>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
@@ -23,7 +58,7 @@ hide:
 twikoo.init({
   envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
   el: '#tcomment', // 容器元素
-   region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+   //region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
   // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
    lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
    onCommentLoaded: function () {
@@ -31,7 +66,8 @@ twikoo.init({
   }
 })
 </script>
-
+</head>
+</html>
 
 
 ***
@@ -86,6 +122,4 @@ twikoo.init({
         crossorigin="anonymous"
         async>
 </script> -->
-
-
 
