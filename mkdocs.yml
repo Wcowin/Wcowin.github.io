@@ -221,17 +221,15 @@ nav:
     - 西安: trip/Xian.md
 
   - 标签: tag.md
-  
+  - 留言板: waline.md
   - 关于:
     - 个人简介: about/geren.md
     - 个人目标: about/goal.md
     - Github主页介绍: about/Wcowin.md
     - 网站制作: about/web.md
     - 支持作者: about/zcw.md
-    - 留言板: waline.md
     #- 友链: about/link.md
     - 毕业之前值得去做的30件事: about/biye.md
-    
     - 免责声明: about/shengming.md
     - Test: about/test.md
     - 404 Not Found: about/Foryou.md
