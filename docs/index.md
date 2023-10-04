@@ -4,8 +4,7 @@ hide:
   #- toc #显示左
   - footer
   - feedback
-comments: true
-authors: [Wcowin]
+comments: false
 ---
 
 
@@ -14,7 +13,7 @@ authors: [Wcowin]
 <center>
 <font  color= #608DBD>
 <p id="hitokoto">
-  <a href="#" id="hitokoto_text"></a>
+  <a href="#" id="hitokoto_text" target="_blank"></a>
 </p>
 <!-- 本例不能添加链接内容，放在此处只是因为此接口比较方便，也许能够解决大部分的需求-->
 <script>
@@ -141,11 +140,6 @@ t.parentNode.insertBefore(e,t)}})();
 <!-- End of Howxm client code snippet -->
 </head>
 
-
-
-
-***
-<a href="https://icp.gov.moe/?keyword=20230640" target="_blank">萌ICP备20230640号</a>
 
 
 

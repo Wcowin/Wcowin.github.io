@@ -5,7 +5,7 @@ site_author: 王科文(Wcowin)
 #[UI]
 theme:
   name: material
-  # custom_dir: overrides
+  custom_dir: overrides
   # custom_dir: material/.overrides
   # font:
   #   text: Bitter
@@ -39,7 +39,8 @@ theme:
         name: 切换至日间模式
   features: 
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
-    - navigation.instant #- header.autohide  #自动隐藏
+    - navigation.instant 
+    #- header.autohide  #自动隐藏
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
@@ -56,6 +57,7 @@ theme:
     - content.code.copy
     - content.action.edit
     - content.action.view
+    
   language: zh # 一些提示性的文字会变成中文
   
 
@@ -129,16 +131,19 @@ nav:
 
 
   - 开发: 
+    - 我的设备: develop/mydevice.md
     - 如何注册ChatGPT: develop/ChatGPT.md
     - Markdown: 
         - Markdown指南: develop/Markdown/markdown.md
         - MWeb Pro: develop/Markdown/MWeb.md
+        
     - 我的作品:
         # - 基于讯飞人脸算法进行人脸比对(调用API): develop/Mywork/face_compare.md
         # - 人脸识别系统: develop/Mywork/face-recognition.md
         - 基于百度API和opencv的智能车牌识别程序: develop/Mywork/opencv.md
         - 利用百度API进行植物识别: develop/Mywork/aizhiwu.md
         - 玩的设计: develop/Mywork/design.md
+    
     - 1024code: develop/1024code.md
     - 利用Lighthouse测试网站性能: develop/lighthouse.md
     - What is Github: develop/Github.md
@@ -232,6 +237,7 @@ nav:
     - 毕业之前值得去做的30件事: about/biye.md
     - 免责声明: about/shengming.md
     - Test: about/test.md
+    - 404公益页面: about/404.md
     - 404 Not Found: about/Foryou.md
 
   - Blogger:
@@ -283,9 +289,7 @@ extra:
     
 
 plugins:
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
-  # - offline
+  # - glightbox
   - search
   - blog:
       post_date_format: full #时间

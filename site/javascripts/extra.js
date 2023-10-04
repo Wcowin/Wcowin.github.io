@@ -670,3 +670,20 @@ if (isMobile) {
   video.volume = 0; // 或者根据需要设置适当的音量值，例如 0.5 表示 50% 的音量
 }
 
+// 在页面加载完成后执行以下代码
+document.addEventListener("DOMContentLoaded", function() {
+  // 获取刷新按钮
+  var refreshButton = document.getElementById("refreshButton");
+
+  // 添加点击事件处理程序
+  refreshButton.addEventListener("click", function() {
+      // 使用以下代码来刷新页面
+      location.reload();
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  twikoo.init({
+      // Twikoo配置选项
+  });
+});
