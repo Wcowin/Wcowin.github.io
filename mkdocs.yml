@@ -260,7 +260,7 @@ extra:
       lang: zh-TW  
     - name: 简体中文
       link: javascript:translate.changeLanguage('chinese_simplified');
-      lang: 
+      lang: //
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/x-twitter 
@@ -329,6 +329,7 @@ markdown_extensions:
   - md_in_html
   # - meta # 支持Markdown文件上方自定义标题标签等
   - pymdownx.caret
+  - pymdownx.betterem
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.inlinehilite
@@ -363,12 +364,13 @@ markdown_extensions:
   
 extra_javascript:
   - javascripts/extra.js
-  # - javascripts/lightbox.js
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js
-  - javascripts/mathjax-config.js
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - javascripts/mathjax-config.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   - ckplayer/js/ckplayer.js
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
@@ -392,7 +394,7 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
-
+ 
 # crisp
 # https://crisp.chat/en/
 # crisp:
