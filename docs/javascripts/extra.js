@@ -687,3 +687,9 @@ document.addEventListener("DOMContentLoaded", function() {
       // Twikoo配置选项
   });
 });
+
+
+
+translate.selectLanguageTag.show = false; //不出现的select的选择语言
+translate.execute();
+<script src="https://res.zvo.cn/translate/translate.js"></script>

@@ -251,6 +251,16 @@ copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的
   
 
 extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 繁體中文
+      link: /zh-TW/
+      lang: zh-TW  
+    - name: 简体中文
+      link: javascript:translate.changeLanguage('chinese_simplified');
+      lang: 
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/x-twitter 
@@ -365,6 +375,7 @@ extra_javascript:
   # - javascripts/backgroud.js
   # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
+  # - https://res.zvo.cn/translate/translate.js  # Translate
   
 extra_css:
   - stylesheets/extra.css
