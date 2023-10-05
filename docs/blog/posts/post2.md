@@ -1,7 +1,8 @@
 ---
 title: 草稿测试
 authors: [Wcowin]
-date: 2023-10-05
+date: 2023-10-04
+draft: true
 categories:
   - Hello
 ---

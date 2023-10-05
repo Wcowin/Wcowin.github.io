@@ -238,13 +238,13 @@ nav:
     - 免责声明: about/shengming.md
     - Test: about/test.md
     - 404公益页面: about/404.md
-    - 404 Not Found: about/Foryou.md
+    - For lover: about/Foryou.md
 
   - Blogger:
     - index: blog/index.md
-    - wkw: blog/posts/wkw.md
-    - 我的一些见解: blog/posts/post1.md
-    - Lifecycle: blog/posts/post2.md
+    # - wkw: blog/posts/wkw.md
+    # - 我的一些见解: blog/posts/post1.md
+    # - Lifecycle: blog/posts/post2.md
   
   
 copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的版权声明
@@ -392,4 +392,6 @@ extra_css:
 #   enable: true
 #   website_id: 89ded6c2-1a10-47e3-af5d-f12e6a378547
 
-
+# tidio:
+#   enable: true
+#   public_key: w3nvk9wmckvjf2iity4bwxicoj4yss9l
