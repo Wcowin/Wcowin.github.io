@@ -31,38 +31,38 @@
 
 
 
-// 提示框
-var close = document.getElementsByClassName("closebtn");
-var i;
+// // 提示框
+// var close = document.getElementsByClassName("closebtn");
+// var i;
 
-for (i = 0; i < close.length; i++) {
-    close[i].onclick = function(){
-        var div = this.parentElement;
-        div.style.opacity = "0";
-        setTimeout(function(){ div.style.display = "none"; }, 600);
-    }
-}
+// for (i = 0; i < close.length; i++) {
+//     close[i].onclick = function(){
+//         var div = this.parentElement;
+//         div.style.opacity = "0";
+//         setTimeout(function(){ div.style.display = "none"; }, 600);
+//     }
+// }
 
-// 获取弹窗
-var modal = document.getElementById('myModal');
+// // 获取弹窗
+// var modal = document.getElementById('myModal');
  
-// 获取图片插入到弹窗 - 使用 "alt" 属性作为文本部分的内容
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+// // 获取图片插入到弹窗 - 使用 "alt" 属性作为文本部分的内容
+// var img = document.getElementById('myImg');
+// var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// }
  
-// 获取 <span> 元素，设置关闭按钮
-var span = document.getElementsByClassName("close")[0];
+// // 获取 <span> 元素，设置关闭按钮
+// var span = document.getElementsByClassName("close")[0];
  
-// 当点击 (x), 关闭弹窗
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+// // 当点击 (x), 关闭弹窗
+// span.onclick = function() { 
+//   modal.style.display = "none";
+// }
 
 
 //雪花
@@ -670,22 +670,8 @@ if (isMobile) {
   video.volume = 0; // 或者根据需要设置适当的音量值，例如 0.5 表示 50% 的音量
 }
 
-// 在页面加载完成后执行以下代码
-document.addEventListener("DOMContentLoaded", function() {
-  // 获取刷新按钮
-  var refreshButton = document.getElementById("refreshButton");
 
-  // 添加点击事件处理程序
-  refreshButton.addEventListener("click", function() {
-      // 使用以下代码来刷新页面
-      location.reload();
-  });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-  twikoo.init({
-      // Twikoo配置选项
-  });
-});
+
 
 

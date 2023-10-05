@@ -36,53 +36,41 @@ Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，
 <!-- <iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=0&height=32"></iframe> -->
 
-<script src='//player.polyv.net/script/player.js'></script>
-<div id='plv_44ee3aee795099c508bb01f6ba11cf4c_4'></div>
-<script>
-var player = polyvPlayer({
-  'wrap':'#plv_44ee3aee795099c508bb01f6ba11cf4c_4',
-  'width':'600',
-  'height':'338',
-  'vid': '44ee3aee795099c508bb01f6ba11cf4c_4',
-  'playsafe': '' // 播放加密视频的凭证, 取值参考文档: https://help.polyv.net/index.html#/vod/api/playsafe/token/create_token 
-});
-</script>
-2019年9月10日苹果发布会开场动画解析↑↑↑
 
 1. 说出hello的Macintosh，代表图形用户界面的交互方式革命。
 2. Macintosh之后的轨迹球代表的是PowerBook 100，因为它是苹果历史上第一台笔记本电脑，同时它的轨迹球摆放位置奠定了现代所有笔记本的设计雏形。
 3. iPod的第一代Scroll Wheel虚拟静电滚轮开创了新的交互方式革命，四代出现了真正意义上的Click Wheel，让iPod找音乐高效的同时，变得更加整洁。一代帮助苹果脱困，是濒死之际的救命稻草，而四代之后的Click Wheel，可以说开创了一个时代。
-5. iPhone的home键，代表iPhone开创了以电容屏为基础的多指触控交互方式革命。
-6. iPhone 5S开创的人体特征安全验证技术Touch ID，和home键融合。
-7. iPhone X开创的基于原深感传感器的面容识别技术：Face ID。Hello，未来。
-8. “叮咚”一声，暗示Apple Pay。
-9. Apple Mighty Mouse，标志特点是那个球形滚轮。
-10. 随着一声清脆的鼠标咔喳声，多彩iMac G3出现，这是乔布斯回归苹果公司后和乔纳森共同设计的第一件产品，挽救了垂危之中的苹果公司。
-11. 多彩iMac G3变化成iMac G4，台灯一样的可爱设计使得它成为最受果粉喜爱的iMac。
-12. iMac G4蜕变成iMac 5K，其边缘厚度只有5毫米，堪称一体式台式电脑的设计典范。外形过人，实力过分。
-13. iMac抽象成为一个圆孔，这个圆孔就是2019年WWDC发布的Mac Pro标志性的3D球形散热孔。以实力，刷新一切。
-14. 回到笔记本的开始，乔布斯回归苹果后推出的多彩iBook系列笔记本电脑。
-15. iBook蜕变为超薄设计的MacBook Pro 2016系列，配备4个雷雳3接口。更强劲，更专业的强劲。
-16. 全新的MacBook Air，轻轻地，再次倾心。
-17. iPad Pro登场，这个键盘，很会卡位。
-18. Apple Pencil吸附在iPad Pro上，新一代Apple Pencil，书写新篇章。
-19. 第一代EarPods，旋转之中缠绕的线化作无线充电白色小盒，EarPods蜕变为AirPods。极致体验，无线到底。
-20. Siri开始聆听你的请求。
-21. Siri更以HomePod呈现。看起来悦目，听起来悦耳。
-22. 第一代Apple TV的控制手柄。
-23. 最新的Apple TV的控制手柄。
-24. Apple TV盒子，由我们创新视野。
-25. Apple TV+，给故事讲述者一个最温暖的家。
-26. iOS 13的最新“查找”App，查找一切你所关心的事物。
-27. 第一代iPhone的摄像头，到iPhone XS的双摄像头。iPhone，开创移动摄影与计算摄影的新纪元。
-28. 抖动的App们，见证了App Store的发展与兴盛。
-29. 随着乔布斯在第一代iPhone发布会上，在Cover Flow上那轻轻一划，一个新的时代开始了。
-30. 2015年库克喊出那句One More Thing后，Apple Music登场。这意味着苹果公司“软件、硬件、服务”三位一体中，“服务”的开端。
-31. 深吸一口气，放松一下。随时随地，锻炼身体。填满圆环，赢取奖牌。咚咚，咚咚，心率监测。这些，就是Apple Watch存在的意义。
-32. 深藏ECG传感器的数码表冠，红色的圆环代表了独立的Apple Watch。
-33. 有了多样的表带，Apple Watch的样子，能随意定制。
-34. 全面屏设计的Apple Watch变化成iPhone XR。
-35. 旋转的iPhone汇聚为一点。给人们奇妙的工具，他们会做出奇妙的事。
+4. iPhone的home键，代表iPhone开创了以电容屏为基础的多指触控交互方式革命。
+5. iPhone 5S开创的人体特征安全验证技术Touch ID，和home键融合。
+6. iPhone X开创的基于原深感传感器的面容识别技术：Face ID。Hello，未来。
+7. “叮咚”一声，暗示Apple Pay。
+8. Apple Mighty Mouse，标志特点是那个球形滚轮。
+9.  随着一声清脆的鼠标咔喳声，多彩iMac G3出现，这是乔布斯回归苹果公司后和乔纳森共同设计的第一件产品，挽救了垂危之中的苹果公司。
+10. 多彩iMac G3变化成iMac G4，台灯一样的可爱设计使得它成为最受果粉喜爱的iMac。
+11. iMac G4蜕变成iMac 5K，其边缘厚度只有5毫米，堪称一体式台式电脑的设计典范。外形过人，实力过分。
+12. iMac抽象成为一个圆孔，这个圆孔就是2019年WWDC发布的Mac Pro标志性的3D球形散热孔。以实力，刷新一切。
+13. 回到笔记本的开始，乔布斯回归苹果后推出的多彩iBook系列笔记本电脑。
+14. iBook蜕变为超薄设计的MacBook Pro 2016系列，配备4个雷雳3接口。更强劲，更专业的强劲。
+15. 全新的MacBook Air，轻轻地，再次倾心。
+16. iPad Pro登场，这个键盘，很会卡位。
+17. Apple Pencil吸附在iPad Pro上，新一代Apple Pencil，书写新篇章。
+18. 第一代EarPods，旋转之中缠绕的线化作无线充电白色小盒，EarPods蜕变为AirPods。极致体验，无线到底。
+19. Siri开始聆听你的请求。
+20. Siri更以HomePod呈现。看起来悦目，听起来悦耳。
+21. 第一代Apple TV的控制手柄。
+22. 最新的Apple TV的控制手柄。
+23. Apple TV盒子，由我们创新视野。
+24. Apple TV+，给故事讲述者一个最温暖的家。
+25. iOS 13的最新“查找”App，查找一切你所关心的事物。
+26. 第一代iPhone的摄像头，到iPhone XS的双摄像头。iPhone，开创移动摄影与计算摄影的新纪元。
+27. 抖动的App们，见证了App Store的发展与兴盛。
+28. 随着乔布斯在第一代iPhone发布会上，在Cover Flow上那轻轻一划，一个新的时代开始了。
+29. 2015年库克喊出那句One More Thing后，Apple Music登场。这意味着苹果公司“软件、硬件、服务”三位一体中，“服务”的开端。
+30. 深吸一口气，放松一下。随时随地，锻炼身体。填满圆环，赢取奖牌。咚咚，咚咚，心率监测。这些，就是Apple Watch存在的意义。
+31. 深藏ECG传感器的数码表冠，红色的圆环代表了独立的Apple Watch。
+32. 有了多样的表带，Apple Watch的样子，能随意定制。
+33. 全面屏设计的Apple Watch变化成iPhone XR。
+34. 旋转的iPhone汇聚为一点。给人们奇妙的工具，他们会做出奇妙的事。
 
 **这就是Apple。**
 

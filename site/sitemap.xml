@@ -246,6 +246,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://wcowin.work/blog/2023/10/04/</loc>
+         <lastmod>2023-10-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://wcowin.work/blog/2023/10/05/</loc>
          <lastmod>2023-10-05</lastmod>
          <changefreq>daily</changefreq>
@@ -667,6 +672,11 @@
     </url>
     <url>
          <loc>http://wcowin.work/blog/archive/2022/</loc>
+         <lastmod>2023-10-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/blog/category/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/</loc>
          <lastmod>2023-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>

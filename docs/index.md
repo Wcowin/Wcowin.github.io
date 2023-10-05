@@ -30,7 +30,7 @@ comments: false
 </center>
 
 
-<div id="rcorners2">
+<div id="rcorners2" >
   <div id="rcorners1">
     <!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
     <body>
@@ -101,7 +101,11 @@ comments: false
     </li>
   </ul>
 </div> 
+快速谈话(1) 联系我(2)
+{ .annotate }
 
+1. 点击右下角与我在线交谈.
+2. 18939533255
 ***  
 
 <strong>推荐文章:material-book:</strong>
@@ -142,6 +146,7 @@ t.parentNode.insertBefore(e,t)}})();
 </head>
 
  
+
 
 
 

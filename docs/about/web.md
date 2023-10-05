@@ -1,16 +1,21 @@
 ---
 tags:
   - Mkdocs
----
+---  
+# 发布一个包含MkDocs和GitHub页面材料的网站
 
-# Publish a Website with Material for MkDocs and GitHub Pages  
+<iframe src="https://streamable.com/e/yslhdu" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>  
+
+
 ???+Note "Tip"
     Mkdocs material主题 :[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}   
     详细文档：[MkDocs](https://www.mkdocs.org/getting-started/){target=“_blank”}   
 
-    CSDN教程：  
-    1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501){target=“_blank”}  
-    2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501){target=“_blank”}
+## 我写的Mkdocs教程 
+
+1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501){target=“_blank”}  
+2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501){target=“_blank”}  
+3.[如何在Mkdocs里自定义字体（霞鹜文楷）](https://blog.csdn.net/m0_63203517/article/details/131946304?spm=1001.2014.3001.5502){target=“_blank”}
 
 !!! info inline end
 
@@ -103,6 +108,10 @@ GitHub > Repository > Settings > Pages > Source > gh-pages > Click Save -->
 
 ***
 
+[萌国ICP备案查询](https://icp.gov.moe/)  
+我的备案号：  
+<a href="https://icp.gov.moe/?keyword=20230640" target="_blank">萌ICP备20230640号</a>   
+哈哈可爱而已，并不是国家备案
 <!-- <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </p>
 

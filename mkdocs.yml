@@ -12,6 +12,7 @@ theme:
   #   code: Roboto Mono
   icon:
     logo: simple-x
+    annotation: material/arrow-right-circle
     # material/library
     # admonition:
     #   <type>: material/file-alert-outline
@@ -39,7 +40,7 @@ theme:
         name: 切换至日间模式
   features: 
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
-    - navigation.instant 
+    # - navigation.instant 
     #- header.autohide  #自动隐藏
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
@@ -49,15 +50,15 @@ theme:
     - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
+    - search.share #搜索分享按钮
     - navigation.expand # 打开Tab时左侧目录全部展开
     - navigation.indexes #启用节索引页后，可以将文档直接附加到节
-    - search.share #搜索分享按钮
     - content.tabs.link
     - content.tooltips
     - content.code.copy
     - content.action.edit
     - content.action.view
-    
+    - content.code.annotate 
   language: zh # 一些提示性的文字会变成中文
   
 
@@ -369,7 +370,7 @@ extra_javascript:
   # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
   # - https://res.zvo.cn/translate/translate.js  # Translate
-
+  - javascripts/glightbox.min.js
 extra_css:
   - stylesheets/extra.css
   # - stylesheets/lightbox.css
@@ -385,7 +386,7 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
- 
+  - stylesheets/glightbox.min.css
 # crisp
 # https://crisp.chat/en/
 # crisp:
