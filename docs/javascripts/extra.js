@@ -722,5 +722,10 @@ async function navigateToSettingsPage() {
 }
 // 优化end
 
-
-
+        // 等待页面加载完毕
+        window.addEventListener('load', function() {
+          // 获取加载动画元素
+          var loader = document.querySelector('.loader');
+          // 隐藏加载动画
+          loader.style.display = 'none';
+      });

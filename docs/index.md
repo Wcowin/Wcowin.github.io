@@ -152,5 +152,24 @@ t.parentNode.insertBefore(e,t)}})();
 
 
 
-
+<body>
+    <div class="loader">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+        </div>
+    </div>
+    <!-- 此处添加你的页面内容 -->
+    <script>
+        // 等待页面加载完毕
+        window.addEventListener('load', function() {
+            // 获取加载动画元素
+            var loader = document.querySelector('.loader');
+            // 隐藏加载动画
+            loader.style.display = 'none';
+        });
+    </script>
+</body>
 
