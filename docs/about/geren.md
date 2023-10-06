@@ -1,15 +1,23 @@
 ---
 hide:
 #   - navigation
-#   - toc
+  # - toc
   - feedback
+comments: true
 ---
 
 # 知足且上进，温柔且坚定
+<div>
+  <img src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
+  <p style="font-size: 2.5em"><strong>Wcowin</strong></p>
+  <p style="font-size: 1.2em">Free and diffuse</p>
+  <p style="font-size: 1.2em">A college student</p>
+</div>
+
+
 !!! pied-piper1 "About me"
     
     - [x] Hey, I'm [Wcowin](https://bento.me/wcowin){target=“_blank”}!
-    - [ ] <img src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" width = "200" height = "200" alt="个人头像" align=right /> 
     - [x] Bilibili电子信息工程专业本科在读  :star2:
     - [x] CV工程师 ++ctrl+c++  (  ++v++  ) 🧑‍💻
     - [x] 咖啡重度爱好者 :coffee:
@@ -18,19 +26,10 @@ hide:
     - [x] 喜欢村上春树📖，擅长羽毛球 :badminton: 
      
 
-
- 
 <!-- - [x] <a href="https://github.com/Wcowin" target="_blank"><button class="buttonxuan3">找到我:simple-github:</button></a>:material-arrow-right:&#x1F4A1;  -->
 
 
 <img class="img1" src="https://cn.mcecy.com/image/20230220/f10604560a2119667fb3aca1da299e1a.jpeg">
-
-<!-- <img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg"> -->
-
-<figure markdown >
-  ![Image title](https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg){.img1}
-  <figcaption>公众号</figcaption>
-</figure>
 
 ## 我的名片
 
@@ -42,13 +41,11 @@ hide:
     padding: 2px;">我的名片</div>
   </center>  
 </a>
+<!-- <img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg"> -->
 
-  <img class="img" src="https://raw.githubusercontent.com/Wcowin/Wcowin/output/github-contribution-grid-snake.svg" alt="贪吃蛇"> 
-  <center>
-    <div style="color:orange; 
-    color: #999;
-    padding: 2px;">Github活跃度贪吃蛇</div>
-  </center>
+
+
+
 
 ## Touch me
 
@@ -64,6 +61,10 @@ hide:
   </a>
 </div>
 
+<figure markdown >
+  ![Image title](https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg){.img1}
+  <figcaption>公众号</figcaption>
+</figure>
 
 <!-- [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button} -->
 <a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> 
