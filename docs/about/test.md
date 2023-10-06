@@ -18,6 +18,15 @@
   shortcode to copy it to your clipboard.
 </small>
 
+
+<div class="spinner">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+
 ![Image title](https://dummyimage.com/600x400/){ loading=lazy }
 <figure markdown>
   ![Image title](https://dummyimage.com/600x400/){ width="300" }

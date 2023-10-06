@@ -8,10 +8,13 @@ comments: false
 ---
 
 
- <center><font  color= #518FC1 size=6>“循此苦旅，以达星辰”</font></center>
+<!-- <center><font  color= #518FC1 size=6>“循此苦旅，以达星辰”</font></center> -->
+<center><font  color= #518FC1 size=6 class="ml3">“循此苦旅，以达星辰”</font></center>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 
 <center>
-<font  color= #608DBD>
+<font  color= #608DBD size=3>
 <p id="hitokoto">
   <a href="#" id="hitokoto_text" target="_blank"></a>
 </p>
@@ -145,7 +148,6 @@ t.parentNode.insertBefore(e,t)}})();
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
 </head>
 
- 
 
 
 

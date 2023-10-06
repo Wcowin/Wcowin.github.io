@@ -1,5 +1,5 @@
 我目前在用的字体：[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank}  
-想必你可以直观从我的网站感受到，这款字体的美观程度。
+想必你可以直观从我的网站感受到，[这款字体](https://chawyehsu.github.io/lxgw-wenkai-webfont/)的美观程度。
 ***  
 
 **以下是摘录的部分字体官方介绍文档**
