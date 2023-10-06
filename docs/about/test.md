@@ -18,6 +18,11 @@
   shortcode to copy it to your clipboard.
 </small>
 
+![Image title](https://dummyimage.com/600x400/){ loading=lazy }
+<figure markdown>
+  ![Image title](https://dummyimage.com/600x400/){ width="300" }
+  <figcaption>Image caption</figcaption>
+</figure>
 
 <font face="宋体"  size=80>:flag_cn:<b></font>  
 

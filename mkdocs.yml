@@ -10,9 +10,7 @@ theme:
   # font:
   #   text: Bitter
   #   code: Roboto Mono
-  icon:
-    logo: simple-x
-    annotation: material/arrow-right-circle
+  logo: https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png
     # material/library
     # admonition:
     #   <type>: material/file-alert-outline

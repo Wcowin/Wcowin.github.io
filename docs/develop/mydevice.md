@@ -3,7 +3,8 @@
 ## </p><h1 id="01" name="01"><strong>Macbook pro</strong></h1><p>
 
 ![](https://cn.mcecy.com/image/20231004/1911c0331593833ea704a3b056fc0a74.png)  
-
+<!-- ![](https://creatorspace.imgix.net/users/clk2ox8yp03prrv01esrq5bo0/3bpHuTcuZdIbHbWr-image.png?w=750&h=750){:height="30%" width="30%"} -->
+<img class="img1" src="https://cn.mcecy.com/image/20231006/f94e9159a9204a11578c8e5eee7fd0f3.png">
 ## </p><h1 id="01" name="01"><strong>iphone 13</strong></h1><p>
 
 ![](https://cn.mcecy.com/image/20231004/d0d865836a593da35d044dbb10be3899.png)
