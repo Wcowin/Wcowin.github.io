@@ -16,33 +16,7 @@
     color: #518FC1; /* 修改字体颜色 */
   }
   
-  a {
-    position: relative;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #000;
-  }
-  
-  a::before {
-    content: "";
-    position: absolute;
-    display: inline-block; /* 使伪元素与链接文本一样宽 */
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #666363;
-    transform: scaleX(0);
-    transform-origin: bottom right; /* 指定变换原点为右下角 */
-    transition: transform 0.3s ease;
-  }
-  
-  a:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left; /* 变换原点为左下角，实现从左到右显示动画 */
-  }
+
   
 
 
