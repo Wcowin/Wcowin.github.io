@@ -90,3 +90,21 @@ comments: true
 <a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> 
 
 
+<head>
+<!-- Start of Howxm client code snippet -->
+<script>
+function _howxm(){_howxmQueue.push(arguments)}
+window._howxmQueue=window._howxmQueue||[];
+_howxm('setAppID','14429fca-cac1-4551-a472-b046a96ebb75');
+(function(){var scriptId='howxm_script';
+if(!document.getElementById(scriptId)){
+var e=document.createElement('script'),
+t=document.getElementsByTagName('script')[0];
+e.setAttribute('id',scriptId);
+e.type='text/javascript';e.async=!0;
+e.src='https://static.howxm.com/sdk.js';
+t.parentNode.insertBefore(e,t)}})();
+</script>
+<!-- End of Howxm client code snippet -->
+<script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
+</head>
