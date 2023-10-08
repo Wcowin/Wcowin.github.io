@@ -142,7 +142,9 @@ nav:
         - 基于百度API和opencv的智能车牌识别程序: develop/Mywork/opencv.md
         - 利用百度API进行植物识别: develop/Mywork/aizhiwu.md
         - 玩的设计: develop/Mywork/design.md
-    
+    - 设计美学:
+        - 唐·诺曼—情感设计的三个层次: develop/designbeauty/db1.md
+        - 我对设计的一些观点: develop/designbeauty/my-to-desihn.md
     - 1024code: develop/1024code.md
     - 利用Lighthouse测试网站性能: develop/lighthouse.md
     - What is Github: develop/Github.md
@@ -363,16 +365,15 @@ extra_javascript:
 
 
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
-  - ckplayer/js/ckplayer.js
+  # - ckplayer/js/ckplayer.js
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
-  # - javascripts/backgroud.js
+  - javascripts/backbound1.js
   # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
   # - https://res.zvo.cn/translate/translate.js  # Translate
-  - javascripts/glightbox.min.js
+
 extra_css:
   - stylesheets/extra.css
-  # - stylesheets/lightbox.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   # - stylesheets/extra1.css
   # - stylesheets/video.css
@@ -385,7 +386,7 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
-  - stylesheets/glightbox.min.css
+
 # crisp
 # https://crisp.chat/en/
 # crisp:

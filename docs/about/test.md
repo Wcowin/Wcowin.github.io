@@ -1,4 +1,4 @@
-
+![LY1r2.png](https://i.imgs.ovh/2023/10/09/LY1r2.png)
 ## Search
 
 <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -656,42 +656,8 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
     </tr>
 </tbody></table>
 
-<!-- <p id="demo">这是一个段落</p>
-<button  onclick="displayDate()">显示日期</button> -->
-<iframe width="100%" height="300" src="https://c.runoob.com/iframe/5381" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-<h2>提示信息</h2>
-<p>点击 "x" 关闭提示框。</p>
-<div class="alert">
-  <span class="closebtn">&times;</span>  
-  <strong>危险!</strong> 危险操作提示。
-</div>
-
-<div class="alert success">
-  <span class="closebtn">&times;</span>  
-  <strong>成功!</strong> 操作成功提示。
-</div>
-
-<div class="alert info">
-  <span class="closebtn">&times;</span>  
-  <strong>提示!</strong> 提示信息修改等。
-</div>
-
-<div class="alert warning">
-  <span class="closebtn">&times;</span>  
-  <strong>警告!</strong> 提示当前操作要注意。
-</div>
-
-
-
-
-
-
-
 
 <div class="social-share"></div>
-
-<!--  css & js -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 
@@ -724,7 +690,6 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
     transform: translateY(-2px);
   }
 </style>
-
 <button class="pushable">
   <span class="front">
     Email me!

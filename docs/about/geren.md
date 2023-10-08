@@ -5,27 +5,6 @@ hide:
   - feedback
 comments: true
 ---
-<body>
-    <div class="loader">
-        <div class="spinner">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <div class="rect3"></div>
-            <div class="rect4"></div>
-        </div>
-    </div>
-    <!-- 此处添加你的页面内容 -->
-    <script>
-        // 等待页面加载完毕
-        window.addEventListener('load', function() {
-            // 获取加载动画元素
-            var loader = document.querySelector('.loader');
-            // 隐藏加载动画
-            loader.style.display = 'none';
-        });
-    </script>
-</body>
-
 # 知足且上进，温柔且坚定
 <div>
   <img src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
@@ -62,10 +41,6 @@ comments: true
   </center>  
 </a>
 <!-- <img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg"> -->
-
-
-
-
 
 ## Touch me
 
