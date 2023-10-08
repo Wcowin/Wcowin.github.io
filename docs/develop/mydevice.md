@@ -9,10 +9,14 @@
 
 ![](https://cn.mcecy.com/image/20231004/d0d865836a593da35d044dbb10be3899.png)
 
+## </p><h1 id="01" name="01"><strong>U盘</strong></h1><p>
+
+Aigo 256G  314￥
 ## </p><h1 id="01" name="01"><strong>域名</strong></h1><p>
 
 
 <font  color= #518FC1 size=6>[wcowin.work](https://wcowin.work)</font>
+
 
 ## <h1 id="01" name="01"><strong>开发工具</strong></h1>
 * Vs code

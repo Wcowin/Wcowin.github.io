@@ -61,7 +61,7 @@ theme:
   
 
   icon: 
-    repo: fontawesome/brands/square-git #右上角图标
+    repo: fontawesome/brands/github #右上角图标
 edit_uri: edit/main/docs # 编辑按钮跳转的链接 
 repo_url: https://github.com/Wcowin/Wcowin.github.io # 右上角点击跳转的链接
 repo_name: Wcowin.github.io # 右上角的名字
