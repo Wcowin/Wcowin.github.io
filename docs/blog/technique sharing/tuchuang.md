@@ -26,6 +26,6 @@ hide:
 
 ## 二、免费图床(推荐)
 - [载涂图床](https://mcecy.com/)
-- [遇见图床](https://www.hualigs.cn/)  
+- [imgurl](https://www.imgurl.ink/vip/manage/upload)  
  
 无脑上传图片，粘贴链接即可

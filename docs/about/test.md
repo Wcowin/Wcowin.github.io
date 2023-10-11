@@ -18,6 +18,8 @@
   shortcode to copy it to your clipboard.
 </small>
 
+![截屏2022-06-24 21.22.34](https://i2.100024.xyz/2023/10/09/ncsp35.webp)
+
 
 <div class="spinner">
   <div class="rect1"></div>
