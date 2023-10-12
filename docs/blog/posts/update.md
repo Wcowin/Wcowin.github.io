@@ -8,7 +8,7 @@ categories:
 
 ## </p><h1 id="01" name="01"><strong>2023-10-12</strong></h1><p>
 
-* 增加[友链版块](https://wcowin.work/about/link.md)
+* 增加[友链版块](https://wcowin.work/about/link/)
 ## </p><h1 id="01" name="01"><strong>2023-10-8</strong></h1><p>
 
 * 修复Latex渲染不了的bug
