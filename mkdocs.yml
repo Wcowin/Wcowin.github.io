@@ -74,7 +74,15 @@ nav:
     - Mac/windows软件网站汇总: blog/macsoft.md
     - 语雀: blog/yuque.md
     - Telegram 群组、频道、机器人  汇总分享: blog/TG.md
-    
+    - MKdocs教程:
+        - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
+        - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
+        - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
+        
+    - Mkdocs美化:
+        - 修改网站字体: blog/websitebeauty/mkdocsfont.md
+        - JS实现鼠标样式: blog/websitebeauty/shubiao.md
+        - 背景特效: blog/websitebeauty/backgroud.md      
     - 技术分享:
         - Win11镜像下载、壁纸及KMS激活 : blog/technique sharing/win.md
         - 实用脚本分享: blog/technique sharing/jiaoben.md
@@ -85,14 +93,7 @@ nav:
         - 用Matlab画玫瑰百合花: blog/technique sharing/matlabrose.md
         - 科学上网: blog/technique sharing/kexue.md
         - 计算机编年史: blog/technique sharing/jisuanjibiannianshi.md
-    - MKdocs:
-        - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
-        - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
-        - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
-    - Mkdocs美化:
-        - 修改网站字体: blog/websitebeauty/mkdocsfont.md
-        - JS实现鼠标样式: blog/websitebeauty/shubiao.md
-        - 背景特效: blog/websitebeauty/backgroud.md
+
     - 学术:
         - LaTeX常用符号整理: blog/Academic/LaTeX.md
         - Math: blog/Academic/math.md
@@ -235,13 +236,15 @@ nav:
     - Github主页介绍: about/Wcowin.md
     - 网站制作: about/web.md
     - 支持作者: about/zcw.md
-    - 友链: about/link.md
+    
     - 毕业之前值得去做的30件事: about/biye.md
     - 免责声明: about/shengming.md
     - Test: about/test.md
     - 404公益页面: about/404.md
     - For lover: about/Foryou.md
-
+  - 友链: 
+    - 友链: about/link.md
+    - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
   - Blogger:
     - index: blog/index.md
     # - wkw: blog/posts/wkw.md
@@ -374,6 +377,7 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/link.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   # - stylesheets/extra1.css
   # - stylesheets/video.css

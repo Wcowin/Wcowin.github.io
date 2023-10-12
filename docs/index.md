@@ -114,14 +114,17 @@ comments: false
 <strong>推荐文章:material-book:</strong>
 
   - [如何注册ChatGPT](develop/ChatGPT.md)
-  - [利用mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
+  - [将Python文件.py打包成.exe可执行程序](blog/py/python.md)
+  - [Blogger](blog/index.md) 
+  - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
+  - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
   - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md)
   - [好用/好玩网站分享](blog/Webplay.md)
   - [Mac/windows软件网站汇总](blog/macsoft.md)
   - [实用脚本分享](blog/technique sharing/jiaoben.md)
   - [重庆旅游推荐路线](trip/InCQ/CQ.md)
   - [留言板](waline.md)
-  - [Blogger](blog/index.md)
+  
 
 
 

@@ -5,6 +5,13 @@ date: 2023-10-05
 categories:
   - 网站更新记录
 ---
+
+## </p><h1 id="01" name="01"><strong>2023-10-12</strong></h1><p>
+
+* 增加[友链版块](https://wcowin.work/about/link.md)
+## </p><h1 id="01" name="01"><strong>2023-10-8</strong></h1><p>
+
+* 修复Latex渲染不了的bug
 ## </p><h1 id="01" name="01"><strong>2023-10-5</strong></h1><p>
 
 * 新增Blog版块

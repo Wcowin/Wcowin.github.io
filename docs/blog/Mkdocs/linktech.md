@@ -1,15 +1,13 @@
 ---
-title: 友链
-hide:
-#   - navigation # 显示右
-#   - toc #显示左
-  - footer
-  - feedback
+title: 如何给MKdocs添加友链
+tags:
+  - Mkdocs
 ---
-<div class="markdown-content">
-    <h2>欢迎加入友链</h2>
-</div>
-<!-- <div class="post-body">
+
+
+
+```html
+<div class="post-body">
    <div id="links">
       <style>
 /* 用于大屏幕和小屏幕的通用样式 */
@@ -105,20 +103,42 @@ hide:
          </div>
       </div>
    </div>
-</div> -->
+</div>
+```
 
+## 如何加入友链
 
+```html
 
-<!-- <div class="card">
-   <img class="ava" src="{avatarurl}" />
-   <div class="card-header">
-      <div>
-         <a href="{link}">{name}</a>
-      </div>
-      <div class="info">{description}</div>
-   </div>
-</div> -->
+<div class="card"> 
+<img class="ava" src="{avatarurl}" /> 
+<div class="card-header"> 
+<div> 
+<a href="{link}" target="_blank">{name}</a> 
+</div> 
+<div class="info">{description}</div> 
+</div> 
+</div>
 
+```
+
+### 示例
+
+```html
+    <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://wcowin.work/ " target=“_blank”>Wcowin’s blog</a> 
+      </div> 
+      <div class="info">
+       这是一个分享技术的小站。
+      </div> 
+     </div> 
+    </div> 
+```
+## 效果
+<div>
   <div class="links-content"> 
    <div class="link-navigation"> 
     <div class="card"> 
@@ -132,43 +152,4 @@ hide:
       </div> 
      </div> 
     </div> 
-    <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231012/7a090d32db0fe8738dba0d0d578f21f5.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://xpmrobot.tech/" target=“_blank”>Xpm's Robot Lab</a> 
-      </div> 
-      <div class="info">
-       以达星辰
-      </div> 
-     </div>
-    </div>
-    <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231012/d96b912437fb0bec0d282dfe734b1d9b.jpeg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://macapp.org.cn/" target=“_blank”>Macapp</a> 
-      </div> 
-      <div class="info">
-       专注于分享Mac资源的频道
-      </div> 
-     </div> 
-    </div>
-
-   </div> 
-  </div>
-
-
-
-
-
-
-
-<!-- <div class="markdown-content">
-    <h2>欢迎加入友链</h2>
 </div>
-详见：[如何给MKdocs添加友链](../blog/Mkdocs/linktech.md) -->
-
-
-
-
