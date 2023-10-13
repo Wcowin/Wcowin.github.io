@@ -10,105 +10,280 @@ tags:
 **建议详细学习一下上面的官方网站↑↑↑**
 
 我把我目前的部分配置文件mkdocs.yml代码写在下面👇🏻
-```
+```yml
 #[Info]
-site_name: #网站名字
-site_url: #网站地址
-site_author: #作者名
+site_name: Wcowin's Web
+site_url: http://wcowin.work/
+site_author: 王科文(Wcowin)
 #[UI]
 theme:
   name: material
+  custom_dir: overrides
+  # custom_dir: material/.overrides
+  # font:
+  #   text: Bitter
+  #   code: Roboto Mono
+  logo: https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png
+    # material/library
+    # admonition:
+    #   <type>: material/file-alert-outline
+
+  favicon: img/apple-line.png
+  # img/11.ico
   palette:
     #primary: blue grey
-  
-    - scheme: default # 日间模式
-      primary: grey # 上方的
-      accent: cyan # 链接等可交互元件的高亮色
+    
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      primary: blue grey # 上方的
+      accent: indigo # 链接等可交互元件的高亮色
+      # teal 
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # 夜间模式
       primary: black 
-      accent: cyan
+      accent: indigo
+      # teal
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
   features: 
-    - navigation.instant #- header.autohide  #自动隐藏
-    #- announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    # - navigation.instant 
+    #- header.autohide  #自动隐藏
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
-    #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    #- navigation.indexes #启用节索引页后，可以将文档直接附加到节
     - search.share #搜索分享按钮
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - content.tabs.link
+    - content.tooltips
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate 
   language: zh # 一些提示性的文字会变成中文
   
- 
+
   icon: 
     repo: fontawesome/brands/github #右上角图标
 edit_uri: edit/main/docs # 编辑按钮跳转的链接 
-repo_url: https://github.com/Wcowin/mymkdocs # 右上角点击跳转的链接
+repo_url: https://github.com/Wcowin/Wcowin.github.io # 右上角点击跳转的链接
 repo_name: Wcowin.github.io # 右上角的名字
- 
+
 # [Navigtion]
-nav: 
-  - 博客:
+nav:
+  # - 主页: index.md
+  - 博文:
     - 好用/好玩网站分享: blog/Webplay.md
-    - What is Github: blog/Github.md
-    - 解决谷歌翻译用不了的问题: blog/googletranslate.md
     - Mac/windows软件网站汇总: blog/macsoft.md
-    - win11资源分享: blog/win.md
-    - Telegram 群组、频道、机器人 - 汇总分享: blog/TG.md
+    - 语雀: blog/yuque.md
+    - Telegram 群组、频道、机器人  汇总分享: blog/TG.md
+    - MKdocs教程:
+        - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
+        - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
+        - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
+        - 设置Mkdocs博客: blog/Mkdocs/mkdocsblog.md
+    - Mkdocs美化:
+        - 修改网站字体: blog/websitebeauty/mkdocsfont.md
+        - JS实现鼠标样式: blog/websitebeauty/shubiao.md
+        - 背景特效: blog/websitebeauty/backgroud.md      
+    - 技术分享:
+        - Win11镜像下载、壁纸及KMS激活 : blog/technique sharing/win.md
+        - 实用脚本分享: blog/technique sharing/jiaoben.md
+        - 搭建个人图床: blog/technique sharing/tuchuang.md
+        - oh-my-zsh 更新: blog/technique sharing/ohmuzsh.md
+        - 解决谷歌翻译用不了的问题: blog/technique sharing/googletranslate.md
+        - 爱心代码: blog/technique sharing/aixin.md
+        - 用Matlab画玫瑰百合花: blog/technique sharing/matlabrose.md
+        - 科学上网: blog/technique sharing/kexue.md
+        - 计算机编年史: blog/technique sharing/jisuanjibiannianshi.md
+
+    - 学术:
+        - LaTeX常用符号整理: blog/Academic/LaTeX.md
+        - Math: blog/Academic/math.md
+        - 数学竞赛: 
+          - 第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答: blog/Academic/Math/14.md
+          - 第十三届全国大学生数学竞赛(非数学类)决赛详细解答: blog/Academic/Math/13js.md    
+    - Mac:
+        - PD虚拟机: blog/Mac/Pd.md
+        - 提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法: blog/Mac/sunhuai.md
+        - Macbook启动台顽固应用图标删除方法: blog/Mac/shanchu.md
+        - Homebrew国内如何自动安装(国内地址)(Mac & Linux): blog/Mac/homebrew.md
+        - mac 无法访问 github 的解决办法: blog/Mac/jiasugithub.md
+        - Mac的esc键失效的解决方法: blog/Mac/Macesc.md
+        - 启动台图标顺序错乱怎么办: blog/Mac/Launchpad.md
+        - Mac小技巧:去除系统截图名的日期后缀: blog/Mac/jietu.md
+        - 小小Mac技巧: blog/Mac/xjiq.md
+        - Mac隐藏彩蛋: blog/Mac/maccd.md
+        - Mac 键盘快捷键: blog/Mac/kjj.md
+    - iPhone:
+        - iphone多账号如何不频繁登录,双重认证: blog/iphone/iphoneduozhanghao.md
+        - 苹果iphone /iOS 限免网站合集: blog/iphone/iphonexianmian.md
+        - 苹果手机如何去除开屏广告: blog/iphone/iphonequchukaiping.md
+    - WIN:
+        - 彻底卸载360安全卫士的方法: blog/Win/360.md
+        - 三步卸载 Microsoft Edge: blog/Win/edgexz.md
+        - windows快捷键: blog/Win/winkjj.md
+        - 安卓的子系统: blog/Win/anzhuodezixit.md
+
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
-    - C语言: blog/c.md
-    - kexueshangwang: blog/kexue.md
+    - C语言: 
+        - C笔记: blog/C language/c.md
+  
+
+
   - 开发: 
-    - Markdown: develop/markdown.md
-    - MWeb Pro: develop/MWeb.md
+    - 我的设备: develop/mydevice.md
+    - 如何注册ChatGPT: develop/ChatGPT.md
+    - Markdown: 
+        - Markdown指南: develop/Markdown/markdown.md
+        - MWeb Pro: develop/Markdown/MWeb.md
+    - Git 实用技巧: develop/git.md    
+    - 我的作品:
+        # - 基于讯飞人脸算法进行人脸比对(调用API): develop/Mywork/face_compare.md
+        # - 人脸识别系统: develop/Mywork/face-recognition.md
+        - 基于百度API和opencv的智能车牌识别程序: develop/Mywork/opencv.md
+        - 利用百度API进行植物识别: develop/Mywork/aizhiwu.md
+        - 玩的设计: develop/Mywork/design.md
+    - 设计美学:
+        - 唐·诺曼—情感设计的三个层次: develop/designbeauty/db1.md
+        - 我对设计的一些观点: develop/designbeauty/my-to-desihn.md
+    - 1024code: develop/1024code.md
+    - 利用Lighthouse测试网站性能: develop/lighthouse.md
+    - What is Github: develop/Github.md
+    - 如何将 github pages 迁移到 vercel 上托管: develop/vercel.md
     - 大厂们的良心软件～: develop/fenxiang.md
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
+    - 看源码才懂: develop/kanyuanma.md
+    
   - 闲话:
-    - 原神: relax/game.md
+    - 推荐的Books: relax/tuijianyuedu.md
+    - 小米: relax/xiaomo.md
+    - Apple: relax/Apple.md
+    - 如是我闻: relax/rushiwowen.md
+    - 王冰冰o(^▽^)o: relax/wbb.md
     - 诗文:
+      - 枫桥夜泊: relax/shiwen/fqyb.md
       - 滕王阁序: relax/shiwen/twgx.md
       - 望江南·超然台作: relax/shiwen/sjcnh.md
       - 击鼓: relax/shiwen/jg.md
       - 雨霖铃·秋别: relax/shiwen/yll.md
+      - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
+    - 数至十: 
+      - 1: relax/wkwMath/1.md
+      - 2: relax/wkwMath/2.md 
+      - 3: relax/wkwMath/3.md 
+      - 4: relax/wkwMath/4.md
+      - 5: relax/wkwMath/5.md
+      # - 诗经: relax/shiwen/shijing.json
+
+    - 观影:
+        - 推荐的番剧: relax/Movie/tuijianfanju.md
+        - 推荐的电影: relax/Movie/tuijiandedianyin.md
+        - 推荐的电视剧: relax/Movie/tuijiandsj.md
+
+    - 杂文:
+        - 《目送》节选: relax/Essay/musong.md
+        - 大学一个人吃饭很丢人吗？: relax/Essay/dx.md
+        - luv letter: relax/Essay/luv letter.md
+        - 有哪些给男孩子在谈恋爱时的忠告？: relax/Essay/zhonggao.md
+        - 哈基米🐈: relax/Essay/cat.md
+    - 程序人生:
+        - 《程序员成长历程的四个阶段》: relax/Manong/sigejieduan.md
+        - 《程序员脱单指南》: relax/Manong/tuodanbukeneng.md
+        - 《程序员学习路线图》: relax/Manong/wtf.md
+        - 《printf("❤️\n》: relax/Manong/cxiaoaixin.md
+    - 写信:
+        - 第一封: relax/Letter/letter1.md
+        - 第二封: relax/Letter/letter2.md
+        - 情书:
+            -   朱生豪与宋清如: relax/Letter/luvletter/sqrzszyz.md
+            - 《朱生豪情书全集摘录》(021): relax/Letter/luvletter/zhushenghao1.md
+            - 《朱生豪情书全集摘录》(031): relax/Letter/luvletter/zhushenghao2.md
+            - 《朱生豪情书全集摘录》(036): relax/Letter/luvletter/zhushenghao3.md
+            - 《朱生豪情书全集摘录》(046): relax/Letter/luvletter/zhushenghao4.md
+            - 《朱生豪情书全集摘录》(053): relax/Letter/luvletter/zhushenghao5.md
+            - 《朱生豪情书全集摘录》(055): relax/Letter/luvletter/zhushenghao6.md
+
+
+    # - Music:
+    #     - shape of you: relax/Music/soy.md
+    #     - Floating: relax/Music/Floating.md
+    #     - 朱砂: relax/Music/zhusha.md
+    #     - 关于郑州的记忆: relax/Music/gyzzdjy.md
+    #     - 若把你: relax/Music/rbn.md
+    #     - 絶頂讃歌: relax/Music/jdzg.md
+    - Game:
+        - 原神: relax/Game/yuanshen.md
+        - 如何玩好《王者荣耀》？: relax/Game/wzry.md
+    - 入党结业考试题总结: relax/rudang.md
+    - 润学之为什么润: about/run.md
+    - 让人说话，天塌不下来: about/maozedong.md
+    - 关于教育革命的谈话: relax/jiaoyu.md
+    - 程序猿神之楷模:一个人,一个网站,5.75亿美元卖掉: relax/kaimo.md
+    
   - 旅行: 
-    - 家乡: trip/LH.md
-    - 重庆: trip/travel.md
+    # - trip/index.md
+    - 重庆: 
+        - 重庆旅游推荐路线: trip/InCQ/CQ.md
+    - Hometown: trip/LH.md
+    - 西安: trip/Xian.md
+
+  - 标签: tag.md
+  - 留言板: waline.md
+  - 友链: 
+    - 友链: about/link.md
+    - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
+  - Blogger:
+    - index: blog/index.md
+    # - wkw: blog/posts/wkw.md
+    # - 我的一些见解: blog/posts/post1.md
+    # - Lifecycle: blog/posts/post2.md  
   - 关于:
-    - 个人履历: about/geren.md
+    - 个人简介: about/geren.md
+    - 个人简历: about/个人简历2.pdf
+    - My Goal: about/goal.md
+    - Github主页介绍: about/Wcowin.md
     - 网站制作: about/web.md
- 
- 
+    - 支持作者: about/zcw.md
+    
+    - 毕业之前值得去做的30件事: about/biye.md
+    - 免责声明: about/shengming.md
+    - Test: about/test.md
+    - 404公益页面: about/404.md
+    - For lover: about/Foryou.md
+
   
   
-copyright: Copyright &copy; 2022王科文 # 左下角的版权声明
+copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的版权声明
   
- 
+
 extra:
-  generator: false  #删除页脚显示“使用 MkDocs 材料制造”
+  generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
-    - icon: fontawesome/brands/twitter 
+    - icon: fontawesome/brands/x-twitter 
       link: https://twitter.com/wcowin_
     - icon: fontawesome/brands/github
       link: https://github.com/Wcowin
+    
+    - icon: fontawesome/regular/envelope
+      link: mailto:<wangkewen821@gmail.com> #联系方式
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:<1135801806@qq.com> #联系方式
-  
   analytics: 
     provider: google
-    property: G-XXXXXXXXXX # Google Analytics ID
+    property: G-29HZMNR0KG
     feedback:
       title: 此页面有帮助吗？
       ratings:
@@ -124,50 +299,122 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
   
-  consent:
-    title: Cookie consent
-    description: >- 
-      我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
-      如果你同意,你可以帮助我们让我们的网站更好
+  # consent:
+  #   title: Cookie consent
+  #   description: >- 
+  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+  #     如果你同意,你可以帮助我们让我们的网站更好
 
-      
+    
+
 plugins:
+  # - glightbox
   - search
+  - blog:
+      post_date_format: full #时间
+      draft: true
+      draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
+      post_readtime: true
+      post_readtime_words_per_minute: 265  #计算帖子的阅读时间时读者每分钟预计阅读的字数
+      post_url_format: "{date}/{slug}"
+      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      # categories_toc: true
+      # pagination_per_page: 5
+      pagination_url_format: "page/{page}"
+      authors_file: "{blog}/.authors.yml"  #作者信息
   - tags:
-      tags_file: tag.md #标签
+      tags_file: tag.md  #分类标签
 
+  
 
 markdown_extensions:
   - abbr
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
   - md_in_html
+  # - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
   - pymdownx.arithmatex:  # latex支持
       generic: true
   - toc:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
       anchor_linenums: true
-      # linenums: true # 显示行号
+      linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.superfences # 代码块高亮插件
-  - meta # 支持Markdown文件上方自定义标题标签等
-     
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - markdown.extensions.toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: "\ue157"
+  
 extra_javascript:
   - javascripts/extra.js
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - javascripts/mathjax-config.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
+
+
+  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
+  # - ckplayer/js/ckplayer.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
+  # - javascripts/backbound1.js
+  # - javascripts/rellax.min.js
+  - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
+  # - https://res.zvo.cn/translate/translate.js  # Translate
+
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/link.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
+  # - stylesheets/extra1.css
+  # - stylesheets/video.css
+  - https://unpkg.com/@waline/client@v2/dist/waline.css
+  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css
+  - ckplayer/css/ckplayer.css
+  - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+
+# crisp
+# https://crisp.chat/en/
+# crisp:
+#   enable: true
+#   website_id: 89ded6c2-1a10-47e3-af5d-f12e6a378547
+
+# tidio:
+#   enable: true
+#   public_key: w3nvk9wmckvjf2iity4bwxicoj4yss9l
+
  
  
 ```
@@ -343,7 +590,7 @@ plugins:
 ```
 plugins:
   - tags:
-      tags_file: tags.md
+      tags_file: tag.md  #分类标签
 ```
 ![img](https://cn.mcecy.com/image/20230324/92fd3f17055fca8fc76f21b5fab5f76a.png)
 docs文件夹下新建tags.md文件，会自动在tags.md文件中生成标签列表
@@ -368,29 +615,48 @@ hide:
 ```
 markdown_extensions:
   - abbr
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
   - md_in_html
+  # - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
   - pymdownx.arithmatex:  # latex支持
       generic: true
   - toc:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
       anchor_linenums: true
-      # linenums: true # 显示行号
+      linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.superfences # 代码块高亮插件
-  - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - markdown.extensions.toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: "\ue157"
 ```
-这部分是对markdown语法的扩展，注释里也有简述 ，建议直接复制粘贴
+这部分是对markdown语法的扩展，注释里也有简述 ，**建议直接复制粘贴**
+
 ***
 ## extra_javascript 和extra_css
 ```

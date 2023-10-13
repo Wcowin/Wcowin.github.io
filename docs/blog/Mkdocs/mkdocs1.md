@@ -1,5 +1,5 @@
 ---
-title: 利用mkdocs部署静态网页至GitHubpages
+title: 利用Mkdocs部署静态网页至GitHubpages
 tags:
   - Mkdocs
 ---
@@ -19,7 +19,7 @@ tags:
 
 参考教程： 
 
-[网站制作 - Wcowin的个人网站](https://wcowin.work/mymkdocs/about/web/){target=“_blank”}
+[利用mkdocs部署静态网页至GitHubpages（更新版）](https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501){target=“_blank”}
 
 与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库
 ![img](https://cn.mcecy.com/image/20230324/51a12510e3b332b6ceea6827f40c1f2f.png)
@@ -44,15 +44,17 @@ docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题
 以VScode为例我们打开具体看看里面的东西
 
 (建议先执行下面的代码添加一个GitHub Workflow)
+
 ``` 
-$ mkdir .github
-$ cd .github
-$ mkdir workflows
-$ cd workflows
-$ vim PublishMySite.yml
+mkdir .github
+cd .github
+mkdir workflows
+cd workflows
+vim PublishMySite.yml
 ```
 
 在PublishMySite.yml里面输入以下内容
+
 ```
 name: publish site
 on: # 在什么时候触发工作流
@@ -89,17 +91,32 @@ $ tree -a
 └── mkdocs.yml
 ```
 ## 三、配置完善
+打开终端运行  
+
+`pip install mkdocs-material`
 
 打开**mkdocs.yml** 
 
- 把以下的内容输入进去（最简单配置）
- ```
+ 把以下的内容输入进去（最简单配置）  
+
+```
 site_name: 网站名字
-site_url: 
+```
+
+```
+site_url: 网站链接
+```
+
+```
 site_author: 你的名字
+```
+
+```
 theme:
   name: material #主题
- ```
+```  
+
+
 详细mkdocs.yml配置见[Changing the colors - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 
 [下次](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5502)我会具体谈谈这个问题

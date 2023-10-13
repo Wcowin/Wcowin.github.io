@@ -1,5 +1,7 @@
 我目前在用的字体：[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank}  
-想必你可以直观从我的网站感受到，[这款字体](https://chawyehsu.github.io/lxgw-wenkai-webfont/)的美观程度。
+想必你可以直观从我的网站感受到，[这款字体](https://chawyehsu.github.io/lxgw-wenkai-webfont/)的美观程度。  
+
+[快速教程](#基于mkdocs的网站字体美化用法)
 ***  
 
 **以下是摘录的部分字体官方介绍文档**
@@ -121,7 +123,7 @@ An open-source Chinese font derived from Fontworks' Klee One. 一款开源中文
 **以上是摘录的部分字体官方介绍文档**
 ***
 
-### 基于Mkdocs的网站字体美化用法
+## 基于Mkdocs的网站字体美化用法
 
 1. 在mkdocs.yml中添加以下内容
 ```yaml
@@ -149,3 +151,14 @@ body {
 
 不懂extra_css的用法的可以看一下我写的[extra_css部分](https://wcowin.work/blog/Mkdocs/mkdocs2/#extra_javascript-和extra_css){target=_blank}教程
 
+!!!tip
+    切换字体后可能返回顶部按钮会在个别浏览器显示异常
+    建议在extra.css里加入
+    ```css
+    button.md-top {
+      font-family: LXGW WenKai; /* 修改字体 */
+      font-size: 16px; /* 修改字体大小 */
+      font-weight: bold; /* 修改字体粗细 */
+      color: #518FC1; /* 修改字体颜色 */
+    }
+    ```
