@@ -33,7 +33,7 @@ hide:
        <a href="https://xpmrobot.tech/" target=“_blank”>Xpm's Robot Lab</a> 
       </div> 
       <div class="info">
-       以达星辰
+       星星之火可以燎原
       </div> 
      </div>
     </div>
