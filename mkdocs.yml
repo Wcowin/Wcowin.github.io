@@ -136,7 +136,7 @@ nav:
     - Markdown: 
         - Markdown指南: develop/Markdown/markdown.md
         - MWeb Pro: develop/Markdown/MWeb.md
-        
+    - Git 实用技巧: develop/git.md    
     - 我的作品:
         # - 基于讯飞人脸算法进行人脸比对(调用API): develop/Mywork/face_compare.md
         # - 人脸识别系统: develop/Mywork/face-recognition.md
@@ -229,6 +229,14 @@ nav:
 
   - 标签: tag.md
   - 留言板: waline.md
+  - 友链: 
+    - 友链: about/link.md
+    - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
+  - Blogger:
+    - index: blog/index.md
+    # - wkw: blog/posts/wkw.md
+    # - 我的一些见解: blog/posts/post1.md
+    # - Lifecycle: blog/posts/post2.md  
   - 关于:
     - 个人简介: about/geren.md
     - 个人简历: about/个人简历2.pdf
@@ -242,14 +250,7 @@ nav:
     - Test: about/test.md
     - 404公益页面: about/404.md
     - For lover: about/Foryou.md
-  - 友链: 
-    - 友链: about/link.md
-    - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
-  - Blogger:
-    - index: blog/index.md
-    # - wkw: blog/posts/wkw.md
-    # - 我的一些见解: blog/posts/post1.md
-    # - Lifecycle: blog/posts/post2.md
+
   
   
 copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的版权声明

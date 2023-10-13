@@ -71,13 +71,13 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231012/d96b912437fb0bec0d282dfe734b1d9b.jpeg" /> 
+     <img class="ava" src="https://gravatar.cdn.iszy.xyz/avatar/5012e410377c7a93d14f7bf31aeeb7fd?d=mm" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://macapp.org.cn/" target=“_blank”>Macapp</a> 
+       <a href="https://macapp.org.cn/" target=“_blank”>随遇而安</a> 
       </div> 
       <div class="info">
-       专注于分享Mac资源的频道
+       生活吐槽＆学习记录
       </div> 
      </div> 
     </div>
@@ -88,7 +88,17 @@ hide:
 
 
 
-
+   <!-- <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20231012/d96b912437fb0bec0d282dfe734b1d9b.jpeg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://macapp.org.cn/" target=“_blank”>Macapp</a> 
+      </div> 
+      <div class="info">
+       专注于分享Mac资源的频道
+      </div> 
+     </div> 
+    </div> -->
 
 
 <!-- <div class="markdown-content">
@@ -123,3 +133,5 @@ hide:
 >链接: https://wcowin.work/  
 >头像: 头像图片链接地址  
 >简介: 循此苦旅，以达星辰
+
+

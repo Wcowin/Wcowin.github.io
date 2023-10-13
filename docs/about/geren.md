@@ -6,9 +6,15 @@ hide:
 comments: true
 ---
 # 知足且上进，温柔且坚定
+
+<!-- <center> 
+<span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+</center>    -->
+
 <div>
   <img src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
-  <p style="font-size: 2.5em"><strong>Wcowin</strong></p>
+  <p style="font-size: 2.4em"><strong>Wcowin</strong></p>
   <p style="font-size: 1.2em">Free and diffuse</p>
   <p style="font-size: 1.2em">A college student</p>
 </div>
@@ -17,14 +23,13 @@ comments: true
 !!! pied-piper1 "About me"
     
     - [x] Hey, I'm [Wcowin](https://bento.me/wcowin){target=“_blank”}!
-    - [x] Bilibili电子信息工程专业本科在读  :star2:
-    - [x] CV工程师 ++ctrl+c++  (  ++v++  ) 🧑‍💻
-    - [x] 咖啡重度爱好者 :coffee:
-    - [x] 痴迷Math/致力于高阶微分方程的研究 :pencil2:
-    - [x] 热爱(xiā)折腾技术,读书明智 :computer: 
-    - [x] 喜欢村上春树📖，擅长羽毛球 :badminton: 
-     
-
+    - [x] 清醒，知趣，明得失，知进退
+    - [x] 咖啡重度爱好者 
+    - [x] 热爱(xiā)折腾技术/Math
+    - [x] 读书明志可识春秋;诗词爱好者,喜欢村上春树，擅长羽毛球
+   
+<!-- - [x] CV工程师 ++ctrl+c++  (  ++v++  ) 🧑‍💻
+- [x] Bilibili电子信息工程专业本科在读  :star2: -->
 <!-- - [x] <a href="https://github.com/Wcowin" target="_blank"><button class="buttonxuan3">找到我:simple-github:</button></a>:material-arrow-right:&#x1F4A1;  -->
 
 
@@ -61,8 +66,7 @@ comments: true
   <figcaption>公众号</figcaption>
 </figure>
 
-<!-- [Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){.md-button} -->
-<a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> 
+ 
 
 
 <head>
@@ -83,3 +87,9 @@ t.parentNode.insertBefore(e,t)}})();
 <!-- End of Howxm client code snippet -->
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
 </head>
+
+## 须知
+如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 Issues 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我，邮箱地址：<wangkewen821@gmail.com>  请不要滥用博客的评论功能发表与主题无关言论。
+
+[Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}
+<!-- <a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> -->
