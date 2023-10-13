@@ -22,7 +22,7 @@ hide:
        <a href="https://wcowin.work/ " target=“_blank”>Wcowin’s Web</a> 
       </div> 
       <div class="info">
-       这是一个分享技术的小站。
+       “循此苦旅，以达星辰”
       </div> 
      </div> 
     </div> 
