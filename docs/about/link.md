@@ -1,5 +1,6 @@
 ---
 title: 友链
+comments: true
 hide:
 #   - navigation # 显示右
 #   - toc #显示左
@@ -37,17 +38,6 @@ hide:
      </div>
     </div>
     <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231012/d96b912437fb0bec0d282dfe734b1d9b.jpeg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://macapp.org.cn/" target=“_blank”>Macapp</a> 
-      </div> 
-      <div class="info">
-       专注于分享Mac资源的频道
-      </div> 
-     </div> 
-    </div>
-    <div class="card"> 
      <img class="ava" src="https://finisky.github.io/images/me.jpg" /> 
      <div class="card-header"> 
       <div> 
@@ -58,6 +48,17 @@ hide:
       </div> 
      </div> 
     </div> 
+        <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20231012/d96b912437fb0bec0d282dfe734b1d9b.jpeg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://macapp.org.cn/" target=“_blank”>Macapp</a> 
+      </div> 
+      <div class="info">
+       专注于分享Mac资源的频道
+      </div> 
+     </div> 
+    </div>
    </div> 
   </div>
 
@@ -81,5 +82,21 @@ hide:
       <div class="info">{description}</div>
    </div>
 </div> -->
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
+<div class="markdown-content">
+    <h3>交换友链，请添加本站友链后下方留言申请，期望您的站点:</h3>
+</div>
 
 
+* 独立博客(不要求独立域名)，https，访问流畅
+* 原创内容为主，原创内容10篇以上
+* 处于活跃状态，有一定的更新频率
+* 建站一个月以上
+* 未添加友链或申请未通过，评论留言会被隐藏。
+
+友链格式示例:
+
+>名称: Wcowin's Web  
+>链接: https://wcowin.work/  
+>头像: 头像图片链接地址  
+>简介: 循此苦旅，以达星辰
