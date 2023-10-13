@@ -13,7 +13,7 @@ comments: true
 </center>    -->
 
 <div>
-  <img src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
+  <img src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png" class="img1" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
   <p style="font-size: 2.4em"><strong>Wcowin</strong></p>
   <p style="font-size: 1.2em">Free and diffuse</p>
   <p style="font-size: 1.2em">A college student</p>
