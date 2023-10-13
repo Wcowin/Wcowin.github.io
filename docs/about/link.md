@@ -47,8 +47,30 @@ hide:
        NLP， 软件工程，产品设计
       </div> 
      </div> 
+    </div>
+       <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20231013/b6a22a0bdb0788a85462b7c2d79dca26.jpeg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://mungeryang.github.io/" target=“_blank”>Munger yang's Blog</a> 
+      </div> 
+      <div class="info">
+       Mungeryang写字的地方
+      </div> 
+     </div>
     </div> 
-        <div class="card"> 
+       <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20230615/749725b48e5972165d0bce10b364695e.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://wcowin.work/myhexo/" target=“_blank”>Myhexo</a> 
+      </div> 
+      <div class="info">
+       Wcowin的个人Hexo网站
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
      <img class="ava" src="https://cn.mcecy.com/image/20231012/d96b912437fb0bec0d282dfe734b1d9b.jpeg" /> 
      <div class="card-header"> 
       <div> 
@@ -59,6 +81,7 @@ hide:
       </div> 
      </div> 
     </div>
+
    </div> 
   </div>
 
