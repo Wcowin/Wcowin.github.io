@@ -38,13 +38,13 @@ hide:
      </div>
     </div>
     <div class="card"> 
-     <img class="ava" src="https://finisky.github.io/images/me.jpg" /> 
+     <img class="ava" src=" https://finisky.github.io/images/avatar.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://finisky.github.io/" target=“_blank”>Finisky Garden</a> 
       </div> 
       <div class="info">
-       NLP， 软件工程，产品设计
+       互联网技术那些事儿
       </div> 
      </div> 
     </div>
