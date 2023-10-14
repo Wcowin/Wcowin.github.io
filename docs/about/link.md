@@ -37,6 +37,17 @@ hide:
       </div> 
      </div>
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20231014/58655ceaff181d38a9062434a4f10e60.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://ictsmc.cn/" target="_blank">IctSmc笔记</a> 
+      </div> 
+      <div class="info">
+       念念不忘,必有回响
+      </div> 
+     </div> 
+    </div>
     <div class="card"> 
      <img class="ava" src=" https://finisky.github.io/images/avatar.png" /> 
      <div class="card-header"> 
@@ -92,6 +103,7 @@ hide:
       </div> 
      </div> 
     </div>
+
 
    </div> 
   </div>
