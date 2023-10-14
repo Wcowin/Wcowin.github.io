@@ -19,7 +19,7 @@ hide:
      <img class="ava" src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://wcowin.work/ " target=“_blank”>Wcowin’s Web</a> 
+       <a href="https://wcowin.work/ " target="_blank">Wcowin's Web</a> 
       </div> 
       <div class="info">
        “循此苦旅，以达星辰”
@@ -30,7 +30,7 @@ hide:
      <img class="ava" src="https://cn.mcecy.com/image/20231012/7a090d32db0fe8738dba0d0d578f21f5.jpg" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://xpmrobot.tech/" target=“_blank”>Xpm's Robot Lab</a> 
+       <a href="https://xpmrobot.tech/" target="_blank">Xpm's Robot Lab</a> 
       </div> 
       <div class="info">
        星星之火可以燎原
@@ -41,7 +41,7 @@ hide:
      <img class="ava" src=" https://finisky.github.io/images/avatar.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://finisky.github.io/" target=“_blank”>Finisky Garden</a> 
+       <a href="https://finisky.github.io/" target="_blank">Finisky Garden</a> 
       </div> 
       <div class="info">
        互联网技术那些事儿
@@ -52,7 +52,7 @@ hide:
      <img class="ava" src="https://cn.mcecy.com/image/20231013/b6a22a0bdb0788a85462b7c2d79dca26.jpeg" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://mungeryang.github.io/" target=“_blank”>Munger yang's Blog</a> 
+       <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a> 
       </div> 
       <div class="info">
        Mungeryang写字的地方
@@ -63,7 +63,7 @@ hide:
      <img class="ava" src="https://cn.mcecy.com/image/20230615/749725b48e5972165d0bce10b364695e.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://wcowin.work/myhexo/" target=“_blank”>Myhexo</a> 
+       <a href="https://wcowin.work/myhexo/" target="_blank">Myhexo</a> 
       </div> 
       <div class="info">
        Wcowin的个人Hexo网站
@@ -74,7 +74,7 @@ hide:
      <img class="ava" src="https://gravatar.cdn.iszy.xyz/avatar/5012e410377c7a93d14f7bf31aeeb7fd?d=mm" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://www.iszy.cc/" target=“_blank”>随遇而安</a> 
+       <a href="https://www.iszy.cc/" target="_blank">随遇而安</a> 
       </div> 
       <div class="info">
        生活吐槽＆学习记录
@@ -85,7 +85,7 @@ hide:
      <img class="ava" src="https://cn.mcecy.com/image/20231014/a73a55a5e9b5304b76a0e0e59b5171a6.jpeg" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://qiuyuair.com" target=“_blank”>Qiuyuair的自留地</a> 
+       <a href="https://qiuyuair.com" target="_blank">Qiuyuair的自留地</a> 
       </div> 
       <div class="info">
        Airyu’s Site
@@ -123,8 +123,10 @@ hide:
       </div>
       <div class="info">{description}</div>
    </div>
-</div> -->
+</div> -->   
+
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
+
 <div class="markdown-content">
     <h3>交换友链，请添加本站友链后下方留言申请，期望您的站点:</h3>
 </div>
