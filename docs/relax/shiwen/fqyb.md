@@ -2,7 +2,7 @@
 tags:
   - 诗文
 ---
-# <center>枫桥夜泊 / 夜泊枫江</center>
+# <center>枫桥夜泊</center>
 <p align="right"><font size=5>张继 〔唐代〕</p>
 <center><font size=5> 月落乌啼霜满天，江枫渔火对愁眠。  
 

@@ -8,49 +8,14 @@ hide:
 comments: true
 ---
 # 畅所欲言  
-
-<!-- !!!bug
-    - 评论区需要刷新才能使用，正在修复中 -->
-
-
-<!-- <style>
-  /* 定义按钮的样式 */
-  .pushable {
-    background: #608DBD;
-    border-radius: 12px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline-offset: 4px;
-  }
-  /* 定义按钮正面的样式 */
-  .front {
-    display: block;
-    padding: 12px 24px;
-    border-radius: 12px;
-    font-size: 1.25rem;
-    background: #608DBD;
-    color: white;
-    transform: translateY(-6px);
-  }
-
-  /* 当按钮被按下时的样式 */
-  .pushable:active .front {
-    transform: translateY(-2px);
-  }
-</style> -->
-
-<!-- 创建一个按钮 -->
-<!-- <button type="button" onClick="window.location.reload()">
-  <span class="front">
-    点我刷新
-  </span>
-</button> -->
-
-
+<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h1>留言板</h1>
+    <p id="poem">月落乌啼霜满天，江枫渔火对愁眠</p>
+    <p id="info">【唐代】张继 《枫桥夜泊》</p></div>
 
 <!-- tw开始 -->
- 
  <head> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" /> 
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script> 
