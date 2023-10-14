@@ -81,11 +81,20 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20231014/a73a55a5e9b5304b76a0e0e59b5171a6.jpeg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://qiuyuair.com" target=“_blank”>Qiuyuair的自留地</a> 
+      </div> 
+      <div class="info">
+       Airyu’s Site
+      </div> 
+     </div> 
+    </div>
 
    </div> 
   </div>
-
-
 
 
    <!-- <div class="card"> 

@@ -369,7 +369,6 @@ extra_javascript:
   # - javascripts/mathjax-config.js
   # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
 
-
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   - ckplayer/js/ckplayer.js
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
