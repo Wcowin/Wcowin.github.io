@@ -370,7 +370,7 @@ extra_javascript:
   # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
 
 
-  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
+  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   - ckplayer/js/ckplayer.js
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
   # - javascripts/backbound1.js
@@ -385,21 +385,9 @@ extra_css:
   # - stylesheets/extra1.css
   # - stylesheets/video.css
   - https://unpkg.com/@waline/client@v2/dist/waline.css
-  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css
+  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css
   - ckplayer/css/ckplayer.css
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
 
-# crisp
-# https://crisp.chat/en/
-# crisp:
-#   enable: true
-#   website_id: 89ded6c2-1a10-47e3-af5d-f12e6a378547
-
-# tidio:
-#   enable: true
-#   public_key: w3nvk9wmckvjf2iity4bwxicoj4yss9l

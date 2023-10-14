@@ -693,6 +693,6 @@ javascripts/mathjax.js里有对数学公式的扩展，extra_css里是CSS的知�
 
 [自定义网站字体](../websitebeauty/mkdocsfont.md)  
 
-[添加友链](../websitebeauty/linktech.md)
+[添加友链](linktech.md)
 
 [添加评论系统](../websitebeauty/mkcomments.md)
