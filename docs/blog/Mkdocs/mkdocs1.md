@@ -90,6 +90,12 @@ $ tree -a
 │   └── index.md
 └── mkdocs.yml
 ```
+
+
+!!!重点来了
+仓库setings/Actions/General  勾选这两项
+![](https://cn.mcecy.com/image/20231014/60f48ab66eea11b52f572b8fd489ea92.png)
+
 ## 三、配置完善
 打开终端运行  
 
@@ -132,6 +138,10 @@ mkdocs serve
 
 最后去github Desktop上传到github
 ![img](https://cn.mcecy.com/image/20230324/53ad3fdbe7d05668b99a46780930845a.png)
+
+!重点
+再去setings/pages  选择下图示意的路径
+![](https://cn.mcecy.com/image/20231014/ac6d1bc1a236737a18d9dd6bd2bd97dc.png)
 
 你的网站网址就是：​
 

@@ -371,7 +371,7 @@ extra_javascript:
 
 
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
-  # - ckplayer/js/ckplayer.js
+  - ckplayer/js/ckplayer.js
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
   # - javascripts/backbound1.js
   # - javascripts/rellax.min.js

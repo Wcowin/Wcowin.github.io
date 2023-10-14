@@ -74,7 +74,7 @@ hide:
      <img class="ava" src="https://gravatar.cdn.iszy.xyz/avatar/5012e410377c7a93d14f7bf31aeeb7fd?d=mm" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://macapp.org.cn/" target=“_blank”>随遇而安</a> 
+       <a href="https://www.iszy.cc/" target=“_blank”>随遇而安</a> 
       </div> 
       <div class="info">
        生活吐槽＆学习记录

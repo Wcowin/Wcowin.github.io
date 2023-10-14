@@ -21,6 +21,28 @@ plugins:
   - Blogger:
     - index: blog/index.md
 ```
+元标签参考：
+```
+---
+title: 
+authors: [Wcowin]  #作者
+date: 2023-10-04   #时间
+draft: true   # 是否为草稿
+categories:  #分类
+  - Hello
+---
+```
+作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）  
+
+
+```yml
+authors:
+  Wcowin:
+    name: Wang Kewen    # Author name
+    description: Free and casual # Author description
+    avatar: https://cn.mcecy.com/image/20231002/12fa9ff77b8b452d9a65b56507995bde.png         # Author avatar
+
+```
 
 结束
 ![](https://cn.mcecy.com/image/20231013/40be72b51647571e312a9420f704d539.png)
