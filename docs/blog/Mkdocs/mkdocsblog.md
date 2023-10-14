@@ -44,5 +44,17 @@ authors:
 
 ```
 
+元标签参考：
+```
+---
+title: 
+authors: [Wcowin]  #作者
+date: 2023-10-04   #时间
+draft: true   # 是否为草稿
+categories:  #分类
+  - Hello
+---
+```
+
 结束
 ![](https://cn.mcecy.com/image/20231013/40be72b51647571e312a9420f704d539.png)
