@@ -509,7 +509,7 @@ nav:
 ***
 这里也注意：**所有文件都在docs文件下，文件类型除CSS，Javascript等都是.md结尾的文件**
 
-所以强烈推荐去学习Maekdown、Html5、CSS3、Javascript等知识，这样你就可以自定义你的网站了。
+所以强烈推荐去学习Markdown、Html5、CSS3、Javascript等知识，这样你就可以自定义你的网站了。
 
 到这里先检查一下文件树状图(xx.md代表你的md文件)：
 
@@ -612,7 +612,7 @@ hide:
 
 ***
 ## markdown_extensions部分
-```
+```yml
 markdown_extensions:
   - abbr
   - attr_list
@@ -661,12 +661,27 @@ markdown_extensions:
 ## extra_javascript 和extra_css
 ```
 extra_javascript:
-  - javascripts/extra.js
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/extra.js  #自定义javascript
+  - javascripts/mathjax.js  #Latex支持
+  - https://polyfill.io/v3/polyfill.min.js?features=es6   #Latex支持
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js   #Latex支持
+  - ckplayer/js/ckplayer.js #播放器配置
+  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
+  - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
+
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra.css # 自定义CSS
+  - stylesheets/link.css  #友链配置
+  # - stylesheets/video.css #播放器可选配置
+  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
+  - ckplayer/css/ckplayer.css   #播放器配置
+  - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css  # font-awesome表情支持
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css  #分享支持
+
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
 ```
 javascripts/mathjax.js里有对数学公式的扩展，extra_css里是CSS的知识了，及自定义网站格式颜色等  
 
@@ -676,5 +691,8 @@ javascripts/mathjax.js里有对数学公式的扩展，extra_css里是CSS的知�
 
 [背景特效](../websitebeauty/backgroud.md)  
 
-[自定义网站字体](../websitebeauty/mkdocsfont.md)
+[自定义网站字体](../websitebeauty/mkdocsfont.md)  
 
+[添加友链](../websitebeauty/linktech.md)
+
+[添加评论系统](../websitebeauty/mkcomments.md)
