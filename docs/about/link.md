@@ -114,7 +114,17 @@ hide:
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://blog.pinpe.top/wp-content/uploads/2023/10/head.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.pinpe.top" target="_blank">Pinpe 的云端</a> 
+      </div> 
+      <div class="info">
+       一个属于自己的云朵。
+      </div> 
+     </div> 
+    </div>
    </div> 
   </div>
 
