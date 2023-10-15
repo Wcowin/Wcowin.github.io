@@ -7,12 +7,10 @@ comments: true
 ---
 # 但行好事 莫问前程
 
-<!-- <center> 
+<center> 
 <span id="jinrishici-sentence">正在加载今日诗词....</span>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</center>    -->
-
-
+</center>   
 
 
 <img class="img1" src="https://cn.mcecy.com/image/20230220/f10604560a2119667fb3aca1da299e1a.jpeg">
@@ -23,16 +21,15 @@ comments: true
   <p style="font-size: 1.2em">Free and diffuse</p>
   <p style="font-size: 1.2em">A college student</p>
 </div> -->
-
-<div>
-  <img src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png" class="img1" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
-  <div class="intro">
-    <p style="font-size: 2em">Wcowin</p>
-    <p style="font-size: 1.2em">Free and diffuse</p>
-    <p style="font-size: 1.2em">A college student</p>
+<div id="rcorners3" >
+  <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
+    <!-- <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="170" alt="个人头像" align="right"/> -->
+  <div>
+    <p style="font-size: 40px">Wcowin</p>
+    <!-- <p style="font-size: 18px">Free and diffuse</p> -->
+    <p style="font-size: 18px">A college student in CQ</p>
   </div>
 </div>
-
    
 <!-- - [x] CV工程师 ++ctrl+c++  (  ++v++  ) 🧑‍💻
 - [x] Bilibili电子信息工程专业本科在读  :star2: -->
