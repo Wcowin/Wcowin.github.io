@@ -103,7 +103,17 @@ hide:
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://www.gkcoll.xyz/favicon.ico" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源</a> 
+      </div> 
+      <div class="info">
+       探索互联网新大陆 in N ways.
+      </div> 
+     </div> 
+    </div>
 
    </div> 
   </div>
