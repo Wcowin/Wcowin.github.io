@@ -121,10 +121,34 @@ hide:
        <a href="https://blog.pinpe.top" target="_blank">Pinpe 的云端</a> 
       </div> 
       <div class="info">
-       一个属于自己的云朵。
+       一个属于自己的云朵
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20231015/1dd42d66b0d33c2bf099d127e46b2b27.jpeg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.cnblogs.com/miluluyo/" target="_blank">麋鹿鲁哟</a> 
+      </div> 
+      <div class="info">
+       大道至简，知易行难
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://picx.zhimg.com/80/v2-05c363cbdea5816284ff136c7a249151_b.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="爱好广泛的火星小妖精" target="_blank">obaby@mars</a> 
+      </div> 
+      <div class="info">
+       爱好广泛的火星小妖精
+      </div> 
+     </div> 
+    </div>
+
+
    </div> 
   </div>
 
@@ -176,5 +200,3 @@ hide:
 >链接: https://wcowin.work/  
 >头像: 头像图片链接地址  
 >简介: 循此苦旅，以达星辰
-
-
