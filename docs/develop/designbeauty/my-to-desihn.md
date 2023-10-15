@@ -25,4 +25,5 @@ tags:
 
 
 【⚡啊！设计，是什么呢？⚡】 
-<iframe src="//player.bilibili.com/player.html?aid=941663394&bvid=BV1pW4y1a7Zu&cid=824513742&p=1" scrolling="no" border="1" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
+<!-- <iframe src="//player.bilibili.com/player.html?aid=941663394&bvid=BV1pW4y1a7Zu&cid=824513742&p=1" scrolling="no" border="1" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
+<iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=941663394&bvid=BV1pW4y1a7Zu&cid=824513742&p=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

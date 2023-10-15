@@ -33,7 +33,9 @@ Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，
 
 ![](https://user-assets.sxlcdn.com/images/951476/FkEoM-JH0F6SYwS6RXR2ZIcSh45Q.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
-<!-- <iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
+<iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 560px; height: 315px; max-width: 100%"> </iframe>
+
+
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=0&height=32"></iframe> -->
 
 

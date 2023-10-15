@@ -46,13 +46,17 @@
 <!-- <iframe  src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>   -->
 小米创业8年内部影像资料，首次公开！
 
-<iframe src="//player.bilibili.com/player.html?aid=27087520&bvid=BV1Ps411E7w6&cid=46647207&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
+<!-- <iframe src="//player.bilibili.com/player.html?aid=27087520&bvid=BV1Ps411E7w6&cid=46647207&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
+
+<iframe width="560" height="315" max-width: 100% src="//player.bilibili.com/player.html?aid=27087520&bvid=BV1Ps411E7w6&cid=46647207&page=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- <iframe frameborder=0 border="0" marginwidth="0" marginheight="0" scrolling="no" height=720 width=1280 src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4"></iframe> -->
 
-<link type="text/css" rel="stylesheet" href="/ckplayer/css/ckplayer.css" />
+<iframe width="560" height="315" scrolling="no" max-width: 100% src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- <link type="text/css" rel="stylesheet" href="/ckplayer/css/ckplayer.css" />
 <script type="text/javascript" src="/ckplayer/js/ckplayer.js" charset="UTF-8"></script>
-<div class="video" style="width: 640px;height: 500px;">播放器容器</div>
+<div class="video" style="width: 660px;height: 450px;">播放器容器</div>
 <script type="text/javascript">
     //定义一个变量：videoObject，用来做为视频初始化配置
     var videoObject = {
@@ -63,7 +67,7 @@
         video: 'https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4'//视频地址
     };
     var player = new ckplayer(videoObject);//初始化播放器
-</script>
+</script> -->
 
 ***
 
