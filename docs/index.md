@@ -23,7 +23,7 @@ comments: false
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 </font>
 </center>
-
+***
 <!-- <center>
 <font  color= #608DBD size=3>
 <p id="hitokoto">
@@ -112,8 +112,8 @@ comments: false
   <ul>
     <li>通过主题和目录以打开文章</li>
     <ul>
-      <li>PC端 在上方标签栏选择主题 在左侧目录选择文章</li>
-      <li>移动端 点击左上角图标选择主题和文章</li>
+      <li>Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章</li>
+      <li>移动端 请点击左上角图标选择主题和文章</li>
     </ul>
     <li>搜索关键词以打开文章</li>
     <li>
@@ -169,7 +169,14 @@ t.parentNode.insertBefore(e,t)}})();
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
 </head>
 
-本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>
-<span id="finicount_views"></span>
+<!-- 本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>
+<span id="finicount_views"></span> -->
 
 
+<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h1>本站访问量</h1>
+    <p id="poem"><script async src="//finicounter.eu.org/finicounter.js"></script>
+<span id="finicount_views"></span></p>
+    <p id="info">欢迎您的每次到访</p></div>
