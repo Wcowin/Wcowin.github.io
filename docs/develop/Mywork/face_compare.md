@@ -229,4 +229,5 @@ root.mainloop()
 
 ## 视频
 
-<iframe src="//player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
+<!-- <iframe src="//player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 540px; height: 315px; max-width: 100%"> </iframe> -->
+<iframe src="//player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 560px; height: 315px; max-width: 100%"> </iframe>

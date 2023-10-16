@@ -35,4 +35,4 @@ tags:
 <!-- <iframe src="//player.bilibili.com/player.html?aid=526039186&bvid=BV1zM411W7xU&cid=1054475396&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
 
 
-<iframe src="//player.bilibili.com/player.html?aid=526039186&bvid=BV1zM411W7xU&cid=1054475396&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=526039186&bvid=BV1zM411W7xU&cid=1054475396&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 560px; height: 315px; max-width: 100%"> </iframe>
