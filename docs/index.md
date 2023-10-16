@@ -169,14 +169,14 @@ t.parentNode.insertBefore(e,t)}})();
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
 </head>
 
-<!-- 本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>
-<span id="finicount_views"></span> -->
+本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>
+<span id="finicount_views"></span>
 
 
-<div class="poem-wrap">
+<!-- <div class="poem-wrap">
   <div class="poem-border poem-left"></div>
   <div class="poem-border poem-right"></div>
     <h1>本站访问量</h1>
     <p id="poem"><script async src="//finicounter.eu.org/finicounter.js"></script>
 <span id="finicount_views"></span></p>
-    <p id="info">欢迎您的每次到访</p></div>
+    <p id="info">欢迎您的每次到访</p></div> -->
