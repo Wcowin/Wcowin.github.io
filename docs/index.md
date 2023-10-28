@@ -1,4 +1,5 @@
 ---
+title: 主页
 hide:
   #- navigation # 显示右
   #- toc #显示左
@@ -6,7 +7,7 @@ hide:
   - feedback
 comments: false
 ---
-
+# 主页
 
 <!-- <center><font  color= #518FC1 size=6>“循此苦旅，以达星辰”</font></center> -->
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅，以达星辰”</font></center>
