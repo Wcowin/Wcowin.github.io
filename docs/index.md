@@ -21,14 +21,12 @@ comments: false
 </font>
 </center>
 
-**我的图床托管服务商跑路了，网站图片全没了，WCNM，我要找回来。**
-
-<center>
+<!-- <center>
 <font  color= #608DBD size=3>
 <span id="hitokoto-sentence">正在加载一言....</span>
 <script src="https://v1.hitokoto.cn"></script>
 </font>
-</center>
+</center> -->
 
 ***
 <!-- <center>
