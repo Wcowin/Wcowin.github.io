@@ -14,16 +14,22 @@ comments: false
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
-
-
-
-
 <center>
 <font  color= #608DBD size=3>
 <span id="jinrishici-sentence">正在加载今日诗词....</span>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 </font>
 </center>
+
+**我的图床托管服务商跑路了，网站图片全没了，WCNM，我要找回来。**
+
+<center>
+<font  color= #608DBD size=3>
+<span id="hitokoto-sentence">正在加载一言....</span>
+<script src="https://v1.hitokoto.cn"></script>
+</font>
+</center>
+
 ***
 <!-- <center>
 <font  color= #608DBD size=3>
@@ -181,3 +187,5 @@ t.parentNode.insertBefore(e,t)}})();
     <p id="poem"><script async src="//finicounter.eu.org/finicounter.js"></script>
 <span id="finicount_views"></span></p>
     <p id="info">欢迎您的每次到访</p></div> -->
+
+

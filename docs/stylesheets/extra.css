@@ -764,3 +764,14 @@ div.hide {
   font-size: 16px; /* 调整字体大小 */
   color: #555; /* 更改字体颜色 */
 }
+
+/* 遮盖 */
+.mask {
+  background-color: #252525;
+  color: #252525;
+  transition: color 0.5s;
+}
+
+.mask:hover {
+  color: #ffffff;
+}
