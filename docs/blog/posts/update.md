@@ -5,6 +5,10 @@ date: 2023-10-05
 categories:
   - 网站更新记录
 ---
+
+## </p><h1 id="01" name="01"><strong>2023-11-8</strong></h1><p>
+* 紧急修复图片不显示的重大Bug
+
 ## </p><h1 id="01" name="01"><strong>2023-10-14</strong></h1><p>
 
 * 正式建立[Mkdocs-Wcowin主题](https://github.com/Wcowin/Mkdocs-Wcowin)
