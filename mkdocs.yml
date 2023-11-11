@@ -261,6 +261,13 @@ copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的
   
 
 extra:
+  alternate:
+    - name: English
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
+      lang: en
+    - name: 中国(台湾)
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+      lang: zh-TW
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/x-twitter 

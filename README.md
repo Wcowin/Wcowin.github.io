@@ -33,7 +33,7 @@
 https://bento.me/wcowin
 
 
-## Star History
+# Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Wcowin.github.io&type=Date)](https://star-history.com/#Wcowin/Wcowin.github.io&Date)
 

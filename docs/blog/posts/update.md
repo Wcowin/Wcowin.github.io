@@ -6,6 +6,11 @@ categories:
   - 网站更新记录
 ---
 
+## </p><h1 id="01" name="01"><strong>2023-11-11</strong></h1><p>
+* 新增多语言支持，特别新增中国台湾语言支持
+* 顺祝双11快乐
+* 新增国内镜像网址:[https://wcowin.gitee.io/](https://wcowin.gitee.io/wcowin.github.io/){target="_blank"}
+
 ## </p><h1 id="01" name="01"><strong>2023-11-8</strong></h1><p>
 * 紧急修复图片不显示的重大Bug
 
@@ -51,5 +56,5 @@ categories:
 
 ## <h1 id="01" name="01"><strong>2022-6-6</strong></h1>
 
-* 建站
+* 研究如何建设网站，初步定框架为MKdocs
 * 早期网址：<https://github.com/Wcowin/mymkdocs>
