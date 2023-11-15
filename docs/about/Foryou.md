@@ -1,3 +1,13 @@
+<script type="text/javascript">   
+loopy()   
+function loopy() {   
+var sWord =""  
+while (sWord != "王科文") {//设置密码
+sWord = prompt("输入正确密码才能访问")   
+}   
+alert("欢迎你，我的公主殿下")   
+}   
+</script> 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML" async></script>
 
@@ -23,5 +33,7 @@ $\displaystyle7\lim_{n \rightarrow\infty}\frac{n+\sqrt{n}+···\sqrt[n]{n}}{n}$
 
 如果你爱我，请关灯（点击:octicons-moon-16:）
 
-![Image title](https://cn.mcecy.com/image/20230530/a955c522e7b6cacb86dd7aa650fd1a0a.png#only-light)
+<!-- ![Image title](https://cn.mcecy.com/image/20230530/a955c522e7b6cacb86dd7aa650fd1a0a.png#only-light) -->
+
+![Image title](https://cn.mcecy.com/image/20231115/81acfb79da7542591bdbdfeda706707d.png#only-light)
 ![Image title](https://cn.mcecy.com/image/20231005/520803544c59ca534386412fff5b6346.jpeg#only-dark)

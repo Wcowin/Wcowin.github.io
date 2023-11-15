@@ -68,7 +68,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
 nav:
-  - 主页: /
+  - 主页: index.md
   - 博文:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
@@ -398,5 +398,4 @@ extra_css:
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
-  - stylesheets/obnoxious.css
 

@@ -1,5 +1,5 @@
 ---
-title: 主页
+title: Home
 hide:
   #- navigation # 显示右
   #- toc #显示左
@@ -7,7 +7,7 @@ hide:
   - feedback
 comments: false
 ---
-# 主页
+# Home
 
 <!-- <center><font  color= #518FC1 size=6>“循此苦旅，以达星辰”</font></center> -->
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅，以达星辰”</font></center>
@@ -28,7 +28,6 @@ comments: false
 </font>
 </center> -->
 
-***
 <!-- <center>
 <font  color= #608DBD size=3>
 <p id="hitokoto">

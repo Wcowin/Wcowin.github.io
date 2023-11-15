@@ -22,7 +22,7 @@ comments: true
   <p style="font-size: 1.2em">A college student</p>
 </div> -->
 <div id="rcorners3" >
-  <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
+  <img class="img1" src="https://cn.mcecy.com/image/20231115/f19515b3725bfd34bac61de44cbc794d.jpeg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
     <!-- <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="170" alt="个人头像" align="right"/> -->
   <div>
     <p style="font-size: 40px">Wcowin</p>
