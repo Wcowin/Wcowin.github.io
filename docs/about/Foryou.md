@@ -5,7 +5,7 @@ var sWord =""
 while (sWord != "王科文") {//设置密码
 sWord = prompt("输入正确密码才能访问")   
 }   
-alert("欢迎你，我的公主殿下")   
+alert("欢迎，我的公主殿下")   
 }   
 </script> 
 

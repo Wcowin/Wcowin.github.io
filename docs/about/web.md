@@ -2,10 +2,9 @@
 tags:
   - Mkdocs
 ---  
+<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Material for MkDocs</title><path d="m17.029 18.772.777 1.166-5.417 2.709L0 16.451V4.063l5.417-2.709 5.298 7.948 7.867-5.24L24 1.354V16.84l-5.417 2.709zm2.023-13.827v13.253l3.949-1.975V2.97zM5.076 2.642 1.458 4.45 12.73 21.358l3.618-1.809z"/></svg>
+
 # 发布一个包含MkDocs和GitHub页面材料的网站
-
-<iframe src="https://streamable.com/e/yslhdu" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>  
-
 
 ???+Note "Tip"
     Mkdocs material主题 :[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}   
@@ -19,7 +18,7 @@ tags:
 
 !!! info inline end
 
-    ← 我的网站二维码
+    ← ↓我的网站二维码
 
 ![MywebsiteQR](https://cn.mcecy.com/image/20230321/cf398708978588c8d40aeb6628918deb.png){ loading=lazy }
 

@@ -1,10 +1,11 @@
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=347852412&bvid=BV1rR4y1f7mA&cid=896199338&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
+![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 ![img](https://cn.mcecy.com/image/20230528/d163f04e1bf2f9f1fe5c1e15daef9a97.jpg)
 
-![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
-![](http://user-assets.sxlcdn.com/images/805944/FsGMQC5y3tJRIl2dwHaJ0RQ9uYyt.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
+
+
 
 ## 履历
 <font color=#F09898 size=7>王冰冰</font>  
@@ -133,6 +134,31 @@
 7月中旬，《追时间的厨房》正式开播，王冰冰作为嘉宾；  
 
 7月22日，王冰冰作为嘉宾参与《你好生活》第四季。
+
+8月13日、14日，央视新闻系列节目《走！一起探秘国家公园》。总台记者王冰冰和嘉宾王昱珩走进三江源国家公园，一起护送“高原精灵”大迁徙；
+“尼好，戏剧！青年导演创作扶持计划第二季·走进济宁”开幕式于8月13日在山东济宁曲阜尼山圣境盛大启幕。罗一舟、王冰冰携手主持，国话群星集体亮相，国学气韵的主题演出，一场儒学与戏剧的双向奔赴！  
+
+2023烟台国际葡萄酒节启动仪式暨“微醺烟台”系列活动发布会于8月18日下午举行。总台主持人任鲁豫、记者王冰冰担任本场主持人，共同发布“微醺烟台”系列活动；  
+
+8月22日17:00，飞鹤携手央视新闻带你沉浸式寻源首个中国婴幼儿黄金奶源地，一起解锁尼格买提和王冰冰的新身份；  
+
+8月24日起，《一馔千年》团建篇高能来袭，馔家族全员集结，王冰冰作为嘉宾；  
+
+8月25日，唐代诗人贺知章重回故乡萧山，与总台记者王冰冰在萧山机场共同唱响杭州亚运主题歌曲《同爱同在》；  
+
+8月30日，以钢铁意志摘贫油之帽，以冲天干劲解少油之难。"铁人精神"赓续不止！面对"贫油国"的帽子王进喜义愤填膺，如何才能摘帽子？"有条件要上，没有条件创造条件也要上""宁可少活二十年，拼命也要拿下大油田"一代代像王进喜一样的石油人秉持着"铁人精神"积极进取，为祖国分忧，为民族争气，换来了如今的生活。王进喜诞辰100周年之际，让我们向王进喜同志致敬！（王冰冰解说）；  
+
+9月13日，李白先生"穿越"回故里绵阳？总台记者王冰冰带"李白"细品当代小吃？在中国唯一科技城绵阳探索科技含量，细数上天入海的"绵阳造"，聆听两弹元勋们的感人故事。关注央视新闻《"青"爱的城》，随王冰冰一起"蜀来蜀去数绵阳"；  
+
+9月15日，激扬赛场 轮动四方 王冰冰作为嘉宾；  
+
+9月22日，总台记者王冰冰@吃花椒的喵酱 和吕小品化身“大侦探”，破解头等沙发的秘密；  
+
+9月30日，音乐快递｜“冰皮月饼”邀你过双节；  
+
+10月12日，总台主持人高博，总台记者王冰冰推介总台2024品牌强国工程发布活动；  
+
+跟随王冰冰@吃花椒的喵酱 ，强子，符龙飞，蒋诗萌，隋卞和深圳博物馆讲解员袁旭一起感受深圳速度，品味深圳美食~10月14日，来央视频看《“小美好”中国行》，一起向生活小美好出发。
  
 </font>  
 
@@ -181,3 +207,6 @@
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FjwRANM-BPp2cuyAxY0glPPAQhCt.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FqvoaTxeZ0xo6BTCA13THTMmvOmb.JPG?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FuCfDui64dLhZD3_2XnETzzOwuNE.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)![Alt text](http://user-assets.sxlcdn.com/images/805944/FgrA_oyC1lKcyFWQSbo6UlWw2SjO.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FquKQBluji4tWcAcfYN_I3b1CA4l.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+![Alt text](http://user-assets.sxlcdn.com/images/805944/FiwyetIQ0GmXtGwVqJ62PESFhVQB.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
+![](http://user-assets.sxlcdn.com/images/805944/FsGMQC5y3tJRIl2dwHaJ0RQ9uYyt.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)

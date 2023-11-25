@@ -142,8 +142,8 @@ nav:
     - Git 实用技巧: develop/git.md    
     - 我的作品:
         - Mkdocs-Wcowin主题: develop/Mywork/mkdocs-wcowin.md
-        # - 基于讯飞人脸算法进行人脸比对(调用API): develop/Mywork/face_compare.md
-        # - 人脸识别系统: develop/Mywork/face-recognition.md
+        - 基于讯飞人脸算法进行人脸比对(调用API): develop/Mywork/face_compare.md
+        - 人脸识别系统: develop/Mywork/face-recognition.md
         - 基于百度API和opencv的智能车牌识别程序: develop/Mywork/opencv.md
         - 利用百度API进行植物识别: develop/Mywork/aizhiwu.md
         - 玩的设计: develop/Mywork/design.md
@@ -162,7 +162,7 @@ nav:
     - 推荐的Books: relax/tuijianyuedu.md
     - 小米: relax/xiaomo.md
     - Apple: relax/Apple.md
-    - 如是我闻: relax/rushiwowen.md
+    # - 如是我闻: relax/rushiwowen.md
     - 王冰冰o(^▽^)o: relax/wbb.md
     - 诗文:
       - 枫桥夜泊: relax/shiwen/fqyb.md
@@ -207,14 +207,6 @@ nav:
             - 《朱生豪情书全集摘录》(053): relax/Letter/luvletter/zhushenghao5.md
             - 《朱生豪情书全集摘录》(055): relax/Letter/luvletter/zhushenghao6.md
 
-
-    # - Music:
-    #     - shape of you: relax/Music/soy.md
-    #     - Floating: relax/Music/Floating.md
-    #     - 朱砂: relax/Music/zhusha.md
-    #     - 关于郑州的记忆: relax/Music/gyzzdjy.md
-    #     - 若把你: relax/Music/rbn.md
-    #     - 絶頂讃歌: relax/Music/jdzg.md
     - Game:
         - 原神: relax/Game/yuanshen.md
         - 如何玩好《王者荣耀》？: relax/Game/wzry.md
@@ -225,7 +217,6 @@ nav:
     - 程序猿神之楷模:一个人,一个网站,5.75亿美元卖掉: relax/kaimo.md
     
   - 旅行: 
-    # - trip/index.md
     - 重庆: 
         - 重庆旅游推荐路线: trip/InCQ/CQ.md
     - Hometown: trip/LH.md
@@ -238,9 +229,6 @@ nav:
     - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
   - Blogger:
     - index: blog/index.md
-    # - wkw: blog/posts/wkw.md
-    # - 我的一些见解: blog/posts/post1.md
-    # - Lifecycle: blog/posts/post2.md  
   - 关于:
     - 个人简介: about/geren.md
     - 个人简历: about/个人简历2.pdf
@@ -307,6 +295,7 @@ extra:
 
 plugins:
   # - glightbox
+  - awesome-pages
   - search
   - blog:
       post_date_format: full #时间
@@ -334,7 +323,7 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  # - meta # 支持Markdown文件上方自定义标题标签等
+  - meta # 支持Markdown文件上方自定义标题标签等
   - pymdownx.caret
   - pymdownx.betterem
   - pymdownx.critic
@@ -359,8 +348,8 @@ markdown_extensions:
       linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
