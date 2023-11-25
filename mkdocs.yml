@@ -295,7 +295,6 @@ extra:
 
 plugins:
   # - glightbox
-  - awesome-pages
   - search
   - blog:
       post_date_format: full #时间
