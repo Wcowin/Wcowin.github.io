@@ -140,14 +140,24 @@ hide:
      <img class="ava" src="https://picx.zhimg.com/80/v2-05c363cbdea5816284ff136c7a249151_b.jpg" /> 
      <div class="card-header"> 
       <div> 
-       <a href="爱好广泛的火星小妖精" target="_blank">obaby@mars</a> 
+       <a href="https://h4ck.org.cn/" target="_blank">obaby@mars</a> 
       </div> 
       <div class="info">
        爱好广泛的火星小妖精
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://www.yaguwu.com/1.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a> 
+      </div> 
+      <div class="info">
+       寻一处小筑，不遇车马喧器
+      </div> 
+     </div> 
+    </div>
 
    </div> 
   </div>
