@@ -1,3 +1,8 @@
+---
+tags:
+  - 技术分享
+---
+
 # 我的设备  
 
 ## </p><h1 id="01" name="01"><strong>Macbook pro</strong></h1><p>
