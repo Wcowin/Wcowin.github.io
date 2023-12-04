@@ -295,8 +295,6 @@ extra:
 
 plugins:
   # - glightbox
-  - social:
-      cards_layout: default/invert
   - search
   - blog:
       post_date_format: full #时间
