@@ -185,4 +185,17 @@ t.parentNode.insertBefore(e,t)}})();
 <span id="finicount_views"></span></p>
     <p id="info">欢迎您的每次到访</p></div> -->
 
+***
+测试：
+<div id="mendable-component"></div>
 
+<script src="https://unpkg.com/@mendable/search@0.0.108/dist/umd/mendable-bundle.min.js"></script>
+<script>
+Mendable.initialize({
+    anon_key: '65324e22-e1c8-4924-99c9-e39df1dfe076',
+    type:"searchBar",
+    elementId: "mendable-component" // required
+    // all the other props for the component type
+});
+
+</script>
