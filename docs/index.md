@@ -185,9 +185,8 @@ t.parentNode.insertBefore(e,t)}})();
 <span id="finicount_views"></span></p>
     <p id="info">欢迎您的每次到访</p></div> -->
 
-***
-测试：
-<div id="mendable-component"></div>
+
+<!-- <div id="mendable-component"></div>
 
 <script src="https://unpkg.com/@mendable/search@0.0.108/dist/umd/mendable-bundle.min.js"></script>
 <script>
@@ -198,4 +197,4 @@ Mendable.initialize({
     // all the other props for the component type
 });
 
-</script>
+</script> -->

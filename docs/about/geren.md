@@ -84,7 +84,7 @@ comments: true
 
 
 <head>
-<!-- Start of Howxm client code snippet -->
+
 <script>
 function _howxm(){_howxmQueue.push(arguments)}
 window._howxmQueue=window._howxmQueue||[];
@@ -98,7 +98,7 @@ e.type='text/javascript';e.async=!0;
 e.src='https://static.howxm.com/sdk.js';
 t.parentNode.insertBefore(e,t)}})();
 </script>
-<!-- End of Howxm client code snippet -->
+
 </head>
 
 ## 须知
@@ -107,3 +107,4 @@ t.parentNode.insertBefore(e,t)}})();
 [Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}
 <!-- <a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> -->
 
+<chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
