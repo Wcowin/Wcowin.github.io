@@ -25,16 +25,18 @@ Aigo 256G  314￥
 
 ## <h1 id="01" name="01"><strong>开发工具</strong></h1>
 * Vs code
-* pychrom
+* Xcode
+* PyCharm
+* WebStorm
 ***
 * Git
 * Node.js
 * pip
 * vue
+* Mkdocs/mkdocs-material
 ***
 * Arc/Chrome/Safari浏览器
 * GitHub
 * CSDN
-* Mkdocs/mkdocs-material
 ***
 * Apple music
