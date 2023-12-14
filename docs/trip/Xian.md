@@ -1,5 +1,8 @@
-!!! bug
-    图片加载慢
+---
+tags: [旅行]
+comments: false  #评论，默认不开启
+---
+
 ## 照片  
 
 ![img](https://cn.mcecy.com/image/20230505/ff96021ca3a8065f1a908d1d69cc90f1.jpeg)

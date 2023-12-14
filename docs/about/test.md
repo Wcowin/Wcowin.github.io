@@ -1,3 +1,6 @@
+!!!info
+    测试中的小组件，可看源代码自行取用
+
 ![LY1r2.png](https://i.imgs.ovh/2023/10/09/LY1r2.png)
 ## Search
 
@@ -231,12 +234,12 @@ $$
 <!-- ![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" } -->
 
 左对齐，右对齐  
-![Image title](media/binggo.jpg){ align=left }
+![img](https://cn.mcecy.com/image/20231214/1983c439e3dfeadedac1904c2202ee11.jpg){ align=left }
 <!-- ![Image title](media/binggo.jpg){ align=right } -->
 
 
 <figure markdown>
-  ![Image title](media/binggo.jpg){ width="300" }
+  ![img](https://cn.mcecy.com/image/20231214/1983c439e3dfeadedac1904c2202ee11.jpg){ width="300" }
   <figcaption>图片说明</figcaption>
 </figure>
 

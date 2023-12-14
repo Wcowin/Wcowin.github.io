@@ -1,3 +1,8 @@
+---
+tags: [电影]
+comments: false  #评论，默认不开启
+---
+
 ## 国外
 ### 鬼怪
 ![img](https://cn.mcecy.com/image/20230108/15b5bb664c3f615c4faa92bfeccd8f41.jpeg)  

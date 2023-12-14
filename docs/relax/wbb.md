@@ -1,3 +1,15 @@
+---
+title:  王冰冰
+# 隐藏的模块
+hide:
+  #  - navigation # 隐藏左边导航
+  #  - toc #隐藏右边导航
+  #  - footer #隐藏翻页
+  #  - feedback  #隐藏反馈
+tags:
+    - My Love
+comments: false  #评论，默认不开启
+---
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=347852412&bvid=BV1rR4y1f7mA&cid=896199338&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
 ![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)

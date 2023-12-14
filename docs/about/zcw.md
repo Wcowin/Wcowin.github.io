@@ -5,7 +5,7 @@ title: 支持作者
 # 支持作者
 
 
-![](./media/binggo.jpg)  
+![img](https://cn.mcecy.com/image/20231214/1983c439e3dfeadedac1904c2202ee11.jpg) 
 
 
 可以的话 请我喝一杯咖啡吧☕️

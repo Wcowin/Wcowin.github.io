@@ -163,7 +163,7 @@ nav:
     - 小米: relax/xiaomo.md
     - Apple: relax/Apple.md
     # - 如是我闻: relax/rushiwowen.md
-    - 王冰冰o(^▽^)o: relax/wbb.md
+    - 王冰冰♡: relax/wbb.md
     - 诗文:
       - 枫桥夜泊: relax/shiwen/fqyb.md
       - 滕王阁序: relax/shiwen/twgx.md
@@ -381,7 +381,7 @@ extra_css:
   # - stylesheets/extra1.css
   # - stylesheets/video.css
   - https://unpkg.com/@waline/client@v2/dist/waline.css
-  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css
+  - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #评论
   - ckplayer/css/ckplayer.css
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
