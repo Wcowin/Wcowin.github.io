@@ -2,10 +2,10 @@
 loopy()   
 function loopy() {   
 var sWord =""  
-while (sWord != "王科文") {//设置密码
+while (sWord != "1221") {//设置密码
 sWord = prompt("输入正确密码才能访问")   
 }   
-alert("欢迎，我的公主殿下")   
+alert("欢迎小王♡+♡=♡²")   
 }   
 </script> 
 
@@ -31,7 +31,7 @@ $\displaystyle7\lim_{n \rightarrow\infty}\frac{n+\sqrt{n}+···\sqrt[n]{n}}{n}$
   <img class="img1" src="https://cn.mcecy.com/image/20230530/a955c522e7b6cacb86dd7aa650fd1a0a.png" alt="">
 </a> -->
 
-如果你爱我，请关灯（点击:octicons-moon-16:）
+小王请关灯（点击:octicons-moon-16:）
 
 <!-- ![Image title](https://cn.mcecy.com/image/20230530/a955c522e7b6cacb86dd7aa650fd1a0a.png#only-light) -->
 
