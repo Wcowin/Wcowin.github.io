@@ -137,7 +137,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://picx.zhimg.com/80/v2-05c363cbdea5816284ff136c7a249151_b.jpg" /> 
+     <img class="ava" src="https://image.h4ck.org.cn/wp-content/uploads/2023/11/gh_84aaef91c283_430-1.jpg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://h4ck.org.cn/" target="_blank">obaby@mars</a> 
