@@ -25,6 +25,17 @@ hide:
        “循此苦旅，以达星辰”
       </div> 
      </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://cn.mcecy.com/image/20231223/3eb628d46aa47d71be1b03f93f23628b.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://wcowin.work/WH-WKW/" target="_blank">小王和王老师的小站</a> 
+      </div> 
+      <div class="info">
+        无一是你，无一不是你
+      </div> 
+     </div> 
     </div> 
     <div class="card"> 
      <img class="ava" src="https://cn.mcecy.com/image/20231012/7a090d32db0fe8738dba0d0d578f21f5.jpg" /> 
@@ -111,17 +122,6 @@ hide:
       </div> 
       <div class="info">
        探索互联网新大陆 in N ways.
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
-     <img class="ava" src="https://blog.pinpe.top/wp-content/uploads/2023/10/head.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://blog.pinpe.top" target="_blank">Pinpe 的云端</a> 
-      </div> 
-      <div class="info">
-       一个属于自己的云朵
       </div> 
      </div> 
     </div>
