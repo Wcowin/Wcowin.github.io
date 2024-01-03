@@ -98,11 +98,13 @@ nav:
 
     - 学术:
         - LaTeX常用符号整理: blog/Academic/LaTeX.md
+        - 希腊字母总结: blog/Academic/希腊字母.pdf
         - Math: blog/Academic/math.md
         - 数学竞赛: 
           - 第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答: blog/Academic/Math/14.md
           - 第十三届全国大学生数学竞赛(非数学类)决赛详细解答: blog/Academic/Math/13js.md    
         - 电磁场期末复习索引: blog/Academic/diancichang.html 
+        - 电磁场期末公式总结(手写): blog/Academic/ddiancichang.md
     - Mac:
         - PD虚拟机: blog/Mac/Pd.md
         - 提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法: blog/Mac/sunhuai.md

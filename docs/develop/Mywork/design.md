@@ -3,7 +3,10 @@ title: 玩的设计
 tags:
   - 我的作品
 ---
-![img](https://cn.mcecy.com/image/20230401/bd42de2726075c84f5c44297f93cf221.png)
+![img](https://cn.mcecy.com/image/20230401/bd42de2726075c84f5c44297f93cf221.png)  
+
+## 测试工作
+![img](https://cn.mcecy.com/image/20231227/1a1e4fc07ae93fa40c2a25ce3fb5288c.png)
 
 以下是我捣鼓设计着玩的作品，不是很专业  
 ***
