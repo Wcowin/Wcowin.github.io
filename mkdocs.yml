@@ -298,6 +298,14 @@ extra:
 plugins:
   # - glightbox
   - search
+  - git-revision-date-localized:
+      timezone: Asia/Shanghai
+      enable_creation_date: true
+      exclude:
+        - index.md    
+  - git-authors:
+      exclude:
+        - index.md
   - blog:
       post_date_format: full #时间
       draft: true
