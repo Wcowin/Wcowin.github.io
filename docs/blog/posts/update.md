@@ -6,6 +6,10 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-1-05</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 引入[git-revision-date-localized-plugin](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)插件，以便记录文档创建和最后一次修改时间
+* 和小王一起看了更多的猫咪  
 
 ## </p><h1 id="01" name="01"><strong>2023-12-21</strong></h1><p>
 * 优化网站流畅度（玄学）
