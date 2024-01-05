@@ -15,11 +15,6 @@
     font-weight: bold; /* 修改字体粗细 */
     color: #518FC1; /* 修改字体颜色 */
   }
-  
-
-  
-
-
 
 :root {
   --md-text-font: "LXGW WenKai"; 
@@ -92,6 +87,7 @@ img.twitter {
   .md-typeset details.pied-piper1 {
     border-color: rgb(96,141,189);
     font-size: large;
+    width: 100%;
     /* border-radius:25px; */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -106,7 +102,8 @@ img.twitter {
     background-color: linear-gradient(to right, rgba(238, 243, 254));
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    height: 50px;
+    height: 45px;
+    width: auto;
     
 
   }
@@ -143,7 +140,7 @@ img.twitter {
 
 /* 鼠标end */
 
-
+.git-revision-date-localized-plugin { color: #608DBD; }
 /* 滚动条 */
 
 
@@ -205,112 +202,6 @@ img.twitter {
 
 
 
-
-/*图片放大*/
-/* 图片放大start */
-/* .shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.zoom {
-  transition: transform ease-in-out 0.5s;
-  cursor: zoom-in;
-}
-
-.image-zoom-large {
-  transform: scale(1.9);
-  cursor: zoom-out;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  z-index: 100;
-  position: relative;
-} */
-/* 图片放大end*/
-
-.progress-label {
-  position: absolute;
-  text-align: center;
-  font-weight: 700;
-  width: 100%;
-  margin: 0;
-  line-height: 1.2rem;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.progress-bar {
-  height: 1.2rem;
-  float: left;
-  background-color: #2979ff;
-}
-
-.progress {
-  display: block;
-  width: 100%;
-  margin: 0.5rem 0;
-  height: 1.2rem;
-  background-color: #eeeeee;
-  position: relative;
-}
-
-.progress.thin {
-  margin-top: 0.9rem;
-  height: 0.4rem;
-}
-
-.progress.thin .progress-label {
-  margin-top: -0.4rem;
-}
-
-.progress.thin .progress-bar {
-  height: 0.4rem;
-}
-
-.progress-100plus .progress-bar {
-  background-color: #00e676;
-}
-
-.progress-80plus .progress-bar {
-  background-color: #fbc02d;
-}
-
-.progress-60plus .progress-bar {
-  background-color: #ff9100;
-}
-
-.progress-40plus .progress-bar {
-  background-color: #ff5252;
-}
-
-.progress-20plus .progress-bar {
-  background-color: #ff1744;
-}
-
-.progress-0plus .progress-bar {
-  background-color: #f50057;
-}
-
-
-/* #imgBaseDiv > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 99%;
-    max-height: 99%;
-}
-
-#imgBaseDiv {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.9);
-    top: 0;
-    left: 0;
-    z-index: 1050;
-} */
-
-
-
 /**/
 .video1{
   position: fixed;  
@@ -365,6 +256,14 @@ source{
   width: 100%;
   height: 100%; 
   font-size:16px;
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  border: 2px solid #518FC1;
+  padding: 20px; 
+  width: 100%;
+  height: 100%; 
 }
 
 
@@ -739,4 +638,140 @@ div.hide {
       transform: scaleY(1.0);
       -webkit-transform: scaleY(1.0);
   }
+}
+
+/* 诗词留言板 */
+
+@media (max-width: 991px) {
+  .followme .social-list .social-item {
+    margin: 0.5em 0.75em;
+  }
+}
+.followme .social-list .social-link {
+  border: 0;
+  display: inline-block;
+  text-align: center;
+}
+.followme .social-list .social-link .icon {
+  font-size: 1.75em;
+  height: 1.75em;
+  width: 1.75em;
+}
+.followme .social-list .social-link .label {
+  display: block;
+  font-size: 14px;
+}
+.poem-wrap {
+  position: relative;
+  width: 730px;
+  max-width: 80%;
+  border: 2px solid #797979;
+  border-top: none;
+  text-align: center;
+  margin: 80px auto;
+}
+.poem-wrap h1 {
+  font-size: 30px;
+  position: relative;
+  margin-top: -20px;
+  display: inline-block;
+  letter-spacing: 4px;
+  color: #797979;
+}
+.poem-wrap p {
+  width: 70%;
+  margin: auto;
+  line-height: 30px;
+  color: #797979;
+}
+.poem-wrap p#poem {
+  font-size: 25px;
+}
+.poem-wrap p#info {
+  font-size: 15px;
+  margin: 15px auto;
+}
+.poem-border {
+  position: absolute;
+  height: 2px;
+  width: 27%;
+  background-color: #797979;
+}
+.poem-right {
+  right: 0;
+}
+.poem-left {
+  left: 0;
+}
+@media (max-width: 685px) {
+  .poem-border {
+    width: 18%;
+  }
+}
+@media (max-width: 500px) {
+  .poem-wrap {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-top: 2px solid #797979;
+  }
+  .poem-wrap h1 {
+    margin: 20px 6px;
+  }
+  .poem-border {
+    display: none;
+  }
+}
+
+
+/* 打赏 */
+.reward-container {
+  margin: 20px auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+}
+
+.reward-container button {
+  background: transparent;
+  border: 1px solid #fc6423;
+  border-radius: 0;
+  color: #fc6423;
+  cursor: pointer;
+  line-height: 2;
+  outline: 0;
+  padding: 0 15px;
+  vertical-align: text-top;
+}
+
+.reward-container button:hover {
+  background: #fc6423;
+  border: 1px solid transparent;
+  color: #fa9366;
+}
+
+/* 新增样式 */
+#qr {
+  display: none;
+  text-align: center;
+}
+
+#qr img {
+  width: 250px; /* 调整图像大小 */
+  margin: 10px; /* 添加一些间距 */
+}
+
+#qr p {
+  font-size: 16px; /* 调整字体大小 */
+  color: #555; /* 更改字体颜色 */
+}
+
+/* 遮盖 */
+.mask {
+  background-color: #252525;
+  color: #252525;
+  transition: color 0.5s;
+}
+
+.mask:hover {
+  color: #ffffff;
 }
