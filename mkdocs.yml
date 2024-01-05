@@ -303,9 +303,11 @@ plugins:
       enable_creation_date: true
       exclude:
         - index.md    
-  - git-authors:
-      exclude:
-        - index.md
+  # - git-authors:
+  #     exclude:
+  #       - index.md
+  # - git-committers:
+  #     repository: Wcowin/Wcowin.github.io
   - blog:
       post_date_format: full #时间
       draft: true
@@ -323,7 +325,9 @@ plugins:
   - tags:
       tags_file: tag.md  #分类标签
 
-  
+hooks:
+  - overrides/hooks/shortcodes.py
+  - overrides/hooks/translations.py  
 
 markdown_extensions:
   - abbr

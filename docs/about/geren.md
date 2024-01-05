@@ -4,6 +4,8 @@ hide:
   # - toc
   - feedback
 comments: true
+status: new
+icon: 
 ---
 # 但行好事 莫问前程
 
