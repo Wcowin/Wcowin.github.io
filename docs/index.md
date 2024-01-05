@@ -175,30 +175,3 @@ t.parentNode.insertBefore(e,t)}})();
 
 :material-information-outline:{ title="本站访问量" }本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>
 <span id="finicount_views"></span>
-
-
-<!-- <div class="poem-wrap">
-  <div class="poem-border poem-left"></div>
-  <div class="poem-border poem-right"></div>
-    <h1>本站访问量</h1>
-    <p id="poem"><script async src="//finicounter.eu.org/finicounter.js"></script>
-<span id="finicount_views"></span></p>
-    <p id="info">欢迎您的每次到访</p></div> -->
-
-
-<!-- <div id="mendable-component"></div>
-
-<script src="https://unpkg.com/@mendable/search@0.0.108/dist/umd/mendable-bundle.min.js"></script>
-<script>
-Mendable.initialize({
-    anon_key: '65324e22-e1c8-4924-99c9-e39df1dfe076',
-    type:"searchBar",
-    elementId: "mendable-component" // required
-    // all the other props for the component type
-});
-
-</script> -->
-
-  <head>
-    <meta name="baidu-site-verification" content="codeva-nolVhVCLJU" />
-  </head>
