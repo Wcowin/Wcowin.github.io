@@ -26,7 +26,7 @@ theme:
       accent: indigo # 链接等可交互元件的高亮色
       # teal 
       toggle:
-        icon: material/weather-night # 图标
+        icon: material/toggle-switch # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - media: "(prefers-color-scheme: dark)"
       scheme: slate # 夜间模式
@@ -34,7 +34,7 @@ theme:
       accent: indigo
       # teal
       toggle:
-        icon: material/weather-sunny
+        icon: material/toggle-switch-off-outline
         name: 切换至日间模式
   features: 
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
@@ -60,7 +60,7 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   
 
-  icon: 
+  icon:
     repo: fontawesome/brands/github #右上角图标
 edit_uri: edit/main/docs # 编辑按钮跳转的链接 
 repo_url: https://github.com/Wcowin/Wcowin.github.io # 右上角点击跳转的链接
@@ -230,7 +230,7 @@ nav:
     - 友链: about/link.md
     - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
   - Blog:
-    - index: blog/index.md
+    - blog/index.md
   - 关于:
     - 个人简介: about/geren.md
     - 个人简历: about/个人简历2.pdf
@@ -251,6 +251,10 @@ copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的
   
 
 extra:
+  # tags:
+  #   HTML5: html
+  #   JavaScript: js
+  #   CSS: css
   alternate:
     - name: English
       link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
@@ -299,13 +303,14 @@ plugins:
   # - glightbox
   - search
   - git-revision-date-localized:
+      type: iso_date
       timezone: Asia/Shanghai
       enable_creation_date: true
       exclude:
         - index.md    
-  - git-authors:
-      exclude:
-        - index.md
+  # - git-authors:
+  #     exclude:
+  #       - index.md
   - blog:
       post_date_format: full #时间
       draft: true
@@ -322,10 +327,6 @@ plugins:
       authors_file: "{blog}/.authors.yml"  #作者信息
   - tags:
       tags_file: tag.md  #分类标签
-
-hooks:
-  - docs/overrides/hooks/shortcodes.py
-  - docs/overrides/hooks/translations.py  
 
 markdown_extensions:
   - abbr
@@ -392,10 +393,10 @@ extra_css:
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   # - stylesheets/extra1.css
   # - stylesheets/video.css
-  - https://unpkg.com/@waline/client@v2/dist/waline.css
+  # - https://unpkg.com/@waline/client@v2/dist/waline.css
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #评论
   - ckplayer/css/ckplayer.css
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
-
+  
