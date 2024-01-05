@@ -5,7 +5,7 @@ site_author: 王科文(Wcowin)
 #[UI]
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: docs/overrides
   # custom_dir: material/.overrides
   # font:
   #   text: Bitter
@@ -326,8 +326,8 @@ plugins:
       tags_file: tag.md  #分类标签
 
 hooks:
-  - overrides/hooks/shortcodes.py
-  - overrides/hooks/translations.py  
+  - docs/overrides/hooks/shortcodes.py
+  - docs/overrides/hooks/translations.py  
 
 markdown_extensions:
   - abbr
