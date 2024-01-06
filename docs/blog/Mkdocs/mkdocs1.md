@@ -41,9 +41,9 @@ docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题
 
  你在这个目录下写的任何东西都可以通过github Desktop 上传到github上
 
-以VScode为例我们打开具体看看里面的东西
-
-(建议先执行下面的代码添加一个GitHub Workflow)
+以VScode为例我们打开具体看看里面的东西  
+***  
+(建议先执行下面的代码添加一个GitHub Workflow(**已经过时但是仍然能用，最新方法见下方ci.yml**)
 
 ``` 
 mkdir .github
@@ -55,7 +55,7 @@ vim PublishMySite.yml
 
 在PublishMySite.yml里面输入以下内容
 
-```
+```yaml
 name: publish site
 on: # 在什么时候触发工作流
   push: # 在从本地main分支被push到GitHub仓库时
@@ -76,7 +76,49 @@ jobs: # 工作流的具体内容
       - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
 
 ```
+)
+***  
 
+``` 
+mkdir .github
+cd .github
+mkdir workflows
+cd workflows
+vim ci.yml
+```  
+
+.github/workflows/ci.yml，然后复制并粘贴以下内容：  
+```yaml
+name: ci 
+on:
+  push:
+    branches:
+      - master 
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - uses: actions/cache@v3
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install mkdocs-material 
+      - run: mkdocs gh-deploy --force
+```
 
 目录树状图:
 ```
@@ -85,7 +127,7 @@ $ tree -a
 ├── .github
 │   ├── .DS_Store
 │   └── workflows
-│       └── PublishMySite.yml
+│       └── ci.yml
 ├── docs
 │   └── index.md
 └── mkdocs.yml

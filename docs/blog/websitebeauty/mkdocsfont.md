@@ -1,3 +1,9 @@
+---
+title: 自定义Mkdocs显示字体(霞鹜文楷)
+tags:
+  - Mkdocs
+---
+
 我目前在用的字体：[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank}  
 想必你可以直观从我的网站感受到，[这款字体](https://chawyehsu.github.io/lxgw-wenkai-webfont/)的美观程度。  
 

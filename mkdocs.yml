@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 #[Info]
 site_name: Wcowin's Web
 site_url: http://wcowin.work/
@@ -84,7 +85,8 @@ nav:
         - 添加在线聊天: blog/websitebeauty/webtalknow.md
         - 修改网站字体: blog/websitebeauty/mkdocsfont.md
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md
-        - 背景特效: blog/websitebeauty/backgroud.md      
+        - 背景特效: blog/websitebeauty/backgroud.md
+        - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md     
     - 技术分享:
         - Win11镜像下载、壁纸及KMS激活 : blog/technique sharing/win.md
         - 实用脚本分享: blog/technique sharing/jiaoben.md
@@ -307,7 +309,11 @@ plugins:
       enable_creation_date: false
       exclude:
         - index.md 
+        - tag.md
         - waline.md
+        - blog/posts/update.md
+        - blog/posts/wkw.md
+        - about/link.md
   # - git-authors:
   #     exclude:
   #       - index.md
@@ -318,9 +324,9 @@ plugins:
       post_readtime: true
       post_readtime_words_per_minute: 265  #计算帖子的阅读时间时读者每分钟预计阅读的字数
       post_url_format: "{date}/{slug}"
-      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
       # categories_toc: true
       # pagination_per_page: 5
       pagination_url_format: "page/{page}"
@@ -335,7 +341,7 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - meta # 支持Markdown文件上方自定义标题标签等
+  - markdown.extensions.abbr # 支持Markdown文件上方自定义标题标签等
   - pymdownx.caret
   - pymdownx.betterem
   - pymdownx.critic
@@ -366,9 +372,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - markdown.extensions.toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-      permalink: "\ue157"
+  # - markdown.extensions.toc:
+  #     slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  #     permalink: "\ue157"
   
 extra_javascript:
   - javascripts/extra.js 
