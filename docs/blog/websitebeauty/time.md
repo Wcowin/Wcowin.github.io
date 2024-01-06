@@ -19,7 +19,7 @@ pip install mkdocs-git-revision-date-localized-plugin
 
 .github/workflows/下的ci.yml增加高亮的几行：
 
-```yaml hl_lines="24-26"
+```yaml hl_lines="14-15 26-28"
 name: ci 
 on:
   push:
@@ -33,6 +33,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
@@ -48,7 +50,6 @@ jobs:
       # - run: pip install mkdocs-rss-plugin           
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
-
 ```
 
 ## 配置

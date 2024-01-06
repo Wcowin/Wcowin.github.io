@@ -9,6 +9,7 @@ hide:
 tags:
     - 我的作品
 comments: false  #评论，默认不开启
+status: new
 ---
 
 # Mkdocs-Wcowin主题
@@ -21,17 +22,9 @@ comments: false  #评论，默认不开启
       <li>简洁美观，功能多元化</li>
     </ul>
     <li>简单易上手，小白配置</li>
-    <li>
-      如遇到网页卡顿/打开文章后无法显示图片的情况，请使用<strong>科学上网</strong>以打破信息壁垒
-    </li>
+    <li>教程详细，清晰易懂</li>
   </ul>
 </div> 
-
-## 如何快速使用
-打开终端安装mkdocs: `pip install mkdocs-material`，在你第二步克隆到本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版,把Mkdocs-Wcowin文件里的文件复制出来到Wcowin.github.io文件里，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可  
-为了测试随手建的名为forexample的文件夹
-![](https://cn.mcecy.com/image/20231014/c8f94f481009a3127ad6e0e08a317659.png)
-详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](https://wcowin.work/blog/Mkdocs/mkdocs1/)
 
 ## 展示
 <center>
@@ -54,6 +47,12 @@ comments: false  #评论，默认不开启
 **页面底部**
 ![](https://cn.mcecy.com/image/20231014/4631396ede3295cdba9176fbb6b9e02c.png)
 </center>
+
+## 如何快速使用
+打开终端安装mkdocs: `pip install mkdocs-material`，在你第二步克隆到本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版,把Mkdocs-Wcowin文件里的文件复制出来到Wcowin.github.io文件里，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可  
+为了测试随手建的名为forexample的文件夹
+![](https://cn.mcecy.com/image/20231014/c8f94f481009a3127ad6e0e08a317659.png)
+详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](https://wcowin.work/blog/Mkdocs/mkdocs1/)
 
 ## Connect with me
 
