@@ -28,9 +28,7 @@ status: new
 
 ## 展示  
 感受一下它的简洁美观：[Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/)  
-
 <center>
-
 ![](https://cn.mcecy.com/image/20231014/cda59880832afc0431a15b5c1ccc2203.png)  
 **主页**
 
