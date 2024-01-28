@@ -54,6 +54,41 @@ $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
 
 [![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+          />
+  </head>
+  <body>
+    <div>
+      <a
+         data-fancybox="gallery"
+         data-src="https://lipsum.app/id/2/1024x768"
+         data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+         >
+        <img src="https://lipsum.app/id/2/200x150" />
+      </a>
+      <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1024x768">
+        <img src="https://lipsum.app/id/3/200x150" />
+      </a>
+      <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1024x768">
+        <img src="https://lipsum.app/id/4/200x150" />
+      </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });    
+    </script>
+  </body>
+</html>
+
 <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats) -->
 
 </p><h1 id="01" name="01"><strong>01</strong></h1><p>

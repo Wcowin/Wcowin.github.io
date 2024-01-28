@@ -158,6 +158,18 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://www.luckyzh.cn/avatar.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.luckyzh.cn/" target="_blank">旧梦</a> 
+      </div> 
+      <div class="info">
+       冰冻三尺非一日之寒，滴水穿石非一日之功
+      </div> 
+     </div> 
+    </div>
+
 
    </div> 
   </div>

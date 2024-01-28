@@ -30,9 +30,11 @@ Aigo 256G  314￥
 * WebStorm
 ***
 * Git
+* npm
 * Node.js
 * pip
 * vue
+* [SwitchHost](https://switchhosts.vercel.app/zh)
 * Mkdocs/mkdocs-material
 ***
 * Arc/Chrome/Safari浏览器

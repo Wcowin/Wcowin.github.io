@@ -247,6 +247,8 @@ nav:
     - Test: about/test.md
     - 404公益页面: about/404.md
     - 我们♡+♡=♡²: about/Foryou.md
+    - 年度总结:
+        - 2023: about/zongjie/2023.md
 
   
   
@@ -305,6 +307,7 @@ extra:
 plugins:
   # - glightbox
   - search
+  - offline
   - git-revision-date-localized:
       type: iso_date
       enable_creation_date: false
@@ -392,7 +395,7 @@ extra_javascript:
   # - javascripts/backbound1.js
   # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
-  # - https://res.zvo.cn/translate/translate.js  # Translate
+  - https://res.zvo.cn/translate/translate.js  # Translate
 
 extra_css:
   - stylesheets/extra.css
