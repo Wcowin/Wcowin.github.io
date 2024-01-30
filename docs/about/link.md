@@ -174,13 +174,24 @@ hide:
      <img class="ava" src="https://qkongtao.cn/file/images/favicon.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://qkongtao.cn/" target="_blank">左眼会陪右眼哭</a> 
+       <a href="https://qkongtao.cn/" target="_blank">左眼会陪右眼哭の博客</a> 
       </div> 
       <div class="info">
        干嘛这么想不开，要在脸上贴个输字！
       </div> 
      </div> 
     </div>    
+   <div class="card"> 
+     <img class="ava" src="https://www.styg.org.cn/zb_users/upload/2024/01/202401261706277157705448.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
+      </div> 
+      <div class="info">
+       慈善义工在行动
+      </div> 
+     </div> 
+    </div> 
 
 
    </div> 
