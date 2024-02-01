@@ -6,6 +6,16 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-02-2</strong></h1><p>
+* 改进网页代码显示效果
+* 优化网站流畅度（玄学）
+
+## </p><h1 id="01" name="01"><strong>2024-01-30</strong></h1><p>
+* 友链数量达到16位
+* 修复了一些bugs
+* 本网站已经被百度/谷歌收录（确信，使用百度/谷歌搜索Wcowin字样即可）
+* 优化网站流畅度（玄学）
+
 ## </p><h1 id="01" name="01"><strong>2024-01-05</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 引入[git-revision-date-localized-plugin](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)插件，以便记录文档创建和最后一次修改时间
