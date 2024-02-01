@@ -4,28 +4,19 @@
 - Welcome to contact my Email:wangkewen821@gmail.com
 - 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
 
-<!-- ![](https://cn.mcecy.com/image/20221229/67d6c67f951fe04606acc08a1e77a81e.png) -->
-
-
-
 # Connect with me
-
 
 <center>
 
 **MuseLink**
 <p>
-  
   <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://cn.mcecy.com/image/20230822/24afe45d85f111894db6db75d74d1f1d.png" alt="个人名片">
+    <img src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg" alt="个人名片">
   </a>
 </p>
 
-**Wechat**
-![img](https://cn.mcecy.com/image/20231210/95cfd80cd202789b22338d903ace7bf8.jpeg)
-
-**Telegram**
-![](https://cn.mcecy.com/image/20230824/7a889e12d7e1a0966d1cff9801644ebf.jpg)  
+**Wechat**  
+![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.th.jpeg)
 
 </center>
 

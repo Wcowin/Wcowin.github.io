@@ -69,25 +69,16 @@ icon:
 <!-- <img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg"> -->
 
 ## Touch me
-
-<div class="image-container">
-  <a href="https://twitter.com/wcowin_" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/bf81886879255799f477a8989d314833.png" alt="𝕏" style="border-radius: 10px; width: 25%;">
-  </a>
-  <a href="https://www.instagram.com/wcowin_/" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/892950af21d09c98d403ebc378a21899.png" alt="instagram" style="border-radius: 10px; width: 25%;">
-  </a>
-  <a href="https://github.com/wcowin" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/6cc108417b5f9ab5ae53c2376d6036d8.png" alt="github" style="border-radius: 10px; width: 25%;">
-  </a>
-</div>
+<p align="center">
+&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  
+&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
+&nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
+</p>
 
 <figure markdown >
-  ![Image title](https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg){.img1}
+  ![Image title](https://s1.imagehub.cc/images/2024/02/02/43c746351261969a02bda7d743199604.jpeg){.img1}
   <figcaption>公众号</figcaption>
 </figure>
-
- 
 
 
 <head>
