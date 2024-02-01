@@ -758,6 +758,7 @@ div.hide {
 #qr img {
   width: 250px; /* 调整图像大小 */
   margin: 10px; /* 添加一些间距 */
+  border-radius: 25px;
 }
 
 #qr p {
@@ -775,3 +776,5 @@ div.hide {
 .mask:hover {
   color: #ffffff;
 }
+
+
