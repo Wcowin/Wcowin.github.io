@@ -2,7 +2,7 @@
 tags:
   - Mac
 ---
-![img](https://cn.mcecy.com/image/20230104/f1e1b37d4f6ff349a3c358ea2f80eb47.png)
+![19fedf7349ca4a73a8374b977832cb78_l2.jpg](https://s2.loli.net/2024/02/01/4gP5ezwyqI3nkbu.jpg)
 类似上图这种情况的……
 
 三步解决

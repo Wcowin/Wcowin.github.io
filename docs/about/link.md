@@ -16,7 +16,7 @@ hide:
   <div class="links-content"> 
    <div class="link-navigation"> 
     <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" /> 
+     <img class="ava" src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://wcowin.work/ " target="_blank">Wcowin's Web</a> 
@@ -27,7 +27,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231223/3eb628d46aa47d71be1b03f93f23628b.png" /> 
+     <img class="ava" src="https://s2.loli.net/2024/02/01/o9YHsqfG7NjwMiT.jpg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://wcowin.work/WH-WKW/" target="_blank">小王和王老师的小站</a> 
@@ -38,7 +38,7 @@ hide:
      </div> 
     </div> 
     <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231012/7a090d32db0fe8738dba0d0d578f21f5.jpg" /> 
+     <img class="ava" src="https://xpmrobot.tech/images/portrait.jpg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://xpmrobot.tech/" target="_blank">Xpm's Robot Lab</a> 
@@ -49,16 +49,16 @@ hide:
      </div>
     </div>
    <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231014/58655ceaff181d38a9062434a4f10e60.png" /> 
+     <img class="ava" src="https://www.crant.cn/upload/Avatar.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://ictsmc.cn/" target="_blank">IctSmc笔记</a> 
+       <a href="https://www.crant.cn/" target="_blank">Crant</a> 
       </div> 
       <div class="info">
-       念念不忘,必有回响
+       用心记录，美好生活
       </div> 
      </div> 
-    </div>
+    </div> 
     <div class="card"> 
      <img class="ava" src=" https://finisky.github.io/images/avatar.png" /> 
      <div class="card-header"> 
@@ -71,7 +71,7 @@ hide:
      </div> 
     </div>
        <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231013/b6a22a0bdb0788a85462b7c2d79dca26.jpeg" /> 
+     <img class="ava" src="https://mungeryang.github.io/images/avatar.png?v=1696728951294" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a> 
@@ -82,7 +82,7 @@ hide:
      </div>
     </div> 
        <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20230615/749725b48e5972165d0bce10b364695e.png" /> 
+     <img class="ava" src="https://img.ixintu.com/upload/jpg/20210524/3a8cbb0f2da716313a3b18984a9ffe73_78863_800_772.jpg!con" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://wcowin.work/myhexo/" target="_blank">Myhexo</a> 
@@ -104,7 +104,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231014/a73a55a5e9b5304b76a0e0e59b5171a6.jpeg" /> 
+     <img class="ava" src="https://s2.loli.net/2024/02/01/NcLn4XdMWQKV37f.jpg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://qiuyuair.com" target="_blank">Qiuyuair的自留地</a> 
@@ -126,7 +126,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231015/1dd42d66b0d33c2bf099d127e46b2b27.jpeg" /> 
+     <img class="ava" src="https://s2.loli.net/2024/02/01/2Ju6y1fmpWDUBaz.jpg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://www.cnblogs.com/miluluyo/" target="_blank">麋鹿鲁哟</a> 
@@ -192,17 +192,7 @@ hide:
       </div> 
      </div> 
     </div> 
-   <div class="card"> 
-     <img class="ava" src="https://www.crant.cn/upload/Avatar.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.crant.cn/" target="_blank">Crant</a> 
-      </div> 
-      <div class="info">
-       用心记录，美好生活
-      </div> 
-     </div> 
-    </div> 
+
 
    </div> 
   </div>
@@ -253,5 +243,5 @@ hide:
 
 >名称: Wcowin's Web  
 >链接: https://wcowin.work/  
->头像: 头像图片链接地址  
+>头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
 >简介: 循此苦旅，以达星辰

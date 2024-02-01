@@ -9,7 +9,7 @@ tags:
     下载love.html文件，打开即可看到效果。
 
     
-![img](https://cn.mcecy.com/image/20230321/6c6d5fb5ab24ad31b1e605434e54f1fc.png)
+![04c53a90c3404ae38b8d4122c3a9abeb.png](https://s2.loli.net/2024/02/01/MhsViSwCl3JBfGp.png)
 
 ```html linenums="1"
 <!doctype html>
@@ -246,9 +246,8 @@ var ParticlePool = (function() {
 </body>
 </html>
 ```
-文件要以文件名.html的形式命名文件要以文件名.html的形式命名.  
-比如：
 
-![img](https://cn.mcecy.com/image/20230321/30e3b0fe1a26259f8a1bb9280f26a0fa.png)
+文件要以`文件名.html`的形式命名文件要以文件名.html的形式命名.  
+
 
 双击即可跳转至默认浏览器

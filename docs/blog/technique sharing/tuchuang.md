@@ -25,7 +25,9 @@ hide:
 
 
 ## 二、免费图床(推荐)
-- [载涂图床](https://mcecy.com/)
+- [SMMS](https://sm.ms/)(推荐)
+- [Hello图床](https://www.helloimg.com/)
+- [载涂图床](https://mcecy.com/)(已经跑路)
 - [imgurl](https://www.imgurl.ink/vip/manage/upload)  
  
 无脑上传图片，粘贴链接即可

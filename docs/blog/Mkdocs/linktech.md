@@ -128,7 +128,7 @@ hide:
 
 ```html
     <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" /> 
+     <img class="ava" src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://wcowin.work/ " target=“_blank”>Wcowin’s blog</a> 
@@ -144,7 +144,7 @@ hide:
   <div class="links-content"> 
    <div class="link-navigation"> 
     <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png" /> 
+     <img class="ava" src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://wcowin.work/ " target=“_blank”>Wcowin’s blog</a> 

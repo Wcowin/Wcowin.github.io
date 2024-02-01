@@ -4,8 +4,7 @@ tags:
   - 技术分享
 ---
 
-[![img](https://cn.mcecy.com/image/20230113/313b8003245a93fe4982c4e95ee82b02.jpg)](https://www.yuque.com/wcowin/jsfx)
-
+[![img](https://s1.imagehub.cc/images/2024/02/01/48c6225352d423328555af79c602178f.th.png)](https://www.yuque.com/wcowin/jsfx)
 
 我的技术分析文档  ↑↑↑
 
