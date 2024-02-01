@@ -23,7 +23,7 @@ icon:
 </center>   
 
 
-<img class="img1" src="https://cn.mcecy.com/image/20230220/f10604560a2119667fb3aca1da299e1a.jpeg">
+<img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg">
 
 <!-- <div>
   <img src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png" class="img1" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
@@ -32,7 +32,7 @@ icon:
   <p style="font-size: 1.2em">A college student</p>
 </div> -->
 <div id="rcorners3" >
-  <img class="img1" src="https://cn.mcecy.com/image/20231115/f19515b3725bfd34bac61de44cbc794d.jpeg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
+  <img class="img1" src="https://s2.loli.net/2024/02/01/vG8VQqK7zDkB9Jh.jpg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
     <!-- <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="170" alt="个人头像" align="right"/> -->
   <div>
     <p style="font-size: 40px">Wcowin</p>
@@ -59,7 +59,7 @@ icon:
 ## 我的名片
 
 <a href="https://muselink.cc/Wcowin" target="_blank">
-  <img class="img1" src="https://cn.mcecy.com/image/20231014/17c6497f27e32ff7dfd23b0189d84bd6.jpeg"  >
+  <img class="img1" src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg"  >
   <center>
     <div style="color:orange; 
     color: #999;
@@ -72,13 +72,13 @@ icon:
 
 <div class="image-container">
   <a href="https://twitter.com/wcowin_" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/bf81886879255799f477a8989d314833.png" alt="Image 1" style="border-radius: 10px; width: 25%;">
+    <img src="https://cn.mcecy.com/image/20231006/bf81886879255799f477a8989d314833.png" alt="𝕏" style="border-radius: 10px; width: 25%;">
   </a>
   <a href="https://www.instagram.com/wcowin_/" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/892950af21d09c98d403ebc378a21899.png" alt="Image 2" style="border-radius: 10px; width: 25%;">
+    <img src="https://cn.mcecy.com/image/20231006/892950af21d09c98d403ebc378a21899.png" alt="instagram" style="border-radius: 10px; width: 25%;">
   </a>
   <a href="https://github.com/wcowin" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/6cc108417b5f9ab5ae53c2376d6036d8.png" alt="Image 3" style="border-radius: 10px; width: 25%;">
+    <img src="https://cn.mcecy.com/image/20231006/6cc108417b5f9ab5ae53c2376d6036d8.png" alt="github" style="border-radius: 10px; width: 25%;">
   </a>
 </div>
 

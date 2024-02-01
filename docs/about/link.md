@@ -192,7 +192,17 @@ hide:
       </div> 
      </div> 
     </div> 
-
+   <div class="card"> 
+     <img class="ava" src="https://www.crant.cn/upload/Avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.crant.cn/" target="_blank">Crant</a> 
+      </div> 
+      <div class="info">
+       用心记录，美好生活
+      </div> 
+     </div> 
+    </div> 
 
    </div> 
   </div>
