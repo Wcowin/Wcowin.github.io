@@ -18,14 +18,6 @@ comments: false  #评论，默认不开启
 ![img](https://user-assets.sxlcdn.com/images/951476/FkaW7f-AFpESs9-l-AE1UYtszmpv.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
 ![img](https://user-assets.sxlcdn.com/images/951476/FmyGFPLxOV_uz6GdBz4N2BA20LmH.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
 
-<div>
-     <iframe width="500" height="400" frameborder="0" src="https://cn.bing.com/maps/embed?h=400&w=500&cp=nxsh64swfc7k&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-     </iframe>
-     <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
-        <a id="largeMapLink" target="_blank" href="https://cn.bing.com/maps?cp=nxsh64swfc7k&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD">查看放大的地图</a> &nbsp; | &nbsp;
-        <a id="dirMapLink" target="_blank" href="https://cn.bing.com/maps/directions?cp=nxsh64swfc7k&amp;sty=r&amp;lvl=16&amp;rtp=~pos.nxsh64_swfc7k____&amp;FORM=MBEDLD">获取路线</a>
-    </div>
-</div>
 ### <b>Day2  
 重庆中国三峡博物馆-鹅岭-李子坝-山城步道</b>  
 博物馆值得一去。鹅岭二厂文创公园，《从你的全世界路过》在这里有取景。以前是一座印刷厂，现在则成了创意市集和小吃聚集地，是一个文艺小清新的地方，适合拍照。鹅岭公园面积很大，背倚山城，处于重庆半岛最高处，环境很好，绿树成荫，可以看看风景，是重庆两江和夜景最好的俯拍圣地。从鹅岭下山来就是李子坝，建议出租车，我有一次徒步下山30min才下来……。在李子坝看轻轨穿楼，楼一层就有一只酸奶牛可以尝尝重庆必打卡“饮品”，不必要挤破头去洪崖洞附近买（不仅人多且可能是假店）。晚上就去山城步道看夜景，体验体验重庆山城市井人家，别在里面买东西，东西贵到离谱。山城步道离解放碑不远，晚饭就去解放碑附近恰火锅撒～  
@@ -45,6 +37,7 @@ comments: false  #评论，默认不开启
 ![img](https://user-assets.sxlcdn.com/images/951476/FoXzUynf3qZqlrC-9p3h7pxdGCd_.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
 ![img](https://user-assets.sxlcdn.com/images/951476/FnRDb8Fa36amGcNcu5GMIMzZuPlZ.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
 ![img](https://user-assets.sxlcdn.com/images/951476/Ftvkwv7lVYmuKomjRsV_irH0nOVs.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
+![IMG_5100.jpeg](https://s2.loli.net/2024/02/02/Lhw3xFiJYVaNTI9.jpg)
 ## 美食   
 1.火锅  
 油碟+一锅红汤火锅料是标配，重庆没有难吃的火锅店，除非特别难吃  
@@ -64,5 +57,5 @@ comments: false  #评论，默认不开启
 出行：轻轨全市通；黄色“法拉利”，记得上车说句“师傅我赶时间”；步行。  
 导游：我  
 
-!!! bug
-    注：插入图片加载不出来的问题还在研究(已修复 了一部分)
+!!! Success
+    注：插入图片加载不出来的问题还在研究(已完全修复)

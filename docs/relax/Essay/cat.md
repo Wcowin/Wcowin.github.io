@@ -42,11 +42,9 @@
 
 ## 工商的🐈
 
-![](https://cn.mcecy.com/image/20231122/228a31abb59990594a1c1b72683f6250.jpg)
-![](https://cn.mcecy.com/image/20231122/8ca97359dd1b75dfa40f4f288e3df71f.jpg)
-![](https://cn.mcecy.com/image/20231122/7bbaba30ec6f201d2d62b60135df2039.jpg)
-![](https://cn.mcecy.com/image/20231122/0d15788cfa7ac481bca721a1e6af0334.jpg)
-![](https://cn.mcecy.com/image/20231122/6072b22cf2b3f330120792b6f57e8d9b.jpg)
-![](https://cn.mcecy.com/image/20231122/cca72fe48d34ab8015dcbdfc4d7d0c51.jpg)
-![](https://cn.mcecy.com/image/20231122/0077a5562347ef63727e11c7b06b533d.jpg)
-![](https://cn.mcecy.com/image/20231122/69b6d49bca6882fd11c3ab25ca8da383.jpg)
+![IMG_7847.jpeg](https://s2.loli.net/2024/02/02/pksbTXnq9dUeZrj.jpg)
+![IMG_7506.jpeg](https://s2.loli.net/2024/02/02/AyQeqgpVNEo36wj.jpg)
+![IMG_2708.jpeg](https://s2.loli.net/2024/02/02/yYb4EIzpPBA67ZJ.jpg)
+![IMG_5356.jpeg](https://s2.loli.net/2024/02/02/YS1Vlp9nDdcsoOX.jpg)
+![IMG_8240.jpeg](https://s2.loli.net/2024/02/02/7EfJLQnKrUkzqHg.jpg)
+![IMG_8242.jpeg](https://s2.loli.net/2024/02/02/RvcSECJgKm8wYTo.jpg)

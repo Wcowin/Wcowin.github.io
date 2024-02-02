@@ -27,15 +27,33 @@ mkdocs.yml中添加
 ```
 theme:
   name: material
-  custom_dir: overrides  #主要是这一行
+  custom_dir: docs/overrides  #主要是这一行
 ```
-参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件
-树状结构如下
-![](https://cn.mcecy.com/image/20231013/c9e5930308a1e0369c43499cf8f73e27.png)
+参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件  
+树状结构如下:  
+```
+$ tree -a
+.
+├── .github
+│   ├── .DS_Store
+│   └── workflows
+│       └── PublishMySite.yml
+├── docs
+│   └── index.md
+│   └──overrides
+│       └──assets
+│       └──main.html
+│       └──partials
+│          └──comments.html
+│
+└── mkdocs.yml
+``` 
 
-我们评论只针对comments.html
+![img](https://s1.imagehub.cc/images/2024/02/02/214447b92070792905259a843de3e233.png)
 
-```html
+在comments.html中
+
+```html hl_lines="4-18"
 {% if page.meta.comments %}
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <!-- Insert generated snippet here -->
@@ -93,9 +111,9 @@ theme:
 ```
 ## 第二步
 打开<https://giscus.app/zh-CN>  走完这个页面的流程就会得到(这会在你的Github创建新的仓库，建议自己先去新建个 Discussions)
-![](https://cn.mcecy.com/image/20231013/b63f252c79d15a4047baad2ec5d6af46.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/b0fabd6a0c967d5a846c087adea5b680.png)  
 
-![](https://cn.mcecy.com/image/20231013/25051f8530af2da792e3d32b802a9014.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/d0c7b4e08a714b5c2b60421f58159c62.png)  
 
 ```html
 <script src="https://giscus.app/client.js"
@@ -115,9 +133,9 @@ theme:
 </script>
 ```
 
-复制将此代码，替换comments.html中41~55的代码
+复制将此代码，替换最上面👆🏻comments.html中高亮的代码
 
-`mkdocs server`一下
+终端里`mkdocs server`一下
 
 ## 最后
 在你想插入评论的地方的元数据：`comments: true `
@@ -133,9 +151,14 @@ hide:
 comments: true  #默认不开启评论
 ---
 ```
-## 效果
-完美!快速相应
-![](https://cn.mcecy.com/image/20231013/87a3050ece2cbb4bd275c4698118471f.png)
+## 效果  
+
+完美!快速相应  
+
+<figure markdown >
+  ![](https://s1.imagehub.cc/images/2024/02/02/0619f922f930e7649fb40405c7e49339.png)
+  <figcaption>这是图片↑↑↑</figcaption>
+</figure>
 
 ## 其他评论系统
 
@@ -189,4 +212,4 @@ twikoo.init({
 })
 </script> 
 
-我屮艸芔茻，感觉twikoo也好看也好用啊！
+我感觉twikoo也好看！

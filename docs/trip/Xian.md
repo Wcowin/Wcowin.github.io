@@ -5,19 +5,20 @@ comments: false  #评论，默认不开启
 
 ## 照片  
 
-![img](https://cn.mcecy.com/image/20230505/ff96021ca3a8065f1a908d1d69cc90f1.jpeg)
-![img](https://cn.mcecy.com/image/20230505/07ce31614d662c946f93dad15bd899d0.jpeg)
-![img](https://cn.mcecy.com/image/20230505/8e211bcb34f33079b58dadbc8596c3fb.jpeg)
-![img](https://cn.mcecy.com/image/20230505/06f43861a434463274d233de567c1286.jpeg)
 
-![img](https://cn.mcecy.com/image/20230505/8b109b976df8d89f453778acd0a04afe.jpeg)
-![](https://pb.nichi.co/witness-enhance-change)
+![IMG_1430.jpeg](https://s2.loli.net/2024/02/02/HXg92U5GamkPEIy.jpg)
+![IMG_1458.jpeg](https://s2.loli.net/2024/02/02/XO7vRtPzbhHy3Jj.jpg)
 
-
+<figure markdown>
+  ![IMG_1936.jpeg](https://s2.loli.net/2024/02/02/yjk2KaGD3BfxiHP.jpg)
+  <figcaption>李嘉仪童鞋</figcaption>
+</figure>
+![IMG_1546.jpeg](https://s2.loli.net/2024/02/02/4iMlwJpH8dcPfIO.jpg)
+![IMG_4504.jpeg](https://s2.loli.net/2024/02/02/zdKxHn6EVswoIfF.jpg)
 
  
 <figure markdown>
-  ![img](https://cn.mcecy.com/image/20230629/8ef2c7a9f0963d706851d80938be2c93.jpeg)
+  ![IMG_1553_l2.jpeg](https://s2.loli.net/2024/02/02/rblH2jWC3kMgh7G.jpg)
   <figcaption>本人在左二 (｡ì _ í｡)</figcaption>
 </figure>
 
@@ -37,12 +38,13 @@ D4: 返程
 
 ## 美食  
 
-腊汁肉夹馍、凉皮、羊肉泡馍、臊子面
-![img](https://cn.mcecy.com/image/20230505/96fe669468c7238fef98b7c1aae36702.jpeg)
-
-
-![](https://pb.nichi.co/toddler-height-isolate)
-
-![](https://pb.nichi.co/puzzle-bachelor-wisdom)
-
-
+腊汁肉夹馍、凉皮、羊肉泡馍、臊子面  
+***
+羊肉泡馍
+![IMG_1956.jpeg](https://s2.loli.net/2024/02/02/PRGTuEAhBHC1cny.jpg)
+biangbiang面
+![IMG_1671.jpeg](https://s2.loli.net/2024/02/02/ciM53ybvoHzrCwm.jpg)  
+汇通十字面
+![IMG_4555.jpeg](https://s2.loli.net/2024/02/02/gCdDbWr94zF8Rj2.jpg)
+霸王茶姬
+![IMG_1506.jpeg](https://s2.loli.net/2024/02/02/zwSAuC8ODphf3K9.jpg)

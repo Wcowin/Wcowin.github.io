@@ -8,6 +8,7 @@ hide:
 ```
 upgrade_oh_my_zsh
 ```
+![](https://img-blog.csdnimg.cn/20200827113647743.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcyMjk3OA==,size_16,color_FFFFFF,t_70#pic_center)
 ***
 当无论是自动更新还是手动upgrade_oh_my_zsh更新oh-my-zsh时，出现下面提示：
 ```

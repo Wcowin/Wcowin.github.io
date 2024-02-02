@@ -83,6 +83,7 @@ nav:
     - Mkdocs美化:
         - Mkdocs-Wcowin主题: blog/websitebeauty/mkdocs-wcowin1.md
         - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
+        - 添加顶部公告栏: blog/websitebeauty/header.md
         - 添加在线聊天: blog/websitebeauty/webtalknow.md
         - 修改网站字体: blog/websitebeauty/mkdocsfont.md
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md

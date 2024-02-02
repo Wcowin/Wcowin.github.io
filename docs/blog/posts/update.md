@@ -7,6 +7,12 @@ categories:
 readtime: 2
 ---
 ## </p><h1 id="01" name="01"><strong>2024-02-2</strong></h1><p>
+* 网站图片全部迁移至[smms](https://smms.app/)(更加稳定流程)
+* 着手改写MKdocs教程，使得条理更加清晰
+* 优化网站流畅度（玄学）
+* 删除大量繁琐无用代码
+
+## </p><h1 id="01" name="01"><strong>2024-02-1</strong></h1><p>
 * 改进网页代码显示效果
 * 优化网站流畅度（玄学）
 

@@ -4,10 +4,10 @@ tags:
   - 我的作品
 ---
 ## 先看结果
-![](https://cn.mcecy.com/image/20230918/0d2718ddcab038294ac1f46a1b51950a.png)
-遥遥领先！
-![](https://cn.mcecy.com/image/20230918/bf3a08392c5fdaf6ad36bf457feb1f62.png)
+![image.png](https://s2.loli.net/2024/02/02/wH5lXKQDObRTgBZ.png)  
 
+遥遥领先！  
+![alt text](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0416%2F2191007fj00rt61pm007ec000ej00mbm.jpg&thumbnail=660x2147483647&quality=80&type=jpg)
 ## 准备工作
 
 这里我调用了：  
@@ -15,7 +15,7 @@ tags:
 
 代码里所涉及的APPID、APISecret、APIKey 皆从讯飞的控制台获取，自己注册去[讯飞开放平台-以语音交互为核心的人工智能开放平台](https://www.xfyun.cn/)申请即可。  
 
-![](https://cn.mcecy.com/image/20230918/d76624c0189f740253e189e4c9618dd0.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/27089ea5a63f56d2d30cb8fcb9021e76.png)   
 
 ## 代码实现 
 
@@ -223,7 +223,7 @@ root.mainloop()
 
 ## Github项目地址
 
-<https://github.com/Wcowin/XunFei-Face-compare/releases/tag/exe>
+<https://github.com/Wcowin/XunFei-Face-compare>
 
 打包好的地址：<https://github.com/Wcowin/XunFei-Face-compare/releases/download/exe/test4.exe.zip>
 
