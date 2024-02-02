@@ -148,7 +148,7 @@
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../../index.html" title="Wcowin&#39;s Web" class="md-header__button md-logo" aria-label="Wcowin's Web" data-md-component="logo">
       
-  <img src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" alt="logo">
+  <img src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -526,7 +526,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../index.html" title="Wcowin&#39;s Web" class="md-nav__button md-logo" aria-label="Wcowin's Web" data-md-component="logo">
       
-  <img src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" alt="logo">
+  <img src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" alt="logo">
 
     </a>
     Wcowin's Web
@@ -5778,29 +5778,30 @@
 </div>
 <h2 id="_1">一、准备工作<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>1.下载<a href="https://github.com/desktop/desktop" target="“_blank”">Github Desktop</a></p>
-<p>2.有一个GitHub账号​​​​​​​</p>
+<p>2.有一个GitHub账号​​​​​​​(有手就行)</p>
 <hr />
 <h2 id="creating-your-site">二、Creating your site<a class="headerlink" href="#creating-your-site" title="Permanent link">&para;</a></h2>
 <p>参考教程： </p>
 <p><a href="https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501" target="“_blank”">利用mkdocs部署静态网页至GitHubpages（更新版）</a></p>
 <p>与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库
-<img alt="img" src="https://cn.mcecy.com/image/20230324/51a12510e3b332b6ceea6827f40c1f2f.png" />
-<img alt="img" src="https://cn.mcecy.com/image/20230324/7f19bb393e39fb9add953ee19f9e2d91.png" />  </p>
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5074a3e2b7284355e0f777fd9e621ee3.png" /></p>
+<p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5c39f0c9754f067759497361524d2b95.png" />  </p>
 <p>然后打开github Desktop 克隆到本地
-<img alt="img" src="https://cn.mcecy.com/image/20230324/ff3682428cc987cad79625951ef6d7bc.png" />
-<img alt="img" src="https://cn.mcecy.com/image/20230324/e896de95bd6fa737e7c6c3fa21c079fb.png" />
-<img alt="img" src="https://cn.mcecy.com/image/20230324/791834a5ac01c95ef174ab77d47c0f3a.png" /> 
-<img alt="img" src="https://cn.mcecy.com/image/20230324/80430d0f8be7ea09368c3e63fe5a91ff.png" />
-打开Wcowin.github.io目录进入终端运行:
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5c06d33549ea0c4a1357697acc6f8f5d.png" /></p>
+<p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/f862b16316fa4ad0f727a0f656cc5cf1.png" /></p>
+<p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/6483c0b9ee144e0c1e035dccf3339991.png" /> </p>
+<p>打开Wcowin.github.io目录进入终端运行:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>mkdocs new mkdocs-site
 </code></pre></div></td></tr></table></div>
 出现下图的几个文件 
-<img alt="img" src="https://cn.mcecy.com/image/20230324/2f3f28cb5ee726ac154102de2ffb43da.png" /></p>
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png" /></p>
 <p>docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题，目录，插件等）</p>
 <p>你在这个目录下写的任何东西都可以通过github Desktop 上传到github上</p>
-<p>以VScode为例我们打开具体看看里面的东西  </p>
+<p>执行下面的代码添加一个GitHub Workflow</p>
 <hr />
-<p>(建议先执行下面的代码添加一个GitHub Workflow(<strong>已经过时但是仍然能用，最新方法见下方ci.yml</strong>)</p>
+<details class="note">
+<summary>过时的PublishMySite.yml</summary>
+<p>(执行下面的代码添加一个GitHub Workflow(<strong>已经过时但是仍然能用，最新方法见下方ci.yml</strong>)</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
@@ -5849,6 +5850,7 @@
 <a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span><span class="w"> </span><span class="c1"># 使用mkdocs-material部署gh-pages分支</span>
 </code></pre></div></td></tr></table></div>
 )</p>
+</details>
 <hr />
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
@@ -5942,40 +5944,43 @@
 <p class="admonition-title">重点来了</p>
 </div>
 <p>仓库setings/Actions/General  勾选这两项
-<img alt="" src="https://cn.mcecy.com/image/20231014/60f48ab66eea11b52f572b8fd489ea92.png" /></p>
+<img alt="" src="https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png" /></p>
 <h2 id="_2">三、配置完善<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>打开终端运行  </p>
 <p><code>pip install mkdocs-material</code></p>
 <p>打开<strong>mkdocs.yml</strong> </p>
-<p>把以下的内容输入进去（最简单配置）  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>site_name: 网站名字
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>site_url: 网站链接
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>site_author: 你的名字
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>theme:
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a>  name: material #主题
+<p>把以下的内容输入进去（最简单最基础的配置）  </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">网站名字</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">网站链接</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">你的名字</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span><span class="w"> </span><span class="c1">#主题</span>
 </code></pre></div></td></tr></table></div>
 <p>详细mkdocs.yml配置见<a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/">Changing the colors - Material for MkDocs</a></p>
 <p><a href="https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5502">下次</a>我会具体谈谈这个问题</p>
 <hr />
 <p>在下方终端运行可以在浏览器看到实时网站
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>mkdocs serve
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>mkdocs serve
 </code></pre></div></td></tr></table></div>
-<img alt="img" src="https://cn.mcecy.com/image/20230324/f11af9fb64a8418181bc3655a88d8635.png" />
-<img alt="img" src="https://cn.mcecy.com/image/20230324/c745b71840c17d639e1ea144bc8c5732.png" /></p>
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/b4a5ac989f1f390573a85bad8c80f49b.png" />
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/38bbc1fad9016ebfa0d894f093b82e3d.png" /></p>
 <p>这个网站就算是初步建好了</p>
 <p>最后去github Desktop上传到github
-<img alt="img" src="https://cn.mcecy.com/image/20230324/53ad3fdbe7d05668b99a46780930845a.png" /></p>
-<p>!重点
-再去setings/pages  选择下图示意的路径
-<img alt="" src="https://cn.mcecy.com/image/20231014/ac6d1bc1a236737a18d9dd6bd2bd97dc.png" /></p>
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/3a15b16d3947825f3f469b4eafedd5ef.png" /></p>
+<p><strong>！！！重点</strong><br />
+<strong>去仓库的setings/pages选择下图示意的路径</strong>
+<img alt="" src="https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png" />  </p>
+<p>等待一会网址就出来了  </p>
 <p>你的网站网址就是：​</p>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>https://你github的名字.github.io/
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>https://你github的名字.github.io/
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>因为我绑定了域名所以网址是：https://wcowin.work/
 </code></pre></div></td></tr></table></div>
-<img alt="img" src="https://cn.mcecy.com/image/20230324/51a12510e3b332b6ceea6827f40c1f2f.png" /></p>
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/7f149d6da7ecc6364d86c9517b2c4624.png" /></p>
 <p>下次谈谈网站的<a href="mkdocs2.html">mkdocs.yml具体配置</a></p>
 <div class="footnote">
 <hr />
@@ -6005,7 +6010,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-06</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-02-02</span>
   </span>
 
     
