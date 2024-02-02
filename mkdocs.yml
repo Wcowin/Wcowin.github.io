@@ -365,7 +365,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+          format: !!python/name:pymdownx.superfences.fence_code_format 
   - pymdownx.arithmatex:  # latex支持
       generic: true
   - toc:
