@@ -40,7 +40,7 @@ status: new
 ![](https://cn.mcecy.com/image/20231014/404bafe5eb3d7259638e442b2c31729b.png)  
 **博客页**
 
-![](https://cn.mcecy.com/image/20231014/425bf7fef96dd23e80b0c32da0819c5e.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/cee8d935a920668b738593850c7eb7f8.png) 
 **标签页**
 
 ![](https://cn.mcecy.com/image/20231014/a6272231f79b3ebd1c91add55be5ec5e.png)  

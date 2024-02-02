@@ -25,14 +25,8 @@ icon:
 
 <img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg">
 
-<!-- <div>
-  <img src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png" class="img1" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
-  <p style="font-size: 2.4em"><strong>Wcowin</strong></p>
-  <p style="font-size: 1.2em">Free and diffuse</p>
-  <p style="font-size: 1.2em">A college student</p>
-</div> -->
 <div id="rcorners3" >
-  <img class="img1" src="https://s2.loli.net/2024/02/01/vG8VQqK7zDkB9Jh.jpg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
+  <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
     <!-- <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="170" alt="个人头像" align="right"/> -->
   <div>
     <p style="font-size: 40px">Wcowin</p>
@@ -41,12 +35,6 @@ icon:
   </div>
 </div>
    
-<!-- - [x] CV工程师 ++ctrl+c++  (  ++v++  ) 🧑‍💻
-- [x] Bilibili电子信息工程专业本科在读  :star2: -->
-<!-- - [x] <a href="https://github.com/Wcowin" target="_blank"><button class="buttonxuan3">找到我:simple-github:</button></a>:material-arrow-right:&#x1F4A1;  -->
-
-
-
 
 !!! pied-piper1 "About me"
     
@@ -59,14 +47,13 @@ icon:
 ## 我的名片
 
 <a href="https://muselink.cc/Wcowin" target="_blank">
-  <img class="img1" src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg"  >
+  <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg"  >
   <center>
     <div style="color:orange; 
     color: #999;
     padding: 2px;">我的名片</div>
   </center>  
 </a>
-<!-- <img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg"> -->
 
 ## Touch me
 <p align="center">

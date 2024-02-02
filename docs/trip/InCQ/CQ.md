@@ -42,9 +42,9 @@ comments: false  #评论，默认不开启
 
 > 这是我在重庆感觉最佳的游玩路线，很多比较小众的地方如：弹子石，重庆工商大学，涂山寺……这些都是值得一去的 
 
-![img](https://user-assets.sxlcdn.com/images/951476/FoXzUynf3qZqlrC-9p3h7pxdGCd_.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
-![img](https://user-assets.sxlcdn.com/images/951476/FnRDb8Fa36amGcNcu5GMIMzZuPlZ.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
-![img](https://user-assets.sxlcdn.com/images/951476/Ftvkwv7lVYmuKomjRsV_irH0nOVs.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
+![img](https://user-assets.sxlcdn.com/images/951476/FoXzUynf3qZqlrC-9p3h7pxdGCd_.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
+![img](https://user-assets.sxlcdn.com/images/951476/FnRDb8Fa36amGcNcu5GMIMzZuPlZ.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
+![img](https://user-assets.sxlcdn.com/images/951476/Ftvkwv7lVYmuKomjRsV_irH0nOVs.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
 ## 美食   
 1.火锅  
 油碟+一锅红汤火锅料是标配，重庆没有难吃的火锅店，除非特别难吃  
@@ -57,7 +57,7 @@ comments: false  #评论，默认不开启
 每味每客就很不错，重庆连锁店，味道不错，价格便宜  
 5.**豆吉汤圆奶茶**  
 重庆最好的奶茶，没有之一！秒杀一切奶茶品牌  
-![img](https://cn.mcecy.com/image/20230321/e8e6e07f1c0bf78f28734c325b6530dc.jpeg){ loading=lazy }
+
 ## 建议  
 
 天气：重庆多雾，易雨多阴潮，带好胃药，带好钱一切OK。    

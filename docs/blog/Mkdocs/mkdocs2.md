@@ -250,18 +250,19 @@ site_author: 作者名字
 
 ## theme部分  
 
-### 颜色
-![img](https://cn.mcecy.com/image/20230324/0d60c4d1cc6399c654c78769a402ad56.png)
+### 顶部颜色
 ```yaml
 theme:
   palette:
     primary: yellow #顶部颜色
 ```
-primary后面是网站顶部栏目的颜色（也用于标题、边栏、文本链接和其他几个组件），目前支持下面几个颜色：
-![img](https://cn.mcecy.com/image/20230324/84d4a4194cc575c2a76e6e54b25fbf99.png)
+primary后面是网站顶部栏目的颜色（也用于标题、边栏、文本链接和其他几个组件）  
+目前支持下面几个颜色：
+![img](https://s1.imagehub.cc/images/2024/02/02/c7eb8b52d0b17c8e5321cbd21d9710a0.png)
 
 ### 明暗主题按钮
-![img](https://cn.mcecy.com/image/20230324/8654dc52f8c278bbf29eb94a8ffcb2da.png)
+![img](https://s1.imagehub.cc/images/2024/02/02/9efed1213b8512fad00679bcab80f3e2.png)
+
 ```yaml
 theme:
   palette: 
@@ -281,7 +282,7 @@ theme:
 此配置将在搜索栏旁边呈现调色板切换。请注意，您还可以为每个调色板的primary和accent定义单独的设置。
 
 按钮图标可以改变（修改icon后面的代码）：
-![img](https://cn.mcecy.com/image/20230324/9356854051a25e1801c2dcd58002e5fe.png)
+![img](https://s1.imagehub.cc/images/2024/02/02/3fbb40519a69d5c5600c49ee83987802.png)
 
 ***
 ### features
@@ -301,14 +302,14 @@ features:
     - search.share   #搜索分享按钮
 ```
 看我所做的注释就很好理解，feature部分让网站拥有了目录，增加了搜索项目的功能，返回顶部等功能，注释里很简明介绍了
-![img](https://cn.mcecy.com/image/20230324/a6912df2c1b809f4c636025bfb753244.png)
-![img](https://cn.mcecy.com/image/20230324/70275057aeaaa055581cdb760ab0932a.png)
-![img](https://cn.mcecy.com/image/20230324/718b3202db2a1259600a0b821e5ec58c.png)
-![img](https://cn.mcecy.com/image/20230324/10f79326e800d429a00fc544ef8f02d7.png)
-***
+![png](https://s1.imagehub.cc/images/2024/02/02/2f7149a07d26e17934e626b7915cc74a.png)
+![png](https://s1.imagehub.cc/images/2024/02/02/0e5f75464543f1c9785f54a1b7271e47.png)
+![img](https://s1.imagehub.cc/images/2024/02/02/95d1df12503d37cb74c967a6cb9a2f96.png)
+![img](https://s1.imagehub.cc/images/2024/02/02/0d19f89ece3fca54db038ff7d9644d61.png)
 ## nav部分 
 这一部分就是目录
-![img](https://cn.mcecy.com/image/20230324/00e36febde9aa1ffac1f5c49fbf2e76b.png)
+![img](https://s1.imagehub.cc/images/2024/02/02/02da4022bd8af67b670e4da0dffbe95f.png)
+
 ```yaml
 nav: 
   - 博客:
@@ -316,19 +317,28 @@ nav:
   - 开发: 
     - Markdown: develop/markdown.md
 ```
-依照上面的模版为例，你可以建立博客和开发两个大标签，里面的内容：
+依照上面的模版为例，你可以在顶部栏目建立博客和开发两个大标签
 ```
 - 内容标题: 文件路径
 ```
 内容标题效果：
-![img](https://cn.mcecy.com/image/20230324/f58c55d9b7c4a7eba69b55395f4476d3.png)
+![img](https://s1.imagehub.cc/images/2024/02/02/ab0212029567b7a6cd3fb4089de888cf.png)
 
 .md文件路径(相对路径)：
-![img](https://cn.mcecy.com/image/20230324/2bcb22df954bda4dbe773ad096a039c6.png)
-***
-这里也注意：**所有文件都在docs文件下，文件类型除CSS，Javascript等都是.md结尾的文件**
+![img](https://s1.imagehub.cc/images/2024/02/02/0361e9d863ccb15e83006feac1b12c0a.png)  
 
-所以强烈推荐去学习Markdown、Html5、CSS3、Javascript等知识，这样你就可以自定义你的网站了。
+可能看起比较复杂，总结一下就是：我想写一篇文章在docs/blog下写一篇名为`Wcowin最帅`的文章，首先在docs/blog下新建一个`xxx.md`文件，里面写写东西，再去mkdocs.yml里找到nav，这样写：
+```yaml
+nav: 
+  - 博客:
+    - Wcowin最帅: blog/xxx.md  #.md文件的相对路径
+```  
+nav才是最终决定这篇文章位置的配置，docs下的md文件只是存放功能  
+
+***
+这里也注意：**所有文件都在docs文件下，文件类型除CSS，Javascript,yml等都是.md结尾的文件**
+
+所以强烈推荐您去学习Markdown、Html5、CSS3、Javascript等知识，这样您就可以自定义您的网站了。
 
 到这里先检查一下文件树状图(xx.md代表你的md文件)：
 
@@ -341,14 +351,26 @@ $ tree -a
 │       └── PublishMySite.yml
 ├── docs
 │   └── index.md
-|   |___ xx.md
-|
+│   └──blog
+│       └──xxx.md
+│
 └── mkdocs.yml
 ```
 ***
 ## extra部分
 ```yaml
 extra:
+  # tags:
+  #   HTML5: html
+  #   JavaScript: js
+  #   CSS: css
+  alternate:
+    - name: English
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
+      lang: en
+    - name: 中国(台湾)
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+      lang: zh-TW
   generator: false  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/twitter 
@@ -360,10 +382,25 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:<1135801806@qq.com> #联系方式
 ```
-social部分可设置网站右下角的社交链接（icon是小图标，link后填自己链接即可）：
-![img](https://cn.mcecy.com/image/20230324/551cc1e17058617a8b5787bf6b1ba19a.png)
+### alternate
+可以设置网页翻译 
+```yaml
+  alternate:
+    - name: English
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
+      lang: en
+    - name: 中国(台湾)
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+      lang: zh-TW
+```
+### generator 
+设置为`generator: false`可以删除页脚显示“使用 MkDocs 材料制造”     
+### social  
+可设置网站右下角的社交链接（icon是小图标，link后填自己链接即可）： 
+![img](https://s1.imagehub.cc/images/2024/02/02/73179baf6402e27c92afc51eb59645a6.png)
 
-cookie
+
+### cookie consent
 ```yaml
 analytics: 
     provider: google
@@ -390,20 +427,60 @@ analytics:
       如果你同意,你可以帮助我们让我们的网站更好
 
 ```
-![img](https://cn.mcecy.com/image/20230324/06ffc854ffcae2a4c760a4e32d59d8b9.png)  
-![img](https://cn.mcecy.com/image/20230324/0148782cbe4fe9421afceff0cb57d62e.png)
-![img](https://cn.mcecy.com/image/20230324/7c5415720953dbd9018e5d1f011c7678.png)
+![img](https://s1.imagehub.cc/images/2024/02/02/a303166e7a67a2bc7bddde77c3d1277a.png)  
+
+![img](https://s1.imagehub.cc/images/2024/02/02/79d1f726b8105e0657cea3e2cef628ce.png)
 注意property: G-XXXXXXXXXX  #你的Google Analytics ID，这里的G-XXXXXXXXXX是你的Google Analytics ID，你可以在Google Analytics中找到，如果你不想使用Google Analytics，可以删除这一部分。
 
 ## Plugins部分
 ```yaml
 plugins:
+  # - glightbox
   - search
-  - tags  #标签
+  - offline
+  - git-revision-date-localized:
+      type: iso_date
+      enable_creation_date: false
+      exclude:
+        - index.md 
+        - tag.md
+        - waline.md
+        - blog/posts/update.md
+        - blog/posts/wkw.md
+        - about/link.md
+  # - git-authors:
+  #     exclude:
+  #       - index.md
+  - blog:
+      post_date_format: full #时间
+      draft: true
+      draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
+      post_readtime: true
+      post_readtime_words_per_minute: 265  #计算帖子的阅读时间时读者每分钟预计阅读的字数
+      post_url_format: "{date}/{slug}"
+      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
+      # categories_toc: true
+      # pagination_per_page: 5
+      pagination_url_format: "page/{page}"
+      authors_file: "{blog}/.authors.yml"  #作者信息
+  - tags:
+      tags_file: tag.md  #分类标签
 ```
 
 `- search`开启搜索功能
-![img](https://cn.mcecy.com/image/20230324/a6912df2c1b809f4c636025bfb753244.png)
+![img](https://s1.imagehub.cc/images/2024/02/02/0e5f75464543f1c9785f54a1b7271e47.png)  
+
+`-blog` 即博客，可以在docs/blog/posts里直接写md文件（不需要在nav里写路径）,然后在上述nav里写
+```
+nav:
+  - Blog:
+    - blog/index.md
+```   
+博客效果：   
+![](https://s1.imagehub.cc/images/2024/02/02/cee8d935a920668b738593850c7eb7f8.png)  
+详细配置可以去看[添加Mkdocs博客](mkdocsblog.md)
 
 `- tags`就是标签
 ```yaml
@@ -411,20 +488,25 @@ plugins:
   - tags:
       tags_file: tag.md  #分类标签
 ```
-![img](https://cn.mcecy.com/image/20230324/92fd3f17055fca8fc76f21b5fab5f76a.png)
-docs文件夹下新建tags.md文件，会自动在tags.md文件中生成标签列表
-但是每个.md文件最开始的地方都需要添加标签，否则不会显示在tags.md文件中
-![img](https://cn.mcecy.com/image/20230324/7f0a3213cad72aa11f2185c7cae9a032.png)
-格式：
+![img](https://s1.imagehub.cc/images/2024/02/02/d20f0562838a8396724f18bfd09e19e8.png)
 
-```
+docs文件夹下新建tags.md文件，会自动在tags.md文件中生成标签列表  
+![](https://s1.imagehub.cc/images/2024/02/02/d9fa43225a6dd3932c36038c605954a4.png)
+
+但是每个.md文件(你写的markdown文件)最开始的地方(称为meta)都需要添加标签，否则不会显示在tags.md文件中
+![img](https://s1.imagehub.cc/images/2024/02/02/2732b6ccefefb44d93b34f5108b3d050.png)
+
+meta格式：
+
+```yaml
 ---
-title: 
+title: #文章标题
 tags:
   - 你的标签名字
 hide:
   #- navigation # 显示右侧导航
   #- toc #显示左侧导航
+comments: false  #评论，默认不开启
 ---
 
 ```
