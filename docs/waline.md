@@ -59,7 +59,6 @@ twikoo.init({
   <div id="waline"></div>
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-    
     init({
       el: '#waline',
       serverURL: 'https://mk-docs-comments.vercel.app/',
@@ -68,7 +67,6 @@ twikoo.init({
       'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
       '//unpkg.com/@waline/emojis@1.1.0/bilibili',
       '//unpkg.com/@waline/emojis@1.1.0/weibo',
-      
     ],
       comment: true,
       pageview: true, 
