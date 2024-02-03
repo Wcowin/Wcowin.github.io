@@ -404,7 +404,7 @@ extra_javascript:
   # - javascripts/backbound1.js
   # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
-  - https://res.zvo.cn/translate/translate.js  # Translate
+  # - https://res.zvo.cn/translate/translate.js  # Translate
 
 extra_css:
   - stylesheets/extra.css

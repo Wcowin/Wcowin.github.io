@@ -13,7 +13,8 @@ comments: true
   <div class="poem-border poem-right"></div>
     <h1>留言板</h1>
     <p id="poem">月落乌啼霜满天 江枫渔火对愁眠</p>
-    <p id="info">【唐代】张继 《枫桥夜泊》</p></div>
+    <p id="info"> 《枫桥夜泊》【唐代】张继</p>
+  </div>
 
 <!-- tw开始 -->
  <head> 
