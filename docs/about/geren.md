@@ -25,11 +25,12 @@ icon:
 
 <img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg">
 
+## 关于我
 <div id="rcorners3" >
   <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
     <!-- <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="170" alt="个人头像" align="right"/> -->
   <div>
-    <p style="font-size: 40px">Wcowin</p>
+    <p style="font-size: 40px">Wcowin(王科文)</p>
     <!-- <p style="font-size: 18px">Free and diffuse</p> -->
     <p style="font-size: 18px">A college student in CQ</p>
   </div>
@@ -55,11 +56,14 @@ icon:
   </center>  
 </a>
 
+## 个人荣誉
+![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){ loading=lazy }
+
 ## Touch me
 <p align="center">
-&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  
-&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
-&nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
+&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="70" /></a>  
+&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="70" /></a>  
+&nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="70" /></a>
 </p>
 
 <figure markdown >

@@ -51,23 +51,32 @@ Gitee地址:<https://gitee.com/cunkai/HomebrewCN>
 ***
 附常用brew指令
 ```
-# 要获取最新的包的列表，首先得更新 Homebrew 自己
-brew update
-# 查找需要的包
-brew search xxx
-# 安装包
-brew install xxx
-# 卸载包
-brew uninstall xxx
-# 查看哪些软件需要更新
-brew outdated
-# 更新所有的包
-brew upgrade
-# 更新指定的包
-brew upgrade xxx
-# 清理所有包的旧版本
-brew cleanup
-# 显示某个包的信息
-brew info xxx
+brew help  # 简洁命令帮助
+man brew  # 完整命令帮助
 
+brew -v  # 查看brew安装版本
+brew update  # 更新brew版本
+
+brew outdated  # 查看已安装的哪些软件包需要更新以及更新情况
+brew upgrade git  # 更新单个软件包
+
+brew list  # 显示已安装的所有软件包
+brew list git  # 查看软件包的安装位置
+
+brew install git  # 安装软件包
+brew uninstall git  # 卸载软件包
+
+brew cleanup -n  # 查看可清理的旧版本包，不执行实际操作
+brew cleanup  # 清理所有已安装软件包的历史版本
+brew cleanup git  # 清理单个已安装软件包的历史版本
+
+brew search git  # 搜索软件包, 查看可安装的版本
+brew install maven@3.5
+brew install python@3.6  # 安装指定版本的软件包
+
+brew info git  # 查看软件包信息
+brew home git  # 访问软件包的官方网站
+
+open ~/.zshrc -e  # 整理重复语句
+open ~/.bash_profile -e  # 整理重复语句
 ```

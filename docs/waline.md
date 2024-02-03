@@ -46,7 +46,7 @@ twikoo.init({
 
 ***
 
-<head>
+<!-- <head>
   <link
     rel="stylesheet"
     href="https://unpkg.com/@waline/client@v2/dist/waline.css"
@@ -73,7 +73,7 @@ twikoo.init({
       lang: 'zh',
       pageview: true,
     });
-  </script>
+  </script> -->
 
 
 

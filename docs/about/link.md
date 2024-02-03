@@ -192,7 +192,17 @@ hide:
       </div> 
      </div> 
     </div> 
-
+   <div class="card"> 
+     <img class="ava" src="https://pic.vimin.cc/logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://vimin.cc/" target="_blank">XIAOMING'S BLOG</a> 
+      </div> 
+      <div class="info">
+       记录生活点滴，谱写精彩生活！
+      </div> 
+     </div> 
+    </div> 
 
    </div> 
   </div>
