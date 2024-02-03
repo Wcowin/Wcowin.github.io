@@ -203,6 +203,18 @@ hide:
       </div> 
      </div> 
     </div> 
+   <div class="card"> 
+     <img class="ava" src="https://cravatar.cn/avatar/d5e35cb2925566162f721bb5b38c8b77" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://xiaofeishu-boke.netlify.app/" target="_blank">没用的小废鼠的Blog</a> 
+      </div> 
+      <div class="info">
+       做学问可不是赶潮流、没有冷门热门之说。
+      </div> 
+     </div> 
+    </div>
+
 
    </div> 
   </div>

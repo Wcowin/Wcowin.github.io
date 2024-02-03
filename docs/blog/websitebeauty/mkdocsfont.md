@@ -7,7 +7,8 @@ tags:
 我目前在用的字体：[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank}  
 想必你可以直观从我的网站感受到，[这款字体](https://chawyehsu.github.io/lxgw-wenkai-webfont/)的美观程度。  
 
-[快速教程](#基于mkdocs的网站字体美化用法)
+[快速教程]
+[快速教程]: #mkdocs
 ***  
 
 **以下是摘录的部分字体官方介绍文档**
