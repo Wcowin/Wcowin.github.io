@@ -1,6 +1,7 @@
 /* 用于大屏幕和小屏幕的通用样式 */
 .card {
-   width: 45%;
+   width: 50%;
+   height: auto;
    font-size: 1rem;
    padding: 10px 20px;
    border-radius: 4px;
@@ -59,8 +60,8 @@
    color: #a3a3a3;
    font-size: 14px;
    min-width: 0;
-   overflow: hidden;
-   white-space: nowrap;
+   overflow: visible;
+   white-space: normal;
 }
 
 /* 媒体查询：小屏幕 */
