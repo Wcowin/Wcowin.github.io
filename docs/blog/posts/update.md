@@ -94,7 +94,7 @@ readtime: 2
 
 ## </p><h1 id="01" name="01"><strong>2023-10-14</strong></h1><p>
 
-* 正式建立[Mkdocs-Wcowin主题](https://github.com/Wcowin/Mkdocs-Wcowin)
+* 正式建立[Mkdocs-Wcowin主题](https://github.com/Wcowin/Mkdocs-Wcowin){target="_blank"}
 * 优化网页渲染速度
 ## </p><h1 id="01" name="01"><strong>2023-10-12</strong></h1><p>
 
@@ -126,11 +126,15 @@ readtime: 2
 * 引入个性化标签，[Markdown扩展](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#inlinehilite)
 * 新增网站搜索功能
 
+## </p><h1 id="01" name="01"><strong>2022-10-20</strong></h1><p>
+* 建立Github仓库，正式建站
+* 取消cookie确认,简化网站打开流程
+* 新增首页反馈收集 
+
 ## </p><h1 id="01" name="01"><strong>2022-10-06</strong></h1><p>
 
 * 不靠父母，全款拿下 [wcowin.work](https://wcowin.work/){target="_blank"}域名
-* 取消了cookie确认,简化入站流程
-* 新增首页反馈收集
+* 取消cookie确认，保障隐私
 
 ## <h1 id="01" name="01"><strong>2022-06-06</strong></h1>
 

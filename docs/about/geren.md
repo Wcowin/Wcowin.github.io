@@ -57,7 +57,8 @@ icon:
 </a>
 
 ## 个人荣誉
-![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){ loading=lazy }
+![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){ loading=lazy }  
+
 
 ## Touch me
 <p align="center">

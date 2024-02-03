@@ -273,15 +273,19 @@ extra:
       lang: zh-TW
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
+    - icon: fontawesome/brands/weixin
+      link: https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg
+      name: weixin
     - icon: fontawesome/brands/x-twitter 
       link: https://twitter.com/wcowin_
+      name: Twitter
     - icon: fontawesome/brands/github
       link: https://github.com/Wcowin
-    
+      name: Github
     - icon: fontawesome/regular/envelope
       link: mailto:<wangkewen821@gmail.com> #联系方式
-    - icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+      name: Email
+
   analytics: 
     provider: google
     property: G-29HZMNR0KG

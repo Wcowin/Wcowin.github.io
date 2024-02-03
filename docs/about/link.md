@@ -159,6 +159,17 @@ hide:
      </div> 
     </div>
    <div class="card"> 
+     <img class="ava" src="https://www.styg.org.cn/zb_users/upload/2024/01/202401261706277157705448.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
+      </div> 
+      <div class="info">
+       慈善义工在行动
+      </div> 
+     </div> 
+    </div> 
+   <div class="card"> 
      <img class="ava" src="https://www.luckyzh.cn/avatar.jpg" /> 
      <div class="card-header"> 
       <div> 
@@ -182,29 +193,18 @@ hide:
      </div> 
     </div>    
    <div class="card"> 
-     <img class="ava" src="https://www.styg.org.cn/zb_users/upload/2024/01/202401261706277157705448.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
-      </div> 
-      <div class="info">
-       慈善义工在行动
-      </div> 
-     </div> 
-    </div> 
-   <div class="card"> 
      <img class="ava" src="https://pic.vimin.cc/logo.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://vimin.cc/" target="_blank">XIAOMING'S BLOG</a> 
       </div> 
       <div class="info">
-       记录生活点滴，谱写精彩生活！
+  记录生活点滴，谱写精彩生活！
       </div> 
      </div> 
     </div> 
    <div class="card"> 
-     <img class="ava" src="https://cravatar.cn/avatar/d5e35cb2925566162f721bb5b38c8b77" /> 
+     <img class="ava" src="https://ymh0000123.github.io/picture/picture/6.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://xiaofeishu-boke.netlify.app/" target="_blank">没用的小废鼠的Blog</a> 
@@ -214,7 +214,7 @@ hide:
       </div> 
      </div> 
     </div>
-
+    
 
    </div> 
   </div>
