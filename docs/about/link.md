@@ -225,9 +225,22 @@ hide:
       </div> 
      </div> 
     </div>    
+   <div class="card"> 
+     <img class="ava" src="https://ejsoon.win/wp-content/uploads/2022/08/alogobg.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://ejsoon.win" target="_blank">天蒼人頡</a> 
+      </div> 
+      <div class="info">
+       發掘好玩事物
+      </div> 
+     </div> 
+    </div>    
+
 
    </div> 
   </div>
+
 
 
 <!-- <div class="card">
@@ -259,3 +272,4 @@ hide:
 >链接: https://wcowin.work/  
 >头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
 >简介: 循此苦旅，以达星辰
+
