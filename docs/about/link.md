@@ -236,7 +236,17 @@ hide:
       </div> 
      </div> 
     </div>    
-
+   <div class="card"> 
+     <img class="ava" src="https://npm.onmicrosoft.cn/hrn-img@1.0.0/img/avatar.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.lvhrn.cn" target="_blank">JayHrn</a> 
+      </div> 
+      <div class="info">
+       發掘好玩事物
+      </div> 
+     </div> 
+    </div> 
 
    </div> 
   </div>

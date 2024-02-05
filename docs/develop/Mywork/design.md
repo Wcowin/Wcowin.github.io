@@ -3,45 +3,39 @@ title: 玩的设计
 tags:
   - 我的作品
 ---
-![img](https://cn.mcecy.com/image/20230401/bd42de2726075c84f5c44297f93cf221.png)  
+![F4D1D647-2CCE-487A-98AC-30B84CC85695.png](https://s2.loli.net/2024/02/04/5vpWyP6ZVjr3whT.png) 
 
 ## 测试工作
-![img](https://cn.mcecy.com/image/20231227/1a1e4fc07ae93fa40c2a25ce3fb5288c.png)
+![未命名.png](https://s2.loli.net/2024/02/04/M23zoSZ4wDc8Kbj.png)
 
 以下是我捣鼓设计着玩的作品，不是很专业  
 ***
 [MacApp](https://macapp.org.cn/){target="_blank" rel="noopener noreferrer"} logo设计
-![img](https://cn.mcecy.com/image/20230401/219682aee80dbf42ac2fd6931a719d7b.jpeg)
-![img](https://cn.mcecy.com/image/20230401/06fcb3be6f1688dab454cb92e39613cc.png)
+
+![4F53513D_1_105_c.jpeg](https://s2.loli.net/2024/02/04/ngIbOxYXRtN6lWK.jpg)
 ***
 ## 简约风格简介
-![img](https://cn.mcecy.com/image/20230715/8ab6c5061737e364fe9ad6502552c5e4.png)
+![image.png](https://s2.loli.net/2024/02/04/CLDX2Hg1I54Uxei.png)
 ***
 
 ## 公众号 logo
-![img](https://cn.mcecy.com/image/20230716/fbb63ff1b98f57f4f2cf92b75cfffb4d.jpeg)
-<img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg">
+![7EF61156D14_1_105_c.jpeg](https://s2.loli.net/2024/02/04/C9XfgY4zWPpvEVh.jpg)
+
 ***
 ## 早期购物网站制作  
-![img](https://cn.mcecy.com/image/20230402/574c2334f9dfc5f88395acebfc630c23.png)
-![img](https://cn.mcecy.com/image/20230402/8319a9373ecb7a0319f3d8b036bb412b.png)
+![image.png](https://s2.loli.net/2024/02/04/Itp2g9VeUObaJ14.png)
 
 ***
 ## 果味Apple网站
-学习模仿[Austin Li](https://github.com/austin2035/astro-air-blog)大佬的[果味Apple网站](https://wcowinastro.netlify.app/)
-![img](https://cn.mcecy.com/image/20230505/61097d7951b8f10212a5ef7251615771.png)
-![img](https://cn.mcecy.com/image/20230505/7d43a3f6641b35f70c7c1c2e1ac33520.png)
+学习模仿[Austin Li](https://github.com/austin2035/astro-air-blog)大佬的[果味Apple网站](https://wcowinastro.netlify.app/)  
+![image.png](https://s2.loli.net/2024/02/04/w9mTaFPNUq7uihI.png)
 ***
 
 ## Hexo的butterfly主题制作的网站  
 
 [Wcowin的个人网站](https://wcowin.gitee.io/myhexo/)  
-
-![](https://cn.mcecy.com/image/20231005/a4b066d144a006ea278c47661f78f95f.png)
+![image.png](https://s2.loli.net/2024/02/04/zKJon7wlPGNmAtZ.png)
 ***
-## 三人行设计
-![img](https://cn.mcecy.com/image/20230503/fe666fc82cfee7250bb2afc3b108b2f0.png)
-![img](https://cn.mcecy.com/image/20230528/66700ff7433b1618d6b995e13e1c2644.png)
 
 # 工具Figma使用
 <svg width="390" height="175" viewBox="0 0 390 175" fill="none" xmlns="http://www.w3.org/2000/svg">

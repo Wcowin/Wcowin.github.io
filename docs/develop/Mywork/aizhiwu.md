@@ -6,10 +6,9 @@ tags:
 [植物识别_拍照识别植物-百度Al开放平台](https://ai.baidu.com/tech/imagerecognition/plant)
 
 ## 一、首先点上方链接去申请应用
-![img](https://cn.mcecy.com/image/20230528/25c477dd9433a2b6feb54c98fffc3534.png)
 
 有免费试用，随后得到ID和key
-![img](https://cn.mcecy.com/image/20230528/ab1443a5a21595a7f3000082be0c7819.png)
+![image.png](https://s2.loli.net/2024/02/04/CglJrkUIEKztnHw.png)
 
 ## 二、打开Vscode输入代码
 ```python
@@ -86,7 +85,7 @@ if __name__ == '__main__':
 
  在这使用了base64.b64encode()方法将图像数据转换为Base64编码。在classify_image()函数中，创建一个payload字典，将Base64编码的图像数据和其他参数一起发送到API。注意这里将baike_num参数设置为1，以获取植物的百科信息。（可从本地选择图片）
 
-![img](https://cn.mcecy.com/image/20230528/33dcd99acb0796053ef98a0bb89df0d3.png)
+![image.png](https://s2.loli.net/2024/02/04/uBSc3lF67pnGsCZ.png)
 
 ## 三、得到结果
- ![img](https://cn.mcecy.com/image/20230528/13c4f2dabb39aff8cc1358e114a04c9c.png)
+![image.png](https://s2.loli.net/2024/02/04/G1v4VYEijofqKly.png)

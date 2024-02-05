@@ -25,8 +25,10 @@ https://bento.me/wcowin
 
 # Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Wcowin.github.io&type=Date)](https://star-history.com/#Wcowin/Wcowin.github.io&Date)
+<!-- [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Wcowin.github.io&type=Date)](https://star-history.com/#Wcowin/Wcowin.github.io&Date) -->
 
+
+[![Stargazers over time](https://starchart.cc/Wcowin/Wcowin.github.io.svg?variant=adaptive)](https://starchart.cc/Wcowin/Wcowin.github.io)
 
 
 
