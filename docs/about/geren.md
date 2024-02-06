@@ -56,6 +56,10 @@ icon:
   </center>  
 </a>
 
+## 个人技能
+本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载。  
+精通 CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript、Pascal 等单词的拼写。  
+熟悉 Windows、Linux、OS X、Android、iOS、WP8 、harmony、hyper等系统的开关机。
 
 ## 个人荣誉
 ![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy }  
