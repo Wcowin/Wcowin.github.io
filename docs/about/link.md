@@ -8,7 +8,7 @@ hide:
   - feedback
 ---
 <div class="markdown-content">
-    <h2>欢迎加入友链</h2>
+    <h2>欢迎加入友链(不分先后)</h2>
 </div>
 
 
@@ -193,16 +193,16 @@ hide:
      </div> 
     </div>    
    <div class="card"> 
-     <img class="ava" src="https://pic.vimin.cc/logo.png" /> 
+     <img class="ava" src="https://www.zair.top/img/logo.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://vimin.cc/" target="_blank">XIAOMING'S BLOG</a> 
+       <a href="https://www.zair.top/" target="_blank">以太工坊</a> 
       </div> 
       <div class="info">
-  记录生活点滴，谱写精彩生活！
+       分享我的学习笔记、经验与有趣的小玩意.
       </div> 
      </div> 
-    </div> 
+    </div>      
    <div class="card"> 
      <img class="ava" src="https://ymh0000123.github.io/picture/picture/6.png" /> 
      <div class="card-header"> 
@@ -258,13 +258,32 @@ hide:
       </div> 
      </div> 
     </div> 
+   <div class="card"> 
+     <img class="ava" src="https://blog.moraxyc.com/avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://moraxyc.com" target="_blank">Moraxyc’s Rhapsody</a> 
+      </div> 
+      <div class="info">
+       永远热爱！
+      </div> 
+     </div> 
+    </div> 
+   <div class="card"> 
+     <img class="ava" src="https://pic.vimin.cc/logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://vimin.cc/" target="_blank">XIAOMING'S BLOG</a> 
+      </div> 
+      <div class="info">
+  记录生活点滴，谱写精彩生活！
+      </div> 
+     </div> 
+    </div>
+
 
    </div> 
   </div>
-
-
-
-
 
 
 
@@ -286,10 +305,13 @@ hide:
 
 
 * 独立博客(不要求独立域名)，https，访问流畅
-* 原创内容为主，原创内容10篇以上
+* 原创内容为主，原创内容3篇以上
 * 处于活跃状态，有一定的更新频率
 * 建站一个月以上
 * 未添加友链或申请未通过，评论留言会被隐藏。
+
+本站已经加入[十年之约](https://www.foreverblog.cn/)：
+<a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>请放心添加本站友链
 
 友链格式示例:
 
