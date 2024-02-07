@@ -247,9 +247,24 @@ hide:
       </div> 
      </div> 
     </div> 
+   <div class="card"> 
+     <img class="ava" src="https://www.langhai.net/assets/images/langhai-logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.langhai.net/" target="_blank">浪海导航</a> 
+      </div> 
+      <div class="info">
+       浪海导航 ~ 收录各种类型的博客
+      </div> 
+     </div> 
+    </div> 
 
    </div> 
   </div>
+
+
+
+
 
 
 
