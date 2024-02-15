@@ -364,7 +364,6 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.smartsymbols
   - pymdownx.tilde
-  
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
