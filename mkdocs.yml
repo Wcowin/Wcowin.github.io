@@ -20,7 +20,6 @@ theme:
   # img/11.ico
   palette:
     #primary: blue grey
-    
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
       primary: blue grey # 上方的
@@ -59,10 +58,9 @@ theme:
     - content.action.view
     - content.code.annotate 
   language: zh # 一些提示性的文字会变成中文
-  
-
   icon:
     repo: fontawesome/brands/github #右上角图标
+    
 edit_uri: edit/main/docs # 编辑按钮跳转的链接 
 repo_url: https://github.com/Wcowin/Wcowin.github.io # 右上角点击跳转的链接
 repo_name: Wcowin.github.io # 右上角的名字
@@ -179,7 +177,8 @@ nav:
       - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
     - 日记:
       - 2024: 
-          - 20240131: relax/diary/2024/20240131.md      
+          - 20240131: relax/diary/2024/20240131.md
+          - 20240218: relax/diary/2024/20240218.md      
     - 数至十: 
       - 1: relax/wkwMath/1.md
       - 2: relax/wkwMath/2.md 
@@ -364,6 +363,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.smartsymbols
   - pymdownx.tilde
+  
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

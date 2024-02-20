@@ -27,7 +27,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://s2.loli.net/2024/02/01/o9YHsqfG7NjwMiT.jpg" /> 
+     <img class="ava" src="https://s2.loli.net/2024/02/07/S8GYheTZmCU96HK.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://wcowin.work/WH-WKW/" target="_blank">小王和王老师的小站</a> 
