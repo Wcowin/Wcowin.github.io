@@ -280,11 +280,20 @@ hide:
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://blog.wkk-dev.top/img/favicon.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.wkk-dev.top" target="_blank">WKK & Blog</a> 
+      </div> 
+      <div class="info">
+      天生我材必有用，千金散尽还复来。
+      </div> 
+     </div> 
+    </div>
 
    </div> 
   </div>
-
 
 
 <!-- <div class="card">
