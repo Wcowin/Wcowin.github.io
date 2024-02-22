@@ -291,9 +291,22 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://blog.whispery.cn/img/tou.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.whispery.cn/" target="_blank">Whisper</a> 
+      </div> 
+      <div class="info">
+      我们的忧愁将会崩解，灵魂将会穿梭如风
+      </div> 
+     </div> 
+    </div>
+
 
    </div> 
   </div>
+
 
 
 <!-- <div class="card">
