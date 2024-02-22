@@ -292,6 +292,18 @@ hide:
      </div> 
     </div>
    <div class="card"> 
+     <img class="ava" src="https://bu.dusays.com/2022/12/28/63ac2812183aa.png
+     " /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.zhheo.com/" target="_blank">张洪Heo</a> 
+      </div> 
+      <div class="info">
+      分享设计与科技生活
+      </div> 
+     </div> 
+    </div>    
+   <div class="card"> 
      <img class="ava" src="https://blog.whispery.cn/img/tou.png" /> 
      <div class="card-header"> 
       <div> 
@@ -304,9 +316,9 @@ hide:
     </div>
 
 
+
    </div> 
   </div>
-
 
 
 <!-- <div class="card">
