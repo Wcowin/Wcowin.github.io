@@ -1,41 +1,24 @@
 !!!info
     测试中的小组件，可看源代码自行取用
 
-![LY1r2.png](https://i.imgs.ovh/2023/10/09/LY1r2.png)
-## Search
+<center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-<div class="mdx-iconsearch" data-mdx-component="iconsearch">
-  <input
-    class="md-input md-input--stretch mdx-iconsearch__input"
-    placeholder="Search the icon and emoji database"
-    data-mdx-component="iconsearch-query"
-  />
-  <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result">
-    <div class="mdx-iconsearch-result__meta"></div>
-    <ol class="mdx-iconsearch-result__list"></ol>
-  </div>
-</div>
-<small>
-  :octicons-light-bulb-16:
-  **Tip:** Enter some keywords to find icons and emojis and click on the
-  shortcode to copy it to your clipboard.
-</small>
+![LY1r2.png](https://i.imgs.ovh/2023/10/09/LY1r2.png)
 
 ![截屏2022-06-24 21.22.34](https://i2.100024.xyz/2023/10/09/ncsp35.webp)
 
+<!-- <font  color= #518FC1 size=6 class="fontalicious">“循此苦旅，以达星辰”</font> -->
 
-
-<font  color= #518FC1 size=6 class="fontalicious">“循此苦旅，以达星辰”</font>
-
-<div class="spinner">
+<!-- <div class="spinner">
   <div class="rect1"></div>
   <div class="rect2"></div>
   <div class="rect3"></div>
   <div class="rect4"></div>
   <div class="rect5"></div>
-</div>
+</div> -->
 
-![Image title](https://dummyimage.com/600x400/){ loading=lazy }
+<!-- ![Image title](https://dummyimage.com/600x400/){ loading=lazy } -->
 <figure markdown>
   ![Image title](https://dummyimage.com/600x400/){ width="300" }
   <figcaption>Image caption</figcaption>
@@ -144,44 +127,6 @@ $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
 <div id="ww_a25897805c222" v='1.3' loc='auto' a='{"t":"responsive","lang":"zh","sl_lpl":1,"ids":[],"font":"Times","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"5"}'><a href="https://weatherwidget.org/zh/" id="ww_a25897805c222_u" target="_blank">天气插件</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_a25897805c222"></script>
 
 ***
-<div class="grid cards" markdown>
-
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
-
-    ---
-
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
-
-    [:octicons-arrow-right-24: Getting started](#)
-
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
-
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
-
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
-
-</div>
-
-***
 
 === "C"
 
@@ -271,20 +216,20 @@ $$
 <!-- ![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" } -->
 
 左对齐，右对齐  
-![img](https://cn.mcecy.com/image/20231214/1983c439e3dfeadedac1904c2202ee11.jpg){ align=left }
-<!-- ![Image title](media/binggo.jpg){ align=right } -->
+![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ align=left }
+
 
 
 <figure markdown>
-  ![img](https://cn.mcecy.com/image/20231214/1983c439e3dfeadedac1904c2202ee11.jpg){ width="300" }
+  ![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ width="300" }
   <figcaption>图片说明</figcaption>
 </figure>
 
 **明暗**
 
-![](https://user-assets.sxlcdn.com/images/951476/Ftmzj__CFg8LDIkzyQsF3OLKWeRX.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png#only-light)
+![](https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg#only-light)
 
-![](https://user-assets.sxlcdn.com/images/951476/FsX9lVAmvPiFVnoBgz7l6AQq5i10.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png#only-dark)
+![](https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg#only-dark)
 
 ``` mermaid
 graph LR
@@ -316,12 +261,6 @@ sequenceDiagram
 
 ++ctrl+alt+del++  
 
-
-<div class="progress progress-60plus">
-    <div class="progress-bar" style="width:50.00%">
-        <p class="progress-label">50%</p>
-    </div>
-</div>
 
 :octicons-arrow-right-24: [点我回到顶部](#) 
 
@@ -383,7 +322,7 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
 
 
 
-<link type="text/css" rel="stylesheet" href="/ckplayer/css/ckplayer.css" />
+<!-- <link type="text/css" rel="stylesheet" href="/ckplayer/css/ckplayer.css" />
 <script type="text/javascript" src="/ckplayer/js/ckplayer.js" charset="UTF-8"></script>
 <div class="video" style="width: 640px;height: 500px;">播放器容器</div>
 <script type="text/javascript">
@@ -396,7 +335,7 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
         video: 'https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4'//视频地址
     };
     var player = new ckplayer(videoObject);//初始化播放器
-</script>  
+</script>   -->
 
 ***  
 
@@ -441,11 +380,6 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
   <td>600</td>
 </tr>
 </table>
-  
-<ol>
-<li>Coffee</li>
-<li>Milk</li>
-</ol>
 
 <table border="1" width="100%">
     <tbody><tr>

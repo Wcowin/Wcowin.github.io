@@ -12,13 +12,14 @@ title: Github主页介绍
   </h1>
   </div>
 
-
+<img align='right' src='https://camo.githubusercontent.com/721d7c9349f174953eec9227b6e10303d0eebad1a2737667fe44a9489c8cb141/68747470733a2f2f73322e6c6f6c692e6e65742f323032332f30382f31342f5a394c6a58704b464f51694a6d76412e706e67' width="270" height="auto" >
 
 ## About me
   * A student :student:
-  * Love to toss technology :computer: 
-  * Like Haruki Murakami:book:
-  * Good at badminton  :badminton: 
+  * Heavy coffee drinker ☕
+  * Love tossing technology/Math 💻
+  * Read books;lover of poetry,;like Haruki Murakami 📖
+  * good at badminton :badminton:
   
  <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats)  
 [![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)  -->
@@ -27,6 +28,13 @@ title: Github主页介绍
 
 
 ## Connect with me
+ <!--
+<p align="left">
+&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  
+&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
+&nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
+</p>
+-->
 
 <p align="left">
 &nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  
@@ -34,9 +42,9 @@ title: Github主页介绍
 &nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
 </p>
 
-
 ## Support me
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U5HAO6B)
+ [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U5HAO6B)
+
 
 <div align=center> 
          <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" /> 
