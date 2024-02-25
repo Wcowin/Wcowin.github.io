@@ -6,8 +6,8 @@ tags:
 :simple-github:Github地址：<https://github.com/Wcowin/License-plate-recognition/releases/tag/exe>{target=“_blank”}  
 :simple-bilibili:Bilibili[视频教程](https://www.bilibili.com/video/BV1zM411W7xU/?share_source=copy_web&vd_source=4dbf1142085feeb1d5010d6a9e4199be){target=“_blank”}
 
-[![2c99ad9187609f236ae8080995a6e370.png](https://s1.imagehub.cc/images/2024/02/01/2c99ad9187609f236ae8080995a6e370.png)](https://www.imagehub.cc/image/1TnRhb)
-[![1e8b8db5847e7bf66453869632d497af.png](https://s1.imagehub.cc/images/2024/02/01/1e8b8db5847e7bf66453869632d497af.png)](https://www.imagehub.cc/image/1TnPcR)
+![](https://s1.imagehub.cc/images/2024/02/01/2c99ad9187609f236ae8080995a6e370.png)
+![](https://s1.imagehub.cc/images/2024/02/01/1e8b8db5847e7bf66453869632d497af.png)
 ***
 ## 特点：
 - 可实现车牌号和车牌颜色识别
