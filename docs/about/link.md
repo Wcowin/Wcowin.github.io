@@ -326,6 +326,17 @@ hide:
      </div> 
     </div>
    <div class="card"> 
+     <img class="ava" src="https://blog.linsnow.cn/img/avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.linsnow.cn" target="_blank">L1nSn0w's Blog</a> 
+      </div> 
+      <div class="info">
+      无限进步.🎈
+      </div> 
+     </div> 
+    </div>    
+   <div class="card"> 
      <img class="ava" src="https://blog.whispery.cn/img/tou.png" /> 
      <div class="card-header"> 
       <div> 
@@ -336,6 +347,7 @@ hide:
       </div> 
      </div> 
     </div>
+
 
    </div> 
   </div>
