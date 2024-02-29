@@ -304,6 +304,28 @@ hide:
      </div> 
     </div>    
    <div class="card"> 
+     <img class="ava" src="https://blog.lichenghao.cn/avatar.svg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.lichenghao.cn" target="_blank">故事的程序猿</a> 
+      </div> 
+      <div class="info">
+      好好学习，天天向上↑
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://ovo.btwoa.com/btwoa.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.btwoa.com" target="_blank">btwoa</a> 
+      </div> 
+      <div class="info">
+      世界为你简单
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
      <img class="ava" src="https://blog.whispery.cn/img/tou.png" /> 
      <div class="card-header"> 
       <div> 
@@ -315,10 +337,10 @@ hide:
      </div> 
     </div>
 
-
-
    </div> 
   </div>
+
+
 
 
 <!-- <div class="card">
