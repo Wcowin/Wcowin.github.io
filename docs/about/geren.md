@@ -56,6 +56,9 @@ icon:
   </center>  
 </a>
 
+## 个人简历
+[个人简历(在线)](https://cv.devtool.tech/preview/538d1d22-c3a3-4611-9ffb-be6d8fbf0e8c)
+
 ## 个人技能
 本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载。  
 精通 CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript、Pascal 等单词的拼写。  
