@@ -12,9 +12,6 @@ theme:
   #   text: Bitter
   #   code: Roboto Mono
   logo: https://raw.githubusercontent.com/wkk-dev/cdn/master/png/Wcowin-icon.png
-    # material/library
-    # admonition:
-    #   <type>: material/file-alert-outline
 
   favicon: img/wkw2.png
   # img/11.ico
