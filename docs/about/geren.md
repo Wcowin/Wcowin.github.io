@@ -27,7 +27,7 @@ icon:
 
 ## 关于我
 <div id="rcorners3" >
-  <img class="img1" src="https://pcsdata.baidu.com/thumbnail/2a7498c13n5f6bd6788594245205bc13?fid=1103593092914-16051585-766687238992216&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-cv4aHqg8QtAMizApBSOIN0rOaDc%3D&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=484002792682010648&dp-callid=0&time=1710133200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
+  <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
     <!-- <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="170" alt="个人头像" align="right"/> -->
   <div>
     <p style="font-size: 40px">Wcowin</p>
