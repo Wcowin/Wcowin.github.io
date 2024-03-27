@@ -213,18 +213,7 @@ hide:
        做学问可不是赶潮流、没有冷门热门之说。
       </div> 
      </div> 
-    </div>
-   <div class="card"> 
-     <img class="ava" src="http://liis.cc/hy.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="http://liis.cc" target="_blank">郝宇博客</a> 
-      </div> 
-      <div class="info">
-       记录我的成长和青春
-      </div> 
-     </div> 
-    </div>    
+    </div>  
    <div class="card"> 
      <img class="ava" src="https://ejsoon.win/wp-content/uploads/2022/08/alogobg.png" /> 
      <div class="card-header"> 
@@ -281,7 +270,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://blog.wkk-dev.top/img/favicon.png" /> 
+     <img class="ava" src="https://fastly.jsdelivr.net/gh/wkk-dev/cdn@master/png/kang-qq.jpg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.wkk-dev.top" target="_blank">WKK & Blog</a> 
@@ -347,14 +336,45 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://note.isshikih.top/_assets/iro/IroPatch_Brown.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://note.isshikih.top/" target="_blank">IsshikiHugh's Notebook</a> 
+      </div> 
+      <div class="info">
+      我们登上高塔，看到的却只有黑夜。
+      </div> 
+     </div> 
+    </div>
+
 
 
    </div> 
   </div>
 
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
+<div class="markdown-content">
+    <h2>失联人员</h2>
+</div>
+  <div class="links-content"> 
+   <div class="link-navigation"> 
 
+   <div class="card"> 
+     <img class="ava" src="http://liis.cc/hy.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="http://liis.cc" target="_blank">郝宇博客</a> 
+      </div> 
+      <div class="info">
+       记录我的成长和青春
+      </div> 
+     </div> 
+    </div>  
 
+   </div> 
+  </div>
 <!-- <div class="card">
    <img class="ava" src="{avatarurl}" />
    <div class="card-header">
