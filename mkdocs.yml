@@ -182,6 +182,7 @@ nav:
       - 3: relax/wkwMath/3.md 
       - 4: relax/wkwMath/4.md
       - 5: relax/wkwMath/5.md
+      - 6: relax/wkwMath/6.md
       # - 诗经: relax/shiwen/shijing.json
 
     - 观影:
@@ -314,6 +315,9 @@ plugins:
   # - glightbox
   - search
   - offline
+  - statistics:
+      words_per_minute: 200
+      page_check_metadata: tags
   - git-revision-date-localized:
       type: iso_date
       enable_creation_date: false

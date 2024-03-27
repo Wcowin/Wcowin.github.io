@@ -6,6 +6,7 @@ hide:
   - footer
   - feedback
 comments: false
+statistics: true
 ---
 # Home
 
