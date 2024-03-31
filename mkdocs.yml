@@ -238,8 +238,8 @@ nav:
     - blog/index.md
   - 关于:
     - 个人简介: about/geren.md
-    - 一纸简历: https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671
-    - 个人简历: about/个人简历2.pdf
+    # - 一纸简历: https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671
+    - 个人简历: https://lightpdf.cn/docs/ozompku
     - My Goal: about/goal.md
     - Github主页介绍: about/Wcowin.md
     - 网站制作: about/web.md
