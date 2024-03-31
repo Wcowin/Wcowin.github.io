@@ -10,7 +10,7 @@ tags:
   - 
 comments: false  #评论，默认不开启
 ---
-
+//启动虚拟环境（需要安装Anaconda）
 conda activate Mkdocs
 
 ```git
@@ -36,6 +36,8 @@ pip install --upgrade --force-reinstall mkdocs-material
 //完成编辑后，您可以使用以下命令从 Markdown 文件构建静态站点：
 mkdocs build --clean
 
+//静态预览MKdocs
+mkdocs serve
 
 //新标签打开
 {target=“_blank”}
