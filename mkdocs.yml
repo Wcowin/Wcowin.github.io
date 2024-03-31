@@ -315,9 +315,9 @@ plugins:
   # - glightbox
   - search
   - offline
-  - statistics:
-      words_per_minute: 200
-      page_check_metadata: tags
+  # - statistics:
+  #     words_per_minute: 200
+  #     page_check_metadata: tags
   - git-revision-date-localized:
       type: iso_date
       enable_creation_date: false
