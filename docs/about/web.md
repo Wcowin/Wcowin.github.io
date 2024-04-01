@@ -24,11 +24,6 @@ tags:
 2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501){target=“_blank”}  
 3.[如何在Mkdocs里自定义字体（霞鹜文楷）](https://blog.csdn.net/m0_63203517/article/details/131946304?spm=1001.2014.3001.5502){target=“_blank”}
 
-!!! info inline end
-
-    ← ↓我的网站二维码
-
-![MywebsiteQR](https://cn.mcecy.com/image/20230321/cf398708978588c8d40aeb6628918deb.png){ loading=lazy }
 
 ***
 
@@ -71,7 +66,7 @@ tags:
     src="https://img.shields.io/docker/pulls/squidfunk/mkdocs-material" 
     alt="Docker Pulls"
   /></a>
-</p> -->
+</p>
 ## Web 创建设计
 
 <h2>用户是浏览者</h2>

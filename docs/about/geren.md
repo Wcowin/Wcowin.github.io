@@ -3,7 +3,6 @@ hide:
 #   - navigation
   # - toc
   - feedback
-comments: true
 status: new
 icon: 
 ---
@@ -38,7 +37,6 @@ icon:
    
 
 !!! pied-piper1 "About me"
-    
     - [x] Hey, I'm [Wcowin](https://bento.me/wcowin){target=“_blank”}!
     - [x] 清醒，知趣，明得失，知进退
     - [x] 咖啡重度爱好者 

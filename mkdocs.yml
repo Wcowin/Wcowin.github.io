@@ -57,6 +57,11 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github #右上角图标
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+      Mkdocs: octicons/tag-16    
     
 edit_uri: edit/main/docs # 编辑按钮跳转的链接 
 repo_url: https://github.com/Wcowin/Wcowin.github.io # 右上角点击跳转的链接
@@ -259,10 +264,11 @@ copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的
   
 
 extra:
-  # tags:
-  #   HTML5: html
-  #   JavaScript: js
-  #   CSS: css
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    Mkdocs: MKdocs
   alternate:
     - name: English
       link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
@@ -312,15 +318,13 @@ extra:
     
 
 plugins:
-  # - glightbox
   - search
   - offline
-  # - statistics:
-  #     words_per_minute: 200
-  #     page_check_metadata: tags
   - git-revision-date-localized:
+      enabled: !ENV [CI, false]
       type: iso_date
-      enable_creation_date: false
+      enable_creation_date: true
+      fallback_to_build_date: true
       exclude:
         - index.md 
         - tag.md
@@ -328,9 +332,9 @@ plugins:
         - blog/posts/update.md
         - blog/posts/wkw.md
         - about/link.md
-  # - git-authors:
-  #     exclude:
-  #       - index.md
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: Wcowin/Mkdocs-Wcowin
   - blog:
       post_date_format: full #时间
       draft: true
@@ -345,6 +349,14 @@ plugins:
       # pagination_per_page: 5
       pagination_url_format: "page/{page}"
       authors_file: "{blog}/.authors.yml"  #作者信息
+  - rss:
+      enabled: !ENV [CI, false]
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
   - tags:
       tags_file: tag.md  #分类标签
 

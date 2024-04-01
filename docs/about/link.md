@@ -358,6 +358,17 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://s2.loli.net/2024/03/31/Ht3QBqhgLYNAuwj.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://lennychen.top/" target="_blank">Lenny's Web</a> 
+      </div> 
+      <div class="info">
+      天地不仁，以万物为刍狗
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
