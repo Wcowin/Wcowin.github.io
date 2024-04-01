@@ -336,6 +336,7 @@ plugins:
   - git-committers:
       enabled: !ENV [CI, false]
       repository: Wcowin/Wcowin.github.io
+      branch: main
   - blog:
       post_date_format: full #时间
       draft: true

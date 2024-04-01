@@ -382,7 +382,8 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:<1135801806@qq.com> #联系方式
 ```
-### alternate
+### alternate  
+
 可以设置网页翻译 
 ```yaml
   alternate:
