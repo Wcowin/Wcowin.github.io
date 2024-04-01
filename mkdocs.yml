@@ -335,7 +335,7 @@ plugins:
         - about/link.md
   - git-committers:
       enabled: !ENV [CI, false]
-      repository: Wcowin/Mkdocs-Wcowin
+      repository: Wcowin/Wcowin.github.io
   - blog:
       post_date_format: full #时间
       draft: true
