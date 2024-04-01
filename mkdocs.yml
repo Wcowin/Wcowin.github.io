@@ -318,7 +318,8 @@ extra:
     
 
 plugins:
-  - search
+  - search:
+      jieba_dict: docs/dict.txt
   - offline
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
