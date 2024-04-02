@@ -6,6 +6,13 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-04-02</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 在mkdocs.yml的plugins模块中引入`!ENV [CI, false]`语句，极大缩短`mkdocs serve`静态预览时间（3-5s）
+* 本Mkdocs-Wcowin主题得到以下两位的使用：
+    - [Lenny's Web](https://lennychen.top) 
+    - [tkqtang's Web](https://tkqtang.site/)
+
 ## </p><h1 id="01" name="01"><strong>2024-03-14</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 3月14日（March 14th）是公历一年中的第73天（闰年第74天），离全年的结束还有292天。是国际圆周率日。其中历史上发生的大事件有阿尔伯特·爱因斯坦的出生。 [10]卡尔·马克思、斯蒂芬·威廉·霍金的逝世。
