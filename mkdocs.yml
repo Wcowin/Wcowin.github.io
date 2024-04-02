@@ -318,8 +318,7 @@ extra:
     
 
 plugins:
-  - search:
-      jieba_dict: docs/dict.txt
+  - search
   - offline
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
@@ -337,6 +336,13 @@ plugins:
       enabled: !ENV [CI, false]
       repository: Wcowin/Wcowin.github.io
       branch: main
+      exclude:
+        - index.md 
+        - tag.md
+        - waline.md
+        - blog/posts/update.md
+        - blog/posts/wkw.md
+        - about/link.md
   - blog:
       post_date_format: full #时间
       draft: true
