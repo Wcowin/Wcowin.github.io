@@ -321,7 +321,7 @@ extra:
 plugins:
   - search
   - offline
-  
+  # - glightbox
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
       type: iso_date
@@ -429,6 +429,7 @@ extra_javascript:
   # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
   # - https://res.zvo.cn/translate/translate.js  # Translate
+  
 
 
 extra_css:
@@ -444,4 +445,5 @@ extra_css:
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体 
+  - stylesheets/customize.css
 

@@ -26,7 +26,9 @@ jobs:
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-git-authors-plugin
       - run: pip install mkdocs-git-committers-plugin-2
-      - run: pip install mkdocs-rss-plugin
+      # - run: pip install mkdocs-glightbox
+      # - run: pip install mkdocs-minify-plugin
+      # - run: pip install mkdocs-rss-plugin
       # - run: pip install jieba
       # - run: pip install "mkdocs-material[imaging]"
       # - run: pip install mkdocs-statistics-plugin 
