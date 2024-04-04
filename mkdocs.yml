@@ -102,6 +102,7 @@ nav:
 
     - 学术:
         - LaTeX常用符号整理: blog/Academic/LaTeX.md
+        - 一份简短的关于LATEX安装的介绍: https://mirrors.sjtug.sjtu.edu.cn/ctan/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf
         - 希腊字母总结: blog/Academic/希腊字母.pdf
         - Math: blog/Academic/math.md
         - 数学竞赛: 

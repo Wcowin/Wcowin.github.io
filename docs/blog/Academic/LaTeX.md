@@ -4,9 +4,11 @@ tags:
   - Mathematic
 ---
 
+推荐阅读：[常用LaTeX代码](https://flowus.cn/latex/share/66110e84-b24a-4cd5-b8a7-2ba2afb35a30)
+
 # LaTeX常用符号整理
 
-**出自：[LaTeX常用符号整理](https://github.com/Yang-Xijie/yang-xijie.github.io/edit/main/docs/BLOG/Foundation/Math/latex.md)**
+**本文摘抄自：[LaTeX常用符号整理](https://github.com/Yang-Xijie/yang-xijie.github.io/edit/main/docs/BLOG/Foundation/Math/latex.md)**
 
 ## 希腊字母
 | Name       | Display      | Capital Case   | Display      | Var Case      | Display         |
