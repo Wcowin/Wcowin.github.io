@@ -359,14 +359,14 @@ plugins:
       # pagination_per_page: 5
       pagination_url_format: "page/{page}"
       authors_file: "{blog}/.authors.yml"  #作者信息
-  - rss:
-      enabled: !ENV [CI, false]
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
+  # - rss:
+  #     enabled: !ENV [CI, false]
+  #     match_path: blog/posts/.* 
+  #     date_from_meta:
+  #       as_creation: date
+  #     categories:
+  #       - categories
+  #       - tags
   - tags:
       tags_file: tag.md  #分类标签
 
