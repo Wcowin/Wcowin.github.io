@@ -1,3 +1,7 @@
+document$.subscribe(function() {
+  console.log("Initialize third-party libraries here")
+})
+
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
