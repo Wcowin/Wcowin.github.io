@@ -255,7 +255,7 @@ nav:
     - 免责声明: about/shengming.md
     - Test: about/test.md
     - 404公益页面: about/404.md
-    - 我们♡+♡=♡²: about/Foryou.md
+    # - 我们♡+♡=♡²: about/Foryou.md
     - 年度总结:
         - 2023: about/zongjie/2023.md
     - 考研: about/kaoyan.md
@@ -319,7 +319,8 @@ extra:
     
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\u200b\-]'
   - offline
   # - glightbox
   - git-revision-date-localized:

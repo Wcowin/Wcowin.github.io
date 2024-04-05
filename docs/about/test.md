@@ -339,11 +339,6 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
 
 ***  
 
-
-![img](https://cn.mcecy.com/image/20230615/749725b48e5972165d0bce10b364695e.png)
-
-
-
 <div id="grad1"></div>
 
 <button class="buttoncss">按钮</button>

@@ -7,8 +7,7 @@ hide:
   - feedback
 comments: false
 statistics: true
-mark_as_read:
-    updated_at: 2024-03-24 17:00:00+03:00
+icon: octicons/home-fill-24
 ---
 # Home
 
@@ -150,8 +149,6 @@ mark_as_read:
   - [留言板](waline.md)
   
 
-
-
 [^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
 [^see-how-much-I-love-you]:All problems in computer science can be solved by another level of indirection
 
@@ -187,8 +184,6 @@ t.parentNode.insertBefore(e,t)}})();
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
 </head>
 
-<!-- :material-information-outline:{ title="本站访问量" }本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>
-<span id="finicount_views"></span> -->
 
 <head>
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
@@ -227,7 +222,7 @@ t.parentNode.insertBefore(e,t)}})();
     </body>
 
 
-<head>
+<!-- <head>
 <script defer src="https://analytics.us.umami.is/script.js" data-website-id="dae37494-1db6-408a-afdd-1868e1a7d41a"></script>
-</head>
+</head> -->
 

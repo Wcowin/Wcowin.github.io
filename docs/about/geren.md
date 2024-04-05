@@ -4,9 +4,13 @@ hide:
   # - toc
   - feedback
 status: new
-icon: 
 ---
-# 但行好事 莫问前程
+<center> 
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+</center>  
+
+
+# <span id="jinrishici-sentence">今日诗词</span>
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <link
@@ -15,25 +19,22 @@ icon:
 />
 
 
+<!-- <img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg"> -->
 
-<center> 
-<span id="jinrishici-sentence">正在加载今日诗词....</span>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</center>   
+<p style="text-align: center; margin: 0px;" markdown>
+  <img src="https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
+  <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>Wcowin</strong></p>
+  <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p>
+</p>
 
 
-<img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg">
-
-## 关于我
-<div id="rcorners3" >
+<!-- <div id="rcorners3" >
   <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
-    <!-- <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="170" alt="个人头像" align="right"/> -->
   <div>
     <p style="font-size: 40px">Wcowin</p>
-    <!-- <p style="font-size: 18px">Free and diffuse</p> -->
     <p style="font-size: 18px">A college student in CQ</p>
   </div>
-</div>
+</div> -->
    
 
 !!! pied-piper1 "About me"
@@ -42,8 +43,9 @@ icon:
     - [x] 咖啡重度爱好者 
     - [x] 热爱(xiā)折腾技术/Math
     - [x] 读书明志可识春秋;诗词爱好者,喜欢村上春树，擅长羽毛球
+<img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg">
 
-## 我的名片
+## 联系我
 
 <a href="https://muselink.cc/Wcowin" target="_blank">
   <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg"  >
@@ -54,6 +56,11 @@ icon:
   </center>  
 </a>
 
+<figure markdown >
+  ![Image title](https://s1.imagehub.cc/images/2024/02/02/43c746351261969a02bda7d743199604.jpeg){.img1}
+  <figcaption>公众号</figcaption>
+</figure>
+
 ## 个人简历
 [个人简历(在线)](https://cv.devtool.tech/preview/538d1d22-c3a3-4611-9ffb-be6d8fbf0e8c)
 
@@ -63,19 +70,7 @@ icon:
 熟悉 Windows、Linux、OS X、Android、iOS、WP8 、harmony、hyper等系统的开关机。
 
 ## 个人荣誉
-![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy }  
-
-## Touch me
-<p align="center">
-&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="70" /></a>  
-&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="70" /></a>  
-&nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="70" /></a>
-</p>
-
-<figure markdown >
-  ![Image title](https://s1.imagehub.cc/images/2024/02/02/43c746351261969a02bda7d743199604.jpeg){.img1}
-  <figcaption>公众号</figcaption>
-</figure>
+![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy  class="img1"  }  
 
 
 <head>
