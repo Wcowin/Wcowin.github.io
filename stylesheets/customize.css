@@ -4,7 +4,7 @@
 }
 
 /* Change font family of filename present on top of code block. */
-.highlight span.filename {
+/* .highlight span.filename {
   border-bottom: none;
   border-radius: var(--base-border-radius);
   display: inline;
@@ -20,10 +20,10 @@
 }
 .md-typeset pre > code {
   border-radius: var(--base-border-radius);
-}
+} */
 
 /* Customize admonition layout */
-.md-typeset .admonition {
+/* .md-typeset .admonition {
   border-width: 0px;
   border-left-width: var(--admonition-border-left-width);
 }
@@ -31,15 +31,15 @@
 [dir="ltr"] .md-typeset blockquote {
   border-radius: 0.2rem;
   border-left-width: var(--admonition-border-left-width);
-}
+} */
 
 /* Grid Cards */
-.md-typeset .grid.cards > ul > li {
+/* .md-typeset .grid.cards > ul > li {
   border-radius: var(--base-border-radius);
 }
 .md-typeset .grid.cards > ul > li:hover {
   box-shadow: 0 0 0.2rem #ffffff40;
-}
+} */
 
 /* Markdown Button */
 .md-typeset .md-button {
@@ -68,7 +68,7 @@
 }
 
 /* Blog - index.md */
-div.md-content header {
+/* div.md-content header {
   display: none;
 }
 
@@ -85,7 +85,7 @@ div.md-content header {
 .md-post--excerpt .md-post__content > h2,
 .md-post__action {
   text-align: center;
-}
+} */
 
 /* Table */
 .md-typeset table:not([class]) {
