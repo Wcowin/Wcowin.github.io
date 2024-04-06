@@ -391,6 +391,17 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://avatars.githubusercontent.com/u/81922999?v=4" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.meta-code.top/" target="_blank">百里飞洋の博客</a> 
+      </div> 
+      <div class="info">
+      星河滚烫，无问西东
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
