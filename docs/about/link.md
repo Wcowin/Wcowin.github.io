@@ -413,6 +413,17 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://www.imerduo.com/wp-content/uploads/2023/12/0c55c83b6a18155f_01-150x150.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.imerduo.com" target="_blank">耳朵的主人</a> 
+      </div> 
+      <div class="info">
+      耳朵电台，庆幸我们还有耳朵
+      </div> 
+     </div> 
+    </div>
 
 
 
