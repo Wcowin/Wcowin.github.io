@@ -380,10 +380,25 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://avatars.githubusercontent.com/u/111767754?v=4" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://arv-anshul.github.io/about/" target="_blank">Anshul Raj Verma</a> 
+      </div> 
+      <div class="info">
+      Introduction: Let's learn together and Build together.
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
+
+
+
+
 
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
