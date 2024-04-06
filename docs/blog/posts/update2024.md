@@ -6,6 +6,12 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-04-06</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 主页引入天气组件，搜索框/按钮圆角化
+* 删除冗余JS/CSS文件
+* 感谢[Anshul Raj Verma](https://arv-anshul.github.io/)在[Discussions#7](https://github.com/Wcowin/Wcowin.github.io/discussions/7)上提出的网站优化建议
+
 ## </p><h1 id="01" name="01"><strong>2024-04-02</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 在mkdocs.yml的plugins模块中引入`!ENV [CI, false]`语句，极大缩短`mkdocs serve`静态预览时间（3-5s）

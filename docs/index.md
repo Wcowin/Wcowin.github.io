@@ -16,12 +16,14 @@ icon: octicons/home-fill-24
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
-<center>
+
+
+<!-- <center>
 <font  color= #608DBD size=3>
 <span id="jinrishici-sentence">正在加载今日诗词....</span>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 </font>
-</center>
+</center> -->
 
 <!-- <center>
 <font  color= #608DBD size=3>
@@ -183,6 +185,36 @@ t.parentNode.insertBefore(e,t)}})();
 
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
 </head>
+
+
+<div id="he-plugin-simple"></div>
+<script>
+WIDGET = {
+  "CONFIG": {
+    "modules": "01234",
+    "background": "1",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "FFFFFF",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "25",
+    "fixed": "true",
+    "vertical": "center",
+    "horizontal": "center",
+    "left": "10",
+    "bottom": "80",
+    "key": "49cf5b47814f4da680a14b99a67439d5"
+  }
+}
+</script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 
 
 <head>

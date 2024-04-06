@@ -1,8 +1,8 @@
-# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 #[Info]
 site_name: Wcowin's Web
 site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
+
 #[UI]
 theme:
   name: material
@@ -12,7 +12,6 @@ theme:
   #   text: Bitter
   #   code: Roboto Mono
   logo: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
-
   favicon: https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
     #primary: blue grey
@@ -130,14 +129,11 @@ nav:
         - 三步卸载 Microsoft Edge: blog/Win/edgexz.md
         - windows快捷键: blog/Win/winkjj.md
         - 安卓的子系统: blog/Win/anzhuodezixit.md
-
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
     - C语言: 
         - C笔记: blog/C language/c.md
-  
-
 
   - 开发: 
     - 我的设备: develop/mydevice.md
@@ -258,10 +254,8 @@ nav:
     - 年度总结:
         - 2023: about/zongjie/2023.md
     - 考研: about/kaoyan.md
-  
-  
+
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
-  
 
 extra:
   tags:
@@ -308,14 +302,12 @@ extra:
           note: >- 
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
-  
   # consent:
   #   title: Cookie consent
   #   description: >- 
   #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
   #     如果你同意,你可以帮助我们让我们的网站更好
 
-    
 
 plugins:
   - search:
@@ -359,14 +351,6 @@ plugins:
       # pagination_per_page: 5
       pagination_url_format: "page/{page}"
       authors_file: "{blog}/.authors.yml"  #作者信息
-  # - rss:
-  #     enabled: !ENV [CI, false]
-  #     match_path: blog/posts/.* 
-  #     date_from_meta:
-  #       as_creation: date
-  #     categories:
-  #       - categories
-  #       - tags
   - tags:
       tags_file: tag.md  #分类标签
 
@@ -388,7 +372,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.smartsymbols
   - pymdownx.tilde
-  
+
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -409,9 +393,6 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  # - markdown.extensions.toc:
-  #     slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-  #     permalink: "\ue157"
   
 extra_javascript:
   - javascripts/extra.js 
@@ -421,12 +402,10 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   # - javascripts/mathjax-config.js
   # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
-
   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   # - ckplayer/js/ckplayer.js
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
   # - javascripts/backbound1.js
-  # - javascripts/rellax.min.js
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
   # - https://res.zvo.cn/translate/translate.js  # Translate
   
