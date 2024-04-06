@@ -402,13 +402,22 @@ hide:
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://weizwz.com/img/avatar/head.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://weizwz.com" target="_blank">唯之为之</a> 
+      </div> 
+      <div class="info">
+      时光笔墨
+      </div> 
+     </div> 
+    </div>
+
 
 
    </div> 
   </div>
-
-
-
 
 
 
