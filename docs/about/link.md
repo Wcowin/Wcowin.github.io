@@ -324,6 +324,17 @@ hide:
       无限进步.🎈
       </div> 
      </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://note.isshikih.top/_assets/iro/IroPatch_Brown.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://note.isshikih.top/" target="_blank">IsshikiHugh's Notebook</a> 
+      </div> 
+      <div class="info">
+      我们登上高塔，看到的却只有黑夜……
+      </div> 
+     </div> 
     </div>    
    <div class="card"> 
      <img class="ava" src="https://blog.whispery.cn/img/tou.png" /> 
@@ -332,18 +343,7 @@ hide:
        <a href="https://blog.whispery.cn/" target="_blank">Whisper</a> 
       </div> 
       <div class="info">
-      </div> 
-     </div> 
-    </div>
-
-   <div class="card"> 
-     <img class="ava" src="https://note.isshikih.top/_assets/iro/IroPatch_Brown.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://note.isshikih.top/" target="_blank">IsshikiHugh's Notebook</a> 
-      </div> 
-      <div class="info">
-      我们登上高塔，看到的却只有黑夜。
+      我们的忧愁将会崩解灵魂将会穿梭如风
       </div> 
      </div> 
     </div>
@@ -421,6 +421,17 @@ hide:
       </div> 
       <div class="info">
       耳朵电台，庆幸我们还有耳朵
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://blog.sunguoqi.com/avatar.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.sunguoqi.com" target="_blank">小孙同学</a> 
+      </div> 
+      <div class="info">
+      路虽远行则将至，事随难做则必成！
       </div> 
      </div> 
     </div>
