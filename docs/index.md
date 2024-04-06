@@ -188,6 +188,13 @@ t.parentNode.insertBefore(e,t)}})();
 
 
 <div id="he-plugin-simple"></div>
+<style>
+  @media (max-width: 600px) {
+    #he-plugin-simple {
+        display: none;
+    }
+}
+</style>
 <script>
 WIDGET = {
   "CONFIG": {
