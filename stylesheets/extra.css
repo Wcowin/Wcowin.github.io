@@ -189,7 +189,7 @@ img.twitter {
 
 /*bilbili*/
 /*哔哩哔哩视频适配*/
-.aspect-ratio {
+/* .aspect-ratio {
   position: relative;
   width: 90%;
   height: auto;
@@ -203,12 +203,12 @@ img.twitter {
   height: 86%;
   left: 0;
   top: 0;
-}
+} */
 
 
 
 /**/
-.video1{
+/* .video1{
   position: fixed;  
   right: 0px;  
   bottom: 0px;  
@@ -216,10 +216,6 @@ img.twitter {
   min-height: 100%;  
   height: auto;  
   width: auto;  
-  /*加滤镜*/
-  /*filter: blur(15px); //背景模糊设置 */
-  /*-webkit-filter: grayscale(100%);*/  
-  /*filter:grayscale(100%); //背景灰度设置*/  
   z-index:-11
 
 }
@@ -239,7 +235,7 @@ source{
   #video1 {
     display: none;
   }
-}
+} */
 
 /*圆角*/
 #rcorners1 {
@@ -472,5 +468,19 @@ div.hide {
   -webkit-filter: grayscale(100%);} */
 
 
-
+/* Markdown内联块网格列表样式圆角和阴影 */
+.md-typeset .grid.cards>ol>li,
+.md-typeset .grid.cards>ul>li,
+.md-typeset .grid>.card {
+    border: 0.05rem solid var(--md-default-fg-color--lightest);
+    border-radius: 0.7rem;
+    /* 修改圆角大小 */
+    display: block;
+    margin: 0;
+    padding: 0.8rem;
+    transition: border 0.25s, box-shadow 0.25s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 修改阴影效果 */
+    /* box-shadow: 水平偏移量 垂直偏移量 模糊半径 扩散半径 色值; */
+}
 
