@@ -4,6 +4,13 @@ title: 支持作者
 
 # 支持作者
 
+<div class="grid cards" markdown>
+
+- :material-email-mark-as-unread: 给我发送[邮箱](mailto:wcowin@qq.com)
+
+- :material-github: [点击此处](https://github.com/Wcowin/Wcowin.github.io){target="\_blank" rel="noopener"}访问Github仓库
+
+</div>
 
 ![img](https://cn.mcecy.com/image/20231214/1983c439e3dfeadedac1904c2202ee11.jpg) 
 
@@ -26,7 +33,7 @@ title: 支持作者
 
 <div class="reward-container">
   <div></div>
-  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+  <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     请作者喝杯咖啡
   </button>
   <div id="qr" style="display: none;">
@@ -38,6 +45,8 @@ title: 支持作者
         <img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝">
         <p>支付宝</p>
       </div>
-
   </div>
 </div>
+
+
+

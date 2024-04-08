@@ -11,7 +11,8 @@ theme:
   # font:
   #   text: Bitter
   #   code: Roboto Mono
-  logo: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
+  logo: https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
+  # https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
   favicon: https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
     #primary: blue grey
@@ -35,6 +36,8 @@ theme:
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     # - navigation.instant 
     #- header.autohide  #自动隐藏
+    - navigation.instant.progress
+    # - navigation.prune #渲染的 HTML 中仅包含可见的导航项
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
@@ -136,6 +139,7 @@ nav:
         - C笔记: blog/C language/c.md
 
   - 开发: 
+    - develop/index.md
     - 我的设备: develop/mydevice.md
     - 如何注册ChatGPT: develop/ChatGPT.md
     - Markdown: 
@@ -161,6 +165,7 @@ nav:
     - 看源码才懂: develop/kanyuanma.md
     
   - 闲话:
+    - relax/index.md
     - 推荐的Books: relax/tuijianyuedu.md
     - 小米: relax/xiaomo.md
     - Apple: relax/Apple.md
@@ -225,6 +230,7 @@ nav:
     - 程序猿神之楷模:一个人,一个网站,5.75亿美元卖掉: relax/kaimo.md
     
   - 旅行: 
+    - trip/index.md
     - 重庆: 
         - 重庆旅游推荐路线: trip/InCQ/CQ.md
     - Hometown: trip/LH.md
@@ -354,6 +360,7 @@ plugins:
   - tags:
       tags_file: tag.md  #分类标签
 
+
 markdown_extensions:
   - abbr
   - attr_list
@@ -403,18 +410,18 @@ extra_javascript:
   # - javascripts/mathjax-config.js
   # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
-  # - ckplayer/js/ckplayer.js
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
   # - javascripts/backbound1.js
-  - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
+  # - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
   # - https://res.zvo.cn/translate/translate.js  # Translate
   
 
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/extra2.css
-  - stylesheets/link.css
+  - stylesheets/extra2.css  #诗词版、打赏
+  - stylesheets/link.css  #友链
+  - stylesheets/customize.css  #按钮圆角化
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   # - stylesheets/extra1.css
   # - stylesheets/video.css
@@ -424,5 +431,5 @@ extra_css:
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体 
-  - stylesheets/customize.css
+  
 

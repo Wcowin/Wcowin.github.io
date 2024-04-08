@@ -4,10 +4,6 @@
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-![LY1r2.png](https://i.imgs.ovh/2023/10/09/LY1r2.png)
-
-![截屏2022-06-24 21.22.34](https://i2.100024.xyz/2023/10/09/ncsp35.webp)
-
 <!-- <font  color= #518FC1 size=6 class="fontalicious">“循此苦旅，以达星辰”</font> -->
 
 <!-- <div class="spinner">
