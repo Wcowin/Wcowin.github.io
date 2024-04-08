@@ -146,7 +146,6 @@ icon: octicons/home-fill-24
   - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md)
   - [好用/好玩网站分享](blog/Webplay.md)
   - [Mac/windows软件网站汇总](blog/macsoft.md)
-  - [实用脚本分享](blog/technique sharing/jiaoben.md)
   - [重庆旅游推荐路线](trip/InCQ/CQ.md)
   - [留言板](waline.md)
   
