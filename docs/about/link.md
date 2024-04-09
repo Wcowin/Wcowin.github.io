@@ -446,7 +446,17 @@ hide:
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://blog.w1ndys.top/img/about/avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.w1ndys.top/" target="_blank">W1ndysの小屋</a> 
+      </div> 
+      <div class="info">
+      欲戴皇冠，必承其重
+      </div> 
+     </div> 
+    </div>
 
    </div> 
   </div>
