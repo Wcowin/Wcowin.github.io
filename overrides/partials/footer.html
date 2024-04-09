@@ -67,23 +67,21 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       {% include "partials/copyright.html" %}
-   
-    <font color="#B9B9B9">
       <div class="footer-visit-count" style="display: flex; justify-content: center; align-items: center;">
     本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>
     <span id="finicount_views"></span>    &nbsp;|&nbsp;
     <footer>
       <a href="https://icp.gov.moe/?keyword=20230640" target="_blank">萌ICP备20230640号</a>
-    </footer>
+    </footer> |&nbsp;
+    <a href="https://guan.ma/hao/2024000046/" title="官码2024000046号">官码2024000046号</a>
   </div>
-      </font>
-
       <style>
         .footer-visit-count {
             height: fit-content;
             min-height: 55px; /* 根据实际情况调整此高度 */
         }
         </style>
+        
       {% if config.extra.social %}
         {% include "partials/social.html" %}
       {% endif %}
