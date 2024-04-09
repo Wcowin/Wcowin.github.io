@@ -114,7 +114,6 @@ icon: octicons/home-fill-24
 </script>
       </font>
     </body>
-    <!-- <b><span id="time"></span></b> -->
   </div>
   <ul>
     <li>通过主题和目录以打开文章</li>
@@ -160,7 +159,6 @@ icon: octicons/home-fill-24
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-29HZMNR0KG');
 </script>
 
