@@ -70,7 +70,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
 nav:
-  - 主页: index.md
+  - 主页: /
   - 技术:
     - 好用/好玩网站分享: blog/Webplay.md
     - Mac/windows软件网站汇总: blog/macsoft.md
@@ -264,11 +264,6 @@ nav:
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
 
 extra:
-  tags:
-    HTML5: html
-    JavaScript: js
-    CSS: css
-    Mkdocs: MKdocs
   alternate:
     - name: English
       link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
