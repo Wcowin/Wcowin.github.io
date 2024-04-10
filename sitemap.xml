@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://wcowin.work/ZH-TW/index.html</loc>
+         <lastmod>2024-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://wcowin.work/about/404.html</loc>
          <lastmod>2024-04-10</lastmod>
          <changefreq>daily</changefreq>
@@ -472,6 +477,11 @@
     </url>
     <url>
          <loc>http://wcowin.work/develop/designbeauty/my-to-desihn.html</loc>
+         <lastmod>2024-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/en/index.html</loc>
          <lastmod>2024-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
