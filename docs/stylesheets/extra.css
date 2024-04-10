@@ -119,17 +119,7 @@ img.twitter {
   }  
 
 
-  /* .md-typeset .admonition-note,
-  .md-typeset details {
-    border:2px solid;
-    border-radius:25px;
-    font-size:16px;
 
-    padding: 30px; 
-    
-    height: 100%;
-  } */
-  
 /* 鼠标 */
   /* body {
       cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/default.cur),
@@ -140,13 +130,12 @@ img.twitter {
       cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/pointer.cur),
           default;
   }  */
-
-
 /* 鼠标end */
 
-.git-revision-date-localized-plugin { color: #608DBD; }
-/* 滚动条 */
 
+
+/* 滚动条 */
+/* .git-revision-date-localized-plugin { color: #608DBD; }
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -185,7 +174,9 @@ img.twitter {
 ::-webkit-scrollbar:hover {
   width: 7px;
   height: 7px;
-}
+} */
+
+
 
 /*bilbili*/
 /*哔哩哔哩视频适配*/
@@ -484,3 +475,144 @@ div.hide {
     /* box-shadow: 水平偏移量 垂直偏移量 模糊半径 扩散半径 色值; */
 }
 
+
+ol > li {
+  list-style-type: decimal;
+}
+
+/* 诗词留言板 */
+
+@media (max-width: 991px) {
+  .followme .social-list .social-item {
+    margin: 0.5em 0.75em;
+  }
+}
+.followme .social-list .social-link {
+  border: 0;
+  display: inline-block;
+  text-align: center;
+}
+.followme .social-list .social-link .icon {
+  font-size: 1.75em;
+  height: 1.75em;
+  width: 1.75em;
+}
+.followme .social-list .social-link .label {
+  display: block;
+  font-size: 14px;
+}
+.poem-wrap {
+  position: relative;
+  width: 730px;
+  max-width: 80%;
+  border: 2px solid #797979;
+  border-top: none;
+  text-align: center;
+  margin: 80px auto;
+}
+.poem-wrap h1 {
+  font-size: 30px;
+  position: relative;
+  margin-top: -20px;
+  display: inline-block;
+  letter-spacing: 4px;
+  color: #797979;
+}
+.poem-wrap p {
+  width: 70%;
+  margin: auto;
+  line-height: 30px;
+  color: #797979;
+}
+.poem-wrap p#poem {
+  font-size: 25px;
+}
+.poem-wrap p#info {
+  font-size: 15px;
+  margin: 15px auto;
+}
+.poem-border {
+  position: absolute;
+  height: 2px;
+  width: 27%;
+  background-color: #797979;
+}
+.poem-right {
+  right: 0;
+}
+.poem-left {
+  left: 0;
+}
+@media (max-width: 685px) {
+  .poem-border {
+    width: 18%;
+  }
+}
+@media (max-width: 500px) {
+  .poem-wrap {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-top: 2px solid #797979;
+  }
+  .poem-wrap h1 {
+    margin: 20px 6px;
+  }
+  .poem-border {
+    display: none;
+  }
+}
+
+
+/* 打赏 */
+.reward-container {
+  margin: 20px auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+}
+
+.reward-container button {
+  background: transparent;
+  border: 1px solid #fc6423;
+  border-radius: 0;
+  color: #fc6423;
+  cursor: pointer;
+  line-height: 2;
+  outline: 0;
+  padding: 0 15px;
+  vertical-align: text-top;
+}
+
+.reward-container button:hover {
+  background: #fc6423;
+  border: 1px solid transparent;
+  color: #fa9366;
+}
+
+/* 新增样式 */
+#qr {
+  display: none;
+  text-align: center;
+}
+
+#qr img {
+  width: 250px; /* 调整图像大小 */
+  margin: 10px; /* 添加一些间距 */
+  border-radius: 25px;
+}
+
+#qr p {
+  font-size: 16px; /* 调整字体大小 */
+  color: #555; /* 更改字体颜色 */
+}
+
+/* 遮盖 */
+.mask {
+  background-color: #252525;
+  color: #252525;
+  transition: color 0.5s;
+}
+
+.mask:hover {
+  color: #ffffff;
+}

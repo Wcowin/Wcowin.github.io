@@ -476,9 +476,21 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://cdn.zerolacqua.top/images/avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.zerolacqua.top" target="_blank">丘卡饮品店</a> 
+      </div> 
+      <div class="info">
+      要来点喝的吗？
+      </div> 
+     </div> 
+    </div>
 
    </div> 
   </div>
+
 
 
 
@@ -530,10 +542,45 @@ t.parentNode.insertBefore(e,t)}})();
 本站已经加入[十年之约](https://www.foreverblog.cn/)：
 <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>请放心添加本站友链
 
-友链格式示例:
+***
 
->名称: Wcowin's Web  
+**友链格式示例/本站信息:**
+
+<!-- >名称: Wcowin's Web  
 >链接: https://wcowin.work/  
 >头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
->简介: 循此苦旅，以达星辰
+>简介: 循此苦旅，以达星辰 -->
 
+=== "Txt"
+
+   
+    >名称: Wcowin's Web  
+    >链接: https://wcowin.work/  
+    >头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
+    >简介: 循此苦旅，以达星辰
+
+=== "HTML(推荐)"
+
+    推荐在评论区发送这种格式
+
+    ```html
+    <div class="card"> 
+     <img class="ava" src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://wcowin.work/ " target="_blank">Wcowin's Web</a> 
+      </div> 
+      <div class="info">
+       “循此苦旅，以达星辰”
+      </div> 
+     </div> 
+    </div>
+    ```
+=== "Butterfly"
+
+    ```yaml
+    - name: Wcowin's Web
+      link: https://wcowin.work/
+      avatar: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png 
+      descr: 循此苦旅，以达星辰
+    ```
