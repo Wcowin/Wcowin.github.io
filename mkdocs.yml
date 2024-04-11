@@ -15,6 +15,10 @@ theme:
   # https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
   favicon: https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: 关闭自动模式
     #primary: blue grey
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式

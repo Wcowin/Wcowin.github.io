@@ -6,6 +6,11 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-04-12</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 感谢W1ndys提出的[使用软编码配置友链界面](https://github.com/Wcowin/Mkdocs-Wcowin/pull/9)，使得友链添加更加规范化
+* 引入网页翻译实验性功能(详见右上角翻译按钮)
+
 ## </p><h1 id="01" name="01"><strong>2024-04-06</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 主页引入天气组件，搜索框/按钮圆角化
