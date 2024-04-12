@@ -78,5 +78,15 @@ status: new
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
+## 感谢贡献者
+<a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Wcowin/Mkdocs-Wcowin" />
+</a>
 
-## 感谢各位朋友
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+
+<strong>推荐继续阅读:</strong>
+
+  - [利用Mkdocs部署静态网页至GitHub pages](../Mkdocs/mkdocs1.md)
+  - [Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)](../Mkdocs/mkdocs2.md)
+  - [如何给MKdocs添加友链](../Mkdocs/linktech.md)

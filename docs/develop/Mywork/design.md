@@ -27,7 +27,7 @@ tags:
 
 ***
 ## 果味Apple网站
-学习模仿[Austin Li](https://github.com/austin2035/astro-air-blog)大佬的[果味Apple网站](https://wcowinastro.netlify.app/)  
+学习模仿Austin Li大佬的[果味Apple网站](https://wcowinastro.netlify.app/)  
 ![image.png](https://s2.loli.net/2024/02/04/w9mTaFPNUq7uihI.png)
 ***
 

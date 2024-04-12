@@ -5,9 +5,18 @@ tags:
 ---
 
 !!! info
-    官方网站：[MkDocs](https://www.mkdocs.org/){target=“_blank”}
+    Material for MkDocs官方网站：[MkDocs](https://www.mkdocs.org/){target=“_blank”}
 
-    我的个人网站成果：<http://wcowin.work/>{target=“_blank”}
+---
+推荐看下这个视频：  
+:fontawesome-brands-youtube:{ style="color: #EE0F0F" }
+__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
+15m – Learn how to create and host a documentation site using Material for
+MkDocs on GitHub Pages in a step-by-step guide.
+
+  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=Q-YA_dA8C20
+
+---
 
 ## 一、准备工作
 

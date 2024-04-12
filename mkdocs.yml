@@ -337,6 +337,7 @@ plugins:
         - blog/posts/update.md
         - blog/posts/wkw.md
         - about/link.md
+        - blog/Mkdocs/linktech.md
   - git-committers:
       enabled: !ENV [CI, false]
       repository: Wcowin/Wcowin.github.io
@@ -348,6 +349,7 @@ plugins:
         - blog/posts/update.md
         - blog/posts/wkw.md
         - about/link.md
+        - blog/Mkdocs/linktech.md
   - blog:
       post_date_format: full #时间
       draft: true
@@ -364,7 +366,8 @@ plugins:
       authors_file: "{blog}/.authors.yml"  #作者信息
   - tags:
       tags_file: tag.md  #分类标签
-
+  # - markdownextradata:
+  #     data: ./docs/_data/ # 额外数据文件
 
 markdown_extensions:
   - abbr
