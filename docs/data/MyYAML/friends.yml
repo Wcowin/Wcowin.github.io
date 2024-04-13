@@ -1,0 +1,44 @@
+$schema: https://github.com/arv-anshul/arv-anshul.github.io/raw/main/schemas/friends-schema.json
+friends:
+  - name: Anshul Raj Verma
+    primaryUrl: https://arv-anshul.github.io/about
+    avatar: https://avatars.githubusercontent.com/u/111767754?v=4
+    profession: Data Scientist
+    description: |
+      I am learning Data Science, ML and DL for 3 years. Very fluent in Python language,
+      I had built many ML projects using frameworks like FastAPI and Streamlit. You can
+      check all my [projects on website](https://arv-anshul.github.io/projects).
+    socials:
+      - title: Github Profile
+        url: https://github.com/arv-anshul
+        icon: simple/github
+      - title: LinkedIn Profile
+        url: https://linkedin.com/in/arv-anshul
+        icon: simple/linkedin
+      - title: Resume
+        url: https://github.com/arv-anshul/arv-anshul/raw/main/resume_arv-anshul.pdf
+        icon: material/file-document
+      - title: Personal Website
+        url: https://arv-anshul.github.io
+        icon: material/web
+      - title: Email
+        url: mailto:arv.anshul.1864@gmail.com
+        icon: material/email
+  - name: Wcowin
+    primaryUrl: https://wcowin.work/
+    avatar: https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
+    profession: College Student
+    description: |
+      I am a junior from China. I love programming technology and have done some
+      research on web development and AI large models. You can learn more about me
+      through [my website](https://wcowin.work/).
+    socials:
+      - title: Github Profile
+        url: https://github.com/Wcowin
+        icon: simple/github
+      - title: Personal Website
+        url: https://wcowin.work/
+        icon: material/web
+      - title: Email
+        url: mailto:<wangkewen821@gmail.com>
+        icon: material/email

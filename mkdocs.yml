@@ -17,7 +17,7 @@ theme:
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-auto
+        icon: material/link
         name: 关闭自动模式
     #primary: blue grey
     - media: "(prefers-color-scheme: light)"
@@ -268,6 +268,10 @@ nav:
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
 
 extra:
+  customer:
+    name: Your name here
+    web: www.example.com
+    salt: salt.example.com
   alternate:
     - name: 简体中文
       link: /
@@ -366,8 +370,6 @@ plugins:
       authors_file: "{blog}/.authors.yml"  #作者信息
   - tags:
       tags_file: tag.md  #分类标签
-  # - markdownextradata:
-  #     data: ./docs/_data/ # 额外数据文件
 
 markdown_extensions:
   - abbr

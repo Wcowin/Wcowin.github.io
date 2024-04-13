@@ -46,7 +46,9 @@ https://bento.me/wcowin
 </a>
 
 <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dae80b95-9b90-4970-a825-e5c020674ee7/deploy-status)](https://app.netlify.com/sites/wcowin/deploys)
 
 <!-- [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/) -->
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a><br />本博客所有原创文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">知识共享署名 4.0 国际许可协议</a>进行许可。
