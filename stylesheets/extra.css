@@ -1,24 +1,35 @@
-:root > * {
-    --md-primary-fg-color:        #518FC1;
-    --md-primary-fg-color--light:#518FC1;
-    --md-primary-fg-color--dark:  #518FC1;
-      
-  }
-  /* 给所有元素加上边框 */
-  /* * {
+:root>* {
+  --md-primary-fg-color: #518FC1;
+  --md-primary-fg-color--light: #518FC1;
+  --md-primary-fg-color--dark: #518FC1;
+
+}
+
+/* 给所有元素加上边框 */
+/* * {
     outline: 1px solid #518FC1;
   }  */
+/* :root {
+  transition: --md-primary-color 0.5s ease, --md-accent-color 0.5s ease;
+} */
 
-  button.md-top {
-    font-family: LXGW WenKai; /* 修改字体 */
-    font-size: 16px; /* 修改字体大小 */
-    font-weight: lighter;/* 修改字体粗细 */
-    color: #518FC1; /* 修改字体颜色 */
-  }
+
+button.md-top {
+  font-family: LXGW WenKai;
+  /* 修改字体 */
+  font-size: 16px;
+  /* 修改字体大小 */
+  font-weight: lighter;
+  /* 修改字体粗细 */
+  color: #518FC1;
+  /* 修改字体颜色 */
+}
 
 :root {
-  --md-text-font: "LXGW WenKai"; 
-} /* 字体 */
+  --md-text-font: "LXGW WenKai";
+}
+
+/* 字体 */
 
 
 .ml3 {
@@ -30,98 +41,116 @@
 
 img.img1 {
   border-radius: 25px;
-  
+
 }
+
 img.img2 {
   border-radius: 25px;
-  
+
 }
+
 img.img3 {
   border-radius: 25px;
-  
+
 }
 
 img.twitter {
-    color: #1DA1F2;
-  }
-  .bilibili {
-    color: #EA7A99;
-  }
-  .github {
-    color: #25292E;
-  }
-  @keyframes heart {
-    0%, 40%, 80%, 100% {
-      transform: scale(1);
-    }
-    20%, 60% {
-      transform: scale(1.15);
-    }
-  }
-  .heart {
-    animation: heart 1000ms infinite;
-  }
-  
-  :root {
-    --md-admonition-icon--pied-piper: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
-  }
-  .md-typeset .admonition.pied-piper,
-  .md-typeset details.pied-piper {
-    border-color: rgb(43, 155, 70);
-    font-size: large;
-    
-  }
-  .md-typeset .pied-piper > .admonition-title,
-  .md-typeset .pied-piper > summary {
-    background-color: rgba(43, 155, 70, 0.1);
-  }
-  .md-typeset .pied-piper > .admonition-title::before,
-  .md-typeset .pied-piper > summary::before {
-    background-color: rgb(43, 155, 70);
-    -webkit-mask-image: var(--md-admonition-icon--pied-piper);
-            mask-image: var(--md-admonition-icon--pied-piper);
-  }
-  
+  color: #1DA1F2;
+}
 
-  :root {
-    
-    --md-admonition-icon--pied-piper1: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
-  }
-  .md-typeset .admonition.pied-piper1,
-  .md-typeset details.pied-piper1 {
-    border-color: rgb(96,141,189);
-    font-size: large;
-    width: 100%;
-    /* border-radius:25px; */
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    
+.bilibili {
+  color: #EA7A99;
+}
 
-    
-  }
-  .md-typeset .pied-piper1 > .admonition-title,
-  .md-typeset .pied-piper1 > summary {
-    background-color: linear-gradient(to right, rgba(238, 243, 254));
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    height: 45px;
-    width: auto;
-    
+.github {
+  color: #25292E;
+}
 
+@keyframes heart {
+
+  0%,
+  40%,
+  80%,
+  100% {
+    transform: scale(1);
   }
-  .md-typeset .pied-piper1 > .admonition-title::before,
-  .md-typeset .pied-piper1 > summary::before {
-    background-color: rgb(31,31,33);
-    -webkit-mask-image: var(--md-admonition-icon--pied-piper1);
-            mask-image: var(--md-admonition-icon--pied-piper1);
-  }  
+
+  20%,
+  60% {
+    transform: scale(1.15);
+  }
+}
+
+.heart {
+  animation: heart 1000ms infinite;
+}
+
+:root {
+  --md-admonition-icon--pied-piper: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.md-typeset .admonition.pied-piper,
+.md-typeset details.pied-piper {
+  border-color: rgb(43, 155, 70);
+  font-size: large;
+
+}
+
+.md-typeset .pied-piper>.admonition-title,
+.md-typeset .pied-piper>summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+
+.md-typeset .pied-piper>.admonition-title::before,
+.md-typeset .pied-piper>summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--pied-piper);
+  mask-image: var(--md-admonition-icon--pied-piper);
+}
+
+
+:root {
+
+  --md-admonition-icon--pied-piper1: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.md-typeset .admonition.pied-piper1,
+.md-typeset details.pied-piper1 {
+  border-color: rgb(96, 141, 189);
+  font-size: large;
+  width: 100%;
+  /* border-radius:25px; */
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+
+
+}
+
+.md-typeset .pied-piper1>.admonition-title,
+.md-typeset .pied-piper1>summary {
+  background-color: linear-gradient(to right, rgba(238, 243, 254));
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 45px;
+  width: auto;
+
+
+}
+
+.md-typeset .pied-piper1>.admonition-title::before,
+.md-typeset .pied-piper1>summary::before {
+  background-color: rgb(31, 31, 33);
+  -webkit-mask-image: var(--md-admonition-icon--pied-piper1);
+  mask-image: var(--md-admonition-icon--pied-piper1);
+}
 
 
 
 /* 鼠标 */
-  /* body {
+/* body {
       cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/default.cur),
           default;
   }
@@ -231,50 +260,54 @@ source{
 /*圆角*/
 #rcorners1 {
   border-radius: 25px;
-  background: linear-gradient(to right, rgba(189,224,245),rgba(218,232,241), rgba(238,237,238));
+  background: linear-gradient(to right, rgba(189, 224, 245), rgba(218, 232, 241), rgba(238, 237, 238));
   /* #F0EFEB; F5F4F1*/
-  padding: 20px; 
+  padding: 20px;
   width: 100%;
   height: 100px;
   text-align: center;
-  font-size:16px;
+  font-size: 16px;
 }
 
 
 #rcorners2 {
   border-radius: 25px;
   border: 2px solid #518FC1;
-  padding: 20px; 
+  padding: 20px;
   width: 100%;
-  height: 100%; 
-  font-size:16px;
+  height: 100%;
+  font-size: 16px;
 }
 
 #rcorners3 {
   border-radius: 25px;
   border: 2px solid #518FC1;
-  padding: 20px; 
+  padding: 20px;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
 
 .image-container {
-    text-align: center; /* 居中对齐容器中的内容 */
-  }
+  text-align: center;
+  /* 居中对齐容器中的内容 */
+}
 
 .image-container img {
-    display: inline-block; /* 将图片水平排列在一行 */
-    margin: 10px; /* 可以根据需要添加图片之间的间距 */
-  }
+  display: inline-block;
+  /* 将图片水平排列在一行 */
+  margin: 10px;
+  /* 可以根据需要添加图片之间的间距 */
+}
 
 
 
 /* 渐变 */
 #grad1 {
   height: 200px;
-  background-color: red; /* 不支持线性的时候显示 */
-  background-image: linear-gradient(to bottom right, red , yellow);
+  background-color: red;
+  /* 不支持线性的时候显示 */
+  background-image: linear-gradient(to bottom right, red, yellow);
 }
 
 /* 按钮 */
@@ -291,6 +324,7 @@ source{
   margin: 4px 2px;
   cursor: pointer;
 }
+
 .buttoncss1 {
   background-color: #567fd0;
   border-radius: 12px;
@@ -307,7 +341,8 @@ source{
 
 
 .buttonxuan {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
+  /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -316,16 +351,18 @@ source{
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
 .buttonxuan1 {
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 2px solid #4CAF50;
 }
+
 .buttonxuan1:hover {
   background-color: #4CAF50;
   color: white;
@@ -342,8 +379,8 @@ source{
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  border:2px solid;
-  border-radius:25px;
+  border: 2px solid;
+  border-radius: 25px;
 }
 
 .buttonxuan2 span {
@@ -370,6 +407,7 @@ source{
   opacity: 1;
   right: 0;
 }
+
 /* .buttonxuan3 */
 .buttonxuan3:hover {
   display: inline-block;
@@ -382,8 +420,8 @@ source{
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  border:2px solid;
-  border-radius:25px;
+  border: 2px solid;
+  border-radius: 25px;
 }
 
 .buttonxuan3 span {
@@ -426,24 +464,38 @@ div.hide {
 }
 
 /* 布局 */
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.item5 {
+  grid-area: footer;
+}
 
 .grid-container {
   display: grid;
   grid:
-  'header header header header header header'
-  'menu main main main right right'
-  'menu footer footer footer footer footer';
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
 }
 
-.grid-container > div {
+.grid-container>div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
@@ -463,20 +515,20 @@ div.hide {
 .md-typeset .grid.cards>ol>li,
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
-    border: 0.05rem solid var(--md-default-fg-color--lightest);
-    border-radius: 0.7rem;
-    /* 修改圆角大小 */
-    display: block;
-    margin: 0;
-    padding: 0.8rem;
-    transition: border 0.25s, box-shadow 0.25s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* 修改阴影效果 */
-    /* box-shadow: 水平偏移量 垂直偏移量 模糊半径 扩散半径 色值; */
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.7rem;
+  /* 修改圆角大小 */
+  display: block;
+  margin: 0;
+  padding: 0.8rem;
+  transition: border 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* 修改阴影效果 */
+  /* box-shadow: 水平偏移量 垂直偏移量 模糊半径 扩散半径 色值; */
 }
 
 
-ol > li {
+ol>li {
   list-style-type: decimal;
 }
 
@@ -487,20 +539,24 @@ ol > li {
     margin: 0.5em 0.75em;
   }
 }
+
 .followme .social-list .social-link {
   border: 0;
   display: inline-block;
   text-align: center;
 }
+
 .followme .social-list .social-link .icon {
   font-size: 1.75em;
   height: 1.75em;
   width: 1.75em;
 }
+
 .followme .social-list .social-link .label {
   display: block;
   font-size: 14px;
 }
+
 .poem-wrap {
   position: relative;
   width: 730px;
@@ -510,6 +566,7 @@ ol > li {
   text-align: center;
   margin: 80px auto;
 }
+
 .poem-wrap h1 {
   font-size: 30px;
   position: relative;
@@ -518,45 +575,55 @@ ol > li {
   letter-spacing: 4px;
   color: #797979;
 }
+
 .poem-wrap p {
   width: 70%;
   margin: auto;
   line-height: 30px;
   color: #797979;
 }
+
 .poem-wrap p#poem {
   font-size: 25px;
 }
+
 .poem-wrap p#info {
   font-size: 15px;
   margin: 15px auto;
 }
+
 .poem-border {
   position: absolute;
   height: 2px;
   width: 27%;
   background-color: #797979;
 }
+
 .poem-right {
   right: 0;
 }
+
 .poem-left {
   left: 0;
 }
+
 @media (max-width: 685px) {
   .poem-border {
     width: 18%;
   }
 }
+
 @media (max-width: 500px) {
   .poem-wrap {
     margin-top: 60px;
     margin-bottom: 20px;
     border-top: 2px solid #797979;
   }
+
   .poem-wrap h1 {
     margin: 20px 6px;
   }
+
   .poem-border {
     display: none;
   }
@@ -596,14 +663,18 @@ ol > li {
 }
 
 #qr img {
-  width: 250px; /* 调整图像大小 */
-  margin: 10px; /* 添加一些间距 */
+  width: 250px;
+  /* 调整图像大小 */
+  margin: 10px;
+  /* 添加一些间距 */
   border-radius: 25px;
 }
 
 #qr p {
-  font-size: 16px; /* 调整字体大小 */
-  color: #555; /* 更改字体颜色 */
+  font-size: 16px;
+  /* 调整字体大小 */
+  color: #555;
+  /* 更改字体颜色 */
 }
 
 /* 遮盖 */
