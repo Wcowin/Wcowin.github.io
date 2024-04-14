@@ -21,7 +21,7 @@ button.md-top {
   /* 修改字体大小 */
   font-weight: lighter;
   /* 修改字体粗细 */
-  color: #518FC1;
+  /* color: #4351AF; */
   /* 修改字体颜色 */
 }
 
@@ -687,3 +687,4 @@ ol>li {
 .mask:hover {
   color: #ffffff;
 }
+
