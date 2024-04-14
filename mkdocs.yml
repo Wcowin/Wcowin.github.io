@@ -7,7 +7,6 @@ site_author: 王科文(Wcowin)
 theme:
   name: material
   custom_dir: docs/overrides
-  # custom_dir: material/.overrides
   # font:
   #   text: Bitter
   #   code: Roboto Mono
@@ -23,7 +22,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
       primary: blue grey # 上方的
-      accent: indigo # 链接等可交互元件的高亮色
+      accent: blue # 链接等可交互元件的高亮色
       # teal 
       toggle:
         icon: material/toggle-switch # 图标
@@ -268,10 +267,6 @@ nav:
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
 
 extra:
-  customer:
-    name: Your name here
-    web: www.example.com
-    salt: salt.example.com
   alternate:
     - name: 简体中文
       link: /
@@ -415,6 +410,7 @@ markdown_extensions:
   
 extra_javascript:
   - javascripts/extra.js 
+  - javascripts/bannerSlider.js
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -434,6 +430,7 @@ extra_css:
   - stylesheets/extra2.css  #诗词版、打赏
   - stylesheets/link.css  #友链
   - stylesheets/customize.css  #按钮圆角化
+  - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   # - stylesheets/extra1.css
   # - stylesheets/video.css
@@ -445,3 +442,7 @@ extra_css:
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体 
   
 
+watch:
+  - docs
+  - mkdocs.yml
+  - docs/overrides/partials

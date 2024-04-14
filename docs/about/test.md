@@ -4,6 +4,54 @@
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
+
+
+
+<div class="grid" style="display: grid;grid-template-columns: 30% 69%" markdown>
+<div class="grid cards" markdown>
+
+-   :material-tooltip-edit:{ .lg .middle } __关于__
+
+    ---    
+    - [效率][Software]
+    [Software]: javascript:document.getElementById('software').scrollIntoView()
+
+</div>
+
+<div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
+
+-   :material-star-shooting:{ .lg .middle } __推荐__
+
+    ---
+
+    :material-eye-check:{ .lg .middle } [Wcowin](https://github.com/Wcowin/Wcowin.github.io) - 技术博客
+
+<div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
+
+
+-   :material-file-link:{ .lg .middle } __Release__
+
+    ---
+
+    更新中...
+
+    [→ 所有版本](https://github.com/Wcowin/Wcowin.github.io)
+
+
+-   :material-flag-variant-minus:{ .lg .middle } __Wcowin__
+
+    ---
+
+    更新中...
+
+    [→ 了解更多](https://github.com/Wcowin/Wcowin.github.io)
+
+</div>
+
+</div>
+
+</div>
+
 <!-- <font  color= #518FC1 size=6 class="fontalicious">“循此苦旅，以达星辰”</font> -->
 
 <!-- <div class="spinner">
@@ -32,6 +80,37 @@ $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
 
 
 [![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
+
+
+<div class="grid cards">
+    <ul>
+        <li>
+            <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M168 80c-13.3 0-24 10.7-24 24v304c0 8.4-1.4 16.5-4.1 24H440c13.3 0 24-10.7 24-24V104c0-13.3-10.7-24-24-24H168zM72 480c-39.8 0-72-32.2-72-72V112c0-13.3 10.7-24 24-24s24 10.7 24 24v296c0 13.3 10.7 24 24 24s24-10.7 24-24V104c0-39.8 32.2-72 72-72h272c39.8 0 72 32.2 72 72v304c0 39.8-32.2 72-72 72H72zm104-344c0-13.3 10.7-24 24-24h96c13.3 0 24 10.7 24 24v80c0 13.3-10.7 24-24 24h-96c-13.3 0-24-10.7-24-24v-80zm200-24h32c13.3 0 24 10.7 24 24s-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80h32c13.3 0 24 10.7 24 24s-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24s10.7-24 24-24zm-176 80h208c13.3 0 24 10.7 24 24s-10.7 24-24 24H200c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80h208c13.3 0 24 10.7 24 24s-10.7 24-24 24H200c-13.3 0-24-10.7-24-24s10.7-24 24-24z">
+                        </path>
+                    </svg></span> <strong>NEWS</strong></p>
+            <div class="grid cards">
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <a href="../HC_Start/" target="_blank"><img src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg" /></a>
+                        <a href="https://muselink.cc/Wcowin" target="_blank"><img src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg" /></a>
+                    </div>
+                    <!-- 触发 hover 的区域 -->
+                    <div class="carousel-hover left">
+                        <button class="carousel-btn left" onclick="leftShift()"></button>
+                    </div>
+                    <div class="carousel-hover right">
+                        <button class="carousel-btn right" onclick="rightShift()"></button>
+                    </div>
+                    <div class="carousel-bottom"></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
 
 <!DOCTYPE html>
 <html lang="en">
