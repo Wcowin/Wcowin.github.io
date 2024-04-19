@@ -131,7 +131,7 @@ comments: false
 2. 18939533255
 ***  
 
-<strong>推荐文章:material-book:</strong>
+<!-- <strong>推荐文章:material-book:</strong>
 
   - [如何注册ChatGPT](develop/ChatGPT.md)
   - [将Python文件.py打包成.exe可执行程序](blog/py/python.md)
@@ -142,8 +142,52 @@ comments: false
   - [好用/好玩网站分享](blog/Webplay.md)
   - [Mac/windows软件网站汇总](blog/macsoft.md)
   - [重庆旅游推荐路线](trip/InCQ/CQ.md)
-  - [留言板](waline.md)
-  
+  - [留言板](waline.md) -->
+
+<div class="grid cards" markdown>
+
+-   :material-clock-fast:{ .lg .middle } __推荐的文章__
+
+    ---
+
+    - [如何注册ChatGPT](develop/ChatGPT.md)
+    - [将Python文件打包成.exe可执行程序](blog/py/python.md)
+    - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md) 
+    
+
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程__
+
+    ---
+
+    - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
+    - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)   
+    - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
+
+    
+
+-   :material-format-font:{ .lg .middle } __好玩__
+
+    ---
+
+    
+    - [好用/好玩网站分享](blog/Webplay.md)
+    - [Mac/windows软件网站汇总](blog/macsoft.md)
+    - [重庆旅游推荐路线](trip/InCQ/CQ.md)
+    
+
+    
+
+-   :simple-aboutdotme:{ .lg .middle } __关于__
+
+    ---
+
+    - [留言板](waline.md)
+    - [Blogger](blog/index.md)   
+    [:octicons-arrow-right-24: 了解我](about/geren.md)
+
+</div>
+
+
 
 [^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
 [^see-how-much-I-love-you]:All problems in computer science can be solved by another level of indirection
@@ -224,34 +268,34 @@ WIDGET = {
 
 
 
-   <body>
-        <font color="#B9B9B9">
-        <p style="text-align: center; ">
-                <span>本站已经运行</span>
-                <span id='box1'></span>
-    </p>
-      <div id="box1"></div>
-      <script>
-        function timingTime(){
-          let start = '2022-10-20 00:00:00'
-          let startTime = new Date(start).getTime()
-          let currentTime = new Date().getTime()
-          let difference = currentTime - startTime
-          let m =  Math.floor(difference / (1000))
-          let mm = m % 60  // 秒
-          let f = Math.floor(m / 60)
-          let ff = f % 60 // 分钟
-          let s = Math.floor(f/ 60) // 小时
-          let ss = s % 24
-          let day = Math.floor(s  / 24 ) // 天数
-          return day + "天" + ss + "时" + ff + "分" + mm +'秒'
-        }
-        setInterval(()=>{
-          document.getElementById('box1').innerHTML = timingTime()
-        },1000)
-      </script>
-      </font>
-    </body>
+<body>
+    <font color="#B9B9B9">
+    <p style="text-align: center; ">
+            <span>本站已经运行</span>
+            <span id='box1'></span>
+</p>
+  <div id="box1"></div>
+  <script>
+    function timingTime(){
+      let start = '2022-10-20 00:00:00'
+      let startTime = new Date(start).getTime()
+      let currentTime = new Date().getTime()
+      let difference = currentTime - startTime
+      let m =  Math.floor(difference / (1000))
+      let mm = m % 60  // 秒
+      let f = Math.floor(m / 60)
+      let ff = f % 60 // 分钟
+      let s = Math.floor(f/ 60) // 小时
+      let ss = s % 24
+      let day = Math.floor(s  / 24 ) // 天数
+      return day + "天" + ss + "时" + ff + "分" + mm +'秒'
+    }
+    setInterval(()=>{
+      document.getElementById('box1').innerHTML = timingTime()
+    },1000)
+  </script>
+  </font>
+</body>
 
 
 <!-- <head>

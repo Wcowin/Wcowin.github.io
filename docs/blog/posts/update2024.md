@@ -8,6 +8,10 @@ readtime: 2
 ---
 ## </p><h1 id="01" name="01"><strong>2024-04-12</strong></h1><p>
 * 优化网站流畅度（玄学）
+* 重写主页index.md,更加美观，贴合圆角设计
+
+## </p><h1 id="01" name="01"><strong>2024-04-12</strong></h1><p>
+* 优化网站流畅度（玄学）
 * 感谢W1ndys提出的[使用软编码配置友链界面](https://github.com/Wcowin/Mkdocs-Wcowin/pull/9)，使得友链添加更加规范化
 * 引入网页翻译实验性功能(详见右上角翻译按钮)
 

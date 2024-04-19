@@ -140,6 +140,7 @@ nav:
         - pip: blog/py/pip.md
     - C语言: 
         - C笔记: blog/C language/c.md
+        - C++: blog/C language/C++.md
 
   - 开发: 
     - develop/index.md
