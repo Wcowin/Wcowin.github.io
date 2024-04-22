@@ -509,10 +509,24 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://cdn.dusays.com/avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://dusays.com" target="_blank">杜老师说</a> 
+      </div> 
+      <div class="info">
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
+
+
+
+
 
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
