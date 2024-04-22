@@ -2,6 +2,7 @@
 title: 要么旅行，要么读书，身体和灵魂必须有一个在路上 
 # 隐藏的模块
 hide:
+  - footer
   #  - navigation # 隐藏左边导航
   #  - toc #隐藏右边导航
   #  - footer #隐藏翻页
