@@ -6617,28 +6617,17 @@ sequenceDiagram
 ```
 </code></pre></div></td></tr></table></div>
 <p><strong>效果如下：</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-7-10">10</a></span>
-<span class="normal"><a href="#__codelineno-7-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>sequenceDiagram
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>    participant Alice
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a>    participant Bob
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a>    Alice-&gt;John: Hello John, how are you?
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a>    loop Healthcheck
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>        John-&gt;John: Fight against hypochondria
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a>    end
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a>    Note right of John: Rational thoughts &lt;br/&gt;prevail...
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a>    John--&gt;Alice: Great!
-<a id="__codelineno-7-10" name="__codelineno-7-10"></a>    John-&gt;Bob: How about you?
-<a id="__codelineno-7-11" name="__codelineno-7-11"></a>    Bob--&gt;John: Jolly good!
-</code></pre></div></td></tr></table></div>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!</code></pre>
 <h3 id="echarts">echarts<a class="headerlink" href="#echarts" title="Permanent link">&para;</a></h3>
 <p>echarts 是百度出品的 js 画图库，它的网址为：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="https://echarts.apache.org/examples/zh/index.html">https://echarts.apache.org/examples/zh/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -6672,35 +6661,35 @@ option = {
 ```
 </code></pre></div></td></tr></table></div>
 <p><strong>效果如下：</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-9-10">10</a></span>
-<span class="normal"><a href="#__codelineno-9-11">11</a></span>
-<span class="normal"><a href="#__codelineno-9-12">12</a></span>
-<span class="normal"><a href="#__codelineno-9-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>option = {
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a>    xAxis: {
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a>        type: &#39;category&#39;,
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a>    },
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a>    yAxis: {
-<a id="__codelineno-9-7" name="__codelineno-9-7"></a>        type: &#39;value&#39;
-<a id="__codelineno-9-8" name="__codelineno-9-8"></a>    },
-<a id="__codelineno-9-9" name="__codelineno-9-9"></a>    series: [{
-<a id="__codelineno-9-10" name="__codelineno-9-10"></a>        data: [820, 932, 901, 934, 1290, 1330, 1320],
-<a id="__codelineno-9-11" name="__codelineno-9-11"></a>        type: &#39;line&#39;
-<a id="__codelineno-9-12" name="__codelineno-9-12"></a>    }]
-<a id="__codelineno-9-13" name="__codelineno-9-13"></a>};
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>option = {
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>    xAxis: {
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>        type: &#39;category&#39;,
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a>    },
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a>    yAxis: {
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a>        type: &#39;value&#39;
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a>    },
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a>    series: [{
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a>        data: [820, 932, 901, 934, 1290, 1330, 1320],
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a>        type: &#39;line&#39;
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a>    }]
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a>};
 </code></pre></div></td></tr></table></div>
 <h3 id="footnote">脚注（Footnote）<a class="headerlink" href="#footnote" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>这是一个脚注：[^1]
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>这是一个脚注：[^1]
 </code></pre></div></td></tr></table></div>
 <p>效果如下：</p>
 <p>这是一个脚注：<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
