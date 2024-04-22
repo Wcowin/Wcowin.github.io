@@ -498,11 +498,21 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.anheyu.com/" target="_blank">安知鱼</a> 
+      </div> 
+      <div class="info">
+      生活明朗，万物可爱
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
-
 
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>

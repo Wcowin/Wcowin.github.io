@@ -387,11 +387,11 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.tilde
 
-  - pymdownx.superfences
-      # custom_fences:
-      #   - name: mermaid
-      #     class: mermaid
-      #     format: !!python/name:pymdownx.superfences.fence_code_format 
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format 
   - pymdownx.arithmatex:  # latex支持
       generic: true
   - toc:
