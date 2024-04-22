@@ -2,6 +2,7 @@
 title:  闲话一直有 不听自然无
 # 隐藏的模块
 hide:
+  - footer
   #  - navigation # 隐藏左边导航
   #  - toc #隐藏右边导航
   #  - footer #隐藏翻页
@@ -12,7 +13,12 @@ comments: false  #评论，默认不开启
 # 闲话一直有 不听自然无
 
 
-!!! note
+<div class="grid cards" markdown>
+
+-   :material-clock-fast:{ .lg .middle } __Tips__
+
+    ---
+
     <ul>
       <li>通过主题和目录以打开文章</li>
       <ul>
@@ -24,3 +30,4 @@ comments: false  #评论，默认不开启
         如遇到网页卡顿/打开文章后无法显示图片的情况，请使用<strong>科学上网</strong>以打破信息壁垒
       </li>
     </ul>
+</div>

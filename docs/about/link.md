@@ -178,16 +178,15 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://www.styg.org.cn/zb_users/upload/2024/01/202401261706277157705448.png" /> 
+     <img class="ava" src="https://cdn.dusays.com/avatar.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
+       <a href="https://dusays.com" target="_blank">杜老师说</a> 
       </div> 
       <div class="info">
-       慈善义工在行动
       </div> 
      </div> 
-    </div> 
+    </div>
    <div class="card"> 
      <img class="ava" src="https://www.luckyzh.cn/avatar.jpg" /> 
      <div class="card-header"> 
@@ -509,16 +508,7 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-   <div class="card"> 
-     <img class="ava" src="https://cdn.dusays.com/avatar.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://dusays.com" target="_blank">杜老师说</a> 
-      </div> 
-      <div class="info">
-      </div> 
-     </div> 
-    </div>
+
 
 
    </div> 
@@ -548,7 +538,18 @@ t.parentNode.insertBefore(e,t)}})();
        记录我的成长和青春
       </div> 
      </div> 
-    </div>  
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
+      </div> 
+      <div class="info">
+       慈善义工在行动
+      </div> 
+     </div> 
+    </div>   
 
    </div> 
   </div>
@@ -589,7 +590,6 @@ t.parentNode.insertBefore(e,t)}})();
 
 === "Txt"
 
-   
     >名称: Wcowin's Web  
     >链接: https://wcowin.work/  
     >头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
@@ -597,17 +597,17 @@ t.parentNode.insertBefore(e,t)}})();
 
 === "HTML(推荐)"
 
-    推荐在评论区发送这种格式
+    推荐在评论区发送这种格式，带*号的需要填写自己的信息
 
     ```html
     <div class="card"> 
-     <img class="ava" src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" /> 
+     <img class="ava" src="*你的头像链接*" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://wcowin.work/ " target="_blank">Wcowin's Web</a> 
+       <a href="*你的网站地址* " target="_blank">*你的站点名称*</a> 
       </div> 
       <div class="info">
-       “循此苦旅，以达星辰”
+       *你的站点描述*
       </div> 
      </div> 
     </div>
@@ -620,3 +620,8 @@ t.parentNode.insertBefore(e,t)}})();
       avatar: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png 
       descr: 循此苦旅，以达星辰
     ```
+=== "通用"
+
+    点击右侧**友链申请**填写问卷
+
+    
