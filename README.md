@@ -1,7 +1,7 @@
 # My 𝕏 Website
 
 <p align="center">
-    <img src="docs/img/index.png" alt="arv-anshul"/ >
+    <img src="docs/img/index.png" alt="arv-anshul"/ width="80%" >
 </p>
 <p align="center">
     <a href="https://squidfunk.github.io/mkdocs-material/"><img src="https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&amp;logo=MaterialForMkDocs&amp;logoColor=white" alt="Built with Material for MkDocs"></a>
@@ -9,9 +9,9 @@
     <a href="https://github.com/Wcowin/Wcowin.github.io/actions"><img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=fff&style=for-the-badge" alt="GitHub Actions Badge"></a>
 </p>
 
-- My personal website:http://wcowin.work
-- Welcome to contact my Email:wangkewen821@gmail.com
-- 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
+<p align="center">
+<p align="center">𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
+</p>
 
 # Connect with me
 
@@ -20,13 +20,13 @@
 **MuseLink**
 <p>
   <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg" alt="个人名片" style="border-radius: 10px;">
+    <img src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg" alt="个人名片" style="border-radius: 10px;" width="50%">
   </a>
 </p>
 
 **Wechat**  
 <!-- ![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg) -->
-<img src="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" style="border-radius: 10px;">
+<img src="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" style="border-radius: 10px;" width="40%">
 </center>
 
 # Profile Link
