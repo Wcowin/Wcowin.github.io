@@ -1,7 +1,7 @@
 # My 𝕏 Website
 
 <p align="center">
-    <img src="docs/img/index.png" alt="arv-anshul"/>
+    <img src="docs/img/index.png" alt="arv-anshul"/ >
 </p>
 <p align="center">
     <a href="https://squidfunk.github.io/mkdocs-material/"><img src="https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&amp;logo=MaterialForMkDocs&amp;logoColor=white" alt="Built with Material for MkDocs"></a>
@@ -20,12 +20,13 @@
 **MuseLink**
 <p>
   <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg" alt="个人名片">
+    <img src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg" alt="个人名片" style="border-radius: 10px;">
   </a>
 </p>
 
 **Wechat**  
-![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg)
+<!-- ![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg) -->
+<img src="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" style="border-radius: 10px;">
 </center>
 
 # Profile Link
@@ -34,10 +35,10 @@ https://bento.me/wcowin
 
 # Star History
 
-<!-- [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Wcowin.github.io&type=Date)](https://star-history.com/#Wcowin/Wcowin.github.io&Date) -->
+[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Wcowin.github.io&type=Date)](https://star-history.com/#Wcowin/Wcowin.github.io&Date)
 
 
-[![Stargazers over time](https://starchart.cc/Wcowin/Wcowin.github.io.svg?variant=adaptive)](https://starchart.cc/Wcowin/Wcowin.github.io)
+<!-- [![Stargazers over time](https://starchart.cc/Wcowin/Wcowin.github.io.svg?variant=adaptive)](https://starchart.cc/Wcowin/Wcowin.github.io) -->
 
 ## Contributors
 
