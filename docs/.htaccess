@@ -12,7 +12,3 @@
   ExpiresActive on
   ExpiresDefault "access plus 1 month"
 </IfModule>
-
-
-
-

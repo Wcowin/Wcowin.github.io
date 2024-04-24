@@ -120,7 +120,7 @@ comments: false
     </ul>
     <li>搜索关键词以打开文章</li>
     <li>
-      如遇到网页卡顿/打开文章后无法显示图片的情况，请使用<strong>科学上网</strong>以打破信息壁垒
+      如遇到网页卡顿/打开文章后无法显示图片的情况，请访问<strong><a href="https://wcowin.gitee.io/wcowin.github.io/index.html" target="_blank">镜像网站</a></strong>
     </li>
   </ul>
 </div> 
