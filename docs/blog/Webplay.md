@@ -2,7 +2,8 @@
 title: 好用/好玩网站分享
 tags:
   - 技术分享
-author: Wcowin
+authors:
+  - Wcowin
 ---
 
 

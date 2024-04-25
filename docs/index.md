@@ -146,7 +146,7 @@ comments: false
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __推荐的文章__
+-   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
 
     ---
 
@@ -261,13 +261,6 @@ WIDGET = {
 <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 
 
-<!-- <head>
-<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({id:"3HOcxvgwJJmkuGUi",ck:"3HOcxvgwJJmkuGUi"})</script>
-</head> -->
-
-
-
 <body>
     <font color="#B9B9B9">
     <p style="text-align: center; ">
@@ -298,34 +291,6 @@ WIDGET = {
 </body>
 
 
-<!-- <head>
-<script defer src="https://analytics.us.umami.is/script.js" data-website-id="dae37494-1db6-408a-afdd-1868e1a7d41a"></script>
-</head> -->
-
-<!-- /***
- *      ┌─┐       ┌─┐
- *   ┌──┘ ┴───────┘ ┴──┐
- *   │                 │
- *   │       ───       │
- *   │   >        <    │
- *   │                 │
- *   │   ...  ⌒  ...   │
- *   │                 │
- *   └───┐         ┌───┘
- *       │         │
- *       │         │
- *       │         │
- *       │         └──────────────┐
- *       │                        │
- *       │                        ├─┐
- *       │                        ┌─┘
- *       │                        │
- *       └─┐  ┐  ┌───────┬──┐  ┌──┘
- *         │ ─┤ ─┤       │ ─┤ ─┤
- *         └──┴──┘       └──┴──┘
- *                神兽保佑
- *               代码无BUG!
- */ -->
 
 <!--  
 ____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
@@ -336,5 +301,4 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
 
 -->
-
 

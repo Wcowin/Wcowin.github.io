@@ -24,21 +24,20 @@ Aigo 256G
 <font  color= #518FC1 size=6>[wcowin.work](https://wcowin.work)</font>
 
 ## <h1 id="01" name="01"><strong>开发工具</strong></h1>
-* Vs code
-* Xcode
-* PyCharm
-* WebStorm
+* Vs code :material-microsoft-visual-studio-code:
+* Xcode :simple-xcode:
+* PyCharm :simple-pycharm:
+* WebStorm :simple-webstorm:
 ***
-* Git
-* npm
-* Node.js
-* pip
-* vue
-* [SwitchHost](https://switchhosts.vercel.app/zh)
-* Mkdocs/mkdocs-material
+* Git :simple-git:
+* npm :fontawesome-brands-npm:
+* Node.js :fontawesome-brands-node:
+* vue :material-vuejs:
+* [SwitchHost](https://switchhosts.vercel.app/zh)  :material-toggle-switch:
+* Mkdocs/mkdocs-material :logo-monochrome:
 ***
-* Arc/Chrome/Safari浏览器
-* GitHub
-* CSDN
+* Arc/Chrome/Safari浏览器 :simple-safari:
+* GitHub :material-github:
+* CSDN :material-file-code:
 ***
-* Apple music
+* Apple music :simple-applemusic:

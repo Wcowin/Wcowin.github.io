@@ -293,13 +293,16 @@ extra:
   social:
     - icon: fontawesome/brands/weixin
       link: https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg
-      name: weixin
+      name: Wechat
     - icon: fontawesome/brands/x-twitter 
       link: https://twitter.com/wcowin_
       name: Twitter
     - icon: fontawesome/brands/github
       link: https://github.com/Wcowin
       name: Github
+    - icon: fontawesome/solid/file-code
+      link: https://blog.csdn.net/m0_63203517?spm=1000.2115.3001.5343
+      name: CSDN    
     - icon: fontawesome/regular/envelope
       link: mailto:<wangkewen821@gmail.com> #联系方式
       name: Email
@@ -329,11 +332,9 @@ extra:
 
 
 plugins:
-  # - glightbox
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - offline
-  # - glightbox
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
       type: iso_date
