@@ -519,12 +519,21 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://npm.elemecdn.com/webxc/logo/logo.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://webxc.eu.org" target="_blank">小城故事</a> 
+      </div> 
+      <div class="info">
+      欢迎光临小城故事!
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
-
 
 
 
