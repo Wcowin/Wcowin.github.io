@@ -530,6 +530,17 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://www.styg.org.cn/zb_users/upload/2024/01/202401261706277157705448.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
+      </div> 
+      <div class="info">
+       慈善义工在行动
+      </div> 
+     </div> 
+    </div>   
 
 
    </div> 
@@ -558,17 +569,6 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-   <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
-      </div> 
-      <div class="info">
-       慈善义工在行动
-      </div> 
-     </div> 
-    </div>   
 
    </div> 
   </div>
