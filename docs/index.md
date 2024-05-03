@@ -190,7 +190,7 @@ comments: false
 
 
 [^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
-[^see-how-much-I-love-you]:All problems in computer science can be solved by another level of indirection
+[^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
 
 
 <head>
