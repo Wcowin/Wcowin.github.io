@@ -43,8 +43,9 @@ MkDocs on GitHub Pages in a step-by-step guide.
 ![img](https://s1.imagehub.cc/images/2024/02/02/6483c0b9ee144e0c1e035dccf3339991.png) 
 
 
-打开Wcowin.github.io目录进入终端运行:
+打开Wcowin.github.io目录进入终端依次运行:
 ```
+pip install mkdocs-material
 mkdocs new mkdocs-site
 ```
 出现下图的几个文件 

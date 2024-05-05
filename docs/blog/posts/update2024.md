@@ -6,6 +6,12 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-05-05</strong></h1><p>
+* 发布[Mkdocs-Wcowin主题|3.0版本](https://github.com/Wcowin/Mkdocs-Wcowin/releases/tag/3.0){target=“_blank”}！！！
+* 优化网站流畅度（玄学）
+* 和小王一起吃了好吃的
+* 感谢王鹏老哥的打赏
+
 ## </p><h1 id="01" name="01"><strong>2024-04-22</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 看了更多的猫咪
