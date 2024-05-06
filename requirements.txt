@@ -1,8 +1,6 @@
 mkdocs-material
 pymdown-extensions
 mkdocs-encryptcontent-plugin
-jinja2
-jieba
 mkdocs-glightbox
 urllib3<2
 mkdocs-git-committers-plugin-2
