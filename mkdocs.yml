@@ -333,6 +333,7 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - offline
+  - open-in-new-tab
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
       type: iso_date

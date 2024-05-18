@@ -6,6 +6,67 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+
+## </p><h1 id="01" name="01"><strong>2024-05-15</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 全站引入自动在新标签页打开，仓库地址：[mkdocs-open-in-new-tab](https://newtab.kubaandrysek.cz/)
+<details><summary>Show source code</summary>
+<p>
+
+Look at this source <a href="https://github.com/JakubAndrysek/mkdocs-open-in-new-tab/blob/main/open_in_new_tab/js/open_in_new_tab.js">open_in_new_tab.js</a>:
+
+```js
+// Description: Open external links in a new tab and PDF links in a new tab
+// Source: https://jekyllcodex.org/without-plugin/new-window-fix/
+
+//open external links in a new window
+function external_new_window() {
+    for(let c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        let b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) {
+      return false;
+    }
+    let links = document.getElementsByTagName("a");
+    for (let eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+}
+
+function apply_rules() {
+    external_new_window();
+    pdf_new_window();
+}
+
+if (typeof document$ !== "undefined") {
+    // compatibility with mkdocs-material's instant loading feature
+    // based on code from https://github.com/timvink/mkdocs-charts-plugin
+    // Copyright (c) 2021 Tim Vink - MIT License
+    // fixes [Issue #2](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab/issues/2)
+    document$.subscribe(function() {
+        apply_rules();
+        console.log("Applying rules");
+    })
+}
+```
+</p>
+</details>
+
+
 ## </p><h1 id="01" name="01"><strong>2024-05-05</strong></h1><p>
 * 发布[Mkdocs-Wcowin主题|3.0版本](https://github.com/Wcowin/Mkdocs-Wcowin/releases/tag/3.0){target=“_blank”}！！！
 * 优化网站流畅度（玄学）

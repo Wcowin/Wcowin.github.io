@@ -5,7 +5,7 @@ tags:
 ---
 
 !!! info
-    Material for MkDocs官方网站：[MkDocs](https://www.mkdocs.org/){target=“_blank”}
+    Material for MkDocs官方网站：[MkDocs](https://www.mkdocs.org/)
 
 ---
 推荐看下这个视频：  
