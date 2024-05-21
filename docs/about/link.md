@@ -552,6 +552,17 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>  
+    <div class="card"> 
+     <img class="ava" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web</a> 
+      </div> 
+      <div class="info">
+       🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
+      </div> 
+     </div> 
+    </div>
     
 
 
