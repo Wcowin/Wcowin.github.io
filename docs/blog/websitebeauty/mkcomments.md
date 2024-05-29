@@ -1,6 +1,11 @@
 ---
 title: 为网站添加评论系统
 comments: true
+hide:
+  #  - navigation # 隐藏左边导航
+  #  - toc #隐藏右边导航
+  #  - footer #隐藏翻页
+   - feedback  #隐藏反馈
 tags:
   - Mkdocs
 ---
