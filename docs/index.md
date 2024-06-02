@@ -302,3 +302,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 -->
 
+<!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3tRns5xuEZ29Z0nd7ADdNk?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<iframe src="https://www.geogebra.org/calculator/budmqnft?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe> -->

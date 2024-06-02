@@ -6,6 +6,10 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-06-2</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 过了六一
+* [甜甜圈代码🍩](../technique%20sharing/ttq.md)
 
 ## </p><h1 id="01" name="01"><strong>2024-05-15</strong></h1><p>
 * 优化网站流畅度（玄学）
@@ -77,7 +81,7 @@ if (typeof document$ !== "undefined") {
 * 优化网站流畅度（玄学）
 * 看了更多的猫咪
 * 优化布局
-* 新增圆角化设计教程
+* 新增[圆角化设计教程](../websitebeauty/yuanjiaohua.md)
 
 ## </p><h1 id="01" name="01"><strong>2024-04-22</strong></h1><p>
 * 优化网站流畅度（玄学）
@@ -101,9 +105,9 @@ if (typeof document$ !== "undefined") {
 ## </p><h1 id="01" name="01"><strong>2024-04-02</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 在mkdocs.yml的plugins模块中引入`!ENV [CI, false]`语句，极大缩短`mkdocs serve`静态预览时间（3-5s）
-* 本Mkdocs-Wcowin主题得到以下两位的使用：
+* 本Mkdocs-Wcowin主题案例：
     - [Lenny's Web](https://lennychen.top) 
-    - [tkqtang's Web](https://tkqtang.site/)
+ 
 
 ## </p><h1 id="01" name="01"><strong>2024-03-14</strong></h1><p>
 * 优化网站流畅度（玄学）
