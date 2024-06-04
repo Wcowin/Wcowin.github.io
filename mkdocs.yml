@@ -285,10 +285,13 @@ extra:
       link: /en/
       # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: en
-    - name: 中国(台湾)
+    - name: China (Taiwan)
       link: /ZH-TW/
       # https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: zh-TW
+    - name: Overseas Acceleration
+      link: https://www.wcowin.love/
+      lang: en
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/weixin
