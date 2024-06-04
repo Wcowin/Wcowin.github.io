@@ -19,3 +19,4 @@ mkdocs-git-committers-plugin-2
 mkdocs-markdownextradata-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-open-in-new-tab
+markdown-callouts
