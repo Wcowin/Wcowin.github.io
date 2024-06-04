@@ -335,9 +335,9 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - offline
-  - open-in-new-tab
+  # - open-in-new-tab
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
+      enabled: true
       type: iso_date
       enable_creation_date: true
       fallback_to_build_date: true
@@ -350,7 +350,7 @@ plugins:
         - about/link.md
         - blog/Mkdocs/linktech.md
   - git-committers:
-      enabled: !ENV [CI, false]
+      enabled: true
       repository: Wcowin/Wcowin.github.io
       branch: main
       exclude:
