@@ -2,21 +2,11 @@ mkdocs
 mkdocs-material
 pymdown-extensions
 mkdocs-encryptcontent-plugin
-# Requirements for core
-jinja2~=3.0
-markdown~=3.2
-mkdocs-material-extensions~=1.3
-pygments~=2.16
-pymdown-extensions~=10.2
-
-# Requirements for plugins
-babel~=2.10
-colorama~=0.4
-paginate~=0.5
-regex>=2022.4
-requests~=2.26
+jinja2
+jieba
+mkdocs-glightbox
+urllib3<2
 mkdocs-git-committers-plugin-2
 mkdocs-markdownextradata-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-open-in-new-tab
-markdown-callouts
