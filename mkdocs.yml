@@ -272,6 +272,7 @@ nav:
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
 
 extra:
+  disqus:
   cusdis:
     host: https://cusdis.com
     app_id: 655cf3bc-734a-4d88-8317-be350621334c
@@ -457,7 +458,7 @@ extra_css:
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体 
   
 
-watch:
-  - docs
-  - mkdocs.yml
-  - docs/overrides/partials
+# watch:
+#   - docs
+#   - mkdocs.yml
+#   - docs/overrides/partials

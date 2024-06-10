@@ -6,6 +6,7 @@ hide:
   - footer
   - feedback
 comments: true
+disqus: true
 ---
 # 畅所欲言  
 <div class="poem-wrap">
@@ -44,9 +45,6 @@ twikoo.init({
 
 <!-- end -->
 
-
-***
-
 <!-- <head>
   <link
     rel="stylesheet"
@@ -82,12 +80,11 @@ twikoo.init({
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 <script defer src="https://cusdis.com/js/widget/lang/zh-cn.js"></script>
-
 <body>
   <div>
     <span data-cusdis-count-page-id="{{ PAGE_ID }}">0</span> comments
   </div>
-  <script defer data-host="https://cusdis.com" data-app-id="{{ APP_ID }}" src="https://cusdis.com/js/cusdis-count.umd.js"></script>
+  <script defer data-host="https://wcowin.work/waline.html" data-app-id="{{ APP_ID }}" src="https://cusdis.com/js/cusdis-count.umd.js"></script>
 </body>
 
 ***
