@@ -8,6 +8,10 @@ readtime: 2
 ---
 ## </p><h1 id="01" name="01"><strong>2024-06-2</strong></h1><p>
 * 优化网站流畅度（玄学）
+* 近期学业繁重
+
+## </p><h1 id="01" name="01"><strong>2024-06-2</strong></h1><p>
+* 优化网站流畅度（玄学）
 * 过了六一
 * [甜甜圈代码🍩](../technique%20sharing/ttq.md)
 
