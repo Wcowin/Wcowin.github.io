@@ -556,7 +556,7 @@ t.parentNode.insertBefore(e,t)}})();
      <img class="ava" src="http://www.ickg.net/vis/favicon.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="http://www.ickg.net/links.html" target="_blank">iCKG 渝见</a> 
+       <a href="http://www.ickg.net" target="_blank">iCKG 渝见</a> 
       </div> 
       <div class="info">
        我和重庆有个约会
