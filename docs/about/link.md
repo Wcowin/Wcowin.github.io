@@ -553,6 +553,17 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>  
     <div class="card"> 
+     <img class="ava" src="http://www.ickg.net/vis/favicon.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="http://www.ickg.net/links.html" target="_blank">iCKG 渝见</a> 
+      </div> 
+      <div class="info">
+       我和重庆有个约会
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
      <img class="ava" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" /> 
      <div class="card-header"> 
       <div> 
@@ -563,6 +574,7 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+
     
 
 
