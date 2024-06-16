@@ -224,42 +224,6 @@ t.parentNode.insertBefore(e,t)}})();
 </head>
 
 
-<div id="he-plugin-simple"></div>
-<style>
-  @media (max-width: 600px) {
-    #he-plugin-simple {
-        display: none;
-    }
-}
-</style>
-<script>
-WIDGET = {
-  "CONFIG": {
-    "modules": "01234",
-    "background": "1",
-    "tmpColor": "FFFFFF",
-    "tmpSize": "16",
-    "cityColor": "FFFFFF",
-    "citySize": "16",
-    "aqiColor": "FFFFFF",
-    "aqiSize": "16",
-    "weatherIconSize": "24",
-    "alertIconSize": "18",
-    "padding": "10px 10px 10px 10px",
-    "shadow": "0",
-    "language": "auto",
-    "borderRadius": "25",
-    "fixed": "true",
-    "vertical": "center",
-    "horizontal": "center",
-    "left": "10",
-    "bottom": "80",
-    "key": "49cf5b47814f4da680a14b99a67439d5"
-  }
-}
-</script>
-<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
-
 
 <body>
     <font color="#B9B9B9">
