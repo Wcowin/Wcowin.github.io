@@ -6,6 +6,14 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-06-20</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 优化多处UI
+* 删减了部分拖慢网站速度的JS/CSS代码
+* 更新了[MKdocs补充系列教程](https://blog.csdn.net/m0_63203517/article/details/139814216?spm=1001.2014.3001.5501)
+* 近期略有时间，所以更文变得高产
+
+
 ## </p><h1 id="01" name="01"><strong>2024-06-19</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 期末结束

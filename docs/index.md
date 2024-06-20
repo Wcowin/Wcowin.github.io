@@ -181,9 +181,9 @@ comments: false
 
     ---
 
-    - [留言板](waline.md)
+    - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending]
     - [Blogger](blog/index.md)   
-    [:octicons-arrow-right-24: 了解我](about/geren.md)
+    [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
 
 </div>
 

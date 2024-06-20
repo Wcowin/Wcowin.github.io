@@ -191,7 +191,7 @@ mkdocs serve
 **去仓库的setings/pages选择下图示意的路径**
 ![](https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png)  
 
-等待一会网址就出来了  
+等待一会网址就出来了[^注]  
 
 你的网站网址就是：​
 

@@ -229,37 +229,6 @@ img.twitter {
 } */
 
 
-
-/**/
-/* .video1{
-  position: fixed;  
-  right: 0px;  
-  bottom: 0px;  
-  min-width: 100%;  
-  min-height: 100%;  
-  height: auto;  
-  width: auto;  
-  z-index:-11
-
-}
-
-.video1 video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-source{  
-  min-width: 100%;  
-  min-height: 100%;  
-  height: auto;  
-  width: auto;  
-} 
-@media only screen and (max-width: 768px) {
-  #video1 {
-    display: none;
-  }
-} */
-
 /*圆角*/
 #rcorners1 {
   border-radius: 25px;

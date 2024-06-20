@@ -66,7 +66,17 @@ status: new
 </figure>
 
 ## 个人简历
-[个人简历(在线)](https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671)
+
+
+
+<div class="grid cards" markdown>
+
+-   :octicons-bookmark-16:{ .lg .middle } __求职__
+
+    ---
+
+    [个人简历(在线)](https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671)
+</div>
 
 ## 个人技能
 本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载。  

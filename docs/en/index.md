@@ -129,18 +129,48 @@ Quick Chat(1) Contact Me(2)
 2. Wechat:18939533255
 ***  
 
-<strong>推荐文章:material-book:</strong>
+<div class="grid cards" markdown>
 
-  - [How to register ChatGPT](../develop/ChatGPT.md)
-  - [Packaging Python files .py into .exe executable programs](../blog/py/python.md)
-  - [Blogger](../blog/index.md) 
-  - [Deploying static web pages to GitHub pages using Mkdocs](../blog/Mkdocs/mkdocs1.md)
-  - [How to add friend links to MKdocs](../blog/Mkdocs/linktech.md)
-  - [How to automatically install Homebrew in China (Domestic address) (Mac & Linux)](../blog/Mac/homebrew.md)
-  - [Sharing useful/fun websites](../blog/Webplay.md)
-  - [Summary of Mac/windows software websites](../blog/macsoft.md)
-  - [Recommended travel route in Chongqing](../trip/InCQ/CQ.md)
-  - [Message board](../waline.md)
+-   :octicons-bookmark-16:{ .lg .middle } __Recommended Articles__
+
+    ---
+
+    - [How to Register for ChatGPT](../develop/ChatGPT.md)
+    - [Packing Python Files into .exe Executable](../blog/py/python.md)
+    - [How to Automatically Install Homebrew in China (Domestic Address) (Mac & Linux)](../blog/Mac/homebrew.md) 
+    
+
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs Tutorials__
+
+    ---
+
+    - [Deploying Static Web Pages to GitHub Pages with Mkdocs](../blog/Mkdocs/mkdocs1.md)
+    - [Mkdocs Configuration Explanation (mkdocs.yml)](../blog/Mkdocs/mkdocs2.md)   
+    - [How to Add Friends Links to MKdocs](../blog/Mkdocs/linktech.md)
+
+    
+
+-   :material-format-font:{ .lg .middle } __Fun__
+
+    ---
+
+    
+    - [Sharing Useful/Fun Websites](../blog/Webplay.md)
+    - [Summary of Mac/Windows Software Websites](../blog/macsoft.md)
+    - [Recommended Travel Routes in Chongqing](../trip/InCQ/CQ.md)
+    
+
+    
+
+-   :simple-aboutdotme:{ .lg .middle } __About__
+
+    ---
+
+    - [Message Board](../waline.md)[^Knowing-that-loving-you-has-no-ending]
+    - [Blogger](../blog/index.md)   
+    [:octicons-arrow-right-24: Learn About Me](../about/geren.md)[^see-how-much-I-love-you]
+
+</div>
   
 
 [^Knowing-that-loving-you-has-no-ending]:The sun always warms sunflowers  
@@ -178,41 +208,7 @@ t.parentNode.insertBefore(e,t)}})();
 </head>
 
 
-<div id="he-plugin-simple"></div>
-<style>
-  @media (max-width: 600px) {
-    #he-plugin-simple {
-        display: none;
-    }
-}
-</style>
-<script>
-WIDGET = {
-  "CONFIG": {
-    "modules": "01234",
-    "background": "1",
-    "tmpColor": "FFFFFF",
-    "tmpSize": "16",
-    "cityColor": "FFFFFF",
-    "citySize": "16",
-    "aqiColor": "FFFFFF",
-    "aqiSize": "16",
-    "weatherIconSize": "24",
-    "alertIconSize": "18",
-    "padding": "10px 10px 10px 10px",
-    "shadow": "0",
-    "language": "auto",
-    "borderRadius": "25",
-    "fixed": "true",
-    "vertical": "center",
-    "horizontal": "center",
-    "left": "10",
-    "bottom": "80",
-    "key": "49cf5b47814f4da680a14b99a67439d5"
-  }
-}
-</script>
-<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+
 
 
 <!-- <head>

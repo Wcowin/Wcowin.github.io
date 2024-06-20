@@ -77,6 +77,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 nav:
   - 主页: index.md
   - 技术:
+    - blog/indexblog.md
     - 好用/好玩网站分享: blog/Webplay.md
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md
     - Mac/windows软件网站汇总: blog/macsoft.md

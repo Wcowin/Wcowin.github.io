@@ -131,18 +131,48 @@ comments: false
 2. 18939533255
 ***  
 
-<strong>推薦文章:material-book:</strong>
+<div class="grid cards" markdown>
 
-   - [如何註冊ChatGPT](../develop/ChatGPT.md)
-   - [將Python檔.py打包成.exe執行程式](../blog/py/python.md)
-   - [Blogger](../blog/index.md)
-   - [利用Mkdocs部署靜態網頁至GitHub pages](../blog/Mkdocs/mkdocs1.md)
-   - [如何為MKdocs加上友鏈](../blog/Mkdocs/linktech.md)
-   - [Homebrew國內如何自動安裝(國內地址)(Mac & Linux)](../blog/Mac/homebrew.md)
-   - [好用/好玩網站分享](../blog/Webplay.md)
-   - [Mac/windows軟體網站匯總](../blog/macsoft.md)
-   - [重慶旅遊推薦路線](../trip/InCQ/CQ.md)
-   - [留言板](../waline.md)
+-   :octicons-bookmark-16:{ .lg .middle } __推薦的文章__
+
+    ---
+
+    - [如何註冊ChatGPT](../develop/ChatGPT.md)
+    - [將Python文件打包成.exe可執行程序](../blog/py/python.md)
+    - [Homebrew國內如何自動安裝(國內地址)(Mac & Linux)](../blog/Mac/homebrew.md) 
+    
+
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程__
+
+    ---
+
+    - [利用Mkdocs部署靜態網頁至GitHub pages](../blog/Mkdocs/mkdocs1.md)
+    - [Mkdocs配置說明(mkdocs.yml)](../blog/Mkdocs/mkdocs2.md)   
+    - [如何給MKdocs添加友鏈](../blog/Mkdocs/linktech.md)
+
+    
+
+-   :material-format-font:{ .lg .middle } __好玩__
+
+    ---
+
+    
+    - [好用/好玩網站分享](../blog/Webplay.md)
+    - [Mac/windows軟件網站匯總](../blog/macsoft.md)
+    - [重慶旅遊推薦路線](../trip/InCQ/CQ.md)
+    
+
+    
+
+-   :simple-aboutdotme:{ .lg .middle } __關於__
+
+    ---
+
+    - [留言板](../waline.md)[^Knowing-that-loving-you-has-no-ending]
+    - [Blogger](../blog/index.md)   
+    [:octicons-arrow-right-24: 了解我](../about/geren.md)[^see-how-much-I-love-you]
+
+</div>
   
 
 [^Knowing-that-loving-you-has-no-ending]:太陽總是能溫暖向日葵 
@@ -179,42 +209,6 @@ t.parentNode.insertBefore(e,t)}})();
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
 </head>
 
-
-<div id="he-plugin-simple"></div>
-<style>
-  @media (max-width: 600px) {
-    #he-plugin-simple {
-        display: none;
-    }
-}
-</style>
-<script>
-WIDGET = {
-  "CONFIG": {
-    "modules": "01234",
-    "background": "1",
-    "tmpColor": "FFFFFF",
-    "tmpSize": "16",
-    "cityColor": "FFFFFF",
-    "citySize": "16",
-    "aqiColor": "FFFFFF",
-    "aqiSize": "16",
-    "weatherIconSize": "24",
-    "alertIconSize": "18",
-    "padding": "10px 10px 10px 10px",
-    "shadow": "0",
-    "language": "auto",
-    "borderRadius": "25",
-    "fixed": "true",
-    "vertical": "center",
-    "horizontal": "center",
-    "left": "10",
-    "bottom": "80",
-    "key": "49cf5b47814f4da680a14b99a67439d5"
-  }
-}
-</script>
-<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 
 
 <!-- <head>
