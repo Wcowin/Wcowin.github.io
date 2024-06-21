@@ -590,6 +590,7 @@ ol>li {
     margin-top: 60px;
     margin-bottom: 20px;
     border-top: 2px solid #797979;
+    border-radius: 10px; /* 添加圆角 */
   }
 
   .poem-wrap h1 {
@@ -625,7 +626,7 @@ ol>li {
 .reward-container button:hover {
   background: #fc6423;
   border: 1px solid transparent;
-  color: #fa9366;
+  color: #f2b094;
 }
 
 /* 新增样式 */
