@@ -9,7 +9,7 @@ comments: false
 ---
 # 主页
 
-<!-- <center><font  color= #518FC1 size=6>“循此苦旅，以达星辰”</font></center> -->
+
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
@@ -21,97 +21,42 @@ comments: false
 </font>
 </center> -->
 
-<!-- <center>
-<font  color= #608DBD size=3>
-<span id="hitokoto-sentence">正在加载一言....</span>
-<script src="https://v1.hitokoto.cn"></script>
-</font>
-</center> -->
-
-<!-- <center>
-<font  color= #608DBD size=3>
-<p id="hitokoto">
-  <a href="#" id="hitokoto_text" target="_blank"></a>
-</p>
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.querySelector('#hitokoto_text')
-      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-</script>
-</font>
-</center> -->
 
 
 <div id="rcorners2" >
-  <div id="rcorners1">
-    <!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
-    <body>
-      <font color="#4351AF">
-        <p class="p1"></p>
-<script defer>
-    //格式：2020年04月12日 10:20:00 星期二
-    function format(newDate) {
-        var day = newDate.getDay();
-        var y = newDate.getFullYear();
-        var m =
-            newDate.getMonth() + 1 < 10
-                ? "0" + (newDate.getMonth() + 1)
-                : newDate.getMonth() + 1;
-        var d =
-            newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
-        var h =
-            newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours();
-        var min =
-            newDate.getMinutes() < 10
-                ? "0" + newDate.getMinutes()
-                : newDate.getMinutes();
-        var s =
-            newDate.getSeconds() < 10
-                ? "0" + newDate.getSeconds()
-                : newDate.getSeconds();
-        var dict = {
-            1: "一",
-            2: "二",
-            3: "三",
-            4: "四",
-            5: "五",
-            6: "六",
-            0: "天",
-        };
-        //var week=["日","一","二","三","四","五","六"]
-        return (
-            y +
-            "年" +
-            m +
-            "月" +
-            d +
-            "日" +
-            " " +
-            h +
-            ":" +
-            min +
-            ":" +
-            s +
-            " 星期" +
-            dict[day]
-        );
+
+<div id="rcorners1" class="date-display">
+    <p class="p1"></p>
+</div>
+
+<style>
+    .date-display {
+        color: #4351AF;
     }
-    var timerId = setInterval(function () {
-        var newDate = new Date();
-        var p1 = document.querySelector(".p1");
+</style>
+<script defer>
+    function format(newDate) {
+        const day = newDate.getDay();
+        const y = newDate.getFullYear();
+        const m = newDate.getMonth() + 1 < 10 ? `0${newDate.getMonth() + 1}` : newDate.getMonth() + 1;
+        const d = newDate.getDate() < 10 ? `0${newDate.getDate()}` : newDate.getDate();
+        const h = newDate.getHours() < 10 ? `0${newDate.getHours()}` : newDate.getHours();
+        const min = newDate.getMinutes() < 10 ? `0${newDate.getMinutes()}` : newDate.getMinutes();
+        const s = newDate.getSeconds() < 10 ? `0${newDate.getSeconds()}` : newDate.getSeconds();
+        const dict = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 0: "天"};
+        
+        return `${y}年${m}月${d}日 ${h}:${min}:${s} 星期${dict[day]}`;
+    }
+
+    const timerId = setInterval(() => {
+        const newDate = new Date();
+        const p1 = document.querySelector(".p1");
         if (p1) {
             p1.textContent = format(newDate);
         }
     }, 1000);
 </script>
-      </font>
-    </body>
-  </div>
+
   <ul>
     <li>通过主题和目录以打开文章</li>
     <ul>
@@ -124,6 +69,7 @@ comments: false
     </li>
   </ul>
 </div> 
+
 快速谈话(1) 联系我(2)
 { .annotate }
 
@@ -181,9 +127,9 @@ comments: false
 
     ---
 
-    - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending]
-    - [Blogger](blog/index.md)   
-    [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
+    - [留言板](waline.md)
+    - [Blogger](blog/index.md)[^Knowing-that-loving-you-has-no-ending]   
+    - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
 
 </div>
 
@@ -194,16 +140,6 @@ comments: false
 
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-29HZMNR0KG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-29HZMNR0KG');
-</script>
-
-
 <!-- Start of Howxm client code snippet -->
 <script>
 function _howxm(){_howxmQueue.push(arguments)}
@@ -224,12 +160,23 @@ t.parentNode.insertBefore(e,t)}})();
 </head>
 
 
-
+<div id="rcorners3" >
+<style>
+#rcorners3 {
+  border-radius: 25px;
+  border: 2px solid #518FC1;
+  padding: 20px;
+  width: 100%;
+  height: 30%;
+  font-size: 18px;
+  text-align: center;
+}
+</style>
 <body>
-    <font color="#B9B9B9">
-    <p style="text-align: center; ">
-            <span>本站已经运行</span>
-            <span id='box1'></span>
+<font color="#B9B9B9">
+  <p style="text-align: center; ">
+      <span>本站已经运行</span>
+      <span id='box1'></span>
 </p>
   <div id="box1"></div>
   <script>
@@ -251,9 +198,11 @@ t.parentNode.insertBefore(e,t)}})();
       document.getElementById('box1').innerHTML = timingTime()
     },1000)
   </script>
+
+
   </font>
 </body>
-
+</div>
 
 
 <!--  
@@ -266,6 +215,4 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 -->
 
-<!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3tRns5xuEZ29Z0nd7ADdNk?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-<iframe src="https://www.geogebra.org/calculator/budmqnft?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe> -->
