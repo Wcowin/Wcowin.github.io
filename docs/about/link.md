@@ -188,7 +188,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://www.luckyzh.cn/avatar.jpg" /> 
+     <img class="ava" src="https://imgs.izou.top/user/avatar.jpg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://www.luckyzh.cn/" target="_blank">旧梦</a> 
@@ -222,7 +222,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>      
    <div class="card"> 
-     <img class="ava" src="https://ymh0000123.github.io/picture/picture/6.png" /> 
+     <img class="ava" src="https://s2.loli.net/2024/06/25/59hnlap8m3oyBrk.webp" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://xiaofeishu-boke.netlify.app/" target="_blank">没用的小废鼠的Blog</a> 
@@ -651,9 +651,9 @@ t.parentNode.insertBefore(e,t)}})();
 
 === "HTML(推荐)"
 
-    推荐在评论区发送这种格式，带*号的需要填写自己的信息
+    推荐在评论区发送这种格式，只有带高亮的三行需要自行修改，*号的需要填写自己的信息
 
-    ```html
+    ```html hl_lines="2 5 8"
     <div class="card"> 
      <img class="ava" src="*你的头像链接*" /> 
      <div class="card-header"> 
