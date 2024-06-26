@@ -160,7 +160,7 @@ t.parentNode.insertBefore(e,t)}})();
 </head>
 
 
-<div id="rcorners3" >
+
 <style>
 #rcorners3 {
   border-radius: 25px;
@@ -198,11 +198,9 @@ t.parentNode.insertBefore(e,t)}})();
       document.getElementById('box1').innerHTML = timingTime()
     },1000)
   </script>
-
-
   </font>
 </body>
-</div>
+
 
 
 <!--  
