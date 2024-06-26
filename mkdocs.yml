@@ -393,6 +393,7 @@ markdown_extensions:
   - callouts
   - md_in_html
   - markdown.extensions.abbr # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.magiclink
   - pymdownx.caret
   - pymdownx.betterem
   - pymdownx.critic
