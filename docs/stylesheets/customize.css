@@ -69,25 +69,39 @@
 
 /* Blog - index.md */
 /* div.md-content header {
-  display: none;
+  display:contents;
 }
 
-.md-post--excerpt {
+/* .md-post--excerpt {
   background-color: var(--md-accent-fg-color--transparent);
   box-shadow: 0 0 0 1rem var(--md-accent-fg-color--transparent);
   border-radius: var(--base-border-radius);
-}
+} */
 
 .md-post--excerpt .md-post__header {
-  justify-content: center;
+  justify-content: left;
 }
 
 .md-post--excerpt .md-post__content > h2,
 .md-post__action {
-  text-align: center;
+  text-align: left;
 } */
 
 /* Table */
 .md-typeset table:not([class]) {
   border-radius: var(--base-border-radius);
 }
+
+
+
+/* 博客修改 */
+@media (min-width: 768px) {
+  /* 博客修改 */
+  .md-post--excerpt {
+    background-color: var(--md-accent-fg-color--transparent);
+    box-shadow: 0 0 0 1rem var(--md-accent-fg-color--transparent);
+    border-radius: var(--base-border-radius);
+  }
+}
+
+/* 目录 */

@@ -7,8 +7,8 @@ hide:
   - feedback
 comments: false
 ---
-# 主页
 
+# 主页
 
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -127,8 +127,8 @@ comments: false
 
     ---
 
-    - [留言板](waline.md)
-    - [Blogger](blog/index.md)[^Knowing-that-loving-you-has-no-ending]   
+    - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending] 
+    - [Blogger](blog/index.md)  
     - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
 
 </div>

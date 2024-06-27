@@ -39,7 +39,8 @@ status: new
     <p style="font-size: 18px">A college student in CQ</p>
   </div>
 </div> -->
-   
+
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://bento.me/wcowin){target=“_blank”}!
@@ -66,8 +67,6 @@ status: new
 </figure>
 
 ## 个人简历
-
-
 
 <div class="grid cards" markdown>
 

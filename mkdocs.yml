@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 #[Info]
 site_name: Wcowin's Web
 site_url: http://wcowin.work/
@@ -75,7 +76,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
 nav:
-  - 主页: index.md
+  # - 主页: index.md
   - 技术:
     - blog/indexblog.md
     - 好用/好玩网站分享: blog/Webplay.md
@@ -274,6 +275,8 @@ nav:
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
 
 extra:
+  status:
+    new: Recently added
   disqus:
   cusdis:
     host: https://cusdis.com
@@ -288,11 +291,11 @@ extra:
       link: /en/
       # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: en
-    - name: China (Taiwan)
+    - name: China(TW)
       link: /ZH-TW/
       # https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: zh-TW
-    - name: Overseas Acceleration
+    - name: Overseas
       link: https://www.wcowin.love/
       lang: en
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
@@ -338,6 +341,7 @@ extra:
 
 
 plugins:
+  # - social
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - offline
