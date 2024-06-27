@@ -1,8 +1,0 @@
-mkdocs-material
-pymdown-extensions
-mkdocs-encryptcontent-plugin
-mkdocs-glightbox
-urllib3<2
-mkdocs-git-committers-plugin-2
-mkdocs-markdownextradata-plugin
-mkdocs-git-revision-date-localized-plugin

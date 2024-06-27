@@ -8,8 +8,7 @@ hide:
   - feedback
 ---
 
-<head>
-<!-- Start of Howxm client code snippet -->
+<!-- <head>
 <script>
 function _howxm(){_howxmQueue.push(arguments)}
 window._howxmQueue=window._howxmQueue||[];
@@ -23,8 +22,7 @@ e.type='text/javascript';e.async=!0;
 e.src='https://static.howxm.com/sdk.js';
 t.parentNode.insertBefore(e,t)}})();
 </script>
-<!-- End of Howxm client code snippet -->
-</head>
+</head> -->
 
 <!-- <div class="markdown-content">
     <h2>欢迎加入友链(不分先后)</h2>
@@ -670,9 +668,9 @@ t.parentNode.insertBefore(e,t)}})();
 
 === "HTML(推荐)"
 
-    推荐在评论区发送这种格式，只有带高亮的三行需要自行修改，*号的需要填写自己的信息
+    推荐在评论区发送这种格式，*号的需要填写自己的信息
 
-    ```html hl_lines="2 5 8"
+    ```html
     <div class="card"> 
      <img class="ava" src="*你的头像链接*" /> 
      <div class="card-header"> 
@@ -695,6 +693,8 @@ t.parentNode.insertBefore(e,t)}})();
     ```
 === "通用"
 
-    点击右侧**友链申请**填写问卷
+    点击填写[**友链申请**问卷](https://wj.qq.com/s2/14878680/20ac/)  
+
+    [![](https://s2.loli.net/2024/06/27/9gw37T4vPASxiD8.png){width=50%}](https://wj.qq.com/s2/14878680/20ac/)
 
     
