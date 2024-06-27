@@ -249,6 +249,27 @@ img.twitter {
   width: 110%;
   height: 100%;
 }
+@media only screen and (max-width: 600px) {
+  #rcorners4 {
+    border: none; /* 在手机上移除外框 */
+    width: 100%; /* 将宽度调整为100% */
+  }
+}
+
+
+
+#rcorners5 {
+  border-radius: 25px;
+  border: 2px solid #518FC1;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  #rcorners5 {
+    border: none; /* 在手机上移除蓝色外框 */
+  }
+}
 
 
 .image-container {
@@ -601,9 +622,9 @@ ol>li {
 
 .reward-container button {
   background: transparent;
-  border: 1px solid #fc6423;
+  border: 1px solid #6A8CB9;
   border-radius: 0;
-  color: #fc6423;
+  color: #6A8CB9;
   cursor: pointer;
   line-height: 2;
   outline: 0;
@@ -612,9 +633,9 @@ ol>li {
 }
 
 .reward-container button:hover {
-  background: #fc6423;
-  border: 1px solid transparent;
-  color: #f2b094;
+  background: transparent; /* 移除填充颜色，设置为透明 */
+  border: 1px solid #608DBD; /* 保留这个框的外框颜色 */
+  color: #e480b2;
 }
 
 /* 新增样式 */

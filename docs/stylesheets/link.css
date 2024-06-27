@@ -4,7 +4,7 @@
    height: auto;
    font-size: 1rem;
    padding: 10px 20px;
-   border-radius: 4px;
+   border-radius: 25px;
    transition-duration: 0.15s;
    margin-bottom: 1rem;
    display: flex;
@@ -33,7 +33,7 @@
    height: 3rem!important;
    margin: 0!important;
    margin-right: 1em!important;
-   border-radius: 4px;
+   border-radius: 25px;
 }
 
 .card .card-header {

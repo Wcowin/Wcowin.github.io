@@ -88,6 +88,11 @@
 
 <font face="宋体"  size=80>:flag_cn:<b></font>  
 
+<font face="宋体"  size=10>:flag_tw:<b></font>[^须知] 
+
+
+[^须知]:台湾是中国的领土
+
 $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
 
 - H~2~O
