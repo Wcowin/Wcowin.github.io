@@ -14,6 +14,7 @@
 } */
 
 
+
 button.md-top {
   font-family: LXGW WenKai;
   /* 修改字体 */
@@ -127,9 +128,6 @@ img.twitter {
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-
-
-
 }
 
 .md-typeset .pied-piper1>.admonition-title,
@@ -149,21 +147,6 @@ img.twitter {
   -webkit-mask-image: var(--md-admonition-icon--pied-piper1);
   mask-image: var(--md-admonition-icon--pied-piper1);
 }
-
-
-
-/* 鼠标 */
-/* body {
-      cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/default.cur),
-          default;
-  }
-  a,
-  img {
-      cursor: url(https://cos.cdn.azpay.cn/uploads/2021/11/28/pointer.cur),
-          default;
-  }  */
-/* 鼠标end */
-
 
 
 /* 滚动条 */
@@ -256,6 +239,14 @@ img.twitter {
   border: 2px solid #518FC1;
   padding: 20px;
   width: 100%;
+  height: 100%;
+}
+
+#rcorners4 {
+  border-radius: 25px;
+  border: 2px solid #518FC1;
+  padding: 20px;
+  width: 110%;
   height: 100%;
 }
 
@@ -475,13 +466,10 @@ div.hide {
 }
 
 
-
-
 /* 变灰代码 */
 /* html {
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
   -webkit-filter: grayscale(100%);} */
-
 
 /* Markdown内联块网格列表样式圆角和阴影 */
 .md-typeset .grid.cards>ol>li,
@@ -650,7 +638,10 @@ ol>li {
   /* 更改字体颜色 */
 }
 
-/* 遮盖 */
+/* 打赏end */
+
+
+/* 遮盖begin */
 .mask {
   background-color: #252525;
   color: #252525;
