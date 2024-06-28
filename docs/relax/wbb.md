@@ -13,11 +13,6 @@ comments: false  #评论，默认不开启
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=347852412&bvid=BV1rR4y1f7mA&cid=896199338&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
 ![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
-![img](https://cn.mcecy.com/image/20230528/d163f04e1bf2f9f1fe5c1e15daef9a97.jpg)
-
-
-
-
 
 ## 履历
 <font color=#F09898 size=7>王冰冰</font>  
