@@ -616,7 +616,19 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-    
+    <div class="card"> 
+    <img class="ava" src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/avatar.JPG" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://frankoxer.github.io" target="_blank">Frankoxer</a> 
+      </div> 
+      <div class="info">
+      别急，过会儿就更新
+      </div> 
+    </div> 
+    </div>
+
+
 
    </div> 
   </div>
