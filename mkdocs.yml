@@ -387,6 +387,13 @@ plugins:
       authors_file: "{blog}/.authors.yml"  #作者信息
   - tags:
       tags_file: tag.md  #分类标签
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
 
 markdown_extensions:
   - abbr

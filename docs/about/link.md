@@ -574,7 +574,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src=" https://static.meekdai.com/avatar.svg" /> 
+     <img class="ava" src="https://avatars.githubusercontent.com/u/11755104?v=4" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://meekdai.com" target="_blank"> Meekdai</a> 
@@ -595,13 +595,22 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
+    <div class="card"> 
+     <img class="ava" src="https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.imsyy.top/" target="_blank">無名小栈</a> 
+      </div> 
+      <div class="info">
+       分享技术与科技生活
+      </div> 
+     </div> 
+    </div>
 
 
 
    </div> 
   </div>
-
 
 
 

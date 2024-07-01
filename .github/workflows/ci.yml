@@ -29,7 +29,7 @@ jobs:
       - run: pip install markdown-callouts
       # - run: pip install mkdocs-glightbox
       # - run: pip install mkdocs-minify-plugin
-      # - run: pip install mkdocs-rss-plugin
+      - run: pip install mkdocs-rss-plugin
       - run: pip install jieba
       - run: pip install mkdocs-open-in-new-tab
       - run: pip install pymdown-extensions
