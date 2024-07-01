@@ -53,13 +53,14 @@ status: new
 ## 联系我
 
 <a href="https://muselink.cc/Wcowin" target="_blank">
-  <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg"  >
+  <img class="img1" src="https://s2.loli.net/2024/07/01/niLcs9Tm8SxkMta.jpg"  >
   <center>
     <div style="color:orange; 
     color: #999;
     padding: 2px;">我的名片</div>
   </center>  
 </a>
+
 
 <figure markdown >
   ![Image title](https://s1.imagehub.cc/images/2024/02/02/43c746351261969a02bda7d743199604.jpeg){.img1}
