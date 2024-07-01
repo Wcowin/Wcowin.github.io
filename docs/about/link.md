@@ -585,17 +585,6 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web</a> 
-      </div> 
-      <div class="info">
-       🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
-      </div> 
-     </div> 
-    </div>
-    <div class="card"> 
      <img class="ava" src="https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png" /> 
      <div class="card-header"> 
       <div> 
@@ -606,8 +595,28 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
-
+    <div class="card"> 
+     <img class="ava" src="https://blog.pantheon.press/wp-content/uploads/v2-f73763905eed23308466e441430a43be_r-150x150.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.pantheon.press" target="_blank">pantheon</a> 
+      </div> 
+      <div class="info">
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web</a> 
+      </div> 
+      <div class="info">
+       🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
+      </div> 
+     </div> 
+    </div>
+    
 
    </div> 
   </div>
@@ -634,7 +643,6 @@ t.parentNode.insertBefore(e,t)}})();
 <div id="rcorners4" >
   <div class="links-content"> 
    <div class="link-navigation"> 
-
    <div class="card"> 
      <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
      <div class="card-header"> 
@@ -646,10 +654,17 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
    </div> 
   </div>
   <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
+</div>
+
+
+
+
+
+<div class="markdown-content">
+    <h3>交换友链，请添加本站友链后下方留言申请，期望您的站点:</h3>
 </div>
 
 
@@ -662,15 +677,6 @@ t.parentNode.insertBefore(e,t)}})();
       <div class="info">{description}</div>
    </div>
 </div> -->   
-
-
-
-<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
-
-<div class="markdown-content">
-    <h3>交换友链，请添加本站友链后下方留言申请，期望您的站点:</h3>
-</div>
-
 
 * 独立博客(不要求独立域名)，https，访问流畅
 * 原创内容为主，原创内容3篇以上
@@ -729,3 +735,4 @@ t.parentNode.insertBefore(e,t)}})();
     [![](https://s2.loli.net/2024/06/27/9gw37T4vPASxiD8.png){width=50%}](https://wj.qq.com/s2/14878680/20ac/)
 
     
+***

@@ -39,7 +39,7 @@ theme:
         name: 切换至日间模式
   features: 
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
-    # - navigation.instant 
+    - navigation.instant 
     #- header.autohide  #自动隐藏
     - navigation.instant.progress
     # - navigation.prune #渲染的 HTML 中仅包含可见的导航项
@@ -77,7 +77,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 # [Navigtion]
 nav:
   # - 主页: index.md
-  - 技术:
+  - Technical:
     - blog/indexblog.md
     - 好用/好玩网站分享: blog/Webplay.md
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md
@@ -149,7 +149,7 @@ nav:
         - C笔记: blog/C language/c.md
         - C++: blog/C language/C++.md
 
-  - 开发: 
+  - Develop: 
     - develop/index.md
     - 我的设备: develop/mydevice.md
     - 如何注册ChatGPT: develop/ChatGPT.md
@@ -175,7 +175,7 @@ nav:
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
     - 看源码才懂: develop/kanyuanma.md
     
-  - 闲话:
+  - Chat:
     - relax/index.md
     - 推荐的Books: relax/tuijianyuedu.md
     - 小米: relax/xiaomo.md
@@ -240,21 +240,21 @@ nav:
     - 关于教育革命的谈话: relax/jiaoyu.md
     - 程序猿神之楷模:一个人,一个网站,5.75亿美元卖掉: relax/kaimo.md
     
-  - 旅行: 
+  - Travel: 
     - trip/index.md
     - 重庆: 
         - 重庆旅游推荐路线: trip/InCQ/CQ.md
     - Hometown: trip/LH.md
     - 西安: trip/Xian.md
 
-  - 标签: tag.md
-  - 留言板: waline.md
-  - 友链: 
+  - Tags: tag.md
+  - Message Boards: waline.md
+  - Friends: 
     - 友链: about/link.md
     - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
   - Blog:
     - blog/index.md
-  - 关于:
+  - About:
     - 个人简介: about/geren.md
     # - 一纸简历: https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671
     - 个人简历: https://lightpdf.cn/docs/mzlcyc1
