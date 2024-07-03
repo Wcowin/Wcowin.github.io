@@ -2,7 +2,7 @@ import random
 you_love_me = random.choice([True, False])
 me_love_you = random.randint(1, 10) #
 
-#你爱我或不爱我
+#你爱我或不爱我   
 if you_love_me or (not you_love_me):
     #爱就在那里
     #不增不减
