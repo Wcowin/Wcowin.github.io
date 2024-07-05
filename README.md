@@ -18,15 +18,22 @@
 <center>
 
 **MuseLink**
-<p>
+
+<p align="center">
   <a href="https://muselink.cc/Wcowin" target="_blank">
     <img src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg" alt="个人名片" style="border-radius: 10px;" width="70%">
   </a>
 </p>
 
+
+
+
 **Wechat**  
 <!-- ![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg) -->
+<p align="center">
 <img src="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" style="border-radius: 10px;" width="50%">
+</p>
+
 </center>
 
 # Profile Link

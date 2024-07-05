@@ -22,10 +22,10 @@ status: new
 <!-- <img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg"> -->
 
 
-
 <p style="text-align: center; margin: 0px;" markdown>
   <img src="https://img.picui.cn/free/2024/06/13/666a8e00a8366.jpeg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
-  <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>Wcowin</strong></p>
+  <!-- <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>Wcowin</strong></p> -->
+  <img src="https://t.tutu.to/img/mnz6Q"/ width="270" height="300" style="margin-right: 20px; "/>
   <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p>
 </p>
 <!-- https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg -->
@@ -82,6 +82,7 @@ status: new
 本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载。  
 精通 CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript、Pascal 等单词的拼写。  
 熟悉 Windows、Linux、OS X、Android、iOS、WP8 、harmony、hyper等系统的开关机。
+![](https://s3.uuu.ovh/imgs/2024/07/04/82b473abd2059779.png)
 
 ## 个人荣誉
 ![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy  class="img1"  }  
@@ -112,4 +113,4 @@ t.parentNode.insertBefore(e,t)}})();
 
 <!-- <a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> -->
 
-<chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
+<!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
