@@ -91,6 +91,7 @@
 <font face="宋体"  size=10>:flag_tw:<b></font>[^须知] 
 
 
+
 [^须知]:台湾是中国的领土
 
 $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
@@ -103,6 +104,9 @@ $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
 
 
 [![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
+
+
+<div class="miniwebtoolwidget" data-calculator="modulo-calculator" data-width="380"><div class="miniwebtoolh">模计算机</div><p><a href="https://miniwebtool.com/zh-cn/modulo-calculator/" target="_blank">模计算机 ©miniwebtool.com</a></p></div><script async src="https://miniwebtool.com/zh-cn/embed.js?v=1"></script>
 
 
 <div class="grid cards">
