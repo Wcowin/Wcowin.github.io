@@ -1,8 +1,6 @@
 ## 什么是原神
 在《原神》里，玩家将扮演一位名为「旅行者」的神秘角色，在异世界旅途中被陌生的神明拦截，苏醒后踏上寻访七神的冒险之旅。在未知的旅行中，玩家将邂逅琴、丽莎、安柏等众多性格各异、能力独特的同伴，与他们共同击败强敌，找回失散的亲人—— 同时，逐步发掘「原神」的真相  
 
-![img](https://cn.mcecy.com/image/20230108/10e9fea10127f0b8ca2036e144e8e564.jpg)
-
 <!-- <iframe src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%></iframe> -->
 
 
@@ -95,20 +93,8 @@ CNM歪迪卢克（LJ 原神直接卸载），但是枫丹好评，水下系统�
 ## 好图共赏
 ***
 ![](https://www.tuwoer.com/wp-content/uploads/2022/12/byu-17.jpg)
-![img](https://cn.mcecy.com/image/20230108/3bfb9af581ddc477cf5ac2dafd261b06.jpeg)
-![img](https://cn.mcecy.com/image/20230108/e44aa22df8a9ab5654e227d7f04c04e9.jpeg)
 ![](https://www.tuwoer.com/wp-content/uploads/2013/12/1632247945-2021092118122572_1_post_n9RZZ12303.jpg)
-![img](https://cn.mcecy.com/image/20230108/f0d5cfca068206fd2382becac588ee68.jpeg)
-![img](https://cn.mcecy.com/image/20230108/d3c0e72490ac478d6ce0f13d10f1a844.jpeg)
-![img](https://cn.mcecy.com/image/20230108/e2b4b6ca6592bd0304c45d0d36470c44.jpeg)
-![img](https://cn.mcecy.com/image/20230108/a4460a464c43f1c7da7a512ea33719b2.jpeg)
-![img](https://cn.mcecy.com/image/20230108/e89504d6d7982c47f0cf3443fd2c2a47.jpeg)
-![img](https://cn.mcecy.com/image/20230108/5cd5db6a0f46e266b3ca4026cf28c9bf.jpeg)
-![img](https://cn.mcecy.com/image/20230108/73716ace8d696eee78843bfbb746f469.jpeg)
-![img](https://cn.mcecy.com/image/20230108/c6aecc58d90dcfa5c06dd88b13fdf4c7.jpeg)
 
-## 温馨提醒
-![img](https://cn.mcecy.com/image/20230108/3320ede1dc67e3bda43c96e1824efcb4.jpeg)
 
 ## 宣传片
 
