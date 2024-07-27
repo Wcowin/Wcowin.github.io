@@ -23,7 +23,7 @@ status: new
 
 
 <p style="text-align: center; margin: 0px;" markdown>
-  <img src="https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
+  <img src="https://i.postimg.cc/Y0v28wZ8/IMG-1952.jpg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
   <!-- <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>Wcowin</strong></p> -->
   <img src="https://t.tutu.to/img/mnz6Q"/ width="270" height="300" style="margin-right: 20px; "/>
   <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p>
