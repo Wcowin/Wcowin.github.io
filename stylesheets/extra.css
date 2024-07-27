@@ -13,7 +13,13 @@
   transition: --md-primary-color 0.5s ease, --md-accent-color 0.5s ease;
 } */
 
+/* .md-nav__list{
+color: #4350AF;
+} */
 
+/* .md-banner {
+  background-color: #074f9d;
+} */
 
 button.md-top {
   font-family: LXGW WenKai;
@@ -29,6 +35,12 @@ button.md-top {
 :root {
   --md-text-font: "LXGW WenKai";
 }
+
+/* @font-face {
+  font-family: "LXGW WenKai";
+  src: "https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css";
+} */
+
 
 /* 字体 */
 
