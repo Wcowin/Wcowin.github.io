@@ -1,7 +1,7 @@
 ---
 title: Github主页介绍
 ---
-
+# Github主页介绍
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="200"/>
@@ -12,8 +12,16 @@ title: Github主页介绍
   </h1>
   </div>
 
-<img align='right' src='https://camo.githubusercontent.com/721d7c9349f174953eec9227b6e10303d0eebad1a2737667fe44a9489c8cb141/68747470733a2f2f73322e6c6f6c692e6e65742f323032332f30382f31342f5a394c6a58704b464f51694a6d76412e706e67' width="270" height="auto" >
+<style>
+  @media (max-width: 768px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+</style>
 
+<img align='right' src='https://vip.helloimg.com/i/2024/08/03/66ad78330d38c.png' width="270" height="auto" class="hide-on-mobile">
+<!-- https://camo.githubusercontent.com/721d7c9349f174953eec9227b6e10303d0eebad1a2737667fe44a9489c8cb141/68747470733a2f2f73322e6c6f6c692e6e65742f323032332f30382f31342f5a394c6a58704b464f51694a6d76412e706e67 -->
 ## About me
   * A student :student:
   * Heavy coffee drinker ☕

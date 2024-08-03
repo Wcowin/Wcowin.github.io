@@ -70,6 +70,8 @@ twikoo.init({
     });
   </script> -->
 
+# 评论审核后才会显示
+
 <div id="rcorners5" >
 
 <div id="cusdis_thread"

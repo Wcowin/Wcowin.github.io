@@ -25,6 +25,14 @@ status: new
 <p style="text-align: center; margin: 0px;" markdown>
   <img src="https://vip.helloimg.com/i/2024/07/28/66a59489ae5b1.jpeg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
   <!-- <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>Wcowin</strong></p> -->
+  <!--  
+____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
+\   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  | 
+ \   \/    \/   / |  ,----'|  |  |  |  \   \/    \/   /  |  | |   \|  | 
+  \            /  |  |     |  |  |  |   \            /   |  | |  . `  | 
+   \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   | 
+    \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
+-->
   <img src="https://t.tutu.to/img/mnz6Q"/ width="270" height="300" style="margin-right: 20px; "/>
   <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p>
 </p>
@@ -70,7 +78,7 @@ status: new
 
 <div class="grid cards" markdown>
 
--   :octicons-bookmark-16:{ .lg .middle } __求职__
+-   :octicons-bookmark-16:{ .lg .middle } __求实习(25届)__
 
     ---
 
@@ -81,13 +89,13 @@ status: new
 **本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载。  
 精通 CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript、Pascal 等单词的拼写。  
 熟悉 Windows、Linux、OS X、Android、iOS、WP8 、harmony、hyper等系统的开关机。**
-![](https://s3.uuu.ovh/imgs/2024/07/04/82b473abd2059779.png){loading=lazy  class="img1"  }  
+![](https://s3.uuu.ovh/imgs/2024/07/04/82b473abd2059779.png){loading=lazy  class="img1"  width="90%"}  
 
 ## 个人荣誉
 ![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy  class="img1"  }  
 
 
-<head>
+<!-- <head>
 
 <script>
 function _howxm(){_howxmQueue.push(arguments)}
@@ -103,7 +111,7 @@ e.src='https://static.howxm.com/sdk.js';
 t.parentNode.insertBefore(e,t)}})();
 </script>
 
-</head>
+</head> -->
 
 ## 须知
 如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
