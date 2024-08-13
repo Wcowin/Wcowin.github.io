@@ -78,7 +78,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 # [Navigtion]
 nav:
   # - 主页: index.md
-  - Technical:
+  - 技术:
     - blog/indexblog.md
     - 好用/好玩网站分享: blog/Webplay.md
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md
@@ -150,7 +150,7 @@ nav:
         - C笔记: blog/C language/c.md
         - C++: blog/C language/C++.md
 
-  - Develop: 
+  - 开发: 
     - develop/index.md
     - 我的设备: develop/mydevice.md
     - 如何注册ChatGPT: develop/ChatGPT.md
@@ -176,7 +176,7 @@ nav:
     - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
     - 看源码才懂: develop/kanyuanma.md
     
-  - Chat:
+  - 闲聊:
     - relax/index.md
     - 推荐的Books: relax/tuijianyuedu.md
     - 小米: relax/xiaomo.md
@@ -241,21 +241,21 @@ nav:
     - 关于教育革命的谈话: relax/jiaoyu.md
     - 程序猿神之楷模:一个人,一个网站,5.75亿美元卖掉: relax/kaimo.md
     
-  - Travel: 
+  - 旅行: 
     - trip/index.md
     - 重庆: 
         - 重庆旅游推荐路线: trip/InCQ/CQ.md
     - Hometown: trip/LH.md
     - 西安: trip/Xian.md
 
-  - Tags: tag.md
-  - Message Boards: waline.md
-  - Friends: 
+  - 标签: tag.md
+  - 留言板: waline.md
+  - 朋友: 
     - 友链: about/link.md
     - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
-  - Blog:
+  - 博客:
     - blog/index.md
-  - About:
+  - 关于:
     - 个人简介: about/geren.md
     # - 一纸简历: https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671
     - 个人简历: https://lightpdf.cn/docs/mzlcyc1 
