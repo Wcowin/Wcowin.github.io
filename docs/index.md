@@ -213,4 +213,5 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 -->
 
+<a href="https://ipw.cn/ipv6webcheck/?site=wcowin.work/" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a>
 
