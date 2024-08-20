@@ -627,7 +627,17 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
     </div> 
     </div>
-
+    <div class="card"> 
+    <img class="ava" src="https://tendcode.com/static/blog/img/friend.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://tendcode.com" target="_blank">TendCode</a> 
+      </div> 
+      <div class="info">
+      Django自建博客，热爱Python
+      </div> 
+    </div> 
+    </div>
 
 
    </div> 
