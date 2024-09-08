@@ -1,7 +1,8 @@
 # My 𝕏 Website
 
 <p align="center">
-    <img src="docs/img/index.png" alt="arv-anshul"/ width="80%" >
+    <img src="https://s2.loli.net/2024/09/08/p5Ef9ORXQ2UcT8a.png" alt="arv-anshul"/ width="80%" style="border-radius: 10px;" >
+    <img src="https://s2.loli.net/2024/09/08/HMyvS3mATb4WsxX.png" alt="arv-anshul" width="80%" style="border-radius: 10px;">
 </p>
 <p align="center">
     <a href="https://squidfunk.github.io/mkdocs-material/"><img src="https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&amp;logo=MaterialForMkDocs&amp;logoColor=white" alt="Built with Material for MkDocs"></a>
@@ -9,9 +10,7 @@
     <a href="https://github.com/Wcowin/Wcowin.github.io/actions"><img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=fff&style=for-the-badge" alt="GitHub Actions Badge"></a>
 </p>
 
-<p align="center">
-<p align="center">𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
-</p>
+<p align="center">𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !</p>
 
 # Connect with me
 
@@ -24,8 +23,6 @@
     <img src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg" alt="个人名片" style="border-radius: 10px;" width="70%">
   </a>
 </p>
-
-
 
 
 **Wechat**  
