@@ -82,7 +82,7 @@ twikoo.init({
   data-page-title="{{ PAGE_TITLE }}"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-<script defer src="https://cusdis.com/js/widget/lang/zh-cn.js"></script>
+
 
 </div>
 

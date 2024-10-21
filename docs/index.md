@@ -100,7 +100,6 @@ comments: false
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
     - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md) 
     
-
 -   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程__
 
     ---
@@ -109,7 +108,6 @@ comments: false
     - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)   
     - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
 
-    
 
 -   :material-format-font:{ .lg .middle } __好玩__
 
@@ -120,9 +118,6 @@ comments: false
     - [Mac/windows软件网站汇总](blog/macsoft.md)
     - [重庆旅游推荐路线](trip/InCQ/CQ.md)
     
-
-    
-
 -   :simple-aboutdotme:{ .lg .middle } __关于__
 
     ---
