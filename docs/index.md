@@ -100,7 +100,7 @@ comments: false
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
     - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md) 
     
--   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程__
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程(三步搞定)__
 
     ---
 
@@ -109,7 +109,7 @@ comments: false
     - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
 
 
--   :material-format-font:{ .lg .middle } __好玩__
+-   :material-format-font:{ .lg .middle } __好用/好玩__
 
     ---
 

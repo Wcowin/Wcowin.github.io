@@ -318,8 +318,8 @@ extra:
 
   analytics: 
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-    # G-29HZMNR0KG
+    property: G-29HZMNR0KG
+    # !ENV GOOGLE_ANALYTICS_KEY
     feedback:
       title: 此页面有帮助吗？
       ratings:
@@ -402,7 +402,7 @@ markdown_extensions:
   - admonition
   - def_list
   - footnotes
-  - callouts
+  # - callouts
   - md_in_html
   - markdown.extensions.abbr # 支持Markdown文件上方自定义标题标签等
   - pymdownx.magiclink
