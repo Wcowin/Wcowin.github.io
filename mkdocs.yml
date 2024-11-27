@@ -13,7 +13,6 @@ theme:
   #   text: Bitter
   #   code: Roboto Mono
   logo: https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
-  #https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
   # https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
   favicon: https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
@@ -81,11 +80,13 @@ nav:
   - 技术:
     - blog/indexblog.md
     - 好用/好玩网站分享: blog/Webplay.md
+    - 基于 Mkdocs 的主题与站点: blog/technique sharing/comkdocs.md
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md
     - Mac/windows软件网站汇总: blog/macsoft.md
     - 语雀: blog/yuque.md
     - Telegram 群组、频道、机器人  汇总分享: blog/TG.md
     - MKdocs教程:
+        - Mkdocs教程前言: blog/Mkdocs/mkfirst.md
         - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
         - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
@@ -318,7 +319,7 @@ extra:
 
   analytics: 
     provider: google
-    property: G-29HZMNR0KG
+    property: G-29HZMNR0KG  ##如果你 clone 了my模板，请将这个修改为你的
     # !ENV GOOGLE_ANALYTICS_KEY
     feedback:
       title: 此页面有帮助吗？

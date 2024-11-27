@@ -11,7 +11,10 @@ comments: false
 # 主页
 
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
+
+<!-- https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js -->
+
 
 
 <!-- <center>
@@ -75,6 +78,7 @@ comments: false
 
 1. 点击右下角与我在线交谈.
 2. 18939533255
+
 ***  
 
 <!-- <strong>推荐文章:material-book:</strong>
@@ -133,9 +137,8 @@ comments: false
 [^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
 [^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
 
-
-<head>
 <!-- Start of Howxm client code snippet -->
+<!-- <head>
 <script>
 function _howxm(){_howxmQueue.push(arguments)}
 window._howxmQueue=window._howxmQueue||[];
@@ -148,7 +151,7 @@ e.setAttribute('id',scriptId);
 e.type='text/javascript';e.async=!0;
 e.src='https://static.howxm.com/sdk.js';
 t.parentNode.insertBefore(e,t)}})();
-</script>
+</script> -->
 <!-- End of Howxm client code snippet -->
 
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>

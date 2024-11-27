@@ -89,7 +89,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
        <div class="card"> 
-     <img class="ava" src="https://mungeryang.github.io/images/avatar.png?v=1696728951294" /> 
+     <img class="ava" src="https://mungeryang.github.io/img/bg/person1.jpeg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a> 
@@ -638,11 +638,21 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
     </div> 
     </div>
+    <div class="card"> 
+    <img class="ava" src="https://magren.cc/avatar.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://magren.cc" target="_blank">Magren's Blog</a> 
+      </div> 
+      <div class="info">
+    不为繁华易匠心
+      </div> 
+    </div> 
+    </div>
 
 
    </div> 
   </div>
-
 
 
 
