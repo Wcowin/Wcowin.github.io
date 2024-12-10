@@ -282,7 +282,9 @@ img.twitter {
     border: none; /* 在手机上移除蓝色外框 */
   }
 }
-
+#cusdis_thread > iframe {
+  height: 30rem;
+}
 
 .image-container {
   text-align: center;

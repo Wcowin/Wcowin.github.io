@@ -552,13 +552,13 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>  
     <div class="card"> 
-     <img class="ava" src="http://www.ickg.net/vis/favicon.png" /> 
+     <img class="ava" src="http://www.yveji.com/vis/yveji_logo.svg" /> 
      <div class="card-header"> 
       <div> 
-       <a href="http://www.ickg.net" target="_blank">iCKG 渝见</a> 
+       <a href="http://www.yveji.com" target="_blank">悦己</a> 
       </div> 
       <div class="info">
-       我和重庆有个约会
+       阅己，越己，悦己
       </div> 
      </div> 
     </div>
