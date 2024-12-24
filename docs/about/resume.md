@@ -15,9 +15,9 @@
 
     ---
 
-    <iframe src="https://lightpdf.cn/docs/1cpgobc" width="100%" height="800px" style="border: 1px solid #ccc; overflow: auto;">
+    <iframe src="./个人简历.pdf" width="100%" height="800px" style="border: 1px solid #ccc; overflow: auto;">
         This browser does not support PDFs. Please download the PDF to view it: 
-        <a href="https://lightpdf.cn/docs/1cpgobc">Download PDF</a>.
+        <a href="个人简历.pdf">Download PDF</a>.
     </iframe>
 
 </div>
