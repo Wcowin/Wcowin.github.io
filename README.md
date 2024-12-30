@@ -1,7 +1,8 @@
 # My 𝕏 Website
 
+
 <p align="center">
-    <img src="https://s2.loli.net/2024/09/08/p5Ef9ORXQ2UcT8a.png" alt="arv-anshul"/ width="80%" style="border-radius: 10px;" >
+    <img src="https://s2.loli.net/2024/12/30/rbnFWgQOiBYwv3M.png" alt="arv-anshul"/ width="80%" style="border-radius: 10px;" >
     <img src="https://s2.loli.net/2024/09/08/HMyvS3mATb4WsxX.png" alt="arv-anshul" width="80%" style="border-radius: 10px;">
 </p>
 <p align="center">

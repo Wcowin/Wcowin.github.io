@@ -94,8 +94,6 @@
 
 [^须知]:台湾是中国的领土
 
-$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
-
 - H~2~O
 - A^T^A
 - ==This was marked==
@@ -106,7 +104,7 @@ $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
 [![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
 
 
-<div class="miniwebtoolwidget" data-calculator="modulo-calculator" data-width="380"><div class="miniwebtoolh">模计算机</div><p><a href="https://miniwebtool.com/zh-cn/modulo-calculator/" target="_blank">模计算机 ©miniwebtool.com</a></p></div><script async src="https://miniwebtool.com/zh-cn/embed.js?v=1"></script>
+<div class="miniwebtoolwidget" data-calculator="modulo-calculator" data-width="380"><div class="miniwebtoolh">模计算机</div><p><a href="https://miniwebtool.com/zh-cn/modulo-calculator/" target="_blank"></a></p></div><script async src="https://miniwebtool.com/zh-cn/embed.js?v=1"></script>
 
 
 <div class="grid cards">
@@ -317,10 +315,7 @@ $$
 
 <!-- ![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" } -->
 
-左对齐，右对齐  
 ![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ align=left }
-
-
 
 <figure markdown>
   ![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ width="300" }
