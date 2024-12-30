@@ -154,7 +154,8 @@ t.parentNode.insertBefore(e,t)}})();
 </script> -->
 <!-- End of Howxm client code snippet -->
 
-<script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
+<!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>-->  
+ <!-- tidio聊天-->
 </head>
 
 
@@ -193,13 +194,11 @@ t.parentNode.insertBefore(e,t)}})();
       return day + "天" + ss + "时" + ff + "分" + mm +'秒'
     }
     setInterval(()=>{
-      document.getElementById('box1').innerHTML = timingTime()
+document.getElementById('box1').innerHTML = timingTime()
     },1000)
   </script>
   </font>
 </body>
-
-
 
 <!--  
 ____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
@@ -208,6 +207,4 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
   \            /  |  |     |  |  |  |   \            /   |  | |  . `  | 
    \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   | 
     \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
-
 -->
-

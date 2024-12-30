@@ -6,6 +6,12 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-12-30</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 重写[关于](https://wcowin.work/about/geren.html)信息界面，流水式展示
+* 修复个别小错误
+* 删除冗余显示的代码，界面更清爽
+
 ## </p><h1 id="01" name="01"><strong>2024-12-22</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 考研结束  满血复活

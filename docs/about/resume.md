@@ -1,4 +1,12 @@
-
+---
+title: 个人简历
+hide:
+  # - navigation # 显示右
+  - toc #显示左
+  - footer
+  - feedback
+comments: false
+---
 <!-- <div class="grid cards" markdown>
 
 -   :octicons-bookmark-16:{ .lg .middle } __个人简历__

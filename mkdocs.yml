@@ -272,6 +272,7 @@ nav:
     # - 我们♡+♡=♡²: about/Foryou.md
     - 年度总结:
         - 2023: about/zongjie/2023.md
+        - 2024: about/zongjie/2024.md
     - 考研: about/kaoyan.md
 
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
@@ -448,6 +449,7 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/geren.js
   # - javascripts/mathjax-config.js
   # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
@@ -463,6 +465,7 @@ extra_css:
   - stylesheets/extra2.css  #诗词版、打赏
   - stylesheets/link.css  #友链
   - stylesheets/customize.css  #按钮圆角化
+  # - assets/stylesheets/portfolio.css #个人简历 
   - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   # - stylesheets/extra1.css
