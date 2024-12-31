@@ -133,7 +133,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://www.gkcoll.xyz/favicon.ico" /> 
+     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源</a> 
@@ -243,17 +243,6 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>    
    <div class="card"> 
-     <img class="ava" src="https://npm.onmicrosoft.cn/hrn-img@1.0.0/img/avatar.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://blog.lvhrn.cn" target="_blank">JayHrn</a> 
-      </div> 
-      <div class="info">
-       發掘好玩事物
-      </div> 
-     </div> 
-    </div> 
-   <div class="card"> 
      <img class="ava" src="https://www.langhai.net/assets/images/langhai-logo.png" /> 
      <div class="card-header"> 
       <div> 
@@ -321,24 +310,13 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://blog.btwoa.com/btwoa.jpg" /> 
+     <img class="ava" src="https://blog.btwoa.com/author.avif" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.btwoa.com" target="_blank">btwoa</a> 
       </div> 
       <div class="info">
       世界为你简单
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
-     <img class="ava" src="https://blog.linsnow.cn/img/avatar.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://blog.linsnow.cn" target="_blank">L1nSn0w's Blog</a> 
-      </div> 
-      <div class="info">
-      无限进步.🎈
       </div> 
      </div> 
     </div>
@@ -442,7 +420,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://blog.sunguoqi.com/avatar.webp" /> 
+     <img class="ava" src="https://assets.guoqi.dev/images/avatar.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.sunguoqi.com" target="_blank">小孙同学</a> 
@@ -464,7 +442,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://blog.w1ndys.top/img/about/avatar.png" /> 
+     <img class="ava" src="https://avatars.githubusercontent.com/u/109416673?v=4" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.w1ndys.top/" target="_blank">W1ndysの小屋</a> 
@@ -585,7 +563,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png" /> 
+     <img class="ava" src="https://s2.loli.net/2024/12/31/9aBkXdhf4lczM8N.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.imsyy.top/" target="_blank">無名小栈</a> 
@@ -686,6 +664,17 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://npm.onmicrosoft.cn/hrn-img@1.0.0/img/avatar.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.lvhrn.cn" target="_blank">JayHrn</a> 
+      </div> 
+      <div class="info">
+       發掘好玩事物
+      </div> 
+     </div> 
+    </div> 
     <div class="card"> 
      <img class="ava" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" /> 
      <div class="card-header"> 
@@ -697,6 +686,18 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.linsnow.cn" target="_blank">L1nSn0w's Blog</a> 
+      </div> 
+      <div class="info">
+      无限进步.🎈
+      </div> 
+     </div> 
+    </div>
+
 
 
    </div> 

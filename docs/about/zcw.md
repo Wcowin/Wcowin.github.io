@@ -15,19 +15,18 @@ title: 支持作者
 
 可以的话 请我喝一杯咖啡吧☕️
 
-**:simple-alipay:** **Alipay**
+## **:simple-alipay:** **Alipay**
 
 ![](https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg){class="img1"}
 
-**:simple-wechat:** **WeChat Pay**
+## **:simple-wechat:** **WeChat Pay**
 
 ![](https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg){class="img1"}
 
 ***
-**:simple-kofi:ko-fi**
+## **:simple-kofi:ko-fi**
 
-[Touch me!](https://ko-fi.com/U6U5HAO6B){ .md-button target=_blank}
-
+[Touch me!](https://ko-fi.com/wcowin){ .md-button target=_blank}
 
 <div class="reward-container">
   <div></div>

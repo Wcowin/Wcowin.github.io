@@ -17,6 +17,9 @@ comments: false
 
 </div> -->
 
+请使用PC端查看，谢谢
+---
+
 <div class="grid cards" markdown>
 
 -   :octicons-bookmark-16:{ .lg .middle } __个人简历__
