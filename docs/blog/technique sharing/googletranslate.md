@@ -56,6 +56,5 @@ sudo bash -c "$(curl -skL https://fere.link/ow3cld)"
 Adding the rule "120.253.253.226 translate.googleapis.com"
 Done.
 ```
-**↓↓↓再看看github可不可以用↓↓↓ ** 
-![img](https://cn.mcecy.com/image/20230321/6db82f20f0803877e70234d621457d7c.png)
-**好了，Freestyle** 
+
+**Freestyle** 

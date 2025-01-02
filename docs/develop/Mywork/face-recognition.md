@@ -54,7 +54,6 @@ conda activate face
 pip install dlib-19.17.0-cp37-cp37m-win_amd64.whl
 ```
 
-![](https://cn.mcecy.com/image/20230923/f28378ab5069af2ada77be4388f78f15.png)
 
 安装必要的库
 ```bash

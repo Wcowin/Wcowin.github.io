@@ -14,8 +14,8 @@ tags:
 find / -name com.apple.dock.launchpad 2>/dev/null
 ```  
 
-回车后需要等待一段时间才出结果
-![img](https://cn.mcecy.com/image/20230321/07ccea4a2d9a484f6a990034b86240c9.png)
+回车后需要**等待一段时间**才出结果  
+![image.png](https://s2.loli.net/2025/01/02/z5jqTu7Dko6YFvG.png)
 复制上图框中的路径
 
 2.在终端输入cd+空格+刚才的路径+/db
@@ -25,7 +25,7 @@ find / -name com.apple.dock.launchpad 2>/dev/null
 cd /private/var/folders/qm/rr1078k96k3gn1xnr85ml8vm0000gn/0/com.apple.dock.launchpad/db
 ```
 成功后如下图 
-![img](https://cn.mcecy.com/image/20230321/4d4044c72af764dd3bd21fc6cafbad77.png)
+![image.png](https://s2.loli.net/2025/01/02/z9B43kqcJD52yLH.png)
 3.在上图db%后复制粘贴下方命令
 ```
 sudo sqlite3 db "delete from apps where title='程序名称';"&&killall Dock

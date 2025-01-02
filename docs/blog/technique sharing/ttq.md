@@ -11,7 +11,6 @@ tags:
 comments: false  #评论，默认不开启
 ---
 
-[![image.gif](https://i.postimg.cc/ryGZvqbN/image.gif)](https://postimg.cc/HjxtM1Tr)
 
 代码如下
 ```c title="math.py"

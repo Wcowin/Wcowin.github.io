@@ -5,6 +5,25 @@ title: 测试组件
 ## 测试中的内容
 ---
 
+<head>
+
+<script>
+function _howxm(){_howxmQueue.push(arguments)}
+window._howxmQueue=window._howxmQueue||[];
+_howxm('setAppID','14429fca-cac1-4551-a472-b046a96ebb75');
+(function(){var scriptId='howxm_script';
+if(!document.getElementById(scriptId)){
+var e=document.createElement('script'),
+t=document.getElementsByTagName('script')[0];
+e.setAttribute('id',scriptId);
+e.type='text/javascript';e.async=!0;
+e.src='https://static.howxm.com/sdk.js';
+t.parentNode.insertBefore(e,t)}})();
+</script>
+
+</head>
+
+
 
 !!!info
     测试中的小组件，可看源代码自行取用

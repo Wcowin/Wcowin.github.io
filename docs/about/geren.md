@@ -69,7 +69,6 @@ status: new
 ## 个人履历
 
 <html lang="en">
-
 <body>
     <!--==================== QUALIFICATION ====================-->
     <section class="qualification section">
@@ -222,24 +221,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 ![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy  class="img1"  }  
 
 
-<!-- <head>
-
-<script>
-function _howxm(){_howxmQueue.push(arguments)}
-window._howxmQueue=window._howxmQueue||[];
-_howxm('setAppID','14429fca-cac1-4551-a472-b046a96ebb75');
-(function(){var scriptId='howxm_script';
-if(!document.getElementById(scriptId)){
-var e=document.createElement('script'),
-t=document.getElementsByTagName('script')[0];
-e.setAttribute('id',scriptId);
-e.type='text/javascript';e.async=!0;
-e.src='https://static.howxm.com/sdk.js';
-t.parentNode.insertBefore(e,t)}})();
-</script>
-
-</head> -->
-
 ## 须知
 如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
 
@@ -248,7 +229,6 @@ t.parentNode.insertBefore(e,t)}})();
 
     [Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}  
 
-<!-- <a target="_blank"  href="mailto:wangkewen821@gmail.com""><button class="buttonxuan2" style="vertical-align:middle" ><span>Send Email:fontawesome-solid-paper-plane: </span></button></a> -->
 
 <!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
 

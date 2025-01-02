@@ -40,7 +40,7 @@ authors:
   Wcowin:
     name: Wang Kewen    # Author name
     description: Free and casual # Author description
-    avatar: https://cn.mcecy.com/image/20231002/12fa9ff77b8b452d9a65b56507995bde.png         # Author avatar
+    avatar: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png         # Author avatar
 
 ```
 

@@ -25,7 +25,6 @@ comments: false  #评论，默认不开启
 ![img](https://user-assets.sxlcdn.com/images/951476/FhxvkaLwmWTSzrHzWiaiz6ucMPxo.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
 ![img](https://user-assets.sxlcdn.com/images/951476/FmGeEmsPYrTAM1XjDyfsKS-HqCsV.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
 ![img](https://user-assets.sxlcdn.com/images/951476/Fqf-8lnBd_SktXV09InWkJr0A0nk.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
-![img](https://cn.mcecy.com/image/20230321/0f112b2a6da2e2ec2c9e6644dbb912e9.jpeg){ loading=lazy }
 ![img](https://user-assets.sxlcdn.com/images/951476/FhXRRqdBUPIgbSi5ocHtzkGYV9ud.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg){ loading=lazy }
 
 ### <b>Day3

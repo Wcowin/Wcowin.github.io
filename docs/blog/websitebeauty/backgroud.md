@@ -15,8 +15,14 @@ tags:
 
 <div id="snowflakes-container"></div>
 <script>
-  // 在LocalStorage中设置不显示雪花效果的标志
-  localStorage.setItem('showSnowflakes', 'true');
+  // 获取当前页面的 URL
+  var currentPage = window.location.pathname;
+  // 如果当前页面是特定页面，则设置显示雪花效果的标志
+  if (currentPage === 'https://wcowin.work/blog/websitebeauty/backgroud.html') {
+    localStorage.setItem('showSnowflakes', 'true');
+  } else {
+    localStorage.setItem('showSnowflakes', 'false');
+  }
 </script>
 
 <script>

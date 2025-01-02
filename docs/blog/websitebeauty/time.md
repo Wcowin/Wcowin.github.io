@@ -5,8 +5,6 @@ tags:
 comments: false  #评论，默认不开启
 ---
 
-![img](https://cn.mcecy.com/image/20240106/ee0ece547112ac1b67fb61ac7f9c1a90.png)  
-
 参考方法：[git 修订日期本地化](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#revisioning)
 
 利用[git -revision-date-localized插件](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)添加了对添加上次更新日期和在每个页面底部创建文档的支持

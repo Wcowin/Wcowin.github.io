@@ -7,7 +7,7 @@ comments: true
 **2023.5.27昨天又是大规模封号，只能说且行切珍惜你的GPT**   
 
 **注册ChatGPT详细指南**  
-![img](https://cn.mcecy.com/image/20230325/ab2d0ea74212ffa4fac73e195d7cf3d2.png)  
+
 最近ChatGPT真受欢迎，但是有些人注册时会经常面临不服务它们的地区问题，现在我们给你详细问题解决。  
 作者[twitter](https://twitter.com/BoxMrChen)  
 ## 准备

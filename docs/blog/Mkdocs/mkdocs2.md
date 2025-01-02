@@ -25,12 +25,12 @@ tags:
       # font:
       #   text: Bitter
       #   code: Roboto Mono
-      logo: https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png
+      logo: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
         # material/library
         # admonition:
         #   <type>: material/file-alert-outline
 
-      favicon: img/wkw2.png
+      # favicon: img/wkw2.png
       # img/11.ico
       palette:
         #primary: blue grey
