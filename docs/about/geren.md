@@ -195,6 +195,16 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     padding: 2px;">我的Wechat</div>
   </center>  
 </a>
+
+<a href="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" target="_blank">
+ <center>
+  <img class="img1" src="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" style="width: 450px; height: auto;">
+    <div style="color:orange; 
+    color: #999;
+    padding: 2px;">我的TG</div>
+  </center>  
+</a>
+
 <figure markdown >
   ![Image title](https://s1.imagehub.cc/images/2024/02/02/43c746351261969a02bda7d743199604.jpeg){.img1}
   <figcaption>公众号</figcaption>

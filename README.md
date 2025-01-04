@@ -2,8 +2,10 @@
 
 
 <p align="center">
-    <img src="https://s2.loli.net/2024/12/30/rbnFWgQOiBYwv3M.png" alt="arv-anshul"/ width="80%" style="border-radius: 10px;" >
-    <img src="https://s2.loli.net/2024/09/08/HMyvS3mATb4WsxX.png" alt="arv-anshul" width="80%" style="border-radius: 10px;">
+    <img src="https://s1.imagehub.cc/images/2024/02/02/357ba91e8e68c554ce015fd0c95a08d8.png" alt="arv-anshul"/ width="100%" style="border-radius: 10px;" >
+    <img src="https://s2.loli.net/2024/09/08/HMyvS3mATb4WsxX.png" alt="arv-anshul" width="100%" style="border-radius: 10px;">
+    <img src="https://s2.loli.net/2025/01/02/VHeITXxJgwOKSsu.jpg" alt="arv-anshul" width="100%" style="border-radius: 10px;">
+    
 </p>
 <p align="center">
     <a href="https://squidfunk.github.io/mkdocs-material/"><img src="https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&amp;logo=MaterialForMkDocs&amp;logoColor=white" alt="Built with Material for MkDocs"></a>
@@ -20,8 +22,8 @@
 **MuseLink**
 
 <p align="center">
-  <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://s2.loli.net/2024/02/01/ABmgaCO7iknhv8F.jpg" alt="个人名片" style="border-radius: 10px;" width="70%">
+  <a href="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" target="_blank">
+    <img src="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" alt="个人名片" style="border-radius: 10px;" width="50%">
   </a>
 </p>
 
