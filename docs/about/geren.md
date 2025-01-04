@@ -205,10 +205,11 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
   </center>  
 </a>
 
-<figure markdown >
-  ![Image title](https://s1.imagehub.cc/images/2024/02/02/43c746351261969a02bda7d743199604.jpeg){.img1}
-  <figcaption>公众号</figcaption>
-</figure>
+??? note "公众号"
+    <figure markdown >
+    ![Image title](https://s1.imagehub.cc/images/2024/02/02/43c746351261969a02bda7d743199604.jpeg){.img1}
+    <figcaption>公众号</figcaption>
+    </figure>
 
 ## 个人简历
 
@@ -218,7 +219,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
     ---
 
-    [个人简历(在线)](https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671)
+    [个人简历(在线)](https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671){target=“_blank”}
 </div>
 
 <!-- ## 个人技能
