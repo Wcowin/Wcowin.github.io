@@ -110,8 +110,8 @@ status: new
                             <span class="qualification__line"></span>
                         </div>
                         <div>
-                            <h3 class="qualification__title">重庆工商大学</h3>
-                            <span class="qualification__subtitle">电子信息工程学士</span>
+                            <h3 class="qualification__title">CTBU</h3>
+                            <span class="qualification__subtitle">电子信息工程专业学士</span>
                             <div class="qualification__calendar">
                                 <iconify-icon icon="tabler:calendar"></iconify-icon>
                                 2021 - 2024
@@ -122,7 +122,7 @@ status: new
                     <div class="qualification__data">
                         <div>
                             <h3 class="qualification__title">西安电子科技大学（待定）</h3>
-                            <span class="qualification__subtitle">网络空间安全硕士</span>
+                            <span class="qualification__subtitle">网络空间安全专业硕士研究生</span>
                             <div class="qualification__calendar">
                                 <iconify-icon icon="tabler:calendar"></iconify-icon>
                                 2024 - 2027
