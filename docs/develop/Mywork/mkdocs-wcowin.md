@@ -14,17 +14,22 @@ status: new
 
 # Mkdocs-Wcowin主题
 
-<div id="rcorners2" >
-  <ul>
-    <li>通过主题和目录以打开文章</li>
-    <ul>
-      <li>基于Material for MkDocs美化</li>
-      <li>简洁美观，功能多元化</li>
-    </ul>
-    <li>简单易上手，小白配置</li>
-    <li>教程详细，清晰易懂</li>
-  </ul>
-</div> 
+
+
+
+<div class="grid cards" markdown>
+
+-   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
+
+    ---
+
+      - 通过主题和目录以打开文章
+        - 基于Material for MkDocs美化
+        - 简洁美观，功能多元化
+      - 简单易上手，小白配置
+      - 教程详细，清晰易懂
+
+</div>
 
 ## 展示  
 感受一下它的简洁美观：[Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”}  
@@ -50,11 +55,15 @@ status: new
 ![1](https://s1.imagehub.cc/images/2024/02/02/f1ad87eba264c26344b24dc48336b538.png){ loading=lazy }
 </center>
 
+**性能**
+![image](https://s1.imagehub.cc/images/2025/01/05/7164642e16ff90239bee5c46709ad50f.png){ loading=lazy }
+
+
 ## 如何快速使用
 打开终端安装mkdocs: `pip install mkdocs-material`，在你本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
 
 把Mkdocs-Wcowin文件里的东西全部复制出来到Wcowin.github.io文件里(如下图)，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
-![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png)  
+![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png){ loading=lazy }  
 
 详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](https://wcowin.work/blog/Mkdocs/mkdocs1.html)
 

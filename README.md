@@ -4,7 +4,7 @@
 <p align="center">
     <img src="https://s1.imagehub.cc/images/2024/02/02/357ba91e8e68c554ce015fd0c95a08d8.png" alt="arv-anshul"/ width="100%" style="border-radius: 10px;" >
     <img src="https://s2.loli.net/2024/09/08/HMyvS3mATb4WsxX.png" alt="arv-anshul" width="100%" style="border-radius: 10px;">
-    <img src="https://s2.loli.net/2025/01/02/VHeITXxJgwOKSsu.jpg" alt="arv-anshul" width="100%" style="border-radius: 10px;">
+    <img src="https://s1.imagehub.cc/images/2025/01/05/7164642e16ff90239bee5c46709ad50f.png" alt="arv-anshul" width="100%" style="border-radius: 10px;">
     
 </p>
 <p align="center">

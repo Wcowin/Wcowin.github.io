@@ -627,6 +627,18 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
     </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://github.com/get1024/RyanJoy-s_Web/blob/main/public/avatar.png?raw=true" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web</a> 
+      </div> 
+      <div class="info">
+       🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
+      </div> 
+     </div> 
+    </div>
+
 
 
    </div> 
@@ -665,7 +677,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://npm.onmicrosoft.cn/hrn-img@1.0.0/img/avatar.jpg" /> 
+     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.lvhrn.cn" target="_blank">JayHrn</a> 
@@ -675,17 +687,6 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div> 
-    <div class="card"> 
-     <img class="ava" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web</a> 
-      </div> 
-      <div class="info">
-       🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
-      </div> 
-     </div> 
-    </div>
    <div class="card"> 
      <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
      <div class="card-header"> 

@@ -13,19 +13,6 @@ comments: false
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 
-<!-- https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js -->
-
-
-
-<!-- <center>
-<font  color= #608DBD size=3>
-<span id="jinrishici-sentence">正在加载今日诗词....</span>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</font>
-</center> -->
-
-
-
 <div id="rcorners2" >
 
 <div id="rcorners1" class="date-display">
@@ -36,48 +23,62 @@ comments: false
     .date-display {
         color: #4351AF;
     }
+    .p1 {
+        font-size: 16px; /* 调整字体大小 */
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    ul ul {
+        list-style-type: circle;
+        margin-left: 20px;
+    }    
 </style>
+
 <script defer>
     function format(newDate) {
-        const day = newDate.getDay();
-        const y = newDate.getFullYear();
-        const m = newDate.getMonth() + 1 < 10 ? `0${newDate.getMonth() + 1}` : newDate.getMonth() + 1;
-        const d = newDate.getDate() < 10 ? `0${newDate.getDate()}` : newDate.getDate();
-        const h = newDate.getHours() < 10 ? `0${newDate.getHours()}` : newDate.getHours();
-        const min = newDate.getMinutes() < 10 ? `0${newDate.getMinutes()}` : newDate.getMinutes();
-        const s = newDate.getSeconds() < 10 ? `0${newDate.getSeconds()}` : newDate.getSeconds();
-        const dict = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 0: "天"};
-        
-        return `${y}年${m}月${d}日 ${h}:${min}:${s} 星期${dict[day]}`;
+        const options = {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            weekday: 'long',
+            hour12: false
+        };
+        return new Intl.DateTimeFormat('zh-CN', options).format(newDate);
     }
 
-    const timerId = setInterval(() => {
-        const newDate = new Date();
+    document.addEventListener('DOMContentLoaded', () => {
         const p1 = document.querySelector(".p1");
-        if (p1) {
-            p1.textContent = format(newDate);
+        function updateTime() {
+            const newDate = new Date();
+            if (p1) {
+                p1.textContent = format(newDate);
+            }
+            requestAnimationFrame(updateTime);
         }
-    }, 1000);
+        updateTime();
+    });
 </script>
-
+  
   <ul>
-    <li>通过主题和目录以打开文章</li>
-    <ul>
-      <li>Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章</li>
-      <li>移动端 请点击左上角图标选择主题和文章</li>
-    </ul>
-    <li>请搜索关键词以打开文章</li>
-    <li>
-      如遇到网页卡顿/打开文章后无法显示图片的情况，请使用科学上网
-    </li>
+      <li>通过主题和目录以打开文章</li>
+      <ul>
+          <li>Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章</li>
+          <li>移动端 请点击左上角图标选择主题和文章</li>
+      </ul>
+      <li>如遇到网页卡顿/打开文章后无法显示图片的情况，请使用科学上网</li>
   </ul>
 </div> 
 
 快速谈话(1) 联系我(2)
 { .annotate }
 
-1. 点击右下角与我在线交谈.
-2. 18939533255
+1. 点击右上角关于页面，与我在线交谈.
+2. TEL:18939533255(微信号)
 
 ***  
 
@@ -208,3 +209,39 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
    \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   | 
     \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
 -->
+
+
+<!-- <script defer>
+    function format(newDate) {
+        const day = newDate.getDay();
+        const y = newDate.getFullYear();
+        const m = newDate.getMonth() + 1 < 10 ? `0${newDate.getMonth() + 1}` : newDate.getMonth() + 1;
+        const d = newDate.getDate() < 10 ? `0${newDate.getDate()}` : newDate.getDate();
+        const h = newDate.getHours() < 10 ? `0${newDate.getHours()}` : newDate.getHours();
+        const min = newDate.getMinutes() < 10 ? `0${newDate.getMinutes()}` : newDate.getMinutes();
+        const s = newDate.getSeconds() < 10 ? `0${newDate.getSeconds()}` : newDate.getSeconds();
+        const dict = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 0: "天"};
+        
+        return `${y}年${m}月${d}日 ${h}:${min}:${s} 星期${dict[day]}`;
+    }
+
+    const timerId = setInterval(() => {
+        const newDate = new Date();
+        const p1 = document.querySelector(".p1");
+        if (p1) {
+            p1.textContent = format(newDate);
+        }
+    }, 1000);
+</script> -->
+
+
+## 个人简历
+
+<div class="grid cards" markdown>
+
+-   :octicons-bookmark-16:{ .lg .middle } __求实习(25届)__
+
+    ---
+
+    [个人简历(在线)](https://www.123684.com/Weboffice/?type=f&id=10395713&FileName=个人简历2.pdf&Size=265893&Etag=155b54166c3f94b62f4316306efc65a8&S3KeyFlag=1811963502-0&CreateAt=1736057449&UpdateAt=1736057463&from=2&shareKey=bXcDVv-fq8G3&sharePwd=&uid=1811963502){target=“_blank”}
+</div>

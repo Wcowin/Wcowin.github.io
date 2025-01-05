@@ -28,7 +28,7 @@ title: 支持作者
 
 [Touch me!](https://ko-fi.com/wcowin){ .md-button target=_blank}
 
-<div class="reward-container">
+<!-- <div class="reward-container">
   <div></div>
   <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     请作者喝杯咖啡
@@ -43,7 +43,7 @@ title: 支持作者
         <p>支付宝</p>
       </div>
   </div>
-</div>
+</div> -->
 
 
 

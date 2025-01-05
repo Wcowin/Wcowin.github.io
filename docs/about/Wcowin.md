@@ -51,7 +51,7 @@ title: Github主页介绍
 </p>
 
 ## Support me
- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U5HAO6B)
+[Touch me!](https://ko-fi.com/wcowin){ .md-button target=_blank}
 
 
 <div align=center> 

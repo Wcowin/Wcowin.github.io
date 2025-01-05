@@ -6,10 +6,9 @@ hide:
   - footer
 status: new
 ---
-<center> 
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</center>  
-
+<center>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+</center>
 
 # <span id="jinrishici-sentence">今日诗词</span>
 
@@ -21,29 +20,24 @@ status: new
 
 ## 关于我
 
+
 <html lang="en">
 <p style="text-align: center; margin: 0px;" markdown>
-  <img src="https://vip.helloimg.com/i/2024/07/28/66a59489ae5b1.jpeg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
+  <img src="https://s1.imagehub.cc/images/2025/01/04/158948b0002cdac6e9ff43986648cb83.png" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
+  <!-- ![image](https://s1.imagehub.cc/images/2025/01/04/158948b0002cdac6e9ff43986648cb83.png) -->
   <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--==================== ICONS ====================-->
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <!--==================== CSS ====================-->
         <link rel="stylesheet" href="../assets/stylesheets/portfolio.css">
     </head>
     <body>
         <main class="main">
-            <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <!-- <center><h1>About Me</h1></center> -->
                 <div class="about__container container">
                     <div class="about__data">
-                            <p style="text-align: center; margin: 0px;" markdown>
-  <!-- <img src="https://vip.helloimg.com/i/2024/07/28/66a59489ae5b1.jpeg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" /> -->
-  <!-- <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p> -->
-</p>
+                            <p style="text-align: center; margin: 0px;" markdown></p>
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">01+</span>
@@ -58,12 +52,10 @@ status: new
                                 <span class="about__info-name">贡献的开源</span>
                             </div>
                         </div>
-                    </div>
-                </div>
             </section>
                 </body>
 </html>
-<center>[下载简历 :fontawesome-solid-download:](个人简历.pdf){.md-button}</center>
+<center>[下载简历 :fontawesome-solid-download:](个人简历.pdf){.md-button target=“_blank”}</center>
 
 ---
 ## 个人履历
@@ -152,25 +144,11 @@ status: new
                         </div>
       </div>
     </section>
-    <!--==================== MAIN JS ====================-->
-    <!-- <script defer src="javascripts/geren.js"></script> -->
 </body>
 </html>
 
----
-<!-- <p style="text-align: center; margin: 0px;" markdown>
-  <img src="https://vip.helloimg.com/i/2024/07/28/66a59489ae5b1.jpeg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" /> -->
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
-  <!-- <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>Wcowin</strong></p> -->
-  <!--  
-____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
-\   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  | 
- \   \/    \/   / |  ,----'|  |  |  |  \   \/    \/   /  |  | |   \|  | 
-  \            /  |  |     |  |  |  |   \            /   |  | |  . `  | 
-   \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   | 
-    \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
--->
-  <!-- <img src="https://t.tutu.to/img/mnz6Q"/ width="270" height="300" style="margin-right: 20px; "/> -->
   <p style="text-align: center; font-size: 25px; margin: 0px;"><strong>𝘿𝙤𝙣'𝙩 𝙘𝙖𝙧𝙚 𝙖𝙗𝙤𝙪𝙩 𝙬𝙤𝙧𝙡𝙙𝙡𝙮 𝙚𝙮𝙚𝙨 𝙩𝙤 𝙥𝙪𝙧𝙨𝙪𝙚 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙡𝙞𝙜𝙝𝙩</strong></p>
 </p>
 <!-- https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg -->
@@ -196,22 +174,22 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
   </center>  
 </a>
 
-<a href="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" target="_blank">
+<a href="https://t.me/wecowin" target="_blank">
  <center>
-  <img class="img1" src="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" style="width: 450px; height: auto;">
+  <img class="img1" src="https://s1.imagehub.cc/images/2025/01/04/ece1374f25a07c060978165ada287fae.png" style="width: 450px; height: auto;">
     <div style="color:orange; 
     color: #999;
     padding: 2px;">我的TG</div>
   </center>  
 </a>
 
-??? note "公众号"
+??? tip "公众号"
     <figure markdown >
-    ![Image title](https://s1.imagehub.cc/images/2024/02/02/43c746351261969a02bda7d743199604.jpeg){.img1}
+    ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1}
     <figcaption>公众号</figcaption>
     </figure>
 
-## 个人简历
+<!-- ## 个人简历
 
 <div class="grid cards" markdown>
 
@@ -220,7 +198,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     ---
 
     [个人简历(在线)](https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671){target=“_blank”}
-</div>
+</div> -->
 
 <!-- ## 个人技能
 **本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载。  
@@ -228,8 +206,8 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 熟悉 Windows、Linux、OS X、Android、iOS、WP8 、harmony、hyper等系统的开关机。**
 ![](https://s3.uuu.ovh/imgs/2024/07/04/82b473abd2059779.png){loading=lazy  class="img1"  width="90%"}   -->
 
-## 个人荣誉
-![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy  class="img1"  }  
+<!-- ## 个人荣誉
+![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy  class="img1"  }   -->
 
 
 ## 须知
