@@ -75,8 +75,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"JetBrains Mono";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -144,7 +144,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Wcowin&#39;s Web" class="md-header__button md-logo" aria-label="Wcowin's Web" data-md-component="logo">
       
-  <img src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" alt="logo">
+  <img src="https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -518,7 +518,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Wcowin&#39;s Web" class="md-nav__button md-logo" aria-label="Wcowin's Web" data-md-component="logo">
       
-  <img src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" alt="logo">
+  <img src="https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp" alt="logo">
 
     </a>
     Wcowin's Web
@@ -5102,7 +5102,7 @@
         
   
   <span class="md-ellipsis">
-    Hometown
+    我的家乡
   </span>
   
 
@@ -5356,6 +5356,8 @@
       
         
       
+        
+      
     
     
       
@@ -5390,6 +5392,29 @@
             Archive
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="blog/archive/2025.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -6011,6 +6036,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人简历
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6044,15 +6086,6 @@
 <p><center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center></p>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 
-<!-- https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js -->
-
-<!-- <center>
-<font  color= #608DBD size=3>
-<span id="jinrishici-sentence">正在加载今日诗词....</span>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</font>
-</center> -->
-
 <div id="rcorners2" >
 
 <div id="rcorners1" class="date-display">
@@ -6063,47 +6096,61 @@
     .date-display {
         color: #4351AF;
     }
+    .p1 {
+        font-size: 16px; /* 调整字体大小 */
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    ul ul {
+        list-style-type: circle;
+        margin-left: 20px;
+    }    
 </style>
+
 <script defer>
     function format(newDate) {
-        const day = newDate.getDay();
-        const y = newDate.getFullYear();
-        const m = newDate.getMonth() + 1 < 10 ? `0${newDate.getMonth() + 1}` : newDate.getMonth() + 1;
-        const d = newDate.getDate() < 10 ? `0${newDate.getDate()}` : newDate.getDate();
-        const h = newDate.getHours() < 10 ? `0${newDate.getHours()}` : newDate.getHours();
-        const min = newDate.getMinutes() < 10 ? `0${newDate.getMinutes()}` : newDate.getMinutes();
-        const s = newDate.getSeconds() < 10 ? `0${newDate.getSeconds()}` : newDate.getSeconds();
-        const dict = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 0: "天"};
-
-        return `${y}年${m}月${d}日 ${h}:${min}:${s} 星期${dict[day]}`;
+        const options = {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            weekday: 'long',
+            hour12: false
+        };
+        return new Intl.DateTimeFormat('zh-CN', options).format(newDate);
     }
 
-    const timerId = setInterval(() => {
-        const newDate = new Date();
+    document.addEventListener('DOMContentLoaded', () => {
         const p1 = document.querySelector(".p1");
-        if (p1) {
-            p1.textContent = format(newDate);
+        function updateTime() {
+            const newDate = new Date();
+            if (p1) {
+                p1.textContent = format(newDate);
+            }
+            requestAnimationFrame(updateTime);
         }
-    }, 1000);
+        updateTime();
+    });
 </script>
 
   <ul>
-    <li>通过主题和目录以打开文章</li>
-    <ul>
-      <li>Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章</li>
-      <li>移动端 请点击左上角图标选择主题和文章</li>
-    </ul>
-    <li>请搜索关键词以打开文章</li>
-    <li>
-      如遇到网页卡顿/打开文章后无法显示图片的情况，请使用科学上网
-    </li>
+      <li>通过主题和目录以打开文章</li>
+      <ul>
+          <li>Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章</li>
+          <li>移动端 请点击左上角图标选择主题和文章</li>
+      </ul>
+      <li>如遇到网页卡顿/打开文章后无法显示图片的情况，请使用科学上网</li>
   </ul>
 </div>
 
 <p class="annotate">快速谈话(1) 联系我(2)</p>
 <ol>
-<li>点击右下角与我在线交谈.</li>
-<li>18939533255</li>
+<li>点击右上角关于页面，与我在线交谈.</li>
+<li>TEL:18939533255(微信号)</li>
 </ol>
 <hr />
 <!-- <strong>推荐文章:material-book:</strong>
@@ -6228,6 +6275,39 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
 -->
 
+<!-- <script defer>
+    function format(newDate) {
+        const day = newDate.getDay();
+        const y = newDate.getFullYear();
+        const m = newDate.getMonth() + 1 < 10 ? `0${newDate.getMonth() + 1}` : newDate.getMonth() + 1;
+        const d = newDate.getDate() < 10 ? `0${newDate.getDate()}` : newDate.getDate();
+        const h = newDate.getHours() < 10 ? `0${newDate.getHours()}` : newDate.getHours();
+        const min = newDate.getMinutes() < 10 ? `0${newDate.getMinutes()}` : newDate.getMinutes();
+        const s = newDate.getSeconds() < 10 ? `0${newDate.getSeconds()}` : newDate.getSeconds();
+        const dict = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 0: "天"};
+
+        return `${y}年${m}月${d}日 ${h}:${min}:${s} 星期${dict[day]}`;
+    }
+
+    const timerId = setInterval(() => {
+        const newDate = new Date();
+        const p1 = document.querySelector(".p1");
+        if (p1) {
+            p1.textContent = format(newDate);
+        }
+    }, 1000);
+</script> -->
+
+<h2 id="_2">个人简历<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.751.751 0 0 1 3 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25Z"/></svg></span> <strong>求实习(25届)</strong></p>
+<hr />
+<p><a href="https://www.123684.com/Weboffice/?type=f&amp;id=10395713&amp;FileName=个人简历2.pdf&amp;Size=265893&amp;Etag=155b54166c3f94b62f4316306efc65a8&amp;S3KeyFlag=1811963502-0&amp;CreateAt=1736057449&amp;UpdateAt=1736057463&amp;from=2&amp;shareKey=bXcDVv-fq8G3&amp;sharePwd=&amp;uid=1811963502" target="“_blank”">个人简历(在线)</a></p>
+</li>
+</ul>
+</div>
 <div class="footnote">
 <hr />
 <ol>
@@ -6352,6 +6432,14 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     
     <a href="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" target="_blank" rel="noopener" title="Wechat" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154m-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4m-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2M563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4m-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6m107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://t.me/wecowin" target="_blank" rel="noopener" title="telegram" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8m114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716 43.8 43.8 0 0 1 .417 9.769"/></svg>
     </a>
   
     

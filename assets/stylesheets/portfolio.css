@@ -2,25 +2,20 @@
     --header-height: 3rem;
 
     /*========== Colors ==========*/
-    /* Primary color */
     --first-color: #608DBD;
-    --first-color-second: #608DBD;   /* 동일한 primary 색상 */
-    --first-color-alt: #608DBD;      /* 약간 더 어두운 톤 */
-    --first-color-lighter: #608DBD;  /* 약간 더 밝은 톤 */
+    --first-color-second: #608DBD;
+    --first-color-alt: #608DBD;
+    --first-color-lighter: #608DBD;
 
-    /* Text colors */
-    --title-color: #608DBD;          /* 진한 텍스트 색상 */
-    --text-color: #080505;           /* 기본 텍스트 색상 */
-    --text-color-light: #f5ab17;     /* 밝은 텍스트 색상 */
+    --title-color: #608DBD;
+    --text-color: #080505;
+    --text-color-light: #f5ab17;
 
-    /* Background colors */
-    --input-color: #F5EEE3;          /* 입력 필드 배경색 */
-    --body-color: #FDFBF8;           /* 전체 배경색 */
-    --container-color: #FFFFFF;       /* 컨테이너 배경색 */
+    --input-color: #F5EEE3;
+    --body-color: #FDFBF8;
+    --container-color: #FFFFFF;
 
     /*========== Font and typography ==========*/
-
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -34,7 +29,6 @@
     --font-semi-bold: 600;
 
     /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -74,29 +68,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body {
-  margin: 0 0 var(--header-height) 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  color: var(--text-color);
-} */
-
 h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -175,7 +149,6 @@ img {
 .home__description{
   margin-bottom: var(--mb-2);
 }
-
 
 /*==================== BUTTONS ====================*/
 .button{
