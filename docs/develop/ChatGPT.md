@@ -1,7 +1,6 @@
 ---
 tags:
     - ChatGPT
-comments: true
 ---
 
 **2023.5.27昨天又是大规模封号，只能说且行切珍惜你的GPT**   

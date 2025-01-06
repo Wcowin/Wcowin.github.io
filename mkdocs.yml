@@ -158,6 +158,7 @@ nav:
     - develop/index.md
     - 我的设备: develop/mydevice.md
     - 如何注册ChatGPT: develop/ChatGPT.md
+    - AI工具: develop/AI.md
     - Markdown: 
         - Markdown指南: develop/Markdown/markdown.md
         - MWeb Pro: develop/Markdown/MWeb.md

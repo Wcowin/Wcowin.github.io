@@ -34,7 +34,7 @@ t.parentNode.insertBefore(e,t)}})();
   <div class="links-content"> 
    <div class="link-navigation"> 
     <div class="card"> 
-     <img class="ava" src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" /> 
+     <img class="ava" src="https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://wcowin.work/ " target="_blank">Wcowin's Web</a> 

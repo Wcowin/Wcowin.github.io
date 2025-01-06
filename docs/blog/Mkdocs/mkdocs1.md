@@ -5,8 +5,8 @@ tags:
 ---
 
 !!! info
-    Material for MkDocs官方网站：[MkDocs](https://www.mkdocs.org/)
-
+    Material for MkDocs官方网站: [Material for MkDocs](https://www.mkdocs.org/)  
+    MkDocs中文文档: [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
 ---
 推荐看下这个视频：  
 :fontawesome-brands-youtube:{ style="color: #EE0F0F" }
@@ -204,3 +204,11 @@ https://你github的名字.github.io/
 下次谈谈网站的[mkdocs.yml具体配置](mkdocs2.md)
 
 [^注]:于2023.3.24重写此文
+
+## 四、参考资料
+
+1. [MkDocs官网](https://www.mkdocs.org/)
+2. [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
+3. [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+4. [Mkdocs 配置和使用](https://zhuanlan.zhihu.com/p/383582472)
+5. [Deploy MkDocs](https://github.com/marketplace/actions/deploy-mkdocs)

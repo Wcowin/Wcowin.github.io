@@ -3,6 +3,7 @@
 
 <!-- <iframe src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%></iframe> -->
 
+[原神工具汇总](https://paimon.moe/)
 
 ***
 我也勉强算是原神的老玩家了，1.6卡池入的坑（可莉）

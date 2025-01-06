@@ -22,18 +22,7 @@ comments: false
 <style>
     .date-display {
         color: #4351AF;
-    }
-    .p1 {
-        font-size: 16px; /* 调整字体大小 */
-    }
-    ul {
-        list-style-type: disc;
-        margin-left: 20px;
-    }
-    ul ul {
-        list-style-type: circle;
-        margin-left: 20px;
-    }    
+    } 
 </style>
 
 <script defer>
