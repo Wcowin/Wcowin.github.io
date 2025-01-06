@@ -111,7 +111,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://gravatar.cdn.iszy.xyz/avatar/5012e410377c7a93d14f7bf31aeeb7fd?d=mm" /> 
+     <img class="ava" src="https://www.iszy.cc/images/avatar.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://www.iszy.cc/" target="_blank">随遇而安</a> 
