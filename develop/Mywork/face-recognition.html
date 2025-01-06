@@ -2585,6 +2585,8 @@
       
         
       
+        
+      
     
     
       
@@ -2679,6 +2681,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../AI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI工具
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -2703,10 +2726,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -2717,8 +2740,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Markdown
           </label>
@@ -2833,10 +2856,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -2847,8 +2870,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7">
             <span class="md-nav__icon md-icon"></span>
             我的作品
           </label>
@@ -3132,10 +3155,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
         
           
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -3146,8 +3169,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
             <span class="md-nav__icon md-icon"></span>
             设计美学
           </label>
@@ -6742,21 +6765,21 @@
 <span class="normal"><a href="#__codelineno-4-405">405</a></span>
 <span class="normal"><a href="#__codelineno-4-406">406</a></span>
 <span class="normal"><a href="#__codelineno-4-407">407</a></span>
-<span class="normal"><a href="#__codelineno-4-408">408</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">PyQt5.QtWidgets</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kn">import</span> <span class="nn">threading</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="kn">import</span> <span class="nn">sys</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="kn">from</span> <span class="nn">PyQt5.QtCore</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="kn">from</span> <span class="nn">PyQt5.QtWidgets</span> <span class="kn">import</span> <span class="n">QFileDialog</span><span class="p">,</span> <span class="n">QMessageBox</span><span class="p">,</span> <span class="n">QDockWidget</span><span class="p">,</span> <span class="n">QListWidget</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="kn">from</span> <span class="nn">PyQt5.QtGui</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="kn">import</span> <span class="nn">face_recognition</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="kn">import</span> <span class="nn">cv2</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="kn">import</span> <span class="nn">os</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="kn">import</span> <span class="nn">face_recognition_models</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="kn">import</span> <span class="nn">cv2</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="kn">import</span> <span class="nn">locale</span>
+<span class="normal"><a href="#__codelineno-4-408">408</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">threading</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtCore</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QFileDialog</span><span class="p">,</span> <span class="n">QMessageBox</span><span class="p">,</span> <span class="n">QDockWidget</span><span class="p">,</span> <span class="n">QListWidget</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtGui</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">face_recognition</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="kn">import</span><span class="w"> </span><span class="nn">face_recognition_models</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="kn">import</span><span class="w"> </span><span class="nn">locale</span>
 <a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s1">&#39;zh_CN.UTF-8&#39;</span><span class="p">)</span>
 <a id="__codelineno-4-14" name="__codelineno-4-14"></a>
-<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="k">def</span> <span class="nf">enhance_image_quality</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">enhance_image_quality</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
 <a id="__codelineno-4-16" name="__codelineno-4-16"></a>    <span class="c1"># 增强对比度</span>
 <a id="__codelineno-4-17" name="__codelineno-4-17"></a>    <span class="n">alpha</span> <span class="o">=</span> <span class="mf">1.5</span>  <span class="c1"># 调整对比度的参数</span>
 <a id="__codelineno-4-18" name="__codelineno-4-18"></a>    <span class="n">beta</span> <span class="o">=</span> <span class="mi">30</span>    <span class="c1"># 调整亮度的参数</span>
@@ -6767,9 +6790,9 @@
 <a id="__codelineno-4-23" name="__codelineno-4-23"></a>
 <a id="__codelineno-4-24" name="__codelineno-4-24"></a><span class="c1"># 窗口主类</span>
 <a id="__codelineno-4-25" name="__codelineno-4-25"></a>
-<a id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="k">class</span> <span class="nc">MainWindow</span><span class="p">(</span><span class="n">QTabWidget</span><span class="p">):</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="k">class</span><span class="w"> </span><span class="nc">MainWindow</span><span class="p">(</span><span class="n">QTabWidget</span><span class="p">):</span>
 <a id="__codelineno-4-27" name="__codelineno-4-27"></a>    <span class="c1"># 基本配置不动，然后只动第三个界面</span>
-<a id="__codelineno-4-28" name="__codelineno-4-28"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-29" name="__codelineno-4-29"></a>        <span class="c1"># 初始化设置</span>
 <a id="__codelineno-4-30" name="__codelineno-4-30"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
 <a id="__codelineno-4-31" name="__codelineno-4-31"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s1">&#39;实时人脸识别系统&#39;</span><span class="p">)</span>
@@ -6797,7 +6820,7 @@
 <a id="__codelineno-4-53" name="__codelineno-4-53"></a>
 <a id="__codelineno-4-54" name="__codelineno-4-54"></a>
 <a id="__codelineno-4-55" name="__codelineno-4-55"></a>    <span class="c1"># 初始化数据库的人脸</span>
-<a id="__codelineno-4-56" name="__codelineno-4-56"></a>    <span class="k">def</span> <span class="nf">initFaces</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-56" name="__codelineno-4-56"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">initFaces</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-57" name="__codelineno-4-57"></a>        <span class="c1"># 存储知道人名列表</span>
 <a id="__codelineno-4-58" name="__codelineno-4-58"></a>        <span class="n">known_names</span> <span class="o">=</span> <span class="p">[]</span>
 <a id="__codelineno-4-59" name="__codelineno-4-59"></a>        <span class="c1"># 存储知道的特征值</span>
@@ -6818,7 +6841,7 @@
 <a id="__codelineno-4-74" name="__codelineno-4-74"></a>        <span class="k">return</span> <span class="n">known_names</span><span class="p">,</span> <span class="n">known_encodings</span>
 <a id="__codelineno-4-75" name="__codelineno-4-75"></a>
 <a id="__codelineno-4-76" name="__codelineno-4-76"></a>    <span class="c1"># 在 up_img 函数中添加图像预处理步骤</span>
-<a id="__codelineno-4-77" name="__codelineno-4-77"></a>    <span class="k">def</span> <span class="nf">up_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-77" name="__codelineno-4-77"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">up_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-78" name="__codelineno-4-78"></a>        <span class="c1"># 打开文件选择框</span>
 <a id="__codelineno-4-79" name="__codelineno-4-79"></a>        <span class="n">openfile_name</span> <span class="o">=</span> <span class="n">QFileDialog</span><span class="o">.</span><span class="n">getOpenFileName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;选择文件&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Image files(*.jpg , *.png)&#39;</span><span class="p">)</span>
 <a id="__codelineno-4-80" name="__codelineno-4-80"></a>        <span class="c1"># 获取上传的文件名称</span>
@@ -6840,7 +6863,7 @@
 <a id="__codelineno-4-96" name="__codelineno-4-96"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">img_f_img</span><span class="o">.</span><span class="n">setPixmap</span><span class="p">(</span><span class="n">QPixmap</span><span class="p">(</span><span class="s2">&quot;UI_images/tmp/toup.jpg&quot;</span><span class="p">))</span>
 <a id="__codelineno-4-97" name="__codelineno-4-97"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">up_img_name</span> <span class="o">=</span> <span class="s2">&quot;UI_images/tmp/toup.jpg&quot;</span>
 <a id="__codelineno-4-98" name="__codelineno-4-98"></a>
-<a id="__codelineno-4-99" name="__codelineno-4-99"></a>    <span class="k">def</span> <span class="nf">open_local</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-99" name="__codelineno-4-99"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">open_local</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-100" name="__codelineno-4-100"></a>        <span class="c1"># 选择录像文件进行读取</span>
 <a id="__codelineno-4-101" name="__codelineno-4-101"></a>        <span class="n">mp4_filename</span> <span class="o">=</span> <span class="mi">0</span>
 <a id="__codelineno-4-102" name="__codelineno-4-102"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="n">mp4_filename</span>
@@ -6855,7 +6878,7 @@
 <a id="__codelineno-4-111" name="__codelineno-4-111"></a>
 <a id="__codelineno-4-112" name="__codelineno-4-112"></a>
 <a id="__codelineno-4-113" name="__codelineno-4-113"></a>    <span class="c1"># 初始化界面</span>
-<a id="__codelineno-4-114" name="__codelineno-4-114"></a>    <span class="k">def</span> <span class="nf">initUI</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-114" name="__codelineno-4-114"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">initUI</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-115" name="__codelineno-4-115"></a>        <span class="c1"># 设置字体</span>
 <a id="__codelineno-4-116" name="__codelineno-4-116"></a>        <span class="n">font_v</span> <span class="o">=</span> <span class="n">QFont</span><span class="p">(</span><span class="s1">&#39;楷体&#39;</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
 <a id="__codelineno-4-117" name="__codelineno-4-117"></a>        <span class="n">generally_font</span> <span class="o">=</span> <span class="n">QFont</span><span class="p">(</span><span class="s1">&#39;楷体&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
@@ -7003,7 +7026,7 @@
 <a id="__codelineno-4-259" name="__codelineno-4-259"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setTabIcon</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">QIcon</span><span class="p">(</span><span class="s1">&#39;UI_images/logo_about.png&#39;</span><span class="p">))</span>
 <a id="__codelineno-4-260" name="__codelineno-4-260"></a>
 <a id="__codelineno-4-261" name="__codelineno-4-261"></a>    <span class="c1"># 第一个界面的函数</span>
-<a id="__codelineno-4-262" name="__codelineno-4-262"></a>    <span class="k">def</span> <span class="nf">up_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-262" name="__codelineno-4-262"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">up_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-263" name="__codelineno-4-263"></a>        <span class="c1"># 打开文件选择框</span>
 <a id="__codelineno-4-264" name="__codelineno-4-264"></a>        <span class="n">openfile_name</span> <span class="o">=</span> <span class="n">QFileDialog</span><span class="o">.</span><span class="n">getOpenFileName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;选择文件&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Image files(*.jpg , *.png)&#39;</span><span class="p">)</span>
 <a id="__codelineno-4-265" name="__codelineno-4-265"></a>        <span class="c1"># 获取上传的文件名称</span>
@@ -7024,7 +7047,7 @@
 <a id="__codelineno-4-280" name="__codelineno-4-280"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">img_f_img</span><span class="o">.</span><span class="n">setPixmap</span><span class="p">(</span><span class="n">QPixmap</span><span class="p">(</span><span class="s2">&quot;UI_images/tmp/toup.jpg&quot;</span><span class="p">))</span>
 <a id="__codelineno-4-281" name="__codelineno-4-281"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">up_img_name</span> <span class="o">=</span> <span class="s2">&quot;UI_images/tmp/toup.jpg&quot;</span>
 <a id="__codelineno-4-282" name="__codelineno-4-282"></a>
-<a id="__codelineno-4-283" name="__codelineno-4-283"></a>    <span class="k">def</span> <span class="nf">up_db_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-283" name="__codelineno-4-283"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">up_db_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-284" name="__codelineno-4-284"></a>        <span class="c1"># 首先判断该图像是否有一个人脸，多个人脸或者没有人脸都不行</span>
 <a id="__codelineno-4-285" name="__codelineno-4-285"></a>        <span class="n">face_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">face_name</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
 <a id="__codelineno-4-286" name="__codelineno-4-286"></a>        <span class="k">if</span> <span class="n">face_name</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
@@ -7052,7 +7075,7 @@
 <a id="__codelineno-4-308" name="__codelineno-4-308"></a><span class="sd">    &#39;&#39;&#39;</span>
 <a id="__codelineno-4-309" name="__codelineno-4-309"></a>
 <a id="__codelineno-4-310" name="__codelineno-4-310"></a>    <span class="c1"># 关闭事件 询问用户是否退出</span>
-<a id="__codelineno-4-311" name="__codelineno-4-311"></a>    <span class="k">def</span> <span class="nf">closeEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+<a id="__codelineno-4-311" name="__codelineno-4-311"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">closeEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
 <a id="__codelineno-4-312" name="__codelineno-4-312"></a>        <span class="n">reply</span> <span class="o">=</span> <span class="n">QMessageBox</span><span class="o">.</span><span class="n">question</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-4-313" name="__codelineno-4-313"></a>                                     <span class="s1">&#39;退出&#39;</span><span class="p">,</span>
 <a id="__codelineno-4-314" name="__codelineno-4-314"></a>                                     <span class="s2">&quot;是否要退出程序？&quot;</span><span class="p">,</span>
@@ -7065,7 +7088,7 @@
 <a id="__codelineno-4-321" name="__codelineno-4-321"></a>            <span class="n">event</span><span class="o">.</span><span class="n">ignore</span><span class="p">()</span>
 <a id="__codelineno-4-322" name="__codelineno-4-322"></a>
 <a id="__codelineno-4-323" name="__codelineno-4-323"></a>    <span class="c1"># 读取录像文件</span>
-<a id="__codelineno-4-324" name="__codelineno-4-324"></a>    <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-324" name="__codelineno-4-324"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-325" name="__codelineno-4-325"></a>        <span class="c1"># 选择录像文件进行读取</span>
 <a id="__codelineno-4-326" name="__codelineno-4-326"></a>        <span class="n">mp4_fileName</span><span class="p">,</span> <span class="n">fileType</span> <span class="o">=</span> <span class="n">QFileDialog</span><span class="o">.</span><span class="n">getOpenFileName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;Choose file&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;*.mp4&#39;</span><span class="p">)</span>
 <a id="__codelineno-4-327" name="__codelineno-4-327"></a>        <span class="k">if</span> <span class="n">mp4_fileName</span><span class="p">:</span>
@@ -7075,7 +7098,7 @@
 <a id="__codelineno-4-331" name="__codelineno-4-331"></a>            <span class="n">th</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">display_video</span><span class="p">)</span>
 <a id="__codelineno-4-332" name="__codelineno-4-332"></a>            <span class="n">th</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 <a id="__codelineno-4-333" name="__codelineno-4-333"></a>
-<a id="__codelineno-4-334" name="__codelineno-4-334"></a>    <span class="k">def</span> <span class="nf">open_local</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-334" name="__codelineno-4-334"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">open_local</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-335" name="__codelineno-4-335"></a>        <span class="c1"># 选择录像文件进行读取</span>
 <a id="__codelineno-4-336" name="__codelineno-4-336"></a>        <span class="n">mp4_filename</span> <span class="o">=</span> <span class="mi">0</span>
 <a id="__codelineno-4-337" name="__codelineno-4-337"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="n">mp4_filename</span>
@@ -7085,13 +7108,13 @@
 <a id="__codelineno-4-341" name="__codelineno-4-341"></a>        <span class="n">th</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 <a id="__codelineno-4-342" name="__codelineno-4-342"></a>
 <a id="__codelineno-4-343" name="__codelineno-4-343"></a>    <span class="c1"># 退出进程</span>
-<a id="__codelineno-4-344" name="__codelineno-4-344"></a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-344" name="__codelineno-4-344"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-345" name="__codelineno-4-345"></a>        <span class="c1"># 点击关闭按钮后重新初始化界面</span>
 <a id="__codelineno-4-346" name="__codelineno-4-346"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">stopEvent</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
 <a id="__codelineno-4-347" name="__codelineno-4-347"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_down</span><span class="p">()</span>
 <a id="__codelineno-4-348" name="__codelineno-4-348"></a>
 <a id="__codelineno-4-349" name="__codelineno-4-349"></a>    <span class="c1"># todo 执行人脸识别主进程</span>
-<a id="__codelineno-4-350" name="__codelineno-4-350"></a>    <span class="k">def</span> <span class="nf">display_video</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-350" name="__codelineno-4-350"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_video</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-351" name="__codelineno-4-351"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">btn_open</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 <a id="__codelineno-4-352" name="__codelineno-4-352"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">btn_close</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 <a id="__codelineno-4-353" name="__codelineno-4-353"></a>        <span class="n">process_this_frame</span> <span class="o">=</span> <span class="kc">True</span>
@@ -7135,7 +7158,7 @@
 <a id="__codelineno-4-391" name="__codelineno-4-391"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_down</span><span class="p">()</span>
 <a id="__codelineno-4-392" name="__codelineno-4-392"></a>
 <a id="__codelineno-4-393" name="__codelineno-4-393"></a>    <span class="c1"># 初始化视频检测界面</span>
-<a id="__codelineno-4-394" name="__codelineno-4-394"></a>    <span class="k">def</span> <span class="nf">set_down</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-4-394" name="__codelineno-4-394"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_down</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-4-395" name="__codelineno-4-395"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">video_capture</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
 <a id="__codelineno-4-396" name="__codelineno-4-396"></a>        <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
 <a id="__codelineno-4-397" name="__codelineno-4-397"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">DisplayLabel</span><span class="o">.</span><span class="n">setPixmap</span><span class="p">(</span><span class="n">QPixmap</span><span class="p">(</span><span class="s2">&quot;UI_images/dier.jpeg&quot;</span><span class="p">))</span>
@@ -7526,23 +7549,23 @@
 <span class="normal"><a href="#__codelineno-5-366">366</a></span>
 <span class="normal"><a href="#__codelineno-5-367">367</a></span>
 <span class="normal"><a href="#__codelineno-5-368">368</a></span>
-<span class="normal"><a href="#__codelineno-5-369">369</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">PyQt5.QtWidgets</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="kn">import</span> <span class="nn">threading</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="kn">import</span> <span class="nn">sys</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="kn">from</span> <span class="nn">PyQt5.QtCore</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="kn">from</span> <span class="nn">PyQt5.QtWidgets</span> <span class="kn">import</span> <span class="n">QFileDialog</span><span class="p">,</span> <span class="n">QMessageBox</span><span class="p">,</span> <span class="n">QDockWidget</span><span class="p">,</span> <span class="n">QListWidget</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="kn">from</span> <span class="nn">PyQt5.QtGui</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="kn">import</span> <span class="nn">face_recognition</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="kn">import</span> <span class="nn">cv2</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="kn">import</span> <span class="nn">os</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageDraw</span><span class="p">,</span> <span class="n">ImageFont</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="normal"><a href="#__codelineno-5-369">369</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">threading</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtCore</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QFileDialog</span><span class="p">,</span> <span class="n">QMessageBox</span><span class="p">,</span> <span class="n">QDockWidget</span><span class="p">,</span> <span class="n">QListWidget</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtGui</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">face_recognition</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageDraw</span><span class="p">,</span> <span class="n">ImageFont</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <a id="__codelineno-5-12" name="__codelineno-5-12"></a>
 <a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="c1"># 窗口主类</span>
 <a id="__codelineno-5-14" name="__codelineno-5-14"></a>
-<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="k">class</span> <span class="nc">MainWindow</span><span class="p">(</span><span class="n">QTabWidget</span><span class="p">):</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="k">class</span><span class="w"> </span><span class="nc">MainWindow</span><span class="p">(</span><span class="n">QTabWidget</span><span class="p">):</span>
 <a id="__codelineno-5-16" name="__codelineno-5-16"></a>    <span class="c1"># 基本配置不动，然后只动第三个界面</span>
-<a id="__codelineno-5-17" name="__codelineno-5-17"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-18" name="__codelineno-5-18"></a>        <span class="c1"># 初始化设置</span>
 <a id="__codelineno-5-19" name="__codelineno-5-19"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
 <a id="__codelineno-5-20" name="__codelineno-5-20"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s1">&#39;实时人脸识别系统&#39;</span><span class="p">)</span>
@@ -7567,7 +7590,7 @@
 <a id="__codelineno-5-39" name="__codelineno-5-39"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_down</span><span class="p">()</span>
 <a id="__codelineno-5-40" name="__codelineno-5-40"></a>
 <a id="__codelineno-5-41" name="__codelineno-5-41"></a>    <span class="c1"># 初始化数据库的人脸</span>
-<a id="__codelineno-5-42" name="__codelineno-5-42"></a>    <span class="k">def</span> <span class="nf">initFaces</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-42" name="__codelineno-5-42"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">initFaces</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-43" name="__codelineno-5-43"></a>        <span class="c1"># 存储知道人名列表</span>
 <a id="__codelineno-5-44" name="__codelineno-5-44"></a>        <span class="n">known_names</span> <span class="o">=</span> <span class="p">[]</span>
 <a id="__codelineno-5-45" name="__codelineno-5-45"></a>        <span class="c1"># 存储知道的特征值</span>
@@ -7586,7 +7609,7 @@
 <a id="__codelineno-5-58" name="__codelineno-5-58"></a>        <span class="k">return</span> <span class="n">known_names</span><span class="p">,</span> <span class="n">known_encodings</span>
 <a id="__codelineno-5-59" name="__codelineno-5-59"></a>
 <a id="__codelineno-5-60" name="__codelineno-5-60"></a>    <span class="c1"># 初始化界面</span>
-<a id="__codelineno-5-61" name="__codelineno-5-61"></a>    <span class="k">def</span> <span class="nf">initUI</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-61" name="__codelineno-5-61"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">initUI</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-62" name="__codelineno-5-62"></a>        <span class="c1"># 设置字体</span>
 <a id="__codelineno-5-63" name="__codelineno-5-63"></a>        <span class="n">font_v</span> <span class="o">=</span> <span class="n">QFont</span><span class="p">(</span><span class="s1">&#39;楷体&#39;</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
 <a id="__codelineno-5-64" name="__codelineno-5-64"></a>        <span class="n">generally_font</span> <span class="o">=</span> <span class="n">QFont</span><span class="p">(</span><span class="s1">&#39;楷体&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
@@ -7719,7 +7742,7 @@
 <a id="__codelineno-5-191" name="__codelineno-5-191"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setTabIcon</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">QIcon</span><span class="p">(</span><span class="s1">&#39;UI_images/logo_about.png&#39;</span><span class="p">))</span>
 <a id="__codelineno-5-192" name="__codelineno-5-192"></a>
 <a id="__codelineno-5-193" name="__codelineno-5-193"></a>    <span class="c1"># 第一个界面的函数</span>
-<a id="__codelineno-5-194" name="__codelineno-5-194"></a>    <span class="k">def</span> <span class="nf">up_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-194" name="__codelineno-5-194"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">up_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-195" name="__codelineno-5-195"></a>        <span class="c1"># 打开文件选择框</span>
 <a id="__codelineno-5-196" name="__codelineno-5-196"></a>        <span class="n">openfile_name</span> <span class="o">=</span> <span class="n">QFileDialog</span><span class="o">.</span><span class="n">getOpenFileName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;选择文件&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Image files(*.jpg , *.png)&#39;</span><span class="p">)</span>
 <a id="__codelineno-5-197" name="__codelineno-5-197"></a>        <span class="c1"># 获取上传的文件名称</span>
@@ -7740,7 +7763,7 @@
 <a id="__codelineno-5-212" name="__codelineno-5-212"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">img_f_img</span><span class="o">.</span><span class="n">setPixmap</span><span class="p">(</span><span class="n">QPixmap</span><span class="p">(</span><span class="s2">&quot;UI_images/tmp/toup.jpg&quot;</span><span class="p">))</span>
 <a id="__codelineno-5-213" name="__codelineno-5-213"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">up_img_name</span> <span class="o">=</span> <span class="s2">&quot;UI_images/tmp/toup.jpg&quot;</span>
 <a id="__codelineno-5-214" name="__codelineno-5-214"></a>
-<a id="__codelineno-5-215" name="__codelineno-5-215"></a>    <span class="k">def</span> <span class="nf">up_db_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-215" name="__codelineno-5-215"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">up_db_img</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-216" name="__codelineno-5-216"></a>        <span class="n">face_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">face_name</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
 <a id="__codelineno-5-217" name="__codelineno-5-217"></a>        <span class="c1"># Convert the face name to a utf-8 encoded string</span>
 <a id="__codelineno-5-218" name="__codelineno-5-218"></a>        <span class="n">face_name</span> <span class="o">=</span> <span class="n">face_name</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
@@ -7769,7 +7792,7 @@
 <a id="__codelineno-5-241" name="__codelineno-5-241"></a><span class="sd">    &#39;&#39;&#39;</span>
 <a id="__codelineno-5-242" name="__codelineno-5-242"></a>
 <a id="__codelineno-5-243" name="__codelineno-5-243"></a>    <span class="c1"># 关闭事件 询问用户是否退出</span>
-<a id="__codelineno-5-244" name="__codelineno-5-244"></a>    <span class="k">def</span> <span class="nf">closeEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+<a id="__codelineno-5-244" name="__codelineno-5-244"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">closeEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
 <a id="__codelineno-5-245" name="__codelineno-5-245"></a>        <span class="n">reply</span> <span class="o">=</span> <span class="n">QMessageBox</span><span class="o">.</span><span class="n">question</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-5-246" name="__codelineno-5-246"></a>                                     <span class="s1">&#39;退出&#39;</span><span class="p">,</span>
 <a id="__codelineno-5-247" name="__codelineno-5-247"></a>                                     <span class="s2">&quot;是否要退出程序？&quot;</span><span class="p">,</span>
@@ -7782,7 +7805,7 @@
 <a id="__codelineno-5-254" name="__codelineno-5-254"></a>            <span class="n">event</span><span class="o">.</span><span class="n">ignore</span><span class="p">()</span>
 <a id="__codelineno-5-255" name="__codelineno-5-255"></a>
 <a id="__codelineno-5-256" name="__codelineno-5-256"></a>    <span class="c1"># 读取录像文件</span>
-<a id="__codelineno-5-257" name="__codelineno-5-257"></a>    <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-257" name="__codelineno-5-257"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-258" name="__codelineno-5-258"></a>        <span class="c1"># 选择录像文件进行读取</span>
 <a id="__codelineno-5-259" name="__codelineno-5-259"></a>        <span class="n">mp4_fileName</span><span class="p">,</span> <span class="n">fileType</span> <span class="o">=</span> <span class="n">QFileDialog</span><span class="o">.</span><span class="n">getOpenFileName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;Choose file&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;*.mp4&#39;</span><span class="p">)</span>
 <a id="__codelineno-5-260" name="__codelineno-5-260"></a>        <span class="k">if</span> <span class="n">mp4_fileName</span><span class="p">:</span>
@@ -7792,7 +7815,7 @@
 <a id="__codelineno-5-264" name="__codelineno-5-264"></a>            <span class="n">th</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">display_video</span><span class="p">)</span>
 <a id="__codelineno-5-265" name="__codelineno-5-265"></a>            <span class="n">th</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 <a id="__codelineno-5-266" name="__codelineno-5-266"></a>
-<a id="__codelineno-5-267" name="__codelineno-5-267"></a>    <span class="k">def</span> <span class="nf">open_local</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-267" name="__codelineno-5-267"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">open_local</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-268" name="__codelineno-5-268"></a>        <span class="c1"># 选择录像文件进行读取</span>
 <a id="__codelineno-5-269" name="__codelineno-5-269"></a>        <span class="n">mp4_filename</span> <span class="o">=</span> <span class="mi">0</span>
 <a id="__codelineno-5-270" name="__codelineno-5-270"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="n">mp4_filename</span>
@@ -7802,13 +7825,13 @@
 <a id="__codelineno-5-274" name="__codelineno-5-274"></a>        <span class="n">th</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 <a id="__codelineno-5-275" name="__codelineno-5-275"></a>
 <a id="__codelineno-5-276" name="__codelineno-5-276"></a>    <span class="c1"># 退出进程</span>
-<a id="__codelineno-5-277" name="__codelineno-5-277"></a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-277" name="__codelineno-5-277"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-278" name="__codelineno-5-278"></a>        <span class="c1"># 点击关闭按钮后重新初始化界面</span>
 <a id="__codelineno-5-279" name="__codelineno-5-279"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">stopEvent</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
 <a id="__codelineno-5-280" name="__codelineno-5-280"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_down</span><span class="p">()</span>
 <a id="__codelineno-5-281" name="__codelineno-5-281"></a>
 <a id="__codelineno-5-282" name="__codelineno-5-282"></a>    <span class="c1">#转换中文显示</span>
-<a id="__codelineno-5-283" name="__codelineno-5-283"></a>    <span class="k">def</span> <span class="nf">nameText</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">img</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">textColor</span><span class="o">=</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">textSize</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
+<a id="__codelineno-5-283" name="__codelineno-5-283"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">nameText</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">img</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">textColor</span><span class="o">=</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">textSize</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
 <a id="__codelineno-5-284" name="__codelineno-5-284"></a>        <span class="k">if</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)):</span>  <span class="c1"># 判断是否OpenCV图片类型</span>
 <a id="__codelineno-5-285" name="__codelineno-5-285"></a>            <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">))</span>
 <a id="__codelineno-5-286" name="__codelineno-5-286"></a>        <span class="c1"># 创建一个可以在给定图像上绘图的对象</span>
@@ -7821,7 +7844,7 @@
 <a id="__codelineno-5-293" name="__codelineno-5-293"></a>        <span class="k">return</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">),</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_RGB2BGR</span><span class="p">)</span>
 <a id="__codelineno-5-294" name="__codelineno-5-294"></a>
 <a id="__codelineno-5-295" name="__codelineno-5-295"></a>    <span class="c1"># todo 执行人脸识别主进程</span>
-<a id="__codelineno-5-296" name="__codelineno-5-296"></a>    <span class="k">def</span> <span class="nf">display_video</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-296" name="__codelineno-5-296"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_video</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-297" name="__codelineno-5-297"></a>        <span class="c1"># 首先把打开按钮关闭</span>
 <a id="__codelineno-5-298" name="__codelineno-5-298"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">btn_open</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 <a id="__codelineno-5-299" name="__codelineno-5-299"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">btn_close</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
@@ -7882,7 +7905,7 @@
 <a id="__codelineno-5-354" name="__codelineno-5-354"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_down</span><span class="p">()</span>
 <a id="__codelineno-5-355" name="__codelineno-5-355"></a>
 <a id="__codelineno-5-356" name="__codelineno-5-356"></a>    <span class="c1"># 初始化视频检测界面</span>
-<a id="__codelineno-5-357" name="__codelineno-5-357"></a>    <span class="k">def</span> <span class="nf">set_down</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-5-357" name="__codelineno-5-357"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_down</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-5-358" name="__codelineno-5-358"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">video_capture</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
 <a id="__codelineno-5-359" name="__codelineno-5-359"></a>        <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
 <a id="__codelineno-5-360" name="__codelineno-5-360"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">DisplayLabel</span><span class="o">.</span><span class="n">setPixmap</span><span class="p">(</span><span class="n">QPixmap</span><span class="p">(</span><span class="s2">&quot;UI_images/ae862.jpg&quot;</span><span class="p">))</span>
