@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6267,19 +6276,19 @@ MkDocs on GitHub Pages in a step-by-step guide.</p>
 <p>参考教程： </p>
 <p><a href="https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501" target="“_blank”">利用mkdocs部署静态网页至GitHubpages（更新版）</a></p>
 <p>与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库
-<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5074a3e2b7284355e0f777fd9e621ee3.png" /></p>
-<p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5c39f0c9754f067759497361524d2b95.png" />  </p>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/5074a3e2b7284355e0f777fd9e621ee3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5074a3e2b7284355e0f777fd9e621ee3.png" /></a></p>
+<p><a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/5c39f0c9754f067759497361524d2b95.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5c39f0c9754f067759497361524d2b95.png" /></a>  </p>
 <p>然后打开github Desktop 克隆到本地
-<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5c06d33549ea0c4a1357697acc6f8f5d.png" /></p>
-<p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/f862b16316fa4ad0f727a0f656cc5cf1.png" /></p>
-<p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/6483c0b9ee144e0c1e035dccf3339991.png" /> </p>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/5c06d33549ea0c4a1357697acc6f8f5d.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5c06d33549ea0c4a1357697acc6f8f5d.png" /></a></p>
+<p><a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/f862b16316fa4ad0f727a0f656cc5cf1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/f862b16316fa4ad0f727a0f656cc5cf1.png" /></a></p>
+<p><a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/6483c0b9ee144e0c1e035dccf3339991.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/6483c0b9ee144e0c1e035dccf3339991.png" /></a> </p>
 <p>打开Wcowin.github.io目录进入终端依次运行:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>pip install mkdocs-material
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>mkdocs new mkdocs-site
 </code></pre></div></td></tr></table></div>
 出现下图的几个文件 
-<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png" /></p>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png" /></a></p>
 <p>docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题，目录，插件等）</p>
 <p>你在这个目录下写的任何东西都可以通过github Desktop 上传到github上</p>
 <p>执行下面的代码添加一个GitHub Workflow</p>
@@ -6429,7 +6438,7 @@ MkDocs on GitHub Pages in a step-by-step guide.</p>
 <p class="admonition-title">重点来了</p>
 </div>
 <p>仓库setings/Actions/General  勾选这两项
-<img alt="" src="https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png" /></p>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png" /></a></p>
 <h2 id="_2">三、配置完善<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>打开终端运行  </p>
 <p><code>pip install mkdocs-material</code></p>
@@ -6451,21 +6460,21 @@ MkDocs on GitHub Pages in a step-by-step guide.</p>
 <p>在下方终端运行可以在浏览器看到实时网站
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>mkdocs serve
 </code></pre></div></td></tr></table></div>
-<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/b4a5ac989f1f390573a85bad8c80f49b.png" />
-<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/38bbc1fad9016ebfa0d894f093b82e3d.png" /></p>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/b4a5ac989f1f390573a85bad8c80f49b.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/b4a5ac989f1f390573a85bad8c80f49b.png" /></a>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/38bbc1fad9016ebfa0d894f093b82e3d.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/38bbc1fad9016ebfa0d894f093b82e3d.png" /></a></p>
 <p>这个网站就算是初步建好了</p>
 <p>最后去github Desktop上传到github
-<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/3a15b16d3947825f3f469b4eafedd5ef.png" /></p>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/3a15b16d3947825f3f469b4eafedd5ef.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/3a15b16d3947825f3f469b4eafedd5ef.png" /></a></p>
 <p><strong>！！！重点</strong><br />
 <strong>去仓库的setings/pages选择下图示意的路径</strong>
-<img alt="" src="https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png" />  </p>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png" /></a>  </p>
 <p>等待一会网址就出来了<sup id="fnref:注"><a class="footnote-ref" href="#fn:注">1</a></sup>  </p>
 <p>你的网站网址就是：​</p>
 <p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
 <span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>https://你github的名字.github.io/
 <a id="__codelineno-8-2" name="__codelineno-8-2"></a>因为我绑定了域名所以网址是：https://wcowin.work/
 </code></pre></div></td></tr></table></div>
-<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/7f149d6da7ecc6364d86c9517b2c4624.png" /></p>
+<a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/7f149d6da7ecc6364d86c9517b2c4624.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/7f149d6da7ecc6364d86c9517b2c4624.png" /></a></p>
 <p>下次谈谈网站的<a href="mkdocs2.html">mkdocs.yml具体配置</a></p>
 <h2 id="_3">四、参考资料<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ol>
@@ -6833,5 +6842,7 @@ MkDocs on GitHub Pages in a step-by-step guide.</p>
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

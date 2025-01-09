@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6134,7 +6143,7 @@
 
   <h1>Macbook启动台顽固应用图标删除方法</h1>
 
-<p><img alt="19fedf7349ca4a73a8374b977832cb78_l2.jpg" src="https://s2.loli.net/2024/02/01/4gP5ezwyqI3nkbu.jpg" />
+<p><a class="glightbox" href="https://s2.loli.net/2024/02/01/4gP5ezwyqI3nkbu.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="19fedf7349ca4a73a8374b977832cb78_l2.jpg" src="https://s2.loli.net/2024/02/01/4gP5ezwyqI3nkbu.jpg" /></a>
 类似上图这种情况的……</p>
 <p>三步解决</p>
 <p>1.打开终端</p>
@@ -6142,14 +6151,14 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>find / -name com.apple.dock.launchpad 2&gt;/dev/null
 </code></pre></div></td></tr></table></div></p>
 <p>回车后需要<strong>等待一段时间</strong>才出结果<br />
-<img alt="image.png" src="https://s2.loli.net/2025/01/02/z5jqTu7Dko6YFvG.png" />
+<a class="glightbox" href="https://s2.loli.net/2025/01/02/z5jqTu7Dko6YFvG.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://s2.loli.net/2025/01/02/z5jqTu7Dko6YFvG.png" /></a>
 复制上图框中的路径</p>
 <p>2.在终端输入cd+空格+刚才的路径+/db</p>
 <p>比如：
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>cd /private/var/folders/qm/rr1078k96k3gn1xnr85ml8vm0000gn/0/com.apple.dock.launchpad/db
 </code></pre></div></td></tr></table></div>
 成功后如下图 
-<img alt="image.png" src="https://s2.loli.net/2025/01/02/z9B43kqcJD52yLH.png" />
+<a class="glightbox" href="https://s2.loli.net/2025/01/02/z9B43kqcJD52yLH.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://s2.loli.net/2025/01/02/z9B43kqcJD52yLH.png" /></a>
 3.在上图db%后复制粘贴下方命令
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo sqlite3 db &quot;delete from apps where title=&#39;程序名称&#39;;&quot;&amp;&amp;killall Dock
 </code></pre></div></td></tr></table></div>
@@ -6505,5 +6514,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

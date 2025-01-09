@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6214,7 +6223,7 @@
 <p><a href="https://ai.baidu.com/tech/imagerecognition/plant">植物识别_拍照识别植物-百度Al开放平台</a></p>
 <h2 id="_1">一、首先点上方链接去申请应用<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>有免费试用，随后得到ID和key
-<img alt="image.png" src="https://s2.loli.net/2024/02/04/CglJrkUIEKztnHw.png" /></p>
+<a class="glightbox" href="https://s2.loli.net/2024/02/04/CglJrkUIEKztnHw.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://s2.loli.net/2024/02/04/CglJrkUIEKztnHw.png" /></a></p>
 <h2 id="vscode">二、打开Vscode输入代码<a class="headerlink" href="#vscode" title="Permanent link">&para;</a></h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
@@ -6353,9 +6362,9 @@
 <a id="__codelineno-0-68" name="__codelineno-0-68"></a>    <span class="n">main</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
 <p>在这使用了base64.b64encode()方法将图像数据转换为Base64编码。在classify_image()函数中，创建一个payload字典，将Base64编码的图像数据和其他参数一起发送到API。注意这里将baike_num参数设置为1，以获取植物的百科信息。（可从本地选择图片）</p>
-<p><img alt="image.png" src="https://s2.loli.net/2024/02/04/uBSc3lF67pnGsCZ.png" /></p>
+<p><a class="glightbox" href="https://s2.loli.net/2024/02/04/uBSc3lF67pnGsCZ.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://s2.loli.net/2024/02/04/uBSc3lF67pnGsCZ.png" /></a></p>
 <h2 id="_2">三、得到结果<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="image.png" src="https://s2.loli.net/2024/02/04/G1v4VYEijofqKly.png" /></p>
+<p><a class="glightbox" href="https://s2.loli.net/2024/02/04/G1v4VYEijofqKly.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://s2.loli.net/2024/02/04/G1v4VYEijofqKly.png" /></a></p>
 
 
 
@@ -6683,5 +6692,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

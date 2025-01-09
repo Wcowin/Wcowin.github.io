@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6134,7 +6143,7 @@
 
   <h1>彻底卸载360安全卫士的方法</h1>
 
-<p><img alt="" src="https://p1.ssl.qhimg.com/t018a8fedbb80079565.jpg" />  </p>
+<p><a class="glightbox" href="https://p1.ssl.qhimg.com/t018a8fedbb80079565.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://p1.ssl.qhimg.com/t018a8fedbb80079565.jpg" /></a>  </p>
 <p>法一：
 按下Windows+R键，并输入msconfig, 在“引导”选项卡中选择“安全引导”，并重新启动进入安全模式。此时，重复第一种方法“应用和功能”-“360安全卫士”-“卸载”，在弹出的对话框中残忍的拒绝它的各种令人发指的无理要求，选择卸载，竟然奇迹般的开始卸载了！（不是非原版文件，建议重新安装吗）等待卸载结束后，当然愤怒的我再也不允许在我的电脑上看到360。于是，我打开了program files（x86）文件夹，找到360（文件夹第一个），右键，删除...当然又是失败的！再从重启一下试试（仍然进入的是安全模式），再次删除，成功！</p>
 <p>此时，不要高兴的太早，因为在重启后仍然是安全模式，需要将引导模式改为正常启动模式。具体方法如下：</p>
@@ -6501,5 +6510,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

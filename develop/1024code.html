@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6117,7 +6126,7 @@
   <h1>1024code</h1>
 
 <p><a href="https://1024code.com/">1024Code</a> 是一个免费的、协作式的、基于浏览器的 IDE 环境，支持 10 多种编程语言，支持 Spring 、Vue 、React 等框架，还支持很多图形库，是刚入门的程序员学习编程，与朋友一起创造作品，分享交流的最佳选择。
-<img alt="" src="https://1024-staging-1258723534.cos.ap-guangzhou.myqcloud.com/doc_assets/3261657782484_.pic_hd.jpg" /></p>
+<a class="glightbox" href="https://1024-staging-1258723534.cos.ap-guangzhou.myqcloud.com/doc_assets/3261657782484_.pic_hd.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://1024-staging-1258723534.cos.ap-guangzhou.myqcloud.com/doc_assets/3261657782484_.pic_hd.jpg" /></a></p>
 <iframe style="width: 100%; background-color: #151617; border-radius: 8px; height: 680px;" src="https://1024code.com/embed-ide/@Wcowin/gYNjpRW"></iframe>
 <table><thead><tr><th>使用场景</th><th>价值</th></tr></thead><tbody><tr><td><a href="https://docs.1024code.com/cases/practice" target="_blank" rel="noopener noreferrer">使用在线IDE实践新学习的技术</a></td><td>免配置环境，即开即用</td></tr><tr><td>在遇到bug时分享在线IDE环境给他人请求帮助</td><td>有效提升请求他人解决问题的效率</td></tr><tr><td>使用在线协同IDE进行小组协作编程</td><td>在同一个开发环境中实时协同，跟踪每一个操作事件，无需为代码合并冲突而担忧</td></tr><tr><td>无需部署，一键分享项目体验环境和源码</td><td>Talk is cheap, Show me the Code</td></tr><tr><td>打造一个内嵌项目体验环境的个人主页</td><td>比 Github 个人主页还酷</td></tr><tr><td>使用在线协同 IDE 进行引导式编程教学</td><td>在同一个编程环境中实时协作，老师讲解和学生练习无缝切换</td></tr></tbody></table>
 <p><a class="md-button" href="https://1024code.com/V2Nvd2l">我的1024空间<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m.12 13.5 3.74 3.74 1.42-1.41-2.33-2.33 2.33-2.33-1.42-1.41zm11.16 0-3.74-3.74-1.42 1.41 2.33 2.33-2.33 2.33 1.42 1.41z"/></svg></span></a></p>
@@ -6471,5 +6480,7 @@
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

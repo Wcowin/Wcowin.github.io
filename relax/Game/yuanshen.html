@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6429,8 +6438,8 @@
 <p>角色技能&gt;角色星级，合理配队&gt;圣遗物+命座，要刷一套好的的圣遗物，一句话“肝就完事了”  </p>
 <h2 id="_5">好图共赏<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <hr />
-<p><img alt="" src="https://www.tuwoer.com/wp-content/uploads/2022/12/byu-17.jpg" />
-<img alt="" src="https://www.tuwoer.com/wp-content/uploads/2013/12/1632247945-2021092118122572_1_post_n9RZZ12303.jpg" /></p>
+<p><a class="glightbox" href="https://www.tuwoer.com/wp-content/uploads/2022/12/byu-17.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://www.tuwoer.com/wp-content/uploads/2022/12/byu-17.jpg" /></a>
+<a class="glightbox" href="https://www.tuwoer.com/wp-content/uploads/2013/12/1632247945-2021092118122572_1_post_n9RZZ12303.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://www.tuwoer.com/wp-content/uploads/2013/12/1632247945-2021092118122572_1_post_n9RZZ12303.jpg" /></a></p>
 <h2 id="_6">宣传片<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <iframe  src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>
 
@@ -6760,5 +6769,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

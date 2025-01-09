@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6648,7 +6657,7 @@
 </ul>
 <h3 id="_3">图片大小及对齐<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>官方和 GFM 都不支持图片大小设置，MWeb 引入的特别的语法来设置图片宽度。如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 -w450 为设置语法，生成 HTML 时会自动移除。w 表示设置宽度。 可以看出，MWeb 引入的语法的特点是兼容原来的语法和仅支持设置宽度。</p>
-<p><img alt="图片描述-w140" src="https://zh.mweb.im/asset/img/set-up-git.gif" /></p>
+<p><a class="glightbox" href="https://zh.mweb.im/asset/img/set-up-git.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="图片描述-w140" src="https://zh.mweb.im/asset/img/set-up-git.gif" /></a></p>
 <h3 id="_4">多行或者一段代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -7186,5 +7195,7 @@ option = {
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

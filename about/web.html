@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6232,7 +6241,7 @@ Mkdocs-Wcowin主题: <a href="https://wcowin.work/Mkdocs-Wcowin/">Mkdocs-Wcowin�
 <p>也可以学习一下git：<a href="https://www.runoob.com/git/git-tutorial.html" target="“_blank”">https://www.runoob.com/git/git-tutorial.html</a></p>
 <hr />
 <p>这是一个记录<a href="https://www.foreverblog.cn/" target="“_blank”">十年之约</a>的网站，所以，这个网站会存在十年或者更久:<br />
-<a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a></p>
+<a href="https://www.foreverblog.cn/" target="_blank" > <a class="glightbox" href="https://img.foreverblog.cn/logo_en_default.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"></a> </a></p>
 <h2 id="_1">实现自定义域名访问<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p><a href="https://blog.csdn.net/Passerby_Wang/article/details/121202486?spm=1001.2014.3001.5501" target="“_blank”">实现自定义域名访问</a></p>
 <hr />
@@ -6663,5 +6672,7 @@ Mkdocs-Wcowin主题: <a href="https://wcowin.work/Mkdocs-Wcowin/">Mkdocs-Wcowin�
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

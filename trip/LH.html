@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6121,10 +6130,10 @@
 <p>漯河，河南最低调的一个市。漯河人出门在外，往往要被问两个灵魂问题——</p>
 <p>“漯字怎么念？漯河在哪里？”</p>
 <p>漯（luò）河人会告诉你，没错，就是那个产<b>双汇火腿、卫龙辣条、北京牌方便面</b>的地方！<br />
-<img alt="image.png" loading="lazy" src="https://s2.loli.net/2024/02/02/kSshpB2wjEdYfTQ.png" />
+<a class="glightbox" href="https://s2.loli.net/2024/02/02/kSshpB2wjEdYfTQ.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" loading="lazy" src="https://s2.loli.net/2024/02/02/kSshpB2wjEdYfTQ.png" /></a>
 千年的漯河因河而建，因河而兴，她的基因中流淌着如水般的灵活与通达。沙河、澧河之水依旧静静流淌，塑造着漯河人生活的气质。 </p>
 <p>漯河的饮食无非是胡辣汤、烩面、水煎包等等。但这颗“河南之心”，既汇聚了全省的人与物，也因此汇聚了河南的文化风俗，融合了地道的河南味儿。  <br />
-<img alt="image.png" loading="lazy" src="https://s2.loli.net/2024/02/02/2zsDOm7iXhtdeyG.png" /></p>
+<a class="glightbox" href="https://s2.loli.net/2024/02/02/2zsDOm7iXhtdeyG.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" loading="lazy" src="https://s2.loli.net/2024/02/02/2zsDOm7iXhtdeyG.png" /></a></p>
 <ul>
 <li>节选自公众号：中科院地质地球所</li>
 </ul>
@@ -6492,5 +6501,7 @@
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

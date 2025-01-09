@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6252,7 +6261,7 @@
 
 
 <p>原文：<a href="https://www.interaction-design.org/literature/article/norman-s-three-levels-of-design">Norman's Three Levels of Design</a>
-<img alt="" src="https://pic2.zhimg.com/80/v2-775977de1d9ccd4ff61344ccc523b5b1_1440w.jpg" /></p>
+<a class="glightbox" href="https://pic2.zhimg.com/80/v2-775977de1d9ccd4ff61344ccc523b5b1_1440w.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://pic2.zhimg.com/80/v2-775977de1d9ccd4ff61344ccc523b5b1_1440w.jpg" /></a></p>
 <h1 id="_1">唐·诺曼—情感设计的三个层次<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>在人类的内心世界，有许多部分负责我们所说的情感，总的来说，这些区域共同构成了情感系统。唐·诺曼（Don Norman）提出，情感系统由三个不同但相互联系的层次组成，每个层次都以一种特殊的方式影响着我们对世界的体验。这三个层次是本能层，行为层和反思层。本能层与人类情绪中固有的、自发的以及符合动物性的特性相关，这些基本上是不受人类本身控制的。行为层指的是人类行为中那些可控的方面，在这种情况下，我们下意识的分析所处情况并且制定以目标为导向的策略，从而能够在最短时间内或是以最少的行动达到效果。正如唐·诺曼所言，反思层是指“有意识的思考，对新概念进行学习，和对世界进行归纳。”这三个层次作为情感系统的不同维度独立存在，又相互关联，相互影响，从而创造了我们对世界的整体情感体验。</p>
 <p>在唐·诺曼的《情感化设计：为什么我们喜欢（或讨厌）日常事物》（一本认知科学，设计学，可用性工程领域杰出的学术作品）一书中，他对情感化系统的这三个方面或层次做了区分（它们三者综合影响着人类的情感或心理），即：本能层，行为层及反思层。这三者在情感系统中紧密交织在一起，并以各自特定的方式影响设计。以下是三者对应的相应三种设计层次。</p>
@@ -6599,5 +6608,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

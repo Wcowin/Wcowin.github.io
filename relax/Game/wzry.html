@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6282,7 +6291,7 @@
   <h1>如何玩好《王者荣耀》？</h1>
 
 <h2 id="_1">以毛泽东军事思想作为指导思想<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p><img alt="img" src="https://picd.zhimg.com/80/v2-ad4456cba6eb5227628054d55cbda8bb_1440w.jpg?source=1940ef5c" /></p>
+<p><a class="glightbox" href="https://picd.zhimg.com/80/v2-ad4456cba6eb5227628054d55cbda8bb_1440w.jpg?source=1940ef5c" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://picd.zhimg.com/80/v2-ad4456cba6eb5227628054d55cbda8bb_1440w.jpg?source=1940ef5c" /></a></p>
 <p>（1）先打分散和孤立之敌，后打集中和强大之敌。</p>
 <p>当敌方边路"过中线"压队友塔时，中路法师或打野或硬辅从野区河道插入敌方后方形成包夹。</p>
 <p>打时间差，形成局部优势兵力；前期英雄对塔伤害低，歼灭敌方英雄可以快速积累经济；同时敌方中路法师等待兵线时间属于无效投入，我方集中打包抄能获得更高时间费效比；敌方边路离塔远，我方离塔近，即使战役失败仍有更高安全系数。<br />
@@ -6323,7 +6332,7 @@
 <blockquote>
 <p>决定围点打援胜利的不是围点打援本身，而是前期的集中优势兵力打歼灭战，敌不救则小胜，敌救则大胜，战略上奠定了战术的成功。</p>
 </blockquote>
-<p><img alt="img" src="https://pic1.zhimg.com/50/v2-86359453e47d9da4e1b7a41bdf53887b_720w.jpg?source=1940ef5c" /></p>
+<p><a class="glightbox" href="https://pic1.zhimg.com/50/v2-86359453e47d9da4e1b7a41bdf53887b_720w.jpg?source=1940ef5c" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://pic1.zhimg.com/50/v2-86359453e47d9da4e1b7a41bdf53887b_720w.jpg?source=1940ef5c" /></a></p>
 <h3 id="_4"><strong>二、你打你的，我打我的（攻其必守，逼迫回防）/围魏救赵</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>经常会出现团赢一波后，敌方只剩一个英雄防守高地，但边路有单个敌方英雄（常为程咬金、典韦、赵云、韩信）偷塔的情况，条件允许的情况下，可撤出一个我方英雄回城（坦克或辅助，回防塔下清兵即可），否则强势中推 </p>
 <p>不要选择集体去包抄对方偷塔英雄，因其未参与团战大概率是满血的，攻其必守、逼迫回防是更好的选择  </p>
@@ -6705,5 +6714,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

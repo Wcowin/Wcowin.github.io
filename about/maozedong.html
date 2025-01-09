@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6122,7 +6131,7 @@
 
 <p><strong>毛泽东：让人说话，天塌不下来</strong>  </p>
 <p>本文选自毛泽东《在扩大的中央工作会议上的讲话》（一九六二年一月三十日）</p>
-<p><img alt="Alt text" loading="lazy" src="https://pic3.zhimg.com/80/v2-ba2a5d0caf41147995280ce2433c7c82_1440w.webp" /></p>
+<p><a class="glightbox" href="https://pic3.zhimg.com/80/v2-ba2a5d0caf41147995280ce2433c7c82_1440w.webp" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" loading="lazy" src="https://pic3.zhimg.com/80/v2-ba2a5d0caf41147995280ce2433c7c82_1440w.webp" /></a></p>
 <p>同志们，我现在讲几点意见。（热烈鼓掌）一并讲六点，中心是讲一个民主集中制的问题，同时也讲到一些其他问题。</p>
 <p>……</p>
 <p>第二点，民主集中制问题。</p>
@@ -6514,5 +6523,7 @@
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

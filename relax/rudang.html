@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6120,7 +6129,7 @@
 
   <h1>入党结业考试题总结</h1>
 
-<p><img alt="" src="https://picx.zhimg.com/v2-a3237a6e1f0011118c615c5453872d46_1440w.jpg?source=172ae18b" /></p>
+<p><a class="glightbox" href="https://picx.zhimg.com/v2-a3237a6e1f0011118c615c5453872d46_1440w.jpg?source=172ae18b" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://picx.zhimg.com/v2-a3237a6e1f0011118c615c5453872d46_1440w.jpg?source=172ae18b" /></a></p>
 <p>一、填空题</p>
 <p>1.中国共产党第十九次全国代表大会的主题是：不忘初心,牢记使命，高举中国特色社会主义伟大旗帜，决胜全面建成小康社会，夺取新时代中国特色社会主义伟大胜利，为实现中华民族伟大复兴的中国梦不懈奋斗</p>
 <p>2.党的根本组织原则是民主集中制。</p>
@@ -6515,5 +6524,7 @@
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

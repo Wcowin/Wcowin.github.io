@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6294,7 +6303,7 @@
 <p>用户交互:<br />
 系统通常提供用户交互界面，允许用户上传图像、开始或停止实时识别，并可能提供管理已知人脸数据的功能</p>
 <p><strong>示意图</strong>
-<img alt="image-20220109232309780" src="https://vehicle4cm.oss-cn-beijing.aliyuncs.com/typoraimgs/image-20220109232309780.png" />  </p>
+<a class="glightbox" href="https://vehicle4cm.oss-cn-beijing.aliyuncs.com/typoraimgs/image-20220109232309780.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image-20220109232309780" src="https://vehicle4cm.oss-cn-beijing.aliyuncs.com/typoraimgs/image-20220109232309780.png" /></a>  </p>
 <h2 id="_2">创建虚拟环境<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>创建虚拟环境前先下载<a href="https://gitee.com/song-laogou/face_dlib_py37_42" target="_blank">源码</a>到本地。</p>
 <p>需要使用到python3.7的虚拟环境，命令如下：
@@ -7175,7 +7184,7 @@
 <a id="__codelineno-4-408" name="__codelineno-4-408"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">())</span>
 </code></pre></div></td></tr></table></div></p>
 <h2 id="_4">效果<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p><img alt="image.png" src="https://s2.loli.net/2024/02/04/AcdiBjGqRu3zZnO.jpg" /></p>
+<p><a class="glightbox" href="https://s2.loli.net/2024/02/04/AcdiBjGqRu3zZnO.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image.png" src="https://s2.loli.net/2024/02/04/AcdiBjGqRu3zZnO.jpg" /></a></p>
 <p><strong>准确度显著提高，多人照片识别也更快，UI交互也做了改进</strong>  </p>
 <h2 id="ing">持续优化ing<a class="headerlink" href="#ing" title="Permanent link">&para;</a></h2>
 <p>恰逢Pytho课程设计，于是我便拿出来作为小组设计作品，但是做了进一步完善  </p>
@@ -8257,5 +8266,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

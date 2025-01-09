@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6224,8 +6233,8 @@
 <p><font face="宋体" >小米公司正式成立于2010年4月，是一家以智能手机、智能硬件和 IoT 平台为核心的消费电子及智能制造公司。创业仅7年时间，小米的年收入就突破了千亿元人民币。截止2018年，小米的业务遍及全球80多个国家和地区。  </p>
 <p>小米的使命是，始终坚持做 <strong>“感动人心、价格厚道”</strong> 的好产品，让全球每个人都能享受科技带来的美好生活。</font></p>
 </div>
-<p><img alt="" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6f46fb63c119d83d2b4b38505fffbcd.jpg?w=1226&amp;h=450" />
-<img alt="" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dda571ff4ae30170d4300e177f62af7.jpg?w=1226&amp;h=768" /></p>
+<p><a class="glightbox" href="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6f46fb63c119d83d2b4b38505fffbcd.jpg?w=1226&amp;h=450" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6f46fb63c119d83d2b4b38505fffbcd.jpg?w=1226&amp;h=450" /></a>
+<a class="glightbox" href="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dda571ff4ae30170d4300e177f62af7.jpg?w=1226&amp;h=768" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dda571ff4ae30170d4300e177f62af7.jpg?w=1226&amp;h=768" /></a></p>
 <hr />
 <h2 id="_1">三条铁律<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p><strong>技术为本  性价比为纲  做最酷的产品</strong>
@@ -6247,7 +6256,7 @@
 <!-- ![xiaomi](https://user-assets.sxlcdn.com/images/951476/FhDY4DJUZ76Xz3CJ6sdjBLIZV-si.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg) -->
 
 <p><a href="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4">
-    <img src="https://user-assets.sxlcdn.com/images/951476/FhDY4DJUZ76Xz3CJ6sdjBLIZV-si.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg" >
+    <a class="glightbox" href="https://user-assets.sxlcdn.com/images/951476/FhDY4DJUZ76Xz3CJ6sdjBLIZV-si.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://user-assets.sxlcdn.com/images/951476/FhDY4DJUZ76Xz3CJ6sdjBLIZV-si.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg" ></a>
   </a></p>
 <!-- <iframe  src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>   -->
 <p>小米创业8年内部影像资料，首次公开！</p>
@@ -6606,5 +6615,7 @@
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

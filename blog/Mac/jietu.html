@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6149,7 +6158,7 @@
 </code></pre></div></td></tr></table></div></li>
 </ul>
 <p>就是这样简单。现在你会发现，当你截图的时候，文件名称中就已经不再包含截图的日期和时间啦。</p>
-<p><img alt="" src="https://static.skyandroid.cn/images/data/1577432991750269.png?x-oss-process=style/w_1240" /></p>
+<p><a class="glightbox" href="https://static.skyandroid.cn/images/data/1577432991750269.png?x-oss-process=style/w_1240" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://static.skyandroid.cn/images/data/1577432991750269.png?x-oss-process=style/w_1240" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>注 1：如果你想恢复默认式样，将第二步中的「1」替换成「0」即可。</p>
@@ -6505,5 +6514,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

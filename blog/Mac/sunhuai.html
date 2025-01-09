@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6296,12 +6305,12 @@
 <p>解决方法就是去开启【任何来源】选项了，但是 macOS 默认是隐藏了这个设置的，需要用户手动通过终端执行命令行代码来开启。</p>
 <h2 id="_3">开启任何来源<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>先打开 系统偏好设置 -&gt; 安全与隐私 -&gt; 通用 选项卡，检查是否已经启用了 任何来源 选项。
-<img alt="" src="https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291828413.png" /></p>
+<a class="glightbox" href="https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291828413.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291828413.png" /></a></p>
 <p>如果没有这个选项，复制以下面的命令：
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo spctl --master-disable
 </code></pre></div></td></tr></table></div>
 打开终端，右键粘贴上面命令，回车并输入密码： 
-<img alt="" src="https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291829815.png" /></p>
+<a class="glightbox" href="https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291829815.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291829815.png" /></a></p>
 <p>然而有的应用开启了任何来源还是不行，这是因为苹果进一步收缩了对未签名应用的权限，这时候就需要过终端执行命令行代码来绕过应用签名认证。  </p>
 <h2 id="_4">绕过公证<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>打开终端，输入以下命令：
@@ -6690,5 +6699,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

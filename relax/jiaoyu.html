@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6120,7 +6129,7 @@
 
 <h1>关于教育革命的谈话</h1>
 
-<p><img alt="label" src="https://picx.zhimg.com/70/v2-7741f25cb1746815f9674f6f0edd1372_1440w.awebp?source%253D172ae18b%2526biz_tag%253DPost" /></p>
+<p><a class="glightbox" href="https://picx.zhimg.com/70/v2-7741f25cb1746815f9674f6f0edd1372_1440w.awebp?source%253D172ae18b%2526biz_tag%253DPost" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="label" src="https://picx.zhimg.com/70/v2-7741f25cb1746815f9674f6f0edd1372_1440w.awebp?source%253D172ae18b%2526biz_tag%253DPost" /></a></p>
 <p>（一九六四年二月十三日、一九六五年十二月二十一日）</p>
 <p>我早就说过，我们的教育方针，应该使受教育者在德育、智育、体育几方面都得到发展，成为有社会主义觉悟的有文化的劳动者。</p>
 <p>现在课程多，害死人，使中小学生、大学生天天处于紧张状态。课程可以砍掉一半。学生成天看书，并不好，可以参加一些生产劳动和必要的社会劳动。</p>
@@ -6467,5 +6476,7 @@
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

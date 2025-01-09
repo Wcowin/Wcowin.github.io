@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6128,7 +6137,7 @@ We believe that how we conduct ourselves is as critical to Apple’s success as 
  Our Business Conduct and Compliance policies are foundational to how we do business and how we put our values into practice every day.  </p>
 <p><b>We do the right thing, even when it’s not easy.</p>
 <p>——Tim Cook</b> </font></center>  </p>
-<p><img alt="img" src="https://user-assets.sxlcdn.com/images/951476/FpR4zSBa8kJxXSlkmL3yE9O1PNJB.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png" /></p>
+<p><a class="glightbox" href="https://user-assets.sxlcdn.com/images/951476/FpR4zSBa8kJxXSlkmL3yE9O1PNJB.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://user-assets.sxlcdn.com/images/951476/FpR4zSBa8kJxXSlkmL3yE9O1PNJB.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png" /></a></p>
 <!-- <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/the-darkness-that-you-fear/1562007433?i=1562007434"></iframe> -->
 
 <p><b>
@@ -6144,7 +6153,7 @@ We believe that how we conduct ourselves is as critical to Apple’s success as 
 9.超瓷晶面板，用人话说就是把瓷器做成透明的。<br />
 10.异性电池，iPhone XS，MacBook。为了塞进去尽可能多的电池。    </p>
 <p>Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，外观好像一样的情况下，内部元器件的堆叠甚至是一些微不足道的小更新，都是苹果和他的团队在背后努力研发的成果。  </b></p>
-<p><img alt="" src="https://user-assets.sxlcdn.com/images/951476/FkEoM-JH0F6SYwS6RXR2ZIcSh45Q.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg" /></p>
+<p><a class="glightbox" href="https://user-assets.sxlcdn.com/images/951476/FkEoM-JH0F6SYwS6RXR2ZIcSh45Q.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://user-assets.sxlcdn.com/images/951476/FkEoM-JH0F6SYwS6RXR2ZIcSh45Q.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg" /></a></p>
 <iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 560px; height: 315px; max-width: 100%"> </iframe>
 
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=0&height=32"></iframe> -->
@@ -6514,5 +6523,7 @@ We believe that how we conduct ourselves is as critical to Apple’s success as 
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

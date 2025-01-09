@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6169,7 +6178,7 @@
 <p>舌头伸出去久了，就缩不回来了。</p>
 <p>跪着生活久了，就站不起来了。</p>
 <p><font size=5> 真的，人生很贵，请别浪费</font></p>
-<p><img alt="" src="https://picx.zhimg.com/80/v2-a6b2efc7cfc30876b034b104a87023e1_1440w.webp?source=c8b7c179" /></p>
+<p><a class="glightbox" href="https://picx.zhimg.com/80/v2-a6b2efc7cfc30876b034b104a87023e1_1440w.webp?source=c8b7c179" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://picx.zhimg.com/80/v2-a6b2efc7cfc30876b034b104a87023e1_1440w.webp?source=c8b7c179" /></a></p>
 
 
 
@@ -6497,5 +6506,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

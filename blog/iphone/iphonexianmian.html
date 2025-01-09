@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6137,23 +6146,23 @@
 <p>mergeek</p>
 <p><a href="https://mergeek.com/free/apps">https://mergeek.com/free/apps</a></p>
 <p>一个安卓、苹果app推介网站，其中ios限免与优惠更新比较及时。还支持微信服务号订阅<br />
-<img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604105805.png" /></p>
+<a class="glightbox" href="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604105805.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604105805.png" /></a></p>
 <p>iOSnoops</p>
 <p><a href="https://www.iosnoops.com/">https://www.iosnoops.com/</a></p>
 <p>iOSnoops 每天都会免费提供iOS应用的汇总。这个没有应用程式版本，但您可以在他们的行动网站上查看交易，然后点击进入App Store。您还可以查看前几天的交易。如果交易仍在进行中，您会在状态一词旁边看到一个绿色图标。过期后，该图标将显示为红色。iOSnoops还具有销售的实时更新，免费的应用程序和新版本，因此您不必等待每日汇总。<br />
-<img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135131.png" /></p>
+<a class="glightbox" href="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135131.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135131.png" /></a></p>
 <p>appsliced</p>
 <p><a href="https://appsliced.co/">https://appsliced.co/</a></p>
 <p>App Sliced是免费的替代App Store体验。发现最好的应用程序，同时节省资金！</p>
-<p><img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135635.png" /></p>
+<p><a class="glightbox" href="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135635.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135635.png" /></a></p>
 <p>appticker</p>
 <p><a href="https://www.appticker.com/">https://www.appticker.com/</a></p>
 <p>提供历史价格信息以及每天最新优惠线面活动，更新速度尚可，可以作为获取限免价格备用获取渠道源。</p>
-<p><img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135002.png" /></p>
+<p><a class="glightbox" href="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135002.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604135002.png" /></a></p>
 <p>gofans</p>
 <p><a href="https://gofans.cn/">https://gofans.cn/</a></p>
 <p>一个每日推送最新ios限免及优惠app的网站，更新比较迅速。</p>
-<p><img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604134818.png" /></p>
+<p><a class="glightbox" href="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604134818.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://pic.appmiu.com/gh/abcmiao/img@main/pic/20210604134818.png" /></a></p>
 <p>appwall</p>
 <p><a href="https://appwall.today/">https://appwall.today/</a></p>
 <p>一个每日推送最新ios限免及优惠app的网站，更新比较迅速。</p>
@@ -6515,5 +6524,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

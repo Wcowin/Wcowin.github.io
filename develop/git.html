@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6536,7 +6545,7 @@
 <h3 id="1-git">1. 新建 git 仓库<a class="headerlink" href="#1-git" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>git init
 </code></pre></div></td></tr></table></div>
-<p><img alt="" src="https://img.iszy.xyz/1669185106451.png" />  </p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185106451.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://img.iszy.xyz/1669185106451.png" /></a>  </p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
@@ -6584,15 +6593,15 @@
 <h3 id="4">4. 查看仓库状态<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>git status
 </code></pre></div></td></tr></table></div>
-<p><img alt="" src="https://img.iszy.xyz/1669185760241.png" />  </p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185760241.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://img.iszy.xyz/1669185760241.png" /></a>  </p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>git status -s
 </code></pre></div></td></tr></table></div>
-<p><img alt="" src="https://img.iszy.xyz/1669185789446.png" />  </p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185789446.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://img.iszy.xyz/1669185789446.png" /></a>  </p>
 <h3 id="5">5. 查看提交历史<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
 <p><a href="https://git-scm.com/docs/git-log" target="_blank">https://git-scm.com/docs/git-log</a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>git log
 </code></pre></div></td></tr></table></div>
-<p><img alt="" src="https://img.iszy.xyz/1669185798311.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185798311.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://img.iszy.xyz/1669185798311.png" /></a></p>
 <h3 id="6">6. 新建分支<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
 <span class="normal"><a href="#__codelineno-7-2">2</a></span>
@@ -6604,7 +6613,7 @@
 <a id="__codelineno-7-4" name="__codelineno-7-4"></a>
 <a id="__codelineno-7-5" name="__codelineno-7-5"></a>git checkout -b test
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669185814401.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185814401.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669185814401.png" /></a></p>
 <h3 id="7">7. 合并分支<a class="headerlink" href="#7" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
 <span class="normal"><a href="#__codelineno-8-2">2</a></span>
@@ -6612,20 +6621,20 @@
 <a id="__codelineno-8-2" name="__codelineno-8-2"></a>
 <a id="__codelineno-8-3" name="__codelineno-8-3"></a>git merge test
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669185829746.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185829746.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669185829746.png" /></a></p>
 <h3 id="8">8. 删除分支<a class="headerlink" href="#8" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>git branch -d test-not-need
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669185836945.png" />  </p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185836945.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669185836945.png" /></a>  </p>
 <h3 id="9">9. 合并冲突<a class="headerlink" href="#9" title="Permanent link">&para;</a></h3>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669185846981.png" />  </p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185846981.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669185846981.png" /></a>  </p>
 <p>当两个分支都对同一行进行了修改，git 便会产生冲突，并标记为未合并</p>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669185854676.png" />  </p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185854676.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669185854676.png" /></a>  </p>
 <p>此时将每个文件进行修改，确认最后的内容，使用 git add 方法标记为冲突已解决
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>git add .\A.txt
 </code></pre></div></td></tr></table></div>
 在所有文件的冲突均已解决后，使用 commit 提交此次修改。</p>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669185864622.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669185864622.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669185864622.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>git merge --abort
 </code></pre></div></td></tr></table></div>
 <h3 id="10">10. 远程仓库<a class="headerlink" href="#10" title="Permanent link">&para;</a></h3>
@@ -6654,7 +6663,7 @@
 <a id="__codelineno-13-10" name="__codelineno-13-10"></a>
 <a id="__codelineno-13-11" name="__codelineno-13-11"></a>git branch -u origin/main main
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669186022128.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669186022128.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669186022128.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
 <span class="normal"><a href="#__codelineno-14-2">2</a></span>
 <span class="normal"><a href="#__codelineno-14-3">3</a></span>
@@ -6669,10 +6678,10 @@
 <h3 id="1">1. 临时保存成果<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>git stash
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669186037294.png" />  </p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669186037294.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669186037294.png" /></a>  </p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>git stash pop
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669186045214.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669186045214.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669186045214.png" /></a></p>
 <h3 id="2-rebasemerge">2. 合并分支灵活选择 rebase/merge<a class="headerlink" href="#2-rebasemerge" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
 <span class="normal"><a href="#__codelineno-17-2">2</a></span>
@@ -6680,13 +6689,13 @@
 <a id="__codelineno-17-2" name="__codelineno-17-2"></a>
 <a id="__codelineno-17-3" name="__codelineno-17-3"></a>git rebase test
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669186058175.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669186058175.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669186058175.png" /></a></p>
 <h3 id="3-cherry-pick">3. cherry-pick<a class="headerlink" href="#3-cherry-pick" title="Permanent link">&para;</a></h3>
 <p>适合 hotfix</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>git cherry-pick 12d654f1d701cbf7cd9abb98ce84eeef460a24a7
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669186102974.png" />
-<img alt="Alt text" src="https://img.iszy.xyz/1669186072778.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669186102974.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669186102974.png" /></a>
+<a class="glightbox" href="https://img.iszy.xyz/1669186072778.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669186072778.png" /></a></p>
 <h3 id="4_1">4. 修改上次提交<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a>git commit --amend
 </code></pre></div></td></tr></table></div>
@@ -6694,7 +6703,7 @@
 <h3 id="5_1">5. 取消文件修改<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a>git checkout .\C.txt
 </code></pre></div></td></tr></table></div>
-<p><img alt="Alt text" src="https://img.iszy.xyz/1669186116701.png" /></p>
+<p><a class="glightbox" href="https://img.iszy.xyz/1669186116701.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="https://img.iszy.xyz/1669186116701.png" /></a></p>
 <h3 id="6_1">6. 弃用提交<a class="headerlink" href="#6_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
 <span class="normal"><a href="#__codelineno-21-2">2</a></span>
@@ -7063,5 +7072,7 @@
         <script src="../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

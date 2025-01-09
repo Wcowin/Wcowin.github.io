@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6235,12 +6244,12 @@
 <p>安装过程很简单，因为它只需要您将一行代码粘贴到网站代码的适当位置。  </p>
 <h2 id="_1">找到安装代码<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>可以前往“设置”&gt;“频道”&gt;“实时聊天”&gt;  “安装” 部分找到您独特的 Tidio javascript 代码。还将在帐户创建之旅的最后阶段看到代码。
-<img alt="" src="https://help.tidio.com/hc/article_attachments/9168067328284" />
+<a class="glightbox" href="https://help.tidio.com/hc/article_attachments/9168067328284" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://help.tidio.com/hc/article_attachments/9168067328284" /></a>
 比如：
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js&quot;</span><span class="w"> </span><span class="k">async</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
 </code></pre></div></td></tr></table></div></p>
 <h2 id="indexmd">放到主页index.md即可<a class="headerlink" href="#indexmd" title="Permanent link">&para;</a></h2>
-<p><img alt="" src="https://help.tidio.com/hc/article_attachments/5378990613404" /></p>
+<p><a class="glightbox" href="https://help.tidio.com/hc/article_attachments/5378990613404" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://help.tidio.com/hc/article_attachments/5378990613404" /></a></p>
 
 
 
@@ -6591,5 +6600,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6132,10 +6141,10 @@
   <h1>6</h1>
 
 <p>作者：<a href="https://www.zhihu.com/people/b2fe7f880037bca5aa951d615de7735b">@MathHub</a>
-<img alt="alt text" src="https://pic4.zhimg.com/80/v2-2ee2df9d34937ccdf78ec689d01188ab_1440w.jpg" />
-<img alt="alt text" src="https://pic2.zhimg.com/80/v2-9559760ed0f7bcd93db6118342b66939_1440w.webp" />  </p>
+<a class="glightbox" href="https://pic4.zhimg.com/80/v2-2ee2df9d34937ccdf78ec689d01188ab_1440w.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="https://pic4.zhimg.com/80/v2-2ee2df9d34937ccdf78ec689d01188ab_1440w.jpg" /></a>
+<a class="glightbox" href="https://pic2.zhimg.com/80/v2-9559760ed0f7bcd93db6118342b66939_1440w.webp" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="https://pic2.zhimg.com/80/v2-9559760ed0f7bcd93db6118342b66939_1440w.webp" /></a>  </p>
 <p>你已经学会了求旋转体体积的一般公式！试试看  </p>
-<p><img alt="alt text" src="https://pic2.zhimg.com/80/v2-42d00a6121a7fbf38fbbb09cfdfa15ed_1440w.webp" /></p>
+<p><a class="glightbox" href="https://pic2.zhimg.com/80/v2-42d00a6121a7fbf38fbbb09cfdfa15ed_1440w.webp" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="https://pic2.zhimg.com/80/v2-42d00a6121a7fbf38fbbb09cfdfa15ed_1440w.webp" /></a></p>
 
 
 
@@ -6463,5 +6472,7 @@
         <script src="../../javascripts/geren.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

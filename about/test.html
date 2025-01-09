@@ -113,7 +113,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -6173,7 +6182,16 @@ e.src='https://static.howxm.com/sdk.js';
 t.parentNode.insertBefore(e,t)}})();
 </script>
 
-<p></head></p>
+<p> <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>测试中的小组件，可看源代码自行取用</p>
@@ -6249,7 +6267,7 @@ t.parentNode.insertBefore(e,t)}})();
 
 <!-- ![Image title](https://dummyimage.com/600x400/){ loading=lazy } -->
 <figure>
-<p><img alt="Image title" src="https://dummyimage.com/600x400/" width="300" />
+<p><a class="glightbox" href="https://dummyimage.com/600x400/" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="https://dummyimage.com/600x400/" width="300" /></a>
   </p>
 <figcaption>Image caption</figcaption>
 </figure>
@@ -6304,7 +6322,16 @@ t.parentNode.insertBefore(e,t)}})();
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
           />
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   <body>
     <div>
       <a
@@ -6327,7 +6354,9 @@ t.parentNode.insertBefore(e,t)}})();
         //
       });    
     </script>
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
 
 <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats) -->
@@ -6486,15 +6515,15 @@ semper lorem quam in massa.</p>
 \]</div>
 <!-- ![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" } -->
 
-<p><img align="left" alt="img" src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" /></p>
+<p><a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="img" src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" /></a></p>
 <figure>
-<p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" width="300" />
+<p><a class="glightbox" href="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" width="300" /></a>
   </p>
 <figcaption>图片说明</figcaption>
 </figure>
 <p><strong>明暗</strong></p>
-<p><img alt="" src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg#only-light" /></p>
-<p><img alt="" src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg#only-dark" /></p>
+<p><a class="glightbox" href="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg#only-light" /></a></p>
+<p><a class="glightbox" href="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg#only-dark" /></a></p>
 <pre class="mermaid"><code>graph LR
   A[Start] --&gt; B{Error?};
   B --&gt;|Yes| C[Hmm...];
@@ -6554,7 +6583,9 @@ purus auctor massa, nec semper lorem quam in massa.</p>
       B-->D(fa:fa-spinner);
     </pre>
 
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 
 <p>来看看两个重要极限  </p>
 <div class="arithmatex">\[\displaystyle\lim_{x \rightarrow 0}\frac{\sin x}{x} = 1\]</div>
