@@ -6,7 +6,7 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
-## </p><h1 id="01" name="01"><strong>2025-01-05</strong></h1><p>
+## </p><h1 id="01" name="01"><strong>2025-01-09</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 引入[glightbox插件](https://github.com/blueswen/mkdocs-glightbox){target=“_blank”}，图片查看更方便
 
