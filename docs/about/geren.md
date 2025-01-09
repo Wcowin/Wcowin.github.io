@@ -5,6 +5,7 @@ hide:
   - feedback
   - footer
 status: new
+glightbox-manual: true
 ---
 <center>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
@@ -185,7 +186,7 @@ status: new
 
 ??? tip "公众号"
     <figure markdown >
-    ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1}
+    ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1 }
     <figcaption>公众号</figcaption>
     </figure>
 
