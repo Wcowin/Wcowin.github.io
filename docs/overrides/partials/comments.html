@@ -17,7 +17,7 @@
   crossorigin="anonymous"
   async>
 </script>
-<div class="reward-container">
+<!-- <div class="reward-container">
   <div></div>
   <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     请作者喝杯咖啡
@@ -33,7 +33,80 @@
       </div>
 
   </div>
-</div>
+</div> -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打赏</title>
+  <style>
+      .reward-container {
+          margin: 20px auto;
+          padding: 25px 0;
+          text-align: center;
+          width: 90%;
+      }
+      .reward-container button {
+          background: none;
+          border: 1px solid #608DBD;
+          border-radius: 0.5rem;
+          color: #608DBD;
+          cursor: pointer;
+          line-height: 2;
+          outline: 0;
+          padding: 0 15px;
+          margin: 5px;
+          font-size: 16px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .reward-container button:hover {
+          color: #4a6e8c;
+      }
+      .qr-container {
+          display: none;
+          text-align: center;
+          margin-top: 25px;
+      }
+      .qr-container img {
+          width: 200px;
+          margin: 10px;
+          border-radius: 25px;
+      }
+      .qr-container p {
+          font-size: 16px;
+          color: #555;
+      }
+      .qr-option {
+          display: inline-block;
+          margin: 0 10px;
+      }
+  </style>
+</head>
+<body>
+  <div class="reward-container">
+      <button onclick="toggleQR()">
+          请作者喝杯咖啡
+      </button>
+      <div id="qr" class="qr-container">
+          <div class="qr-option">
+              <img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付">
+              <p>微信支付</p>
+          </div>
+          <div class="qr-option">
+              <img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝">
+              <p>支付宝</p>
+          </div>
+      </div>
+  </div>
+  <script>
+      function toggleQR() {
+          const qrContainer = document.getElementById('qr');
+          qrContainer.style.display = (qrContainer.style.display === 'none' || qrContainer.style.display === '') ? 'block' : 'none';
+      }
+  </script>
+</body>
+
+
   <!-- Synchronize Giscus theme with palette -->
   <script>
     var giscus = document.querySelector("script[src*=giscus]")

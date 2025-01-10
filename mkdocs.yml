@@ -485,7 +485,7 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/extra2.css  #诗词版、打赏
+  - stylesheets/extra2.css  
   - stylesheets/link.css  #友链
   - stylesheets/customize.css  #按钮圆角化
   # - assets/stylesheets/portfolio.css #个人简历 
