@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 #[Info]
-site_name: Wcowin's Web
+site_name: Wcowin's Blog
 site_url: http://wcowin.work/
 site_author: 王科文(Wcowin)
 
@@ -79,7 +79,8 @@ repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
 nav:
-  # - 主页: index.md
+  # - 主页: 
+  #   - index.md
   - 技术:
     - blog/indexblog.md
     - 好用/好玩网站分享: blog/Webplay.md

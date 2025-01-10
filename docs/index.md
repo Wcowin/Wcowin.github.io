@@ -1,19 +1,19 @@
 ---
-title: Home
 hide:
-  # - navigation # 显示右
-  # - toc #显示左
+#   - navigation # 显示右
+#   - toc #显示左
   - footer
   - feedback
 comments: false
+# icon: octicons/home-fill-24
 ---
 
-# 主页
+# Wcowin's Blog
 
-<center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
+<center><font  color= #757575 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 
-<div id="rcorners2" >
+<!-- <div id="rcorners2" >
 
 <div id="rcorners1" class="date-display">
     <p class="p1"></p>
@@ -23,6 +23,7 @@ comments: false
     .date-display {
         color: #4351AF;
     } 
+    
 </style>
 
 <script defer>
@@ -62,93 +63,31 @@ comments: false
       </ul>
       <li>如遇到网页卡顿/打开文章后无法显示图片的情况，请使用科学上网</li>
   </ul>
-</div> 
-
-快速谈话(1) 联系我(2)
-{ .annotate }
-
-1. 点击右上角关于页面，与我在线交谈.
-2. TEL:18939533255(微信号)
-
-***  
-
-<!-- <strong>推荐文章:material-book:</strong>
-
-  - [如何注册ChatGPT](develop/ChatGPT.md)
-  - [将Python文件.py打包成.exe可执行程序](blog/py/python.md)
-  - [Blogger](blog/index.md) 
-  - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
-  - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
-  - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md)
-  - [好用/好玩网站分享](blog/Webplay.md)
-  - [Mac/windows软件网站汇总](blog/macsoft.md)
-  - [重庆旅游推荐路线](trip/InCQ/CQ.md)
-  - [留言板](waline.md) -->
+</div>  -->
 
 <div class="grid cards" markdown>
 
--   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
+-   :material-notebook-edit-outline:{ .lg .middle } __导航栏__
 
     ---
 
-    - [如何注册ChatGPT](develop/ChatGPT.md)
-    - [将Python文件打包成.exe可执行程序](blog/py/python.md)
-    - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md) 
+
+    - [x] 通过目录以打开文章
+    - [x] 搜索关键词查询文章
+    - [x] 如遇到网页卡顿/打开文章后无法显示图片的情况，请使用科学上网
+    === "Mac/PC端"
+
+        请在上方标签栏选择分类 在左侧目录选择文章
+
+    === "移动端"
+
+        请点击左上角图标选择分类和文章
     
--   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程(三步搞定)__
-
-    ---
-
-    - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
-    - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)   
-    - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
-
-
--   :material-format-font:{ .lg .middle } __好用/好玩__
-
-    ---
-
-    
-    - [好用/好玩网站分享](blog/Webplay.md)
-    - [Mac/windows软件网站汇总](blog/macsoft.md)
-    - [重庆旅游推荐路线](trip/InCQ/CQ.md)
-    
--   :simple-aboutdotme:{ .lg .middle } __关于__
-
-    ---
-
-    - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending] 
-    - [Blogger](blog/index.md)  
-    - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
 
 </div>
 
 
-
-[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
-[^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
-
-<!-- Start of Howxm client code snippet -->
-<!-- <head>
-<script>
-function _howxm(){_howxmQueue.push(arguments)}
-window._howxmQueue=window._howxmQueue||[];
-_howxm('setAppID','14429fca-cac1-4551-a472-b046a96ebb75');
-(function(){var scriptId='howxm_script';
-if(!document.getElementById(scriptId)){
-var e=document.createElement('script'),
-t=document.getElementsByTagName('script')[0];
-e.setAttribute('id',scriptId);
-e.type='text/javascript';e.async=!0;
-e.src='https://static.howxm.com/sdk.js';
-t.parentNode.insertBefore(e,t)}})();
-</script> -->
-<!-- End of Howxm client code snippet -->
-
-<!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>-->  
- <!-- tidio聊天-->
-</head>
-
+---
 
 
 <style>
@@ -191,6 +130,79 @@ document.getElementById('box1').innerHTML = timingTime()
   </font>
 </body>
 
+
+***  
+
+
+<div class="grid cards" markdown>
+
+-   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
+
+    ---
+
+    - [如何注册ChatGPT](develop/ChatGPT.md)
+    - [将Python文件打包成.exe可执行程序](blog/py/python.md)
+    - [Homebrew国内如何自动安装(国内地址)(Mac & Linux)](blog/Mac/homebrew.md) 
+    
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程(三步搞定)__
+
+    ---
+
+    - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
+    - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)   
+    - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
+
+
+-   :material-format-font:{ .lg .middle } __好用/好玩__
+
+    ---
+
+    
+    - [好用/好玩网站分享](blog/Webplay.md)
+    - [Mac/windows软件网站汇总](blog/macsoft.md)
+    - [重庆旅游推荐路线](trip/InCQ/CQ.md)
+    
+-   :simple-aboutdotme:{ .lg .middle } __关于__
+
+    ---
+
+    - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending] 
+    - [Blogger](blog/index.md)  
+    - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
+
+</div>
+
+
+
+
+[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
+[^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
+
+<!-- Start of Howxm client code snippet -->
+<!-- <head>
+<script>
+function _howxm(){_howxmQueue.push(arguments)}
+window._howxmQueue=window._howxmQueue||[];
+_howxm('setAppID','14429fca-cac1-4551-a472-b046a96ebb75');
+(function(){var scriptId='howxm_script';
+if(!document.getElementById(scriptId)){
+var e=document.createElement('script'),
+t=document.getElementsByTagName('script')[0];
+e.setAttribute('id',scriptId);
+e.type='text/javascript';e.async=!0;
+e.src='https://static.howxm.com/sdk.js';
+t.parentNode.insertBefore(e,t)}})();
+</script> -->
+<!-- End of Howxm client code snippet -->
+
+<!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>-->  
+ <!-- tidio聊天-->
+</head>
+
+
+
+
+
 <!--  
 ____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
 \   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  | 
@@ -225,3 +237,9 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 </script> -->
 
 
+
+快速谈话(1) 联系我(2)
+{ .annotate }
+
+1. 点击右上角关于页面，与我在线交谈.
+2. TEL:18939533255(微信号)
