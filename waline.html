@@ -6193,22 +6193,218 @@ document$.subscribe(() => { lightbox.reload() });
     });
   </script> -->
 
-<h1 id="_2">评论审核后才会显示<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
-<div id="rcorners5" >
+<!-- <div id="rcorners5" > -->
 
-<div id="cusdis_thread"
+<!-- <div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="655cf3bc-734a-4d88-8317-be350621334c"
   data-page-id="{{ PAGE_ID }}"
   data-page-url="{{ PAGE_URL }}"
   data-page-title="{{ PAGE_TITLE }}"
 ></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script> -->
 
+<!-- </div> -->
+<p><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评论系统切换</title>
+    <style>
+        .comment-system {
+            display: none;
+        }
+        .comment-system.active {
+            display: block;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .switch-button {
+            background-color: #608DBD;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .switch-button:hover {
+            background-color: #4a6e8c;
+        }
+        .switch-button.active {
+            background-color: #4a6e8c;
+        }
+    </style>
+ <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head></p>
+<body>
+    <div class="button-container">
+      <!-- <center><p>点击以切换评论系统</p></center> -->
+        <button id="giscus-btn" class="switch-button active">Giscus 评论</button>
+        <button id="cusdis-btn" class="switch-button">Cusdis 评论</button>
+    </div>
+    <div id="giscus" class="comment-system active">
+        <!-- Giscus 评论系统代码 -->
+  <script src="https://giscus.app/client.js"
+  data-repo="Wcowin/hexo-site-comments"
+  data-repo-id="R_kgDOIl9OJA"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOIl9OJM4CTHDe"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  data-loading="lazy"  
+  crossorigin="anonymous"
+  async>
+</script>
+    </div>
+    <div id="cusdis" class="comment-system">
+        <!-- Cusdis 评论系统代码 -->
+        <center><p>评论审核后才会显示</p></center>
+        <div id="cusdis_thread"
+            data-host="https://cusdis.com"
+            data-app-id="655cf3bc-734a-4d88-8317-be350621334c"
+            data-page-id="{{ PAGE_ID }}"
+            data-page-url="{{ PAGE_URL }}"
+            data-page-title="{{ PAGE_TITLE }}">
+        </div>
+        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    </div>
+    <script>
+        document.getElementById('giscus-btn').addEventListener('click', function() {
+            document.getElementById('giscus').classList.add('active');
+            document.getElementById('cusdis').classList.remove('active');
+            this.classList.add('active');
+            document.getElementById('cusdis-btn').classList.remove('active');
+        });
+        document.getElementById('cusdis-btn').addEventListener('click', function() {
+            document.getElementById('giscus').classList.remove('active');
+            document.getElementById('cusdis').classList.add('active');
+            this.classList.add('active');
+            document.getElementById('giscus-btn').classList.remove('active');
+        });
+    </script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 
-</div>
+<!-- <div class="reward-container">
+  <div></div>
+  <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    请作者喝杯咖啡
+  </button>
+  <div id="qr" style="display: none;">
+      <div style="display: inline-block;">
+        <a class="glightbox" href="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付"></a>
+        <p>微信支付</p>
+      </div>
+      <div style="display: inline-block;">
+        <a class="glightbox" href="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝"></a>
+        <p>支付宝</p>
+      </div>
 
-<hr />
+  </div>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打赏</title>
+    <style>
+        .reward-container {
+            margin: 20px auto;
+            padding: 25px 0;
+            text-align: center;
+            width: 90%;
+        }
+        .reward-container button {
+            background: none;
+            border: 1px solid #608DBD;
+            border-radius: 0.5rem;
+            color: #608DBD;
+            cursor: pointer;
+            line-height: 2;
+            outline: 0;
+            padding: 0 15px;
+            margin: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .reward-container button:hover {
+            color: #4a6e8c;
+        }
+        .qr-container {
+            display: none;
+            text-align: center;
+            margin-top: 25px;
+        }
+        .qr-container img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 25px;
+        }
+        .qr-container p {
+            font-size: 16px;
+            color: #555;
+        }
+        .qr-option {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+ <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+<body>
+    <div class="reward-container">
+        <button onclick="toggleQR()">
+            请作者喝杯咖啡
+        </button>
+        <div id="qr" class="qr-container">
+            <div class="qr-option">
+                <a class="glightbox" href="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付"></a>
+                <p>微信支付</p>
+            </div>
+            <div class="qr-option">
+                <a class="glightbox" href="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝"></a>
+                <p>支付宝</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleQR() {
+            const qrContainer = document.getElementById('qr');
+            qrContainer.style.display = (qrContainer.style.display === 'none' || qrContainer.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
 
 
 
@@ -6256,77 +6452,6 @@ document$.subscribe(() => { lightbox.reload() });
 
 <!-- Was this page helpful? -->
 
-
-  <h2 id="__comments">Comments</h2>
-  <!-- Insert generated snippet here -->
-  <script src="https://giscus.app/client.js"
-  data-repo="Wcowin/hexo-site-comments"
-  data-repo-id="R_kgDOIl9OJA"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOIl9OJM4CTHDe"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="bottom"
-  data-theme="preferred_color_scheme"
-  data-lang="zh-CN"
-  data-loading="lazy"  
-  crossorigin="anonymous"
-  async>
-</script>
-<div class="reward-container">
-  <div></div>
-  <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    请作者喝杯咖啡
-  </button>
-  <div id="qr" style="display: none;">
-      <div style="display: inline-block;">
-        <img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付">
-        <p>微信支付</p>
-      </div>
-      <div style="display: inline-block;">
-        <img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝">
-        <p>支付宝</p>
-      </div>
-
-  </div>
-</div>
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate"
-        ? "transparent_dark"
-        : "light"
-
-      // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-          // Instruct Giscus to change theme
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>
