@@ -71,7 +71,8 @@ comments: false
 
     ---
 
-    ![image](https://s1.imagehub.cc/images/2025/01/11/9c234885eeb4458be1df5e9beff223ce.png){  align=right width="340" height="280" style="border-radius: 25px;"}
+    <!-- ![image](https://s1.imagehub.cc/images/2025/01/11/9c234885eeb4458be1df5e9beff223ce.png){  align=right width="340" height="280" style="border-radius: 25px;"} -->
+    ![image](https://s1.imagehub.cc/images/2025/01/11/9c234885eeb4458be1df5e9beff223ce.png){ class="responsive-image" align=right width="340" height="280" style="border-radius: 25px;" }
 
     - [x] 通过{==目录==}以打开文章
     - [x] 搜索{~~~>关键词~~}查询文章
@@ -87,7 +88,13 @@ comments: false
     
 
 </div>
-
+<style>
+    @media only screen and (max-width: 768px) {
+        .responsive-image {
+            display: none;
+        }
+    }
+</style>
 
 <style>
 #rcorners3 {
