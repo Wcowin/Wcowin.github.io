@@ -47,8 +47,10 @@ glightbox-manual: true
                                 <span class="about__info-name">工作经验</span>
                             </div>
                             <div>
+                                <a href="https://github.com/Wcowin" target="_blank">
                                 <span class="about__info-title">03+</span>
                                 <span class="about__info-name">已经完成的项目</span>
+                                </a>
                             </div>
                             <div>
                                 <span class="about__info-title">02+</span>
