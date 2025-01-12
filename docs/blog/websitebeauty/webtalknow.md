@@ -28,3 +28,5 @@ comments: false
 ```
 ## 放到主页index.md即可
 ![](https://help.tidio.com/hc/article_attachments/5378990613404)
+
+<script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
