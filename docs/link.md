@@ -55,6 +55,28 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div> 
+       <div class="card"> 
+     <img class="ava" src="https://picx.zhimg.com/v2-164bee4f6cb4d13ea680f8bada5b6a3e_xll.jpg?source=32738c0c&needBackground=1" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a> 
+      </div> 
+      <div class="info">
+       Mungeryang写字的地方
+      </div> 
+     </div>
+    </div> 
+   <div class="card"> 
+     <img class="ava" src="https://s2.loli.net/2024/03/31/Ht3QBqhgLYNAuwj.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://lennychen.top/" target="_blank">Lenny's Web</a> 
+      </div> 
+      <div class="info">
+      天地不仁，以万物为刍狗
+      </div> 
+     </div> 
+    </div>
     <div class="card"> 
      <img class="ava" src="https://xpmrobot.tech/images/portrait.jpg" /> 
      <div class="card-header"> 
@@ -88,17 +110,6 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-       <div class="card"> 
-     <img class="ava" src="https://mungeryang.github.io/img/bg/person1.jpeg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a> 
-      </div> 
-      <div class="info">
-       Mungeryang写字的地方
-      </div> 
-     </div>
-    </div> 
        <div class="card"> 
      <img class="ava" src="https://img.ixintu.com/upload/jpg/20210524/3a8cbb0f2da716313a3b18984a9ffe73_78863_800_772.jpg!con" /> 
      <div class="card-header"> 
@@ -350,17 +361,6 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
       <div class="info">
       Blogger / Technophile / Student
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
-     <img class="ava" src="https://s2.loli.net/2024/03/31/Ht3QBqhgLYNAuwj.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://lennychen.top/" target="_blank">Lenny's Web</a> 
-      </div> 
-      <div class="info">
-      天地不仁，以万物为刍狗
       </div> 
      </div> 
     </div>

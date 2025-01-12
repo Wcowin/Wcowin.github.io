@@ -258,7 +258,7 @@ nav:
   - 标签: tag.md
   - 留言板: waline.md
   - 朋友: 
-    - 友链: about/link.md
+    - 友链: link.md
     - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
   - 博客:
     - blog/index.md

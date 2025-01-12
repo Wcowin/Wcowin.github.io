@@ -12,7 +12,7 @@ tags:
 labels: ['mkdocs']
 ---
 
-鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 [django-rest-framework](https://sspai.com/link?target=https%3A%2F%2Fwww.django-rest-framework.org%2F)、[FastAPI](https://sspai.com/link?target=https%3A%2F%2Ffastapi.tiangolo.com%2F) 以及基于 Go 编写的云网关代理服务器 [traefik](https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2Ftraefik%2Ftraefik) 等项目的官方文档站点，都是通过 MkDocs 进行搭建。
+鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 [django-rest-framework](https://www.django-rest-framework.org/)、[FastAPI](https://fastapi.tiangolo.com/) 以及基于 Go 编写的云网关代理服务器 [traefik](https://github.com/traefik/traefik) 等项目的官方文档站点，都是通过 MkDocs 进行搭建。
 
 <!-- more -->
 
@@ -35,4 +35,7 @@ labels: ['mkdocs']
 - [苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)  
 - [世界天光的笔记本](https://lastwish.icu/)  
 - [Wen-Chieh Lee的生活](https://wenchiehlee.github.io/mkdocs-life/)
+- [BruceJin's Notebook](https://brucejqs.github.io/MyNotebook/)  
+- [0X10CC的代码空间](https://tang-jiapeng.github.io/)
+- [GENG Wei's Homepage](https://wgeng.site/index.html)
 - [Wcowin's Web](https://wcowin.work/)

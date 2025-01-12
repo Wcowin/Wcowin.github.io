@@ -18,7 +18,6 @@ disqus: true
   </div>
 
 
-
 <!-- tw开始 -->
 
 <!-- <body>
@@ -115,32 +114,39 @@ twikoo.init({
         .switch-button.active {
             background-color: #4a6e8c;
         }
+        @media (max-width: 768px) {
+            .switch-button {
+                padding: 8px 10px;
+                font-size: 14px;
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="button-container">
-      <!-- <center><p>点击以切换评论系统</p></center> -->
         <button id="giscus-btn" class="switch-button active">Giscus 评论</button>
+        <button id="twikoo-btn" class="switch-button">Twikoo 评论</button>
         <button id="cusdis-btn" class="switch-button">Cusdis 评论</button>
     </div>
     <div id="giscus" class="comment-system active">
         <!-- Giscus 评论系统代码 -->
-  <script src="https://giscus.app/client.js"
-  data-repo="Wcowin/hexo-site-comments"
-  data-repo-id="R_kgDOIl9OJA"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOIl9OJM4CTHDe"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="bottom"
-  data-theme="preferred_color_scheme"
-  data-lang="zh-CN"
-  data-loading="lazy"  
-  crossorigin="anonymous"
-  async>
-</script>
+        <script src="https://giscus.app/client.js"
+            data-repo="Wcowin/hexo-site-comments"
+            data-repo-id="R_kgDOIl9OJA"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOIl9OJM4CTHDe"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"  
+            crossorigin="anonymous"
+            async>
+        </script>
     </div>
     <div id="cusdis" class="comment-system">
         <!-- Cusdis 评论系统代码 -->
@@ -154,18 +160,55 @@ twikoo.init({
         </div>
         <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </div>
+    <div id="twikoo" class="comment-system">
+        <!-- Twikoo 评论系统代码 -->
+        <div id="twikoo-container"></div>
+<body>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+</head>
+  <div id="tcomment"></div> 
+  <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script> 
+  <script>
+twikoo.init({
+  envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+   //region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+   //lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+   onCommentLoaded: function () {
+    console.log('评论加载完成');
+  }
+})
+</script>  
+ </body>
+    </div>
     <script>
         document.getElementById('giscus-btn').addEventListener('click', function() {
             document.getElementById('giscus').classList.add('active');
             document.getElementById('cusdis').classList.remove('active');
+            document.getElementById('twikoo').classList.remove('active');
             this.classList.add('active');
             document.getElementById('cusdis-btn').classList.remove('active');
+            document.getElementById('twikoo-btn').classList.remove('active');
         });
         document.getElementById('cusdis-btn').addEventListener('click', function() {
             document.getElementById('giscus').classList.remove('active');
             document.getElementById('cusdis').classList.add('active');
+            document.getElementById('twikoo').classList.remove('active');
             this.classList.add('active');
             document.getElementById('giscus-btn').classList.remove('active');
+            document.getElementById('twikoo-btn').classList.remove('active');
+        });
+        document.getElementById('twikoo-btn').addEventListener('click', function() {
+            document.getElementById('giscus').classList.remove('active');
+            document.getElementById('cusdis').classList.remove('active');
+            document.getElementById('twikoo').classList.add('active');
+            this.classList.add('active');
+            document.getElementById('giscus-btn').classList.remove('active');
+            document.getElementById('cusdis-btn').classList.remove('active');
         });
     </script>
 </body>

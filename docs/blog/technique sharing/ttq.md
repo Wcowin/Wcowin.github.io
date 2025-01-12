@@ -11,6 +11,9 @@ tags:
 comments: false  #评论，默认不开启
 ---
 
+<img src="https://s1.imagehub.cc/images/2025/01/11/0e3e8f033e2e58b93649ac24e83b991c.png" alt="image" border="0">
+
+甜甜圈会动的！！！
 
 代码如下
 ```c title="math.py"
