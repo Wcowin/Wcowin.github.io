@@ -73,3 +73,6 @@ title: Github主页介绍
 </table>
 
 ![Wcowin's github activity graph](https://raw.githubusercontent.com/Wcowin/Wcowin/output/github-contribution-grid-snake.svg)
+
+
+![postspark_export_12-18-2024_09-30-41.jpg](https://s2.loli.net/2025/01/13/R4Ki6k5sc7nFSbo.jpg)

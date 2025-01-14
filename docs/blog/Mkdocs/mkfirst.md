@@ -18,4 +18,4 @@ mkdocs materials 教程:
 
 
 已经发布  
-[Mkdocs中文教程视频](https://www.bilibili.com/list/1407028951/?sid=4566631&oid=113813663784497&bvid=BV1yWcgecEdg){target=“_blank”}
+[Mkdocs中文教程视频](https://space.bilibili.com/1407028951/lists/4566631?type=series){target=“_blank”}
