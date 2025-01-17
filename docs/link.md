@@ -638,6 +638,28 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://vite.xingji.fun" target="_blank">XINGJI</a> 
+      </div> 
+      <div class="info">
+      迄今所有人生都大写着失败，但不妨碍我继续向前✨
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://img.viper3.top/user/%E7%9A%AE%E5%8D%A1%E5%85%AB.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://blog.viper3.top/" target="_blank">小霜南风</a> 
+      </div> 
+      <div class="info">
+      “散落一些碎花，凝结一些轻痕”
+      </div> 
+     </div> 
+    </div>
 
 
 
