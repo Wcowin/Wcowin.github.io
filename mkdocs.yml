@@ -354,7 +354,8 @@ extra:
 
 plugins:
   - rss:
-      match_path: "(blog|develop|relax|trip|about)/.*"
+      enabled: !ENV [CI, false]
+      match_path: (blog/posts|develop|relax|trip|about)/.* # 指定多个目录
       image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png 
       date_from_meta:
         as_creation: date
