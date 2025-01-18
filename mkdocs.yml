@@ -2,6 +2,7 @@
 #[Info]
 site_name: Wcowin's Blog
 site_url: http://wcowin.work/
+site_description: 知足且上进，温柔且坚定
 site_author: 王科文(Wcowin)
 
 #[UI]
@@ -353,7 +354,7 @@ extra:
 
 plugins:
   - rss:
-      match_path: "(blog/posts|develop|relax|trip|about)/.*"
+      match_path: "(blog|develop|relax|trip|about)/.*"
       image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png 
       date_from_meta:
         as_creation: date
