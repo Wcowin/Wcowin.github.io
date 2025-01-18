@@ -6,11 +6,11 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
-## </p><h1 id="01" name="01"><strong>2025-01-10</strong></h1><p>
+## </p><h1 id="01" name="01"><strong>2025-01-18</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 尝试**RSS订阅**功能，欢迎尝试
 
-## </p><h1 id="01" name="01"><strong>2025-01-10</strong></h1><p>
+## </p><h1 id="01" name="01"><strong>2025-01-12</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 重写首页，简化UI
 
