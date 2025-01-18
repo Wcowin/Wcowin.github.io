@@ -37,7 +37,7 @@ t.parentNode.insertBefore(e,t)}})();
      <img class="ava" src="https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://wcowin.work/ " target="_blank">Wcowin's Web</a> 
+       <a href="https://wcowin.work/ " target="_blank">Wcowin's Blog</a> 
       </div> 
       <div class="info">
        “循此苦旅，以达星辰”
@@ -660,12 +660,21 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
+    <div class="card"> 
+     <img class="ava" src="https://images.zlog.us.kg/hexo/avatar.webp" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://www.zlog.us.kg" target="_blank">琅環书生</a> 
+      </div> 
+      <div class="info">
+      无远弗届，皆有可能
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
-
 
 
 
@@ -767,7 +776,7 @@ t.parentNode.insertBefore(e,t)}})();
 
 === "Txt"
 
-    >名称: Wcowin's Web  
+    >名称: Wcowin's Blog  
     >链接: https://wcowin.work/  
     >头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
     >简介: 循此苦旅，以达星辰
