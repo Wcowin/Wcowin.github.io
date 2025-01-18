@@ -278,8 +278,9 @@ nav:
         - 2023: about/zongjie/2023.md
         - 2024: about/zongjie/2024.md
     - 考研: about/kaoyan.md
+  - RSS: https://wcowin.work/feed_rss_created.xml
 
-copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2022~2025 Wcowin/All Rights Reserved. # 左下角的版权声明
 
 extra:
   status:
@@ -350,8 +351,16 @@ extra:
   #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
   #     如果你同意,你可以帮助我们让我们的网站更好
 
-
 plugins:
+  - rss:
+      match_path: "(blog/posts|develop|relax|trip|about)/.*"
+      image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+      # comments_path: "#__comments"
   # - social
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -415,13 +424,7 @@ plugins:
       authors_file: "{blog}/.authors.yml"  #作者信息
   - tags:
       tags_file: tag.md  #分类标签
-  - rss:
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags 
+
 
 markdown_extensions:
   - abbr
@@ -506,3 +509,6 @@ extra_css:
 #   - docs
 #   - mkdocs.yml
 #   - docs/overrides
+
+hooks:
+  - docs/overrides/hooks/socialmedia.py

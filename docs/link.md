@@ -308,7 +308,18 @@ t.parentNode.insertBefore(e,t)}})();
       分享设计与科技生活
       </div> 
      </div> 
-    </div>    
+    </div>   
+   <div class="card"> 
+     <img class="ava" src="https://bu.dusays.com/2023/12/23/65867c3357bb6.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://kegongteng.cn/" target="_blank">Kegongteng</a> 
+      </div> 
+      <div class="info">
+      Blogger / Technophile / Student
+      </div> 
+     </div> 
+    </div> 
    <div class="card"> 
      <img class="ava" src="https://blog.lichenghao.cn/avatar.svg" /> 
      <div class="card-header"> 
@@ -350,17 +361,6 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
       <div class="info">
       我们的忧愁将会崩解灵魂将会穿梭如风
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
-     <img class="ava" src="https://bu.dusays.com/2023/12/23/65867c3357bb6.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://kegongteng.cn/" target="_blank">Kegongteng</a> 
-      </div> 
-      <div class="info">
-      Blogger / Technophile / Student
       </div> 
      </div> 
     </div>
@@ -671,6 +671,19 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://weiyan.cc/assets/logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://weiyan.cc" target="_blank">维燕的知识花园</a> 
+      </div> 
+      <div class="info">
+      Bio & IT 爱好者，沉淀生活，记录点滴。
+      </div> 
+     </div> 
+    </div>
+
+
 
 
    </div> 

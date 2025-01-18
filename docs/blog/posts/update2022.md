@@ -20,4 +20,5 @@ readtime: 2
 ## <h1 id="01" name="01"><strong>2022-06-06</strong></h1>
 
 * 研究如何建设网站，初步定框架为MKdocs
-* 早期网址：<https://github.com/Wcowin/mymkdocs>
+* 早期网址：<https://github.com/Wcowin/mymkdocs>   
+
