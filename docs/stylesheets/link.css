@@ -1,14 +1,17 @@
 /* 用于大屏幕和小屏幕的通用样式 */
 .card {
-   width: 50%;
-   height:80px;
+   width: 345px;
+   height: 90px;
    font-size: 1rem;
    padding: 10px 20px;
    border-radius: 20px;
-   transition-duration: 0.15s;
+   transition: transform 0.15s, box-shadow 0.15s, background 0.15s; /* 添加背景过渡效果 */
    margin-bottom: 1rem;
    display: flex;
    align-items: center; /* 垂直居中对齐内容 */
+   background: #fff; /* 默认背景颜色 */
+   color: #333; /* 默认字体颜色 */
+   border: 1px solid #608DBD; /* 添加外框 */
 }
 
 .card:nth-child(odd) {
@@ -23,6 +26,9 @@
 .card:hover {
    transform: translateY(0px) scale(1.05);
    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
+   /* background: linear-gradient(to right, #a1c4fd, #c2e9fb);  */
+   background: linear-gradient(to right, rgba(189, 224, 245), rgba(218, 232, 241), rgba(238, 237, 238));
+   color: #040000; /* 确保字体颜色在悬停时保持可读性 */
 }
 
 .card a {
@@ -34,7 +40,7 @@
    height: 3rem!important;
    margin: 0!important;
    margin-right: 1em!important;
-   border-radius: 15px;
+   border-radius: 50%;
 }
 
 .card .card-header {
@@ -58,7 +64,7 @@
 
 .card .card-header .info {
    font-style: normal;
-   color: #a3a3a3;
+   color: #706f6f;
    font-size: 14px;
    min-width: 0;
    overflow: visible;
@@ -68,10 +74,15 @@
 /* 媒体查询：小屏幕 */
 @media (max-width: 768px) {
    .card {
-       width: 100%; /* 在小屏幕上显示为单列 */
-       float: none; /* 清除浮动 */
+         width: 100%; /* 在小屏幕上显示为单列 */
+         height: auto;
+         float: none; /* 清除浮动 */
    }
+   .card:hover {
+      background: #fff; /* 恢复为默认背景颜色 */
+  }
 }
+
 .markdown-content {
    clear: both;
 }
