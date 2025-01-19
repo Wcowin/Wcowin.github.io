@@ -1,13 +1,14 @@
 /* 用于大屏幕和小屏幕的通用样式 */
 .card {
    width: 50%;
-   height: auto;
+   height:80px;
    font-size: 1rem;
    padding: 10px 20px;
    border-radius: 20px;
    transition-duration: 0.15s;
    margin-bottom: 1rem;
    display: flex;
+   align-items: center; /* 垂直居中对齐内容 */
 }
 
 .card:nth-child(odd) {
