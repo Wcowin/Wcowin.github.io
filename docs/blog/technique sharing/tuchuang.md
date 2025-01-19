@@ -21,13 +21,20 @@ hide:
 打开左侧Pages,然后创建项目、连接到Git（刚刚创建的MyIMGS仓库）
 
 ### 步骤3 
-上传图片到Git仓库，我是在Git仓库建立了一个名为IMG的文件夹，在这个文件夹里放图片，比如我在IMG文件夹放了一张名为xigua,jpeg格式的图片，则这个照片的路径为:https://myimgs.pages.dev/IMG/xigua.jpeg  
+上传图片到Git仓库，我在Git仓库建立了一个名为IMG的文件夹，在这个文件夹里放图片，比如我在IMG文件夹放了一张名为xigua.jpeg格式的图片，则这个照片的路径为:https://myimgs.pages.dev/IMG/xigua.jpeg  
 
 
 ## 二、免费图床(推荐)
 - [SMMS](https://sm.ms/)(推荐)
 - [Hello图床](https://www.helloimg.com/)
 - [载涂图床](https://mcecy.com/)(已经跑路)
-- [imgurl](https://www.imgurl.ink/vip/manage/upload)  
- 
+- [imgurl](https://www.imgurl.ink/vip/manage/upload)    
+
 无脑上传图片，粘贴链接即可
+
+## 三、图床上传工具
+
+- [PicGo](https://picgo.github.io/PicGo-Doc/zh/guide/getting-started.html)
+- [PicList](https://piclist.cn/)
+
+

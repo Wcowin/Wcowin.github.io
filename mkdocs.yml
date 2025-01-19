@@ -279,7 +279,7 @@ nav:
         - 2023: about/zongjie/2023.md
         - 2024: about/zongjie/2024.md
     - 考研: about/kaoyan.md
-  - RSS: https://wcowin.work/feed_rss_created.xml
+  - RSS(测试中): https://wcowin.work/feed_rss_created.xml
 
 copyright: Copyright &copy; 2022~2025 Wcowin/All Rights Reserved. # 左下角的版权声明
 
