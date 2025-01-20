@@ -27,7 +27,7 @@ authors: [Wcowin]
 
 <html lang="en">
 <p style="text-align: center; margin: 0px;" markdown>
-  <img src="https://s1.imagehub.cc/images/2025/01/04/158948b0002cdac6e9ff43986648cb83.png" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
+  <img src="https://pic2.zhimg.com/v2-ef969571db8a20c8436235c588d04483_1440w.jpg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
   <!-- ![image](https://s1.imagehub.cc/images/2025/01/04/158948b0002cdac6e9ff43986648cb83.png) -->
   <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p>
     <head>
@@ -167,13 +167,13 @@ authors: [Wcowin]
     - [x] 咖啡重度爱好者 
     - [x] 热爱(xiā)折腾技术/Math
     - [x] 读书明志可识春秋;诗词爱好者,喜欢村上春树，擅长羽毛球
-<img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg">
+<img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp">
 
 ## 联系我
 
-<a href="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" target="_blank">
+<a href="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" target="_blank">
  <center>
-  <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" style="width: 450px; height: auto;">
+  <img class="img1" src="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" style="width: 450px; height: auto;">
     <div style="color:orange; 
     color: #999;
     padding: 2px;">我的Wechat</div>
