@@ -290,7 +290,7 @@ t.parentNode.insertBefore(e,t)}})();
      <img class="ava" src="https://fastly.jsdelivr.net/gh/wkk-dev/cdn@master/png/kang-qq.jpg" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://blog.wkk-dev.top" target="_blank">WKK & Blog</a> 
+       <a href="https://blog.wkk-dev.one" target="_blank">WKK & Blog</a> 
       </div> 
       <div class="info">
       天生我材必有用，千金散尽还复来。
@@ -682,13 +682,22 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
+    <div class="card"> 
+     <img class="ava" src="https://moshanghua.net/avatar.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://moshanghua.net" target="_blank">花开陌上</a> 
+      </div> 
+      <div class="info">
+      待我熬尽一日苦，喂你一口甜。
+      </div> 
+     </div> 
+    </div>
 
 
 
    </div> 
   </div>
-
 
 
 <!-- <div class="markdown-content">
