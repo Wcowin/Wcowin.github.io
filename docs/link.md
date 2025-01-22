@@ -693,11 +693,23 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
+    <div class="card"> 
+     <img class="ava" src="https://cravatar.cn/avatar/294fc41a0551cb235455b29356002f46?s=500&r=X" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://moechu.cn" target="_blank">萌豚 Moechu</a> 
+      </div> 
+      <div class="info">
+      一个不走心的个人站点
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
+
+
 
 
 <!-- <div class="markdown-content">
