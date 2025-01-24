@@ -166,7 +166,7 @@ authors: [Wcowin]
     - [x] 清醒，知趣，明得失，知进退
     - [x] 咖啡重度爱好者 
     - [x] 热爱(xiā)折腾技术/Math
-    - [x] 读书明志可识春秋;诗词爱好者,喜欢村上春树，擅长羽毛球
+    - [x] 读书明志可识春秋;诗词爱好者;喜欢村上春树;擅长羽毛球
 <img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp">
 
 ## 联系我
