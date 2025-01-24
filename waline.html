@@ -94,6 +94,8 @@
     
       <link rel="stylesheet" href="stylesheets/customize.css">
     
+      <link rel="stylesheet" href="stylesheets/flink.css">
+    
       <link rel="stylesheet" href="stylesheets/bannerSlider.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
@@ -6297,7 +6299,7 @@ document$.subscribe(() => { lightbox.reload() });
 <body>
     <div class="button-container">
         <button id="giscus-btn" class="switch-button active">Giscus 评论</button>
-        <button id="twikoo-btn" class="switch-button">Twikoo 评论</button>
+        <button id="twikoo-btn" class="switch-button">Waline 评论</button>
         <button id="cusdis-btn" class="switch-button">Cusdis 评论</button>
     </div>
     <div id="giscus" class="comment-system active">
@@ -6334,7 +6336,7 @@ document$.subscribe(() => { lightbox.reload() });
     <div id="twikoo" class="comment-system">
         <!-- Twikoo 评论系统代码 -->
         <div id="twikoo-container"></div>
-        <center><p>评论区若不显示，请刷新一次页面</p></center>
+        <!-- <center><p>评论区若不显示，请刷新一次页面</p></center>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
@@ -6348,7 +6350,42 @@ document$.subscribe(() => { lightbox.reload() });
                     console.log('评论加载完成');
                 }
             });
-        </script>
+        </script> -->
+
+
+<head>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+ <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+    init({
+      el: '#waline',
+      serverURL: 'https://mk-docs-comments.vercel.app/',
+      emoji: [
+      'https://unpkg.com/@waline/emojis@1.1.0/qq',
+      'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
+      '//unpkg.com/@waline/emojis@1.1.0/bilibili',
+      '//unpkg.com/@waline/emojis@1.1.0/weibo',
+    ],
+      comment: true,
+      pageview: true, 
+      lang: 'zh',
+      pageview: true,
+    });
+  </script>
     </div>
     <script>
         document.getElementById('giscus-btn').addEventListener('click', function() {
