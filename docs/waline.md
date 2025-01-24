@@ -126,7 +126,7 @@ twikoo.init({
 <body>
     <div class="button-container">
         <button id="giscus-btn" class="switch-button active">Giscus 评论</button>
-        <button id="twikoo-btn" class="switch-button">Twikoo 评论</button>
+        <button id="twikoo-btn" class="switch-button">Waline 评论</button>
         <button id="cusdis-btn" class="switch-button">Cusdis 评论</button>
     </div>
     <div id="giscus" class="comment-system active">
@@ -163,7 +163,7 @@ twikoo.init({
     <div id="twikoo" class="comment-system">
         <!-- Twikoo 评论系统代码 -->
         <div id="twikoo-container"></div>
-        <center><p>评论区若不显示，请刷新一次页面</p></center>
+        <!-- <center><p>评论区若不显示，请刷新一次页面</p></center>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
@@ -177,7 +177,33 @@ twikoo.init({
                     console.log('评论加载完成');
                 }
             });
-        </script>
+        </script> -->
+
+
+<head>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+</head>
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+    init({
+      el: '#waline',
+      serverURL: 'https://mk-docs-comments.vercel.app/',
+      emoji: [
+      'https://unpkg.com/@waline/emojis@1.1.0/qq',
+      'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
+      '//unpkg.com/@waline/emojis@1.1.0/bilibili',
+      '//unpkg.com/@waline/emojis@1.1.0/weibo',
+    ],
+      comment: true,
+      pageview: true, 
+      lang: 'zh',
+      pageview: true,
+    });
+  </script>
     </div>
     <script>
         document.getElementById('giscus-btn').addEventListener('click', function() {
