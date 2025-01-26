@@ -36,6 +36,8 @@ button.md-top {
   --md-text-font: "LXGW WenKai";
 }
 
+
+
 /* @font-face {
   font-family: "LXGW WenKai";
   src: "https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css";
@@ -44,11 +46,11 @@ button.md-top {
 
 /* 字体 */
 
-.ml3 {
+/* .ml3 {
   font-weight: 900;
   font-size: 30px;
   font-family: LXGW WenKai;
-}
+} */
 
 
 img.img1 {
