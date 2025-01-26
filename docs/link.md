@@ -365,17 +365,6 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://i.postimg.cc/MGCXBFxn/logo.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://tkqtang.github.io" target="_blank">tkqtang’s Web</a> 
-      </div> 
-      <div class="info">
-      所谓自由，不是随心所欲，而是自我主宰
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
      <img class="ava" src="https://avatars.githubusercontent.com/u/111767754?v=4" /> 
      <div class="card-header"> 
       <div> 
@@ -584,13 +573,13 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
     <div class="card"> 
-    <img class="ava" src="https://s2.loli.net/2024/07/02/uKs2Jqo9THROipr.jpg" /> 
+    <img class="ava" src="https://s2.loli.net/2025/01/25/x4aS23Z1uypqhc7.jpg" /> 
     <div class="card-header"> 
       <div> 
-      <a href="https://frankoxer.github.io" target="_blank">Frankoxer</a> 
+      <a href="https://fanovian.github.io" target="_blank">Fanovian</a> 
       </div> 
       <div class="info">
-      别急，过会儿就更新
+      Get in, you beauty!
       </div> 
     </div> 
     </div>
@@ -726,6 +715,20 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://www.nodeloc.com" target="_blank">Nodeloc</a> 
+      </div> 
+      <div class="info">
+      一个很有意思的论坛
+      </div> 
+     </div> 
+    </div>
+
+
+
 
    </div> 
   </div>
@@ -751,6 +754,17 @@ t.parentNode.insertBefore(e,t)}})();
 <div id="rcorners4" >
   <div class="links-content"> 
    <div class="link-navigation"> 
+   <div class="card"> 
+     <img class="ava" src="https://i.postimg.cc/MGCXBFxn/logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://tkqtang.github.io" target="_blank">tkqtang’s Web</a> 
+      </div> 
+      <div class="info">
+      所谓自由，不是随心所欲，而是自我主宰
+      </div> 
+     </div> 
+    </div>
    <div class="card"> 
      <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
      <div class="card-header"> 

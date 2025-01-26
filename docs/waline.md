@@ -18,6 +18,7 @@ disqus: true
   </div>
 
 
+
 <!-- tw开始 -->
 
 <!-- <body>
@@ -27,14 +28,14 @@ disqus: true
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
 </head>
   <div id="tcomment"></div> 
-  <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script> 
+  <script src="https://cdn.staticfile.org/Waline/1.6.31/Waline.all.min.js"></script> 
   <script>
-twikoo.init({
-  envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+Waline.init({
+  envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/Waline', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
   el: '#tcomment', // 容器元素
    //region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
   // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
-   //lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+   //lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/Walinejs/Waline/blob/main/src/client/utils/i18n/index.js
    onCommentLoaded: function () {
     console.log('评论加载完成');
   }
@@ -81,7 +82,6 @@ twikoo.init({
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script> -->
 
 
-<!-- </div> -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,37 +97,52 @@ twikoo.init({
             text-align: center;
             margin: 20px 0;
         }
-        .switch-button {
-            background-color: #608DBD;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 25px;
-            cursor: pointer;
+        .buttonxuan {
+            background-color: white;
+            color: black;
+            border-radius: 18px;
+            border: 2px solid rgba(189, 224, 245);
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
         }
-        .switch-button:hover {
-            background-color: #4a6e8c;
+        .buttonxuan:hover {
+            background-color: rgba(189, 224, 245);
+            color:rgb(4, 0, 0);
         }
-        .switch-button.active {
-            background-color: #4a6e8c;
+        .buttonxuan.active {
+            background-color: rgba(189, 224, 245);
+            color:rgb(4, 0, 0);
         }
         @media (max-width: 768px) {
-            .switch-button {
-                padding: 8px 10px;
+            .buttonxuan {
+                padding: 10px 20px;
                 font-size: 14px;
                 margin: 5px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .button-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                gap: 5px;
             }
         }
     </style>
 </head>
 <body>
     <div class="button-container">
-        <button id="giscus-btn" class="switch-button active">Giscus 评论</button>
-        <button id="twikoo-btn" class="switch-button">Waline 评论</button>
-        <button id="cusdis-btn" class="switch-button">Cusdis 评论</button>
+        <button id="giscus-btn" class="buttonxuan active">Giscus</button>
+        <button id="Waline-btn" class="buttonxuan">Waline</button>
+        <button id="cusdis-btn" class="buttonxuan">Cusdis</button>
     </div>
     <div id="giscus" class="comment-system active">
         <!-- Giscus 评论系统代码 -->
@@ -160,26 +175,10 @@ twikoo.init({
         </div>
         <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </div>
-    <div id="twikoo" class="comment-system">
-        <!-- Twikoo 评论系统代码 -->
-        <div id="twikoo-container"></div>
-        <!-- <center><p>评论区若不显示，请刷新一次页面</p></center>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
-        <div id="tcomment"></div>
-        <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
-        <script>
-            twikoo.init({
-                envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
-                el: '#tcomment', // 容器元素
-                onCommentLoaded: function () {
-                    console.log('评论加载完成');
-                }
-            });
-        </script> -->
-
-
+    <div id="Waline" class="comment-system">
+        <!-- Waline 评论系统代码 -->
+        <div id="Waline-container"></div>
+        <center><p>评论区若不显示，请刷新一次页面</p></center>
 <head>
   <link
     rel="stylesheet"
@@ -209,26 +208,33 @@ twikoo.init({
         document.getElementById('giscus-btn').addEventListener('click', function() {
             document.getElementById('giscus').classList.add('active');
             document.getElementById('cusdis').classList.remove('active');
-            document.getElementById('twikoo').classList.remove('active');
+            document.getElementById('Waline').classList.remove('active');
             this.classList.add('active');
             document.getElementById('cusdis-btn').classList.remove('active');
-            document.getElementById('twikoo-btn').classList.remove('active');
+            document.getElementById('Waline-btn').classList.remove('active');
         });
         document.getElementById('cusdis-btn').addEventListener('click', function() {
             document.getElementById('giscus').classList.remove('active');
             document.getElementById('cusdis').classList.add('active');
-            document.getElementById('twikoo').classList.remove('active');
+            document.getElementById('Waline').classList.remove('active');
             this.classList.add('active');
             document.getElementById('giscus-btn').classList.remove('active');
-            document.getElementById('twikoo-btn').classList.remove('active');
+            document.getElementById('Waline-btn').classList.remove('active');
         });
-        document.getElementById('twikoo-btn').addEventListener('click', function() {
+        document.getElementById('Waline-btn').addEventListener('click', function() {
             document.getElementById('giscus').classList.remove('active');
             document.getElementById('cusdis').classList.remove('active');
-            document.getElementById('twikoo').classList.add('active');
+            document.getElementById('Waline').classList.add('active');
             this.classList.add('active');
             document.getElementById('giscus-btn').classList.remove('active');
             document.getElementById('cusdis-btn').classList.remove('active');
+        });
+        const buttons = document.querySelectorAll('.buttonxuan');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
         });
     </script>
 </body>
@@ -252,6 +258,9 @@ twikoo.init({
 
   </div>
 </div> -->
+
+
+---
 
 <!DOCTYPE html>
 <html lang="zh-CN">
