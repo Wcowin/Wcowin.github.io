@@ -8,7 +8,7 @@ comments: false
 # icon: octicons/home-fill-24
 ---
 
-# Wcowin's Blog
+# Welcome you
 
 <center><font  color= #757575 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
@@ -98,7 +98,7 @@ comments: false
     }
 </style>
 
-<style>
+<!-- <style>
 #rcorners3 {
   border-radius: 25px;
   border: 2px solid #518FC1;
@@ -108,9 +108,9 @@ comments: false
   font-size: 18px;
   text-align: center;
 }
-</style>
-<body>
-<font color="#B9B9B9">
+</style> -->
+
+<!-- <font color="#B9B9B9">
   <p style="text-align: center; ">
       <span>本站已经运行</span>
       <span id='box1'></span>
@@ -135,8 +135,8 @@ comments: false
 document.getElementById('box1').innerHTML = timingTime()
     },1000)
   </script>
-  </font>
-</body>
+  </font> -->
+
 
 
 ***  

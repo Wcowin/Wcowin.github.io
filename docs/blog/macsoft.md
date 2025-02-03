@@ -1,10 +1,11 @@
 ---
 hide:
   #- navigation # 显示右
-  - toc #显示左
+  # - toc #显示左
 ---
 
-## <b> :simple-apple:
+## :simple-apple: MacOS
+
 
 -  <https://macapp.org.cn>(推荐)
 
@@ -26,7 +27,8 @@ hide:
 - <https://www.macyy.cn/resources>
 - <https://www.macdo.cn/>
 - <https://store.lizhi.io/>
-***  
-## :simple-windows:
+***    
+
+## :fontawesome-brands-windows: Windows
  
 - <https://softmall.net/?page=2>

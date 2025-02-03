@@ -1,0 +1,33 @@
+@keyframes rainbow {
+    0%, 100% {
+        --rainbow-prev: #009ff7;
+        --rainbow-next: #c76dd1;
+    }
+    25% {
+        --rainbow-prev: #00a65b;
+        --rainbow-next: #00a8cf;
+    }
+    50% {
+        --rainbow-prev: #c76dd1;
+        --rainbow-next: #009ff7;
+    }
+    75% {
+        --rainbow-prev: #00a8cf;
+        --rainbow-next: #00a65b;
+    }
+}
+
+.rainbow-border {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--rainbow-prev), var(--rainbow-next));
+    animation: rainbow 8s linear infinite;
+}
+
+.rainbow-border img {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}

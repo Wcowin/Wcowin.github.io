@@ -90,7 +90,6 @@ nav:
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md
     - Mac/windows软件网站汇总: blog/macsoft.md
     - 语雀: blog/yuque.md
-    - Telegram 群组、频道、机器人  汇总分享: blog/TG.md
     - MKdocs教程:
         - Mkdocs教程前言: blog/Mkdocs/mkfirst.md
         - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
@@ -198,6 +197,8 @@ nav:
       - 击鼓: relax/shiwen/jg.md
       - 雨霖铃·秋别: relax/shiwen/yll.md
       - 江城子·乙卯正月二十日夜记梦: relax/shiwen/jcz.md
+    - 八字六爻:
+      - relax/skyearth/20251.md
     - 日记:
       - 2024: 
           - 20240131: relax/diary/2024/20240131.md
@@ -305,9 +306,6 @@ extra:
       link: /ZH-TW/
       # https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: zh-TW
-    - name: Overseas
-      link: https://www.wcowin.love/
-      lang: en
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/weixin
@@ -331,7 +329,7 @@ extra:
 
   analytics: 
     provider: google
-    property: G-29HZMNR0KG  ##如果你 clone 了my模板，请将这个修改为你的
+    property: G-29HZMNR0KG  ##如果你 clone 了我的模板，请将这个修改为你的property
     # !ENV GOOGLE_ANALYTICS_KEY
     feedback:
       title: 此页面有帮助吗？
@@ -354,6 +352,7 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
+  # - statistics
   - rss:
       enabled: !ENV [CI, false]
       match_path: (blog/posts|develop|relax|trip|about)/.* # 指定多个目录
@@ -495,7 +494,7 @@ extra_css:
   - stylesheets/extra2.css  
   - stylesheets/link.css  #友链
   - stylesheets/customize.css  #按钮圆角化
-  - stylesheets/flink.css
+  # - stylesheets/flink.css
   # - assets/stylesheets/portfolio.css #个人简历 
   - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN

@@ -99,6 +99,7 @@ Waline.init({
         }
         .buttonxuan {
             background-color: white;
+            width: 40%;
             color: black;
             border-radius: 18px;
             border: 2px solid rgba(189, 224, 245);
@@ -113,7 +114,7 @@ Waline.init({
             cursor: pointer;
         }
         .buttonxuan:hover {
-            background-color: rgba(189, 224, 245);
+            background-color: rgba(238,242,249);
             color:rgb(4, 0, 0);
         }
         .buttonxuan.active {
@@ -141,7 +142,7 @@ Waline.init({
 <body>
     <div class="button-container">
         <button id="giscus-btn" class="buttonxuan active">Giscus</button>
-        <button id="Waline-btn" class="buttonxuan">Waline</button>
+        <!-- <button id="Waline-btn" class="buttonxuan">Waline</button> -->
         <button id="cusdis-btn" class="buttonxuan">Cusdis</button>
     </div>
     <div id="giscus" class="comment-system active">

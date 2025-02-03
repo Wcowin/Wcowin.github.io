@@ -1,6 +1,8 @@
 ---
 title: 友链
 comments: true
+tags:
+  - 友链
 hide:
 #   - navigation # 显示右
 #   - toc #显示左
@@ -28,7 +30,8 @@ t.parentNode.insertBefore(e,t)}})();
     <h2>欢迎加入友链(不分先后)</h2>
 </div> -->
 
-# 欢迎加入友链(不分先后)
+# 欢迎加入友链(不分先后)  
+
 <div id="rcorners4" >
 
   <div class="links-content"> 
@@ -44,7 +47,7 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-   <div class="card"> 
+   <!-- <div class="card"> 
      <img class="ava" src="https://s2.loli.net/2024/02/07/S8GYheTZmCU96HK.png" /> 
      <div class="card-header"> 
       <div> 
@@ -54,7 +57,7 @@ t.parentNode.insertBefore(e,t)}})();
         无一是你，无一不是你
       </div> 
      </div> 
-    </div> 
+    </div>  -->
        <div class="card"> 
      <img class="ava" src="https://picx.zhimg.com/v2-164bee4f6cb4d13ea680f8bada5b6a3e_xll.jpg?source=32738c0c&needBackground=1" /> 
      <div class="card-header"> 
@@ -177,35 +180,12 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://www.yaguwu.com/1.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a> 
-      </div> 
-      <div class="info">
-       寻一处小筑，不遇车马喧器
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
      <img class="ava" src="https://cdn.dusays.com/avatar.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://dusays.com" target="_blank">杜老师说</a> 
       </div> 
       <div class="info">
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.luckyzh.cn/" target="_blank">旧梦</a> 
-      </div> 
-      <div class="info">
-       冰冻三尺非一日之寒
-       滴水穿石非一日之功
       </div> 
      </div> 
     </div>
@@ -650,7 +630,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://images.zlog.us.kg/hexo/avatar.webp" /> 
+     <img class="ava" src="https://www.zlog.us.kg/img/zz.jpg" /> 
      <div class="card-header"> 
       <div> 
       <a href="https://www.zlog.us.kg" target="_blank">琅環书生</a> 
@@ -798,6 +778,30 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a> 
+      </div> 
+      <div class="info">
+       寻一处小筑，不遇车马喧器
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.luckyzh.cn/" target="_blank">旧梦</a> 
+      </div> 
+      <div class="info">
+       冰冻三尺非一日之寒
+       滴水穿石非一日之功
+      </div> 
+     </div> 
+    </div>
+
 
 
 
@@ -870,7 +874,7 @@ t.parentNode.insertBefore(e,t)}})();
 === "Butterfly"
 
     ```yaml
-    - name: Wcowin's Web
+    - name: Wcowin's Blog
       link: https://wcowin.work/
       avatar: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png 
       descr: 循此苦旅，以达星辰

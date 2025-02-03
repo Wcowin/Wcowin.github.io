@@ -6,8 +6,6 @@ hide:
   #  - toc #隐藏右边导航
   #  - footer #隐藏翻页
   #  - feedback  #隐藏反馈
-tags:
-    - My Love
 comments: false  #评论，默认不开启
 ---
 

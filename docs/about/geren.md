@@ -1,33 +1,39 @@
 ---
+title: 关于我
 hide:
 #   - navigation
   # - toc
   - feedback
   - footer
 status: new
-glightbox-manual: true
-authors: [Wcowin]
 ---
-<center>
-    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</center>
 
-# <span id="jinrishici-sentence" >今日诗词</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+# <span id="jinrishici-sentence">今日诗词</span>
+
+<style>
+@media (max-width: 768px) {
+    #jinrishici-sentence {
+        font-size: 0.7em; /* 调整字体大小 */
+    }
+}
+</style>
 
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
 
-<link
+<!-- <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-/>
+/> -->
 
 ## 关于我
 
 
 <html lang="en">
 <p style="text-align: center; margin: 0px;" markdown>
-  <img src="https://pic2.zhimg.com/v2-ef969571db8a20c8436235c588d04483_1440w.jpg" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
+  <img src="https://pic2.zhimg.com/v2-ef969571db8a20c8436235c588d04483_1440w.jpg" style="width: 300px; border-radius: 50%;" />
   <!-- ![image](https://s1.imagehub.cc/images/2025/01/04/158948b0002cdac6e9ff43986648cb83.png) -->
   <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p>
     <head>
@@ -44,17 +50,17 @@ authors: [Wcowin]
                             <p style="text-align: center; margin: 0px;" markdown></p>
                         <div class="about__info">
                             <div>
-                                <span class="about__info-title">01+</span>
+                                <span class="about__info-title">1年+</span>
                                 <span class="about__info-name">工作经验</span>
                             </div>
                             <div>
                                 <a href="https://github.com/Wcowin" target="_blank">
-                                <span class="about__info-title">03+</span>
-                                <span class="about__info-name">已经完成的项目</span>
+                                <span class="about__info-title">3项+</span>
+                                <span class="about__info-name">完成的项目</span>
                                 </a>
                             </div>
                             <div>
-                                <span class="about__info-title">02+</span>
+                                <span class="about__info-title">2个+</span>
                                 <span class="about__info-name">贡献的开源</span>
                             </div>
                         </div>
@@ -182,7 +188,7 @@ authors: [Wcowin]
 
 <a href="https://t.me/wecowin" target="_blank">
  <center>
-  <img class="img1" src="https://s1.imagehub.cc/images/2025/01/04/ece1374f25a07c060978165ada287fae.png" style="width: 450px; height: auto;">
+  <img class="img1" src="https://pica.zhimg.com/80/v2-7a19e2b5db241428373186e54f363670_1440w.webp" style="width: 450px; height: auto;">
     <div style="color:orange; 
     color: #999;
     padding: 2px;">我的TG</div>
