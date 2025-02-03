@@ -76,7 +76,7 @@
   background-color: var(--md-accent-fg-color--transparent);
   box-shadow: 0 0 0 1rem var(--md-accent-fg-color--transparent);
   border-radius: var(--base-border-radius);
-} */
+} 
 
 .md-post--excerpt .md-post__header {
   justify-content: left;
@@ -92,15 +92,3 @@
   border-radius: var(--base-border-radius);
 }
 
-
-
-/* 博客修改 */
-/* @media (min-width: 768px) {
-  .md-post--excerpt {
-    background-color: var(--md-accent-fg-color--transparent);
-    box-shadow: 0 0 0 1rem var(--md-accent-fg-color--transparent);
-    border-radius: var(--base-border-radius);
-  }
-} */
-
-/* 目录 */

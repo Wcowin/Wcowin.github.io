@@ -258,7 +258,7 @@ img.twitter {
 
 #rcorners4 {
   border-radius: 25px;
-  border: 2px solid #518FC1;
+  border: 2px solid rgba(68,138,255,.1);
   padding: 20px;
   width: 110%;
   height: 100%;
@@ -594,6 +594,7 @@ ol>li {
   height: 2px;
   width: 27%;
   background-color: #797979;
+  
 }
 
 .poem-right {
