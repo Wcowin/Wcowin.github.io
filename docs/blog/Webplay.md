@@ -2,8 +2,6 @@
 title: 好用/好玩网站分享
 tags:
   - 技术分享
-authors:
-  - Wcowin
 ---
 
 
@@ -192,7 +190,7 @@ authors:
 - [小良哥捷径](https://iphone8.vip/gz.html){target="_blank"}
  
 
-## **好玩:simple-funimation:**
+## **好玩:video_game:**
 
 - [宇宙的刻度](https://htwins.net/scale2/){target="_blank"}
 - [100000stars](http://stars.chromeexperiments.com/){target="_blank"}

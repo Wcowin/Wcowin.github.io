@@ -851,7 +851,7 @@ t.parentNode.insertBefore(e,t)}})();
 
     >名称: Wcowin's Blog  
     >链接: https://wcowin.work/  
-    >头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
+    >头像: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
     >简介: 循此苦旅，以达星辰
 
 === "HTML(推荐)"
@@ -887,3 +887,10 @@ t.parentNode.insertBefore(e,t)}})();
 
     
 ***
+
+<!-- 
+>名称: Wcowin's Blog  
+>链接: https://wcowin.work/  
+>头像: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
+>简介: 循此苦旅，以达星辰
+-->

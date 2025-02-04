@@ -283,12 +283,15 @@ nav:
     - 考研: about/kaoyan.md
   - RSS(测试中): https://wcowin.work/feed_rss_created.xml
 
-copyright: Copyright &copy; 2022~2025 Wcowin/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明
 
 extra:
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
   status:
     new: Recently added
-  disqus:
   cusdis:
     host: https://cusdis.com
     app_id: 655cf3bc-734a-4d88-8317-be350621334c
@@ -302,7 +305,7 @@ extra:
       link: /en/
       # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: en
-    - name: China(TW)
+    - name: ZH-TW
       link: /ZH-TW/
       # https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: zh-TW
@@ -354,7 +357,7 @@ extra:
 plugins:
   # - statistics
   - rss:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [rss, false]
       match_path: (blog/posts|develop|relax|trip|about)/.* # 指定多个目录
       image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png 
       date_from_meta:
@@ -366,9 +369,9 @@ plugins:
   # - social
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - offline
+  # - offline
   - glightbox:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [glightbox, false]
       touchNavigation: true
       loop: false
       effect: fade
@@ -386,7 +389,7 @@ plugins:
       manual: false
   # - open-in-new-tab
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
       type: iso_date
       enable_creation_date: true
       fallback_to_build_date: true
@@ -399,7 +402,7 @@ plugins:
         - about/link.md
         - blog/Mkdocs/linktech.md
   - git-committers:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [git-committers, false]
       repository: Wcowin/Wcowin.github.io
       branch: main
       exclude:
@@ -424,8 +427,7 @@ plugins:
       # pagination_per_page: 5
       pagination_url_format: "page/{page}"
       authors_file: "{blog}/.authors.yml"  #作者信息
-  - tags:
-      tags_file: tag.md  #分类标签
+  - tags
 
 
 markdown_extensions:

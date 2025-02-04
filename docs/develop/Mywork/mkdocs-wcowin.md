@@ -19,15 +19,15 @@ status: new
 
 <div class="grid cards" markdown>
 
--   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
+-   :octicons-bookmark-16:{ .lg .middle } __优点__
 
     ---
 
-      - 通过主题和目录以打开文章
-        - 基于Material for MkDocs美化
-        - 简洁美观，功能多元化
-      - 简单易上手，小白配置
-      - 教程详细，清晰易懂
+      
+      - [x] 基于[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}美化
+      - [x] 简洁美观，功能多元化
+      - [x] 简单易上手，小白配置
+      - [x] 教程详细，清晰易懂
 
 </div>
 
@@ -67,20 +67,25 @@ status: new
 
 详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](https://wcowin.work/blog/Mkdocs/mkdocs1.html)
 
-## Connect with me
+## 联系我
 
-<center>
+<a href="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" target="_blank">
+ <center>
+  <img class="img1" src="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" style="width: 450px; height: auto;">
+    <div style="color:orange; 
+    color: #999;
+    padding: 2px;">我的Wechat</div>
+  </center>  
+</a>
 
-**MuseLink**
-
-<p>
-  <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg" alt="个人名片">
-  </a>
-</p>  
-
-
-</center>
+<a href="https://t.me/wecowin" target="_blank">
+ <center>
+  <img class="img1" src="https://pica.zhimg.com/80/v2-7a19e2b5db241428373186e54f363670_1440w.webp" style="width: 450px; height: auto;">
+    <div style="color:orange; 
+    color: #999;
+    padding: 2px;">我的TG</div>
+  </center>  
+</a>
 
 
 
@@ -89,7 +94,7 @@ status: new
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
-## 感谢贡献者
+## 贡献者
 <a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Wcowin/Mkdocs-Wcowin" />
 </a>

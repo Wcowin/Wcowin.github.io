@@ -218,7 +218,7 @@ t.parentNode.insertBefore(e,t)}})();
 
 
 
-   <body>
+   <!-- <body>
         <font color="#B9B9B9">
         <p style="text-align: center; ">
                 <span>This site is already running</span>
@@ -245,7 +245,7 @@ t.parentNode.insertBefore(e,t)}})();
         },1000)
       </script>
       </font>
-    </body>
+    </body> -->
 
 
 <!-- <head>
