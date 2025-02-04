@@ -165,7 +165,7 @@ nav:
         - Markdown指南: develop/Markdown/markdown.md
         - MWeb Pro: develop/Markdown/MWeb.md
     - Git 实用技巧: develop/git.md    
-    - 我的作品:
+    - 我的项目/作品:
         - Mkdocs-Wcowin主题: develop/Mywork/mkdocs-wcowin.md
         - 人脸识别系统: develop/Mywork/face-recognition.md
         - 基于讯飞人脸算法进行人脸比对: develop/Mywork/face_compare.md
@@ -253,10 +253,10 @@ nav:
     
   - 旅行: 
     - trip/index.md
-    - 重庆: 
-        - 重庆旅游推荐路线: trip/InCQ/CQ.md
-    - 我的家乡: trip/LH.md
-    - 西安: trip/Xian.md
+    - 重庆: trip/InCQ/CQ.md
+    - 西安: trip/Xian.md    
+    - 我的家乡——漯河: trip/LH.md
+    
 
   - 标签: tag.md
   - 留言板: waline.md
