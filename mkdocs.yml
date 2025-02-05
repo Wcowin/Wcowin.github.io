@@ -9,6 +9,7 @@ site_author: 王科文(Wcowin)
 theme:
   name: material
   custom_dir: docs/overrides
+  font: false
   # font:
   #   text: JetBrains Mono
   #   code: Roboto Mono
@@ -69,11 +70,16 @@ theme:
   language: en # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github #右上角图标
-    tag:
-      html: fontawesome/brands/html5
-      js: fontawesome/brands/js
-      css:  fontawesome/brands/css3
-      Mkdocs: octicons/tag-16    
+    previous: fontawesome/solid/angle-left
+    top: fontawesome/solid/angles-up
+    alternate: fontawesome/solid/language
+
+
+    # tag:
+    #   html: fontawesome/brands/html5
+    #   js: fontawesome/brands/js
+    #   css:  fontawesome/brands/css3
+    #   Mkdocs: octicons/tag-16    
     
 edit_uri: edit/main/docs # 编辑按钮跳转的链接 
 repo_url: https://github.com/Wcowin/Wcowin.github.io # 右上角点击跳转的链接
@@ -312,11 +318,9 @@ extra:
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/weixin
-      link: https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg
-      name: Wechat
+      link: https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp
     - icon: fontawesome/brands/telegram
       link: https://t.me/wecowin
-      name: telegram
     - icon: fontawesome/brands/x-twitter 
       link: https://twitter.com/wcowin_
       name: Twitter
@@ -356,6 +360,7 @@ extra:
 
 plugins:
   # - statistics
+  # - git-authors
   - rss:
       enabled: !ENV [rss, false]
       match_path: (blog/posts|develop|relax|trip|about)/.* # 指定多个目录

@@ -88,10 +88,16 @@ Waline.init({
     <title>评论系统切换</title>
     <style>
         .comment-system {
-            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+            height: 0;
+            overflow: hidden;
         }
         .comment-system.active {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            height: auto;
         }
         .button-container {
             text-align: center;
@@ -109,17 +115,16 @@ Waline.init({
             display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
-            -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
+            transition: 0.4s;
             cursor: pointer;
         }
         .buttonxuan:hover {
             background-color: rgba(238,242,249);
-            color:rgb(4, 0, 0);
+            color: rgb(4, 0, 0);
         }
         .buttonxuan.active {
             background-color: rgba(189, 224, 245);
-            color:rgb(4, 0, 0);
+            color: rgb(4, 0, 0);
         }
         @media (max-width: 768px) {
             .buttonxuan {
@@ -142,11 +147,9 @@ Waline.init({
 <body>
     <div class="button-container">
         <button id="giscus-btn" class="buttonxuan active">Giscus</button>
-        <!-- <button id="Waline-btn" class="buttonxuan">Waline</button> -->
         <button id="cusdis-btn" class="buttonxuan">Cusdis</button>
     </div>
     <div id="giscus" class="comment-system active">
-        <!-- Giscus 评论系统代码 -->
         <script src="https://giscus.app/client.js"
             data-repo="Wcowin/hexo-site-comments"
             data-repo-id="R_kgDOIl9OJA"
@@ -165,7 +168,6 @@ Waline.init({
         </script>
     </div>
     <div id="cusdis" class="comment-system">
-        <!-- Cusdis 评论系统代码 -->
         <center><p>评论审核后才会显示</p></center>
         <div id="cusdis_thread"
             data-host="https://cusdis.com"
@@ -176,69 +178,18 @@ Waline.init({
         </div>
         <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </div>
-    <div id="Waline" class="comment-system">
-        <!-- Waline 评论系统代码 -->
-        <div id="Waline-container"></div>
-        <center><p>评论区若不显示，请刷新一次页面</p></center>
-<head>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
-  />
-</head>
-  <div id="waline"></div>
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-    init({
-      el: '#waline',
-      serverURL: 'https://mk-docs-comments.vercel.app/',
-      emoji: [
-      'https://unpkg.com/@waline/emojis@1.1.0/qq',
-      'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
-      '//unpkg.com/@waline/emojis@1.1.0/bilibili',
-      '//unpkg.com/@waline/emojis@1.1.0/weibo',
-    ],
-      comment: true,
-      pageview: true, 
-      lang: 'zh',
-      pageview: true,
-    });
-  </script>
-    </div>
     <script>
-        document.getElementById('giscus-btn').addEventListener('click', function() {
-            document.getElementById('giscus').classList.add('active');
-            document.getElementById('cusdis').classList.remove('active');
-            document.getElementById('Waline').classList.remove('active');
-            this.classList.add('active');
-            document.getElementById('cusdis-btn').classList.remove('active');
-            document.getElementById('Waline-btn').classList.remove('active');
-        });
-        document.getElementById('cusdis-btn').addEventListener('click', function() {
-            document.getElementById('giscus').classList.remove('active');
-            document.getElementById('cusdis').classList.add('active');
-            document.getElementById('Waline').classList.remove('active');
-            this.classList.add('active');
-            document.getElementById('giscus-btn').classList.remove('active');
-            document.getElementById('Waline-btn').classList.remove('active');
-        });
-        document.getElementById('Waline-btn').addEventListener('click', function() {
-            document.getElementById('giscus').classList.remove('active');
-            document.getElementById('cusdis').classList.remove('active');
-            document.getElementById('Waline').classList.add('active');
-            this.classList.add('active');
-            document.getElementById('giscus-btn').classList.remove('active');
-            document.getElementById('cusdis-btn').classList.remove('active');
-        });
-        const buttons = document.querySelectorAll('.buttonxuan');
-        buttons.forEach(button => {
+        document.querySelectorAll('.buttonxuan').forEach(button => {
             button.addEventListener('click', function() {
-                buttons.forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.buttonxuan').forEach(btn => btn.classList.remove('active'));
                 this.classList.add('active');
+                document.querySelectorAll('.comment-system').forEach(system => system.classList.remove('active'));
+                document.getElementById(this.id.replace('-btn', '')).classList.add('active');
             });
         });
     </script>
 </body>
+
 
 
 
@@ -263,76 +214,10 @@ Waline.init({
 
 ---
 
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>打赏</title>
-    <style>
-        .reward-container {
-            margin: 20px auto;
-            padding: 25px 0;
-            text-align: center;
-            width: 90%;
-        }
-        .reward-container button {
-            background: none;
-            border: 1px solid #608DBD;
-            border-radius: 0.5rem;
-            color: #608DBD;
-            cursor: pointer;
-            line-height: 2;
-            outline: 0;
-            padding: 0 15px;
-            margin: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .reward-container button:hover {
-            color: #4a6e8c;
-        }
-        .qr-container {
-            display: none;
-            text-align: center;
-            margin-top: 25px;
-        }
-        .qr-container img {
-            width: 200px;
-            margin: 10px;
-            border-radius: 25px;
-        }
-        .qr-container p {
-            font-size: 16px;
-            color: #555;
-        }
-        .qr-option {
-            display: inline-block;
-            margin: 0 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="reward-container">
-        <button onclick="toggleQR()">
-            请作者喝杯咖啡
-        </button>
-        <div id="qr" class="qr-container">
-            <div class="qr-option">
-                <img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付">
-                <p>微信支付</p>
-            </div>
-            <div class="qr-option">
-                <img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝">
-                <p>支付宝</p>
-            </div>
-        </div>
-    </div>
-    <script>
-        function toggleQR() {
-            const qrContainer = document.getElementById('qr');
-            qrContainer.style.display = (qrContainer.style.display === 'none' || qrContainer.style.display === '') ? 'block' : 'none';
-        }
-    </script>
-</body>
-</html>
+
+<style>
+
+.md-grid {
+  max-width: 1300px;
+}
+</style>

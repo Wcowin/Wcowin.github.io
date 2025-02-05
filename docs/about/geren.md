@@ -31,11 +31,25 @@ status: new
 ## 关于我
 
 
+<center>
+   ![](https://picx.zhimg.com/80/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}
+   ![](https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp#only-dark){style="width: 270px; border-radius: 50%;"}
+  <!-- <img src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" style="width: 200px; border-radius: 50%;" class="hidden-on-mobile" /> -->
+</center>
+  <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p> 
+
+
+
 <html lang="en">
-<p style="text-align: center; margin: 0px;" markdown>
-  <img src="https://pic2.zhimg.com/v2-ef969571db8a20c8436235c588d04483_1440w.jpg" style="width: 300px; border-radius: 50%;" />
-  <!-- ![image](https://s1.imagehub.cc/images/2025/01/04/158948b0002cdac6e9ff43986648cb83.png) -->
-  <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>A college student in Chongqing</strong></p>
+<!-- <p style="text-align: center; margin: 0px;" markdown> -->
+  <!-- <img src="https://pic2.zhimg.com/v2-ef969571db8a20c8436235c588d04483_1440w.jpg" style="width: 300px; border-radius: 50%;" /> -->
+<!-- <style>
+@media (max-width: 768px) {
+    .hidden-on-mobile {
+        display: none;
+    }
+}
+</style> -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +61,7 @@ status: new
             <section class="about section" id="about">
                 <div class="about__container container">
                     <div class="about__data">
-                            <p style="text-align: center; margin: 0px;" markdown></p>
+                            <p style="text-align: center; " markdown></p>
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">1年+</span>
@@ -67,10 +81,11 @@ status: new
             </section>
                 </body>
 </html>
-<center>[下载简历 :fontawesome-solid-download:](个人简历.pdf){.md-button target=“_blank”}</center>
+
+<center>[下载简历 :fontawesome-solid-download:](个人简历.pdf){.md-button target=“_blank” }</center>
 
 ---
-## 个人履历
+## 我的履历
 
 <html lang="en">
 <body>
@@ -125,8 +140,8 @@ status: new
                     <!--==================== QUALIFICATION 3 ====================-->
                     <div class="qualification__data">
                         <div>
-                            <h3 class="qualification__title">西安电子科技大学（待定）</h3>
-                            <span class="qualification__subtitle">网络空间安全专业硕士研究生</span>
+                            <h3 class="qualification__title">XDU(待定)</h3>
+                            <span class="qualification__subtitle">网络空间安全硕士研究生</span>
                             <div class="qualification__calendar">
                                 <iconify-icon icon="tabler:calendar"></iconify-icon>
                                 2024 - 2027
@@ -225,10 +240,11 @@ status: new
 ## 须知
 如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
 
-!!! note
-    如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角微信添加好友，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会直接忽略，谢谢。
+!!! note "与我联系"
+    如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角微信添加好友，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
 
-    [Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}  
+    ---  
+    <center>[Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
 
 
 <!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
