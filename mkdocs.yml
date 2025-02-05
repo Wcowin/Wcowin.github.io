@@ -67,7 +67,7 @@ theme:
     - content.action.edit
     - content.action.view
     - content.code.annotate 
-  language: en # 一些提示性的文字会变成中文
+  language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github #右上角图标
     previous: fontawesome/solid/angle-left
@@ -287,7 +287,7 @@ nav:
         - 2023: about/zongjie/2023.md
         - 2024: about/zongjie/2024.md
     - 考研: about/kaoyan.md
-  - RSS(测试中): https://wcowin.work/feed_rss_created.xml
+  # - RSS(测试中): https://wcowin.work/feed_rss_created.xml
 
 copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明
 

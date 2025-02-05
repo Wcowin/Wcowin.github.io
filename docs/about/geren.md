@@ -244,7 +244,7 @@ status: new
     如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角微信添加好友，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
 
     ---  
-    <center>[Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
+    <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
 
 
 <!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->

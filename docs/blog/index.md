@@ -1,3 +1,13 @@
+---
+hide:
+#   - navigation # 显示右
+  - toc #显示左
+  - footer
+#   - feedback
+# comments: false
+# icon: octicons/home-fill-24
+---
+
 # MyBlog
 <div class="grid cards" markdown>
 
@@ -10,3 +20,11 @@
 </div>
 
 ***
+
+
+<style>
+
+.md-grid {
+  max-width: 1200px;
+}
+</style>
