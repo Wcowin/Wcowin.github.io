@@ -1,5 +1,5 @@
 ---
-title: Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)
+title: Mkdocs配置说明（mkdocs.yml）
 comments: false
 tags:
   - Mkdocs
@@ -619,7 +619,7 @@ plugins:
 
 ### blog
 
-`-blog` 即博客，可以在docs/blog/posts里直接写md文件（不需要在nav里写路径）,然后在上述nav里写
+`-blog` 即博客，可以在docs/blog/posts里直接写md文件（不需要在nav里写路径）,只需要在nav里写
 ```
 nav:
   - Blog:
@@ -656,10 +656,6 @@ meta格式：
 title: #文章标题
 tags:
   - 你的标签名字
-hide:
-  #- navigation # 显示右侧导航
-  #- toc #显示左侧导航
-comments: false  #评论，默认不开启
 ---
 
 ```

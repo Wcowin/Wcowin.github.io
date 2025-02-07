@@ -97,10 +97,10 @@ nav:
     - Mac/windows软件网站汇总: blog/macsoft.md
     - 语雀: blog/yuque.md
     - MKdocs教程:
-        - Mkdocs教程前言: blog/Mkdocs/mkfirst.md
-        - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
-        - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
-        - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
+        - 0.Mkdocs教程前言: blog/Mkdocs/mkfirst.md
+        - 1.利用Mkdocs部署静态网页: blog/Mkdocs/mkdocs1.md
+        - 2.Mkdocs配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
+        - 3.解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化:
         - Mkdocs-Wcowin主题: blog/websitebeauty/mkdocs-wcowin1.md
@@ -174,6 +174,7 @@ nav:
     - 我的项目/作品:
         - Mkdocs-Wcowin主题: develop/Mywork/mkdocs-wcowin.md
         - 人脸识别系统: develop/Mywork/face-recognition.md
+        - 用AirScript脚本给女/男朋友发送每日早安邮件(极简版本): develop/Mywork/email.md
         - 基于讯飞人脸算法进行人脸比对: develop/Mywork/face_compare.md
         - 基于百度API和opencv的智能车牌识别程序: develop/Mywork/opencv.md
         - 利用百度API进行植物识别: develop/Mywork/aizhiwu.md
@@ -287,7 +288,7 @@ nav:
         - 2023: about/zongjie/2023.md
         - 2024: about/zongjie/2024.md
     - 考研: about/kaoyan.md
-  # - RSS(测试中): https://wcowin.work/feed_rss_created.xml
+  # - RSS: https://blog.csdn.net/m0_63203517/rss/list?spm=1001.2014.3001.5494
 
 copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明
 
@@ -362,7 +363,7 @@ plugins:
   # - statistics
   # - git-authors
   - rss:
-      enabled: !ENV [rss, false]
+      enabled: !ENV [CI, false]
       match_path: (blog/posts|develop|relax|trip|about)/.* # 指定多个目录
       image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png 
       date_from_meta:

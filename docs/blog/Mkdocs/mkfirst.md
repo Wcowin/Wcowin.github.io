@@ -2,7 +2,7 @@
 title: Mkdocs教程前言
 tags:
   - Mkdocs
-subtitle: 必看！！！
+status: new
 ---
 
 ## 文档教程
@@ -13,12 +13,13 @@ subtitle: 必看！！！
 
     ---
     - 入门 MKdocs 请看[Mkdocs 官方教程](https://www.mkdocs.org/user-guide/writing-your-docs/){target=“_blank”}
-    - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}教程  
+    - [Material for MkDocs（只看这个也可以）](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}教程  
     --- 
     我写的中文教程（同步在其他平台）：  
 
+    - [x] [Mkdocs中文教程(语雀)](https://www.yuque.com/wcowin/mkdocs-wcowin?# 《Mkdocs-Wcowin中文教程》){target=“_blank”}(推荐，展示效果好)  
     - [x] [Mkdocs中文教程](https://blog.csdn.net/m0_63203517/category_12472184.html?spm=1001.2014.3001.5482){target=“_blank”} (CSDN | 观感更纯净)    
-    - [x] [MKdocs博客中文系列教程](https://www.zhihu.com/column/c_1754218140098387968){target=“_blank”}(知乎专栏)  
+    - [x] [MKdocs博客中文系列教程](https://www.zhihu.com/column/c_1754218140098387968){target=“_blank”}(知乎专栏)   
 
 </div>
 

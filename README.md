@@ -19,7 +19,7 @@
 
 <center>
 
-**MuseLink**
+**Telegram**
 
 <p align="center">
   <a href="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" target="_blank">

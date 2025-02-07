@@ -2,6 +2,7 @@
 title: AI 工具
 tags:
     - AI
+status: new
 ---
 
 ## AI 对话

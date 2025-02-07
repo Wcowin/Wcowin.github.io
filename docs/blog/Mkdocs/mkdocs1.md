@@ -9,12 +9,11 @@ tags:
     MkDocs中文文档: [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
 ---
 推荐看下这个视频：  
-:fontawesome-brands-youtube:{ style="color: #EE0F0F" }
-__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
-15m – Learn how to create and host a documentation site using Material for
-MkDocs on GitHub Pages in a step-by-step guide.
+:fontawesome-brands-bilibili:{ style="color: #EE98A7" }
+__[How to set up Material for MkDocs]__ by @Wcowin – :octicons-clock-24:
+10m – 用MKdocs构建一个博客网站.
 
-  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=Q-YA_dA8C20
+  [How to set up Material for MkDocs]: https://space.bilibili.com/1407028951/lists/4566631?type=series
 
 ---
 
@@ -102,7 +101,8 @@ cd workflows
 vim ci.yml
 ```  
 
-.github/workflows/ci.yml，然后复制并粘贴以下内容：  
+进入.github/workflows/ci.yml，然后复制并粘贴以下内容：  
+
 ```yaml
 name: ci 
 on:
@@ -154,9 +154,6 @@ $ tree -a
 ![](https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png)
 
 ## 三、配置完善
-打开终端运行  
-
-`pip install mkdocs-material`
 
 打开**mkdocs.yml** 
 
