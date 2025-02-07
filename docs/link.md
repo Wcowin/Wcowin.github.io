@@ -40,10 +40,32 @@ t.parentNode.insertBefore(e,t)}})();
      <img class="ava" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://wcowin.work/ " target="_blank">Wcowin's Blog</a> 
+       <a href="https://wcowin.work/ ">Wcowin's Blog</a> 
       </div> 
       <div class="info">
        “循此苦旅，以达星辰”
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://wcowin.work/VitePress/" target="_blank">Wcowin's VitePress</a> 
+      </div> 
+      <div class="info">
+      A college student 
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://wcowin.work/Mkdocs-Wcowin/" target="_blank">Wcowin for MkDocs</a> 
+      </div> 
+      <div class="info">
+      撰写最新的Mkdocs中文教程
       </div> 
      </div> 
     </div>
@@ -706,13 +728,23 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://xxu.do/_next/image?url=https%3A%2F%2Fgithub.com%2FJaaayden.png&w=640&q=75" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://xxu.do/" target="_blank">Jayden's site</a> 
+      </div> 
+      <div class="info">
+      为天地立心,为生民立命, 为往圣继绝学,为万世开太平。
+      </div> 
+     </div> 
+    </div>
 
 
 
 
    </div> 
   </div>
-
 
 
 

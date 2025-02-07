@@ -5,7 +5,6 @@ hide:
   - footer
   - feedback
 comments: false
-# icon: octicons/home-fill-24
 ---
 
 # Welcome you
@@ -14,66 +13,11 @@ comments: false
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 
 
-
-<!-- <div id="rcorners2" >
-
-<div id="rcorners1" class="date-display">
-    <p class="p1"></p>
-</div>
-
-<style>
-    .date-display {
-        color: #4351AF;
-    } 
-    
-</style>
-
-<script defer>
-    function format(newDate) {
-        const options = {
-            year: 'numeric',
-            month: '2-digit',
-            day: '2-digit',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            weekday: 'long',
-            hour12: false
-        };
-        return new Intl.DateTimeFormat('zh-CN', options).format(newDate);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const p1 = document.querySelector(".p1");
-        function updateTime() {
-            const newDate = new Date();
-            if (p1) {
-                p1.textContent = format(newDate);
-            }
-            requestAnimationFrame(updateTime);
-        }
-        updateTime();
-    });
-</script>
-  
-  <ul>
-      <li>通过目录以打开文章</li>
-      <li>搜索关键词查询文章</li>
-      <ul>
-          <li>Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章</li>
-          <li>移动端 请点击左上角图标选择主题和文章</li>
-      </ul>
-      <li>如遇到网页卡顿/打开文章后无法显示图片的情况，请使用科学上网</li>
-  </ul>
-</div>  -->
-
 <div class="grid cards" markdown>
 
 -   :material-notebook-edit-outline:{ .lg .middle } __导航栏__
 
     ---
-
-    <!-- ![image](https://s1.imagehub.cc/images/2025/01/11/9c234885eeb4458be1df5e9beff223ce.png){  align=right width="340" height="280" style="border-radius: 25px;"} -->
     ![image](https://pic3.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp){ class="responsive-image" align=right width="340" height="280" style="border-radius: 25px;" }
 
     - [x] 通过{==目录==}以打开文章
@@ -97,46 +41,6 @@ comments: false
         }
     }
 </style>
-
-<!-- <style>
-#rcorners3 {
-  border-radius: 25px;
-  border: 2px solid #518FC1;
-  padding: 20px;
-  width: 100%;
-  height: 30%;
-  font-size: 18px;
-  text-align: center;
-}
-</style> -->
-
-<!-- <font color="#B9B9B9">
-  <p style="text-align: center; ">
-      <span>本站已经运行</span>
-      <span id='box1'></span>
-</p>
-  <div id="box1"></div>
-  <script>
-    function timingTime(){
-      let start = '2022-10-20 00:00:00'
-      let startTime = new Date(start).getTime()
-      let currentTime = new Date().getTime()
-      let difference = currentTime - startTime
-      let m =  Math.floor(difference / (1000))
-      let mm = m % 60  // 秒
-      let f = Math.floor(m / 60)
-      let ff = f % 60 // 分钟
-      let s = Math.floor(f/ 60) // 小时
-      let ss = s % 24
-      let day = Math.floor(s  / 24 ) // 天数
-      return day + "天" + ss + "时" + ff + "分" + mm +'秒'
-    }
-    setInterval(()=>{
-document.getElementById('box1').innerHTML = timingTime()
-    },1000)
-  </script>
-  </font> -->
-
 
 
 ***  
@@ -261,3 +165,5 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
   max-width: 1220px;
 }
 </style>
+
+
