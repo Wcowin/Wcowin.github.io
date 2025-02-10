@@ -12,13 +12,6 @@ status: new
 
 # <span id="jinrishici-sentence">今日诗词</span>
 
-<style>
-@media (max-width: 768px) {
-    #jinrishici-sentence {
-        font-size: 0.7em; /* 调整字体大小 */
-    }
-}
-</style>
 
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
@@ -31,6 +24,7 @@ status: new
 ## 关于我
 
 
+
 <center>
    ![](https://picx.zhimg.com/80/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}
    ![](https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp#only-dark){style="width: 270px; border-radius: 50%;"}
@@ -40,7 +34,7 @@ status: new
 
 
 
-<html lang="en">
+<html>
 <!-- <p style="text-align: center; margin: 0px;" markdown> -->
   <!-- <img src="https://pic2.zhimg.com/v2-ef969571db8a20c8436235c588d04483_1440w.jpg" style="width: 300px; border-radius: 50%;" /> -->
 <!-- <style>

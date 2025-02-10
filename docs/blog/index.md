@@ -22,9 +22,9 @@ hide:
 ***
 
 
-<style>
+<!-- <style>
 
 .md-grid {
-  max-width: 1200px;
+  max-width: 1100px;
 }
-</style>
+</style> -->

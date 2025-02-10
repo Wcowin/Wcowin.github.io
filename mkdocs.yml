@@ -92,7 +92,7 @@ nav:
   - 技术:
     - blog/indexblog.md
     - 好用/好玩网站分享: blog/Webplay.md
-    - 基于 Mkdocs 的主题与站点: blog/technique sharing/comkdocs.md
+    - 基于Mkdocs主题的站点: blog/technique sharing/comkdocs.md
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md
     - Mac/windows软件网站汇总: blog/macsoft.md
     - 语雀: blog/yuque.md
@@ -164,9 +164,10 @@ nav:
 
   - 开发: 
     - develop/index.md
-    - 我的设备: develop/mydevice.md
-    - 如何注册ChatGPT: develop/ChatGPT.md
+    - DeepSeek:从入门到精通: develop/deepseek.md
     - AI工具: develop/AI.md
+    - 如何注册ChatGPT: develop/ChatGPT.md
+    - 我的设备: develop/mydevice.md
     - Markdown: 
         - Markdown指南: develop/Markdown/markdown.md
         - MWeb Pro: develop/Markdown/MWeb.md
@@ -283,22 +284,23 @@ nav:
     - 毕业之前值得去做的30件事: about/biye.md
     - 测试组件: about/test.md
     - 404公益页面: about/404.md
+    - 网站状态检测: https://stats.uptimerobot.com/k9iH1i5LA9
     # - 我们♡+♡=♡²: about/Foryou.md
     - 年度总结:
         - 2023: about/zongjie/2023.md
         - 2024: about/zongjie/2024.md
-    - 考研: about/kaoyan.md
+    - 25考研: about/kaoyan.md
   # - RSS: https://blog.csdn.net/m0_63203517/rss/list?spm=1001.2014.3001.5494
 
 copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明
 
 extra:
-  tags:
-    HTML5: html
-    JavaScript: js
-    CSS: css
+  # tags:
+  #   HTML5: html
+  #   JavaScript: js
+  #   CSS: css
   status:
-    new: Recently added
+    new: 最近添加
   cusdis:
     host: https://cusdis.com
     app_id: 655cf3bc-734a-4d88-8317-be350621334c
@@ -365,7 +367,7 @@ plugins:
   - rss:
       enabled: !ENV [CI, false]
       match_path: (blog/posts|develop|relax|trip|about)/.* # 指定多个目录
-      image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png 
+      image: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
       date_from_meta:
         as_creation: date
       categories:
@@ -395,7 +397,7 @@ plugins:
       manual: false
   # - open-in-new-tab
   - git-revision-date-localized:
-      enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
+      enabled: !ENV [CI, false]
       type: iso_date
       enable_creation_date: true
       fallback_to_build_date: true
@@ -408,7 +410,7 @@ plugins:
         - about/link.md
         - blog/Mkdocs/linktech.md
   - git-committers:
-      enabled: !ENV [git-committers, false]
+      enabled: !ENV [CI, false]
       repository: Wcowin/Wcowin.github.io
       branch: main
       exclude:
@@ -503,7 +505,6 @@ extra_css:
   - stylesheets/link.css  #友链
   - stylesheets/customize.css  #按钮圆角化
   # - stylesheets/flink.css
-  # - assets/stylesheets/portfolio.css #个人简历 
   - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   # - stylesheets/extra1.css
