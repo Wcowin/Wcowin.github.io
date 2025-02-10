@@ -151,7 +151,7 @@ h1, h2, h3, h4 {
 }
 
 /*==================== BUTTONS ====================*/
-.button{
+/* .button{
   display: inline-block;
   background-color: var(--first-color-alt);
   color: #fff;
@@ -189,7 +189,7 @@ h1, h2, h3, h4 {
 .button--link:hover {
   background-color: transparent;
   color: var(--first-color-alt);
-}
+} */
 
 /*==================== ABOUT ====================*/
 .about__img{
@@ -405,6 +405,8 @@ h1, h2, h3, h4 {
   font-size: var(--smaller-font-size);
   color: var(--md-primary-fg-color--dark);
 }
+
+
 
 .qualification__rounder{
   display: inline-block;
