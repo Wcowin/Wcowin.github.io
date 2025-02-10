@@ -32,13 +32,12 @@ jobs:
       - run: pip install markdown-callouts
       # - run: pip install mkdocs-minify-plugin
       - run: pip install mkdocs-rss-plugin
-      - run: pip install jieba
-      - run: pip install mkdocs-open-in-new-tab
+      # - run: pip install jieba
+      # - run: pip install mkdocs-open-in-new-tab
       - run: pip install pymdown-extensions
-      - run: pip install mkdocs-glightbox
+      # - run: pip install mkdocs-glightbox
       # - run: pip install "mkdocs-material[imaging]"
-      # - run: pip install mkdocs-statistics-plugin 
-      - run: pip install mkdocs-git-authors-plugin         
+      # - run: pip install mkdocs-statistics-plugin        
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
       - run: mkdocs gh-deploy --force
