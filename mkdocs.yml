@@ -378,23 +378,23 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - offline
-  - glightbox:
-      enabled: !ENV [glightbox, false]
-      touchNavigation: true
-      loop: false
-      effect: fade
-      slide_effect: slide
-      width: 100%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - custom-skip-class-name
-      auto_caption: false
-      caption_position: bottom
-      background: white
-      shadow: true
-      manual: false
+  # - glightbox:
+  #     enabled: !ENV [glightbox, false]
+  #     touchNavigation: true
+  #     loop: false
+  #     effect: fade
+  #     slide_effect: slide
+  #     width: 100%
+  #     height: auto
+  #     zoomable: true
+  #     draggable: true
+  #     skip_classes:
+  #       - custom-skip-class-name
+  #     auto_caption: false
+  #     caption_position: bottom
+  #     background: white
+  #     shadow: true
+  #     manual: false
   # - open-in-new-tab
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
