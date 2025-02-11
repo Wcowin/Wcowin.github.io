@@ -2,9 +2,9 @@
 title: 关于我
 hide:
 #   - navigation
-  # - toc
+#   - toc
   - feedback
-  - footer
+#   - footer
 status: new
 ---
 
@@ -30,8 +30,12 @@ status: new
    ![](https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp#only-dark){style="width: 270px; border-radius: 50%;"}
   <!-- <img src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" style="width: 200px; border-radius: 50%;" class="hidden-on-mobile" /> -->
 </center>
-  <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p> 
+  <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
+---
+<center><font size=6>
+<b>A college student in Chongqing
 
+——Wcowin</b> </font></center>
 
 
 <html>
@@ -177,7 +181,7 @@ status: new
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
 !!! pied-piper1 "About me"
-    - [x] Hey, I'm [Wcowin](https://bento.me/wcowin){target=“_blank”}!
+    - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}!
     - [x] 清醒，知趣，明得失，知进退
     - [x] 咖啡重度爱好者 
     - [x] 热爱(xiā)折腾技术/Math
@@ -186,23 +190,90 @@ status: new
 
 ## 联系我
 
-<a href="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" target="_blank">
- <center>
-  <img class="img1" src="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" style="width: 450px; height: auto;">
-    <div style="color:orange; 
-    color: #999;
-    padding: 2px;">我的Wechat</div>
-  </center>  
-</a>
+<head>
+  <style>
+    @media (min-width: 768px) {
+      .mobile-only {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" target="_blank" class="mobile-only">
+   <center>
+    <img class="img1" src="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" style="width: 450px; height: auto;">
+      <div style="color:orange; 
+      color: #999;
+      padding: 2px;">我的Wechat</div>
+    </center>  
+  </a>  
 
-<a href="https://t.me/wecowin" target="_blank">
- <center>
-  <img class="img1" src="https://pica.zhimg.com/80/v2-7a19e2b5db241428373186e54f363670_1440w.webp" style="width: 450px; height: auto;">
-    <div style="color:orange; 
-    color: #999;
-    padding: 2px;">我的TG</div>
-  </center>  
-</a>
+  <a href="https://t.me/wecowin" target="_blank" class="mobile-only">
+   <center>
+    <img class="img1" src="https://s2.loli.net/2025/02/12/3EfZiDyMahWcbRB.png" style="width: 450px; height: auto;">
+      <div style="color:orange; 
+      color: #999;
+      padding: 2px;">我的TG</div>
+    </center>  
+  </a>
+</body>
+
+<style>
+@media (max-width: 768px) { /* 移动端隐藏 */
+  .desktop-only {
+    display: none !important;
+  }
+}
+</style>
+
+<div class="grid desktop-only" style="display: grid;grid-template-columns: 35% 65%" markdown>
+<div class="grid cards" markdown>
+
+-   <center>![WeChat](https://img.icons8.com/?size=100&id=38288&format=png&color=000000){ .lg .middle style="width: 50px; height: 50px;"} </center>
+
+    ---    
+      
+    <center><font  color= 0,0,0 size=6>WeChat</font>  
+    <img src="https://s2.loli.net/2025/02/12/1NMvbdVI2umWRit.png" style="width: auto; height: auto;">
+    <font color= #999 >扫一扫上面的二维码图案，加我为朋友。</font></center>
+
+</div>
+
+<div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
+
+
+
+-   <center>![](https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png){ .lg .middle style="width: 50px; height: 50px;"} </center>
+
+    ---
+
+    <center><font  color= 0,0,0 size=6>Email me</font>
+
+    [发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
+
+<div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
+
+
+-   <center>![](https://s2.loli.net/2025/02/12/3wo8rmhl4jB1PFy.png){ .lg .middle style="width: 50px; height: 50px;" }</center>
+
+    ---
+
+    <center><font  color= 0,0,0 size=6>Telegram</font>
+    [Let's Chat :fontawesome-brands-telegram:](https://t.me/Wcowin){.md-button} </center>
+
+
+-   <center>![twitter](https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=000000){ .lg .middle style="width: 50px; height: 50px;"} </center>
+
+    ---    
+      
+    <center><font  color= 0,0,0 size=6>Twitter</font>  
+    [@Wcowin :material-twitter:](https://twitter.com/wcowin_){.md-button}</center>
+
+</div>
+</div>
+</div>
+
 
 ??? tip "公众号"
     <figure markdown >

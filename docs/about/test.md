@@ -134,7 +134,7 @@ t.parentNode.insertBefore(e,t)}})();
 <div class="miniwebtoolwidget" data-calculator="modulo-calculator" data-width="380"><div class="miniwebtoolh">模计算机</div><p><a href="https://miniwebtool.com/zh-cn/modulo-calculator/" target="_blank"></a></p></div><script async src="https://miniwebtool.com/zh-cn/embed.js?v=1"></script>
 
 
-<div class="grid cards">
+<!-- <div class="grid cards">
     <ul>
         <li>
             <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +149,6 @@ t.parentNode.insertBefore(e,t)}})();
                         <a href="../HC_Start/" target="_blank"><img src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg" /></a>
                         <a href="https://muselink.cc/Wcowin" target="_blank"><img src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg" /></a>
                     </div>
-                    <!-- 触发 hover 的区域 -->
                     <div class="carousel-hover left">
                         <button class="carousel-btn left" onclick="leftShift()"></button>
                     </div>
@@ -161,7 +160,7 @@ t.parentNode.insertBefore(e,t)}})();
             </div>
         </li>
     </ul>
-</div>
+</div> -->
 
 
 <!DOCTYPE html>

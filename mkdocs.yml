@@ -323,7 +323,7 @@ extra:
     - icon: fontawesome/brands/weixin
       link: https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp
     - icon: fontawesome/brands/telegram
-      link: https://t.me/wecowin
+      link: https://t.me/Wcowin
     - icon: fontawesome/brands/x-twitter 
       link: https://twitter.com/wcowin_
       name: Twitter
@@ -488,14 +488,14 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - javascripts/geren.js
+  # - javascripts/geren.js
   # - javascripts/mathjax-config.js
   # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
   # - javascripts/backbound1.js
   # - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
-  # - https://res.zvo.cn/translate/translate.js  # Translate
+  - https://res.zvo.cn/translate/translate.js  # Translate
   
 
 
@@ -503,9 +503,10 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/extra2.css  
   - stylesheets/link.css  #友链
-  - stylesheets/customize.css  #按钮圆角化
+  # - stylesheets/customize.css  #按钮圆角化
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css
   # - stylesheets/flink.css
-  - stylesheets/bannerSlider.css
+  # - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
   # - stylesheets/extra1.css
   # - stylesheets/video.css
