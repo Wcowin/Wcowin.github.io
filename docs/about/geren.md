@@ -200,9 +200,9 @@ status: new
   </style>
 </head>
 <body>
-  <a href="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" target="_blank" class="mobile-only">
+  <a href="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" target="_blank" class="mobile-only">
    <center>
-    <img class="img1" src="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" style="width: 450px; height: auto;">
+    <img class="img1" src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="width: 450px; height: auto;">
       <div style="color:orange; 
       color: #999;
       padding: 2px;">我的Wechat</div>
@@ -211,7 +211,7 @@ status: new
 
   <a href="https://t.me/wecowin" target="_blank" class="mobile-only">
    <center>
-    <img class="img1" src="https://s2.loli.net/2025/02/12/3EfZiDyMahWcbRB.png" style="width: 450px; height: auto;">
+    <img class="img1" src="https://pica.zhimg.com/80/v2-d5876bc0c8c756ecbba8ff410ed29c14_1440w.webp" style="width: 450px; height: auto;">
       <div style="color:orange; 
       color: #999;
       padding: 2px;">我的TG</div>
@@ -235,7 +235,7 @@ status: new
     ---    
       
     <center><font  color= 0,0,0 size=6>WeChat</font>  
-    <img src="https://s2.loli.net/2025/02/12/1NMvbdVI2umWRit.png" style="width: auto; height: auto;">
+    <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: auto; height: auto;">
     <font color= #999 >扫一扫上面的二维码图案，加我为朋友。</font></center>
 
 </div>
@@ -244,7 +244,7 @@ status: new
 
 
 
--   <center>![](https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png){ .lg .middle style="width: 50px; height: 50px;"} </center>
+-   <center>![](https://pic4.zhimg.com/v2-e996df5a7696237b6f924ace7044cd97_1440w.jpg){ .lg .middle style="width: 50px; height: 50px;"} </center>
 
     ---
 
@@ -255,7 +255,7 @@ status: new
 <div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
 
 
--   <center>![](https://s2.loli.net/2025/02/12/3wo8rmhl4jB1PFy.png){ .lg .middle style="width: 50px; height: 50px;" }</center>
+-   <center>![](https://pica.zhimg.com/v2-61b4731957dba61e9960436dbd06306a_1440w.jpg){ .lg .middle style="width: 50px; height: 50px;" }</center>
 
     ---
 
@@ -263,7 +263,7 @@ status: new
     [Let's Chat :fontawesome-brands-telegram:](https://t.me/Wcowin){.md-button} </center>
 
 
--   <center>![twitter](https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=000000){ .lg .middle style="width: 50px; height: 50px;"} </center>
+-   <center>![](https://pic3.zhimg.com/80/v2-aa11d437a377f1a0deac132eb800b306_1440w.webp){ .lg .middle style="width: 50px; height: 50px;"} </center>
 
     ---    
       
