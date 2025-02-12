@@ -6,6 +6,10 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2025-02-12</strong></h1><p>
+* 优化网站流畅度（这次是真的）
+* 引入新的字体CDN，提升字体加载速度
+
 ## </p><h1 id="01" name="01"><strong>2025-02-04</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 更新了部分[Mkdocs教程](../Mkdocs/mkdocs2.md)，适应官方最新版本
