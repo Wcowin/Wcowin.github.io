@@ -169,17 +169,6 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源</a> 
-      </div> 
-      <div class="info">
-       探索互联网新大陆 in N ways.
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
      <img class="ava" src="https://s2.loli.net/2024/02/01/2Ju6y1fmpWDUBaz.jpg" /> 
      <div class="card-header"> 
       <div> 
@@ -718,7 +707,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <img class="ava" src="https://s2.loli.net/2025/02/12/micDLalsuKWzHr4.png" /> 
      <div class="card-header"> 
       <div> 
       <a href="https://www.nodeloc.com" target="_blank">Nodeloc</a> 
@@ -739,6 +728,28 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://s2.loli.net/2025/02/12/Sw9QAN5cfau8eZr.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://dorianine.github.io/brain/" target="_blank">Dorianine's brain</a> 
+      </div> 
+      <div class="info">
+      做我们想做的
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://www.yaguwu.com/zb_users/theme/tpure/style/images/sethead.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a> 
+      </div> 
+      <div class="info">
+       寻一处小筑，不遇车马喧器
+      </div> 
+     </div> 
+    </div>
 
 
 
@@ -747,14 +758,23 @@ t.parentNode.insertBefore(e,t)}})();
   </div>
 
 
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>
 
-<!-- <div class="markdown-content">
-    <h2>失联人员</h2>
-</div> -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // 获取所有友链卡片
+    const friendLinks = document.querySelectorAll(".card");
+    const totalLinks = friendLinks.length -2;
 
-<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
-
-
+    // 更新友链统计信息
+    const statsElement = document.getElementById("friend-link-stats");
+    if (statsElement) {
+      statsElement.textContent = `共有友链 ${totalLinks} 个,欢迎交换友链！`;
+    }
+  });
+</script>
+<font  color= #999>
+<center><div id="friend-link-stats"></div></center></font>
 </div>
 
 
@@ -765,9 +785,20 @@ t.parentNode.insertBefore(e,t)}})();
 # 失联人员
 <div id="rcorners4" >
   <div class="links-content"> 
-   <div class="link-navigation"> 
+   <div class="link-navigation">
    <div class="card"> 
-     <img class="ava" src="https://i.postimg.cc/MGCXBFxn/logo.png" /> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源</a> 
+      </div> 
+      <div class="info">
+       探索互联网新大陆 in N ways.
+      </div> 
+     </div> 
+    </div> 
+   <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://tkqtang.github.io" target="_blank">tkqtang’s Web</a> 
@@ -778,7 +809,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
        <a href="http://liis.cc" target="_blank">郝宇博客</a> 
@@ -789,7 +820,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.lvhrn.cn" target="_blank">JayHrn</a> 
@@ -800,7 +831,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div> 
    <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.linsnow.cn" target="_blank">L1nSn0w's Blog</a> 
@@ -811,18 +842,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a> 
-      </div> 
-      <div class="info">
-       寻一处小筑，不遇车马喧器
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
-     <img class="ava" src="https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png" /> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://www.luckyzh.cn/" target="_blank">旧梦</a> 
@@ -839,7 +859,7 @@ t.parentNode.insertBefore(e,t)}})();
 
    </div> 
   </div>
-  <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
+  <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>
 </div>
 
 
@@ -861,14 +881,25 @@ t.parentNode.insertBefore(e,t)}})();
    </div>
 </div> -->   
 
-* 独立博客(不要求独立域名)，https，访问流畅
-* 原创内容为主，原创内容3篇以上
-* 处于活跃状态，有一定的更新频率
-* 建站一个月以上
-* 未添加友链或申请未通过，评论留言会被隐藏。
+<div class="grid cards" markdown>
 
-本站已经加入[十年之约](https://www.foreverblog.cn/)：
-<a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>请放心添加本站友链
+-   :fontawesome-solid-users-viewfinder:{ .lg .middle } __要求__
+
+    ---
+    * 独立博客(不要求独立域名)，HTTPS，**访问流畅**
+    * **原创内容**为主，原创内容5篇以上
+    * 处于活跃状态，有一定的更新频率
+    * 建站**15天**以上
+    * 未添加友链或申请**未通过**，评论留言会被隐藏。
+    
+
+</div>
+
+
+
+
+本站已经加入[十年之约](https://www.foreverblog.cn/)
+<a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>，请放心添加本站友链
 
 ***
 

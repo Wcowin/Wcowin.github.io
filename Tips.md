@@ -43,3 +43,6 @@ mkdocs serve
 {target=“_blank”}
 
 示例：[Wcowin's web](https://wcowin.work/){target="_blank"}
+
+
+https://www.jsdelivr.com/github

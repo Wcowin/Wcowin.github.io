@@ -12,18 +12,7 @@ status: new
 
 # <span id="jinrishici-sentence">今日诗词</span>
 
-
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
-
-<!-- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-/> -->
-
 ## 关于我
-
-
 
 <center>
    ![](https://picx.zhimg.com/80/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}
@@ -35,19 +24,9 @@ status: new
 <center><font size=6>
 <b>A college student in Chongqing
 
-——Wcowin</b> </font></center>
-
+——Wcowin</b> </font></center>  
 
 <html>
-<!-- <p style="text-align: center; margin: 0px;" markdown> -->
-  <!-- <img src="https://pic2.zhimg.com/v2-ef969571db8a20c8436235c588d04483_1440w.jpg" style="width: 300px; border-radius: 50%;" /> -->
-<!-- <style>
-@media (max-width: 768px) {
-    .hidden-on-mobile {
-        display: none;
-    }
-}
-</style> -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,7 +38,7 @@ status: new
             <section class="about section" id="about">
                 <div class="about__container container">
                     <div class="about__data">
-                            <p style="text-align: center; " markdown></p>
+                        <p style="text-align: center;"></p>
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">1年+</span>
@@ -67,8 +46,8 @@ status: new
                             </div>
                             <div>
                                 <a href="https://github.com/Wcowin" target="_blank">
-                                <span class="about__info-title">3项+</span>
-                                <span class="about__info-name">完成的项目</span>
+                                    <span class="about__info-title">3项+</span>
+                                    <span class="about__info-name">完成的项目</span>
                                 </a>
                             </div>
                             <div>
@@ -76,8 +55,11 @@ status: new
                                 <span class="about__info-name">贡献的开源</span>
                             </div>
                         </div>
+                    </div> <!-- 闭合 about__data -->
+                </div> <!-- 闭合 about__container -->
             </section>
-                </body>
+        </main> <!-- 闭合 main -->
+    </body>
 </html>
 
 <center>[下载简历 :fontawesome-solid-download:](个人简历.pdf){.md-button target=“_blank” }</center>
@@ -87,24 +69,18 @@ status: new
 
 <html lang="en">
 <body>
-    <!--==================== QUALIFICATION ====================-->
     <section class="qualification section">
-        <!-- <h2 class="section__title"></h2> -->
         <div class="qualification__container container">
             <div class="qualification__tabs">
                 <div class="qualification__button button--flex qualification__active" data-target='#education'>
                     <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
                     来时路
                 </div>
-                <!-- <div class="qualification__button button--flex" data-target='#work'>
-                            <iconify-icon icon="uil:briefcase" class="qualification__icon"></iconify-icon>
-                            Work
-                        </div> -->
-            </div>
+            </div>       
             <div class="qualification__sections">
-                <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                <!-- 教育经历时间线 -->
                 <div class="qualification__content qualification__active" data-content id="education">
-                    <!--==================== QUALIFICATION 1 ====================-->
+                    <!-- 高中 -->
                     <div class="qualification__data">
                         <div>
                             <h3 class="qualification__title">漯河高中</h3>
@@ -119,7 +95,6 @@ status: new
                             <span class="qualification__line"></span>
                         </div>
                     </div>
-                    <!--==================== QUALIFICATION 2 ====================-->
                     <div class="qualification__data">
                         <div></div>
                         <div>
@@ -135,7 +110,6 @@ status: new
                             </div>
                         </div>
                     </div>
-                    <!--==================== QUALIFICATION 3 ====================-->
                     <div class="qualification__data">
                         <div>
                             <h3 class="qualification__title">XDU(待定)</h3>
@@ -148,10 +122,8 @@ status: new
                         <div>
                             <span class="qualification__rounder"></span>
                             <span class="qualification__line"></span>
-                          </div>
                         </div>
                     </div>
-                    <!--==================== QUALIFICATION 4 ====================-->
                     <div class="qualification__data">
                         <div></div>
                         <div>
@@ -165,9 +137,11 @@ status: new
                                 <iconify-icon icon="tabler:calendar"></iconify-icon>
                                 Before - After
                             </div>
-                          </div>
                         </div>
-      </div>
+                    </div>
+                </div> <!-- 闭合 qualification__content -->
+            </div> <!-- 闭合 qualification__sections -->
+        </div> <!-- 闭合 qualification__container -->
     </section>
 </body>
 </html>
@@ -230,11 +204,11 @@ status: new
 <div class="grid desktop-only" style="display: grid;grid-template-columns: 35% 65%" markdown>
 <div class="grid cards" markdown>
 
--   <center>![WeChat](https://img.icons8.com/?size=100&id=38288&format=png&color=000000){ .lg .middle style="width: 50px; height: 50px;"} </center>
+-   <center>![WeChat](https://picx.zhimg.com/80/v2-21045fd6f42e98fb136c6d7d0958f2f1_1440w.webp#only-light){ .lg .middle style="width: 50px; height: 50px;"} ![WeChat](https://img.icons8.com/?size=100&id=19977&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"}</center>
 
     ---    
       
-    <center><font  color= 0,0,0 size=6>WeChat</font>  
+    <center><font  color= #BFC1C6 size=6>WeChat</font>  
     <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: auto; height: auto;">
     <font color= #999 >扫一扫上面的二维码图案，加我为朋友。</font></center>
 
@@ -244,30 +218,29 @@ status: new
 
 
 
--   <center>![](https://pic4.zhimg.com/v2-e996df5a7696237b6f924ace7044cd97_1440w.jpg){ .lg .middle style="width: 50px; height: 50px;"} </center>
+-   <center>![](https://pic4.zhimg.com/v2-e996df5a7696237b6f924ace7044cd97_1440w.jpg#only-light){ .lg .middle style="width: 50px; height: 50px;"}![](https://img.icons8.com/?size=100&id=3AYCSzCO85Qw&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"} </center>
 
     ---
 
-    <center><font  color= 0,0,0 size=6>Email me</font>
+    <center><font  color= #BFC1C6 size=6>Email me</font>
 
     [发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
 
 <div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
 
 
--   <center>![](https://pica.zhimg.com/v2-61b4731957dba61e9960436dbd06306a_1440w.jpg){ .lg .middle style="width: 50px; height: 50px;" }</center>
+-   <center>![](https://pica.zhimg.com/v2-61b4731957dba61e9960436dbd06306a_1440w.jpg#only-light){ .lg .middle style="width: 50px; height: 50px;" } ![WeChat](https://img.icons8.com/?size=100&id=63306&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"}</center>
 
     ---
 
-    <center><font  color= 0,0,0 size=6>Telegram</font>
+    <center><font  color= #BFC1C6 size=6>Telegram</font>
     [Let's Chat :fontawesome-brands-telegram:](https://t.me/Wcowin){.md-button} </center>
 
-
--   <center>![](https://pic3.zhimg.com/80/v2-aa11d437a377f1a0deac132eb800b306_1440w.webp){ .lg .middle style="width: 50px; height: 50px;"} </center>
+-   <center>![](https://pic3.zhimg.com/80/v2-aa11d437a377f1a0deac132eb800b306_1440w.webp#only-light){ .lg .middle style="width: 50px; height: 50px;"} ![WeChat](https://img.icons8.com/?size=100&id=13963&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"}</center>
 
     ---    
       
-    <center><font  color= 0,0,0 size=6>Twitter</font>  
+    <center><font  color= #BFC1C6 size=6>Twitter</font>  
     [@Wcowin :material-twitter:](https://twitter.com/wcowin_){.md-button}</center>
 
 </div>
@@ -281,25 +254,6 @@ status: new
     <figcaption>公众号</figcaption>
     </figure>
 
-<!-- ## 个人简历
-
-<div class="grid cards" markdown>
-
--   :octicons-bookmark-16:{ .lg .middle } __求实习(25届)__
-
-    ---
-
-    [个人简历(在线)](https://cv.devtool.tech/preview/76751620-faad-4537-bffd-73ced6ee9671){target=“_blank”}
-</div> -->
-
-<!-- ## 个人技能
-**本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载。  
-精通 CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript、Pascal 等单词的拼写。  
-熟悉 Windows、Linux、OS X、Android、iOS、WP8 、harmony、hyper等系统的开关机。**
-![](https://s3.uuu.ovh/imgs/2024/07/04/82b473abd2059779.png){loading=lazy  class="img1"  width="90%"}   -->
-
-<!-- ## 个人荣誉
-![IMG_9007.jpeg](https://s2.loli.net/2024/02/03/RH5jOlZqdITAcw8.jpg){loading=lazy  class="img1"  }   -->
 
 
 ## 须知
@@ -314,5 +268,6 @@ status: new
 
 <!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
 
-
 <!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script> -->
+
+

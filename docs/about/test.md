@@ -113,13 +113,6 @@ t.parentNode.insertBefore(e,t)}})();
   <figcaption>Image caption</figcaption>
 </figure>
 
-<font face="宋体"  size=80>:flag_cn:<b></font>  
-
-<font face="宋体"  size=10>:flag_tw:<b></font>[^须知] 
-
-
-
-[^须知]:台湾是中国的领土
 
 - H~2~O
 - A^T^A

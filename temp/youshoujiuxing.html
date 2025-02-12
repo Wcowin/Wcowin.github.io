@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
         .image-container {
             display: flex;
             flex-wrap: wrap;
             gap: 10px; /* 图片之间的间距 */
+            justify-content: center; /* 居中对齐 */
         }
         .image-container img {
-            max-width: 100%;
+            max-width: 300px; /* 设置最大宽度 */
             height: auto;
+            border-radius: 8px; /* 圆角 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+            transition: transform 0.2s; /* 过渡效果 */
+        }
+        .image-container img:hover {
+            transform: scale(1.05); /* 鼠标悬停放大 */
+        }
+        @media (max-width: 768px) {
+            .image-container {
+                gap: 5px; /* 小屏幕间距 */
+            }
+            .image-container img {
+                max-width: 48%; /* 小屏幕两列 */
+            }
+        }
+        @media (max-width: 480px) {
+            .image-container img {
+                max-width: 100%; /* 微屏单列 */
+            }
         }
     </style>
 </head>
