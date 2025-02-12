@@ -6480,208 +6480,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 }
 </style>
 
-<!-- <!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* 基础样式 */
-        body {
-            font-family: 'Roboto', 'Segoe UI', system-ui, sans-serif;
-            margin: 0;
-            padding: 20px 0;
-            background: #f7f8fa;
-        }
-
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 0;
-        }
-
-        /* 时间轴竖线 */
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background: linear-gradient(to bottom, #608DBD 15%, #8AB8D7 85%);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-        }
-
-        /* 时间节点容器 */
-        .container {
-            position: relative;
-            width: 50%;
-            padding: 20px 0;
-            transition: all 0.4s ease-in-out;
-        }
-
-        /* 左右布局 */
-        .left { left: 0; padding-right: 60px; }
-        .right { left: 50%; padding-left: 60px; }
-
-        /* 内容卡片 */
-        .content {
-            position: relative;
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-            transform: translateY(20px);
-            opacity: 0;
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease-in-out;
-        }
-
-        /* 时间节点标记 */
-        .content::before {
-            content: '';
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            background: #608DBD;
-            border: 4px solid white;
-            border-radius: 50%;
-            top: 20px;
-            z-index: 2;
-        }
-
-        .left .content::before { right: -36px; }
-        .right .content::before { left: -36px; }
-
-        /* 文字样式 */
-        .content h2 {
-            margin: 0 0 10px;
-            color: #2c3e50;
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-
-        .content p {
-            margin: 8px 0;
-            color: #555;
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        .date {
-            display: inline-block;
-            background: #608dbd20;
-            color: #608DBD;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin: 15px 0 5px;
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .timeline::after { left: 20px; }
-
-            .container {
-                width: 100%;
-                padding: 20px 20px;
-                left: 0;
-            }
-
-            .content::before {
-                left: -32px;
-                right: auto;
-            }
-
-            .content {
-                transform: translateY(0);
-                opacity: 1;
-                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
-            }
-        }
-
-        /* 动画效果 */
-        .content.in-view {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    </style>
-</head>
-<body>
-
-<div class="timeline">
-    <div class="container left">
-        <div class="content">
-            <div class="date">2018 - 2021</div>
-            <h2>漯河高中</h2>
-            <p>扎实的基础教育阶段，培养了良好的学习习惯和逻辑思维能力</p>
-            <ul class="achievements">
-                <li>连续三年校级三好学生</li>
-                <li>全国高中数学联赛省级二等奖</li>
-                <li>物理竞赛市级一等奖</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container right">
-        <div class="content">
-            <div class="date">2021 - 2024</div>
-            <h2>重庆工商大学</h2>
-            <p>电子信息工程专业学士</p>
-            <ul class="achievements">
-                <li>GPA: 3.8/4.0 (专业前5%)</li>
-                <li>全国大学生电子设计竞赛二等奖</li>
-                <li>校级科技创新奖学金获得者</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container left">
-        <div class="content">
-            <div class="date">2024 - 2027</div>
-            <h2>西安电子科技大学</h2>
-            <p>网络空间安全硕士研究生（拟录取）</p>
-            <ul class="achievements">
-                <li>研究方向：区块链安全</li>
-                <li>参与国家网络安全重点实验室项目</li>
-                <li>发表SCI论文2篇（在审）</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container right">
-        <div class="content">
-            <div class="date">未来展望</div>
-            <h2>持续成长</h2>
-            <p>在网络安全领域深耕，致力于构建更安全的数字世界</p>
-            <ul class="achievements">
-                <li>目标成为网络安全架构师</li>
-                <li>持续关注AI安全领域发展</li>
-                <li>参与开源社区贡献</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-            }
-        });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('.content').forEach(content => {
-        observer.observe(content);
-    });
-</script>
-
-</body>
-</html> -->
-
 <!-- <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
@@ -6843,6 +6641,151 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 </body>
 </html> -->
+
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color:rgb(223, 231, 248);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .container {
+            padding: 20px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::after {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: -17px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .right::after {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: -17px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .right::before {
+            left: -16px;
+        }
+        .left::before {
+            right: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .content p {
+            margin: 5px 0 0;
+            font-size: 18px;
+            color: #666;
+        }
+        .date {
+            font-size: 16px;
+            color: #999;
+            margin-top: 10px;
+            text-align: right;
+        }
+        @media (max-width: 768px) {
+            .timeline::after {
+                left: 20px;
+            }
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            .left::after, .right::after {
+                left: 60px;
+            }
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="timeline">
+    <div class="container left">
+        <div class="content">
+            <h2>漯河高中</h2>
+            <p>平凡的三年</p>
+            <div class="date">2018 - 2021</div>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>CTBU</h2>
+            <p>电子信息工程专业学士</p>
+            <div class="date">2021 - 2024</div>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h2>XDU(待定)</h2>
+            <p>网络空间安全硕士研究生</p>
+            <div class="date">2024 - 2027</div>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>未完待续</h2>
+            <p>在路上，永远热泪盈眶</p>
+            <div class="date">Before - After</div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+ -->
 
 <div class="footnote">
 <hr />
