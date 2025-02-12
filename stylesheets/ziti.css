@@ -1,0 +1,19 @@
+@import url('https://static.zeoseven.com/zsft/292/main/result.css');
+
+body {
+font-family: "LXGW WenKai";
+font-weight: normal;
+}
+
+
+button.md-top {
+    font-family: LXGW WenKai;
+    /* 修改字体 */
+    font-size: 16px;
+    /* 修改字体大小 */
+    font-weight: lighter;
+}
+
+/* :root {
+    --md-text-font: "LXGW WenKai";
+} */

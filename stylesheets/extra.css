@@ -22,20 +22,6 @@ color: #4350AF;
   background-color: #074f9d;
 } */
 
-button.md-top {
-  font-family: LXGW WenKai;
-  /* 修改字体 */
-  font-size: 16px;
-  /* 修改字体大小 */
-  font-weight: lighter;
-  /* 修改字体粗细 */
-  /* color: #4351AF; */
-  /* 修改字体颜色 */
-}
-
-:root {
-  --md-text-font: "LXGW WenKai";
-}
 
 
 
