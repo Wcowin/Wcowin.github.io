@@ -151,11 +151,12 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 
 
-快速谈话(1) 联系我(2)
+发邮件(1) 微信(2) MKdocs视频教程(3)
 { .annotate }
 
-1. 点击右上角关于页面，与我在线交谈.
+1. 点击右下角[:material-email:](mailto:<wangkewen821@gmail.com>)即可发送邮件.
 2. TEL:18939533255(微信号)
+3. 点击右下角[:simple-bilibili:](https://space.bilibili.com/1407028951/lists/4566631?type=series)图标查看视频教程.
 
 
 

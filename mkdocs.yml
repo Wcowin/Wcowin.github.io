@@ -71,7 +71,7 @@ theme:
   icon:
     repo: fontawesome/brands/github #右上角图标
     previous: fontawesome/solid/angle-left
-    top: fontawesome/solid/angles-up
+    # top: fontawesome/solid/angles-up
     alternate: fontawesome/solid/language
 
 
@@ -330,6 +330,8 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Wcowin
       name: Github
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/1407028951/lists/4566631?type=series
     - icon: fontawesome/solid/file-code
       link: https://blog.csdn.net/m0_63203517?spm=1000.2115.3001.5343
       name: CSDN    
