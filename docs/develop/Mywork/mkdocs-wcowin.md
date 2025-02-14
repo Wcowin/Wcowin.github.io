@@ -37,27 +37,33 @@ status: new
 <center>
 
 **主页**
-![1](https://s1.imagehub.cc/images/2024/02/02/357ba91e8e68c554ce015fd0c95a08d8.png){ loading=lazy }   
+![](https://pic4.zhimg.com/80/v2-b74491257518429555b9f58a3bdc1293_1440w.webp)   
 
 **文章页**
-![1](https://s1.imagehub.cc/images/2024/02/02/c15305494c69f311a721c0878b648b22.png){ loading=lazy }  
+![](https://s1.imagehub.cc/images/2024/02/02/c15305494c69f311a721c0878b648b22.png)  
 
 **博客页**
-![](https://s1.imagehub.cc/images/2024/02/02/cee8d935a920668b738593850c7eb7f8.png){ loading=lazy }   
+![](https://pic1.zhimg.com/80/v2-652abf2464779ebc6e5790ecaccaadde_1440w.webp) 
+
+**关于**
+<img width="1355" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/bfc10737-260c-44c7-b036-8c7dba52be24">
+
 
 **标签页**
-![img](https://s1.imagehub.cc/images/2024/02/02/d20f0562838a8396724f18bfd09e19e8.png){ loading=lazy }  
+![img](https://s1.imagehub.cc/images/2024/02/02/d20f0562838a8396724f18bfd09e19e8.png)  
 
 **简洁的友链页面**
-![1](https://s1.imagehub.cc/images/2024/02/02/068cf12de3d9c44dbbd00f4f121e908e.png){ loading=lazy }
+![](https://pic2.zhimg.com/80/v2-551c0a6e858705f842e2984fd44ce7f7_1440w.webp)
 
 **页面底部**
-![1](https://s1.imagehub.cc/images/2024/02/02/f1ad87eba264c26344b24dc48336b538.png){ loading=lazy }
+<img width="1363" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/ac4db87b-396a-4d0e-99b5-51a1b316db33">
+
+**Lighthouse测试结果**
+<img width="1363" alt="image" src="https://pic3.zhimg.com/80/v2-afef47cac915ad51071fdc2f6d990b30_1440w.webp">
+
+<img width="1363" alt="image" src="https://s2.loli.net/2025/02/13/M7dgcDiGOI28PQs.png">
+
 </center>
-
-**性能**
-![image](https://s1.imagehub.cc/images/2025/01/05/7164642e16ff90239bee5c46709ad50f.png){ loading=lazy }
-
 
 ## 如何快速使用
 打开终端安装mkdocs: `pip install mkdocs-material`，在你本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
