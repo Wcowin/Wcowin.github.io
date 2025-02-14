@@ -20,7 +20,8 @@ theme:
   # https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
   # https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
   
-  favicon: https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
+  favicon: https://s2.loli.net/2025/02/14/orNybGu8LKUOaCY.png
+  # https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
     - media: "(prefers-color-scheme)"
       toggle:

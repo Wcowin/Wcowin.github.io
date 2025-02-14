@@ -90,9 +90,10 @@ Waline.init({
         .comment-system {
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.4s ease, visibility 0.4s ease;
+            transition: all 0.5s ease-in-out;
             height: 0;
             overflow: hidden;
+            margin-top: 20px;
         }
         .comment-system.active {
             opacity: 1;
@@ -101,45 +102,52 @@ Waline.init({
         }
         .button-container {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px auto;
+            max-width: 600px;
         }
         .buttonxuan {
-            background-color: white;
-            width: 40%;
-            color: black;
-            border-radius: 18px;
-            border: 2px solid rgba(189, 224, 245);
-            padding: 16px 32px;
+            background-color: #ffffff;
+            width: 180px;
+            color: #999;
+            border-radius: 25px;
+            border: 2px solid #608DBD;
+            padding: 12px 24px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition: 0.4s;
+            font-size: 15px;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
             cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .buttonxuan:hover {
-            background-color: rgba(238,242,249);
-            color: rgb(4, 0, 0);
+            background-color: #f8f9fa;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
         .buttonxuan.active {
-            background-color: rgba(189, 224, 245);
-            color: rgb(4, 0, 0);
+            background-color: #608DBD;
+            color: white;
+            border-color: #3498db;
         }
         @media (max-width: 768px) {
+            .button-container {
+                padding: 0 15px;
+            }
             .buttonxuan {
-                padding: 10px 20px;
+                width: 45%;
+                padding: 10px 15px;
                 font-size: 14px;
                 margin: 5px;
-                width: 100%;
-                box-sizing: border-box;
             }
-            .button-container {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                flex-wrap: nowrap;
-                gap: 5px;
+        }
+        @media (max-width: 480px) {
+            .buttonxuan {
+                width: calc(50% - 20px);
+                font-size: 13px;
+                padding: 8px 12px;
             }
         }
     </style>
