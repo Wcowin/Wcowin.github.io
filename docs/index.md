@@ -9,9 +9,19 @@ comments: false
 
 # Welcome you
 
-<center><font  color= #757575 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
+<center><font class="custom-font ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
-
+<style>
+    .custom-font {
+    font-size: 38px; /* 默认字体大小为8px */
+    color: #757575;
+}
+@media (max-width: 768px) { /* 假设768px及以下为移动端 */
+    .custom-font {
+        font-size: 29px; /* 移动端字体大小为6px */
+    }
+}
+</style>
 
 <div class="grid cards" markdown>
 
@@ -22,8 +32,8 @@ comments: false
 
     - [x] 通过{==目录==}以打开文章
     - [x] 搜索{~~~>关键词~~}查询文章
-    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
     - [x] 如遇页面卡顿，请使用{--科学上网--}
+    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !  
     === "Mac/PC端"
 
         请在上方标签选择分类/左侧目录选择文章
@@ -55,7 +65,7 @@ comments: false
     - [DeepSeek:从入门到精通](develop/deepseek.md)
     - [如何注册ChatGPT](develop/ChatGPT.md)
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
-    - [Homebrew如何安装)(Mac & Linux)](blog/Mac/homebrew.md) 
+    - [Homebrew如何安装(Mac & Linux)](blog/Mac/homebrew.md) 
     
 -   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程(三步搞定)__
 
@@ -84,8 +94,6 @@ comments: false
     - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
 
 </div>
-
-
 
 
 [^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
@@ -124,31 +132,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
    \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   | 
     \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
 -->
-
-
-<!-- <script defer>
-    function format(newDate) {
-        const day = newDate.getDay();
-        const y = newDate.getFullYear();
-        const m = newDate.getMonth() + 1 < 10 ? `0${newDate.getMonth() + 1}` : newDate.getMonth() + 1;
-        const d = newDate.getDate() < 10 ? `0${newDate.getDate()}` : newDate.getDate();
-        const h = newDate.getHours() < 10 ? `0${newDate.getHours()}` : newDate.getHours();
-        const min = newDate.getMinutes() < 10 ? `0${newDate.getMinutes()}` : newDate.getMinutes();
-        const s = newDate.getSeconds() < 10 ? `0${newDate.getSeconds()}` : newDate.getSeconds();
-        const dict = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 0: "天"};
-        
-        return `${y}年${m}月${d}日 ${h}:${min}:${s} 星期${dict[day]}`;
-    }
-
-    const timerId = setInterval(() => {
-        const newDate = new Date();
-        const p1 = document.querySelector(".p1");
-        if (p1) {
-            p1.textContent = format(newDate);
-        }
-    }, 1000);
-</script> -->
-
 
 
 发邮件(1) 微信(2) MKdocs视频教程(3)
@@ -508,5 +491,3 @@ body::before {
   z-index: -1;
 }
 </style>
-
-

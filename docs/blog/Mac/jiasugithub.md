@@ -3,7 +3,7 @@ title: mac 无法访问 github 的解决办法
 tags:
   - Mac
 ---
-方案一：
+## 方案一
 
 第一步：打开 folder文件夹
 
@@ -22,7 +22,7 @@ http://training.github.com 207.97.227.243 http://www.github.com
 
 <https://github.com/>
 
-方案二：
+## 方案二
 
 如果上述方法还是不行....，可以尝试以下方案：
 [查询_github.com 的 DNS.选择 工TL值最小的，响应最快的，使用 ip 地址访问](https://tool.chinaz.com/dns/?type=1&host=github.com&ip=)

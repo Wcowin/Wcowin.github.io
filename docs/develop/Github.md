@@ -5,7 +5,9 @@ tags:
 # 什么是github？:fontawesome-brands-square-github:
 
 <div id="header" align="center">
-  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>  
+  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>    
+</div>
+
 
 GitHub是全球最大的 ~~同性交友网站~~ 软件开发平台，知名公司和个人都使用它来开发和共享代码。  (由于程序员群体里缺少女性，拥有高纯度男性用户的GitHub，也被戏称为“全球最大的同性交友网站”)
 ***

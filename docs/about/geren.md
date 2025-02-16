@@ -208,7 +208,7 @@ status: new
 
     ---    
       
-    <center><font  color= #BFC1C6 size=6>WeChat</font>  
+    <center><font  color= #757575 size=6>WeChat</font>  
     <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: auto; height: auto;">
     <font color= #999 >扫一扫上面的二维码图案，加我为朋友。</font></center>
 
@@ -222,7 +222,7 @@ status: new
 
     ---
 
-    <center><font  color= #BFC1C6 size=6>Email me</font>
+    <center><font  color= #757575 size=6>Email</font>
 
     [发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
 
@@ -233,14 +233,14 @@ status: new
 
     ---
 
-    <center><font  color= #BFC1C6 size=6>Telegram</font>
+    <center><font  color= #757575 size=6>Telegram</font>
     [Let's Chat :fontawesome-brands-telegram:](https://t.me/Wcowin){.md-button} </center>
 
 -   <center>![](https://pic3.zhimg.com/80/v2-aa11d437a377f1a0deac132eb800b306_1440w.webp#only-light){ .lg .middle style="width: 50px; height: 50px;"} ![WeChat](https://img.icons8.com/?size=100&id=13963&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"}</center>
 
     ---    
       
-    <center><font  color= #BFC1C6 size=6>Twitter</font>  
+    <center><font  color= #757575 size=6>Twitter</font>  
     [@Wcowin :material-twitter:](https://twitter.com/wcowin_){.md-button}</center>
 
 </div>

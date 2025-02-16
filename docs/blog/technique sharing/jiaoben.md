@@ -25,8 +25,6 @@ Edge上油猴下载地址:
 ## 安装脚本  
 找到需要的脚本，点击安装即可(前提是完成上一步:安装脚本管理器)  
 
-![](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-0d8c17ea-3b18-45d5-bf2f-64e5c812dfc9/143e52ff-527b-4009-88ee-d2ccd45cc636.png)  
-
 ## 获取好玩的脚本
 
 - [Crx搜搜](https://www.crxsoso.com/)

@@ -20,7 +20,7 @@ tags:
 
     ![Image ](https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png){ align=left width="320" height="320" }
 
-    - [x] **M1系列芯片，极低的功耗。**:slight_smile:
+    - [x] **M1系列芯片，极低的功耗。**
 
     - [x]  macOS + Win 11 系统
 

@@ -1,5 +1,5 @@
 ---
-title: Mkdocs-Wcowin主题
+title: Wcowin for MkDocs主题
 # 隐藏的模块
 hide:
   #  - navigation # 隐藏左边导航
@@ -10,10 +10,7 @@ comments: false  #评论，默认不开启
 status: new
 ---
 
-# Mkdocs-Wcowin主题
-
-
-
+# Wcowin for MkDocs主题
 
 <div class="grid cards" markdown>
 
@@ -21,16 +18,16 @@ status: new
 
     ---
 
-      
-      - [x] 基于[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}美化
-      - [x] 简洁美观，功能多元化
-      - [x] 简单易上手，小白配置
-      - [x] 教程详细，清晰易懂
+    - [x] {==简洁美观==} ，功能多元化，小白配置
+    - [x] 基于{~~~>Material for MkDocs~~}美化
+    - [x] 如遇页面卡顿，请使用{--科学上网--}
+    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !  
 
 </div>
 
 ## 展示  
-感受一下它的简洁美观：[Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”}  
+
+> 感受一下它的简洁美观：[Wcowin for MkDocs主题](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”}  
 
 <center>
 

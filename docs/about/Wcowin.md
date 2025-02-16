@@ -53,7 +53,8 @@ title: Github主页介绍
 </p>
 
 ## Support me
-[Touch me!](https://ko-fi.com/wcowin){ .md-button target=_blank}
+
+[请作者喝杯咖啡](https://ko-fi.com/wcowin){ .md-button target=_blank}
 
 
 <div align=center> 

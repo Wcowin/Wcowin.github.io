@@ -1,15 +1,9 @@
 ---
 title: 基于 Mkdocs 的主题与站点
-number: 14
-slug: discussions-14/
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/14
-date: 2023-11-08
-authors: [shenweiyan]
 categories: 
   - 好玩
 tags:
   - 技术分享
-labels: ['mkdocs']
 ---
 
 鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 [django-rest-framework](https://www.django-rest-framework.org/)、[FastAPI](https://fastapi.tiangolo.com/) 以及基于 Go 编写的云网关代理服务器 [traefik](https://github.com/traefik/traefik) 等项目的官方文档站点，都是通过 MkDocs 进行搭建。

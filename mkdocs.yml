@@ -20,14 +20,13 @@ theme:
   # https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
   # https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
   
-  favicon: https://s2.loli.net/2025/02/14/orNybGu8LKUOaCY.png
+  favicon: https://pic4.zhimg.com/80/v2-fee2c2622ad68aeed98a8b411a8b272b_1440w.webp
   # https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/link
         name: 关闭自动模式
-    #primary: blue grey
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
       primary: blue grey # 上方的
@@ -114,7 +113,7 @@ nav:
         - 背景特效: blog/websitebeauty/backgroud.md
         - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md     
     - 技术分享:
-        - Win11镜像下载、壁纸及KMS激活 : blog/technique sharing/win.md
+        - Win11镜像下载/KMS激活 : blog/technique sharing/win.md
         - 实用脚本分享: blog/technique sharing/jiaoben.md
         - 搭建个人图床: blog/technique sharing/tuchuang.md
         - oh-my-zsh 更新: blog/technique sharing/ohmuzsh.md
@@ -155,7 +154,6 @@ nav:
         - 彻底卸载360安全卫士的方法: blog/Win/360.md
         - 三步卸载 Microsoft Edge: blog/Win/edgexz.md
         - windows快捷键: blog/Win/winkjj.md
-        - 安卓的子系统: blog/Win/anzhuodezixit.md
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - pip: blog/py/pip.md
@@ -198,7 +196,6 @@ nav:
     - 小米: relax/xiaomo.md
     - Apple: relax/Apple.md
     # - 如是我闻: relax/rushiwowen.md
-    - 王冰冰♡: relax/wbb.md
     - 诗文:
       - 枫桥夜泊: relax/shiwen/fqyb.md
       - 滕王阁序: relax/shiwen/twgx.md
@@ -239,7 +236,7 @@ nav:
         - 《程序员脱单指南》: relax/Manong/tuodanbukeneng.md
         - 《程序员学习路线图》: relax/Manong/wtf.md
         - 《printf("❤️\n》: relax/Manong/cxiaoaixin.md
-    - 写信:
+    - 信:
         - 第一封: relax/Letter/letter1.md
         - 第二封: relax/Letter/letter2.md
         - 情书:
@@ -250,7 +247,7 @@ nav:
             - 《朱生豪情书全集摘录》(046): relax/Letter/luvletter/zhushenghao4.md
             - 《朱生豪情书全集摘录》(053): relax/Letter/luvletter/zhushenghao5.md
             - 《朱生豪情书全集摘录》(055): relax/Letter/luvletter/zhushenghao6.md
-
+    - 王冰冰♡: relax/wbb.md
     - Game:
         - 原神: relax/Game/yuanshen.md
         - 如何玩好《王者荣耀》？: relax/Game/wzry.md
@@ -304,6 +301,7 @@ extra:
   #   CSS: css
   status:
     new: 最近添加
+    deprecated: 已弃用
   cusdis:
     host: https://cusdis.com
     app_id: 655cf3bc-734a-4d88-8317-be350621334c

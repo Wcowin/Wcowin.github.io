@@ -866,10 +866,9 @@ t.parentNode.insertBefore(e,t)}})();
 
 
 
-<div class="markdown-content">
+<!-- <div class="markdown-content">
     <h3>交换友链，请添加本站友链后下方留言申请，期望您的站点:</h3>
-</div>
-
+</div> -->
 
 <!-- <div class="card">
    <img class="ava" src="{avatarurl}" />
@@ -879,7 +878,12 @@ t.parentNode.insertBefore(e,t)}})();
       </div>
       <div class="info">{description}</div>
    </div>
-</div> -->   
+</div> --> 
+
+## 如何交换友链
+
+<h3>请添加{~~~>本站友链~~}后，在下方留言申请，{==期望您的站点==}:</h3>
+  
 
 <div class="grid cards" markdown>
 
@@ -900,6 +904,7 @@ t.parentNode.insertBefore(e,t)}})();
 
 本站已经加入[十年之约](https://www.foreverblog.cn/)
 <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>，请放心添加本站友链
+
 
 ***
 

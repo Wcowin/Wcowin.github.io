@@ -26,7 +26,7 @@ title: 支持作者
 ***
 ## **:simple-kofi:ko-fi**
 
-[Touch me!](https://ko-fi.com/wcowin){ .md-button target=_blank}
+[请作者喝杯咖啡](https://ko-fi.com/wcowin){ .md-button target=_blank}
 
 <!-- <div class="reward-container">
   <div></div>

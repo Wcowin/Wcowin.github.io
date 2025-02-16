@@ -23,6 +23,7 @@ hide:
 ### 步骤3 
 上传图片到Git仓库，我在Git仓库建立了一个名为IMG的文件夹，在这个文件夹里放图片，比如我在IMG文件夹放了一张名为xigua.jpeg格式的图片，则这个照片的路径为:https://myimgs.pages.dev/IMG/xigua.jpeg  
 
+![](https://myimgs.pages.dev/IMG/xigua.jpeg)
 
 ## 二、免费图床(推荐)
 - [SMMS](https://sm.ms/)(推荐)

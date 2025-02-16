@@ -1,5 +1,5 @@
 ---
-title:  技术
+title: 导览
 # 隐藏的模块
 hide:
   - footer

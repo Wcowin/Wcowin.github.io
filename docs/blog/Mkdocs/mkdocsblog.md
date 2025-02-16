@@ -4,6 +4,8 @@ tags:
   - Mkdocs
 ---
 
+博客效果展示：[博客](../index.md)  
+
 官方文档：[Built-in blog plugin](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
 
 与所有内置插件一样，博客插件的入门非常简单。只需将以下行添加到mkdocs.yml
