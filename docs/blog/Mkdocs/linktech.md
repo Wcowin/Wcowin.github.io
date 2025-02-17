@@ -2,6 +2,7 @@
 title: 如何给MKdocs添加友链
 tags:
   - Mkdocs
+  - 友链
 hide:
   - feedback
 ---

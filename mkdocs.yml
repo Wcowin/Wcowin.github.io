@@ -87,8 +87,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 
 # [Navigtion]
 nav:
-  # - 主页: 
-  #   - index.md
+  # - 主页: /
   - 技术:
     - blog/indexblog.md
     - 好用/好玩网站分享: blog/Webplay.md
@@ -103,7 +102,8 @@ nav:
         - 3.解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化:
-        - Mkdocs-Wcowin主题: blog/websitebeauty/mkdocs-wcowin1.md
+        - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
+        - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
         - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
         - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
         - 添加顶部公告栏: blog/websitebeauty/header.md
@@ -172,7 +172,7 @@ nav:
         - MWeb Pro: develop/Markdown/MWeb.md
     - Git 实用技巧: develop/git.md    
     - 我的项目/作品:
-        - Mkdocs-Wcowin主题: develop/Mywork/mkdocs-wcowin.md
+        - Wcowin for MkDocs主题: develop/Mywork/mkdocs-wcowin.md
         - 人脸识别系统: develop/Mywork/face-recognition.md
         - 用AirScript脚本给女/男朋友发送每日早安邮件(极简版本): develop/Mywork/email.md
         - 基于讯飞人脸算法进行人脸比对: develop/Mywork/face_compare.md

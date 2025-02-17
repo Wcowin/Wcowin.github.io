@@ -11,10 +11,9 @@ readtime: 2
 * 优化网站流畅度（玄学）
 * 脱单了;手执烟火以谋生，心怀诗意以谋爱  
 
-<div>
+<!-- <div>
 <div id="rcorners2" >
   <div id="rcorners1">
-    <!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
     <body>
     <font color="#4351AF">
     <p style="text-align: center; ">
@@ -43,10 +42,41 @@ readtime: 2
   </script>
   </font>
 </body>
-    <!-- <b><span id="time"></span></b> -->
   </div>
 </div>
+</div> -->
+
+<div id="timer-container">
+    <p style="text-align: center; color: #4351AF;">
+        <span>我们已经在一起</span>
+        <span id="timer"></span>
+    </p>
 </div>
+
+<script>
+    function updateTimer() {
+        const startTime = new Date('2023-12-21T00:00:00').getTime();
+        const currentTime = new Date().getTime();
+        const difference = currentTime - startTime;
+
+        const seconds = Math.floor(difference / 1000) % 60;
+        const minutes = Math.floor(difference / (1000 * 60)) % 60;
+        const hours = Math.floor(difference / (1000 * 60 * 60)) % 24;
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+        document.getElementById('timer').textContent = `${days}天 ${hours}时 ${minutes}分 ${seconds}秒`;
+    }
+
+    setInterval(updateTimer, 1000);
+    updateTimer(); // 初始化计时器
+</script>
+
+<style>
+    #timer-container {
+        font-size: 1.5em;
+    }
+</style>
+
 
 ## </p><h1 id="01" name="01"><strong>2023-12-14</strong></h1><p>
 * 优化个别网页标签的显示问题

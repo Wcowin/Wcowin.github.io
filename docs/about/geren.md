@@ -86,8 +86,8 @@ status: new
                             <h3 class="qualification__title">漯河高中</h3>
                             <span class="qualification__subtitle">平凡的三年</span>
                             <div class="qualification__calendar">
-                                <iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2018 - 2021
+                                <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
+                                2018 - 2021</font>
                             </div>
                         </div>
                         <div>
@@ -105,8 +105,8 @@ status: new
                             <h3 class="qualification__title">CTBU</h3>
                             <span class="qualification__subtitle">电子信息工程专业学士</span>
                             <div class="qualification__calendar">
-                                <iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2021 - 2024
+                                <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
+                                2021 - 2024</font>
                             </div>
                         </div>
                     </div>
@@ -115,8 +115,8 @@ status: new
                             <h3 class="qualification__title">XDU(待定)</h3>
                             <span class="qualification__subtitle">网络空间安全硕士研究生</span>
                             <div class="qualification__calendar">
-                                <iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2024 - 2027
+                                <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
+                                2024 - 2027</font>
                             </div>
                         </div>
                         <div>
@@ -134,8 +134,8 @@ status: new
                             <h3 class="qualification__title">未完待续</h3>
                             <span class="qualification__subtitle">在路上，永远热泪盈眶</span>
                             <div class="qualification__calendar">
-                                <iconify-icon icon="tabler:calendar"></iconify-icon>
-                                Before - After
+                                <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
+                                Before - After</font>
                             </div>
                         </div>
                     </div>
