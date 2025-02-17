@@ -7434,54 +7434,62 @@
     </a>
   
 </div>
-      <div class="footer-visit-count" style="display: flex; justify-content: center; align-items: center;">
-        <font  >本站访问量：</font><script async src="//finicounter.eu.org/finicounter.js"></script>
-          <span id="finicount_views"></span>    &nbsp;|&nbsp;
-            <a href="https://icp.gov.moe/?keyword=20230640" target="_blank" class="icp-link">萌ICP备20230640号</a>
-            &nbsp;|&nbsp;
-            <font  class="runtime-info">
-              <p style="text-align: center; ">
+      <div class="footer-visit-count">
+          <span>本站访问量：</span>
+          <script async src="//finicounter.eu.org/finicounter.js"></script>
+          <span id="finicount_views"></span>
+          &nbsp;|&nbsp;
+          <a href="https://icp.gov.moe/?keyword=20230640" target="_blank" class="icp-link">萌ICP备20230640号</a>
+          &nbsp;|&nbsp;
+          <div class="runtime-info">
+              <p style="text-align: center;">
                   <span>本站已经运行</span>
                   <span id='box1'></span>
-            </p>
-              <!-- <div id="box1"></div> -->
-              <script>
-                function timingTime(){
-                  let start = '2022-10-20 00:00:00'
-                  let startTime = new Date(start).getTime()
-                  let currentTime = new Date().getTime()
-                  let difference = currentTime - startTime
-                  let m =  Math.floor(difference / (1000))
-                  let mm = m % 60  // 秒
-                  let f = Math.floor(m / 60)
-                  let ff = f % 60 // 分钟
-                  let s = Math.floor(f/ 60) // 小时
-                  let ss = s % 24
-                  let day = Math.floor(s  / 24 ) // 天数
-                  return day + "天" + ss + "时" + ff + "分" + mm +'秒'
-                }
-                setInterval(()=>{
-            document.getElementById('box1').innerHTML = timingTime()
-                },1000)
-              </script>
-              </font> 
-        </div>
-        
-            <style>
-              .footer-visit-count {
-                  height: fit-content;
-                  min-height: 55px; /* 根据实际情况调整此高度 */
+              </p>
+          </div>
+      </div>
+      
+      <script>
+          function timingTime() {
+              const start = '2022-10-20 00:00:00';
+              const startTime = new Date(start).getTime();
+              const currentTime = new Date().getTime();
+              const difference = currentTime - startTime;
+              const m = Math.floor(difference / 1000);
+              const mm = m % 60; // 秒
+              const f = Math.floor(m / 60);
+              const ff = f % 60; // 分钟
+              const s = Math.floor(f / 60); // 小时
+              const ss = s % 24;
+              const day = Math.floor(s / 24); // 天数
+              return `${day}天${ss}时${ff}分${mm}秒`;
+          }
+      
+          setInterval(() => {
+              document.getElementById('box1').innerHTML = timingTime();
+          }, 1000);
+      </script>
+      
+      <style>
+          .footer-visit-count {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: fit-content;
+              min-height: 55px; /* 根据实际情况调整此高度 */
+          }
+      
+          @media (max-width: 768px) {
+              .runtime-info {
+                  display: none;
               }
-              @media (max-width: 768px) {
-                  .runtime-info {
-                      display: none;
-                  }
-                  .icp-link {
-                      display: block;
-                      text-align: center;
-                  }
+      
+              .icp-link {
+                  display: block;
+                  text-align: center;
               }
-              </style>
+          }
+      </style>
         
       
         <div class="md-social">
