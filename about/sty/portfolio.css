@@ -8,12 +8,12 @@
   --first-color-lighter: #608DBD;
 
   --title-color: #608DBD;
-  --text-color: #080505;
-  --text-color-light: #f5ab17;
+  --text-color: #757575;
+  /* --text-color-light: #f5ab17; */
 
   --input-color: #F5EEE3;
-  --body-color: #FDFBF8;
-  --container-color: #FFFFFF;
+  /* --body-color: #FDFBF8;
+  --container-color: #FFFFFF; */
 
   /*========== Font and typography ==========*/
   --big-font-size: 2rem;
@@ -242,7 +242,7 @@ h1, h2, h3, h4 {
 .skills__icon,
 .skills__arrow {
   font-size: 2rem;
-  color: var(--md-primary-fg-color);
+  color: #757575;
 }
 
 .skills__icon {
