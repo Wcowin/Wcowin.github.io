@@ -281,7 +281,7 @@ nav:
     - 网站制作: about/web.md
     - 毕业之前值得去做的30件事: about/biye.md
     - 测试组件: about/test.md
-    - 404公益页面: about/404.md
+    - 404页面: about/404.md
     - 网站状态检测: https://stats.uptimerobot.com/k9iH1i5LA9
     # - 我们♡+♡=♡²: about/Foryou.md
     - 个人目标: about/goal.md
@@ -507,6 +507,7 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css  
   - stylesheets/link.css  #友链
+  - stylesheets/card2.css
   # - stylesheets/customize.css  #按钮圆角化
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
   # - stylesheets/flink.css

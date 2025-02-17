@@ -1,0 +1,108 @@
+/* 定义CSS变量 */
+:root {
+  --card-bg-color: #FEFEFE;
+  --card-border-color: #606060;
+  --card-border-radius: 0.25rem;
+  --card-margin-bottom: 1em;
+  --slate-bg-color: #181818;
+  --hover-bg-color: #efefef;
+  --slate-hover-bg-color: #606060;
+  --header-font-size: 1.5em;
+  --header-font-weight: 600;
+  --file-title-font-size: 1.1em;
+  --file-title-font-weight: 600;
+  --button-border-radius: 15px;
+  --button-font-weight: 700;
+  --button-padding: 0.25em 0.5em;
+  --transition-duration: 0.3s;
+  --transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.card2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--card-bg-color);
+  background-clip: border-box;
+  border: 0.5px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  margin-bottom: var(--card-margin-bottom);
+}
+
+[data-md-color-scheme="slate"] .card {
+  background-color: var(--slate-bg-color);
+  border: 0.5px solid var(--card-border-color);
+}
+
+.card2-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.card2-header {
+  padding: 0.7rem 1.5rem 0.25rem 1.5rem;
+  margin-bottom: 0;
+  font-size: var(--header-font-size);
+  text-transform: uppercase;
+  font-weight: var(--header-font-weight);
+}
+
+.card2-body ul {
+  margin: 0;
+}
+
+.md-typeset :is(.card-body details) {
+  margin: 0.25rem 0 0 0;
+}
+
+.file-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.2em 1em;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.file-block:hover {
+  background-color: var(--hover-bg-color);
+}
+
+[data-md-color-scheme="slate"] .file-block:hover {
+  background-color: var(--slate-hover-bg-color);
+}
+
+.file-title {
+  padding-left: 0;
+  margin-bottom: 0;
+  font-size: var(--file-title-font-size);
+  font-weight: var(--file-title-font-weight);
+}
+
+.file-meta {
+  flex: 1 1 auto;
+  min-height: 1px;
+}
+
+.file-body {
+  padding-left: 1em;
+  margin-right: auto;
+}
+
+.down-button {
+  border: 0.05rem solid;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: var(--button-font-weight);
+  padding: var(--button-padding);
+  transition: color var(--transition-duration), background-color var(--transition-duration), border-color var(--transition-duration) !important;
+}
+
+.down-button:is(:focus, :hover) {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color) !important;
+}

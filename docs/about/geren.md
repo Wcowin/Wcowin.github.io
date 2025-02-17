@@ -20,11 +20,13 @@ status: new
   <!-- <img src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" style="width: 200px; border-radius: 50%;" class="hidden-on-mobile" /> -->
 </center>
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
----
+
 <center><font size=6>
 <b>A college student in Chongqing
 
 ——Wcowin</b> </font></center>  
+
+---
 
 <html>
     <head>
@@ -63,6 +65,15 @@ status: new
 </html>
 
 <center>[下载简历 :fontawesome-solid-download:](个人简历.pdf){.md-button target=“_blank” }</center>
+
+<!-- <div class="card2 file-block" markdown="1">
+<div class="file-icon"><img src="https://pic4.zhimg.com/80/v2-98f918276ecbc6d549fa6a5d1238e713_1440w.webp" style="height: 3em;"></div>
+<div class="file-body">
+<div class="file-title">个人简历</div>
+<div class="file-meta">2025-02-14</div>
+</div>
+<a class="down-button" target="_blank" href="../个人简历.pdf" markdown="1">:fontawesome-solid-download: 下载</a>
+</div> -->
 
 ---
 ## 我的履历
