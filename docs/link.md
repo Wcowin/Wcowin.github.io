@@ -739,6 +739,17 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+      <div class="card"> 
+        <img class="ava" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg" /> 
+        <div class="card-header"> 
+          <div> 
+          <a href="http://cangjingyue.top" target="_blank">苍镜月's docs</a> 
+          </div> 
+          <div class="info">
+            相信的心就是你的魔法！
+          </div> 
+        </div> 
+      </div>
    <div class="card"> 
      <img class="ava" src="https://www.yaguwu.com/zb_users/theme/tpure/style/images/sethead.png" /> 
      <div class="card-header"> 

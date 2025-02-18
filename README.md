@@ -45,7 +45,7 @@
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Wcowin.github.io,Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Wcowin.github.io&Wcowin/Mkdocs-Wcowin&Date)
 
-
+![Alt](https://repobeats.axiom.co/api/embed/06de0a1fb9c03714021eaa6ddfb741a847468334.svg "Repobeats analytics image")
 <!-- [![Stargazers over time](https://starchart.cc/Wcowin/Wcowin.github.io.svg?variant=adaptive)](https://starchart.cc/Wcowin/Wcowin.github.io) -->
 
 ## Contributors
@@ -54,7 +54,7 @@
   <img src="https://contrib.rocks/image?repo=Wcowin/Wcowin.github.io" />
 </a>
 
----
+
 
 <!-- <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
 

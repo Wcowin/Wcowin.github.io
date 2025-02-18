@@ -12,5 +12,10 @@
       "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
     ],
     "editor.fontSize": 14.5,
-    "editor.fontFamily": "JetBrainsMono,Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "JetBrainsMono,Menlo, Monaco, 'Courier New', monospace",
+    "marscode.chatLanguage": "cn",
+    "marscode.codeCompletionPro": {
+      "enableCodeCompletionPro": true
+    },
+    "marscode.enableInlineCommand": true
   }
