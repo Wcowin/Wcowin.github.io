@@ -34,33 +34,33 @@ if (isMobile) {
 }
 
 // 优化
-// const container = document.querySelector('.container');
-// const boxes = document.querySelectorAll('p');
+const container = document.querySelector('.container');
+const boxes = document.querySelectorAll('p');
 
-// // Read a layout property
-// const newWidth = container.offsetWidth;
+// Read a layout property
+const newWidth = container.offsetWidth;
 
-// for (var i = 0; i < boxes.length; i++) {    
-//     // Then invalidate layouts with writes.
-//     boxes[i].style.width = newWidth + 'px';
-// }
-// const width = box.offsetWidth;
-// box.classList.add('big');
+for (var i = 0; i < boxes.length; i++) {    
+    // Then invalidate layouts with writes.
+    boxes[i].style.width = newWidth + 'px';
+}
+const width = box.offsetWidth;
+box.classList.add('big');
 
-// // When the user clicks on a link/button:
-// async function navigateToSettingsPage() {
-//   // Capture and visually freeze the current state.
-//   await document.documentTransition.prepare({
-//     rootTransition: 'cover-up',
-//     sharedElements: [element1, element2, element3],
-//   });
-//   // This is a function within the web app:
-//   updateDOMForSettingsPage();
-//   // Start the transition.
-//   await document.documentTransition.start({
-//     sharedElements: [element1, element4, element5],
-//   });
-//   // Transition complete!
-// }
+// When the user clicks on a link/button:
+async function navigateToSettingsPage() {
+  // Capture and visually freeze the current state.
+  await document.documentTransition.prepare({
+    rootTransition: 'cover-up',
+    sharedElements: [element1, element2, element3],
+  });
+  // This is a function within the web app:
+  updateDOMForSettingsPage();
+  // Start the transition.
+  await document.documentTransition.start({
+    sharedElements: [element1, element4, element5],
+  });
+  // Transition complete!
+}
 // 优化end
 
