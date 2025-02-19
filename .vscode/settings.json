@@ -17,5 +17,7 @@
     "marscode.codeCompletionPro": {
       "enableCodeCompletionPro": true
     },
-    "marscode.enableInlineCommand": true
+    "marscode.enableInlineCommand": true,
+    "commentTranslate.targetLanguage": "zh-CN",
+    "commentTranslate.hover.enabled": true
   }
