@@ -61,9 +61,10 @@ status: new
 </center>
 
 ## 如何快速使用
-打开终端安装mkdocs: `pip install mkdocs-material`，在你本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
+打开终端安装mkdocs: `pip install mkdocs-material`，在你本地的文件夹下(我的就是**Wcowin.github.io**这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
 
-把Mkdocs-Wcowin文件里的东西全部复制出来到Wcowin.github.io文件里(如下图)，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
+把**Mkdocs-Wcowin**文件里的东西全部复制出来到**Wcowin.github.io**文件里(如下图)，随后在**Wcowin.github.io**文件目录终端里`mkdocs serve`即可  
+
 ![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png){ loading=lazy }  
 
 详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](../Mkdocs/mkdocs1.md)

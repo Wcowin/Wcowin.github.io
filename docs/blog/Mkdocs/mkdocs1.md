@@ -27,7 +27,7 @@ __[How to set up Material for MkDocs]__ by @Wcowin – :octicons-clock-24:
 
 参考教程： 
 
-[利用mkdocs部署静态网页至GitHubpages（更新版）](https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501){target=“_blank”}
+[利用mkdocs部署静态网页至GitHubpages（更新版）](https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501){target=“_blank”}[^注]
 
 与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库
 ![img](https://s1.imagehub.cc/images/2024/02/02/5074a3e2b7284355e0f777fd9e621ee3.png)
@@ -50,9 +50,14 @@ mkdocs new mkdocs-site
 出现下图的几个文件 
 ![img](https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png)
 
-docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题，目录，插件等）
+!!! tip
 
- 你在这个目录下写的任何东西都可以通过github Desktop 上传到github上
+    这里建议把**mkdocs-site**文件里的东西全部剪切出来到**Wcowin.github.io**文件里  
+    ![img](https://s1.imagehub.cc/images/2024/02/02/b4a5ac989f1f390573a85bad8c80f49b.png)
+
+**Wcowin.github.io**是克隆到本地的仓库（里面包含docs,yml文件等等），docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题，目录，插件等）
+
+你在这个目录下写的任何东西都可以通过Github Desktop 上传到github上
 
 执行下面的代码添加一个GitHub Workflow
 ***  
@@ -135,10 +140,12 @@ jobs:
       - run: mkdocs gh-deploy --force
 ```
 
+
+到这里先检查一下你的目录结构  
 目录树状图:
 ```
 $ tree -a
-.
+Wcowin.github.io
 ├── .github
 │   ├── .DS_Store
 │   └── workflows
@@ -150,7 +157,7 @@ $ tree -a
 
 
 !!!重点来了
-仓库setings/Actions/General  勾选这两项
+Github仓库setings/Actions/General  勾选这两项
 ![](https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png)
 
 ## 三、配置完善
@@ -183,12 +190,14 @@ mkdocs serve
 
 最后去github Desktop上传到github
 ![img](https://s1.imagehub.cc/images/2024/02/02/3a15b16d3947825f3f469b4eafedd5ef.png)
+上图可以看到，我上传了Wcowin.github.io文件夹，这个文件夹里面包含了mkdocs.yml和docs文件夹(mkdocs-site文件夹现在没有东西，可以删除)
+
 
 **！！！重点**  
 **去仓库的setings/pages选择下图示意的路径**
 ![](https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png)  
 
-等待一会网址就出来了[^注]  
+等待一会网址就出来了  
 
 你的网站网址就是：​
 
@@ -200,7 +209,7 @@ https://你github的名字.github.io/
 
 下次谈谈网站的[mkdocs.yml具体配置](mkdocs2.md)
 
-[^注]:于2023.3.24重写此文
+
 
 ## 四、参考资料
 
@@ -209,3 +218,6 @@ https://你github的名字.github.io/
 3. [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 4. [Mkdocs 配置和使用](https://zhuanlan.zhihu.com/p/383582472)
 5. [Deploy MkDocs](https://github.com/marketplace/actions/deploy-mkdocs)
+
+
+[^注]:于2025.2.19重写此文

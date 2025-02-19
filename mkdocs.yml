@@ -96,10 +96,11 @@ nav:
     - Mac/windows软件网站汇总: blog/macsoft.md
     - 语雀: blog/yuque.md
     - MKdocs教程:
+        - MIT许可声明: blog/Mkdocs/MIT.md
         - 0.Mkdocs教程前言: blog/Mkdocs/mkfirst.md
         - 1.利用Mkdocs部署静态网页: blog/Mkdocs/mkdocs1.md
         - 2.Mkdocs配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
-        - 3.解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
+        - 3.解决Github Pages部署mkdocs自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md

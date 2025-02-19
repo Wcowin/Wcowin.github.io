@@ -1,5 +1,5 @@
 ---
-title: 解决 mkdocs部署 Github Pages 自定义域名失效的问题
+title: 解决Github Pages部署mkdocs自定义域名失效的问题
 tags:
   - Mkdocs
 ---
