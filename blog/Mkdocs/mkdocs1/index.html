@@ -732,6 +732,8 @@
       
         
       
+        
+      
     
     
       
@@ -768,6 +770,36 @@
             MKdocs教程
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MIT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MIT许可声明
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -927,7 +959,7 @@
         
   
   <span class="md-ellipsis">
-    3.解决 mkdocs部署 Github Pages 自定义域名失效的问题
+    3.解决Github Pages部署mkdocs自定义域名失效的问题
     
   </span>
   
@@ -6550,7 +6582,7 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <hr />
 <h2 id="creating-your-site">二、Creating your site<a class="headerlink" href="#creating-your-site" title="Permanent link">&para;</a></h2>
 <p>参考教程： </p>
-<p><a href="https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501" target="“_blank”">利用mkdocs部署静态网页至GitHubpages（更新版）</a></p>
+<p><a href="https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501" target="“_blank”">利用mkdocs部署静态网页至GitHubpages（更新版）</a><sup id="fnref:注"><a class="footnote-ref" href="#fn:注">1</a></sup></p>
 <p>与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库
 <img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5074a3e2b7284355e0f777fd9e621ee3.png" /></p>
 <p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/5c39f0c9754f067759497361524d2b95.png" />  </p>
@@ -6565,8 +6597,13 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 </code></pre></div></td></tr></table></div>
 出现下图的几个文件 
 <img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png" /></p>
-<p>docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题，目录，插件等）</p>
-<p>你在这个目录下写的任何东西都可以通过github Desktop 上传到github上</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>这里建议把<strong>mkdocs-site</strong>文件里的东西全部剪切出来到<strong>Wcowin.github.io</strong>文件里<br />
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/b4a5ac989f1f390573a85bad8c80f49b.png" /></p>
+</div>
+<p><strong>Wcowin.github.io</strong>是克隆到本地的仓库（里面包含docs,yml文件等等），docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题，目录，插件等）</p>
+<p>你在这个目录下写的任何东西都可以通过Github Desktop 上传到github上</p>
 <p>执行下面的代码添加一个GitHub Workflow</p>
 <hr />
 <details class="note">
@@ -6691,7 +6728,8 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <a id="__codelineno-4-28" name="__codelineno-4-28"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span><span class="w"> </span>
 <a id="__codelineno-4-29" name="__codelineno-4-29"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
 </code></pre></div></td></tr></table></div>
-<p>目录树状图:
+<p>到这里先检查一下你的目录结构<br />
+目录树状图:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span>
 <span class="normal"><a href="#__codelineno-5-3">3</a></span>
@@ -6701,7 +6739,7 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <span class="normal"><a href="#__codelineno-5-7">7</a></span>
 <span class="normal"><a href="#__codelineno-5-8">8</a></span>
 <span class="normal"><a href="#__codelineno-5-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>$ tree -a
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>.
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>Wcowin.github.io
 <a id="__codelineno-5-3" name="__codelineno-5-3"></a>├── .github
 <a id="__codelineno-5-4" name="__codelineno-5-4"></a>│   ├── .DS_Store
 <a id="__codelineno-5-5" name="__codelineno-5-5"></a>│   └── workflows
@@ -6713,7 +6751,7 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <div class="admonition 重点来了">
 <p class="admonition-title">重点来了</p>
 </div>
-<p>仓库setings/Actions/General  勾选这两项
+<p>Github仓库setings/Actions/General  勾选这两项
 <img alt="" src="https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png" /></p>
 <h2 id="_2">三、配置完善<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>打开<strong>mkdocs.yml</strong> </p>
@@ -6738,11 +6776,12 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/38bbc1fad9016ebfa0d894f093b82e3d.png" /></p>
 <p>这个网站就算是初步建好了</p>
 <p>最后去github Desktop上传到github
-<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/3a15b16d3947825f3f469b4eafedd5ef.png" /></p>
+<img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/3a15b16d3947825f3f469b4eafedd5ef.png" />
+上图可以看到，我上传了Wcowin.github.io文件夹，这个文件夹里面包含了mkdocs.yml和docs文件夹(mkdocs-site文件夹现在没有东西，可以删除)</p>
 <p><strong>！！！重点</strong><br />
 <strong>去仓库的setings/pages选择下图示意的路径</strong>
 <img alt="" src="https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png" />  </p>
-<p>等待一会网址就出来了<sup id="fnref:注"><a class="footnote-ref" href="#fn:注">1</a></sup>  </p>
+<p>等待一会网址就出来了  </p>
 <p>你的网站网址就是：​</p>
 <p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
 <span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>https://你github的名字.github.io/
@@ -6762,7 +6801,7 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <hr />
 <ol>
 <li id="fn:注">
-<p>于2023.3.24重写此文&#160;<a class="footnote-backref" href="#fnref:注" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>于2025.2.19重写此文&#160;<a class="footnote-backref" href="#fnref:注" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -6788,7 +6827,7 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-19</span>
   </span>
 
     
