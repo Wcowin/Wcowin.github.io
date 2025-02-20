@@ -8,7 +8,7 @@ comments: false
 ---
 
 
-<center><font class="custom-font ml3">“循此苦旅 以达星辰”</font></center>
+<center><font class="custom-font ml3">循此苦旅 以达星辰</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
     .custom-font {
@@ -17,7 +17,7 @@ comments: false
 }
 @media (max-width: 768px) { /* 假设768px及以下为移动端 */
     .custom-font {
-        font-size: 29px; /* 移动端字体大小为6px */
+        font-size: 32px; /* 移动端字体大小为6px */
     }
 }
 </style>
@@ -27,7 +27,7 @@ comments: false
 -   :material-notebook-edit-outline:{ .lg .middle } __导航栏__
 
     ---
-    ![image](https://pic3.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp){ class="responsive-image" align=right width="340" height="280" style="border-radius: 25px;" }
+    ![image](https://pic3.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp){ class="responsive-image" align=right width="340" height="226" style="border-radius: 25px;" }
 
     - [x] 通过{==目录==}以打开文章
     - [x] 搜索{~~~>关键词~~}查询文章
@@ -141,17 +141,11 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 3. 点击右下角[:simple-bilibili:](https://space.bilibili.com/1407028951/lists/4566631?type=series)图标查看视频教程.
 
 
-
-
 <style>
-
 .md-grid {
   max-width: 1220px;
 }
 </style>
-
-
-
 
 <!-- <html lang="zh-cn">
 <head>
@@ -493,7 +487,7 @@ body {
 }
 
 body::before {
-  --size: 50px; /* 调整网格单元大小 */
+  --size: 35px; /* 调整网格单元大小 */
   --line: color-mix(in hsl, canvasText, transparent 80%); /* 调整线条透明度 */
   content: '';
   height: 100vh;

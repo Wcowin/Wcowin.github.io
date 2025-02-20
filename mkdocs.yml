@@ -23,8 +23,8 @@ theme:
         name: 关闭自动模式
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
-      primary: blue grey # 上方的
-      accent: blue # 链接等可交互元件的高亮色
+      primary: blue # 上方的
+      accent: indigo # 链接等可交互元件的高亮色
       # teal 
       toggle:
         icon: material/toggle-switch # 图标

@@ -14,6 +14,7 @@ status: new
     ---
     - 入门 MKdocs 请看[Mkdocs 官方教程](https://www.mkdocs.org/user-guide/writing-your-docs/){target=“_blank”}
     - [Material for MkDocs（只看这个也可以）](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}教程  
+    - [令人惊叹的MkDocs项目和插件列表](https://github.com/mkdocs/catalog#-theming){target=“_blank”}
     --- 
     我写的中文教程（同步在其他平台）：  
 
