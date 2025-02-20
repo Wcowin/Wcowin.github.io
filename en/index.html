@@ -21,7 +21,7 @@
         <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../feed_rss_updated.xml">
       
       <link rel="icon" href="https://pic4.zhimg.com/80/v2-fee2c2622ad68aeed98a8b411a8b272b_1440w.webp">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
     
     
       
@@ -147,7 +147,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
@@ -6407,105 +6407,54 @@
 
 
 <h1 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h1>
-<!-- <center><font  color= #518FC1 size=6>“循此苦旅，以达星辰”</font></center> -->
-<p><center><font  color= #518FC1 size=6 class="ml3">"Follow this arduous journey to reach the stars"</font></center></p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-<!-- <center>
-<font  color= #608DBD size=3>
-<span id="jinrishici-sentence">正在加载今日诗词....</span>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</font>
-</center> -->
-
-<!-- <center>
-<font  color= #608DBD size=3>
-<span id="hitokoto-sentence">正在加载一言....</span>
-<script src="https://v1.hitokoto.cn"></script>
-</font>
-</center> -->
-
-<!-- <center>
-<font  color= #608DBD size=3>
-<p id="hitokoto">
-  <a href="#" id="hitokoto_text" target="_blank"></a>
-</p>
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.querySelector('#hitokoto_text')
-      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-</script>
-</font>
-</center> -->
-
-<div id="rcorners2" >
-  <!-- <div id="rcorners1">
-    <body>
-      <font color="#4351AF">
-        <p class="p1"></p>
-<script defer>
-    function format(newDate) {
-        var day = newDate.getDay();
-        var y = newDate.getFullYear();
-        var m =
-            newDate.getMonth() + 1 < 10
-                ? "0" + (newDate.getMonth() + 1)
-                : newDate.getMonth() + 1;
-        var d =
-            newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
-        var h =
-            newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours();
-        var min =
-            newDate.getMinutes() < 10
-                ? "0" + newDate.getMinutes()
-                : newDate.getMinutes();
-        var s =
-            newDate.getSeconds() < 10
-                ? "0" + newDate.getSeconds()
-                : newDate.getSeconds();
-        var dict = {
-            1: "一",
-            2: "二",
-            3: "三",
-            4: "四",
-            5: "五",
-            6: "六",
-            0: "天",
-        };
-        //var week=["日","一","二","三","四","五","六"]
-        return (
-            y +
-            "年" +
-            m +
-            "月" +
-            d +
-            "日" +
-            " " +
-            h +
-            ":" +
-            min +
-            ":" +
-            s +
-            " 星期" +
-            dict[day]
-        );
+<p><center><font class="custom-font ml3">"Follow this arduous journey to reach the stars"</font></center></p>
+<script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
+<style>
+    .custom-font {
+    font-size: 30px;
+    color: #757575;
+}
+@media (max-width: 768px) {
+    .custom-font {
+        font-size: 29px;
     }
-    var timerId = setInterval(function () {
-        var newDate = new Date();
-        var p1 = document.querySelector(".p1");
-        if (p1) {
-            p1.textContent = format(newDate);
+}
+</style>
+
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19.07 14.88 2.05 2.05L15.06 23H13v-2.06zm1.97-1.75c.14 0 .27.06.38.17l1.28 1.28c.22.21.22.56 0 .77l-1 1-2.05-2.05 1-1c.11-.11.25-.17.39-.17M17 4v6l-2-2-2 2V4H9v16h2v2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7H3V5h2V4a2 2 0 0 1 2-2h12c1.05 0 2 .95 2 2v6l-2 2V4zM5 5v2h2V5zm0 6v2h2v-2zm0 6v2h2v-2z"/></svg></span> <strong>Navigation</strong></p>
+<hr />
+<p><img align="right" alt="image" class="responsive-image" height="280" src="https://pic3.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp" style="border-radius: 25px;" width="340" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Open articles through <mark class="critic">Contents</mark></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Search <del class="critic"></del><ins class="critic">keywords</ins> to find articles</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> If page loads slowly, please use <del class="critic">VPN</del></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !  </li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Mac/PC</label><label for="__tabbed_1_2">Mobile</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Please select categories from the top tabs / articles from the left menu</p>
+</div>
+<div class="tabbed-block">
+<p>Please click the icon in the top left to select categories and articles</p>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<style>
+    @media only screen and (max-width: 768px) {
+        .responsive-image {
+            display: none;
         }
-    }, 1000);
-</script>
-      </font>
-    </body>
-  </div> -->
+    }
+</style>
+
+<!-- <div id="rcorners2" >
   <ul>
 <li>Open articles by topic and table of contents</li>
      <ul>
@@ -6517,12 +6466,8 @@
        If you encounter web page freezes or images cannot be displayed after opening an article, please use <strong>Scientific Internet Access</strong> to break information barriers
      </li>
    </ul>
-</div>
-<p class="annotate">Quick Chat(1) Contact Me(2)</p>
-<ol>
-<li>Click on the bottom right corner to chat with me online.</li>
-<li>Wechat:18939533255</li>
-</ol>
+</div>  -->
+
 <hr />
 <div class="grid cards">
 <ul>
@@ -6530,15 +6475,17 @@
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.751.751 0 0 1 3 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25Z"/></svg></span> <strong>Recommended Articles</strong></p>
 <hr />
 <ul>
+<li><a href="../develop/deepseek/">DeepSeek: From Beginner to Expert</a></li>
 <li><a href="../develop/ChatGPT/">How to Register for ChatGPT</a></li>
 <li><a href="../blog/py/python/">Packing Python Files into .exe Executable</a></li>
-<li><a href="../blog/Mac/homebrew/">How to Automatically Install Homebrew in China (Domestic Address) (Mac &amp; Linux)</a> </li>
+<li><a href="../blog/Mac/homebrew/">How to Install Homebrew (Mac &amp; Linux)</a> </li>
 </ul>
 </li>
 <li>
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.029 18.772.777 1.166-5.417 2.709L0 16.451V4.063l5.417-2.709 5.298 7.948 7.867-5.24L24 1.354V16.84l-5.417 2.709zm2.023-13.827v13.253l3.949-1.975V2.97zM5.076 2.642 1.458 4.45 12.73 21.358l3.618-1.809z"/></svg></span> <strong>Mkdocs Tutorials</strong></p>
 <hr />
 <ul>
+<li><a href="../blog/Mkdocs/mkfirst/">Mkdocs Introduction</a></li>
 <li><a href="../blog/Mkdocs/mkdocs1/">Deploying Static Web Pages to GitHub Pages with Mkdocs</a></li>
 <li><a href="../blog/Mkdocs/mkdocs2/">Mkdocs Configuration Explanation (mkdocs.yml)</a>   </li>
 <li><a href="../blog/Mkdocs/linktech/">How to Add Friends Links to MKdocs</a></li>
@@ -6564,72 +6511,12 @@
 </li>
 </ul>
 </div>
-<p><head></p>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-29HZMNR0KG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-29HZMNR0KG');
-</script>
-
-<!-- Start of Howxm client code snippet -->
-<script>
-function _howxm(){_howxmQueue.push(arguments)}
-window._howxmQueue=window._howxmQueue||[];
-_howxm('setAppID','14429fca-cac1-4551-a472-b046a96ebb75');
-(function(){var scriptId='howxm_script';
-if(!document.getElementById(scriptId)){
-var e=document.createElement('script'),
-t=document.getElementsByTagName('script')[0];
-e.setAttribute('id',scriptId);
-e.type='text/javascript';e.async=!0;
-e.src='https://static.howxm.com/sdk.js';
-t.parentNode.insertBefore(e,t)}})();
-</script>
-<!-- End of Howxm client code snippet -->
-
-<!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script> -->
-<p></head></p>
-<!-- <head>
-<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({id:"3HOcxvgwJJmkuGUi",ck:"3HOcxvgwJJmkuGUi"})</script>
-</head> -->
-
-<!-- <body>
-        <font color="#B9B9B9">
-        <p style="text-align: center; ">
-                <span>This site is already running</span>
-                <span id='box1'></span>
-    </p>
-      <div id="box1"></div>
-      <script>
-        function timingTime(){
-          let start = '2022-10-20 00:00:00'
-          let startTime = new Date(start).getTime()
-          let currentTime = new Date().getTime()
-          let difference = currentTime - startTime
-          let m =  Math.floor(difference / (1000))
-          let mm = m % 60  // 秒
-          let f = Math.floor(m / 60)
-          let ff = f % 60 // 分钟
-          let s = Math.floor(f/ 60) // 小时
-          let ss = s % 24
-          let day = Math.floor(s  / 24 ) // 天数
-          return day + "day" + ss + "hour" + ff + "minute" + mm +'second'
-        }
-        setInterval(()=>{
-          document.getElementById('box1').innerHTML = timingTime()
-        },1000)
-      </script>
-      </font>
-    </body> -->
-
-<!-- <head>
-<script defer src="https://analytics.us.umami.is/script.js" data-website-id="dae37494-1db6-408a-afdd-1868e1a7d41a"></script>
-</head> -->
-
+<p class="annotate">Email(1) WeChat(2) MKdocs Video Tutorial(3)</p>
+<ol>
+<li>Click <a href="mailto:&lt;wangkewen821@gmail.com&gt;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></span></a> in the bottom right to send email.</li>
+<li>TEL:18939533255(WeChat ID)</li>
+<li>Click <a href="https://space.bilibili.com/1407028951/lists/4566631?type=series"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.813 4.653h.854q2.266.08 3.773 1.574Q23.946 7.72 24 9.987v7.36q-.054 2.266-1.56 3.773c-1.506 1.507-2.262 1.524-3.773 1.56H5.333q-2.266-.054-3.773-1.56C.053 19.614.036 18.858 0 17.347v-7.36q.054-2.267 1.56-3.76t3.773-1.574h.774l-1.174-1.12a1.23 1.23 0 0 1-.373-.906q0-.534.373-.907l.027-.027q.4-.373.92-.373t.92.373L9.653 4.44q.107.106.187.213h4.267a.8.8 0 0 1 .16-.213l2.853-2.747q.4-.373.92-.373c.347 0 .662.151.929.4s.391.551.391.907q0 .532-.373.906zM5.333 7.24q-1.12.027-1.88.773-.76.748-.786 1.894v7.52q.026 1.146.786 1.893t1.88.773h13.334q1.12-.026 1.88-.773t.786-1.893v-7.52q-.026-1.147-.786-1.894t-1.88-.773zM8 11.107q.56 0 .933.373.375.374.4.96v1.173q-.025.586-.4.96-.373.375-.933.374c-.56-.001-.684-.125-.933-.374q-.375-.373-.4-.96V12.44q0-.56.386-.947.387-.386.947-.386m8 0q.56 0 .933.373.375.374.4.96v1.173q-.025.586-.4.96-.373.375-.933.374c-.56-.001-.684-.125-.933-.374q-.375-.373-.4-.96V12.44q.025-.586.4-.96.373-.373.933-.373"/></svg></span></a> icon in the bottom right to watch video tutorials.</li>
+</ol>
 <div class="footnote">
 <hr />
 <ol>
@@ -6663,7 +6550,7 @@ t.parentNode.insertBefore(e,t)}})();
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-20</span>
   </span>
 
     
@@ -6678,29 +6565,6 @@ t.parentNode.insertBefore(e,t)}})();
 
     
     
-    
-      
-  <span class="md-source-file__fact">
-    
-      
-  <span class="md-icon" title="贡献者">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
-  </span>
-  <span>GitHub</span>
-
-    
-    <nav>
-      
-        <a href="https://github.com/Wcowin" class="md-author" title="@Wcowin">
-          
-          <img src="https://avatars.githubusercontent.com/u/99159173?v=4&size=72" alt="Wcowin">
-        </a>
-      
-      
-      
-    </nav>
-  </span>
-
     
   </aside>
 
