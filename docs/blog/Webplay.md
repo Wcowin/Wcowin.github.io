@@ -96,7 +96,9 @@ tags:
 - [男孩子武器训练手册](https://jiba.plus/){target="_blank"}(女生勿看) 
 ## **观影:material-movie-open:**  
 
-- [茶杯狐](https://cupfox.app/){target="_blank"} （资源多，广告少）  
+- [茶杯狐](https://cupfox.app/){target="_blank"} （资源多，广告少）
+- [美剧之家](https://mjzj1.cc/){target="_blank"}  
+- [](https://www.boju.cc/){target="_blank"}
 - [剧白白](https://jubaibai.cc/){target="_blank"} （干净的免费网站）  
 - [达达龟](https://www.dadagui.me/){target="_blank"}   
 - [低端影视](https://ddrk.me/){target="_blank"}(超清片源)  

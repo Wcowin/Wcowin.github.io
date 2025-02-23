@@ -11,9 +11,15 @@ hide:
 -   :simple-apple:{ .lg .middle } __MacOS__
 
     ---
-    - [macapp.org.cn](https://macapp.org.cn)（推荐）
-    - [jufxf.com](https://jufxf.com)
-    - [appstorrent.ru/programs/](https://appstorrent.ru/programs/)
+    - [MacKed ](https://macked.app/)（非常推荐）
+    - [xmac](https://xmac.app/)
+    - [macwk](https://macwk.cn/)（推荐）
+    - [jufxf.com](https://jufxf.com)  
+    - [我爱MAC](www.52mac.com)  
+    - [MAC青桔](https://www.macqj.com/) 
+    - [苹果软件盒子](https://www.macappbox.com/app/) 
+    - [Mac软件之家](https://www.macapp.so/)
+    - [appstorrent.ru/programs/](https://appstorrent.ru/programs/)（推荐）  
     - [apps.cmacked.com](https://apps.cmacked.com)
     - [macenjoy.co](https://www.macenjoy.co)
     - [foxmac.com](https://www.foxmac.com)
@@ -23,7 +29,6 @@ hide:
     - [imacso.com](https://www.imacso.com)
     - [macbl.com](https://www.macbl.com/)（推荐）
     - [inpandora.com](https://www.inpandora.com/)
-    - [rutracker.org/forum/index.php](https://rutracker.org/forum/index.php)（推荐）
     - [appstorrent.ru/games/](https://appstorrent.ru/games/)
     - [themacgames.net](https://themacgames.net/)
     - [macat.vip](https://www.macat.vip/)
