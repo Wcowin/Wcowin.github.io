@@ -13,12 +13,12 @@ comments: false  #评论，默认不开启
 <body>
 <center>
 <font color="#4351AF" size=6 >
-  <h1>26考研初试倒计时：</h1>
+  <h1>25考研初试倒计时：</h1>
   <div id="countdown"></div>
 
   <script>
     //设置倒计时时间为2024年12月23号结束
-    var countDownDate = new Date("Dec 21, 2025 00:00:00").getTime();
+    var countDownDate = new Date("Dec 21, 2024 00:00:00").getTime();
 
     // 更新倒计时
     var x = setInterval(function() {
@@ -52,6 +52,9 @@ comments: false  #评论，默认不开启
 
 ***
 
+## 成绩
+!!! note 
+    ![bf74748e5f6db724264e5f16310d353a.png](https://s2.loli.net/2025/02/24/LlObu8CzG7rD2BQ.png)
 
 
 ## 考研全年具体流程

@@ -117,17 +117,17 @@ status: new
                             <span class="qualification__subtitle">电子信息工程专业学士</span>
                             <div class="qualification__calendar">
                                 <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2021 - 2024</font>
+                                2021 - 2025</font>
                             </div>
                         </div>
                     </div>
                     <div class="qualification__data">
                         <div>
-                            <h3 class="qualification__title">XDU(待定)</h3>
+                            <h3 class="qualification__title">西安电子科技大学</h3>
                             <span class="qualification__subtitle">网络空间安全硕士研究生</span>
                             <div class="qualification__calendar">
                                 <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2024 - 2027</font>
+                                2025 - 2028</font>
                             </div>
                         </div>
                         <div>

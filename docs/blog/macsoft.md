@@ -11,11 +11,11 @@ hide:
 -   :simple-apple:{ .lg .middle } __MacOS__
 
     ---
-    - [MacKed ](https://macked.app/)（非常推荐）
+    - [MacKed](https://macked.app/)（非常推荐）
     - [xmac](https://xmac.app/)
     - [macwk](https://macwk.cn/)（推荐）
     - [jufxf.com](https://jufxf.com)  
-    - [我爱MAC](www.52mac.com)  
+    - [我爱MAC](https://52mac.com)  
     - [MAC青桔](https://www.macqj.com/) 
     - [苹果软件盒子](https://www.macappbox.com/app/) 
     - [Mac软件之家](https://www.macapp.so/)
