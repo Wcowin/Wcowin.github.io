@@ -15,6 +15,9 @@ status: new
 - [讯飞星火](https://xinghuo.xfyun.cn/desk?ch=xhweb_ril){target=“_blank”}
 - [通义千问](https://tongyi.aliyun.com/qianwen/){target=“_blank”}
 - [豆包](https://www.doubao.com/chat/?channel=itab2&source=hw_db_itab){target=“_blank”}
+- [腾讯元宝](https://yuanbao.tencent.com/chat/naQivTmsDa){target=“_blank”}
+- [问小白](https://www.wenxiaobai.com/chat/200006){target=“_blank”}
+- [智谱清言](https://chatglm.cn/main/guest?lang=zh){target=“_blank”}
 - [吉狗Al](https://www.jidog.com/chat){target=“_blank”}
 - [slack](https://slack.com/intl/zh-cn/){target=“_blank”}
 - [nextchat](https://nextchat.dev/){target=“_blank”}

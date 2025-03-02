@@ -64,7 +64,7 @@ status: new
     </body>
 </html>
 
-<center>[下载简历 :fontawesome-solid-download:](个人简历.pdf){.md-button target=“_blank” }</center>
+<center>[下载简历 :fontawesome-solid-download:](个人简历2.pdf){.md-button target=“_blank” }</center>
 
 <!-- <div class="card2 file-block" markdown="1">
 <div class="file-icon"><img src="https://pic4.zhimg.com/80/v2-98f918276ecbc6d549fa6a5d1238e713_1440w.webp" style="height: 3em;"></div>
