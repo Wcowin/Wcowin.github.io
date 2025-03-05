@@ -751,6 +751,17 @@ t.parentNode.insertBefore(e,t)}})();
         </div> 
       </div>
    <div class="card"> 
+     <img class="ava" src="https://www.yaguwu.com/zb_users/theme/tpure/style/images/sethead.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a> 
+      </div> 
+      <div class="info">
+       寻一处小筑，不遇车马喧器
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
      <img class="ava" src="https://cdn.jsdelivr.net/gh/Auzers/drawingbed/wechat.jpeg" /> 
      <div class="card-header"> 
       <div> 
@@ -765,9 +776,9 @@ t.parentNode.insertBefore(e,t)}})();
 
 
 
-
    </div> 
   </div>
+
 
 
 
