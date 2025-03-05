@@ -18,7 +18,7 @@ status: new
 
 <div class="grid cards" markdown>
 
--   :octicons-bookmark-16:{ .lg .middle } __个人简历__
+-   :octicons-bookmark-16:{ .lg .middle } __DeepSeek从入门到精通__
 
     ---
 

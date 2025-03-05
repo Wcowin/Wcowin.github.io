@@ -751,13 +751,13 @@ t.parentNode.insertBefore(e,t)}})();
         </div> 
       </div>
    <div class="card"> 
-     <img class="ava" src="https://www.yaguwu.com/zb_users/theme/tpure/style/images/sethead.png" /> 
+     <img class="ava" src="https://cdn.jsdelivr.net/gh/Auzers/drawingbed/wechat.jpeg" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a> 
+       <a href="https://Auzers.github.io/notes/" target="_blank">am的笔记本</a> 
       </div> 
       <div class="info">
-       寻一处小筑，不遇车马喧器
+       如果不认识我就用“梅啮寒岁，舟逆湍川”吧
       </div> 
      </div> 
     </div>
@@ -765,8 +765,10 @@ t.parentNode.insertBefore(e,t)}})();
 
 
 
+
    </div> 
   </div>
+
 
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>
