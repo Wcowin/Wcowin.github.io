@@ -6,13 +6,18 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+
+## </p><h1 id="01" name="01"><strong>2025-02-24</strong></h1><p>
+* 优化网站流畅度（玄学）
+* π日快乐！
+
 ## </p><h1 id="01" name="01"><strong>2025-02-24</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 一切都是最好的安排
 * 昔日龌龊不足夸，今朝放荡思无涯。
 **春风得意马蹄疾，一日看尽长安花。**
 !!! note 
-    ![bf74748e5f6db724264e5f16310d353a.png](https://s2.loli.net/2025/02/24/LlObu8CzG7rD2BQ.png)
+    ![bf74748e5f6db724264e5f16310d353a.png](https://picx.zhimg.com/80/v2-8fb95aee59e3298710a674a150cb862b_1440w.webp)
 
 ## </p><h1 id="01" name="01"><strong>2025-02-19</strong></h1><p>
 * 优化网站流畅度（玄学）

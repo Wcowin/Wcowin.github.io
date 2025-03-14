@@ -54,7 +54,7 @@ comments: false  #评论，默认不开启
 
 ## 成绩
 !!! note 
-    ![bf74748e5f6db724264e5f16310d353a.png](https://s2.loli.net/2025/02/24/LlObu8CzG7rD2BQ.png)
+    ![bf74748e5f6db724264e5f16310d353a.png](https://picx.zhimg.com/80/v2-8fb95aee59e3298710a674a150cb862b_1440w.webp)
 
 
 ## 考研全年具体流程

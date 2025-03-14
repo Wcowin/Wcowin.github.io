@@ -12,18 +12,19 @@ tags:
 
 下面列的是搜集的一些 Mkdocs 主题与站点，以供参考。
 
-- Hello 算法 - <https://www.hello-algo.com/>
-- FDU-MSC 论坛 - <https://fdu-msc.github.io/forum/>
-- Django REST framework - <https://www.django-rest-framework.org/>
-- FastAPI - <https://fastapi.tiangolo.com/>
-- Chrisjing 的运维之旅精选 - <http://www.chrisjing.com/>
-- 艇仔粥 TingZaiZuk - <https://herointene.github.io/>
-- Arisa | Blog - <https://blog.arisa.moe/>
-- 嬉戏实验室 - <https://blog.xiiigame.com/>
-- 老胡的周刊 - [weekly.howie6879.com](https://weekly.howie6879.com/)
-- Jeremy Feng - <https://fengchao.pro/>
-- 我的工作学习生活笔记 - <https://hellowac.github.io/>
-- Power's Wiki - <https://wiki-power.com/>
+* [Hello 算法](https://www.hello-algo.com/) - 动画图解、一键运行的数据结构与算法教程
+* [Django REST framework](https://www.django-rest-framework.org/) - Django REST 框架官方文档
+* [FastAPI](https://fastapi.tiangolo.com/) - FastAPI 框架官方文档
+* [FDU-MSC 论坛](https://fdu-msc.github.io/forum/) - 复旦大学微软学生俱乐部
+* [Chrisjing 的运维之旅](http://www.chrisjing.com/)
+* [艇仔粥 TingZaiZuk](https://herointene.github.io/) 
+* [Arisa's Blog](https://blog.arisa.moe/) 
+* [嬉戏实验室](https://blog.xiiigame.com/) 
+* [老胡的周刊](https://weekly.howie6879.com/) 
+* [Jeremy Feng](https://fengchao.pro/) 
+* [我的工作学习生活笔记](https://hellowac.github.io/) 
+* [Power's Wiki](https://wiki-power.com/) 
+* [wnc's note](https://wncfht.github.io/notes/) 
   ---
 - [Lenny's Web](https://lennychen.top)  
 - [苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)  
@@ -32,4 +33,4 @@ tags:
 - [BruceJin's Notebook](https://brucejqs.github.io/MyNotebook/)  
 - [0X10CC的代码空间](https://tang-jiapeng.github.io/)
 - [GENG Wei's Homepage](https://wgeng.site/index.html)
-- [Wcowin's Web](https://wcowin.work/)
+- [Wcowin's Web](https://wcowin.work/) 我的博客
