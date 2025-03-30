@@ -13,7 +13,7 @@
     ],
     "editor.fontSize": 14.5,
     "editor.fontFamily": "JetBrainsMono,Menlo, Monaco, 'Courier New', monospace",
-    "marscode.chatLanguage": "cn",
+    "marscode.chatLanguage": "auto",
     "marscode.codeCompletionPro": {
       "enableCodeCompletionPro": true
     },

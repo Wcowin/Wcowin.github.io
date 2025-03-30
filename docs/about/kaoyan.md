@@ -8,7 +8,7 @@ hide:
   #  - feedback  #隐藏反馈
 comments: false  #评论，默认不开启
 ---
-# 考研计划(初试已完结)  
+# 考研计划(25考研已完结)  
 
 <body>
 <center>
