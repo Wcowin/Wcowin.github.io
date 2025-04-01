@@ -123,8 +123,8 @@ status: new
                     </div>
                     <div class="qualification__data">
                         <div>
-                            <h3 class="qualification__title">西安电子科技大学</h3>
-                            <span class="qualification__subtitle">网络空间安全硕士研究生</span>
+                            <h3 class="qualification__title">家里蹲大学</h3>
+                            <span class="qualification__subtitle">密码学硕士研究生</span>
                             <div class="qualification__calendar">
                                 <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
                                 2025 - 2028</font>
