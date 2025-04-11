@@ -176,7 +176,7 @@ Waline.init({
         </script>
     </div>
     <div id="cusdis" class="comment-system">
-        <center><p>评论审核后才会显示</p></center>
+        <center><p>评论审核后才会显示(需要再刷新一次)</p></center>
         <div id="cusdis_thread"
             data-host="https://cusdis.com"
             data-app-id="655cf3bc-734a-4d88-8317-be350621334c"

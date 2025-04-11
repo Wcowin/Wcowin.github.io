@@ -125,7 +125,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div> 
     <div class="card"> 
-     <img class="ava" src=" https://finisky.github.io/images/avatar.png" /> 
+     <img class="ava" src="https://finisky.github.io/images/avatar.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://finisky.github.io/" target="_blank">Finisky Garden</a> 
@@ -230,17 +230,6 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
       <div class="info">
        做学问可不是赶潮流、没有冷门热门之说。
-      </div> 
-     </div> 
-    </div>  
-   <div class="card"> 
-     <img class="ava" src="https://ejsoon.win/wp-content/uploads/2022/08/alogobg.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://ejsoon.win" target="_blank">天蒼人頡</a> 
-      </div> 
-      <div class="info">
-       發掘好玩事物
       </div> 
      </div> 
     </div>    
@@ -586,13 +575,13 @@ t.parentNode.insertBefore(e,t)}})();
     </div> 
     </div>
     <div class="card"> 
-    <img class="ava" src="https://www.chujiaweicode.top/static/favicons/icon32.png" /> 
+    <img class="ava" src="https://www.chujiaweicode.top/static/favicons/site-logo.png" /> 
     <div class="card-header"> 
       <div> 
-      <a href="https://www.chujiaweicode.top/" target="_blank">Jiawei’s Blog</a> 
+      <a href="https://www.chujiaweicode.top/" target="_blank">JW.DEV🚀</a> 
       </div> 
       <div class="info">
-    和光同尘
+    念头通达
       </div> 
     </div> 
     </div>
@@ -608,7 +597,7 @@ t.parentNode.insertBefore(e,t)}})();
     </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://github.com/get1024/RyanJoy-s_Web/blob/main/public/avatar.png?raw=true" /> 
+     <img class="ava" src="https://blog3.ryanjoy.top/avatar.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web</a> 
@@ -626,28 +615,6 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
       <div class="info">
       迄今所有人生都大写着失败，但不妨碍我继续向前✨
-      </div> 
-     </div> 
-    </div>
-    <div class="card"> 
-     <img class="ava" src="https://img.viper3.top/user/%E7%9A%AE%E5%8D%A1%E5%85%AB.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-      <a href="https://blog.viper3.top/" target="_blank">小霜南风</a> 
-      </div> 
-      <div class="info">
-      “散落一些碎花，凝结一些轻痕”
-      </div> 
-     </div> 
-    </div>
-    <div class="card"> 
-     <img class="ava" src="https://www.zlog.us.kg/img/zz.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-      <a href="https://www.zlog.us.kg" target="_blank">琅環书生</a> 
-      </div> 
-      <div class="info">
-      无远弗届，皆有可能
       </div> 
      </div> 
     </div>
@@ -772,7 +739,17 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
+    <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://www.zlog.us.kg" target="_blank">琅環书生</a> 
+      </div> 
+      <div class="info">
+      无远弗届，皆有可能
+      </div> 
+     </div> 
+    </div>
 
 
 
@@ -785,21 +762,29 @@ t.parentNode.insertBefore(e,t)}})();
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // 获取所有友链卡片
-    const friendLinks = document.querySelectorAll(".card");
-    const totalLinks = friendLinks.length -2;
+  document.addEventListener("DOMContentLoaded", function () {
+    // 获取友链容器
+    const friendLinksContainer = document.querySelector(".links-content");
+    if (friendLinksContainer) {
+      // 获取所有友链卡片
+      const friendLinks = friendLinksContainer.querySelectorAll(".card");
+      const totalLinks = friendLinks.length;
 
-    // 更新友链统计信息
-    const statsElement = document.getElementById("friend-link-stats");
-    if (statsElement) {
-      statsElement.textContent = `共有友链 ${totalLinks} 个,欢迎交换友链！`;
+      // 创建统计信息的元素
+      const statsElement = document.createElement("div");
+      statsElement.style.textAlign = "center";
+      statsElement.style.margin = "20px 0";
+      statsElement.style.color = "#999";
+      statsElement.textContent = `当前共有友链 ${totalLinks} 个，欢迎交换友链！`;
+
+      // 将统计信息插入到友链容器的上方
+      friendLinksContainer.parentNode.insertBefore(statsElement, friendLinksContainer);
     }
   });
 </script>
-<font  color= #999>
-<center><div id="friend-link-stats"></div></center></font>
+
 </div>
+
 
 
 <!-- <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1> -->
@@ -874,6 +859,28 @@ t.parentNode.insertBefore(e,t)}})();
       <div class="info">
        冰冻三尺非一日之寒
        滴水穿石非一日之功
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://ejsoon.win" target="_blank">天蒼人頡</a> 
+      </div> 
+      <div class="info">
+       發掘好玩事物
+      </div> 
+     </div> 
+    </div>  
+    <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://blog.viper3.top/" target="_blank">小霜南风</a> 
+      </div> 
+      <div class="info">
+      “散落一些碎花，凝结一些轻痕”
       </div> 
      </div> 
     </div>

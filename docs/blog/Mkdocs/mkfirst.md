@@ -112,4 +112,4 @@ Mkdocs Materials 教程:
 
 ## 加入友链
 
-[友链申请 :palms_up_together_tone1:](https://wcowin.work/link.html){.md-button target=“_blank”}
+[友链申请 :palms_up_together_tone1:](https://wcowin.work/link/){.md-button target=“_blank”}

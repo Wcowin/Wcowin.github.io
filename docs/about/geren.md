@@ -127,7 +127,7 @@ status: new
                             <span class="qualification__subtitle">密码学硕士研究生</span>
                             <div class="qualification__calendar">
                                 <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2025 - 2028</font>
+                                2026 - 2029</font>
                             </div>
                         </div>
                         <div>
