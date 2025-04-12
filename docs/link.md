@@ -312,21 +312,10 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://blog.btwoa.com/author.avif" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://blog.btwoa.com" target="_blank">btwoa</a> 
-      </div> 
-      <div class="info">
-      世界为你简单
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
      <img class="ava" src="https://note.isshikih.top/_assets/iro/IroPatch_Brown.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://note.isshikih.top/" target="_blank">IsshikiHugh's Notebook</a> 
+       <a href="https://note.isshikih.top/" target="_blank">IsshikiHugh</a> 
       </div> 
       <div class="info">
       我们登上高塔，看到的却只有黑夜……
@@ -422,7 +411,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://cdn.zerolacqua.top/images/avatar.png" /> 
+     <img class="ava" src="https://img.picui.cn/free/2025/04/11/67f87f30a09d3.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.zerolacqua.top" target="_blank">丘卡饮品店</a> 
@@ -739,17 +728,7 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-    <div class="card"> 
-     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
-     <div class="card-header"> 
-      <div> 
-      <a href="https://www.zlog.us.kg" target="_blank">琅環书生</a> 
-      </div> 
-      <div class="info">
-      无远弗届，皆有可能
-      </div> 
-     </div> 
-    </div>
+
 
 
 
@@ -881,6 +860,28 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
       <div class="info">
       “散落一些碎花，凝结一些轻痕”
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://www.zlog.us.kg" target="_blank">琅環书生</a> 
+      </div> 
+      <div class="info">
+      无远弗届，皆有可能
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://blog.btwoa.com/author.avif" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.btwoa.com" target="_blank">btwoa(站内图片挂了)</a> 
+      </div> 
+      <div class="info">
+      世界为你简单
       </div> 
      </div> 
     </div>
