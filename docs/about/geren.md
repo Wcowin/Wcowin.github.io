@@ -15,8 +15,8 @@ status: new
 ## 关于我
 
 <center>
-   ![](https://picx.zhimg.com/80/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}
-   ![](https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp#only-dark){style="width: 270px; border-radius: 50%;"}
+   ![](https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}
+   ![](https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg#only-dark){style="width: 270px; border-radius: 50%;"}
   <!-- <img src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" style="width: 200px; border-radius: 50%;" class="hidden-on-mobile" /> -->
 </center>
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
