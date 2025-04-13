@@ -15,16 +15,26 @@ status: new
 ## 关于我
 
 <center>
-   ![](https://picx.zhimg.com/80/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}
-   ![](https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp#only-dark){style="width: 270px; border-radius: 50%;"}
-  <!-- <img src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" style="width: 200px; border-radius: 50%;" class="hidden-on-mobile" /> -->
+  <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" 
+       style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
 </center>
-  <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
----
-<center><font size=6>
-<b>A college student in Chongqing
 
-——Wcowin</b> </font></center>  
+<!-- <center>  
+
+![](https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}  
+
+![](https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg#only-dark){style="width: 270px; border-radius: 50%;"}
+
+</center> -->
+
+  <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
+
+<center><font size=6 color= #757575>
+观史知今，当思进退，读书明志可识春秋
+
+——Wcowin </font></center>  
+
+---
 
 <html>
     <head>
@@ -62,7 +72,23 @@ status: new
     </body>
 </html>
 
-<center>[下载简历 :fontawesome-solid-download:](个人简历2.pdf){.md-button target=“_blank” }</center>
+
+<!-- <center>
+  [下载简历 :fontawesome-solid-download:](个人简历2.pdf){.md-button target="_blank"}
+</center> -->
+
+<center>
+<a href="../个人简历2.pdf" target="_blank" class="md-button">下载简历</a>
+</center>
+
+<!-- <div class="card2 file-block" markdown="1">
+<div class="file-icon"><img src="https://pic4.zhimg.com/80/v2-98f918276ecbc6d549fa6a5d1238e713_1440w.webp" style="height: 3em;"></div>
+<div class="file-body">
+<div class="file-title">个人简历</div>
+<div class="file-meta">2025-02-14</div>
+</div>
+<a class="down-button" target="_blank" href="../个人简历.pdf" markdown="1">:fontawesome-solid-download: 下载</a>
+</div> -->
 
 ---
 ## 我的履历
@@ -106,7 +132,7 @@ status: new
                             <span class="qualification__subtitle">电子信息工程专业学士</span>
                             <div class="qualification__calendar">
                                 <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2021 - 2024</font>
+                                2021 - 2025</font>
                             </div>
                         </div>
                     </div>
@@ -269,3 +295,4 @@ status: new
 <!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
 
 <!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script> -->
+
