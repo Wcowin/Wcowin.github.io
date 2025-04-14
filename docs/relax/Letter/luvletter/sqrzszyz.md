@@ -2,7 +2,7 @@
 title: 我是，我是宋清如至上主义者
 ---
 
-![png](https://s2.loli.net/2024/02/25/dKFieT5gt1GXuVI.png)
+![png](https://ts1.tc.mm.bing.net/th/id/R-C.7b433fb1832572ca4d6627d1234edd89?rik=yc46jPlXSrajTA&riu=http%3a%2f%2fe0.ifengimg.com%2f08%2f2019%2f0506%2fC5C2AEA32CB541F43C0D2C05BFFAD8DCB8B69698_size14_w540_h353.jpeg&ehk=tMvaZtGIpHfLyFENl9zuLIJC3Hy2YXKIHkhb8I%2fazjw%3d&risl=&pid=ImgRaw&r=0){.img1}
 
 要是有人问起我来，“你善于踢足球呢，还是善于写情书？”
 

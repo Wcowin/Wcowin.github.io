@@ -29,7 +29,7 @@ status: new
 
 > 感受一下它的简洁美观：[Wcowin for MkDocs主题](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”}  
 
-<center>
+
 
 **主页**
 ![](https://pic4.zhimg.com/80/v2-b74491257518429555b9f58a3bdc1293_1440w.webp)   
@@ -58,7 +58,7 @@ status: new
 
 <img width="1363" alt="image" src="https://s2.loli.net/2025/02/13/M7dgcDiGOI28PQs.png">
 
-</center>
+
 
 ## 如何快速使用
 打开终端安装mkdocs: `pip install mkdocs-material`，在你本地的文件夹下(我的就是**Wcowin.github.io**这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
@@ -94,7 +94,7 @@ status: new
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://www.star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
 ## 贡献者
 <a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">

@@ -976,7 +976,7 @@ t.parentNode.insertBefore(e,t)}})();
     ```yaml
     - name: Wcowin's Blog
       link: https://wcowin.work/
-      avatar: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png 
+      avatar: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
       descr: 循此苦旅，以达星辰
     ```
 === "通用"
