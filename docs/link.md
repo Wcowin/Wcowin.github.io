@@ -728,6 +728,17 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://img.picui.cn/free/2025/04/15/67fdd6371cea6.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://mushuo.xyz/index" target="_blank">沐硕</a> 
+      </div> 
+      <div class="info">
+       做一个追求幸福的人
+      </div> 
+     </div> 
+    </div>
 
 
 
@@ -875,7 +886,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://blog.btwoa.com/author.avif" /> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.btwoa.com" target="_blank">btwoa(站内图片挂了)</a> 
