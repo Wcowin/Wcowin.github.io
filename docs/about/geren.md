@@ -30,7 +30,8 @@ status: new
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
 
 <center><font size=6 color= #757575>
-观史知今，当思进退，读书明志可识春秋
+观史知今，当思进退，读书明志可识春秋  
+<br>
 
 ——Wcowin </font></center>  
 
