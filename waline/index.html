@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="https://pic4.zhimg.com/v2-fee2c2622ad68aeed98a8b411a8b272b_1440w.jpg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -55,6 +55,8 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -6669,10 +6671,202 @@
 <div class="poem-wrap">
   <div class="poem-border poem-left"></div>
   <div class="poem-border poem-right"></div>
-    <h1>留言板</h1>
-    <p id="poem">月落乌啼霜满天 江枫渔火对愁眠</p>
-    <p id="info"> 《枫桥夜泊》【唐代】张继</p>
+  <h1>留言板</h1>
+  <p id="poem">月落乌啼霜满天 江枫渔火对愁眠</p>
+  <p id="info"> 《枫桥夜泊》【唐代】张继</p>
+</div>
+
+<!-- 评论系统切换按钮 -->
+<div class="button-container">
+  <button id="giscus-btn" class="buttonxuan active">Giscus</button>
+  <button id="cusdis-btn" class="buttonxuan">Waline</button>
+</div>
+
+<!-- Giscus 评论区 -->
+<div id="giscus" class="comment-system active">
+  <script src="https://giscus.app/client.js"
+      data-repo="Wcowin/hexo-site-comments"
+      data-repo-id="R_kgDOIl9OJA"
+      data-mapping="number"
+      data-term="8"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="noborder_light"
+      data-lang="zh-CN"
+      data-loading="lazy"  
+      crossorigin="anonymous"
+      async>
+  </script>
+</div>
+
+<!-- Waline 评论区 -->
+<div id="cusdis" class="comment-system">
+  <center><p>评论审核后才会显示(需要再刷新一次)</p></center>
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+    init({
+      el: '#waline',
+      serverURL: 'https://mk-docs-comments.vercel.app/',
+      emoji: [
+        'https://unpkg.com/@waline/emojis@1.1.0/qq',
+        'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
+        '//unpkg.com/@waline/emojis@1.1.0/bilibili',
+        '//unpkg.com/@waline/emojis@1.1.0/weibo',
+      ],
+      comment: true,
+      pageview: true, 
+      lang: 'zh',
+    });
+  </script>
+</div>
+
+<!-- 评论系统切换脚本 -->
+<script>
+  document.querySelectorAll('.buttonxuan').forEach(button => {
+    button.addEventListener('click', function() {
+      document.querySelectorAll('.buttonxuan').forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      document.querySelectorAll('.comment-system').forEach(system => system.classList.remove('active'));
+      document.getElementById(this.id.replace('-btn', '')).classList.add('active');
+    });
+  });
+</script>
+
+<!-- 打赏区 -->
+<div class="reward-container">
+  <button onclick="toggleQR()">请作者喝杯咖啡</button>
+  <div id="qr" class="qr-container">
+    <div class="qr-option">
+      <img src="https://s2.loli.net/2025/02/07/stOifQrgoIYZzam.jpg" alt="Wcowin 微信支付">
+      <p>微信支付</p>
+    </div>
+    <div class="qr-option">
+      <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" alt="Wcowin 支付宝">
+      <p>支付宝</p>
+    </div>
   </div>
+</div>
+<script>
+  function toggleQR() {
+    const qrContainer = document.getElementById('qr');
+    qrContainer.style.display = (qrContainer.style.display === 'none' || qrContainer.style.display === '') ? 'block' : 'none';
+  }
+</script>
+
+<!-- 样式统一整理 -->
+<style>
+.comment-system {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.comment-system.active {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+.button-container {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 600px;
+}
+.buttonxuan {
+  background-color: #fff;
+  width: 180px;
+  color: #999;
+  border-radius: 25px;
+  border: 2px solid #608DBD;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.buttonxuan:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.buttonxuan.active {
+  background-color: #608DBD;
+  color: #fff;
+  border-color: #3498db;
+}
+@media (max-width: 768px) {
+  .button-container {
+    padding: 0 15px;
+  }
+  .buttonxuan {
+    width: 45%;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .buttonxuan {
+    width: calc(50% - 20px);
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+.reward-container {
+  margin: 20px auto;
+  padding: 25px 0;
+  text-align: center;
+  width: 90%;
+}
+.reward-container button {
+  background: none;
+  border: 1px solid #608DBD;
+  border-radius: 0.5rem;
+  color: #608DBD;
+  cursor: pointer;
+  line-height: 2;
+  outline: 0;
+  padding: 0 15px;
+  margin: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.reward-container button:hover {
+  background-color: #608DBD;
+  color: #fff;
+}
+.qr-container {
+  display: none;
+  text-align: center;
+  margin-top: 25px;
+}
+.qr-container img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.qr-container p {
+  font-size: 16px;
+  color: #555;
+}
+.qr-option {
+  display: inline-block;
+  margin: 0 10px;
+}
+.md-grid {
+  max-width: 1300px;
+}
+</style>
 
 <!-- tw开始 -->
 
@@ -6698,35 +6892,6 @@ Waline.init({
 </script>  
  </body> -->
 
-<!-- end -->
-
-<!-- <head>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
-  />
-</head>
-  <div id="waline"></div>
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-    init({
-      el: '#waline',
-      serverURL: 'https://mk-docs-comments.vercel.app/',
-      emoji: [
-      'https://unpkg.com/@waline/emojis@1.1.0/qq',
-      'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
-      '//unpkg.com/@waline/emojis@1.1.0/bilibili',
-      '//unpkg.com/@waline/emojis@1.1.0/weibo',
-    ],
-      comment: true,
-      pageview: true, 
-      lang: 'zh',
-      pageview: true,
-    });
-  </script> -->
-
-<!-- <div id="rcorners5" > -->
-
 <!-- <div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="655cf3bc-734a-4d88-8317-be350621334c"
@@ -6735,255 +6900,6 @@ Waline.init({
   data-page-title="{{ PAGE_TITLE }}"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script> -->
-
-<p><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>评论系统切换</title>
-    <style>
-        .comment-system {
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.5s ease-in-out;
-            height: 0;
-            overflow: hidden;
-            margin-top: 20px;
-        }
-        .comment-system.active {
-            opacity: 1;
-            visibility: visible;
-            height: auto;
-        }
-        .button-container {
-            text-align: center;
-            margin: 30px auto;
-            max-width: 600px;
-        }
-        .buttonxuan {
-            background-color: #ffffff;
-            width: 180px;
-            color: #999;
-            border-radius: 25px;
-            border: 2px solid #608DBD;
-            padding: 12px 24px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            font-weight: 500;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .buttonxuan:hover {
-            background-color: #f8f9fa;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-        .buttonxuan.active {
-            background-color: #608DBD;
-            color: white;
-            border-color: #3498db;
-        }
-        @media (max-width: 768px) {
-            .button-container {
-                padding: 0 15px;
-            }
-            .buttonxuan {
-                width: 45%;
-                padding: 10px 15px;
-                font-size: 14px;
-                margin: 5px;
-            }
-        }
-        @media (max-width: 480px) {
-            .buttonxuan {
-                width: calc(50% - 20px);
-                font-size: 13px;
-                padding: 8px 12px;
-            }
-        }
-    </style>
-</head></p>
-<body>
-    <div class="button-container">
-        <button id="giscus-btn" class="buttonxuan active">Giscus</button>
-        <button id="cusdis-btn" class="buttonxuan">Cusdis</button>
-    </div>
-    <div id="giscus" class="comment-system active">
-        <script src="https://giscus.app/client.js"
-            data-repo="Wcowin/hexo-site-comments"
-            data-repo-id="R_kgDOIl9OJA"
-            data-mapping="number"
-            data-term="8"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="top"
-            data-theme="noborder_light"
-            data-lang="zh-CN"
-            data-loading="lazy"  
-            crossorigin="anonymous"
-            async>
-        </script>
-    </div>
-    <div id="cusdis" class="comment-system">
-        <center><p>评论审核后才会显示(需要再刷新一次)</p></center>
-        <div id="cusdis_thread"
-            data-host="https://cusdis.com"
-            data-app-id="655cf3bc-734a-4d88-8317-be350621334c"
-            data-page-id="{{ PAGE_ID }}"
-            data-page-url="{{ PAGE_URL }}"
-            data-page-title="{{ PAGE_TITLE }}">
-        </div>
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-    </div>
-    <script>
-        document.querySelectorAll('.buttonxuan').forEach(button => {
-            button.addEventListener('click', function() {
-                document.querySelectorAll('.buttonxuan').forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-                document.querySelectorAll('.comment-system').forEach(system => system.classList.remove('active'));
-                document.getElementById(this.id.replace('-btn', '')).classList.add('active');
-            });
-        });
-    </script>
-
-
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate"
-        ? "transparent_dark"
-        : "light"
-
-      // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-          // Instruct Giscus to change theme
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
-</body>
-
-<!-- <div class="reward-container">
-  <div></div>
-  <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    请作者喝杯咖啡
-  </button>
-  <div id="qr" style="display: none;">
-      <div style="display: inline-block;">
-        <img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付">
-        <p>微信支付</p>
-      </div>
-      <div style="display: inline-block;">
-        <img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝">
-        <p>支付宝</p>
-      </div>
-
-  </div>
-</div> -->
-
-<hr />
-<style>
-
-.md-grid {
-  max-width: 1300px;
-}
-</style>
-
-<p><head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>打赏</title>
-<br />
-<style>
-      .reward-container {
-          margin: 20px auto;
-          padding: 25px 0;
-          text-align: center;
-          width: 90%;
-      }
-      .reward-container button {
-          background: none;
-          border: 1px solid #608DBD;
-          border-radius: 0.5rem;
-          color: #608DBD;
-          cursor: pointer;
-          line-height: 2;
-          outline: 0;
-          padding: 0 15px;
-          margin: 5px;
-          font-size: 16px;
-          transition: background-color 0.3s ease, color 0.3s ease;
-      }
-      .reward-container button:hover {
-          background-color: #608DBD;
-          color: #fff;
-      }
-      .qr-container {
-          display: none;
-          text-align: center;
-          margin-top: 25px;
-      }
-      .qr-container img {
-          width: 200px; /* 统一图片宽度 */
-          margin: 10px;
-          border-radius: 25px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .qr-container p {
-          font-size: 16px;
-          color: #555;
-      }
-      .qr-option {
-          display: inline-block;
-          margin: 0 10px;
-      }
-  </style></p>
-<p></head></p>
-<body>
-  <div class="reward-container">
-      <button onclick="toggleQR()">
-          请作者喝杯咖啡
-      </button>
-      <div id="qr" class="qr-container">
-          <div class="qr-option">
-              <img src="https://s2.loli.net/2025/02/07/stOifQrgoIYZzam.jpg" alt="Wcowin 微信支付">
-              <p>微信支付</p>
-          </div>
-          <div class="qr-option">
-              <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" alt="Wcowin 支付宝">
-              <p>支付宝</p>
-          </div>
-      </div>
-  </div>
-  <script>
-      function toggleQR() {
-          const qrContainer = document.getElementById('qr');
-          qrContainer.style.display = (qrContainer.style.display === 'none' || qrContainer.style.display === '') ? 'block' : 'none';
-      }
-  </script>
-</body>
 
 
 
@@ -7052,68 +6968,48 @@ Waline.init({
       
         <!-- Footer -->
 <footer class="md-footer">
-
   <!-- Link to previous and/or next page -->
-  
-    
       
-        
-      
-      <nav
-        class="md-footer__inner md-grid"
-        aria-label="页脚"
-        hidden
-      >
-
-        <!-- Link to previous page -->
-        
-          
-          <a
-            href="../tag/"
-            class="md-footer__link md-footer__link--prev"
-            aria-label="上一页: 标签"
-          >
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                上一页
-              </span>
-              <div class="md-ellipsis">
-                标签
-              </div>
-            </div>
-            
-          </a>
-        
-
-        <!-- Link to next page -->
-        
-          
-          <a
-            href="../link/"
-            class="md-footer__link md-footer__link--next"
-            aria-label="下一页: 友链"
-          >
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                下一页
-              </span>
-              <div class="md-ellipsis">
-                友链
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
+  <nav
+    class="md-footer__inner md-grid"
+    aria-label="页脚"
+    hidden
+  >
+    <!-- Link to previous page -->
+     
+    <a
+      href="../tag/"
+      class="md-footer__link md-footer__link--prev"
+      aria-label="上一页: 标签"
+    >
+      <div class="md-footer__button md-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </div>
+      <div class="md-footer__title">
+        <span class="md-footer__direction"> 上一页 </span>
+        <div class="md-ellipsis">标签</div>
+      </div>
+    </a>
     
-  
+
+    <!-- Link to next page -->
+     
+    <a
+      href="../link/"
+      class="md-footer__link md-footer__link--next"
+      aria-label="下一页: 友链"
+    >
+      <div class="md-footer__title">
+        <span class="md-footer__direction"> 下一页 </span>
+        <div class="md-ellipsis">友链</div>
+      </div>
+      <div class="md-footer__button md-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+      </div>
+    </a>
+    
+  </nav>
+   
 
   <!-- Further information -->
   <div class="md-footer-meta md-typeset">
@@ -7132,64 +7028,64 @@ Waline.init({
   
 </div>
       <div class="footer-visit-count">
-          <span>本站访问量：</span>
-          <script async src="//finicounter.eu.org/finicounter.js"></script>
-          <span id="finicount_views"></span>
-          &nbsp;|&nbsp;
-          <a href="https://icp.gov.moe/?keyword=20230640" target="_blank" class="icp-link">萌ICP备20230640号</a>
-          &nbsp;|&nbsp;
-          <div class="runtime-info">
-              <p style="text-align: center;">
-                  <span>本站已经运行</span>
-                  <span id='box1'></span>
-              </p>
-          </div>
+        <span>本站访问量：</span>
+        <script async src="//finicounter.eu.org/finicounter.js"></script>
+        <span id="finicount_views"></span>
+        &nbsp;|&nbsp;
+        <a
+          href="https://icp.gov.moe/?keyword=20230640"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="icp-link"
+          >萌ICP备20230640号</a
+        >
+        &nbsp;|&nbsp;
+        <span class="runtime-info">
+          <span>本站已经运行</span>
+          <span id="box1"></span>
+        </span>
       </div>
-      
       <script>
-          function timingTime() {
-              const start = '2022-10-20 00:00:00';
-              const startTime = new Date(start).getTime();
-              const currentTime = new Date().getTime();
-              const difference = currentTime - startTime;
-              const m = Math.floor(difference / 1000);
-              const mm = m % 60; // 秒
-              const f = Math.floor(m / 60);
-              const ff = f % 60; // 分钟
-              const s = Math.floor(f / 60); // 小时
-              const ss = s % 24;
-              const day = Math.floor(s / 24); // 天数
-              return `${day}天${ss}时${ff}分${mm}秒`;
-          }
-      
-          setInterval(() => {
-              document.getElementById('box1').innerHTML = timingTime();
-          }, 1000);
+        function timingTime() {
+          const start = "2022-10-20T00:00:00";
+          const startTime = new Date(start).getTime();
+          const now = Date.now();
+          let diff = Math.floor((now - startTime) / 1000);
+          const days = Math.floor(diff / 86400);
+          diff %= 86400;
+          const hours = Math.floor(diff / 3600);
+          diff %= 3600;
+          const minutes = Math.floor(diff / 60);
+          const seconds = diff % 60;
+          return `${days}天${hours}时${minutes}分${seconds}秒`;
+        }
+        setInterval(() => {
+          const el = document.getElementById("box1");
+          if (el) el.textContent = timingTime();
+        }, 1000);
       </script>
-      
+
       <style>
-          .footer-visit-count {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: fit-content;
-              min-height: 55px; /* 根据实际情况调整此高度 */
+        .footer-visit-count {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          min-height: 40px;
+          gap: 0.5em;
+        }
+        @media (max-width: 768px) {
+          .runtime-info {
+            display: none;
           }
-      
-          @media (max-width: 768px) {
-              .runtime-info {
-                  display: none;
-              }
-      
-              .icp-link {
-                  display: block;
-                  text-align: center;
-              }
+          .icp-link {
+            display: block;
+            text-align: center;
           }
+        }
       </style>
-        
-      
-        <div class="md-social">
+
+       <div class="md-social">
   
     
     
@@ -7256,8 +7152,7 @@ Waline.init({
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1l172.5 141.6c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0zM0 128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"/></svg>
     </a>
   
-</div>
-      
+</div> 
     </div>
   </div>
 </footer>
