@@ -52,7 +52,8 @@ status: new
 ![img](https://s1.imagehub.cc/images/2024/02/02/d20f0562838a8396724f18bfd09e19e8.png)  
 
 **简洁的友链页面**
-![](https://pic2.zhimg.com/80/v2-551c0a6e858705f842e2984fd44ce7f7_1440w.webp)
+![](https://pica.zhimg.com/80/v2-5d78061fb38a8f68aab12461798bc147_1440w.webp?source=2c26e567)
+
 
 **页面底部**
 <img width="1363" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/ac4db87b-396a-4d0e-99b5-51a1b316db33">
