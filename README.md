@@ -22,8 +22,8 @@
 **Telegram**
 
 <p align="center">
-  <a href="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" target="_blank">
-    <img src="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" alt="个人名片" style="border-radius: 10px;" width="50%">
+  <a href="https://t.me/wecowin" target="_blank">
+    <img src="https://pica.zhimg.com/80/v2-d5876bc0c8c756ecbba8ff410ed29c14_1440w.webp" alt="个人名片" style="border-radius: 10px;" width="50%">
   </a>
 </p>
 
@@ -31,7 +31,7 @@
 **Wechat**  
 <!-- ![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg) -->
 <p align="center">
-<img src="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" style="border-radius: 10px;" width="50%">
+<img src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="border-radius: 10px;" width="50%">
 </p>
 
 </center>
@@ -54,7 +54,13 @@
   <img src="https://contrib.rocks/image?repo=Wcowin/Wcowin.github.io" />
 </a>
 
+## 请作者喝杯咖啡
 
+  <a href="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" target="_blank">
+   <center>
+    <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" style="width: 450px; height: auto;">
+    </center>  
+  </a>
 
 <!-- <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
 

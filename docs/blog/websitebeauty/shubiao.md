@@ -4,14 +4,10 @@ tags:
   - Mkdocs
 ---
 
+不建议更改，因为默认就是最简洁
 
+<!-- ![](https://s1.vika.cn/space/2022/11/25/7b84e20eee214a5b956f2c96bcc115f4)   -->
 
-<head>
-<link rel="stylesheet" type="text/css" href="/stylesheets/shubiao.css">
-<script src="/javascripts/shubiao.js"></script>
-</head>
-
-![](https://s1.vika.cn/space/2022/11/25/7b84e20eee214a5b956f2c96bcc115f4)  
 在`docs/javascripts/extra.js`下复制粘贴：
 ```java
 var CURSOR;
@@ -100,7 +96,7 @@ class Cursor {
 ```
 其中比较重要的参数就是鼠标的尺寸和颜色，已经在上图中标出，目前发现颜色只支持RGB写法和固有名称写法（例如red这种），其他参数也可以自行摸索：  
 
-```java
+```javascript
 * {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='1.0' fill='rgb(57, 197, 187)'/></svg>") 4 4, auto}`
 ```
 

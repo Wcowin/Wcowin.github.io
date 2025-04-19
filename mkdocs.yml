@@ -101,6 +101,7 @@ nav:
         - 修改网站字体: blog/websitebeauty/mkdocsfont.md
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md
         - 背景特效: blog/websitebeauty/backgroud.md
+        - 添加404页面: blog/websitebeauty/404.md
         - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md     
     - 技术分享:
         - Win11镜像下载/KMS激活 : blog/technique sharing/win.md
@@ -199,7 +200,9 @@ nav:
       - 2024: 
           - 20240131: relax/diary/2024/20240131.md
           - 20240218: relax/diary/2024/20240218.md 
-          - 20231224: relax/diary/2024/20231224.md     
+          - 20241224: relax/diary/2024/20241224.md 
+      - 2025:
+          - 20250419: relax/diary/2025/20250419.md    
     - 数至十: 
       - 1: relax/wkwMath/1.md
       - 2: relax/wkwMath/2.md 

@@ -2,7 +2,7 @@
 title: 网站添加Mkdocs博客
 tags:
   - Mkdocs
----
+---  
 
 博客效果展示：[博客](../index.md)  
 
@@ -10,7 +10,7 @@ tags:
 
 与所有内置插件一样，博客插件的入门非常简单。只需将以下行添加到mkdocs.yml
 
-```
+``` hl_lines="2"
 plugins:
   - blog
 ```
@@ -23,6 +23,7 @@ plugins:
   - Blogger:
     - index: blog/index.md
 ```
+
 元标签参考：
 ```
 ---
@@ -33,29 +34,17 @@ draft: true   # 是否为草稿
 categories:  #分类
   - Hello
 ---
-```
-作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）  
+```  
 
+
+作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）  
 
 ```yml
 authors:
   Wcowin:
     name: Wang Kewen    # Author name
     description: Free and casual # Author description
-    avatar: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png         # Author avatar
+    avatar: https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png          # Author avatar
 
-```
-
-元标签参考：
-```
----
-title: 
-authors: [Wcowin]  #作者
-date: 2023-10-04   #时间
-draft: true   # 是否为草稿
-categories:  #分类
-  - Hello
----
-```
-
+```  
 结束

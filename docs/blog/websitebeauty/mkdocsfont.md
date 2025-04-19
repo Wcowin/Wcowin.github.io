@@ -132,10 +132,10 @@ An open-source Chinese font derived from Fontworks' Klee One. 一款开源中文
 
 ## 基于Mkdocs的网站字体美化用法
 
-1. 在mkdocs.yml中添加以下内容
+在mkdocs.yml中添加以下内容
 ```yaml
 extra_css:
-  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - https://static.zeoseven.com/zsft/292/main/result.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
@@ -143,15 +143,19 @@ extra_css:
 
 然后在extra.css中添加以下内容
 ```css
+@import url('https://static.zeoseven.com/zsft/292/main/result.css');
+
 body {
-      font-family: "LXGW WenKai", sans-serif;
-      /* Lite version */
-      /* font-family: "LXGW WenKai Lite", sans-serif; */
-      /* TC version */
-      /* font-family: "LXGW WenKai TC", sans-serif; */
-      /* Screen version */
-      /* font-family: "LXGW WenKai Screen", sans-serif; */
-    }
+font-family: "LXGW WenKai";
+font-weight: normal;
+}
+
+
+/* button.md-top {
+    font-family: LXGW WenKai;
+    font-size: 16px;
+    font-weight: lighter;
+} */
 ```
 
 四选一，mkdocs.yml和extra.css相互对应  

@@ -1,5 +1,6 @@
 ---
 title: 支持作者
+status: new
 ---
 
 # 支持作者
@@ -19,15 +20,24 @@ title: 支持作者
 
 <!-- ![](https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg){class="img1"} -->
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://pic2.zhimg.com/80/v2-42db1a89cc3e402891212189f444f081_1440w.webp" class="img1" style="max-width:500px; height:auto;" />
+</p> -->
+
+<p align="center">
+  <img src="https://pic2.zhimg.com/80/v2-42db1a89cc3e402891212189f444f081_1440w.webp" class="img1" style="width:150%; height:auto;" />
 </p>
 
 ## **:simple-wechat:** **WeChat Pay**
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" class="img1" style="max-width:500px; height:auto;" />
+</p> -->
+
+<p align="center">
+  <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" class="img1" style="width:150%; height:auto;" />
 </p>
+
 
 ***
 ## **:simple-kofi:ko-fi**
@@ -56,3 +66,4 @@ title: 支持作者
 赞助人|赞助金额|赞助时间
 -|-|-
 *急|15￥|25/04/18
+千平|100￥|25/04/16

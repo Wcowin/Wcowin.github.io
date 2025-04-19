@@ -80,3 +80,10 @@ plugins:
 ## 温馨提示
 
 对于大型单一的文档库，执行`mkdocs serve`后的渲染速度明显变慢，这是因为每次渲染都会检查所有文件的git历史记录。如果您不需要这个功能，可以通过将`enabled`设置为`false`来禁用它。
+
+比较推荐这种方法:
+```yaml hl_lines="2"
+  - git-committers:
+      enabled: !ENV [CI, false]
+```
+修改enabled的策略，这样就不会每次本地渲染都检查所有文件的git历史记录，渲染速度会明显加快，发布网站时候会正常显示。

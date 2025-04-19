@@ -1,11 +1,6 @@
 ---
 title: 为网站添加评论系统
 comments: true
-hide:
-  #  - navigation # 隐藏左边导航
-  #  - toc #隐藏右边导航
-  #  - footer #隐藏翻页
-   - feedback  #隐藏反馈
 tags:
   - Mkdocs
 ---
@@ -28,15 +23,15 @@ tags:
 言归正传
 
 ## 第一步
-mkdocs.yml中添加
-```
+mkdocs.yml中添加custom_dir
+``` hl_lines="3"
 theme:
   name: material
   custom_dir: docs/overrides  #主要是这一行
 ```
 参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件  
 树状结构如下:  
-```
+``` hl_lines="9-13"
 $ tree -a
 .
 ├── .github
@@ -56,7 +51,7 @@ $ tree -a
 
 ![img](https://s1.imagehub.cc/images/2024/02/02/214447b92070792905259a843de3e233.png)
 
-在comments.html中
+在comments.html中先复制粘贴下面的代码，后文会说怎么修改
 
 ```html hl_lines="4-18"
 {% if page.meta.comments %}
@@ -138,14 +133,14 @@ $ tree -a
 </script>
 ```
 
-复制将此代码，替换最上面👆🏻comments.html中高亮的代码
+复制此代码，替换最上面👆🏻comments.html中高亮的代码
 
 终端里`mkdocs server`一下
 
 ## 最后
 在你想插入评论的地方的元数据：`comments: true `
 
-```
+``` hl_lines="8"
 ---
 title: 留言板
 hide:
@@ -217,4 +212,4 @@ twikoo.init({
 })
 </script> 
 
-我感觉twikoo也好看！
+我感觉twikoo也好看！  
