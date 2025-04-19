@@ -15,7 +15,7 @@
         <link rel="canonical" href="http://wcowin.work/blog/websitebeauty/time/">
       
       
-        <link rel="prev" href="../backgroud/">
+        <link rel="prev" href="../404/">
       
       
         <link rel="next" href="../../technique%20sharing/win/">
@@ -992,6 +992,8 @@
       
         
       
+        
+      
     
     
     
@@ -1236,6 +1238,29 @@
   
   <span class="md-ellipsis">
     背景特效
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../404/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加404页面
     
   </span>
   
@@ -4101,6 +4126,8 @@
       
         
       
+        
+      
     
     
     
@@ -4245,12 +4272,92 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relax/diary/2024/20231224/" class="md-nav__link">
+      <a href="../../../relax/diary/2024/20241224/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    20231224
+    20241224
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7_2" id="__nav_3_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../relax/diary/2025/20250419/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250419
     
   </span>
   
@@ -6385,6 +6492,14 @@
     
   </span>
   
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
 
       </a>
     </li>
@@ -6893,6 +7008,12 @@
 </code></pre></div></td></tr></table></div></p>
 <h2 id="_3">温馨提示<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>对于大型单一的文档库，执行<code>mkdocs serve</code>后的渲染速度明显变慢，这是因为每次渲染都会检查所有文件的git历史记录。如果您不需要这个功能，可以通过将<code>enabled</code>设置为<code>false</code>来禁用它。</p>
+<p>比较推荐这种方法:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-committers</span><span class="p">:</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span>
+</span></code></pre></div></td></tr></table></div>
+修改enabled的策略，这样就不会每次本地渲染都检查所有文件的git历史记录，渲染速度会明显加快，发布网站时候会正常显示。</p>
 
 
 
@@ -6915,7 +7036,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年1月2日 12:26:30">2025-01-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年4月19日 07:01:50">2025-04-19</span>
   </span>
 
     
@@ -7081,16 +7202,16 @@
     <!-- Link to previous page -->
      
     <a
-      href="../backgroud/"
+      href="../404/"
       class="md-footer__link md-footer__link--prev"
-      aria-label="上一页: 背景特效"
+      aria-label="上一页: 添加404页面"
     >
       <div class="md-footer__button md-icon">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
       </div>
       <div class="md-footer__title">
         <span class="md-footer__direction"> 上一页 </span>
-        <div class="md-ellipsis">背景特效</div>
+        <div class="md-ellipsis">添加404页面</div>
       </div>
     </a>
     

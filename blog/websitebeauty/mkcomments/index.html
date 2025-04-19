@@ -486,8 +486,6 @@
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -994,6 +992,8 @@
       
         
       
+        
+      
     
     
     
@@ -1321,6 +1321,29 @@
   
   <span class="md-ellipsis">
     背景特效
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../404/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加404页面
     
   </span>
   
@@ -4121,6 +4144,8 @@
       
         
       
+        
+      
     
     
     
@@ -4265,12 +4290,92 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relax/diary/2024/20231224/" class="md-nav__link">
+      <a href="../../../relax/diary/2024/20241224/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    20231224
+    20241224
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7_2" id="__nav_3_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../relax/diary/2025/20250419/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250419
     
   </span>
   
@@ -6405,6 +6510,14 @@
     
   </span>
   
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
 
       </a>
     </li>
@@ -6724,8 +6837,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -6800,8 +6911,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
 
   <nav class="md-tags" >
     
@@ -6848,13 +6957,13 @@
 </ul>
 <p>言归正传</p>
 <h2 id="_1">第一步<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>mkdocs.yml中添加
+<p>mkdocs.yml中添加custom_dir
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>theme:
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>  name: material
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>  custom_dir: docs/overrides  #主要是这一行
-</code></pre></div></td></tr></table></div>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="hll">  custom_dir: docs/overrides  #主要是这一行
+</span></code></pre></div></td></tr></table></div>
 参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件<br />
 树状结构如下:<br />
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
@@ -6879,16 +6988,16 @@
 <a id="__codelineno-1-6" name="__codelineno-1-6"></a>│       └── PublishMySite.yml
 <a id="__codelineno-1-7" name="__codelineno-1-7"></a>├── docs
 <a id="__codelineno-1-8" name="__codelineno-1-8"></a>│   └── index.md
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a>│   └──overrides
-<a id="__codelineno-1-10" name="__codelineno-1-10"></a>│       └──assets
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a>│       └──main.html
-<a id="__codelineno-1-12" name="__codelineno-1-12"></a>│       └──partials
-<a id="__codelineno-1-13" name="__codelineno-1-13"></a>│          └──comments.html
-<a id="__codelineno-1-14" name="__codelineno-1-14"></a>│
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="hll">│   └──overrides
+</span><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="hll">│       └──assets
+</span><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="hll">│       └──main.html
+</span><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="hll">│       └──partials
+</span><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="hll">│          └──comments.html
+</span><a id="__codelineno-1-14" name="__codelineno-1-14"></a>│
 <a id="__codelineno-1-15" name="__codelineno-1-15"></a>└── mkdocs.yml
 </code></pre></div></td></tr></table></div></p>
 <p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/214447b92070792905259a843de3e233.png" /></p>
-<p>在comments.html中</p>
+<p>在comments.html中先复制粘贴下面的代码，后文会说怎么修改</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -7031,7 +7140,7 @@
 <a id="__codelineno-3-14" name="__codelineno-3-14"></a>        <span class="na">async</span><span class="p">&gt;</span>
 <a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>复制将此代码，替换最上面👆🏻comments.html中高亮的代码</p>
+<p>复制此代码，替换最上面👆🏻comments.html中高亮的代码</p>
 <p>终端里<code>mkdocs server</code>一下</p>
 <h2 id="_3">最后<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>在你想插入评论的地方的元数据：<code>comments: true</code></p>
@@ -7050,8 +7159,8 @@
 <a id="__codelineno-4-5" name="__codelineno-4-5"></a>  #  - toc #显示左
 <a id="__codelineno-4-6" name="__codelineno-4-6"></a>  #  - footer
 <a id="__codelineno-4-7" name="__codelineno-4-7"></a>  #  - feedback  
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a>comments: true  #默认不开启评论
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a>---
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="hll">comments: true  #默认不开启评论
+</span><a id="__codelineno-4-9" name="__codelineno-4-9"></a>---
 </code></pre></div></td></tr></table></div>
 <h2 id="_4">效果<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>完美!快速相应  </p>
@@ -7152,7 +7261,7 @@ twikoo.init({
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2024年5月29日 05:48:18">2024-05-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年4月19日 07:01:50">2025-04-19</span>
   </span>
 
     
@@ -7222,12 +7331,70 @@ twikoo.init({
 
 <!-- Determine whether to show feedback -->
 
-  
-    
-  
-
 
 <!-- Was this page helpful? -->
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        此页面有帮助吗？
+      </legend>
+      <div class="md-feedback__inner">
+
+        <!-- Feedback ratings -->
+        <div class="md-feedback__list">
+          
+            <button
+              class="md-feedback__icon md-icon"
+              type="submit"
+              title="This page was helpful"
+              data-md-value="1"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button
+              class="md-feedback__icon md-icon"
+              type="submit"
+              title="This page could be improved"
+              data-md-value="0"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+
+        <!-- Feedback rating notes (shown after submission) -->
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+
+              <!-- Determine title -->
+              
+                
+              
+
+              <!-- Replace {url} and {title} placeholders in note -->
+              谢谢你的反馈！
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+
+              <!-- Determine title -->
+              
+                
+              
+
+              <!-- Replace {url} and {title} placeholders in note -->
+              Thanks for your feedback! Help us improve this page by using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 
   <h2 id="__comments">评论</h2>
@@ -7326,7 +7493,7 @@ twikoo.init({
         <!-- Footer -->
 <footer class="md-footer">
   <!-- Link to previous and/or next page -->
-      
+    
   <nav
     class="md-footer__inner md-grid"
     aria-label="页脚"
