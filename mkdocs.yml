@@ -91,7 +91,7 @@ nav:
         - 2.Mkdocs配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
         - 3.解决Github Pages部署mkdocs自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
-    - Mkdocs美化:
+    - Mkdocs美化/补充:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
         - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
         - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
@@ -101,6 +101,8 @@ nav:
         - 修改网站字体: blog/websitebeauty/mkdocsfont.md
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md
         - 背景特效: blog/websitebeauty/backgroud.md
+        - 嵌入PDF文件: blog/websitebeauty/mkpdf.md
+        - 相对地址的一些问题: blog/websitebeauty/Relativeaddress.md
         - 添加404页面: blog/websitebeauty/404.md
         - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md     
     - 技术分享:
@@ -283,6 +285,7 @@ nav:
         - 2024: about/zongjie/2024.md
 
     - 25考研(已完结): about/kaoyan.md
+  - Mkdocs中文教程: https://wcowin.work/Mkdocs-Wcowin/
   # - RSS: https://blog.csdn.net/m0_63203517/rss/list?spm=1001.2014.3001.5494
 
 

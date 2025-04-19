@@ -7,7 +7,7 @@ hide:
   #  - footer #隐藏翻页
   #  - feedback  #隐藏反馈
 comments: false  #评论，默认不开启
-status: new
+# status: new
 ---
 
 # Wcowin for MkDocs主题

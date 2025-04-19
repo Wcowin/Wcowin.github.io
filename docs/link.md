@@ -32,6 +32,8 @@ t.parentNode.insertBefore(e,t)}})();
 
 # 欢迎加入友链(不分先后)  
 
+- [x] [快速加入友链](#_3)
+
 <div id="rcorners4" >
 
   <div class="links-content"> 
@@ -532,16 +534,6 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://blog.pantheon.press/wp-content/uploads/v2-f73763905eed23308466e441430a43be_r-150x150.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://blog.pantheon.press" target="_blank">pantheon</a> 
-      </div> 
-      <div class="info">
-      </div> 
-     </div> 
-    </div>
-    <div class="card"> 
     <img class="ava" src="https://s2.loli.net/2025/01/25/x4aS23Z1uypqhc7.jpg" /> 
     <div class="card-header"> 
       <div> 
@@ -739,7 +731,39 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://lxnchan.cn/assets/logo-v2.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://lxnchan.cn" target="_blank">泠泫凝的异次元空间</a> 
+      </div> 
+      <div class="info">
+       先空着2333
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://blog.btwoa.com/author.gif" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.btwoa.com" target="_blank">btwoa</a> 
+      </div> 
+      <div class="info">
+      世界为你简单
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://img.viper3.top/user/%E7%9A%AE%E5%8D%A1%E5%85%AB.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://blog.viper3.top/" target="_blank">小霜南风</a> 
+      </div> 
+      <div class="info">
+      “散落一些碎花，凝结一些轻痕”
+      </div> 
+     </div> 
+    </div>
 
 
 
@@ -867,17 +891,6 @@ t.parentNode.insertBefore(e,t)}})();
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-      <a href="https://blog.viper3.top/" target="_blank">小霜南风</a> 
-      </div> 
-      <div class="info">
-      “散落一些碎花，凝结一些轻痕”
-      </div> 
-     </div> 
-    </div>
-    <div class="card"> 
-     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
-     <div class="card-header"> 
-      <div> 
       <a href="https://www.zlog.us.kg" target="_blank">琅環书生</a> 
       </div> 
       <div class="info">
@@ -885,14 +898,13 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-   <div class="card"> 
+    <div class="card"> 
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://blog.btwoa.com" target="_blank">btwoa(站内图片挂了)</a> 
+       <a href="https://blog.pantheon.press" target="_blank">pantheon</a> 
       </div> 
       <div class="info">
-      世界为你简单
       </div> 
      </div> 
     </div>

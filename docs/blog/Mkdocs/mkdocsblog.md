@@ -18,10 +18,11 @@ plugins:
 **然后在/docs/blog/posts下写md文件即可**（无需再mkdocs.yml配置，如没有post文件，新建一个即可）
 但是bolg文件夹下要有index.md文件(没有这个文件新建即可)！
 
-在mkdocs.yml中这样写
+在mkdocs.yml的nav部分这样写
 ```
-  - Blogger:
-    - index: blog/index.md
+nav:
+  - 博客:
+      - index: blog/index.md
 ```
 
 元标签参考：

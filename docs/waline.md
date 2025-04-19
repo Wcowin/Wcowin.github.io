@@ -16,13 +16,13 @@ disqus: true
   <p id="info"> 《枫桥夜泊》【唐代】张继</p>
 </div>
 
-<!-- 评论系统切换按钮 -->
-<div class="button-container">
+
+<!-- <div class="button-container">
   <button id="giscus-btn" class="buttonxuan active">Giscus</button>
   <button id="cusdis-btn" class="buttonxuan">Waline</button>
 </div>
 
-<!-- Giscus 评论区 -->
+
 <div id="giscus" class="comment-system active">
   <script src="https://giscus.app/client.js"
       data-repo="Wcowin/hexo-site-comments"
@@ -40,7 +40,6 @@ disqus: true
   </script>
 </div>
 
-<!-- Waline 评论区 -->
 <div id="cusdis" class="comment-system">
   <center><p>评论审核后才会显示(需要再刷新一次)</p></center>
   <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
@@ -63,7 +62,6 @@ disqus: true
   </script>
 </div>
 
-<!-- 评论系统切换脚本 -->
 <script>
   document.querySelectorAll('.buttonxuan').forEach(button => {
     button.addEventListener('click', function() {
@@ -73,7 +71,22 @@ disqus: true
       document.getElementById(this.id.replace('-btn', '')).classList.add('active');
     });
   });
-</script>
+</script> -->
+
+  <script src="https://giscus.app/client.js"
+      data-repo="Wcowin/hexo-site-comments"
+      data-repo-id="R_kgDOIl9OJA"
+      data-mapping="number"
+      data-term="8"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="noborder_light"
+      data-lang="zh-CN"
+      data-loading="lazy"  
+      crossorigin="anonymous"
+      async>
+  </script>
 
 <!-- 打赏区 -->
 <div class="reward-container">
