@@ -721,7 +721,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://img.picui.cn/free/2025/04/15/67fdd6371cea6.png" /> 
+     <img class="ava" src="https://mushuo.xyz/img/avatar.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://mushuo.xyz/index" target="_blank">沐硕</a> 
@@ -764,6 +764,18 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://s1.imagehub.cc/images/2025/04/20/3c8dd9f82076d54db72beaceaf0a308b.png" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://blog.qianyios.top/" target="_blank">严千屹</a> 
+      </div> 
+      <div class="info">
+      一个简简单单的云计算运维博客
+      </div> 
+     </div> 
+    </div>
+
 
 
 
