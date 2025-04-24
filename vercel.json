@@ -1,0 +1,9 @@
+{
+    "builds": [
+      { "src": "requirements.txt", "use": "@vercel/python" },
+      { "src": "mkdocs.yml", "use": "@vercel/static-build", "config": { 
+          "buildCommand": "mkdocs build", 
+          "outputDirectory": "site"
+      }}
+    ]
+  }

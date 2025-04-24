@@ -4,7 +4,7 @@ site_name: Wcowin's Blog
 site_url: http://wcowin.work/
 site_description: 知足且上进，温柔且坚定
 site_author: 王科文(Wcowin)
-
+site_dir: site
 #[UI]
 theme:
   name: material
