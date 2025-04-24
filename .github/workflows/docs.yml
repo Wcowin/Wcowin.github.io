@@ -1,0 +1,48 @@
+name: Deploy Documentation
+
+on:
+  push:
+    paths:
+      - docs/**
+      - mkdocs.yml
+      - pyproject.toml
+      - .github/workflows/docs.yml
+
+  workflow_dispatch:
+
+
+jobs:
+  deploy:
+    name: Deploy Documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Up Git Credentials
+        uses: de-vri-es/setup-git-credentials@v2
+        with:
+          credentials: https://_:${{ secrets.GH_PAT }}@github.com
+
+      - name: Checkout ${{ github.repository }}
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Set Up uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: 0.5.x
+          enable-cache: true
+
+      - name: Install Dependencies
+        run: uv sync
+
+      - name: Build Documentation
+        run: uv run mkdocs build
+        env:
+          FONTAWESOME_PKG_TOKEN: ${{ secrets.FONTAWESOME_PKG_TOKEN }}
+
+      - name: Deploy to Vercel
+        run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} ${{ github.ref_name == 'main' && '--prod' || '' }}
+        working-directory: site
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
