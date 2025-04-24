@@ -43,7 +43,7 @@ status: new
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
+        <link rel="stylesheet" href="../sty/portfolio.css">
     </head>
     <body>
         <main class="main">
