@@ -10,26 +10,6 @@ hide:
   - feedback
 ---
 
-<!-- <head>
-<script>
-function _howxm(){_howxmQueue.push(arguments)}
-window._howxmQueue=window._howxmQueue||[];
-_howxm('setAppID','14429fca-cac1-4551-a472-b046a96ebb75');
-(function(){var scriptId='howxm_script';
-if(!document.getElementById(scriptId)){
-var e=document.createElement('script'),
-t=document.getElementsByTagName('script')[0];
-e.setAttribute('id',scriptId);
-e.type='text/javascript';e.async=!0;
-e.src='https://static.howxm.com/sdk.js';
-t.parentNode.insertBefore(e,t)}})();
-</script>
-</head> -->
-
-<!-- <div class="markdown-content">
-    <h2>欢迎加入友链(不分先后)</h2>
-</div> -->
-
 # 欢迎加入友链(不分先后)  
 
 - [x] [快速加入友链](#_3)
@@ -1029,3 +1009,5 @@ t.parentNode.insertBefore(e,t)}})();
 >头像: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
 >简介: 循此苦旅，以达星辰
 -->
+
+

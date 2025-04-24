@@ -142,12 +142,12 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 >
 </iframe> -->
 
-发邮件(1) 微信(2) MKdocs视频教程(3)
+<!-- 发邮件(1) 微信(2) MKdocs视频教程(3)
 { .annotate }
 
 1. 点击右下角[:material-email:](mailto:<wangkewen821@gmail.com>)即可发送邮件.
 2. TEL:18939533255(微信号)
-3. 点击右下角[:simple-bilibili:](https://space.bilibili.com/1407028951/lists/4566631?type=series)图标查看视频教程.
+3. 点击右下角[:simple-bilibili:](https://space.bilibili.com/1407028951/lists/4566631?type=series)图标查看视频教程. -->
 
 
 <style>
@@ -526,3 +526,26 @@ body::before {
 </style>
 
 
+<!-- 优化后的 Waline 评论区代码，支持暗色模式自适应，结构更简洁，移动端适配更好 -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+
+<div id="waline"></div>
+
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+  init({
+    el: '#waline',
+    serverURL: 'https://mk-docs-comments.vercel.app/',
+    emoji: [
+      'https://unpkg.com/@waline/emojis@1.1.0/qq',
+      'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
+      'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+    ],
+    comment: true,
+    pageview: true,
+    lang: 'zh',
+    dark: 'auto', // 自动适配暗色模式
+    avatar: 'retro', // 可选：更有趣的头像风格
+  });
+</script> -->

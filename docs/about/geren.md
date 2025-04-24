@@ -43,7 +43,7 @@ status: new
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <link rel="stylesheet" href="../sty/portfolio.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     </head>
     <body>
         <main class="main">
@@ -160,7 +160,7 @@ status: new
                         </div>
                         <div>
                             <h3 class="qualification__title">未完待续</h3>
-                            <span class="qualification__subtitle">在路上，永远热泪盈眶</span>
+                            <span class="qualification__subtitle">于道各努力，千里自同风</span>
                             <div class="qualification__calendar">
                                 <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
                                 Before - After</font>

@@ -6,6 +6,10 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2025-04-24</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 修复个人页面[我的履历](../../about/geren.md/#_3)的显示问题
+
 ## </p><h1 id="01" name="01"><strong>2025-04-13</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 修复在 Markdown 文件中，HTML 和 Markdown 混用可能导致解析器无法正确渲染。
