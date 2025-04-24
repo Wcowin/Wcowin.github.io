@@ -2,6 +2,7 @@
     "builds": [
       { "src": "package.json", "use": "@vercel/static-build" }
     ],
-    "outputDirectory": "site"
+    "outputDirectory": "site",
+    "trailingSlash": true
   }
   
