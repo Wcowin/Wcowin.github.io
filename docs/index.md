@@ -12,7 +12,7 @@ comments: false
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
     .custom-font {
-    font-size: 38px; /* 默认字体大小为8px */
+    font-size: 38px; 
     color: #757575;
 }
 @media (max-width: 768px) { /* 假设768px及以下为移动端 */
@@ -21,6 +21,68 @@ comments: false
     }
 }
 </style>
+
+
+<!-- <style>
+.text-reveal {
+  display: inline-block;
+  font-size: 38px;
+  font-family: inherit;
+  letter-spacing: 2px;
+  color: transparent;
+  background: linear-gradient(
+    120deg,
+    #757575 0%,
+    #bdbdbd 40%,
+    #fff 50%,
+    #bdbdbd 60%,
+    #757575 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-reveal-move 2.2s ease-in-out infinite;
+  will-change: background-position;
+}
+
+@keyframes text-reveal-move {
+  0%   { background-position: 200% 0; }
+  100% { background-position: 0 0; }
+}
+
+@media (max-width: 768px) {
+  .text-reveal {
+    font-size: 28px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .text-reveal {
+    background: linear-gradient(
+      120deg,
+      #e0e0e0 0%,
+      #bdbdbd 40%,
+      #fff 50%,
+      #bdbdbd 60%,
+      #e0e0e0 100%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-reveal {
+    animation: none;
+    background: none;
+    color: #757575;
+  }
+}
+</style>
+
+<div style="text-align:center;margin:40px 0;">
+  <span class="text-reveal">循此苦旅 以达星辰</span>
+</div> -->
+
 
 <div class="grid cards" markdown>
 

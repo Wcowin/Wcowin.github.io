@@ -6850,7 +6850,7 @@
 
   <h1>Home</h1>
 
-<center><font class="custom-font ml3">循此苦旅 以达星辰</font></center>
+<!-- <center><font class="custom-font ml3">循此苦旅 以达星辰</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
     .custom-font {
@@ -6862,7 +6862,40 @@
         font-size: 32px; /* 移动端字体大小为6px */
     }
 }
+</style> -->
+
+<style>
+    .text-reveal {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        color: #757575;
+    }
+
+    .text-reveal::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, transparent, white, transparent);
+        animation: reveal 3s ease-in-out infinite;
+    }
+
+    @keyframes reveal {
+        0% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
 </style>
+<center><div class="text-reveal"><font class="custom-font ml3">循此苦旅 以达星辰</font></div></center>
 
 <div class="grid cards">
 <ul>

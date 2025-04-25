@@ -1,0 +1,23 @@
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #b3b3b3;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* 图片懒加载淡入动画 */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+

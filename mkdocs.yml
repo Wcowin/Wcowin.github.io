@@ -497,6 +497,7 @@ extra_javascript:
 
 extra_css:
   # - stylesheets/extra.css
+  - stylesheets/extra2.css
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
   # - stylesheets/link.css  #友链
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
