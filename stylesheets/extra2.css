@@ -11,13 +11,5 @@
   background: #888;
 }
 
-/* 图片懒加载淡入动画 */
-img[loading="lazy"] {
-  opacity: 0;
-  transition: opacity 0.6s;
-}
-img[loading="lazy"].loaded {
-  opacity: 1;
-}
 
 
