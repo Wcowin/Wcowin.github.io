@@ -157,6 +157,7 @@ nav:
   - 开发: 
     - develop/index.md
     - DeepSeek:从入门到精通: develop/deepseek.md
+    - MCP中文文档: https://mcp-docs.cn/introduction
     - AI工具: develop/AI.md
     - 如何注册ChatGPT: develop/ChatGPT.md
     - 我的设备: develop/mydevice.md
@@ -423,7 +424,7 @@ plugins:
       #   kwds:
       #     case: lower
       # categories_toc: true
-      # pagination_per_page: 5
+      pagination_per_page: 5
       pagination_url_format: "page/{page}"
       authors_file: "{blog}/.authors.yml"  #作者信息
   - tags

@@ -8,19 +8,21 @@ comments: false
 ---
 
 
-<center><font class="custom-font ml3">循此苦旅 以达星辰</font></center>
+<!-- <center><font class="custom-font ml3">循此苦旅 以达星辰</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
     .custom-font {
     font-size: 38px; 
     color: #757575;
 }
-@media (max-width: 768px) { /* 假设768px及以下为移动端 */
+@media (max-width: 768px) { 
     .custom-font {
-        font-size: 32px; /* 移动端字体大小为6px */
+        font-size: 32px; 
     }
 }
-</style>
+</style> -->
+
+<center><font  color= #757575 size=6 >循此苦旅 以达星辰</font></center>
 
 
 <!-- <style>
@@ -124,7 +126,7 @@ comments: false
     ---
 
     - [DeepSeek:从入门到精通](develop/deepseek.md)
-    - [如何注册ChatGPT](develop/ChatGPT.md)
+    - [MCP中文文档](https://mcp-docs.cn/introduction)
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
     - [Homebrew如何安装(Mac & Linux)](blog/Mac/homebrew.md) 
     
@@ -141,7 +143,7 @@ comments: false
 
     ---
 
-    
+    - [AI网站分享](develop/AI.md)
     - [好用/好玩网站分享](blog/Webplay.md)
     - [Mac/windows软件网站汇总](blog/macsoft.md)
     - [重庆旅游推荐路线](trip/InCQ/CQ.md)
@@ -151,9 +153,9 @@ comments: false
     ---
 
     - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending] 
-    - [Blogger](blog/index.md)  
+    - [博客](blog/index.md)
     - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
-
+    - [支持作者](about/zcw.md) 
 </div>
 
 
@@ -180,9 +182,6 @@ t.parentNode.insertBefore(e,t)}})();
 <!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>-->  
  <!-- tidio聊天-->
 <!-- </head> -->
-
-
-
 
 
 <!--  
@@ -379,7 +378,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 </body>
 </html> -->
-
 
 <!-- <head>
     <meta charset="UTF-8">
@@ -611,7 +609,3 @@ body::before {
     avatar: 'retro', // 可选：更有趣的头像风格
   });
 </script> -->
-<head>
-<meta name="blogsclub-verify" content="477f367cb47943f984e7957c04d5b29a">
-
-</head>

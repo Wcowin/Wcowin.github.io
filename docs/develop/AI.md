@@ -7,15 +7,21 @@ status: new
 
 ## AI 对话
 - [openai.com](https://openai.com/){target=“_blank”}
+- [claude](https://claude.ai/new){target=“_blank”}
+- [grok](https://grok.com/){target=“_blank”}
 - [gemini](https://gemini.google.com/app){target=“_blank”}
+- [Manus](https://manus.im/app){target=“_blank”}
 - [Poe](https://poe.com/ChatGPT){target=“_blank”}
 - [kimi](https://kimi.moonshot.cn/){target=“_blank”}
 - [DuckDuckGo AI Chat](https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1&t=ddg_ios&atb=v403-1&ko=-1){target=“_blank”}
+- [mistral](https://chat.mistral.ai/chat){target=“_blank”}
 - [文心一言](https://yiyan.baidu.com/){target=“_blank”}
 - [讯飞星火](https://xinghuo.xfyun.cn/desk?ch=xhweb_ril){target=“_blank”}
 - [通义千问](https://tongyi.aliyun.com/qianwen/){target=“_blank”}
 - [豆包](https://www.doubao.com/chat/?channel=itab2&source=hw_db_itab){target=“_blank”}
+- [天工Al](https://www.tiangong.cn/){target=“_blank”}
 - [腾讯元宝](https://yuanbao.tencent.com/chat/naQivTmsDa){target=“_blank”}
+- [扣子](https://www.coze.cn/space-preview){target=“_blank”}
 - [问小白](https://www.wenxiaobai.com/chat/200006){target=“_blank”}
 - [智谱清言](https://chatglm.cn/main/guest?lang=zh){target=“_blank”}
 - [吉狗Al](https://www.jidog.com/chat){target=“_blank”}
@@ -51,15 +57,21 @@ status: new
 
 - 🐘 [网站智能客服](https://elephant.ai){target=“_blank”}
 - [cursor](https://www.cursor.com/){target=“_blank”}  (伟大，无需多言)
+- [Trae](https://www.trae.com.cn/){target=“_blank”} 
 
 ## AI合集
 - [Ai导航](https://www.ainavpro.com/){target=“_blank”}  
 - [AI工具集](https://ai-bot.cn/){target=“_blank”}
 - [猫猫鱼AI工具窝](https://www.maomaoyu.coffee/zh){target=“_blank”}
+- [Molica Al](https://pc.molica.com.cn/chat/76376bb7-aec4-4d08-ae92-94e7ec831123){target=“_blank”}
 
 ## AI 写作工具  
 - [智影AI智能创作工具](https://ai-bot.cn/){target=“_blank”}
 - [笔灵AI](https://ibiling.cn/paper?from=itabpaper02){target=“_blank”}
+- [萝卜写作](https://98.luoboxiezuo.com/modelessay?shareId=){target=“_blank”}
+- [千笔写作](https://www.aipaperpass.com/?pic=xQN6){target=“_blank”}
+- [SpeedAI科研小助手](https://kylw.kuaipaper.com/home){target=“_blank”}
+- [橙篇](https://cp.baidu.com/){target=“_blank”}
 
 ## AI 翻译工具  
 - [SimplifyAI 文档翻译](https://translate.simplifyai.cn/){target=“_blank”}
