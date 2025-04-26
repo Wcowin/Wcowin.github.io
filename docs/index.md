@@ -89,7 +89,7 @@ comments: false
 -   :material-notebook-edit-outline:{ .lg .middle } __导航栏__
 
     ---
-    ![image](https://pic3.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp){ class="responsive-image" loading="lazy" align=right width="340" height="226" style="border-radius: 25px;" }
+    ![image](https://pic3.zhimg.com/v2-b9ae6898d33359da6be815bf60626af2_1440w.jpg){ class="responsive-image" loading="lazy" align=right width="340" height="226" style="border-radius: 25px;" }
 
     - [x] 通过{==目录==}以打开文章
     - [x] 搜索{~~~>关键词~~}查询文章
@@ -611,3 +611,7 @@ body::before {
     avatar: 'retro', // 可选：更有趣的头像风格
   });
 </script> -->
+<head>
+<meta name="blogsclub-verify" content="477f367cb47943f984e7957c04d5b29a">
+
+</head>
