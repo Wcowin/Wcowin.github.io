@@ -125,14 +125,15 @@ comments: false
 
     ---
 
+    - [模型上下文协议(MCP)简述](develop/AI/mcp.md)
     - [DeepSeek:从入门到精通](develop/deepseek.md)
-    - [MCP中文文档](https://mcp-docs.cn/introduction)
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
     - [Homebrew如何安装(Mac & Linux)](blog/Mac/homebrew.md) 
     
 -   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程(三步搞定)__
 
     ---
+    
     - [Mkdocs前言](blog/Mkdocs/mkfirst.md)
     - [利用Mkdocs部署静态网页](blog/Mkdocs/mkdocs1.md)
     - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)   

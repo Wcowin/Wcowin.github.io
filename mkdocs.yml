@@ -23,44 +23,42 @@ theme:
         name: 关闭自动模式
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
-      primary: blue # 上方的
-      accent: indigo # 链接等可交互元件的高亮色
-      # teal 
+      primary: blue # 主色
+      accent: indigo # 强调色
       toggle:
-        icon: material/toggle-switch # 图标
-        name: 切换至夜间模式 # 鼠标悬浮提示
+        icon: material/toggle-switch
+        name: 切换至夜间模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate # 夜间模式
-      primary: black 
+      primary: black
       accent: indigo
-      # teal
       toggle:
         icon: material/toggle-switch-off-outline
         name: 切换至日间模式
   features: 
-    - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
-    - navigation.instant 
-    #- header.autohide  #自动隐藏
-    - navigation.instant.progress
-    # - navigation.prune #渲染的 HTML 中仅包含可见的导航项
-    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
-    - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
-    # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
-    - navigation.top # 返回顶部的按钮 在上滑时出现
-    - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
-    - search.suggest # 搜索输入一些字母时推荐补全整个单词
-    - search.highlight # 搜索出的文章关键词加入高亮
-    - search.share #搜索分享按钮
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
-    - content.tabs.link
-    - content.tooltips
-    - content.code.copy
-    - content.code.select
-    - content.action.edit
-    - content.action.view
-    - content.code.annotate 
+    - announce.dismiss # 可关闭公告栏
+    - navigation.instant # 页面无刷新切换
+    # - header.autohide  # 自动隐藏头部
+    - navigation.instant.progress # 页面切换进度条
+    # - navigation.prune # 只渲染可见导航项
+    - navigation.tracking # 滚动时URL锚点自动更新
+    - navigation.tabs # 一级导航显示为顶部Tab
+    # - navigation.tabs.sticky  # Tab栏吸顶
+    - navigation.sections # 侧边栏分组
+    - navigation.top # 返回顶部按钮
+    - navigation.footer # 页脚显示在侧边栏
+    - search.suggest # 搜索建议
+    - search.highlight # 搜索高亮
+    - search.share # 搜索结果分享
+    - navigation.expand # 默认展开所有目录
+    - navigation.indexes # 支持节索引页
+    - content.tabs.link # 支持标签页链接
+    - content.tooltips # 支持鼠标悬浮提示
+    - content.code.copy # 代码块一键复制
+    - content.code.select # 代码块一键全选
+    - content.action.edit # 编辑按钮
+    - content.action.view # 查看源码按钮
+    - content.code.annotate # 代码注释
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github #右上角图标
@@ -157,7 +155,9 @@ nav:
   - 开发: 
     - develop/index.md
     - DeepSeek:从入门到精通: develop/deepseek.md
-    - MCP中文文档: https://mcp-docs.cn/introduction
+    - MCP:
+        - MCP中文文档: https://mcp-docs.cn/introduction
+        - What is MCP: develop/AI/mcp.md
     - AI工具: develop/AI.md
     - 如何注册ChatGPT: develop/ChatGPT.md
     - 我的设备: develop/mydevice.md
@@ -236,7 +236,7 @@ nav:
         - 第一封: relax/Letter/letter1.md
         - 第二封: relax/Letter/letter2.md
         - 情书:
-            -   朱生豪与宋清如: relax/Letter/luvletter/sqrzszyz.md
+            - 朱生豪与宋清如: relax/Letter/luvletter/sqrzszyz.md
             - 《朱生豪情书全集摘录》(021): relax/Letter/luvletter/zhushenghao1.md
             - 《朱生豪情书全集摘录》(031): relax/Letter/luvletter/zhushenghao2.md
             - 《朱生豪情书全集摘录》(036): relax/Letter/luvletter/zhushenghao3.md
@@ -522,7 +522,7 @@ extra_css:
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
 
-# watch:
+# watch: #监听文件变动自动刷新
 #   - docs
 #   - mkdocs.yml
 #   - docs/overrides

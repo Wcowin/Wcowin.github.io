@@ -9,7 +9,6 @@ hide:
 tags:
     - 我的作品
 comments: false  #评论，默认不开启
-status: new
 ---
 
 # Mkdocs-Wcowin主题

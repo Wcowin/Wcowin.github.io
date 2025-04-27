@@ -216,9 +216,9 @@ disqus: true
   display: inline-block;
   margin: 0 10px;
 }
-.md-grid {
+/* .md-grid {
   max-width: 1300px;
-}
+} */
 </style>
 
 
