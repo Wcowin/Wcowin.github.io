@@ -20,10 +20,18 @@
 }
 
 /* 搜索框及下拉结果圆角 */
-.md-search__form,
-[data-md-toggle="search"]:checked ~ .md-header .md-search__form,
-[dir="ltr"] .md-search__output {
+.md-search__form {
   border-radius: var(--base-border-radius);
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+  border-top-right-radius: var(--base-border-radius);
+  border-top-left-radius: var(--base-border-radius);
+}
+
+[dir="ltr"] .md-search__output {
+  border-bottom-right-radius: var(--base-border-radius);
+  border-bottom-left-radius: var(--base-border-radius);
 }
 
 /* 可选：如需恢复代码块、警告框等样式，取消注释即可 */
