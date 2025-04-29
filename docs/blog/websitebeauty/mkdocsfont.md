@@ -158,9 +158,8 @@ font-weight: normal;
 } */
 ```
 
-四选一，mkdocs.yml和extra.css相互对应  
 
-不懂extra_css的用法的可以看一下我写的[extra_css部分](../Mkdocs/mkdocs2.md)教程
+不懂extra_css的用法的可以看一下我写的[extra_css部分](../Mkdocs/mkdocs2.md/#extra_javascriptextra_css)教程
 
 !!!tip
     切换字体后可能返回顶部按钮会在个别浏览器显示异常
