@@ -9,9 +9,9 @@ comments: false
 ---
 # 首頁
 
-<!-- <center><font  color= #518FC1 size=6>“循此苦旅，以达星辰”</font></center> -->
-<center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以達星辰”</font></center>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<center><font  color= #518FC1 size=6>“台灣是中國的領土”</font></center>
+<!-- <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以達星辰”</font></center>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
 
 
 <!-- <center>
@@ -124,11 +124,12 @@ comments: false
      </li>
    </ul>
 </div> 
-快速談話(1) 聯絡我(2)
+
+<!-- 快速談話(1) 聯絡我(2)
 { .annotate }
 
 1. 點選右下角與我線上交談.
-2. 18939533255
+2. 18939533255 -->
 ***  
 
 <div class="grid cards" markdown>

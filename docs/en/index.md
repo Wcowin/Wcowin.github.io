@@ -9,7 +9,7 @@ comments: false
 ---
 # Home
 
-<center><font class="custom-font ml3">"Follow this arduous journey to reach the stars"</font></center>
+<!-- <center><font class="custom-font ml3">"Follow this arduous journey to reach the stars"</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
     .custom-font {
@@ -21,7 +21,10 @@ comments: false
         font-size: 29px;
     }
 }
-</style>
+</style> -->
+
+<center><font  color= #757575 size=5 >Follow this arduous journey to reach the stars</font></center>
+
 
 <div class="grid cards" markdown>
 
@@ -74,8 +77,9 @@ comments: false
 -   :octicons-bookmark-16:{ .lg .middle } __Recommended Articles__
 
     ---
+
+    - [Brief Introduction to Model Context Protocol (MCP)](../develop/AI/mcp.md)
     - [DeepSeek: From Beginner to Expert](../develop/deepseek.md)
-    - [How to Register for ChatGPT](../develop/ChatGPT.md)
     - [Packing Python Files into .exe Executable](../blog/py/python.md)
     - [How to Install Homebrew (Mac & Linux)](../blog/Mac/homebrew.md) 
     

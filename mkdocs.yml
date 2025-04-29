@@ -9,7 +9,7 @@ site_dir: site
 theme:
   name: material
   custom_dir: docs/overrides
-  font: false
+  # font: false
   logo: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
   # https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp
   # https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
@@ -38,6 +38,7 @@ theme:
   features: 
     - announce.dismiss # 可关闭公告栏
     - navigation.instant # 页面无刷新切换
+    - navigation.prune
     # - header.autohide  # 自动隐藏头部
     - navigation.instant.progress # 页面切换进度条
     # - navigation.prune # 只渲染可见导航项
@@ -348,11 +349,11 @@ extra:
           note: >- 
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
-  # consent:
-  #   title: Cookie consent
-  #   description: >- 
-  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
-  #     如果你同意,你可以帮助我们让我们的网站更好
+  consent:
+    title: Cookie consent
+    description: >- 
+      我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+      如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
   # - statistics
@@ -368,6 +369,7 @@ plugins:
   #       - tags
   # - social
   - search:
+      enabled: !ENV [CI, false]   #建议加上这句，不然会影响速度，本地搜索可以不需要，不影响部署时候有
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - offline
   # - glightbox:
@@ -493,7 +495,7 @@ extra_javascript:
   # - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
   # - https://res.zvo.cn/translate/translate.js  # Translate
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
-  
+
 
 
 extra_css:
@@ -522,10 +524,10 @@ extra_css:
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
 
-# watch: #监听文件变动自动刷新
-#   - docs
-#   - mkdocs.yml
-#   - docs/overrides
+watch: #监听文件变动自动刷新
+  - docs
+  - mkdocs.yml
+  - docs/overrides
 
 hooks:
   - docs/overrides/hooks/socialmedia.py

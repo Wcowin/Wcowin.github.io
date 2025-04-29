@@ -492,7 +492,7 @@ hide:
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://avatars.githubusercontent.com/u/11755104?v=4" /> 
+     <img class="ava" src="https://blog.meekdai.com/avatar.svg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://meekdai.com" target="_blank"> Meekdai</a> 
@@ -755,6 +755,16 @@ hide:
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://www.eurekaimer.xyz/" target="_blank">Eurekaimer's Digital Garden</a> 
+      </div> 
+      <div class="info">
+      </div> 
+     </div> 
+    </div>
 
 
 
@@ -934,14 +944,14 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-users-viewfinder:{ .lg .middle } __要求__
+-   :fontawesome-solid-users-viewfinder:{ .lg .middle } __友链申请要求__
 
     ---
     * 独立博客(不要求独立域名)，HTTPS，**访问流畅**
     * **原创内容**为主，原创内容5篇以上
     * 处于活跃状态，有一定的更新频率
     * 建站**15天**以上
-    * 未添加友链或申请**未通过**，评论留言会被隐藏。
+    * 未添加我站友链或你的申请**未通过**，评论留言会被隐藏。
     
 
 </div>
@@ -949,7 +959,7 @@ hide:
 
 
 
-本站已经加入[十年之约](https://www.foreverblog.cn/)
+本站已经加入[十年之约](https://www.foreverblog.cn/){target="_blank"}
 <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>，请放心添加本站友链
 
 
