@@ -103,7 +103,9 @@ nav:
         - 嵌入PDF文件: blog/websitebeauty/mkpdf.md
         - 相对地址的一些问题: blog/websitebeauty/Relativeaddress.md
         - 添加404页面: blog/websitebeauty/404.md
-        - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md     
+        - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md  
+        - 页脚设置: blog/websitebeauty/footer.md
+        - 加速网站访问的一些心得: blog/websitebeauty/accelerate.md
     - 技术分享:
         - Win11镜像下载/KMS激活 : blog/technique sharing/win.md
         - 实用脚本分享: blog/technique sharing/jiaoben.md
@@ -349,11 +351,11 @@ extra:
           note: >- 
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
-  consent:
-    title: Cookie consent
-    description: >- 
-      我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
-      如果你同意,你可以帮助我们让我们的网站更好
+  # consent:
+  #   title: Cookie consent
+  #   description: >- 
+  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+  #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
   # - statistics
