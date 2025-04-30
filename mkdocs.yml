@@ -261,6 +261,7 @@ nav:
     - 重庆: trip/InCQ/CQ.md
     - 西安: trip/Xian.md    
     - 我的家乡——漯河: trip/LH.md
+    - 足迹: trip/footmark.md
     
 
   - 标签: tag.md
@@ -371,7 +372,7 @@ plugins:
   #       - tags
   # - social
   - search:
-      enabled: !ENV [CI, false]   #建议加上这句，不然会影响速度，本地搜索可以不需要，不影响部署时候有
+      # enabled: !ENV [CI, false]   #建议加上这句，不然会影响速度，本地搜索可以不需要，不影响部署时候有
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - offline
   # - glightbox:

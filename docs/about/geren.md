@@ -14,10 +14,63 @@ status: new
 
 ## 关于我
 
-<center>
+<!-- <center>
   <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" 
        style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
-</center>
+</center> -->
+
+
+ <div class="flip-container">
+<div class="image-container">
+    <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
+    <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
+</div>
+</div>
+<style>
+    .flip-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    display: flex;
+    align-items: flex-start;
+    /* 对齐顶部 */
+    justify-content: flex-end;
+    /* 将文字放置右上角 */
+}
+.image-container {
+    position: relative;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.image-container img:first-child {
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.image-container img:last-child {
+    z-index: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.image-container:hover img:first-child {
+    transform: rotateY(180deg);
+    z-index: 2;
+}
+.image-container:hover img:last-child {
+    transform: rotateY(0deg);
+    z-index: 3;
+}
+</style>
 
 
 <!-- <center>  
@@ -275,6 +328,7 @@ status: new
 </div>
 </div>
 
+> 💬我的电话号码`MD5`码：7037F514864088F907CC921687B670EE（破解有奖）  
 
 ??? tip "公众号"
     <figure markdown >
@@ -292,6 +346,10 @@ status: new
 
     ---  
     <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
+
+
+
+<!-- 我的电话号码`SHA256`码：DEF633030D31F7ABE6213EE5B5EFDF0E4ADDFDA121695325660D82F15ED22946 -->
 
 
 <!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->

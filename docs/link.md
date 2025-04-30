@@ -765,14 +765,43 @@ hide:
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://imgurl.zishu.me/favicon.png" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://zishu.me" target="_blank">子舒的博客</a> 
+      </div> 
+      <div class="info">
+      一个热爱生活的前端开发工程师
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://yangzhang.site/assets/images/summation.png" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://yangzhang.site/" target="_blank">yangzhang's Site</a> 
+      </div> 
+      <div class="info">
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://p1.ssl.qhimg.com/t012bf8e3a395b6d9ab.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://md5.cc" target="_blank">md5解密</a> 
+      </div> 
+      <div class="info">
+      </div> 
+     </div> 
+    </div>
 
 
 
 
    </div> 
   </div>
-
-
 
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>

@@ -611,3 +611,18 @@ body::before {
   });
 </script> -->
 
+<!-- <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@docsearch/css@3 "/></pre></li>
+<script src=" https://cdn.jsdelivr.net/npm/@docsearch/js@3 "></script>
+ <script type="text/javascript">
+ docsearch({
+ appId: "HPAF2GI0JK",
+ apiKey: "98e3ce22d1357833c38b7b581ca07219",
+ indexName: "wcowin",
+ container: '#docsearch'
+ debug: false
+ });
+ </script>
+ <div id="docsearch"></div> -->
+
+
+
