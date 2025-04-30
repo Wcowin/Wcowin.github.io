@@ -29,8 +29,8 @@ status: new
 <style>
     .flip-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 290px;
     margin: 10px auto;
     display: flex;
     align-items: flex-start;
@@ -41,8 +41,8 @@ status: new
 .image-container {
     position: relative;
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 290px;
 }
 .image-container img {
     position: absolute;
@@ -51,6 +51,7 @@ status: new
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    display: block;
     transition: all 1s;
 }
 .image-container img:first-child {
@@ -235,13 +236,21 @@ status: new
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
+## 简介
+
 !!! pied-piper1 "About me"
-    - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}!
-    - [x] 清醒，知趣，明得失，知进退
+    - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
     - [x] 咖啡重度爱好者 
-    - [x] 热爱(xiā)折腾技术/Math
+    - [x] 热爱(xiā)折腾技术/Math，目前在研究密码学
     - [x] 读书明志可识春秋;诗词爱好者;喜欢村上春树;擅长羽毛球
-<img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp">
+    - [x] 清醒，知趣，明得失，知进退 
+
+
+
+<figure markdown="span">
+  <img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp">
+  <figcaption>人生大事  吃喝二字</figcaption>
+</figure>
 
 ## 联系我
 
@@ -291,7 +300,8 @@ status: new
       
     <center><font  color= #757575 size=6>WeChat</font>  
     <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: auto; height: auto;">
-    <font color= #999 >扫一扫上面的二维码图案，加我为朋友。</font></center>
+    <font color= #999 >扫一扫上面的二维码图案<br>
+    加我为朋友</font></center>
 
 </div>
 
@@ -328,7 +338,7 @@ status: new
 </div>
 </div>
 
-> 💬我的电话号码`MD5`码：7037F514864088F907CC921687B670EE（破解有奖）  
+
 
 ??? tip "公众号"
     <figure markdown >
@@ -336,6 +346,9 @@ status: new
     <figcaption>公众号</figcaption>
     </figure>
 
+---  
+
+> 💬我电话号码的`MD5`码：7037F514864088F907CC921687B670EE（破解有奖） 
 
 
 ## 须知
@@ -345,7 +358,7 @@ status: new
     如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角微信添加好友，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
 
     ---  
-    <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
+    <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}</center>
 
 
 

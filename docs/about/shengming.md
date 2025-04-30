@@ -30,7 +30,7 @@ title: 免责声明
 
 12、本站相关声明版权及其修改权、更新权和最终解释权均属本站所有。
 
-[Send Email :fontawesome-solid-paper-plane:](mailto:<1135801806@qq.com>){ .md-button }
+[Send Email :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){ .md-button }
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a><br />本博客所有原创文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">知识共享署名 4.0 国际许可协议</a>进行许可。
 

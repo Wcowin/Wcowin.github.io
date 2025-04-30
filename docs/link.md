@@ -624,7 +624,7 @@ hide:
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://raw.githubusercontent.com/VictorWang712/Note/refs/heads/main/docs/assets/images/avatars/Walker_V.png" /> 
+     <img class="ava" src="https://avatars.githubusercontent.com/u/58868440?v=4" /> 
      <div class="card-header"> 
       <div> 
       <a href="https://victorwang712.github.io/Note/" target="_blank">Walker_V's Notebook</a> 

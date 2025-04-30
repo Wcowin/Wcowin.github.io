@@ -25,7 +25,7 @@ status: new
 </p> -->
 
 <p align="center">
-  <img src="https://pic2.zhimg.com/80/v2-42db1a89cc3e402891212189f444f081_1440w.webp" class="img1" style="width:150%; height:auto;" />
+  <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" class="img1" style="width:60%; " />
 </p>
 
 ## **:simple-wechat:** **WeChat Pay**
@@ -35,7 +35,7 @@ status: new
 </p> -->
 
 <p align="center">
-  <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" class="img1" style="width:150%; height:auto;" />
+  <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" class="img1" style="width:80%; " />
 </p>
 
 

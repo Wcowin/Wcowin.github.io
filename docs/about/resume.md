@@ -17,7 +17,8 @@ comments: false
 
 </div> -->
 
-请使用PC端查看，谢谢
+请使用PC端查看，谢谢~  
+
 ---
 
 <div class="grid cards" markdown>
@@ -26,7 +27,7 @@ comments: false
 
     ---
 
-    <iframe src="../个人简历2.pdf" width="100%" height="800px" style="border: 1px solid #ccc; overflow: auto;">
+    <iframe src="../个人简历2.pdf" width="100%" height="1200px" style="border: 1px solid #ccc; overflow: auto;">
     </iframe>
     
 

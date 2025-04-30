@@ -147,10 +147,10 @@ nav:
     - WIN:
         - 彻底卸载360安全卫士的方法: blog/Win/360.md
         - 三步卸载 Microsoft Edge: blog/Win/edgexz.md
-        - windows快捷键: blog/Win/winkjj.md
+        - Windows快捷键: blog/Win/winkjj.md
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
-        - pip: blog/py/pip.md
+        - PIP: blog/py/pip.md
     - C语言: 
         - C笔记: blog/C language/c.md
         - C++: blog/C language/C++.md
@@ -502,10 +502,11 @@ extra_javascript:
 
 
 extra_css:
-  # - stylesheets/extra.css
+  - stylesheets/extra.css
   - stylesheets/extra2.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
   # - stylesheets/link.css  #友链
+  - stylesheets/poem.css
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
   # - stylesheets/card2.css
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
