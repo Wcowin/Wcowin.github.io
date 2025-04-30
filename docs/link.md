@@ -796,6 +796,19 @@ hide:
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://nnkin.com/impression/nnkin.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://nnkin.com" target="_blank">诺诺博客</a> 
+      </div> 
+      <div class="info">
+      春风不语即随本心
+      </div> 
+     </div> 
+    </div>
+
+
 
 
 
