@@ -1,5 +1,5 @@
 :root {
-  --header-height: 3rem;
+  /* --header-height: 3rem; */
 
   /*========== Colors ==========*/
   --first-color: #608DBD;
@@ -39,9 +39,9 @@
   --mb-3: 3rem;
 
   /*========== z index ==========*/
-  --z-tooltip: 10;
+  /* --z-tooltip: 10;
   --z-fixed: 100;
-  --z-modal: 1000;
+  --z-modal: 1000; */
 }
 
 /* Font size for large devices */
@@ -501,7 +501,7 @@ h1, h2, h3, h4 {
   }
 
   .section {
-    padding: 6rem 0 2rem;
+    padding: 2rem 0 1rem;
   }
 
   .section__subtitle {
@@ -593,3 +593,4 @@ h1, h2, h3, h4 {
     justify-content: center;
   }
 }
+
