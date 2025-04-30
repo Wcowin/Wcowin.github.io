@@ -807,6 +807,17 @@ hide:
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://www.80srz.com/logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://www.80srz.com" target="_blank">荒野孤灯</a> 
+      </div> 
+      <div class="info">
+      荒野中的一盏孤灯，照亮夜里依然前行的人们!
+      </div> 
+     </div> 
+    </div>
 
 
 

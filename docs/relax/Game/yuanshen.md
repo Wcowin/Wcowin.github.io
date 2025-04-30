@@ -1,4 +1,5 @@
-## 什么是原神
+# What is Genshin Impact?  
+
 在《原神》里，玩家将扮演一位名为「旅行者」的神秘角色，在异世界旅途中被陌生的神明拦截，苏醒后踏上寻访七神的冒险之旅。在未知的旅行中，玩家将邂逅琴、丽莎、安柏等众多性格各异、能力独特的同伴，与他们共同击败强敌，找回失散的亲人—— 同时，逐步发掘「原神」的真相  
 
 <!-- <iframe src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%></iframe> -->
@@ -8,7 +9,9 @@
 ***
 我也勉强算是原神的老玩家了，1.6卡池入的坑（可莉）
 
-## **UID:187271419**  
+**UID:187271419**  
+
+
 不肝不氪不原神~ 
 ## 3.2  
 3.2卡池  八重神子我来了(其实抽了公子)    
@@ -91,12 +94,7 @@ CNM歪迪卢克（LJ 原神直接卸载），但是枫丹好评，水下系统�
 ## 探索建议  
 角色技能>角色星级，合理配队>圣遗物+命座，要刷一套好的的圣遗物，一句话“肝就完事了”  
 
-## 好图共赏
-***
-![](https://www.tuwoer.com/wp-content/uploads/2022/12/byu-17.jpg)
-![](https://www.tuwoer.com/wp-content/uploads/2013/12/1632247945-2021092118122572_1_post_n9RZZ12303.jpg)
-
 
 ## 宣传片
 
-<iframe  src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>
+<iframe  src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 390px; max-width: 100%"></iframe>
