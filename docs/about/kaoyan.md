@@ -57,7 +57,6 @@ comments: false  #评论，默认不开启
     ![bf74748e5f6db724264e5f16310d353a.png](https://picx.zhimg.com/80/v2-8fb95aee59e3298710a674a150cb862b_1440w.webp)
 
 
-无缝二战
 
 ## 考研全年具体流程
 第一阶段  打牢基础  

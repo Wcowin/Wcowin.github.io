@@ -777,16 +777,6 @@ hide:
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://yangzhang.site/assets/images/summation.png" /> 
-     <div class="card-header"> 
-      <div> 
-      <a href="https://yangzhang.site/" target="_blank">yangzhang's Site</a> 
-      </div> 
-      <div class="info">
-      </div> 
-     </div> 
-    </div>
-    <div class="card"> 
      <img class="ava" src="https://p1.ssl.qhimg.com/t012bf8e3a395b6d9ab.jpg" /> 
      <div class="card-header"> 
       <div> 
@@ -818,7 +808,17 @@ hide:
       </div> 
      </div> 
     </div>
-
+    <div class="card"> 
+    <img class="ava" src="https://s1.imagehub.cc/images/2025/05/01/96b63458377dd41261803d9a07d35cd2.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://yangzhang.site" target="_blank">张杨的博客</a> 
+      </div> 
+      <div class="info">
+      技术、生活、杂谈
+      </div> 
+    </div> 
+    </div>
 
 
 

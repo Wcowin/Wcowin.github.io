@@ -151,9 +151,9 @@ nav:
     - Python:
         - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
         - PIP: blog/py/pip.md
-    - C语言: 
-        - C笔记: blog/C language/c.md
-        - C++: blog/C language/C++.md
+    # - C语言: 
+    #     - C笔记: blog/C language/c.md
+    #     - C++: blog/C language/C++.md
 
   - 开发: 
     - develop/index.md
@@ -372,7 +372,7 @@ plugins:
   #       - tags
   # - social
   - search:
-      # enabled: !ENV [CI, false]   #建议加上这句，不然会影响速度，本地搜索可以不需要，不影响部署时候有
+      enabled: !ENV [CI, false]   #建议加上这句，不然会影响速度，本地搜索可以不需要，不影响部署时候有
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - offline
   # - glightbox:
