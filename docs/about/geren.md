@@ -149,84 +149,80 @@ status: new
 ---
 ## 我的履历
 
-<html lang="en">
-<body>
-    <section class="qualification section">
-        <div class="qualification__container container">
-            <div class="qualification__tabs">
-                <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                    <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
-                    来时路
+<section class="qualification section">
+    <div class="qualification__container container">
+        <div class="qualification__tabs">
+            <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
+                来时路
+            </div>
+        </div>       
+        <div class="qualification__sections">
+            <!-- 教育经历时间线 -->
+            <div class="qualification__content qualification__active" data-content id="education">
+                <!-- 时间线项目 -->
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">漯河高中</h3>
+                        <span class="qualification__subtitle">平凡的三年</span>
+                        <div class="qualification__calendar">
+                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                            <span class="qualification__date">2018 - 2021</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
                 </div>
-            </div>       
-            <div class="qualification__sections">
-                <!-- 教育经历时间线 -->
-                <div class="qualification__content qualification__active" data-content id="education">
-                    <!-- 高中 -->
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">漯河高中</h3>
-                            <span class="qualification__subtitle">平凡的三年</span>
-                            <div class="qualification__calendar">
-                                <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2018 - 2021</font>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="qualification__title">CTBU</h3>
+                        <span class="qualification__subtitle">电子信息工程专业学士</span>
+                        <div class="qualification__calendar">
+                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                            <span class="qualification__date">2021 - 2025</span>
                         </div>
                     </div>
-                    <div class="qualification__data">
-                        <div></div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 class="qualification__title">CTBU</h3>
-                            <span class="qualification__subtitle">电子信息工程专业学士</span>
-                            <div class="qualification__calendar">
-                                <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2021 - 2025</font>
-                            </div>
+                </div>
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">家里蹲大学</h3>
+                        <span class="qualification__subtitle">密码学硕士研究生</span>
+                        <div class="qualification__calendar">
+                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                            <span class="qualification__date">2026 - 2029</span>
                         </div>
                     </div>
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">家里蹲大学</h3>
-                            <span class="qualification__subtitle">密码学硕士研究生</span>
-                            <div class="qualification__calendar">
-                                <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2026 - 2029</font>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="qualification__title">未完待续</h3>
+                        <span class="qualification__subtitle">于道各努力，千里自同风</span>
+                        <div class="qualification__calendar">
+                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                            <span class="qualification__date">Before - After</span>
                         </div>
                     </div>
-                    <div class="qualification__data">
-                        <div></div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 class="qualification__title">未完待续</h3>
-                            <span class="qualification__subtitle">于道各努力，千里自同风</span>
-                            <div class="qualification__calendar">
-                                <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                Before - After</font>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- 闭合 qualification__content -->
-            </div> <!-- 闭合 qualification__sections -->
-        </div> <!-- 闭合 qualification__container -->
-    </section>
-</body>
-</html>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
