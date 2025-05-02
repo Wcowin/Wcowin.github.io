@@ -1,19 +1,52 @@
-@import url('https://fontsapi.zeoseven.com/292/main/result.css');
-
+/* @import url('https://fontsapi.zeoseven.com/292/main/result.css');
 body {
 font-family: "LXGW WenKai";
 font-weight: normal;
 }
-
-
 button.md-top {
     font-family: LXGW WenKai;
-    /* 修改字体 */
     font-size: 16px;
-    /* 修改字体大小 */
     font-weight: lighter;
+} */
+
+/* 使用 font-face 替代 import，提高加载性能 */
+@font-face {
+  font-family: "LXGW WenKai";
+  src: url('https://fontsapi.zeoseven.com/292/main/LXGWWenKai-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* 提高性能，避免字体闪烁 */
 }
 
-/* :root {
-    --md-text-font: "LXGW WenKai";
-} */
+/* 定义全局变量便于管理 */
+:root {
+  --md-text-font: "LXGW WenKai", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --md-code-font: "JetBrains Mono", "Fira Code", Consolas, monospace;
+}
+
+/* 全局字体设置 */
+body {
+  font-family: var(--md-text-font);
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 导航和界面元素统一字体 */
+.md-header, .md-tabs, .md-nav, .md-footer, .md-typeset {
+  font-family: var(--md-text-font);
+}
+
+
+/* 代码区域保持等宽字体 */
+code, pre, .md-typeset code {
+  font-family: var(--md-code-font);
+}
+
+/* 回到顶部按钮样式 */
+button.md-top {
+    font-family: LXGW WenKai;
+    font-size: 16px;
+    font-weight: lighter;
+}
