@@ -6,6 +6,12 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+
+## </p><h1 id="01" name="01"><strong>2025-04-30</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 更新[404](https://wcowin.work/404)页面
+* 修复了一些问题
+
 ## </p><h1 id="01" name="01"><strong>2025-04-30</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 修复了[关于](../../about/geren.md)页面的行距显示问题

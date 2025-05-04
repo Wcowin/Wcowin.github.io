@@ -14,7 +14,8 @@ theme:
   # https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp
   # https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
 
-  favicon: https://pic4.zhimg.com/v2-fee2c2622ad68aeed98a8b411a8b272b_1440w.jpg
+  favicon: https://s1.imagehub.cc/images/2025/05/04/4e655a856f646a8e7e020ab9d899f0d6.webp
+  # https://pic4.zhimg.com/v2-fee2c2622ad68aeed98a8b411a8b272b_1440w.jpg
   # https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
     - media: "(prefers-color-scheme)"
