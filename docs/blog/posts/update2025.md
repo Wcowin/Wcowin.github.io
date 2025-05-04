@@ -7,7 +7,7 @@ categories:
 readtime: 2
 ---
 
-## </p><h1 id="01" name="01"><strong>2025-04-30</strong></h1><p>
+## </p><h1 id="01" name="01"><strong>2025-05-04</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 更新[404](https://wcowin.work/404)页面
 * 修复了一些问题
