@@ -22,8 +22,8 @@ status: new
 
  <div class="flip-container">
 <div class="image-container">
-    <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
-    <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
+    <img src="https://s1.imagehub.cc/images/2025/05/05/e7166d5970748332f6e8097efc04a5cd.png" alt="Front Image">
+    <img src="https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png" alt="Back Image">
 </div>
 </div>
 <style>
@@ -134,7 +134,7 @@ status: new
 </center> -->
 
 <center>
-<a href="../个人简历2.pdf" target="_blank" class="md-button">下载简历</a>
+<a href="../个人简历.pdf" target="_blank" class="md-button">下载简历</a>
 </center>
 
 <!-- <div class="card2 file-block" markdown="1">
