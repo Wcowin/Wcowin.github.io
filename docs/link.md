@@ -13,6 +13,7 @@ hide:
 # 欢迎加入友链(不分先后)  
 
 - [x] [快速加入友链](#_3)
+- [x] **非常定期**检查友链有效性
 
 <div id="rcorners4" >
 
@@ -349,17 +350,6 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://www.imerduo.com/wp-content/uploads/2023/12/0c55c83b6a18155f_01-150x150.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.imerduo.com" target="_blank">耳朵的主人</a> 
-      </div> 
-      <div class="info">
-      耳朵电台，庆幸我们还有耳朵
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
      <img class="ava" src="https://assets.guoqi.dev/images/avatar.png" /> 
      <div class="card-header"> 
       <div> 
@@ -393,7 +383,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://img.picui.cn/free/2025/04/11/67f87f30a09d3.png" /> 
+     <img class="ava" src="https://cdn.zerolacqua.top/images/avatar.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://blog.zerolacqua.top" target="_blank">丘卡饮品店</a> 
@@ -819,6 +809,18 @@ hide:
       </div> 
     </div> 
     </div>
+    <div class="card"> 
+    <img class="ava" src="https://pic1.imgdb.cn/item/681ad56458cb8da5c8e1f5aa.webp" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://sufine.top/" target="_blank">Suffine Hub</a> 
+      </div> 
+      <div class="info">
+      分享学习路程，表态生活。
+      </div> 
+    </div> 
+    </div>
+
 
 
 
@@ -963,7 +965,17 @@ hide:
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.imerduo.com" target="_blank">耳朵的主人</a> 
+      </div> 
+      <div class="info">
+      耳朵电台，庆幸我们还有耳朵
+      </div> 
+     </div> 
+    </div>
 
 
 
@@ -1049,7 +1061,7 @@ hide:
      </div> 
     </div>
     ```
-=== "Butterfly"
+=== "Hexo"
 
     ```yaml
     - name: Wcowin's Blog
@@ -1057,11 +1069,11 @@ hide:
       avatar: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
       descr: 循此苦旅，以达星辰
     ```
-=== "通用"
+<!-- === "通用"
 
     点击填写[**友链申请**问卷](https://wj.qq.com/s2/14878680/20ac/)  
 
-    [![](https://s2.loli.net/2024/06/27/9gw37T4vPASxiD8.png){width=50%}](https://wj.qq.com/s2/14878680/20ac/)
+    [![](https://s2.loli.net/2024/06/27/9gw37T4vPASxiD8.png){width=50%}](https://wj.qq.com/s2/14878680/20ac/) -->
 
     
 ***
