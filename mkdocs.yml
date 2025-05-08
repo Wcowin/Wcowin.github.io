@@ -59,7 +59,7 @@ theme:
     - content.tooltips # 支持鼠标悬浮提示
     - content.code.copy # 代码块一键复制
     - content.code.select # 代码块一键全选
-    - content.action.edit # 编辑按钮
+    # - content.action.edit # 编辑按钮
     - content.action.view # 查看源码按钮
     - content.code.annotate # 代码注释
   language: zh # 一些提示性的文字会变成中文
@@ -85,6 +85,10 @@ nav:
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md
     - Mac/windows软件网站汇总: blog/macsoft.md
     - 语雀: blog/yuque.md
+    - 密码学:
+        - blog/Cryptography/index.md
+        - 数论: blog/Cryptography/Numbertheory.md
+        - 密码学引言: blog/Cryptography/Introduction.md
     - MKdocs教程:
         - MIT许可声明: blog/Mkdocs/MIT.md
         - 0.Mkdocs教程前言: blog/Mkdocs/mkfirst.md
@@ -463,7 +467,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format 
-  - pymdownx.arithmatex:  # latex支持
+  - pymdownx.arithmatex:  
       generic: true
   - toc:
       permalink: true # 固定标题位置为当前位置
@@ -487,9 +491,10 @@ extra_javascript:
   # - javascripts/bannerSlider.js
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js
-  - https://github.com/Wcowin/Wcowin.github.io/blob/main/docs/javascripts/mathjax.js
+  - javascripts/mathjax.js
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   # - javascripts/geren.js
   # - javascripts/mathjax-config.js
