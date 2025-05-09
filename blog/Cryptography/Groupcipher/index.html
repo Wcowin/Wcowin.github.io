@@ -12,13 +12,13 @@
         <meta name="author" content="王科文(Wcowin)">
       
       
-        <link rel="canonical" href="http://wcowin.work/blog/websitebeauty/accelerate/">
+        <link rel="canonical" href="http://wcowin.work/blog/Cryptography/Groupcipher/">
       
       
-        <link rel="prev" href="../footer/">
+        <link rel="prev" href="../Symmetriccryptography/">
       
       
-        <link rel="next" href="../../technique%20sharing/win/">
+        <link rel="next" href="../../Mkdocs/MIT/">
       
       
       <link rel="icon" href="https://s1.imagehub.cc/images/2025/05/05/7ff9985e6f5baffe306907df47042787.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>加速网站访问的一些心得 - Wcowin's Blog</title>
+        <title>分组密码 - Wcowin's Blog</title>
       
     
     
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#3" class="md-skip">
           跳转至
         </a>
       
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              加速网站访问的一些心得
+              分组密码
             
           </span>
         </div>
@@ -770,8 +770,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -801,17 +803,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Cryptography/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -838,7 +838,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_7">
             <span class="md-nav__icon md-icon"></span>
             密码学
@@ -854,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Numbertheory/" class="md-nav__link">
+      <a href="../Numbertheory/" class="md-nav__link">
         
   
   
@@ -877,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Introduction/" class="md-nav__link">
+      <a href="../Introduction/" class="md-nav__link">
         
   
   
@@ -900,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Symmetriccryptography/" class="md-nav__link">
+      <a href="../Symmetriccryptography/" class="md-nav__link">
         
   
   
@@ -920,10 +920,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Cryptography/Groupcipher/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    分组密码
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -934,6 +956,161 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 分组密码的基本原理及发展现状
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 分组密码的基本原理及发展现状">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      发展现状
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-feistel-des" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Feistel 结构和 DES 算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Feistel 结构和 DES 算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feistel-feistel-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feistel 结构 (Feistel Network)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#des-data-encryption-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      DES 算法 (Data Encryption Standard)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-aes-advanced-encryption-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 AES 算法 (Advanced Encryption Standard)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-modes-of-operation-for-block-ciphers" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0-electronic-codebook-mode-ecb-" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. 电子密码本模式 (Electronic Codebook Mode, ECB) - 作为对比基线
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-cipher-block-chaining-mode-cbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 密文分组链接模式 (Cipher Block Chaining Mode, CBC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-counter-mode-ctr" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 计数器模式 (Counter Mode, CTR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cipher-feedback-mode-cfb" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 密文反馈模式 (Cipher Feedback Mode, CFB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-output-feedback-mode-ofb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 输出反馈模式 (Output Feedback Mode, OFB)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1169,8 +1346,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1222,11 +1397,13 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_9" >
         
           
           <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="">
@@ -1242,7 +1419,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_9">
             <span class="md-nav__icon md-icon"></span>
             Mkdocs美化/补充
@@ -1256,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocs-wcowin1/" class="md-nav__link">
+      <a href="../../websitebeauty/mkdocs-wcowin1/" class="md-nav__link">
         
   
   
@@ -1302,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Customdomain/" class="md-nav__link">
+      <a href="../../websitebeauty/Customdomain/" class="md-nav__link">
         
   
   
@@ -1325,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../yuanjiaohua/" class="md-nav__link">
+      <a href="../../websitebeauty/yuanjiaohua/" class="md-nav__link">
         
   
   
@@ -1348,7 +1525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkcomments/" class="md-nav__link">
+      <a href="../../websitebeauty/mkcomments/" class="md-nav__link">
         
   
   
@@ -1371,7 +1548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../header/" class="md-nav__link">
+      <a href="../../websitebeauty/header/" class="md-nav__link">
         
   
   
@@ -1394,7 +1571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../webtalknow/" class="md-nav__link">
+      <a href="../../websitebeauty/webtalknow/" class="md-nav__link">
         
   
   
@@ -1417,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocsfont/" class="md-nav__link">
+      <a href="../../websitebeauty/mkdocsfont/" class="md-nav__link">
         
   
   
@@ -1440,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shubiao/" class="md-nav__link">
+      <a href="../../websitebeauty/shubiao/" class="md-nav__link">
         
   
   
@@ -1463,7 +1640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../backgroud/" class="md-nav__link">
+      <a href="../../websitebeauty/backgroud/" class="md-nav__link">
         
   
   
@@ -1486,7 +1663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkpdf/" class="md-nav__link">
+      <a href="../../websitebeauty/mkpdf/" class="md-nav__link">
         
   
   
@@ -1509,7 +1686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Relativeaddress/" class="md-nav__link">
+      <a href="../../websitebeauty/Relativeaddress/" class="md-nav__link">
         
   
   
@@ -1540,7 +1717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../404/" class="md-nav__link">
+      <a href="../../websitebeauty/404/" class="md-nav__link">
         
   
   
@@ -1563,7 +1740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../time/" class="md-nav__link">
+      <a href="../../websitebeauty/time/" class="md-nav__link">
         
   
   
@@ -1586,7 +1763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../footer/" class="md-nav__link">
+      <a href="../../websitebeauty/footer/" class="md-nav__link">
         
   
   
@@ -1606,32 +1783,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    加速网站访问的一些心得
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/accelerate/" class="md-nav__link">
         
   
   
@@ -1642,53 +1797,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 优化图片
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-jscss-cdn" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. JS/CSS使用 CDN
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.加速本地渲染
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3528,29 +3636,137 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#31" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 优化图片
+      3.1 分组密码的基本原理及发展现状
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 分组密码的基本原理及发展现状">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      发展现状
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-feistel-des" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Feistel 结构和 DES 算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Feistel 结构和 DES 算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feistel-feistel-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feistel 结构 (Feistel Network)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#des-data-encryption-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      DES 算法 (Data Encryption Standard)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-aes-advanced-encryption-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 AES 算法 (Advanced Encryption Standard)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-jscss-cdn" class="md-nav__link">
+  <a href="#34-modes-of-operation-for-block-ciphers" class="md-nav__link">
     <span class="md-ellipsis">
-      2. JS/CSS使用 CDN
+      3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0-electronic-codebook-mode-ecb-" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. 电子密码本模式 (Electronic Codebook Mode, ECB) - 作为对比基线
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#1-cipher-block-chaining-mode-cbc" class="md-nav__link">
     <span class="md-ellipsis">
-      3.加速本地渲染
+      1. 密文分组链接模式 (Cipher Block Chaining Mode, CBC)
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-counter-mode-ctr" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 计数器模式 (Counter Mode, CTR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cipher-feedback-mode-cfb" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 密文反馈模式 (Cipher Feedback Mode, CFB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-output-feedback-mode-ofb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 输出反馈模式 (Output Feedback Mode, OFB)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3573,7 +3789,7 @@
       
       
       
-        <a href="../../../tag/#tag:mkdocs" class="md-tag">Mkdocs</a>
+        <a href="../../../tag/#tag:密码学" class="md-tag">密码学</a>
       
     
   </nav>
@@ -3584,45 +3800,400 @@
     
       
     
-    <a href="https://github.com/Wcowin/Wcowin.github.io/raw/main/docs/blog/websitebeauty/accelerate.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/Wcowin/Wcowin.github.io/raw/main/docs/blog/Cryptography/Groupcipher.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="_1">加速网站访问的一些心得<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>在使用 MkDocs 构建网站时，为了提高访问速度，我们可以采取以下一些措施：</p>
-<h2 id="1">1. 优化图片<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>使用合适的图片格式，如 WebP、JPEG2000 等，减少图片文件大小，从而加快加载速度。</p>
-<p>可以使用在线工具进行图片压缩，如：</p>
+<h1 id="3">第3章 分组密码<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<h2 id="31">3.1 分组密码的基本原理及发展现状<a class="headerlink" href="#31" title="Permanent link">&para;</a></h2>
+<h3 id="_1">基本原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p><strong>分组密码 (Block Cipher)</strong> 是对称密码体制中的一个重要类别。与流密码逐比特或逐字节处理明文不同，分组密码将明文消息分割成固定长度的数据块 (blocks)，然后使用相同的密钥对每个数据块独立地进行加密和解密操作。</p>
+<p><strong>核心概念：</strong></p>
+<ol>
+<li><strong>数据块 (Block)：</strong> 明文和密文都被分割成固定大小的单元，称为数据块。典型的数据块大小有 64 比特 (如 DES、3DES)、128 比特 (如 AES)。如果最后一段明文不足一个完整块，通常需要进行<strong>填充 (Padding)</strong>。</li>
+<li><strong>密钥 (Key)：</strong> 一个固定长度的比特序列，用于控制加密和解密过程。密钥的长度（密钥空间大小）是衡量密码强度的一个重要指标。</li>
+<li><strong>轮函数 (Round Function)：</strong> 分组密码的加密过程通常不是一步完成，而是通过多次迭代相同的或相似的变换函数来完成，每一次迭代称为一<strong>轮 (Round)</strong>。每一轮都使用一个从主密钥派生出来的<strong>轮密钥 (Round Key)</strong>。</li>
+<li><strong>代换 (Substitution)：</strong> 将输入数据块中的一部分（例如几个比特）替换为另一部分。这通常通过<strong>S盒 (Substitution Box)</strong> 实现，S盒是非线性组件，用于引入混淆。</li>
+<li><strong>置换 (Permutation)：</strong> 将输入数据块中的比特位置进行重新排列。这通常通过<strong>P盒 (Permutation Box)</strong> 实现，P盒是线性组件，用于引入扩散。</li>
+</ol>
+<p><strong>香农 (Shannon) 的设计原则：</strong></p>
+<p>现代分组密码的设计深受克劳德·香农提出的两个基本原则的影响，旨在抵抗统计分析：</p>
 <ul>
-<li><a href="https://www.freeconvert.com/zh/webp-converter">freeconvert</a></li>
+<li><strong>混淆 (Confusion)：</strong> 使密文与密钥之间的统计关系尽可能复杂，使得攻击者即使拥有大量密文和明文，也难以从中推断出密钥。主要通过代换操作（如S盒）来实现。</li>
+<li><strong>扩散 (Diffusion)：</strong> 将明文的统计特性散布到尽可能多的密文中，使得明文中的一位改变会导致密文中多位（理想情况下约一半）的改变，并且密文中的一位也依赖于明文中的多位。主要通过置换操作（如P盒或更复杂的线性变换）来实现。重复多轮的代换和置换操作可以有效地达到混淆和扩散的目的。</li>
 </ul>
-<h2 id="2-jscss-cdn">2. JS/CSS使用 CDN<a class="headerlink" href="#2-jscss-cdn" title="Permanent link">&para;</a></h2>
-<p>使用内容分发网络（CDN）来加速网站的访问，将静态资源（如图片、CSS、JS）缓存到全球各地的服务器上，用户就近访问，减少延迟。</p>
-<p>这里推荐  </p>
+<p><strong>理想分组密码 (Ideal Block Cipher)：</strong></p>
+<p>一个理想的 <span class="arithmatex">\(n\)</span> 比特分组密码可以被看作是一个巨大的、固定的、可逆的代换表，其中每个可能的 <span class="arithmatex">\(n\)</span> 比特明文块都唯一地映射到一个 <span class="arithmatex">\(n\)</span> 比特密文块，具体映射关系由密钥决定。对于一个 <span class="arithmatex">\(n\)</span> 比特的块，有 <span class="arithmatex">\(2^n!\)</span> 种可能的这样的映射。密钥的作用就是从这些映射中选择一个。然而，实际构造这样一个巨大的密码本是不现实的，因此实际的分组密码通过轮函数迭代来逼近这种理想特性。</p>
+<h3 id="_2">发展现状<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>分组密码的发展经历了几个重要阶段：</p>
+<ol>
+<li><strong>早期阶段与 DES (Data Encryption Standard)：</strong></li>
+<li>1970年代，IBM 设计了 Lucifer 算法，后被美国国家标准局 (NBS，现在的 NIST) 采纳并修改为 DES。</li>
+<li>DES 是第一个被广泛应用的商业级分组密码标准，块大小为64位，密钥长度为56位（实际输入64位，但8位为奇偶校验位）。它采用了<strong>Feistel结构</strong>。</li>
+<li>
+<p>由于其56位密钥长度在计算能力飞速发展的今天已不足以抵抗暴力破解，DES 已不再被认为是安全的（尽管 3DES 仍在某些传统系统中使用）。</p>
+</li>
+<li>
+<p><strong>AES (Advanced Encryption Standard) 的出现：</strong></p>
+</li>
+<li>1990年代末，NIST 发起公开竞赛，旨在征集一个新的、更安全、更高效的分组密码标准来取代 DES。</li>
+<li>2001年，比利时密码学家 Joan Daemen 和 Vincent Rijmen 提交的 <strong>Rijndael 算法</strong>胜出，成为 AES。</li>
+<li>AES 支持128位、192位和256位三种密钥长度，数据块大小固定为128位。它采用<strong>代换-置换网络 (Substitution-Permutation Network, SPN)</strong> 结构。</li>
+<li>
+<p>AES 目前是全球应用最广泛的对称加密标准，被认为是安全的。</p>
+</li>
+<li>
+<p><strong>后AES时代与新挑战：</strong></p>
+</li>
+<li><strong>密码分析的进展：</strong> 尽管 AES 本身仍然安全，但密码分析技术（如线性密码分析、差分密码分析、积分密码分析、不可能差分、中间相遇攻击等）不断发展，对新的密码设计提出了更高的要求。</li>
+<li><strong>轻量级密码 (Lightweight Cryptography)：</strong> 随着物联网 (IoT)、RFID 标签、嵌入式系统等资源受限设备的大量涌现，对能够在计算能力、功耗、存储空间等方面都非常有限的环境下高效运行的密码算法的需求日益增加。NIST 近期也完成了轻量级密码的标准化项目（如 ASCON 算法族）。</li>
+<li><strong>侧信道攻击 (Side-Channel Attacks)：</strong> 这类攻击利用密码算法在物理实现（硬件或软件）过程中的信息泄露（如功耗、电磁辐射、执行时间等）来获取密钥信息，对分组密码的实际部署提出了严峻挑战。对应的防御措施（掩码、隐藏、乱序执行等）是研究热点。</li>
+<li><strong>量子计算的威胁：</strong> 虽然 Grover 算法理论上可以将暴力破解对称密钥的复杂度从 <span class="arithmatex">\(O(2^k)\)</span> 降低到 <span class="arithmatex">\(O(2^{k/2})\)</span>，但对于 AES-256 这样的长密钥分组密码，量子计算的威胁相对较小（仍需 <span class="arithmatex">\(2^{128}\)</span> 量级操作）。然而，对未来更强大的量子计算机的预期，也促使研究者思考后量子时代的对称密码设计，尽管目前主流观点认为现有安全分组密码（如AES）在后量子时代仍是安全的，只需适当增加密钥长度。</li>
+<li><strong>专用算法和新设计理念：</strong> 不断有新的分组密码设计被提出，探索新的结构、新的非线性组件和新的安全证明方法。例如，基于 ARX (Addition-Rotation-XOR) 的设计因其在软件中高效实现而受到关注。</li>
+<li><strong>可证明安全性 (Provable Security)：</strong> 密码设计越来越重视形式化的安全模型和在这些模型下的安全性证明，尽管完全的可证明安全仍然是一个挑战。</li>
+</ol>
+<p>总的来说，分组密码领域仍然是一个活跃的研究领域，不断适应新的应用场景、新的攻击技术和新的计算范式。</p>
+<h2 id="32-feistel-des">3.2 Feistel 结构和 DES 算法<a class="headerlink" href="#32-feistel-des" title="Permanent link">&para;</a></h2>
+<h3 id="feistel-feistel-network">Feistel 结构 (Feistel Network)<a class="headerlink" href="#feistel-feistel-network" title="Permanent link">&para;</a></h3>
+<p>Feistel 结构是一种用于构造分组密码的对称结构，由 Horst Feistel 在 IBM 的 Lucifer 项目中首次使用，并因其在 DES 中的应用而广为人知。其核心思想是将数据块分成左右两半，并通过多轮处理，在每一轮中，一半数据通过一个轮函数 <span class="arithmatex">\(F\)</span> 进行变换，然后与另一半数据进行异或操作。</p>
+<p><strong>Feistel 结构的一轮操作通常如下：</strong></p>
+<p>设 <span class="arithmatex">\(L_i\)</span> 和 <span class="arithmatex">\(R_i\)</span> 分别是第 <span class="arithmatex">\(i\)</span> 轮加密输入的左半部分和右半部分， <span class="arithmatex">\(K_i\)</span> 是第 <span class="arithmatex">\(i\)</span> 轮的轮密钥。</p>
+<ol>
+<li><strong>输入分割：</strong> 将输入的 <span class="arithmatex">\(2w\)</span> 比特数据块分为左右两半，每半 <span class="arithmatex">\(w\)</span> 比特：<span class="arithmatex">\((L_{i-1}, R_{i-1})\)</span>。</li>
+<li><strong>右半部分处理：</strong> 右半部分 <span class="arithmatex">\(R_{i-1}\)</span> 与轮密钥 <span class="arithmatex">\(K_i\)</span> 一起作为轮函数 <span class="arithmatex">\(F\)</span> 的输入，即 <span class="arithmatex">\(F(R_{i-1}, K_i)\)</span>。</li>
+<li><strong>异或操作：</strong> 轮函数 <span class="arithmatex">\(F\)</span> 的输出与左半部分 <span class="arithmatex">\(L_{i-1}\)</span> 进行异或操作：<span class="arithmatex">\(L_i = L_{i-1} \oplus F(R_{i-1}, K_i)\)</span>。</li>
+<li><strong>左右交换 (通常在下一轮之前)：</strong> 新的右半部分直接等于上一轮的右半部分：<span class="arithmatex">\(R_i = R_{i-1}\)</span> (这是经典描述，但更常见的是 <span class="arithmatex">\(L_i = \text{old } L_{i-1} \oplus F(\text{old } R_{i-1}, K_i)\)</span> 和 <span class="arithmatex">\(R_i = \text{old } R_{i-1}\)</span>，然后将 <span class="arithmatex">\((L_i, R_i)\)</span> 传递给下一轮，或者在传递前交换 <span class="arithmatex">\(L_i\)</span> 和 <span class="arithmatex">\(R_i\)</span>)。</li>
+</ol>
+<p>更标准的 Feistel 轮结构描述：</p>
+<div class="arithmatex">\[
+L_i = R_{i-1} \\
+R_i = L_{i-1} \oplus F(R_{i-1}, K_i)
+\]</div>
+<p>经过 <span class="arithmatex">\(n\)</span> 轮迭代后，通常在最后一轮之后不再进行左右交换（或者说，进行一次额外的交换以统一加密和解密的形式）。</p>
+<p><strong>Feistel 结构的优点：</strong></p>
 <ul>
-<li><a href="https://www.jsdelivr.com/github">jsDelivr CDN 加速 GitHub 文件</a>  </li>
+<li><strong>加密和解密过程相似：</strong> 这是 Feistel 结构最显著的优点。解密过程可以使用与加密完全相同的算法，只需将轮密钥按相反的顺序使用即可。</li>
+<li>对于一轮加密：<span class="arithmatex">\(L_i = R_{i-1}\)</span>, <span class="arithmatex">\(R_i = L_{i-1} \oplus F(R_{i-1}, K_i)\)</span></li>
+<li>要进行解密，从 <span class="arithmatex">\((L_i, R_i)\)</span> 得到 <span class="arithmatex">\((L_{i-1}, R_{i-1})\)</span>：<ul>
+<li><span class="arithmatex">\(R_{i-1} = L_i\)</span></li>
+<li><span class="arithmatex">\(L_{i-1} = R_i \oplus F(R_{i-1}, K_i) = R_i \oplus F(L_i, K_i)\)</span></li>
 </ul>
-<h2 id="3">3.加速本地渲染<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<p>优化 git 插件的 enabled 配置<br />
-比如我配置里有 git-revision-date-localized 和 git-committers 插件，这些插件会在每次渲染时读取所有文件的 git 历史，导致本地预览变慢。<br />
-推荐做法是在本地开发时禁用它们，仅在 CI/CD 或线上构建时启用。<br />
-具体写法如下：  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># 只有在CI环境变量为true时才启用</span>
-</span><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-committers</span><span class="p">:</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span>
-</span></code></pre></div></td></tr></table></div>
-<hr />
-<p>检验加速效果是否生效可以使用lighthouse进行测试，具体可以参考：  </p>
-<p><a href="../../../develop/lighthouse/">使用lighthouse进行网站性能测试</a></p>
+</li>
+<li>这意味着轮函数 <span class="arithmatex">\(F\)</span> 不需要是可逆的，大大简化了 <span class="arithmatex">\(F\)</span> 函数的设计。</li>
+<li><strong>灵活性：</strong> 轮函数 <span class="arithmatex">\(F\)</span> 的具体设计可以非常复杂，可以包含代换、置换等多种操作，以实现良好的混淆和扩散。</li>
+</ul>
+<h3 id="des-data-encryption-standard">DES 算法 (Data Encryption Standard)<a class="headerlink" href="#des-data-encryption-standard" title="Permanent link">&para;</a></h3>
+<p>DES 是一个典型的 Feistel 结构分组密码。</p>
+<ul>
+<li><strong>历史：</strong> 1970年代由IBM基于Lucifer算法开发，1977年被美国国家标准局 (NBS，后来的NIST) 选定为官方的加密标准。</li>
+<li><strong>参数：</strong></li>
+<li><strong>块大小 (Block Size)：</strong> 64 比特。</li>
+<li><strong>密钥长度 (Key Length)：</strong> 表面上是64比特，但每8比特的最后1比特是奇偶校验位，因此有效密钥长度为 56 比特。</li>
+<li><strong>轮数 (Number of Rounds)：</strong> 16 轮。</li>
+</ul>
+<p><strong>DES 加密过程概述：</strong></p>
+<ol>
+<li><strong>初始置换 (Initial Permutation, IP)：</strong> 64位明文块首先经过一个固定的初始置换，重新排列比特顺序。这个置换没有密码学意义，据称是为了方便在1970年代的硬件上装载数据。</li>
+<li><strong>16轮 Feistel 迭代：</strong></li>
+<li>经过 IP 后的64位块被分成左右两半，各32位：<span class="arithmatex">\((L_0, R_0)\)</span>。</li>
+<li>进行16轮迭代，每轮操作如下 (<span class="arithmatex">\(i\)</span> 从 1 到 16)：</li>
+</ol>
+<div class="arithmatex">\[
+L_i = R_{i-1} \\  
+R_i = L_{i-1} \oplus F(R_{i-1}, K_i)
+\]</div>
+<p>其中 <span class="arithmatex">\(K_i\)</span> 是48位的轮密钥，由56位主密钥通过<strong>密钥调度算法 (Key Schedule)</strong> 生成。  </p>
+<ol>
+<li><strong>最终置换 (Final Permutation, FP)：</strong> 16轮迭代后，将 <span class="arithmatex">\((L_{16}, R_{16})\)</span> 合并（但通常是在 <span class="arithmatex">\((R_{16}, L_{16})\)</span> 的顺序上，即最后一轮后不交换或等效于交换），然后经过一个初始置换的逆置换 FP，得到64位密文块。</li>
+</ol>
+<p><strong>DES 的轮函数 <span class="arithmatex">\(F(R, K)\)</span>：</strong></p>
+<p>轮函数 <span class="arithmatex">\(F\)</span> 是 DES 安全性的核心，它对32位的右半部分 <span class="arithmatex">\(R_{i-1}\)</span> 和48位的轮密钥 <span class="arithmatex">\(K_i\)</span> 进行操作，输出32位。</p>
+<ol>
+<li><strong>扩展置换 (Expansion Permutation, E)：</strong> 将32位的 <span class="arithmatex">\(R_{i-1}\)</span> 扩展为48位。这个扩展通过复制 <span class="arithmatex">\(R_{i-1}\)</span> 中的某些比特来实现，使得扩展后的结果能够与48位的轮密钥 <span class="arithmatex">\(K_i\)</span> 进行异或。</li>
+<li><strong>密钥混合 (Key Mixing)：</strong> 扩展后的48位结果与48位轮密钥 <span class="arithmatex">\(K_i\)</span> 进行异或。</li>
+<li><strong>S盒代换 (S-box Substitution)：</strong> 异或结果被分成8个6比特的小组，每个小组输入到一个对应的<strong>S盒 (Substitution Box)</strong>。DES 有8个不同的S盒 (<span class="arithmatex">\(S_1, S_2, \dots, S_8\)</span>)。每个S盒都是一个固定的非线性代换表，将6比特输入映射为4比特输出。这是DES中唯一的非线性操作，也是其安全性的关键来源（提供混淆）。</li>
+<li>每个6比特输入 <span class="arithmatex">\((b_1 b_2 b_3 b_4 b_5 b_6)\)</span> 中，<span class="arithmatex">\(b_1b_6\)</span> 两位决定S盒的行号 (0-3)，<span class="arithmatex">\(b_2b_3b_4b_5\)</span> 四位决定S盒的列号 (0-15)。</li>
+<li><strong>P盒置换 (P-box Permutation, P)：</strong> 8个S盒输出的4比特结果（共32比特）再经过一个固定的32位P盒置换，进一步打乱比特顺序，以实现扩散。</li>
+</ol>
+<p><strong>DES 密钥调度算法：</strong></p>
+<p>从56位主密钥生成16个48位轮密钥的过程：</p>
+<ol>
+<li><strong>初始密钥置换 (Permuted Choice 1, PC-1)：</strong> 64位输入密钥（含校验位）先去掉校验位，然后对剩余的56位进行置换，并分成左右两半 <span class="arithmatex">\(C_0\)</span> 和 <span class="arithmatex">\(D_0\)</span> (各28位)。</li>
+<li><strong>循环左移 (Circular Left Shift)：</strong> 在每一轮 <span class="arithmatex">\(i\)</span>，根据一个预设的移位数目（第1, 2, 9, 16轮移1位，其他轮移2位），分别对 <span class="arithmatex">\(C_{i-1}\)</span> 和 <span class="arithmatex">\(D_{i-1}\)</span> 进行循环左移，得到 <span class="arithmatex">\(C_i\)</span> 和 <span class="arithmatex">\(D_i\)</span>。</li>
+<li><strong>轮密钥生成 (Permuted Choice 2, PC-2)：</strong> 将 <span class="arithmatex">\(C_i\)</span> 和 <span class="arithmatex">\(D_i\)</span> 合并成56位，然后通过另一个置换选择 (PC-2) 从中选出48位作为轮密钥 <span class="arithmatex">\(K_i\)</span>。</li>
+</ol>
+<p><strong>DES 的安全性与弱点：</strong></p>
+<ul>
+<li><strong>密钥长度：</strong> 56位密钥长度是 DES 最主要的弱点。在1990年代末，通过暴力破解（尝试所有 <span class="arithmatex">\(2^{56}\)</span> 个可能密钥）已经变得可行。</li>
+<li><strong>S盒设计：</strong> DES的S盒设计准则最初并未公开，引发了一些关于是否存在后门或隐藏弱点的猜测。后来分析表明S盒设计良好，能抵抗差分密码分析。</li>
+<li><strong>弱密钥 (Weak Keys)：</strong> DES有4个弱密钥，使用这些密钥加密和解密过程完全相同 (<span class="arithmatex">\(E_K(E_K(P)) = P\)</span>)。</li>
+<li><strong>半弱密钥 (Semi-weak Keys)：</strong> DES有6对（12个）半弱密钥。若用一对中的一个密钥加密，用另一个密钥解密，效果等同于用前者加密。</li>
+<li><strong>补特性 (Complementation Property)：</strong> <span class="arithmatex">\(E_{\overline{K}}(\overline{P}) = \overline{E_K(P)}\)</span>，其中 <span class="arithmatex">\(\overline{X}\)</span> 是 <span class="arithmatex">\(X\)</span> 的按位取反。这可以将暴力破解的密钥空间减半。</li>
+</ul>
+<p><strong>DES 的变体：</strong></p>
+<ul>
+<li><strong>2DES (Double DES)：</strong> <span class="arithmatex">\(C = E_{K2}(E_{K1}(P))\)</span>。由于中间相遇攻击 (Meet-in-the-Middle Attack)，其有效密钥长度仅为 <span class="arithmatex">\(2 \times 56\)</span> 理论强度的一小部分，大约为 <span class="arithmatex">\(2^{57}\)</span>，因此安全性提升有限。</li>
+<li><strong>3DES (Triple DES)：</strong> 最常见的是 EDE (Encrypt-Decrypt-Encrypt) 模式：</li>
+<li><strong>双密钥3DES (2TDES)：</strong> <span class="arithmatex">\(C = E_{K1}(D_{K2}(E_{K1}(P)))\)</span>。有效密钥长度为 <span class="arithmatex">\(2 \times 56 = 112\)</span> 位。</li>
+<li><strong>三密钥3DES (3TDES)：</strong> <span class="arithmatex">\(C = E_{K3}(D_{K2}(E_{K1}(P)))\)</span>。有效密钥长度为 <span class="arithmatex">\(3 \times 56 = 168\)</span> 位。
+  3DES 通过增加密钥长度和迭代次数，显著增强了对暴力破解的抵抗能力，曾被广泛用于替代DES。但其操作速度较慢（三次DES运算），且块大小仍为64位，不适合处理大量数据。目前也逐渐被 AES 取代。</li>
+</ul>
+<h2 id="33-aes-advanced-encryption-standard">3.3 AES 算法 (Advanced Encryption Standard)<a class="headerlink" href="#33-aes-advanced-encryption-standard" title="Permanent link">&para;</a></h2>
+<p>AES，即高级加密标准，是由美国国家标准与技术研究院 (NIST) 于2001年发布的一个对称分组密码标准，用以取代DES。AES基于比利时密码学家 Joan Daemen 和 Vincent Rijmen 提出的 Rijndael 算法。</p>
+<p><strong>主要特点：</strong></p>
+<ul>
+<li><strong>结构：</strong> 采用<strong>代换-置换网络 (Substitution-Permutation Network, SPN)</strong> 结构，而非 Feistel 结构。这意味着加密和解密路径不同（但密切相关）。</li>
+<li><strong>块大小 (Block Size)：</strong> 固定为 128 比特。</li>
+<li><strong>密钥长度 (Key Lengths)：</strong> 支持三种长度：128 比特、192 比特、256 比特。</li>
+<li><strong>轮数 (Number of Rounds)：</strong> 轮数取决于密钥长度：</li>
+<li>128位密钥：10 轮</li>
+<li>192位密钥：12 轮</li>
+<li>256位密钥：14 轮</li>
+</ul>
+<p><strong>AES 的数据单元：</strong></p>
+<p>AES 的所有操作都在一个称为<strong>状态 (State)</strong> 的 <span class="arithmatex">\(4 \times 4\)</span> 字节矩阵上进行。输入的128位明文块被排列成这个矩阵，其中矩阵的列优先填充。例如，明文块 <span class="arithmatex">\(b_0, b_1, \dots, b_{15}\)</span> 形成状态：</p>
+<div class="arithmatex">\[
+\text{State} = \begin{pmatrix}
+b_0 &amp; b_4 &amp; b_8 &amp; b_{12} \\
+b_1 &amp; b_5 &amp; b_9 &amp; b_{13} \\
+b_2 &amp; b_6 &amp; b_{10} &amp; b_{14} \\
+b_3 &amp; b_7 &amp; b_{11} &amp; b_{15}
+\end{pmatrix}
+\]</div>
+<p>每一轮变换都会更新这个状态矩阵。</p>
+<p><strong>AES 加密过程：</strong></p>
+<ol>
+<li><strong>初始轮密钥加 (Initial AddRoundKey)：</strong> 将状态与第一个轮密钥（也称为白化密钥，直接从主密钥派生或等于主密钥）进行按字节异或。</li>
+<li><strong>主要轮 (Rounds)：</strong> 进行 <span class="arithmatex">\(N_r-1\)</span> 轮标准迭代，其中 <span class="arithmatex">\(N_r\)</span> 是总轮数。每轮包含以下四个步骤：</li>
+<li><strong>SubBytes (字节代换)：</strong></li>
+<li><strong>ShiftRows (行移位)：</strong></li>
+<li><strong>MixColumns (列混淆)：</strong></li>
+<li><strong>AddRoundKey (轮密钥加)：</strong></li>
+<li><strong>最终轮 (Final Round)：</strong> 进行最后一轮迭代，与主要轮类似，但<strong>不包含 MixColumns</strong> 步骤。</li>
+<li><strong>SubBytes</strong></li>
+<li><strong>ShiftRows</strong></li>
+<li><strong>AddRoundKey</strong></li>
+</ol>
+<p><strong>AES 的轮操作详解：</strong></p>
+<ul>
+<li><strong>a) SubBytes (字节代换)：</strong></li>
+<li>这是一个非线性代换步骤，状态矩阵中的每个字节都通过一个固定的8位S盒 (Rijndael S-box) 进行独立的代换。</li>
+<li>该S盒是通过在有限域 GF(<span class="arithmatex">\(2^8\)</span>) 中先计算每个字节的乘法逆元（0映射到0），然后再对结果字节进行一个固定的仿射变换 (affine transformation) 得到的。</li>
+<li>
+<p>此步骤提供混淆，是AES中唯一的非线性操作。</p>
+</li>
+<li>
+<p><strong>b) ShiftRows (行移位)：</strong></p>
+</li>
+<li>这是一个线性置换步骤，状态矩阵的每一行中的字节都进行循环左移。</li>
+<li>第0行：不移位。</li>
+<li>第1行：循环左移1个字节。</li>
+<li>第2行：循环左移2个字节。</li>
+<li>第3行：循环左移3个字节。</li>
+<li>
+<p>此步骤提供跨列的扩散。</p>
+</li>
+<li>
+<p><strong>c) MixColumns (列混淆)：</strong></p>
+</li>
+<li>这是一个线性混合步骤，对状态矩阵的每一列独立进行操作。</li>
+<li>每一列被视为 GF(<span class="arithmatex">\(2^8\)</span>) 上的一个四项式，然后乘以一个固定的四项式 <span class="arithmatex">\(a(x) = \{03\}x^3 + \{01\}x^2 + \{01\}x + \{02\}\)</span>，模 <span class="arithmatex">\(x^4+1\)</span>。</li>
+<li>
+<p>这等效于将每列向量左乘一个固定的 <span class="arithmatex">\(4 \times 4\)</span> 矩阵 (其元素在 GF(<span class="arithmatex">\(2^8\)</span>) 中)：  </p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+02 &amp; 03 &amp; 01 &amp; 01 \\
+01 &amp; 02 &amp; 03 &amp; 01 \\
+01 &amp; 01 &amp; 02 &amp; 03 \\
+03 &amp; 01 &amp; 01 &amp; 02
+\end{pmatrix}
+\]</div>
+</li>
+<li>
+<p>此步骤提供列内的扩散，与 ShiftRows 结合，确保经过几轮后每个字节都依赖于所有明文字节。</p>
+</li>
+<li>
+<p><strong>注意：</strong> 在最终轮中省略此步骤。</p>
+</li>
+<li>
+<p><strong>d) AddRoundKey (轮密钥加)：</strong></p>
+</li>
+<li>将当前轮的状态矩阵与该轮的128位轮密钥（同样排列成 <span class="arithmatex">\(4 \times 4\)</span> 字节矩阵）进行按字节异或。</li>
+<li>轮密钥由主密钥通过<strong>密钥扩展算法 (Key Expansion / Key Schedule)</strong> 生成。</li>
+</ul>
+<p><strong>AES 密钥扩展算法 (Key Schedule)：</strong></p>
+<p>密钥扩展算法从主密钥生成 AES 加密所需的全部轮密钥。总共需要 <span class="arithmatex">\(N_r+1\)</span> 个128位的轮密钥。</p>
+<ul>
+<li>主密钥首先被复制到扩展密钥数组的前 <span class="arithmatex">\(N_k\)</span> 个字 (<span class="arithmatex">\(N_k\)</span> 是主密钥的字数，128位密钥为4字，192位为6字，256位为8字)。</li>
+<li>后续的字 <span class="arithmatex">\(w_i\)</span> 通过前一个字 <span class="arithmatex">\(w_{i-1}\)</span> 和 <span class="arithmatex">\(N_k\)</span> 个字之前的字 <span class="arithmatex">\(w_{i-N_k}\)</span> 的组合来生成。</li>
+<li>如果 <span class="arithmatex">\(i\)</span> 是 <span class="arithmatex">\(N_k\)</span> 的倍数，则 <span class="arithmatex">\(w_{i-1}\)</span> 在组合前会经过一个称为 <strong>g函数</strong> 的特殊处理：</li>
+<li><strong>RotWord：</strong> 将 <span class="arithmatex">\(w_{i-1}\)</span> 的四个字节循环左移一位。</li>
+<li><strong>SubWord：</strong> 对 RotWord 结果的每个字节应用 AES 的 S盒。</li>
+<li><strong>Rcon：</strong> 将 SubWord 结果的第一个字节与一个轮常数 (Round Constant, Rcon) 进行异或。Rcon 是一个预定义的值，每轮不同，用于消除对称性。  </li>
+</ul>
+<div class="arithmatex">\[
+w_i = w_{i-N_k} \oplus g(w_{i-1})
+\]</div>
+<ul>
+<li>如果 <span class="arithmatex">\(i\)</span> 不是 <span class="arithmatex">\(N_k\)</span> 的倍数 (并且对于 <span class="arithmatex">\(N_k &gt; 6\)</span>，当 <span class="arithmatex">\(i \pmod{N_k} = 4\)</span> 时有特殊处理，仅对256位密钥)：</li>
+</ul>
+<div class="arithmatex">\[
+w_i = w_{i-N_k} \oplus w_{i-1}
+\]</div>
+<p>(对于256位密钥且 <span class="arithmatex">\(i \pmod{N_k} = 4\)</span>，则 <span class="arithmatex">\(w_i = w_{i-N_k} \oplus \text{SubWord}(w_{i-1})\)</span>)</p>
+<p><strong>AES 解密过程：</strong></p>
+<p>解密过程是加密过程的逆运算。它使用相同的轮密钥，但顺序相反，并且每一轮操作都替换为其逆操作：</p>
+<ol>
+<li><strong>初始轮密钥加 (Initial AddRoundKey)：</strong> 使用最后一个轮密钥 (<span class="arithmatex">\(K_{N_r}\)</span>)。</li>
+<li><strong>主要轮 (Rounds)：</strong> <span class="arithmatex">\(N_r-1\)</span> 轮 (从 <span class="arithmatex">\(N_r-1\)</span> 轮到第1轮)：</li>
+<li><strong>InvShiftRows (逆行移位)：</strong> ShiftRows 的逆操作（循环右移）。</li>
+<li><strong>InvSubBytes (逆字节代换)：</strong> SubBytes 的逆操作（使用逆S盒）。</li>
+<li><strong>AddRoundKey (轮密钥加)：</strong> 使用对应的轮密钥。</li>
+<li><strong>InvMixColumns (逆列混淆)：</strong> MixColumns 的逆操作（乘以逆矩阵）。</li>
+<li><strong>最终轮 (Final Round)：</strong></li>
+<li><strong>InvShiftRows</strong></li>
+<li><strong>InvSubBytes</strong></li>
+<li><strong>AddRoundKey (轮密钥加)：</strong> 使用第一个轮密钥 (<span class="arithmatex">\(K_0\)</span>)。</li>
+</ol>
+<p>注意 AddRoundKey 的逆操作就是它本身（因为异或的逆是异或）。InvMixColumns 是在最终轮之前，与加密过程的结构对应。</p>
+<p><strong>AES 的安全性与现状：</strong></p>
+<ul>
+<li><strong>安全性：</strong> AES 被认为是目前最安全和分析最透彻的分组密码之一。已知的针对 AES 的最佳攻击（如积分攻击、不可能差分攻击、中间相遇攻击的变种）都远未达到实际可行的程度，通常需要不切实际的数据量或计算复杂度，或者只能攻击简化的轮数版本。</li>
+<li><strong>性能：</strong> AES 在硬件和软件上都能高效实现。许多现代处理器都内置了 AES 指令集 (AES-NI)，可以极大地加速 AES 的运算。</li>
+<li><strong>广泛应用：</strong> AES 已成为全球范围内数据加密的事实标准，广泛应用于各种安全协议 (如 TLS/SSL, SSH, IPsec)、磁盘加密 (如 BitLocker, FileVault)、文件加密、数据库加密等。</li>
+</ul>
+<h2 id="34-modes-of-operation-for-block-ciphers">3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)<a class="headerlink" href="#34-modes-of-operation-for-block-ciphers" title="Permanent link">&para;</a></h2>
+<p>分组密码本身只能加密固定长度的数据块。为了能够安全地加密长度可变的明文消息（通常远大于一个数据块的长度），需要使用<strong>工作模式 (Modes of Operation)</strong>。工作模式定义了如何重复使用分组密码的单块加密功能来处理多块数据。</p>
+<p>选择合适的工作模式对于保证整体加密方案的安全性至关重要。不同的模式在错误传播、并行性、是否需要填充、是否能用于流加密等方面有不同特性。</p>
+<p>以下是一些常见的分组密码工作模式：</p>
+<h3 id="0-electronic-codebook-mode-ecb-">0. 电子密码本模式 (Electronic Codebook Mode, ECB) - <em>作为对比基线</em><a class="headerlink" href="#0-electronic-codebook-mode-ecb-" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> 最简单的工作模式。将明文分割成多个数据块，然后对每个明文块使用相同的密钥独立进行加密。</li>
+</ul>
+<div class="arithmatex">\[
+  C_i = E_K(P_i)\\   
+\]</div>
+<div class="arithmatex">\[  
+  P_i = D_K(C_i)
+\]</div>
+<ul>
+<li><strong>优点：</strong></li>
+<li>简单直观。</li>
+<li>每个块的加密/解密可以并行处理，速度快。</li>
+<li>一个密文块的错误不会影响其他块的解密。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>致命缺陷：</strong> 如果明文中存在重复的数据块，那么加密后对应的密文块也会完全相同。这会暴露明文数据的模式和统计特性。例如，一张位图图像用 ECB 模式加密后，图像的轮廓通常依然可见。</li>
+<li>容易受到重放攻击、块替换攻击等。</li>
+<li><strong>应用：</strong> 由于其严重的安全性缺陷，<strong>ECB 模式通常不推荐用于大多数应用</strong>，除非是在极少数情况下，例如加密完全随机的数据（如会话密钥）且数据量很小。</li>
+<li><strong>填充：</strong> 如果最后一个明文块不足一个完整块，需要进行填充。</li>
+</ul>
+<h3 id="1-cipher-block-chaining-mode-cbc">1. 密文分组链接模式 (Cipher Block Chaining Mode, CBC)<a class="headerlink" href="#1-cipher-block-chaining-mode-cbc" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> 为了克服 ECB 的缺点，CBC 模式引入了链接机制。每个明文块在加密前，首先与前一个密文块进行异或 (XOR) 操作，然后再用密钥加密。对于第一个明文块，由于没有“前一个密文块”，它会与一个称为<strong>初始化向量 (Initialization Vector, IV)</strong> 的随机数据块进行异或。  </li>
+</ul>
+<div class="arithmatex">\[
+  C_i = E_K(P_i \oplus C_{i-1}) \quad (\text{其中 } C_0 = IV)
+\]</div>
+<div class="arithmatex">\[
+  P_i = D_K(C_i) \oplus C_{i-1} \quad (\text{其中 } C_0 = IV)
+\]</div>
+<ul>
+<li><strong>初始化向量 (IV)：</strong> IV 必须是不可预测的（最好是随机生成的），并且对于使用相同密钥加密的每条消息都必须是唯一的。IV 不需要保密，但其完整性必须得到保护。通常与密文一起传输。</li>
+<li><strong>优点：</strong></li>
+<li>相同的明文块如果出现在消息的不同位置，或者在两条用不同IV加密的不同消息中，会产生不同的密文块，隐藏了明文的模式。</li>
+<li>是最常用的模式之一。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>加密过程是串行的：</strong> 加密第 <span class="arithmatex">\(i\)</span> 块必须等待第 <span class="arithmatex">\(i-1\)</span> 块的密文 <span class="arithmatex">\(C_{i-1}\)</span> 生成。</li>
+<li><strong>错误传播 (Error Propagation) - 加密时：</strong> 如果明文块 <span class="arithmatex">\(P_i\)</span> 中有一位错误，那么 <span class="arithmatex">\(C_i\)</span> 及其后的所有密文块都会受到影响。</li>
+<li><strong>错误传播 (Error Propagation) - 解密时：</strong><ul>
+<li>如果密文块 <span class="arithmatex">\(C_i\)</span> 中有一位错误，则解密后的 <span class="arithmatex">\(P_i\)</span> 会完全损坏（平均一半的比特出错）。</li>
+<li>同时，<span class="arithmatex">\(C_i\)</span> 中的错误只会影响 <span class="arithmatex">\(P_{i+1}\)</span> 中与 <span class="arithmatex">\(C_i\)</span> 错误比特对应的那个比特，即 <span class="arithmatex">\(P_{i+1} = D_K(C_{i+1}) \oplus C_i\)</span>，错误在 <span class="arithmatex">\(C_i\)</span> 中影响了 <span class="arithmatex">\(P_{i+1}\)</span>。之后的 <span class="arithmatex">\(P_{i+2}, P_{i+3}, \dots\)</span> 不受影响。这种有限的错误传播性有时被视为一种优势。</li>
+</ul>
+</li>
+<li><strong>需要填充：</strong> 如果最后明文块不完整，需要填充到标准块大小。填充方案必须明确，以便解密时能正确移除。</li>
+<li><strong>解密并行性：</strong> 解密时，如果所有密文块 <span class="arithmatex">\(C_i\)</span> 和 <span class="arithmatex">\(C_{i-1}\)</span> 都已知，则 <span class="arithmatex">\(D_K(C_i)\)</span> 可以并行计算，然后与 <span class="arithmatex">\(C_{i-1}\)</span> 异或得到 <span class="arithmatex">\(P_i\)</span>。</li>
+</ul>
+<h3 id="2-counter-mode-ctr">2. 计数器模式 (Counter Mode, CTR)<a class="headerlink" href="#2-counter-mode-ctr" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> CTR 模式将分组密码用作一个密钥流产生器，从而将分组密码转换成流密码。它通过加密一个<strong>计数器 (Counter)</strong> 的连续值来生成密钥流块，然后将密钥流块与明文块进行异或得到密文块。</li>
+<li>计数器通常由两部分组成：一个<strong>随机数或一次性数 (Nonce)</strong>，对每条消息唯一；以及一个从0开始递增的序列号。</li>
+</ul>
+<div class="arithmatex">\[\displaystyle O_i = E_K(\text{Nonce} || \text{Counter}_i) \]</div>
+<div class="arithmatex">\[C_i = P_i \oplus O_i \]</div>
+<div class="arithmatex">\[P_i = C_i \oplus O_i \]</div>
+<p>其中 <span class="arithmatex">\(\text{Counter}_i\)</span> 通常是 <span class="arithmatex">\(0, 1, 2, \dots\)</span>。  </p>
+<ul>
+<li><strong>Nonce 和 Counter：</strong> 组合的 (Nonce, Counter) 值对于给定的密钥必须是唯一的。Nonce 的作用是确保即使计数器序列相同，不同消息的密钥流也不同。Nonce 不需要保密，但必须唯一。</li>
+<li><strong>优点：</strong></li>
+<li><strong>高度并行性：</strong> 加密和解密过程中的 <span class="arithmatex">\(E_K(\text{Nonce} || \text{Counter}_i)\)</span> 操作可以完全并行执行，因为每个密钥流块的生成独立于其他块。</li>
+<li><strong>随机访问：</strong> 可以直接解密密文中的任意块，而无需先解密前面的块。</li>
+<li><strong>无需填充：</strong> 因为它是流模式，如果最后一个明文块不完整，只需使用相应长度的密钥流即可。</li>
+<li><strong>预处理：</strong> 密钥流 <span class="arithmatex">\(O_i\)</span> 可以在明文到达之前预先计算好。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>密钥流重用是灾难性的：</strong> 如果 (Nonce, Counter, Key) 的组合被重用（例如，两条消息使用了相同的Nonce和Key，导致相同的计数器序列生成了相同的密钥流），则会导致严重的安全问题 (类似于流密码中的 "two-time pad")。<span class="arithmatex">\(C_1 \oplus C_2 = (P_1 \oplus O) \oplus (P_2 \oplus O) = P_1 \oplus P_2\)</span>。</li>
+<li>对IV（Nonce）的唯一性要求非常严格。</li>
+<li><strong>错误传播：</strong> 密文中的一位错误只影响对应明文中的一位，不影响其他块。</li>
+</ul>
+<h3 id="3-cipher-feedback-mode-cfb">3. 密文反馈模式 (Cipher Feedback Mode, CFB)<a class="headerlink" href="#3-cipher-feedback-mode-cfb" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> CFB 模式也可以将分组密码用作成一个自同步的流密码。它将前一个密文块（或其一部分）作为分组密码的输入，加密后的输出再与当前明文块异或得到当前密文块。</li>
+<li>对于第一个块，使用一个初始化向量 (IV) 作为“前一个密文块”。</li>
+<li>可以定义为 CFB-<span class="arithmatex">\(s\)</span> 模式，其中 <span class="arithmatex">\(s\)</span> 是反馈的比特数 (通常 $s=1, 8, $ 或块大小)。这里以全块反馈 (<span class="arithmatex">\(s=\)</span>块大小) 为例：</li>
+</ul>
+<div class="arithmatex">\[
+    C_i = E_K(C_{i-1}) \oplus P_i \quad (\text{其中 } C_0 = IV)
+\]</div>
+<div class="arithmatex">\[
+    P_i = E_K(C_{i-1}) \oplus C_i \quad (\text{其中 } C_0 = IV)
+\]</div>
+<p>注意，这里解密时仍然使用的是分组密码的<strong>加密函数 <span class="arithmatex">\(E_K\)</span></strong>，因为 <span class="arithmatex">\(E_K(C_{i-1})\)</span> 扮演的是密钥流的角色。  </p>
+<ul>
+<li><strong>初始化向量 (IV)：</strong> 与CBC类似，IV需要随机且唯一，不需要保密。</li>
+<li><strong>优点：</strong></li>
+<li><strong>自同步 (Self-synchronizing)：</strong> 如果密文中丢失或损坏了一些比特，经过一定数量的正确密文块后，解密过程可以自动恢复同步（具体是当错误数据完全移出反馈寄存器后）。</li>
+<li>可以加密小于一个完整块的数据单元 (例如CFB-8模式，每次处理1字节)。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>加密过程是串行的：</strong> 生成 <span class="arithmatex">\(C_i\)</span> 依赖于 <span class="arithmatex">\(C_{i-1}\)</span>。</li>
+<li><strong>错误传播 (Error Propagation) - 解密时：</strong> 密文块 <span class="arithmatex">\(C_i\)</span> 中的一位错误会使 <span class="arithmatex">\(P_i\)</span> 完全损坏，并且还会影响后续 <span class="arithmatex">\(P_j\)</span> 的解密，直到错误的 <span class="arithmatex">\(C_i\)</span> 被移出反馈链（对于全块CFB，会影响 <span class="arithmatex">\(P_{i+1}\)</span> 的一个比特）。具体来说，如果 <span class="arithmatex">\(C_j\)</span> 有一个比特错误，那么 <span class="arithmatex">\(P_j\)</span> 会被损坏，并且 <span class="arithmatex">\(C_{j+1}\)</span> 的解密也会出错（因为 <span class="arithmatex">\(E_K(C_j)\)</span> 出错）。</li>
+<li><strong>效率：</strong> 如果 <span class="arithmatex">\(s\)</span> 远小于块大小 (如 CFB-1, CFB-8)，则每加密 <span class="arithmatex">\(s\)</span> 位明文就需要执行一次完整的分组密码加密操作，效率较低。</li>
+<li><strong>解密并行性：</strong> 与加密类似，解密也是串行的。</li>
+</ul>
+<h3 id="4-output-feedback-mode-ofb">4. 输出反馈模式 (Output Feedback Mode, OFB)<a class="headerlink" href="#4-output-feedback-mode-ofb" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> OFB 模式也将分组密码用作一个同步的流密码。它通过将分组密码的输出（而不是密文）反馈回输入来生成密钥流。</li>
+<li>首先，使用一个初始化向量 (IV) 作为分组密码的第一次输入。</li>
+<li>后续，将前一次分组密码的输出 <span class="arithmatex">\(O_{i-1}\)</span> 作为下一次的输入。  </li>
+</ul>
+<div class="arithmatex">\[O_i = E_K(O_{i-1}) \quad (\text{其中 } O_0 = IV)\]</div>
+<div class="arithmatex">\[
+    C_i = P_i \oplus O_i \]</div>
+<div class="arithmatex">\[
+    P_i = C_i \oplus O_i
+\]</div>
+<ul>
+<li><strong>初始化向量 (IV)：</strong> 与CTR模式类似，IV对于给定的密钥必须是唯一的，不需要保密。</li>
+<li><strong>优点：</strong></li>
+<li><strong>无错误传播到明文：</strong> 密文块 <span class="arithmatex">\(C_i\)</span> 中的一位错误只会导致解密后对应明文 <span class="arithmatex">\(P_i\)</span> 中的一位错误，不会影响其他明文块。</li>
+<li><strong>密钥流可以预计算：</strong> 与 CTR 模式类似。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>密钥流生成是串行的：</strong> <span class="arithmatex">\(O_i\)</span> 的生成依赖于 <span class="arithmatex">\(O_{i-1}\)</span>。</li>
+<li><strong>同步性要求高：</strong> 如果发送方和接收方的密钥流产生过程失去同步（例如，IV不同或实现有误），则所有后续解密都会失败。</li>
+<li><strong>对IV唯一性要求严格：</strong> 如果 (IV, Key) 被重用，则会产生相同的密钥流，导致与 CTR 模式相同的 "two-time pad" 安全问题。</li>
+<li><strong>内部状态周期：</strong> 如果密钥流产生器 <span class="arithmatex">\(O_i = E_K(O_{i-1})\)</span> 进入一个短周期，那么密钥流也会重复，可能导致安全风险。CTR模式通过显式使用计数器避免了这个问题。</li>
+<li><strong>与CFB的区别：</strong> OFB将加密算法的<em>输出</em>反馈，而CFB将<em>密文</em>反馈。因此，OFB的密钥流生成独立于明文和密文，而CFB的密钥流依赖于先前的密文。</li>
+</ul>
+<p><strong>选择工作模式的考虑因素：</strong></p>
+<ul>
+<li><strong>安全性需求：</strong> 是否需要抵抗特定模式的攻击？是否能容忍IV重用带来的风险？</li>
+<li><strong>错误容忍度：</strong> 应用是否对传输错误敏感？错误传播的特性是否可接受？</li>
+<li><strong>性能需求：</strong> 是否需要并行处理？是否可以预计算？</li>
+<li><strong>实现复杂度：</strong></li>
+<li><strong>随机访问需求：</strong> 是否需要能随机解密密文的某一部分？</li>
+</ul>
+<p>目前，<strong>AES-GCM (Galois/Counter Mode)</strong> 和 <strong>AES-CCM (Counter Mode with CBC-MAC)</strong> 等认证加密模式 (Authenticated Encryption with Associated Data, AEAD) 因其能同时提供机密性、完整性和真实性认证，越来越受到推荐和广泛使用。这些模式通常基于 CTR 模式来提供加密。</p>
 
 
 
@@ -3645,7 +4216,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年4月29日 14:56:48">2025-04-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月9日 12:08:54">2025-05-09</span>
   </span>
 
     
@@ -3655,7 +4226,7 @@
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年4月29日 14:56:48">2025-04-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月9日 12:08:54">2025-05-09</span>
   </span>
 
     
@@ -3811,16 +4382,16 @@
     <!-- Link to previous page -->
      
     <a
-      href="../footer/"
+      href="../Symmetriccryptography/"
       class="md-footer__link md-footer__link--prev"
-      aria-label="上一页: 页脚设置"
+      aria-label="上一页: 流密码"
     >
       <div class="md-footer__button md-icon">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
       </div>
       <div class="md-footer__title">
         <span class="md-footer__direction"> 上一页 </span>
-        <div class="md-ellipsis">页脚设置</div>
+        <div class="md-ellipsis">流密码</div>
       </div>
     </a>
     
@@ -3828,13 +4399,13 @@
     <!-- Link to next page -->
      
     <a
-      href="../../technique%20sharing/win/"
+      href="../../Mkdocs/MIT/"
       class="md-footer__link md-footer__link--next"
-      aria-label="下一页: Win11镜像下载/KMS激活"
+      aria-label="下一页: MIT许可声明"
     >
       <div class="md-footer__title">
         <span class="md-footer__direction"> 下一页 </span>
-        <div class="md-ellipsis">Win11镜像下载/KMS激活</div>
+        <div class="md-ellipsis">MIT许可声明</div>
       </div>
       <div class="md-footer__button md-icon">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>

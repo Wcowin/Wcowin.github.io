@@ -12,13 +12,13 @@
         <meta name="author" content="王科文(Wcowin)">
       
       
-        <link rel="canonical" href="http://wcowin.work/blog/websitebeauty/accelerate/">
+        <link rel="canonical" href="http://wcowin.work/blog/Cryptography/Symmetriccryptography/">
       
       
-        <link rel="prev" href="../footer/">
+        <link rel="prev" href="../Introduction/">
       
       
-        <link rel="next" href="../../technique%20sharing/win/">
+        <link rel="next" href="../Groupcipher/">
       
       
       <link rel="icon" href="https://s1.imagehub.cc/images/2025/05/05/7ff9985e6f5baffe306907df47042787.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>加速网站访问的一些心得 - Wcowin's Blog</title>
+        <title>流密码 - Wcowin's Blog</title>
       
     
     
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#2" class="md-skip">
           跳转至
         </a>
       
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              加速网站访问的一些心得
+              流密码
             
           </span>
         </div>
@@ -770,8 +770,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -801,17 +803,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Cryptography/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -838,7 +838,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_7">
             <span class="md-nav__icon md-icon"></span>
             密码学
@@ -854,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Numbertheory/" class="md-nav__link">
+      <a href="../Numbertheory/" class="md-nav__link">
         
   
   
@@ -877,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Introduction/" class="md-nav__link">
+      <a href="../Introduction/" class="md-nav__link">
         
   
   
@@ -897,10 +897,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Cryptography/Symmetriccryptography/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    流密码
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -911,6 +933,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 流密码的基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 流密码的基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211-synchronous-stream-ciphers" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 同步流密码 (Synchronous Stream Ciphers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212-finite-state-automaton-fsa" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 有限状态自动机 (Finite State Automaton, FSA)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213-keystream-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 密钥流产生器 (Keystream Generator)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-linear-feedback-shift-register-lfsr" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 线性反馈移位寄存器 (Linear Feedback Shift Register, LFSR)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 线性移位寄存器的一元多项式表示
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 m序列的伪随机性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 m序列密码的破译
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -923,7 +1043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Groupcipher/" class="md-nav__link">
+      <a href="../Groupcipher/" class="md-nav__link">
         
   
   
@@ -1169,8 +1289,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1222,11 +1340,13 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_9" >
         
           
           <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="">
@@ -1242,7 +1362,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_9">
             <span class="md-nav__icon md-icon"></span>
             Mkdocs美化/补充
@@ -1256,7 +1376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocs-wcowin1/" class="md-nav__link">
+      <a href="../../websitebeauty/mkdocs-wcowin1/" class="md-nav__link">
         
   
   
@@ -1302,7 +1422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Customdomain/" class="md-nav__link">
+      <a href="../../websitebeauty/Customdomain/" class="md-nav__link">
         
   
   
@@ -1325,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../yuanjiaohua/" class="md-nav__link">
+      <a href="../../websitebeauty/yuanjiaohua/" class="md-nav__link">
         
   
   
@@ -1348,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkcomments/" class="md-nav__link">
+      <a href="../../websitebeauty/mkcomments/" class="md-nav__link">
         
   
   
@@ -1371,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../header/" class="md-nav__link">
+      <a href="../../websitebeauty/header/" class="md-nav__link">
         
   
   
@@ -1394,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../webtalknow/" class="md-nav__link">
+      <a href="../../websitebeauty/webtalknow/" class="md-nav__link">
         
   
   
@@ -1417,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocsfont/" class="md-nav__link">
+      <a href="../../websitebeauty/mkdocsfont/" class="md-nav__link">
         
   
   
@@ -1440,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shubiao/" class="md-nav__link">
+      <a href="../../websitebeauty/shubiao/" class="md-nav__link">
         
   
   
@@ -1463,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../backgroud/" class="md-nav__link">
+      <a href="../../websitebeauty/backgroud/" class="md-nav__link">
         
   
   
@@ -1486,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkpdf/" class="md-nav__link">
+      <a href="../../websitebeauty/mkpdf/" class="md-nav__link">
         
   
   
@@ -1509,7 +1629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Relativeaddress/" class="md-nav__link">
+      <a href="../../websitebeauty/Relativeaddress/" class="md-nav__link">
         
   
   
@@ -1540,7 +1660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../404/" class="md-nav__link">
+      <a href="../../websitebeauty/404/" class="md-nav__link">
         
   
   
@@ -1563,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../time/" class="md-nav__link">
+      <a href="../../websitebeauty/time/" class="md-nav__link">
         
   
   
@@ -1586,7 +1706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../footer/" class="md-nav__link">
+      <a href="../../websitebeauty/footer/" class="md-nav__link">
         
   
   
@@ -1606,32 +1726,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    加速网站访问的一些心得
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/accelerate/" class="md-nav__link">
         
   
   
@@ -1642,53 +1740,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 优化图片
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-jscss-cdn" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. JS/CSS使用 CDN
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.加速本地渲染
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3528,27 +3579,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#21" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 优化图片
+      2.1 流密码的基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 流密码的基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211-synchronous-stream-ciphers" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 同步流密码 (Synchronous Stream Ciphers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212-finite-state-automaton-fsa" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 有限状态自动机 (Finite State Automaton, FSA)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213-keystream-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 密钥流产生器 (Keystream Generator)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-linear-feedback-shift-register-lfsr" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 线性反馈移位寄存器 (Linear Feedback Shift Register, LFSR)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-jscss-cdn" class="md-nav__link">
+  <a href="#23" class="md-nav__link">
     <span class="md-ellipsis">
-      2. JS/CSS使用 CDN
+      2.3 线性移位寄存器的一元多项式表示
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#24-m" class="md-nav__link">
     <span class="md-ellipsis">
-      3.加速本地渲染
+      2.4 m序列的伪随机性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 m序列密码的破译
     </span>
   </a>
   
@@ -3573,7 +3675,7 @@
       
       
       
-        <a href="../../../tag/#tag:mkdocs" class="md-tag">Mkdocs</a>
+        <a href="../../../tag/#tag:密码学" class="md-tag">密码学</a>
       
     
   </nav>
@@ -3584,45 +3686,440 @@
     
       
     
-    <a href="https://github.com/Wcowin/Wcowin.github.io/raw/main/docs/blog/websitebeauty/accelerate.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/Wcowin/Wcowin.github.io/raw/main/docs/blog/Cryptography/Symmetriccryptography.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="_1">加速网站访问的一些心得<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>在使用 MkDocs 构建网站时，为了提高访问速度，我们可以采取以下一些措施：</p>
-<h2 id="1">1. 优化图片<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>使用合适的图片格式，如 WebP、JPEG2000 等，减少图片文件大小，从而加快加载速度。</p>
-<p>可以使用在线工具进行图片压缩，如：</p>
+<h1 id="2">第2章 流密码<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<h2 id="21">2.1 流密码的基本概念<a class="headerlink" href="#21" title="Permanent link">&para;</a></h2>
+<p>流密码 (Stream Cipher) 是一类重要的对称加密算法。与分组密码 (Block Cipher) 将明文分割成固定大小的块分别加密不同，流密码则是对明文数据流以最小单位（通常是单个比特或字节）进行连续处理。其核心思想是利用一个密钥（称为种子密钥）通过密钥流产生器 (Keystream Generator) 生成一个看似随机的、与明文长度相同的序列，这个序列被称为<strong>密钥流 (Keystream)</strong>。然后，将密钥流与明文数据流通过某种运算（通常是<strong>异或 (XOR)</strong> 操作）结合起来，产生密文流。</p>
+<p><strong>工作流程：</strong></p>
+<ol>
+<li><strong>密钥流生成：</strong> 发送方和接收方使用共享的种子密钥 <span class="arithmatex">\(K\)</span> 初始化各自的密钥流产生器。</li>
+<li><strong>加密：</strong> 设明文为 <span class="arithmatex">\(P = p_1p_2p_3p_4\dots\)</span>，密钥流为 <span class="arithmatex">\(S = s_1s_2s_3s_4\dots\)</span>。加密操作通常为：<span class="arithmatex">\(C_i = p_i \oplus s_i\)</span>，其中 <span class="arithmatex">\(C_i\)</span> 是密文的第 <span class="arithmatex">\(i\)</span> 个单元，<span class="arithmatex">\(\oplus\)</span> 表示异或运算。</li>
+<li><strong>解密：</strong> 接收方使用相同的种子密钥 <span class="arithmatex">\(K\)</span> 和相同的密钥流产生器生成与发送方完全一致的密钥流 <span class="arithmatex">\(S\)</span>。解密操作为：<span class="arithmatex">\(p_i = C_i \oplus s_i\)</span>。</li>
+</ol>
+<p><strong>异或 (XOR) 运算的关键特性：</strong></p>
 <ul>
-<li><a href="https://www.freeconvert.com/zh/webp-converter">freeconvert</a></li>
+<li><span class="arithmatex">\(A \oplus B = B \oplus A\)</span> (交换律)</li>
+<li><span class="arithmatex">\((A \oplus B) \oplus C = A \oplus (B \oplus C)\)</span> (结合律)</li>
+<li><span class="arithmatex">\(A \oplus 0 = A\)</span> (任何数与0异或等于其本身)</li>
+<li><span class="arithmatex">\(A \oplus A = 0\)</span> (任何数与自身异或等于0)</li>
+<li>因此，在解密时：<span class="arithmatex">\(C_i \oplus s_i = (p_i \oplus s_i) \oplus s_i = p_i \oplus (s_i \oplus s_i) = p_i \oplus 0 = p_i\)</span>。这保证了只要密钥流相同，就能正确解密。</li>
 </ul>
-<h2 id="2-jscss-cdn">2. JS/CSS使用 CDN<a class="headerlink" href="#2-jscss-cdn" title="Permanent link">&para;</a></h2>
-<p>使用内容分发网络（CDN）来加速网站的访问，将静态资源（如图片、CSS、JS）缓存到全球各地的服务器上，用户就近访问，减少延迟。</p>
-<p>这里推荐  </p>
+<p><strong>理想密钥流的特性：</strong></p>
+<p>一个理想的密钥流应该与真正的随机序列在统计上无法区分，并且对于不知道种子密钥的攻击者来说是不可预测的。具体来说：</p>
 <ul>
-<li><a href="https://www.jsdelivr.com/github">jsDelivr CDN 加速 GitHub 文件</a>  </li>
+<li><strong>随机性 (Randomness)：</strong> 密钥流中的0和1应该大致等概率出现，各种比特模式（如游程）的分布应符合随机序列的统计规律。</li>
+<li><strong>不可预测性 (Unpredictability)：</strong> 即使已知密钥流的一部分，也无法预测后续的密钥流比特，或者推断出种子密钥。</li>
+<li><strong>长周期 (Long Period)：</strong> 密钥流在重复之前应该有非常长的周期。如果周期太短，攻击者可能通过收集足够长的密文来发现重复的密钥流段，从而破解密码。理想情况下，周期应远大于所有可能加密消息的总长度。</li>
+<li><strong>与明文无关 (Plaintext Independence)：</strong> 密钥流的生成不应依赖于明文内容。</li>
+<li><strong>抗已知明文攻击 (Resistance to Known-Plaintext Attack)：</strong> 如果攻击者获得了部分明文及其对应的密文，他们就能得到相应的密钥流片段 (<span class="arithmatex">\(s_i = p_i \oplus C_i\)</span>)。密钥流产生器必须能够抵抗基于这些已知密钥流片段的攻击。</li>
 </ul>
-<h2 id="3">3.加速本地渲染<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<p>优化 git 插件的 enabled 配置<br />
-比如我配置里有 git-revision-date-localized 和 git-committers 插件，这些插件会在每次渲染时读取所有文件的 git 历史，导致本地预览变慢。<br />
-推荐做法是在本地开发时禁用它们，仅在 CI/CD 或线上构建时启用。<br />
-具体写法如下：  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># 只有在CI环境变量为true时才启用</span>
-</span><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-committers</span><span class="p">:</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span>
-</span></code></pre></div></td></tr></table></div>
-<hr />
-<p>检验加速效果是否生效可以使用lighthouse进行测试，具体可以参考：  </p>
-<p><a href="../../../develop/lighthouse/">使用lighthouse进行网站性能测试</a></p>
+<p><strong>应用场景：</strong></p>
+<p>流密码由于其加密和解密速度快、错误传播性较低（对于同步流密码而言，一个比特的错误通常只影响对应的一个比特的解密），常用于需要低延迟和高吞吐量数据流加密的场景，例如：</p>
+<ul>
+<li>无线通信 (如 GSM 网络中的 A5/1, A5/2 算法，蓝牙的 E0 算法)</li>
+<li>安全套接层/传输层安全 (SSL/TLS) 中的某些加密套件 (如 RC4，尽管 RC4 已被发现存在严重漏洞，不再推荐使用)</li>
+<li>实时音视频加密</li>
+</ul>
+<h3 id="211-synchronous-stream-ciphers">2.1.1 同步流密码 (Synchronous Stream Ciphers)<a class="headerlink" href="#211-synchronous-stream-ciphers" title="Permanent link">&para;</a></h3>
+<p>在同步流密码中，密钥流的生成完全独立于明文流和密文流。密钥流的产生仅依赖于初始的种子密钥和某种确定的算法（通常由时钟脉冲驱动）。</p>
+<p><strong>关键特点：</strong></p>
+<ul>
+<li><strong>同步要求：</strong> 发送方和接收方的密钥流产生器必须严格同步。这意味着它们必须使用相同的种子密钥，并且必须在同一时刻开始生成密钥流，以相同的速率产生密钥流的比特。</li>
+<li><strong>无错误传播 (Error Non-Propagation)：</strong> 如果密文在传输过程中发生单个比特的翻转错误（例如，0 变成 1 或 1 变成 0），那么在解密时，只有对应位置的明文比特会出错。这个错误不会影响到后续比特的正确解密。</li>
+<li><strong>对丢失/插入敏感：</strong> 如果密文在传输过程中发生比特的丢失或插入，会导致发送方和接收方的密钥流与密文流之间的对应关系错位。从错误发生点开始，后续所有的解密都将失败，直到双方重新进行同步。例如，如果密文中丢失了一个比特，接收方会用 <span class="arithmatex">\(s_k\)</span> 去解密 <span class="arithmatex">\(C_{k+1}\)</span>，导致后续全部解密错误。</li>
+<li><strong>主动攻击的风险：</strong> 由于密文的特定比特直接对应于明文的特定比特，攻击者如果能够精确地修改密文中的某些比特，就可以有针对性地改变解密后的明文对应比特。例如，如果攻击者知道某一位明文是0，并且想把它改成1，只需翻转密文中的对应比特 (<span class="arithmatex">\(C_i' = C_i \oplus 1\)</span>)，那么解密后 <span class="arithmatex">\(p_i' = C_i' \oplus s_i = (C_i \oplus 1) \oplus s_i = (p_i \oplus s_i \oplus 1) \oplus s_i = p_i \oplus 1\)</span>。</li>
+</ul>
+<p><strong>对比：自同步流密码 (Self-Synchronizing Stream Ciphers) / 异步流密码 (Asynchronous Stream Ciphers)</strong></p>
+<p>虽然本章重点是同步流密码，但简单对比有助于理解。在自同步流密码中，密钥流的生成不仅依赖于种子密钥，还依赖于先前固定数量的密文比特。这意味着如果传输中发生比特丢失或插入，一旦接收到正确数量的后续密文比特，接收方可以自动重新同步。但其缺点是错误会传播：一个密文比特的错误会影响后续若干个明文比特的解密。</p>
+<p>分组密码与流密码的区别就在于有无记忆性。流密码是有记忆性的。</p>
+<h3 id="212-finite-state-automaton-fsa">2.1.2 有限状态自动机 (Finite State Automaton, FSA)<a class="headerlink" href="#212-finite-state-automaton-fsa" title="Permanent link">&para;</a></h3>
+<p>有限状态自动机 (FSA)，也称为有限状态机 (Finite State Machine, FSM)，是一种计算的数学模型，它包含有限数量的状态。它可以被看作是一个抽象的机器，在任何给定时间点都处于其有限状态集合中的某一个状态。当它接收到输入时，会根据当前的状​​态和接收到的输入，转换到另一个状态（或保持当前状态），并可能产生输出。</p>
+<p><strong>在流密码中的应用：</strong></p>
+<p>密钥流产生器可以被精确地建模为一个有限状态自动机。</p>
+<ul>
+<li><strong>状态 (States)：</strong> 密钥流产生器的内部存储单元（例如 LFSR 中的寄存器内容）构成了 FSA 的状态。由于存储单元的数量和每个单元能存储的值是有限的，所以总状态数是有限的。</li>
+<li><strong>初始状态 (Initial State)：</strong> 由种子密钥决定的产生器的初始配置。</li>
+<li><strong>输入 (Input)：</strong> 对于典型的同步流密码中的密钥流产生器，主要的“输入”可以看作是时钟脉冲，它驱动产生器从一个状态转换到下一个状态。在某些设计中，也可能有外部输入。</li>
+<li><strong>状态转移函数 (Transition Function)：</strong> 定义了产生器如何从当前状态根据（隐式的）时钟输入转换到下一个状态。例如，在 LFSR 中，这是由移位操作和反馈逻辑决定的。</li>
+<li><strong>输出函数 (Output Function)：</strong> 定义了在每个状态（或每次状态转换时）产生哪些密钥流比特。通常是当前状态的某个函数，例如 LFSR 输出其最末端（或某个特定抽头）的比特。</li>
+</ul>
+<p><strong>有限状态的必然结果——周期性：</strong></p>
+<p>由于状态的数量是有限的，当密钥流产生器连续运行时，它必然会在某个时刻回到一个曾经出现过的状态。一旦回到一个旧状态，由于状态转移函数是确定的，后续的状态序列和输出序列也将与之前完全相同，从而导致密钥流呈现周期性。这个周期的长度对密码的安全性至关重要。一个 <span class="arithmatex">\(N\)</span> 个状态的 FSA，其输出序列的周期最大为 <span class="arithmatex">\(N\)</span>。</p>
+<h3 id="213-keystream-generator">2.1.3 密钥流产生器 (Keystream Generator)<a class="headerlink" href="#213-keystream-generator" title="Permanent link">&para;</a></h3>
+<p>密钥流产生器是流密码的核心和灵魂，其设计的安全性直接决定了整个流密码系统的安全性。所以说<ins class="critic">流密码的核心是密钥流生成器的设计</ins>。它的任务是接收一个相对较短的种子密钥，并将其扩展成一个非常长的、在密码学意义上安全的伪随机序列，即密钥流。</p>
+<p><strong>优秀密钥流产生器的设计目标和特性详解：</strong></p>
+<ol>
+<li>
+<p><strong>安全性高 (High Security)：</strong></p>
+<ul>
+<li><strong>抗已知明文攻击：</strong> 如前所述，即使攻击者知道一段密钥流（通过已知明文和对应密文异或得到），也应该极其困难（计算上不可行）去推断出种子密钥或密钥流产生器的内部结构，或者预测密钥流的其余部分。</li>
+<li><strong>抗选择明文攻击/选择密文攻击：</strong> 在这些攻击模型下，攻击者有能力选择明文进行加密或选择密文进行解密。产生器应能抵抗这些更强的攻击。</li>
+<li><strong>不可区分性 (Indistinguishability)：</strong> 产生的密钥流在统计上应与真正的随机序列无法区分。任何有效的统计检验都无法区分密钥流和真随机流。</li>
+<li><strong>没有弱密钥 (No Weak Keys)：</strong> 不应存在某些种子密钥，使得它们产生的密钥流具有可利用的弱点（例如周期过短、统计特性差等）。</li>
+</ul>
+</li>
+<li>
+<p><strong>周期长 (Long Period)：</strong></p>
+<ul>
+<li>密钥流的周期是指密钥流序列开始重复之前的长度。</li>
+<li><strong>避免密钥重用：</strong> 如果密钥流的周期 <span class="arithmatex">\(L\)</span> 小于明文长度，那么密钥流将会被重复使用。例如，如果明文是 <span class="arithmatex">\(P_1P_2\dots P_L P_{L+1}\dots P_{2L}\)</span>，密钥流是 <span class="arithmatex">\(S_1S_2\dots S_L S_1\dots S_L\)</span>。那么密文 <span class="arithmatex">\(C_i = P_i \oplus S_i\)</span> 和 <span class="arithmatex">\(C_{L+i} = P_{L+i} \oplus S_i\)</span>。如果攻击者获得这两段密文，他们可以计算 <span class="arithmatex">\(C_i \oplus C_{L+i} = (P_i \oplus S_i) \oplus (P_{L+i} \oplus S_i) = P_i \oplus P_{L+i}\)</span>。这消除了密钥流，使得攻击者可以直接分析两个明文段之间的关系，极大地降低了破解难度（例如，通过频率分析或已知部分明文）。这就是所谓的“两时一密”(two-time pad) 问题，是致命的。</li>
+<li>周期长度应远大于系统预期加密的数据总量。对于一个有 <span class="arithmatex">\(N\)</span> 个内部状态的产生器，其最大周期可以达到 <span class="arithmatex">\(N\)</span>（如果所有状态构成一个大环）或者 <span class="arithmatex">\(2^k-1\)</span>（对于 <span class="arithmatex">\(k\)</span> 级线性反馈移位寄存器）。</li>
+</ul>
+</li>
+<li>
+<p><strong>良好的统计特性 (Good Statistical Properties)：</strong></p>
+<ul>
+<li><strong>均衡性：</strong> 在一个周期内，0 和 1 的数量应大致相等。</li>
+<li><strong>游程分布：</strong> 连续相同比特的子序列（游程）的长度分布应符合随机序列的期望。例如，长度为 1 的游程应最多，长度为 2 的游程数量约为长度为 1 的一半，以此类推。</li>
+<li><strong>低自相关性：</strong> 密钥流与其自身的移位版本之间的相关性应尽可能低（除了零移位）。</li>
+<li><strong>高线性复杂度 (Linear Complexity)：</strong> 线性复杂度是指能够生成该序列的最短 LFSR 的级数。低线性复杂度的序列容易被 Berlekamp-Massey 算法等方法分析和重构。一个好的密钥流产生器应产生具有高线性复杂度的密钥流。</li>
+</ul>
+</li>
+<li>
+<p><strong>实现高效 (Efficient Implementation)：</strong></p>
+<ul>
+<li>无论是硬件实现还是软件实现，密钥流的生成速度都应该足够快，以满足应用需求，如高速网络通信或实时数据处理。</li>
+<li>硬件实现通常追求门电路少、功耗低。</li>
+<li>软件实现通常追求执行指令少、内存占用小。</li>
+</ul>
+</li>
+<li>
+<p><strong>对种子密钥敏感 (Sensitivity to Seed Key)：</strong></p>
+<ul>
+<li>种子密钥的微小改变（例如只改变一个比特）应该导致生成的密钥流完全不同，这种特性称为雪崩效应。</li>
+</ul>
+</li>
+</ol>
+<p>流密码强度依赖于密钥流产生器生成序列的<mark class="critic">随机性和不可预测性</mark>。一个好的密钥流产生器应具备上述所有特性，从而提供高度的安全性。  </p>
+<p>常见的密钥流产生器构造方法包括基于线性反馈移位寄存器 (LFSR) 的设计（如 LFSR 的组合、滤波或时钟控制）以及基于数学难题（如离散对数）的设计等。</p>
+<h2 id="22-linear-feedback-shift-register-lfsr">2.2 线性反馈移位寄存器 (Linear Feedback Shift Register, LFSR)<a class="headerlink" href="#22-linear-feedback-shift-register-lfsr" title="Permanent link">&para;</a></h2>
+<p>线性反馈移位寄存器 (LFSR) 因其结构简单、易于硬件实现以及能够产生具有良好统计特性的长周期序列，而成为密钥流产生器设计中的一个基础和核心的构建模块。</p>
+<p><strong>结构组成：</strong></p>
+<p>一个 LFSR 由两个主要部分组成：</p>
+<ol>
+<li><strong>移位寄存器 (Shift Register)：</strong> 由 <span class="arithmatex">\(L\)</span> 个串联的存储单元（或称为级，stages）组成，每个单元通常存储一个比特 (0 或 1)。这些单元通常由触发器 (flip-flops) 实现。</li>
+<li><strong>反馈函数 (Feedback Function)：</strong> 这是一个线性函数，它从移位寄存器的某些特定位置（称为<strong>抽头 (taps)</strong>）取出比特值，通过异或 (XOR) 运算组合这些比特，并将结果反馈到寄存器的输入端（通常是第一级）。</li>
+</ol>
+<p><strong>工作原理：</strong></p>
+<p>在每个时钟脉冲的驱动下，LFSR 进行如下操作：</p>
+<ol>
+<li><strong>移位 (Shift)：</strong> 寄存器中的所有比特向一个方向（例如，从左到右或从右到左，这里假设从右到左，新的输入在最右端）移动一个位置。<ul>
+<li><span class="arithmatex">\(s_0 \leftarrow s_1\)</span></li>
+<li><span class="arithmatex">\(s_1 \leftarrow s_2\)</span></li>
+<li>...</li>
+<li><span class="arithmatex">\(s_{L-2} \leftarrow s_{L-1}\)</span></li>
+</ul>
+</li>
+<li><strong>输出 (Output)：</strong> 最末端（例如 <span class="arithmatex">\(s_0\)</span>）的比特被移出，这个比特通常作为密钥流的一个输出比特。</li>
+<li><strong>反馈 (Feedback)：</strong> 根据预设的抽头位置，从移位后的寄存器状态中（即 <span class="arithmatex">\(s_1, s_2, \dots, s_{L-1}\)</span> 的新值）选取若干比特进行异或运算。<ul>
+<li>设抽头位置为 <span class="arithmatex">\(t_1, t_2, \dots, t_k\)</span> (这些是寄存器级的索引，例如第 <span class="arithmatex">\(j\)</span> 级的内容是 <span class="arithmatex">\(s_j\)</span>)。</li>
+<li>新的输入比特 <span class="arithmatex">\(s_{new}\)</span> 计算为： <span class="arithmatex">\(s_{new} = s_{t_1} \oplus s_{t_2} \oplus \dots \oplus s_{t_k}\)</span>。</li>
+</ul>
+</li>
+<li><strong>输入 (Input)：</strong> 计算得到的反馈比特 <span class="arithmatex">\(s_{new}\)</span> 被送入移位寄存器的始端（例如 <span class="arithmatex">\(s_{L-1} \leftarrow s_{new}\)</span>）。</li>
+</ol>
+<p><strong>示例 (一个3级LFSR)：</strong></p>
+<p>假设有一个3级LFSR (<span class="arithmatex">\(L=3\)</span>)，状态为 <span class="arithmatex">\((s_2, s_1, s_0)\)</span>。
+反馈函数由 <span class="arithmatex">\(s_2\)</span> 和 <span class="arithmatex">\(s_0\)</span> (移位前的 <span class="arithmatex">\(s_0\)</span>，即当前输出位) 的异或决定，并反馈到 <span class="arithmatex">\(s_2\)</span> 的位置 (斐波那契结构)。或者，更常见的伽罗瓦结构中，反馈来自当前状态的某些位，影响下一状态的输入位。</p>
+<p>我们以<strong>伽罗瓦 (Galois) 配置</strong>为例，反馈影响输入端：
+设寄存器为 <span class="arithmatex">\((s_{L-1}, s_{L-2}, \dots, s_1, s_0)\)</span>。
+输出为 <span class="arithmatex">\(s_0\)</span>。
+新的 <span class="arithmatex">\(s_{L-1}\)</span> 是由某些 <span class="arithmatex">\(s_i\)</span> (其中 <span class="arithmatex">\(i\)</span> 对应抽头位置) 异或而成。
+其他位 <span class="arithmatex">\(s_{i-1} \leftarrow s_i\)</span>。</p>
+<p>更清晰的<strong>斐波那契 (Fibonacci) 配置</strong>：
+状态 <span class="arithmatex">\((s_{L-1}, s_{L-2}, \dots, s_1, s_0)\)</span>。
+1. 比特 <span class="arithmatex">\(s_0\)</span> 作为输出。
+2. 寄存器右移一位: <span class="arithmatex">\(s_0\)</span> 丢弃， <span class="arithmatex">\(s_1 \rightarrow s_0, s_2 \rightarrow s_1, \dots, s_{L-1} \rightarrow s_{L-2}\)</span>。
+3. 新的 <span class="arithmatex">\(s_{L-1}\)</span> (最左边的位) 由反馈函数决定: <span class="arithmatex">\(s_{L-1} = c_1 s_{L-1}' \oplus c_2 s_{L-2}' \oplus \dots \oplus c_L s_0'\)</span> (其中 <span class="arithmatex">\(s_i'\)</span> 是移位前的状态，而 <span class="arithmatex">\(c_i\)</span> 是反馈多项式的系数)。更通用的写法是 <span class="arithmatex">\(s_{L-1} = \bigoplus_{j \in T} s_j'\)</span>，T是抽头集合。</p>
+<p>例如，一个3级LFSR，抽头在第3位和第1位 (即 <span class="arithmatex">\(s_2\)</span> 和 <span class="arithmatex">\(s_0\)</span>，移位前的)。
+初始状态: <span class="arithmatex">\((1, 0, 0)\)</span> (即 <span class="arithmatex">\(s_2=1, s_1=0, s_0=0\)</span>)
+输出位是 <span class="arithmatex">\(s_0\)</span>。
+反馈到 <span class="arithmatex">\(s_2\)</span> 的是 <span class="arithmatex">\(s_2 \oplus s_0\)</span> (移位前的)。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">时钟</th>
+<th style="text-align: center;">状态 <span class="arithmatex">\((s_2, s_1, s_0)\)</span></th>
+<th style="text-align: center;">输出 (<span class="arithmatex">\(s_0\)</span>)</th>
+<th style="text-align: center;">反馈 (<span class="arithmatex">\(s_2 \oplus s_0\)</span>)</th>
+<th style="text-align: center;">下一状态 <span class="arithmatex">\((s_2 \oplus s_0, s_2, s_1)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 0, 0)\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="arithmatex">\(1 \oplus 0 = 1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 1, 0)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 1, 0)\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="arithmatex">\(1 \oplus 0 = 1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 1, 1)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 1, 1)\)</span></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="arithmatex">\(1 \oplus 1 = 0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\((0, 1, 1)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"><span class="arithmatex">\((0, 1, 1)\)</span></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="arithmatex">\(0 \oplus 1 = 1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 0, 1)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 0, 1)\)</span></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="arithmatex">\(1 \oplus 1 = 0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\((0, 1, 0)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><span class="arithmatex">\((0, 1, 0)\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="arithmatex">\(0 \oplus 0 = 0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\((0, 0, 1)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;"><span class="arithmatex">\((0, 0, 1)\)</span></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="arithmatex">\(0 \oplus 1 = 1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 0, 0)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 0, 0)\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="arithmatex">\(1 \oplus 0 = 1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\((1, 1, 0)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>输出序列 (取 <span class="arithmatex">\(s_0\)</span>) 为: <span class="arithmatex">\(0, 0, 1, 1, 1, 0, 1, (0, 0, 1, \dots)\)</span>
+周期为 <span class="arithmatex">\(2^3 - 1 = 7\)</span> (输出序列为m序列)。</p>
+<p><strong>初始状态 (Seed)：</strong></p>
+<p>LFSR 的输出序列完全由其反馈逻辑和初始状态 (种子密钥) 决定。如果初始状态为全零，并且反馈函数中没有常数项 (纯线性反馈)，则 LFSR 将永远输出零。因此，全零状态通常是一个需要避免的初始状态。对于一个 <span class="arithmatex">\(L\)</span> 级的 LFSR，它有 <span class="arithmatex">\(2^L\)</span> 个可能的状态。</p>
+<p><strong>重要性：</strong></p>
+<ul>
+<li>LFSR容易用数字逻辑电路实现，速度快。</li>
+<li>通过选择合适的反馈函数，可以产生具有很长周期的序列（最大长度序列，即m序列）。</li>
+<li>其输出序列具有良好的伪随机统计特性。</li>
+<li>LFSR 的数学理论（基于有限域上的多项式代数）非常成熟，便于分析其性质。</li>
+</ul>
+<p>然而，由于其固有的线性特性，单个 LFSR 直接用作密钥流产生器是不安全的，容易受到已知明文攻击（如使用 Berlekamp-Massey 算法）。因此，在实际的流密码设计中，通常会使用多个 LFSR 进行非线性组合，或者对 LFSR 的输出进行非线性滤波，以增强其安全性。</p>
+<h2 id="23">2.3 线性移位寄存器的一元多项式表示<a class="headerlink" href="#23" title="Permanent link">&para;</a></h2>
+<p>LFSR 的行为和其输出序列的特性可以通过有限域 GF(2)（即系数为0或1的域）上的一元多项式来精确描述和分析。这种表示方法是理解 LFSR 理论性质（如周期、线性复杂度）的关键。</p>
+<p>对于一个 <span class="arithmatex">\(L\)</span> 级的 LFSR，其<strong>特征多项式 (Characteristic Polynomial)</strong> 或<strong>反馈多项式 (Feedback Polynomial)</strong> 定义为：</p>
+<div class="arithmatex">\[
+P(x) = 1 + c_1x + c_2x^2 + \dots + c_{L-1}x^{L-1} + c_Lx^L
+\]</div>
+<p>或者，有时也写成（特别是在伽罗瓦配置中，表示抽头位置）：</p>
+<div class="arithmatex">\[
+P(x) = x^L + c_{L-1}x^{L-1} + \dots + c_1x + c_0
+\]</div>
+<p>(其中 <span class="arithmatex">\(c_0=1\)</span> 总是成立，因为第0级总是被反馈影响或作为输出基准)</p>
+<p>我们以上面 Fibonacci 结构中更常见的形式为例：</p>
+<div class="arithmatex">\[
+P(x) = 1 + \sum_{i=1}^{L} c_i x^i
+\]</div>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(L\)</span> 是 LFSR 的级数（寄存器的长度）。</li>
+<li><span class="arithmatex">\(x^i\)</span> 表示寄存器的第 <span class="arithmatex">\(i\)</span> 个位置（通常 <span class="arithmatex">\(x^1\)</span> 对应离反馈输入点最近的第一个参与反馈的抽头，而 <span class="arithmatex">\(x^L\)</span> 对应最远的一个抽头，即寄存器的长度）。</li>
+<li>系数 <span class="arithmatex">\(c_i \in \{0, 1\}\)</span>。如果 <span class="arithmatex">\(c_i = 1\)</span>，则表示寄存器的第 <span class="arithmatex">\(i\)</span> 个位置（或其输出）参与反馈运算（即有一个抽头）。如果 <span class="arithmatex">\(c_i = 0\)</span>，则不参与。</li>
+<li>常数项 '1' (或 <span class="arithmatex">\(x^0\)</span>) 在这种表示法中通常代表反馈的输入点或者序列的递推关系。</li>
+</ul>
+<p><strong>多项式与反馈连接的关系：</strong></p>
+<p>如果 LFSR 的下一状态 <span class="arithmatex">\(s_t\)</span> 的最左边的比特（即新输入的比特）是由当前状态 <span class="arithmatex">\((s_{t-1}, s_{t-2}, \dots, s_{t-L})\)</span> 的某些位 <span class="arithmatex">\(s_{t-i}\)</span> 异或而成，即：</p>
+<p><span class="arithmatex">\(s_t = c_1 s_{t-1} \oplus c_2 s_{t-2} \oplus \dots \oplus c_L s_{t-L}\)</span></p>
+<p>那么其特征多项式是 <span class="arithmatex">\(P(x) = 1 + c_1x + c_2x^2 + \dots + c_Lx^L\)</span>。</p>
+<p>输出序列 <span class="arithmatex">\(S = \{s_0, s_1, s_2, \dots\}\)</span> 满足递推关系 <span class="arithmatex">\(\sum_{i=0}^{L} c_i s_{k-i} = 0\)</span> (其中 <span class="arithmatex">\(c_0=1\)</span>) for <span class="arithmatex">\(k \ge L\)</span>。</p>
+<p><strong>本原多项式 (Primitive Polynomial)：</strong></p>
+<p>特征多项式 <span class="arithmatex">\(P(x)\)</span> 的性质直接决定了 LFSR 输出序列的性质，尤其是周期。</p>
+<ul>
+<li><strong>不可约多项式 (Irreducible Polynomial)：</strong> 如果一个多项式不能被分解为两个次数更低的多项式之积（在 GF(2) 上），则称其为不可约多项式。为了使 LFSR 具有良好的长周期特性，其特征多项式必须是不可约的。</li>
+<li><strong>本原多项式 (Primitive Polynomial)：</strong> 一个 <span class="arithmatex">\(L\)</span> 次的不可约多项式 <span class="arithmatex">\(P(x)\)</span> 被称为本原多项式，如果它是 GF(<span class="arithmatex">\(2^L\)</span>) 的本原元 (primitive element) 的最小多项式。换句话说，如果 <span class="arithmatex">\(x\)</span> 是方程 <span class="arithmatex">\(P(x)=0\)</span> 的一个根，则 <span class="arithmatex">\(x\)</span> 的阶 (multiplicative order) 是 <span class="arithmatex">\(2^L - 1\)</span>。这意味着 <span class="arithmatex">\(x^k \neq 1\)</span> 对于所有 <span class="arithmatex">\(1 \le k &lt; 2^L - 1\)</span>，且 <span class="arithmatex">\(x^{2^L-1} = 1\)</span>。</li>
+<li><strong>最大长度序列 (m-sequence)：</strong> 如果一个 <span class="arithmatex">\(L\)</span> 级 LFSR 的特征多项式 <span class="arithmatex">\(P(x)\)</span> 是 GF(2) 上的一个 <span class="arithmatex">\(L\)</span> 次本原多项式，并且 LFSR 的初始状态非全零，则该 LFSR 会产生一个周期为 <span class="arithmatex">\(2^L - 1\)</span> 的序列。这个序列称为<strong>最大长度序列</strong>或 <strong>m序列</strong>。这是 LFSR 能产生的最长周期（因为有 <span class="arithmatex">\(2^L-1\)</span> 个非零状态）。</li>
+</ul>
+<p><strong>选择本原多项式的重要性：</strong></p>
+<p>为了获得具有密码学价值的长周期和良好随机性的密钥流，选择一个本原的特征多项式至关重要。对于给定的级数 <span class="arithmatex">\(L\)</span>，可能存在多个本原多项式。</p>
+<p><strong>状态转移的矩阵表示：</strong></p>
+<p>LFSR 的状态转移也可以用矩阵来表示。如果 LFSR 的当前状态（内容）为一个行向量 <span class="arithmatex">\(S_t = (s_{t,L-1}, s_{t,L-2}, \dots, s_{t,0})\)</span>，则下一个状态 <span class="arithmatex">\(S_{t+1}\)</span> 可以通过乘以一个 <span class="arithmatex">\(L \times L\)</span> 的<strong>转移矩阵 (Transition Matrix) <span class="arithmatex">\(T\)</span></strong> 得到： <span class="arithmatex">\(S_{t+1} = S_t \cdot T\)</span> (或者列向量 <span class="arithmatex">\(S_{t+1} = T \cdot S_t\)</span> 取决于定义)。</p>
+<p>对于特征多项式 <span class="arithmatex">\(P(x) = 1 + c_1x + \dots + c_{L-1}x^{L-1} + x^L\)</span> ，其转移矩阵 <span class="arithmatex">\(T\)</span> (对于行向量状态，新位在最左边，输出最右边) 通常形如：</p>
+<div class="arithmatex">\[
+T = \begin{pmatrix}
+c_{L-1} &amp; 1 &amp; 0 &amp; \dots &amp; 0 \\
+c_{L-2} &amp; 0 &amp; 1 &amp; \dots &amp; 0 \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+c_0 &amp; 0 &amp; 0 &amp; \dots &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; \dots &amp; 0
+\end{pmatrix}
+\]</div>
+<p>或者更常见的（新位在最高位，输出最低位，多项式 <span class="arithmatex">\(P(x) = x^L + c_{L-1}x^{L-1} + \dots + c_1x + c_0\)</span>，<span class="arithmatex">\(c_i\)</span> 是抽头系数）：</p>
+<div class="arithmatex">\[
+S_t = (s_{L-1}, s_{L-2}, \dots, s_0)
+\]</div>
+<div class="arithmatex">\[
+S_{t+1} = ( \sum_{i=0}^{L-1} c_i s_i, s_{L-1}, s_{L-2}, \dots, s_1 )
+\]</div>
+<p>其转移矩阵 <span class="arithmatex">\(T\)</span> (伴随矩阵的转置) 为：</p>
+<div class="arithmatex">\[
+T = \begin{pmatrix}
+c_{L-1} &amp; 1 &amp; 0 &amp; \dots &amp; 0 \\
+c_{L-2} &amp; 0 &amp; 1 &amp; \dots &amp; 0 \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+c_1 &amp; 0 &amp; 0 &amp; \dots &amp; 1 \\
+c_0 &amp; 0 &amp; 0 &amp; \dots &amp; 0
+\end{pmatrix}
+\]</div>
+<p>(这里的 <span class="arithmatex">\(c_i\)</span> 来自 <span class="arithmatex">\(P(x) = x^L - \sum_{i=0}^{L-1} c_i x^i\)</span> 的递推关系 <span class="arithmatex">\(s_k = \sum_{i=0}^{L-1} c_i s_{k-L+i}\)</span>)。</p>
+<p>如果 <span class="arithmatex">\(P(x)\)</span> 是特征多项式，那么 <span class="arithmatex">\(T\)</span> 的特征多项式也与 <span class="arithmatex">\(P(x)\)</span> 相关 (通常就是 <span class="arithmatex">\(P(x)\)</span> 或其倒数多项式)。如果 <span class="arithmatex">\(P(x)\)</span> 是本原的，那么 <span class="arithmatex">\(T\)</span> 的周期是 <span class="arithmatex">\(2^L-1\)</span>。</p>
+<p>连续 <span class="arithmatex">\(k\)</span> 步的状态 <span class="arithmatex">\(S_{t+k} = S_t \cdot T^k\)</span>。</p>
+<p>多项式表示法为分析 LFSR 的周期、输出序列的代数结构以及构造具有特定性质的序列提供了强大的数学工具。</p>
+<h2 id="24-m">2.4 m序列的伪随机性<a class="headerlink" href="#24-m" title="Permanent link">&para;</a></h2>
+<p>由 <span class="arithmatex">\(L\)</span> 级 LFSR 且其特征多项式为本原多项式所产生的序列，称为 m序列 (Maximum-length sequence)。其周期为 <span class="arithmatex">\(2^L - 1\)</span>。m序列之所以在密码学和通信领域受到广泛关注，是因为它们具有许多类似于真正随机序列的优良统计特性，这些特性使得它们成为优秀的伪随机序列。</p>
+<p>以下是 m序列主要的伪随机性质：</p>
+<ol>
+<li>
+<p><strong>均衡性 (Balance Property) / 平衡性：</strong></p>
+<ul>
+<li>在一个完整的周期 (<span class="arithmatex">\(2^L-1\)</span> 位) 内，数字 "1" 的个数与数字 "0" 的个数非常接近。</li>
+<li>具体来说，在一个周期内，"1" 的个数为 <span class="arithmatex">\(2^{L-1}\)</span>，而 "0" 的个数为 <span class="arithmatex">\(2^{L-1} - 1\)</span>。</li>
+<li><strong>直观解释：</strong> 这意味着序列中 0 和 1 的出现概率几乎相等，没有明显的偏向。对于一个长的随机序列，我们期望 0 和 1 的数量大致相同。</li>
+</ul>
+</li>
+<li>
+<p><strong>游程特性 (Run Property)：</strong></p>
+<ul>
+<li>游程是指序列中连续出现的相同比特的子串。例如，在序列 <code>111001000</code> 中，<code>111</code> 是一个长度为3的1-游程，<code>00</code> 是一个长度为2的0-游程。</li>
+<li>m序列的游程分布具有明确的规律，非常接近理想随机序列的游程分布：<ul>
+<li>在一个周期内，总共有 <span class="arithmatex">\(2^{L-1}\)</span> 个游程（包括1-游程和0-游程）。</li>
+<li>对于长度为 <span class="arithmatex">\(k\)</span> 的游程 (<span class="arithmatex">\(1 \le k \le L-2\)</span>)：0-游程和1-游程的数量均为 <span class="arithmatex">\(2^{L-k-1}\)</span>。</li>
+<li>对于长度为 <span class="arithmatex">\(L-1\)</span> 的游程：存在一个长度为 <span class="arithmatex">\(L-1\)</span> 的0-游程，和一个长度为 <span class="arithmatex">\(L-1\)</span> 的1-游程 (如果 <span class="arithmatex">\(P(x)\)</span> 是特定形式，可能只有一个，例如 <span class="arithmatex">\(L-1\)</span> 的 0-游程和长度 <span class="arithmatex">\(L\)</span> 的 1-游程)。</li>
+<li>更准确地说：<ul>
+<li>长度为1的游程占总游程数的一半。</li>
+<li>长度为2的游程占总游程数的四分之一。</li>
+<li>长度为 <span class="arithmatex">\(k\)</span> 的游程占总游程数的 <span class="arithmatex">\(1/2^k\)</span>。</li>
+<li>有一个长度为 <span class="arithmatex">\(L\)</span> 的1-游程 (对应于寄存器内容为 <span class="arithmatex">\(00\dots01\)</span> 之后生成的全1序列)。</li>
+<li>有一个长度为 <span class="arithmatex">\(L-1\)</span> 的0-游程 (对应于寄存器内容为 <span class="arithmatex">\(10\dots00\)</span> 之前生成的全0序列)。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>直观解释：</strong> 这种分布模式防止了序列中出现过多长串的0或长串的1，使得序列看起来更“混乱”和不可预测，类似于随机抛硬币序列中连续正面或反面的分布。</li>
+</ul>
+</li>
+<li>
+<p><strong>自相关特性 (Autocorrelation Property)：</strong></p>
+<ul>
+<li>自相关函数衡量一个序列与其自身经过不同移位（时延 <span class="arithmatex">\(\tau\)</span>）后的相似程度。对于一个m序列 <span class="arithmatex">\(\{s_i\}\)</span>，其自相关函数 <span class="arithmatex">\(R(\tau)\)</span> 定义为在一个周期内，序列 <span class="arithmatex">\(\{s_i\}\)</span> 与其移位 <span class="arithmatex">\(\tau\)</span> 位的序列 <span class="arithmatex">\(\{s_{i+\tau}\}\)</span> 对应位相等的次数减去相异的次数，再除以周期长度 <span class="arithmatex">\(N = 2^L-1\)</span>。</li>
+<li>或者更常见的定义是基于异或的：计算 <span class="arithmatex">\(s_i \oplus s_{i+\tau}\)</span> 形成的序列在一个周期内0的个数减去1的个数。</li>
+<li>m序列具有理想的<strong>双值自相关函数</strong>（对于周期归一化形式）：</li>
+</ul>
+</li>
+</ol>
+<div class="arithmatex">\[R(\tau) = \frac{1}{N} \sum_{i=0}^{N-1} (-1)^{s_i \oplus s_{i+\tau}} = \begin{cases} 1 &amp; \text{if } \tau \equiv 0 \pmod{N} \\ -\frac{1}{N} &amp; \text{if } \tau \not\equiv 0 \pmod{N} \end{cases}\]</div>
+<p>这意味着：  </p>
+<ul>
+<li>
+<p>当移位 <span class="arithmatex">\(\tau = 0\)</span> 时（序列与自身完全重合），自相关函数值为1（或 <span class="arithmatex">\(N\)</span> 未归一化时），表示完全相关。    </p>
+</li>
+<li>
+<p>当移位 <span class="arithmatex">\(\tau \neq 0 \pmod{N}\)</span> 时（任何非零移位），自相关函数值是一个非常小的负常数 <span class="arithmatex">\(-1/(2^L-1)\)</span>（或 -1 未归一化时）。这表示序列与其自身的任意非平凡移位版本都只有很低的（几乎是恒定的负）相关性。在一个周期内，其移位版本与原序列相比，对应位相同和相异的次数几乎相等，相差仅为1。</p>
+</li>
+<li>
+<p><strong>直观解释：</strong> 这个特性非常重要。它表明 m序列与其移位版本“看起来非常不同”，除非移位是周期的整数倍。这在通信系统中用于码分多址 (CDMA) 和同步，在密码学中则意味着序列的不同部分之间没有简单的线性依赖关系可以被轻易利用。尖锐的自相关峰值使得它很容易检测到序列的存在和同步点。</p>
+</li>
+<li>
+<p><strong>移相特性 (Shift-and-Add Property) / 叠加特性：</strong></p>
+<ul>
+<li>一个 m序列 <span class="arithmatex">\(\{s_i\}\)</span> 与其自身的某个循环移位版本 <span class="arithmatex">\(\{s_{i+\tau}\}\)</span> 逐比特异或 (相加，因为是在 GF(2) 上) 后，得到的序列仍然是该 m序列的另一个循环移位版本，或者是全零序列（当两个序列完全相同时，即 <span class="arithmatex">\(\tau = 0\)</span> 或 <span class="arithmatex">\(\tau\)</span> 是周期的倍数）。</li>
+<li>即，如果 <span class="arithmatex">\(S\)</span> 是一个 m序列， <span class="arithmatex">\(S'\)</span> 是 <span class="arithmatex">\(S\)</span> 的一个循环移位，则 <span class="arithmatex">\(S \oplus S'\)</span> 也是 <span class="arithmatex">\(S\)</span> 的一个循环移位 (或全零)。</li>
+<li><strong>直观解释：</strong> 这个特性反映了 m序列的代数结构。虽然它是一个优点（保持了序列家族的封闭性），但在密码学上，如果这种结构被不当使用，也可能成为一个弱点，因为它揭示了序列之间的线性关系。</li>
+</ul>
+</li>
+</ul>
+<p><strong>为什么称为“伪”随机：</strong></p>
+<p>尽管 m序列具有上述优良的统计特性，非常接近真随机序列，但它们终究是<strong>确定性</strong>的。只要知道了 LFSR 的特征多项式（即反馈连接）和任意 <span class="arithmatex">\(L\)</span> 个连续的比特（足以确定当前状态），就可以完全预测后续的所有比特。这是“伪”随机的根本含义——它们是由确定性算法生成的，只是看起来随机。真随机序列则是不可预测的。</p>
+<p>这些伪随机性使得 m序列在需要可复现的、具有良好统计特性的二进制序列的场合非常有用，如：</p>
+<ul>
+<li>通信系统中的扩频码 (如 GPS、CDMA)</li>
+<li>数字系统的测试和故障诊断 (生成测试向量)</li>
+<li>密码学中的流密码密钥流组件 (但需与其他非线性操作结合)</li>
+<li>蒙特卡洛模拟中的随机数源 (尽管更复杂的生成器现在更常用)</li>
+</ul>
+<h2 id="25-m">2.5 m序列密码的破译<a class="headerlink" href="#25-m" title="Permanent link">&para;</a></h2>
+<p>尽管 m序列具有诸多优良的伪随机特性，但如果<strong>直接将单个 LFSR 产生的 m序列用作流密码的密钥流</strong>，这样的密码体制是<strong>非常不安全</strong>的，很容易被密码分析者攻破，特别是通过<strong>已知明文攻击 (Known-Plaintext Attack, KPA)</strong>。</p>
+<p><strong>核心弱点：线性性</strong></p>
+<p>LFSR 的根本特性是其<strong>线性性</strong>。输出序列的每一位都是由寄存器先前状态的某些位的线性组合（异或）得到的。这种线性关系使得即使只知道密钥流的一小部分，也可能恢复整个 LFSR 的结构和初始状态。</p>
+<p><strong>Berlekamp-Massey 算法 (B-M 算法)：</strong></p>
+<p>Berlekamp-Massey 算法是破译基于 LFSR 的流密码（特别是那些直接使用 m序列的密码）最著名和最有效的工具。</p>
+<ul>
+<li><strong>功能：</strong> 给定一个二进制序列（例如，通过已知明文和对应密文异或得到的密钥流片段），B-M 算法能够找到一个能生成该序列的<strong>最短线性反馈移位寄存器 (shortest LFSR)</strong>。它会输出这个最短 LFSR 的特征多项式（即反馈连接）和其初始状态。</li>
+<li><strong>效率：</strong> B-M 算法非常高效。对于一个由 <span class="arithmatex">\(L\)</span> 级 LFSR 生成的序列，只需要大约 <span class="arithmatex">\(2L\)</span> 个连续的密钥流比特，B-M 算法就几乎肯定能够唯一地确定这个 LFSR 的特征多项式（如果序列的线性复杂度确实是 <span class="arithmatex">\(L\)</span>）。<ul>
+<li><strong>线性复杂度 (Linear Complexity)：</strong> 一个序列的线性复杂度是指能够生成该序列的最短 LFSR 的级数 <span class="arithmatex">\(L_C\)</span>。对于一个 m序列，其线性复杂度等于其 LFSR 的级数 <span class="arithmatex">\(L\)</span> (<span class="arithmatex">\(L_C = L\)</span>)。</li>
+</ul>
+</li>
+<li><strong>工作原理简述：</strong> B-M 算法是一个迭代算法。它逐个处理输入的序列比特。在每一步，它尝试用当前估计的 LFSR 来预测下一个比特。如果预测正确，则 LFSR 保持不变。如果预测错误，算法会修正 LFSR 的反馈多项式，使其能够正确生成到目前为止的所有比特，并确保新的 LFSR 仍然是当前已知序列片段的最短 LFSR。修正过程涉及到之前某个预测错误的“差异序列”和当时的 LFSR 状态。</li>
+</ul>
+<p><strong>破译过程 (已知明文攻击)：</strong></p>
+<ol>
+<li>
+<p><strong>获取密钥流片段：</strong>
+    攻击者假设目标系统使用了基于 LFSR 的流密码。如果攻击者能够获得一段明文 <span class="arithmatex">\(P = p_1p_2\dots p_k\)</span> 及其对应的密文 <span class="arithmatex">\(C = C_1C_2\dots C_k\)</span>，他们就可以通过逐比特异或轻松恢复出相应的密钥流片段 <span class="arithmatex">\(S = s_1s_2\dots s_k\)</span>，因为 <span class="arithmatex">\(s_i = p_i \oplus C_i\)</span>。</p>
+</li>
+<li>
+<p><strong>应用 B-M 算法：</strong>
+    攻击者将获取到的密钥流片段 <span class="arithmatex">\(S\)</span> 作为 B-M 算法的输入。</p>
+</li>
+<li>
+<p><strong>重构 LFSR：</strong>
+    如果密钥流确实是由一个 <span class="arithmatex">\(L\)</span> 级的 LFSR 生成的（例如一个 m序列），并且攻击者获得的密钥流片段长度至少为 <span class="arithmatex">\(2L\)</span> 比特，B-M 算法就能成功地计算出这个 LFSR 的特征多项式 <span class="arithmatex">\(P(x)\)</span> 和一个有效的初始状态。</p>
+</li>
+<li>
+<p><strong>密钥流重现与解密：</strong>
+    一旦 LFSR 的结构和初始状态被确定，攻击者就可以：</p>
+<ul>
+<li>运行这个重构的 LFSR，生成与原始加密时完全相同的密钥流。</li>
+<li>使用这个密钥流解密所有截获的、使用相同密钥流加密的密文。</li>
+</ul>
+</li>
+</ol>
+<p><strong>为什么 <span class="arithmatex">\(2L\)</span> 比特通常足够？</strong></p>
+<p>一个 <span class="arithmatex">\(L\)</span> 级的 LFSR 由 <span class="arithmatex">\(L\)</span> 个反馈系数 (定义其特征多项式) 和 <span class="arithmatex">\(L\)</span> 个比特的初始状态所唯一确定。总共需要确定 <span class="arithmatex">\(2L\)</span> 个未知参数。因此，直观上，需要大约 <span class="arithmatex">\(2L\)</span> 个方程（即 <span class="arithmatex">\(2L\)</span> 个密钥流比特提供的约束）来解出这些参数。B-M 算法系统地解决了这个问题。</p>
+<p><strong>结论与对策：</strong></p>
+<p>直接使用单个 LFSR（即使是产生 m序列的 LFSR）作为密钥流是非常不安全的。其线性特性使得它无法抵抗基于 B-M 算法的已知明文攻击。</p>
+<p>为了构建安全的流密码，密码设计者必须引入<strong>非线性 (Non-linearity)</strong> 来破坏这种可被 B-M 算法利用的线性结构。常用的增强方法包括：</p>
+<ul>
+<li>
+<p><strong>非线性组合生成器 (Non-linear Combination Generator)：</strong>
+    使用多个（通常是参数互质的）LFSR，它们的输出通过一个非线性布尔函数进行组合，以产生最终的密钥流。例如，Geffe 生成器使用三个 LFSR，其输出 <span class="arithmatex">\(x, y, z\)</span> 通过 <span class="arithmatex">\(f(x,y,z) = (x \land y) \oplus ((\neg x) \land z)\)</span> 或 <span class="arithmatex">\(xy \oplus yz \oplus z\)</span> (后者是另一版本) 等函数组合。目标是使得组合后的密钥流具有高的线性复杂度，并且难以从输出反推各个 LFSR 的状态。</p>
+</li>
+<li>
+<p><strong>非线性滤波器生成器 (Non-linear Filter Generator)：</strong>
+    只使用一个 LFSR，但不是直接输出其某个比特，而是将 LFSR 的多个状态位（抽头）输入到一个非线性布尔函数中，该函数的输出作为密钥流比特。例如，Pless 生成器。关键在于选择能够产生高线性复杂度、良好统计特性且能抵抗特定攻击（如相关攻击）的非线性滤波函数。</p>
+</li>
+<li>
+<p><strong>钟控生成器 (Clock-Controlled Generator)：</strong>
+    使用一个或多个 LFSR 来控制另一个（或多个）主要 LFSR 的时钟。例如，一个 LFSR 的输出决定另一个 LFSR 是否在当前时钟周期进行移位。这会引入不规则的移位，使得输出序列与单个 LFSR 的输出行为有很大差异，从而大大增加其分析难度。例如，A5/1 算法中就使用了不规则时钟控制。</p>
+</li>
+</ul>
+<p>这些方法旨在通过引入非线性，使得密钥流的线性复杂度远大于构成它的 LFSR 的级数之和，并且使得密钥流与内部 LFSR 状态之间的关系变得复杂，从而有效抵抗 B-M 算法以及其他针对线性系统的分析方法。</p>
 
 
 
@@ -3645,7 +4142,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年4月29日 14:56:48">2025-04-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月9日 12:08:54">2025-05-09</span>
   </span>
 
     
@@ -3655,7 +4152,7 @@
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年4月29日 14:56:48">2025-04-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月9日 12:08:54">2025-05-09</span>
   </span>
 
     
@@ -3811,16 +4308,16 @@
     <!-- Link to previous page -->
      
     <a
-      href="../footer/"
+      href="../Introduction/"
       class="md-footer__link md-footer__link--prev"
-      aria-label="上一页: 页脚设置"
+      aria-label="上一页: 密码学引言"
     >
       <div class="md-footer__button md-icon">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
       </div>
       <div class="md-footer__title">
         <span class="md-footer__direction"> 上一页 </span>
-        <div class="md-ellipsis">页脚设置</div>
+        <div class="md-ellipsis">密码学引言</div>
       </div>
     </a>
     
@@ -3828,13 +4325,13 @@
     <!-- Link to next page -->
      
     <a
-      href="../../technique%20sharing/win/"
+      href="../Groupcipher/"
       class="md-footer__link md-footer__link--next"
-      aria-label="下一页: Win11镜像下载/KMS激活"
+      aria-label="下一页: 分组密码"
     >
       <div class="md-footer__title">
         <span class="md-footer__direction"> 下一页 </span>
-        <div class="md-ellipsis">Win11镜像下载/KMS激活</div>
+        <div class="md-ellipsis">分组密码</div>
       </div>
       <div class="md-footer__button md-icon">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
