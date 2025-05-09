@@ -2,7 +2,6 @@
 title: Mkdocs教程前言
 tags:
   - Mkdocs
-status: new
 ---
 
 ## 文档教程
