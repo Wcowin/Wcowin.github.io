@@ -99,6 +99,7 @@ nav:
     - Mkdocs美化/补充:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
         - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
+        - 如何自定义域名: blog/websitebeauty/Customdomain.md
         - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
         - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
         - 添加顶部公告栏: blog/websitebeauty/header.md
@@ -378,7 +379,7 @@ plugins:
   #       - tags
   # - social
   - search:
-      enabled: !ENV [CI, false]   #建议加上这句，不然会影响速度，本地搜索可以不需要，不影响部署时候有
+      # enabled: !ENV [CI, false]   #建议加上这句，不然会影响速度，本地搜索可以不需要，不影响部署时候有
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - offline
   # - glightbox:
@@ -451,6 +452,7 @@ markdown_extensions:
   - md_in_html
   - markdown.extensions.abbr # 支持Markdown文件上方自定义标题标签等
   - pymdownx.magiclink
+  - pymdownx.blocks.caption
   - pymdownx.caret
   - pymdownx.betterem
   - pymdownx.critic
