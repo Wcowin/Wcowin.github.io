@@ -820,6 +820,17 @@ hide:
       </div> 
     </div> 
     </div>
+    <div class="card"> 
+    <img class="ava" src="https://shef.cc/logo.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://shef.cc" target="_blank">SheepChef Blog</a> 
+      </div> 
+      <div class="info">
+      蒼穹を越えて
+      </div> 
+    </div> 
+    </div>
 
 
 
