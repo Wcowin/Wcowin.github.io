@@ -66,3 +66,11 @@ mkdocs serve          # 本地预览，支持热更新
 ---
 
 如需更多 MkDocs 配置、插件、主题美化等技巧，可参考 [Wcowin's web](https://wcowin.work/){target="_blank"} 或查阅官方文档。
+
+<div class="grid cards" markdown>
+
+-   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
+
+    ---
+
+</div>

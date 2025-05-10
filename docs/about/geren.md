@@ -238,7 +238,7 @@ status: new
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
     - [x] 咖啡重度爱好者 
-    - [x] 热爱(xiā)折腾技术/Math，目前的研究领域是[密码学](https://ctf-wiki.org/crypto/introduction/){target=“_blank”}
+    - [x] 热爱(xiā)折腾技术/Math，目前的研究领域是[密码学](../blog/Cryptography/index.md)
     - [x] 读书明志可识春秋;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒，知趣，明得失，知进退 
 

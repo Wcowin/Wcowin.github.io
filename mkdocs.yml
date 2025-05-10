@@ -87,7 +87,7 @@ nav:
     - 语雀: blog/yuque.md
     - 密码学:
         - blog/Cryptography/index.md
-        - 数论: blog/Cryptography/Numbertheory.md
+        - 数论基础: blog/Cryptography/Numbertheory.md
         - 密码学引言: blog/Cryptography/Introduction.md
         - 流密码: blog/Cryptography/Symmetriccryptography.md
         - 分组密码: blog/Cryptography/Groupcipher.md
