@@ -706,7 +706,6 @@
                 <div class="flex-shrink-0">
                     <a href="#" class="flex items-center space-x-2">
                         <img src="https://free.wmhua.cn/2025/05/09/681d7016db8dc.png" alt="Wcowin头像" class="nav-avatar" width="30" height="30">
-                        <span class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-primary-color to-primary-light">Wcowin</span>
                     </a>
                 </div>
                 
@@ -770,10 +769,10 @@
                         <div class="flip-container">
                             <div class="image-container">
                                 <!-- 添加宽高属性以避免布局偏移(CLS) -->
-                                <img src="https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg" alt="正面头像" loading="lazy" width="290" height="290" 
-                                     srcset="https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg 1x, https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg 2x">
                                 <img src="https://free.wmhua.cn/2025/05/09/681d7016db8dc.png" alt="背面头像" loading="lazy" width="290" height="290"
                                      srcset="https://free.wmhua.cn/2025/05/09/681d7016db8dc.png 1x, https://free.wmhua.cn/2025/05/09/681d7016db8dc.png 2x">
+                                <img src="https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg" alt="正面头像" loading="lazy" width="290" height="290" 
+                                     srcset="https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg 1x, https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg 2x">
                             </div>
                         </div>
                     </div>
@@ -783,7 +782,8 @@
                         <p class="text-xl text-secondary-color mb-6">密码学研究者 · 开源贡献者 · 数学爱好者</p>
                         <div class="prose prose-lg text-gray-700 max-w-none">
                             <p class="text-lg font-medium text-gray-500 italic mb-4">"观史知今，当思进退，读书明志可识春秋"</p>
-                            <p>xx大学2025届电子信息工程学士，专注密码学算法研究与工程实现。技术博客总阅读量超13万。</p>
+                            <p>xx大学2025届电子信息工程学士，专注密码学算法研究与工程实现。</p>
+                                <p class="mt-4">博客爱好者，技术博客总阅读量超13万。</p>
                             <p class="mt-4">生活中是咖啡爱好者，相信「技术的温度藏在细节里」。</p>
                             <div class="mt-6 grid grid-cols-3 gap-4 w-full"> <!-- 添加w-full确保填充 -->
                                 <div class="border border-gray-200 rounded-lg p-3 text-center">
@@ -971,9 +971,9 @@
                         <div>
                             <h4 class="text-sm text-secondary-color">微信</h4>
                             <div class="flex items-center">
-                                <p>18939533255</a>
+                                <p>Wcowin_</a>
                                 <button class="ml-2 text-gray-400 hover:text-primary-color focus:outline-none focus:ring-2 focus:ring-primary-color rounded-md p-1" 
-                                        onclick="copyToClipboard('18939533255')" 
+                                        onclick="copyToClipboard('Wcowin_')" 
                                         aria-label="复制微信号">
                                     <i class="fas fa-copy text-sm"></i>
                                 </button>
@@ -1005,7 +1005,7 @@
                         </div>
                         <div>
                             <h4 class="text-sm text-secondary-color">Twitter</h4>
-                            <a href="https://twitter.com/wcowin_" class="text-base font-medium text-primary-color hover:text-primary-color">@wcowin_</a>
+                            <a href="https://twitter.com/wcowin_" class="text-base font-medium text-primary-color hover:text-primary-color">@Wcowin_</a>
                         </div>
                     </div>
                     <div class="contact-card">
@@ -1019,7 +1019,8 @@
                     </div>
                 </div>
                 <div class="mt-8 text-center text-gray-500">
-                    <p>💬 我电话号码的MD5码：7037F514864088F907CC921687B670EE(破解有奖)</p>
+                    <p>💬 我电话号码的MD5码：7037F514864088F907CC921687B670EE</p>
+                    <p>(破解有奖 吗)</p>
                 </div>
             </div>
         </section>
@@ -1027,11 +1028,24 @@
 
     <!-- 页脚 -->
     <footer class="bg-primary-color py-6">
-        <div class="max-w-7xl mx-auto px-4">
-            <p class="text-center text-sm" style="color: #757575;">© 2025 <a href="https://wcowin.work/" target="_blank" rel="noopener" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded">Wcowin</a></p>
-            <p class="text-center text-xs mt-2" style="color: #757575;">清醒，知趣，明得失，知进退</p>
+      <div class="max-w-7xl mx-auto px-4">
+        <p class="text-center text-sm" style="color: #757575;">
+          © 2025
+          <a href="https://wcowin.work/" target="_blank" rel="noopener" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded">
+            Wcowin
+          </a>
+        </p>
+        <p class="text-center text-xs mt-2" style="color: #757575;">
+          清醒，知趣，明得失，知进退
+        </p>
+        <div class="footer-visit-count text-center mt-2">
+          <span style="color: #757575;">本站访问量：</span>
+          <script async src="//finicounter.eu.org/finicounter.js"></script>
+          <span id="finicount_views" data-id="mycounter202405"></span>
         </div>
     </footer>
+
+
 
     <script>
         // 移动端菜单切换逻辑
@@ -1132,7 +1146,7 @@
             const focusableElements = document.querySelectorAll('a, button');
             focusableElements.forEach(el => {
                 if (!el.classList.contains('focus:outline-none')) {
-                    el.classList.add('focus:outline-none', 'focus:ring-2', 'focus:ring-primary-color', 'focus:ring-opacity-50', 'rounded');
+                    el.classList.add('focus:outline-none');
                 }
             });
 
