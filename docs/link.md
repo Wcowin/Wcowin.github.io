@@ -96,17 +96,6 @@ hide:
       </div> 
      </div>
     </div>
-   <div class="card"> 
-     <img class="ava" src="https://www.crant.cn/upload/Avatar.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.crant.cn/" target="_blank">Crant</a> 
-      </div> 
-      <div class="info">
-       用心记录，美好生活
-      </div> 
-     </div> 
-    </div> 
     <div class="card"> 
      <img class="ava" src="https://finisky.github.io/images/avatar.png" /> 
      <div class="card-header"> 
@@ -357,17 +346,6 @@ hide:
       </div> 
       <div class="info">
       路虽远行则将至，事随难做则必成！
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
-     <img class="ava" src="https://baiwumm.com/avatar.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://baiwumm.com/" target="_blank">白雾茫茫丶</a> 
-      </div> 
-      <div class="info">
-      记录学习、生活和有趣的事
       </div> 
      </div> 
     </div>
@@ -898,7 +876,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源</a> 
+       <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源(打不开)</a> 
       </div> 
       <div class="info">
        探索互联网新大陆 in N ways.
@@ -909,7 +887,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://tkqtang.github.io" target="_blank">tkqtang’s Web</a> 
+       <a href="https://tkqtang.github.io" target="_blank">tkqtang’s Web(打不开)</a> 
       </div> 
       <div class="info">
       所谓自由，不是随心所欲，而是自我主宰
@@ -920,7 +898,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="http://liis.cc" target="_blank">郝宇博客</a> 
+       <a href="http://liis.cc" target="_blank">郝宇博客(打不开)</a> 
       </div> 
       <div class="info">
        记录我的成长和青春
@@ -931,7 +909,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://blog.lvhrn.cn" target="_blank">JayHrn</a> 
+       <a href="https://blog.lvhrn.cn" target="_blank">JayHrn(打不开)</a> 
       </div> 
       <div class="info">
        發掘好玩事物
@@ -942,7 +920,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://blog.linsnow.cn" target="_blank">L1nSn0w's Blog</a> 
+       <a href="https://blog.linsnow.cn" target="_blank">L1nSn0w(打不开)</a> 
       </div> 
       <div class="info">
       无限进步.🎈
@@ -953,7 +931,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://www.luckyzh.cn/" target="_blank">旧梦</a> 
+       <a href="https://www.luckyzh.cn/" target="_blank">旧梦(打不开)</a> 
       </div> 
       <div class="info">
        冰冻三尺非一日之寒
@@ -965,7 +943,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://ejsoon.win" target="_blank">天蒼人頡</a> 
+       <a href="https://ejsoon.win" target="_blank">天蒼人頡(打不开)</a> 
       </div> 
       <div class="info">
        發掘好玩事物
@@ -976,7 +954,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-      <a href="https://www.zlog.us.kg" target="_blank">琅環书生</a> 
+      <a href="https://www.zlog.us.kg" target="_blank">琅環书生(打不开)</a> 
       </div> 
       <div class="info">
       无远弗届，皆有可能
@@ -987,7 +965,7 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://blog.pantheon.press" target="_blank">pantheon</a> 
+       <a href="https://blog.pantheon.press" target="_blank">pantheon(未加我友链)</a> 
       </div> 
       <div class="info">
       </div> 
@@ -997,13 +975,36 @@ hide:
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://www.imerduo.com" target="_blank">耳朵的主人</a> 
+       <a href="https://www.imerduo.com" target="_blank">耳朵的主人(打不开)</a> 
       </div> 
       <div class="info">
       耳朵电台，庆幸我们还有耳朵
       </div> 
      </div> 
     </div>
+   <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.crant.cn/" target="_blank">Crant(打不开)</a> 
+      </div> 
+      <div class="info">
+       用心记录，美好生活
+      </div> 
+     </div> 
+    </div> 
+   <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://baiwumm.com/" target="_blank">白雾茫茫(内容不符)</a> 
+      </div> 
+      <div class="info">
+      记录学习、生活和有趣的事
+      </div> 
+     </div> 
+    </div>
+
 
 
 

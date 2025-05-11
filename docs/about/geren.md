@@ -38,40 +38,43 @@ status: new
     /* 对齐顶部 */
     justify-content: flex-end;
     /* 将文字放置右上角 */
-}
-.image-container {
-    position: relative;
-    position: relative;
-    width: 290px;
-    height: 290px;
-}
-.image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: block;
-    transition: all 1s;
-}
-.image-container img:first-child {
-    z-index: 1;
-    backface-visibility: hidden;
-}
-.image-container img:last-child {
-    z-index: 0;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-.image-container:hover img:first-child {
-    transform: rotateY(180deg);
-    z-index: 2;
-}
-.image-container:hover img:last-child {
-    transform: rotateY(0deg);
-    z-index: 3;
-}
+    }
+    .image-container {
+        position: relative;
+        position: relative;
+        width: 290px;
+        height: 290px;
+    }
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    /* 图片填满容器 */
+        border-radius: 50%;
+        border: 4px solid #ffffff; /* 白色边框 */
+        box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15); /* 阴影 */
+        backface-visibility: hidden; /* 隐藏背面 */
+        transition: transform 0.6s ease-in-out; /* 仅对transform过渡 */
+    }
+    .image-container img:first-child {
+        z-index: 1;
+        backface-visibility: hidden;
+    }
+    .image-container img:last-child {
+        z-index: 0;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
+    .image-container:hover img:first-child {
+        transform: rotateY(180deg);
+        z-index: 2;
+    }
+    .image-container:hover img:last-child {
+        transform: rotateY(0deg);
+        z-index: 3;
+    }
 </style>
 
 
