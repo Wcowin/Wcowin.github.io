@@ -11,7 +11,7 @@ tags:
 <iframe src="../个人简历.pdf (相对地址)" width="100%" height="800px" style="border: 1px solid #ccc; overflow: auto;"></iframe>
 ```
 
-<img width="1178" alt="image" src="https://github.com/user-attachments/assets/5b511fe9-9a3b-4bff-b54c-37d92f00306b" />  
+<img width="1178" alt="image" src="https://s1.imagehub.cc/images/2025/05/11/af422a556586fa0ed42f7adcf5a694ae.png" />  
 
 我的完整代码：  
 
