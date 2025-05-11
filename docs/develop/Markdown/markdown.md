@@ -19,10 +19,11 @@ Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多�
 
 一些Markdown文档创作工具：
 <ul>
-  <li><strong>Mac:iA Writer</a> 或Marked 2
-  <li><strong>iOS / Android:</strong> iA Writer
+  <li><strong>Mac:</strong> <a href="https://macdown.uranusjr.com/">MacDown</a>, <a href="https://ia.net/writer">iA Writer</a> 或 <a href="https://marked2.com/">Marked 2</a></li>
+  <li><strong>iOS / Android:</strong> <a href="https://ia.net/writer">iA Writer</a></li>
   <li><strong>Windows:</strong> <a href="https://wereturtle.github.io/ghostwriter/">ghostwriter</a> 或 <a href="https://markdownmonster.west-wind.com/">Markdown Monster</a></li>
   <li><strong>Linux:</strong> <a href="https://github.com/retext-project/retext">ReText</a> 或 <a href="https://wereturtle.github.io/ghostwriter/">ghostwriter</a></li>
+  <li><strong>Web:</strong> <a href="https://dillinger.io/">Dillinger</a> 或 <a href="https://stackedit.io/">StackEdit</a></li>
 </ul>
 
 ## 最常用
@@ -336,7 +337,9 @@ markdown文本内的连续两个或多个回车会被替换为一个回车
 ```
 下面我们来认识一下二次函数$$y=ax^2+bx+c$$
 ```
-下面我们来认识一下二次函数$$y=ax^2+bx+c$$
+下面我们来认识一下二次函数  
+
+$$y=ax^2+bx+c$$
 
 - - -
 
