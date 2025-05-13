@@ -175,7 +175,7 @@ tags:
 - [Headless UI](https://headlessui.com/){target="_blank"}
 - [UI8](https://ui8.net/){target="_blank"}
 - [Pexels](https://www.pexels.com/zh-cn/){target="_blank"}
-- [标小智](https://www.logosc.cn/logo/favicon){target="_blank"} (免费Favicon.ico图标在线生成器)
+- [标小智](https://www.logosc.cn/logo/favicon){target="_blank"} 
  
 
 ## **:simple-ios:捷径**

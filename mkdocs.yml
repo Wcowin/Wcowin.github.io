@@ -15,7 +15,6 @@ theme:
   # https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
 
   favicon: https://s1.imagehub.cc/images/2025/05/05/7ff9985e6f5baffe306907df47042787.png
-  # https://s1.imagehub.cc/images/2025/05/04/4e655a856f646a8e7e020ab9d899f0d6.webp
   # https://pic4.zhimg.com/v2-fee2c2622ad68aeed98a8b411a8b272b_1440w.jpg
   # https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
@@ -301,6 +300,7 @@ nav:
     - 25考研(已完结): about/kaoyan.md
   - Mkdocs教程: https://wcowin.work/Mkdocs-Wcowin/
   - 个人简介: https://wcowin.work/Personal-Profile/#
+  - 开往: https://www.travellings.cn/go.html
   # - RSS: https://blog.csdn.net/m0_63203517/rss/list?spm=1001.2014.3001.5494
 
 
