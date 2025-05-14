@@ -820,6 +820,17 @@ hide:
       </div> 
     </div> 
     </div>
+    <div class="card"> 
+    <img class="ava" src="https://mingcy.cn/image/mcy.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://mingcy.cn " target="_blank">茗辰原</a> 
+      </div> 
+      <div class="info">
+      茶香四溢,编程世界
+      </div> 
+    </div> 
+    </div>
 
 
 
