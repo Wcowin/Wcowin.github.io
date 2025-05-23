@@ -19,7 +19,7 @@ comments: false
 
     - [x] 通过{==目录==}以打开文章
     - [x] 搜索{~~~>关键词~~}查询文章
-    - [x] 如遇页面卡顿，请使用{--科学上网--}
+    - [x] 如遇页面卡顿，请使用[{--科学上网--}](blog/technique%20sharing/kexue.md)
     - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !  
 
     === "Mac/PC端"
@@ -192,3 +192,5 @@ body::before {
 
 
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
+     crossorigin="anonymous"></script>
