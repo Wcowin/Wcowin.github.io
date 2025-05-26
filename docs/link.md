@@ -831,6 +831,17 @@ hide:
       </div> 
     </div> 
     </div>
+    <div class="card"> 
+    <img class="ava" src="https://yanggenjie.cn/assets/avatar.webp" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://yanggenjie.cn/ " target="_blank">阿杰的自学之路</a> 
+      </div> 
+      <div class="info">
+      “野生土木程序员的自学之路，为学日益，为道日损。”
+      </div> 
+    </div> 
+    </div>
 
 
 
@@ -883,17 +894,6 @@ hide:
 <div id="rcorners4" >
   <div class="links-content"> 
    <div class="link-navigation">
-    <div class="card"> 
-    <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
-    <div class="card-header"> 
-      <div> 
-      <a href="https://yanggenjie.cn/ " target="_blank">阿杰的自学之路</a> 
-      </div> 
-      <div class="info">
-      “野生土木程序员的自学之路，为学日益，为道日损。”
-      </div> 
-    </div> 
-    </div>
    <div class="card"> 
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
