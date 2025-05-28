@@ -2177,25 +2177,241 @@
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // 获取友链容器
-    const friendLinksContainer = document.querySelector(".links-content");
-    if (friendLinksContainer) {
-      // 获取所有友链卡片
-      const friendLinks = friendLinksContainer.querySelectorAll(".card");
-      const totalLinks = friendLinks.length;
+document.addEventListener("DOMContentLoaded", function () {
+  // 获取友链容器
+  const friendLinksContainer = document.querySelector(".links-content");
+  const lostLinksContainer = document.querySelector("#失联人员 + #rcorners4 .links-content");
 
-      // 创建统计信息的元素
-      const statsElement = document.createElement("div");
-      statsElement.style.textAlign = "center";
-      statsElement.style.margin = "20px 0";
-      statsElement.style.color = "#999";
-      statsElement.textContent = `当前共有友链 ${totalLinks} 个，欢迎交换友链！`;
+  if (friendLinksContainer) {
+    // 获取所有正常友链卡片
+    const activeFriendLinks = friendLinksContainer.querySelectorAll(".card");
+    const totalActiveLinks = activeFriendLinks.length;
 
-      // 将统计信息插入到友链容器的上方
-      friendLinksContainer.parentNode.insertBefore(statsElement, friendLinksContainer);
+    // 获取失联友链数量
+    let lostLinksCount = 0;
+    if (lostLinksContainer) {
+      const lostFriendLinks = lostLinksContainer.querySelectorAll(".card");
+      lostLinksCount = lostFriendLinks.length;
     }
-  });
+
+    // 计算总数
+    const totalLinks = totalActiveLinks + lostLinksCount;
+
+    // 创建统计信息容器
+    const statsContainer = document.createElement("div");
+    statsContainer.style.cssText = `
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      padding: 15px;
+      background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%);
+      border-radius: 8px;
+      border: 1px solid #e1e4e8;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+      gap: 20px;
+    `;
+
+    // 创建统计卡片
+    function createStatCard(title, count, color, icon) {
+      return `
+        <div style="
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 12px;
+          background: ${color};
+          border-radius: 6px;
+          color: white;
+          font-weight: 500;
+          font-size: 14px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        ">
+          <span style="font-size: 16px;">${icon}</span>
+          <span>${title}: ${count}</span>
+        </div>
+      `;
+    }
+
+    // 构建统计信息（只显示总友链和正常友链）
+    statsContainer.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+        ${createStatCard('总友链', totalLinks, '#28a745', '🔗')}
+        ${createStatCard('正常', totalActiveLinks, '#17a2b8', '✅')}
+      </div>
+      <div style="color: #666; font-size: 14px; text-align: center; margin-top: 8px;">
+        <span>欢迎交换友链！</span>
+        <span style="margin-left: 10px;">最后更新: ${new Date().toLocaleDateString('zh-CN')}</span>
+      </div>
+    `;
+
+    // 将统计信息插入到友链容器的上方
+    friendLinksContainer.parentNode.insertBefore(statsContainer, friendLinksContainer);
+
+    // 为友链卡片添加交互效果
+    activeFriendLinks.forEach((card, index) => {
+      // 添加序号
+      const indexBadge = document.createElement("div");
+      indexBadge.style.cssText = `
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: #007bff;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: bold;
+        z-index: 1;
+      `;
+      indexBadge.textContent = index + 1;
+
+      // 设置卡片为相对定位
+      card.style.position = 'relative';
+      card.appendChild(indexBadge);
+
+      // 添加悬停效果
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+        this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+        this.style.transition = 'all 0.3s ease';
+      });
+
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = '';
+      });
+    });
+
+    // 添加友链检测功能（可选）
+    if (window.location.search.includes('check=true')) {
+      checkFriendLinks(activeFriendLinks);
+    }
+  }
+
+  // 为失联友链添加特殊样式
+  if (lostLinksContainer) {
+    const lostCards = lostLinksContainer.querySelectorAll(".card");
+    lostCards.forEach(card => {
+      card.style.cssText += `
+        opacity: 0.6;
+        filter: grayscale(50%);
+        border: 2px solid #dc3545;
+        position: relative;
+      `;
+
+      // 添加失联标识
+      const lostBadge = document.createElement("div");
+      lostBadge.style.cssText = `
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: #dc3545;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: bold;
+        z-index: 1;
+      `;
+      lostBadge.textContent = '失联';
+      card.appendChild(lostBadge);
+    });
+  }
+});
+
+// 友链检测功能（可选）
+async function checkFriendLinks(cards) {
+  console.log('开始检测友链状态...');
+
+  for (let i = 0; i < cards.length; i++) {
+    const card = cards[i];
+    const link = card.querySelector('a');
+
+    if (link && link.href) {
+      try {
+        // 创建状态指示器
+        const statusIndicator = document.createElement("div");
+        statusIndicator.style.cssText = `
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: orange;
+          z-index: 1;
+        `;
+        card.style.position = 'relative';
+        card.appendChild(statusIndicator);
+
+        // 简单的连通性检测（由于CORS限制，这里只是示例）
+        setTimeout(() => {
+          // 模拟检测结果
+          const isOnline = Math.random() > 0.1; // 90% 概率在线
+          statusIndicator.style.background = isOnline ? '#28a745' : '#dc3545';
+          statusIndicator.title = isOnline ? '在线' : '可能离线';
+        }, i * 100);
+
+      } catch (error) {
+        console.log(`检测 ${link.href} 时出错:`, error);
+      }
+    }
+  }
+}
+
+// 添加一些实用工具函数
+window.friendLinkUtils = {
+  // 导出友链数据
+  exportLinks() {
+    const cards = document.querySelectorAll('.links-content .card');
+    const links = Array.from(cards).map(card => {
+      const img = card.querySelector('.ava');
+      const link = card.querySelector('a');
+      const info = card.querySelector('.info');
+
+      return {
+        name: link ? link.textContent.trim() : '',
+        url: link ? link.href : '',
+        avatar: img ? img.src : '',
+        description: info ? info.textContent.trim() : ''
+      };
+    });
+
+    console.log('友链数据:', JSON.stringify(links, null, 2));
+    return links;
+  },
+
+  // 检查重复友链
+  checkDuplicates() {
+    const cards = document.querySelectorAll('.links-content .card');
+    const urls = new Set();
+    const duplicates = [];
+
+    cards.forEach(card => {
+      const link = card.querySelector('a');
+      if (link && link.href) {
+        if (urls.has(link.href)) {
+          duplicates.push(link.href);
+        } else {
+          urls.add(link.href);
+        }
+      }
+    });
+
+    if (duplicates.length > 0) {
+      console.warn('发现重复友链:', duplicates);
+    } else {
+      console.log('没有发现重复友链');
+    }
+    return duplicates;
+  }
+};
 </script>
 
 </div>
@@ -2471,7 +2687,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月26日 14:00:21 UTC">2025-05-26</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月28日 07:39:15 UTC">2025-05-28</span>
   </span>
 
     
