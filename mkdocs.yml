@@ -178,6 +178,7 @@ nav:
     - Git 实用技巧: develop/git.md    
     - 我的项目/作品:
         - Wcowin for MkDocs主题: develop/Mywork/mkdocs-wcowin.md
+        - 简单的 JavaScript 音乐播放器: develop/Mywork/muplayer.md
         - 人脸识别系统: develop/Mywork/face-recognition.md
         - 用AirScript脚本给女/男朋友发送每日早安邮件(极简版本): develop/Mywork/email.md
         - 基于讯飞人脸算法进行人脸比对: develop/Mywork/face_compare.md
