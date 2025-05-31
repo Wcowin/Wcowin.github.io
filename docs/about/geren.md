@@ -23,8 +23,8 @@ status: new
 
  <div class="flip-container">
 <div class="image-container">
-    <img src="https://free.wmhua.cn/2025/05/09/681d7016db8dc.png" alt="Back Image">
-    <img src="https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg" alt="Front Image">
+    <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
+    <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
 </div>
 </div>
 <style>
@@ -234,10 +234,6 @@ status: new
 
 ## 个人简介
 
-<p style="text-align: center; font-size: 25px; margin: 0px;"><strong>𝘿𝙤𝙣'𝙩 𝙘𝙖𝙧𝙚 𝙖𝙗𝙤𝙪𝙩 𝙬𝙤𝙧𝙡𝙙𝙡𝙮 𝙚𝙮𝙚𝙨 𝙩𝙤 𝙥𝙪𝙧𝙨𝙪𝙚 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙡𝙞𝙜𝙝𝙩</strong></p>
-<!-- https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg -->
-
-
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
     - [x] 咖啡重度爱好者 
@@ -245,8 +241,12 @@ status: new
     - [x] 读书明志可识春秋;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒，知趣，明得失，知进退 
 
+## 人生态度
+
+<p style="text-align: center; font-size: 25px; margin: 0px;"><strong>𝘿𝙤𝙣'𝙩 𝙘𝙖𝙧𝙚 𝙖𝙗𝙤𝙪𝙩 𝙬𝙤𝙧𝙡𝙙𝙡𝙮 𝙚𝙮𝙚𝙨 𝙩𝙤 𝙥𝙪𝙧𝙨𝙪𝙚 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙡𝙞𝙜𝙝𝙩</strong></p>
 
 <img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp">
+<img class="img1" src="https://pic1.zhimg.com/80/v2-8030915c744322fb1e3a6ec0b8fed24c_1440w.webp">
 
 
 ## 联系我
@@ -348,11 +348,13 @@ status: new
 > 💬我电话号码的`MD5`码：7037F514864088F907CC921687B670EE（破解有奖） 
 
 
-## 须知
-如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
+## 须知  
+
+如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角**微信添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
+
 
 !!! note "与我联系"
-    如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角微信添加好友，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
+    如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
 
     ---  
     <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}</center>

@@ -1,426 +1,446 @@
 ---
-title: Markdown语法学习 精简版
-comments: false
+title: Markdown语法学习指南
+description: 从基础到进阶的完整Markdown语法教程
 tags:
   - Markdown
+  - 教程
+  - 语法
 ---
 
-# :simple-markdown: [Markdown语法学习](https://www.markdown.xyz/) 精简版
+<div class="markdown-guide-header">
+  <h1>📝 Markdown 语法完全指南</h1>
+  <p class="subtitle">轻量级标记语言，让写作更简单高效</p>
+  <div class="guide-stats">
+    <span class="stat-item">📚 覆盖全部语法</span>
+    <span class="stat-item">🚀 实例演示</span>
+    <span class="stat-item">💡 实用技巧</span>
+  </div>
+</div>
 
-> <span id="top">**文章开头**</span>  
+> <span id="top">**快速导航**</span> | [基础语法](#_2) | [高级语法](#_18) | [实用技巧](#_24) | [在线工具](#_29)
 
-介绍一下Markdown：  
-Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。  
-Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。  
+## 📖 什么是 Markdown？
 
-此笔记学习摘抄自[Markdown语法学习 精简版](https://github.com/Yang-Xijie/yang-xijie.github.io/blob/main/docs/BLOG/Markdown/grammars.md?plain=1)，学习借鉴大佬之经验（Ctrl C+V）
+**Markdown** 是一种轻量级标记语言，由 **John Gruber** 于 2004 年创建。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。
 
-**也推荐看:[Markdown中文指南](https://www.markdown.xyz/)**
+!!! tip "为什么选择 Markdown？"
+    - ✅ **简单易学** - 语法简洁明了
+    - ✅ **跨平台** - 纯文本格式，任何编辑器都能打开
+    - ✅ **格式丰富** - 支持导出 HTML、PDF、Word 等格式
+    - ✅ **版本控制友好** - Git 等工具完美支持
+    - ✅ **广泛支持** - GitHub、博客平台、文档工具都支持
 
-一些Markdown文档创作工具：
-<ul>
-  <li><strong>Mac:</strong> <a href="https://macdown.uranusjr.com/">MacDown</a>, <a href="https://ia.net/writer">iA Writer</a> 或 <a href="https://marked2.com/">Marked 2</a></li>
-  <li><strong>iOS / Android:</strong> <a href="https://ia.net/writer">iA Writer</a></li>
-  <li><strong>Windows:</strong> <a href="https://wereturtle.github.io/ghostwriter/">ghostwriter</a> 或 <a href="https://markdownmonster.west-wind.com/">Markdown Monster</a></li>
-  <li><strong>Linux:</strong> <a href="https://github.com/retext-project/retext">ReText</a> 或 <a href="https://wereturtle.github.io/ghostwriter/">ghostwriter</a></li>
-  <li><strong>Web:</strong> <a href="https://dillinger.io/">Dillinger</a> 或 <a href="https://stackedit.io/">StackEdit</a></li>
-</ul>
+## 🛠️ 推荐工具
 
-## 最常用
+=== "桌面编辑器"
+    | 平台 | 工具 | 特点 |
+    |------|------|------|
+    | **macOS** | [MacDown](https://macdown.uranusjr.com/) | 免费、实时预览 |
+    | **macOS** | [Typora](https://typora.io/) | 所见即所得 |
+    | **Windows** | [Typora](https://typora.io/) | 跨平台、优雅界面 |
+    | **Linux** | [ReText](https://github.com/retext-project/retext) | 开源、轻量级 |
 
-### 分级标题
+=== "在线编辑器"
+    - [Dillinger](https://dillinger.io/) - 功能强大的在线编辑器
+    - [StackEdit](https://stackedit.io/) - 支持同步到云端
+    - [HackMD](https://hackmd.io/) - 团队协作编辑
 
-```
-# 一级标题 (注意有空格)
-## 二级标题
+=== "移动端"
+    - **iOS/Android**: [iA Writer](https://ia.net/writer)
+    - **多平台**: [Notion](https://notion.so/)
+
+## 基础语法
+
+### 🎯 标题
+
+```markdown
+# 一级标题
+## 二级标题  
 ### 三级标题
 #### 四级标题
 ##### 五级标题
-###### 六级标题  <!--最多6级标题-->
+###### 六级标题
 ```
 
-### 目录
+!!! note "标题技巧"
+    - `#` 后面需要加空格
+    - 最多支持 6 级标题
+    - 建议使用 ATX 风格（#）而非 Setext 风格
 
-在任意位置插入 `[toc]` 显示全文<span id="catalog">**目录**</span>结构
+### ✨ 文本样式
 
-示例见文章开头（点击[这里](#top)跳转到开头查看目录）
+| 样式 | 语法 | 效果 |
+|------|------|------|
+| **粗体** | `**文本**` 或 `__文本__` | **粗体文本** |
+| *斜体* | `*文本*` 或 `_文本_` | *斜体文本* |
+| ***粗斜体*** | `***文本***` | ***粗斜体文本*** |
+| ~~删除线~~ | `~~文本~~` | ~~删除文本~~ |
+| ==高亮== | `==文本==` | ==高亮文本== |
+| <u>下划线</u> | `<u>文本</u>` | <u>下划线文本</u> |
 
-### 斜体/粗体/删除线/下划线/背景高亮
-
-```
-*斜体*    _斜体_
-**粗体**    __粗体__
-***加粗斜体***    ___加粗斜体___
-~~删除线~~
-<u>下划线</u>
-==背景高亮==
-```
-
-*斜体*    _斜体_
-
-**粗体**    __粗体__
-
-***加粗斜体***    ___加粗斜体___
-
-~~删除线~~
-
-<u>下划线</u>
-
-==背景高亮==
-
-### 无序列表/有序列表
+### 📋 列表
 
 #### 无序列表
 
-```
-* 无序列表项 一
-+ 无序列表项 二
-- 无序列表项 三
-```
-
-* 无序列表项 一
-+ 无序列表项 二
-- 无序列表项 三
-
-#### 多级无序列表
-
-```
-* 今天`* + 空格键`
-* 明天
-    * 学习 `TAB(或4个空格) + * + 空格键`
-	* 购物
-	    * 面包
-	    * 牛奶
-* 后天
+```markdown
+- 项目 1
+- 项目 2
+  - 子项目 2.1
+  - 子项目 2.2
+    - 子子项目 2.2.1
+- 项目 3
 ```
 
-* 今天`* + 空格键`
-* 明天
-    * 学习 `TAB(或4个空格) + * + 空格键`
-	* 购物
-	    * 面包
-	    * 牛奶
-* 后天
+**效果：**  
 
-#### 有序列表/多级有序列表
+- 项目 1  
+- 项目 2  
+  - 子项目 2.1  
+  - 子项目 2.2  
+    - 子子项目 2.2.1  
+- 项目 3
 
-```
-1. 有序列表项 一 `数字 + . + 空格键`
-2. 有序列表项 二
-    1. 有序列表项 二(1) `TAB(或4个空格) + 数字 + . + 空格键`
-    2. 有序列表项 二(2)
-        1. 有序列表项 二(2).1
-3. 有序列表项 三
-```
+#### 有序列表
 
-1. 有序列表项 一 `数字 + . + 空格键`
-2. 有序列表项 二
-    1. 有序列表项 二(1) `TAB(或4个空格) + 数字 + . + 空格键`
-    2. 有序列表项 二(2)
-        1. 有序列表项 二(2).1
-3. 有序列表项 三
-
-### 任务列表
-
-```
-- [ ] 任务一 未做任务 `- + 空格 + [ ]`
-- [x] 任务二 已做任务 `- + 空格 + [x]`
+```markdown
+1. 第一项
+2. 第二项
+   1. 子项目 2.1
+   2. 子项目 2.2
+3. 第三项
 ```
 
-- [ ] 任务一 未做任务 `- + 空格 + [ ]`
-- [x] 任务二 已做任务 `- + 空格 + [x]`
+**效果：**  
+1. 第一项  
+2. 第二项  
+   1. 子项目 2.1  
+   2. 子项目 2.2  
+3. 第三项
 
-### 表格
+#### 任务列表
 
-第一行为表头，第二行分隔表头和主体部分(如果表格无法显示可以尝试把第二行的 `-` 变为 `---` )，可以指定所在列的对齐方式，第三行开始每一行为一个表格行。列与列之间用 `|` 隔开。(注：原生方式的表格每一行的两边也要有 `|` )
-
-**对齐方式** `:- 左对齐` `- 中心对齐` `-: 右对齐`
-
-```
-第一列|第二列|第三列
-:-|-|-:
-a11|a12|a13
-a21|a22|a33
-a31|a32|a33
+```markdown
+- [x] 已完成任务
+- [ ] 未完成任务
+- [x] ~~已取消任务~~
 ```
 
-|表头一|表头二|表头三
-:-|-|-:
-a11|a12|a13
-a21|a22|a33
-a31|a32|a33
+**效果：**  
+- [x] 已完成任务  
+- [ ] 未完成任务  
+- [x] ~~已取消任务~~
 
-### 超链接
+### 🔗 链接和图片
 
-[ ]里写链接文字，( )里写链接地址, ( )中的" "中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字，链接地址与title前有一个空格。
+#### 链接语法
 
-```
-右边是链接[链接文字](链接 "title")
-```
-
-```
-右边是链接[GitHub](https://github.com "GitHub")
+```markdown
+[链接文本](URL "可选标题")
+[GitHub](https://github.com "全球最大代码托管平台")
 ```
 
-右边是链接[GitHub](https://github.com "GitHub")
+**效果：** [GitHub](https://github.com "全球最大代码托管平台")
 
-### 插入图片
+#### 图片语法
 
-**格式**：`!` `[图片标题]` `(图片地址 "图片Title”)`
-
-其中`图片标题`会被某些网站和编辑器显示在图片下方
-
-### 插入视频
-
-**格式**：
-```
-<iframe height= width= src="链接">
+```markdown
+![图片描述](图片URL "可选标题")
+![Markdown Logo](https://markdown-here.com/img/icon256.png "Markdown")
 ```
 
+### 📊 表格
 
-### 代码块
-
-#### 行内代码块
-
-用“ \` ”左右包裹代码  
-```
-`printf()` 函数  
-```
-显示为`printf()` 函数
-#### 多行代码块
-
-用“ \`\`\` ”上下包裹代码，在第一个“ \`\`\` ”后添加语言名称获得不同的高亮效果
-
-如：cpp，python，swift
-
-### 对齐方式
-
-```
-<center>行中心对齐</center>
-<p align="left">行左对齐</p>
-<p align="right">行右对齐</p>
+```markdown
+| 左对齐 | 居中对齐 | 右对齐 |
+|:-------|:--------:|-------:|
+| 内容1  |   内容2   |  内容3 |
+| 内容4  |   内容5   |  内容6 |
 ```
 
-<center>行中心对齐</center>
-<p align="left">行左对齐</p>
-<p align="right">行右对齐</p>
+**效果：**
 
-### 分割线
+| 左对齐 | 居中对齐 | 右对齐 |
+|:-------|:--------:|-------:|
+| 内容1  |   内容2   |  内容3 |
+| 内容4  |   内容5   |  内容6 |
 
+### 💻 代码
+
+#### 行内代码
+
+```markdown
+使用 `printf()` 函数输出文本
 ```
-* * *
-***
-- - -
+
+**效果：** 使用 `printf()` 函数输出文本
+
+#### 代码块
+
+````markdown
+```python
+def hello_world():
+    print("Hello, Markdown!")
+    return "Success"
+
+# 调用函数
+hello_world()
+```
+````
+
+**效果：**
+```python
+def hello_world():
+    print("Hello, Markdown!")
+    return "Success"
+
+# 调用函数
+hello_world()
+```
+
+### 📌 引用
+
+```markdown
+> 这是一级引用
+> 
+> > 这是二级引用
+> > 
+> > > 这是三级引用
+```
+
+**效果：**
+> 这是一级引用
+> 
+> > 这是二级引用
+> > 
+> > > 这是三级引用
+
+### 📏 分割线
+
+```markdown
 ---
+***
+___
 ```
 
-* * *
-
-***
-
-- - -
+**效果：**
 
 ---
 
-### 换行
+## 高级语法
 
-不同markdown编辑器可能有不同的换行方式，最简单为直接敲回车
+### 🎨 HTML 标签
 
-markdown文本内的连续两个或多个回车会被替换为一个回车
+Markdown 支持内嵌 HTML 标签：
 
-## 高级
-
-### 设置字体/颜色
-
-```
-<font face="宋体" color=blue size=5>蓝色的字～</font>
-```
-
-<font face="宋体" color=blue size=5>蓝色的字～</font>
-
-#### 常用颜色
-
-浏览器支持的所有颜色请跳转参考
-
-[现代浏览器支持的140种已命名的颜色](https://htmlcolorcodes.com/zh/yanse-ming  "htmlcolorcodes.com")
-
-常用颜色名称:
-* 按网站顺序排列
-* orange pink  gold yellow purple greenyellow lightgreen green aqua lightblue blue wheat brown white snow linen silver gray black
-
-最常用|其他
--|-
-<font color=red>red</font>|<font color=greenyellow>greenyellow</font>
-<font color=orange>orange</font>|<font color=lightgreen>lightgreen</font>
-<font color=yellow>yellow</font>|<font color=lightblue>lightblue</font>
-<font color=green>green</font>|<font color=pink>pink</font>
-<font color=aqua>aqua</font>|<font color=gold>gold</font>
-<font color=blue>blue</font>|<font color=silver>silver</font>
-<font color=purple>purple</font>|<font color=brown>brown</font>
-||<font color=wheat>wheat</font>|
-||<font color=linen>linen</font>|
-||<font color=snow>snow</font>|
-||<font color=gray>gray</font>|
-||<font color=black>black</font>|
-
-### 锚点
-
-也就是 `跳转`
-
-```
-1. [点击这里跳转到第一段](#jump1)
-2. [点击这里跳转到第二段](#jump2）
-
-### <span id="jump1">第一段</span>
-
-### <span id="jump2">第二段</span>
-```
-
-```
-<span id="now">当前位置</span>
-点击[这里](#top)跳转到开头
-点击[这里](#bottom)跳转到结尾
-```
-
-<span id="now">**当前位置**</span>
-
-点击[这里](#top)跳转到开头
-
-点击[这里](#bottom)跳转到结尾  
-
-### 注脚
-
-```
-使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2]。
-
-[^1]:Markdown是一种纯文本标记语言
-[^2]:HyperText Markup Language 超文本标记语言
-```
-
-使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2]。
-
-点击[这里](#bottom)跳转到结尾查看<span id="footnote">**注脚**</span>的显示效果
-
-[^1]:Markdown是一种纯文本标记语言
-[^2]:HyperText Markup Language 超文本标记语言
-
-### 多级引用
-
-```
->>> 请问 Markdwon 怎么用？ - 小白
-
->> 自己看教程！ - 愤青
-
-> 教程在哪？ - 小白
-
-`[^_^]: # 无法显示时记得空行`
-```
-
-不同编辑器的显示情况不同
-
->>> 请问 Markdwon 怎么用？ - 小白
-
->> 自己看教程！ - 愤青
-
-> 教程在哪？ - 小白
-### LaTeX公式
-
-* 在数学公式的前后加`$`是行内公式
-
-```
-我们在初中数学课上已经对一次函数$y=x+a$有所了解。
-```
-
-我们在初中数学课上已经对一次函数$y=x+a$有所了解。
-
-* 在数学公式的前后加`$$`是独占一行的公式
-```
-下面我们来认识一下二次函数$$y=ax^2+bx+c$$
-```
-下面我们来认识一下二次函数  
-
-$$y=ax^2+bx+c$$
-
-- - -
-
-```
-行内公式：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
-块级公式：
-$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
-$$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
-1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
-{1+\frac{e^{-8\pi}} {1+\ldots} } } } $$
-```
-
-行内公式：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
-
-块级公式：
-
-$$x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
-
-$$\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}{1+\frac{e^{-8\pi}} {1+\ldots} } } }$$
-***
-来看看两个重要极限  
-
-$$\displaystyle\lim_{x \rightarrow 0}\frac{\sin x}{x} = 1$$
-
-$$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
-## 其他
-
-### 转义字符
-
-通过在Markdown字符前使用\来忽略（或转义）Markdown格式。
-
-Markdown允许您使用反斜杠转义来生成文字字符，否则这些字符在Markdown的格式化语法中具有特殊含义。 例如，如果您想用文字星号包围一个单词，则可以在星号之前使用反斜杠，如`\*literal asterisks\*`  \*literal asterisks\*
-
-Markdown为以下字符提供反斜杠转义(但是CSDN不太支持)：
-
-\\反斜杠 \`反引号 \*星号 \_下划线 \{\}大括号 \[\]中括号 \(\)小括号  \#井号 \+加号 \-减号 \.英文句号 \!英文感叹号
-
-### 内联 HTML 语法/特殊字符自动转义
-
-对于 Markdown 中未包含的标签, 可以直接使用 HTML标签，例如用 HTML `<a>` 标签替代 Markdown 的链接语法
-
-在 HTML 中, 有一些字符需要特殊对待，如果你想将它们用作字面量, 则需要将它们转义为字符实体
-
-特殊字符|代码
--|-
-&amp;|`&amp;`
-&lt;|`&lt;`
-&gt;|`&gt;`
-&quot;|`&quot;` `&#34;`
-&apos;|`&apos;` `&#39;`
-
-### 注释
-
-```
-<div style='display: none'>
-注释
+```html
+<div style="color: red; text-align: center;">
+  <h3>红色居中标题</h3>
+  <p>这是一段红色的文字</p>
 </div>
 ```
 
-```
-<!-- 注释 -->
+**效果：**
+<div style="color: red; text-align: center;">
+  <h3>红色居中标题</h3>
+  <p>这是一段红色的文字</p>
+</div>
+
+### 🔖 锚点链接
+
+```markdown
+[跳转到顶部](#top)
+[跳转到底部](#bottom)
+
+<span id="bottom">这里是底部</span>
 ```
 
-```
-[//]: # (哈哈我是最强注释1，不会在浏览器中显示。)
-[^_^]: # (哈哈我是最萌注释2，不会在浏览器中显示。)
+**效果：** [跳转到顶部](#top) | [跳转到底部](#bottom)
+
+### 📝 脚注
+
+```markdown
+这里有一个脚注[^1]，还有另一个脚注[^note]。
+
+[^1]: 这是第一个脚注
+[^note]: 这是一个带名称的脚注
 ```
 
-### 空格
+**效果：**
+这里有一个脚注[^1]，还有另一个脚注[^note]。
 
-```
-【1】 &nbsp; 半角的不断行的空白格（推荐使用）
-【2】 &ensp; 半角的空格
-【3】 &emsp; 全角的空格
+### 🧮 数学公式
+
+#### 行内公式
+
+```markdown
+爱因斯坦的质能方程：$E = mc^2$
 ```
 
-* 【1】 &nbsp; 半角的不断行的空白格（推荐使用）
-* 【2】 &ensp; 半角的空格
-* 【3】 &emsp; 全角的空格
+**效果：** 爱因斯坦的质能方程：$E = mc^2$
+
+#### 块级公式
+
+```markdown
+$$
+\begin{align}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &= \frac{4\pi}{c}\vec{\mathbf{j}} \\
+\nabla \cdot \vec{\mathbf{E}} &= 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &= \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} &= 0
+\end{align}
+$$
+```
+
+**效果：**  
+
+$$
+\begin{align}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &= \frac{4\pi}{c}\vec{\mathbf{j}} \\
+\nabla \cdot \vec{\mathbf{E}} &= 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &= \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} &= 0
+\end{align}
+$$
+
+## 实用技巧
+
+### 🔤 特殊字符
+
+| 字符 | HTML 实体 | 显示 |
+|------|-----------|------|
+| 空格 | `&nbsp;` | &nbsp; |
+| 小于号 | `&lt;` | &lt; |
+| 大于号 | `&gt;` | &gt; |
+| 与符号 | `&amp;` | &amp; |
+| 引号 | `&quot;` | &quot; |
+
+### 💬 注释
+
+```markdown
+<!-- 这是注释，不会显示在页面上 -->
+
+[//]: # (这也是注释)
+[comment]: <> (另一种注释方式)
+```
+
+### 🎯 转义字符
+
+使用反斜杠 `\` 转义特殊字符：
+
+```markdown
+\*这里不会变成斜体\*
+\#这里不会变成标题
+```
+
+**效果：** \*这里不会变成斜体\* \#这里不会变成标题
+
+### 📱 响应式设计
+
+```html
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <div style="flex: 1; min-width: 200px;">列1内容</div>
+  <div style="flex: 1; min-width: 200px;">列2内容</div>
+  <div style="flex: 1; min-width: 200px;">列3内容</div>
+</div>
+```
+
+## 在线工具
+
+### 📚 学习资源
+
+- [Markdown 官方文档](https://daringfireball.net/projects/markdown/)
+- [CommonMark 规范](https://commonmark.org/)
+- [GitHub Flavored Markdown](https://github.github.com/gfm/)
+- [Markdown 中文指南](https://www.markdown.xyz/)
+
+### 🛠️ 实用工具
+
+- [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) - 表格生成器
+- [Markdown to HTML](https://markdowntohtml.com/) - 在线转换工具
+- [Mermaid Live Editor](https://mermaid.live/) - 流程图编辑器
+
+### 📖 扩展语法
+
+!!! info "GitHub Flavored Markdown"
+    GitHub 支持的扩展语法包括：
+    - [x] 任务列表
+    - :emoji: Emoji 支持
+    - 表格
+    - 删除线
+    - 语法高亮
+
+## 🎉 总结
+
+Markdown 是一个强大而简洁的文档格式化工具。掌握这些语法后，你可以：
+
+1. ✍️ **高效写作** - 专注内容而非格式
+2. 📝 **文档管理** - 版本控制友好
+3. 🌐 **多平台发布** - 一次编写，多处使用
+4. 🤝 **团队协作** - 标准化的文档格式
+
+!!! tip "最佳实践"
+    - 保持语法简洁，避免过度使用 HTML
+    - 使用一致的格式风格
+    - 适当使用空行增强可读性
+    - 为图片添加描述性的 alt 文本
+    - 使用有意义的链接文本
 
 ---
-<p>同时推荐这个网站去学习基础markdown语法：<a href="http://www.runoob.com/">runoob.com</a></p>
 
-<span id="bottom"></span>
+**参考资源：**    
+
+- [Markdown 官方文档](https://daringfireball.net/projects/markdown/)  
+- [菜鸟教程 - Markdown](https://www.runoob.com/markdown/md-tutorial.html)  
+- 感谢 [Yang-Xijie](https://github.com/Yang-Xijie/yang-xijie.github.io) 的原始教程
+
+<span id="bottom">**文章结尾** | [返回顶部](#top) |  [基础语法](#_2) | [高级语法](#_18)</span>
+
+[^1]: Markdown是一种纯文本标记语言，由John Gruber创建
+[^note]: HyperText Markup Language 超文本标记语言
+
+<style>
+.markdown-guide-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.markdown-guide-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.guide-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .markdown-guide-header h1 {
+    font-size: 2rem;
+  }
+  
+  .guide-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>

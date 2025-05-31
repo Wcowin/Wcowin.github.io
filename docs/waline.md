@@ -3,7 +3,7 @@ title: 留言板
 hide:
   - footer
   - feedback
-comments: false
+comments: true
 disqus: true
 ---
 
@@ -18,8 +18,8 @@ disqus: true
 
 ---
 
-<div align="center" style="margin: 40px 0; padding: 25px; border: 2px solid #e1e4e8; border-radius: 12px; background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    <h3 style="margin-top: 0; color: #24292e; font-size: 1.5em; margin-bottom: 8px;">📱 给我发送即时消息</h3>
+<div align="center" style="margin: 40px 0; padding: 25px; border: 2px solid #e1e4e8; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <h3 style="margin-top: 0; color: #586069; font-size: 1.5em; margin-bottom: 8px;">📱 给我发送即时消息</h3>
     <p style="color: #586069; font-size: 14px; margin-bottom: 20px;">通过 Bark 推送直接发送消息给我</p>
     <form id="bark-form" onsubmit="sendBarkMessage(event)" style="max-width: 420px; margin: 0 auto;">
         <div style="margin-bottom: 12px;">
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script> -->
 
 
-  <script src="https://giscus.app/client.js"
+  <!-- <script src="https://giscus.app/client.js"
       data-repo="Wcowin/hexo-site-comments"
       data-repo-id="R_kgDOIl9OJA"
       data-mapping="number"
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
       data-loading="lazy"  
       crossorigin="anonymous"
       async>
-  </script>
+  </script> -->
 
 
 
@@ -454,3 +454,27 @@ Waline.init({
   data-page-title="{{ PAGE_TITLE }}"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script> -->
+
+<!-- 优化后的 Waline 评论区代码，支持暗色模式自适应，结构更简洁，移动端适配更好 -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+
+<div id="waline"></div>
+
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+  init({
+    el: '#waline',
+    serverURL: 'https://mk-docs-comments.vercel.app/',
+    emoji: [
+      'https://unpkg.com/@waline/emojis@1.1.0/qq',
+      'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
+      'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+    ],
+    comment: true,
+    pageview: true,
+    lang: 'zh',
+    dark: 'auto', // 自动适配暗色模式
+    avatar: 'retro', // 可选：更有趣的头像风格
+  });
+</script> -->
