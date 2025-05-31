@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="知足且上进，温柔且坚定">
+        <meta name="description" content="从基础到进阶的完整Markdown语法教程">
       
       
         <meta name="author" content="王科文(Wcowin)">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Markdown语法学习 精简版 - Wcowin's Blog</title>
+        <title>Markdown语法学习指南 - Wcowin's Blog</title>
       
     
     
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Markdown语法学习 精简版
+              Markdown语法学习指南
             
           </span>
         </div>
@@ -1056,8 +1056,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1090,8 +1088,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1100,28 +1096,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#markdown" class="md-nav__link">
     <span class="md-ellipsis">
-      最常用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="最常用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      分级标题
+      📖 什么是 Markdown？
     </span>
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 推荐工具
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础语法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基础语法">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      目录
+      🎯 标题
     </span>
   </a>
   
@@ -1130,7 +1135,7 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      斜体/粗体/删除线/下划线/背景高亮
+      ✨ 文本样式
     </span>
   </a>
   
@@ -1139,11 +1144,11 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      无序列表/有序列表
+      📋 列表
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="无序列表/有序列表">
+    <nav class="md-nav" aria-label="📋 列表">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1158,7 +1163,7 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      多级无序列表
+      有序列表
     </span>
   </a>
   
@@ -1167,7 +1172,7 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      有序列表/多级有序列表
+      任务列表
     </span>
   </a>
   
@@ -1181,16 +1186,17 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      任务列表
+      🔗 链接和图片
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="🔗 链接和图片">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      表格
+      链接语法
     </span>
   </a>
   
@@ -1199,16 +1205,21 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      超链接
+      图片语法
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      插入图片
+      📊 表格
     </span>
   </a>
   
@@ -1217,35 +1228,26 @@
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      插入视频
+      💻 代码
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="💻 代码">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      代码块
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="代码块">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      行内代码块
+      行内代码
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      多行代码块
+      代码块
     </span>
   </a>
   
@@ -1257,18 +1259,42 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      对齐方式
+      📌 引用
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      📏 分割线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      分割线
+      高级语法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高级语法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 HTML 标签
     </span>
   </a>
   
@@ -1277,82 +1303,44 @@
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      换行
+      🔖 锚点链接
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      高级
+      📝 脚注
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="高级">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_21" class="md-nav__link">
     <span class="md-ellipsis">
-      设置字体/颜色
+      🧮 数学公式
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="设置字体/颜色">
+    <nav class="md-nav" aria-label="🧮 数学公式">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
     <span class="md-ellipsis">
-      常用颜色
+      行内公式
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
-      锚点
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_24" class="md-nav__link">
-    <span class="md-ellipsis">
-      注脚
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_25" class="md-nav__link">
-    <span class="md-ellipsis">
-      多级引用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#latex" class="md-nav__link">
-    <span class="md-ellipsis">
-      LaTeX公式
+      块级公式
     </span>
   </a>
   
@@ -1362,30 +1350,44 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_26" class="md-nav__link">
+  <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
-      其他
+      实用技巧
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="其他">
+    <nav class="md-nav" aria-label="实用技巧">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_27" class="md-nav__link">
+  <a href="#_25" class="md-nav__link">
     <span class="md-ellipsis">
-      转义字符
+      🔤 特殊字符
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#html" class="md-nav__link">
+  <a href="#_26" class="md-nav__link">
     <span class="md-ellipsis">
-      内联 HTML 语法/特殊字符自动转义
+      💬 注释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 转义字符
     </span>
   </a>
   
@@ -1394,16 +1396,7 @@
           <li class="md-nav__item">
   <a href="#_28" class="md-nav__link">
     <span class="md-ellipsis">
-      注释
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_29" class="md-nav__link">
-    <span class="md-ellipsis">
-      空格
+      📱 响应式设计
     </span>
   </a>
   
@@ -1411,6 +1404,57 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线工具
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="在线工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 学习资源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 实用工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 扩展语法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎉 总结
+    </span>
+  </a>
   
 </li>
       
@@ -2482,8 +2526,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2492,28 +2534,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#markdown" class="md-nav__link">
     <span class="md-ellipsis">
-      最常用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="最常用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      分级标题
+      📖 什么是 Markdown？
     </span>
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 推荐工具
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础语法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基础语法">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      目录
+      🎯 标题
     </span>
   </a>
   
@@ -2522,7 +2573,7 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      斜体/粗体/删除线/下划线/背景高亮
+      ✨ 文本样式
     </span>
   </a>
   
@@ -2531,11 +2582,11 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      无序列表/有序列表
+      📋 列表
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="无序列表/有序列表">
+    <nav class="md-nav" aria-label="📋 列表">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2550,7 +2601,7 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      多级无序列表
+      有序列表
     </span>
   </a>
   
@@ -2559,7 +2610,7 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      有序列表/多级有序列表
+      任务列表
     </span>
   </a>
   
@@ -2573,16 +2624,17 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      任务列表
+      🔗 链接和图片
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="🔗 链接和图片">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      表格
+      链接语法
     </span>
   </a>
   
@@ -2591,16 +2643,21 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      超链接
+      图片语法
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      插入图片
+      📊 表格
     </span>
   </a>
   
@@ -2609,35 +2666,26 @@
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      插入视频
+      💻 代码
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="💻 代码">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      代码块
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="代码块">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      行内代码块
+      行内代码
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      多行代码块
+      代码块
     </span>
   </a>
   
@@ -2649,18 +2697,42 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      对齐方式
+      📌 引用
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      📏 分割线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      分割线
+      高级语法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高级语法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 HTML 标签
     </span>
   </a>
   
@@ -2669,82 +2741,44 @@
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      换行
+      🔖 锚点链接
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      高级
+      📝 脚注
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="高级">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_21" class="md-nav__link">
     <span class="md-ellipsis">
-      设置字体/颜色
+      🧮 数学公式
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="设置字体/颜色">
+    <nav class="md-nav" aria-label="🧮 数学公式">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
     <span class="md-ellipsis">
-      常用颜色
+      行内公式
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
-      锚点
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_24" class="md-nav__link">
-    <span class="md-ellipsis">
-      注脚
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_25" class="md-nav__link">
-    <span class="md-ellipsis">
-      多级引用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#latex" class="md-nav__link">
-    <span class="md-ellipsis">
-      LaTeX公式
+      块级公式
     </span>
   </a>
   
@@ -2754,30 +2788,44 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_26" class="md-nav__link">
+  <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
-      其他
+      实用技巧
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="其他">
+    <nav class="md-nav" aria-label="实用技巧">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_27" class="md-nav__link">
+  <a href="#_25" class="md-nav__link">
     <span class="md-ellipsis">
-      转义字符
+      🔤 特殊字符
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#html" class="md-nav__link">
+  <a href="#_26" class="md-nav__link">
     <span class="md-ellipsis">
-      内联 HTML 语法/特殊字符自动转义
+      💬 注释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 转义字符
     </span>
   </a>
   
@@ -2786,16 +2834,7 @@
           <li class="md-nav__item">
   <a href="#_28" class="md-nav__link">
     <span class="md-ellipsis">
-      注释
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_29" class="md-nav__link">
-    <span class="md-ellipsis">
-      空格
+      📱 响应式设计
     </span>
   </a>
   
@@ -2803,6 +2842,57 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线工具
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="在线工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 学习资源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 实用工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 扩展语法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎉 总结
+    </span>
+  </a>
   
 </li>
       
@@ -2828,6 +2918,18 @@
         <a href="../../../tag/#tag:markdown" class="md-tag">Markdown</a>
       
     
+      
+      
+      
+        <a href="../../../tag/#tag:教程" class="md-tag">教程</a>
+      
+    
+      
+      
+      
+        <a href="../../../tag/#tag:语法" class="md-tag">语法</a>
+      
+    
   </nav>
 
 
@@ -2843,463 +2945,546 @@
   
 
 
-<h1 id="markdown"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.27 19.385H1.73A1.73 1.73 0 0 1 0 17.655V6.345a1.73 1.73 0 0 1 1.73-1.73h20.54A1.73 1.73 0 0 1 24 6.345v11.308a1.73 1.73 0 0 1-1.73 1.731zM5.769 15.923v-4.5l2.308 2.885 2.307-2.885v4.5h2.308V8.078h-2.308l-2.307 2.885-2.308-2.885H3.46v7.847zM21.232 12h-2.309V8.077h-2.307V12h-2.308l3.461 4.039z"/></svg></span> <a href="https://www.markdown.xyz/">Markdown语法学习</a> 精简版<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p><span id="top"><strong>文章开头</strong></span>  </p>
-</blockquote>
-<p>介绍一下Markdown：<br />
-Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。<br />
-Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。  </p>
-<p>此笔记学习摘抄自<a href="https://github.com/Yang-Xijie/yang-xijie.github.io/blob/main/docs/BLOG/Markdown/grammars.md?plain=1">Markdown语法学习 精简版</a>，学习借鉴大佬之经验（Ctrl C+V）</p>
-<p><strong>也推荐看:<a href="https://www.markdown.xyz/">Markdown中文指南</a></strong></p>
-<p>一些Markdown文档创作工具：</p>
-<ul>
-  <li><strong>Mac:</strong> <a href="https://macdown.uranusjr.com/">MacDown</a>, <a href="https://ia.net/writer">iA Writer</a> 或 <a href="https://marked2.com/">Marked 2</a></li>
-  <li><strong>iOS / Android:</strong> <a href="https://ia.net/writer">iA Writer</a></li>
-  <li><strong>Windows:</strong> <a href="https://wereturtle.github.io/ghostwriter/">ghostwriter</a> 或 <a href="https://markdownmonster.west-wind.com/">Markdown Monster</a></li>
-  <li><strong>Linux:</strong> <a href="https://github.com/retext-project/retext">ReText</a> 或 <a href="https://wereturtle.github.io/ghostwriter/">ghostwriter</a></li>
-  <li><strong>Web:</strong> <a href="https://dillinger.io/">Dillinger</a> 或 <a href="https://stackedit.io/">StackEdit</a></li>
-</ul>
+<div class="markdown-guide-header">
+  <h1>📝 Markdown 语法完全指南</h1>
+  <p class="subtitle">轻量级标记语言，让写作更简单高效</p>
+  <div class="guide-stats">
+    <span class="stat-item">📚 覆盖全部语法</span>
+    <span class="stat-item">🚀 实例演示</span>
+    <span class="stat-item">💡 实用技巧</span>
+  </div>
+</div>
 
-<h2 id="_1">最常用<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">分级标题<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><span id="top"><strong>快速导航</strong></span> | <a href="#_2">基础语法</a> | <a href="#_18">高级语法</a> | <a href="#_24">实用技巧</a> | <a href="#_29">在线工具</a></p>
+</blockquote>
+<h2 id="markdown">📖 什么是 Markdown？<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h2>
+<p><strong>Markdown</strong> 是一种轻量级标记语言，由 <strong>John Gruber</strong> 于 2004 年创建。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。</p>
+<div class="admonition tip">
+<p class="admonition-title">为什么选择 Markdown？</p>
+<ul>
+<li>✅ <strong>简单易学</strong> - 语法简洁明了</li>
+<li>✅ <strong>跨平台</strong> - 纯文本格式，任何编辑器都能打开</li>
+<li>✅ <strong>格式丰富</strong> - 支持导出 HTML、PDF、Word 等格式</li>
+<li>✅ <strong>版本控制友好</strong> - Git 等工具完美支持</li>
+<li>✅ <strong>广泛支持</strong> - GitHub、博客平台、文档工具都支持</li>
+</ul>
+</div>
+<h2 id="_1">🛠️ 推荐工具<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">桌面编辑器</label><label for="__tabbed_1_2">在线编辑器</label><label for="__tabbed_1_3">移动端</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>工具</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>macOS</strong></td>
+<td><a href="https://macdown.uranusjr.com/">MacDown</a></td>
+<td>免费、实时预览</td>
+</tr>
+<tr>
+<td><strong>macOS</strong></td>
+<td><a href="https://typora.io/">Typora</a></td>
+<td>所见即所得</td>
+</tr>
+<tr>
+<td><strong>Windows</strong></td>
+<td><a href="https://typora.io/">Typora</a></td>
+<td>跨平台、优雅界面</td>
+</tr>
+<tr>
+<td><strong>Linux</strong></td>
+<td><a href="https://github.com/retext-project/retext">ReText</a></td>
+<td>开源、轻量级</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><a href="https://dillinger.io/">Dillinger</a> - 功能强大的在线编辑器</li>
+<li><a href="https://stackedit.io/">StackEdit</a> - 支持同步到云端</li>
+<li><a href="https://hackmd.io/">HackMD</a> - 团队协作编辑</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>iOS/Android</strong>: <a href="https://ia.net/writer">iA Writer</a></li>
+<li><strong>多平台</strong>: <a href="https://notion.so/">Notion</a></li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="_2">基础语法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">🎯 标题<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
 <span class="normal"><a href="#__codelineno-0-4">4</a></span>
 <span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a># 一级标题 (注意有空格)
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>## 二级标题
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>### 三级标题
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>#### 四级标题
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>##### 五级标题
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>###### 六级标题  &lt;!--最多6级标题--&gt;
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="gh"># 一级标题</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="gu">## 二级标题  </span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="gu">### 三级标题</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="gu">#### 四级标题</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="gu">##### 五级标题</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="gu">###### 六级标题</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="_3">目录<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>在任意位置插入 <code>[toc]</code> 显示全文<span id="catalog"><strong>目录</strong></span>结构</p>
-<p>示例见文章开头（点击<a href="#top">这里</a>跳转到开头查看目录）</p>
-<h3 id="_4">斜体/粗体/删除线/下划线/背景高亮<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">标题技巧</p>
+<ul>
+<li><code>#</code> 后面需要加空格</li>
+<li>最多支持 6 级标题</li>
+<li>建议使用 ATX 风格（#）而非 Setext 风格</li>
+</ul>
+</div>
+<h3 id="_4">✨ 文本样式<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>样式</th>
+<th>语法</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>粗体</strong></td>
+<td><code>**文本**</code> 或 <code>__文本__</code></td>
+<td><strong>粗体文本</strong></td>
+</tr>
+<tr>
+<td><em>斜体</em></td>
+<td><code>*文本*</code> 或 <code>_文本_</code></td>
+<td><em>斜体文本</em></td>
+</tr>
+<tr>
+<td><strong><em>粗斜体</em></strong></td>
+<td><code>***文本***</code></td>
+<td><strong><em>粗斜体文本</em></strong></td>
+</tr>
+<tr>
+<td><del>删除线</del></td>
+<td><code>~~文本~~</code></td>
+<td><del>删除文本</del></td>
+</tr>
+<tr>
+<td><mark>高亮</mark></td>
+<td><code>==文本==</code></td>
+<td><mark>高亮文本</mark></td>
+</tr>
+<tr>
+<td><u>下划线</u></td>
+<td><code>&lt;u&gt;文本&lt;/u&gt;</code></td>
+<td><u>下划线文本</u></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">📋 列表<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h4 id="_6">无序列表<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
 <span class="normal"><a href="#__codelineno-1-4">4</a></span>
 <span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>*斜体*    _斜体_
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>**粗体**    __粗体__
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>***加粗斜体***    ___加粗斜体___
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>~~删除线~~
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>&lt;u&gt;下划线&lt;/u&gt;
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>==背景高亮==
+<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">-</span><span class="w"> </span>项目 1
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">-</span><span class="w"> </span>项目 2
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>子项目 2.1
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>子项目 2.2
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>子子项目 2.2.1
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="k">-</span><span class="w"> </span>项目 3
 </code></pre></div></td></tr></table></div>
-<p><em>斜体</em>    <em>斜体</em></p>
-<p><strong>粗体</strong>    <strong>粗体</strong></p>
-<p><strong><em>加粗斜体</em></strong>    <strong><em>加粗斜体</em></strong></p>
-<p><del>删除线</del></p>
-<p><u>下划线</u></p>
-<p><mark>背景高亮</mark></p>
-<h3 id="_5">无序列表/有序列表<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<h4 id="_6">无序列表<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p><strong>效果：</strong>  </p>
+<ul>
+<li>项目 1  </li>
+<li>项目 2  </li>
+<li>子项目 2.1  </li>
+<li>子项目 2.2  <ul>
+<li>子子项目 2.2.1  </li>
+</ul>
+</li>
+<li>项目 3</li>
+</ul>
+<h4 id="_7">有序列表<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>* 无序列表项 一
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>+ 无序列表项 二
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>- 无序列表项 三
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">1.</span> 第一项
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">2.</span> 第二项
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">   </span><span class="k">1.</span> 子项目 2.1
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">   </span><span class="k">2.</span> 子项目 2.2
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="k">3.</span> 第三项
 </code></pre></div></td></tr></table></div>
-<ul>
-<li>无序列表项 一</li>
-<li>无序列表项 二</li>
-<li>无序列表项 三</li>
-</ul>
-<h4 id="_7">多级无序列表<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p><strong>效果：</strong><br />
+1. 第一项<br />
+2. 第二项<br />
+   1. 子项目 2.1<br />
+   2. 子项目 2.2<br />
+3. 第三项</p>
+<h4 id="_8">任务列表<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span>
-<span class="normal"><a href="#__codelineno-3-6">6</a></span>
-<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>* 今天`* + 空格键`
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>* 明天
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>    * 学习 `TAB(或4个空格) + * + 空格键`
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>    * 购物
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>        * 面包
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a>        * 牛奶
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a>* 后天
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">- [x]</span> 已完成任务
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="k">- [ ]</span> 未完成任务
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="k">- [x]</span> <span class="gd">~~已取消任务~~</span>
 </code></pre></div></td></tr></table></div>
-<ul>
-<li>今天<code>* + 空格键</code></li>
-<li>明天<ul>
-<li>学习 <code>TAB(或4个空格) + * + 空格键</code></li>
-<li>购物<ul>
-<li>面包</li>
-<li>牛奶</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>后天</li>
-</ul>
-<h4 id="_8">有序列表/多级有序列表<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p><strong>效果：</strong><br />
+- [x] 已完成任务<br />
+- [ ] 未完成任务<br />
+- [x] <del>已取消任务</del></p>
+<h3 id="_9">🔗 链接和图片<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h4 id="_10">链接语法<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>1. 有序列表项 一 `数字 + . + 空格键`
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>2. 有序列表项 二
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a>    1. 有序列表项 二(1) `TAB(或4个空格) + 数字 + . + 空格键`
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a>    2. 有序列表项 二(2)
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>        1. 有序列表项 二(2).1
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a>3. 有序列表项 三
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>[<span class="nt">链接文本</span>](<span class="na">URL &quot;可选标题&quot;</span>)
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>[<span class="nt">GitHub</span>](<span class="na">https://github.com &quot;全球最大代码托管平台&quot;</span>)
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>有序列表项 一 <code>数字 + . + 空格键</code></li>
-<li>有序列表项 二<ol>
-<li>有序列表项 二(1) <code>TAB(或4个空格) + 数字 + . + 空格键</code></li>
-<li>有序列表项 二(2)<ol>
-<li>有序列表项 二(2).1</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>有序列表项 三</li>
-</ol>
-<h3 id="_9">任务列表<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><strong>效果：</strong> <a href="https://github.com" title="全球最大代码托管平台">GitHub</a></p>
+<h4 id="_11">图片语法<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>- [x] 任务二 已做任务 `- + 空格 + [x]`
+<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>![<span class="nt">图片描述</span>](<span class="na">图片URL &quot;可选标题&quot;</span>)
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>![<span class="nt">Markdown Logo</span>](<span class="na">https://markdown-here.com/img/icon256.png &quot;Markdown&quot;</span>)
 </code></pre></div></td></tr></table></div>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 任务一 未做任务 <code>- + 空格 + [ ]</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 任务二 已做任务 <code>- + 空格 + [x]</code></li>
-</ul>
-<h3 id="_10">表格<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<p>第一行为表头，第二行分隔表头和主体部分(如果表格无法显示可以尝试把第二行的 <code>-</code> 变为 <code>---</code> )，可以指定所在列的对齐方式，第三行开始每一行为一个表格行。列与列之间用 <code>|</code> 隔开。(注：原生方式的表格每一行的两边也要有 <code>|</code> )</p>
-<p><strong>对齐方式</strong> <code>:- 左对齐</code> <code>- 中心对齐</code> <code>-: 右对齐</code></p>
+<h3 id="_12">📊 表格<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
 <span class="normal"><a href="#__codelineno-6-2">2</a></span>
 <span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span>
-<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>第一列|第二列|第三列
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a>:-|-|-:
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a>a11|a12|a13
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a>a21|a22|a33
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a>a31|a32|a33
+<span class="normal"><a href="#__codelineno-6-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>| 左对齐 | 居中对齐 | 右对齐 |
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>|:-------|:--------:|-------:|
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>| 内容1  |   内容2   |  内容3 |
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a>| 内容4  |   内容5   |  内容6 |
 </code></pre></div></td></tr></table></div>
+<p><strong>效果：</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">表头一</th>
-<th>表头二</th>
-<th style="text-align: right;">表头三</th>
+<th style="text-align: left;">左对齐</th>
+<th style="text-align: center;">居中对齐</th>
+<th style="text-align: right;">右对齐</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">a11</td>
-<td>a12</td>
-<td style="text-align: right;">a13</td>
+<td style="text-align: left;">内容1</td>
+<td style="text-align: center;">内容2</td>
+<td style="text-align: right;">内容3</td>
 </tr>
 <tr>
-<td style="text-align: left;">a21</td>
-<td>a22</td>
-<td style="text-align: right;">a33</td>
-</tr>
-<tr>
-<td style="text-align: left;">a31</td>
-<td>a32</td>
-<td style="text-align: right;">a33</td>
+<td style="text-align: left;">内容4</td>
+<td style="text-align: center;">内容5</td>
+<td style="text-align: right;">内容6</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_11">超链接<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
-<p>[ ]里写链接文字，( )里写链接地址, ( )中的" "中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字，链接地址与title前有一个空格。</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>右边是链接[链接文字](链接 &quot;title&quot;)
+<h3 id="_13">💻 代码<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h4 id="_14">行内代码<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>使用 <span class="sb">`printf()`</span> 函数输出文本
 </code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>右边是链接[GitHub](https://github.com &quot;GitHub&quot;)
+<p><strong>效果：</strong> 使用 <code>printf()</code> 函数输出文本</p>
+<h4 id="_15">代码块<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">6</a></span>
+<span class="normal"><a href="#__codelineno-8-7">7</a></span>
+<span class="normal"><a href="#__codelineno-8-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="sb">```python</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">hello_world</span><span class="p">():</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Markdown!&quot;</span><span class="p">)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>    <span class="k">return</span> <span class="s2">&quot;Success&quot;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="c1"># 调用函数</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="n">hello_world</span><span class="p">()</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="sb">```</span>
 </code></pre></div></td></tr></table></div>
-<p>右边是链接<a href="https://github.com" title="GitHub">GitHub</a></p>
-<h3 id="_12">插入图片<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
-<p><strong>格式</strong>：<code>!</code> <code>[图片标题]</code> <code>(图片地址 "图片Title”)</code></p>
-<p>其中<code>图片标题</code>会被某些网站和编辑器显示在图片下方</p>
-<h3 id="_13">插入视频<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
-<p><strong>格式</strong>：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>&lt;iframe height= width= src=&quot;链接&quot;&gt;
+<p><strong>效果：</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">hello_world</span><span class="p">():</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Markdown!&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a>    <span class="k">return</span> <span class="s2">&quot;Success&quot;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="c1"># 调用函数</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="n">hello_world</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div></p>
-<h3 id="_14">代码块<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
-<h4 id="_15">行内代码块<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
-<p>用“ ` ”左右包裹代码<br />
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>`printf()` 函数  
+<h3 id="_16">📌 引用<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">&gt; </span><span class="ge">这是一级引用</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>&gt; 
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="k">&gt; </span><span class="ge">&gt; 这是二级引用</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="k">&gt; </span><span class="ge">&gt; </span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="k">&gt; </span><span class="ge">&gt; &gt; 这是三级引用</span>
 </code></pre></div></td></tr></table></div>
-显示为<code>printf()</code> 函数</p>
-<h4 id="_16">多行代码块<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
-<p>用“ ``` ”上下包裹代码，在第一个“ ``` ”后添加语言名称获得不同的高亮效果</p>
-<p>如：cpp，python，swift</p>
-<h3 id="_17">对齐方式<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p><strong>效果：</strong></p>
+<blockquote>
+<p>这是一级引用</p>
+<blockquote>
+<p>这是二级引用</p>
+<blockquote>
+<p>这是三级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="_17">📏 分割线<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
 <span class="normal"><a href="#__codelineno-11-2">2</a></span>
-<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>&lt;center&gt;行中心对齐&lt;/center&gt;
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a>&lt;p align=&quot;left&quot;&gt;行左对齐&lt;/p&gt;
-<a id="__codelineno-11-3" name="__codelineno-11-3"></a>&lt;p align=&quot;right&quot;&gt;行右对齐&lt;/p&gt;
+<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>---
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>***
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a>___
 </code></pre></div></td></tr></table></div>
-<center>行中心对齐</center>
-<p align="left">行左对齐</p>
-<p align="right">行右对齐</p>
-
-<h3 id="_18">分割线<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p><strong>效果：</strong></p>
+<hr />
+<h2 id="_18">高级语法<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="html">🎨 HTML 标签<a class="headerlink" href="#html" title="Permanent link">&para;</a></h3>
+<p>Markdown 支持内嵌 HTML 标签：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
 <span class="normal"><a href="#__codelineno-12-2">2</a></span>
 <span class="normal"><a href="#__codelineno-12-3">3</a></span>
-<span class="normal"><a href="#__codelineno-12-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>* * *
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a>***
-<a id="__codelineno-12-3" name="__codelineno-12-3"></a>- - -
-<a id="__codelineno-12-4" name="__codelineno-12-4"></a>---
+<span class="normal"><a href="#__codelineno-12-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: red; text-align: center;&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>红色居中标题<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>这是一段红色的文字<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<hr />
-<hr />
-<hr />
-<hr />
-<h3 id="_19">换行<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
-<p>不同markdown编辑器可能有不同的换行方式，最简单为直接敲回车</p>
-<p>markdown文本内的连续两个或多个回车会被替换为一个回车</p>
-<h2 id="_20">高级<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
-<h3 id="_21">设置字体/颜色<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a>&lt;font face=&quot;宋体&quot; color=blue size=5&gt;蓝色的字～&lt;/font&gt;
+<p><strong>效果：</strong></p>
+<div style="color: red; text-align: center;">
+  <h3>红色居中标题</h3>
+  <p>这是一段红色的文字</p>
+</div>
+
+<h3 id="_19">🔖 锚点链接<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a>[<span class="nt">跳转到顶部</span>](<span class="na">#top</span>)
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>[<span class="nt">跳转到底部</span>](<span class="na">#bottom</span>)
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a>&lt;span id=&quot;bottom&quot;&gt;这里是底部&lt;/span&gt;
 </code></pre></div></td></tr></table></div>
-<p><font face="宋体" color=blue size=5>蓝色的字～</font></p>
-<h4 id="_22">常用颜色<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
-<p>浏览器支持的所有颜色请跳转参考</p>
-<p><a href="https://htmlcolorcodes.com/zh/yanse-ming" title="htmlcolorcodes.com">现代浏览器支持的140种已命名的颜色</a></p>
-<p>常用颜色名称:
-* 按网站顺序排列
-* orange pink  gold yellow purple greenyellow lightgreen green aqua lightblue blue wheat brown white snow linen silver gray black</p>
-<table>
-<thead>
-<tr>
-<th>最常用</th>
-<th>其他</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><font color=red>red</font></td>
-<td><font color=greenyellow>greenyellow</font></td>
-</tr>
-<tr>
-<td><font color=orange>orange</font></td>
-<td><font color=lightgreen>lightgreen</font></td>
-</tr>
-<tr>
-<td><font color=yellow>yellow</font></td>
-<td><font color=lightblue>lightblue</font></td>
-</tr>
-<tr>
-<td><font color=green>green</font></td>
-<td><font color=pink>pink</font></td>
-</tr>
-<tr>
-<td><font color=aqua>aqua</font></td>
-<td><font color=gold>gold</font></td>
-</tr>
-<tr>
-<td><font color=blue>blue</font></td>
-<td><font color=silver>silver</font></td>
-</tr>
-<tr>
-<td><font color=purple>purple</font></td>
-<td><font color=brown>brown</font></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="_23">锚点<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
-<p>也就是 <code>跳转</code></p>
+<p><strong>效果：</strong> <a href="#top">跳转到顶部</a> | <a href="#bottom">跳转到底部</a></p>
+<h3 id="_20">📝 脚注<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
 <span class="normal"><a href="#__codelineno-14-2">2</a></span>
 <span class="normal"><a href="#__codelineno-14-3">3</a></span>
-<span class="normal"><a href="#__codelineno-14-4">4</a></span>
-<span class="normal"><a href="#__codelineno-14-5">5</a></span>
-<span class="normal"><a href="#__codelineno-14-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>1. [点击这里跳转到第一段](#jump1)
-<a id="__codelineno-14-2" name="__codelineno-14-2"></a>2. [点击这里跳转到第二段](#jump2）
-<a id="__codelineno-14-3" name="__codelineno-14-3"></a>
-<a id="__codelineno-14-4" name="__codelineno-14-4"></a>### &lt;span id=&quot;jump1&quot;&gt;第一段&lt;/span&gt;
-<a id="__codelineno-14-5" name="__codelineno-14-5"></a>
-<a id="__codelineno-14-6" name="__codelineno-14-6"></a>### &lt;span id=&quot;jump2&quot;&gt;第二段&lt;/span&gt;
+<span class="normal"><a href="#__codelineno-14-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>这里有一个脚注[^1]，还有另一个脚注[^note]。
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a>[<span class="nl">^1</span>]: <span class="na">这是第一个脚注</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a>[<span class="nl">^note</span>]: <span class="na">这是一个带名称的脚注</span>
 </code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
-<span class="normal"><a href="#__codelineno-15-2">2</a></span>
-<span class="normal"><a href="#__codelineno-15-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>&lt;span id=&quot;now&quot;&gt;当前位置&lt;/span&gt;
-<a id="__codelineno-15-2" name="__codelineno-15-2"></a>点击[这里](#top)跳转到开头
-<a id="__codelineno-15-3" name="__codelineno-15-3"></a>点击[这里](#bottom)跳转到结尾
+<p><strong>效果：</strong>
+这里有一个脚注<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>，还有另一个脚注<sup id="fnref:note"><a class="footnote-ref" href="#fn:note">2</a></sup>。</p>
+<h3 id="_21">🧮 数学公式<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<h4 id="_22">行内公式<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>爱因斯坦的质能方程：$E = mc^2$
 </code></pre></div></td></tr></table></div>
-<p><span id="now"><strong>当前位置</strong></span></p>
-<p>点击<a href="#top">这里</a>跳转到开头</p>
-<p>点击<a href="#bottom">这里</a>跳转到结尾  </p>
-<h3 id="_24">注脚<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p><strong>效果：</strong> 爱因斯坦的质能方程：<span class="arithmatex">\(E = mc^2\)</span></p>
+<h4 id="_23">块级公式<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
 <span class="normal"><a href="#__codelineno-16-2">2</a></span>
 <span class="normal"><a href="#__codelineno-16-3">3</a></span>
-<span class="normal"><a href="#__codelineno-16-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2]。
-<a id="__codelineno-16-2" name="__codelineno-16-2"></a>
-<a id="__codelineno-16-3" name="__codelineno-16-3"></a>[^1]:Markdown是一种纯文本标记语言
-<a id="__codelineno-16-4" name="__codelineno-16-4"></a>[^2]:HyperText Markup Language 超文本标记语言
+<span class="normal"><a href="#__codelineno-16-4">4</a></span>
+<span class="normal"><a href="#__codelineno-16-5">5</a></span>
+<span class="normal"><a href="#__codelineno-16-6">6</a></span>
+<span class="normal"><a href="#__codelineno-16-7">7</a></span>
+<span class="normal"><a href="#__codelineno-16-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>$$
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a>\begin{align}
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a>\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp;= \frac{4\pi}{c}\vec{\mathbf{j}} \\
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a>\nabla \cdot \vec{\mathbf{E}} &amp;= 4 \pi \rho \\
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a>\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp;= \vec{\mathbf{0}} \\
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a>\nabla \cdot \vec{\mathbf{B}} &amp;= 0
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a>\end{align}
+<a id="__codelineno-16-8" name="__codelineno-16-8"></a>$$
 </code></pre></div></td></tr></table></div>
-<p>使用 Markdown<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>可以效率的书写文档, 直接转换成 HTML<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>。</p>
-<p>点击<a href="#bottom">这里</a>跳转到结尾查看<span id="footnote"><strong>注脚</strong></span>的显示效果</p>
-<h3 id="_25">多级引用<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
-<span class="normal"><a href="#__codelineno-17-2">2</a></span>
-<span class="normal"><a href="#__codelineno-17-3">3</a></span>
-<span class="normal"><a href="#__codelineno-17-4">4</a></span>
-<span class="normal"><a href="#__codelineno-17-5">5</a></span>
-<span class="normal"><a href="#__codelineno-17-6">6</a></span>
-<span class="normal"><a href="#__codelineno-17-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a>&gt;&gt;&gt; 请问 Markdwon 怎么用？ - 小白
-<a id="__codelineno-17-2" name="__codelineno-17-2"></a>
-<a id="__codelineno-17-3" name="__codelineno-17-3"></a>&gt;&gt; 自己看教程！ - 愤青
-<a id="__codelineno-17-4" name="__codelineno-17-4"></a>
-<a id="__codelineno-17-5" name="__codelineno-17-5"></a>&gt; 教程在哪？ - 小白
-<a id="__codelineno-17-6" name="__codelineno-17-6"></a>
-<a id="__codelineno-17-7" name="__codelineno-17-7"></a>`[^_^]: # 无法显示时记得空行`
-</code></pre></div></td></tr></table></div>
-<p>不同编辑器的显示情况不同</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>请问 Markdwon 怎么用？ - 小白</p>
-</blockquote>
-<p>自己看教程！ - 愤青</p>
-</blockquote>
-<p>教程在哪？ - 小白</p>
-</blockquote>
-<h3 id="latex">LaTeX公式<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h3>
-<ul>
-<li>在数学公式的前后加<code>$</code>是行内公式</li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>我们在初中数学课上已经对一次函数$y=x+a$有所了解。
-</code></pre></div></td></tr></table></div>
-<p>我们在初中数学课上已经对一次函数<span class="arithmatex">\(y=x+a\)</span>有所了解。</p>
-<ul>
-<li>在数学公式的前后加<code>$$</code>是独占一行的公式
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a>下面我们来认识一下二次函数$$y=ax^2+bx+c$$
-</code></pre></div></td></tr></table></div>
-下面我们来认识一下二次函数  </li>
-</ul>
-<div class="arithmatex">\[y=ax^2+bx+c\]</div>
-<hr />
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
-<span class="normal"><a href="#__codelineno-20-2">2</a></span>
-<span class="normal"><a href="#__codelineno-20-3">3</a></span>
-<span class="normal"><a href="#__codelineno-20-4">4</a></span>
-<span class="normal"><a href="#__codelineno-20-5">5</a></span>
-<span class="normal"><a href="#__codelineno-20-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a>行内公式：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
-<a id="__codelineno-20-2" name="__codelineno-20-2"></a>块级公式：
-<a id="__codelineno-20-3" name="__codelineno-20-3"></a>$$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
-<a id="__codelineno-20-4" name="__codelineno-20-4"></a>$$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
-<a id="__codelineno-20-5" name="__codelineno-20-5"></a>1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
-<a id="__codelineno-20-6" name="__codelineno-20-6"></a>{1+\frac{e^{-8\pi}} {1+\ldots} } } } $$
-</code></pre></div></td></tr></table></div>
-<p>行内公式：<span class="arithmatex">\(\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N\)</span></p>
-<p>块级公式：</p>
-<div class="arithmatex">\[x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</div>
-<div class="arithmatex">\[\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}{1+\frac{e^{-8\pi}} {1+\ldots} } } }\]</div>
-<hr />
-<p>来看看两个重要极限  </p>
-<div class="arithmatex">\[\displaystyle\lim_{x \rightarrow 0}\frac{\sin x}{x} = 1\]</div>
-<div class="arithmatex">\[\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e\]</div>
-<h2 id="_26">其他<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
-<h3 id="_27">转义字符<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
-<p>通过在Markdown字符前使用\来忽略（或转义）Markdown格式。</p>
-<p>Markdown允许您使用反斜杠转义来生成文字字符，否则这些字符在Markdown的格式化语法中具有特殊含义。 例如，如果您想用文字星号包围一个单词，则可以在星号之前使用反斜杠，如<code>\*literal asterisks\*</code>  *literal asterisks*</p>
-<p>Markdown为以下字符提供反斜杠转义(但是CSDN不太支持)：</p>
-<p>\反斜杠 `反引号 *星号 _下划线 {}大括号 []中括号 ()小括号  #井号 +加号 -减号 .英文句号 !英文感叹号</p>
-<h3 id="html">内联 HTML 语法/特殊字符自动转义<a class="headerlink" href="#html" title="Permanent link">&para;</a></h3>
-<p>对于 Markdown 中未包含的标签, 可以直接使用 HTML标签，例如用 HTML <code>&lt;a&gt;</code> 标签替代 Markdown 的链接语法</p>
-<p>在 HTML 中, 有一些字符需要特殊对待，如果你想将它们用作字面量, 则需要将它们转义为字符实体</p>
+<p><strong>效果：</strong>  </p>
+<div class="arithmatex">\[
+\begin{align}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp;= \frac{4\pi}{c}\vec{\mathbf{j}} \\
+\nabla \cdot \vec{\mathbf{E}} &amp;= 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp;= \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} &amp;= 0
+\end{align}
+\]</div>
+<h2 id="_24">实用技巧<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
+<h3 id="_25">🔤 特殊字符<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>特殊字符</th>
-<th>代码</th>
+<th>字符</th>
+<th>HTML 实体</th>
+<th>显示</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>&amp;</td>
-<td><code>&amp;amp;</code></td>
+<td>空格</td>
+<td><code>&amp;nbsp;</code></td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td>&lt;</td>
+<td>小于号</td>
 <td><code>&amp;lt;</code></td>
+<td>&lt;</td>
 </tr>
 <tr>
-<td>&gt;</td>
+<td>大于号</td>
 <td><code>&amp;gt;</code></td>
+<td>&gt;</td>
 </tr>
 <tr>
+<td>与符号</td>
+<td><code>&amp;amp;</code></td>
+<td>&amp;</td>
+</tr>
+<tr>
+<td>引号</td>
+<td><code>&amp;quot;</code></td>
 <td>&quot;</td>
-<td><code>&amp;quot;</code> <code>&amp;#34;</code></td>
-</tr>
-<tr>
-<td>&apos;</td>
-<td><code>&amp;apos;</code> <code>&amp;#39;</code></td>
 </tr>
 </tbody>
 </table>
-<h3 id="_28">注释<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
-<span class="normal"><a href="#__codelineno-21-2">2</a></span>
-<span class="normal"><a href="#__codelineno-21-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a>&lt;div style=&#39;display: none&#39;&gt;
-<a id="__codelineno-21-2" name="__codelineno-21-2"></a>注释
-<a id="__codelineno-21-3" name="__codelineno-21-3"></a>&lt;/div&gt;
+<h3 id="_26">💬 注释<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span>
+<span class="normal"><a href="#__codelineno-17-3">3</a></span>
+<span class="normal"><a href="#__codelineno-17-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a>&lt;!-- 这是注释，不会显示在页面上 --&gt;
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a>
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a>[<span class="nl">//</span>]: <span class="na"># (这也是注释)</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a>[<span class="nl">comment</span>]: <span class="na">&lt;&gt; (另一种注释方式)</span>
 </code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a>&lt;!-- 注释 --&gt;
+<h3 id="_27">🎯 转义字符<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>使用反斜杠 <code>\</code> 转义特殊字符：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>\*这里不会变成斜体\*
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a>\#这里不会变成标题
 </code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
-<span class="normal"><a href="#__codelineno-23-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a>[//]: # (哈哈我是最强注释1，不会在浏览器中显示。)
-<a id="__codelineno-23-2" name="__codelineno-23-2"></a>[^_^]: # (哈哈我是最萌注释2，不会在浏览器中显示。)
+<p><strong>效果：</strong> *这里不会变成斜体* #这里不会变成标题</p>
+<h3 id="_28">📱 响应式设计<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span>
+<span class="normal"><a href="#__codelineno-19-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: flex; flex-wrap: wrap; gap: 10px;&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;flex: 1; min-width: 200px;&quot;</span><span class="p">&gt;</span>列1内容<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;flex: 1; min-width: 200px;&quot;</span><span class="p">&gt;</span>列2内容<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;flex: 1; min-width: 200px;&quot;</span><span class="p">&gt;</span>列3内容<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="_29">空格<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
-<span class="normal"><a href="#__codelineno-24-2">2</a></span>
-<span class="normal"><a href="#__codelineno-24-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a>【1】 &amp;nbsp; 半角的不断行的空白格（推荐使用）
-<a id="__codelineno-24-2" name="__codelineno-24-2"></a>【2】 &amp;ensp; 半角的空格
-<a id="__codelineno-24-3" name="__codelineno-24-3"></a>【3】 &amp;emsp; 全角的空格
-</code></pre></div></td></tr></table></div>
+<h2 id="_29">在线工具<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h2>
+<h3 id="_30">📚 学习资源<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
 <ul>
-<li>【1】 &nbsp; 半角的不断行的空白格（推荐使用）</li>
-<li>【2】 &ensp; 半角的空格</li>
-<li>【3】 &emsp; 全角的空格</li>
+<li><a href="https://daringfireball.net/projects/markdown/">Markdown 官方文档</a></li>
+<li><a href="https://commonmark.org/">CommonMark 规范</a></li>
+<li><a href="https://github.github.com/gfm/">GitHub Flavored Markdown</a></li>
+<li><a href="https://www.markdown.xyz/">Markdown 中文指南</a></li>
 </ul>
+<h3 id="_31">🛠️ 实用工具<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.tablesgenerator.com/markdown_tables">Markdown Tables Generator</a> - 表格生成器</li>
+<li><a href="https://markdowntohtml.com/">Markdown to HTML</a> - 在线转换工具</li>
+<li><a href="https://mermaid.live/">Mermaid Live Editor</a> - 流程图编辑器</li>
+</ul>
+<h3 id="_32">📖 扩展语法<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">GitHub Flavored Markdown</p>
+<p>GitHub 支持的扩展语法包括：
+- [x] 任务列表
+- :emoji: Emoji 支持
+- 表格
+- 删除线
+- 语法高亮</p>
+</div>
+<h2 id="_33">🎉 总结<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h2>
+<p>Markdown 是一个强大而简洁的文档格式化工具。掌握这些语法后，你可以：</p>
+<ol>
+<li>✍️ <strong>高效写作</strong> - 专注内容而非格式</li>
+<li>📝 <strong>文档管理</strong> - 版本控制友好</li>
+<li>🌐 <strong>多平台发布</strong> - 一次编写，多处使用</li>
+<li>🤝 <strong>团队协作</strong> - 标准化的文档格式</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">最佳实践</p>
+<ul>
+<li>保持语法简洁，避免过度使用 HTML</li>
+<li>使用一致的格式风格</li>
+<li>适当使用空行增强可读性</li>
+<li>为图片添加描述性的 alt 文本</li>
+<li>使用有意义的链接文本</li>
+</ul>
+</div>
 <hr />
-<p>同时推荐这个网站去学习基础markdown语法：<a href="http://www.runoob.com/">runoob.com</a></p>
+<p><strong>参考资源：</strong>    </p>
+<ul>
+<li><a href="https://daringfireball.net/projects/markdown/">Markdown 官方文档</a>  </li>
+<li><a href="https://www.runoob.com/markdown/md-tutorial.html">菜鸟教程 - Markdown</a>  </li>
+<li>感谢 <a href="https://github.com/Yang-Xijie/yang-xijie.github.io">Yang-Xijie</a> 的原始教程</li>
+</ul>
+<p><span id="bottom"><strong>文章结尾</strong> | <a href="#top">返回顶部</a> |  <a href="#_2">基础语法</a> | <a href="#_18">高级语法</a></span></p>
+<style>
+.markdown-guide-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
 
-<p><span id="bottom"></span></p>
+.markdown-guide-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.guide-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .markdown-guide-header h1 {
+    font-size: 2rem;
+  }
+
+  .guide-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Markdown是一种纯文本标记语言&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Markdown是一种纯文本标记语言，由John Gruber创建&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
-<li id="fn:2">
-<p>HyperText Markup Language 超文本标记语言&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<li id="fn:note">
+<p>HyperText Markup Language 超文本标记语言&#160;<a class="footnote-backref" href="#fnref:note" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3325,7 +3510,7 @@ Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多�
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月11日 08:19:27 UTC">2025-05-11</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月31日 16:04:27 UTC">2025-05-31</span>
   </span>
 
     

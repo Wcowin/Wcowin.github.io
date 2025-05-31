@@ -1271,8 +1271,8 @@
 </div>
 
 <hr />
-<div align="center" style="margin: 40px 0; padding: 25px; border: 2px solid #e1e4e8; border-radius: 12px; background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    <h3 style="margin-top: 0; color: #24292e; font-size: 1.5em; margin-bottom: 8px;">📱 给我发送即时消息</h3>
+<div align="center" style="margin: 40px 0; padding: 25px; border: 2px solid #e1e4e8; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <h3 style="margin-top: 0; color: #586069; font-size: 1.5em; margin-bottom: 8px;">📱 给我发送即时消息</h3>
     <p style="color: #586069; font-size: 14px; margin-bottom: 20px;">通过 Bark 推送直接发送消息给我</p>
     <form id="bark-form" onsubmit="sendBarkMessage(event)" style="max-width: 420px; margin: 0 auto;">
         <div style="margin-bottom: 12px;">
@@ -1518,7 +1518,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script> -->
 
-<script src="https://giscus.app/client.js"
+<!-- <script src="https://giscus.app/client.js"
       data-repo="Wcowin/hexo-site-comments"
       data-repo-id="R_kgDOIl9OJA"
       data-mapping="number"
@@ -1531,7 +1531,7 @@ document.addEventListener('DOMContentLoaded', function() {
       data-loading="lazy"  
       crossorigin="anonymous"
       async>
-  </script>
+  </script> -->
 
 <!-- 打赏区 -->
 <div class="reward-container">
@@ -1699,6 +1699,30 @@ Waline.init({
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script> -->
 
+<!-- 优化后的 Waline 评论区代码，支持暗色模式自适应，结构更简洁，移动端适配更好 -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+
+<div id="waline"></div>
+
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+  init({
+    el: '#waline',
+    serverURL: 'https://mk-docs-comments.vercel.app/',
+    emoji: [
+      'https://unpkg.com/@waline/emojis@1.1.0/qq',
+      'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
+      'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+    ],
+    comment: true,
+    pageview: true,
+    lang: 'zh',
+    dark: 'auto', // 自动适配暗色模式
+    avatar: 'retro', // 可选：更有趣的头像风格
+  });
+</script> -->
+
 
 
 
@@ -1745,6 +1769,81 @@ Waline.init({
 
 <!-- Was this page helpful? -->
 
+
+  <h2 id="__comments">评论</h2>
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+  data-repo="Wcowin/hexo-site-comments"
+  data-repo-id="R_kgDOIl9OJA"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOIl9OJM4CTHDe"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="noborder_light"
+  data-lang="zh-CN"
+  data-loading="lazy"  
+  crossorigin="anonymous"
+  async>
+</script>
+<!-- <div class="reward-container">
+  <div></div>
+  <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    请作者喝杯咖啡
+  </button>
+  <div id="qr" style="display: none;">
+      <div style="display: inline-block;">
+        <img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付">
+        <p>微信支付</p>
+      </div>
+      <div style="display: inline-block;">
+        <img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div> -->
+
+
+
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
