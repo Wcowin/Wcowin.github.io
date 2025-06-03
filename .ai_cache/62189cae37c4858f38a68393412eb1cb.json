@@ -1,0 +1,7 @@
+{
+  "summary": ":simple-python:\npip命令只能用在命令行中；但是不能用在python命令行中.更新指定包的依赖包\n\n[代码示例].",
+  "service": "fallback",
+  "page_title": "PIP",
+  "timestamp": "2025-06-03T12:03:01.298426",
+  "language": "zh"
+}

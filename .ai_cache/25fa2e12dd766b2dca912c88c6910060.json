@@ -1,0 +1,7 @@
+{
+  "summary": "com/Wcowin/Muplayer\n\n本项目是一个基于原生 JavaScript、HTML 和 CSS 实现的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、顺序/随机/单曲循环播放等功能.",
+  "service": "fallback",
+  "page_title": "简单的 JavaScript 音乐播放器",
+  "timestamp": "2025-06-03T12:03:02.710813",
+  "language": "zh"
+}
