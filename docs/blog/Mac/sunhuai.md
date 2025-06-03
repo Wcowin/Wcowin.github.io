@@ -21,14 +21,13 @@ tags:
 ## 开启任何来源
 
 先打开 系统偏好设置 -> 安全与隐私 -> 通用 选项卡，检查是否已经启用了 任何来源 选项。
-![](https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291828413.png)
 
 如果没有这个选项，复制以下面的命令：
 ```
 sudo spctl --master-disable
 ```
 打开终端，右键粘贴上面命令，回车并输入密码： 
-![](https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291829815.png)
+
 
 然而有的应用开启了任何来源还是不行，这是因为苹果进一步收缩了对未签名应用的权限，这时候就需要过终端执行命令行代码来绕过应用签名认证。  
 

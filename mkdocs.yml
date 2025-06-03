@@ -493,9 +493,9 @@ markdown_extensions:
 
   
 extra_javascript:
-  # - javascripts/extra.js 
+  - javascripts/extra.js 
   # - javascripts/bannerSlider.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js
   - javascripts/mathjax.js
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js
@@ -549,3 +549,7 @@ watch: #监听文件变动自动刷新
 
 hooks:
   - docs/overrides/hooks/socialmedia.py
+  - docs/overrides/hooks/reading_time.py
+  # - docs/overrides/hooks/toc_optimizer.py
+  # - docs/overrides/hooks/last_updated.py
+  # - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook

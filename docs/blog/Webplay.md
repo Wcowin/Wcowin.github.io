@@ -1,5 +1,6 @@
 ---
 title: 好用/好玩网站分享
+# hide_reading_time: true
 tags:
   - 技术分享
 ---

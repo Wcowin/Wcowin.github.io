@@ -680,17 +680,6 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://lxnchan.cn/assets/logo-v2.webp" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://lxnchan.cn" target="_blank">泠泫凝的异次元空间</a> 
-      </div> 
-      <div class="info">
-       先空着2333
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
      <img class="ava" src="https://blog.btwoa.com/author.gif" /> 
      <div class="card-header"> 
       <div> 
@@ -860,7 +849,7 @@ hide:
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>
 
-<script>
+<!-- <script>
 document.addEventListener("DOMContentLoaded", function () {
   // 获取友链容器
   const friendLinksContainer = document.querySelector(".links-content");
@@ -1096,7 +1085,7 @@ window.friendLinkUtils = {
     return duplicates;
   }
 };
-</script>
+</script> -->
 
 </div>
 
@@ -1110,6 +1099,17 @@ window.friendLinkUtils = {
 <div id="rcorners4" >
   <div class="links-content"> 
    <div class="link-navigation">
+   <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://lxnchan.cn" target="_blank">泠泫凝的异次元空间</a> 
+      </div> 
+      <div class="info">
+       先空着2333
+      </div> 
+     </div> 
+    </div>
    <div class="card"> 
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
@@ -1308,7 +1308,7 @@ window.friendLinkUtils = {
 
     >名称: Wcowin's Blog  
     >链接: https://wcowin.work/  
-    >头像: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
+    >头像: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp  
     >简介: 循此苦旅，以达星辰
 
 === "HTML(推荐)"
