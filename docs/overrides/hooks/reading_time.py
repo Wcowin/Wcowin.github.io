@@ -1,10 +1,13 @@
 import re
+import threading
+import time
 from functools import lru_cache
+from collections import OrderedDict
+import hashlib
 
-# 预编译正则表达式（保持原有格式）
+# 预编译正则表达式（性能优化版本）
 EXCLUDE_PATTERNS = [
     re.compile(r'^index\.md$'),
-    re.compile(r'^about/'),
     re.compile(r'^trip/index\.md$'),
     re.compile(r'^relax/index\.md$'),
     re.compile(r'^blog/indexblog\.md$'),
@@ -15,7 +18,7 @@ EXCLUDE_PATTERNS = [
     re.compile(r'404\.md$'),
 ]
 
-# 优化的字符统计正则表达式
+# 高度优化的正则表达式（一次性编译）
 CHINESE_CHARS_PATTERN = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf]')
 CODE_BLOCK_PATTERN = re.compile(r'```.*?```', re.DOTALL)
 INLINE_CODE_PATTERN = re.compile(r'`[^`]+`')

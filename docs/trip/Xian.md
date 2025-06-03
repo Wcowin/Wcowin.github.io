@@ -42,20 +42,22 @@ D4: 返程
 
 腊汁肉夹馍、凉皮、羊肉泡馍、臊子面  
 ***
-<center>
+
 羊肉泡馍
 
-![IMG_1956.jpeg](https://s1.imagehub.cc/images/2025/01/09/684cd0b2b1b29425b644fba2f1c451ac.webp){ loading=lazy }
+![IMG_1956.jpeg](https://s1.imagehub.cc/images/2025/01/09/684cd0b2b1b29425b644fba2f1c451ac.webp)
 
-biangbiang面
-![IMG_1671.jpeg](https://s1.imagehub.cc/images/2025/01/09/488ece6f86c926fda7790c71e6e17868.webp){ loading=lazy }  
+biangbiang面  
 
-汇通十字面
-![IMG_4555.jpeg](https://s1.imagehub.cc/images/2025/01/09/fe726e76fa7661ffe97d8290ff62f021.webp){ loading=lazy }
+![IMG_1671.jpeg](https://s1.imagehub.cc/images/2025/01/09/488ece6f86c926fda7790c71e6e17868.webp)
 
-霸王茶姬
-![IMG_1506.jpeg](https://s1.imagehub.cc/images/2025/01/09/54d9d0f6f26df480b2bf6207209c06b7.webp){ loading=lazy }
+汇通十字面  
 
-</center>
+![IMG_4555.jpeg](https://s1.imagehub.cc/images/2025/01/09/fe726e76fa7661ffe97d8290ff62f021.webp)
+
+霸王茶姬  
+
+![IMG_1506.jpeg](https://s1.imagehub.cc/images/2025/01/09/54d9d0f6f26df480b2bf6207209c06b7.webp)
+
 
 

@@ -6,6 +6,7 @@ hide:
 #   - feedback
 # comments: false
 # icon: octicons/home-fill-24
+hide_reading_time: true
 ---
 
 # MyBlog
