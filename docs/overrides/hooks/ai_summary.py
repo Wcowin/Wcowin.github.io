@@ -6,59 +6,42 @@ from pathlib import Path
 from datetime import datetime
 import os
 import shutil
-import tempfile
-
-# 🌍 环境检测 - 检查是否在CI环境中运行
-def is_ci_environment():
-    """检测是否在CI环境中运行"""
-    ci_indicators = [
-        'CI',           # 通用CI标识
-        'GITHUB_ACTIONS',  # GitHub Actions
-        'TRAVIS',       # Travis CI
-        'JENKINS_URL',  # Jenkins
-        'BUILDKITE',    # Buildkite
-        'CIRCLECI',     # CircleCI
-        'GITLAB_CI',    # GitLab CI
-        'CONTINUOUS_INTEGRATION'  # 其他CI系统
-    ]
-    
-    return any(os.getenv(indicator) for indicator in ci_indicators)
-
-# 🚫 AI摘要功能控制
-AI_SUMMARY_ENABLED = is_ci_environment()
 
 class AISummaryGenerator:
     def __init__(self):
-        # 如果不在CI环境，跳过初始化
-        if not AI_SUMMARY_ENABLED:
-            print("ℹ️ AI摘要功能已禁用 (本地环境)")
-            self._initialized = False
-            return
+        self.cache_dir = Path("site/.ai_cache")
+        self.cache_dir.mkdir(exist_ok=True)
         
-        # 延迟创建缓存目录，直到真正需要时才创建
-        self._cache_dir = None
-        self._service_config_file = None
+        # 添加服务配置文件，用于跟踪当前使用的服务
+        self.service_config_file = self.cache_dir / "service_config.json"
         
         # 🤖 多AI服务配置
         self.ai_services = {
             'deepseek': {
-                'url': 'https://api.deepseek.com/v1/chat/completions',
-                'model': 'deepseek-chat',
-                'api_key': os.getenv('DEEPSEEK_API_KEY', 'sk-placeholder'),
+                'url': 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
+                'model': 'deepseek-v3-250324',
+                'api_key': os.getenv('DEEPSEEK_API_KEY', '42b2e3d9-454a-4970-a4a3-c6c1fcd6220b'),
                 'max_tokens': 150,
                 'temperature': 0.3
             },
             'openai': {
                 'url': 'https://api.chatanywhere.tech/v1/chat/completions',
-                'model': 'gpt-3.5-turbo',
-                'api_key': os.getenv('OPENAI_API_KEY', 'sk-placeholder'),
+                'model': 'gpt-3.5-turbo',  # 或 'gpt-4', 'gpt-4-turbo'
+                'api_key': os.getenv('OPENAI_API_KEY', 'sk-vTIWRtY595O8K7NxhNMPohGGrEimNFspS6iLDH1yjORy7Lcj'),
                 'max_tokens': 150,
                 'temperature': 0.3
             },
+            # 'claude': {
+            #     'url': 'https://api.anthropic.com/v1/messages',
+            #     'model': 'claude-3-haiku-20240307',
+            #     'api_key': os.getenv('ANTHROPIC_API_KEY', 'your-claude-api-key'),
+            #     'max_tokens': 150,
+            #     'temperature': 0.3
+            # },
             'gemini': {
                 'url': 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
                 'model': 'gemini-pro',
-                'api_key': os.getenv('GOOGLE_API_KEY', 'ai-placeholder'),
+                'api_key': os.getenv('GOOGLE_API_KEY', 'AIzaSyDwWgffCCyVFZVsRasX3B3arWFaCT1PzNI'),
                 'max_tokens': 150,
                 'temperature': 0.3
             }
@@ -68,12 +51,15 @@ class AISummaryGenerator:
         self.default_service = 'deepseek'
         
         # 服务优先级（按顺序尝试）
-        self.service_fallback_order = ['deepseek', 'openai', 'gemini']
+        self.service_fallback_order = ['openai', 'deepseek', 'claude', 'gemini']
         
         # 📂 可自定义的文件夹配置
         self.enabled_folders = [
             'blog/',      # blog文件夹
             'develop/',   # develop文件夹
+            # 'posts/',     # posts文件夹
+            # 'trip/',     # trip文件夹
+            # 'about/',     # about文件夹
         ]
         
         # 📋 排除的文件和文件夹
@@ -91,146 +77,71 @@ class AISummaryGenerator:
             'develop/index.md',
         ]
         
-        # 🌍 语言配置
-        self.summary_language = 'zh'
+        # 🌍 语言配置/Language Configuration
+        self.summary_language = 'zh'  # 默认中文，可选 'zh'、'en'、'both'
         
-        # 延迟初始化标记
-        self._initialized = False
-        
-        print("✅ AI摘要功能已启用 (CI环境)")
-    
-    @property
-    def cache_dir(self):
-        """延迟创建缓存目录"""
-        if not AI_SUMMARY_ENABLED:
-            return None
-            
-        if self._cache_dir is None:
-            try:
-                # 首选：site/.ai_cache
-                preferred_cache = Path("site/.ai_cache")
-                if preferred_cache.parent.exists() or self._try_create_dir(preferred_cache.parent):
-                    self._cache_dir = preferred_cache
-                    self._try_create_dir(self._cache_dir)
-                else:
-                    # 备选：使用临时目录
-                    temp_dir = Path(tempfile.mkdtemp(prefix="mkdocs_ai_cache_"))
-                    self._cache_dir = temp_dir
-                    print(f"📁 使用临时缓存目录: {self._cache_dir}")
-                    
-            except Exception as e:
-                print(f"⚠️ 缓存目录创建失败: {e}")
-                # 最后备选：当前目录下的临时文件夹
-                self._cache_dir = Path(".ai_cache_temp")
-                self._try_create_dir(self._cache_dir)
-                
-        return self._cache_dir
-    
-    def _try_create_dir(self, path):
-        """安全地尝试创建目录"""
-        try:
-            path.mkdir(parents=True, exist_ok=True)
-            return True
-        except (OSError, PermissionError) as e:
-            print(f"⚠️ 无法创建目录 {path}: {e}")
-            return False
-    
-    @property
-    def service_config_file(self):
-        """延迟创建服务配置文件路径"""
-        if not AI_SUMMARY_ENABLED or self.cache_dir is None:
-            return None
-        return self.cache_dir / "service_config.json"
-    
-    def _lazy_init(self):
-        """延迟初始化，只在真正需要时执行"""
-        if not AI_SUMMARY_ENABLED:
-            return False
-            
-        if not self._initialized:
-            try:
-                self._check_service_change()
-                self._initialized = True
-                return True
-            except Exception as e:
-                print(f"⚠️ AI摘要初始化失败: {e}")
-                self._initialized = True
-                return False
-        return True
+        # 检查服务变更并处理缓存
+        self._check_service_change()
     
     def _check_service_change(self):
         """检查AI服务是否发生变更，如有变更则自动清理缓存"""
-        if not AI_SUMMARY_ENABLED or self.service_config_file is None:
-            return
-            
-        try:
-            current_config = {
-                'default_service': self.default_service,
-                'available_services': list(self.ai_services.keys()),
-                'summary_language': self.summary_language,
-                'check_time': datetime.now().isoformat()
-            }
-            
-            if self.service_config_file.exists():
-                try:
-                    with open(self.service_config_file, 'r', encoding='utf-8') as f:
-                        previous_config = json.load(f)
-                    
-                    # 检查默认服务或语言是否变更
-                    if (previous_config.get('default_service') != current_config['default_service'] or
-                        previous_config.get('summary_language') != current_config['summary_language']):
-                        old_service = previous_config.get('default_service', 'unknown')
-                        new_service = current_config['default_service']
-                        old_lang = previous_config.get('summary_language', 'zh')
-                        new_lang = current_config['summary_language']
-                        
-                        if old_service != new_service:
-                            print(f"🔄 检测到AI服务变更: {old_service} → {new_service}")
-                        if old_lang != new_lang:
-                            print(f"🌍 检测到语言变更: {old_lang} → {new_lang}")
-                        
-                        print("🧹 自动清理AI摘要缓存...")
-                        self._clear_cache_safe()
-                        
-                except Exception as e:
-                    print(f"读取服务配置失败: {e}")
-            
-            # 保存当前配置
+        current_config = {
+            'default_service': self.default_service,
+            'available_services': list(self.ai_services.keys()),
+            'summary_language': self.summary_language,
+            'check_time': datetime.now().isoformat()
+        }
+        
+        if self.service_config_file.exists():
             try:
-                with open(self.service_config_file, 'w', encoding='utf-8') as f:
-                    json.dump(current_config, f, ensure_ascii=False, indent=2)
-            except Exception as e:
-                print(f"保存服务配置失败: {e}")
+                with open(self.service_config_file, 'r', encoding='utf-8') as f:
+                    previous_config = json.load(f)
                 
-        except Exception as e:
-            print(f"检查服务变更失败: {e}")
-    
-    def _clear_cache_safe(self):
-        """安全地清理缓存"""
-        if not AI_SUMMARY_ENABLED or self.cache_dir is None:
-            return
-            
+                # 检查默认服务或语言是否变更
+                if (previous_config.get('default_service') != current_config['default_service'] or
+                    previous_config.get('summary_language') != current_config['summary_language']):
+                    old_service = previous_config.get('default_service', 'unknown')
+                    new_service = current_config['default_service']
+                    old_lang = previous_config.get('summary_language', 'zh')
+                    new_lang = current_config['summary_language']
+                    
+                    if old_service != new_service:
+                        print(f"🔄 检测到AI服务变更: {old_service} → {new_service}")
+                    if old_lang != new_lang:
+                        print(f"🌍 检测到语言变更: {old_lang} → {new_lang}")
+                    
+                    print("🧹 自动清理AI摘要缓存...")
+                    
+                    try:
+                        # 删除整个缓存目录
+                        if self.cache_dir.exists():
+                            shutil.rmtree(self.cache_dir)
+                            print(f"✅ 已删除缓存文件夹: {self.cache_dir}")
+                        
+                        # 重新创建缓存目录
+                        self.cache_dir.mkdir(exist_ok=True)
+                        print("📁 已重新创建缓存目录")
+                        
+                    except Exception as e:
+                        print(f"❌ 清理缓存失败: {e}")
+                        # 如果删除失败，尝试清理单个文件
+                        try:
+                            self._clear_cache_files()
+                        except:
+                            print("⚠️ 缓存清理失败，新摘要可能会混用旧配置的缓存")
+                
+            except Exception as e:
+                print(f"读取服务配置失败: {e}")
+        
+        # 保存当前配置
         try:
-            if self.cache_dir.exists():
-                shutil.rmtree(self.cache_dir)
-                print(f"✅ 已删除缓存文件夹: {self.cache_dir}")
-            
-            # 重新创建缓存目录
-            self._try_create_dir(self.cache_dir)
-            print("📁 已重新创建缓存目录")
-            
+            with open(self.service_config_file, 'w', encoding='utf-8') as f:
+                json.dump(current_config, f, ensure_ascii=False, indent=2)
         except Exception as e:
-            print(f"❌ 清理缓存失败: {e}")
-            try:
-                self._clear_cache_files()
-            except:
-                print("⚠️ 缓存清理失败，新摘要可能会混用旧配置的缓存")
+            print(f"保存服务配置失败: {e}")
     
     def _clear_cache_files(self):
         """清理缓存文件（备用方法）"""
-        if not AI_SUMMARY_ENABLED or self.cache_dir is None or not self.cache_dir.exists():
-            return
-            
         cleared_count = 0
         try:
             for cache_file in self.cache_dir.glob("*.json"):
@@ -240,47 +151,77 @@ class AISummaryGenerator:
             print(f"✅ 已清理 {cleared_count} 个缓存文件")
         except Exception as e:
             print(f"❌ 单文件清理失败: {e}")
-
+    
     def configure_ai_service(self, service_name, config=None):
-        """配置AI服务"""
-        if not AI_SUMMARY_ENABLED:
-            print("ℹ️ AI服务配置跳过 (本地环境)")
-            return
-            
+        """
+        配置AI服务
+        
+        Args:
+            service_name: 服务名称 ('deepseek', 'openai', 'azure_openai', 'claude', 'gemini')
+            config: 服务配置字典
+        """
         old_service = self.default_service
         
         if config:
             self.ai_services[service_name] = config
         self.default_service = service_name
         
+        # 如果服务发生变更，自动清理缓存
         if old_service != service_name:
             print(f"🔄 AI服务已切换: {old_service} → {service_name}")
             print("🧹 自动清理所有AI摘要缓存...")
-            self._clear_cache_safe()
+            
+            try:
+                if self.cache_dir.exists():
+                    shutil.rmtree(self.cache_dir)
+                    print(f"✅ 已删除缓存文件夹: {self.cache_dir}")
+                
+                # 重新创建缓存目录
+                self.cache_dir.mkdir(exist_ok=True)
+                print("📁 已重新创建缓存目录")
+                
+            except Exception as e:
+                print(f"❌ 清理缓存失败: {e}")
+                # 如果删除失败，尝试清理单个文件
+                try:
+                    self._clear_cache_files()
+                except:
+                    print("⚠️ 缓存清理失败，新摘要可能会混用旧服务的缓存")
         
+        # 更新服务配置记录
         self._check_service_change()
     
     def configure_language(self, language='zh'):
-        """配置摘要语言"""
-        if not AI_SUMMARY_ENABLED:
-            print("ℹ️ 语言配置跳过 (本地环境)")
-            return
-            
+        """
+        配置摘要语言
+        
+        Args:
+            language: 语言设置 ('zh': 中文, 'en': 英文, 'both': 双语)
+        """
         old_language = self.summary_language
         self.summary_language = language
         
         if old_language != language:
             print(f"🌍 摘要语言已切换: {old_language} → {language}")
             print("🧹 自动清理摘要缓存以应用新语言设置...")
-            self._clear_cache_safe()
+            
+            try:
+                if self.cache_dir.exists():
+                    shutil.rmtree(self.cache_dir)
+                    print(f"✅ 已删除缓存文件夹: {self.cache_dir}")
+                
+                # 重新创建缓存目录
+                self.cache_dir.mkdir(exist_ok=True)
+                print("📁 已重新创建缓存目录")
+                
+            except Exception as e:
+                print(f"❌ 清理缓存失败: {e}")
         
+        # 更新服务配置记录
         self._check_service_change()
     
     def configure_folders(self, folders=None, exclude_patterns=None, exclude_files=None):
         """配置启用AI摘要的文件夹"""
-        if not AI_SUMMARY_ENABLED:
-            return
-            
         if folders is not None:
             self.enabled_folders = folders
         if exclude_patterns is not None:
@@ -295,9 +236,6 @@ class AISummaryGenerator:
     
     def get_cached_summary(self, content_hash):
         """获取缓存的摘要"""
-        if not AI_SUMMARY_ENABLED or self.cache_dir is None:
-            return None
-            
         cache_file = self.cache_dir / f"{content_hash}.json"
         if cache_file.exists():
             try:
@@ -307,15 +245,12 @@ class AISummaryGenerator:
                     cache_time = datetime.fromisoformat(cache_data.get('timestamp', '1970-01-01'))
                     if (datetime.now() - cache_time).days < 7:
                         return cache_data
-            except Exception as e:
-                print(f"⚠️ 读取缓存失败: {e}")
+            except:
+                pass
         return None
     
     def save_summary_cache(self, content_hash, summary_data):
         """保存摘要到缓存"""
-        if not AI_SUMMARY_ENABLED or self.cache_dir is None:
-            return
-            
         cache_file = self.cache_dir / f"{content_hash}.json"
         try:
             summary_data['timestamp'] = datetime.now().isoformat()
@@ -375,7 +310,7 @@ class AISummaryGenerator:
         }
         
         # 根据服务类型添加认证头
-        if 'azure' in service_config.get('url', '').lower():
+        if 'azure_openai' in service_config.get('url', ''):
             headers['api-key'] = service_config['api_key']
         elif 'anthropic.com' in service_config.get('url', ''):
             headers['x-api-key'] = service_config['api_key']
@@ -386,6 +321,10 @@ class AISummaryGenerator:
         else:
             # OpenAI和DeepSeek使用Bearer token
             headers['Authorization'] = f"Bearer {service_config['api_key']}"
+        
+        # 添加额外的头部
+        if 'headers_extra' in service_config:
+            headers.update(service_config['headers_extra'])
         
         return headers
     
@@ -404,6 +343,7 @@ class AISummaryGenerator:
 3. **Format Requirements**:
    - Return summary content directly without any prefix or suffix
    - Use concise declarative sentences
+   - Technical terms are appropriate
 
 Article Title: {page_title}
 
@@ -422,10 +362,12 @@ Please generate summary:"""
    - Accurately summarize the core themes and key points
    - Highlight technical features, application scenarios, or problems solved
    - Use professional but understandable language
+   - Avoid repeating the article title content
 3. **Format Requirements**:
    - First provide Chinese summary
    - Then provide English summary
    - Separate with a blank line
+   - No prefixes or additional formatting
 
 Article Title: {page_title}
 
@@ -446,6 +388,7 @@ Please generate bilingual summary:"""
 3. **格式要求**：
    - 直接返回摘要内容，无需任何前缀或后缀
    - 使用简洁的陈述句
+   - 可以适当使用技术术语
 
 文章标题：{page_title}
 
@@ -532,8 +475,7 @@ Please generate bilingual summary:"""
         service_config = self.ai_services[service_name]
         
         # 检查API密钥
-        api_key = service_config['api_key']
-        if not api_key or api_key.startswith(('your-', 'sk-placeholder', 'ai-placeholder')):
+        if not service_config['api_key'] or service_config['api_key'].startswith('your-'):
             print(f"{service_name} API密钥未配置")
             return None
         
@@ -567,7 +509,7 @@ Please generate bilingual summary:"""
                     return summary
                 
             else:
-                print(f"{service_name} API请求失败: {response.status_code}")
+                print(f"{service_name} API请求失败: {response.status_code} - {response.text}")
                 return None
                 
         except requests.exceptions.RequestException as e:
@@ -579,9 +521,6 @@ Please generate bilingual summary:"""
     
     def generate_ai_summary(self, content, page_title=""):
         """生成AI摘要（支持多服务降级）"""
-        if not AI_SUMMARY_ENABLED:
-            return None, None
-            
         # 按优先级尝试不同服务
         services_to_try = [self.default_service] + [s for s in self.service_fallback_order if s != self.default_service]
         
@@ -692,69 +631,51 @@ Please generate bilingual summary:"""
     
     def process_page(self, markdown, page, config):
         """处理页面，生成AI摘要"""
-        if not AI_SUMMARY_ENABLED:
-            return markdown
-            
-        # 延迟初始化
-        if not self._lazy_init():
-            return markdown
-        
         if not self.should_generate_summary(page, markdown):
             return markdown
         
-        try:
-            clean_content = self.clean_content_for_ai(markdown)
-            
-            # 内容长度检查
-            if len(clean_content) < 100:
-                print(f"📄 内容太短，跳过摘要生成: {page.file.src_path}")
-                return markdown
-            
-            content_hash = self.get_content_hash(clean_content)
-            page_title = getattr(page, 'title', '')
-            
-            # 检查缓存
-            cached_summary = self.get_cached_summary(content_hash)
-            if cached_summary:
-                summary = cached_summary.get('summary', '')
-                ai_service = cached_summary.get('service', 'cached')
-                print(f"✅ 使用缓存摘要: {page.file.src_path}")
-            else:
-                # 生成新摘要
-                lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
-                print(f"🤖 正在生成{lang_desc.get(self.summary_language, '中文')}AI摘要: {page.file.src_path}")
-                summary, ai_service = self.generate_ai_summary(clean_content, page_title)
-                
-                if not summary:
-                    summary = self.generate_fallback_summary(clean_content, page_title)
-                    ai_service = 'fallback'
-                    print(f"📝 使用备用摘要: {page.file.src_path}")
-                else:
-                    print(f"✅ AI摘要生成成功 ({ai_service}): {page.file.src_path}")
-                
-                # 保存到缓存
-                try:
-                    self.save_summary_cache(content_hash, {
-                        'summary': summary,
-                        'service': ai_service,
-                        'page_title': page_title
-                    })
-                except Exception as e:
-                    print(f"⚠️ 保存缓存失败: {e}")
-            
-            # 添加摘要到页面最上面
-            summary_html = self.format_summary(summary, ai_service)
-            return summary_html + '\n\n' + markdown
-            
-        except Exception as e:
-            print(f"❌ 处理页面摘要时出错 {page.file.src_path}: {e}")
+        clean_content = self.clean_content_for_ai(markdown)
+        
+        # 内容长度检查
+        if len(clean_content) < 100:
+            print(f"📄 内容太短，跳过摘要生成: {page.file.src_path}")
             return markdown
+        
+        content_hash = self.get_content_hash(clean_content)
+        page_title = getattr(page, 'title', '')
+        
+        # 检查缓存
+        cached_summary = self.get_cached_summary(content_hash)
+        if cached_summary:
+            summary = cached_summary.get('summary', '')
+            ai_service = cached_summary.get('service', 'cached')
+            print(f"✅ 使用缓存摘要: {page.file.src_path}")
+        else:
+            # 生成新摘要
+            lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
+            print(f"🤖 正在生成{lang_desc.get(self.summary_language, '中文')}AI摘要: {page.file.src_path}")
+            summary, ai_service = self.generate_ai_summary(clean_content, page_title)
+            
+            if not summary:
+                summary = self.generate_fallback_summary(clean_content, page_title)
+                ai_service = 'fallback'
+                print(f"📝 使用备用摘要: {page.file.src_path}")
+            else:
+                print(f"✅ AI摘要生成成功 ({ai_service}): {page.file.src_path}")
+            
+            # 保存到缓存
+            self.save_summary_cache(content_hash, {
+                'summary': summary,
+                'service': ai_service,
+                'page_title': page_title
+            })
+        
+        # 添加摘要到页面最上面
+        summary_html = self.format_summary(summary, ai_service)
+        return summary_html + '\n\n' + markdown
     
     def should_generate_summary(self, page, markdown):
         """判断是否应该生成摘要"""
-        if not AI_SUMMARY_ENABLED:
-            return False
-            
         # 检查页面元数据
         if hasattr(page, 'meta'):
             # 明确禁用
@@ -824,7 +745,7 @@ Please generate bilingual summary:"""
         service_name = name_config.get(ai_service, name_config['fallback'])
         
         # 图标和颜色配置
-        icon = '🤖' if ai_service != 'fallback' else '📝'
+        icon = '💾' if ai_service != 'fallback' else '📝'
         color = 'info' if ai_service != 'fallback' else 'tip'
         
         return f'''!!! {color} "{icon} {service_name}"
@@ -832,24 +753,36 @@ Please generate bilingual summary:"""
 
 '''
 
-# 创建全局实例（条件性）
-if AI_SUMMARY_ENABLED:
-    ai_summary_generator = AISummaryGenerator()
-else:
-    ai_summary_generator = None
+# 创建全局实例
+ai_summary_generator = AISummaryGenerator()
 
-# 🔧 配置函数（环境控制版本）
+# 🔧 配置函数
 def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_files=None, 
                         ai_service=None, service_config=None, language='zh'):
-    """配置AI摘要功能（环境控制版本）"""
-    if not AI_SUMMARY_ENABLED:
-        print("ℹ️ AI摘要配置跳过 (本地环境)")
-        return
+    """
+    配置AI摘要功能（支持多语言版本）
     
-    if ai_summary_generator is None:
-        print("⚠️ AI摘要生成器未初始化")
-        return
+    Args:
+        enabled_folders: 启用AI摘要的文件夹列表
+        exclude_patterns: 排除的模式列表
+        exclude_files: 排除的特定文件列表
+        ai_service: 使用的AI服务 ('deepseek', 'openai', 'claude', 'gemini')
+        service_config: AI服务配置
+        language: 摘要语言 ('zh': 中文, 'en': 英文, 'both': 双语)
     
+    Example:
+        # 配置英文摘要
+        configure_ai_summary(
+            enabled_folders=['blog/', 'docs/'],
+            ai_service='openai',
+            language='en'
+        )
+        
+        # 配置双语摘要
+        configure_ai_summary(
+            language='both'
+        )
+    """
     ai_summary_generator.configure_folders(enabled_folders, exclude_patterns, exclude_files)
     ai_summary_generator.configure_language(language)
     
@@ -862,26 +795,31 @@ def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_fi
         else:
             ai_summary_generator.configure_ai_service(ai_service)
 
+# 新增语言配置函数
 def configure_summary_language(language='zh'):
-    """配置摘要语言（环境控制版本）"""
-    if not AI_SUMMARY_ENABLED:
-        print("ℹ️ 语言配置跳过 (本地环境)")
-        return
+    """
+    配置摘要语言
     
-    if ai_summary_generator is None:
-        print("⚠️ AI摘要生成器未初始化")
-        return
+    Args:
+        language: 语言设置
+            'zh': 中文摘要
+            'en': 英文摘要  
+            'both': 双语摘要（中英文）
     
+    Example:
+        # 切换到英文摘要
+        configure_summary_language('en')
+        
+        # 切换到双语摘要
+        configure_summary_language('both')
+    """
     ai_summary_generator.configure_language(language)
     lang_names = {'zh': '中文', 'en': '英文', 'both': '双语'}
     print(f"✅ 摘要语言配置完成: {lang_names.get(language, language)}")
 
+# 新增手动清理缓存函数
 def clear_ai_cache():
-    """手动清理AI摘要缓存（环境控制版本）"""
-    if not AI_SUMMARY_ENABLED:
-        print("ℹ️ 缓存清理跳过 (本地环境)")
-        return
-    
+    """手动清理AI摘要缓存"""
     try:
         cache_dir = Path("site/.ai_cache")
         if cache_dir.exists():
@@ -894,25 +832,5 @@ def clear_ai_cache():
         print(f"❌ 手动清理缓存失败: {e}")
 
 def on_page_markdown(markdown, page, config, files):
-    """MkDocs hook入口点（环境控制版本）"""
-    # 如果AI摘要功能被禁用或生成器未初始化，直接返回原内容
-    if not AI_SUMMARY_ENABLED or ai_summary_generator is None:
-        return markdown
-    
+    """MkDocs hook入口点"""
     return ai_summary_generator.process_page(markdown, page, config)
-
-# 🌍 环境配置信息
-if AI_SUMMARY_ENABLED:
-    print("🤖 AI摘要系统: 已启用 (CI环境)")
-    detected_ci = [key for key in ['CI', 'GITHUB_ACTIONS', 'TRAVIS', 'JENKINS_URL', 'BUILDKITE', 'CIRCLECI', 'GITLAB_CI'] if os.getenv(key)]
-    if detected_ci:
-        print(f"   检测到的CI环境: {detected_ci}")
-    
-    # 在CI环境中配置AI摘要
-    configure_ai_summary(
-        enabled_folders=['blog/', 'develop/'],  # 启用blog和develop文件夹
-        language='zh'                           # 中文摘要
-    )
-else:
-    print("🚫 AI摘要系统: 已禁用 (本地环境)")
-    print("   💡 提示: AI摘要只在CI部署时启用，本地开发时跳过以提高构建速度")
