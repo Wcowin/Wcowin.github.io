@@ -1,7 +1,7 @@
 {
-  "summary": "页脚设置  \n\nMkDocs 支持自定义页脚.[图片：]\n\n在docs/overrides/partials/footer.html中（没有该文件时，创建footer.",
-  "service": "fallback",
+  "summary": "MkDocs允许通过自定义footer.html文件实现页脚个性化配置。用户需在docs/overrides/partials/目录下创建或修改该文件，插入指定HTML代码即可覆盖默认页脚样式。此功能适用于需要展示版权信息、导航链接等场景，通过模板覆盖机制实现灵活的前端定制。",
+  "service": "deepseek",
   "page_title": "页脚设置",
-  "timestamp": "2025-06-03T12:03:01.827308",
+  "timestamp": "2025-06-03T12:15:05.571043",
   "language": "zh"
 }

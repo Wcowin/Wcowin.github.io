@@ -1,7 +1,7 @@
 {
-  "summary": "鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站.",
-  "service": "fallback",
+  "summary": "MkDocs因其轻量高效的特点，被django-rest-framework、FastAPI等知名开源项目选为文档站点生成工具。本文汇总了多个基于MkDocs搭建的实用站点案例，涵盖算法教程、技术文档、个人博客等场景，展示了其在开源项目和个人知识管理中的广泛应用。这些案例为开发者提供了主题选择和建站参考。",
+  "service": "deepseek",
   "page_title": "基于Mkdocs主题的站点",
-  "timestamp": "2025-06-03T12:03:01.358511",
+  "timestamp": "2025-06-03T12:14:06.157596",
   "language": "zh"
 }

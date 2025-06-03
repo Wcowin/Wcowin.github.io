@@ -1,7 +1,7 @@
 {
-  "summary": "png]\n\n如何设计\n新建css文件，在mkdocs.示例  \n[图片：iShot_2024-04-26_12.png]  \n[图片：image.",
-  "service": "fallback",
+  "summary": "本文介绍了网页圆角化设计的实现方法，包括图片和边框的圆角处理技术。通过CSS文件配置和代码示例，详细说明了在mkdocs.yml中引入样式、使用grid cards布局以及创建圆角按钮的具体步骤。文章提供了完整的代码片段和效果展示，帮助开发者快速实现现代化UI设计效果，适用于文档网站和Web应用的美化需求。",
+  "service": "deepseek",
   "page_title": "网页圆角化设计",
-  "timestamp": "2025-06-03T12:03:02.009646",
+  "timestamp": "2025-06-03T12:15:44.294852",
   "language": "zh"
 }

@@ -1,7 +1,7 @@
 {
-  "summary": "[How to set up Material for MkDocs]: https://space.com/1407028951/lists/4566631.type=series\n\n一、准备工作\n\n1.",
-  "service": "fallback",
+  "summary": "本文详细介绍了使用MkDocs构建静态网站并部署到GitHub Pages的完整流程。重点包括：通过GitHub Desktop管理仓库、配置mkdocs.yml文件、添加GitHub Workflow自动化部署，以及最终发布网站的步骤。教程特别强调了目录结构管理和关键配置项设置，适合需要快速搭建文档类网站的开发人员。文中提供了具体代码示例和可视化指引，并推荐了Material for MkDocs主题进行美化。",
+  "service": "deepseek",
   "page_title": "1.利用Mkdocs部署静态网页",
-  "timestamp": "2025-06-03T12:03:00.952660",
+  "timestamp": "2025-06-03T12:12:47.108581",
   "language": "zh"
 }

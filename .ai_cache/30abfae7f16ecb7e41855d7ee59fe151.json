@@ -1,7 +1,7 @@
 {
-  "summary": "我目前在用的字体：霞鹜文楷{target=_blank}  \n想必你可以直观从我的网站感受到，这款字体的美观程度.> - 若需要在网站上使用这款字体，请参阅 Issue #24.",
-  "service": "fallback",
+  "summary": "霞鹜文楷是一款基于FONTWORKS Klee One衍生的开源中文字体，兼具仿宋和楷体特点，适合屏幕阅读和中等长度文本排版。提供多个版本，包括屏幕阅读版、轻便版、GB/TC规范版等，支持简繁日韩字符。作为开源项目，它解决了商业字体补全的版权问题，并通过深度学习生成部分字形。用户可通过GitHub、Gitee等平台获取，支持Windows、macOS等系统安装。",
+  "service": "deepseek",
   "page_title": "修改网站字体",
-  "timestamp": "2025-06-03T12:03:01.902660",
+  "timestamp": "2025-06-03T12:15:26.464969",
   "language": "zh"
 }

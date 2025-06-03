@@ -1,7 +1,7 @@
 {
-  "summary": "/math`\n\n​\n感兴趣的可以去研究背后的数学知识，地址：[donut.代码如下\n``[代码]`[代码]gcc math.c without a math library\n\n​.",
-  "service": "fallback",
+  "summary": "该文章展示了一段动态生成3D甜甜圈动画的C语言代码，通过终端字符模拟旋转效果。核心亮点在于仅用基础数学运算实现复杂图形渲染，无需依赖数学库。代码通过极坐标转换和光照计算生成立体感，适用于图形编程教学或终端动画开发。附源码链接供深入研究数学原理。",
+  "service": "deepseek",
   "page_title": "甜甜圈🍩代码",
-  "timestamp": "2025-06-03T12:03:01.651027",
+  "timestamp": "2025-06-03T12:14:35.758557",
   "language": "zh"
 }

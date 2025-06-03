@@ -1,7 +1,7 @@
 {
-  "summary": "推荐阅读：\n\n- 润学之为什么润.",
-  "service": "fallback",
+  "summary": "科学上网通过客户端工具（如Clash、Shadowrocket）和订阅节点实现访问受限网络，支持多平台包括iOS/Android/PC。流程包括获取客户端、导入节点并连接，推荐工具和机场资源。强调合法用途，主要用于访问GitHub等学习资源，需遵守法律法规。提供详细教程和下载指引。",
+  "service": "deepseek",
   "page_title": "科学上网",
-  "timestamp": "2025-06-03T12:03:01.491484",
+  "timestamp": "2025-06-03T12:14:25.988672",
   "language": "zh"
 }

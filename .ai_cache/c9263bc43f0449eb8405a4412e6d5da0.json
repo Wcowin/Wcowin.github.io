@@ -1,7 +1,7 @@
 {
-  "summary": "tip\n图片加载不出来挂梯子即可\n\n一、Github+cloudflare图床\n比如我的图床：[代码]  \n举个例子：https://myimgs.",
-  "service": "fallback",
+  "summary": "本文介绍了两种搭建个人图床的方案：一是基于Github+Cloudflare的技术方案，通过创建仓库、配置Pages服务实现图片托管，并详细说明了图片路径生成规则；二是推荐了SMMS等免费图床平台及PicGo等上传工具。方案一适合技术用户自主搭建，方案二操作更简便，适合快速使用。两种方式均可解决图片外链存储问题。",
+  "service": "deepseek",
   "page_title": "搭建个人图床",
-  "timestamp": "2025-06-03T12:03:01.669157",
+  "timestamp": "2025-06-03T12:14:41.308182",
   "language": "zh"
 }

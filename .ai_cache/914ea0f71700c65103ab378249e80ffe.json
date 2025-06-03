@@ -1,7 +1,7 @@
 {
-  "summary": "安装脚本管理器\n比较知名的脚本管理器有：Tampermonkey ，Violentmonkey ，Greasemonkey.这里以功能最强的 Tampermonkey  为例：.",
-  "service": "fallback",
+  "summary": "Tampermonkey是一款功能强大的浏览器脚本管理器，通过安装用户脚本可优化网页浏览体验，如添加新功能、屏蔽广告等。文章介绍了其安装方法及Edge下载地址，并推荐了多个实用脚本平台（如GreasyFork）和常用脚本，包括网盘直链下载、CSDN广告过滤、VIP视频破解等，显著提升网页操作效率与个性化需求。",
+  "service": "deepseek",
   "page_title": "实用脚本分享",
-  "timestamp": "2025-06-03T12:03:01.390010",
+  "timestamp": "2025-06-03T12:14:15.843924",
   "language": "zh"
 }

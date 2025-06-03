@@ -1,7 +1,7 @@
 {
-  "summary": "已经不是一种服务而是一项技术，可以说是目前的新GCM使用了这个技术来实现，而其实每个软件都可以有自己的FCM服务.也可以理解成微服务，新的GCM是一种完整实现.",
-  "service": "fallback",
+  "summary": "谷歌翻译在中国大陆因DNS变更导致服务异常，用户需通过修改hosts文件或网关转发恢复访问。FCM服务则因IP阻断无法使用。技术分析显示，Google主动停用国内翻译服务，官方解释为\"使用率低\"。解决方案包括配置TUN模式网卡或修改本地DNS记录，但UWP应用受沙盒限制需特殊处理。核心问题源于Google将translate.google.com解析至被屏蔽IP段。",
+  "service": "deepseek",
   "page_title": "解决谷歌翻译用不了的问题",
-  "timestamp": "2025-06-03T12:03:01.375402",
+  "timestamp": "2025-06-03T12:14:11.324468",
   "language": "zh"
 }

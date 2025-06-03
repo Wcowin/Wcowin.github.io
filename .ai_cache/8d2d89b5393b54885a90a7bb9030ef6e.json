@@ -1,7 +1,7 @@
 {
-  "summary": "Note\n\n以下代码均在[代码]下复制粘贴\n\n-->\n\n// 获取当前页面的 URL\nvar currentPage = window.",
-  "service": "fallback",
+  "summary": "该技术文档介绍了三种网页背景特效的实现方法：雪花、樱花和粒子效果。通过JavaScript动态检测页面URL，利用LocalStorage存储显示标志，并动态加载外部脚本实现特效渲染。代码示例展示了如何根据不同页面条件触发特定特效，适用于美化博客或个性化网站场景。",
+  "service": "deepseek",
   "page_title": "背景特效",
-  "timestamp": "2025-06-03T12:03:01.776276",
+  "timestamp": "2025-06-03T12:15:01.607600",
   "language": "zh"
 }

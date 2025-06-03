@@ -1,7 +1,7 @@
 {
-  "summary": "本项目深受 utterances 的启发.所有数据均储存在 GitHub Discussions 中.:octocat:\n支持自定义主题.🔧\n自动从 GitHub 拉取新评论与编辑.",
-  "service": "fallback",
+  "summary": "giscus是基于GitHub Discussions的开源评论系统，无需数据库，数据直接存储在GitHub中。它具有无跟踪、无广告、永久免费的特点，支持多语言、自定义主题和高可配置性。系统能自动同步GitHub上的评论更新，并允许自建服务。通过简单配置即可集成到网站，为开发者提供轻量高效的评论解决方案。",
+  "service": "deepseek",
   "page_title": "添加评论系统(giscus为例)",
-  "timestamp": "2025-06-03T12:03:01.857337",
+  "timestamp": "2025-06-03T12:15:14.945572",
   "language": "zh"
 }
