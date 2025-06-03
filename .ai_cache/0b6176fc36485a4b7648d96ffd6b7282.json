@@ -1,7 +1,7 @@
 {
-  "summary": "MkDocs支持通过自定义HTML文件实现页脚个性化配置。用户需在`docs/overrides/partials/`目录下创建或修改`footer.html`文件，插入定制化代码即可覆盖默认页脚样式。该功能适用于需要品牌标识、版权声明或导航链接等场景，通过模板覆盖机制实现灵活部署。",
+  "summary": "MkDocs允许通过自定义footer.html文件实现页脚个性化配置。用户需在docs/overrides/partials/目录下创建或修改该文件，插入HTML代码即可定制页脚内容。此功能适用于文档站点底部信息展示，支持版权声明、导航链接等元素的灵活布局，无需修改主题核心文件即可实现样式覆盖。",
   "service": "deepseek",
   "page_title": "页脚设置",
-  "timestamp": "2025-06-03T12:56:06.171595",
+  "timestamp": "2025-06-03T13:49:57.512173",
   "language": "zh"
 }

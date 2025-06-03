@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了将Python脚本(.py)打包成Windows可执行程序(.exe)的方法，重点讲解了使用PyInstaller工具的实现步骤。该方法解决了Python程序在没有安装Python环境的计算机上运行的问题，支持单文件或多文件打包，并可自定义图标和依赖项。适用于需要分发Python应用程序的场景，显著提升了程序的便携性和易用性。",
+  "summary": "本文介绍了将Python脚本(.py)打包为Windows可执行程序(.exe)的方法，重点讲解了使用PyInstaller工具的实现步骤。该方法解决了Python程序在没有Python环境的机器上运行的问题，支持单文件或多文件打包，可自定义图标和依赖项管理。适用于需要分发Python程序给终端用户的场景，是Python开发者必备的部署技能之一。",
   "service": "deepseek",
   "page_title": "将Python文件.py打包成.exe可执行程序",
-  "timestamp": "2025-06-03T12:55:02.634871",
+  "timestamp": "2025-06-03T13:48:47.022572",
   "language": "zh"
 }
