@@ -3723,6 +3723,10 @@
 
   <h1>提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法</h1>
 
+<div class="admonition info">
+<p class="admonition-title">📖 阅读信息</p>
+<p>阅读时间：<strong>2</strong> 分钟 | 中文字符：<strong>763</strong> | 有效代码行数：<strong>8</strong></p>
+</div>
 <h2 id="_1">常见的几种报错<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>xxx已损坏，无法打开，你应该将它移到废纸篓解决办法  </li>
@@ -3735,13 +3739,11 @@
 <p>苹果默认是只允许安装自家【App Store】来源的应用，如果你想安装第三方的应用，那么需要在【系统偏 好设置 -&gt; 安全性与隐私 -&gt; 通用】中勾选【App Store 和被认可的开发者】选项。而被认可的开发者是需要购买苹果的企业证书对应用进行签名，然后再提交给苹果审核才可以，这对破解应用来说很不现实，因为破解应用必定会修改应用的文件从而导致签名失效而运行显示【已损坏】。另外一些开源免费类应用没有收益（用户主动打赏太难了），所以开发者一般也不会购买证书签名。  </p>
 <p>解决方法就是去开启【任何来源】选项了，但是 macOS 默认是隐藏了这个设置的，需要用户手动通过终端执行命令行代码来开启。</p>
 <h2 id="_3">开启任何来源<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>先打开 系统偏好设置 -&gt; 安全与隐私 -&gt; 通用 选项卡，检查是否已经启用了 任何来源 选项。
-<img alt="" src="https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291828413.png" /></p>
+<p>先打开 系统偏好设置 -&gt; 安全与隐私 -&gt; 通用 选项卡，检查是否已经启用了 任何来源 选项。</p>
 <p>如果没有这个选项，复制以下面的命令：
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo spctl --master-disable
 </code></pre></div></td></tr></table></div>
-打开终端，右键粘贴上面命令，回车并输入密码： 
-<img alt="" src="https://onstom.oss-accelerate.aliyuncs.com/picgo/202112291829815.png" /></p>
+打开终端，右键粘贴上面命令，回车并输入密码： </p>
 <p>然而有的应用开启了任何来源还是不行，这是因为苹果进一步收缩了对未签名应用的权限，这时候就需要过终端执行命令行代码来绕过应用签名认证。  </p>
 <h2 id="_4">绕过公证<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>打开终端，输入以下命令：
@@ -3802,7 +3804,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2023年3月24日 09:41:06 UTC">2023-03-24</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年6月3日 06:37:05 UTC">2025-06-03</span>
   </span>
 
     
@@ -4162,7 +4164,7 @@
     
       <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
+        <script src="../../../javascripts/extra.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
