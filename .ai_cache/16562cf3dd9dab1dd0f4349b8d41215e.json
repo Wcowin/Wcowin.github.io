@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍如何通过git-revision-date-localized插件为MKdocs文档添加文章修订时间戳。该方法通过在GitHub Actions工作流中配置ci.yml文件，优化了本地渲染性能，仅在发布时获取git历史记录，既提升了渲染速度又确保了时间戳的准确显示。技术实现简单，适用于需要展示文档更新时间的文档系统。",
+  "summary": "MKdocs通过git-revision-date-localized插件实现文章修订时间戳功能，自动在页面底部显示最后更新日期。优化方案包括修改ci.yml配置，默认禁用本地渲染时的git历史检查以提升速度，仅在发布时启用完整时间戳生成。该方法兼顾了开发效率和发布准确性，适用于需要追踪文档变更的静态站点。",
   "service": "deepseek",
   "page_title": "为MKdocs添加文章修订时间戳",
-  "timestamp": "2025-06-03T12:15:35.307585",
+  "timestamp": "2025-06-03T12:56:32.740198",
   "language": "zh"
 }

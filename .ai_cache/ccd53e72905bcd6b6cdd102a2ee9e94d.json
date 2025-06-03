@@ -1,7 +1,7 @@
 {
-  "summary": "本文提供了两种解决Mac无法访问GitHub的技术方案。方案一通过修改系统hosts文件，需使用备份替换原文件并更新GitHub的IP地址。方案二建议查询GitHub的DNS记录，选择TTL值最小且响应最快的IP进行访问。两种方法均针对DNS解析问题，操作步骤清晰，适用于开发者快速恢复GitHub连接。",
+  "summary": "本文提供了两种解决mac无法访问GitHub的方法：一是通过修改系统hosts文件，需备份替换原文件并更新GitHub的IP地址；二是查询GitHub的DNS记录，选择TTL值最小、响应最快的IP直接访问。方案一需使用终端命令定位hosts文件路径并谨慎编辑，方案二适用于hosts修改无效的情况。两种方法均针对DNS解析问题，操作需注意系统权限和网络配置。",
   "service": "deepseek",
   "page_title": "mac 无法访问 github 的解决办法",
-  "timestamp": "2025-06-03T12:12:07.116610",
+  "timestamp": "2025-06-03T12:53:16.137704",
   "language": "zh"
 }
