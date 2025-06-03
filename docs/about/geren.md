@@ -7,6 +7,7 @@ hide:
 #   - footer
 status: new
 # ai_summary: true
+hide_reading_time: true
 ---
 
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
