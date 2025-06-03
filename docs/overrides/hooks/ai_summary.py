@@ -10,7 +10,7 @@ import shutil
 class AISummaryGenerator:
     def __init__(self):
         self.cache_dir = Path("site/.ai_cache")
-        self.cache_dir.mkdir(exist_ok=True)
+        self.cache_dir.mkdir(parents=True, exist_ok=True)  # 添加 parents=True
         
         # 添加服务配置文件，用于跟踪当前使用的服务
         self.service_config_file = self.cache_dir / "service_config.json"
