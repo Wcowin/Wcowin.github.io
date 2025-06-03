@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了科学上网的基本流程和工具，包括Clash、Shadowrocket等客户端的使用方法，涵盖iOS、Android、PC/Mac等平台。提供了订阅节点获取、客户端配置教程及推荐机场，强调科学上网应合法用于学习访问GitHub等网站，并附有详细图文教程和资源链接。",
+  "summary": "科学上网通过客户端工具（如Clash、Shadowrocket）和订阅节点实现访问受限内容，支持多平台包括iOS/Android/PC。流程包括获取客户端、导入节点并连接，推荐工具和机场资源，强调合法用途。适用于访问GitHub等学习资源，需遵守法律法规。",
   "service": "deepseek",
   "page_title": "科学上网",
-  "timestamp": "2025-06-03T13:49:17.297338",
+  "timestamp": "2025-06-03T14:15:34.006813",
   "language": "zh"
 }

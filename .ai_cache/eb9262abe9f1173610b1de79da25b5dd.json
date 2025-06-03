@@ -1,7 +1,7 @@
 {
-  "summary": "giscus是一款基于GitHub Discussions的开源评论系统，无需数据库，数据直接存储在GitHub中。它具备无跟踪、无广告、永久免费的特点，支持多语言、自定义主题和高可配置性。系统能自动同步GitHub上的评论更新，适用于静态网站集成，提供简洁的代码配置示例。作为utterances的衍生项目，giscus为开发者提供了轻量且隐私友好的评论解决方案。",
+  "summary": "giscus是基于GitHub Discussions的开源评论系统，无需数据库且完全免费。它支持多语言、自定义主题和高可配置性，数据自动同步GitHub Discussions。相比传统方案，giscus无跟踪和广告，适合开发者快速集成到静态网站。文章详细介绍了在mkdocs中的配置方法，并对比了类似工具twikoo的特点。",
   "service": "deepseek",
   "page_title": "添加评论系统(giscus为例)",
-  "timestamp": "2025-06-03T13:50:05.586640",
+  "timestamp": "2025-06-03T14:16:26.440335",
   "language": "zh"
 }
