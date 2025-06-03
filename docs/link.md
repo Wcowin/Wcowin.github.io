@@ -831,7 +831,17 @@ hide:
       </div> 
     </div> 
     </div>
-
+    <div class="card"> 
+    <img class="ava" src="https://s1.imagehub.cc/images/2025/06/03/6c3c7438679c077410dd5439d09da78b.jpg" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://r-z-zhang-ai.github.io/" target="_blank">吉吉学弟的小站</a> 
+      </div> 
+      <div class="info">
+      一生所寻不过爱与自由
+      </div> 
+    </div> 
+    </div>
 
 
 
