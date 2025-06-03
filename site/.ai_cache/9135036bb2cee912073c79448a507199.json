@@ -1,0 +1,7 @@
+{
+  "summary": "本文介绍了通过JavaScript和CSS自定义网页鼠标样式的方法，重点说明了关键参数设置，包括鼠标尺寸、颜色（支持RGB值和颜色名称）以及圆形跟随效果。技术实现需在mkdocs.yml中引入相关文件，并通过修改extra.css调整视觉效果。适用于需要个性化交互设计的网页开发场景。",
+  "service": "deepseek",
+  "page_title": "JS实现鼠标样式",
+  "timestamp": "2025-06-03T19:33:35.586777",
+  "language": "zh"
+}
