@@ -31,7 +31,7 @@ class AISummaryGenerator:
             # CI缓存策略：从环境变量AI_SUMMARY_CI_ONLY_CACHE读取，默认为'false'
             # false = CI环境中允许调用AI API生成新摘要
             # true = CI环境中仅使用已有缓存，不调用AI API（节省API费用和构建时间）
-            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',  # CI 中也允许生成新摘要
+            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'true').lower() == 'true',  # CI 中也允许生成新摘要
             
             # CI备用摘要控制：从环境变量AI_SUMMARY_CI_FALLBACK读取，默认为'true'
             # true = 当AI服务不可用时，启用基于关键词的本地备用摘要生成
