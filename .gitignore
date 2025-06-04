@@ -3,4 +3,3 @@
 .env.local
 .env.*.local
 *.key
-site/.ai_cache/
