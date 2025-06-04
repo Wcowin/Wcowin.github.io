@@ -5,6 +5,7 @@
 """
 
 import shutil
+import json
 from pathlib import Path
 
 def migrate_cache():
@@ -18,7 +19,7 @@ def migrate_cache():
     
     if not old_cache_dir.exists():
         print("❌ 源缓存目录不存在")
-        return
+        return False
     
     # 创建目标目录
     new_cache_dir.mkdir(exist_ok=True)
@@ -29,30 +30,66 @@ def migrate_cache():
     
     for cache_file in cache_files:
         target_file = new_cache_dir / cache_file.name
-        shutil.copy2(cache_file, target_file)
-        print(f"✅ 复制: {cache_file.name}")
-        copied_count += 1
+        try:
+            shutil.copy2(cache_file, target_file)
+            print(f"✅ 复制: {cache_file.name}")
+            copied_count += 1
+        except Exception as e:
+            print(f"❌ 复制失败 {cache_file.name}: {e}")
     
     print(f"🎉 迁移完成！共复制 {copied_count} 个缓存文件")
     
-    # 更新 .gitignore
-    gitignore_path = Path(".gitignore")
-    if gitignore_path.exists():
-        with open(gitignore_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        if "!.ai_cache/" not in content:
-            with open(gitignore_path, 'a', encoding='utf-8') as f:
-                f.write("\n# AI 摘要缓存目录\n!.ai_cache/\n")
-            print("✅ 已更新 .gitignore 文件")
+    if copied_count > 0:
+        print("\n📋 迁移的缓存文件详情:")
+        for cache_file in new_cache_dir.glob("*.json"):
+            if cache_file.name != "service_config.json":
+                try:
+                    with open(cache_file, 'r', encoding='utf-8') as f:
+                        cache_data = json.load(f)
+                    page_title = cache_data.get('page_title', 'unknown')
+                    service = cache_data.get('service', 'unknown')
+                    print(f"  - {cache_file.name}: {page_title} ({service})")
+                except:
+                    print(f"  - {cache_file.name}: (读取失败)")
     
-    print("\n🎯 下一步操作：")
-    print("1. 提交新的缓存目录：")
-    print("   git add .ai_cache/")
-    print("   git add .gitignore")
-    print("   git commit -m 'Migrate AI cache to root directory'")
-    print("   git push")
-    print("2. 部署时将使用根目录的缓存文件")
+    return copied_count > 0
+
+def update_gitignore():
+    """更新 .gitignore 文件"""
+    gitignore_path = Path(".gitignore")
+    
+    if not gitignore_path.exists():
+        print("⚠️ .gitignore 文件不存在")
+        return
+    
+    with open(gitignore_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # 检查是否已经包含根目录缓存配置
+    if "!.ai_cache/" not in content:
+        # 添加配置
+        new_content = content.rstrip() + "\n\n# AI 摘要缓存目录（项目根目录）\n!.ai_cache/\n"
+        
+        with open(gitignore_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        
+        print("✅ 已更新 .gitignore 文件")
+    else:
+        print("ℹ️ .gitignore 已包含缓存配置")
 
 if __name__ == '__main__':
-    migrate_cache()
+    success = migrate_cache()
+    
+    if success:
+        update_gitignore()
+        
+        print("\n🎯 下一步操作：")
+        print("1. 提交新的缓存目录：")
+        print("   git add .ai_cache/")
+        print("   git add .gitignore")
+        print("   git commit -m 'Migrate AI cache to root directory to avoid CI cleanup'")
+        print("   git push")
+        print("\n2. 下次部署时将使用根目录的缓存文件")
+        print("3. CI 构建不会再清理这些缓存文件")
+    else:
+        print("\n❌ 迁移失败，请检查源缓存目录是否存在")

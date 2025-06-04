@@ -1,0 +1,7 @@
+{
+  "summary": "文章介绍了修复Mac系统Launchpad图标顺序错乱的两种方法：通过删除desktoppicture.db文件或终端命令重置Dock图标数据库，以及使用终端命令重置Launchpad图标数据库。操作完成后，系统会自动恢复默认排列，用户可重新自定义App布局。这些方法能有效解决图标排列异常问题。",
+  "service": "deepseek",
+  "page_title": "启动台图标顺序错乱怎么办",
+  "timestamp": "2025-06-03T19:30:12.586575",
+  "language": "zh"
+}

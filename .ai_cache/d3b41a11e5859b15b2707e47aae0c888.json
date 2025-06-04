@@ -1,0 +1,7 @@
+{
+  "summary": "本文详细介绍了Mkdocs的配置文件mkdocs.yml的定制方法，包括主题颜色设置、导航功能配置、搜索优化、多语言支持等核心功能。重点讲解了如何通过YAML配置实现暗黑模式切换、目录结构优化、代码复制等实用特性，并提供了扩展Markdown语法、添加自定义CSS/JS的方法。文章还涉及标签系统实现和元数据配置技巧，为开发者提供了全面的Mkdocs主题定制指南。",
+  "service": "deepseek",
+  "page_title": "2.Mkdocs配置说明(mkdocs.yml)",
+  "timestamp": "2025-06-03T19:31:09.653135",
+  "language": "zh"
+}

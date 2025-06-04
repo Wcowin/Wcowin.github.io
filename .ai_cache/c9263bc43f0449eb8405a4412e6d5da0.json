@@ -1,0 +1,7 @@
+{
+  "summary": "本文介绍了两种搭建个人图床的方案：基于Github+Cloudflare的自建方案和第三方免费图床服务。自建方案通过创建Git仓库并利用Cloudflare Pages部署，实现图片托管和CDN加速；第三方服务如SMMS提供简单上传功能。文章还推荐了PicGo等图床上传工具，详细说明了自建图床的配置步骤和访问路径生成方法。",
+  "service": "deepseek",
+  "page_title": "搭建个人图床",
+  "timestamp": "2025-06-03T19:32:53.462873",
+  "language": "zh"
+}
