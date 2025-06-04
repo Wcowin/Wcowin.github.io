@@ -12,17 +12,15 @@ import shutil
 
 class AISummaryGenerator:
     def __init__(self):
-        # 修改缓存路径策略 - CI 环境使用项目根目录，避免被构建过程清理
-        if self.is_ci_environment():
-            # CI 环境：使用项目根目录的缓存，避免被 mkdocs build --clean 清理
-            self.cache_dir = Path(".ai_cache")
-        else:
-            # 本地环境：保持使用 site 目录
-            self.cache_dir = Path("site/.ai_cache")
-            
+        # 🔄 自动缓存迁移逻辑（一次性迁移旧缓存）
+        self._auto_migrate_cache()
+        
+        # 🗂️ 统一缓存路径策略 - 本地和CI环境都使用项目根目录
+        # 这样避免了CI构建时被清理，也简化了路径管理
+        self.cache_dir = Path(".ai_cache")
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         
-        # 🚀 CI 环境配置 - 默认只在 CI 环环境中启用
+        # 🚀 CI 环境配置 - 默认只在 CI 环境中启用
         self.ci_config = {
             # CI环境启用控制：从环境变量AI_SUMMARY_CI_ENABLED读取，默认为'true'
             # 控制是否在CI/CD环境（如GitHub Actions、GitLab CI等）中启用AI摘要功能
@@ -30,10 +28,10 @@ class AISummaryGenerator:
             
             # 本地环境启用控制：从环境变量AI_SUMMARY_LOCAL_ENABLED读取，默认为'false'
             # 控制是否在本地开发环境中启用AI摘要功能，默认禁用以避免开发时产生API费用
-            'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',  # 默认本地禁用
+            # 'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',  # 默认本地禁用
             
             # 下面这行是被注释的备选配置，如果启用则本地环境默认开启AI摘要
-            # 'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',  # 默认本地启用
+            'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',  # 默认本地启用
             
             # CI缓存策略：从环境变量AI_SUMMARY_CI_ONLY_CACHE读取，默认为'true'
             # true = CI环境中仅使用已有缓存，不调用AI API（节省API费用和构建时间）
@@ -763,6 +761,48 @@ Please generate bilingual summary:"""
             return 'AWS CodeBuild'
         else:
             return 'Unknown CI'
+    
+    def _auto_migrate_cache(self):
+        """自动迁移缓存文件（仅在需要时执行一次）"""
+        old_cache_dir = Path("site/.ai_cache")
+        new_cache_dir = Path(".ai_cache")
+        
+        # 检查是否需要迁移
+        if old_cache_dir.exists() and not new_cache_dir.exists():
+            print("🔄 检测到旧缓存目录，开始自动迁移...")
+            
+            try:
+                # 创建新目录
+                new_cache_dir.mkdir(exist_ok=True)
+                
+                # 复制文件
+                cache_files = list(old_cache_dir.glob("*.json"))
+                copied_count = 0
+                
+                for cache_file in cache_files:
+                    target_file = new_cache_dir / cache_file.name
+                    try:
+                        shutil.copy2(cache_file, target_file)
+                        copied_count += 1
+                    except Exception as e:
+                        print(f"⚠️ 复制缓存文件失败 {cache_file.name}: {e}")
+                
+                if copied_count > 0:
+                    print(f"✅ 自动迁移完成！共迁移 {copied_count} 个缓存文件")
+                    print("💡 提示：请将 .ai_cache 目录提交到 Git 仓库")
+                else:
+                    print("ℹ️ 没有缓存文件需要迁移")
+                    
+            except Exception as e:
+                print(f"❌ 自动迁移失败: {e}")
+        
+        elif new_cache_dir.exists():
+            # 新缓存目录已存在，检查是否有文件
+            cache_files = list(new_cache_dir.glob("*.json"))
+            if cache_files:
+                is_ci = self.is_ci_environment()
+                env_desc = '(CI)' if is_ci else '(本地)'
+                print(f"📦 发现根目录缓存 {env_desc}，共 {len(cache_files)} 个缓存文件")
     
     def process_page(self, markdown, page, config):
         """处理页面，生成AI摘要（支持CI环境检测）"""
