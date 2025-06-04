@@ -12,7 +12,14 @@ import shutil
 
 class AISummaryGenerator:
     def __init__(self):
-        self.cache_dir = Path("site/.ai_cache")
+        # 修改缓存路径策略 - CI 环境使用项目根目录，避免被构建过程清理
+        if self.is_ci_environment():
+            # CI 环境：使用项目根目录的缓存，避免被 mkdocs build --clean 清理
+            self.cache_dir = Path(".ai_cache")
+        else:
+            # 本地环境：保持使用 site 目录
+            self.cache_dir = Path("site/.ai_cache")
+            
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         
         # 🚀 CI 环境配置 - 默认只在 CI 环环境中启用
