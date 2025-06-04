@@ -1,6 +1,7 @@
 ---
 tags: [旅行]
 comments: false  #评论，默认不开启
+ai_summary: true
 ---
 
 ## 照片  

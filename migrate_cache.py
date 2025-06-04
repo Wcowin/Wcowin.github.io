@@ -93,3 +93,7 @@ if __name__ == '__main__':
         print("3. CI 构建不会再清理这些缓存文件")
     else:
         print("\n❌ 迁移失败，请检查源缓存目录是否存在")
+        print("您可能需要先在本地生成缓存文件：")
+        print("1. 设置环境变量：export AI_SUMMARY_LOCAL_ENABLED=true")
+        print("2. 运行构建：mkdocs build --clean")
+        print("3. 再次运行此迁移脚本")

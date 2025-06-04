@@ -93,13 +93,31 @@ jobs:
       - name: Deploy with AI Summary
         env:
           # AI 摘要配置
-          AI_SUMMARY_CI_ENABLED: 'true' #作用: 在CI环境（如GitHub Actions）中启用AI摘要功能
-          AI_SUMMARY_LOCAL_ENABLED: 'false' #作用: 在本地开发环境中禁用AI摘要功能
-          AI_SUMMARY_CI_ONLY_CACHE: 'true'    # CI 中仅使用缓存，节省 API 费用
-          AI_SUMMARY_CI_FALLBACK: 'true' #作用: 当CI环境中没有生成新的AI摘要时，是否使用本地缓存的AI摘要
+          AI_SUMMARY_CI_ENABLED: 'true'
+          AI_SUMMARY_LOCAL_ENABLED: 'false'
+          AI_SUMMARY_CI_ONLY_CACHE: 'true'
+          AI_SUMMARY_CI_FALLBACK: 'true'
           # API 密钥从 GitHub Secrets 获取
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }} #作用: 用于访问DeepSeek API的密钥
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }} #作用: 用于访问OpenAI API的密钥
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }} #作用: 用于访问Google API的密钥
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: mkdocs gh-deploy --force
+      
+      # 可选：自动提交新生成的缓存文件
+      - name: Auto-commit AI cache (if any new files)
+        run: |
+          if [ -d ".ai_cache" ] && [ "$(ls -A .ai_cache 2>/dev/null)" ]; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add .ai_cache/
+            if ! git diff --cached --quiet; then
+              git commit -m "🤖 Auto-update AI summary cache [skip ci]"
+              git push
+              echo "✅ 自动提交了新的 AI 缓存文件"
+            else
+              echo "ℹ️ 没有新的缓存文件需要提交"
+            fi
+          else
+            echo "ℹ️ 没有找到缓存目录或缓存为空"
+          fi
 
