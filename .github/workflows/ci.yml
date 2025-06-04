@@ -86,24 +86,24 @@ jobs:
       - run: pip install requests>=2.25.0
       - run: pip install python-dateutil>=2.8.0
       - run: pip install cachetools>=4.2.0
-      - run: pip install python-dotenv>=0.19.0  # 添加这行
+      - run: pip install python-dotenv>=0.19.0
       - run: pip install pymdown-extensions
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
       - name: Deploy with AI Summary
         env:
-          # AI 摘要配置
-          AI_SUMMARY_CI_ENABLED: 'true'
-          AI_SUMMARY_LOCAL_ENABLED: 'false'
-          AI_SUMMARY_CI_ONLY_CACHE: 'true'
-          AI_SUMMARY_CI_FALLBACK: 'true'
-          # API 密钥从 GitHub Secrets 获取
+          # AI摘要开关控制
+          AI_SUMMARY_CI_ENABLED: 'true'           # CI部署环境启用AI摘要 (true=在CI中为文章生成AI摘要)
+          AI_SUMMARY_CI_ONLY_CACHE: 'true'       # CI部署不生成新摘要 (true=使用本地部署过的摘要缓存，不再重复调用API)
+          AI_SUMMARY_CI_FALLBACK: 'true'          # CI部署启用备用摘要 (true=API失败时生成离线基础摘要)
+          AI_SUMMARY_LOCAL_ENABLED: 'false'       # 本地部署环境禁用AI摘要 (true=本地开发时也生成摘要)（不需要管这条）
+          AI_SUMMARY_CACHE_ENABLED: 'true'        # 本地启用缓存功能 (true=缓存摘要避免重复生成)（不需要管这条）
+          # API密钥配置
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: mkdocs gh-deploy --force
       
-      # 可选：自动提交新生成的缓存文件
+      # 自动提交新生成的AI缓存文件
       - name: Auto-commit AI cache (if any new files)
         run: |
           if [ -d ".ai_cache" ] && [ "$(ls -A .ai_cache 2>/dev/null)" ]; then

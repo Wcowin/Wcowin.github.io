@@ -6,6 +6,7 @@ hide:
    - toc #隐藏右边导
    - feedback
 status: new
+hide_reading_time: true
 ---
 
 # 足迹

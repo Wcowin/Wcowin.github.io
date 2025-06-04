@@ -12,36 +12,28 @@ import shutil
 
 class AISummaryGenerator:
     def __init__(self):
-        # 🔄 自动缓存迁移逻辑（一次性迁移旧缓存）
-        self._auto_migrate_cache()
-        
         # 🗂️ 统一缓存路径策略 - 本地和CI环境都使用项目根目录
         # 这样避免了CI构建时被清理，也简化了路径管理
         self.cache_dir = Path(".ai_cache")
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         
         # 🚀 CI 环境配置 - 默认只在 CI 环境中启用
+        # AI摘要环境配置
         self.ci_config = {
-            # CI环境启用控制：从环境变量AI_SUMMARY_CI_ENABLED读取，默认为'true'
-            # 控制是否在CI/CD环境（如GitHub Actions、GitLab CI等）中启用AI摘要功能
-            'enabled_in_ci': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',  # 默认 CI 中启用
+            # CI部署环境开关 (true=CI中启用AI摘要生成)
+            'enabled_in_ci': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
             
-            # 本地环境启用控制：从环境变量AI_SUMMARY_LOCAL_ENABLED读取，默认为'false'
-            # 控制是否在本地开发环境中启用AI摘要功能，默认禁用以避免开发时产生API费用
-            # 'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',  # 默认本地禁用
+            # 本地部署环境开关 (true=本地开发时启用AI摘要)
+            'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',
             
-            # 下面这行是被注释的备选配置，如果启用则本地环境默认开启AI摘要
-            'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',  # 默认本地启用
+            # CI部署仅缓存模式 (true=仅使用缓存不调用API, false=允许生成新摘要)
+            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',
             
-            # CI缓存策略：从环境变量AI_SUMMARY_CI_ONLY_CACHE读取，默认为'true'
-            # true = CI环境中仅使用已有缓存，不调用AI API（节省API费用和构建时间）
-            # false = CI环境中允许调用AI API生成新摘要
-            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'true').lower() == 'true',  # 修改默认值为true
+            # 本地部署缓存功能开关 (true=启用缓存避免重复生成, false=总是生成新摘要)
+            'cache_enabled': os.getenv('AI_SUMMARY_CACHE_ENABLED', 'true').lower() == 'true',
             
-            # CI备用摘要控制：从环境变量AI_SUMMARY_CI_FALLBACK读取，默认为'true'
-            # true = 当AI服务不可用时，启用基于关键词的本地备用摘要生成
-            # false = 禁用备用摘要，AI失败时不显示任何摘要
-            'ci_fallback_enabled': os.getenv('AI_SUMMARY_CI_FALLBACK', 'true').lower() == 'true'
+            # CI部署备用摘要开关 (true=API失败时生成基础摘要, false=失败时不显示摘要)
+            'ci_fallback_enabled': os.getenv('AI_SUMMARY_CI_FALLBACK', 'true').lower() == 'true',
         }
         
         # 添加服务配置文件，用于跟踪当前使用的服务
@@ -50,8 +42,8 @@ class AISummaryGenerator:
         # 🤖 多AI服务配置
         self.ai_services = {
             'deepseek': {
-                'url': 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
-                'model': 'deepseek-v3-250324',
+                'url': 'https://api.deepseek.com/v1/chat/completions',
+                'model': 'deepseek-chat',
                 'api_key': os.getenv('DEEPSEEK_API_KEY', ),
                 'max_tokens': 150,
                 'temperature': 0.3
@@ -90,7 +82,7 @@ class AISummaryGenerator:
             'blog/',      # blog文件夹
             'develop/',   # develop文件夹
             # 'posts/',     # posts文件夹
-            # 'trip/',     # trip文件夹
+            'trip/',     # trip文件夹
             # 'about/',     # about文件夹
         ]
         
@@ -136,11 +128,15 @@ class AISummaryGenerator:
                 print("💻 本地环境检测到，AI 摘要功能已启用")
                 self._should_run = True
             else:
-                print("🚫 本地环境检测到，AI 摘要功能已禁用（仅在 CI 环境中启用）")
+                print("🚫 本地环境检测到，AI 摘要功能已禁用（仅在 CI 部署环境中启用）")
                 self._should_run = False
     
     def _check_service_change(self):
         """检查AI服务是否发生变更，如有变更则自动清理缓存"""
+        # 如果禁用了缓存功能，跳过服务变更检查
+        if not self.ci_config['cache_enabled']:
+            return
+            
         current_config = {
             'default_service': self.default_service,
             'available_services': list(self.ai_services.keys()),
@@ -292,6 +288,10 @@ class AISummaryGenerator:
     
     def get_cached_summary(self, content_hash):
         """获取缓存的摘要"""
+        # 如果禁用了缓存功能，直接返回None
+        if not self.ci_config['cache_enabled']:
+            return None
+            
         cache_file = self.cache_dir / f"{content_hash}.json"
         if cache_file.exists():
             try:
@@ -307,6 +307,10 @@ class AISummaryGenerator:
     
     def save_summary_cache(self, content_hash, summary_data):
         """保存摘要到缓存"""
+        # 如果禁用了缓存功能，不保存缓存
+        if not self.ci_config['cache_enabled']:
+            return
+            
         cache_file = self.cache_dir / f"{content_hash}.json"
         try:
             summary_data['timestamp'] = datetime.now().isoformat()
@@ -764,6 +768,10 @@ Please generate bilingual summary:"""
     
     def _auto_migrate_cache(self):
         """自动迁移缓存文件（仅在需要时执行一次）"""
+        # 如果禁用了缓存功能，跳过缓存迁移
+        if not self.ci_config.get('cache_enabled', True):
+            return
+            
         old_cache_dir = Path("site/.ai_cache")
         new_cache_dir = Path(".ai_cache")
         
@@ -958,7 +966,7 @@ ai_summary_generator = AISummaryGenerator()
 # 🔧 配置函数
 def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_files=None, 
                         ai_service=None, service_config=None, language='zh',
-                        ci_enabled=None, local_enabled=None, ci_only_cache=None, ci_fallback=None):
+                        ci_enabled=None, local_enabled=None, ci_only_cache=None, ci_fallback=None, cache_enabled=None):
     """
     配置AI摘要功能（支持CI和本地环境分别配置）
     
@@ -973,24 +981,33 @@ def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_fi
         local_enabled: 是否在本地环境中启用
         ci_only_cache: CI 环境是否仅使用缓存
         ci_fallback: CI 环境是否启用备用摘要
+        cache_enabled: 是否启用缓存功能
     
     Example:
-        # 推荐配置：只在 CI 中启用，本地禁用
+        # 本地开发时禁用缓存，总是生成新摘要
         configure_ai_summary(
             enabled_folders=['blog/', 'docs/'],
             language='zh',
-            ci_enabled=True,         # CI 中启用
-            local_enabled=False,     # 本地禁用
-            ci_only_cache=False,     # CI 中允许生成新摘要
-            ci_fallback=True         # CI 中启用备用摘要
+            local_enabled=True,
+            cache_enabled=False      # 禁用缓存
+        )
+        
+        # CI中启用缓存，本地禁用缓存
+        configure_ai_summary(
+            enabled_folders=['blog/', 'docs/'],
+            language='zh',
+            ci_enabled=True,
+            local_enabled=True,
+            ci_only_cache=True,      # CI仅使用缓存
+            cache_enabled=True       # 启用缓存功能
         )
     """
     ai_summary_generator.configure_folders(enabled_folders, exclude_patterns, exclude_files)
     ai_summary_generator.configure_language(language)
     
     # 配置环境行为
-    if any(x is not None for x in [ci_enabled, local_enabled, ci_only_cache, ci_fallback]):
-        configure_ci_behavior(ci_enabled, local_enabled, ci_only_cache, ci_fallback)
+    if any(x is not None for x in [ci_enabled, local_enabled, ci_only_cache, ci_fallback, cache_enabled]):
+        configure_ci_behavior(ci_enabled, local_enabled, ci_only_cache, ci_fallback, cache_enabled)
     
     if ai_service:
         if service_config:
@@ -1002,7 +1019,7 @@ def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_fi
             ai_summary_generator.configure_ai_service(ai_service)
 
 # 🔧 新增 CI 配置函数
-def configure_ci_behavior(enabled_in_ci=None, enabled_in_local=None, ci_only_cache=None, ci_fallback_enabled=None):
+def configure_ci_behavior(enabled_in_ci=None, enabled_in_local=None, ci_only_cache=None, ci_fallback_enabled=None, cache_enabled=None):
     """
     配置 CI 和本地环境行为
     
@@ -1011,16 +1028,17 @@ def configure_ci_behavior(enabled_in_ci=None, enabled_in_local=None, ci_only_cac
         enabled_in_local: 是否在本地环境中启用 AI 摘要
         ci_only_cache: CI 环境是否仅使用缓存
         ci_fallback_enabled: CI 环境是否启用备用摘要
+        cache_enabled: 是否启用缓存功能（默认True）
     
     Example:
-        # 只在 CI 中启用，本地禁用（推荐配置）
-        configure_ci_behavior(enabled_in_ci=True, enabled_in_local=False)
+        # 完全禁用缓存
+        configure_ci_behavior(cache_enabled=False)
         
-        # 本地和 CI 都启用
-        configure_ci_behavior(enabled_in_ci=True, enabled_in_local=True)
+        # 本地开发时禁用缓存，总是生成新摘要
+        configure_ci_behavior(enabled_in_local=True, cache_enabled=False)
         
-        # 只在本地启用，CI 中禁用
-        configure_ci_behavior(enabled_in_ci=False, enabled_in_local=True)
+        # CI中使用缓存，本地禁用缓存
+        configure_ci_behavior(enabled_in_ci=True, enabled_in_local=True, ci_only_cache=True, cache_enabled=True)
     """
     if enabled_in_ci is not None:
         ai_summary_generator.ci_config['enabled_in_ci'] = enabled_in_ci
@@ -1037,6 +1055,10 @@ def configure_ci_behavior(enabled_in_ci=None, enabled_in_local=None, ci_only_cac
     if ci_fallback_enabled is not None:
         ai_summary_generator.ci_config['ci_fallback_enabled'] = ci_fallback_enabled
         print(f"✅ CI 环境备用摘要: {'启用' if ci_fallback_enabled else '禁用'}")
+    
+    if cache_enabled is not None:
+        ai_summary_generator.ci_config['cache_enabled'] = cache_enabled
+        print(f"✅ 缓存功能: {'启用' if cache_enabled else '禁用'}")
 
 def on_page_markdown(markdown, page, config, files):
     """MkDocs hook入口点"""
