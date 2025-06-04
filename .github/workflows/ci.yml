@@ -85,6 +85,7 @@ jobs:
       - run: pip install requests>=2.25.0
       - run: pip install python-dateutil>=2.8.0
       - run: pip install cachetools>=4.2.0
+      - run: pip install python-dotenv>=0.19.0  # 添加这行
       - run: pip install pymdown-extensions
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
