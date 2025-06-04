@@ -15,7 +15,7 @@ class AISummaryGenerator:
         self.cache_dir = Path("site/.ai_cache")
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         
-        # 🚀 CI 环境配置 - 默认只在 CI 环境中启用
+        # 🚀 CI 环境配置 - 默认只在 CI 环环境中启用
         self.ci_config = {
             # CI环境启用控制：从环境变量AI_SUMMARY_CI_ENABLED读取，默认为'true'
             # 控制是否在CI/CD环境（如GitHub Actions、GitLab CI等）中启用AI摘要功能
@@ -28,10 +28,10 @@ class AISummaryGenerator:
             # 下面这行是被注释的备选配置，如果启用则本地环境默认开启AI摘要
             # 'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',  # 默认本地启用
             
-            # CI缓存策略：从环境变量AI_SUMMARY_CI_ONLY_CACHE读取，默认为'false'
-            # false = CI环境中允许调用AI API生成新摘要
+            # CI缓存策略：从环境变量AI_SUMMARY_CI_ONLY_CACHE读取，默认为'true'
             # true = CI环境中仅使用已有缓存，不调用AI API（节省API费用和构建时间）
-            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',  # 修改这里
+            # false = CI环境中允许调用AI API生成新摘要
+            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'true').lower() == 'true',  # 修改默认值为true
             
             # CI备用摘要控制：从环境变量AI_SUMMARY_CI_FALLBACK读取，默认为'true'
             # true = 当AI服务不可用时，启用基于关键词的本地备用摘要生成
@@ -576,7 +576,7 @@ Please generate bilingual summary:"""
         
         # 如果在 CI 环境中且配置为只使用缓存
         if is_ci and self.ci_config['ci_only_cache']:
-            print(f"📦 CI 环境仅使用缓存模式")
+            print(f"📦 CI 环 environment仅使用缓存模式")
             return None, 'ci_cache_only'
         
         # 按优先级尝试不同服务

@@ -2,6 +2,6 @@
   "summary": "在/docs目录下创建一个 CNAME 的 无后缀 文件，然后在里面填入你的域名  \n[图片：].",
   "service": "fallback",
   "page_title": "3.解决Github Pages部署mkdocs自定义域名失效的问题",
-  "timestamp": "2025-06-04T02:41:32.323007",
+  "timestamp": "2025-06-04T02:49:13.499039",
   "language": "zh"
 }

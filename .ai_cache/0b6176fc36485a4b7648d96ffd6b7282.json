@@ -2,6 +2,6 @@
   "summary": "页脚设置  \n\nMkDocs 支持自定义页脚.[图片：]\n\n在docs/overrides/partials/footer.html中（没有该文件时，创建footer.",
   "service": "fallback",
   "page_title": "页脚设置",
-  "timestamp": "2025-06-04T02:41:33.142465",
+  "timestamp": "2025-06-04T02:49:14.332307",
   "language": "zh"
 }
