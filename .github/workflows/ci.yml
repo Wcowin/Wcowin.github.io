@@ -94,8 +94,7 @@ jobs:
           # AI 摘要配置
           AI_SUMMARY_CI_ENABLED: 'true' #作用: 在CI环境（如GitHub Actions）中启用AI摘要功能
           AI_SUMMARY_LOCAL_ENABLED: 'false' #作用: 在本地开发环境中禁用AI摘要功能
-          # AI_SUMMARY_CI_ONLY_CACHE: 'false' #作用: CI环境中允许生成新的AI摘要,如果设为'true'，CI中只会使用已有缓存，不会调用AI API生成新摘要
-          AI_SUMMARY_CI_ONLY_CACHE: 'true' #作用:设为'true'，CI中只会使用已有缓存，不会调用AI API生成新摘要
+          AI_SUMMARY_CI_ONLY_CACHE: 'true'    # CI 中仅使用缓存，节省 API 费用
           AI_SUMMARY_CI_FALLBACK: 'true' #作用: 当CI环境中没有生成新的AI摘要时，是否使用本地缓存的AI摘要
           # API 密钥从 GitHub Secrets 获取
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }} #作用: 用于访问DeepSeek API的密钥

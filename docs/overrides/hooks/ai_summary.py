@@ -31,7 +31,7 @@ class AISummaryGenerator:
             # CI缓存策略：从环境变量AI_SUMMARY_CI_ONLY_CACHE读取，默认为'false'
             # false = CI环境中允许调用AI API生成新摘要
             # true = CI环境中仅使用已有缓存，不调用AI API（节省API费用和构建时间）
-            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'true').lower() == 'true',  # CI 中也允许生成新摘要
+            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',  # 修改这里
             
             # CI备用摘要控制：从环境变量AI_SUMMARY_CI_FALLBACK读取，默认为'true'
             # true = 当AI服务不可用时，启用基于关键词的本地备用摘要生成
@@ -627,18 +627,18 @@ Please generate bilingual summary:"""
                 priority_sentences.append(sentence)
             else:
                 normal_sentences.append(sentence)
-        
+    
         # 组合摘要
         selected_sentences = []
         total_length = 0
-        
+    
         # 优先使用关键句子
         for sentence in priority_sentences:
             if total_length + len(sentence) > 100:
                 break
             selected_sentences.append(sentence)
             total_length += len(sentence)
-        
+    
         # 如果还有空间，添加普通句子
         if total_length < 80:
             for sentence in normal_sentences:
@@ -646,7 +646,7 @@ Please generate bilingual summary:"""
                     break
                 selected_sentences.append(sentence)
                 total_length += len(sentence)
-        
+    
         if selected_sentences:
             summary = '.'.join(selected_sentences) + '.'
             # 简化冗长的摘要
@@ -673,6 +673,36 @@ Please generate bilingual summary:"""
             else:
                 return self._generate_chinese_fallback(page_title)
     
+    def _generate_chinese_fallback(self, page_title=""):
+        """生成中文备用摘要"""
+        if page_title:
+            # 根据标题生成通用摘要
+            if any(keyword in page_title for keyword in ['教程', '指南', '配置', '安装']):
+                return f"本文介绍了{page_title}的相关内容，包括具体的操作步骤和注意事项，为读者提供实用的技术指导。"
+            elif any(keyword in page_title for keyword in ['分析', '研究', '探讨', '原理']):
+                return f"本文深入分析了{page_title}的核心概念和技术原理，为读者提供详细的理论解析和实践见解。"
+            elif any(keyword in page_title for keyword in ['开发', '构建', '实现', '设计']):
+                return f"本文详细讲解了{page_title}的开发过程和实现方法，分享了实际的开发经验和技术方案。"
+            else:
+                return f"本文围绕{page_title}展开讨论，介绍了相关的技术概念、应用场景和实践方法。"
+        else:
+            return "本文介绍了相关的技术概念和实践方法，为读者提供有价值的参考信息。"
+
+    def _generate_english_fallback(self, page_title=""):
+        """生成英文备用摘要"""
+        if page_title:
+            # 根据标题生成通用摘要
+            if any(keyword in page_title.lower() for keyword in ['tutorial', 'guide', 'setup', 'install', 'config']):
+                return f"This article provides a comprehensive guide on {page_title}, including step-by-step instructions and important considerations for practical implementation."
+            elif any(keyword in page_title.lower() for keyword in ['analysis', 'research', 'study', 'principle']):
+                return f"This article presents an in-depth analysis of {page_title}, exploring core concepts and technical principles with detailed theoretical insights."
+            elif any(keyword in page_title.lower() for keyword in ['develop', 'build', 'implement', 'design']):
+                return f"This article explains the development process and implementation methods for {page_title}, sharing practical development experience and technical solutions."
+            else:
+                return f"This article discusses {page_title}, covering relevant technical concepts, application scenarios, and practical methods."
+        else:
+            return "This article introduces relevant technical concepts and practical methods, providing valuable reference information for readers."
+
     def is_ci_environment(self):
         """检测是否在 CI 环境中运行"""
         # 常见的 CI 环境变量
