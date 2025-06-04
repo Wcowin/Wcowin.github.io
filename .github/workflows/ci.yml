@@ -66,6 +66,7 @@ jobs:
           sparse-checkout: |
             docs
             includes
+            .ai_cache
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
