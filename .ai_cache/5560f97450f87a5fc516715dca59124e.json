@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了使用MkDocs构建网站时的性能优化方法，包括采用WebP等高效图片格式压缩资源、通过jsDelivr等CDN加速静态文件分发，以及优化git插件配置以提升本地渲染速度。这些措施能显著改善页面加载性能，建议结合Lighthouse工具进行效果验证。",
-  "service": "deepseek",
+  "summary": "加速网站访问的一些心得  \n\n在使用 MkDocs 构建网站时，为了提高访问速度，我们可以采取以下一些措施：\n1.",
+  "service": "fallback",
   "page_title": "加速网站访问的一些心得",
-  "timestamp": "2025-06-04T01:36:26.450064",
+  "timestamp": "2025-06-04T02:41:33.077394",
   "language": "zh"
 }

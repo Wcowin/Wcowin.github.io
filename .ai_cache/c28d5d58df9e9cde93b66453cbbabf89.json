@@ -1,7 +1,7 @@
 {
-  "summary": "该文章展示了一段动态生成3D甜甜圈动画的C语言代码，通过命令行编译运行即可呈现旋转效果。代码无需依赖数学库，利用ASCII字符和三角函数计算实现实时渲染，演示了如何在终端中创建简单的3D图形动画。文中提供了原始代码链接，可供深入探究其背后的数学原理和编程技巧。",
-  "service": "deepseek",
+  "summary": "/math`\n\n​\n感兴趣的可以去研究背后的数学知识，地址：[donut.代码如下\n``[代码]`[代码]gcc math.c without a math library\n\n​.",
+  "service": "fallback",
   "page_title": "甜甜圈🍩代码",
-  "timestamp": "2025-06-04T01:35:58.549878",
+  "timestamp": "2025-06-04T02:41:32.920672",
   "language": "zh"
 }

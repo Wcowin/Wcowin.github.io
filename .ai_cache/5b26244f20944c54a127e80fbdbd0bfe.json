@@ -1,7 +1,7 @@
 {
-  "summary": "Mkdocs-Wcowin是基于Material for MkDocs的美化主题，具有简洁美观、功能多元化的特点，适合新手快速上手。该主题提供详细教程和配置说明，支持静态网页部署至GitHub Pages，包含主页、博客页、标签页和友链页面等模块，并通过Lighthouse测试确保性能。用户可通过简单命令克隆模板并快速部署，适合技术文档和个人博客建设。",
-  "service": "deepseek",
+  "summary": "Mkdocs-Wcowin主题\n\n-   :octicons-bookmark-16:{.",
+  "service": "fallback",
   "page_title": "Wcowin for MkDocs主题",
-  "timestamp": "2025-06-04T01:38:59.195985",
+  "timestamp": "2025-06-04T02:41:33.975131",
   "language": "zh"
 }

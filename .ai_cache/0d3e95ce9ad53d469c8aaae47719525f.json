@@ -1,7 +1,7 @@
 {
-  "summary": "Tidio提供免费在线聊天工具，无需翻墙即可使用。用户通过官网注册账号后，在设置中获取专属JavaScript代码，将其嵌入网站指定位置即可完成部署。该方案安装简便，仅需单行代码即可实现实时聊天功能，适合快速为网站添加客服系统。免费版功能已满足基础需求，降低了中小企业的技术门槛。",
-  "service": "deepseek",
+  "summary": "以Tidio为例,Tidio免费版已经完全够用且无需梯子\n\n访问Tidio官网\n\n要在您的网站上使用 javascript 代码方法安装 Tidio，您需要创建一个 Tidio 帐户.",
+  "service": "fallback",
   "page_title": "添加在线聊天",
-  "timestamp": "2025-06-04T01:37:09.923360",
+  "timestamp": "2025-06-04T02:41:33.307226",
   "language": "zh"
 }

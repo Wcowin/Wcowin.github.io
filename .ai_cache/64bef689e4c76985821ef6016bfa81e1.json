@@ -1,7 +1,7 @@
 {
-  "summary": "Mac的esc键失效通常是由于Siri进程占用导致。解决方法是通过活动监视器终止Siri相关进程，无需硬件维修。该方案适用于键盘物理正常但功能键被系统进程抢占的情况，能快速恢复esc键的默认功能。",
-  "service": "deepseek",
+  "summary": "本文围绕Mac的esc键失效的解决方法展开讨论，介绍了相关的技术概念、应用场景和实践方法。",
+  "service": "fallback",
   "page_title": "Mac的esc键失效的解决方法",
-  "timestamp": "2025-06-04T01:32:52.419688",
+  "timestamp": "2025-06-04T02:41:32.062947",
   "language": "zh"
 }

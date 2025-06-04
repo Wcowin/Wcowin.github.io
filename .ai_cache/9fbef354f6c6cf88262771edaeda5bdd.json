@@ -1,7 +1,7 @@
 {
-  "summary": "本文提供Windows 11官方镜像下载资源及KMS激活方案，包含网盘链接和提取码。详细介绍了通过管理员CMD执行单条命令完成系统激活的简易方法，同时附带Office 2010-2021版本下载渠道。内容涵盖系统镜像获取、授权激活全流程，适用于需要快速部署Windows环境的用户。",
-  "service": "deepseek",
+  "summary": "本文围绕Win11镜像下载/KMS激活展开讨论，介绍了相关的技术概念、应用场景和实践方法。",
+  "service": "fallback",
   "page_title": "Win11镜像下载/KMS激活",
-  "timestamp": "2025-06-04T01:36:09.459197",
+  "timestamp": "2025-06-04T02:41:32.953095",
   "language": "zh"
 }

@@ -1,7 +1,7 @@
 {
-  "summary": "2022年网站建设过程包括：10月建立Github仓库并正式上线，取消cookie确认简化访问流程，新增首页反馈功能；10月独立购买域名wcowin.work；6月确定采用MKdocs框架搭建网站。更新重点优化了用户体验和隐私保护，技术方案选择轻量级文档框架。",
-  "service": "deepseek",
+  "summary": "2022-10-20\n建立Github仓库，正式建站\n取消cookie确认,简化网站打开流程\n新增首页反馈收集 \n\n2022-10-06\n\n不靠父母，全款拿下 wcowin.",
+  "service": "fallback",
   "page_title": "2022网站更新记录",
-  "timestamp": "2025-06-04T01:34:46.116413",
+  "timestamp": "2025-06-04T02:41:32.458950",
   "language": "zh"
 }

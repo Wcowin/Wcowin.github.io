@@ -1,7 +1,7 @@
 {
-  "summary": "GitHub是全球领先的基于Git的代码托管平台，提供分布式版本控制、协作开发和代码共享服务。其核心优势包括无广告的简洁界面、强大的分支管理功能以及云端存储支持，解决了传统代码托管平台维护成本高、用户体验差的问题。截至2020年，平台已托管超1亿个仓库，拥有4000万开发者用户，成为开源项目首选托管服务。",
-  "service": "deepseek",
+  "summary": ":fontawesome-brands-square-github:\n\nGitHub是全球最大的 ~~同性交友网站~~ 软件开发平台，知名公司和个人都使用它来开发和共享代码.",
+  "service": "fallback",
   "page_title": "What is Github",
-  "timestamp": "2025-06-04T01:37:36.648924",
+  "timestamp": "2025-06-04T02:41:33.414810",
   "language": "zh"
 }

@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了Tampermonkey（油猴）脚本管理器的安装与使用，推荐了Crx搜搜、GreasyFork等脚本获取平台，并列举了网页加速器、网盘直链下载、VIP视频破解等实用脚本。通过安装这些脚本，用户可优化网页浏览体验，实现广告过滤、自动翻页等功能，显著提升工作效率和上网便利性。",
-  "service": "deepseek",
+  "summary": "安装脚本管理器\n比较知名的脚本管理器有：Tampermonkey ，Violentmonkey ，Greasemonkey.这里以功能最强的 Tampermonkey  为例：.",
+  "service": "fallback",
   "page_title": "实用脚本分享",
-  "timestamp": "2025-06-04T01:35:36.771513",
+  "timestamp": "2025-06-04T02:41:32.666100",
   "language": "zh"
 }

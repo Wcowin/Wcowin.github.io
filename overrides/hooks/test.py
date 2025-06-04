@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()  # 自动加载 .env 文件
+
 import re
 import json
 import hashlib
@@ -10,7 +13,31 @@ import shutil
 class AISummaryGenerator:
     def __init__(self):
         self.cache_dir = Path("site/.ai_cache")
-        self.cache_dir.mkdir(parents=True, exist_ok=True)  # 添加 parents=True
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        
+        # 🚀 CI 环境配置 - 默认只在 CI 环境中启用
+        self.ci_config = {
+            # CI环境启用控制：从环境变量AI_SUMMARY_CI_ENABLED读取，默认为'true'
+            # 控制是否在CI/CD环境（如GitHub Actions、GitLab CI等）中启用AI摘要功能
+            'enabled_in_ci': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',  # 默认 CI 中启用
+            
+            # 本地环境启用控制：从环境变量AI_SUMMARY_LOCAL_ENABLED读取，默认为'false'
+            # 控制是否在本地开发环境中启用AI摘要功能，默认禁用以避免开发时产生API费用
+            'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',  # 默认本地禁用
+            
+            # 下面这行是被注释的备选配置，如果启用则本地环境默认开启AI摘要
+            # 'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',  # 默认本地启用
+            
+            # CI缓存策略：从环境变量AI_SUMMARY_CI_ONLY_CACHE读取，默认为'false'
+            # false = CI环境中允许调用AI API生成新摘要
+            # true = CI环境中仅使用已有缓存，不调用AI API（节省API费用和构建时间）
+            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',  # CI 中也允许生成新摘要
+            
+            # CI备用摘要控制：从环境变量AI_SUMMARY_CI_FALLBACK读取，默认为'true'
+            # true = 当AI服务不可用时，启用基于关键词的本地备用摘要生成
+            # false = 禁用备用摘要，AI失败时不显示任何摘要
+            'ci_fallback_enabled': os.getenv('AI_SUMMARY_CI_FALLBACK', 'true').lower() == 'true'
+        }
         
         # 添加服务配置文件，用于跟踪当前使用的服务
         self.service_config_file = self.cache_dir / "service_config.json"
@@ -20,14 +47,14 @@ class AISummaryGenerator:
             'deepseek': {
                 'url': 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
                 'model': 'deepseek-v3-250324',
-                'api_key': os.getenv('DEEPSEEK_API_KEY', '42b2e3d9-454a-4970-a4a3-c6c1fcd6220b'),
+                'api_key': os.getenv('DEEPSEEK_API_KEY', ),
                 'max_tokens': 150,
                 'temperature': 0.3
             },
             'openai': {
                 'url': 'https://api.chatanywhere.tech/v1/chat/completions',
                 'model': 'gpt-3.5-turbo',  # 或 'gpt-4', 'gpt-4-turbo'
-                'api_key': os.getenv('OPENAI_API_KEY', 'sk-vTIWRtY595O8K7NxhNMPohGGrEimNFspS6iLDH1yjORy7Lcj'),
+                'api_key': os.getenv('OPENAI_API_KEY', ),
                 'max_tokens': 150,
                 'temperature': 0.3
             },
@@ -80,8 +107,32 @@ class AISummaryGenerator:
         # 🌍 语言配置/Language Configuration
         self.summary_language = 'zh'  # 默认中文，可选 'zh'、'en'、'both'
         
+        # 在初始化时就进行环境检查
+        self._check_environment()
+        
         # 检查服务变更并处理缓存
         self._check_service_change()
+    
+    def _check_environment(self):
+        """初始化时检查环境"""
+        is_ci = self.is_ci_environment()
+        
+        if is_ci:
+            ci_name = self._get_ci_name()
+            if self.ci_config['enabled_in_ci']:
+                print(f"🚀 检测到 CI 环境 ({ci_name})，AI 摘要功能已启用")
+                self._should_run = True
+            else:
+                print(f"🚫 检测到 CI 环境 ({ci_name})，AI 摘要功能已禁用")
+                self._should_run = False
+        else:
+            # 本地环境检查
+            if self.ci_config['enabled_in_local']:
+                print("💻 本地环境检测到，AI 摘要功能已启用")
+                self._should_run = True
+            else:
+                print("🚫 本地环境检测到，AI 摘要功能已禁用（仅在 CI 环境中启用）")
+                self._should_run = False
     
     def _check_service_change(self):
         """检查AI服务是否发生变更，如有变更则自动清理缓存"""
@@ -520,23 +571,38 @@ Please generate bilingual summary:"""
             return None
     
     def generate_ai_summary(self, content, page_title=""):
-        """生成AI摘要（支持多服务降级）"""
+        """生成AI摘要（支持CI环境策略）"""
+        is_ci = self.is_ci_environment()
+        
+        # 如果在 CI 环境中且配置为只使用缓存
+        if is_ci and self.ci_config['ci_only_cache']:
+            print(f"📦 CI 环境仅使用缓存模式")
+            return None, 'ci_cache_only'
+        
         # 按优先级尝试不同服务
         services_to_try = [self.default_service] + [s for s in self.service_fallback_order if s != self.default_service]
         
         for service_name in services_to_try:
             if service_name in self.ai_services:
                 lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
-                print(f"🔄 尝试使用 {service_name} 生成{lang_desc.get(self.summary_language, '中文')}摘要...")
+                env_desc = '(CI)' if is_ci else '(本地)'
+                print(f"🔄 尝试使用 {service_name} 生成{lang_desc.get(self.summary_language, '中文')}摘要 {env_desc}...")
                 summary = self.generate_ai_summary_with_service(content, page_title, service_name)
                 if summary:
                     return summary, service_name
         
-        print("⚠️ 所有AI服务均不可用，使用备用摘要")
+        print("⚠️ 所有AI服务均不可用")
         return None, None
     
     def generate_fallback_summary(self, content, page_title=""):
-        """生成备用摘要（基于规则的智能摘要）"""
+        """生成备用摘要（考虑CI环境配置）"""
+        is_ci = self.is_ci_environment()
+        
+        # 如果在 CI 环境中且禁用了备用摘要
+        if is_ci and not self.ci_config['ci_fallback_enabled']:
+            print(f"🚫 CI 环境禁用备用摘要")
+            return None
+        
         # 移除格式符号
         clean_text = re.sub(r'^#+\s*', '', content, flags=re.MULTILINE)
         clean_text = re.sub(r'\*\*([^*]+)\*\*', r'\1', clean_text)
@@ -607,30 +673,66 @@ Please generate bilingual summary:"""
             else:
                 return self._generate_chinese_fallback(page_title)
     
-    def _generate_chinese_fallback(self, page_title):
-        """生成中文备用摘要"""
-        if any(keyword in page_title for keyword in ['教程', '指南', 'Tutorial']):
-            return '本文提供了详细的教程指南，通过实例演示帮助读者掌握相关技术要点。'
-        elif any(keyword in page_title for keyword in ['配置', '设置', '安装', 'Config']):
-            return '本文介绍了系统配置的方法和步骤，提供实用的设置建议和最佳实践。'
-        elif any(keyword in page_title for keyword in ['开发', '编程', 'Development']):
-            return '本文分享了开发经验和技术实践，提供了实用的代码示例和解决方案。'
-        else:
-            return '本文深入探讨了相关技术内容，提供了实用的方法和解决方案。'
+    def is_ci_environment(self):
+        """检测是否在 CI 环境中运行"""
+        # 常见的 CI 环境变量
+        ci_indicators = [
+            'CI', 'CONTINUOUS_INTEGRATION',           # 通用 CI 标识
+            'GITHUB_ACTIONS',                         # GitHub Actions
+            'GITLAB_CI',                              # GitLab CI
+            'JENKINS_URL',                            # Jenkins
+            'TRAVIS',                                 # Travis CI
+            'CIRCLECI',                               # CircleCI
+            'AZURE_HTTP_USER_AGENT',                  # Azure DevOps
+            'TEAMCITY_VERSION',                       # TeamCity
+            'BUILDKITE',                              # Buildkite
+            'CODEBUILD_BUILD_ID',                     # AWS CodeBuild
+            'NETLIFY',                                # Netlify
+            'VERCEL',                                 # Vercel
+            'CF_PAGES',                               # Cloudflare Pages
+        ]
+        
+        for indicator in ci_indicators:
+            if os.getenv(indicator):
+                return True
+        
+        return False
     
-    def _generate_english_fallback(self, page_title):
-        """生成英文备用摘要"""
-        if any(keyword in page_title.lower() for keyword in ['tutorial', 'guide', '教程', '指南']):
-            return 'This article provides a detailed tutorial guide with practical examples to help readers master relevant technical concepts.'
-        elif any(keyword in page_title.lower() for keyword in ['config', 'setup', 'install', '配置', '设置', '安装']):
-            return 'This article introduces system configuration methods and procedures, providing practical setup recommendations and best practices.'
-        elif any(keyword in page_title.lower() for keyword in ['development', 'programming', 'coding', '开发', '编程']):
-            return 'This article shares development experience and technical practices, providing practical code examples and solutions.'
+    def should_run_in_current_environment(self):
+        """判断是否应该在当前环境中运行 AI 摘要"""
+        return self._should_run
+    
+    def _get_ci_name(self):
+        """获取 CI 环境名称"""
+        if os.getenv('GITHUB_ACTIONS'):
+            return 'GitHub Actions'
+        elif os.getenv('GITLAB_CI'):
+            return 'GitLab CI'
+        elif os.getenv('JENKINS_URL'):
+            return 'Jenkins'
+        elif os.getenv('TRAVIS'):
+            return 'Travis CI'
+        elif os.getenv('CIRCLECI'):
+            return 'CircleCI'
+        elif os.getenv('AZURE_HTTP_USER_AGENT'):
+            return 'Azure DevOps'
+        elif os.getenv('NETLIFY'):
+            return 'Netlify'
+        elif os.getenv('VERCEL'):
+            return 'Vercel'
+        elif os.getenv('CF_PAGES'):
+            return 'Cloudflare Pages'
+        elif os.getenv('CODEBUILD_BUILD_ID'):
+            return 'AWS CodeBuild'
         else:
-            return 'This article explores relevant technical content in depth, providing practical methods and solutions.'
+            return 'Unknown CI'
     
     def process_page(self, markdown, page, config):
-        """处理页面，生成AI摘要"""
+        """处理页面，生成AI摘要（支持CI环境检测）"""
+        # 检查是否应该在当前环境运行
+        if not self.should_run_in_current_environment():
+            return markdown
+        
         if not self.should_generate_summary(page, markdown):
             return markdown
         
@@ -643,36 +745,48 @@ Please generate bilingual summary:"""
         
         content_hash = self.get_content_hash(clean_content)
         page_title = getattr(page, 'title', '')
+        is_ci = self.is_ci_environment()
         
         # 检查缓存
         cached_summary = self.get_cached_summary(content_hash)
         if cached_summary:
             summary = cached_summary.get('summary', '')
             ai_service = cached_summary.get('service', 'cached')
-            print(f"✅ 使用缓存摘要: {page.file.src_path}")
+            env_desc = '(CI)' if is_ci else '(本地)'
+            print(f"✅ 使用缓存摘要 {env_desc}: {page.file.src_path}")
         else:
             # 生成新摘要
             lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
-            print(f"🤖 正在生成{lang_desc.get(self.summary_language, '中文')}AI摘要: {page.file.src_path}")
+            env_desc = '(CI)' if is_ci else '(本地)'
+            print(f"🤖 正在生成{lang_desc.get(self.summary_language, '中文')}AI摘要 {env_desc}: {page.file.src_path}")
             summary, ai_service = self.generate_ai_summary(clean_content, page_title)
             
             if not summary:
+                # 尝试生成备用摘要
                 summary = self.generate_fallback_summary(clean_content, page_title)
-                ai_service = 'fallback'
-                print(f"📝 使用备用摘要: {page.file.src_path}")
+                if summary:
+                    ai_service = 'fallback'
+                    print(f"📝 使用备用摘要 {env_desc}: {page.file.src_path}")
+                else:
+                    print(f"❌ 无法生成摘要 {env_desc}: {page.file.src_path}")
+                    return markdown
             else:
-                print(f"✅ AI摘要生成成功 ({ai_service}): {page.file.src_path}")
+                print(f"✅ AI摘要生成成功 ({ai_service}) {env_desc}: {page.file.src_path}")
             
             # 保存到缓存
-            self.save_summary_cache(content_hash, {
-                'summary': summary,
-                'service': ai_service,
-                'page_title': page_title
-            })
+            if summary:
+                self.save_summary_cache(content_hash, {
+                    'summary': summary,
+                    'service': ai_service,
+                    'page_title': page_title
+                })
         
         # 添加摘要到页面最上面
-        summary_html = self.format_summary(summary, ai_service)
-        return summary_html + '\n\n' + markdown
+        if summary:
+            summary_html = self.format_summary(summary, ai_service)
+            return summary_html + '\n\n' + markdown
+        else:
+            return markdown
     
     def should_generate_summary(self, page, markdown):
         """判断是否应该生成摘要"""
@@ -709,7 +823,7 @@ Please generate bilingual summary:"""
         return False
     
     def format_summary(self, summary, ai_service):
-        """格式化摘要显示"""
+        """格式化摘要显示（包含CI环境标识）"""
         # 根据语言设置显示不同的标题
         service_names = {
             'zh': {
@@ -719,7 +833,8 @@ Please generate bilingual summary:"""
                 'claude': 'AI智能摘要 (Claude)',
                 'gemini': 'AI智能摘要 (Gemini)',
                 'fallback': '自动摘要',
-                'cached': 'AI智能摘要'
+                'cached': 'AI智能摘要',
+                'ci_cache_only': 'AI智能摘要 (缓存)'
             },
             'en': {
                 'deepseek': 'AI Summary (DeepSeek)',
@@ -728,7 +843,8 @@ Please generate bilingual summary:"""
                 'claude': 'AI Summary (Claude)',
                 'gemini': 'AI Summary (Gemini)',
                 'fallback': 'Auto Summary',
-                'cached': 'AI Summary'
+                'cached': 'AI Summary',
+                'ci_cache_only': 'AI Summary (Cached)'
             },
             'both': {
                 'deepseek': 'AI智能摘要 / AI Summary (DeepSeek)',
@@ -737,7 +853,8 @@ Please generate bilingual summary:"""
                 'claude': 'AI智能摘要 / AI Summary (Claude)',
                 'gemini': 'AI智能摘要 / AI Summary (Gemini)',
                 'fallback': '自动摘要 / Auto Summary',
-                'cached': 'AI智能摘要 / AI Summary'
+                'cached': 'AI智能摘要 / AI Summary',
+                'ci_cache_only': 'AI智能摘要 / AI Summary (缓存)'
             }
         }
         
@@ -745,8 +862,8 @@ Please generate bilingual summary:"""
         service_name = name_config.get(ai_service, name_config['fallback'])
         
         # 图标和颜色配置
-        icon = '💾' if ai_service != 'fallback' else '📝'
-        color = 'info' if ai_service != 'fallback' else 'tip'
+        icon = '💾' if ai_service not in ['fallback', 'ci_cache_only'] else '📝'
+        color = 'info' if ai_service not in ['fallback', 'ci_cache_only'] else 'tip'
         
         return f'''!!! {color} "{icon} {service_name}"
     {summary}
@@ -758,9 +875,10 @@ ai_summary_generator = AISummaryGenerator()
 
 # 🔧 配置函数
 def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_files=None, 
-                        ai_service=None, service_config=None, language='zh'):
+                        ai_service=None, service_config=None, language='zh',
+                        ci_enabled=None, local_enabled=None, ci_only_cache=None, ci_fallback=None):
     """
-    配置AI摘要功能（支持多语言版本）
+    配置AI摘要功能（支持CI和本地环境分别配置）
     
     Args:
         enabled_folders: 启用AI摘要的文件夹列表
@@ -769,22 +887,28 @@ def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_fi
         ai_service: 使用的AI服务 ('deepseek', 'openai', 'claude', 'gemini')
         service_config: AI服务配置
         language: 摘要语言 ('zh': 中文, 'en': 英文, 'both': 双语)
+        ci_enabled: 是否在 CI 环境中启用
+        local_enabled: 是否在本地环境中启用
+        ci_only_cache: CI 环境是否仅使用缓存
+        ci_fallback: CI 环境是否启用备用摘要
     
     Example:
-        # 配置英文摘要
+        # 推荐配置：只在 CI 中启用，本地禁用
         configure_ai_summary(
             enabled_folders=['blog/', 'docs/'],
-            ai_service='openai',
-            language='en'
-        )
-        
-        # 配置双语摘要
-        configure_ai_summary(
-            language='both'
+            language='zh',
+            ci_enabled=True,         # CI 中启用
+            local_enabled=False,     # 本地禁用
+            ci_only_cache=False,     # CI 中允许生成新摘要
+            ci_fallback=True         # CI 中启用备用摘要
         )
     """
     ai_summary_generator.configure_folders(enabled_folders, exclude_patterns, exclude_files)
     ai_summary_generator.configure_language(language)
+    
+    # 配置环境行为
+    if any(x is not None for x in [ci_enabled, local_enabled, ci_only_cache, ci_fallback]):
+        configure_ci_behavior(ci_enabled, local_enabled, ci_only_cache, ci_fallback)
     
     if ai_service:
         if service_config:
@@ -795,41 +919,42 @@ def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_fi
         else:
             ai_summary_generator.configure_ai_service(ai_service)
 
-# 新增语言配置函数
-def configure_summary_language(language='zh'):
+# 🔧 新增 CI 配置函数
+def configure_ci_behavior(enabled_in_ci=None, enabled_in_local=None, ci_only_cache=None, ci_fallback_enabled=None):
     """
-    配置摘要语言
+    配置 CI 和本地环境行为
     
     Args:
-        language: 语言设置
-            'zh': 中文摘要
-            'en': 英文摘要  
-            'both': 双语摘要（中英文）
+        enabled_in_ci: 是否在 CI 环境中启用 AI 摘要
+        enabled_in_local: 是否在本地环境中启用 AI 摘要
+        ci_only_cache: CI 环境是否仅使用缓存
+        ci_fallback_enabled: CI 环境是否启用备用摘要
     
     Example:
-        # 切换到英文摘要
-        configure_summary_language('en')
+        # 只在 CI 中启用，本地禁用（推荐配置）
+        configure_ci_behavior(enabled_in_ci=True, enabled_in_local=False)
         
-        # 切换到双语摘要
-        configure_summary_language('both')
+        # 本地和 CI 都启用
+        configure_ci_behavior(enabled_in_ci=True, enabled_in_local=True)
+        
+        # 只在本地启用，CI 中禁用
+        configure_ci_behavior(enabled_in_ci=False, enabled_in_local=True)
     """
-    ai_summary_generator.configure_language(language)
-    lang_names = {'zh': '中文', 'en': '英文', 'both': '双语'}
-    print(f"✅ 摘要语言配置完成: {lang_names.get(language, language)}")
-
-# 新增手动清理缓存函数
-def clear_ai_cache():
-    """手动清理AI摘要缓存"""
-    try:
-        cache_dir = Path("site/.ai_cache")
-        if cache_dir.exists():
-            shutil.rmtree(cache_dir)
-            cache_dir.mkdir(exist_ok=True)
-            print("✅ 手动清理AI摘要缓存完成")
-        else:
-            print("📁 缓存目录不存在")
-    except Exception as e:
-        print(f"❌ 手动清理缓存失败: {e}")
+    if enabled_in_ci is not None:
+        ai_summary_generator.ci_config['enabled_in_ci'] = enabled_in_ci
+        print(f"✅ CI 环境 AI 摘要: {'启用' if enabled_in_ci else '禁用'}")
+    
+    if enabled_in_local is not None:
+        ai_summary_generator.ci_config['enabled_in_local'] = enabled_in_local
+        print(f"✅ 本地环境 AI 摘要: {'启用' if enabled_in_local else '禁用'}")
+    
+    if ci_only_cache is not None:
+        ai_summary_generator.ci_config['ci_only_cache'] = ci_only_cache
+        print(f"✅ CI 环境仅缓存模式: {'启用' if ci_only_cache else '禁用'}")
+    
+    if ci_fallback_enabled is not None:
+        ai_summary_generator.ci_config['ci_fallback_enabled'] = ci_fallback_enabled
+        print(f"✅ CI 环境备用摘要: {'启用' if ci_fallback_enabled else '禁用'}")
 
 def on_page_markdown(markdown, page, config, files):
     """MkDocs hook入口点"""

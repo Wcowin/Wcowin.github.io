@@ -1,7 +1,7 @@
 {
-  "summary": "本文提供针对国内用户的Homebrew自动安装方案，包含Mac和Linux平台的完整版与极速版脚本，均采用国内镜像地址以加速下载。针对安装过程中可能出现的SSL证书过期问题，给出关闭验证的解决方案，并附带常见错误处理指南和基础brew命令参考，帮助用户快速完成安装及日常使用。",
-  "service": "deepseek",
+  "summary": "苹果电脑 卸载脚本：\n[代码示例]\n常见错误去下方地址查看:.",
+  "service": "fallback",
   "page_title": "Homebrew国内如何自动安装(国内地址)(Mac & Linux)",
-  "timestamp": "2025-06-04T01:33:03.385528",
+  "timestamp": "2025-06-04T02:41:32.089448",
   "language": "zh"
 }

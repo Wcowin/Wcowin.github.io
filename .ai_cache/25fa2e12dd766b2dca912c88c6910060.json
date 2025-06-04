@@ -1,7 +1,7 @@
 {
-  "summary": "该项目实现了一个基于原生JavaScript的响应式音乐播放器，支持本地音乐管理、多模式播放和在线搜索功能。核心功能包括播放列表管理、智能搜索、进度控制和多终端适配，采用Audio API和DOM操作实现播放逻辑。项目适合前端初学者学习音频处理、响应式布局和API调用，提供了扩展歌词显示和主题定制等开发建议。",
-  "service": "deepseek",
+  "summary": "com/Wcowin/Muplayer\n\n本项目是一个基于原生 JavaScript、HTML 和 CSS 实现的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、顺序/随机/单曲循环播放等功能.",
+  "service": "fallback",
   "page_title": "简单的 JavaScript 音乐播放器",
-  "timestamp": "2025-06-04T01:39:03.684285",
+  "timestamp": "2025-06-04T02:41:33.994641",
   "language": "zh"
 }

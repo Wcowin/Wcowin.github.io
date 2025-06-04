@@ -1,7 +1,7 @@
 {
-  "summary": "MkDocs因其轻量化和易用性被广泛应用于开源项目文档站点搭建，如FastAPI、Django REST framework等知名项目。本文汇总了多个基于MkDocs主题的实用站点案例，涵盖算法教程、技术文档、个人博客等场景，为开发者提供主题选择和建站参考。这些案例展示了MkDocs在技术文档托管和个人知识管理中的灵活应用。",
-  "service": "deepseek",
+  "summary": "鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站.",
+  "service": "fallback",
   "page_title": "基于Mkdocs主题的站点",
-  "timestamp": "2025-06-04T01:35:24.866811",
+  "timestamp": "2025-06-04T02:41:32.634479",
   "language": "zh"
 }

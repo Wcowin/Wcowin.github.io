@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了Git版本控制系统的核心操作与实用技巧，涵盖仓库创建、分支管理、冲突解决等基础功能，并深入讲解stash暂存、rebase/merge策略选择、cherry-pick等高级用法。重点演示了冲突处理流程和提交修改方法，适用于日常代码管理、紧急修复等开发场景，帮助开发者提升Git使用效率。",
-  "service": "deepseek",
+  "summary": "info\n原文地址:Git 实用技巧{target=\"_blank\"}\n\nGit 实用技巧\n一、基本操作\n1.新建 git 仓库\n[代码示例]\n\n[图片：]  \n\n[代码示例]\n\n2.",
+  "service": "fallback",
   "page_title": "Git 实用技巧",
-  "timestamp": "2025-06-04T01:37:58.680809",
+  "timestamp": "2025-06-04T02:41:33.472910",
   "language": "zh"
 }

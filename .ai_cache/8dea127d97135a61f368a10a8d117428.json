@@ -1,7 +1,7 @@
 {
-  "summary": "oh-my-zsh更新时若因git文件修改导致失败，可通过特定命令解决。该问题常见于手动或自动更新场景，需绕过git冲突强制更新。方案适用于开发者维护zsh配置时出现的版本冲突，通过重置本地修改保留核心功能。技术要点涉及git的`--hard`参数强制同步远程仓库。",
-  "service": "deepseek",
+  "summary": "本文围绕oh-my-zsh 更新展开讨论，介绍了相关的技术概念、应用场景和实践方法。",
+  "service": "fallback",
   "page_title": "oh-my-zsh 更新",
-  "timestamp": "2025-06-04T01:35:53.110469",
+  "timestamp": "2025-06-04T02:41:32.904381",
   "language": "zh"
 }

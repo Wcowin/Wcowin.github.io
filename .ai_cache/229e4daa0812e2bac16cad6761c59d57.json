@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了将Python脚本(.py)打包成Windows可执行程序(.exe)的方法，重点讲解了使用PyInstaller工具实现跨平台转换的技术方案。内容涵盖环境配置、参数设置、打包流程等关键步骤，解决了Python程序在没有Python环境的Windows系统上运行的问题，适用于需要分发独立应用程序的开发场景。",
-  "service": "deepseek",
+  "summary": "-   :octicons-bookmark-16:{.middle } __推荐的文章__\n\n- 点我～CSDN原创-如何将Python文件.exe可执行程序{target=“_blank”}.",
+  "service": "fallback",
   "page_title": "将Python文件.py打包成.exe可执行程序",
-  "timestamp": "2025-06-04T01:35:14.361933",
+  "timestamp": "2025-06-04T02:41:32.593328",
   "language": "zh"
 }

@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了利用百度API实现植物识别的技术方案。通过申请API密钥获取访问权限，使用Base64编码转换本地图片数据，调用classify_image函数发送请求并设置baike_num参数获取植物百科信息。该方案操作简便，适用于快速识别植物种类及获取相关知识的应用场景。",
-  "service": "deepseek",
+  "summary": "植物识别_拍照识别植物-百度Al开放平台\n\n一、首先点上方链接去申请应用\n\n有免费试用，随后得到ID和key\n[图片：image.b64encode()方法将图像数据转换为Base64编码.",
+  "service": "fallback",
   "page_title": "利用百度API进行植物识别",
-  "timestamp": "2025-06-04T01:38:31.771924",
+  "timestamp": "2025-06-04T02:41:33.738882",
   "language": "zh"
 }

@@ -1,7 +1,7 @@
 {
-  "summary": "本文汇总了多个iOS限免应用资源平台，包括mergeek、iOSnoops、appsliced等，这些网站提供每日更新的限免应用信息、历史价格查询及推送服务。部分平台支持微信订阅或RSS订阅，方便用户及时获取优惠信息。需注意某些网站可能需要特殊网络工具访问。这些资源帮助用户高效发现并下载限时免费的高质量应用。",
-  "service": "deepseek",
+  "summary": "还支持微信服务号订阅  \n[图片：]\n\niOSnoops\n\niOSnoops 每天都会免费提供iOS应用的汇总.这个没有应用程式版本，但您可以在他们的行动网站上查看交易，然后点击进入App Store.",
+  "service": "fallback",
   "page_title": "苹果iphone /iOS 限免网站合集",
-  "timestamp": "2025-06-04T01:34:40.873552",
+  "timestamp": "2025-06-04T02:41:32.431934",
   "language": "zh"
 }

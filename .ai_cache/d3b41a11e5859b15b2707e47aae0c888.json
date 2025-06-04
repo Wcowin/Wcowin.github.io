@@ -1,7 +1,7 @@
 {
-  "summary": "本文详细介绍了Mkdocs配置文件mkdocs.yml的核心配置项，包括网站基本信息设置、主题配色方案（支持明暗模式切换）、导航功能优化（如目录展开、返回顶部等）、搜索增强特性以及Markdown扩展功能。重点讲解了如何通过palette配置主题颜色、features启用实用功能模块，并提供了自定义CSS/JS的方法。文章还涉及标签系统实现、元数据配置技巧，为开发者提供了全面的Mkdocs主题定制指南。",
-  "service": "deepseek",
+  "summary": "官方文件：Changing the colors - Material for MkDocs\n\n建议详细学习一下上面的官方网站↑↑↑\n\n我把我目前的配置文件mkdocs.",
+  "service": "fallback",
   "page_title": "2.Mkdocs配置说明(mkdocs.yml)",
-  "timestamp": "2025-06-04T01:33:57.776874",
+  "timestamp": "2025-06-04T02:41:32.268778",
   "language": "zh"
 }
