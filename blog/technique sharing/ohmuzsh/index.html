@@ -3607,7 +3607,7 @@
 
 <div class="admonition info">
 <p class="admonition-title">💾 AI智能摘要 (DeepSeek)</p>
-<p>oh-my-zsh更新时若因git文件修改导致失败，可通过特定命令解决。文章提供了手动修复的代码示例，适用于自动或手动更新场景。该方案源自实践总结，能有效处理因本地配置变更引发的更新冲突问题，确保oh-my-zsh顺利升级。</p>
+<p>oh-my-zsh更新时若因git文件修改导致失败，可通过特定命令解决。该问题常见于手动或自动更新场景，需绕过git冲突强制更新。方案适用于开发者维护zsh配置时出现的版本冲突，通过重置本地修改保留核心功能。技术要点涉及git的<code>--hard</code>参数强制同步远程仓库。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">📖 阅读信息</p>

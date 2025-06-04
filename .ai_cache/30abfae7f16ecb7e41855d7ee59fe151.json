@@ -1,7 +1,7 @@
 {
-  "summary": "霞鹜文楷是一款基于FONTWORKS Klee One衍生的开源中文字体，兼具仿宋和楷体特点，适合屏幕阅读和中等长度文本排版。该字体提供多个版本，包括屏幕阅读版、轻便版、GB/T",
+  "summary": "霞鹜文楷是一款基于FONTWORKS Klee One衍生的开源中文字体，兼具仿宋和楷体特点，适合诗词和注释排版。提供多个版本，包括屏幕阅读版、轻便版、GB/TC规范版等，支持简繁日韩字符。该字体解决了开源中文字体中楷体稀缺的问题，并通过SIL协议允许商用。用户可通过GitHub、Gitee等平台获取，支持Windows/macOS系统安装。",
   "service": "deepseek",
   "page_title": "修改网站字体",
-  "timestamp": "2025-06-03T14:16:36.713357",
+  "timestamp": "2025-06-04T01:36:55.791590",
   "language": "zh"
 }

@@ -1,7 +1,7 @@
 {
-  "summary": "pip是Python的包管理工具，仅支持在系统命令行中使用，不支持Python交互环境。用户可通过直接输入pip命令查看主要功能列表。文章详细介绍了Windows系统下pip的安装方法，包括指定安装路径和更新依赖包的操作步骤，为Python开发者提供了实用的包管理指导。",
+  "summary": "pip是Python的包管理工具，仅支持在系统命令行中使用，不支持Python交互环境。用户可通过直接输入pip命令查看主要功能列表。文章详细介绍了pip的安装方法（以Windows为例）及常用操作，包括指定安装路径、更新依赖包等核心功能，为Python开发者提供了实用的包管理指南。",
   "service": "deepseek",
   "page_title": "PIP",
-  "timestamp": "2025-06-03T14:15:00.485564",
+  "timestamp": "2025-06-04T01:35:09.783461",
   "language": "zh"
 }
