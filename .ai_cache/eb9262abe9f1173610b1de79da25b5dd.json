@@ -1,7 +1,0 @@
-{
-  "summary": "本项目深受 utterances 的启发.所有数据均储存在 GitHub Discussions 中.:octocat:\n支持自定义主题.🔧\n自动从 GitHub 拉取新评论与编辑.",
-  "service": "fallback",
-  "page_title": "添加评论系统(giscus为例)",
-  "timestamp": "2025-06-04T02:49:14.361036",
-  "language": "zh"
-}

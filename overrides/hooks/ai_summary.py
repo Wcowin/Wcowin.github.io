@@ -785,6 +785,11 @@ Please generate bilingual summary:"""
             env_desc = '(CI)' if is_ci else '(本地)'
             print(f"✅ 使用缓存摘要 {env_desc}: {page.file.src_path}")
         else:
+            # 如果在 CI 环境中且配置为只使用缓存，直接跳过摘要生成
+            if is_ci and self.ci_config['ci_only_cache']:
+                print(f"📦 CI 环境仅使用缓存模式，无缓存可用，跳过摘要生成: {page.file.src_path}")
+                return markdown
+            
             # 生成新摘要
             lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
             env_desc = '(CI)' if is_ci else '(本地)'
