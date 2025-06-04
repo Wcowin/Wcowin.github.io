@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()  # 自动加载 .env 文件
+
 import re
 import json
 import hashlib
@@ -14,10 +17,25 @@ class AISummaryGenerator:
         
         # 🚀 CI 环境配置 - 默认只在 CI 环境中启用
         self.ci_config = {
+            # CI环境启用控制：从环境变量AI_SUMMARY_CI_ENABLED读取，默认为'true'
+            # 控制是否在CI/CD环境（如GitHub Actions、GitLab CI等）中启用AI摘要功能
             'enabled_in_ci': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',  # 默认 CI 中启用
+            
+            # 本地环境启用控制：从环境变量AI_SUMMARY_LOCAL_ENABLED读取，默认为'false'
+            # 控制是否在本地开发环境中启用AI摘要功能，默认禁用以避免开发时产生API费用
             'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',  # 默认本地禁用
+            
+            # 下面这行是被注释的备选配置，如果启用则本地环境默认开启AI摘要
             # 'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',  # 默认本地启用
+            
+            # CI缓存策略：从环境变量AI_SUMMARY_CI_ONLY_CACHE读取，默认为'false'
+            # false = CI环境中允许调用AI API生成新摘要
+            # true = CI环境中仅使用已有缓存，不调用AI API（节省API费用和构建时间）
             'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',  # CI 中也允许生成新摘要
+            
+            # CI备用摘要控制：从环境变量AI_SUMMARY_CI_FALLBACK读取，默认为'true'
+            # true = 当AI服务不可用时，启用基于关键词的本地备用摘要生成
+            # false = 禁用备用摘要，AI失败时不显示任何摘要
             'ci_fallback_enabled': os.getenv('AI_SUMMARY_CI_FALLBACK', 'true').lower() == 'true'
         }
         
@@ -29,14 +47,14 @@ class AISummaryGenerator:
             'deepseek': {
                 'url': 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
                 'model': 'deepseek-v3-250324',
-                'api_key': os.getenv('DEEPSEEK_API_KEY', '42b2e3d9-454a-4970-a4a3-c6c1fcd6220b'),
+                'api_key': os.getenv('DEEPSEEK_API_KEY', ),
                 'max_tokens': 150,
                 'temperature': 0.3
             },
             'openai': {
                 'url': 'https://api.chatanywhere.tech/v1/chat/completions',
                 'model': 'gpt-3.5-turbo',  # 或 'gpt-4', 'gpt-4-turbo'
-                'api_key': os.getenv('OPENAI_API_KEY', 'sk-vTIWRtY595O8K7NxhNMPohGGrEimNFspS6iLDH1yjORy7Lcj'),
+                'api_key': os.getenv('OPENAI_API_KEY', ),
                 'max_tokens': 150,
                 'temperature': 0.3
             },

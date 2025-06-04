@@ -1,9 +1,59 @@
+# name: ci 
+# on:
+#   push:
+#     branches:
+#       - master 
+#       - main
+# permissions:
+#   contents: write
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#           sparse-checkout: |
+#             docs
+#             includes
+#       - uses: actions/setup-python@v4
+#         with:
+#           python-version: 3.x
+#       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+#       - uses: actions/cache@v3
+#         with:
+#           key: mkdocs-material-${ env.cache_id }
+#           path: .cache
+#           restore-keys: |
+#             mkdocs-material-
+#       - run: pip install mkdocs-git-revision-date-localized-plugin
+#       - run: pip install mkdocs-git-authors-plugin
+#       - run: pip install mkdocs-git-committers-plugin-2
+#       - run: pip install markdown-callouts
+#       # - run: pip install mkdocs-minify-plugin
+#       - run: pip install mkdocs-rss-plugin
+#       - run: pip install requests>=2.25.0
+#       - run: pip install python-dateutil>=2.8.0
+#       - run: pip install cachetools>=4.2.0
+#       # - run: pip install mkdocs-open-in-new-tab
+#       - run: pip install pymdown-extensions
+#       # - run: pip install mkdocs-glightbox
+#       # - run: pip install "mkdocs-material[imaging]"
+#       # - run: pip install mkdocs-statistics-plugin        
+#       - run: pip install mkdocs-material 
+#       - run: pip install --upgrade --force-reinstall mkdocs-material
+#       - run: mkdocs gh-deploy --force
+
 name: ci 
 on:
   push:
     branches:
       - master 
       - main
+  # 禁止从 fork 仓库访问 secrets
+  pull_request:
+    types: [closed]
+    branches: [main, master]
 permissions:
   contents: write
 jobs:
@@ -19,10 +69,11 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - name: Set cache ID
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:
-          key: mkdocs-material-${ env.cache_id }
+          key: mkdocs-material-${{ github.run_number }}
           path: .cache
           restore-keys: |
             mkdocs-material-
@@ -30,14 +81,23 @@ jobs:
       - run: pip install mkdocs-git-authors-plugin
       - run: pip install mkdocs-git-committers-plugin-2
       - run: pip install markdown-callouts
-      # - run: pip install mkdocs-minify-plugin
       - run: pip install mkdocs-rss-plugin
-      # - run: pip install mkdocs-open-in-new-tab
+      - run: pip install requests>=2.25.0
+      - run: pip install python-dateutil>=2.8.0
+      - run: pip install cachetools>=4.2.0
       - run: pip install pymdown-extensions
-      # - run: pip install mkdocs-glightbox
-      # - run: pip install "mkdocs-material[imaging]"
-      # - run: pip install mkdocs-statistics-plugin        
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - name: Deploy with AI Summary
+        env:
+          # AI 摘要配置
+          AI_SUMMARY_CI_ENABLED: 'true' #作用: 在CI环境（如GitHub Actions）中启用AI摘要功能
+          AI_SUMMARY_LOCAL_ENABLED: 'false' #作用: 在本地开发环境中禁用AI摘要功能
+          AI_SUMMARY_CI_ONLY_CACHE: 'false' #作用: 作用: CI环境中允许生成新的AI摘要,如果设为'true'，CI中只会使用已有缓存，不会调用AI API生成新摘要
+          AI_SUMMARY_CI_FALLBACK: 'true' #作用: 当CI环境中没有生成新的AI摘要时，是否使用本地缓存的AI摘要
+          # API 密钥从 GitHub Secrets 获取
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }} #作用: 用于访问DeepSeek API的密钥
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }} #作用: 用于访问OpenAI API的密钥
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }} #作用: 用于访问Google API的密钥
+        run: mkdocs gh-deploy --force
 

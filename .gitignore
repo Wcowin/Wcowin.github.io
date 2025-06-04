@@ -1,0 +1,6 @@
+# 在项目根目录的 .gitignore 文件中添加
+.env
+.env.local
+.env.*.local
+*.key
+site/.ai_cache/
