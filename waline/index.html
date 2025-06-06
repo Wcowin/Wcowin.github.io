@@ -1360,7 +1360,7 @@ async function sendBarkMessage(event) {
     try {
         const success = await sendBarkMessage_internal(title, fullBody);
         if (success) {
-            showStatus('✅ 消息发送成功！您应该能在设备上收到推送通知', 'success');
+            showStatus('✅ 消息发送成功！我已经收到推送通知', 'success');
             form.reset();
         } else {
             showStatus('❌ 发送失败，请稍后重试', 'error');
