@@ -1,7 +1,0 @@
-{
-  "summary": "MkDocs AI Hooks是一款为MkDocs文档系统设计的智能插件，通过集成DeepSeek等AI服务实现自动摘要生成和阅读统计功能。支持多语言摘要、智能内容清理和缓存优化，提供文件夹/页面级别的精确控制。特色包括中文优化的阅读时间估算、多API服务支持以及Material风格展示。安装简便，支持直接下载或Git克隆，适合技术文档和博客的智能化管理。采用MIT开源协议，具有高度可配置性和经济高效的API调用方案。",
-  "service": "deepseek",
-  "page_title": "MkDocs文档AI摘要",
-  "timestamp": "2025-06-03T20:28:56.086283",
-  "language": "zh"
-}

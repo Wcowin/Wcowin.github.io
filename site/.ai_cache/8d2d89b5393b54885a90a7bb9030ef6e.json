@@ -1,7 +1,8 @@
 {
-  "summary": "该文章介绍了三种网页背景特效的实现方法：雪花、樱花和粒子效果。通过JavaScript动态加载外部脚本，利用LocalStorage控制特效的显示条件，确保仅在特定页面触发。代码示例展示了如何根据URL路径存储状态标志，并动态插入特效脚本，适用于美化博客或个性化网站的场景。",
-  "service": "deepseek",
+  "summary": "文章介绍了如何通过JavaScript代码实现背景特效，根据当前页面URL动态展示雪花效果。通过判断特定页面，设置LocalStorage标志，再根据标志加载雪花效果的脚本。这种技术可用于网页美化，提升用户体验。",
+  "service": "openai",
   "page_title": "背景特效",
-  "timestamp": "2025-06-03T19:33:08.941398",
-  "language": "zh"
+  "timestamp": "2025-06-06T16:45:15.555860",
+  "language": "zh",
+  "cache_version": "1.3.0"
 }

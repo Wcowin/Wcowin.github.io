@@ -7,6 +7,7 @@ description: >
   a blog alongside your documentation or standalone
 categories:
   - Hello World
+hide_reading_time: true
 ---
 
 

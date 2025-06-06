@@ -1,7 +1,8 @@
 {
-  "summary": "本文介绍了PD虚拟机的安装与使用指南，重点包括PD Runner工具的下载与配置方法，用于绕过PD 18试用版的授权限制。详细说明了虚拟机安装、时间修改绕过机制、常见问题解决方案（如密码输入、错误代码处理等），并区分了ARM M1和Intel芯片的Windows系统安装要求。通过菜单栏工具实现无期限使用，支持自动识别客户机，简化了虚拟机的启动流程。",
-  "service": "deepseek",
+  "summary": "文章介绍了PD虚拟机的安装和使用方法，包括下载安装PD软件、虚拟机、以及使用PD Runner启动虚拟机的步骤。同时提供了解决试用过期、密码输入、PD Runner无窗口等常见问题的方法。文章还指出ARM M1只能安装Arm架构的Windows或Linux系统，Intel则可直接下载官方镜像安装Windows。",
+  "service": "openai",
   "page_title": "PD虚拟机",
-  "timestamp": "2025-06-03T19:30:20.202386",
-  "language": "zh"
+  "timestamp": "2025-06-06T16:42:58.190239",
+  "language": "zh",
+  "cache_version": "1.3.0"
 }

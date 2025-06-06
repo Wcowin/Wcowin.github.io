@@ -1,7 +1,8 @@
 {
-  "summary": "该项目实现了一个基于原生JavaScript的响应式音乐播放器，支持本地音乐管理、多模式播放、在线搜索和暗黑模式。核心功能包括音频文件读取、播放列表管理、智能搜索及跨终端适配，技术涉及Audio API、DOM操作和CSS响应式设计。适合前端开发者学习音频处理与Web应用开发，具备扩展在线歌词、收藏等功能的潜力。",
-  "service": "deepseek",
+  "summary": "这是一个基于原生 JavaScript、HTML 和 CSS 实现的响应式音乐播放器项目，支持本地音乐添加、搜索、播放列表管理、多种播放模式等功能。适合初学者学习 Web 前端开发和音频 API 应用，具备响应式布局设计。技术点包括 DOM 操作、Audio API、播放逻辑、响应式 CSS 布局等。未来可扩展歌词显示、主题色自定义等功能。",
+  "service": "openai",
   "page_title": "简单的 JavaScript 音乐播放器",
-  "timestamp": "2025-06-03T19:35:20.136454",
-  "language": "zh"
+  "timestamp": "2025-06-06T16:46:31.727722",
+  "language": "zh",
+  "cache_version": "1.3.0"
 }

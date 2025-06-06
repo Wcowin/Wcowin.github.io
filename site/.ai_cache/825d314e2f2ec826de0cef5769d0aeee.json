@@ -1,7 +1,8 @@
 {
-  "summary": "本文介绍了一种简化iPhone多账号登录的方法，通过在设置中添加外区Apple ID到邮件账户，用户切换App Store或更新应用时无需重复输入密码或进行双重认证。该技巧适用于需要频繁切换不同地区账号的场景，有效提升了操作效率。",
-  "service": "deepseek",
+  "summary": "在iPhone上避免频繁登录和双重认证的方法是将外区ID添加到设置-邮件-账户中。这样可以实现在切换商店或更新App时无需再次验证密码，提升用户体验。",
+  "service": "openai",
   "page_title": "iphone多账号如何不频繁登录,双重认证",
-  "timestamp": "2025-06-03T19:31:35.843640",
-  "language": "zh"
+  "timestamp": "2025-06-06T16:44:19.955214",
+  "language": "zh",
+  "cache_version": "1.3.0"
 }

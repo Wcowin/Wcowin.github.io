@@ -1,7 +1,8 @@
 {
-  "summary": "Google翻译和FCM服务在中国大陆出现异常，原因不同：Google自行更改DNS导致翻译服务转向国内IP，而FCM则被直接阻断。解决方案包括修改hosts文件（如指向180.163.151.162等国内IP）、使用网关转发流量或启用TUN模式。谷歌官方称停用翻译服务是因\"使用率低\"，但实际可能与政策调整有关。技术层面涉及DNS解析、IP黑洞及UWP应用沙盒限制等问题。",
-  "service": "deepseek",
+  "summary": "本文揭示了Google翻译和FCM在中国大陆异常的原因：Google更改DNS导致翻译服务无法使用，而FCM被墙。解决方法包括使用网关、修改hosts文件等。谷歌停用中国大陆翻译功能，可能因使用率低。文章提供了Macbook恢复功能的方法。",
+  "service": "openai",
   "page_title": "解决谷歌翻译用不了的问题",
-  "timestamp": "2025-06-03T19:32:26.003494",
-  "language": "zh"
+  "timestamp": "2025-06-06T16:44:47.073980",
+  "language": "zh",
+  "cache_version": "1.3.0"
 }

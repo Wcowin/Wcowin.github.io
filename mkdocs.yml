@@ -100,6 +100,7 @@ nav:
     - Mkdocs美化/补充:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
         - MkDocs文档AI摘要: blog/websitebeauty/MkDocs-AI-Hooks.md
+        - 添加阅读信息统计: blog/websitebeauty/reading_time.md
         - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
         - 如何自定义域名: blog/websitebeauty/Customdomain.md
         - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md

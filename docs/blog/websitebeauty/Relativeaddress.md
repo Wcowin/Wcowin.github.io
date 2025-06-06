@@ -2,7 +2,7 @@
 title: 相对地址的一些问题
 tags:
   - Mkdocs
-status: new
+# status: new
 ---
 
 # 针对MKdocs中相对地址引用的一些问题

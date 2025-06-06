@@ -1,7 +1,8 @@
 {
-  "summary": "本文提供针对国内用户的Homebrew自动安装方案，包含Mac/Linux的常规/极速安装脚本及卸载脚本，均采用国内镜像源以解决下载慢问题。针对SSL证书过期报错，给出关闭Git SSL验证的解决方案，并附常见错误排查指南和常用brew命令。所有脚本可直接复制执行，显著提升国内环境下Homebrew的安装成功率与效率。",
-  "service": "deepseek",
+  "summary": "文章介绍了在国内如何自动安装Homebrew的方法，提供了常规和极速安装脚本，以及卸载脚本。针对SSL证书过期错误，给出了关闭SSL验证的解决方法。通过终端操作可以轻松完成安装，解决了安装过程中可能遇到的问题。文章还包括常见错误处理和常用brew指令。",
+  "service": "openai",
   "page_title": "Homebrew国内如何自动安装(国内地址)(Mac & Linux)",
-  "timestamp": "2025-06-03T19:30:24.508755",
-  "language": "zh"
+  "timestamp": "2025-06-06T16:43:02.202077",
+  "language": "zh",
+  "cache_version": "1.3.0"
 }

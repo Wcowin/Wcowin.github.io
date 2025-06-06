@@ -1,7 +1,0 @@
-{
-  "summary": "该项目为MkDocs文档系统提供AI驱动的智能摘要生成和阅读统计功能，支持OpenAI、DeepSeek等多API服务，具备自动语言识别、内容清理和缓存优化特性。通过hooks机制实现，可精确控制摘要范围，提供中英文支持及阅读时间估算，显著提升技术文档的可读性和管理效率。",
-  "service": "deepseek",
-  "page_title": "MkDocs文档AI摘要",
-  "timestamp": "2025-06-03T20:49:09.685952",
-  "language": "zh"
-}
