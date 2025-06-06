@@ -16,7 +16,7 @@ import shutil
 def is_git_repo():
     """检查是否在 Git 仓库中"""
     return Path('.git').exists() or subprocess.run(['git', 'rev-parse', '--git-dir'], 
-                                                   capture_output=True).returncode == 0
+                                                capture_output=True).returncode == 0
 
 def auto_migrate_cache():
     """自动迁移缓存"""
