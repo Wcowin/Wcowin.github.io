@@ -59,7 +59,7 @@ theme:
     - content.code.copy # 代码块一键复制
     - content.code.select # 代码块一键全选
     # - content.action.edit # 编辑按钮
-    - content.action.view # 查看源码按钮
+    # - content.action.view # 查看源码按钮
     - content.code.annotate # 代码注释
   language: zh # 一些提示性的文字会变成中文
   icon:
@@ -99,7 +99,7 @@ nav:
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化/补充:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
-        - MkDocs文档AI摘要: blog/websitebeauty/MkDocs-AI-Hooks.md
+        - MkDocs文档AI摘要: blog/websitebeauty/Mkdocs-AI-Summary.md
         - 添加阅读信息统计: blog/websitebeauty/reading_time.md
         - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
         - 如何自定义域名: blog/websitebeauty/Customdomain.md

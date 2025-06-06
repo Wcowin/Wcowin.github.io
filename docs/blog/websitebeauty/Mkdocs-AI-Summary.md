@@ -5,10 +5,12 @@ tags:
 status: new
 ---  
 
-# MkDocs AI Hooks
+# Mkdocs AI Summary
 
-仓库地址：https://github.com/Wcowin/mkdocs-ai-hooks  
-在线预览：https://wcowin.work/mkdocs-ai-hooks/
+![logo 2](https://s1.imagehub.cc/images/2025/06/06/ee327dc2912fd2f31d38ee8a16a1e1ff.png){.img1}
+
+仓库地址:[https://github.com/Wcowin/Mkdocs-AI-Summary](https://github.com/Wcowin/Mkdocs-AI-Summary)  
+🌐 **在线演示**:[https://wcowin.work/Mkdocs-AI-Summary/](https://wcowin.work/Mkdocs-AI-Summary/)
 
 <p align="center">
     <img src="https://img.shields.io/badge/MkDocs-Hooks-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white" alt="MkDocs Hooks">
@@ -26,7 +28,6 @@ status: new
 ![预览图1](https://s1.imagehub.cc/images/2025/06/03/d1563500263b22cfd0ffc3679993aa83.jpg)
 ![预览图2](https://s1.imagehub.cc/images/2025/06/03/526b59b6a2e478f2ffa1629320e3e2ce.png)
 
-🌐 **在线演示**: https://wcowin.work/mkdocs-ai-hooks/
 
 
 ---
