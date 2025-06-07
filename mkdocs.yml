@@ -52,6 +52,8 @@ theme:
     - search.suggest # 搜索建议
     - search.highlight # 搜索高亮
     - search.share # 搜索结果分享
+    - toc.follow # 目录跟随滚动
+    # - toc.integrate # 目录集成到侧边栏
     - navigation.expand # 默认展开所有目录
     - navigation.indexes # 支持节索引页
     - content.tabs.link # 支持标签页链接
@@ -385,8 +387,7 @@ plugins:
   #       - tags
   # - social
   - search:
-      # enabled: !ENV [CI, false]   #建议加上这句，不然会影响速度，本地搜索可以不需要，不影响部署时候有
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      separator: '[\s\u200b\-]'
   # - offline
   # - glightbox:
   #     enabled: !ENV [glightbox, false]
