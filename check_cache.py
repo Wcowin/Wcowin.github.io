@@ -10,7 +10,7 @@ from datetime import datetime
 
 def check_cache_status():
     """检查缓存状态"""
-    cache_dir = Path("site/.ai_cache")
+    cache_dir = Path(".ai_cache")
     
     print(f"🔍 检查缓存目录: {cache_dir}")
     print(f"📁 缓存目录存在: {cache_dir.exists()}")
