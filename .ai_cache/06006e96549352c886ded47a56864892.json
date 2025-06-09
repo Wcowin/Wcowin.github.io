@@ -1,0 +1,8 @@
+{
+  "summary": "文章介绍了PD虚拟机的安装和使用方法，包括下载安装PD Runner和PD虚拟机，以及解决试用过期问题。PD Runner是菜单栏APP，可方便启动虚拟机。文中还解答了常见问题，如密码输入、虚拟机名称、错误处理等。对于ARM M1用户，只能安装Arm架构的Windows或Linux系统。",
+  "service": "openai",
+  "page_title": "PD虚拟机",
+  "timestamp": "2025-06-09T07:20:11.410240",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}
