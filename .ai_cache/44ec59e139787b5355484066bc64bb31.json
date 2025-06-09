@@ -1,0 +1,8 @@
+{
+  "summary": "Markdown是一种轻量级标记语言，由John Gruber创建，让写作更高效。它简单易学、跨平台、版本控制友好，支持丰富格式，广泛应用于GitHub、博客等。文章详细介绍了Markdown的基础语法，包括标题、文本样式、列表、链接、图片、表格、代码等，推荐了编辑工具和学习资源，总结了Markdown的优势和最佳实践。",
+  "service": "openai",
+  "page_title": "Markdown指南",
+  "timestamp": "2025-06-09T12:36:38.500960",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

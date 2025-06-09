@@ -1,0 +1,8 @@
+{
+  "summary": "文章介绍了PIP工具在命令行中的应用，强调了其不能在Python命令行中使用。通过简单输入pip命令，可以获取主要命令表单。同时，文章提供了在Windows系统下安装和更新指定包依赖的示例代码。",
+  "service": "openai",
+  "page_title": "PIP",
+  "timestamp": "2025-06-09T12:56:14.821326",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

@@ -30,7 +30,8 @@ tags:
 用于求两个整数 $a, b$ 的最大公约数（gcd）。基本思想是 $\gcd(a, b) = \gcd(b, a \bmod b)$，递归直到余数为0。
 
 **示例：**
-$\gcd(48, 18) = \gcd(18, 12) = \gcd(12, 6) = \gcd(6, 0) = 6$
+$\gcd(48, 18) = \gcd(18, 12)$
+$ = \gcd(12, 6) = \gcd(6, 0) = 6$
 
 **伪代码：**
 ```python
@@ -104,7 +105,8 @@ def exgcd(a, b):
 - 若 $m, n$ 互质，$\varphi(mn) = \varphi(m)\varphi(n)$
 
 **例子：**  
-$\varphi(12)=2^2\times3^1 = 12 \times (1-\frac{1}{2}) \times (1-\frac{1}{3}) = 12 \times \frac{1}{2} \times \frac{2}{3} = 4$
+$\varphi(12)=2^2\times3^1 = 12 \times (1-\frac{1}{2}) \times (1-\frac{1}{3})$
+$= 12 \times \frac{1}{2} \times \frac{2}{3} = 4$
 
 ---
 
@@ -249,7 +251,9 @@ x \equiv 2 \pmod{7}
 $$  
 
 $M=105=3\times5\times7$，$M_1=35=5\times7$，$M_2=21=3\times7$，$M_3=15=3\times5$，$M_1^{-1}=2$，$M_2^{-1}=1$，$M_3^{-1}=1$  
-$x \equiv 2\times35\times2 + 3\times21\times1 + 2\times15\times1 = 140+63+30=233 \equiv 23 \pmod{105}$
+$x \equiv 2\times35\times2 + 3\times21\times1 + 2\times15\times1$  
+
+$= 140+63+30=233 \equiv 23 \pmod{105}$
 
 **应用：**   
 

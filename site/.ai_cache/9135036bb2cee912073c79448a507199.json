@@ -1,8 +1,0 @@
-{
-  "summary": "文章介绍了如何使用JavaScript实现自定义鼠标样式，通过修改鼠标尺寸、颜色等参数来实现个性化效果。在代码示例中，展示了如何在CSS中添加代码以实现鼠标跟随的圆形颜色效果。需要在mkdocs.yml中引入js和css以实现该功能。",
-  "service": "openai",
-  "page_title": "JS实现鼠标样式",
-  "timestamp": "2025-06-06T16:45:29.544799",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

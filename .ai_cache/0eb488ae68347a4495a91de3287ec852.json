@@ -1,0 +1,8 @@
+{
+  "summary": "文章介绍了如何通过JavaScript代码实现背景特效，以雪花效果为例。通过判断当前页面URL，动态设置是否显示雪花效果，利用LocalStorage存储标志位，再根据标志位加载相应的雪花效果脚本。这种技术可用于网页美化和增加视觉吸引力。",
+  "service": "openai",
+  "page_title": "背景特效",
+  "timestamp": "2025-06-09T12:56:49.704327",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

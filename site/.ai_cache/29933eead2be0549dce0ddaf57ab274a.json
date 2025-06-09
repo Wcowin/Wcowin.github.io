@@ -1,8 +1,0 @@
-{
-  "summary": "通过在终端中输入指令，可使Mac的Dock栏仅显示当前运行的应用程序，提高工作效率。同时，可以轻松恢复原始设置。",
-  "service": "openai",
-  "page_title": "小小Mac技巧",
-  "timestamp": "2025-06-06T16:43:57.194918",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

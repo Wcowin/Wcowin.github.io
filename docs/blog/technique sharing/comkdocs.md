@@ -34,3 +34,11 @@ tags:
 - [0X10CC的代码空间](https://tang-jiapeng.github.io/)
 - [GENG Wei's Homepage](https://wgeng.site/index.html)
 - [Wcowin's Web](https://wcowin.work/) 我的博客
+- [Blog of Derrick Marcus](https://blog.yanxuchen.com/)
+- [yangzhang's Site](https://yangzhang.site/)
+- [维燕的数字花园](https://weiyan.cc/)
+- [Isshiki修's Notebook](https://note.isshikih.top/)
+- [Darstib's KG!](https://kg.darstib.cn/)
+- [Singularityu's blog](https://github.com/singularityu820/artical)
+- [HomePage of CaiYa](https://j-yi-11.github.io/index.html)
+- [My Pamphlet Blog](https://ronaldln.github.io/MyPamphlet-Blog/)

@@ -1,8 +1,0 @@
-{
-  "summary": "在docs/overrides目录下创建main.html文件，并在该文件中添加顶部公告栏，通过修改main.html文件实现。",
-  "service": "openai",
-  "page_title": "添加顶部公告栏",
-  "timestamp": "2025-06-06T16:45:18.491423",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

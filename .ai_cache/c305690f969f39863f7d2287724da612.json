@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了如何利用Mkdocs部署静态网页至GitHub Pages。通过创建仓库、配置mkdocs.yml、添加GitHub Workflow等步骤，实现网站部署。重点在于目录结构、GitHub Actions设置和mkdocs.yml配置。最终通过GitHub Desktop上传至GitHub并设置Pages路径，完成网站部署。",
+  "service": "openai",
+  "page_title": "1.利用Mkdocs部署静态网页",
+  "timestamp": "2025-06-09T12:48:22.209519",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

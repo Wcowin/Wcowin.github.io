@@ -1,0 +1,8 @@
+{
+  "summary": "文章介绍了解决启动台图标顺序错乱的方法。通过重置 Launchpad 设置，包括重置 Dock 和 Launchpad 图标数据库，可以恢复默认布局，将苹果官方提供的 App 重新排列到第一屏幕，方便用户按需重新排列 App。",
+  "service": "openai",
+  "page_title": "启动台图标顺序错乱怎么办",
+  "timestamp": "2025-06-09T12:34:36.489183",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}
