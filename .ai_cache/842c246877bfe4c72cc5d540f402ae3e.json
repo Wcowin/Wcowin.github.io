@@ -1,0 +1,8 @@
+{
+  "summary": "文章介绍了oh-my-zsh更新的方法。当自动或手动更新oh-my-zsh时，可能会遇到git文件修改导致的提示问题。提供了解决方案，帮助用户正确更新oh-my-zsh。",
+  "service": "openai",
+  "page_title": "oh-my-zsh 更新",
+  "timestamp": "2025-06-09T07:21:07.174348",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

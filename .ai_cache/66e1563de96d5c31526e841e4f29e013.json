@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了搭建个人图床的方法，主要包括使用Github和cloudflare搭建图床，以及推荐的免费图床和图床上传工具。通过创建Github仓库、连接到cloudflare Pages，并上传图片到Git仓库，用户可以轻松搭建个人图床。同时，推荐使用SMMS等免费图床或工具如PicGo进行图片上传管理。",
+  "service": "openai",
+  "page_title": "搭建个人图床",
+  "timestamp": "2025-06-09T07:21:09.704798",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

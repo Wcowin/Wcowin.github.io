@@ -1,0 +1,8 @@
+{
+  "summary": "Mkdocs主题是用于搭建文档网站的利器，被诸多知名项目如django-rest-framework、FastAPI等选用。本文列举了多个基于Mkdocs的站点，包括算法教程、官方文档等，展示了其广泛应用和多样化主题。",
+  "service": "openai",
+  "page_title": "基于Mkdocs主题的站点",
+  "timestamp": "2025-06-09T07:20:55.369875",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}
