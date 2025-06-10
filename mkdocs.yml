@@ -271,6 +271,7 @@ nav:
     
   - 旅行: 
     - trip/index.md
+    - Dify旅行规划助手: trip/tripdesign.md
     - 重庆: trip/InCQ/CQ.md
     - 西安: trip/Xian.md    
     - 我的家乡——漯河: trip/LH.md
@@ -545,6 +546,7 @@ extra_css:
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
+  - stylesheets/LiquidGlass.css
 
 watch: #监听文件变动自动刷新
   - docs

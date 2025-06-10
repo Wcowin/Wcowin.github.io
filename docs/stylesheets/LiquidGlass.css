@@ -1,0 +1,362 @@
+/*
+  增强型 Liquid Glass 效果 - MkDocs Material 右侧目录美化
+*/
+
+/* 主目录侧边栏容器 */
+.md-sidebar--secondary {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3.8rem;
+  max-height: calc(100vh - 3.8rem - 2rem);
+  align-self: flex-start;
+  margin: 1.5rem 1rem;
+  padding: 0;
+  border-radius: 1.75rem;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.md-sidebar--secondary:focus-within {
+  outline: 2px solid #2684ff;
+  outline-offset: 2px;
+}
+
+/* 当目录为空时隐藏容器 */
+.md-sidebar--secondary:empty,
+.md-sidebar--secondary .md-nav--secondary:empty,
+.md-sidebar--secondary .md-nav--secondary .md-nav__list:empty {
+  display: none !important;
+}
+
+
+/* 内部导航容器 - Liquid Glass 效果的主要承载者 */
+.md-nav--secondary {
+  position: relative;
+  backdrop-filter: blur(22px) saturate(170%);
+  -webkit-backdrop-filter: blur(22px) saturate(170%);
+  background: rgba(249, 250, 253, 0.7);
+  border-radius: 1.75rem;
+  padding: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  overflow: visible; /* 允许内容全部显示，防止裁剪 */
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+              background-color 0.3s ease,
+              border-color 0.3s ease;
+  max-height: calc(100vh - 3.8rem - 2rem); /* 保证目录不会超出视口 */
+  overflow-y: auto; /* 支持滚动，保证同步定位 */
+  will-change: scroll-position, transform;
+  /* 彻底隐藏滚动条 */
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE 10+ */
+  scroll-behavior: smooth; /* 跳转平滑滚动 */
+  scroll-padding-top: 4.2rem; /* 跳转时顶部留白，避免被遮挡 */
+  scroll-padding-bottom: 3.5rem; /* 解决倒数第二个标题无法定位到的问题 */
+}
+
+/* 当没有目录项时，强制隐藏所有装饰效果 */
+.md-nav--secondary:not(:has(.md-nav__item))::before,
+.md-nav--secondary:not(:has(.md-nav__item))::after {
+  display: none !important;
+}
+
+/* 彻底隐藏所有滚动条 */
+.md-nav--secondary {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE 10+ */
+}
+.md-nav--secondary::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+  background: transparent !important;
+}
+
+/* 移除自定义滚动条样式（已无效，可省略） */
+.md-nav--secondary::-webkit-scrollbar-track,
+.md-nav--secondary::-webkit-scrollbar-thumb,
+.md-nav--secondary::-webkit-scrollbar-thumb:hover {
+  display: none !important;
+  background: transparent !important;
+}
+
+/* 磁吸效果 - 滚动时的动态变形 */
+.md-nav--secondary:hover {
+  background: rgba(248, 250, 252, 0.75);
+  border-color: rgba(0,0,0,0.1);
+}
+.md-nav--secondary:active {
+  transition: transform 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: scaleY(0.99);
+}
+
+/* 内容容器确保不溢出 */
+.md-nav--secondary .md-nav__list {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  overflow: visible; /* 防止内容被裁剪，保证锚点可见 */
+  will-change: contents;
+}
+
+/* 目录标题样式 */
+.md-sidebar--secondary .md-nav__title {
+  position: relative;
+  z-index: 2;
+  padding: 0.7rem 1.1rem;
+  margin: 0 0 1.1rem 0;
+  font-weight: 600;
+  color: hsl(212, 15%, 25%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: color 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+}
+
+/* 目录链接样式 */
+.md-sidebar--secondary .md-nav__link {
+  display: block;
+  padding: 0.55rem 1.1rem;
+  margin: 0.15rem 0;
+  border-radius: 1rem;
+  transition:
+    transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1.5),
+    background-color 0.2s ease-out,
+    color 0.2s ease-out,
+    border-color 0.2s ease-out;
+  color: hsl(212, 12%, 28%);
+  font-weight: 500;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-left: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  will-change: transform;
+  /* font-size: 1.01rem; */
+}
+.md-sidebar--secondary .md-nav__link:hover {
+  background: hsla(217, 91%, 60%, 0.13);
+  color: #2563eb;
+  border-color: hsla(217, 91%, 60%, 0.25);
+  transform: translateX(4px) scale(1.005) translateZ(0);
+}
+.md-sidebar--secondary .md-nav__link--active {
+  background: hsla(217, 91%, 60%, 0.15);
+  color: #1d4ed8 !important;
+  font-weight: 600;
+  border-color: hsla(217, 91%, 60%, 0.4);
+  transform: translateX(4px) scale(1.005) translateZ(0);
+}
+
+/* 深色模式下优化 hover/active 对比度 */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link {
+  color: #dbeafe;
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link:hover {
+  color: #60a5fa;
+  background: rgba(30, 58, 138, 0.18);
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  color: #93c5fd !important;
+  background: rgba(30, 58, 138, 0.28);
+}
+
+/* 增强的磁吸动画关键帧 */
+@keyframes magneticPull {
+  0% { transform: translateX(0) scale(1); }
+  50% { transform: translateX(2px) scale(1.002); }
+  100% { transform: translateX(4px) scale(1.005); }
+}
+.md-sidebar--secondary .md-nav__link:hover,
+.md-sidebar--secondary .md-nav__link--active {
+  animation: magneticPull 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+/* 动态光泽/高光层 */
+@keyframes subtleShimmer {
+  0% {
+    background-position: -100% -100%;
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    background-position: 100% 100%;
+    opacity: 0.6;
+  }
+}
+.md-nav--secondary::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  border-radius: inherit;
+  background: linear-gradient(
+    130deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.5) 45%,
+    rgba(255, 255, 255, 0.4) 55%,
+    transparent 70%
+  );
+  background-size: 300% 300%;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.4s ease, background 0.4s ease;
+  opacity: 0.6;
+  animation: subtleShimmer 12s ease-in-out infinite;
+}
+.md-nav--secondary:hover::before {
+  opacity: 1;
+  animation-duration: 10s;
+}
+
+/* 深色模式下简化高光动画，仅保留静态高光层 */
+[data-md-color-scheme="slate"] .md-nav--secondary::before {
+  opacity: 0.28;
+  animation: none !important;
+  background: linear-gradient(
+    130deg,
+    transparent 30%,
+    rgba(255,255,255,0.18) 45%,
+    rgba(255,255,255,0.12) 55%,
+    transparent 70%
+  );
+}
+[data-md-color-scheme="slate"] .md-nav--secondary:hover::before {
+  opacity: 0.38;
+}
+
+/* 添加底部渐变遮罩效果 */
+.md-nav--secondary::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  background: linear-gradient(
+    to top,
+    transparent 100%
+  );
+  border-radius: 0 0 1.75rem 1.75rem;
+  pointer-events: none;
+  z-index: 3;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.md-nav--secondary[data-scrollable="true"]::after,
+.md-nav--secondary:hover::after {
+  opacity: 1;
+}
+
+/* ====== 暗色模式下整体优化 ====== */
+[data-md-color-scheme="slate"] .md-nav--secondary {
+  background: rgba(28, 32, 40, 0.82);
+  border-color: rgba(100, 160, 255, 0.13);
+  backdrop-filter: blur(28px) saturate(120%);
+  box-shadow: 0 2px 16px 0 rgba(60,120,255,0.08);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s;
+}
+[data-md-color-scheme="slate"] .md-nav--secondary:hover {
+  background: rgba(36, 42, 56, 0.92);
+  border-color: rgba(120,180,255,0.18);
+}
+
+/* 目录标题 */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__title {
+  background: rgba(44, 54, 80, 0.38);
+  color: #c7e0ff;
+  border-bottom: 1px solid rgba(120, 180, 255, 0.13);
+}
+
+/* 目录链接 */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link {
+  color: #b6d4ff;
+  background: none;
+  border-color: transparent;
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link:hover {
+  color: #7cc4ff;
+  background: rgba(60, 120, 255, 0.13);
+  border-color: rgba(120, 180, 255, 0.22);
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  color: #fff !important;
+  background: rgba(60, 120, 255, 0.22);
+  border-color: rgba(120, 180, 255, 0.32);
+}
+
+/* 磁吸动画（暗色） */
+@keyframes magneticPullDark {
+  0% { transform: translateX(0) scale(1); box-shadow: none; }
+  50% { transform: translateX(2px) scale(1.002); box-shadow: 0 2px 8px 0 rgba(120,180,255,0.10);}
+  100% { transform: translateX(4px) scale(1.005); box-shadow: 0 4px 16px 0 rgba(120,180,255,0.13);}
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link:hover,
+[data-md_color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  animation: magneticPullDark 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+/* 高光层 */
+[data-md-color-scheme="slate"] .md-nav--secondary::before {
+  opacity: 0.18;
+  animation: none !important;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(120,180,255,0.10) 45%,
+    rgba(120,180,255,0.07) 55%,
+    transparent 70%
+  );
+}
+[data-md_color-scheme="slate"] .md-nav--secondary:hover::before {
+  opacity: 0.28;
+}
+
+/* 底部渐变遮罩 */
+[data-md_color-scheme="slate"] .md-nav--secondary::after,
+[data-md_color-scheme="slate"] .md-nav--secondary:hover::after {
+  background: linear-gradient(
+    to top,
+
+    transparent 100%
+  ) !important;
+}
+
+/* 嵌套列表无白色背景 */
+[data-md_color-scheme="slate"] .md-nav--secondary .md-nav__list {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+[data-md_color-scheme="slate"] .md-nav--secondary .md-nav__list::after {
+  content: none !important;
+  background: none !important;
+  display: none !important;
+}
+
+
+/* 备用方案：如果浏览器不支持 :has() 选择器，使用类名检测 */
+.md-nav--secondary.toc-empty,
+.md-sidebar--secondary.toc-empty {
+  display: none !important;
+}
+.md-nav--secondary.toc-empty::before,
+.md-nav--secondary.toc-empty::after {
+  display: none !important;
+}
+.md-sidebar--secondary .md-nav--secondary:not(:has(.md-nav__link)) {
+  display: none !important;
+}

@@ -47,7 +47,7 @@
 
 /* 优化版右侧目录卡片样式（仿少数派） */
 
-.md-sidebar--secondary {
+/* .md-sidebar--secondary {
   border-radius: 10px;
   padding: 16px 0 16px 0;
   margin-top: 24px;
@@ -55,9 +55,6 @@
 }
 
 .md-sidebar--secondary .md-nav__title {
-  /* font-size: 1rem; */
-  /* font-weight: 700; */
-  /* color: #222; */
   padding: 0 20px 8px 20px;
   border-bottom: 1px solid #e5e7eb; 
   margin-bottom: 10px;
@@ -69,8 +66,6 @@
   margin: 2px 0;
   border-left: 3px solid transparent;
   border-radius: 4px;
-  /* color: #444; */
-  /* font-size: 15px; */
   transition: all 0.18s;
 }
 
@@ -89,15 +84,10 @@
 
 .md-sidebar--secondary .md-nav__item .md-nav__item {
   padding-left: 12px;
-}
-
-/* 平滑滚动 */
-/* html {
-  scroll-behavior: smooth;
 } */
 
-/* 移动端取消右侧目录卡片样式 */
-@media (max-width: 959px) {
+
+/* @media (max-width: 959px) {
   .md-sidebar--secondary {
     background: none !important;
     border-radius: 0 !important;
@@ -131,4 +121,4 @@
   .md-sidebar--secondary .md-nav__item .md-nav__item {
     padding-left: 0 !important;
   }
-}
+} */

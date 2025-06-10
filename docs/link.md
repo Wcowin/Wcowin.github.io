@@ -182,18 +182,7 @@ hide:
        干嘛这么想不开，要在脸上贴个输字！
       </div> 
      </div> 
-    </div>    
-   <div class="card"> 
-     <img class="ava" src="https://www.zair.top/img/logo.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://www.zair.top/" target="_blank">以太工坊</a> 
-      </div> 
-      <div class="info">
-       分享我的学习笔记、经验与有趣的小玩意.
-      </div> 
-     </div> 
-    </div>      
+    </div>         
    <div class="card"> 
      <img class="ava" src="https://s2.loli.net/2024/06/25/59hnlap8m3oyBrk.webp" /> 
      <div class="card-header"> 
@@ -328,17 +317,6 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://weizwz.com/img/avatar/head.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://weizwz.com" target="_blank">唯之为之</a> 
-      </div> 
-      <div class="info">
-      时光笔墨
-      </div> 
-     </div> 
-    </div>
-   <div class="card"> 
      <img class="ava" src="https://assets.guoqi.dev/images/avatar.png" /> 
      <div class="card-header"> 
       <div> 
@@ -416,7 +394,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://www.styg.org.cn/zb_users/upload/2024/01/202401261706277157705448.png" /> 
+     <img class="ava" src="https://upload.minimablog.cn/upload/109/user/avatar/a61757c2.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
@@ -1113,7 +1091,29 @@ window.friendLinkUtils = {
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://lxnchan.cn" target="_blank">泠泫凝的异次元空间</a> 
+       <a href="https://www.zair.top/" target="_blank">以太工坊</a> 
+      </div> 
+      <div class="info">
+       分享我的学习笔记、经验与有趣的小玩意.
+      </div> 
+     </div> 
+    </div> 
+   <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://weizwz.com" target="_blank">唯之为之(打不开)</a> 
+      </div> 
+      <div class="info">
+      时光笔墨
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://lxnchan.cn" target="_blank">泠泫凝的异次元空间(未加我方友链)</a> 
       </div> 
       <div class="info">
        先空着2333

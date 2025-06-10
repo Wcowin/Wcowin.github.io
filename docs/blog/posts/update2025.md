@@ -7,6 +7,11 @@ categories:
 readtime: 2
 hide_reading_time: true
 ---
+
+## </p><h1 id="01" name="01"><strong>2025-06-10</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 未来计划为mkdocs引入更多AI功能
+
 ## </p><h1 id="01" name="01"><strong>2025-06-04</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 引入全局AI摘要功能
