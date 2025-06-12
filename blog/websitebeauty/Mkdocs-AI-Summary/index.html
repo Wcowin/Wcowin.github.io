@@ -66,8 +66,6 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/LiquidGlass.css">
-    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -4648,8 +4646,8 @@
 
 
 <div class="admonition info">
-<p class="admonition-title">💾 AI智能摘要 (ChatGPT)</p>
-<p>MkDocs文档AI摘要项目利用AI服务为技术文档添加智能摘要生成和阅读统计功能。支持多种AI服务、多语言、智能内容清理、灵活配置等特性。可精准统计字符、代码，估算阅读时间，提供美观信息展示。具备环境自适应、自动语言识别等智能化特性。安装简便，配置灵活。适用于MkDocs文档的智能化处理，提升用户体验。</p>
+<p class="admonition-title">💾 AI智能摘要 (GLM-4)</p>
+<p>MkDocs AI Summary项目为MkDocs文档提供AI智能摘要和阅读统计功能，支持多AI服务、多语言，自动生成摘要，并可选智能阅读统计，提升文档智能化和用户体验。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
@@ -5518,47 +5516,7 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
         <!-- Footer -->
 <footer class="md-footer">
   <!-- Link to previous and/or next page -->
-    
-  <nav
-    class="md-footer__inner md-grid"
-    aria-label="页脚"
-    
-  >
-    <!-- Link to previous page -->
-     
-    <a
-      href="../mkdocs-wcowin1/"
-      class="md-footer__link md-footer__link--prev"
-      aria-label="上一页: Wcowin for MkDocs主题"
-    >
-      <div class="md-footer__button md-icon">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-      </div>
-      <div class="md-footer__title">
-        <span class="md-footer__direction"> 上一页 </span>
-        <div class="md-ellipsis">Wcowin for MkDocs主题</div>
-      </div>
-    </a>
-    
-
-    <!-- Link to next page -->
-     
-    <a
-      href="../reading_time/"
-      class="md-footer__link md-footer__link--next"
-      aria-label="下一页: 添加阅读信息统计"
-    >
-      <div class="md-footer__title">
-        <span class="md-footer__direction"> 下一页 </span>
-        <div class="md-ellipsis">添加阅读信息统计</div>
-      </div>
-      <div class="md-footer__button md-icon">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-      </div>
-    </a>
-    
-  </nav>
-   
+  
 
   <!-- Further information -->
   <div class="md-footer-meta md-typeset">
@@ -5716,7 +5674,7 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "navigation.instant", "navigation.prune", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "toc.follow", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "navigation.instant", "navigation.prune", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "search.share", "toc.follow", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
