@@ -1,8 +1,0 @@
-{
-  "summary": "本文揭示了Google翻译和FCM在中国大陆异常的原因：Google更改DNS导致翻译服务无法使用，而FCM被墙。解决方法包括使用网关、修改hosts文件等。谷歌停用中国大陆翻译功能，可能因使用率低。文章提供了Macbook恢复功能的方法。",
-  "service": "openai",
-  "page_title": "解决谷歌翻译用不了的问题",
-  "timestamp": "2025-06-06T16:44:47.073980",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

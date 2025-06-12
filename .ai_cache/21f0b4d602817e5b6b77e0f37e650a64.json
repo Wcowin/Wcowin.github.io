@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了如何为MKdocs添加文章修订时间戳，通过git -revision-date-localized插件实现在每个页面底部显示上次更新日期，提高渲染速度并正常显示发布网站。",
-  "service": "openai",
-  "page_title": "为MKdocs添加文章修订时间戳",
-  "timestamp": "2025-06-09T12:36:02.713446",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

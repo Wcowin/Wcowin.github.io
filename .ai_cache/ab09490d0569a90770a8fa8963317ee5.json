@@ -1,8 +1,0 @@
-{
-  "summary": "文章介绍了PD虚拟机的安装和使用方法，包括下载安装PD软件、虚拟机、以及使用PD Runner启动虚拟机的步骤。同时提供了解决试用过期、密码输入、PD Runner无窗口等常见问题的方法。文章还指出ARM M1只能安装Arm架构的Windows或Linux系统，Intel则可直接下载官方镜像安装Windows。",
-  "service": "openai",
-  "page_title": "PD虚拟机",
-  "timestamp": "2025-06-06T16:42:58.190239",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

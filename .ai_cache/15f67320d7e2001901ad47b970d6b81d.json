@@ -1,8 +1,8 @@
 {
-  "summary": "Windows快捷键涵盖了Win键和Ctrl键组合，提供了丰富的操作功能，如快速设置、截屏、窗口排版等。触控板技巧也包括拖动文件、页面滚动、放大缩小画面等操作。这些快捷键和触控板技巧方便用户高效操作Windows系统，提升工作效率。",
-  "service": "openai",
+  "summary": "本文介绍了Windows操作系统中常用的快捷键，包括Win键、Ctrl键和触控板操作技巧，涵盖了快速设置、系统托盘、文件管理、搜索、窗口操作等多个方面，帮助用户提高工作效率。",
+  "service": "glm",
   "page_title": "Windows快捷键",
-  "timestamp": "2025-06-09T07:20:44.802229",
+  "timestamp": "2025-06-12T14:22:07.615816",
   "language": "zh",
   "cache_version": "1.3.0"
 }

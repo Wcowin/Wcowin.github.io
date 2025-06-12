@@ -49,7 +49,7 @@ class AISummaryGenerator:
             'ci_enabled': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
             
             # 本地环境是否启用AI摘要（默认启用）
-            'local_enabled': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',
+            'local_enabled': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',
             
             # CI环境是否仅使用缓存（不用管，只在ci.yml中设置有效。默认关闭，即允许生成新摘要）
             'ci_cache_only': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',
@@ -83,14 +83,21 @@ class AISummaryGenerator:
                 'api_key': os.getenv('GOOGLE_API_KEY', 'AIzaSyDwWgffCCyVFZVsRasX3B3arWFaCT1PzNI'),
                 'max_tokens': 150,
                 'temperature': 0.3
+            },
+            'glm': {
+                'url': 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
+                'model': 'glm-4-flash',  # 或 'glm-4-plus', 'glm-4-air'
+                'api_key': os.getenv('GLM_API_KEY', ),
+                'max_tokens': 300,
+                'temperature': 0.3
             }
         }
         
         # 默认使用的AI服务
-        self.default_service = 'openai'
+        self.default_service = 'glm'
         
         # 服务优先级（按顺序尝试）
-        self.service_fallback_order = ['openai', 'deepseek', 'claude', 'gemini']
+        self.service_fallback_order = ['openai', 'glm', 'deepseek', 'claude', 'gemini']
         
         # 📂 可自定义的文件夹配置
         self.enabled_folders = [
@@ -570,6 +577,9 @@ class AISummaryGenerator:
         elif 'googleapis.com' in service_config.get('url', ''):
             # Google API使用URL参数
             pass
+        elif 'bigmodel.cn' in service_config.get('url', ''):
+            # GLM API使用Bearer token
+            headers['Authorization'] = f"Bearer {service_config['api_key']}"
         else:
             # OpenAI和DeepSeek使用Bearer token
             headers['Authorization'] = f"Bearer {service_config['api_key']}"
@@ -679,6 +689,31 @@ Please generate bilingual summary:"""
                     "maxOutputTokens": service_config['max_tokens']
                 }
             }
+        elif service_name == 'glm':
+            # GLM API格式 (类似OpenAI格式)
+            system_content = {
+                'zh': "你是一个专业的技术文档摘要专家，擅长提取文章核心要点并生成简洁准确的中文摘要。",
+                'en': "You are a professional technical documentation summary expert, skilled at extracting core points from articles and generating concise and accurate English summaries.",
+                'both': "You are a professional technical documentation summary expert, skilled at extracting core points from articles and generating concise and accurate bilingual summaries in both Chinese and English."
+            }
+            
+            return {
+                "model": service_config['model'],
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": system_content.get(self.summary_language, system_content['zh'])
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                "max_tokens": service_config['max_tokens'] * (2 if self.summary_language == 'both' else 1),
+                "temperature": service_config['temperature'],
+                "top_p": 0.9,
+                "stream": False  # GLM API支持流式，但这里使用非流式简化处理
+            }
         else:
             # OpenAI格式 (OpenAI, DeepSeek, Azure OpenAI)
             system_content = {
@@ -711,6 +746,9 @@ Please generate bilingual summary:"""
                 return response_data['content'][0]['text']
             elif service_name == 'gemini':
                 return response_data['candidates'][0]['content']['parts'][0]['text']
+            elif service_name == 'glm':
+                # GLM API响应格式与OpenAI相同
+                return response_data['choices'][0]['message']['content']
             else:
                 # OpenAI格式
                 return response_data['choices'][0]['message']['content']
@@ -1153,6 +1191,7 @@ Please generate bilingual summary:"""
                 'azure_openai': 'AI智能摘要 (Azure OpenAI)',
                 'claude': 'AI智能摘要 (Claude)',
                 'gemini': 'AI智能摘要 (Gemini)',
+                'glm': 'AI智能摘要 (GLM-4)',
                 'fallback': '自动摘要',
                 'cached': 'AI智能摘要',
                 'ci_cache_only': 'AI智能摘要 (缓存)'
@@ -1163,6 +1202,7 @@ Please generate bilingual summary:"""
                 'azure_openai': 'AI Summary (Azure OpenAI)',
                 'claude': 'AI Summary (Claude)',
                 'gemini': 'AI Summary (Gemini)',
+                'glm': 'AI Summary (GLM-4)',
                 'fallback': 'Auto Summary',
                 'cached': 'AI Summary',
                 'ci_cache_only': 'AI Summary (Cached)'
@@ -1173,6 +1213,7 @@ Please generate bilingual summary:"""
                 'azure_openai': 'AI智能摘要 / AI Summary (Azure OpenAI)',
                 'claude': 'AI智能摘要 / AI Summary (Claude)',
                 'gemini': 'AI智能摘要 / AI Summary (Gemini)',
+                'glm': 'AI智能摘要 / AI Summary (GLM-4)',
                 'fallback': '自动摘要 / Auto Summary',
                 'cached': 'AI智能摘要 / AI Summary',
                 'ci_cache_only': 'AI智能摘要 / AI Summary (缓存)'
@@ -1215,7 +1256,7 @@ def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_fi
             例：['blog/index.md', 'docs/index.md']
             
         ai_service (str): 使用的AI服务
-            选项：'deepseek', 'openai', 'claude', 'gemini'
+            选项：'deepseek', 'openai', 'claude', 'gemini', 'glm'
             
         language (str): 摘要语言
             选项：'zh'(中文), 'en'(英文), 'both'(双语)

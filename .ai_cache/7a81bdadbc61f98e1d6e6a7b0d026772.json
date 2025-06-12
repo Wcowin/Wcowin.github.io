@@ -1,8 +1,0 @@
-{
-  "summary": "在使用MkDocs构建网站时，为加速网站访问，可优化图片、使用CDN加速静态资源、优化本地渲染。推荐采用WebP、JPEG2000格式图片，利用jsDelivr CDN加速GitHub文件，以及在本地开发时禁用git插件以提高预览速度。可使用lighthouse测试加速效果。",
-  "service": "openai",
-  "page_title": "加速网站访问的一些心得",
-  "timestamp": "2025-06-09T12:35:41.078067",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

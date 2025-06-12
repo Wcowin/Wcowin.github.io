@@ -1,8 +1,0 @@
-{
-  "summary": "该文章介绍了如何通过添加阅读信息统计功能来统计阅读时间、中文字符和代码行数。通过配置reading_time.py和mkdocs.yml，可以实现阅读时间统计，并在页面中排除不需要统计的内容。文章详细介绍了配置步骤和代码示例。",
-  "service": "openai",
-  "page_title": "添加阅读信息统计",
-  "timestamp": "2025-06-09T12:57:02.696511",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

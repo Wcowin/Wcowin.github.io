@@ -1,8 +1,0 @@
-{
-  "summary": "MkDocs支持自定义页脚设置，通过编辑footer.html文件可以实现。",
-  "service": "openai",
-  "page_title": "页脚设置",
-  "timestamp": "2025-06-09T12:35:46.265066",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

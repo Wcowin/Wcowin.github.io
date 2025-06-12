@@ -1,8 +1,0 @@
-{
-  "summary": "PIP是Python的包管理工具，通过命令行使用。可通过输入pip查找主要命令表单。安装pip需在Windows下指定路径，更新包依赖也可轻松实现。",
-  "service": "openai",
-  "page_title": "PIP",
-  "timestamp": "2025-06-06T16:44:36.282842",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

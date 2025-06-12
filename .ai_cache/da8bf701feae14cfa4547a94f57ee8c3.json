@@ -1,8 +1,0 @@
-{
-  "summary": "文章介绍了如何在网站上添加在线聊天功能，以Tidio为例。通过创建Tidio账户并将一行javascript代码粘贴到网站代码中，即可实现安装。这一过程简单快捷，无需使用梯子，适用于各类网站。",
-  "service": "openai",
-  "page_title": "添加在线聊天",
-  "timestamp": "2025-06-09T12:36:04.430855",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

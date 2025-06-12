@@ -1,8 +1,8 @@
 {
-  "summary": "科学上网是为了访问国外网站，推荐使用工具如Clash、Quantumult X，以及订阅节点。文章介绍了各平台的客户端下载方法，推荐了几家机场，并强调科学上网应用于学习目的，不得用于违法行为。",
+  "summary": "科学上网是为了访问国外网站，推荐使用工具如Clash、Quantumult X等，需购买或获取订阅节点。适用于iOS、Android、Windows、macOS、Linux等平台，推荐机场包括鹰云、一元机场等。使用需遵守法律规定，不得用于违法目的。",
   "service": "openai",
   "page_title": "科学上网",
-  "timestamp": "2025-06-09T07:21:05.420063",
+  "timestamp": "2025-06-12T14:22:32.929030",
   "language": "zh",
   "cache_version": "1.3.0"
 }

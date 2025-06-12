@@ -1,8 +1,8 @@
 {
-  "summary": "MkDocs支持自定义页脚，通过编辑footer.html文件实现。在该文件中添加特定代码即可定制页面底部内容。",
-  "service": "openai",
+  "summary": "MkDocs支持自定义页脚，通过编辑`footer.html`文件可添加自定义代码，实现个性化页脚设置。",
+  "service": "glm",
   "page_title": "页脚设置",
-  "timestamp": "2025-06-09T07:21:22.699282",
+  "timestamp": "2025-06-12T14:22:46.809688",
   "language": "zh",
   "cache_version": "1.3.0"
 }

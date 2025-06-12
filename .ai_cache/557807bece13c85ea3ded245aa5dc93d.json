@@ -1,8 +1,0 @@
-{
-  "summary": "Windows快捷键包括Win键+'X'和Ctrl键+'X'两大类，涵盖了诸多实用功能，如快速设置、文件管理、截屏等。此外，触控板也提供了多种操作技巧，如页面滑动、放大缩小等。这些快捷键和触控板操作能够提高Windows系统的操作效率和便利性。",
-  "service": "openai",
-  "page_title": "Windows快捷键",
-  "timestamp": "2025-06-09T12:35:12.353483",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

@@ -1,8 +1,0 @@
-{
-  "summary": "macOS隐藏彩蛋介绍了在Mac系统中通过emacs编辑器内置的小游戏，如snake、tetris、gomoku等，解决用户对缺少娱乐功能的痛点。通过终端命令查看游戏列表，再通过M-x命令启动游戏，提供了简单易懂的操作指南。这些游戏隐藏在系统中，为用户带来意外惊喜和娱乐选择。",
-  "service": "openai",
-  "page_title": "Mac隐藏彩蛋",
-  "timestamp": "2025-06-06T16:43:43.478545",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

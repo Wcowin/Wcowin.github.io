@@ -1,8 +1,0 @@
-{
-  "summary": "MWeb Pro是一款专业的Markdown写作、笔记应用软件，支持GFM语法、图片插入、导出多种格式等功能。强大的笔记功能包括分类管理、快速搜索等，适用于个人知识管理和输出。同时支持外部Markdown文档管理，提供丰富的输出和发布选项。",
-  "service": "openai",
-  "page_title": "MWeb Pro",
-  "timestamp": "2025-06-09T12:36:36.002425",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

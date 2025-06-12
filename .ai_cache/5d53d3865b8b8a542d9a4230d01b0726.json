@@ -1,8 +1,0 @@
-{
-  "summary": "文章介绍了基于讯飞人脸算法进行人脸比对的实现过程。通过调用讯飞开放平台获取必要的APPID、APISecret、APIKey，实现人脸比对功能。代码中使用了ttk.LabelFrame和ttk.Separator优化界面布局，允许从本地选择需要对比的图片。文章提供了代码示例和Github项目地址，展示了如何利用讯飞人脸算法进行人脸比对。",
-  "service": "openai",
-  "page_title": "基于讯飞人脸算法进行人脸比对",
-  "timestamp": "2025-06-09T12:36:52.117596",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

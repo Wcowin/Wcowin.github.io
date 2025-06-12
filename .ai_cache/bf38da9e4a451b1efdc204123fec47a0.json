@@ -1,8 +1,8 @@
 {
-  "summary": "文章指出一切知识是历史，科学是数学，判断是统计学。强调数学和统计在科学和决策中的重要性。",
-  "service": "openai",
+  "summary": "知识源于历史，科学抽象为数学，判断基于统计学。C.R.Rao强调数学在科学和判断中的核心地位。",
+  "service": "glm",
   "page_title": "Math",
-  "timestamp": "2025-06-06T16:42:02.819818",
+  "timestamp": "2025-06-12T14:21:32.499617",
   "language": "zh",
   "cache_version": "1.3.0"
 }

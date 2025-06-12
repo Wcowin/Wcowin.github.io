@@ -1,8 +1,8 @@
 {
-  "summary": "文章介绍了作者的设备清单，包括Macbook Pro、iPhone 13、U盘等。其中，Macbook Pro搭载M1芯片，性能强劲且低功耗，适用于开发、娱乐和办公；iPhone 13配备A15芯片，拍照出色且运行流畅；U盘具有256G存储容量，支持Mac设备和手机。同时还列举了一系列开发工具和应用软件。",
-  "service": "openai",
+  "summary": "本文介绍了个人设备配置，包括Macbook Pro 13-inch M1、iPhone 13、爱国者U盘等，并提及了相关系统、存储配置及开发工具，如Vs code、Xcode、PyCharm等，适用于开发、办公及娱乐需求。",
+  "service": "glm",
   "page_title": "我的设备",
-  "timestamp": "2025-06-09T07:22:07.174777",
+  "timestamp": "2025-06-12T14:23:16.622545",
   "language": "zh",
   "cache_version": "1.3.0"
 }
