@@ -247,7 +247,7 @@ hide_reading_time: true
 
 <p style="text-align: center; font-size: 25px; margin: 0px;"><strong>𝘿𝙤𝙣'𝙩 𝙘𝙖𝙧𝙚 𝙖𝙗𝙤𝙪𝙩 𝙬𝙤𝙧𝙡𝙙𝙡𝙮 𝙚𝙮𝙚𝙨 𝙩𝙤 𝙥𝙪𝙧𝙨𝙪𝙚 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙡𝙞𝙜𝙝𝙩</strong></p>
 
-<img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp">
+<!-- <img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp"> -->
 <img class="img1" src="https://pic1.zhimg.com/80/v2-8030915c744322fb1e3a6ec0b8fed24c_1440w.webp">
 
 

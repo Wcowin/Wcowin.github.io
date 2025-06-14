@@ -1,4 +1,5 @@
 ---
+# title: 欢迎来到我的博客
 hide:
 #   - navigation # 显示右
 #   - toc #显示左
@@ -10,12 +11,13 @@ comments: false
 
 <center><font  color= #757575 size=6.5 >循此苦旅 以达星辰</font></center>
 
+
 <div class="grid cards" markdown>
 
 -   :material-notebook-edit-outline:{ .lg .middle } __导航栏__
 
     ---
-    ![image](https://pic1.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp?source=2c26e567){ class="responsive-image" loading="lazy" align=right width="340" height="226" style="border-radius: 25px;" }
+    ![image](https://pic1.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp?source=2c26e567){ class="responsive-image" loading="lazy" align=right width="340" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
 
     - [x] 通过{==目录==}以打开文章
     - [x] 搜索{~~~>关键词~~}查询文章
