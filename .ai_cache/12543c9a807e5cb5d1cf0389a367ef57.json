@@ -1,0 +1,8 @@
+{
+  "summary": "oh-my-zsh 更新时可能出现更新提示，因为修改了git文件。可通过特定方式更新，解决更新问题。",
+  "service": "openai",
+  "page_title": "oh-my-zsh 更新",
+  "timestamp": "2025-06-15T07:40:36.265738",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}
