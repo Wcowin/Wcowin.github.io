@@ -52,17 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
-    
       <link rel="stylesheet" href="../../../stylesheets/extra2.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/link.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css">
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css">
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css">
-    
-      <link rel="stylesheet" href="../../../stylesheets/customize.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
@@ -2378,12 +2372,12 @@
   <h1>用AirScript脚本给女/男朋友发送每日早安邮件(极简版本)</h1>
 
 <div class="admonition info">
-<p class="admonition-title">💾 AI智能摘要 (GLM-4)</p>
-<p>利用金山文档AirScript脚本，可轻松实现每日自动发送早安邮件，仅需五步操作，支持自定义邮件内容和日期，方便实用。</p>
+<p class="admonition-title">💾 AI智能摘要 (ChatGPT)</p>
+<p>本文介绍了使用AirScript脚本给女/男朋友发送每日早安邮件的简单方法。通过金山文档提供的定时脚本服务，只需五个步骤即可完成设置。文章详细说明了创建智能表格、填写信息、编辑脚本等操作，同时提供了示例代码。读者需注意授权服务和定时任务设置，技术实现简单，但关键在于个性化定制邮件内容。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
-<p>阅读时间：<strong>1</strong> 分钟 | 中文字符：<strong>295</strong> | 有效代码行数：<strong>73</strong></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>1</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>295</strong> | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"/></svg></span>有效代码行数：<strong>73</strong></p>
 </div>
 <h2 id="_1">先看效果<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p><img alt="image.png" src="https://s2.loli.net/2025/02/07/UpHaDLIWyMuOixh.png" /></p>
@@ -2835,20 +2829,54 @@
       <style>
         .footer-visit-count {
           display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-          min-height: 40px;
-          gap: 0.5em;
+          flex-wrap: wrap; /* 允许项目换行 */
+          justify-content: center; /* 水平居中项目 */
+          align-items: center; /* 垂直居中项目 */
+          gap: 0.4em 0.8em; /* 行间距和列间距，可根据喜好调整 */
+          padding: 0.2em 0; /* 垂直内边距 */
+          font-size: 0.75rem; /* 稍小字体，更显精致 */
+          color: var(--md-meta-color); /* 使用主题标准的元数据文本颜色 */
+          text-align: center; /* 确保换行后的文本也居中 */
         }
-        @media (max-width: 768px) {
+
+        .footer-visit-count > * { /* 应用于直接子元素，如 span 和 a 标签 */
+          white-space: nowrap; /* 防止单个项目内的文本换行 */
+        }
+
+        .footer-visit-count .icp-link {
+          color: var(--md-meta-color); /* 链接颜色与周围文本一致 */
+          text-decoration: none; /* 默认移除下划线 */
+        }
+
+        .footer-visit-count .icp-link:hover {
+          color: var(--md-accent-fg-color); /* 悬停时使用主题的强调色 */
+          text-decoration: underline; /* 悬停时添加下划线以示可点击 */
+        }
+
+        /* 移动端特定调整 */
+        /* Material for MkDocs 的移动端断点通常是 76.1875em (1219px) */
+        /* 您可以根据需要调整断点或保留您原有的 768px */
+        @media (max-width: 76.1875em) {
+
           .runtime-info {
-            display: none;
+            display: none; /* 这是您原始的偏好设置，如果希望在移动端隐藏运行时间，请取消此行注释 */
           }
-          .icp-link {
-            display: block;
+
+          .footer-visit-count .icp-link { /* 注意：选择器 specificity */
+            /* display: block; */ /* 这是您原始的偏好设置，如果希望ICP链接在移动端占据整行，请取消此行注释 */
             text-align: center;
           }
+          
+          /* 如果分隔符 "|" 在移动端造成不美观的换行，
+            最好的方法是将它们包裹在带有特定类的 span 标签中，例如：
+            <span class="footer-separator">|&nbsp;</span>
+            然后在下面的 CSS 中取消注释来隐藏它们：
+          */
+          /*
+          .footer-visit-count .footer-separator {
+            display: none;
+          }
+          */
         }
       </style>
 
@@ -2939,9 +2967,9 @@
     
       <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
-        <script src="../../../javascripts/extra.js"></script>
-      
         <script src="../../../javascripts/extra2.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       

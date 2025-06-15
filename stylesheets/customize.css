@@ -62,10 +62,10 @@
 */
 
 /* 可选：博客相关样式，按需启用 */
-/*
-.md-post--excerpt {
-  background-color: var(--md-accent-fg-color--transparent);
-  box-shadow: 0 0 0 1rem var(--md-accent-fg-color--transparent);
+
+/* .md-post--excerpt {
+  background-color: rgba(68,138,255,.1);
+  box-shadow: 0 0 0 1rem rgba(68,138,255,.1);
   border-radius: var(--base-border-radius);
 }
 .md-post--excerpt .md-post__header {
@@ -74,8 +74,8 @@
 .md-post--excerpt .md-post__content > h2,
 .md-post__action {
   text-align: left;
-}
-*/
+} */
+
 
 /* 让所有admonition（包括!!! tip）圆角化且更自然 */
 .md-typeset .admonition,

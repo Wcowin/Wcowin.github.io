@@ -52,17 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
-    
       <link rel="stylesheet" href="../../../stylesheets/extra2.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/link.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css">
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css">
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css">
-    
-      <link rel="stylesheet" href="../../../stylesheets/customize.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
@@ -3193,20 +3187,54 @@
       <style>
         .footer-visit-count {
           display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-          min-height: 40px;
-          gap: 0.5em;
+          flex-wrap: wrap; /* 允许项目换行 */
+          justify-content: center; /* 水平居中项目 */
+          align-items: center; /* 垂直居中项目 */
+          gap: 0.4em 0.8em; /* 行间距和列间距，可根据喜好调整 */
+          padding: 0.2em 0; /* 垂直内边距 */
+          font-size: 0.75rem; /* 稍小字体，更显精致 */
+          color: var(--md-meta-color); /* 使用主题标准的元数据文本颜色 */
+          text-align: center; /* 确保换行后的文本也居中 */
         }
-        @media (max-width: 768px) {
+
+        .footer-visit-count > * { /* 应用于直接子元素，如 span 和 a 标签 */
+          white-space: nowrap; /* 防止单个项目内的文本换行 */
+        }
+
+        .footer-visit-count .icp-link {
+          color: var(--md-meta-color); /* 链接颜色与周围文本一致 */
+          text-decoration: none; /* 默认移除下划线 */
+        }
+
+        .footer-visit-count .icp-link:hover {
+          color: var(--md-accent-fg-color); /* 悬停时使用主题的强调色 */
+          text-decoration: underline; /* 悬停时添加下划线以示可点击 */
+        }
+
+        /* 移动端特定调整 */
+        /* Material for MkDocs 的移动端断点通常是 76.1875em (1219px) */
+        /* 您可以根据需要调整断点或保留您原有的 768px */
+        @media (max-width: 76.1875em) {
+
           .runtime-info {
-            display: none;
+            display: none; /* 这是您原始的偏好设置，如果希望在移动端隐藏运行时间，请取消此行注释 */
           }
-          .icp-link {
-            display: block;
+
+          .footer-visit-count .icp-link { /* 注意：选择器 specificity */
+            /* display: block; */ /* 这是您原始的偏好设置，如果希望ICP链接在移动端占据整行，请取消此行注释 */
             text-align: center;
           }
+          
+          /* 如果分隔符 "|" 在移动端造成不美观的换行，
+            最好的方法是将它们包裹在带有特定类的 span 标签中，例如：
+            <span class="footer-separator">|&nbsp;</span>
+            然后在下面的 CSS 中取消注释来隐藏它们：
+          */
+          /*
+          .footer-visit-count .footer-separator {
+            display: none;
+          }
+          */
         }
       </style>
 
@@ -3297,9 +3325,9 @@
     
       <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
-        <script src="../../../javascripts/extra.js"></script>
-      
         <script src="../../../javascripts/extra2.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
