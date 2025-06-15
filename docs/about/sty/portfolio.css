@@ -344,7 +344,8 @@ h1, h2, h3, h4 {
 
 .skills__close .skills__list {
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: visible;
 }
 
 .skills__open .skills__list {

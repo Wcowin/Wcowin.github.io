@@ -338,6 +338,33 @@ hide_reading_time: true
 </div>
 
 
+<!-- ## 联系我
+
+=== "微信"
+    <center>
+    <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: 300px; height: auto;">
+    <br>
+    扫一扫上面的二维码图案，加我为朋友
+    </center>
+
+=== "邮箱"
+    <center>
+    <a href="mailto:wangkewen821@gmail.com" class="md-button">
+        :fontawesome-solid-paper-plane: 发送电子邮件
+    </a>
+    </center>
+
+=== "社交"
+    <center>
+    <a href="https://t.me/Wcowin" class="md-button">
+        :fontawesome-brands-telegram: Telegram
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://twitter.com/wcowin_" class="md-button">
+        :fontawesome-brands-twitter: Twitter
+    </a>
+    </center> -->
+
 
 ??? tip "公众号"
     <figure markdown >
