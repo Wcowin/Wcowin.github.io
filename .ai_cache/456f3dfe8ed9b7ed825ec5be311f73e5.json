@@ -1,0 +1,8 @@
+{
+  "summary": "重置 Launchpad 设置可解决启动台图标顺序错乱问题。通过删除 Dock 和 Launchpad 图标数据库，恢复默认设置并重新排列应用程序，解决该问题。",
+  "service": "openai",
+  "page_title": "启动台图标顺序错乱怎么办",
+  "timestamp": "2025-06-15T07:39:35.601456",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

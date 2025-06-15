@@ -1,0 +1,8 @@
+{
+  "summary": "MkDocs支持自定义页脚，通过编辑footer.html文件实现。在docs/overrides/partials/footer.html中添加指定代码即可定制页脚。",
+  "service": "openai",
+  "page_title": "页脚设置",
+  "timestamp": "2025-06-15T07:40:48.182147",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}
