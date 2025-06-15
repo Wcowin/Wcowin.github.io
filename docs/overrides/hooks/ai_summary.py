@@ -33,7 +33,7 @@ class AISummaryGenerator:
             'enabled': os.getenv('AI_SUMMARY_CACHE_ENABLED', 'true').lower() == 'true',
             
             # 缓存过期天数（默认7天）
-            'expire_days': int(os.getenv('AI_SUMMARY_CACHE_EXPIRE_DAYS', '7')),
+            'expire_days': int(os.getenv('AI_SUMMARY_CACHE_EXPIRE_DAYS', '30')),
             
             # 是否自动清理过期缓存（默认启用）
             'auto_clean': os.getenv('AI_SUMMARY_CACHE_AUTO_CLEAN', 'true').lower() == 'true'
