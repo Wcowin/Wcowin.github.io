@@ -23,61 +23,10 @@ hide_reading_time: true
 
 
 
- <div class="flip-container">
-<div class="image-container">
-    <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
-    <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
-</div>
-</div>
-<style>
-    .flip-container {
-    position: relative;
-    width: 290px;
-    height: 290px;
-    margin: 10px auto;
-    display: flex;
-    align-items: flex-start;
-    /* 对齐顶部 */
-    justify-content: flex-end;
-    /* 将文字放置右上角 */
-    }
-    .image-container {
-        position: relative;
-        position: relative;
-        width: 290px;
-        height: 290px;
-    }
-    .image-container img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;    /* 图片填满容器 */
-        border-radius: 50%;
-        border: 4px solid #ffffff; /* 白色边框 */
-        box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15); /* 阴影 */
-        backface-visibility: hidden; /* 隐藏背面 */
-        transition: transform 0.6s ease-in-out; /* 仅对transform过渡 */
-    }
-    .image-container img:first-child {
-        z-index: 1;
-        backface-visibility: hidden;
-    }
-    .image-container img:last-child {
-        z-index: 0;
-        transform: rotateY(180deg);
-        backface-visibility: hidden;
-    }
-    .image-container:hover img:first-child {
-        transform: rotateY(180deg);
-        z-index: 2;
-    }
-    .image-container:hover img:last-child {
-        transform: rotateY(0deg);
-        z-index: 3;
-    }
-</style>
+<center>
+  <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" 
+       style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
+</center>
 
 
 <!-- <center>  
@@ -90,7 +39,7 @@ hide_reading_time: true
 
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
 
-<center><font size=6 color= #757575>
+<center><font size=6 color= #757575>  
 观史知今，当思进退，读书明志可识春秋  
 <br>
 
@@ -98,41 +47,22 @@ hide_reading_time: true
 
 ---
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <link rel="stylesheet" href="../sty/portfolio.css">
-    </head>
-    <body>
-        <main class="main">
-            <section class="about section" id="about">
-                <div class="about__container container">
-                    <div class="about__data">
-                        <p style="text-align: center;"></p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">1年+</span>
-                                <span class="about__info-name">工作经验</span>
-                            </div>
-                            <div>
-                                <a href="https://github.com/Wcowin" target="_blank">
-                                    <span class="about__info-title">3项+</span>
-                                    <span class="about__info-name">完成的项目</span>
-                                </a>
-                            </div>
-                            <div>
-                                <span class="about__info-title">2个+</span>
-                                <span class="about__info-name">贡献的开源</span>
-                            </div>
-                        </div>
-                    </div> <!-- 闭合 about__data -->
-                </div> <!-- 闭合 about__container -->
-            </section>
-        </main> <!-- 闭合 main -->
-    </body>
-</html>
+<div class="about__info">
+    <div>
+        <span class="about__info-title">1年+</span>
+        <span class="about__info-name">工作经验</span>
+    </div>
+    <div>
+        <a href="https://github.com/Wcowin" target="_blank">
+            <span class="about__info-title">3项+</span>
+            <span class="about__info-name">完成的项目</span>
+        </a>
+    </div>
+    <div>
+        <span class="about__info-title">2个+</span>
+        <span class="about__info-name">贡献的开源</span>
+    </div>
+</div>
 
 
 <!-- <center>
@@ -155,80 +85,73 @@ hide_reading_time: true
 ---
 ## 我的履历
 
-<section class="qualification section">
-    <div class="qualification__container container">
-        <div class="qualification__tabs">
-            <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
-                来时路
-            </div>
-        </div>       
-        <div class="qualification__sections">
-            <!-- 教育经历时间线 -->
-            <div class="qualification__content qualification__active" data-content id="education">
-                <!-- 时间线项目 -->
-                <div class="qualification__data">
-                    <div>
-                        <h3 class="qualification__title">漯河高中</h3>
-                        <span class="qualification__subtitle">平凡的三年</span>
-                        <div class="qualification__calendar">
-                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-                            <span class="qualification__date">2018 - 2021</span>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="qualification__rounder"></span>
-                        <span class="qualification__line"></span>
-                    </div>
-                </div>
-                <div class="qualification__data">
-                    <div></div>
-                    <div>
-                        <span class="qualification__rounder"></span>
-                        <span class="qualification__line"></span>
-                    </div>
-                    <div>
-                        <h3 class="qualification__title">CTBU</h3>
-                        <span class="qualification__subtitle">电子信息工程专业学士</span>
-                        <div class="qualification__calendar">
-                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-                            <span class="qualification__date">2021 - 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="qualification__data">
-                    <div>
-                        <h3 class="qualification__title">家里蹲大学</h3>
-                        <span class="qualification__subtitle">密码学硕士研究生</span>
-                        <div class="qualification__calendar">
-                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-                            <span class="qualification__date">2026 - 2029</span>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="qualification__rounder"></span>
-                        <span class="qualification__line"></span>
-                    </div>
-                </div>
-                <div class="qualification__data">
-                    <div></div>
-                    <div>
-                        <span class="qualification__rounder"></span>
-                        <span class="qualification__line"></span>
-                    </div>
-                    <div>
-                        <h3 class="qualification__title">未完待续</h3>
-                        <span class="qualification__subtitle">于道各努力，千里自同风</span>
-                        <div class="qualification__calendar">
-                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-                            <span class="qualification__date">Before - After</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="stylesheet" href="../sty/portfolio.css">
+
+<div class="qualification__tabs">
+    <div class="qualification__button qualification__active" data-target='#education'>
+        <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
+        来时路
+    </div>
+</div>
+<div class="qualification__data">
+    <div>
+        <h3 class="qualification__title">漯河高中</h3>
+        <span class="qualification__subtitle">平凡的三年</span>
+        <div class="qualification__calendar">
+            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+            <span>2018 - 2021</span>
         </div>
     </div>
-</section>
+    <div>
+        <span class="qualification__rounder"></span>
+        <span class="qualification__line"></span>
+    </div>
+</div>
+<div class="qualification__data">
+    <div></div>
+    <div>
+        <span class="qualification__rounder"></span>
+        <span class="qualification__line"></span>
+    </div>
+    <div>
+        <h3 class="qualification__title">CTBU</h3>
+        <span class="qualification__subtitle">电子信息工程专业学士</span>
+        <div class="qualification__calendar">
+            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+            <span>2021 - 2025</span>
+        </div>
+    </div>
+</div>
+<div class="qualification__data">
+    <div>
+        <h3 class="qualification__title">家里蹲大学</h3>
+        <span class="qualification__subtitle">密码学硕士研究生</span>
+        <div class="qualification__calendar">
+            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+            <span>2026 - 2029</span>
+        </div>
+    </div>
+    <div>
+        <span class="qualification__rounder"></span>
+        <span class="qualification__line"></span>
+    </div>
+</div>
+<div class="qualification__data">
+    <div></div>
+    <div>
+        <span class="qualification__rounder"></span>
+        <span class="qualification__line"></span>
+    </div>
+    <div>
+        <h3 class="qualification__title">未完待续</h3>
+        <span class="qualification__subtitle">于道各努力，千里自同风</span>
+        <div class="qualification__calendar">
+            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+            <span>Before - After</span>
+        </div>
+    </div>
+</div>
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
