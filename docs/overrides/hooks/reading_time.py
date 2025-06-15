@@ -246,12 +246,12 @@ def on_page_markdown(markdown, **kwargs):
     # 生成阅读信息
     if code_lines > 0:
         reading_info = f"""!!! tip "📖 阅读信息"
-    阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}** | 有效代码行数：**{code_lines}**
+    :material-clock-time-two-outline:阅读时间：**{reading_time}** 分钟 | :material-circle-edit-outline:中文字符：**{chinese_chars}** | :fontawesome-solid-code:有效代码行数：**{code_lines}**
 
 """
     else:
         reading_info = f"""!!! tip "📖 阅读信息"
-    阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}**
+    :material-clock-time-two-outline:阅读时间：**{reading_time}** 分钟 | :material-circle-edit-outline:中文字符：**{chinese_chars}**
 
 """
     

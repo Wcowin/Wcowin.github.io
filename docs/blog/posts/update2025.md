@@ -7,6 +7,10 @@ categories:
 readtime: 2
 hide_reading_time: true
 ---
+## </p><h1 id="01" name="01"><strong>2025-06-15</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 优化CDN配置
+* 引入全局圆角化设计，参考[Material Design](https://material.io/design)设计规范
 
 ## </p><h1 id="01" name="01"><strong>2025-06-10</strong></h1><p>
 * 优化网站流畅度（玄学）

@@ -47,7 +47,7 @@
 
 /* 优化版右侧目录卡片样式（仿少数派） */
 
-/* .md-sidebar--secondary {
+.md-sidebar--secondary {
   border-radius: 10px;
   padding: 16px 0 16px 0;
   margin-top: 24px;
@@ -84,10 +84,10 @@
 
 .md-sidebar--secondary .md-nav__item .md-nav__item {
   padding-left: 12px;
-} */
+}
 
 
-/* @media (max-width: 959px) {
+@media (max-width: 959px) {
   .md-sidebar--secondary {
     background: none !important;
     border-radius: 0 !important;
@@ -121,6 +121,7 @@
   .md-sidebar--secondary .md-nav__item .md-nav__item {
     padding-left: 0 !important;
   }
-} */
+}
+
 
 

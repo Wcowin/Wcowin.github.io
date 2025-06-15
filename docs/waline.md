@@ -7,6 +7,9 @@ comments: true
 disqus: true
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css">
+
+
 # 畅所欲言  
 <div class="poem-wrap">
   <div class="poem-border poem-left"></div>

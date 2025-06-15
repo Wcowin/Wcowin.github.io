@@ -10,6 +10,8 @@ hide:
   - feedback
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css">
+
 # 欢迎加入友链(不分先后)  
 
 - [x] [快速加入友链](#_3)

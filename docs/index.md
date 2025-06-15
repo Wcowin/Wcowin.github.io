@@ -154,10 +154,6 @@ body::before {
 </style>
 
 
-
-
-
-
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script>
 
@@ -167,8 +163,6 @@ body::before {
 <amp-auto-ads type="adsense"
         data-ad-client="ca-pub-2327435979273742">
 </amp-auto-ads>
-
-
 
 
 <!-- [timeline(./docs/timeline/timeindex.json)] -->

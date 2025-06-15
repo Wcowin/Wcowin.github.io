@@ -6,6 +6,8 @@ hide:
   - feedback
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css">
+
 复制后在需要添加友链的.md 文件页面粘贴即可
 
 ```html hl_lines="67-104"
