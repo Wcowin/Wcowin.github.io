@@ -149,7 +149,7 @@ img.twitter {
 
 .md-typeset .admonition.pied-piper1,
 .md-typeset details.pied-piper1 {
-  border-color: rgb(96, 141, 189);
+  /* border-color: rgba(68,138,255,.1); */
   font-size: large;
   width: 100%;
   /* border-radius:25px; */
