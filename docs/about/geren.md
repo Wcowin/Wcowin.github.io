@@ -16,11 +16,14 @@ hide_reading_time: true
 
 ## 关于我
 
+<!-- ![1750088524533.png(via stardots.io)](https://i.stardots.io/wcowin/1750088524533.png) -->
 
 <div class="flip-container">
 <div class="image-container">
-    <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
-    <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
+    <!-- <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image"> -->
+    <img src="https://i.stardots.io/wcowin/1750088524533.png" alt="Back Image">
+    <!-- <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image"> -->
+    <img src="https://i.stardots.io/wcowin/1750090689978.jpg" alt="Front Image">
 </div>
 </div>
 <style>
@@ -364,6 +367,7 @@ hide_reading_time: true
 ## 须知  
 
 如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角**微信添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
+> 如有推广需求请加微信私聊
 
 
 !!! note "与我联系"

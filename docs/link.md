@@ -833,6 +833,17 @@ hide:
       </div> 
      </div> 
     </div> 
+   <div class="card"> 
+     <img class="ava" src="https://tempmail100.com/assets/image/192x192.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://tempmail100.com" target="_blank">Temp Mail</a> 
+      </div> 
+      <div class="info">
+       Free Temporary email service
+      </div> 
+     </div> 
+    </div> 
 
 
 

@@ -10,11 +10,13 @@ theme:
   name: material
   custom_dir: docs/overrides
   # font: false
-  logo: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
+  logo: https://i.stardots.io/wcowin/1750089315509.png
+  # https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
   # https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp
   # https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
 
-  favicon: https://s1.imagehub.cc/images/2025/05/05/7ff9985e6f5baffe306907df47042787.png
+  favicon: https://i.stardots.io/wcowin/1750090373988.png
+  # https://s1.imagehub.cc/images/2025/05/05/7ff9985e6f5baffe306907df47042787.png
   # https://pic4.zhimg.com/v2-fee2c2622ad68aeed98a8b411a8b272b_1440w.jpg
   # https://s2.loli.net/2024/04/06/yEOZavwMr6kTWhu.png
   palette:
@@ -81,7 +83,7 @@ nav:
   # - 主页: /
   - 技术:
     - blog/indexblog.md
-    - 临时邮箱是什么？为什么你需要它？: blog/temp-email.md
+    - 临时邮箱是什么？: blog/temp-email.md
     - 好用/好玩网站分享: blog/Webplay.md
     - 基于Mkdocs主题的站点: blog/technique sharing/comkdocs.md
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md

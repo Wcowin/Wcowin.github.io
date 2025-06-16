@@ -1,6 +1,5 @@
 ---
 title: 许可声明
-status: new
 ---
 
 ![](https://pic3.zhimg.com/80/v2-a0c07e85f2dfdfa5f1eed932883daa50_1440w.webp)  
