@@ -23,7 +23,7 @@ hide_reading_time: true
 
 
 
- <div class="flip-container">
+<div class="flip-container">
 <div class="image-container">
     <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
     <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">

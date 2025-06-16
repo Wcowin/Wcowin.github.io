@@ -16,6 +16,63 @@ hide_reading_time: true
 
 ## 关于我
 
+
+<div class="flip-container">
+<div class="image-container">
+    <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
+    <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
+</div>
+</div>
+<style>
+    .flip-container {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 10px auto;
+    display: flex;
+    align-items: flex-start;
+    /* 对齐顶部 */
+    justify-content: flex-end;
+    /* 将文字放置右上角 */
+    }
+    .image-container {
+        position: relative;
+        position: relative;
+        width: 280px;
+        height: 280px;
+    }
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    /* 图片填满容器 */
+        border-radius: 50%;
+        border: 4px solid #ffffff; /* 白色边框 */
+        box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15); /* 阴影 */
+        backface-visibility: hidden; /* 隐藏背面 */
+        transition: transform 0.6s ease-in-out; /* 仅对transform过渡 */
+    }
+    .image-container img:first-child {
+        z-index: 1;
+        backface-visibility: hidden;
+    }
+    .image-container img:last-child {
+        z-index: 0;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
+    .image-container:hover img:first-child {
+        transform: rotateY(180deg);
+        z-index: 2;
+    }
+    .image-container:hover img:last-child {
+        transform: rotateY(0deg);
+        z-index: 3;
+    }
+</style>
+
 <!-- <center>
   <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" 
        style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
@@ -23,10 +80,10 @@ hide_reading_time: true
 
 
 
-<center>
+<!-- <center>
   <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" 
        style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
-</center>
+</center> -->
 
 
 <!-- <center>  
@@ -116,7 +173,7 @@ hide_reading_time: true
     </div>
     <div>
         <h3 class="qualification__title">CTBU</h3>
-        <span class="qualification__subtitle">电子信息工程专业学士</span>
+        <span class="qualification__subtitle">电子信息工程学士</span>
         <div class="qualification__calendar">
             <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
             <span>2021 - 2025</span>
@@ -126,7 +183,7 @@ hide_reading_time: true
 <div class="qualification__data">
     <div>
         <h3 class="qualification__title">家里蹲大学</h3>
-        <span class="qualification__subtitle">密码学硕士研究生</span>
+        <span class="qualification__subtitle">密码学硕士</span>
         <div class="qualification__calendar">
             <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
             <span>2026 - 2029</span>
@@ -162,17 +219,21 @@ hide_reading_time: true
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
     - [x] 咖啡重度爱好者 
-    - [x] 热爱(xiā)折腾技术/Math，目前的研究领域是[密码学](../blog/Cryptography/index.md)
-    - [x] 读书明志可识春秋;诗词爱好者;喜欢村上春树;擅长羽毛球
-    - [x] 清醒，知趣，明得失，知进退 
+    - [x] 热爱(xiā)折腾技术/Math
+    - [ ] 目前的研究领域是[密码学](../blog/Cryptography/index.md)
+    - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
+    - [x] 清醒知趣，明得失，知进退 
 
 ## 人生态度
 
 <p style="text-align: center; font-size: 25px; margin: 0px;"><strong>𝘿𝙤𝙣'𝙩 𝙘𝙖𝙧𝙚 𝙖𝙗𝙤𝙪𝙩 𝙬𝙤𝙧𝙡𝙙𝙡𝙮 𝙚𝙮𝙚𝙨 𝙩𝙤 𝙥𝙪𝙧𝙨𝙪𝙚 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙡𝙞𝙜𝙝𝙩</strong></p>
 
-<!-- <img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp"> -->
-<img class="img1" src="https://pic1.zhimg.com/80/v2-8030915c744322fb1e3a6ec0b8fed24c_1440w.webp">
 
+=== "For"
+    <img class="img1" src="https://pic1.zhimg.com/80/v2-8030915c744322fb1e3a6ec0b8fed24c_1440w.webp">
+
+=== "you"
+    <img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp">
 
 ## 联系我
 
@@ -221,7 +282,7 @@ hide_reading_time: true
     ---    
       
     <center><font  color= #757575 size=6>WeChat</font>  
-    <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: auto; height: auto;">
+    <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: auto; height: auto; border-radius: 25px;">
     <font color= #999 >扫一扫上面的二维码图案<br>
     加我为朋友</font></center>
 
@@ -237,7 +298,7 @@ hide_reading_time: true
 
     <center><font  color= #757575 size=6>Email</font>
 
-    [发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}</center>
+    [发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}</center>
 
 <div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
 

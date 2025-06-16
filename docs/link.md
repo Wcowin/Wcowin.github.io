@@ -99,7 +99,7 @@ hide:
      </div>
     </div>
     <div class="card"> 
-     <img class="ava" src="https://finisky.github.io/images/avatar.png" /> 
+     <img class="ava" src="https://s2.loli.net/2025/06/16/qdWCDgjEpy4Airl.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://finisky.github.io/" target="_blank">Finisky Garden</a> 
@@ -822,7 +822,17 @@ hide:
       </div> 
     </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://www.zair.top/img/logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.zair.top/" target="_blank">逐水寻源</a> 
+      </div> 
+      <div class="info">
+       欢迎来到逐水寻源，这是个人技术博客…………
+      </div> 
+     </div> 
+    </div> 
 
 
 
@@ -1093,18 +1103,7 @@ window.friendLinkUtils = {
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://www.zair.top/" target="_blank">以太工坊</a> 
-      </div> 
-      <div class="info">
-       分享我的学习笔记、经验与有趣的小玩意.
-      </div> 
-     </div> 
-    </div> 
-   <div class="card"> 
-     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://weizwz.com" target="_blank">唯之为之(打不开)</a> 
+       <a href="https://weizwz.com" target="_blank">唯之为之(未加我方友链)</a> 
       </div> 
       <div class="info">
       时光笔墨
