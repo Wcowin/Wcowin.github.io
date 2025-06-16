@@ -9,6 +9,9 @@ tags:
 
 [快速教程]
 [快速教程]: #mkdocs
+
+https://hsiaofeng.com/archives/224.html
+
 ***  
 
 **以下是摘录的部分字体官方介绍文档**

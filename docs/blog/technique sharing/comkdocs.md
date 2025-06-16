@@ -43,3 +43,7 @@ tags:
 - [HomePage of CaiYa](https://j-yi-11.github.io/index.html)
 - [My Pamphlet Blog](https://ronaldln.github.io/MyPamphlet-Blog/)
 - [Lmhhh's Note!](https://lmhhh28.github.io/)
+- [Cola Pig's Wiki](https://cp-wiki.onrender.com/)
+- [Josh's Blog](https://joshzhong.top/)
+- [Awesome Tech Share](https://wncfht.github.io/Awesome-Tech-Share/)
+- [Chenxi Ma](https://algebra-mcx.github.io/Academic-Profile/)

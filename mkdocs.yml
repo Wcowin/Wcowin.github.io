@@ -81,6 +81,7 @@ nav:
   # - 主页: /
   - 技术:
     - blog/indexblog.md
+    - 临时邮箱是什么？为什么你需要它？: blog/temp-email.md
     - 好用/好玩网站分享: blog/Webplay.md
     - 基于Mkdocs主题的站点: blog/technique sharing/comkdocs.md
     - 甜甜圈🍩代码: blog/technique sharing/ttq.md
