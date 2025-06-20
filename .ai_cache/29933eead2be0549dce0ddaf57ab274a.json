@@ -1,8 +1,8 @@
 {
-  "summary": "通过终端指令，实现Mac Dock栏只显示当前运行的应用程序，提升桌面整洁度和操作效率。",
+  "summary": "通过终端指令，实现Mac Dock栏仅显示当前运行应用，提升桌面整洁度。",
   "service": "glm",
   "page_title": "小小Mac技巧",
-  "timestamp": "2025-06-12T14:21:55.468480",
+  "timestamp": "2025-06-20T02:02:27.560659",
   "language": "zh",
   "cache_version": "1.3.0"
 }
