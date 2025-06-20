@@ -16,14 +16,11 @@ hide_reading_time: true
 
 ## 关于我
 
-<!-- ![1750088524533.png(via stardots.io)](https://i.stardots.io/wcowin/1750088524533.png) -->
 
 <div class="flip-container">
 <div class="image-container">
-    <!-- <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image"> -->
-    <img src="https://i.stardots.io/wcowin/1750088524533.png" alt="Back Image">
-    <!-- <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image"> -->
-    <img src="https://i.stardots.io/wcowin/1750090689978.jpg" alt="Front Image">
+    <img src="https://free.wmhua.cn/2025/05/09/681d7016db8dc.png" alt="Back Image">
+    <img src="https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg" alt="Front Image">
 </div>
 </div>
 <style>
@@ -99,10 +96,8 @@ hide_reading_time: true
 
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
 
-<center><font size=6 color= #757575>  
-观史知今，当思进退，读书明志可识春秋  
-<br>
-
+<center><font size=6rem color= #757575>
+观史知今，当思进退，读书明志，可识春秋   
 ——Wcowin </font></center>  
 
 ---
@@ -367,7 +362,6 @@ hide_reading_time: true
 ## 须知  
 
 如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角**微信添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
-> 如有推广需求请加微信私聊
 
 
 !!! note "与我联系"
@@ -384,4 +378,3 @@ hide_reading_time: true
 <!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
 
 <!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script> -->
-
