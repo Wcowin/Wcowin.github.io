@@ -1,8 +1,8 @@
 {
-  "summary": "Wcowin for MkDocs主题是基于Material for MkDocs美化的主题，简洁美观且功能多元化，适合小白配置。通过该主题，用户可以享受页面简洁美观的体验，解决页面卡顿问题。安装简便，适用于静态网页部署至GitHub Pages。",
-  "service": "openai",
+  "summary": "Wcowin for MkDocs主题，简洁美观，功能多元化，基于Material for MkDocs美化，适用于快速搭建个人博客或文档网站。",
+  "service": "glm",
   "page_title": "Wcowin for MkDocs主题",
-  "timestamp": "2025-06-15T07:40:53.090736",
+  "timestamp": "2025-06-23T08:49:21.031237",
   "language": "zh",
   "cache_version": "1.3.0"
 }

@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍如何在网站中添加Mkdocs博客，通过简单配置mkdocs.yml和authors.yml实现。博客插件易上手，有效简化博客管理，提升用户体验。",
-  "service": "openai",
+  "summary": "Mkdocs博客插件易于配置，通过简单添加代码至mkdocs.yml，即可实现博客功能，作者信息在/docs/blog/.authors.yml中设置。",
+  "service": "glm",
   "page_title": "网站添加Mkdocs博客",
-  "timestamp": "2025-06-15T07:40:05.385775",
+  "timestamp": "2025-06-23T08:48:25.783170",
   "language": "zh",
   "cache_version": "1.3.0"
 }

@@ -1,8 +1,8 @@
 {
-  "summary": "这篇文章介绍了一个基于原生 JavaScript、HTML 和 CSS 的简单音乐播放器，支持本地音乐添加、播放列表管理、搜索功能，以及顺序/随机/单曲循环播放等特性。适合初学者学习 Web 前端开发、音频 API 应用和响应式布局设计。主要技术包括原生 JavaScript 操作 DOM 和 Audio API、响应式 CSS 布局、本地文件读取和在线音乐 API 搜索。未来扩展建议包括支持歌词显示、播放历史、自定义主题色和更多在线音乐平台。",
-  "service": "openai",
+  "summary": "本项目是一款基于原生JS、HTML和CSS的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、多种播放模式等，适合学习Web前端开发。",
+  "service": "glm",
   "page_title": "简单的 JavaScript 音乐播放器",
-  "timestamp": "2025-06-15T07:41:50.505184",
+  "timestamp": "2025-06-23T08:50:18.752720",
   "language": "zh",
   "cache_version": "1.3.0"
 }

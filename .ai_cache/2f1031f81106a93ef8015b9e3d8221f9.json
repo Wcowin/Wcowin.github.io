@@ -1,8 +1,8 @@
 {
-  "summary": "在使用MkDocs构建网站时，加速网站访问可釡取以下措施：优化图片格式、使用CDN加速静态资源、优化本地渲染配置以提高访问速度。推荐工具包括freeconvert和jsDelivr CDN，同时建议在本地开发时禁用部分插件以减少渲染时间。",
-  "service": "openai",
+  "summary": "优化网站访问速度，可采取图片格式转换、使用CDN加速资源、调整本地渲染配置等措施，如禁用某些git插件，并利用Lighthouse测试效果。",
+  "service": "glm",
   "page_title": "加速网站访问的一些心得",
-  "timestamp": "2025-06-15T07:40:44.778813",
+  "timestamp": "2025-06-23T08:49:10.940330",
   "language": "zh",
   "cache_version": "1.3.0"
 }
