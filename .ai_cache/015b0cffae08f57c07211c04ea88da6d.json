@@ -1,8 +1,8 @@
 {
-  "summary": "该文介绍了一种基于IP定位和OpenStreetMap的地图展示技术。通过JavaScript获取用户IP，判断是否在中国大陆，并相应地隐藏地图。同时，使用Leaflet库在地图上展示多个城市足迹点，实现地理位置信息的可视化。",
+  "summary": "该文章展示了一个基于JavaScript和OpenStreetMap的地图应用，通过IP定位判断用户位置，仅在中国大陆IP下隐藏地图，并在地图上展示多个中国城市的位置和名称。",
   "service": "glm",
   "page_title": "足迹",
-  "timestamp": "2025-06-12T14:15:42.793008",
+  "timestamp": "2025-06-20T02:02:58.318991",
   "language": "zh",
   "cache_version": "1.3.0"
 }

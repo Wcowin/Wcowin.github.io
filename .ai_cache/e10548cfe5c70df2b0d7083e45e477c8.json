@@ -1,8 +1,0 @@
-{
-  "summary": "通过修改hosts文件或选择快速DNS解析，解决mac无法访问GitHub的问题。需备份原hosts文件，替换后测试。",
-  "service": "glm",
-  "page_title": "mac 无法访问 github 的解决办法",
-  "timestamp": "2025-06-12T14:21:47.430379",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}
