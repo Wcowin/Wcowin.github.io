@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>Wcowin&#39;s Blog</title>
+    <description>知足且上进，温柔且坚定</description>
+    <link>http://wcowin.work/</link>
+    <atom:link href="http://wcowin.work/feed_rss_updated.xml" rel="self" type="application/rss+xml" />
+
+    
+    <managingEditor>王科文(Wcowin)</managingEditor>
+    <docs>https://github.com/Wcowin/Wcowin.github.io</docs>
+    <language>zh</language>
+
+    
+    <pubDate>Wed, 25 Jun 2025 05:59:25 -0000</pubDate>
+    <lastBuildDate>Wed, 25 Jun 2025 05:59:25 -0000</lastBuildDate>
+    <ttl>1440</ttl>
+
+    
+    <generator>MkDocs RSS plugin - v1.17.3</generator>
+
+    
+    
+    <image>
+      <url>https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp</url>
+      <title>Wcowin's Blog</title>
+      <link>http://wcowin.work/</link>
+    </image>
+    
+
+    
+    
+    <item>
+      <title>个人简介</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;script src=&#34;https://sdk.jinrishici.com/v2/browser/jinrishici.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h1&gt;&lt;span id=&#34;jinrishici-sentence&#34;&gt;今日诗词&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;关于我&lt;/h2&gt;
+&lt;div class=&#34;flip-container&#34;&gt;
+&lt;div class=&#34;image-co...</description>
+      <link>http://wcowin.work/about/geren/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 25 Jun 2025 05:58:39 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/geren/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/geren/</guid>
+      
+    </item>
+    
+    <item>
+      <title>0.Mkdocs教程前言</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了Mkdocs文档教程，包括官方教程、Material for MkDocs教程、中文教程和视频教程，并指导用户如何部署静态网页至GitHub pages，配置Mkdocs部署，以及添加Mkdocs博客。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/Mkdocs/mkfirst/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 25 Jun 2025 03:20:32 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Mkdocs/mkfirst/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkfirst/</guid>
+      
+    </item>
+    
+    <item>
+      <title>个人简历</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;!-- &lt;div class=&#34;grid cards&#34; markdown&gt;
+
+-   :octicons-bookmark-16:{ .lg .middle } __个人简历__
+
+    ---
+
+    - [个人简历](https://lightpdf.cn/docs/1cpgobc){target=“_blank”}
+
+&lt;/div&gt; --&gt;
+
+&lt;center&gt;&lt;font  co...</description>
+      <link>http://wcowin.work/about/resume/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Fri, 20 Jun 2025 02:01:27 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/resume/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/resume/</guid>
+      
+    </item>
+    
+    <item>
+      <title>如何给MKdocs添加友链</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了为MKdocs添加友链的方法，通过复制代码到.md文件中，实现友链功能，并展示了卡片样式和响应式设计，适用于分享技术博客等场景。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/Mkdocs/linktech/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Fri, 20 Jun 2025 02:01:27 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Mkdocs/linktech/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/linktech/</guid>
+      
+    </item>
+    
+    <item>
+      <title>支持作者</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;74&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;支持作者&lt;/h1&gt;
+&lt;div class=&#34;grid cards&#34; markdown&gt;
+
+- :material-email-mark-as-unread: 给我发送[邮箱...</description>
+      <link>http://wcowin.work/about/zcw/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Mon, 16 Jun 2025 16:30:35 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/zcw/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/zcw/</guid>
+      
+    </item>
+    
+    <item>
+      <title>临时邮箱是什么？</title>
+      
+      
+      
+      
+        
+      <category>推广</category>
+        
+      
+      <description>临时邮箱是一个一次性使用的邮箱地址，保护隐私、避免垃圾邮件，适合注册试用、开发测试等场景。了解临时邮箱的优势和使用方法。</description>
+      <link>http://wcowin.work/blog/temp-email/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Mon, 16 Jun 2025 16:30:35 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/temp-email/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/temp-email/</guid>
+      
+    </item>
+    
+    <item>
+      <title>MIT许可声明</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    麻省理工学院许可证允许用户无限制使用、复制、修改、发布软件，但需保留版权声明和许可声明。软件提供“原样”，不附带任何保证，使用风险自担。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-o...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/Mkdocs/MIT/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Mon, 16 Jun 2025 16:30:35 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Mkdocs/MIT/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/MIT/</guid>
+      
+    </item>
+    
+    <item>
+      <title>基于Mkdocs主题的站点</title>
+      
+      
+      
+      
+        
+      <category>好玩</category>
+        
+      <category>技术分享</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了基于MkDocs主题的站点，涵盖数据结构与算法教程、框架官方文档、个人博客等，为用户搭建和展示文档网站提供参考。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;199&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 &lt;a href=&#34;https://www.django-rest-framework.org/&#34;&gt;django-rest-framework&lt;/a&gt;、&lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; 以及基于 Go 编写的云网关代理服务器 &lt;a href=&#34;https://github.com/traefik/traefik&#34;&gt;traefik&lt;/a&gt; 等项目的官方文档站点，都是通过 MkDocs 进行搭建。&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/technique%20sharing/comkdocs/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Mon, 16 Jun 2025 14:52:26 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/technique%20sharing/comkdocs/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/technique%20sharing/comkdocs/</guid>
+      
+    </item>
+    
+    <item>
+      <title>修改网站字体</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    霞鹜文楷是一款开源中文字体，基于FONTWORKS的Klee One衍生，具有日本教科书体风格，适用于网站、手机系统美化等场景。该字体支持简繁日韩三字重，可满足不同阅读需求。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;6&lt;/strong&gt; 分钟 | :mat...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/websitebeauty/mkdocsfont/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Mon, 16 Jun 2025 14:52:26 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/websitebeauty/mkdocsfont/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/mkdocsfont/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Dify旅行规划助手</title>
+      
+      
+      
+      
+        
+      <category>旅行</category>
+        
+      
+      <description>&lt;p&gt;&lt;iframe
+ src=&#34;https://udify.app/chatbot/I32AOLYxlAXlrMFt&#34;
+ style=&#34;width: 100%; height: 100%; min-height: 700px&#34;
+ frameborder=&#34;0&#34;
+ allow=&#34;microphone&#34;&gt;
+&lt;/iframe&gt;
+&lt;/p&gt;</description>
+      <link>http://wcowin.work/trip/tripdesign/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Tue, 10 Jun 2025 16:57:49 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/trip/tripdesign/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/trip/tripdesign/</guid>
+      
+    </item>
+    
+    <item>
+      <title>数论基础</title>
+      
+      
+      
+      
+        
+      <category>密码学</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    数论基础是密码学核心，涵盖质数、互质、同余等概念，并介绍欧几里得算法、扩展欧几里得算法、费马小定理等，用于加密算法和素性检验。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;3&lt;/strong&gt; 分钟 | :material-circle-edit-outlin...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/Cryptography/Numbertheory/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Mon, 09 Jun 2025 07:18:50 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Cryptography/Numbertheory/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Cryptography/Numbertheory/</guid>
+      
+    </item>
+    
+    <item>
+      <title>MkDocs文档AI摘要</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动生成摘要，并可选智能阅读统计，提升文档智能化和用户体验。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :m...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Fri, 06 Jun 2025 11:51:15 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/</guid>
+      
+    </item>
+    
+    <item>
+      <title>相对地址的一些问题</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文探讨了MkDocs中相对地址引用的问题，包括图片、PDF、静态资源等引用方法，并提供了注意事项和常见问题解决方案，确保资源在本地预览和线上部署时正常显示。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-ci...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/websitebeauty/Relativeaddress/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Fri, 06 Jun 2025 09:07:20 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/websitebeauty/Relativeaddress/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/Relativeaddress/</guid>
+      
+    </item>
+    
+    <item>
+      <title>添加阅读信息统计</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了如何为Markdown文档添加阅读时间统计功能。通过配置mkdocs.yml和编写Python脚本，可自动计算并展示每页文档的阅读时间、字符数和代码行数。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/websitebeauty/reading_time/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Fri, 06 Jun 2025 09:07:20 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/websitebeauty/reading_time/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/reading_time/</guid>
+      
+    </item>
+    
+    <item>
+      <title>25考研(已完结)</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;782&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;考研计划(25考研已完结)&lt;/h1&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;font color=&#34;#4351AF&#34; size=6 &gt;
+  &lt;h1&gt;25考研初试倒计时：&lt;...</description>
+      <link>http://wcowin.work/about/kaoyan/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/kaoyan/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/kaoyan/</guid>
+      
+    </item>
+    
+    <item>
+      <title>免责声明</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;5&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;1801&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;免责声明&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wcowin.work/&#34;&gt;本站&lt;/a&gt;一贯高度重视知识产权的保护，并一贯遵守中华人民共和国各项知识产权法律、法规及其他的具有法律约束力...&lt;/p&gt;</description>
+      <link>http://wcowin.work/about/shengming/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/shengming/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/shengming/</guid>
+      
+    </item>
+    
+    <item>
+      <title>我的家乡——漯河</title>
+      
+      
+      
+      
+        
+      <category>旅行</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    漯河，河南低调的美食之城，拥有千年历史和丰富文化。地处沙澧河交汇处，以胡辣汤、烩面等特色美食著称。漯河是食品加工重镇，拥有亚洲最大的肉类加工企业双汇集团。同时，漯河还是北方水城，拥有沙澧河风景区等自然景观，以及南街村等特色旅游品牌。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two...&lt;/p&gt;</description>
+      <link>http://wcowin.work/trip/LH/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/trip/LH/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/trip/LH/</guid>
+      
+    </item>
+    
+    <item>
+      <title>西安</title>
+      
+      
+      
+      
+        
+      <category>旅行</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    西安之旅涵盖城墙骑行、兵马俑参观、华清池游览等，体验钟楼、回民街美食，参观陕历博、大雁塔，品尝腊汁肉夹馍、凉皮等特色美食。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:...&lt;/p&gt;</description>
+      <link>http://wcowin.work/trip/Xian/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/trip/Xian/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/trip/Xian/</guid>
+      
+    </item>
+    
+    <item>
+      <title>足迹</title>
+      
+      
+      
+      
+        
+      <category>旅行</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    该文章展示了一个基于JavaScript和OpenStreetMap的地图应用，通过IP定位判断用户位置，仅在中国大陆IP下隐藏地图，并在地图上展示多个中国城市的位置和名称。&lt;/p&gt;
+&lt;h1&gt;足迹&lt;/h1&gt;
+&lt;div id=&#34;map-container&#34;&gt;
+  &lt;iframe id=&#34;google-map-frame&#34; src=&#34;http...</description>
+      <link>http://wcowin.work/trip/footmark/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/trip/footmark/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/trip/footmark/</guid>
+      
+    </item>
+    
+    <item>
+      <title>重庆</title>
+      
+      
+      
+      
+        
+      <category>旅行</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    重庆三日游推荐路线包括解放碑、长江索道、洪崖洞、三峡博物馆、鹅岭、李子坝、山城步道、磁器口、南山一棵树等，体验山城特色美食如火锅、小面、酸辣粉等。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circle-e...&lt;/p&gt;</description>
+      <link>http://wcowin.work/trip/InCQ/CQ/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/trip/InCQ/CQ/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/trip/InCQ/CQ/</guid>
+      
+    </item>
+    
+    <item>
+      <title>MyBlog</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;h1&gt;MyBlog&lt;/h1&gt;
+&lt;div class=&#34;grid cards&#34; markdown&gt;
+
+-   :material-clock-fast:{ .lg .middle } __What is Blog?__
+
+    ---
+    **博客，仅音译，英文名为Blogger，为Web Log的混成词。** 
+    **其正式名称为网络日记；又音译为部落格或部落阁等，是社会媒体网络的一部分。是...</description>
+      <link>http://wcowin.work/blog/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Tue, 03 Jun 2025 11:45:01 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/</guid>
+      
+    </item>
+    
+    <item>
+      <title>好用/好玩网站分享</title>
+      
+      
+      
+      
+        
+      <category>技术分享</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文分享了众多实用网站，涵盖工具、图像、视频处理、学习等多个领域，旨在帮助用户提高工作效率和生活品质。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：**953...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/Webplay/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Tue, 03 Jun 2025 11:45:01 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Webplay/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Webplay/</guid>
+      
+    </item>
+    
+    <item>
+      <title>语雀</title>
+      
+      
+      
+      
+        
+      <category>技术分享</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    语雀，蚂蚁集团旗下文档与知识库工具，源自内部需求，旨在方便个人和团队记录、分享知识，实现知识沉淀与交流，助力用户构建个人数字花园。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outl...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/yuque/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Tue, 03 Jun 2025 06:37:05 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/yuque/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/yuque/</guid>
+      
+    </item>
+    
+    <item>
+      <title>提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法</title>
+      
+      
+      
+      
+        
+      <category>Mac</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文针对macOS系统常见应用打开错误，如“已损坏”或“来自不明开发者”，分析了原因并提出解决方案，包括开启“任何来源”选项、终端命令绕过签名认证和应用签名方法。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/Mac/sunhuai/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Tue, 03 Jun 2025 06:37:05 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Mac/sunhuai/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/sunhuai/</guid>
+      
+    </item>
+    
+    <item>
+      <title>404页面</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;243&lt;/strong&gt; | :fontawesome-solid-code:有效代码行数：&lt;strong&gt;353&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;!!! note &#34;404页面&#34;
+    [https://wcowin.work/...&lt;/p&gt;</description>
+      <link>http://wcowin.work/about/404/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Sat, 31 May 2025 16:04:27 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/404/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/404/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Github主页介绍</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;div id=&#34;header&#34; align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif&#34; width=&#34;200&#34;/&gt;
+
+  &lt;h1&gt;
+    Hey, I&#39;m &lt;a href=&#34;https://wcowin.work/VitePress/&#34;&gt;Wcowin&lt;/a&gt;!
+  ...</description>
+      <link>http://wcowin.work/about/Wcowin/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Sat, 31 May 2025 16:04:27 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/Wcowin/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/Wcowin/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Markdown指南</title>
+      
+      
+      
+      
+        
+      <category>Markdown</category>
+        
+      <category>教程</category>
+        
+      <category>语法</category>
+        
+      
+      <description>从基础到进阶的完整Markdown语法教程</description>
+      <link>http://wcowin.work/develop/Markdown/markdown/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Sat, 31 May 2025 16:04:27 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/develop/Markdown/markdown/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/develop/Markdown/markdown/</guid>
+      
+    </item>
+    
+    <item>
+      <title>科学上网</title>
+      
+      
+      
+      
+        
+      <category>技术分享</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (ChatGPT)&#34;
+    科学上网是为了访问国外网站，推荐使用工具如Clash、Quantumult X等，需拥有订阅节点并导入客户端。推荐机场包括鹰云、一元机场等。文章提供了iOS、Android、PC/Mac下载及使用教程，强调科学上网用于学习目的，不得用于违法行为。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/technique%20sharing/kexue/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 28 May 2025 07:39:15 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/technique%20sharing/kexue/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/technique%20sharing/kexue/</guid>
+      
+    </item>
+    
+    <item>
+      <title>简单的 JavaScript 音乐播放器</title>
+      
+      
+      
+      
+        
+      <category>我的作品</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本项目是一款基于原生JS、HTML和CSS的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、多种播放模式等，适合学习Web前端开发。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit...&lt;/p&gt;</description>
+      <link>http://wcowin.work/develop/Mywork/muplayer/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 28 May 2025 07:39:15 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/develop/Mywork/muplayer/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/develop/Mywork/muplayer/</guid>
+      
+    </item>
+    
+    <item>
+      <title>嵌入PDF文件</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Wcowin/hexo-site-comments/discussions/8#discussioncomment-12101922&#34;&gt;嵌入PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;嵌入PDF代码  ，&lt;strong&gt;注意PDF的相对地址&lt;/strong&gt;
+```html
+&amp;lt;iframe src=&#34;../个人简历.pdf (相对地址)&#34; width=&#34;100%&#34; height=&#34;800px&#34; style=&#34;...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/websitebeauty/mkpdf/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Sun, 11 May 2025 07:59:48 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/websitebeauty/mkpdf/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/mkpdf/</guid>
+      
+    </item>
+    
+  </channel>
+</rss>
