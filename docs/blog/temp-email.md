@@ -6,6 +6,22 @@ tags:
   - 推广
 ---
 
+
+<body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
+     crossorigin="anonymous"></script>
+<!-- AD1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2327435979273742"
+     data-ad-slot="3702206121"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+
 # 临时邮箱是什么？为什么你需要它？
 
 ![1750089876398.png(via stardots.io)](https://i.stardots.io/wcowin/1750089876398.png)

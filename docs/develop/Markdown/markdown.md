@@ -3,8 +3,6 @@ title: Markdown语法学习指南
 description: 从基础到进阶的完整Markdown语法教程
 tags:
   - Markdown
-  - 教程
-  - 语法
 ---
 
 <div class="markdown-guide-header">

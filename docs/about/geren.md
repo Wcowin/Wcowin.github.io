@@ -19,8 +19,8 @@ hide_reading_time: true
 
 <div class="flip-container">
 <div class="image-container">
-    <img src="https://free.wmhua.cn/2025/05/09/681d7016db8dc.png" alt="Back Image">
-    <img src="https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg" alt="Front Image">
+    <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
+    <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
 </div>
 </div>
 <style>
@@ -73,6 +73,12 @@ hide_reading_time: true
     }
 </style>
 
+
+<center><font size=6 color= #757575>
+观史知今，当思进退，读书明志可识春秋  
+<br>
+——Wcowin </font></center>
+
 <!-- <center>
   <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" 
        style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
@@ -96,10 +102,10 @@ hide_reading_time: true
 
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
 
-<center><font size=6rem color= #757575>
+<!-- <center><font size=6rem color= #757575>
 观史知今，当思进退，读书明志，可识春秋 
      
-  ——Wcowin </font></center>  
+  ——Wcowin </font></center>   -->
 
 ---
 
