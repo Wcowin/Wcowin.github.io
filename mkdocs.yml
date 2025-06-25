@@ -380,15 +380,30 @@ extra:
 plugins:
   # - statistics
   # - git-authors
-  # - rss:
-  #     enabled: !ENV [CI, false]
-  #     match_path: (blog/posts|develop|relax|trip|about)/.* # 指定多个目录
-  #     image: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
-  #     date_from_meta:
-  #       as_creation: date
-  #     categories:
-  #       - categories
-  #       - tags
+  - rss:
+      enabled: !ENV [CI, false]
+      match_path: "(blog|develop|relax|trip|about)/(?!archive|category).*\\.md$"  # 匹配文章路径，排除归档和分类页面
+      image: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
+      date_from_meta:
+        as_creation: date
+        as_update: date
+        datetime_format: "%Y-%m-%d %H:%M"
+      categories:
+        - categories
+        - tags
+      # RSS feed 配置
+      abstract_chars_count: 200  # 摘要字符数
+      abstract_delimiter: "<!-- more -->"  # 摘要分隔符
+      comments_path: "#__comments"  # 评论链接
+      feed_ttl: 1440  # Feed 缓存时间（分钟）
+      length: 30  # RSS 条目数量
+      pretty_print: true  # 格式化输出
+      # 移除不支持的配置项
+      # rss_description: "Wcowin's Blog - 知足且上进，温柔且坚定"  # 这个配置不被插件识别
+      # rss_name: "Wcowin's Blog RSS Feed"  # 这个配置不被插件识别
+      url_parameters:
+        utm_source: "rss"
+        utm_medium: "referral"
   # - social
   - search:
       separator: '[\s\u200b\-]'
@@ -424,6 +439,8 @@ plugins:
         - blog/posts/wkw.md
         - about/link.md
         - blog/Mkdocs/linktech.md
+        - "blog/archive/**"
+        - "blog/category/**"
   - git-committers:
       enabled: !ENV [CI, false]
       repository: Wcowin/Wcowin.github.io

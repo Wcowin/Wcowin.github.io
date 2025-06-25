@@ -97,7 +97,8 @@ hide_reading_time: true
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
 
 <center><font size=6rem color= #757575>
-观史知今，当思进退，读书明志，可识春秋      
+观史知今，当思进退，读书明志，可识春秋 
+     
   ——Wcowin </font></center>  
 
 ---

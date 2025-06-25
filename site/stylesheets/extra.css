@@ -149,7 +149,7 @@ img.twitter {
 
 .md-typeset .admonition.pied-piper1,
 .md-typeset details.pied-piper1 {
-  border-color: rgb(96, 141, 189);
+  /* border-color: rgba(68,138,255,.1); */
   font-size: large;
   width: 100%;
   /* border-radius:25px; */
@@ -292,7 +292,7 @@ footer a:hover {
 }
 
 #rcorners4 {
-  border-radius: 25px;
+  border-radius: 32px;
   border: 2px solid rgba(68,138,255,.1);
   padding: 20px;
   width: 110%;
@@ -628,3 +628,17 @@ div.hide {
   color: #ffffff;
 }
 
+
+
+/* .md-content__inner {
+  min-height: 200px;
+  background-color: rgba(255, 0, 0, 0.05);
+  padding: 1em;
+}
+
+.md-typeset {
+  color: inherit;
+  font-size: inherit;
+  visibility: visible !important;
+  opacity: 1 !important;
+} */
