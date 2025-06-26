@@ -114,14 +114,29 @@ Mkdocs Materials 教程:
 [友链申请 :palms_up_together_tone1:](https://wcowin.work/link/){.md-button target=“_blank”}
 
 
+<head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script>
+</head>
+
+<!-- <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-2327435979273742">
+</amp-auto-ads> -->
+
+<body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
+     crossorigin="anonymous"></script>
+<!-- AD1 -->
 <ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
+     style="display:block"
      data-ad-client="ca-pub-2327435979273742"
-     data-ad-slot="2950014192"></ins>
+     data-ad-slot="3702206121"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+</body>

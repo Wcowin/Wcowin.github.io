@@ -10,7 +10,7 @@ status: new
 ![logo 2](https://s1.imagehub.cc/images/2025/06/06/ee327dc2912fd2f31d38ee8a16a1e1ff.png){.img1}
 
 仓库地址:[https://github.com/Wcowin/Mkdocs-AI-Summary](https://github.com/Wcowin/Mkdocs-AI-Summary)  
-🌐 **在线演示**:[https://wcowin.work/Mkdocs-AI-Summary/](https://wcowin.work/Mkdocs-AI-Summary/)
+🌐 **在线演示**:[https://wcowin.work/Mkdocs-AI-Summary-Plus/](https://wcowin.work/Mkdocs-AI-Summary-Plus/)
 
 <p align="center">
     <img src="https://img.shields.io/badge/MkDocs-Hooks-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white" alt="MkDocs Hooks">
