@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 26 Jun 2025 00:51:53 -0000</pubDate>
-    <lastBuildDate>Thu, 26 Jun 2025 00:51:53 -0000</lastBuildDate>
+    <pubDate>Thu, 26 Jun 2025 03:40:47 -0000</pubDate>
+    <lastBuildDate>Thu, 26 Jun 2025 03:40:47 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -87,9 +87,9 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动生成摘要，并可选智能阅读统计，提升文档智能化和用户体验。&lt;/p&gt;
+    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动内容清理，并提供灵活的配置选项。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :m...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circ...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 06 Jun 2025 11:51:15 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -644,9 +644,9 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了Mkdocs文档教程，包括官方教程、Material for MkDocs教程、中文教程和视频教程，并指导用户如何部署静态网页至GitHub pages，配置Mkdocs部署，以及添加Mkdocs博客。&lt;/p&gt;
+    本文介绍了Mkdocs文档教程，包括官方教程、Material for MkDocs教程、中文教程和视频教程，并提供部署静态网页至GitHub pages的步骤和配置说明。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :mate...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Mkdocs/mkfirst/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 27 Nov 2024 01:12:53 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
