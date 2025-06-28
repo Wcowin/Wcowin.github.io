@@ -13,6 +13,28 @@
     "language": "zh",
     "items": [
         {
+            "id": "http://wcowin.work/relax/Game/yuanshen/",
+            "url": "http://wcowin.work/relax/Game/yuanshen/?utm_source=rss&utm_medium=referral",
+            "title": "Genshin",
+            "content_html": "<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>4</strong> \u5206\u949f | :material-circle-edit-outline:\u4e2d\u6587\u5b57\u7b26\uff1a<strong>1504</strong></p>\n<h1>What is Genshin Impact?</h1>\n<p>\u5728\u300a\u539f\u795e\u300b\u91cc\uff0c\u73a9\u5bb6\u5c06\u626e\u6f14\u4e00\u4f4d\u540d\u4e3a\u300c\u65c5\u884c\u8005\u300d\u7684\u795e\u79d8\u89d2\u8272\uff0c\u5728\u5f02\u4e16\u754c\u65c5\u9014\u4e2d\u88ab\u964c\u751f\u7684\u795e\u660e\u62e6\u622a\uff0c\u82cf\u9192\u540e\u8e0f\u4e0a\u5bfb\u8bbf\u4e03\u795e\u7684...</p>",
+            "image": null,
+            "date_modified": "2025-06-28T08:13:06+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "http://wcowin.work/trip/tripdesign/",
+            "url": "http://wcowin.work/trip/tripdesign/?utm_source=rss&utm_medium=referral",
+            "title": "Dify\u65c5\u884c\u89c4\u5212\u52a9\u624b",
+            "content_html": "<p><iframe\n src=\"https://udify.app/chatbot/I32AOLYxlAXlrMFt\"\n style=\"width: 100%; height: 100%; min-height: 700px\"\n frameborder=\"0\"\n allow=\"microphone\">\n</iframe>\n</p>\n<body>\n<script async src=\"https://p...",
+            "image": null,
+            "date_modified": "2025-06-28T08:13:06+00:00",
+            "authors": [],
+            "tags": [
+                "\u65c5\u884c"
+            ]
+        },
+        {
             "id": "http://wcowin.work/blog/Webplay/",
             "url": "http://wcowin.work/blog/Webplay/?utm_source=rss&utm_medium=referral",
             "title": "\u597d\u7528/\u597d\u73a9\u7f51\u7ad9\u5206\u4eab",
@@ -61,18 +83,6 @@
             ]
         },
         {
-            "id": "http://wcowin.work/trip/tripdesign/",
-            "url": "http://wcowin.work/trip/tripdesign/?utm_source=rss&utm_medium=referral",
-            "title": "Dify\u65c5\u884c\u89c4\u5212\u52a9\u624b",
-            "content_html": "<p><iframe\n src=\"https://udify.app/chatbot/I32AOLYxlAXlrMFt\"\n style=\"width: 100%; height: 100%; min-height: 700px\"\n frameborder=\"0\"\n allow=\"microphone\">\n</iframe>\n</p>\n<p>&lt;script async src=\"https://pagead2....</p>",
-            "image": null,
-            "date_modified": "2025-06-26T03:39:59+00:00",
-            "authors": [],
-            "tags": [
-                "\u65c5\u884c"
-            ]
-        },
-        {
             "id": "http://wcowin.work/about/geren/",
             "url": "http://wcowin.work/about/geren/?utm_source=rss&utm_medium=referral",
             "title": "\u4e2a\u4eba\u7b80\u4ecb",
@@ -108,7 +118,7 @@
             "id": "http://wcowin.work/blog/Mkdocs/linktech/",
             "url": "http://wcowin.work/blog/Mkdocs/linktech/?utm_source=rss&utm_medium=referral",
             "title": "\u5982\u4f55\u7ed9MKdocs\u6dfb\u52a0\u53cb\u94fe",
-            "content_html": "<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86\u4e3aMKdocs\u6dfb\u52a0\u53cb\u94fe\u7684\u65b9\u6cd5\uff0c\u901a\u8fc7\u590d\u5236\u4ee3\u7801\u5230.md\u6587\u4ef6\u4e2d\uff0c\u5b9e\u73b0\u53cb\u94fe\u529f\u80fd\uff0c\u5e76\u5c55\u793a\u4e86\u5361\u7247\u6837\u5f0f\u548c\u54cd\u5e94\u5f0f\u8bbe\u8ba1\uff0c\u9002\u7528\u4e8e\u5206\u4eab\u6280\u672f\u535a\u5ba2\u7b49\u573a\u666f\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circle-edit-...</p>",
+            "content_html": "<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86\u5728MKdocs\u4e2d\u6dfb\u52a0\u53cb\u94fe\u7684\u65b9\u6cd5\uff0c\u901a\u8fc7\u7b80\u5355\u4ee3\u7801\u5b9e\u73b0\uff0c\u652f\u6301\u5361\u7247\u6837\u5f0f\u5c55\u793a\uff0c\u4f18\u5316\u5c0f\u5c4f\u663e\u793a\uff0c\u9002\u7528\u4e8e\u5206\u4eab\u6280\u672f\u535a\u5ba2\u7b49\u573a\u666f\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circle-edit-outline:\u4e2d\u6587...</p>",
             "image": null,
             "date_modified": "2025-06-20T02:01:27+00:00",
             "authors": [],
@@ -245,7 +255,7 @@
             "id": "http://wcowin.work/trip/footmark/",
             "url": "http://wcowin.work/trip/footmark/?utm_source=rss&utm_medium=referral",
             "title": "\u8db3\u8ff9",
-            "content_html": "<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u8be5\u6587\u7ae0\u5c55\u793a\u4e86\u4e00\u4e2a\u57fa\u4e8eJavaScript\u548cOpenStreetMap\u7684\u5730\u56fe\u5e94\u7528\uff0c\u901a\u8fc7IP\u5b9a\u4f4d\u5224\u65ad\u7528\u6237\u4f4d\u7f6e\uff0c\u4ec5\u5728\u4e2d\u56fd\u5927\u9646IP\u4e0b\u9690\u85cf\u5730\u56fe\uff0c\u5e76\u5728\u5730\u56fe\u4e0a\u5c55\u793a\u591a\u4e2a\u4e2d\u56fd\u57ce\u5e02\u7684\u4f4d\u7f6e\u548c\u540d\u79f0\u3002</p>\n<h1>\u8db3\u8ff9</h1>\n<div id=\"map-container\">\n  <iframe id=\"google-map-frame\" src=\"http...",
+            "content_html": "<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u8be5\u6587\u7ae0\u5c55\u793a\u4e86\u4e00\u4e2a\u57fa\u4e8eIP\u5b9a\u4f4d\u548cOpenStreetMap\u7684\u8db3\u8ff9\u8ffd\u8e2a\u6280\u672f\u3002\u901a\u8fc7JavaScript API\u83b7\u53d6\u7528\u6237IP\uff0c\u5224\u65ad\u662f\u5426\u5728\u4e2d\u56fd\u5927\u9646\uff0c\u5e76\u76f8\u5e94\u5730\u9690\u85cf\u5730\u56fe\u3002\u540c\u65f6\uff0c\u5229\u7528Leaflet\u5e93\u5728\u5730\u56fe\u4e0a\u6807\u8bb0\u591a\u4e2a\u57ce\u5e02\u4f4d\u7f6e\uff0c\u5b9e\u73b0\u8db3\u8ff9\u5c55\u793a\u3002</p>\n<h1>\u8db3\u8ff9</h1>\n<div id=\"map-container\">\n  <iframe id=\"goo...",
             "image": null,
             "date_modified": "2025-06-04T07:42:39+00:00",
             "authors": [],
@@ -341,18 +351,6 @@
             "authors": [],
             "tags": [
                 "\u6211\u7684\u4f5c\u54c1"
-            ]
-        },
-        {
-            "id": "http://wcowin.work/blog/websitebeauty/mkpdf/",
-            "url": "http://wcowin.work/blog/websitebeauty/mkpdf/?utm_source=rss&utm_medium=referral",
-            "title": "\u5d4c\u5165PDF\u6587\u4ef6",
-            "content_html": "<p><a href=\"https://github.com/Wcowin/hexo-site-comments/discussions/8#discussioncomment-12101922\">\u5d4c\u5165PDF</a></p>\n<p>\u5d4c\u5165PDF\u4ee3\u7801  \uff0c<strong>\u6ce8\u610fPDF\u7684\u76f8\u5bf9\u5730\u5740</strong>\n```html\n&lt;iframe src=\"../\u4e2a\u4eba\u7b80\u5386.pdf (\u76f8\u5bf9\u5730\u5740)\" width=\"100%\" height=\"800px\" style=\"...</p>",
-            "image": null,
-            "date_modified": "2025-05-11T07:59:48+00:00",
-            "authors": [],
-            "tags": [
-                "Mkdocs"
             ]
         }
     ]

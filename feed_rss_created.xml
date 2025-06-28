@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 26 Jun 2025 03:40:47 -0000</pubDate>
-    <lastBuildDate>Thu, 26 Jun 2025 03:40:47 -0000</lastBuildDate>
+    <pubDate>Sat, 28 Jun 2025 08:16:01 -0000</pubDate>
+    <lastBuildDate>Sat, 28 Jun 2025 08:16:01 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -67,7 +67,8 @@
  allow=&#34;microphone&#34;&gt;
 &lt;/iframe&gt;
 &lt;/p&gt;
-&lt;p&gt;&amp;lt;script async src=&#34;https://pagead2....&lt;/p&gt;</description>
+&lt;body&gt;
+&lt;script async src=&#34;https://p...</description>
       <link>http://wcowin.work/trip/tripdesign/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 10 Jun 2025 16:57:49 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -283,10 +284,10 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    该文章展示了一个基于JavaScript和OpenStreetMap的地图应用，通过IP定位判断用户位置，仅在中国大陆IP下隐藏地图，并在地图上展示多个中国城市的位置和名称。&lt;/p&gt;
+    该文章展示了一个基于IP定位和OpenStreetMap的足迹追踪技术。通过JavaScript API获取用户IP，判断是否在中国大陆，并相应地隐藏地图。同时，利用Leaflet库在地图上标记多个城市位置，实现足迹展示。&lt;/p&gt;
 &lt;h1&gt;足迹&lt;/h1&gt;
 &lt;div id=&#34;map-container&#34;&gt;
-  &lt;iframe id=&#34;google-map-frame&#34; src=&#34;http...</description>
+  &lt;iframe id=&#34;goo...</description>
       <link>http://wcowin.work/trip/footmark/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 30 Apr 2025 06:25:27 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
