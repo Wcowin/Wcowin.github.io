@@ -1,8 +1,8 @@
 {
-  "summary": "将Python脚本打包为.exe程序，实现跨平台运行，无需安装Python环境，适用于桌面应用开发。",
+  "summary": "将Python文件打包成.exe可执行程序，实现跨平台运行，无需安装Python环境。通过使用PyInstaller等工具，简化打包流程，提高开发效率。",
   "service": "glm",
   "page_title": "将Python文件.py打包成.exe可执行程序",
-  "timestamp": "2025-06-20T02:02:46.229133",
+  "timestamp": "2025-06-28T08:16:37.044845",
   "language": "zh",
   "cache_version": "1.3.0"
 }
