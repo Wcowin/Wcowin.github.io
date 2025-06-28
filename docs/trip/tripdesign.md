@@ -12,6 +12,7 @@ comments: false  #评论，默认不开启
 </iframe>
 
 
+<body>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script>
 <!-- AD1 -->
