@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Sat, 28 Jun 2025 08:16:01 -0000</pubDate>
-    <lastBuildDate>Sat, 28 Jun 2025 08:16:01 -0000</lastBuildDate>
+    <pubDate>Sun, 29 Jun 2025 12:43:56 -0000</pubDate>
+    <lastBuildDate>Sun, 29 Jun 2025 12:43:56 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,28 @@
     
 
     
+    
+    <item>
+      <title>为网站添加Google广告</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    通过Google AdSense注册账号，创建广告单元，获取代码并嵌入网站模板中，即可为网站添加Google广告，符合广告政策即可展示。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-o...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/websitebeauty/GoogleAD/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Sun, 29 Jun 2025 12:43:17 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/websitebeauty/GoogleAD/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/GoogleAD/</guid>
+      
+    </item>
     
     <item>
       <title>Genshin</title>
@@ -669,28 +691,6 @@
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
       <comments>http://wcowin.work/blog/technique%20sharing/kexue/#__comments</comments>
       <guid isPermaLink="true">http://wcowin.work/blog/technique%20sharing/kexue/</guid>
-      
-    </item>
-    
-    <item>
-      <title>简单的 JavaScript 音乐播放器</title>
-      
-      
-      
-      
-        
-      <category>我的作品</category>
-        
-      
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本项目是一款基于原生JS、HTML和CSS的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、多种播放模式等，适合学习Web前端开发。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit...&lt;/p&gt;</description>
-      <link>http://wcowin.work/develop/Mywork/muplayer/?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Wed, 28 May 2025 07:39:15 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/develop/Mywork/muplayer/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/develop/Mywork/muplayer/</guid>
       
     </item>
     

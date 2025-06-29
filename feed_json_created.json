@@ -13,6 +13,18 @@
     "language": "zh",
     "items": [
         {
+            "id": "http://wcowin.work/blog/websitebeauty/GoogleAD/",
+            "url": "http://wcowin.work/blog/websitebeauty/GoogleAD/?utm_source=rss&utm_medium=referral",
+            "title": "\u4e3a\u7f51\u7ad9\u6dfb\u52a0Google\u5e7f\u544a",
+            "content_html": "<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u901a\u8fc7Google AdSense\u6ce8\u518c\u8d26\u53f7\uff0c\u521b\u5efa\u5e7f\u544a\u5355\u5143\uff0c\u83b7\u53d6\u4ee3\u7801\u5e76\u5d4c\u5165\u7f51\u7ad9\u6a21\u677f\u4e2d\uff0c\u5373\u53ef\u4e3a\u7f51\u7ad9\u6dfb\u52a0Google\u5e7f\u544a\uff0c\u7b26\u5408\u5e7f\u544a\u653f\u7b56\u5373\u53ef\u5c55\u793a\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circle-edit-o...</p>",
+            "image": null,
+            "date_published": "2025-06-29T12:43:17+00:00",
+            "authors": [],
+            "tags": [
+                "Mkdocs"
+            ]
+        },
+        {
             "id": "http://wcowin.work/blog/temp-email/",
             "url": "http://wcowin.work/blog/temp-email/?utm_source=rss&utm_medium=referral",
             "title": "\u4e34\u65f6\u90ae\u7bb1\u662f\u4ec0\u4e48\uff1f",
@@ -360,16 +372,6 @@
                 "\u597d\u73a9",
                 "\u6280\u672f\u5206\u4eab"
             ]
-        },
-        {
-            "id": "http://wcowin.work/about/resume/",
-            "url": "http://wcowin.work/about/resume/?utm_source=rss&utm_medium=referral",
-            "title": "\u4e2a\u4eba\u7b80\u5386",
-            "content_html": "<!-- <div class=\"grid cards\" markdown>\n\n-   :octicons-bookmark-16:{ .lg .middle } __\u4e2a\u4eba\u7b80\u5386__\n\n    ---\n\n    - [\u4e2a\u4eba\u7b80\u5386](https://lightpdf.cn/docs/1cpgobc){target=\u201c_blank\u201d}\n\n</div> -->\n\n<center><font  co...",
-            "image": null,
-            "date_published": "2024-11-12T00:17:31+00:00",
-            "authors": [],
-            "tags": []
         }
     ]
 }

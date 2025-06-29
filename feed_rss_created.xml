@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Sat, 28 Jun 2025 08:16:01 -0000</pubDate>
-    <lastBuildDate>Sat, 28 Jun 2025 08:16:01 -0000</lastBuildDate>
+    <pubDate>Sun, 29 Jun 2025 12:43:56 -0000</pubDate>
+    <lastBuildDate>Sun, 29 Jun 2025 12:43:56 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,28 @@
     
 
     
+    
+    <item>
+      <title>为网站添加Google广告</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    通过Google AdSense注册账号，创建广告单元，获取代码并嵌入网站模板中，即可为网站添加Google广告，符合广告政策即可展示。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-o...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/websitebeauty/GoogleAD/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Sun, 29 Jun 2025 12:43:17 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/websitebeauty/GoogleAD/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/GoogleAD/</guid>
+      
+    </item>
     
     <item>
       <title>临时邮箱是什么？</title>
@@ -678,33 +700,6 @@
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
       <comments>http://wcowin.work/blog/technique%20sharing/comkdocs/#__comments</comments>
       <guid isPermaLink="true">http://wcowin.work/blog/technique%20sharing/comkdocs/</guid>
-      
-    </item>
-    
-    <item>
-      <title>个人简历</title>
-      
-      
-      
-      
-        
-      
-      <description>&lt;!-- &lt;div class=&#34;grid cards&#34; markdown&gt;
-
--   :octicons-bookmark-16:{ .lg .middle } __个人简历__
-
-    ---
-
-    - [个人简历](https://lightpdf.cn/docs/1cpgobc){target=“_blank”}
-
-&lt;/div&gt; --&gt;
-
-&lt;center&gt;&lt;font  co...</description>
-      <link>http://wcowin.work/about/resume/?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 12 Nov 2024 00:17:31 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/about/resume/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/about/resume/</guid>
       
     </item>
     
