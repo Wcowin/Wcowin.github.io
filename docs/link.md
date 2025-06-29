@@ -88,17 +88,6 @@ hide:
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://xpmrobot.tech/images/portrait.jpg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://xpmrobot.tech/" target="_blank">Xpm's Robot Lab</a> 
-      </div> 
-      <div class="info">
-       星星之火可以燎原
-      </div> 
-     </div>
-    </div>
-    <div class="card"> 
      <img class="ava" src="https://s2.loli.net/2025/06/16/qdWCDgjEpy4Airl.png" /> 
      <div class="card-header"> 
       <div> 
@@ -154,7 +143,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://image.h4ck.org.cn/wp-content/uploads/2023/11/gh_84aaef91c283_430-1.jpg" /> 
+     <img class="ava" src="https://h4ck.org.cn/wp-content/uploads/2025/06/WechatIMG1630.jpg?v=1751006192" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://h4ck.org.cn/" target="_blank">obaby@mars</a> 
@@ -1110,6 +1099,17 @@ window.friendLinkUtils = {
 <div id="rcorners4" >
   <div class="links-content"> 
    <div class="link-navigation">
+    <div class="card"> 
+     <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://xpmrobot.tech/" target="_blank">Xpm's Robot Lab</a> 
+      </div> 
+      <div class="info">
+       星星之火可以燎原
+      </div> 
+     </div>
+    </div>
    <div class="card"> 
      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" /> 
      <div class="card-header"> 

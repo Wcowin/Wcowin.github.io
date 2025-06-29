@@ -165,10 +165,12 @@ body::before {
         data-ad-client="ca-pub-2327435979273742">
 </amp-auto-ads> -->
 
-<body>
+---
+<!-- 生活所迫： -->
+
+<!-- <body>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script>
-<!-- AD1 -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-2327435979273742"
@@ -178,5 +180,24 @@ body::before {
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</body>
+</body> -->
+
+
+
+??? tip "生活所迫(点击浏览一下广告求求了)"
+    <body>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
+        crossorigin="anonymous"></script>
+    <!-- AD1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2327435979273742"
+        data-ad-slot="3702206121"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </body>
+
 <!-- [timeline(./docs/timeline/timeindex.json)] -->
