@@ -14,7 +14,7 @@ status: new
 -   :octicons-bookmark-16:{ .lg .middle } __继续阅读__
 
     ---
-    - [现代密码学第4版](../Cryptography/现代密码学第4版.pdf){target="_blank"}（推荐教材）
+    <!-- - [现代密码学第4版](../Cryptography/现代密码学第4版.pdf){target="_blank"}（推荐教材） -->
     - [密码学家王小云](../Cryptography/WXY.pdf){target="_blank"}
     - [数论基础](../Cryptography/Numbertheory.md)
   --- 
