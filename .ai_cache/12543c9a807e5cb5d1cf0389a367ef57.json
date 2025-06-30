@@ -1,8 +1,8 @@
 {
-  "summary": "oh-my-zsh更新时，若遇git文件修改提示，可使用特定命令解决。本文提供更新方法及代码示例，助您顺利更新oh-my-zsh。",
+  "summary": "oh-my-zsh更新时，若修改git文件，需使用特定命令更新，避免错误提示。",
   "service": "glm",
   "page_title": "oh-my-zsh 更新",
-  "timestamp": "2025-06-23T08:49:01.794893",
+  "timestamp": "2025-06-30T10:11:44.872123",
   "language": "zh",
   "cache_version": "1.3.0"
 }
