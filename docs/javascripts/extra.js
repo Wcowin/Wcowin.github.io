@@ -267,3 +267,38 @@ try {
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { CustomFeatures, PerformanceOptimizer };
 }
+
+// 优化JavaScript加载
+document.addEventListener('DOMContentLoaded', () => {
+  // 延迟加载非关键JavaScript
+  setTimeout(() => {
+    const deferredScripts = document.querySelectorAll('script[data-defer]');
+    deferredScripts.forEach(script => {
+      const newScript = document.createElement('script');
+      [...script.attributes].forEach(attr => {
+        if (attr.name !== 'data-defer') {
+          newScript.setAttribute(attr.name, attr.value);
+        }
+      });
+      newScript.innerHTML = script.innerHTML;
+      script.parentNode.replaceChild(newScript, script);
+    });
+  }, 1000);
+  
+  // 使用Intersection Observer实现懒加载
+  if ('IntersectionObserver' in window) {
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          imageObserver.unobserve(img);
+        }
+      });
+    });
+    
+    lazyImages.forEach(img => imageObserver.observe(img));
+  }
+});
