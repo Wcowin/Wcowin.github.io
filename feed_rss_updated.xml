@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Mon, 30 Jun 2025 10:10:24 -0000</pubDate>
-    <lastBuildDate>Mon, 30 Jun 2025 10:10:24 -0000</lastBuildDate>
+    <pubDate>Tue, 01 Jul 2025 11:00:11 -0000</pubDate>
+    <lastBuildDate>Tue, 01 Jul 2025 11:00:11 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,28 @@
     
 
     
+    
+    <item>
+      <title>个人简介</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;script src=&#34;https://sdk.jinrishici.com/v2/browser/jinrishici.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h1&gt;&lt;span id=&#34;jinrishici-sentence&#34;&gt;今日诗词&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;关于我&lt;/h2&gt;
+&lt;div class=&#34;flip-container&#34;&gt;
+&lt;div class=&#34;image-co...</description>
+      <link>http://wcowin.work/about/geren/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Tue, 01 Jul 2025 10:59:33 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/geren/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/geren/</guid>
+      
+    </item>
     
     <item>
       <title>王小云的十年“解码”启示录</title>
@@ -203,28 +225,6 @@
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
       <comments>http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/#__comments</comments>
       <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/</guid>
-      
-    </item>
-    
-    <item>
-      <title>个人简介</title>
-      
-      
-      
-      
-        
-      
-      <description>&lt;script src=&#34;https://sdk.jinrishici.com/v2/browser/jinrishici.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;h1&gt;&lt;span id=&#34;jinrishici-sentence&#34;&gt;今日诗词&lt;/span&gt;&lt;/h1&gt;
-&lt;h2&gt;关于我&lt;/h2&gt;
-&lt;div class=&#34;flip-container&#34;&gt;
-&lt;div class=&#34;image-co...</description>
-      <link>http://wcowin.work/about/geren/?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Wed, 25 Jun 2025 12:12:26 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/about/geren/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/about/geren/</guid>
       
     </item>
     
