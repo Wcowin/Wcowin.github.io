@@ -1,8 +1,8 @@
 {
-  "summary": "PD虚拟机教程：介绍PD虚拟机的下载、安装、使用方法，包括虚拟机设置、试用时间延长技巧及常见问题解答，适用于Windows和Linux系统。",
+  "summary": "PD虚拟机教程：介绍如何下载、安装和运行PD虚拟机，包括解决常见问题如密码输入、无窗口显示、错误代码等，适用于Windows和Linux系统。",
   "service": "glm",
   "page_title": "PD虚拟机",
-  "timestamp": "2025-06-30T10:10:57.758947",
+  "timestamp": "2025-07-07T10:51:57.193688",
   "language": "zh",
   "cache_version": "1.3.0"
 }

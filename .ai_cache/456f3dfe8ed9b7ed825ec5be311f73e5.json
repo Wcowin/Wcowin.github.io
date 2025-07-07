@@ -1,8 +1,8 @@
 {
-  "summary": "重置Launchpad设置可解决图标顺序错乱问题，包括删除desktoppicture.db文件和执行特定Terminal命令，恢复默认布局后可重新排列App。",
+  "summary": "重置Launchpad设置可解决图标顺序错乱问题。通过删除特定数据库文件或使用终端命令，恢复默认布局后可手动重新排列应用图标。",
   "service": "glm",
   "page_title": "启动台图标顺序错乱怎么办",
-  "timestamp": "2025-06-30T10:10:55.953911",
+  "timestamp": "2025-07-07T10:51:54.375036",
   "language": "zh",
   "cache_version": "1.3.0"
 }
