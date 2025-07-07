@@ -9,7 +9,6 @@ site/
 
 # Caches, temporary files, and build outputs
 /.cache/
-/.ai_cache/
 /temp/
 *.tmp
 *.cache
