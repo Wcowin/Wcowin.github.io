@@ -4082,8 +4082,7 @@
             <div class="footer-item">
               <span class="footer-icon">👀</span>
               <span>本站访问量：</span>
-              <script async src="//finicounter.eu.org/finicounter.js"></script>
-              <span id="finicount_views" class="footer-highlight"></span>
+              <span id="finicount_views" class="footer-highlight">加载中...</span>
             </div>
             
             <div class="footer-item">
@@ -4103,7 +4102,25 @@
             </div>
           </div>
         </div>
-        
+
+        <!-- 移动端简洁布局 (仿 footercopy.html) -->
+        <div class="footer-visit-count-mobile">
+          <span>本站访问量：</span>
+          <span id="finicount_views_mobile" class="footer-highlight"></span>
+          |
+          <a
+            href="https://icp.gov.moe/?keyword=20230640"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icp-link"
+          >萌ICP备20230640号</a>
+          <!-- |&nbsp; -->
+          <span class="runtime-info">
+            <span>本站已经运行</span>
+            <span id="box1_mobile"></span>
+          </span>
+        </div>
+
         <!-- 版权信息和社交媒体水平布局 -->
         <div class="footer-bottom-section">
           <div class="md-footer-copyright">
@@ -4187,34 +4204,142 @@
       </div>
 
       <script>
-        function timingTime() {
-          const start = "2022-10-20T00:00:00";
-          const startTime = new Date(start).getTime();
-          const now = Date.now();
-          let diff = Math.floor((now - startTime) / 1000);
-          const days = Math.floor(diff / 86400);
-          diff %= 86400;
-          const hours = Math.floor(diff / 3600);
-          diff %= 3600;
-          const minutes = Math.floor(diff / 60);
-          const seconds = diff % 60;
-          return `${days}天${hours}时${minutes}分${seconds}秒`;
-        }
-        setInterval(() => {
-          const el = document.getElementById("box1");
-          if (el) el.textContent = timingTime();
-        }, 1000);
+        (function() {
+          // 避免变量冲突，将所有代码包装在立即执行函数中
+
+          function timingTime() {
+            const start = "2022-10-20T00:00:00";
+            const startTime = new Date(start).getTime();
+            const now = Date.now();
+            let diff = Math.floor((now - startTime) / 1000);
+            const days = Math.floor(diff / 86400);
+            diff %= 86400;
+            const hours = Math.floor(diff / 3600);
+            diff %= 3600;
+            const minutes = Math.floor(diff / 60);
+            const seconds = diff % 60;
+            return `${days}天${hours}时${minutes}分${seconds}秒`;
+          }
+
+          // 简化的计时器更新函数
+          function updateTime() {
+            const el = document.getElementById("box1");
+            const elMobile = document.getElementById("box1_mobile");
+            const time = timingTime();
+
+            if (el) el.textContent = time;
+            if (elMobile) elMobile.textContent = time;
+          }
+
+          // 加载访问量计数器
+          async function loadVisitCounter() {
+            try {
+              const script = document.createElement('script');
+              script.src = '//finicounter.eu.org/finicounter.js';
+              script.async = true;
+              script.onerror = function() {
+                console.log('访问量计数器加载失败，使用备用显示');
+                const desktop = document.getElementById("finicount_views");
+                const mobile = document.getElementById("finicount_views_mobile");
+                if (desktop) desktop.textContent = '统计中...';
+                if (mobile) mobile.textContent = '统计中...';
+              };
+              document.head.appendChild(script);
+            } catch (e) {
+              console.log('访问量计数器初始化失败:', e);
+            }
+          }
+
+          // 同步访问量显示
+          function syncVisitCount() {
+            const desktop = document.getElementById("finicount_views");
+            const mobile = document.getElementById("finicount_views_mobile");
+            if (desktop && mobile && desktop.textContent && desktop.textContent !== '加载中...') {
+              mobile.textContent = desktop.textContent;
+            }
+          }
+
+          // 监听访问量更新
+          function setupVisitCountObserver() {
+            try {
+              const observer = new MutationObserver(syncVisitCount);
+              const visitCountTarget = document.getElementById("finicount_views");
+              if (visitCountTarget) {
+                observer.observe(visitCountTarget, { childList: true, subtree: true });
+              }
+            } catch (e) {
+              console.log('访问量监听器设置失败:', e);
+            }
+          }
+
+          // 初始化所有功能
+          function init() {
+            // 启动计时器
+            updateTime();
+            setInterval(updateTime, 1000);
+
+            // 加载访问量计数器
+            loadVisitCounter();
+
+            // 设置访问量同步
+            setupVisitCountObserver();
+
+            // 调试信息
+            console.log('页脚功能已启动');
+            console.log('当前时间:', timingTime());
+          }
+
+          // 确保DOM加载完成后再初始化
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+          } else {
+            init();
+          }
+
+        })();
       </script>
 
       <style>
-        /* 页脚背景配色 */
+        /* 页脚背景配色方案 - 可根据喜好选择 */
+
+        /* 方案1: 现代深蓝灰色调 (当前使用) */
         .md-footer {
-          background-color: #d3d3d3;
+          background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
         }
 
         .md-footer-meta {
-          background-color: #121212;
+          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
+
+        /* 方案2: 优雅紫色调 (取消注释使用)
+        .md-footer {
+          background: linear-gradient(135deg, #2d1b69 0%, #4c1d95 100%);
+        }
+
+        .md-footer-meta {
+          background: linear-gradient(135deg, #1e1b4b 0%, #2d1b69 100%);
+        }
+        */
+
+        /* 方案3: 温暖深绿色调 (取消注释使用)
+        .md-footer {
+          background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+        }
+
+        .md-footer-meta {
+          background: linear-gradient(135deg, #052e16 0%, #14532d 100%);
+        }
+        */
+
+        /* 方案4: 经典深灰色调 (取消注释使用)
+        .md-footer {
+          background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+        }
+
+        .md-footer-meta {
+          background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+        }
+        */
 
         /* 整体页脚容器 */
         .footer-wrapper {
@@ -4228,7 +4353,7 @@
           max-width: 900px;
           margin: 0.8rem auto 0;
           padding: 0.8rem 1rem;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          border-top: 1px solid rgba(255, 255, 255, 0.15);
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -4269,16 +4394,18 @@
           justify-content: center;
           padding: 0.4rem 0.8rem;
           border-radius: 16px;
-          background: rgba(45, 45, 45, 0.7);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          backdrop-filter: blur(10px);
           min-width: 160px;
           font-size: 0.8rem;
           transition: all 0.2s ease;
         }
 
         .footer-item:hover {
-          background: rgba(55, 55, 55, 0.8);
-          border-color: rgba(81, 143, 193, 0.3);
+          background: rgba(255, 255, 255, 0.15);
+          border-color: rgba(81, 143, 193, 0.4);
+          transform: translateY(-1px);
         }
         
         .footer-icon {
@@ -4329,16 +4456,11 @@
           opacity: 1;
         }
 
-        /* 移动端响应式 */
-        @media (max-width: 768px) {
+        /* 移动端响应式 - 使用 footercopy.html 样式 */
+        @media (max-width: 76.1875em) {
+          /* 隐藏桌面端的卡片式布局 */
           .footer-visit-count {
-            gap: 0.5rem;
-          }
-
-          .footer-item {
-            padding: 0.3rem 0.6rem;
-            min-width: 140px;
-            font-size: 0.75rem;
+            display: none;
           }
 
           .footer-bottom-section {
@@ -4356,31 +4478,43 @@
             width: 1.8rem;
             height: 1.8rem;
           }
+
+          /* 显示移动端的简洁布局 */
+          .footer-visit-count-mobile {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4em 0.8em;
+            padding: 0.2em 0;
+            font-size: 0.75rem;
+            color: var(--md-footer-fg-color--light);
+            text-align: center;
+          }
+
+          .footer-visit-count-mobile > * {
+            white-space: nowrap;
+          }
+
+          .footer-visit-count-mobile .icp-link {
+            color: var(--md-footer-fg-color--light);
+            text-decoration: none;
+          }
+
+          .footer-visit-count-mobile .icp-link:hover {
+            color: #518FC1;
+            text-decoration: underline;
+          }
+
+          /* .runtime-info {
+            display: none; 移动端隐藏运行时间
+          } */
         }
 
-        @media (max-width: 480px) {
-          .footer-visit-count {
-            gap: 0.4rem;
-          }
-
-          .footer-item {
-            min-width: 120px;
-            padding: 0.25rem 0.5rem;
-            font-size: 0.7rem;
-          }
-
-          .footer-bottom-section {
-            gap: 0.5rem;
-            padding: 0.5rem;
-          }
-
-          .md-footer-copyright {
-            font-size: 0.7rem;
-          }
-
-          .footer-social .md-social__link {
-            width: 1.6rem;
-            height: 1.6rem;
+        /* 桌面端隐藏移动端布局 */
+        @media (min-width: 76.1875em) {
+          .footer-visit-count-mobile {
+            display: none;
           }
         }
 
@@ -4393,14 +4527,27 @@
         }
 
         /* 深色模式适配 */
+        [data-md-color-scheme="slate"] .md-footer {
+          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        [data-md-color-scheme="slate"] .md-footer-meta {
+          background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+        }
+
         [data-md-color-scheme="slate"] .footer-item {
-          background: rgba(55, 55, 65, 0.7);
-          border-color: rgba(255, 255, 255, 0.15);
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        [data-md-color-scheme="slate"] .footer-item:hover {
+          background: rgba(255, 255, 255, 0.12);
+          border-color: rgba(81, 143, 193, 0.3);
         }
 
         [data-md-color-scheme="slate"] .footer-social .md-social__link {
-          background: rgba(255, 255, 255, 0.1);
-          border-color: rgba(255, 255, 255, 0.15);
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(255, 255, 255, 0.12);
         }
       </style>
     </div>
