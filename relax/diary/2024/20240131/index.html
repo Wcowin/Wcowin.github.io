@@ -3255,118 +3255,48 @@
       
         <!-- Footer -->
 <footer class="md-footer">
-  <!-- Link to previous and/or next page -->
-  
-
   <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; 2022~2025 Wcowin
-    </div>
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      <div class="footer-visit-count">
-        <span>本站访问量：</span>
-        <script async src="//finicounter.eu.org/finicounter.js"></script>
-        <span id="finicount_views"></span>
-        |&nbsp;
-        <a
-          href="https://icp.gov.moe/?keyword=20230640"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="icp-link"
-          >萌ICP备20230640号</a
-        >
-      |&nbsp;
-        <span class="runtime-info">
-          <span>本站已经运行</span>
-          <span id="box1"></span>
-        </span>
-      </div>
-      <script>
-        function timingTime() {
-          const start = "2022-10-20T00:00:00";
-          const startTime = new Date(start).getTime();
-          const now = Date.now();
-          let diff = Math.floor((now - startTime) / 1000);
-          const days = Math.floor(diff / 86400);
-          diff %= 86400;
-          const hours = Math.floor(diff / 3600);
-          diff %= 3600;
-          const minutes = Math.floor(diff / 60);
-          const seconds = diff % 60;
-          return `${days}天${hours}时${minutes}分${seconds}秒`;
-        }
-        setInterval(() => {
-          const el = document.getElementById("box1");
-          if (el) el.textContent = timingTime();
-        }, 1000);
-      </script>
+      <div class="footer-wrapper">
+        <!-- 访问统计区域 - 移到最上面 -->
+        <div class="footer-content">
+          <div class="footer-visit-count">
+            <div class="footer-item">
+              <span class="footer-icon">👀</span>
+              <span>本站访问量：</span>
+              <script async src="//finicounter.eu.org/finicounter.js"></script>
+              <span id="finicount_views" class="footer-highlight"></span>
+            </div>
+            
+            <div class="footer-item">
+              <span class="footer-icon">📝</span>
+              <a
+                href="https://icp.gov.moe/?keyword=20230640"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icp-link"
+                >萌ICP备20230640号</a>
+            </div>
+            
+            <div class="footer-item runtime-info">
+              <span class="footer-icon">⏱️</span>
+              <span>本站已经运行</span>
+              <span id="box1" class="footer-highlight"></span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 版权信息和社交媒体水平布局 -->
+        <div class="footer-bottom-section">
+          <div class="md-footer-copyright">
+            <p>Copyright © 2022-2025 Wcowin</p>
+            <p>Made with <a href="https://squidfunk.github.io/mkdocs-material/" style="color: #518FC1; text-decoration: none;">Material for MkDocs</a></p>
+          </div>
 
-      <style>
-        .footer-visit-count {
-          display: flex;
-          flex-wrap: wrap; /* 允许项目换行 */
-          justify-content: center; /* 水平居中项目 */
-          align-items: center; /* 垂直居中项目 */
-          gap: 0.4em 0.8em; /* 行间距和列间距，可根据喜好调整 */
-          padding: 0.2em 0; /* 垂直内边距 */
-          font-size: 0.75rem; /* 稍小字体，更显精致 */
-          color: var(--md-meta-color); /* 使用主题标准的元数据文本颜色 */
-          text-align: center; /* 确保换行后的文本也居中 */
-        }
-
-        .footer-visit-count > * { /* 应用于直接子元素，如 span 和 a 标签 */
-          white-space: nowrap; /* 防止单个项目内的文本换行 */
-        }
-
-        .footer-visit-count .icp-link {
-          color: var(--md-meta-color); /* 链接颜色与周围文本一致 */
-          text-decoration: none; /* 默认移除下划线 */
-        }
-
-        .footer-visit-count .icp-link:hover {
-          color: var(--md-accent-fg-color); /* 悬停时使用主题的强调色 */
-          text-decoration: underline; /* 悬停时添加下划线以示可点击 */
-        }
-
-        /* 移动端特定调整 */
-        /* Material for MkDocs 的移动端断点通常是 76.1875em (1219px) */
-        /* 您可以根据需要调整断点或保留您原有的 768px */
-        @media (max-width: 76.1875em) {
-
-          .runtime-info {
-            display: none; /* 这是您原始的偏好设置，如果希望在移动端隐藏运行时间，请取消此行注释 */
-          }
-
-          .footer-visit-count .icp-link { /* 注意：选择器 specificity */
-            /* display: block; */ /* 这是您原始的偏好设置，如果希望ICP链接在移动端占据整行，请取消此行注释 */
-            text-align: center;
-          }
           
-          /* 如果分隔符 "|" 在移动端造成不美观的换行，
-            最好的方法是将它们包裹在带有特定类的 span 标签中，例如：
-            <span class="footer-separator">|&nbsp;</span>
-            然后在下面的 CSS 中取消注释来隐藏它们：
-          */
-          /*
-          .footer-visit-count .footer-separator {
-            display: none;
-          }
-          */
-        }
-      </style>
-
-       <div class="md-social">
+            <div class="footer-social">
+              <div class="md-social">
   
     
     
@@ -3433,9 +3363,234 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1l172.5 141.6c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0zM0 128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"/></svg>
     </a>
   
-</div> 
+</div>
+            </div>
+          
+        </div>
+      </div>
+
+      <script>
+        function timingTime() {
+          const start = "2022-10-20T00:00:00";
+          const startTime = new Date(start).getTime();
+          const now = Date.now();
+          let diff = Math.floor((now - startTime) / 1000);
+          const days = Math.floor(diff / 86400);
+          diff %= 86400;
+          const hours = Math.floor(diff / 3600);
+          diff %= 3600;
+          const minutes = Math.floor(diff / 60);
+          const seconds = diff % 60;
+          return `${days}天${hours}时${minutes}分${seconds}秒`;
+        }
+        setInterval(() => {
+          const el = document.getElementById("box1");
+          if (el) el.textContent = timingTime();
+        }, 1000);
+      </script>
+
+      <style>
+        /* 页脚背景配色 */
+        .md-footer {
+          background-color: #d3d3d3;
+        }
+
+        .md-footer-meta {
+          background-color: #121212;
+        }
+
+        /* 整体页脚容器 */
+        .footer-wrapper {
+          width: 100%;
+          padding: 0.5rem 0;
+          text-align: center;
+        }
+
+        /* 版权信息和社交媒体水平布局 */
+        .footer-bottom-section {
+          max-width: 900px;
+          margin: 0.8rem auto 0;
+          padding: 0.8rem 1rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        /* 版权信息 */
+        .md-footer-copyright {
+          text-align: left;
+          font-size: 0.8rem;
+          opacity: 0.8;
+        }
+
+        /* 社交媒体图标 */
+        .footer-social {
+          display: flex;
+          gap: 0.3rem;
+        }
+        
+        /* 内容区域样式 */
+        .footer-content {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0.8rem 0 0;
+        }
+
+        .footer-visit-count {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.6rem;
+          font-size: 0.8rem;
+          color: var(--md-footer-fg-color--light);
+        }
+
+        .footer-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.4rem 0.8rem;
+          border-radius: 16px;
+          background: rgba(45, 45, 45, 0.7);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          min-width: 160px;
+          font-size: 0.8rem;
+          transition: all 0.2s ease;
+        }
+
+        .footer-item:hover {
+          background: rgba(55, 55, 55, 0.8);
+          border-color: rgba(81, 143, 193, 0.3);
+        }
+        
+        .footer-icon {
+          margin-right: 0.5rem;
+          font-size: 1rem;
+        }
+        
+        .footer-highlight {
+          color: #518FC1;
+          font-weight: 600;
+          margin-left: 0.3rem;
+        }
+
+        .icp-link {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .icp-link:hover {
+          color: #518FC1;
+        }
+        
+        /* 社交媒体图标样式 */
+        .footer-social .md-social__link {
+          padding: 0.3rem;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          width: 2rem;
+          height: 2rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.2s ease;
+        }
+
+        .footer-social .md-social__link:hover {
+          background: rgba(81, 143, 193, 0.2);
+          border-color: rgba(81, 143, 193, 0.4);
+        }
+        
+        /* 导航链接样式 */
+        .md-footer__link {
+          transition: opacity 0.2s ease;
+        }
+        
+        .md-footer__link:hover {
+          opacity: 1;
+        }
+
+        /* 移动端响应式 */
+        @media (max-width: 768px) {
+          .footer-visit-count {
+            gap: 0.5rem;
+          }
+
+          .footer-item {
+            padding: 0.3rem 0.6rem;
+            min-width: 140px;
+            font-size: 0.75rem;
+          }
+
+          .footer-bottom-section {
+            flex-direction: column;
+            gap: 0.6rem;
+            text-align: center;
+          }
+
+          .md-footer-copyright {
+            text-align: center;
+            font-size: 0.75rem;
+          }
+
+          .footer-social .md-social__link {
+            width: 1.8rem;
+            height: 1.8rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .footer-visit-count {
+            gap: 0.4rem;
+          }
+
+          .footer-item {
+            min-width: 120px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.7rem;
+          }
+
+          .footer-bottom-section {
+            gap: 0.5rem;
+            padding: 0.5rem;
+          }
+
+          .md-footer-copyright {
+            font-size: 0.7rem;
+          }
+
+          .footer-social .md-social__link {
+            width: 1.6rem;
+            height: 1.6rem;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .footer-visit-count {
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+          }
+        }
+
+        /* 深色模式适配 */
+        [data-md-color-scheme="slate"] .footer-item {
+          background: rgba(55, 55, 65, 0.7);
+          border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        [data-md-color-scheme="slate"] .footer-social .md-social__link {
+          background: rgba(255, 255, 255, 0.1);
+          border-color: rgba(255, 255, 255, 0.15);
+        }
+      </style>
     </div>
   </div>
+  
+  <!-- Link to previous and/or next page -->
+  
 </footer>
       
     </div>
