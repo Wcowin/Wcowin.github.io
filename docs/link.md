@@ -844,7 +844,15 @@ hide:
       </div> 
     </div> 
     </div>
-
+    <div class="card">
+        <img class="ava" src="https://avatars.githubusercontent.com/jaywhj" />
+        <div class="card-header">
+            <div>
+                <a href="https://jaywhj.netlify.app/" target="_blank">极简主义</a>
+            </div>
+            <div class="info">文档即产品</div>
+        </div>
+    </div>
 
 
    </div> 
