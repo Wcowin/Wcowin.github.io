@@ -33,7 +33,7 @@ class AISummaryGenerator:
             'enabled': os.getenv('AI_SUMMARY_CACHE_ENABLED', 'true').lower() == 'true',
             
             # 缓存过期天数（默认7天）
-            'expire_days': int(os.getenv('AI_SUMMARY_CACHE_EXPIRE_DAYS', '30')),
+            'expire_days': int(os.getenv('AI_SUMMARY_CACHE_EXPIRE_DAYS', '3000')),
             
             # 是否自动清理过期缓存（默认启用）
             'auto_clean': os.getenv('AI_SUMMARY_CACHE_AUTO_CLEAN', 'true').lower() == 'true'
@@ -498,7 +498,7 @@ class AISummaryGenerator:
                 print(f"❌ 清理缓存失败: {e}")
                 # 如果删除失败，尝试清理单个文件
                 try:
-                    self._clear_cache_files()
+                    self._clear_all_cache()
                 except:
                     print("⚠️ 缓存清理失败，新摘要可能会混用旧服务的缓存")
         
@@ -1024,7 +1024,7 @@ Please generate bilingual summary:"""
     def _auto_migrate_cache(self):
         """自动迁移缓存文件（仅在需要时执行一次）"""
         # 如果禁用了缓存功能，跳过缓存迁移
-        if not self.ci_config.get('cache_enabled', True):
+        if not self.cache_config.get('enabled', True):
             return
             
         old_cache_dir = Path("site/.ai_cache")

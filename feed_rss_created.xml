@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Mon, 07 Jul 2025 06:11:39 -0000</pubDate>
-    <lastBuildDate>Mon, 07 Jul 2025 06:11:39 -0000</lastBuildDate>
+    <pubDate>Mon, 07 Jul 2025 06:18:02 -0000</pubDate>
+    <lastBuildDate>Mon, 07 Jul 2025 06:18:02 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -42,9 +42,9 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    通过Google AdSense注册账号，创建广告单元，将代码嵌入网站模板，即可为网站添加Google广告，实现流量变现。&lt;/p&gt;
+    通过Google AdSense注册账号，创建广告单元并嵌入代码至网站模板，即可为网站添加Google广告，实现盈利。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/GoogleAD/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Sun, 29 Jun 2025 12:43:17 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -110,9 +110,9 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动摘要生成，并可选智能阅读统计，提升文档智能化和用户体验。&lt;/p&gt;
+    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动内容清理，并提供灵活配置和智能缓存系统。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :m...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 06 Jun 2025 11:51:15 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -667,9 +667,9 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了Mkdocs文档教程，包括官方教程、Material for MkDocs教程、中文教程和视频教程，并指导读者如何部署静态网页至GitHub pages，配置Mkdocs部署，以及添加Mkdocs博客。&lt;/p&gt;
+    本文介绍了Mkdocs文档的教程资源，包括官方教程、中文教程、视频教程等，并指导用户如何快速部署静态网页至GitHub pages，配置Mkdocs部署，以及添加Mkdocs博客。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Mkdocs/mkfirst/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 27 Nov 2024 01:12:53 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -691,7 +691,7 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了基于MkDocs主题的站点，涵盖多个知名开源项目文档，如Django REST framework、FastAPI等，并列举了多个个人博客和论坛，为用户搭建和浏览文档网站提供参考。&lt;/p&gt;
+    本文介绍了基于MkDocs主题的站点，涵盖多个知名开源项目文档，如Django REST framework、FastAPI等，并列举了多个个人或组织站点，为用户搭建和展示文档提供参考。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;199&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 &lt;a href=&#34;https://www.django-rest-framework.org/&#34;&gt;django-rest-framework&lt;/a&gt;、&lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; 以及基于 Go 编写的云网关代理服务器 &lt;a href=&#34;https://github.com/traefik/traefik&#34;&gt;traefik&lt;/a&gt; 等项目的官方文档站点，都是通过 MkDocs 进行搭建。&lt;/p&gt;</description>
