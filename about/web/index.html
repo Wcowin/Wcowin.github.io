@@ -2415,23 +2415,50 @@ Mkdocs-Wcowin主题: <a href="https://wcowin.work/Mkdocs-Wcowin/">Mkdocs-Wcowin�
           color: #518FC1;
         }
         
-        /* 社交媒体图标样式 */
-        .footer-social .md-social__link {
-          padding: 0.3rem;
-          border-radius: 50%;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          width: 2rem;
-          height: 2rem;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.2s ease;
+        /* 社交媒体图标样式 - 仅桌面端 */
+        @media (min-width: 76.1875em) {
+          .footer-social .md-social__link {
+            padding: 0.3rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 2rem;
+            height: 2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+          }
+
+          .footer-social .md-social__link:hover {
+            background: rgba(81, 143, 193, 0.2);
+            border-color: rgba(81, 143, 193, 0.4);
+          }
         }
 
-        .footer-social .md-social__link:hover {
-          background: rgba(81, 143, 193, 0.2);
-          border-color: rgba(81, 143, 193, 0.4);
+        /* 移动端社交媒体图标样式 - 恢复默认样式 */
+        @media (max-width: 76.1875em) {
+          .footer-social .md-social__link {
+            padding: 0.4rem;
+            background: transparent;
+            border: none;
+            width: auto;
+            height: auto;
+            display: inline-block;
+            border-radius: 0;
+            transition: color 0.2s ease;
+          }
+
+          .footer-social .md-social__link:hover {
+            background: transparent;
+            border: none;
+            color: var(--md-accent-fg-color);
+          }
+
+          .footer-social .md-social__link svg {
+            width: 1.6rem;
+            height: 1.6rem;
+          }
         }
         
         /* 导航链接样式 */
@@ -2559,9 +2586,9 @@ Mkdocs-Wcowin主题: <a href="https://wcowin.work/Mkdocs-Wcowin/">Mkdocs-Wcowin�
     
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../javascripts/extra2.js"></script>
+        <script src="../../javascripts/extra.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
+        <script src="../../javascripts/extra2.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
