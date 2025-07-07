@@ -6,6 +6,7 @@ hide:
   - footer
   - feedback
 comments: false
+hide_reading_time: true
 ---
 # 首頁
 
