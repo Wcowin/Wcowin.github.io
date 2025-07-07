@@ -1,8 +1,8 @@
 {
-  "summary": "该文章展示了一个基于IP定位和OpenStreetMap的足迹追踪技术。通过JavaScript API获取用户IP，判断是否在中国大陆，并相应地隐藏地图。同时，利用Leaflet库在地图上标记多个城市位置，实现足迹展示。",
+  "summary": "该文章展示了一个基于JavaScript和OpenStreetMap的地图应用，通过IP定位判断用户位置，仅在中国大陆IP下隐藏地图，并在地图上标记多个中国城市位置，实现足迹追踪功能。",
   "service": "glm",
   "page_title": "足迹",
-  "timestamp": "2025-06-28T08:16:49.363166",
+  "timestamp": "2025-07-07T06:19:06.445437",
   "language": "zh",
   "cache_version": "1.3.0"
 }
