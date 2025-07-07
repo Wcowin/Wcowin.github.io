@@ -10,8 +10,7 @@ theme:
   name: material
   custom_dir: docs/overrides
   # font: false
-  logo: https://i.stardots.io/wcowin/1750089315509.png
-  # https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
+  logo: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
   # https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp
   # https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png
 
@@ -300,7 +299,8 @@ nav:
     - 毕业之前值得去做的30件事: about/biye.md
     - 测试组件: about/test.md
     - 404页面: about/404.md
-    - 网站状态检测: https://stats.uptimerobot.com/k9iH1i5LA9
+    - 网站状态: https://cloud.umami.is/share/M0AHDa2Dsn6p7mR1/wcowin.work
+    # https://stats.uptimerobot.com/k9iH1i5LA9
     # - 我们♡+♡=♡²: about/Foryou.md
     - 个人目标: about/goal.md
     - 年度总结:
@@ -548,7 +548,7 @@ extra_css:
   # - stylesheets/link.css  #友链
   # - stylesheets/poem.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
   # - stylesheets/card2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
   # - stylesheets/customize.css  #按钮圆角化

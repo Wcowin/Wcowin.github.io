@@ -10,7 +10,7 @@ hide:
   - feedback
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css"> -->
 
 # 欢迎加入友链(不分先后)  
 
@@ -833,6 +833,17 @@ hide:
       </div> 
      </div> 
     </div> 
+    <div class="card"> 
+    <img class="ava" src="https://zimingyuan.github.io/img/profile.jpg" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://zimingyuan.github.io" target="_blank">VnYzm的博客</a> 
+      </div> 
+      <div class="info">
+      “分享技术心得和摸鱼感想”
+      </div> 
+    </div> 
+    </div>
 
 
 

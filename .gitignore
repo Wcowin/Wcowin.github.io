@@ -7,5 +7,12 @@
 # MkDocs 构建输出目录
 site/
 
-# AI 摘要缓存目录（项目根目录）- 需要被提交
-!.ai_cache/
+# Caches, temporary files, and build outputs
+/.cache/
+/.ai_cache/
+/temp/
+
+
+# IDE and OS specific
+/.idea/
+.DS_Store
