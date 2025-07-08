@@ -5,6 +5,8 @@ tags:
 comments: false  #评论，默认不开启
 ---
 
+# 为MKdocs添加文章修订时间戳
+
 参考方法：[git 修订日期本地化](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#revisioning)
 
 利用[git -revision-date-localized插件](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)添加了对添加上次更新日期和在每个页面底部创建文档的支持

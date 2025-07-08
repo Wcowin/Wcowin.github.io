@@ -2,6 +2,8 @@
 tags:
   - Mac
 ---
+
+# 小小Mac技巧
 只显示当前运行的应用
 
 1. 打开终端（Terminal.app）

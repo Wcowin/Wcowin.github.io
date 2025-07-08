@@ -10,6 +10,8 @@ hide:
 comments: false  #评论，默认不开启
 ---
 
+# indexblog
+
 <!-- !!! tip
     <ul>
       <li>通过主题和目录以打开文章</li>

@@ -1,8 +1,0 @@
-{
-  "summary": "Google翻译在中国大陆因DNS更改和FCM阻断出现异常，解决方法包括使用网关、修改host文件或使用特定软件的网卡模式。谷歌证实已停用中国大陆的谷歌翻译功能。",
-  "service": "glm",
-  "page_title": "解决谷歌翻译用不了的问题",
-  "timestamp": "2025-07-08T23:16:53.599935",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

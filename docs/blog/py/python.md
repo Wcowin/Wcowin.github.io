@@ -3,6 +3,8 @@ tags:
   - python
 ---
 
+# 将Python文件.py打包成.exe可执行程序
+
 
 
 

@@ -1,0 +1,8 @@
+{
+  "summary": "利用百度API实现植物识别，通过申请应用获取ID和key，将图像数据转换为Base64编码，发送至API获取植物百科信息。",
+  "service": "glm",
+  "page_title": "利用百度API进行植物识别",
+  "timestamp": "2025-07-09T00:04:45.083500",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

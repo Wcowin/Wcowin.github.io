@@ -2,6 +2,8 @@
 tags:
   - python
 ---
+
+# PIP
 :simple-python:
 pip命令只能用在命令行中；但是不能用在python命令行中。
 

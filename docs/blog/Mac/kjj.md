@@ -3,6 +3,8 @@ title: Mac 键盘快捷键
 tags:
   - Mac
 ---  
+
+# Mac 键盘快捷键
 [一键展示Mac快捷键，超强的Mac快捷键大全](https://www.better365.cn/FlyKey.html)  
 
 要使用键盘快捷键，请按住一个或多个修饰键，然后按快捷键的最后一个键。例如，要使用 Command-C（拷贝），请按住 Command 键并按 C 键，然后同时松开这两个键。Mac 菜单和键盘通常对某些按键使用符号，其中包括以下修饰键：

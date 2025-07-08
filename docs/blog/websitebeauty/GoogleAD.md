@@ -11,6 +11,8 @@ comments: false
 status: new
 ---
 
+# 为网站添加Google广告
+
 ## 为网站添加Google广告
 
 1. 登录[Google AdSense](https://www.google.com/adsense/start/)并注册账号。

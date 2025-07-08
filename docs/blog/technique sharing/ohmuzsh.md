@@ -5,6 +5,8 @@ tags:
 hide:
 ---
 
+# oh-my-zsh 更新
+
 ```bash
 upgrade_oh_my_zsh
 ```

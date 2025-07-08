@@ -4,6 +4,8 @@ tags:
   - Mkdocs
 ---
 
+# 嵌入PDF文件
+
 [嵌入PDF](https://github.com/Wcowin/hexo-site-comments/discussions/8#discussioncomment-12101922)
 
 嵌入PDF代码  ，**注意PDF的相对地址**

@@ -4,6 +4,8 @@ tags:
   - Mkdocs
 ---
 
+# JS实现鼠标样式
+
 不建议更改，因为默认就是最简洁
 
 <!-- ![](https://s1.vika.cn/space/2022/11/25/7b84e20eee214a5b956f2c96bcc115f4)   -->

@@ -10,6 +10,8 @@ tags:
 comments: false
 ---
 
+# 页脚设置
+
 ## 页脚设置  
 
 MkDocs 支持自定义页脚。

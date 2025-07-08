@@ -3,6 +3,8 @@ tags:
   - Mac
 ---
 
+# Homebrew国内如何自动安装(国内地址)(Mac & Linux)
+
 ![img](https://picd.zhimg.com/v2-c40d2ef7e08afbb2750f2c5b4b45c923_1440w.jpg?source=172ae18b)   
 **自动脚本(全部国内地址)（复制下面一句脚本到终端中粘贴回车)**   
 

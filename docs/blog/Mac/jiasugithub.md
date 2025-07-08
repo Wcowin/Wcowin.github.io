@@ -3,6 +3,8 @@ title: mac 无法访问 github 的解决办法
 tags:
   - Mac
 ---
+
+# mac 无法访问 github 的解决办法
 ## 方案一
 
 第一步：打开 folder文件夹

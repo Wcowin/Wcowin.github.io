@@ -6,6 +6,8 @@ hide:
   - feedback
 ---
 
+# 如何给MKdocs添加友链
+
 复制后在需要添加友链的.md 文件页面粘贴即可
 
 ```html hl_lines="82-126"

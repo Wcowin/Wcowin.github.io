@@ -3,6 +3,8 @@ title: 基于讯飞人脸算法进行人脸比对(调用API)
 tags:
   - 我的作品
 ---
+
+# 基于讯飞人脸算法进行人脸比对
 ## 先看结果
 ![image.png](https://s2.loli.net/2024/02/02/wH5lXKQDObRTgBZ.png)  
 

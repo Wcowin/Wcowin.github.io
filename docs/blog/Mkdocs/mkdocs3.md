@@ -4,6 +4,8 @@ tags:
   - Mkdocs
 ---
 
+# 3.解决Github Pages部署mkdocs自定义域名失效的问题
+
 在/docs目录下创建一个 CNAME 的 无后缀 文件，然后在里面填入你的域名  
 ![](https://s1.imagehub.cc/images/2024/02/02/d23082e5d3ebb839dba8b589a1cb5b7c.png)
 

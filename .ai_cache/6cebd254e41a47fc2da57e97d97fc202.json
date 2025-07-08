@@ -1,8 +1,0 @@
-{
-  "summary": "pip命令用于Python包管理，支持命令行查找与安装。支持依赖包更新，需指定包存放路径。",
-  "service": "glm",
-  "page_title": "PIP",
-  "timestamp": "2025-07-08T23:16:44.525015",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

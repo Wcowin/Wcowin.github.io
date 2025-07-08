@@ -4,6 +4,8 @@ tags:
   - win
 ---
 
+# Windows快捷键
+
 ## 一、Win键+'X'（+'Y'）
 
 1、Win+A：打开快速设置面板

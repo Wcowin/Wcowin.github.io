@@ -208,3 +208,21 @@ body::before {
 <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
 </head>
 
+
+
+<div id="greeting" style="text-align: center; margin-bottom: 20px; padding: 15px; border-radius: 10px; background-color: rgba(240, 240, 240, 0.5);">
+  <span id="greeting-text" style="font-size: 1.2rem; font-weight: bold;"></span>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const hour = new Date().getHours();
+    let greeting;
+    if (hour < 6) greeting = "夜深了，注意休息 🌙";
+    else if (hour < 12) greeting = "早上好，开始美好的一天 ☀️";
+    else if (hour < 18) greeting = "下午好，继续加油 🌤️";
+    else greeting = "晚上好，放松一下吧 🌆";
+    
+    document.getElementById('greeting-text').innerHTML = greeting;
+  });
+</script>

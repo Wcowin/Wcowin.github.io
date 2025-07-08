@@ -1,8 +1,0 @@
-{
-  "summary": "解决mac无法访问GitHub问题，可先修改hosts文件，若无效，可尝试查询DNS并使用最快IP访问。",
-  "service": "glm",
-  "page_title": "mac 无法访问 github 的解决办法",
-  "timestamp": "2025-07-08T23:15:59.223931",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

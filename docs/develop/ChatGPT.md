@@ -1,8 +1,11 @@
 ---
+title: 注册ChatGPT详细指南
 tags:
     - ChatGPT
     - AI
 ---
+
+# 如何注册ChatGPT
 
 **2023.5.27昨天又是大规模封号，只能说且行切珍惜你的GPT**   
 

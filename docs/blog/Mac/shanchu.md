@@ -2,6 +2,8 @@
 tags:
   - Mac
 ---
+
+# Macbook启动台顽固应用图标删除方法
 ![19fedf7349ca4a73a8374b977832cb78_l2.jpg](https://s2.loli.net/2024/02/01/4gP5ezwyqI3nkbu.jpg)
 类似上图这种情况的……
 

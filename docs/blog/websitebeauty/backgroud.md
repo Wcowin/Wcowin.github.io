@@ -3,6 +3,8 @@ title: 背景特效
 tags:
   - Mkdocs
 ---
+
+# 背景特效
 !!! Note
 
     以下代码均在`docs/javascripts/extra.js`下复制粘贴

@@ -3,6 +3,8 @@ tags:
   - Mac
 ---
 
+# Mac的esc键失效的解决方法
+
 !!! failure "问题"
      
     发现无法使用esc退出编辑模式了

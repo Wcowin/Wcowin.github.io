@@ -3,6 +3,8 @@ title: 用AirScript脚本给女/男朋友发送每日早安邮件（极简版本
 tags:
   - 我的作品
 ---
+
+# 用AirScript脚本给女/男朋友发送每日早安邮件(极简版本)
 ## 先看效果  
 
 ![image.png](https://s2.loli.net/2025/02/07/UpHaDLIWyMuOixh.png)
