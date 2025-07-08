@@ -49,7 +49,7 @@ theme:
     # - navigation.tabs.sticky  # Tab栏吸顶
     - navigation.sections # 侧边栏分组
     - navigation.top # 返回顶部按钮
-    # - navigation.footer # 页脚显示在侧边栏
+    - navigation.footer # 页脚显示在侧边栏
     - search.suggest # 搜索建议
     - search.highlight # 搜索高亮
     - search.share # 搜索结果分享
