@@ -1094,6 +1094,11 @@ Please generate bilingual summary:"""
         if not self.should_generate_summary(page, markdown):
             return markdown
         
+        # 检查页面是否已经包含AI摘要
+        if "!!! info \"🤖 AI智能摘要" in markdown or "!!! tip \"📝 自动摘要" in markdown:
+            print(f"⏭️ 页面已包含摘要，跳过: {page.file.src_path}")
+            return markdown
+        
         # 步骤3：内容预处理
         clean_content = self.clean_content_for_ai(markdown)
         if len(clean_content) < 100:
@@ -1164,18 +1169,27 @@ Please generate bilingual summary:"""
                 frontmatter = ''
                 content = markdown
             
-            # 在内容中查找第一个标题
-            heading_match = re.search(r'^#+ .*$', content, re.MULTILINE)
+            # 只查找文档的主标题（第一个标题，通常是一级标题）
+            main_title_match = re.search(r'^# (.+)$', content, re.MULTILINE)
             
-            if heading_match:
-                # 找到标题的位置
-                heading_pos = heading_match.end()
-                heading_end = content.find('\n', heading_pos)
-                if heading_end == -1:  # 如果标题后没有换行符
-                    heading_end = len(content)
+            # 如果没有找到一级标题，尝试查找第一个出现的任何级别的标题
+            if not main_title_match:
+                main_title_match = re.search(r'^(#+) (.+)$', content, re.MULTILINE)
+            
+            if main_title_match:
+                # 找到主标题的位置
+                title_start = main_title_match.start()
+                title_end = main_title_match.end()
+                title_line_end = content.find('\n', title_end)
+                if title_line_end == -1:  # 如果标题后没有换行符
+                    title_line_end = len(content)
                 
-                # 在标题后插入摘要
-                result = frontmatter + content[:heading_end] + '\n\n' + summary_html + content[heading_end:]
+                # 在主标题后插入摘要
+                result = (frontmatter + 
+                         content[:title_line_end] + 
+                         '\n\n' + summary_html + 
+                         content[title_line_end:])
+                
                 return result
             else:
                 # 如果没有找到标题，则在front matter后插入摘要
