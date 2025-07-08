@@ -1,8 +1,8 @@
 {
-  "summary": "iPhone用户可通过在设置中添加外区ID，实现切换App Store和应用更新时无需频繁双重验证或密码验证。",
+  "summary": "iPhone用户可通过设置邮件账户添加外区ID，实现App Store切换及更新无需频繁双重验证或密码验证。",
   "service": "glm",
   "page_title": "iphone多账号如何不频繁登录,双重认证",
-  "timestamp": "2025-07-07T06:18:34.821104",
+  "timestamp": "2025-07-08T23:16:30.292318",
   "language": "zh",
   "cache_version": "1.3.0"
 }

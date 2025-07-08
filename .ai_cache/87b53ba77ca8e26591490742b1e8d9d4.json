@@ -1,8 +1,8 @@
 {
-  "summary": "PD虚拟机教程：介绍如何下载、安装和运行PD虚拟机，包括解决常见问题如密码输入、无窗口显示、错误代码等，适用于Windows和Linux系统。",
+  "summary": "PD虚拟机通过PD Runner软件，支持在Windows或Linux/Ubuntu虚拟机中运行PD 18试用版，并提供解决方案以绕过试用期限，方便音乐制作和编程学习。",
   "service": "glm",
   "page_title": "PD虚拟机",
-  "timestamp": "2025-07-07T10:51:57.193688",
+  "timestamp": "2025-07-08T23:15:56.652781",
   "language": "zh",
   "cache_version": "1.3.0"
 }

@@ -255,4 +255,36 @@ def on_page_markdown(markdown, **kwargs):
 
 """
     
-    return reading_info + markdown
+    # 将阅读信息插入到标题下方而不是文章顶部
+    # 处理YAML front matter
+    has_frontmatter = markdown.startswith('---')
+    if has_frontmatter:
+        # 找到front matter的结束位置
+        fm_end = markdown.find('---', 3)
+        if fm_end != -1:
+            fm_end += 3  # 包含结束的 ---
+            frontmatter = markdown[:fm_end]
+            content = markdown[fm_end:]
+        else:
+            frontmatter = ''
+            content = markdown
+    else:
+        frontmatter = ''
+        content = markdown
+    
+    # 在内容中查找第一个标题
+    heading_match = re.search(r'^#+ .*$', content, re.MULTILINE)
+    
+    if heading_match:
+        # 找到标题的位置
+        heading_pos = heading_match.end()
+        heading_end = content.find('\n', heading_pos)
+        if heading_end == -1:  # 如果标题后没有换行符
+            heading_end = len(content)
+        
+        # 在标题后插入阅读信息
+        result = frontmatter + content[:heading_end] + '\n\n' + reading_info + content[heading_end:]
+        return result
+    else:
+        # 如果没有找到标题，则在front matter后插入阅读信息
+        return frontmatter + reading_info + content

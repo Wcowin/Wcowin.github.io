@@ -39,7 +39,7 @@ theme:
         name: 切换至日间模式
   features: 
     - announce.dismiss # 可关闭公告栏
-    - navigation.instant # 页面无刷新切换
+    # - navigation.instant # 页面无刷新切换
     - navigation.prune
     # - header.autohide  # 自动隐藏头部
     - navigation.instant.progress # 页面切换进度条

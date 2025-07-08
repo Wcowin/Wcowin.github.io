@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了Git的基本操作和实用技巧，包括新建仓库、克隆、提交、分支管理、冲突解决等，并探讨了合并策略和高级操作，如临时保存、 cherry-pick、修改提交等，旨在提升Git使用效率和代码管理能力。",
-  "service": "glm",
-  "page_title": "Git 实用技巧",
-  "timestamp": "2025-07-07T10:53:29.621027",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

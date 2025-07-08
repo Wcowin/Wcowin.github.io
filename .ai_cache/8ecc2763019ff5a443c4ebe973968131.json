@@ -1,8 +1,0 @@
-{
-  "summary": "giscus是一款基于GitHub Discussions的评论系统，开源、无跟踪、无广告，支持自定义主题和多种语言，可自动同步评论，适用于网站评论功能。",
-  "service": "glm",
-  "page_title": "添加评论系统(giscus为例)",
-  "timestamp": "2025-07-07T10:52:58.587937",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

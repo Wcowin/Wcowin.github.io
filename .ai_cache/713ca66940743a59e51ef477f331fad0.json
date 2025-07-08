@@ -1,8 +1,0 @@
-{
-  "summary": "pip命令用于Python包管理，支持命令行查找和安装。在Windows中，需指定路径安装并更新依赖包。",
-  "service": "glm",
-  "page_title": "PIP",
-  "timestamp": "2025-07-07T10:52:29.225360",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}
