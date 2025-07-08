@@ -1,0 +1,519 @@
+/*
+  增强型 Liquid Glass 效果 - MkDocs Material 右侧目录美化
+  优化版本 v2.0 - 更好的高度控制和视觉效果
+*/
+
+/* 全局变量定义 */
+:root {
+  --toc-glass-bg: rgba(255, 255, 255, 0.75);
+  --toc-glass-border: rgba(255, 255, 255, 0.2);
+  --toc-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --toc-glass-blur: blur(20px);
+  --toc-hover-bg: rgba(59, 130, 246, 0.1);
+  --toc-active-bg: rgba(59, 130, 246, 0.15);
+  --toc-text-color: hsl(212, 15%, 25%);
+  --toc-border-radius: 1.5rem;
+  --toc-padding: 1rem 1.2rem;
+}
+
+/* 深色模式变量 */
+[data-md-color-scheme="slate"] {
+  --toc-glass-bg: rgba(15, 23, 42, 0.8);
+  --toc-glass-border: rgba(255, 255, 255, 0.1);
+  --toc-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --toc-text-color: #e2e8f0;
+}
+
+/* 主目录侧边栏容器 */
+.md-sidebar--secondary {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3.8rem;
+  max-height: calc(100vh - 3.8rem - 2rem);
+  align-self: flex-start;
+  margin: 1rem 0.5rem;
+  padding: 0;
+  border-radius: 1.2rem;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.md-sidebar--secondary:focus-within {
+  outline: 2px solid #2684ff;
+  outline-offset: 2px;
+}
+
+/* 当目录为空时隐藏容器 */
+.md-sidebar--secondary:empty,
+.md-sidebar--secondary .md-nav--secondary:empty,
+.md-sidebar--secondary .md-nav--secondary .md-nav__list:empty {
+  display: none !important;
+}
+
+
+/* 内部导航容器 - Liquid Glass 效果的主要承载者 */
+.md-nav--secondary {
+  position: relative;
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  background: rgba(248, 250, 252, 0.85);
+  border-radius: 1.2rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(226, 232, 240, 0.3);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 1px 4px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  overflow: visible;
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1),
+              background-color 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+  max-height: calc(100vh - 3.8rem - 2rem);
+  overflow-y: auto;
+  will-change: scroll-position, transform;
+  /* 彻底隐藏滚动条 */
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  scroll-padding-bottom: 3rem;
+}
+
+/* 动态高度优化 - 根据内容调整 */
+.md-nav--secondary:has(.md-nav__item:nth-child(n+10)) {
+  /* 当目录项超过10个时，确保有足够的滚动空间 */
+  max-height: calc(100vh - 3.2rem - 1rem);
+}
+
+.md-nav--secondary:has(.md-nav__item:nth-child(-n+5)) {
+  /* 当目录项少于5个时，减少高度避免空白过多 */
+  max-height: fit-content;
+  min-height: auto;
+}
+
+/* 优化目录项间距，提供更好的视觉层次 */
+.md-nav--secondary .md-nav__item:first-child .md-nav__link {
+  margin-top: 0;
+}
+
+.md-nav--secondary .md-nav__item:last-child .md-nav__link {
+  margin-bottom: 0;
+}
+
+/* 层级缩进优化 - 匹配图片效果 */
+.md-nav--secondary .md-nav__list .md-nav__item {
+  position: relative;
+}
+
+/* 二级标题缩进 */
+.md-nav--secondary .md-nav__list .md-nav__item .md-nav__link {
+  padding-left: 1rem;
+}
+
+/* 三级标题缩进 */
+.md-nav--secondary .md-nav__list .md-nav__list .md-nav__item .md-nav__link {
+  padding-left: 1.5rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* 四级标题缩进 */
+.md-nav--secondary .md-nav__list .md-nav__list .md-nav__list .md-nav__item .md-nav__link {
+  padding-left: 2rem;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* 优化目录项的垂直间距 */
+.md-nav--secondary .md-nav__item + .md-nav__item {
+  margin-top: 0.02rem;
+}
+
+/* 紧凑模式下的特殊样式 */
+.md-nav--secondary {
+  /* 确保内容紧凑 */
+  line-height: 1.2;
+}
+
+.md-nav--secondary .md-nav__link {
+  /* 减少行高以获得更紧凑的外观 */
+  line-height: 1.25;
+}
+
+/* 当没有目录项时，强制隐藏所有装饰效果 */
+.md-nav--secondary:not(:has(.md-nav__item))::before,
+.md-nav--secondary:not(:has(.md-nav__item))::after {
+  display: none !important;
+}
+
+/* 彻底隐藏所有滚动条 */
+.md-nav--secondary {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE 10+ */
+}
+.md-nav--secondary::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+  background: transparent !important;
+}
+
+/* 移除自定义滚动条样式（已无效，可省略） */
+.md-nav--secondary::-webkit-scrollbar-track,
+.md-nav--secondary::-webkit-scrollbar-thumb,
+.md-nav--secondary::-webkit-scrollbar-thumb:hover {
+  display: none !important;
+  background: transparent !important;
+}
+
+/* 磁吸效果 - 滚动时的动态变形 */
+.md-nav--secondary:hover {
+  background: rgba(248, 250, 252, 0.9);
+  border-color: rgba(226, 232, 240, 0.4);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.1),
+    0 2px 6px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-0.5px) scale(1.005);
+}
+.md-nav--secondary:active {
+  transition: transform 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateY(0) scale(0.995);
+}
+
+/* 内容容器确保不溢出 */
+.md-nav--secondary .md-nav__list {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  overflow: visible; /* 防止内容被裁剪，保证锚点可见 */
+  will-change: contents;
+}
+
+/* 目录标题样式 */
+.md-sidebar--secondary .md-nav__title {
+  position: relative;
+  z-index: 2;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0 0.6rem 0;
+  font-weight: 600;
+  color: hsl(212, 25%, 15%);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.6rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: color 0.25s ease, background 0.25s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: 0.9rem;
+  letter-spacing: 0.005em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* 目录链接样式 */
+.md-sidebar--secondary .md-nav__link {
+  display: block;
+  padding: 0.35rem 0.8rem;
+  margin: 0.05rem 0;
+  border-radius: 0.5rem;
+  transition:
+    transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1),
+    background-color 0.15s ease-out,
+    color 0.15s ease-out,
+    border-color 0.15s ease-out,
+    box-shadow 0.15s ease-out;
+  color: hsl(212, 20%, 20%);
+  font-weight: 400;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-left: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  will-change: transform;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+.md-sidebar--secondary .md-nav__link:hover {
+  background: rgba(59, 130, 246, 0.08);
+  color: #3b82f6;
+  border-color: rgba(59, 130, 246, 0.15);
+  box-shadow: 0 1px 4px rgba(59, 130, 246, 0.1);
+  transform: translateX(2px) scale(1.01) translateZ(0);
+}
+.md-sidebar--secondary .md-nav__link--active {
+  background: rgba(59, 130, 246, 0.12);
+  color: #2563eb !important;
+  font-weight: 500;
+  border-color: rgba(59, 130, 246, 0.2);
+  box-shadow: 0 1px 6px rgba(59, 130, 246, 0.15);
+  transform: translateX(2px) scale(1.01) translateZ(0);
+}
+
+/* 深色模式下优化 hover/active 对比度 */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link {
+  color: #dbeafe;
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link:hover {
+  color: #60a5fa;
+  background: rgba(30, 58, 138, 0.18);
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  color: #93c5fd !important;
+  background: rgba(30, 58, 138, 0.28);
+}
+
+/* 增强的磁吸动画关键帧 */
+@keyframes magneticPull {
+  0% { transform: translateX(0) scale(1); }
+  50% { transform: translateX(2px) scale(1.002); }
+  100% { transform: translateX(4px) scale(1.005); }
+}
+.md-sidebar--secondary .md-nav__link:hover,
+.md-sidebar--secondary .md-nav__link--active {
+  animation: magneticPull 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+/* 动态光泽/高光层 */
+@keyframes subtleShimmer {
+  0% {
+    background-position: -100% -100%;
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    background-position: 100% 100%;
+    opacity: 0.6;
+  }
+}
+.md-nav--secondary::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  border-radius: inherit;
+  background: linear-gradient(
+    130deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.5) 45%,
+    rgba(255, 255, 255, 0.4) 55%,
+    transparent 70%
+  );
+  background-size: 300% 300%;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.4s ease, background 0.4s ease;
+  opacity: 0.6;
+  animation: subtleShimmer 12s ease-in-out infinite;
+}
+.md-nav--secondary:hover::before {
+  opacity: 1;
+  animation-duration: 10s;
+}
+
+/* 深色模式下简化高光动画，仅保留静态高光层 */
+[data-md-color-scheme="slate"] .md-nav--secondary::before {
+  opacity: 0.28;
+  animation: none !important;
+  background: linear-gradient(
+    130deg,
+    transparent 30%,
+    rgba(255,255,255,0.18) 45%,
+    rgba(255,255,255,0.12) 55%,
+    transparent 70%
+  );
+}
+[data-md-color-scheme="slate"] .md-nav--secondary:hover::before {
+  opacity: 0.38;
+}
+
+/* 添加底部渐变遮罩效果 */
+.md-nav--secondary::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  background: linear-gradient(
+    to top,
+    rgba(249, 250, 253, 0.95) 0%,
+    rgba(249, 250, 253, 0.7) 50%,
+    transparent 100%
+  );
+  border-radius: 0 0 1.75rem 1.75rem;
+  pointer-events: none;
+  z-index: 3;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.md-nav--secondary[data-scrollable="true"]::after,
+.md-nav--secondary:hover::after {
+  opacity: 1;
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .md-nav--secondary {
+  background: rgba(30, 41, 59, 0.85);
+  border-color: rgba(148, 163, 184, 0.2);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.25),
+    0 1px 4px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+[data-md-color-scheme="slate"] .md-nav--secondary:hover {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(148, 163, 184, 0.3);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.3),
+    0 2px 6px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__title {
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom-color: rgba(148, 163, 184, 0.2);
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link {
+  color: #cbd5e1;
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link:hover {
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+}
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  background: rgba(59, 130, 246, 0.2);
+  color: #bfdbfe !important;
+}
+[data-md-color-scheme="slate"] .md-nav--secondary::after {
+  background: linear-gradient(
+    to top,
+    rgba(30, 41, 59, 0.95) 0%,
+    rgba(30, 41, 59, 0.85) 50%,
+    transparent 100%
+  );
+}
+
+/* 响应式设计 - 平板设备 */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--secondary {
+    margin: 0.8rem 0.4rem;
+    top: 3.5rem;
+    max-height: calc(100vh - 3.5rem - 1rem);
+  }
+  .md-nav--secondary {
+    padding: 0.7rem 0.8rem;
+    border-radius: 1rem;
+    max-height: calc(100vh - 3.5rem - 1rem);
+  }
+  .md-sidebar--secondary .md-nav__title {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  .md-sidebar--secondary .md-nav__link {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* 响应式设计 - 手机设备 */
+@media screen and (max-width: 44.9375em) {
+  .md-sidebar--secondary {
+    position: static;
+    margin: 0.6rem;
+    max-height: none;
+  }
+  .md-nav--secondary {
+    padding: 0.6rem 0.7rem;
+    border-radius: 1rem;
+    max-height: none;
+    overflow-y: visible;
+  }
+  .md-sidebar--secondary .md-nav__title {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  .md-sidebar--secondary .md-nav__link {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    margin: 0.02rem 0;
+  }
+  /* 移动端简化动画 */
+  .md-nav--secondary::before {
+    animation: none !important;
+    opacity: 0.2;
+  }
+  .md-nav--secondary:hover::before {
+    opacity: 0.3;
+  }
+  .md-sidebar--secondary .md-nav__link:hover,
+  .md-sidebar--secondary .md-nav__link--active {
+    transform: translateX(1px) scale(1.005) translateZ(0);
+  }
+}
+
+/* 超小屏幕优化 */
+@media screen and (max-width: 30em) {
+  .md-sidebar--secondary {
+    margin: 0.5rem;
+  }
+  .md-nav--secondary {
+    padding: 0.6rem;
+    border-radius: 1rem;
+  }
+  .md-sidebar--secondary .md-nav__title {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.95rem;
+  }
+  .md-sidebar--secondary .md-nav__link {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+  .md-nav--secondary {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  }
+  .md-sidebar--secondary .md-nav__link {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .md-sidebar--secondary .md-nav__link:hover,
+  .md-sidebar--secondary .md-nav__link--active {
+    border: 2px solid #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+  }
+  [data-md-color-scheme="slate"] .md-nav--secondary {
+    background: rgba(15, 23, 42, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* 减少动画模式支持 */
+@media (prefers-reduced-motion: reduce) {
+  .md-nav--secondary,
+  .md-sidebar--secondary .md-nav__link,
+  .md-nav--secondary::before,
+  .md-nav--secondary::after {
+    transition: none !important;
+    animation: none !important;
+  }
+  .md-sidebar--secondary .md-nav__link:hover,
+  .md-sidebar--secondary .md-nav__link--active {
+    transform: none !important;
+  }
+}

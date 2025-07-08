@@ -519,10 +519,10 @@ markdown_extensions:
 
   
 extra_javascript:
-  - javascripts/extra.js
+  # - javascripts/extra.js 
   - javascripts/extra2.js
   # - javascripts/bannerSlider.js
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
 
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
@@ -537,8 +537,9 @@ extra_javascript:
   # - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
   # - https://res.zvo.cn/translate/translate.js  # Translate
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
+  # - javascripts/liquid-glass-toc.js  # Liquid Glass TOC 增强效果
   # - javascripts/font-loader.js
-  # - javascripts/toc-sync.js
+
 
 
 extra_css:
