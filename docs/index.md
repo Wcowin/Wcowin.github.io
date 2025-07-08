@@ -153,10 +153,23 @@ body::before {
 }
 </style>
 
-<head>
+<!-- <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script>
 </head>
+<body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
+    crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2327435979273742"
+    data-ad-slot="3702206121"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body> -->
 
 <!-- <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
@@ -185,20 +198,7 @@ body::before {
 
 
 
-<body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
-    crossorigin="anonymous"></script>
-<!-- AD1 -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2327435979273742"
-    data-ad-slot="3702206121"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</body>
+
 
 <!-- [timeline(./docs/timeline/timeindex.json)] -->
 
