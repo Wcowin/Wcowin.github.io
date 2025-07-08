@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Mon, 07 Jul 2025 15:24:38 -0000</pubDate>
-    <lastBuildDate>Mon, 07 Jul 2025 15:24:38 -0000</lastBuildDate>
+    <pubDate>Tue, 08 Jul 2025 02:28:31 -0000</pubDate>
+    <lastBuildDate>Tue, 08 Jul 2025 02:28:31 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,53 @@
     
 
     
+    
+    <item>
+      <title>如何给MKdocs添加友链</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    通过简单代码，实现MKdocs添加友链功能，支持卡片式展示，优化小屏显示，提升用户体验。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;92&lt;/strong&gt; | :fo...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/Mkdocs/linktech/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Tue, 08 Jul 2025 02:27:54 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Mkdocs/linktech/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/linktech/</guid>
+      
+    </item>
+    
+    <item>
+      <title>基于Mkdocs主题的站点</title>
+      
+      
+      
+      
+        
+      <category>好玩</category>
+        
+      <category>技术分享</category>
+        
+      
+      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了基于MkDocs主题的站点，涵盖数据结构与算法教程、框架官方文档、个人博客等，为用户搭建和展示文档网站提供参考。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;199&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 &lt;a href=&#34;https://www.django-rest-framework.org/&#34;&gt;django-rest-framework&lt;/a&gt;、&lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; 以及基于 Go 编写的云网关代理服务器 &lt;a href=&#34;https://github.com/traefik/traefik&#34;&gt;traefik&lt;/a&gt; 等项目的官方文档站点，都是通过 MkDocs 进行搭建。&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/technique%20sharing/comkdocs/?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Tue, 08 Jul 2025 02:27:54 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/technique%20sharing/comkdocs/#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/technique%20sharing/comkdocs/</guid>
+      
+    </item>
     
     <item>
       <title>个人简介</title>
@@ -275,28 +322,6 @@
     </item>
     
     <item>
-      <title>如何给MKdocs添加友链</title>
-      
-      
-      
-      
-        
-      <category>Mkdocs</category>
-        
-      
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了如何为MKdocs添加友链，通过在.md文件中插入特定代码，实现友链展示，支持卡片样式和响应式设计，适用于技术博客分享。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outl...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/linktech/?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Fri, 20 Jun 2025 02:01:27 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/linktech/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/linktech/</guid>
-      
-    </item>
-    
-    <item>
       <title>支持作者</title>
       
       
@@ -335,31 +360,6 @@
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
       <comments>http://wcowin.work/blog/Mkdocs/MIT/#__comments</comments>
       <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/MIT/</guid>
-      
-    </item>
-    
-    <item>
-      <title>基于Mkdocs主题的站点</title>
-      
-      
-      
-      
-        
-      <category>好玩</category>
-        
-      <category>技术分享</category>
-        
-      
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了基于MkDocs主题的站点，涵盖多个知名开源项目文档，如Django REST framework、FastAPI等，并列举了多个个人或组织站点，为用户搭建和展示文档提供参考。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;199&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 &lt;a href=&#34;https://www.django-rest-framework.org/&#34;&gt;django-rest-framework&lt;/a&gt;、&lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; 以及基于 Go 编写的云网关代理服务器 &lt;a href=&#34;https://github.com/traefik/traefik&#34;&gt;traefik&lt;/a&gt; 等项目的官方文档站点，都是通过 MkDocs 进行搭建。&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/technique%20sharing/comkdocs/?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Mon, 16 Jun 2025 14:52:26 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/technique%20sharing/comkdocs/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/technique%20sharing/comkdocs/</guid>
       
     </item>
     

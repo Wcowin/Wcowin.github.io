@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Mon, 07 Jul 2025 15:24:38 -0000</pubDate>
-    <lastBuildDate>Mon, 07 Jul 2025 15:24:38 -0000</lastBuildDate>
+    <pubDate>Tue, 08 Jul 2025 02:28:31 -0000</pubDate>
+    <lastBuildDate>Tue, 08 Jul 2025 02:28:31 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -616,12 +616,11 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文记录了2025年网站更新，包括优化流畅度、引入AI摘要、CDN配置、全局圆角化设计等，旨在提升用户体验和网站性能。&lt;/p&gt;
-&lt;h2&gt;&lt;/p&gt;&lt;h1 id=&#34;01&#34; name=&#34;01&#34;&gt;&lt;strong&gt;2025-06-15&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;/h2&gt;
+    本文记录了2025年网站更新，包括优化流畅度、修复显示问题、引入AI摘要功能、提升加载速度、更新教程、优化UI设计等，旨在提升用户体验。&lt;/p&gt;
+&lt;h2&gt;&lt;/p&gt;&lt;h1 id=&#34;01&#34; name=&#34;01&#34;&gt;&lt;strong&gt;2025-07-08&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;优化网站流畅度（玄学）&lt;/li&gt;
-&lt;li&gt;优化CDN配置&lt;/li&gt;
-&lt;li&gt;引入全局圆角化设计，参...&lt;/li&gt;
+&lt;li&gt;修复[友链教程](../...&lt;/li&gt;
 &lt;/ul&gt;</description>
       <link>http://wcowin.work/blog/2025/01/01/2025%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
@@ -691,7 +690,7 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了基于MkDocs主题的站点，涵盖多个知名开源项目文档，如Django REST framework、FastAPI等，并列举了多个个人或组织站点，为用户搭建和展示文档提供参考。&lt;/p&gt;
+    本文介绍了基于MkDocs主题的站点，涵盖数据结构与算法教程、框架官方文档、个人博客等，为用户搭建和展示文档网站提供参考。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;199&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 &lt;a href=&#34;https://www.django-rest-framework.org/&#34;&gt;django-rest-framework&lt;/a&gt;、&lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; 以及基于 Go 编写的云网关代理服务器 &lt;a href=&#34;https://github.com/traefik/traefik&#34;&gt;traefik&lt;/a&gt; 等项目的官方文档站点，都是通过 MkDocs 进行搭建。&lt;/p&gt;</description>
