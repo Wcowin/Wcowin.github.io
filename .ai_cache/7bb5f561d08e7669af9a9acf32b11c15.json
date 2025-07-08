@@ -1,0 +1,8 @@
+{
+  "summary": "pip命令在命令行使用，非Python命令行环境，可通过直接输入pip获取命令表单。支持指定路径安装和更新包依赖。",
+  "service": "glm",
+  "page_title": "PIP",
+  "timestamp": "2025-07-08T04:20:12.144879",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}
