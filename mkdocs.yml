@@ -379,17 +379,22 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  - document-dates:
-      position: top            # Display position: top (after title)  bottom (end of document), default: bottom
-      type: date               # Date type: date  datetime  timeago, default: date
-      locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
-      date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
-      time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
-      exclude:                 # List of excluded files
-        - index.md
-        - temp.md              # Exclude specific file
-        - about/*            # Exclude all files in private directory, including subdirectories
-      show_author: true        # Show author or not, default: true
+  # - document-dates:
+  #     position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
+  #     type: date               # Date type: date  datetime  timeago, default: date
+  #     locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
+  #     date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
+  #     time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
+  #     exclude:                 # List of excluded files
+  #       - index.md
+  #       - tag.md
+  #       - waline.md
+  #       - blog/posts/*
+  #       - blog/index.md
+  #       - link.md
+  #       - blog/Mkdocs/linktech.md
+  #       - about/*            # Exclude all files in private directory, including subdirectories
+  #     show_author: false        # Show author or not, default: true
   # - statistics
   # - git-authors
   - rss:
@@ -410,9 +415,6 @@ plugins:
       feed_ttl: 1440  # Feed 缓存时间（分钟）
       length: 30  # RSS 条目数量
       pretty_print: true  # 格式化输出
-      # 移除不支持的配置项
-      # rss_description: "Wcowin's Blog - 知足且上进，温柔且坚定"  # 这个配置不被插件识别
-      # rss_name: "Wcowin's Blog RSS Feed"  # 这个配置不被插件识别
       url_parameters:
         utm_source: "rss"
         utm_medium: "referral"
@@ -447,9 +449,7 @@ plugins:
         - index.md 
         - tag.md
         - waline.md
-        - blog/posts/update.md
-        - blog/posts/wkw.md
-        - about/link.md
+        - link.md
         - blog/Mkdocs/linktech.md
         - "blog/archive/**"
         - "blog/category/**"
@@ -461,9 +461,7 @@ plugins:
         - index.md 
         - tag.md
         - waline.md
-        - blog/posts/update.md
-        - blog/posts/wkw.md
-        - about/link.md
+        - link.md
         - blog/Mkdocs/linktech.md
   - blog:
       post_date_format: full #时间
