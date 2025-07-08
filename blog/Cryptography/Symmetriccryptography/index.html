@@ -65,6 +65,24 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/backdrop.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -3886,13 +3904,15 @@
 
 <div class="admonition info">
 <p class="admonition-title">💾 AI智能摘要 (GLM-4)</p>
-<p>流密码是一种对称加密算法，通过密钥流生成器产生密钥流与明文进行异或运算，实现连续加密。其特点包括快速、低延迟和高吞吐量，适用于无线通信、SSL/TLS等场景。</p>
+<p>流密码是一种对称加密算法，通过密钥流与明文数据流结合生成密文流。其核心是密钥流生成器，利用种子密钥生成看似随机的密钥流。流密码适用于低延迟和高吞吐量数据流加密，如无线通信、SSL/TLS和实时音视频加密。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>19</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>7659</strong></p>
 </div>
 <h1 id="2">第2章 流密码<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin'><span data-tippy-content='创建时间: 2025-05-09'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-05-09T20:08:54' locale='zh_CN'>2025-05-09</time></span><span data-tippy-content='最后更新: 2025-07-08'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-07-08T04:17:57.916279' locale='zh_CN'>2025-07-08</time></span><span data-tippy-content='作者: <a href="mailto:1135801806@qq.com">Wcowin</a>'><span class='material-icons' data-icon='doc_author'></span>Wcowin</span></div></div>
+
 <h2 id="21">2.1 流密码的基本概念<a class="headerlink" href="#21" title="Permanent link">&para;</a></h2>
 <p>流密码 (Stream Cipher) 是一类重要的对称加密算法。与分组密码 (Block Cipher) 将明文分割成固定大小的块分别加密不同，流密码则是对明文数据流以最小单位（通常是单个比特或字节）进行连续处理。其核心思想是利用一个密钥（称为种子密钥）通过密钥流产生器 (Keystream Generator) 生成一个看似随机的、与明文长度相同的序列，这个序列被称为<strong>密钥流 (Keystream)</strong>。然后，将密钥流与明文数据流通过某种运算（通常是<strong>异或 (XOR)</strong> 操作）结合起来，产生密文流。</p>
 <p><strong>工作流程：</strong></p>
@@ -5117,6 +5137,14 @@ c_0 &amp; 0 &amp; 0 &amp; \dots &amp; 0
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js"></script>
+      
+        <script src="../../../assets/document_dates/tippy/popper.min.js"></script>
+      
+        <script src="../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../assets/document_dates/core/core.js"></script>
+      
+        <script src="../../../assets/document_dates/user.config.js"></script>
       
     
   </body>
