@@ -49,7 +49,7 @@ class AISummaryGenerator:
             'ci_enabled': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
             
             # 本地环境是否启用AI摘要（默认启用）
-            'local_enabled': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',
+            'local_enabled': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',
             
             # CI环境是否仅使用缓存（不用管，只在ci.yml中设置有效。默认关闭，即允许生成新摘要）
             'ci_cache_only': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',
@@ -1084,7 +1084,7 @@ Please generate bilingual summary:"""
         2. 检查页面是否需要生成摘要
         3. 清理内容并生成摘要
         4. 使用缓存机制优化性能
-        5. 格式化并插入摘要
+        5. 格式化并插入摘要到标题下方
         """
         # 步骤1：环境检查 - 如果当前环境不应该运行，直接返回原内容
         if not self._should_run:
@@ -1140,10 +1140,46 @@ Please generate bilingual summary:"""
                     'page_title': page_title
                 })
         
-        # 步骤5：格式化并返回最终内容
+        # 步骤5：格式化摘要
         if summary:
             summary_html = self.format_summary(summary, ai_service)
-            return summary_html + '\n\n' + markdown
+            
+            # 步骤6：将摘要插入到标题下方而不是文章顶部
+            # 查找第一个标题
+            import re
+            
+            # 处理YAML front matter
+            has_frontmatter = markdown.startswith('---')
+            if has_frontmatter:
+                # 找到front matter的结束位置
+                fm_end = markdown.find('---', 3)
+                if fm_end != -1:
+                    fm_end += 3  # 包含结束的 ---
+                    frontmatter = markdown[:fm_end]
+                    content = markdown[fm_end:]
+                else:
+                    frontmatter = ''
+                    content = markdown
+            else:
+                frontmatter = ''
+                content = markdown
+            
+            # 在内容中查找第一个标题
+            heading_match = re.search(r'^#+ .*$', content, re.MULTILINE)
+            
+            if heading_match:
+                # 找到标题的位置
+                heading_pos = heading_match.end()
+                heading_end = content.find('\n', heading_pos)
+                if heading_end == -1:  # 如果标题后没有换行符
+                    heading_end = len(content)
+                
+                # 在标题后插入摘要
+                result = frontmatter + content[:heading_end] + '\n\n' + summary_html + content[heading_end:]
+                return result
+            else:
+                # 如果没有找到标题，则在front matter后插入摘要
+                return frontmatter + summary_html + '\n\n' + content
         
         return markdown
     

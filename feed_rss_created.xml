@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Tue, 08 Jul 2025 10:33:11 -0000</pubDate>
-    <lastBuildDate>Tue, 08 Jul 2025 10:33:11 -0000</lastBuildDate>
+    <pubDate>Tue, 08 Jul 2025 15:25:35 -0000</pubDate>
+    <lastBuildDate>Tue, 08 Jul 2025 15:25:35 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -41,10 +41,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+      <description>&lt;h2&gt;为网站添加Google广告&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
     通过Google AdSense注册账号，创建广告单元并嵌入代码至网站模板，即可为网站添加Google广告，实现盈利。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circ...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/GoogleAD/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Sun, 29 Jun 2025 12:43:17 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -109,10 +110,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动内容清理，并提供灵活配置和智能缓存系统。&lt;/p&gt;
+      <description>&lt;h1&gt;Mkdocs AI Summary&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动内容清理，并提供灵活的配置选项。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：*&lt;em&gt;2&lt;/em&gt;...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 06 Jun 2025 11:51:15 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -131,10 +133,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了如何为Markdown文档添加阅读时间统计功能。通过配置mkdocs.yml和编写Python脚本，可自动计算并展示每页文档的阅读时间、字符数和代码行数，适用于技术文档和教程网站。&lt;/p&gt;
+      <description>&lt;h2&gt;1. 基础配置&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了如何为Markdown文档添加阅读时间统计功能。通过配置mkdocs.yml和编写Python脚本，可自动计算文档的阅读时间、字符数和代码行数，并排除特定页面路径。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：**1...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/reading_time/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 06 Jun 2025 09:07:20 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -153,10 +156,11 @@
       <category>我的作品</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本项目是一款基于原生JavaScript、HTML和CSS的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、多种播放模式等功能，适用于Web前端开发学习。&lt;/p&gt;
+      <description>&lt;h1&gt;简单的 JavaScript 音乐播放器&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本项目是一款基于原生JavaScript、HTML和CSS的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、多种播放模式等，适用于Web前端开发学习。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间...&lt;/p&gt;</description>
       <link>http://wcowin.work/develop/Mywork/muplayer/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 28 May 2025 07:39:15 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -175,10 +179,11 @@
       <category>密码学</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    分组密码通过将明文分割成固定块，使用密钥进行独立加密，实现信息安全。其设计原则包括混淆和扩散，以抵抗统计分析。AES作为当前主流标准，具有多种密钥长度和块大小。随着技术发展，轻量级密码、侧信道攻击和量子计算等新挑战促使密码设计不断进步。&lt;/p&gt;
+      <description>&lt;h1&gt;第3章 分组密码&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    分组密码通过将明文分割成固定块，使用密钥进行独立加密，实现对称加密。其设计原则包括混淆和扩散，以抵抗统计分析。AES作为当前主流标准，具有多种密钥长度和块大小。未来，轻量级密码、侧信道攻击和量子计算等挑战促使密码设计不断进步。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-t...&lt;/p&gt;</description>
+    :material-clock...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Cryptography/Groupcipher/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 09 May 2025 12:08:54 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -197,10 +202,11 @@
       <category>密码学</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    流密码是一种对称加密算法，通过密钥流生成器产生密钥流与明文进行异或运算，实现连续加密。其特点包括快速、低延迟和高吞吐量，适用于无线通信、SSL/TLS等场景。&lt;/p&gt;
+      <description>&lt;h1&gt;第2章 流密码&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    流密码是一种对称加密算法，通过密钥流生成器产生密钥流，与明文进行异或运算生成密文。其特点包括快速加密、低延迟和高吞吐量，适用于无线通信、SSL/TLS和实时音视频加密等场景。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;19&lt;/strong&gt; 分钟 | :material-c...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：**19...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Cryptography/Symmetriccryptography/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 09 May 2025 12:08:54 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -261,10 +267,11 @@
       <category>密码学</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    密码学是保障信息安全的关键学科，涉及加密、解密算法和密钥管理。它分为对称和非对称密钥密码学，应用于电子商务、安全通信和数据保护等领域，确保信息保密性、完整性和认证性。&lt;/p&gt;
+      <description>&lt;h1&gt;第1章 密码学引言&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    密码学是保障信息安全的关键学科，涉及加密解密、密钥管理等。它分为对称和非对称密钥密码学，应用广泛，如电子商务、安全通信和数据保护。随着技术发展，密码学不断适应新挑战，确保数字世界安全。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;3&lt;/strong&gt; 分钟 | :materia...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Cryptography/Introduction/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Thu, 08 May 2025 01:38:37 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -283,10 +290,11 @@
       <category>密码学</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    数论基础是密码学核心，涵盖质数、互质、同余等概念。文章详细介绍了欧几里得算法、扩展欧几里得算法、费马小定理、欧拉函数等，并探讨了素数筛和快速幂算法，为理解现代加密算法奠定基础。&lt;/p&gt;
+      <description>&lt;h1&gt;数论基础&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    数论基础是密码学核心，涵盖质数、互质、同余等概念，并介绍欧几里得算法、扩展欧几里得算法、费马小定理等，用于加密算法和素性检验。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;3&lt;/strong&gt; 分钟 | :ma...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;3&lt;/strong&gt; 分钟 | :material-circle-edi...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Cryptography/Numbertheory/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Thu, 08 May 2025 01:38:37 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -305,11 +313,11 @@
       <category>旅行</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    该文章展示了一个基于JavaScript和OpenStreetMap的地图应用，通过IP定位判断用户位置，仅在中国大陆IP下隐藏地图，并在地图上标记多个中国城市位置，实现足迹追踪功能。&lt;/p&gt;
-&lt;h1&gt;足迹&lt;/h1&gt;
+      <description>&lt;h1&gt;足迹&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    该文章展示了一个基于JavaScript和OpenStreetMap的地图应用，通过IP检测隐藏谷歌地图，并在地图上标记多个中国城市的位置，实现足迹追踪功能。&lt;/p&gt;
 &lt;div id=&#34;map-container&#34;&gt;
-  &lt;iframe id=&#34;google-map-frame&#34; src=...</description>
+  &lt;iframe id=&#34;google-map-frame&#34; src=&#34;https://www....</description>
       <link>http://wcowin.work/trip/footmark/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 30 Apr 2025 06:25:27 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -328,10 +336,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    优化网站访问速度，可采取图片格式转换、使用CDN加速静态资源、调整本地渲染配置等措施，如禁用git插件等，并利用Lighthouse进行性能测试。&lt;/p&gt;
+      <description>&lt;h1&gt;加速网站访问的一些心得&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    优化网站访问速度，可采取图片格式转换、使用CDN加速资源、调整本地渲染配置等措施，如禁用git插件等。通过Lighthouse测试检验效果。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-e...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :mat...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/accelerate/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 29 Apr 2025 14:56:48 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -350,10 +359,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    MkDocs支持自定义页脚，通过在&lt;code&gt;docs/overrides/partials/footer.html&lt;/code&gt;中添加代码实现，无需额外安装插件。&lt;/p&gt;
+      <description>&lt;h2&gt;页脚设置&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    MkDocs支持自定义页脚，通过在docs/overrides/partials/footer.html中添加代码实现个性化设置。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edi...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circl...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/footer/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 29 Apr 2025 14:56:48 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -374,10 +384,10 @@
       <category>技术分享</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    模型上下文协议（MCP）是一种标准化接口规范，实现AI模型与外部工具的无缝交互，解决传统方法复杂性高、可扩展性差等问题。MCP具有标准化接口、动态上下文管理、广泛兼容性和安全性保障等特点，适用于多模态AI系统、智能助手开发和企业级解决方案。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time...&lt;/p&gt;</description>
+      <description>&lt;h2&gt;模型上下文协议（MCP）简介&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    模型上下文协议（MCP）是一种标准化接口规范，旨在实现AI模型与外部工具的无缝交互，解决传统方法复杂性高、可扩展性差、缺乏标准化等问题。MCP具有标准化接口、动态上下文管理、广泛兼容性和安全性保障等特点，适用于多模态AI系统、智能助手开发和企业级解决方案等领域。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 ...&lt;/p&gt;</description>
       <link>http://wcowin.work/develop/AI/mcp/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Sun, 27 Apr 2025 01:41:51 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -396,10 +406,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    MkDocs文档构建中，相对地址引用问题常见，涉及图片、PDF等资源。本文总结了图片引用、PDF文件引用、跨页面引用、静态资源引用等场景及注意事项，强调路径正确性和大小写一致性，建议统一资源管理目录结构。&lt;/p&gt;
+      <description>&lt;h1&gt;针对MKdocs中相对地址引用的一些问题&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文针对MKdocs中相对地址引用问题进行探讨，涵盖图片、PDF、Markdown页面等资源引用方法，强调路径正确性、大小写一致性，并建议统一资源管理目录结构，确保本地和线上文档的一致性。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：...&lt;/p&gt;</description>
+    :material-clock-time-t...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/Relativeaddress/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Sat, 19 Apr 2025 11:19:00 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -440,9 +451,13 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;131&lt;/strong&gt; | :fontawesome-solid-code:有效代码行数：&lt;strong&gt;30&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![](https://s1.imagehub.cc/images/2024/02/0...&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://s1.imagehub.cc/images/2024/02/02/b94cdf67258487f737cfa29829629157.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;首先在mkdocs.yml文件中添加custom_dir:
+&lt;code&gt;hl_lines=&#34;3&#34;
+theme:
+  name: material
+  custom_dir: docs/overrides #覆写路径&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;do...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/404/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Sat, 19 Apr 2025 07:01:50 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -542,10 +557,11 @@
       <category>我的作品</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    利用金山文档AirScript脚本，轻松实现每日自动发送早安邮件，仅需五步操作，支持自定义内容与日期，适用于情侣间温馨互动。&lt;/p&gt;
+      <description>&lt;h2&gt;先看效果&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    利用金山文档AirScript脚本，轻松实现每日自动发送早安邮件，仅需简单五步：新建表格、填写信息、编写脚本、授权邮箱、设置定时任务。技术实现简便，适用于情侣间温馨互动。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; ...&lt;/p&gt;</description>
       <link>http://wcowin.work/develop/Mywork/email/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 07 Feb 2025 07:03:17 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -564,13 +580,14 @@
       <category>八字六爻</category>
         
       
-      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;899&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Question:    &lt;/p&gt;
+      <description>&lt;p&gt;Question:    &lt;/p&gt;
 &lt;p&gt;我的生辰是2003年1月20日下午三点，农历2002腊月十八。姓名是* * * 。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Answer:&lt;/p&gt;
-&lt;p&gt;结合你的八字命盘与20...&lt;/p&gt;</description>
+&lt;p&gt;结合你的八字命盘与2025年乙巳流年运势，针对学业、考研及整体发展，具体分析如下：&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;一、八字核心与2025年能量互动&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:...&lt;/p&gt;</description>
       <link>http://wcowin.work/relax/skyearth/20251/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Mon, 03 Feb 2025 13:04:29 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -589,10 +606,11 @@
       <category>AI</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了多种AI工具，涵盖对话、图像、视频、编程、写作、翻译、PPT、应用、音乐、鉴别和学习等领域，旨在帮助用户了解和应用AI技术。&lt;/p&gt;
+      <description>&lt;h2&gt;AI 对话&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了多种AI工具，涵盖对话、图像、视频、编程、写作、翻译、PPT等领域，旨在帮助用户提高工作效率和创造力。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-ou...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-out...&lt;/p&gt;</description>
       <link>http://wcowin.work/develop/AI/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Mon, 06 Jan 2025 07:34:55 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -615,12 +633,12 @@
       <category>网站更新记录</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文记录了2025年网站更新，包括优化流畅度、修复显示问题、引入AI摘要功能、提升加载速度、更新教程、优化UI设计等，旨在提升用户体验。&lt;/p&gt;
-&lt;h2&gt;&lt;/p&gt;&lt;h1 id=&#34;01&#34; name=&#34;01&#34;&gt;&lt;strong&gt;2025-07-08&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;/h2&gt;
+      <description>&lt;h2&gt;&lt;/p&gt;&lt;h1 id=&#34;01&#34; name=&#34;01&#34;&gt;&lt;strong&gt;2025-07-08&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    网站持续优化，包括流畅度提升、引入AI摘要和CDN加速，新增友链统计和即时发送信息功能，并连载密码学系列文章。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;优化网站流畅度（玄学）&lt;/li&gt;
-&lt;li&gt;修复[友链教程](../...&lt;/li&gt;
+&lt;li&gt;修复[友链教程](../Mkdocs/linkte...&lt;/li&gt;
 &lt;/ul&gt;</description>
       <link>http://wcowin.work/blog/2025/01/01/2025%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
@@ -665,10 +683,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了Mkdocs文档的教程资源，包括官方教程、中文教程、视频教程等，并指导用户如何快速部署静态网页至GitHub pages，配置Mkdocs部署，以及添加Mkdocs博客。&lt;/p&gt;
+      <description>&lt;h2&gt;文档教程&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本教程介绍Mkdocs文档编写与部署，涵盖官方教程、中文教程、视频教程等资源，指导用户快速上手，实现静态网页至GitHub pages的部署。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-c...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Mkdocs/mkfirst/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 27 Nov 2024 01:12:53 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -690,7 +709,7 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了基于MkDocs主题的站点，涵盖数据结构与算法教程、框架官方文档、个人博客等，为用户搭建和展示文档网站提供参考。&lt;/p&gt;
+    MkDocs因其易用性被众多开源项目采用，本文列举了多个基于MkDocs主题的站点，涵盖算法教程、框架文档、个人博客等，为文档搭建提供参考。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;199&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 &lt;a href=&#34;https://www.django-rest-framework.org/&#34;&gt;django-rest-framework&lt;/a&gt;、&lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; 以及基于 Go 编写的云网关代理服务器 &lt;a href=&#34;https://github.com/traefik/traefik&#34;&gt;traefik&lt;/a&gt; 等项目的官方文档站点，都是通过 MkDocs 进行搭建。&lt;/p&gt;</description>

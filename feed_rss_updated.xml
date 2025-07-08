@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Tue, 08 Jul 2025 10:33:11 -0000</pubDate>
-    <lastBuildDate>Tue, 08 Jul 2025 10:33:11 -0000</lastBuildDate>
+    <pubDate>Tue, 08 Jul 2025 15:25:35 -0000</pubDate>
+    <lastBuildDate>Tue, 08 Jul 2025 15:25:35 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -60,10 +60,15 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    通过简单代码，实现MKdocs添加友链功能，支持卡片式展示，优化小屏显示，提升用户体验。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;92&lt;/strong&gt; | :fo...&lt;/p&gt;</description>
+      <description>&lt;p&gt;复制后在需要添加友链的.md 文件页面粘贴即可&lt;/p&gt;
+&lt;p&gt;```html hl_lines=&#34;82-126&#34;&lt;/p&gt;
+&lt;div class=&#34;post-body&#34;&gt;
+&lt;div id=&#34;links&#34;&gt;
+&lt;style&gt;
+/* 友链容器样式 */
+.link-navigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mi...</description>
       <link>http://wcowin.work/blog/Mkdocs/linktech/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 02:27:54 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -85,7 +90,7 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了基于MkDocs主题的站点，涵盖数据结构与算法教程、框架官方文档、个人博客等，为用户搭建和展示文档网站提供参考。&lt;/p&gt;
+    MkDocs因其易用性被众多开源项目采用，本文列举了多个基于MkDocs主题的站点，涵盖算法教程、框架文档、个人博客等，为文档搭建提供参考。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;199&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;鉴于 MkDocs 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 &lt;a href=&#34;https://www.django-rest-framework.org/&#34;&gt;django-rest-framework&lt;/a&gt;、&lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; 以及基于 Go 编写的云网关代理服务器 &lt;a href=&#34;https://github.com/traefik/traefik&#34;&gt;traefik&lt;/a&gt; 等项目的官方文档站点，都是通过 MkDocs 进行搭建。&lt;/p&gt;</description>
@@ -150,10 +155,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+      <description>&lt;h2&gt;为网站添加Google广告&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
     通过Google AdSense注册账号，创建广告单元并嵌入代码至网站模板，即可为网站添加Google广告，实现盈利。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circ...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/GoogleAD/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Sun, 29 Jun 2025 12:43:17 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -170,10 +176,10 @@
       
         
       
-      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+      <description>&lt;h1&gt;What is Genshin Impact?&lt;/h1&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;4&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;1504&lt;/strong&gt;&lt;/p&gt;
-&lt;h1&gt;What is Genshin Impact?&lt;/h1&gt;
-&lt;p&gt;在《原神》里，玩家将扮演一位名为「旅行者」的神秘角色，在异世界旅途中被陌生的神明拦截，苏醒后踏上寻访七神的...&lt;/p&gt;</description>
+&lt;p&gt;在《原神》里，玩家将扮演一位名为「旅行者」的神秘角色，在异世界旅途中被陌生的神明拦截，苏醒后踏上寻访七...&lt;/p&gt;</description>
       <link>http://wcowin.work/relax/Game/yuanshen/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Sat, 28 Jun 2025 08:13:06 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -219,10 +225,11 @@
       <category>技术分享</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文分享了众多实用网站，涵盖工具、图像、视频处理、学习等多个领域，为用户提供便捷的服务和丰富的资源。&lt;/p&gt;
+      <description>&lt;h2&gt;&lt;strong&gt;工具类:material-tools:&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文分享了众多实用网站，涵盖工具、图像、视频处理、学习等多个领域，包括文件传输、在线工具、图片素材、视频下载、编程学习等，为用户提供便捷的互联网服务。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：*&lt;em&gt;953&lt;/em&gt;...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Webplay/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Thu, 26 Jun 2025 03:39:59 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -241,10 +248,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了Mkdocs文档的教程资源，包括官方教程、中文教程、视频教程等，并指导用户如何快速部署静态网页至GitHub pages，配置Mkdocs部署，以及添加Mkdocs博客。&lt;/p&gt;
+      <description>&lt;h2&gt;文档教程&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本教程介绍Mkdocs文档编写与部署，涵盖官方教程、中文教程、视频教程等资源，指导用户快速上手，实现静态网页至GitHub pages的部署。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-c...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Mkdocs/mkfirst/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Thu, 26 Jun 2025 03:39:59 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -263,10 +271,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动内容清理，并提供灵活配置和智能缓存系统。&lt;/p&gt;
+      <description>&lt;h1&gt;Mkdocs AI Summary&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    MkDocs AI Summary项目为MkDocs文档提供AI驱动的智能摘要和阅读统计功能，支持多AI服务、多语言，自动内容清理，并提供灵活的配置选项。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：*&lt;em&gt;2&lt;/em&gt;...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Thu, 26 Jun 2025 03:39:59 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -329,12 +338,12 @@
       
         
       
-      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+      <description>&lt;h1&gt;支持作者&lt;/h1&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;74&lt;/strong&gt;&lt;/p&gt;
-&lt;h1&gt;支持作者&lt;/h1&gt;
 &lt;div class=&#34;grid cards&#34; markdown&gt;
 
-- :material-email-mark-as-unread: 给我发送[邮箱...</description>
+- :material-email-mark-as-unread: 给我发送[...</description>
       <link>http://wcowin.work/about/zcw/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Mon, 16 Jun 2025 16:30:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -373,10 +382,10 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    霞鹜文楷是一款开源中文字体，基于FONTWORKS的Klee One衍生，具有日文教科书体风格，适用于网站、手机系统等。支持简繁日韩三字重，提供多种版本，满足不同需求。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;6&lt;/strong&gt; 分钟 | :materi...&lt;/p&gt;</description>
+      <description>&lt;p&gt;我目前在用的字体：&lt;a href=&#34;https://github.com/lxgw/LxgwWenKai&#34;&gt;霞鹜文楷&lt;/a&gt;{target=_blank}&lt;br&gt;
+想必你可以直观从我的网站感受到，&lt;a href=&#34;https://chawyehsu.github.io/lxgw-wenkai-webfont/&#34;&gt;这款字体&lt;/a&gt;的美观程度。  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#mkdocs&#34;&gt;快速教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;https://hsiaofeng.com/...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/mkdocsfont/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Mon, 16 Jun 2025 14:52:26 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -395,10 +404,11 @@
       <category>密码学</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    数论基础是密码学核心，涵盖质数、互质、同余等概念。文章详细介绍了欧几里得算法、扩展欧几里得算法、费马小定理、欧拉函数等，并探讨了素数筛和快速幂算法，为理解现代加密算法奠定基础。&lt;/p&gt;
+      <description>&lt;h1&gt;数论基础&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    数论基础是密码学核心，涵盖质数、互质、同余等概念，并介绍欧几里得算法、扩展欧几里得算法、费马小定理等，用于加密算法和素性检验。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;3&lt;/strong&gt; 分钟 | :ma...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;3&lt;/strong&gt; 分钟 | :material-circle-edi...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Cryptography/Numbertheory/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Mon, 09 Jun 2025 07:18:50 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -417,10 +427,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    MkDocs文档构建中，相对地址引用问题常见，涉及图片、PDF等资源。本文总结了图片引用、PDF文件引用、跨页面引用、静态资源引用等场景及注意事项，强调路径正确性和大小写一致性，建议统一资源管理目录结构。&lt;/p&gt;
+      <description>&lt;h1&gt;针对MKdocs中相对地址引用的一些问题&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文针对MKdocs中相对地址引用问题进行探讨，涵盖图片、PDF、Markdown页面等资源引用方法，强调路径正确性、大小写一致性，并建议统一资源管理目录结构，确保本地和线上文档的一致性。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：...&lt;/p&gt;</description>
+    :material-clock-time-t...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/Relativeaddress/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 06 Jun 2025 09:07:20 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -439,10 +450,11 @@
       <category>Mkdocs</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了如何为Markdown文档添加阅读时间统计功能。通过配置mkdocs.yml和编写Python脚本，可自动计算并展示每页文档的阅读时间、字符数和代码行数，适用于技术文档和教程网站。&lt;/p&gt;
+      <description>&lt;h2&gt;1. 基础配置&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了如何为Markdown文档添加阅读时间统计功能。通过配置mkdocs.yml和编写Python脚本，可自动计算文档的阅读时间、字符数和代码行数，并排除特定页面路径。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：**1...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/websitebeauty/reading_time/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Fri, 06 Jun 2025 09:07:20 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -459,13 +471,13 @@
       
         
       
-      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+      <description>&lt;h1&gt;考研计划(25考研已完结)&lt;/h1&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;782&lt;/strong&gt;&lt;/p&gt;
-&lt;h1&gt;考研计划(25考研已完结)&lt;/h1&gt;
 &lt;body&gt;
 &lt;center&gt;
 &lt;font color=&#34;#4351AF&#34; size=6 &gt;
-  &lt;h1&gt;25考研初试倒计时：&lt;...</description>
+  &lt;h1&gt;25考研初试倒计时...</description>
       <link>http://wcowin.work/about/kaoyan/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -482,10 +494,10 @@
       
         
       
-      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+      <description>&lt;h1&gt;免责声明&lt;/h1&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;5&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;1801&lt;/strong&gt;&lt;/p&gt;
-&lt;h1&gt;免责声明&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://wcowin.work/&#34;&gt;本站&lt;/a&gt;一贯高度重视知识产权的保护，并一贯遵守中华人民共和国各项知识产权法律、法规及其他的具有法律约束力...&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://wcowin.work/&#34;&gt;本站&lt;/a&gt;一贯高度重视知识产权的保护，并一贯遵守中华人民共和国各项知识产权法律、法规及其他的具有法律约...&lt;/p&gt;</description>
       <link>http://wcowin.work/about/shengming/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -504,10 +516,11 @@
       <category>旅行</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    漯河，河南省历史文化名城，拥有沙澧河风景区、许慎文化园等旅游资源，以双汇、卫龙等食品企业享誉全国。城市融合了河南文化，呈现北方水城风貌，是北方少有的水景城市。&lt;/p&gt;
+      <description>&lt;h1&gt;我的家乡——漯（luò）河&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    漯河，河南低调美食之城，拥有沙澧河风景区、许慎文化园等特色景点。漯河食品加工产业发达，孕育双汇、卫龙等知名品牌。这里融合了河南文化，是北方水城、食品名城、开放城市。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;9&lt;/strong&gt; 分钟 | :material-ci...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：**9...&lt;/p&gt;</description>
       <link>http://wcowin.work/trip/LH/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -526,10 +539,11 @@
       <category>旅行</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    西安之旅涵盖城墙骑行、兵马俑参观、华清池体验，钟楼回民街品尝美食，陕历博、大雁塔游览，体验大唐不夜城，美食包括腊汁肉夹馍、凉皮、羊肉泡馍等。&lt;/p&gt;
+      <description>&lt;h2&gt;照片&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    西安之旅涵盖城墙骑行、兵马俑参观、华清池游览等，品尝腊汁肉夹馍、凉皮等特色美食，行程丰富，体验深刻。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文...&lt;/p&gt;</description>
       <link>http://wcowin.work/trip/Xian/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -548,11 +562,11 @@
       <category>旅行</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    该文章展示了一个基于JavaScript和OpenStreetMap的地图应用，通过IP定位判断用户位置，仅在中国大陆IP下隐藏地图，并在地图上标记多个中国城市位置，实现足迹追踪功能。&lt;/p&gt;
-&lt;h1&gt;足迹&lt;/h1&gt;
+      <description>&lt;h1&gt;足迹&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    该文章展示了一个基于JavaScript和OpenStreetMap的地图应用，通过IP检测隐藏谷歌地图，并在地图上标记多个中国城市的位置，实现足迹追踪功能。&lt;/p&gt;
 &lt;div id=&#34;map-container&#34;&gt;
-  &lt;iframe id=&#34;google-map-frame&#34; src=...</description>
+  &lt;iframe id=&#34;google-map-frame&#34; src=&#34;https://www....</description>
       <link>http://wcowin.work/trip/footmark/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -571,10 +585,11 @@
       <category>旅行</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    重庆三日游推荐路线包括解放碑、长江索道、洪崖洞、重庆中国三峡博物馆、鹅岭、李子坝、山城步道、磁器口、南山一棵树和川美涂鸦一条街，品尝当地特色美食如火锅、小面、酸辣粉等。&lt;/p&gt;
+      <description>&lt;h1&gt;重是重逢的重，庆是庆幸的庆:octicons-heart-fill-24:{ .heart }&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    重庆三日游路线推荐，涵盖解放碑、长江索道、洪崖洞、三峡博物馆、鹅岭、李子坝、山城步道、磁器口等景点，体验重庆历史文化与美食。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :materi...&lt;/p&gt;</description>
+    :material-clock-time-two-ou...&lt;/p&gt;</description>
       <link>http://wcowin.work/trip/InCQ/CQ/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 04 Jun 2025 07:42:39 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -618,9 +633,9 @@
         
       
       <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    语雀，蚂蚁集团旗下文档与知识库工具，源自内部文档协同需求，旨在帮助个人和团队记录、分享和交流知识，实现知识沉淀与创作。&lt;/p&gt;
+    语雀，蚂蚁集团旗下文档与知识库工具，源自内部文档协同需求，旨在帮助个人和团队记录、分享和交流知识，实现知识沉淀与创作，打造数字花园。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-out...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/yuque/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 03 Jun 2025 06:37:05 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -639,10 +654,11 @@
       <category>Mac</category>
         
       
-      <description>&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    解决macOS应用无法打开问题，需开启“任何来源”选项或通过终端绕过签名认证。方法包括手动设置、终端命令行操作及使用macos小助手工具。&lt;/p&gt;
+      <description>&lt;h2&gt;常见的几种报错&lt;/h2&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    macOS安全机制导致应用无法打开时，可开启“任何来源”选项或使用终端命令绕过签名认证。若需进一步操作，可下载macOS小助手辅助完成。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circle-edit-...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-c...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Mac/sunhuai/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 03 Jun 2025 06:37:05 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
@@ -659,10 +675,11 @@
       
         
       
-      <description>&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;243&lt;/strong&gt; | :fontawesome-solid-code:有效代码行数：&lt;strong&gt;353&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;!!! note &#34;404页面&#34;
-    [https://wcowin.work/...&lt;/p&gt;</description>
+      <description>&lt;p&gt;!!! note &#34;404页面&#34;
+    &lt;a href=&#34;https://wcowin.work/404&#34;&gt;https://wcowin.work/404&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;404公益页面&lt;/h2&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;243&lt;/strong&gt;...&lt;/p&gt;</description>
       <link>http://wcowin.work/about/404/?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Sat, 31 May 2025 16:04:27 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
