@@ -4863,8 +4863,28 @@ n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}
 
         /* 社交媒体图标 */
         .footer-social {
+          display: -webkit-flex;
           display: flex;
           gap: 0.3rem;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+
+        /* Safari兼容性修复 */
+        .footer-social .md-social__link svg {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          opacity: 1 !important;
+          visibility: visible !important;
+          pointer-events: auto;
+        }
+
+        /* 强制Safari显示SVG图标 */
+        .footer-social .md-social__link {
+          opacity: 1 !important;
+          visibility: visible !important;
         }
         
         /* 内容区域样式 */
@@ -4932,10 +4952,24 @@ n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}
             border: 1px solid rgba(255, 255, 255, 0.1);
             width: 2rem;
             height: 2rem;
+            display: -webkit-inline-flex;
             display: inline-flex;
+            -webkit-align-items: center;
             align-items: center;
+            -webkit-justify-content: center;
             justify-content: center;
+            -webkit-transition: all 0.2s ease;
             transition: all 0.2s ease;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+
+          .footer-social .md-social__link svg {
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: currentColor;
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
           }
 
           .footer-social .md-social__link:hover {
@@ -4954,7 +4988,10 @@ n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}
             height: auto;
             display: inline-block;
             border-radius: 0;
+            -webkit-transition: color 0.2s ease;
             transition: color 0.2s ease;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
           }
 
           .footer-social .md-social__link:hover {
@@ -4966,6 +5003,10 @@ n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}
           .footer-social .md-social__link svg {
             width: 1.6rem;
             height: 1.6rem;
+            fill: currentColor;
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+            display: block;
           }
         }
         
