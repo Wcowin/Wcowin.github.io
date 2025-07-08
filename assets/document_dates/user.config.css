@@ -46,7 +46,9 @@
 .document-dates-plugin-wrapper.document-dates-top {
     border-bottom: none;
 } 
-
+.document-dates-plugin-wrapper.document-dates-bottom {
+    border-bottom: none;
+}
 
 /* 3. Tooltip styles
     including theme, arrow, font, color, background color, etc
