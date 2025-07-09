@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Wed, 09 Jul 2025 01:05:51 -0000</pubDate>
-    <lastBuildDate>Wed, 09 Jul 2025 01:05:51 -0000</lastBuildDate>
+    <pubDate>Wed, 09 Jul 2025 07:48:08 -0000</pubDate>
+    <lastBuildDate>Wed, 09 Jul 2025 07:48:08 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -32,6 +32,82 @@
     
     
     <item>
+      <title>MyBlog</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;h1&gt;MyBlog&lt;/h1&gt;
+&lt;div class=&#34;grid cards&#34; markdown&gt;
+
+-   :material-clock-fast:{ .lg .middle } __What is Blog?__
+
+    ---
+    **博客，仅音译，英文名为Blogger，为Web Log的混成词。** 
+    **其正式名称为网络日记；又音译为部落格或部落阁等，是社会媒体网络的一部分。是...</description>
+      <link>http://wcowin.work/blog/index.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 09 Jul 2025 07:47:21 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/index.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/index.html</guid>
+      
+    </item>
+    
+    <item>
+      <title>导览</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;p&gt;&amp;lt;!-- !!! tip
+    &lt;ul&gt;
+      &lt;li&gt;通过主题和目录以打开文章&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章&lt;/li&gt;
+        &lt;li&gt;移动端 请点击左上角图标选择主题和文章&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;li&gt;搜索关键词以打开文章&lt;/li&gt;
+      &lt;li&gt;
+   ...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/indexblog.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 09 Jul 2025 07:47:21 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/indexblog.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/indexblog.html</guid>
+      
+    </item>
+    
+    <item>
+      <title>开发</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;p&gt;&amp;lt;!-- !!! tip
+    &lt;ul&gt;
+      &lt;li&gt;通过主题和目录以打开文章&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章&lt;/li&gt;
+        &lt;li&gt;移动端 请点击左上角图标选择主题和文章&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;li&gt;搜索关键词以打开文章&lt;/li&gt;
+      &lt;li&gt;
+   ...&lt;/p&gt;</description>
+      <link>http://wcowin.work/develop/index.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Wed, 09 Jul 2025 07:47:21 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/develop/index.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/develop/index.html</guid>
+      
+    </item>
+    
+    <item>
       <title>404页面</title>
       
       
@@ -47,11 +123,11 @@
 &lt;blockquote&gt;
 &lt;p&gt;自从...&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-      <link>http://wcowin.work/about/404/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/about/404.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/about/404/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/about/404/</guid>
+      <comments>http://wcowin.work/about/404.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/404.html</guid>
       
     </item>
     
@@ -70,37 +146,11 @@
     本文分享了众多好用/好玩网站，涵盖工具、图像、视频处理、学习等多个领域，旨在为用户提供便捷、高效的在线服务。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;2&lt;/strong&gt; 分钟 | :material-circle-edit-ou...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Webplay/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Webplay.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Webplay/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Webplay/</guid>
-      
-    </item>
-    
-    <item>
-      <title>导览</title>
-      
-      
-      
-      
-        
-      
-      <description>&lt;h1&gt;indexblog&lt;/h1&gt;
-&lt;p&gt;&amp;lt;!-- !!! tip
-    &lt;ul&gt;
-      &lt;li&gt;通过主题和目录以打开文章上方标签栏选择主题 在左侧目录选择文章&lt;/li&gt;
-      &lt;ul&gt;
-        &lt;li&gt;Mac/PC端 请在上方标签栏选择主题 在左侧目录选择文章&lt;/li&gt;
-        &lt;li&gt;移动端 请点击左上角图标选择主题和文章&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;li&gt;搜索关键词以打开文章&lt;/li&gt;
- ...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/indexblog/?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/indexblog/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/indexblog/</guid>
+      <comments>http://wcowin.work/blog/Webplay.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Webplay.html</guid>
       
     </item>
     
@@ -119,11 +169,11 @@
 &lt;div class=&#34;grid cards&#34; markdown&gt;
 
 -   :simple-apple:{ ....</description>
-      <link>http://wcowin.work/blog/macsoft/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/macsoft.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/macsoft/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/macsoft/</guid>
+      <comments>http://wcowin.work/blog/macsoft.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/macsoft.html</guid>
       
     </item>
     
@@ -138,11 +188,11 @@
         
       
       <description>临时邮箱是一个一次性使用的邮箱地址，保护隐私、避免垃圾邮件，适合注册试用、开发测试等场景。了解临时邮箱的优势和使用方法。</description>
-      <link>http://wcowin.work/blog/temp-email/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/temp-email.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/temp-email/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/temp-email/</guid>
+      <comments>http://wcowin.work/blog/temp-email.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/temp-email.html</guid>
       
     </item>
     
@@ -161,11 +211,11 @@
     语雀，蚂蚁集团旗下文档与知识库工具，源于内部需求，旨在帮助个人和团队记录、分享和交流知识，打造数字花园，促进知识沉淀与创作。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-o...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/yuque/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/yuque.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/yuque/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/yuque/</guid>
+      <comments>http://wcowin.work/blog/yuque.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/yuque.html</guid>
       
     </item>
     
@@ -181,11 +231,11 @@
 &lt;p&gt;&lt;img alt=&#34;WechatIMG706.jpg&#34; src=&#34;https://s2.loli.net/2024/02/01/pPXLIG5T8brVwex.jpg&#34;&gt;
 &lt;img alt=&#34;WechatIMG707.jpg&#34; src=&#34;https://s2.loli.net/2024/02/01/FLzhA3Wxgmdi6jy.jpg&#34;&gt;
 ![WechatIMG708.jpg](https://s2.loli.n...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Academic/ddiancichang/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Academic/ddiancichang.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Academic/ddiancichang/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Academic/ddiancichang/</guid>
+      <comments>http://wcowin.work/blog/Academic/ddiancichang.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Academic/ddiancichang.html</guid>
       
     </item>
     
@@ -202,11 +252,11 @@
     本文强调数学在知识体系中的核心地位，指出所有科学抽象为数学，所有判断基于统计学，体现了数学在科学研究和理性判断中的基础性作用。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edi...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Academic/math/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Academic/math.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Academic/math/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Academic/math/</guid>
+      <comments>http://wcowin.work/blog/Academic/math.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Academic/math.html</guid>
       
     </item>
     
@@ -222,11 +272,11 @@
       
       <description>&lt;h1&gt;第十三届全国大学生数学竞赛(非数学类)决赛详细解答&lt;/h1&gt;
 &lt;p&gt;放一篇Grisha Perelman大佬的文章：&lt;a href=&#34;https://arxiv.org/pdf/math/0303109.pdf&#34;&gt;Ricci flow with surgery on three-manifolds&lt;/a&gt;&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Academic/Math/13js/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Academic/Math/13js.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Academic/Math/13js/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Academic/Math/13js/</guid>
+      <comments>http://wcowin.work/blog/Academic/Math/13js.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Academic/Math/13js.html</guid>
       
     </item>
     
@@ -243,11 +293,11 @@
       <description>&lt;h1&gt;第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答&lt;/h1&gt;
 &lt;p&gt;&lt;img alt=&#34;Alt text&#34; src=&#34;https://pic4.zhimg.com/80/v2-55128c07d3eedc8f1fa9b80cef31218f_1440w.jpg&#34;&gt;
 ![Alt text](https://pic4.zhimg.com/80/v2-d1417a3654f118e0eca0610a1b4b4bdb_1440w.we...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Academic/Math/14/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Academic/Math/14.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Academic/Math/14/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Academic/Math/14/</guid>
+      <comments>http://wcowin.work/blog/Academic/Math/14.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Academic/Math/14.html</guid>
       
     </item>
     
@@ -265,11 +315,11 @@
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-outline:中文字符：&lt;strong&gt;52&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![image](https://s1.imagehub.cc/images/2025/05/08/95791bc65fa16772f50c98c...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Cryptography/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Cryptography/index.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Cryptography/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Cryptography/</guid>
+      <comments>http://wcowin.work/blog/Cryptography/index.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Cryptography/index.html</guid>
       
     </item>
     
@@ -286,11 +336,11 @@
     重置Launchpad设置可解决图标错乱问题。删除desktoppicture.db文件或使用Terminal命令重置图标数据库，恢复默认布局后可手动调整App顺序。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：**1...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/Launchpad/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/Launchpad.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/Launchpad/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/Launchpad/</guid>
+      <comments>http://wcowin.work/blog/Mac/Launchpad.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/Launchpad.html</guid>
       
     </item>
     
@@ -313,11 +363,11 @@
 &lt;p&gt;解决办法:(键盘没坏)&lt;/p&gt;
 &lt;p&gt;这种情况大多数都是让siri给占用了，找到占用的软件杀掉进程就可以了&lt;/p&gt;
 &lt;p&gt;打开活动监视器 ...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/Macesc/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/Macesc.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/Macesc/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/Macesc/</guid>
+      <comments>http://wcowin.work/blog/Mac/Macesc.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/Macesc.html</guid>
       
     </item>
     
@@ -336,11 +386,11 @@
     PD虚拟机通过PD Runner软件实现，支持Windows和Linux/Ubuntu虚拟机，可绕过试用期限限制，解决常见问题如密码输入、无窗口启动等，适用于音乐制作和音频处理。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：*&lt;em&gt;2&lt;/em&gt;...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/Pd/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/Pd.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/Pd/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/Pd/</guid>
+      <comments>http://wcowin.work/blog/Mac/Pd.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/Pd.html</guid>
       
     </item>
     
@@ -359,11 +409,11 @@
     本文介绍了Homebrew在Mac和Linux系统上的国内自动安装方法，包括常规和极速安装脚本，并针对SSL证书过期问题提供了解决方案。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/homebrew/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/homebrew.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/homebrew/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/homebrew/</guid>
+      <comments>http://wcowin.work/blog/Mac/homebrew.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/homebrew.html</guid>
       
     </item>
     
@@ -382,11 +432,11 @@
     解决mac无法访问github问题，可先修改hosts文件，若无效，可尝试查询DNS并使用最快IP访问。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circ...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/jiasugithub/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/jiasugithub.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/jiasugithub/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/jiasugithub/</guid>
+      <comments>http://wcowin.work/blog/Mac/jiasugithub.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/jiasugithub.html</guid>
       
     </item>
     
@@ -405,11 +455,11 @@
     通过终端命令可轻松去除Mac系统截图的日期后缀，简化文件命名，方便管理截图。操作简单，恢复默认设置只需更改命令参数。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/jietu/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/jietu.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/jietu/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/jietu/</guid>
+      <comments>http://wcowin.work/blog/Mac/jietu.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/jietu.html</guid>
       
     </item>
     
@@ -428,11 +478,11 @@
     Mac快捷键大全涵盖剪切、拷贝、粘贴等常用操作，支持自定义功能键，提高工作效率。涵盖睡眠、退出登录、关机等系统快捷键，以及访达和系统功能。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;8&lt;/strong&gt; 分钟 | :material...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/kjj/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/kjj.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/kjj/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/kjj/</guid>
+      <comments>http://wcowin.work/blog/Mac/kjj.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/kjj.html</guid>
       
     </item>
     
@@ -451,11 +501,11 @@
     Mac内置丰富小游戏，隐藏于预装编辑器emacs中。通过终端输入特定命令，可查看游戏列表并启动游戏，如贪吃蛇、俄罗斯方块等，操作简便。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-cir...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/maccd/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/maccd.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/maccd/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/maccd/</guid>
+      <comments>http://wcowin.work/blog/Mac/maccd.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/maccd.html</guid>
       
     </item>
     
@@ -474,11 +524,11 @@
     通过终端输入特定命令，可删除Macbook启动台顽固应用图标。步骤包括：打开终端，输入命令获取路径，进入路径并执行删除命令。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :mate...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/shanchu/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/shanchu.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/shanchu/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/shanchu/</guid>
+      <comments>http://wcowin.work/blog/Mac/shanchu.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/shanchu.html</guid>
       
     </item>
     
@@ -497,11 +547,11 @@
     针对macOS应用损坏或来源不明无法打开的问题，本文介绍了开启“任何来源”选项、绕过公证和应用签名的方法，帮助用户解决此类问题。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-cloc...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/sunhuai/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/sunhuai.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/sunhuai/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/sunhuai/</guid>
+      <comments>http://wcowin.work/blog/Mac/sunhuai.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/sunhuai.html</guid>
       
     </item>
     
@@ -529,11 +579,11 @@
 defaults write com.apple.dock...&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;</description>
-      <link>http://wcowin.work/blog/Mac/xjiq/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mac/xjiq.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/xjiq/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/xjiq/</guid>
+      <comments>http://wcowin.work/blog/Mac/xjiq.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mac/xjiq.html</guid>
       
     </item>
     
@@ -550,11 +600,11 @@ defaults write com.apple.dock...&lt;/p&gt;
     麻省理工学院许可证允许用户无限制使用、复制、修改和分发软件，但需保留版权声明和许可声明。软件提供“原样”，不附带任何保证，使用者自行承担风险。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/MIT/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mkdocs/MIT.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/MIT/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/MIT/</guid>
+      <comments>http://wcowin.work/blog/Mkdocs/MIT.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/MIT.html</guid>
       
     </item>
     
@@ -573,11 +623,11 @@ defaults write com.apple.dock...&lt;/p&gt;
     本文介绍了如何为MKdocs添加友链，通过在.md文件中插入特定代码和样式，实现友链的展示，适用于技术博客和个人网站。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circl...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/linktech/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mkdocs/linktech.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/linktech/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/linktech/</guid>
+      <comments>http://wcowin.work/blog/Mkdocs/linktech.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/linktech.html</guid>
       
     </item>
     
@@ -596,11 +646,11 @@ defaults write com.apple.dock...&lt;/p&gt;
     本文介绍了如何使用Mkdocs和GitHub Pages部署静态网页。通过创建GitHub仓库、配置Mkdocs.yml文件，并设置GitHub Actions，实现网页的自动构建和部署。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkdocs1/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mkdocs/mkdocs1.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkdocs1/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs1/</guid>
+      <comments>http://wcowin.work/blog/Mkdocs/mkdocs1.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs1.html</guid>
       
     </item>
     
@@ -619,11 +669,11 @@ defaults write com.apple.dock...&lt;/p&gt;
     本文详细介绍了MkDocs配置文件mkdocs.yml的设置方法，包括网站名称、颜色主题、导航功能、搜索功能等，并提供了代码示例和注意事项，帮助用户自定义和优化MkDocs网站。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-tw...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkdocs2/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mkdocs/mkdocs2.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkdocs2/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs2/</guid>
+      <comments>http://wcowin.work/blog/Mkdocs/mkdocs2.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs2.html</guid>
       
     </item>
     
@@ -641,11 +691,11 @@ defaults write com.apple.dock...&lt;/p&gt;
 &lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
     创建无后缀CNAME文件于/docs目录，填入自定义域名，解决Github Pages部署mkdocs自定义域名失效问题，因每次添加自定义域名后CNAME文件被清除。&lt;/p&gt;
 &lt;p&gt;在/docs目录下创建一个 CNAME 的 无后缀 文件，然后在里面填入你的域名...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkdocs3/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mkdocs/mkdocs3.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkdocs3/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs3/</guid>
+      <comments>http://wcowin.work/blog/Mkdocs/mkdocs3.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs3.html</guid>
       
     </item>
     
@@ -664,57 +714,11 @@ defaults write com.apple.dock...&lt;/p&gt;
     Mkdocs博客插件易于集成，通过简单配置mkdocs.yml文件即可实现。作者信息在/docs/blog/.authors.yml中设置，支持快速搭建个人博客。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
     :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt;...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkdocsblog/?utm_source=rss&amp;utm_medium=referral</link>
+      <link>http://wcowin.work/blog/Mkdocs/mkdocsblog.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkdocsblog/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocsblog/</guid>
-      
-    </item>
-    
-    <item>
-      <title>0.Mkdocs教程前言</title>
-      
-      
-      
-      
-        
-      <category>Mkdocs</category>
-        
-      
-      <description>&lt;h1&gt;0.Mkdocs教程前言&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本教程介绍了Mkdocs的使用，包括官方教程、中文教程、视频教程等，指导用户快速入门并部署静态网页至GitHub pages，适用于网站构建和文档编写。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 |...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkfirst/?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkfirst/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkfirst/</guid>
-      
-    </item>
-    
-    <item>
-      <title>彻底卸载360安全卫士的方法</title>
-      
-      
-      
-      
-        
-      <category>win</category>
-        
-      
-      <description>&lt;h1&gt;彻底卸载360安全卫士的方法&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了两种彻底卸载360安全卫士的方法，包括通过安全模式和常规启动模式进行卸载，并提示操作需谨慎。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle-edit-...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Win/360/?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Win/360/#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Win/360/</guid>
+      <comments>http://wcowin.work/blog/Mkdocs/mkdocsblog.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocsblog.html</guid>
       
     </item>
     

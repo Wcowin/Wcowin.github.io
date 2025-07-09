@@ -1,0 +1,37 @@
+/* LaTeX公式样式优化 */
+.md-typeset .arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* 行内公式样式 */
+.md-typeset mjx-container[jax="CHTML"][display="true"] {
+  margin: 1em 0;
+  display: block;
+  text-align: center;
+}
+
+/* 块级公式样式 */
+.md-typeset mjx-container[jax="CHTML"]:not([display="true"]) {
+  display: inline-block;
+  padding: 0 0.2em;
+  vertical-align: middle;
+}
+
+/* 公式编号 */
+.md-typeset .equation-number {
+  position: absolute;
+  right: 1em;
+}
+
+/* 公式高亮效果 */
+.md-typeset mjx-container:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* 暗色模式下的公式样式 */
+[data-md-color-scheme="slate"] .md-typeset mjx-container:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}

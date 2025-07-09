@@ -13,8 +13,38 @@
     "language": "zh",
     "items": [
         {
-            "id": "http://wcowin.work/about/404/",
-            "url": "http://wcowin.work/about/404/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/index.html",
+            "url": "http://wcowin.work/blog/index.html?utm_source=rss&utm_medium=referral",
+            "title": "MyBlog",
+            "content_html": "<h1>MyBlog</h1>\n<div class=\"grid cards\" markdown>\n\n-   :material-clock-fast:{ .lg .middle } __What is Blog?__\n\n    ---\n    **\u535a\u5ba2\uff0c\u4ec5\u97f3\u8bd1\uff0c\u82f1\u6587\u540d\u4e3aBlogger\uff0c\u4e3aWeb Log\u7684\u6df7\u6210\u8bcd\u3002** \n    **\u5176\u6b63\u5f0f\u540d\u79f0\u4e3a\u7f51\u7edc\u65e5\u8bb0\uff1b\u53c8\u97f3\u8bd1\u4e3a\u90e8\u843d\u683c\u6216\u90e8\u843d\u9601\u7b49\uff0c\u662f\u793e\u4f1a\u5a92\u4f53\u7f51\u7edc\u7684\u4e00\u90e8\u5206\u3002\u662f...",
+            "image": null,
+            "date_modified": "2025-07-09T07:47:21+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "http://wcowin.work/blog/indexblog.html",
+            "url": "http://wcowin.work/blog/indexblog.html?utm_source=rss&utm_medium=referral",
+            "title": "\u5bfc\u89c8",
+            "content_html": "<p>&lt;!-- !!! tip\n    <ul>\n      <li>\u901a\u8fc7\u4e3b\u9898\u548c\u76ee\u5f55\u4ee5\u6253\u5f00\u6587\u7ae0</li>\n      <ul>\n        <li>Mac/PC\u7aef \u8bf7\u5728\u4e0a\u65b9\u6807\u7b7e\u680f\u9009\u62e9\u4e3b\u9898 \u5728\u5de6\u4fa7\u76ee\u5f55\u9009\u62e9\u6587\u7ae0</li>\n        <li>\u79fb\u52a8\u7aef \u8bf7\u70b9\u51fb\u5de6\u4e0a\u89d2\u56fe\u6807\u9009\u62e9\u4e3b\u9898\u548c\u6587\u7ae0</li>\n      </ul>\n      <li>\u641c\u7d22\u5173\u952e\u8bcd\u4ee5\u6253\u5f00\u6587\u7ae0</li>\n      <li>\n   ...</p>",
+            "image": null,
+            "date_modified": "2025-07-09T07:47:21+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "http://wcowin.work/develop/index.html",
+            "url": "http://wcowin.work/develop/index.html?utm_source=rss&utm_medium=referral",
+            "title": "\u5f00\u53d1",
+            "content_html": "<p>&lt;!-- !!! tip\n    <ul>\n      <li>\u901a\u8fc7\u4e3b\u9898\u548c\u76ee\u5f55\u4ee5\u6253\u5f00\u6587\u7ae0</li>\n      <ul>\n        <li>Mac/PC\u7aef \u8bf7\u5728\u4e0a\u65b9\u6807\u7b7e\u680f\u9009\u62e9\u4e3b\u9898 \u5728\u5de6\u4fa7\u76ee\u5f55\u9009\u62e9\u6587\u7ae0</li>\n        <li>\u79fb\u52a8\u7aef \u8bf7\u70b9\u51fb\u5de6\u4e0a\u89d2\u56fe\u6807\u9009\u62e9\u4e3b\u9898\u548c\u6587\u7ae0</li>\n      </ul>\n      <li>\u641c\u7d22\u5173\u952e\u8bcd\u4ee5\u6253\u5f00\u6587\u7ae0</li>\n      <li>\n   ...</p>",
+            "image": null,
+            "date_modified": "2025-07-09T07:47:21+00:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "http://wcowin.work/about/404.html",
+            "url": "http://wcowin.work/about/404.html?utm_source=rss&utm_medium=referral",
             "title": "404\u9875\u9762",
             "content_html": "<h1>404\u9875\u9762</h1>\n<p>!!! note \"404\u9875\u9762\"\n    <a href=\"https://wcowin.work/404\">https://wcowin.work/404</a></p>\n<h2>404\u516c\u76ca\u9875\u9762</h2>\n<p><img alt=\"\" src=\"https://s1.imagehub.cc/images/2024/02/02/b94cdf67258487f737cfa29829629157.png\">{ loading=lazy }</p>\n<blockquote>\n<p>\u81ea\u4ece...</p>\n</blockquote>",
             "image": null,
@@ -23,8 +53,8 @@
             "tags": []
         },
         {
-            "id": "http://wcowin.work/blog/Webplay/",
-            "url": "http://wcowin.work/blog/Webplay/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Webplay.html",
+            "url": "http://wcowin.work/blog/Webplay.html?utm_source=rss&utm_medium=referral",
             "title": "\u597d\u7528/\u597d\u73a9\u7f51\u7ad9\u5206\u4eab",
             "content_html": "<h1>\u597d\u7528/\u597d\u73a9\u7f51\u7ad9\u5206\u4eab</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u5206\u4eab\u4e86\u4f17\u591a\u597d\u7528/\u597d\u73a9\u7f51\u7ad9\uff0c\u6db5\u76d6\u5de5\u5177\u3001\u56fe\u50cf\u3001\u89c6\u9891\u5904\u7406\u3001\u5b66\u4e60\u7b49\u591a\u4e2a\u9886\u57df\uff0c\u65e8\u5728\u4e3a\u7528\u6237\u63d0\u4f9b\u4fbf\u6377\u3001\u9ad8\u6548\u7684\u5728\u7ebf\u670d\u52a1\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>2</strong> \u5206\u949f | :material-circle-edit-ou...</p>",
             "image": null,
@@ -35,18 +65,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/indexblog/",
-            "url": "http://wcowin.work/blog/indexblog/?utm_source=rss&utm_medium=referral",
-            "title": "\u5bfc\u89c8",
-            "content_html": "<h1>indexblog</h1>\n<p>&lt;!-- !!! tip\n    <ul>\n      <li>\u901a\u8fc7\u4e3b\u9898\u548c\u76ee\u5f55\u4ee5\u6253\u5f00\u6587\u7ae0\u4e0a\u65b9\u6807\u7b7e\u680f\u9009\u62e9\u4e3b\u9898 \u5728\u5de6\u4fa7\u76ee\u5f55\u9009\u62e9\u6587\u7ae0</li>\n      <ul>\n        <li>Mac/PC\u7aef \u8bf7\u5728\u4e0a\u65b9\u6807\u7b7e\u680f\u9009\u62e9\u4e3b\u9898 \u5728\u5de6\u4fa7\u76ee\u5f55\u9009\u62e9\u6587\u7ae0</li>\n        <li>\u79fb\u52a8\u7aef \u8bf7\u70b9\u51fb\u5de6\u4e0a\u89d2\u56fe\u6807\u9009\u62e9\u4e3b\u9898\u548c\u6587\u7ae0</li>\n      </ul>\n      <li>\u641c\u7d22\u5173\u952e\u8bcd\u4ee5\u6253\u5f00\u6587\u7ae0</li>\n ...</p>",
-            "image": null,
-            "date_modified": "2025-07-08T16:41:35+00:00",
-            "authors": [],
-            "tags": []
-        },
-        {
-            "id": "http://wcowin.work/blog/macsoft/",
-            "url": "http://wcowin.work/blog/macsoft/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/macsoft.html",
+            "url": "http://wcowin.work/blog/macsoft.html?utm_source=rss&utm_medium=referral",
             "title": "Mac/windows\u8f6f\u4ef6\u7f51\u7ad9\u6c47\u603b",
             "content_html": "<h1>Mac/windows\u8f6f\u4ef6\u7f51\u7ad9\u6c47\u603b</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u6c47\u603b\u4e86Mac\u548cWindows\u5e73\u53f0\u4e0b\u7684\u8f6f\u4ef6\u7f51\u7ad9\uff0c\u5305\u62ecMacKed\u3001xmac\u3001macwk\u7b49\uff0c\u6db5\u76d6\u7cfb\u7edf\u3001\u6e38\u620f\u3001\u8d44\u6e90\u7b49\u591a\u79cd\u7c7b\u578b\uff0c\u65b9\u4fbf\u7528\u6237\u67e5\u627e\u548c\u4e0b\u8f7d\u6240\u9700\u8f6f\u4ef6\u3002</p>\n<h2>MacOS</h2>\n<div class=\"grid cards\" markdown>\n\n-   :simple-apple:{ ....",
             "image": null,
@@ -55,8 +75,8 @@
             "tags": []
         },
         {
-            "id": "http://wcowin.work/blog/temp-email/",
-            "url": "http://wcowin.work/blog/temp-email/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/temp-email.html",
+            "url": "http://wcowin.work/blog/temp-email.html?utm_source=rss&utm_medium=referral",
             "title": "\u4e34\u65f6\u90ae\u7bb1\u662f\u4ec0\u4e48\uff1f",
             "content_html": "\u4e34\u65f6\u90ae\u7bb1\u662f\u4e00\u4e2a\u4e00\u6b21\u6027\u4f7f\u7528\u7684\u90ae\u7bb1\u5730\u5740\uff0c\u4fdd\u62a4\u9690\u79c1\u3001\u907f\u514d\u5783\u573e\u90ae\u4ef6\uff0c\u9002\u5408\u6ce8\u518c\u8bd5\u7528\u3001\u5f00\u53d1\u6d4b\u8bd5\u7b49\u573a\u666f\u3002\u4e86\u89e3\u4e34\u65f6\u90ae\u7bb1\u7684\u4f18\u52bf\u548c\u4f7f\u7528\u65b9\u6cd5\u3002",
             "image": null,
@@ -67,8 +87,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/yuque/",
-            "url": "http://wcowin.work/blog/yuque/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/yuque.html",
+            "url": "http://wcowin.work/blog/yuque.html?utm_source=rss&utm_medium=referral",
             "title": "\u8bed\u96c0",
             "content_html": "<h1>\u8bed\u96c0</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u8bed\u96c0\uff0c\u8682\u8681\u96c6\u56e2\u65d7\u4e0b\u6587\u6863\u4e0e\u77e5\u8bc6\u5e93\u5de5\u5177\uff0c\u6e90\u4e8e\u5185\u90e8\u9700\u6c42\uff0c\u65e8\u5728\u5e2e\u52a9\u4e2a\u4eba\u548c\u56e2\u961f\u8bb0\u5f55\u3001\u5206\u4eab\u548c\u4ea4\u6d41\u77e5\u8bc6\uff0c\u6253\u9020\u6570\u5b57\u82b1\u56ed\uff0c\u4fc3\u8fdb\u77e5\u8bc6\u6c89\u6dc0\u4e0e\u521b\u4f5c\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circle-edit-o...</p>",
             "image": null,
@@ -79,8 +99,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Academic/ddiancichang/",
-            "url": "http://wcowin.work/blog/Academic/ddiancichang/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Academic/ddiancichang.html",
+            "url": "http://wcowin.work/blog/Academic/ddiancichang.html?utm_source=rss&utm_medium=referral",
             "title": "\u7535\u78c1\u573a\u671f\u672b\u516c\u5f0f\u603b\u7ed3(\u624b\u5199)",
             "content_html": "<h1>\u7535\u78c1\u573a\u671f\u672b\u516c\u5f0f\u603b\u7ed3(\u624b\u5199)</h1>\n<p><img alt=\"WechatIMG706.jpg\" src=\"https://s2.loli.net/2024/02/01/pPXLIG5T8brVwex.jpg\">\n<img alt=\"WechatIMG707.jpg\" src=\"https://s2.loli.net/2024/02/01/FLzhA3Wxgmdi6jy.jpg\">\n![WechatIMG708.jpg](https://s2.loli.n...</p>",
             "image": null,
@@ -89,8 +109,8 @@
             "tags": []
         },
         {
-            "id": "http://wcowin.work/blog/Academic/math/",
-            "url": "http://wcowin.work/blog/Academic/math/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Academic/math.html",
+            "url": "http://wcowin.work/blog/Academic/math.html?utm_source=rss&utm_medium=referral",
             "title": "Math",
             "content_html": "<h1>Math</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u5f3a\u8c03\u6570\u5b66\u5728\u77e5\u8bc6\u4f53\u7cfb\u4e2d\u7684\u6838\u5fc3\u5730\u4f4d\uff0c\u6307\u51fa\u6240\u6709\u79d1\u5b66\u62bd\u8c61\u4e3a\u6570\u5b66\uff0c\u6240\u6709\u5224\u65ad\u57fa\u4e8e\u7edf\u8ba1\u5b66\uff0c\u4f53\u73b0\u4e86\u6570\u5b66\u5728\u79d1\u5b66\u7814\u7a76\u548c\u7406\u6027\u5224\u65ad\u4e2d\u7684\u57fa\u7840\u6027\u4f5c\u7528\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circle-edi...</p>",
             "image": null,
@@ -99,8 +119,8 @@
             "tags": []
         },
         {
-            "id": "http://wcowin.work/blog/Academic/Math/13js/",
-            "url": "http://wcowin.work/blog/Academic/Math/13js/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Academic/Math/13js.html",
+            "url": "http://wcowin.work/blog/Academic/Math/13js.html?utm_source=rss&utm_medium=referral",
             "title": "\u7b2c\u5341\u4e09\u5c4a\u5168\u56fd\u5927\u5b66\u751f\u6570\u5b66\u7ade\u8d5b(\u975e\u6570\u5b66\u7c7b)\u51b3\u8d5b\u8be6\u7ec6\u89e3\u7b54",
             "content_html": "<h1>\u7b2c\u5341\u4e09\u5c4a\u5168\u56fd\u5927\u5b66\u751f\u6570\u5b66\u7ade\u8d5b(\u975e\u6570\u5b66\u7c7b)\u51b3\u8d5b\u8be6\u7ec6\u89e3\u7b54</h1>\n<p>\u653e\u4e00\u7bc7Grisha Perelman\u5927\u4f6c\u7684\u6587\u7ae0\uff1a<a href=\"https://arxiv.org/pdf/math/0303109.pdf\">Ricci flow with surgery on three-manifolds</a></p>",
             "image": null,
@@ -111,8 +131,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Academic/Math/14/",
-            "url": "http://wcowin.work/blog/Academic/Math/14/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Academic/Math/14.html",
+            "url": "http://wcowin.work/blog/Academic/Math/14.html?utm_source=rss&utm_medium=referral",
             "title": "\u7b2c\u5341\u56db\u5c4a\u5168\u56fd\u5927\u5b66\u751f\u6570\u5b66\u7ade\u8d5b(\u975e\u6570\u5b66\u7c7b)\u521d\u8d5b\u8865\u8d5b\u8be6\u7ec6\u89e3\u7b54",
             "content_html": "<h1>\u7b2c\u5341\u56db\u5c4a\u5168\u56fd\u5927\u5b66\u751f\u6570\u5b66\u7ade\u8d5b(\u975e\u6570\u5b66\u7c7b)\u521d\u8d5b\u8865\u8d5b\u8be6\u7ec6\u89e3\u7b54</h1>\n<p><img alt=\"Alt text\" src=\"https://pic4.zhimg.com/80/v2-55128c07d3eedc8f1fa9b80cef31218f_1440w.jpg\">\n![Alt text](https://pic4.zhimg.com/80/v2-d1417a3654f118e0eca0610a1b4b4bdb_1440w.we...</p>",
             "image": null,
@@ -123,8 +143,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Cryptography/",
-            "url": "http://wcowin.work/blog/Cryptography/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Cryptography/index.html",
+            "url": "http://wcowin.work/blog/Cryptography/index.html?utm_source=rss&utm_medium=referral",
             "title": "\u738b\u5c0f\u4e91\u7684\u5341\u5e74\u201c\u89e3\u7801\u201d\u542f\u793a\u5f55",
             "content_html": "<h1>index</h1>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circle-edit-outline:\u4e2d\u6587\u5b57\u7b26\uff1a<strong>52</strong></p>\n<p>![image](https://s1.imagehub.cc/images/2025/05/08/95791bc65fa16772f50c98c...</p>",
             "image": null,
@@ -135,8 +155,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/Launchpad/",
-            "url": "http://wcowin.work/blog/Mac/Launchpad/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/Launchpad.html",
+            "url": "http://wcowin.work/blog/Mac/Launchpad.html?utm_source=rss&utm_medium=referral",
             "title": "\u542f\u52a8\u53f0\u56fe\u6807\u987a\u5e8f\u9519\u4e71\u600e\u4e48\u529e",
             "content_html": "<h1>\u542f\u52a8\u53f0\u56fe\u6807\u987a\u5e8f\u9519\u4e71\u600e\u4e48\u529e</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u91cd\u7f6eLaunchpad\u8bbe\u7f6e\u53ef\u89e3\u51b3\u56fe\u6807\u9519\u4e71\u95ee\u9898\u3002\u5220\u9664desktoppicture.db\u6587\u4ef6\u6216\u4f7f\u7528Terminal\u547d\u4ee4\u91cd\u7f6e\u56fe\u6807\u6570\u636e\u5e93\uff0c\u6062\u590d\u9ed8\u8ba4\u5e03\u5c40\u540e\u53ef\u624b\u52a8\u8c03\u6574App\u987a\u5e8f\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a**1...</p>",
             "image": null,
@@ -145,8 +165,8 @@
             "tags": []
         },
         {
-            "id": "http://wcowin.work/blog/Mac/Macesc/",
-            "url": "http://wcowin.work/blog/Mac/Macesc/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/Macesc.html",
+            "url": "http://wcowin.work/blog/Mac/Macesc.html?utm_source=rss&utm_medium=referral",
             "title": "Mac\u7684esc\u952e\u5931\u6548\u7684\u89e3\u51b3\u65b9\u6cd5",
             "content_html": "<h1>Mac\u7684esc\u952e\u5931\u6548\u7684\u89e3\u51b3\u65b9\u6cd5</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    Mac esc\u952e\u5931\u6548\u591a\u56e0Siri\u8fdb\u7a0b\u5360\u7528\uff0c\u53ef\u6253\u5f00\u6d3b\u52a8\u76d1\u89c6\u5668\u6740\u6389Siri\u8fdb\u7a0b\u89e3\u51b3\u3002</p>\n<p>!!! failure \"\u95ee\u9898\"</p>\n<pre><code>\u53d1\u73b0\u65e0\u6cd5\u4f7f\u7528esc\u9000\u51fa\u7f16\u8f91\u6a21\u5f0f\u4e86\n</code></pre>\n<p>\u89e3\u51b3\u529e\u6cd5:(\u952e\u76d8\u6ca1\u574f)</p>\n<p>\u8fd9\u79cd\u60c5\u51b5\u5927\u591a\u6570\u90fd\u662f\u8ba9siri\u7ed9\u5360\u7528\u4e86\uff0c\u627e\u5230\u5360\u7528\u7684\u8f6f\u4ef6\u6740\u6389\u8fdb\u7a0b\u5c31\u53ef\u4ee5\u4e86</p>\n<p>\u6253\u5f00\u6d3b\u52a8\u76d1\u89c6\u5668 ...</p>",
             "image": null,
@@ -157,8 +177,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/Pd/",
-            "url": "http://wcowin.work/blog/Mac/Pd/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/Pd.html",
+            "url": "http://wcowin.work/blog/Mac/Pd.html?utm_source=rss&utm_medium=referral",
             "title": "PD\u865a\u62df\u673a",
             "content_html": "<h1>PD\u865a\u62df\u673a</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    PD\u865a\u62df\u673a\u901a\u8fc7PD Runner\u8f6f\u4ef6\u5b9e\u73b0\uff0c\u652f\u6301Windows\u548cLinux/Ubuntu\u865a\u62df\u673a\uff0c\u53ef\u7ed5\u8fc7\u8bd5\u7528\u671f\u9650\u9650\u5236\uff0c\u89e3\u51b3\u5e38\u89c1\u95ee\u9898\u5982\u5bc6\u7801\u8f93\u5165\u3001\u65e0\u7a97\u53e3\u542f\u52a8\u7b49\uff0c\u9002\u7528\u4e8e\u97f3\u4e50\u5236\u4f5c\u548c\u97f3\u9891\u5904\u7406\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a*<em>2</em>...</p>",
             "image": null,
@@ -169,8 +189,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/homebrew/",
-            "url": "http://wcowin.work/blog/Mac/homebrew/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/homebrew.html",
+            "url": "http://wcowin.work/blog/Mac/homebrew.html?utm_source=rss&utm_medium=referral",
             "title": "Homebrew\u56fd\u5185\u5982\u4f55\u81ea\u52a8\u5b89\u88c5(\u56fd\u5185\u5730\u5740)(Mac & Linux)",
             "content_html": "<h1>Homebrew\u56fd\u5185\u5982\u4f55\u81ea\u52a8\u5b89\u88c5(\u56fd\u5185\u5730\u5740)(Mac &amp; Linux)</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86Homebrew\u5728Mac\u548cLinux\u7cfb\u7edf\u4e0a\u7684\u56fd\u5185\u81ea\u52a8\u5b89\u88c5\u65b9\u6cd5\uff0c\u5305\u62ec\u5e38\u89c4\u548c\u6781\u901f\u5b89\u88c5\u811a\u672c\uff0c\u5e76\u9488\u5bf9SSL\u8bc1\u4e66\u8fc7\u671f\u95ee\u9898\u63d0\u4f9b\u4e86\u89e3\u51b3\u65b9\u6848\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:...</p>",
             "image": null,
@@ -181,8 +201,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/jiasugithub/",
-            "url": "http://wcowin.work/blog/Mac/jiasugithub/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/jiasugithub.html",
+            "url": "http://wcowin.work/blog/Mac/jiasugithub.html?utm_source=rss&utm_medium=referral",
             "title": "mac \u65e0\u6cd5\u8bbf\u95ee github \u7684\u89e3\u51b3\u529e\u6cd5",
             "content_html": "<h1>mac \u65e0\u6cd5\u8bbf\u95ee github \u7684\u89e3\u51b3\u529e\u6cd5</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u89e3\u51b3mac\u65e0\u6cd5\u8bbf\u95eegithub\u95ee\u9898\uff0c\u53ef\u5148\u4fee\u6539hosts\u6587\u4ef6\uff0c\u82e5\u65e0\u6548\uff0c\u53ef\u5c1d\u8bd5\u67e5\u8be2DNS\u5e76\u4f7f\u7528\u6700\u5febIP\u8bbf\u95ee\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circ...</p>",
             "image": null,
@@ -193,8 +213,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/jietu/",
-            "url": "http://wcowin.work/blog/Mac/jietu/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/jietu.html",
+            "url": "http://wcowin.work/blog/Mac/jietu.html?utm_source=rss&utm_medium=referral",
             "title": "Mac\u5c0f\u6280\u5de7:\u53bb\u9664\u7cfb\u7edf\u622a\u56fe\u540d\u7684\u65e5\u671f\u540e\u7f00",
             "content_html": "<h1>Mac\u5c0f\u6280\u5de7:\u53bb\u9664\u7cfb\u7edf\u622a\u56fe\u540d\u7684\u65e5\u671f\u540e\u7f00</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u901a\u8fc7\u7ec8\u7aef\u547d\u4ee4\u53ef\u8f7b\u677e\u53bb\u9664Mac\u7cfb\u7edf\u622a\u56fe\u7684\u65e5\u671f\u540e\u7f00\uff0c\u7b80\u5316\u6587\u4ef6\u547d\u540d\uff0c\u65b9\u4fbf\u7ba1\u7406\u622a\u56fe\u3002\u64cd\u4f5c\u7b80\u5355\uff0c\u6062\u590d\u9ed8\u8ba4\u8bbe\u7f6e\u53ea\u9700\u66f4\u6539\u547d\u4ee4\u53c2\u6570\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-...</p>",
             "image": null,
@@ -205,8 +225,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/kjj/",
-            "url": "http://wcowin.work/blog/Mac/kjj/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/kjj.html",
+            "url": "http://wcowin.work/blog/Mac/kjj.html?utm_source=rss&utm_medium=referral",
             "title": "Mac \u952e\u76d8\u5feb\u6377\u952e",
             "content_html": "<h1>Mac \u952e\u76d8\u5feb\u6377\u952e</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    Mac\u5feb\u6377\u952e\u5927\u5168\u6db5\u76d6\u526a\u5207\u3001\u62f7\u8d1d\u3001\u7c98\u8d34\u7b49\u5e38\u7528\u64cd\u4f5c\uff0c\u652f\u6301\u81ea\u5b9a\u4e49\u529f\u80fd\u952e\uff0c\u63d0\u9ad8\u5de5\u4f5c\u6548\u7387\u3002\u6db5\u76d6\u7761\u7720\u3001\u9000\u51fa\u767b\u5f55\u3001\u5173\u673a\u7b49\u7cfb\u7edf\u5feb\u6377\u952e\uff0c\u4ee5\u53ca\u8bbf\u8fbe\u548c\u7cfb\u7edf\u529f\u80fd\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>8</strong> \u5206\u949f | :material...</p>",
             "image": null,
@@ -217,8 +237,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/maccd/",
-            "url": "http://wcowin.work/blog/Mac/maccd/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/maccd.html",
+            "url": "http://wcowin.work/blog/Mac/maccd.html?utm_source=rss&utm_medium=referral",
             "title": "Mac\u9690\u85cf\u5f69\u86cb",
             "content_html": "<h1>Mac\u9690\u85cf\u5f69\u86cb</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    Mac\u5185\u7f6e\u4e30\u5bcc\u5c0f\u6e38\u620f\uff0c\u9690\u85cf\u4e8e\u9884\u88c5\u7f16\u8f91\u5668emacs\u4e2d\u3002\u901a\u8fc7\u7ec8\u7aef\u8f93\u5165\u7279\u5b9a\u547d\u4ee4\uff0c\u53ef\u67e5\u770b\u6e38\u620f\u5217\u8868\u5e76\u542f\u52a8\u6e38\u620f\uff0c\u5982\u8d2a\u5403\u86c7\u3001\u4fc4\u7f57\u65af\u65b9\u5757\u7b49\uff0c\u64cd\u4f5c\u7b80\u4fbf\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-cir...</p>",
             "image": null,
@@ -229,8 +249,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/shanchu/",
-            "url": "http://wcowin.work/blog/Mac/shanchu/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/shanchu.html",
+            "url": "http://wcowin.work/blog/Mac/shanchu.html?utm_source=rss&utm_medium=referral",
             "title": "Macbook\u542f\u52a8\u53f0\u987d\u56fa\u5e94\u7528\u56fe\u6807\u5220\u9664\u65b9\u6cd5",
             "content_html": "<h1>Macbook\u542f\u52a8\u53f0\u987d\u56fa\u5e94\u7528\u56fe\u6807\u5220\u9664\u65b9\u6cd5</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u901a\u8fc7\u7ec8\u7aef\u8f93\u5165\u7279\u5b9a\u547d\u4ee4\uff0c\u53ef\u5220\u9664Macbook\u542f\u52a8\u53f0\u987d\u56fa\u5e94\u7528\u56fe\u6807\u3002\u6b65\u9aa4\u5305\u62ec\uff1a\u6253\u5f00\u7ec8\u7aef\uff0c\u8f93\u5165\u547d\u4ee4\u83b7\u53d6\u8def\u5f84\uff0c\u8fdb\u5165\u8def\u5f84\u5e76\u6267\u884c\u5220\u9664\u547d\u4ee4\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :mate...</p>",
             "image": null,
@@ -241,8 +261,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/sunhuai/",
-            "url": "http://wcowin.work/blog/Mac/sunhuai/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/sunhuai.html",
+            "url": "http://wcowin.work/blog/Mac/sunhuai.html?utm_source=rss&utm_medium=referral",
             "title": "\u63d0\u793a \u300c\u201cXXX\u201d\u5df2\u635f\u574f,\u65e0\u6cd5\u6253\u5f00\u3002 \u60a8\u5e94\u8be5\u5c06\u5b83\u79fb\u5230\u5e9f\u7eb8\u7bd3\u3002\u300d\u300c\u6253\u4e0d\u5f00 xxx,\u56e0\u4e3a\u5b83\u6765\u81ea\u8eab\u4efd\u4e0d\u660e\u7684\u5f00\u53d1\u8005\u300d\u89e3\u51b3\u65b9\u6cd5",
             "content_html": "<h1>\u63d0\u793a \u300c\u201cXXX\u201d\u5df2\u635f\u574f,\u65e0\u6cd5\u6253\u5f00\u3002 \u60a8\u5e94\u8be5\u5c06\u5b83\u79fb\u5230\u5e9f\u7eb8\u7bd3\u3002\u300d\u300c\u6253\u4e0d\u5f00 xxx,\u56e0\u4e3a\u5b83\u6765\u81ea\u8eab\u4efd\u4e0d\u660e\u7684\u5f00\u53d1\u8005\u300d\u89e3\u51b3\u65b9\u6cd5</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u9488\u5bf9macOS\u5e94\u7528\u635f\u574f\u6216\u6765\u6e90\u4e0d\u660e\u65e0\u6cd5\u6253\u5f00\u7684\u95ee\u9898\uff0c\u672c\u6587\u4ecb\u7ecd\u4e86\u5f00\u542f\u201c\u4efb\u4f55\u6765\u6e90\u201d\u9009\u9879\u3001\u7ed5\u8fc7\u516c\u8bc1\u548c\u5e94\u7528\u7b7e\u540d\u7684\u65b9\u6cd5\uff0c\u5e2e\u52a9\u7528\u6237\u89e3\u51b3\u6b64\u7c7b\u95ee\u9898\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-cloc...</p>",
             "image": null,
@@ -253,8 +273,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mac/xjiq/",
-            "url": "http://wcowin.work/blog/Mac/xjiq/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mac/xjiq.html",
+            "url": "http://wcowin.work/blog/Mac/xjiq.html?utm_source=rss&utm_medium=referral",
             "title": "\u5c0f\u5c0fMac\u6280\u5de7",
             "content_html": "<h1>\u5c0f\u5c0fMac\u6280\u5de7</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u901a\u8fc7\u7ec8\u7aef\u8f93\u5165\u7279\u5b9a\u6307\u4ee4\uff0c\u5b9e\u73b0Mac Dock\u680f\u4ec5\u663e\u793a\u5f53\u524d\u8fd0\u884c\u7684\u5e94\u7528\u7a0b\u5e8f\uff0c\u65b9\u4fbf\u7528\u6237\u7ba1\u7406\u591a\u4efb\u52a1\u3002</p>\n<p>\u53ea\u663e\u793a\u5f53\u524d\u8fd0\u884c\u7684\u5e94\u7528</p>\n<ol>\n<li>\n<p>\u6253\u5f00\u7ec8\u7aef\uff08Terminal.app\uff09</p>\n</li>\n<li>\n<p>\u8f93\u5165\u4e0b\u5217\u6307\u4ee4\u540e\uff0c\u6309\u56de\u8f66\u952e\u8fd0\u884c\uff0cDock\u680f\u53ea\u663e\u793a\u5f53\u524d\u8fd0\u884c\u4e2d\u7684\u5e94\u7528\u7a0b\u5e8f\uff1a\n```\ndefaults write com.apple.dock...</p>\n</li>\n</ol>",
             "image": null,
@@ -265,8 +285,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mkdocs/MIT/",
-            "url": "http://wcowin.work/blog/Mkdocs/MIT/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mkdocs/MIT.html",
+            "url": "http://wcowin.work/blog/Mkdocs/MIT.html?utm_source=rss&utm_medium=referral",
             "title": "MIT\u8bb8\u53ef\u58f0\u660e",
             "content_html": "<h1>MIT\u8bb8\u53ef\u58f0\u660e</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u9ebb\u7701\u7406\u5de5\u5b66\u9662\u8bb8\u53ef\u8bc1\u5141\u8bb8\u7528\u6237\u65e0\u9650\u5236\u4f7f\u7528\u3001\u590d\u5236\u3001\u4fee\u6539\u548c\u5206\u53d1\u8f6f\u4ef6\uff0c\u4f46\u9700\u4fdd\u7559\u7248\u6743\u58f0\u660e\u548c\u8bb8\u53ef\u58f0\u660e\u3002\u8f6f\u4ef6\u63d0\u4f9b\u201c\u539f\u6837\u201d\uff0c\u4e0d\u9644\u5e26\u4efb\u4f55\u4fdd\u8bc1\uff0c\u4f7f\u7528\u8005\u81ea\u884c\u627f\u62c5\u98ce\u9669\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material...</p>",
             "image": null,
@@ -275,8 +295,8 @@
             "tags": []
         },
         {
-            "id": "http://wcowin.work/blog/Mkdocs/linktech/",
-            "url": "http://wcowin.work/blog/Mkdocs/linktech/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mkdocs/linktech.html",
+            "url": "http://wcowin.work/blog/Mkdocs/linktech.html?utm_source=rss&utm_medium=referral",
             "title": "\u5982\u4f55\u7ed9MKdocs\u6dfb\u52a0\u53cb\u94fe",
             "content_html": "<h1>\u5982\u4f55\u7ed9MKdocs\u6dfb\u52a0\u53cb\u94fe</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86\u5982\u4f55\u4e3aMKdocs\u6dfb\u52a0\u53cb\u94fe\uff0c\u901a\u8fc7\u5728.md\u6587\u4ef6\u4e2d\u63d2\u5165\u7279\u5b9a\u4ee3\u7801\u548c\u6837\u5f0f\uff0c\u5b9e\u73b0\u53cb\u94fe\u7684\u5c55\u793a\uff0c\u9002\u7528\u4e8e\u6280\u672f\u535a\u5ba2\u548c\u4e2a\u4eba\u7f51\u7ad9\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circl...</p>",
             "image": null,
@@ -287,8 +307,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mkdocs/mkdocs1/",
-            "url": "http://wcowin.work/blog/Mkdocs/mkdocs1/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mkdocs/mkdocs1.html",
+            "url": "http://wcowin.work/blog/Mkdocs/mkdocs1.html?utm_source=rss&utm_medium=referral",
             "title": "1.\u5229\u7528Mkdocs\u90e8\u7f72\u9759\u6001\u7f51\u9875",
             "content_html": "<h1>\u5229\u7528Mkdocs\u90e8\u7f72\u9759\u6001\u7f51\u9875\u81f3GitHubpages</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86\u5982\u4f55\u4f7f\u7528Mkdocs\u548cGitHub Pages\u90e8\u7f72\u9759\u6001\u7f51\u9875\u3002\u901a\u8fc7\u521b\u5efaGitHub\u4ed3\u5e93\u3001\u914d\u7f6eMkdocs.yml\u6587\u4ef6\uff0c\u5e76\u8bbe\u7f6eGitHub Actions\uff0c\u5b9e\u73b0\u7f51\u9875\u7684\u81ea\u52a8\u6784\u5efa\u548c\u90e8\u7f72\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-...</p>",
             "image": null,
@@ -299,8 +319,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mkdocs/mkdocs2/",
-            "url": "http://wcowin.work/blog/Mkdocs/mkdocs2/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mkdocs/mkdocs2.html",
+            "url": "http://wcowin.work/blog/Mkdocs/mkdocs2.html?utm_source=rss&utm_medium=referral",
             "title": "2.Mkdocs\u914d\u7f6e\u8bf4\u660e(mkdocs.yml)",
             "content_html": "<h1>2.Mkdocs\u914d\u7f6e\u8bf4\u660e(mkdocs.yml)</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u8be6\u7ec6\u4ecb\u7ecd\u4e86MkDocs\u914d\u7f6e\u6587\u4ef6mkdocs.yml\u7684\u8bbe\u7f6e\u65b9\u6cd5\uff0c\u5305\u62ec\u7f51\u7ad9\u540d\u79f0\u3001\u989c\u8272\u4e3b\u9898\u3001\u5bfc\u822a\u529f\u80fd\u3001\u641c\u7d22\u529f\u80fd\u7b49\uff0c\u5e76\u63d0\u4f9b\u4e86\u4ee3\u7801\u793a\u4f8b\u548c\u6ce8\u610f\u4e8b\u9879\uff0c\u5e2e\u52a9\u7528\u6237\u81ea\u5b9a\u4e49\u548c\u4f18\u5316MkDocs\u7f51\u7ad9\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-tw...</p>",
             "image": null,
@@ -311,8 +331,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mkdocs/mkdocs3/",
-            "url": "http://wcowin.work/blog/Mkdocs/mkdocs3/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mkdocs/mkdocs3.html",
+            "url": "http://wcowin.work/blog/Mkdocs/mkdocs3.html?utm_source=rss&utm_medium=referral",
             "title": "3.\u89e3\u51b3Github Pages\u90e8\u7f72mkdocs\u81ea\u5b9a\u4e49\u57df\u540d\u5931\u6548\u7684\u95ee\u9898",
             "content_html": "<h1>3.\u89e3\u51b3Github Pages\u90e8\u7f72mkdocs\u81ea\u5b9a\u4e49\u57df\u540d\u5931\u6548\u7684\u95ee\u9898</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u521b\u5efa\u65e0\u540e\u7f00CNAME\u6587\u4ef6\u4e8e/docs\u76ee\u5f55\uff0c\u586b\u5165\u81ea\u5b9a\u4e49\u57df\u540d\uff0c\u89e3\u51b3Github Pages\u90e8\u7f72mkdocs\u81ea\u5b9a\u4e49\u57df\u540d\u5931\u6548\u95ee\u9898\uff0c\u56e0\u6bcf\u6b21\u6dfb\u52a0\u81ea\u5b9a\u4e49\u57df\u540d\u540eCNAME\u6587\u4ef6\u88ab\u6e05\u9664\u3002</p>\n<p>\u5728/docs\u76ee\u5f55\u4e0b\u521b\u5efa\u4e00\u4e2a CNAME \u7684 \u65e0\u540e\u7f00 \u6587\u4ef6\uff0c\u7136\u540e\u5728\u91cc\u9762\u586b\u5165\u4f60\u7684\u57df\u540d...</p>",
             "image": null,
@@ -323,8 +343,8 @@
             ]
         },
         {
-            "id": "http://wcowin.work/blog/Mkdocs/mkdocsblog/",
-            "url": "http://wcowin.work/blog/Mkdocs/mkdocsblog/?utm_source=rss&utm_medium=referral",
+            "id": "http://wcowin.work/blog/Mkdocs/mkdocsblog.html",
+            "url": "http://wcowin.work/blog/Mkdocs/mkdocsblog.html?utm_source=rss&utm_medium=referral",
             "title": "\u7f51\u7ad9\u6dfb\u52a0Mkdocs\u535a\u5ba2",
             "content_html": "<h1>\u7f51\u7ad9\u6dfb\u52a0Mkdocs\u535a\u5ba2</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    Mkdocs\u535a\u5ba2\u63d2\u4ef6\u6613\u4e8e\u96c6\u6210\uff0c\u901a\u8fc7\u7b80\u5355\u914d\u7f6emkdocs.yml\u6587\u4ef6\u5373\u53ef\u5b9e\u73b0\u3002\u4f5c\u8005\u4fe1\u606f\u5728/docs/blog/.authors.yml\u4e2d\u8bbe\u7f6e\uff0c\u652f\u6301\u5feb\u901f\u642d\u5efa\u4e2a\u4eba\u535a\u5ba2\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong>...</p>",
             "image": null,
@@ -332,30 +352,6 @@
             "authors": [],
             "tags": [
                 "Mkdocs"
-            ]
-        },
-        {
-            "id": "http://wcowin.work/blog/Mkdocs/mkfirst/",
-            "url": "http://wcowin.work/blog/Mkdocs/mkfirst/?utm_source=rss&utm_medium=referral",
-            "title": "0.Mkdocs\u6559\u7a0b\u524d\u8a00",
-            "content_html": "<h1>0.Mkdocs\u6559\u7a0b\u524d\u8a00</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6559\u7a0b\u4ecb\u7ecd\u4e86Mkdocs\u7684\u4f7f\u7528\uff0c\u5305\u62ec\u5b98\u65b9\u6559\u7a0b\u3001\u4e2d\u6587\u6559\u7a0b\u3001\u89c6\u9891\u6559\u7a0b\u7b49\uff0c\u6307\u5bfc\u7528\u6237\u5feb\u901f\u5165\u95e8\u5e76\u90e8\u7f72\u9759\u6001\u7f51\u9875\u81f3GitHub pages\uff0c\u9002\u7528\u4e8e\u7f51\u7ad9\u6784\u5efa\u548c\u6587\u6863\u7f16\u5199\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f |...</p>",
-            "image": null,
-            "date_modified": "2025-07-08T16:41:35+00:00",
-            "authors": [],
-            "tags": [
-                "Mkdocs"
-            ]
-        },
-        {
-            "id": "http://wcowin.work/blog/Win/360/",
-            "url": "http://wcowin.work/blog/Win/360/?utm_source=rss&utm_medium=referral",
-            "title": "\u5f7b\u5e95\u5378\u8f7d360\u5b89\u5168\u536b\u58eb\u7684\u65b9\u6cd5",
-            "content_html": "<h1>\u5f7b\u5e95\u5378\u8f7d360\u5b89\u5168\u536b\u58eb\u7684\u65b9\u6cd5</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86\u4e24\u79cd\u5f7b\u5e95\u5378\u8f7d360\u5b89\u5168\u536b\u58eb\u7684\u65b9\u6cd5\uff0c\u5305\u62ec\u901a\u8fc7\u5b89\u5168\u6a21\u5f0f\u548c\u5e38\u89c4\u542f\u52a8\u6a21\u5f0f\u8fdb\u884c\u5378\u8f7d\uff0c\u5e76\u63d0\u793a\u64cd\u4f5c\u9700\u8c28\u614e\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circle-edit-...</p>",
-            "image": null,
-            "date_modified": "2025-07-08T16:41:35+00:00",
-            "authors": [],
-            "tags": [
-                "win"
             ]
         }
     ]
