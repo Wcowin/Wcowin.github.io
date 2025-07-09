@@ -33,3 +33,9 @@ Header set X-XSS-Protection "1; mode=block"
 <IfModule mod_brotli.c>
   AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml
 </IfModule>
+
+# 启用HTTP/2服务器推送
+<IfModule mod_http2.c>
+  H2PushResource add /assets/stylesheets/main.css
+  H2PushResource add /assets/javascripts/bundle.js
+</IfModule>
