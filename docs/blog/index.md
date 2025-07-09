@@ -23,10 +23,3 @@ hide_reading_time: true
 
 ***
 
-
-<!-- <style>
-
-.md-grid {
-  max-width: 1100px;
-}
-</style> -->

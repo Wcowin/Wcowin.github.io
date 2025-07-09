@@ -308,8 +308,8 @@ nav:
         - 2024: about/zongjie/2024.md
 
     - 25考研(已完结): about/kaoyan.md
-  - Mkdocs教程: https://wcowin.work/Mkdocs-Wcowin/
-  - 个人简介: https://wcowin.work/Personal-Profile/#
+  - Mkdocs中文教程: https://wcowin.work/Mkdocs-Wcowin/
+  # - 个人简介: https://wcowin.work/Personal-Profile/#
   - 开往: https://www.travellings.cn/go.html
   # - RSS: https://blog.csdn.net/m0_63203517/rss/list?spm=1001.2014.3001.5494
 
@@ -421,7 +421,7 @@ plugins:
   # - social
   - search:
       separator: '[\s\u200b\-]'
-  # - offline
+  - offline
   # - glightbox:
   #     enabled: !ENV [glightbox, false]
   #     touchNavigation: true
@@ -528,10 +528,10 @@ markdown_extensions:
 
   
 extra_javascript:
-  - javascripts/extra.js 
+  # - javascripts/extra.js 
   - javascripts/extra2.js
   # - javascripts/bannerSlider.js
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
 
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
@@ -580,6 +580,7 @@ extra_css:
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
+  - stylesheets/latex.css
 
 watch: #监听文件变动自动刷新
   - docs
