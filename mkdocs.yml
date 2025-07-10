@@ -420,6 +420,7 @@ plugins:
         utm_medium: "referral"
   # - social
   - search:
+      enabled: !ENV [CI, false]
       separator: '[\s\u200b\-]'
   - offline
   # - glightbox:
@@ -555,10 +556,10 @@ extra_css:
   # - stylesheets/extra.css
   - stylesheets/extra2.css
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
-  # - stylesheets/link.css  #友链
+  - stylesheets/link.css  #友链
   # - stylesheets/poem.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
   # - stylesheets/card2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
   # - stylesheets/customize.css  #按钮圆角化

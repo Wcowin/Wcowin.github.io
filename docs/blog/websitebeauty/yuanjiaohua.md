@@ -22,59 +22,26 @@ comments: false
 ```css
 :root {
   --admonition-border-left-width: 0.2rem;
-  --base-border-radius: 0.5rem;
+  --base-border-radius: 1rem;
+  /* --card-hover-shadow: 0 0 0.2rem #ffffff40; */
 }
 
-/* Change font family of filename present on top of code block. */
-/* .highlight span.filename {
-  border-bottom: none;
-  border-radius: var(--base-border-radius);
-  display: inline;
-  font-family: var(--md-code-font-family);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 5px;
-  text-align: center;
-}
-.highlight span.filename + pre > code {
-  border-radius: var(--base-border-radius);
-  border-top-left-radius: 0;
-}
-.md-typeset pre > code {
-  border-radius: var(--base-border-radius);
-} */
-
-/* Customize admonition layout */
-/* .md-typeset .admonition {
-  border-width: 0px;
-  border-left-width: var(--admonition-border-left-width);
-}
-
-[dir="ltr"] .md-typeset blockquote {
-  border-radius: 0.2rem;
-  border-left-width: var(--admonition-border-left-width);
-} */
-
-/* Grid Cards */
-.md-typeset .grid.cards > ul > li {
+/* 卡片圆角与悬浮阴影 */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .md-button,
+.md-typeset table:not([class]) {
   border-radius: var(--base-border-radius);
 }
 .md-typeset .grid.cards > ul > li:hover {
-  box-shadow: 0 0 0.2rem #ffffff40;
+  box-shadow: var(--card-hover-shadow);
 }
 
-/* Markdown Button */
-.md-typeset .md-button {
-  border-radius: var(--base-border-radius);
-}
-
-/* Footer: Social Links */
+/* 页脚社交图标高度 */
 .md-social__link svg {
   max-height: 1rem;
 }
 
-
-/* Forms */
+/* 搜索框及下拉结果圆角 */
 .md-search__form {
   border-radius: var(--base-border-radius);
 }
@@ -89,185 +56,57 @@ comments: false
   border-bottom-left-radius: var(--base-border-radius);
 }
 
-/* Blog - index.md */
-/* div.md-content header {
-  display: none;
+/* 可选：如需恢复代码块、警告框等样式，取消注释即可 */
+/*
+.highlight span.filename {
+  border-bottom: none;
+  border-radius: var(--base-border-radius);
+  display: inline;
+  font-family: var(--md-code-font-family);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 5px;
+  text-align: center;
 }
+.highlight span.filename + pre > code,
+.md-typeset pre > code {
+  border-radius: var(--base-border-radius);
+  border-top-left-radius: 0;
+}
+.md-typeset .admonition {
+  border-width: 0px;
+  border-left-width: var(--admonition-border-left-width);
+}
+[dir="ltr"] .md-typeset blockquote {
+  border-radius: 0.2rem;
+  border-left-width: var(--admonition-border-left-width);
+}
+*/
 
-.md-post--excerpt {
-  background-color: var(--md-accent-fg-color--transparent);
-  box-shadow: 0 0 0 1rem var(--md-accent-fg-color--transparent);
+/* 可选：博客相关样式，按需启用 */
+
+/* .md-post--excerpt {
+  background-color: rgba(68,138,255,.1);
+  box-shadow: 0 0 0 1rem rgba(68,138,255,.1);
   border-radius: var(--base-border-radius);
 }
-
 .md-post--excerpt .md-post__header {
-  justify-content: center;
+  justify-content: left;
 }
-
 .md-post--excerpt .md-post__content > h2,
 .md-post__action {
-  text-align: center;
+  text-align: left;
 } */
 
-/* Table */
-.md-typeset table:not([class]) {
-  border-radius: var(--base-border-radius);
-}
 
-
-
-
-
-.carousel {
-  width: 60%;
-  height: 100%;
-
-  border-radius: 0.4rem;
+/* 让所有admonition（包括!!! tip）圆角化且更自然 */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 1.5em;
+  box-shadow: 0 2px 12px 0 rgba(60,60,60,0.07);
+  transition: border-radius 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
   overflow: hidden;
-  position: relative;
-
-  /* 居中 */
-  margin-left: auto;
-  margin-right: auto;
-
-  border: 0.075rem solid #7b7b7b7a;
-  box-shadow: var(--md-shadow-z1);
 }
-
-.carousel-container {
-  width: 100%;
-  height: 100%;
-
-  position: relative;
-  left: 0;
-
-  display: flex;
-
-  /* 过渡动画 1s */
-  transition: all 1s;
-}
-
-.carousel-hover {
-  height: 100%;
-  width: 10%;
-  position: absolute;
-  top: 0;
-
-  /* 子元素垂直居中 */
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}
-.carousel-hover.left {
-  left: 0;
-}
-.carousel-hover.right {
-  right: 0;
-}
-
-.carousel-hover button {
-  background-color: var(--md-accent-fg-color);
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.carousel-hover button::after {
-  display: block;
-  height: 1.5rem;
-  width: 1.5rem;
-
-  background-color: white;
-  content: "";
-  mask-position: center;
-  -webkit-mask-position: center;
-}
-.carousel-hover.left button::after {
-  mask-image: var(--md-tabbed-icon--prev);
-  -webkit-mask-image: var(--md-tabbed-icon--prev);
-}
-.carousel-hover.right button::after {
-  mask-image: var(--md-tabbed-icon--next);
-  -webkit-mask-image: var(--md-tabbed-icon--next);
-}
-
-/* hover 外层 */
-.carousel-hover:hover button {
-  opacity: 0.5;
-  transition: opacity 0.3s;
-}
-/* hover 内层 */
-.carousel-hover button:hover {
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
-.carousel-container a {
-  width: 100%;
-  height: 100%;
-
-  flex-shrink: 0;
-}
-
-.carousel-container img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  display: block;
-}
-
-.carousel-bottom {
-  position: absolute;
-  /* 宽度等同于内容宽度 */
-  width: 100%;
-  padding: 20px;
-
-  bottom: 0;
-
-  display: flex;
-  justify-content: center;
-  /* 指示器间距 */
-  gap: 10px;
-
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.carousel-bottom:hover {
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
-.carousel-bottom .indicator {
-  height: 5px;
-  width: 20px;
-
-  background-color: var(--md-accent-fg-color);
-
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.carousel:hover .bottom .indicator {
-  opacity: 1;
-}
-.carousel:hover .shift .btn {
-  opacity: 1;
-}
-
-@media screen and (max-width: 600px) {
-  .carousel {
-      width: 100%;
-  }
-
-  .carousel-hover button {
-      opacity: 1;
-  }
-}
-
 ```
 
 ## 图片圆角化

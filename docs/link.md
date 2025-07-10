@@ -834,7 +834,7 @@ hide:
      </div> 
     </div> 
     <div class="card"> 
-    <img class="ava" src="hhttps://zimingyuan.github.io/img/profile.jpg" /> 
+    <img class="ava" src="https://zimingyuan.github.io/img/profile.jpg" /> 
     <div class="card-header"> 
       <div> 
       <a href="https://zimingyuan.github.io" target="_blank">VnYzm的博客</a> 

@@ -30,5 +30,13 @@
     "avatar": "https://cdn.jsdmirror.com/gh/momo54181/momo54181@main/avatar.webp",
     "html": "    <div class=\"card\"> \n     <img class=\"ava\" src=\"https://cdn.jsdmirror.com/gh/momo54181/momo54181@main/avatar.webp\" /> \n     <div class=\"card-header\"> \n      <div> \n      <a href=\"https://blog.mocn.top\" target=\"_blank\">Momo5418's Blog</a> \n      </div> \n      <div class=\"info\">\n      Momo5418的个人博客\n      </div> \n     </div> \n    </div>",
     "timestamp": "2025-07-10 10:10:57"
+  },
+  {
+    "name": "IsshikiHugh's Notebook",
+    "link": "https://note.isshikih.top/",
+    "desc": "我们登上高塔，看到的却只有黑夜。",
+    "avatar": "https://note.isshikih.top/_assets/iro/IroPatch_Brown.png",
+    "html": "    <div class=\"card\"> \n     <img class=\"ava\" src=\"https://note.isshikih.top/_assets/iro/IroPatch_Brown.png\" /> \n     <div class=\"card-header\"> \n      <div> \n      <a href=\"https://note.isshikih.top/\" target=\"_blank\">IsshikiHugh's Notebook</a> \n      </div> \n      <div class=\"info\">\n      我们登上高塔，看到的却只有黑夜。\n      </div> \n     </div> \n    </div>",
+    "timestamp": "2025-07-10 22:02:12"
   }
 ]

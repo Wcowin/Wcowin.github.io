@@ -287,7 +287,7 @@ hide:
         <div class="info">社交分享平台</div>
         </div>
     </div>
-    <div class="card">
+    <!-- <div class="card">
         <img class="ava" src="https://i.stardots.io/wcowin/1750220860750.jpg" />
         <div class="card-header">
         <div>
@@ -295,7 +295,7 @@ hide:
         </div>
         <div class="info">一个专注于分享Mac资源的频道</div>
         </div>
-    </div>
+    </div> -->
     <div class="card">
         <img class="ava" src="https://i.stardots.io/wcowin/1750221795613.jpeg" />
         <div class="card-header">
@@ -316,5 +316,5 @@ hide:
 ## 自动化友链(可选)
 
 ![image](https://s1.imagehub.cc/images/2025/07/10/e1ac1a596a8715e09b797ba95a7f9392.png)
-支持GUI操作，无需编写代码。智能识别并添加友链。
-感兴趣的可以尝试一下给我的仓库star🌟后，添加我的微信私发你Python文件。
+支持GUI操作，无需编写代码。智能识别并添加友链。   
+感兴趣的可以尝试一下。给我的仓库star🌟后，添加我的[微信](https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp)私发你Python文件。
