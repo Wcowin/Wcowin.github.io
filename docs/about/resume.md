@@ -28,6 +28,6 @@ comments: false
 
     ---
 
-    <iframe src="../个人简历.pdf" width="100%" height="1250px" style="border: 1.5px solid #ccc; overflow: auto; border-radius: 18px; background: #fff;"></iframe>
+    <iframe src="/assets/个人简历.pdf" width="100%" height="1250px" style="border: 1.5px solid #ccc; overflow: auto; border-radius: 18px; background: #fff;"></iframe>
 
 </div>

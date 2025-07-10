@@ -20,5 +20,6 @@
     "marscode.enableInlineCommand": true,
     "commentTranslate.targetLanguage": "zh-CN",
     "commentTranslate.hover.enabled": true,
-    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "Codegeex.RepoIndex": true
   }

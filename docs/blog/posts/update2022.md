@@ -6,6 +6,7 @@ categories:
   - 网站更新记录
 readtime: 2
 hide_reading_time: true
+ai_summary: false  # 禁用AI摘要
 ---
 # 2022网站更新记录
 

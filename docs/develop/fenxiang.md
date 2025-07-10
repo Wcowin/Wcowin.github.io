@@ -9,7 +9,7 @@ tags:
 
 来聊聊那些大厂的良心到难以置信的软件叭  
 —————————————————  
-## 腾讯  :simple-tencentqq:
+## 腾讯  :simple-qq:
 
 [QQ影音](https://player.qq.com/)（无广告全平台解码器）    
 [Foxmail](https://www.foxmail.com/)（轻量化个人邮箱，无限空间，无广告客户端）  

@@ -1,5 +1,7 @@
 ---
 title: 许可声明
+ai_summary: false  # 禁用AI摘要
+hide_reading_time: true
 ---
 
 # MIT许可声明
