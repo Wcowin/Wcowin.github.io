@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Wed, 09 Jul 2025 07:48:08 -0000</pubDate>
-    <lastBuildDate>Wed, 09 Jul 2025 07:48:08 -0000</lastBuildDate>
+    <pubDate>Thu, 10 Jul 2025 00:52:56 -0000</pubDate>
+    <lastBuildDate>Thu, 10 Jul 2025 00:52:56 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,121 @@
     
 
     
+    
+    <item>
+      <title>个人简历</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;!-- &lt;div class=&#34;grid cards&#34; markdown&gt;
+
+-   :octicons-bookmark-16:{ .lg .middle } __个人简历__
+
+    ---
+
+    - [个人简历](https://lightpdf.cn/docs/1cpgobc){target=“_blank”}
+
+&lt;/div&gt; --&gt;
+
+&lt;center&gt;&lt;font  co...</description>
+      <link>http://wcowin.work/about/resume.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Thu, 10 Jul 2025 00:52:18 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/resume.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/resume.html</guid>
+      
+    </item>
+    
+    <item>
+      <title>免责声明</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;h1&gt;免责声明&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wcowin.work/&#34;&gt;本站&lt;/a&gt;一贯高度重视知识产权的保护，并一贯遵守中华人民共和国各项知识产权法律、法规及其他的具有法律约束力的规范性文件。本站认为著作权人依法享有的著作权等权利应当得到尊重和法律应有的保护，坚决反对任何违反《中华人民共和国著作权法》及其相关法律法规的行为。为尊重和保护知识产权，保护各方的权利与利益，本站特作出如下声明：&lt;/p&gt;
+&lt;p&gt;1、一切用户在...&lt;/p&gt;</description>
+      <link>http://wcowin.work/about/shengming.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Thu, 10 Jul 2025 00:52:18 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/shengming.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/shengming.html</guid>
+      
+    </item>
+    
+    <item>
+      <title>MIT许可声明</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;h1&gt;MIT许可声明&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://pic3.zhimg.com/80/v2-a0c07e85f2dfdfa5f1eed932883daa50_1440w.webp&#34;&gt;  &lt;/p&gt;
+&lt;p&gt;=== &#34;麻省理工学院许可证&#34;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;版权所有 (c) 2025 Wcowin
+
+特此授予获得此软件和相关文档文件（“软件”）副本的任何人免费许可，以无限制方式处理软件，包括但不限于使用、复制、修改...
+&lt;/code&gt;&lt;/pre&gt;</description>
+      <link>http://wcowin.work/blog/Mkdocs/MIT.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Thu, 10 Jul 2025 00:52:18 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Mkdocs/MIT.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/MIT.html</guid>
+      
+    </item>
+    
+    <item>
+      <title>0.Mkdocs教程前言</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;h1&gt;0.Mkdocs教程前言&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本教程介绍了Mkdocs的使用，包括官方教程、插件列表、中文教程和视频教程，旨在帮助用户快速入门并部署静态网页至GitHub pages。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :mater...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/Mkdocs/mkfirst.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Thu, 10 Jul 2025 00:52:18 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/Mkdocs/mkfirst.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkfirst.html</guid>
+      
+    </item>
+    
+    <item>
+      <title>大厂们的良心软件～</title>
+      
+      
+      
+      
+        
+      <category>技术分享</category>
+        
+      
+      <description>&lt;h1&gt;大厂们的良心软件～&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文盘点了大厂如腾讯、阿里、百度等推出的良心软件，涵盖办公、娱乐、学习等多个领域，如QQ影音、Foxmail、阿里企业邮等，均为免费或性价比高，深受用户喜爱。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 |...&lt;/p&gt;</description>
+      <link>http://wcowin.work/develop/fenxiang.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Thu, 10 Jul 2025 00:52:18 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/develop/fenxiang.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/develop/fenxiang.html</guid>
+      
+    </item>
     
     <item>
       <title>MyBlog</title>
@@ -588,27 +703,6 @@ defaults write com.apple.dock...&lt;/p&gt;
     </item>
     
     <item>
-      <title>MIT许可声明</title>
-      
-      
-      
-      
-        
-      
-      <description>&lt;h1&gt;MIT许可声明&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    麻省理工学院许可证允许用户无限制使用、复制、修改和分发软件，但需保留版权声明和许可声明。软件提供“原样”，不附带任何保证，使用者自行承担风险。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/MIT.html?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/MIT.html#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/MIT.html</guid>
-      
-    </item>
-    
-    <item>
       <title>如何给MKdocs添加友链</title>
       
       
@@ -628,97 +722,6 @@ defaults write com.apple.dock...&lt;/p&gt;
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
       <comments>http://wcowin.work/blog/Mkdocs/linktech.html#__comments</comments>
       <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/linktech.html</guid>
-      
-    </item>
-    
-    <item>
-      <title>1.利用Mkdocs部署静态网页</title>
-      
-      
-      
-      
-        
-      <category>Mkdocs</category>
-        
-      
-      <description>&lt;h1&gt;利用Mkdocs部署静态网页至GitHubpages&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了如何使用Mkdocs和GitHub Pages部署静态网页。通过创建GitHub仓库、配置Mkdocs.yml文件，并设置GitHub Actions，实现网页的自动构建和部署。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkdocs1.html?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkdocs1.html#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs1.html</guid>
-      
-    </item>
-    
-    <item>
-      <title>2.Mkdocs配置说明(mkdocs.yml)</title>
-      
-      
-      
-      
-        
-      <category>Mkdocs</category>
-        
-      
-      <description>&lt;h1&gt;2.Mkdocs配置说明(mkdocs.yml)&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文详细介绍了MkDocs配置文件mkdocs.yml的设置方法，包括网站名称、颜色主题、导航功能、搜索功能等，并提供了代码示例和注意事项，帮助用户自定义和优化MkDocs网站。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-tw...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkdocs2.html?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkdocs2.html#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs2.html</guid>
-      
-    </item>
-    
-    <item>
-      <title>3.解决Github Pages部署mkdocs自定义域名失效的问题</title>
-      
-      
-      
-      
-        
-      <category>Mkdocs</category>
-        
-      
-      <description>&lt;h1&gt;3.解决Github Pages部署mkdocs自定义域名失效的问题&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    创建无后缀CNAME文件于/docs目录，填入自定义域名，解决Github Pages部署mkdocs自定义域名失效问题，因每次添加自定义域名后CNAME文件被清除。&lt;/p&gt;
-&lt;p&gt;在/docs目录下创建一个 CNAME 的 无后缀 文件，然后在里面填入你的域名...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkdocs3.html?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkdocs3.html#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocs3.html</guid>
-      
-    </item>
-    
-    <item>
-      <title>网站添加Mkdocs博客</title>
-      
-      
-      
-      
-        
-      <category>Mkdocs</category>
-        
-      
-      <description>&lt;h1&gt;网站添加Mkdocs博客&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    Mkdocs博客插件易于集成，通过简单配置mkdocs.yml文件即可实现。作者信息在/docs/blog/.authors.yml中设置，支持快速搭建个人博客。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt;...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mkdocs/mkdocsblog.html?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mkdocs/mkdocsblog.html#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/mkdocsblog.html</guid>
       
     </item>
     

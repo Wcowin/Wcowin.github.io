@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Wed, 09 Jul 2025 07:48:08 -0000</pubDate>
-    <lastBuildDate>Wed, 09 Jul 2025 07:48:08 -0000</lastBuildDate>
+    <pubDate>Thu, 10 Jul 2025 00:52:56 -0000</pubDate>
+    <lastBuildDate>Thu, 10 Jul 2025 00:52:56 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -510,10 +510,12 @@
         
       
       <description>&lt;h1&gt;MIT许可声明&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    麻省理工学院许可证允许用户无限制使用、复制、修改和分发软件，但需保留版权声明和许可声明。软件提供“原样”，不附带任何保证，使用者自行承担风险。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material...&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://pic3.zhimg.com/80/v2-a0c07e85f2dfdfa5f1eed932883daa50_1440w.webp&#34;&gt;  &lt;/p&gt;
+&lt;p&gt;=== &#34;麻省理工学院许可证&#34;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;版权所有 (c) 2025 Wcowin
+
+特此授予获得此软件和相关文档文件（“软件”）副本的任何人免费许可，以无限制方式处理软件，包括但不限于使用、复制、修改...
+&lt;/code&gt;&lt;/pre&gt;</description>
       <link>http://wcowin.work/blog/Mkdocs/MIT.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 19 Feb 2025 03:03:49 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -635,12 +637,13 @@
         
       
       <description>&lt;h1&gt;2025网站更新记录&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文记录了2025网站自年初至7月的更新历程，包括优化网站流畅度、引入AI摘要功能、改进友链统计、更新教程、优化页面设计等，旨在提升用户体验和网站性能。&lt;/p&gt;
 &lt;h2&gt;&lt;/p&gt;&lt;h1 id=&#34;01&#34; name=&#34;01&#34;&gt;&lt;strong&gt;2025-07-08&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;优化网站...&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;li&gt;优化网站流畅度（玄学）&lt;/li&gt;
+&lt;li&gt;修复&lt;a href=&#34;../Mkdocs/linktech.md&#34;&gt;友链教程&lt;/a&gt;的一些显示问题（感谢&lt;a href=&#34;https://github.com/jaywhj&#34;&gt;Arron&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;重新设计了页脚样式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;/p&gt;&amp;lt;h1 i...&lt;/h2&gt;</description>
       <link>http://wcowin.work/blog/2025/01/01/2025%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
@@ -686,9 +689,9 @@
       
       <description>&lt;h1&gt;0.Mkdocs教程前言&lt;/h1&gt;
 &lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本教程介绍了Mkdocs的使用，包括官方教程、中文教程、视频教程等，指导用户快速入门并部署静态网页至GitHub pages，适用于网站构建和文档编写。&lt;/p&gt;
+    本教程介绍了Mkdocs的使用，包括官方教程、插件列表、中文教程和视频教程，旨在帮助用户快速入门并部署静态网页至GitHub pages。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 |...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :mater...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Mkdocs/mkfirst.html?utm_source=rss&amp;utm_medium=referral</link>
       <pubDate>Wed, 27 Nov 2024 01:12:53 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_created.xml">Wcowin's Blog</source>
