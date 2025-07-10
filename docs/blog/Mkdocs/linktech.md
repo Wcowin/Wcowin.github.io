@@ -310,3 +310,11 @@ hide:
 </div>
 </div>
 </div>
+
+
+
+## 自动化友链(可选)
+
+![image](https://s1.imagehub.cc/images/2025/07/10/e1ac1a596a8715e09b797ba95a7f9392.png)
+支持GUI操作，无需编写代码。智能识别并添加友链。
+感兴趣的可以尝试一下给我的仓库star🌟后，添加我的微信私发你Python文件。

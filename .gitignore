@@ -6,7 +6,7 @@
 
 # MkDocs 构建输出目录
 site/
-
+temp/
 # Caches, temporary files, and build outputs
 /.cache/
 /temp/
