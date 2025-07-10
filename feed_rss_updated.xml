@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 10 Jul 2025 02:13:43 -0000</pubDate>
-    <lastBuildDate>Thu, 10 Jul 2025 02:13:43 -0000</lastBuildDate>
+    <pubDate>Thu, 10 Jul 2025 15:28:42 -0000</pubDate>
+    <lastBuildDate>Thu, 10 Jul 2025 15:28:42 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -43,14 +43,37 @@
       
       <description>&lt;h1&gt;如何给MKdocs添加友链&lt;/h1&gt;
 &lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    本文介绍了为MKdocs添加友链的方法，包括代码示例和样式设置，同时提及了自动化友链工具，适用于分享技术博客等场景。&lt;/p&gt;
+    本文介绍了为MKdocs添加友链的方法，包括代码示例、样式设置和自动化工具的使用，适用于分享技术博客等场景，简化了友链添加过程。&lt;/p&gt;
 &lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-circle...&lt;/p&gt;</description>
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :material-...&lt;/p&gt;</description>
       <link>http://wcowin.work/blog/Mkdocs/linktech.html?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Thu, 10 Jul 2025 02:13:03 +0000</pubDate>
+      <pubDate>Thu, 10 Jul 2025 15:28:00 +0000</pubDate>
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
       <comments>http://wcowin.work/blog/Mkdocs/linktech.html#__comments</comments>
       <guid isPermaLink="true">http://wcowin.work/blog/Mkdocs/linktech.html</guid>
+      
+    </item>
+    
+    <item>
+      <title>网页圆角化设计</title>
+      
+      
+      
+      
+        
+      <category>Mkdocs</category>
+        
+      
+      <description>&lt;h1&gt;网页圆角化设计&lt;/h1&gt;
+&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
+    本文介绍了网页圆角化设计的方法，包括通过CSS文件引入和md文件使用，展示了图片圆角化、圆角边框和按钮设计的实现过程，适用于网页美化与交互设计。&lt;/p&gt;
+&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
+    :material-clock-time-two-outline:阅读时间：&lt;strong&gt;1&lt;/strong&gt; 分钟 | :materia...&lt;/p&gt;</description>
+      <link>http://wcowin.work/blog/websitebeauty/yuanjiaohua.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Thu, 10 Jul 2025 15:28:00 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/blog/websitebeauty/yuanjiaohua.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/blog/websitebeauty/yuanjiaohua.html</guid>
       
     </item>
     
@@ -690,38 +713,6 @@
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
       <comments>http://wcowin.work/blog/Mac/sunhuai.html#__comments</comments>
       <guid isPermaLink="true">http://wcowin.work/blog/Mac/sunhuai.html</guid>
-      
-    </item>
-    
-    <item>
-      <title>小小Mac技巧</title>
-      
-      
-      
-      
-        
-      <category>Mac</category>
-        
-      
-      <description>&lt;h1&gt;小小Mac技巧&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    通过终端输入特定指令，实现Mac Dock栏仅显示当前运行的应用程序，方便用户管理多任务。&lt;/p&gt;
-&lt;p&gt;只显示当前运行的应用&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;打开终端（Terminal.app）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;输入下列指令后，按回车键运行，Dock栏只显示当前运行中的应用程序：
-```
-defaults write com.apple.dock...&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description>
-      <link>http://wcowin.work/blog/Mac/xjiq.html?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/xjiq.html#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/xjiq.html</guid>
       
     </item>
     

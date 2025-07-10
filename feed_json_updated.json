@@ -16,9 +16,21 @@
             "id": "http://wcowin.work/blog/Mkdocs/linktech.html",
             "url": "http://wcowin.work/blog/Mkdocs/linktech.html?utm_source=rss&utm_medium=referral",
             "title": "\u5982\u4f55\u7ed9MKdocs\u6dfb\u52a0\u53cb\u94fe",
-            "content_html": "<h1>\u5982\u4f55\u7ed9MKdocs\u6dfb\u52a0\u53cb\u94fe</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86\u4e3aMKdocs\u6dfb\u52a0\u53cb\u94fe\u7684\u65b9\u6cd5\uff0c\u5305\u62ec\u4ee3\u7801\u793a\u4f8b\u548c\u6837\u5f0f\u8bbe\u7f6e\uff0c\u540c\u65f6\u63d0\u53ca\u4e86\u81ea\u52a8\u5316\u53cb\u94fe\u5de5\u5177\uff0c\u9002\u7528\u4e8e\u5206\u4eab\u6280\u672f\u535a\u5ba2\u7b49\u573a\u666f\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-circle...</p>",
+            "content_html": "<h1>\u5982\u4f55\u7ed9MKdocs\u6dfb\u52a0\u53cb\u94fe</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86\u4e3aMKdocs\u6dfb\u52a0\u53cb\u94fe\u7684\u65b9\u6cd5\uff0c\u5305\u62ec\u4ee3\u7801\u793a\u4f8b\u3001\u6837\u5f0f\u8bbe\u7f6e\u548c\u81ea\u52a8\u5316\u5de5\u5177\u7684\u4f7f\u7528\uff0c\u9002\u7528\u4e8e\u5206\u4eab\u6280\u672f\u535a\u5ba2\u7b49\u573a\u666f\uff0c\u7b80\u5316\u4e86\u53cb\u94fe\u6dfb\u52a0\u8fc7\u7a0b\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :material-...</p>",
             "image": null,
-            "date_modified": "2025-07-10T02:13:03+00:00",
+            "date_modified": "2025-07-10T15:28:00+00:00",
+            "authors": [],
+            "tags": [
+                "Mkdocs"
+            ]
+        },
+        {
+            "id": "http://wcowin.work/blog/websitebeauty/yuanjiaohua.html",
+            "url": "http://wcowin.work/blog/websitebeauty/yuanjiaohua.html?utm_source=rss&utm_medium=referral",
+            "title": "\u7f51\u9875\u5706\u89d2\u5316\u8bbe\u8ba1",
+            "content_html": "<h1>\u7f51\u9875\u5706\u89d2\u5316\u8bbe\u8ba1</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u672c\u6587\u4ecb\u7ecd\u4e86\u7f51\u9875\u5706\u89d2\u5316\u8bbe\u8ba1\u7684\u65b9\u6cd5\uff0c\u5305\u62ec\u901a\u8fc7CSS\u6587\u4ef6\u5f15\u5165\u548cmd\u6587\u4ef6\u4f7f\u7528\uff0c\u5c55\u793a\u4e86\u56fe\u7247\u5706\u89d2\u5316\u3001\u5706\u89d2\u8fb9\u6846\u548c\u6309\u94ae\u8bbe\u8ba1\u7684\u5b9e\u73b0\u8fc7\u7a0b\uff0c\u9002\u7528\u4e8e\u7f51\u9875\u7f8e\u5316\u4e0e\u4ea4\u4e92\u8bbe\u8ba1\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-clock-time-two-outline:\u9605\u8bfb\u65f6\u95f4\uff1a<strong>1</strong> \u5206\u949f | :materia...</p>",
+            "image": null,
+            "date_modified": "2025-07-10T15:28:00+00:00",
             "authors": [],
             "tags": [
                 "Mkdocs"
@@ -331,18 +343,6 @@
             "url": "http://wcowin.work/blog/Mac/sunhuai.html?utm_source=rss&utm_medium=referral",
             "title": "\u63d0\u793a \u300c\u201cXXX\u201d\u5df2\u635f\u574f,\u65e0\u6cd5\u6253\u5f00\u3002 \u60a8\u5e94\u8be5\u5c06\u5b83\u79fb\u5230\u5e9f\u7eb8\u7bd3\u3002\u300d\u300c\u6253\u4e0d\u5f00 xxx,\u56e0\u4e3a\u5b83\u6765\u81ea\u8eab\u4efd\u4e0d\u660e\u7684\u5f00\u53d1\u8005\u300d\u89e3\u51b3\u65b9\u6cd5",
             "content_html": "<h1>\u63d0\u793a \u300c\u201cXXX\u201d\u5df2\u635f\u574f,\u65e0\u6cd5\u6253\u5f00\u3002 \u60a8\u5e94\u8be5\u5c06\u5b83\u79fb\u5230\u5e9f\u7eb8\u7bd3\u3002\u300d\u300c\u6253\u4e0d\u5f00 xxx,\u56e0\u4e3a\u5b83\u6765\u81ea\u8eab\u4efd\u4e0d\u660e\u7684\u5f00\u53d1\u8005\u300d\u89e3\u51b3\u65b9\u6cd5</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u9488\u5bf9macOS\u5e94\u7528\u635f\u574f\u6216\u6765\u6e90\u4e0d\u660e\u65e0\u6cd5\u6253\u5f00\u7684\u95ee\u9898\uff0c\u672c\u6587\u4ecb\u7ecd\u4e86\u5f00\u542f\u201c\u4efb\u4f55\u6765\u6e90\u201d\u9009\u9879\u3001\u7ed5\u8fc7\u516c\u8bc1\u548c\u5e94\u7528\u7b7e\u540d\u7684\u65b9\u6cd5\uff0c\u5e2e\u52a9\u7528\u6237\u89e3\u51b3\u6b64\u7c7b\u95ee\u9898\u3002</p>\n<p>!!! tip \"\ud83d\udcd6 \u9605\u8bfb\u4fe1\u606f\"\n    :material-cloc...</p>",
-            "image": null,
-            "date_modified": "2025-07-08T16:41:35+00:00",
-            "authors": [],
-            "tags": [
-                "Mac"
-            ]
-        },
-        {
-            "id": "http://wcowin.work/blog/Mac/xjiq.html",
-            "url": "http://wcowin.work/blog/Mac/xjiq.html?utm_source=rss&utm_medium=referral",
-            "title": "\u5c0f\u5c0fMac\u6280\u5de7",
-            "content_html": "<h1>\u5c0f\u5c0fMac\u6280\u5de7</h1>\n<p>!!! info \"\ud83d\udcbe AI\u667a\u80fd\u6458\u8981 (GLM-4)\"\n    \u901a\u8fc7\u7ec8\u7aef\u8f93\u5165\u7279\u5b9a\u6307\u4ee4\uff0c\u5b9e\u73b0Mac Dock\u680f\u4ec5\u663e\u793a\u5f53\u524d\u8fd0\u884c\u7684\u5e94\u7528\u7a0b\u5e8f\uff0c\u65b9\u4fbf\u7528\u6237\u7ba1\u7406\u591a\u4efb\u52a1\u3002</p>\n<p>\u53ea\u663e\u793a\u5f53\u524d\u8fd0\u884c\u7684\u5e94\u7528</p>\n<ol>\n<li>\n<p>\u6253\u5f00\u7ec8\u7aef\uff08Terminal.app\uff09</p>\n</li>\n<li>\n<p>\u8f93\u5165\u4e0b\u5217\u6307\u4ee4\u540e\uff0c\u6309\u56de\u8f66\u952e\u8fd0\u884c\uff0cDock\u680f\u53ea\u663e\u793a\u5f53\u524d\u8fd0\u884c\u4e2d\u7684\u5e94\u7528\u7a0b\u5e8f\uff1a\n```\ndefaults write com.apple.dock...</p>\n</li>\n</ol>",
             "image": null,
             "date_modified": "2025-07-08T16:41:35+00:00",
             "authors": [],
