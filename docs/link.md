@@ -878,14 +878,6 @@ hide:
    </div> 
   </div>
 
-Name:
-Arthals' ink
-Desc:
-所见高山远木，阔云流风；所幸岁月盈余，了无拘束
-Link:
-https://arthals.ink/
-Avatar:
-https://cdn.arthals.ink/Arthals.png
 <!-- 
 >名称: Wcowin's Blog  
 >链接: https://wcowin.work/  
