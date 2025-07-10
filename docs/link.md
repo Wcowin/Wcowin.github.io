@@ -834,7 +834,7 @@ hide:
      </div> 
     </div> 
     <div class="card"> 
-    <img class="ava" src="https://zimingyuan.github.io/img/profile.jpg" /> 
+    <img class="ava" src="hhttps://zimingyuan.github.io/img/profile.jpg" /> 
     <div class="card-header"> 
       <div> 
       <a href="https://zimingyuan.github.io" target="_blank">VnYzm的博客</a> 
@@ -853,12 +853,39 @@ hide:
             <div class="info">文档即产品</div>
         </div>
     </div>
+    <div class="card">
+        <img class="ava" src="https://s2.loli.net/2024/10/07/fNIsM1jqOJlYmkz.jpg" />
+        <div class="card-header">
+            <div>
+                <a href="https://lastwish.icu/" target="_blank">世界天光的笔记本</a>
+            </div>
+            <div class="info">城南久梦，一枕槐安</div>
+        </div>
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://cdn.arthals.ink/Arthals.png" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://arthals.ink/" target="_blank">Arthals' ink</a> 
+      </div> 
+      <div class="info">
+      所见高山远木，阔云流风；所幸岁月盈余，了无拘束
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
 
-
+Name:
+Arthals' ink
+Desc:
+所见高山远木，阔云流风；所幸岁月盈余，了无拘束
+Link:
+https://arthals.ink/
+Avatar:
+https://cdn.arthals.ink/Arthals.png
 <!-- 
 >名称: Wcowin's Blog  
 >链接: https://wcowin.work/  
