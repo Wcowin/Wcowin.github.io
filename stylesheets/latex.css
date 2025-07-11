@@ -26,7 +26,7 @@
 
 /* 公式高亮效果 */
 .md-typeset mjx-container:hover {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #C1C3C8;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
