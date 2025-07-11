@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 10 Jul 2025 15:28:42 -0000</pubDate>
-    <lastBuildDate>Thu, 10 Jul 2025 15:28:42 -0000</lastBuildDate>
+    <pubDate>Fri, 11 Jul 2025 06:51:36 -0000</pubDate>
+    <lastBuildDate>Fri, 11 Jul 2025 06:51:36 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,28 @@
     
 
     
+    
+    <item>
+      <title>个人简介</title>
+      
+      
+      
+      
+        
+      
+      <description>&lt;script src=&#34;https://sdk.jinrishici.com/v2/browser/jinrishici.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h1&gt;&lt;span id=&#34;jinrishici-sentence&#34;&gt;今日诗词&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;关于我&lt;/h2&gt;
+&lt;div class=&#34;intro-container&#34;&gt;
+  &lt;div class=&#34;intro-...</description>
+      <link>http://wcowin.work/about/geren.html?utm_source=rss&amp;utm_medium=referral</link>
+      <pubDate>Fri, 11 Jul 2025 06:50:40 +0000</pubDate>
+      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
+      <comments>http://wcowin.work/about/geren.html#__comments</comments>
+      <guid isPermaLink="true">http://wcowin.work/about/geren.html</guid>
+      
+    </item>
     
     <item>
       <title>如何给MKdocs添加友链</title>
@@ -690,29 +712,6 @@
       <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
       <comments>http://wcowin.work/blog/Mac/shanchu.html#__comments</comments>
       <guid isPermaLink="true">http://wcowin.work/blog/Mac/shanchu.html</guid>
-      
-    </item>
-    
-    <item>
-      <title>提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法</title>
-      
-      
-      
-      
-        
-      <category>Mac</category>
-        
-      
-      <description>&lt;h1&gt;提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法&lt;/h1&gt;
-&lt;p&gt;!!! info &#34;💾 AI智能摘要 (GLM-4)&#34;
-    针对macOS应用损坏或来源不明无法打开的问题，本文介绍了开启“任何来源”选项、绕过公证和应用签名的方法，帮助用户解决此类问题。&lt;/p&gt;
-&lt;p&gt;!!! tip &#34;📖 阅读信息&#34;
-    :material-cloc...&lt;/p&gt;</description>
-      <link>http://wcowin.work/blog/Mac/sunhuai.html?utm_source=rss&amp;utm_medium=referral</link>
-      <pubDate>Tue, 08 Jul 2025 16:41:35 +0000</pubDate>
-      <source url="http://wcowin.work/feed_rss_updated.xml">Wcowin's Blog</source>
-      <comments>http://wcowin.work/blog/Mac/sunhuai.html#__comments</comments>
-      <guid isPermaLink="true">http://wcowin.work/blog/Mac/sunhuai.html</guid>
       
     </item>
     

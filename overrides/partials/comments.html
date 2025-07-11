@@ -37,6 +37,278 @@
 
 
 
+<!-- 打赏区 -->
+<div class="donation-container">
+  <h3>打赏我们</h3>
+  <p class="donation-desc">维护网站也需要精力和成本。如果有你的支持，也许我们能走得更远。</p>
+  
+  <!-- 加密货币地址 -->
+  <div class="crypto-addresses">
+    <div class="crypto-item">
+      <div class="crypto-input-wrapper">
+        <input type="text" value="bc1pgset9aq4t6kp36sgfnprrlvekthzr7wfwhnfay80x33c8apu3laq3855ze" readonly>
+        <div class="crypto-badge">
+          <svg class="crypto-icon btc-icon" viewBox="0 0 24 24" width="18" height="18">
+            <path d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.4s.975.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z" fill="#F7931A"/>
+          </svg>
+          BTC 
+          <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </div>
+      </div>
+    </div>
+    <div class="crypto-item">
+      <div class="crypto-input-wrapper">
+        <input type="text" value="TGcwETg7u5KCyyG8NkLx44yt4oMct8ma7b" readonly>
+        <div class="crypto-badge">
+          <svg class="crypto-icon usdt-icon" viewBox="0 0 24 24" width="18" height="18">
+            <circle cx="12" cy="12" r="12" fill="#26A17B"/>
+            <path d="M17.922 10.175h-1.126v.141h-9.41v-.141H6.27v3.676h.984v-.131h9.554v.131h1.114v-3.676zm-1.126 3.352h-9.41V10.47h9.41v3.057z" fill="white"/>
+            <path d="M12.035 7.165l2.842.011v1.354h-7.56V7.165l2.842.011v-.846h1.876v.835zm-2.778 7.154v1.992H7.386v-1.992H6.138v-1.804h11.896v1.804h-1.248v1.992h-1.871v-1.992h-5.658z" fill="white"/>
+          </svg>
+          USDT
+          <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 二维码支付 -->
+  <div class="qr-container">
+    <div class="qr-box">
+      <img src="https://s1.imagehub.cc/images/2025/07/11/5fad5fb8ecb7b128d1d4f0152d99072d.png" alt="微信支付">
+      <p>微信</p>
+    </div>
+    <div class="qr-box">
+      <img src="https://s1.imagehub.cc/images/2025/07/11/d08bf716464b4448a4f972c64073bcf8.png" alt="支付宝">
+      <p>支付宝</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .donation-container {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .donation-container h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .donation-desc {
+    color: #666;
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+  }
+  
+  /* 加密货币地址样式 */
+  .crypto-addresses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .crypto-item {
+    width: 100%;
+  }
+  
+  .crypto-input-wrapper {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .crypto-input-wrapper input {
+    width: 100%;
+    height: 100%;
+    padding: 0 110px 0 12px;
+    border: none;
+    background: transparent;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .crypto-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 10px;
+    height: 32px;
+    background-color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .crypto-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  }
+  
+  .crypto-badge:active {
+    transform: translateY(0);
+  }
+  
+  .crypto-icon {
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btc-icon {
+    color: #F7931A;
+  }
+  
+  .usdt-icon {
+    color: #26A17B;
+  }
+  
+  .success-icon {
+    color: #4CAF50;
+  }
+  
+  .copy-icon {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  /* 二维码样式 */
+  .qr-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .qr-box {
+    text-align: center;
+  }
+  
+  .qr-box img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .qr-box img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .qr-box p {
+    margin-top: 8px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 600px) {
+    .donation-container {
+      padding: 15px;
+      margin: 20px auto;
+    }
+    
+    .qr-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .qr-box img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 复制功能
+    const copyToClipboard = (text, element) => {
+      navigator.clipboard.writeText(text).then(() => {
+        // 显示复制成功反馈
+        const originalContent = element.innerHTML;
+        
+        if (element.querySelector('.success-icon')) {
+          // 已有成功图标，添加动画效果
+          const successIcon = element.querySelector('.success-icon');
+          successIcon.style.transform = 'scale(1.5)';
+          setTimeout(() => {
+            successIcon.style.transform = 'scale(1)';
+          }, 300);
+        } else {
+          // 替换图标为成功图标
+          const copyIcon = element.querySelector('.copy-icon');
+          const originalIcon = copyIcon.outerHTML;
+          copyIcon.outerHTML = '<span class="success-icon" style="color: #4CAF50;">✓</span>';
+          
+          setTimeout(() => {
+            element.innerHTML = originalContent;
+          }, 1500);
+        }
+      }).catch(err => {
+        // 如果clipboard API失败，回退到旧方法
+        const input = document.createElement('input');
+        input.value = text;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        
+        // 显示复制成功反馈（同上）
+        const originalContent = element.innerHTML;
+        const copyIcon = element.querySelector('.copy-icon');
+        if (copyIcon) {
+          const originalIcon = copyIcon.outerHTML;
+          copyIcon.outerHTML = '<span class="success-icon" style="color: #4CAF50;">✓</span>';
+          
+          setTimeout(() => {
+            element.innerHTML = originalContent;
+          }, 1500);
+        }
+      });
+    };
+    
+    // 为输入框和按钮添加点击复制功能
+    document.querySelectorAll('.crypto-input-wrapper input').forEach(input => {
+      input.addEventListener('click', function() {
+        const badge = this.nextElementSibling;
+        copyToClipboard(this.value, badge);
+      });
+    });
+    
+    document.querySelectorAll('.crypto-badge').forEach(badge => {
+      badge.addEventListener('click', function() {
+        const input = this.previousElementSibling;
+        copyToClipboard(input.value, this);
+      });
+    });
+  });
+</script>
+
+
 
   <!-- Synchronize Giscus theme with palette -->
   <script>
