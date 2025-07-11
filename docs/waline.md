@@ -19,9 +19,7 @@ disqus: true
   <p id="info"> 《枫桥夜泊》【唐代】张继</p>
 </div>
 
----
-
-<div align="center" style="margin: 40px 0; padding: 25px; border: 2px solid #e1e4e8; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<!-- <div align="center" style="margin: 40px 0; padding: 25px; border: 2px solid #e1e4e8; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     <h3 style="margin-top: 0; color: #586069; font-size: 1.5em; margin-bottom: 8px;">📱 给我发送即时消息</h3>
     <p style="color: #586069; font-size: 14px; margin-bottom: 20px;">通过 Bark 推送直接发送消息给我</p>
     <form id="bark-form" onsubmit="sendBarkMessage(event)" style="max-width: 420px; margin: 0 auto;">
@@ -211,7 +209,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
----
+--- -->
+
+
+
 
 <!-- <div class="button-container">
   <button id="giscus-btn" class="buttonxuan active">Giscus</button>
@@ -287,138 +288,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<!-- 打赏区 -->
-<div class="reward-container">
-  <button onclick="toggleQR()">请作者喝杯咖啡</button>
-  <div id="qr" class="qr-container">
-    <div class="qr-option">
-      <img src="https://s2.loli.net/2025/02/07/stOifQrgoIYZzam.jpg" alt="Wcowin 微信支付">
-      <p>微信支付</p>
-    </div>
-    <div class="qr-option">
-      <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" alt="Wcowin 支付宝">
-      <p>支付宝</p>
-    </div>
-  </div>
-</div>
-<script>
-  function toggleQR() {
-    const qrContainer = document.getElementById('qr');
-    qrContainer.style.display = (qrContainer.style.display === 'none' || qrContainer.style.display === '') ? 'block' : 'none';
-  }
-</script>
 
-<!-- 样式统一整理 -->
-<style>
-.comment-system {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease-in-out;
-  height: 0;
-  overflow: hidden;
-  margin-top: 20px;
-}
-.comment-system.active {
-  opacity: 1;
-  visibility: visible;
-  height: auto;
-}
-.button-container {
-  text-align: center;
-  margin: 30px auto;
-  max-width: 600px;
-}
-.buttonxuan {
-  background-color: #fff;
-  width: 180px;
-  color: #999;
-  border-radius: 25px;
-  border: 2px solid #608DBD;
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 500;
-  margin: 0 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.buttonxuan:hover {
-  background-color: #f8f9fa;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-.buttonxuan.active {
-  background-color: #608DBD;
-  color: #fff;
-  border-color: #3498db;
-}
-@media (max-width: 768px) {
-  .button-container {
-    padding: 0 15px;
-  }
-  .buttonxuan {
-    width: 45%;
-    padding: 10px 15px;
-    font-size: 14px;
-    margin: 5px;
-  }
-}
-@media (max-width: 480px) {
-  .buttonxuan {
-    width: calc(50% - 20px);
-    font-size: 13px;
-    padding: 8px 12px;
-  }
-}
-.reward-container {
-  margin: 20px auto;
-  padding: 25px 0;
-  text-align: center;
-  width: 90%;
-}
-.reward-container button {
-  background: none;
-  border: 1px solid #608DBD;
-  border-radius: 0.5rem;
-  color: #608DBD;
-  cursor: pointer;
-  line-height: 2;
-  outline: 0;
-  padding: 0 15px;
-  margin: 5px;
-  font-size: 16px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.reward-container button:hover {
-  background-color: #608DBD;
-  color: #fff;
-}
-.qr-container {
-  display: none;
-  text-align: center;
-  margin-top: 25px;
-}
-.qr-container img {
-  width: 200px;
-  margin: 10px;
-  border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.qr-container p {
-  font-size: 16px;
-  color: #555;
-}
-.qr-option {
-  display: inline-block;
-  margin: 0 10px;
-}
-/* .md-grid {
-  max-width: 1300px;
-} */
-</style>
+
+
 
 
 

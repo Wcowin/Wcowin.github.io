@@ -553,9 +553,9 @@ extra_javascript:
 
 
 extra_css:
-  # - stylesheets/extra.css
+  - stylesheets/extra.css
   - stylesheets/extra2.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
   - stylesheets/link.css  #友链
   # - stylesheets/poem.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css

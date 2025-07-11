@@ -335,7 +335,13 @@ footer a:hover {
   /* 可以根据需要添加图片之间的间距 */
 }
 
-
+#rcorners6 {
+  border-radius: 32px;
+  border: 2px solid rgba(68,138,255,.1);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
 
 /* 渐变 */
 #grad1 {

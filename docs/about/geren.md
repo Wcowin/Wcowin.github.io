@@ -16,8 +16,101 @@ hide_reading_time: true
 
 ## 关于我
 
+<div class="intro-container">
+  <div class="intro-text">
+    <span class="greeting">你好，很高兴认识你 <span class="wave">👋</span></span>
+    <span class="name">我叫 <span class="highlight">Wáng Kēwén</span></span>
+  </div>
+</div>
 
-<div class="flip-container">
+<style>
+.intro-container {
+  background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(240,240,240,0.6) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid rgba(200,200,200,0.2);
+  transition: all 0.3s ease;
+}
+
+.intro-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.greeting, .name {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+  font-family: 'LXGW WenKai', sans-serif;
+}
+
+.highlight {
+  background: linear-gradient(120deg, #608DBD 0%, #7BA7D7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  padding: 0 0.2rem;
+  position: relative;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .intro-container {
+  background: linear-gradient(145deg, rgba(31,33,40) 0%, rgba(31,33,40) 100%);
+  border: 1px solid rgba(80,80,80,0.2);
+}
+
+[data-md-color-scheme="slate"] .greeting, 
+[data-md-color-scheme="slate"] .name {
+  color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .highlight {
+  background: linear-gradient(120deg, #7BA7D7 0%, #A8C5E5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .greeting, .name {
+    font-size: 1.3rem;
+  }
+}
+</style>
+
+<!-- <div class="flip-container">
 <div class="image-container">
     <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
     <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
@@ -71,7 +164,7 @@ hide_reading_time: true
         transform: rotateY(0deg);
         z-index: 3;
     }
-</style>
+</style> -->
 
 
 <center><font size=6 color= #757575>
@@ -108,7 +201,7 @@ hide_reading_time: true
   ——Wcowin </font></center>   -->
 
 ---
-
+<div id="rcorners6" >
 <div class="about__info">
     <div>
         <span class="about__info-title">1年+</span>
@@ -127,13 +220,18 @@ hide_reading_time: true
 </div>
 
 
+<center>
+<a href="/assets/个人简历.pdf" target="_blank" class="md-button">下载简历</a>
+</center>
+</div>
+
 <!-- <center>
   [下载简历 :fontawesome-solid-download:](个人简历2.pdf){.md-button target="_blank"}
 </center> -->
 
-<center>
-<a href="../个人简历.pdf" target="_blank" class="md-button">下载简历</a>
-</center>
+
+
+
 
 <!-- <div class="card2 file-block" markdown="1">
 <div class="file-icon"><img src="https://pic4.zhimg.com/80/v2-98f918276ecbc6d549fa6a5d1238e713_1440w.webp" style="height: 3em;"></div>
@@ -148,8 +246,8 @@ hide_reading_time: true
 ## 我的履历
 
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-<!-- <link rel="stylesheet" href="../sty/portfolio.css"> -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
+<link rel="stylesheet" href="sty/portfolio.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css"> -->
 <div class="qualification__tabs">
     <div class="qualification__button qualification__active" data-target='#education'>
         <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
