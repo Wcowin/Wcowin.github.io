@@ -1424,10 +1424,10 @@ window.friendLinkUtils = {
 
 
 <!-- 
->名称: Wcowin's Blog  
->链接: https://wcowin.work/  
->头像: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
->简介: 循此苦旅，以达星辰
+>名称: 
+>链接: 
+>头像: 
+>简介: 
 -->
 
 

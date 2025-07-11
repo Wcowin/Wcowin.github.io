@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/schema.json
 #[Info]
 site_name: Wcowin's Blog
 site_url: http://wcowin.work/
@@ -39,10 +39,10 @@ theme:
         name: 切换至日间模式
   features: 
     - announce.dismiss # 可关闭公告栏
-    # - navigation.instant # 页面无刷新切换
+    - navigation.instant # 页面无刷新切换
     - navigation.prune
     # - header.autohide  # 自动隐藏头部
-    - navigation.instant.progress # 页面切换进度条
+    # - navigation.instant.progress # 页面切换进度条
     # - navigation.prune # 只渲染可见导航项
     - navigation.tracking # 滚动时URL锚点自动更新
     - navigation.tabs # 一级导航显示为顶部Tab
@@ -380,7 +380,7 @@ extra:
 
 plugins:
   # - document-dates:
-  #     position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
+  #     position: top            # Display position: top (after title)  bottom (end of document), default: bottom
   #     type: date               # Date type: date  datetime  timeago, default: date
   #     locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
   #     date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
@@ -394,30 +394,30 @@ plugins:
   #       - link.md
   #       - blog/Mkdocs/linktech.md
   #       - about/*            # Exclude all files in private directory, including subdirectories
-  #     show_author: false        # Show author or not, default: true
+  #     show_author: true       # Show author or not, default: true
   # - statistics
   # - git-authors
-  - rss:
-      enabled: !ENV [CI, false]
-      match_path: "(blog|develop|relax|trip|about)/(?!archive|category).*\\.md$"  # 匹配文章路径，排除归档和分类页面
-      image: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
-      date_from_meta:
-        as_creation: date
-        as_update: date
-        datetime_format: "%Y-%m-%d %H:%M"
-      categories:
-        - categories
-        - tags
-      # RSS feed 配置
-      abstract_chars_count: 200  # 摘要字符数
-      abstract_delimiter: "<!-- more -->"  # 摘要分隔符
-      comments_path: "#__comments"  # 评论链接
-      feed_ttl: 1440  # Feed 缓存时间（分钟）
-      length: 30  # RSS 条目数量
-      pretty_print: true  # 格式化输出
-      url_parameters:
-        utm_source: "rss"
-        utm_medium: "referral"
+  # - rss:
+  #     enabled: !ENV [CI, false]
+  #     match_path: "(blog|develop|relax|trip|about)/(?!archive|category).*\\.md$"  # 匹配文章路径，排除归档和分类页面
+  #     image: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
+  #     date_from_meta:
+  #       as_creation: date
+  #       as_update: date
+  #       datetime_format: "%Y-%m-%d %H:%M"
+  #     categories:
+  #       - categories
+  #       - tags
+  #     # RSS feed 配置
+  #     abstract_chars_count: 200  # 摘要字符数
+  #     abstract_delimiter: "<!-- more -->"  # 摘要分隔符
+  #     comments_path: "#__comments"  # 评论链接
+  #     feed_ttl: 1440  # Feed 缓存时间（分钟）
+  #     length: 30  # RSS 条目数量
+  #     pretty_print: true  # 格式化输出
+  #     url_parameters:
+  #       utm_source: "rss"
+  #       utm_medium: "referral"
   # - social
   - search:
       enabled: !ENV [CI, false]
@@ -529,23 +529,15 @@ markdown_extensions:
 
   
 extra_javascript:
-  # - javascripts/extra.js 
-  - javascripts/extra2.js
-  # - javascripts/bannerSlider.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
-
+  # 优先加载关键脚本
+  - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
+  - javascripts/optimize.js
+  - javascripts/instant-handler.js
+  # 延迟加载非关键脚本
+  - javascripts/extra.js
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
-
-  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
-  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
-  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
-  # - javascripts/backbound1.js
-  # - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
-  # - https://res.zvo.cn/translate/translate.js  # Translate
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
   # - javascripts/liquid-glass-toc.js  # Liquid Glass TOC 增强效果
   # - javascripts/font-loader.js
@@ -581,7 +573,6 @@ extra_css:
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
-  - stylesheets/latex.css
 
 watch: #监听文件变动自动刷新
   - docs

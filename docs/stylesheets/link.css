@@ -5,13 +5,16 @@
    font-size: 1rem;
    padding: 10px 20px;
    border-radius: 25px;
-   transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s; /* 优化：只过渡background-color */
+   transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
+               box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* 使用更高效的过渡 */
    margin-bottom: 1rem;
    display: flex;
-   align-items: center; /* 垂直居中对齐内容 */
-   color: #333; /* 默认字体颜色 */
-   /* border: 1px solid rgba(142, 142, 142, 0.15); */
-   will-change: transform; /* 性能优化：提示浏览器将有变换 */
+   align-items: center;
+   color: #333;
+   contain: layout style; /* 性能优化：限制重绘范围 */
+   will-change: transform; /* 提前告知浏览器变换意图 */
+   backface-visibility: hidden; /* 减少复合层 */
+   transform: translateZ(0); /* 强制GPU加速 */
 }
 
 .card:nth-child(odd) {
@@ -24,10 +27,9 @@
 
 /* 在大屏幕上保留悬停效果 */
 .card:hover {
-   transform: translateY(0) scale(1.05); /* 优化：移除不必要的0px */
+   transform: translateZ(0) scale(1.05);
    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
    background-color: rgba(68, 138, 255, 0.1);
-   color: #040000;
 }
 
 .card a {
@@ -37,8 +39,9 @@
 .card .ava {
    width: 3rem !important;
    height: 3rem !important;
-   margin: 0 1em 0 0 !important; /* 优化：简化margin写法 */
+   margin: 0 1em 0 0 !important;
    border-radius: 50%;
+   object-fit: cover; /* 确保图像正确填充 */
 }
 
 .card .card-header {
@@ -54,8 +57,8 @@
    text-decoration: none;
 }
 
-/* 在大屏幕上保留链接悬停颜色 */
-.card .card-header a:hover {
+/* 使用更高效的选择器 */
+.card-header a:hover {
    color: #d480aa;
 }
 
@@ -63,22 +66,27 @@
    font-style: normal;
    color: #706f6f;
    font-size: 14px;
-   min-width: 0;
-   overflow: visible;
-   white-space: normal;
+   overflow: hidden;
+   text-overflow: ellipsis; /* 文本溢出时显示省略号 */
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* 限制最多显示两行 */
+   line-clamp: 2; /* 标准属性以实现兼容性 */
+   -webkit-box-orient: vertical;
 }
 
 /* 媒体查询：小屏幕 */
 @media (max-width: 768px) {
    .card {
-      width: 100%; /* 在小屏幕上显示为单列 */
+      width: 100%;
       height: auto;
-      float: none; /* 清除浮动 */
+      float: none;
+      contain: content; /* 小屏幕上使用更宽松的包含策略 */
    }
 }
 
+/* 使用更高效的清除浮动方法 */
 .markdown-content {
-   clear: both;
+   display: flow-root; /* 现代清除浮动方法 */
 }
 
 .markdown-content h2 {

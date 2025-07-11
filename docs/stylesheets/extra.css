@@ -2,131 +2,44 @@
   --md-primary-fg-color: #518FC1;
   --md-primary-fg-color--light: #518FC1;
   --md-primary-fg-color--dark: #518FC1;
-  /* --md-primary-bg-color: #000000; */
-  
-
 }
 
-/* [data-md-color-scheme="default"] {
-  --md-footer-fg-color: #000000;
-  --md-footer-bg-color: #efefef;
-  --md-footer-bg-color--dark: #efefef;
-  --md-footer-fg-color--light: #000000;
-  --md-footer-fg-color--lighter: #000000;
-} */
-
-/* [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #1F2128;
-  --md-default-bg-color--light: #161616;
-  --md-default-bg-color--lighter: #161616;
-  --md-default-bg-color--lightest: #161616;
-  --md-default-fg-color: rgba(255,255,255,0.9);
-  --md-default-fg-color--light: rgba(255,255,255,0.85);
-  --md-default-fg-color--lighter: rgba(255,255,255,0.8);
-  --md-default-fg-color--lightest: rgba(255,255,255,0.6);
-  --md-primary-fg-color: #0d0d0d;
-  --md-typeset-a-color: #d3d3d3;
-  --md-footer-fg-color: #fff;
-  --md-footer-bg-color: #0d0d0d;
-  --md-footer-bg-color--dark: #0d0d0d;
-  --md-footer-fg-color--light: #fff;
-  --md-footer-fg-color--lighter: #fff;
-  --md-code-bg-color: #1d1d1d;
-} */
-
-/* 给所有元素加上边框 */
-/* * {
-    outline: 1px solid #518FC1;
-  }  */
-/* :root {
-  transition: --md-primary-color 0.5s ease, --md-accent-color 0.5s ease;
-} */
-
-/* .md-nav__list{
-color: #4350AF;
-} */
-
-/* .md-banner {
-  background-color: #074f9d;
-} */
-
-
-
-
-/* @font-face {
-  font-family: "LXGW WenKai";
-  src: "https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css";
-} */
-
-
-/* 字体 */
-
-/* .ml3 {
-  font-weight: 900;
-  font-size: 30px;
-  font-family: LXGW WenKai;
-} */
-
-
-img.img1 {
+/* 图片样式优化 - 合并相似规则 */
+img.img1, img.img2, img.img3 {
   border-radius: 25px;
-
+  contain: paint; /* 限制重绘区域 */
 }
 
-img.img2 {
-  border-radius: 25px;
+/* 社交图标颜色 */
+img.twitter { color: #1DA1F2; }
+.bilibili { color: #EA7A99; }
+.github { color: #25292E; }
+.laptop { color: #d1e82a; }
 
-}
-
-img.img3 {
-  border-radius: 25px;
-
-}
-
-img.twitter {
-  color: #1DA1F2;
-}
-
-.bilibili {
-  color: #EA7A99;
-}
-
-.github {
-  color: #25292E;
-}
-
-.laptop{
-  color:#d1e82a;
-}
-
+/* 心跳动画优化 */
 @keyframes heart {
-
-  0%,
-  40%,
-  80%,
-  100% {
-    transform: scale(1);
-  }
-
-  20%,
-  60% {
-    transform: scale(1.15);
-  }
+  0%, 40%, 80%, 100% { transform: scale(1); }
+  20%, 60% { transform: scale(1.15); }
 }
 
 .heart {
   animation: heart 1000ms infinite;
+  will-change: transform; /* 提示浏览器将有变换 */
+  transform: translateZ(0); /* 强制GPU加速 */
 }
 
+/* 自定义提示框图标 */
 :root {
   --md-admonition-icon--pied-piper: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
+  --md-admonition-icon--pied-piper1: var(--md-admonition-icon--pied-piper); /* 复用相同的图标 */
 }
 
+/* 提示框样式 - pied-piper */
 .md-typeset .admonition.pied-piper,
 .md-typeset details.pied-piper {
   border-color: rgb(43, 155, 70);
   font-size: large;
-
+  contain: content; /* 包含内容重绘 */
 }
 
 .md-typeset .pied-piper>.admonition-title,
@@ -141,33 +54,21 @@ img.twitter {
   mask-image: var(--md-admonition-icon--pied-piper);
 }
 
-
-:root {
-
-  --md-admonition-icon--pied-piper1: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
-}
-
+/* 提示框样式 - pied-piper1 */
 .md-typeset .admonition.pied-piper1,
 .md-typeset details.pied-piper1 {
-  /* border-color: rgba(68,138,255,.1); */
   font-size: large;
   width: 100%;
-  /* border-radius:25px; */
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-radius: 25px; /* 简化边框半径设置 */
+  contain: content; /* 包含内容重绘 */
 }
 
 .md-typeset .pied-piper1>.admonition-title,
 .md-typeset .pied-piper1>summary {
-  background-color: linear-gradient(to right, rgba(238, 243, 254));
+  background-color: rgba(238, 243, 254, 1); /* 修复线性渐变为单色 */
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   height: 45px;
-  width: auto;
-
-
 }
 
 .md-typeset .pied-piper1>.admonition-title::before,
@@ -262,139 +163,134 @@ footer a:hover {
 
 
 /*圆角*/
+:root {
+  --rcorners-border-radius: 25px;
+  --rcorners-border-color: #518FC1;
+  --rcorners-padding: 20px;
+  --rcorners-width: 100%;
+}
+
+/* 圆角容器1 - 渐变背景 */
 #rcorners1 {
-  border-radius: 25px;
+  border-radius: var(--rcorners-border-radius);
   background: linear-gradient(to right, rgba(189, 224, 245), rgba(218, 232, 241), rgba(238, 237, 238));
-  /* #F0EFEB; F5F4F1*/
-  padding: 20px;
-  width: 100%;
+  padding: var(--rcorners-padding);
+  width: var(--rcorners-width);
   height: 100px;
   text-align: center;
   font-size: 16px;
+  contain: layout paint; /* 限制重绘和布局 */
 }
 
+/* 圆角容器2-3 - 相同样式合并 */
+#rcorners2, #rcorners3, #rcorners5 {
+  border-radius: var(--rcorners-border-radius);
+  border: 2px solid var(--rcorners-border-color);
+  padding: var(--rcorners-padding);
+  width: var(--rcorners-width);
+  height: 100%;
+  contain: layout; /* 限制布局计算 */
+}
 
 #rcorners2 {
-  border-radius: 25px;
-  border: 2px solid #518FC1;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
   font-size: 16px;
 }
 
-#rcorners3 {
-  border-radius: 25px;
-  border: 2px solid #518FC1;
-  padding: 20px;
-  width: 100%;
+/* 圆角容器4-6 - 轻量边框 */
+#rcorners4, #rcorners6 {
+  border-radius: 32px;
+  border: 2px solid rgba(68,138,255,.1);
+  padding: var(--rcorners-padding);
   height: 100%;
+  contain: layout; /* 限制布局计算 */
 }
 
 #rcorners4 {
-  border-radius: 32px;
-  border: 2px solid rgba(68,138,255,.1);
-  padding: 20px;
   width: 110%;
-  height: 100%;
 }
+
+#rcorners6 {
+  width: var(--rcorners-width);
+}
+
+/* 移动端适配 - 合并媒体查询 */
 @media only screen and (max-width: 600px) {
-  #rcorners4 {
-    border: none; /* 在手机上移除外框 */
-    width: 100%; /* 将宽度调整为100% */
+  #rcorners4, #rcorners5 {
+    border: none;
+    width: 100%;
   }
 }
 
-
-
-#rcorners5 {
-  border-radius: 25px;
-  border: 2px solid #518FC1;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-}
-@media only screen and (max-width: 600px) {
-  #rcorners5 {
-    border: none; /* 在手机上移除蓝色外框 */
-  }
-}
-#cusdis_thread > iframe {
-  height: 30rem;
-}
-
+/* 图片容器 */
 .image-container {
   text-align: center;
-  /* 居中对齐容器中的内容 */
+  contain: layout; /* 限制布局计算 */
 }
 
 .image-container img {
   display: inline-block;
-  /* 将图片水平排列在一行 */
   margin: 10px;
-  /* 可以根据需要添加图片之间的间距 */
+  content-visibility: auto; /* 自动管理内容可见性 */
+  contain-intrinsic-size: auto 200px; /* 提供默认尺寸 */
 }
 
-#rcorners6 {
-  border-radius: 32px;
-  border: 2px solid rgba(68,138,255,.1);
-  padding: 20px;
-  width: 100%;
-  height: 100%;
+/* 评论框高度 */
+#cusdis_thread > iframe {
+  height: 30rem;
 }
 
-/* 渐变 */
+/* 渐变容器 */
 #grad1 {
   height: 200px;
   background-color: red;
-  /* 不支持线性的时候显示 */
   background-image: linear-gradient(to bottom right, red, yellow);
+  contain: paint; /* 限制重绘 */
 }
 
-/* 按钮 */
-.buttoncss {
-  background-color: #4CAF50;
-  border-radius: 12px;
+/* 按钮样式 - 使用CSS变量统一管理 */
+:root {
+  --button-border-radius: 12px;
+  --button-padding: 15px 32px;
+  --button-margin: 4px 2px;
+  --button-font-size: 16px;
+  --button-transition: 0.4s;
+}
+
+/* 基础按钮样式 */
+.buttoncss, .buttoncss1 {
+  border-radius: var(--button-border-radius);
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: var(--button-padding);
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: var(--button-font-size);
+  margin: var(--button-margin);
   cursor: pointer;
+  will-change: background-color, color; /* 提示浏览器将有变化 */
+}
+
+.buttoncss {
+  background-color: #4CAF50;
 }
 
 .buttoncss1 {
   background-color: #567fd0;
-  border-radius: 12px;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 
-
+/* 按钮样式 - buttonxuan */
 .buttonxuan {
   background-color: #4CAF50;
-  /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
+  font-size: var(--button-font-size);
+  margin: var(--button-margin);
+  transition-duration: var(--button-transition);
   cursor: pointer;
 }
 
@@ -409,6 +305,7 @@ footer a:hover {
   color: white;
 }
 
+/* 按钮样式 - buttonxuan2 */
 .buttonxuan2 {
   display: inline-block;
   background-color: #ACE48E;
@@ -422,16 +319,17 @@ footer a:hover {
   margin: 5px;
   border: 2px solid;
   border-radius: 25px;
+  will-change: transform; /* 提示浏览器将有变换 */
 }
 
-.buttonxuan2 span {
+.buttonxuan2 span, .buttonxuan3 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.buttonxuan2 span:after {
+.buttonxuan2 span:after, .buttonxuan3 span:after {
   content: '»';
   position: absolute;
   opacity: 0;
@@ -440,16 +338,16 @@ footer a:hover {
   transition: 0.5s;
 }
 
-.buttonxuan2:hover span {
+.buttonxuan2:hover span, .buttonxuan3:hover span {
   padding-right: 25px;
 }
 
-.buttonxuan2:hover span:after {
+.buttonxuan2:hover span:after, .buttonxuan3:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-/* .buttonxuan3 */
+/* 按钮样式 - buttonxuan3 */
 .buttonxuan3:hover {
   display: inline-block;
   background-color: #5577D1;
@@ -465,34 +363,7 @@ footer a:hover {
   border-radius: 25px;
 }
 
-.buttonxuan3 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.buttonxuan3 span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.buttonxuan3:hover span {
-  padding-right: 25px;
-}
-
-.buttonxuan3:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-
-/* 蕴藏 */
+/* 响应式隐藏 */
 div.hide {
   background-color: yellow;
   padding: 20px;
@@ -504,26 +375,22 @@ div.hide {
   }
 }
 
-/* 布局 */
-.item1 {
-  grid-area: header;
+/* 网格布局 - 使用CSS变量 */
+:root {
+  --grid-bg-color: #2196F3;
+  --grid-gap: 10px;
+  --grid-padding: 10px;
+  --grid-item-bg-color: rgba(255, 255, 255, 0.8);
+  --grid-item-padding: 20px 0;
+  --grid-item-font-size: 30px;
 }
 
-.item2 {
-  grid-area: menu;
-}
-
-.item3 {
-  grid-area: main;
-}
-
-.item4 {
-  grid-area: right;
-}
-
-.item5 {
-  grid-area: footer;
-}
+/* 网格区域定义 */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
 
 .grid-container {
   display: grid;
@@ -531,54 +398,41 @@ div.hide {
     'header header header header header header'
     'menu main main main right right'
     'menu footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  grid-gap: var(--grid-gap);
+  background-color: var(--grid-bg-color);
+  padding: var(--grid-padding);
+  contain: layout; /* 限制布局计算 */
 }
 
 .grid-container>div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--grid-item-bg-color);
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  padding: var(--grid-item-padding);
+  font-size: var(--grid-item-font-size);
 }
 
-
-/* 变灰代码 */
-/* html {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
-  -webkit-filter: grayscale(100%);} */
-
-/* Markdown内联块网格列表样式圆角和阴影 */
+/* Markdown卡片样式优化 */
 .md-typeset .grid.cards>ol>li,
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
   border: 0.05rem solid var(--md-default-fg-color--lightest);
   border-radius: 0.7rem;
-  /* 修改圆角大小 */
   display: block;
   margin: 0;
   padding: 0.8rem;
   transition: border 0.25s, box-shadow 0.25s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* 修改阴影效果 */
-  /* box-shadow: 水平偏移量 垂直偏移量 模糊半径 扩散半径 色值; */
+  contain: content; /* 包含内容重绘 */
+  will-change: box-shadow, border; /* 提示浏览器将有变化 */
 }
 
-
-/* ol>li {
-  list-style-type: decimal;
-} */
-
-
-
-
-/* 打赏 */
+/* 打赏容器 */
 .reward-container {
   margin: 20px auto;
   padding: 10px 0;
   text-align: center;
   width: 90%;
+  contain: layout; /* 限制布局计算 */
 }
 
 .reward-container button {
@@ -591,15 +445,15 @@ div.hide {
   outline: 0;
   padding: 0 15px;
   vertical-align: text-top;
+  transition: color 0.3s; /* 只过渡颜色 */
 }
 
 .reward-container button:hover {
-  background: transparent; /* 移除填充颜色，设置为透明 */
-  border: 1px solid #608DBD; /* 保留这个框的外框颜色 */
+  background: transparent;
+  border: 1px solid #608DBD;
   color: #e480b2;
 }
 
-/* 新增样式 */
 #qr {
   display: none;
   text-align: center;
@@ -607,23 +461,17 @@ div.hide {
 
 #qr img {
   width: 250px;
-  /* 调整图像大小 */
   margin: 10px;
-  /* 添加一些间距 */
   border-radius: 25px;
+  content-visibility: auto; /* 自动管理内容可见性 */
 }
 
 #qr p {
   font-size: 16px;
-  /* 调整字体大小 */
   color: #555;
-  /* 更改字体颜色 */
 }
 
-/* 打赏end */
-
-
-/* 遮盖begin */
+/* 遮盖效果 */
 .mask {
   background-color: #252525;
   color: #252525;
@@ -634,17 +482,18 @@ div.hide {
   color: #ffffff;
 }
 
-
-
-/* .md-content__inner {
-  min-height: 200px;
-  background-color: rgba(255, 0, 0, 0.05);
-  padding: 1em;
+/* 添加对减少动画的支持 */
+@media (prefers-reduced-motion: reduce) {
+  .heart, 
+  .buttonxuan2, 
+  .buttonxuan3,
+  .buttonxuan2 span, 
+  .buttonxuan3 span,
+  .buttonxuan2 span:after, 
+  .buttonxuan3 span:after,
+  .mask,
+  .reward-container button {
+    transition: none !important;
+    animation: none !important;
+  }
 }
-
-.md-typeset {
-  color: inherit;
-  font-size: inherit;
-  visibility: visible !important;
-  opacity: 1 !important;
-} */

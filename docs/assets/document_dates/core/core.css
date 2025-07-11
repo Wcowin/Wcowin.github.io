@@ -3,12 +3,16 @@
     including icons, fonts, colors, etc
     */
 .document-dates-plugin {
-    color: rgba(142, 142, 142, 0.7);
-    font-size: 0.75rem;
+    color: #666;
+    font-size: 0.9rem;
     padding: 0.2rem 0;
     display: flex;
     align-items: center;
     margin-bottom: 0.3rem;
+}
+.md-main .document-dates-plugin {
+    color: rgba(142, 142, 142, 0.7);
+    font-size: 0.75rem;
 }
 .document-dates-plugin span:not(:first-child) {
     margin-left: 1.5rem;
@@ -18,9 +22,13 @@
     align-items: center;
 }
 .document-dates-plugin .material-icons {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-right: 0.3rem;
+}
+.md-main .document-dates-plugin .material-icons {
     font-size: 0.9rem;
     opacity: 0.7;
-    margin-right: 0.3rem;
 }
 
 /* Customized icons, just change the icon name.
@@ -48,15 +56,14 @@
 /* 2. Plug-in wrapper styles
     including divider, margin, padding, etc
     */
-.document-dates-plugin-wrapper.document-dates-top {
-    margin: -1rem 0 1rem 0;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid rgba(142, 142, 142, 0.15);
-}
+.document-dates-plugin-wrapper.document-dates-top,
 .document-dates-plugin-wrapper.document-dates-bottom {
     margin: 1rem 0;
     padding-bottom: 0.3rem;
     border-bottom: 1px solid rgba(142, 142, 142, 0.15);
+}
+.md-main .document-dates-plugin-wrapper.document-dates-top {
+    margin: -1rem 0 1rem 0;
 }
 
 /* Hide the footnote divider immediately following the date information with the CSS adjacent sibling selector */

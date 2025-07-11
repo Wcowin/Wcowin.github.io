@@ -62,13 +62,20 @@ function getCurrentTheme() {
 
 // Main initialization
 async function init() {
-    await executeHooks('beforeInit', { tippy_config });
+    // Create context object to pass to hooks and return from function
+    const context = { tippy_config };
+    
+    // Execute beforeInit hooks
+    await executeHooks('beforeInit', context);
 
     // Configure the properties of the Tooltip here, available documents: https://atomiks.github.io/tippyjs/
     const tippyInstances = tippy('[data-tippy-content]', {
         ...tippy_config.tooltip,
         theme: getCurrentTheme()    // Initialize Tooltip's theme based on Material's light/dark color scheme
     });
+    
+    // Store instances in context
+    context.tippyInstances = tippyInstances;
 
     // Automatic theme switching. Set Tooltip's theme to change automatically with the Material's light/dark color scheme
     const observer = new MutationObserver((mutations) => {
@@ -86,25 +93,66 @@ async function init() {
         attributes: true,
         attributeFilter: ['data-md-color-scheme']
     });
+    
+    // Store observer in context
+    context.observer = observer;
 
-    await executeHooks('afterInit', { tippyInstances });
+    // Execute afterInit hooks
+    await executeHooks('afterInit', context);
+    
+    // Return context with instances and observer for cleanup
+    return context;
 }
 
-// Singleton Initialization
+// Initialization Manager
 const initManager = (() => {
-    let initialized = false;
+    let tippyInstances = [];
+    let observer = null;
+    
+    // Function to clean up previous instances
+    function cleanup() {
+        // Destroy previous tippy instances if they exist
+        if (tippyInstances.length > 0) {
+            tippyInstances.forEach(instance => instance.destroy());
+            tippyInstances = [];
+        }
+        
+        // Disconnect previous observer if it exists
+        if (observer) {
+            observer.disconnect();
+            observer = null;
+        }
+    }
+    
     return {
+        // This can be called multiple times, especially with navigation.instant
         initialize() {
-            if (initialized) return;
-            init();
-            initialized = true;
+            // Clean up previous instances first
+            cleanup();
+            
+            // Initialize new instances
+            init().then(context => {
+                if (context && context.tippyInstances) {
+                    tippyInstances = context.tippyInstances;
+                }
+                if (context && context.observer) {
+                    observer = context.observer;
+                }
+            });
         }
     };
 })();
 
-// Entrance
-document.addEventListener('DOMContentLoaded', initManager.initialize);
 
+// Entrance - Compatible with Material for MkDocs navigation.instant
+// Check if Material for MkDocs document$ observable is available
+if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
+    // Use Material's document$ observable for both initial load and navigation.instant
+    window.document$.subscribe(initManager.initialize);
+} else {
+    // Fallback to standard DOMContentLoaded for other themes
+    document.addEventListener('DOMContentLoaded', initManager.initialize);
+}
 
 
 // Export API

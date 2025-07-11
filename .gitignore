@@ -1,30 +1,45 @@
-# 环境变量文件（敏感信息）
+# 敏感信息和环境变量
 .env
 .env.local
-.env.*.local
+.env.*
 *.key
+*.pem
+secrets/
 
-# MkDocs 构建输出目录
-site/
-temp/
-# Caches, temporary files, and build outputs
-/.cache/
+# 构建输出和临时文件
+/site/
 /temp/
+/build/
+/dist/
+/.cache/
 *.tmp
 *.cache
+*.bak
 
 # 日志文件
 *.log
 logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# IDE and OS specific
-/.idea/
-.DS_Store
+# IDE 和编辑器
+.idea/
 .vscode/
+*.sublime-*
+.project
+.classpath
+*.iml
 *.swp
 *.swo
 
-# Python 相关
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -33,9 +48,26 @@ __pycache__/
 env/
 venv/
 .venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
-# Node.js 相关（如果使用）
+# Node.js
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+package-lock.json
+yarn.lock
+
+# AI摘要缓存 - 允许提交
+!.ai_cache/
+!.ai_cache/*.json
+
+# 其他常见忽略
+*.zip
+*.tar.gz
+*.rar
+*.pdf
+*.docx
+*.xlsx
