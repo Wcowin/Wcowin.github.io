@@ -779,7 +779,7 @@ hide:
     </div> 
     </div>
     <div class="card"> 
-    <img class="ava" src="https://linexic.top/avatar.webp" /> 
+    <img class="ava" src="https://avatars.githubusercontent.com/u/121679359?v=4" /> 
     <div class="card-header"> 
       <div> 
       <a href="https://linexic.top " target="_blank">LineXic书屋</a> 
@@ -881,6 +881,17 @@ hide:
       </div> 
       <div class="info">
       Momo5418的个人博客
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://codinglife.online/favicon.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://codinglife.online" target="_blank">CodingLife</a> 
+      </div> 
+      <div class="info">
+      Coding Life，编程与人生
       </div> 
      </div> 
     </div>
