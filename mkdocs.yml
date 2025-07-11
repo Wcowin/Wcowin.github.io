@@ -574,7 +574,7 @@ extra_css:
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
-
+  - stylesheets/latex.css
 watch: #监听文件变动自动刷新
   - docs
   - mkdocs.yml
