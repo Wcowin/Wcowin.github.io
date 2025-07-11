@@ -21,9 +21,6 @@
         <link rel="next" href="404.html">
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../feed_rss_updated.xml">
-      
       <link rel="icon" href="https://i.stardots.io/wcowin/1750090373988.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
@@ -66,8 +63,6 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap">
-    
-      <link rel="stylesheet" href="../../stylesheets/latex.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -4208,10 +4203,14 @@
         </div>
       </div>
 
+      <!-- 页脚脚本部分 -->
       <script>
         (function() {
           // 避免变量冲突，将所有代码包装在立即执行函数中
-
+          
+          // 存储计时器ID，用于清理
+          let timeUpdateInterval;
+          
           function timingTime() {
             const start = "2022-10-20T00:00:00";
             const startTime = new Date(start).getTime();
@@ -4239,6 +4238,12 @@
           // 加载访问量计数器
           async function loadVisitCounter() {
             try {
+              // 检查是否已经加载过计数器脚本
+              if (document.querySelector('script[src*="finicounter.eu.org"]')) {
+                console.log('计数器脚本已加载，跳过重复加载');
+                return;
+              }
+              
               const script = document.createElement('script');
               script.src = '//finicounter.eu.org/finicounter.js';
               script.async = true;
@@ -4267,21 +4272,44 @@
           // 监听访问量更新
           function setupVisitCountObserver() {
             try {
-              const observer = new MutationObserver(syncVisitCount);
+              // 清理旧的观察器
+              if (window._visitCountObserver) {
+                window._visitCountObserver.disconnect();
+              }
+              
+              window._visitCountObserver = new MutationObserver(syncVisitCount);
               const visitCountTarget = document.getElementById("finicount_views");
               if (visitCountTarget) {
-                observer.observe(visitCountTarget, { childList: true, subtree: true });
+                window._visitCountObserver.observe(visitCountTarget, { childList: true, subtree: true });
               }
             } catch (e) {
               console.log('访问量监听器设置失败:', e);
             }
           }
 
+          // 清理函数 - 在页面切换前调用
+          function cleanup() {
+            // 清除计时器
+            if (timeUpdateInterval) {
+              clearInterval(timeUpdateInterval);
+              timeUpdateInterval = null;
+            }
+            
+            // 清除观察器
+            if (window._visitCountObserver) {
+              window._visitCountObserver.disconnect();
+              window._visitCountObserver = null;
+            }
+          }
+
           // 初始化所有功能
           function init() {
+            // 清理旧的计时器和观察器
+            cleanup();
+            
             // 启动计时器
             updateTime();
-            setInterval(updateTime, 1000);
+            timeUpdateInterval = setInterval(updateTime, 1000);
 
             // 加载访问量计数器
             loadVisitCounter();
@@ -4291,16 +4319,36 @@
 
             // 调试信息
             console.log('页脚功能已启动');
-            console.log('当前时间:', timingTime());
           }
 
-          // 确保DOM加载完成后再初始化
-          if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', init);
+          // 使用统一的即时导航处理器（如果可用）
+          if (window.InstantNavigation) {
+            window.InstantNavigation.register(init, 'footer-functions');
           } else {
-            init();
+            // 兼容 Material for MkDocs 的即时加载功能
+            // 关键条件: !window.document$.isStopped 确保在build模式下也能正常工作
+            if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
+              // 使用 Material 的 document$ 可观察对象处理页面切换
+              window.document$.subscribe(() => {
+                console.log('页面内容已更新，重新初始化页脚');
+                // 延迟执行以确保DOM已完全更新
+                setTimeout(init, 100);
+              });
+            } else {
+              // 标准方式 - 仅在初始加载时执行
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+              } else {
+                init();
+              }
+            }
           }
 
+          // 在页面卸载前清理资源
+          window.addEventListener('beforeunload', cleanup);
+
+          // 监听页脚重新初始化事件
+          document.addEventListener('footer.reinit', init);
         })();
       </script>
 
@@ -4640,23 +4688,23 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
-    
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.prune", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "toc.follow", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.instant", "navigation.prune", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "toc.follow", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../javascripts/extra2.js"></script>
+        <script src="../../javascripts/unified-instant-handler.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
+        <script src="../../javascripts/optimize.js"></script>
+      
+        <script src="../../javascripts/instant-handler.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
-      
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

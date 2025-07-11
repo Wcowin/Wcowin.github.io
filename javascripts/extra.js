@@ -223,3 +223,43 @@ if (document.readyState === 'loading') {
 } else {
   new SiteEnhancer();
 }
+
+// 添加提示框控制逻辑
+document.addEventListener('DOMContentLoaded', function() {
+  // 获取提示框元素
+  const tipBox = document.querySelector('.mobile-tips-box'); // 替换为实际的选择器
+  
+  if (tipBox) {
+    // 检查是否为移动设备
+    const isMobile = window.innerWidth <= 768;
+    
+    // 只在移动设备上显示提示框
+    if (!isMobile) {
+      tipBox.style.display = 'none';
+    } else {
+      // 显示5秒后自动隐藏
+      setTimeout(() => {
+        tipBox.style.opacity = '0';
+        setTimeout(() => {
+          tipBox.style.display = 'none';
+        }, 500);
+      }, 5000);
+      
+      // 添加关闭按钮功能
+      const closeBtn = tipBox.querySelector('.close-btn');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          tipBox.style.display = 'none';
+          
+          // 可选：存储用户已关闭提示的状态
+          localStorage.setItem('tipsClosed', 'true');
+        });
+      }
+    }
+    
+    // 检查用户是否已经关闭过提示
+    if (localStorage.getItem('tipsClosed') === 'true') {
+      tipBox.style.display = 'none';
+    }
+  }
+});
