@@ -2426,7 +2426,14 @@ Mkdocs-Wcowin主题: <a href="https://wcowin.work/Mkdocs-Wcowin/">Mkdocs-Wcowin�
         .footer-highlight {
           color: #C2C4C9;
           font-weight: 600;
-          margin-left: 0.3rem;
+          margin-left: 0rem;
+        }
+
+        /* 移动端进一步减少间距 */
+        @media (max-width: 76.1875em) {
+          .footer-visit-count-mobile .footer-highlight {
+            margin-left: 0rem;
+          }
         }
 
         .icp-link {
