@@ -20,6 +20,10 @@ comments: false
             stroke="#6ecbff" stroke-width="5" fill="none"
             stroke-linecap="round" stroke-linejoin="round"
             style="filter: blur(0.2px); opacity: 0.85;" />
+          <path d="M8,12 Q38,18 68,12 Q98,6 128,12 Q158,18 188,12 Q218,6 248,12 Q278,18 308,12"
+            stroke="#b6eaff" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round"
+            style="opacity: 0.5;" />
         </svg>
       </span>
     </div>
@@ -34,8 +38,8 @@ comments: false
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image" class="flip-glow-ultimate-back" loading="lazy">
-        <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image" class="flip-glow-ultimate-front" loading="lazy">
+        <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image" class="flip-glow-ultimate-back">
+        <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image" class="flip-glow-ultimate-front">
       </div>
     </div>
   </div>
@@ -71,7 +75,7 @@ comments: false
 
 .wcowin-header-title {
   font-size: 3.2rem;
-  font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif;
+  font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', 'Hiragino Sans', Arial, sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
   margin-bottom: 18px;
@@ -82,11 +86,13 @@ comments: false
   text-fill-color: transparent;
   display: flex;
   align-items: center;
+  text-shadow: 0 2px 10px rgba(106, 203, 255, 0.13);
 }
 
 .wcowin-header-subtitle {
   font-size: 1.7rem;
   font-weight: bold;
+  color: #222;
   position: relative;
   margin-bottom: 22px;
   font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif;
@@ -126,6 +132,7 @@ comments: false
   
   .wcowin-header-subtitle-inner {
     color: #757575;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* 增强阴影 */
   }
   
   .wcowin-header-motto {
@@ -172,7 +179,8 @@ comments: false
   border: 1.5px solid #b6eaff;
   border-radius: 24px;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(106, 203, 255, 0.07);
 }
 .wcowin-header-btn:hover {
   background: #e6f4ff;
@@ -186,6 +194,7 @@ comments: false
     color: #6ecbff;
     background: rgba(30, 41, 59, 0.8);
     border-color: rgba(110, 203, 255, 0.4);
+    box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
   }
   
   .wcowin-header-btn:hover {
@@ -200,6 +209,7 @@ comments: false
   color: #6ecbff;
   background: rgba(30, 41, 59, 0.8);
   border-color: rgba(110, 203, 255, 0.4);
+  box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
 }
 
 [data-md-color-scheme="slate"] .wcowin-header-btn:hover {
@@ -231,28 +241,52 @@ comments: false
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px; height: 320px;
+  width: 320px; height: 320px; /* 从360px减小到320px */
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
-  background: conic-gradient(from 0deg,
-    #ff9edb 0%, #a2d8ff 20%, #a8ffb0 40%, #fff5a8 60%, #ffb0b0 80%, #ff9edb 100%);
-  filter: blur(50px) saturate(1.2);
-  opacity: 0.75;
-  animation: glow-rotate 15s linear infinite;
+  background:
+    radial-gradient(circle at 60% 40%, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.08) 60%, transparent 100%),
+    conic-gradient(from 0deg,
+      #ff9edb 0%, #a2d8ff 20%, #a8ffb0 40%, #fff5a8 60%, #ffb0b0 80%, #ff9edb 100%
+    );
+  filter: blur(50px) brightness(1.1) saturate(1.2); /* 减小模糊半径和亮度 */
+  opacity: 0.85; /* 降低不透明度 */
+  animation: 
+    glow-ultimate-rotate 15s linear infinite, 
+    glow-ultimate-breath 5s ease-in-out infinite alternate,
+    glow-ultimate-hue 25s linear infinite;
 }
 
-@keyframes glow-rotate {
+@keyframes glow-ultimate-rotate {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
+}
+@keyframes glow-ultimate-breath {
+  0% { opacity: 0.7; filter: blur(50px) brightness(1.05) saturate(1.1); transform: translate(-50%, -50%) scale(0.92);}
+  50% { opacity: 0.85; filter: blur(55px) brightness(1.15) saturate(1.25); transform: translate(-50%, -50%) scale(1.0);}
+  100% { opacity: 0.7; filter: blur(50px) brightness(1.05) saturate(1.1); transform: translate(-50%, -50%) scale(0.92);}
 }
 
 /* 为深色模式添加特定的光辉调整 */
 @media (prefers-color-scheme: dark) {
   .flip-glow-ultimate-glow {
-    width: 300px; height: 300px;
-    opacity: 0.65;
+    width: 300px; height: 300px; /* 在深色模式下进一步减小 */
+    filter: blur(45px) brightness(0.95) saturate(1.1); /* 降低亮度 */
+    opacity: 0.75; /* 降低不透明度 */
   }
+  
+  @keyframes glow-ultimate-breath {
+    0% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9);}
+    50% { opacity: 0.75; filter: blur(50px) brightness(1.0) saturate(1.15); transform: translate(-50%, -50%) scale(0.98);}
+    100% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9);}
+  }
+}
+
+@keyframes glow-ultimate-hue {
+  0% { filter: blur(60px) brightness(1.2) saturate(1.3) hue-rotate(0deg); }
+  50% { filter: blur(60px) brightness(1.2) saturate(1.3) hue-rotate(20deg); }
+  100% { filter: blur(60px) brightness(1.2) saturate(1.3) hue-rotate(0deg); }
 }
 
 .flip-glow-ultimate-imgs {
@@ -269,9 +303,10 @@ comments: false
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #fff;
-  box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15);
+  box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.2);
   backface-visibility: hidden;
-  transition: transform 1.2s cubic-bezier(.4,2,.6,1);
+  transition: transform 1.2s cubic-bezier(.4,2,.6,1), box-shadow 0.3s ease;
+  background: #fff;
 }
 .flip-glow-ultimate-imgs img.flip-glow-ultimate-back {
   z-index: 1;
@@ -284,10 +319,12 @@ comments: false
 .flip-glow-ultimate-imgs:hover img.flip-glow-ultimate-back {
   transform: rotateY(180deg);
   z-index: 2;
+  box-shadow: 0 12px 32px rgba(14, 30, 37, 0.25);
 }
 .flip-glow-ultimate-imgs:hover img.flip-glow-ultimate-front {
   transform: rotateY(0deg);
   z-index: 3;
+  box-shadow: 0 12px 32px rgba(14, 30, 37, 0.25);
 }
 
 /* ====== 响应式布局 ====== */
@@ -310,18 +347,45 @@ comments: false
 }
 @media (max-width: 700px) {
   .wcowin-header-row {
-    display: none !important;
+    flex-direction: column-reverse;
+    gap: 0px; /* 减少到最小间距 */
+    min-height: unset;
+    margin: 12px 0 12px 0; /* 减小上下边距 */
+  }
+  .wcowin-header-text {
+    align-items: center;
+    text-align: center;
+    max-width: 98vw;
+    margin-top: -10px; /* 添加负边距拉近与头像的距离 */
+  }
+  .wcowin-header-avatar {
+    margin-bottom: 0px; /* 移除底部间距 */
+  }
+  .wcowin-header-title {
+    margin-bottom: 12px; /* 减小标题下方间距 */
+  }
+  .wcowin-header-subtitle {
+    margin-bottom: 16px; /* 减小副标题下方间距 */
+  }
+  .wcowin-header-motto {
+    margin-bottom: 16px; /* 减小座右铭下方间距 */
   }
   
-  /* 显示移动端标语 */
-  .mobile-motto {
-    display: block;
+  /* 调整头像大小，使其在移动端更小 */
+  .flip-glow-ultimate,
+  .flip-glow-ultimate-imgs {
+    width: 220px;
+    height: 220px;
+  }
+  .flip-glow-ultimate-glow {
+    width: 220px;
+    height: 220px;
   }
 }
-
 /* 添加一个额外的样式类，可以直接应用到元素上 */
 .dark-visible-text {
   color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* 移动端样式 */
@@ -338,6 +402,18 @@ comments: false
   font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif;
   font-weight: 500;
   margin: 0;
+}
+
+@media (max-width: 700px) {
+  /* 隐藏原有头部 */
+  .wcowin-header-row {
+    display: none !important;
+  }
+  
+  /* 显示移动端标语 */
+  .mobile-motto {
+    display: block;
+  }
 }
 </style>
 
