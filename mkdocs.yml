@@ -421,8 +421,11 @@ plugins:
   # - social
   - search:
       enabled: !ENV [CI, false]
-      separator: '[\s\u200b\-]'
-  - offline
+      separator: '[\s\u200b\-\u3000\u3001\u3002\uFF0C\uFF0E\uFF1F\uFF01\uFF1B]+'
+      lang:
+        - en
+        - zh
+  # - offline
   # - glightbox:
   #     enabled: !ENV [glightbox, false]
   #     touchNavigation: true
@@ -531,11 +534,11 @@ markdown_extensions:
 extra_javascript:
   # 优先加载关键脚本
   - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
-  - javascripts/optimize.js
+  # - javascripts/optimize.js
   - javascripts/instant-handler.js
   # 延迟加载非关键脚本
-  - javascripts/extra.js
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  # - javascripts/extra.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
@@ -545,18 +548,18 @@ extra_javascript:
 
 
 extra_css:
-  - stylesheets/extra.css
+  # - stylesheets/extra.css
   - stylesheets/extra2.css
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
   - stylesheets/link.css  #友链
-  - stylesheets/optimize.css
+  # - stylesheets/optimize.css
   # - stylesheets/poem.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
   # - stylesheets/card2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
-  # - stylesheets/customize.css  #按钮圆角化
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
+  - stylesheets/customize.css  #按钮圆角化
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
   # - stylesheets/flink.css
   # - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
@@ -575,6 +578,7 @@ extra_css:
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
   - stylesheets/latex.css
+
 watch: #监听文件变动自动刷新
   - docs
   - mkdocs.yml

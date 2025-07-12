@@ -246,8 +246,8 @@ hide_reading_time: true
 ## 我的履历
 
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-<link rel="stylesheet" href="sty/portfolio.css">
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css"> -->
+<!-- <link rel="stylesheet" href="sty/portfolio.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
 <div class="qualification__tabs">
     <div class="qualification__button qualification__active" data-target='#education'>
         <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
