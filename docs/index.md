@@ -7,6 +7,10 @@ hide:
   - feedback
 comments: false
 ---
+<!-- 在头部添加预加载关键资源 -->
+<link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
+<link rel="preload" href="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" as="image">
+
 <!-- wcowin-header.html -->
 <div class="wcowin-header-row">
   <!-- 左侧：文字内容 -->
@@ -20,10 +24,6 @@ comments: false
             stroke="#6ecbff" stroke-width="5" fill="none"
             stroke-linecap="round" stroke-linejoin="round"
             style="filter: blur(0.2px); opacity: 0.85;" />
-          <path d="M8,12 Q38,18 68,12 Q98,6 128,12 Q158,18 188,12 Q218,6 248,12 Q278,18 308,12"
-            stroke="#b6eaff" stroke-width="2" fill="none"
-            stroke-linecap="round" stroke-linejoin="round"
-            style="opacity: 0.5;" />
         </svg>
       </span>
     </div>
@@ -38,8 +38,8 @@ comments: false
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image" class="flip-glow-ultimate-back">
-        <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image" class="flip-glow-ultimate-front">
+        <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image" class="flip-glow-ultimate-back" loading="eager" fetchpriority="high" width="280" height="280">
+        <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image" class="flip-glow-ultimate-front" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>
@@ -459,7 +459,7 @@ hr {
 ---
 
 <div id="greeting" class="greeting-container">
-  <span id="greeting-text" class="greeting-text"></span>
+  <span id="greeting-text" class="greeting-text">加载中...</span>
 </div>
 
 <style>
@@ -479,6 +479,8 @@ hr {
     font-weight: bold;
     color: #555;
     font-family: 'LXGW WenKai', sans-serif;
+    /* 添加最小高度避免布局抖动 */
+    min-height: 1.5rem;
   }
   
   /* 夜间模式适配 */
@@ -506,7 +508,15 @@ hr {
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  // 优化的问候函数
+  function updateGreeting() {
+    const greetingElement = document.getElementById('greeting-text');
+    if (!greetingElement) {
+      // 如果元素不存在，延迟重试
+      setTimeout(updateGreeting, 100);
+      return;
+    }
+
     const hour = new Date().getHours();
     let greeting;
     
@@ -532,8 +542,24 @@ hr {
       greeting = "夜深了，早点休息哦 🌠";
     }
     
-    document.getElementById('greeting-text').innerHTML = greeting;
-  });
+    greetingElement.textContent = greeting;
+  }
+
+  // 多重保险的初始化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateGreeting);
+  } else {
+    // DOM 已经加载完成
+    updateGreeting();
+  }
+
+  // 额外的后备方案
+  if (document.getElementById('greeting-text')) {
+    updateGreeting();
+  } else {
+    // 如果元素还没有加载，等待一下
+    setTimeout(updateGreeting, 200);
+  }
 </script>
 
 ---
