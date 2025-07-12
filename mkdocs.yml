@@ -533,9 +533,10 @@ markdown_extensions:
   
 extra_javascript:
   # 优先加载关键脚本
+  - javascripts/
   - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
   # - javascripts/optimize.js
-  - javascripts/instant-handler.js
+  # - javascripts/instant-handler.js
   # 延迟加载非关键脚本
   # - javascripts/extra.js
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn

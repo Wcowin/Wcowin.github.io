@@ -560,10 +560,6 @@ hr {
     // 如果元素还没有加载，等待一下
     setTimeout(updateGreeting, 200);
   }
-
-  // 在你的问候语脚本中添加
-  document.addEventListener('navigation.instant.complete', updateGreeting);
-  document.addEventListener('scripts.reinit', updateGreeting);
 </script>
 
 ---
