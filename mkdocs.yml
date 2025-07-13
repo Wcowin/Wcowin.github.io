@@ -591,3 +591,5 @@ hooks:
   # - docs/overrides/hooks/toc_optimizer.py
   # - docs/overrides/hooks/last_updated.py
   - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
+  - docs/overrides/hooks/related_posts.py
+  # - docs/overrides/hooks/reading_progress.py

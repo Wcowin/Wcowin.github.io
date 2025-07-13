@@ -42,20 +42,5 @@ status: new
 
 ## 效果
 
-<body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
-     crossorigin="anonymous"></script>
-<!-- AD1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2327435979273742"
-     data-ad-slot="3702206121"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</body>
-
 
 ![image](https://s1.imagehub.cc/images/2025/06/29/ad5ec6e43f978a3f8d708b23389d8b3d.png)

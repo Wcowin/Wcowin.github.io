@@ -1,5 +1,3 @@
-# Math
-
 <center> <font face="宋体" color= #4b78d8 size=6 >
 All knowledge is, in final analysis, history.  
 All sciences are, in the abstract, mathematics.  
