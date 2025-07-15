@@ -6,6 +6,9 @@ tags:
 
 # 第1章 密码学引言
 
+
+![4cab66c1344ffa6ce96ccbb5e0b55b23](https://s1.imagehub.cc/images/2025/07/15/8eafb8c385b5ca3b08719f59ba5cccba.webp)
+
 密码学（Cryptography）是研究信息加密与解密、保障信息安全的一门科学。它在现代通信、数据存储、网络安全等领域有着极其重要的作用。
 
 ## 定义与核心概念

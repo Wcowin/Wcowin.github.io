@@ -5,32 +5,39 @@
 
 // 全局错误处理
 window.addEventListener('error', (event) => {
-  // 忽略已知的第三方库错误
+  // 忽略已知的第三方库错误和内容拦截器错误
   if (event.message && (
       event.message.includes('Cannot set property Package') ||
       event.message.includes('ga.getAll is not a function') ||
       event.message.includes('Cannot read properties of undefined') ||
       event.message.includes('The message port closed') ||
       event.message.includes('Access to fetch') ||
-      event.message.includes('Failed to load resource')
+      event.message.includes('Failed to load resource') ||
+      event.message.includes('net::ERR_BLOCKED_BY_CONTENT_BLOCKER') ||
+      event.message.includes('Script error')
   )) {
     console.log('ℹ️ 已忽略已知错误');
     event.preventDefault();
     return;
   }
   
-  console.error('🚨 JavaScript 错误:', event.error || event.message);
+  // 只记录有意义的错误信息
+  if (event.error || (event.message && !event.message.includes('undefined'))) {
+    console.error('🚨 JavaScript 错误:', event.error || event.message);
+  }
 }, true);
 
 // 处理未捕获的 Promise 错误
 window.addEventListener('unhandledrejection', (event) => {
   const errorMsg = event.reason ? (event.reason.message || event.reason) : 'Unknown Promise error';
   
-  // 忽略特定错误
+  // 忽略特定错误和内容拦截器错误
   if (typeof errorMsg === 'string' && (
       errorMsg.includes('ga.getAll is not a function') ||
       errorMsg.includes('Cannot read properties of undefined') ||
-      errorMsg.includes('views')
+      errorMsg.includes('views') ||
+      errorMsg.includes('ERR_BLOCKED_BY_CONTENT_BLOCKER') ||
+      errorMsg.includes('Script error')
   )) {
     event.preventDefault();
     return;

@@ -1,3 +1,30 @@
+---
+title: 为MKdocs页面添加相关文章推荐
+tags:
+  - Mkdocs
+status: new
+---
+
+# 为MKdocs页面添加相关文章推荐
+
+## 步骤
+
+`mkdocs.yml`中需要覆写文件夹overrides(没有的话新建一个)
+
+
+
+```yaml
+theme:
+  name: material
+  custom_dir: docs/overrides
+```
+
+
+在docs/overrides/hooks/下新建一个`related_posts.py`文件即可，内容如下：
+
+具体配置根据自己仓库情况自行修改
+
+```python
 import os
 import re
 from collections import Counter, defaultdict
@@ -501,3 +528,7 @@ def calculate_similarity(article1, article2):
         score += 2 * weights['source_dir']
     
     return score
+```
+
+
+## 效果如下

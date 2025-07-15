@@ -220,16 +220,15 @@ hide_reading_time: true
 </div>
 
 
+
+</div>
+<br>
 <center>
 <a href="/assets/个人简历.pdf" target="_blank" class="md-button">下载简历</a>
 </center>
-</div>
-
-<!-- <center>
-  [下载简历 :fontawesome-solid-download:](个人简历2.pdf){.md-button target="_blank"}
-</center> -->
 
 
+<!-- [下载简历 :fontawesome-solid-download:](个人简历2.pdf){.md-button target="_blank"} -->
 
 
 
