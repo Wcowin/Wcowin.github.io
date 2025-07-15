@@ -4,6 +4,7 @@ from collections import Counter, defaultdict
 from textwrap import dedent
 import hashlib
 import yaml
+from urllib.parse import urlparse
 
 # 存储所有文章的信息和索引
 article_index = {}
@@ -257,6 +258,7 @@ def on_files(files, config):
 def on_page_markdown(markdown, **kwargs):
     """为每篇文章添加相关推荐"""
     page = kwargs['page']
+    config = kwargs['config']
     
     # 检查是否应该处理这个页面
     if not should_index_file(page.file.src_path):
@@ -282,6 +284,12 @@ def on_page_markdown(markdown, **kwargs):
     if not related_articles:
         return markdown
     
+    # 从 config 中获取 site_url 并解析出基本路径
+    site_url = config.get('site_url', '')
+    base_path = urlparse(site_url).path if site_url else '/'
+    if not base_path.endswith('/'):
+        base_path += '/'
+
     # 构建推荐HTML - 针对Safari浏览器优化
     recommendation_html = "\n"
     
@@ -335,8 +343,10 @@ def on_page_markdown(markdown, **kwargs):
     
     for score, article_info in related_articles:
         title = article_info['title']
-        url = article_info['url']
-        recommendation_html += f'<li><a href="/{url}">{title}</a></li>\n'
+        relative_url = article_info['url']
+        # 拼接基本路径和文章相对URL，并确保路径分隔符正确
+        full_url = (base_path + relative_url).replace('//', '/')
+        recommendation_html += f'<li><a href="{full_url}">{title}</a></li>\n'
     
     recommendation_html += '</ul>\n'
     recommendation_html += '</div>\n'
