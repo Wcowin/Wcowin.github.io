@@ -895,6 +895,17 @@ hide:
       </div> 
      </div> 
     </div>
+    <div class="card"> 
+     <img class="ava" src="https://blog.liushen.fun/info/avatar.ico" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://blog.liushen.fun" target="_blank">清羽飞扬</a> 
+      </div> 
+      <div class="info">
+      柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜
+      </div> 
+     </div> 
+    </div>
 
 
 

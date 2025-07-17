@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/schema.json
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 #[Info]
 site_name: Wcowin's Blog
 site_url: http://wcowin.work/
