@@ -573,8 +573,8 @@ extra_css:
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
   # - https://static.zeoseven.com/zsft/292/main/result.css #字体
-  # - stylesheets/ziti.css  #字体
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap
+  - stylesheets/ziti.css  #字体
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css

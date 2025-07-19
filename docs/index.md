@@ -75,7 +75,7 @@ comments: false
 
 .wcowin-header-title {
   font-size: 3.2rem;
-  font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', 'Hiragino Sans', Arial, sans-serif;
+  /* font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', 'Hiragino Sans', Arial, sans-serif; */
   font-weight: 800;
   letter-spacing: 2px;
   margin-bottom: 18px;
@@ -95,7 +95,7 @@ comments: false
   color: #222;
   position: relative;
   margin-bottom: 22px;
-  font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif;
+  /* font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif; */
   line-height: 1.3;
   display: flex;
   flex-direction: column;
@@ -154,7 +154,7 @@ comments: false
 }
 
 .wcowin-header-motto {
-  font-family: 'LXGW WenKai', sans-serif;
+  /* font-family: 'LXGW WenKai', sans-serif; */
   font-size: 1.2rem;
   color: #757575;
   letter-spacing: 1px;
@@ -399,7 +399,7 @@ comments: false
 .mobile-motto h1 {
   font-size: 1.8rem;
   color: #757575;
-  font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif;
+  /* font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif; */
   font-weight: 500;
   margin: 0;
 }
@@ -424,9 +424,9 @@ comments: false
 <!-- 修改分隔线上下的间距 -->
 <style>
 /* 默认显示换行 */
-.desktop-only {
-  display: none; /* 完全移除换行 */
-}
+/* .desktop-only {
+  display: none; 
+} */
 
 /* 减少分隔线的边距 */
 hr {
@@ -478,7 +478,7 @@ hr {
     font-size: 1.5rem;
     font-weight: bold;
     color: #555;
-    font-family: 'LXGW WenKai', sans-serif;
+    /* font-family: 'LXGW WenKai', sans-serif; */
     /* 添加最小高度避免布局抖动 */
     min-height: 1.5rem;
   }
@@ -705,15 +705,23 @@ body::before {
 }
 </style>
 
-
-
-<!-- <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
+<!-- 
+  将所有页面级脚本和元数据统一放置在这里 
+-->
+<head> 
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
+  
+  <!-- Google Adsense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script>
 </head>
-<body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
-    crossorigin="anonymous"></script>
+
+<!-- 
+  Google Adsense 广告单元
+  (如果需要，可以取消注释)
+-->
+<!-- 
 <ins class="adsbygoogle"
     style="display:block"
     data-ad-client="ca-pub-2327435979273742"
@@ -723,40 +731,7 @@ body::before {
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</body> -->
-
-<!-- <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-<amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-2327435979273742">
-</amp-auto-ads> -->
-
----
-<!-- 生活所迫： -->
-
-<!-- <body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2327435979273742"
-     data-ad-slot="3702206121"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</body> -->
-
-
-
-
-
+-->
 
 <!-- [timeline(./docs/timeline/timeindex.json)] -->
-
-<head> 
-<script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
-</head>
 

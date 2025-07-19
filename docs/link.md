@@ -208,7 +208,7 @@ hide:
      </div> 
     </div> 
    <div class="card"> 
-     <img class="ava" src="https://pic.vimin.cc/logo.png" /> 
+     <img class="ava" src="https://cn.cravatar.com/avatar/6eb95597489dd26f15a973e667d71aef?s=100&amp;r=G&amp;d=" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://vimin.cc/" target="_blank">XIAOMING'S BLOG</a> 
@@ -660,7 +660,7 @@ hide:
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://img.viper3.top/user/%E7%9A%AE%E5%8D%A1%E5%85%AB.jpg" /> 
+     <img class="ava" src="https://blog.viper3.top/usr/themes/Sunny/style/avatar/04.svg" /> 
      <div class="card-header"> 
       <div> 
       <a href="https://blog.viper3.top/" target="_blank">小霜南风</a> 
