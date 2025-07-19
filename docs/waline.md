@@ -16,7 +16,7 @@ disqus: true
   <div class="poem-border poem-right"></div>
   <h1>留言板</h1>
   <p id="poem">月落乌啼霜满天 江枫渔火对愁眠</p>
-  <p id="info"> 《枫桥夜泊》【唐代】张继</p>
+  <p id="info"> 《枫桥夜泊》&nbsp【唐代】&nbsp张继</p>
 </div>
 
 <!-- <div align="center" style="margin: 40px 0; padding: 25px; border: 2px solid #e1e4e8; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
