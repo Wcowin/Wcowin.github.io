@@ -15,7 +15,8 @@
       'https://cdn.jsdelivr.net',
       'https://fonts.googleapis.com',
       'https://fonts.gstatic.com',
-      'https://finicounter.eu.org'
+      'https://finicounter.eu.org',
+      'https://www.googletagmanager.com' // 新增 Google Analytics 等
     ],
     prefetchPages: true          // 预取可能的下一页
   };
@@ -102,7 +103,7 @@
           }
         });
       }, {
-        rootMargin: '200px 0px' // 提前200px加载
+        rootMargin: '300px 0px' // 调整为提前300px加载，提高响应
       });
       
       lazyImages.forEach(img => {
@@ -204,9 +205,9 @@
     `;
     document.head.appendChild(style);
     
-    // 预加载关键字体
     const fontUrls = [
-      // 添加您网站使用的关键字体URL
+      'https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2', // 示例字体URL，替换为您的实际字体
+      // 添加更多字体
     ];
     
     fontUrls.forEach(url => {
