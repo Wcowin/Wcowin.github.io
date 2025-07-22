@@ -217,10 +217,6 @@ hide_reading_time: true
         <span class="about__info-title">2个+</span>
         <span class="about__info-name">贡献的开源</span>
     </div>
-
-
-
-
 </div>
 <br>
 <center>
