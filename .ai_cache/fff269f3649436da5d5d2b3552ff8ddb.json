@@ -1,0 +1,8 @@
+{
+  "summary": "PIP是Python包管理工具，用于安装和管理Python包。支持命令行操作，可快速查找、安装和更新Python包及其依赖。",
+  "service": "glm",
+  "page_title": "PIP",
+  "timestamp": "2025-07-24T14:15:50.788109",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "通过覆写MKdocs的overrides文件夹，实现自动提取文章关键词，并基于关键词推荐相关文章，提高文档阅读体验。",
+  "service": "glm",
+  "page_title": "添加相关推荐文章",
+  "timestamp": "2025-07-24T14:17:11.391640",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Lighthouse是谷歌和Edge浏览器内置的网站性能测试工具，通过简单操作即可分析页面性能，帮助优化网站加载速度和用户体验。",
+  "service": "glm",
+  "page_title": "利用Lighthouse测试网站性能",
+  "timestamp": "2025-07-24T14:17:56.472166",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}
