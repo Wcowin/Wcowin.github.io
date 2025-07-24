@@ -144,7 +144,7 @@ const initManager = (() => {
 })();
 
 
-// Entrance - Compatible with Material for MkDocs navigation.instant
+// Entrance - Compatible with Material for MkDocs 'navigation.instant'
 // Check if Material for MkDocs document$ observable is available
 if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
     // Use Material's document$ observable for both initial load and navigation.instant

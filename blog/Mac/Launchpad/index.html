@@ -52,17 +52,31 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra2.css">
-    
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/link.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/customize.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/ziti.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/latex.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/backdrop.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3672,7 +3686,7 @@
 <h1 id="_1">启动台图标顺序错乱怎么办<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">💾 AI智能摘要 (GLM-4)</p>
-<p>重置Launchpad设置可解决图标错乱问题。删除desktoppicture.db文件或使用Terminal命令重置图标数据库，恢复默认布局后可手动调整App顺序。</p>
+<p>重置Launchpad设置可解决图标顺序错乱问题，包括删除desktoppicture.db文件和执行特定Terminal命令，恢复默认布局后可自行调整。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
@@ -3684,6 +3698,7 @@
 <p>重置 Dock 图标数据库：在 Finder 中进入<code>~/Library/Application Support/Dock/</code>目录，删除该目录下的desktoppicture.db 文件。或者在 Terminal 中键入 <code>rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall Dock</code> 后回车。  </p>
 <p>重置 Launchpad 图标数据库：在 Terminal 中键入 <code>defaults write com.apple.dock ResetLaunchPad -bool true &amp;&amp; killall Dock</code>后回车。  </p>
 <p>完成以上操作后，Launchpad 图标布局已经恢复默认设置，苹果官方提供的 App 都被重新排列到 Launchpad 第一屏幕中，然后根据自己的需要来进行重新排列 App 即可。</p>
+<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin'><span data-tippy-content='创建时间: 2023-06-22'><span class='material-icons' data-icon='doc_created'></span><time datetime='2023-06-22T22:09:02' locale='zh_CN'>2023-06-22</time></span><span data-tippy-content='最后更新: 2025-07-24'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-07-24T14:12:58.038300+00:00' locale='zh_CN'>2025-07-24</time></span><span data-tippy-content='作者: &lt;a href="mailto:1135801806@qq.com"&gt;Wcowin&lt;/a&gt;'><span class='material-icons' data-icon='doc_author'></span>Wcowin</span></div></div>
 <style>
 .related-posts {
   margin-top: 1.5rem;
@@ -4589,6 +4604,14 @@
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js"></script>
+      
+        <script src="../../../assets/document_dates/tippy/popper.min.js"></script>
+      
+        <script src="../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../assets/document_dates/core/core.js"></script>
+      
+        <script src="../../../assets/document_dates/user.config.js"></script>
       
     
   </body>

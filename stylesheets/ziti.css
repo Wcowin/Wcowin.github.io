@@ -3,7 +3,7 @@ https://fonts.zeoseven.com/
 https://chinese-font.netlify.app/zh-cn/fonts/hwmct/汇文明朝体
 */
 
-/* @import url('https://fontsapi.zeoseven.com/292/main/result.css');
+@import url('https://fontsapi.zeoseven.com/292/main/result.css');
 body {
 font-family: "LXGW WenKai";
 font-weight: normal;
@@ -14,7 +14,7 @@ button.md-top {
     font-size: 16px;
     font-weight: lighter;
 }
-*/
+
 
 
 /* https://chinese-font.netlify.app/zh-cn/fonts/hwmct/汇文明朝体 */
@@ -30,7 +30,7 @@ button.md-top {
 
 
 
-@import url("https://fontsapi.zeoseven.com/256/main/result.css");
+/* @import url("https://fontsapi.zeoseven.com/256/main/result.css");
 body {
     font-family: "Huiwen-mincho";
     font-weight: normal;
@@ -39,7 +39,7 @@ button.md-top {
     font-family: "Huiwen-mincho";
     font-size: 16px;
     font-weight: lighter;
-}
+} */
 
 
 
