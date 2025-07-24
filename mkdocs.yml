@@ -320,10 +320,10 @@ extra:
   status:
     new: 最近添加
     deprecated: 已弃用
-  cusdis:
-    host: https://cusdis.com
-    app_id: 655cf3bc-734a-4d88-8317-be350621334c
-    lang: zh-cn
+  # cusdis:
+  #   host: https://cusdis.com
+  #   app_id: 655cf3bc-734a-4d88-8317-be350621334c
+  #   lang: zh-cn
   alternate:
     - name: 简体中文
       link: /
@@ -380,22 +380,22 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  # - document-dates:
-  #     position: top            # Display position: top (after title)  bottom (end of document), default: bottom
-  #     type: date               # Date type: date  datetime  timeago, default: date
-  #     locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
-  #     date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
-  #     time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
-  #     exclude:                 # List of excluded files
-  #       - index.md
-  #       - tag.md
-  #       - waline.md
-  #       - blog/posts/*
-  #       - blog/index.md
-  #       - link.md
-  #       - blog/Mkdocs/linktech.md
-  #       - about/*            # Exclude all files in private directory, including subdirectories
-  #     show_author: true       # Show author or not, default: true
+  - document-dates:
+      position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
+      type: date               # Date type: date  datetime  timeago, default: date
+      locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
+      date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
+      time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
+      exclude:                 # List of excluded files
+        - index.md
+        - tag.md
+        - waline.md
+        - blog/posts/*
+        - blog/index.md
+        - link.md
+        - blog/Mkdocs/linktech.md
+        - about/*            # Exclude all files in private directory, including subdirectories
+      show_author: true       # Show author or not, default: true
   # - statistics
   # - git-authors
   # - rss:
@@ -481,7 +481,7 @@ plugins:
       # categories_toc: true
       pagination_per_page: 5
       pagination_url_format: "page/{page}"
-      authors_file: "{blog}/.authors.yml"  #作者信息
+      # authors_file: "{blog}/.authors.yml"  #作者信息
   - tags
 
 
@@ -551,17 +551,16 @@ extra_javascript:
 
 extra_css:
   # - stylesheets/extra.css
-  - stylesheets/extra2.css
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
-  - stylesheets/link.css  #友链
+  # - stylesheets/link.css  #友链
   # - stylesheets/optimize.css
   # - stylesheets/poem.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
   # - stylesheets/card2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
-  - stylesheets/customize.css  #按钮圆角化
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
+  # - stylesheets/customize.css  #按钮圆角化
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
   # - stylesheets/flink.css
   # - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
@@ -573,13 +572,13 @@ extra_css:
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
   # - https://static.zeoseven.com/zsft/292/main/result.css #字体
-  - stylesheets/ziti.css  #字体
+  # - stylesheets/ziti.css  #字体
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css #字体
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
-  - stylesheets/latex.css
 
 watch: #监听文件变动自动刷新
   - docs

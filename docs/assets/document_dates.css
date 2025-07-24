@@ -1,0 +1,40 @@
+
+.document-dates-plugin {
+    color: #8e8e8e;
+    font-size: 0.75rem;
+    padding: 0.2rem 0;
+    opacity: 0.7;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+.document-dates-plugin span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.document-dates-plugin .material-icons {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+
+/* top position style */
+.document-dates-plugin-wrapper.document-dates-top {
+    margin-top: -1.2rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+/* bottom position style */
+.document-dates-plugin-wrapper.document-dates-bottom {
+    margin: 1rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+
+/* Hide the footnote divider immediately following the date information with the CSS adjacent sibling selector */
+.document-dates-plugin-wrapper + .footnote hr {
+    display: none;
+}
