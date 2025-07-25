@@ -8,6 +8,7 @@ hide:
 status: new
 # ai_summary: true
 hide_reading_time: true
+hide_comment: true
 ---
 
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>

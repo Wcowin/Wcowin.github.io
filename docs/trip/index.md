@@ -8,6 +8,7 @@ hide:
   #  - footer #隐藏翻页
   #  - feedback  #隐藏反馈
 comments: false  #评论，默认不开启
+hide_comment: true
 ---
 
 <!-- # 要么旅行，要么读书，身体和灵魂必须有一个在路上 -->

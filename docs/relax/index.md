@@ -8,6 +8,7 @@ hide:
   #  - footer #隐藏翻页
   #  - feedback  #隐藏反馈
 comments: false  #评论，默认不开启
+hide_comment: true
 ---
 
 # 闲话一直有 不听自然无

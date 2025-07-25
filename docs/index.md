@@ -6,6 +6,7 @@ hide:
   - footer
   - feedback
 comments: false
+hide_comment: true
 ---
 <!-- 在头部添加预加载关键资源 -->
 <link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
@@ -735,3 +736,9 @@ body::before {
 
 <!-- [timeline(./docs/timeline/timeindex.json)] -->
 
+<script src="https://cdn.staticfile.net/translate.js/3.17.0/translate.js"></script>
+<script>
+translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等
+translate.service.use('client.edge'); //设置机器翻译服务通道，相关说明参考 http://translate.zvo.cn/43086.html
+translate.execute();//完成翻译初始化，进行翻译
+</script>
