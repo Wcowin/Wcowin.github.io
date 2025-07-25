@@ -4351,355 +4351,62 @@ twikoo.init({
     </fieldset>
   </form>
 
+<!-- overrides/partials/comments.html -->
 
-  <h2 id="__comments">评论</h2>
-  <!-- Insert generated snippet here -->
-  <script src="https://giscus.app/client.js"
-  data-repo="Wcowin/hexo-site-comments"
-  data-repo-id="R_kgDOIl9OJA"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOIl9OJM4CTHDe"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="noborder_light"
-  data-lang="zh-CN"
-  data-loading="lazy"  
-  crossorigin="anonymous"
-  async>
-</script>
-<!-- <div class="reward-container">
-  <div></div>
-  <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    请作者喝杯咖啡
-  </button>
-  <div id="qr" style="display: none;">
-      <div style="display: inline-block;">
-        <img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付">
-        <p>微信支付</p>
-      </div>
-      <div style="display: inline-block;">
-        <img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝">
-        <p>支付宝</p>
-      </div>
 
-  </div>
-</div> -->
+<!-- KaTeX 数学公式渲染支持 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<!-- Twikoo 预加载 -->
+<link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
 
 
 
-<!-- 打赏区 -->
-<div class="donation-container">
-  <h3>打赏我们</h3>
-  <p class="donation-desc">维护网站也需要精力和成本。如果有你的支持，也许我们能走得更远。</p>
-  
-  <!-- 加密货币地址 -->
-  <div class="crypto-addresses">
-    <div class="crypto-item">
-      <div class="crypto-input-wrapper">
-        <input type="text" value="bc1pgset9aq4t6kp36sgfnprrlvekthzr7wfwhnfay80x33c8apu3laq3855ze" readonly>
-        <div class="crypto-badge">
-          <svg class="crypto-icon btc-icon" viewBox="0 0 24 24" width="18" height="18">
-            <path d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.4s.975.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z" fill="#F7931A"/>
-          </svg>
-          BTC 
-          <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-        </div>
-      </div>
-    </div>
-    <div class="crypto-item">
-      <div class="crypto-input-wrapper">
-        <input type="text" value="TGcwETg7u5KCyyG8NkLx44yt4oMct8ma7b" readonly>
-<div class="crypto-badge">
-  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 48 48" class="crypto-icon usdt-icon">
-    <circle cx="24" cy="24" r="20" fill="#26a69a"></circle>
-    <rect width="18" height="5" x="15" y="13" fill="#fff"></rect>
-    <path fill="#fff" d="M24,21c-4.457,0-12,0.737-12,3.5S19.543,28,24,28s12-0.737,12-3.5S28.457,21,24,21z M24,26 c-5.523,0-10-0.895-10-2c0-1.105,4.477-2,10-2s10,0.895,10,2C34,25.105,29.523,26,24,26z"></path>
-    <path fill="#fff" d="M24,24c1.095,0,2.093-0.037,3-0.098V13h-6v10.902C21.907,23.963,22.905,24,24,24z"></path>
-    <path fill="#fff" d="M25.723,25.968c-0.111,0.004-0.223,0.007-0.336,0.01C24.932,25.991,24.472,26,24,26 s-0.932-0.009-1.387-0.021c-0.113-0.003-0.225-0.006-0.336-0.01c-0.435-0.015-0.863-0.034-1.277-0.06V36h6V25.908 C26.586,25.934,26.158,25.953,25.723,25.968z"></path>
-  </svg>
-  USDT
-  <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-</div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- 二维码支付 -->
-  <div class="qr-container">
-    <div class="qr-box">
-      <img src="https://s1.imagehub.cc/images/2025/07/11/5fad5fb8ecb7b128d1d4f0152d99072d.png" alt="微信支付">
-      <p>微信</p>
-    </div>
-    <div class="qr-box">
-      <img src="https://s1.imagehub.cc/images/2025/07/11/d08bf716464b4448a4f972c64073bcf8.png" alt="支付宝">
-      <p>支付宝</p>
-    </div>
-  </div>
-</div>
+<br />
+<div id="tcomment" class="loading"></div>
 
-<style>
-  .donation-container {
-    margin: 25px auto;
-    padding: 20px;
-    max-width: 600px;
-    text-align: center;
-  }
-  
-  .donation-container h3 {
-    font-size: 1.4rem;
-    color: #333;
-    margin-bottom: 8px;
-  }
-  
-  .donation-desc {
-    color: #666;
-    margin-bottom: 18px;
-    font-size: 0.9rem;
-  }
-  
-  /* 加密货币地址样式 */
-  .crypto-addresses {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .crypto-item {
-    width: 100%;
-  }
-  
-  .crypto-input-wrapper {
-    position: relative;
-    width: 100%;
-    height: 42px;
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .crypto-input-wrapper input {
-    width: 100%;
-    height: 100%;
-    padding: 0 110px 0 12px;
-    border: none;
-    background: transparent;
-    font-family: monospace;
-    font-size: 0.85rem;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .crypto-badge {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 5px 10px;
-    height: 32px;
-    background-color: white;
-    border-radius: 6px;
-    font-weight: 500;
-    color: #333;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    transition: all 0.2s ease;
-  }
-  
-  .crypto-badge:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-  }
-  
-  .crypto-badge:active {
-    transform: translateY(0);
-  }
-  
-  .crypto-icon {
-    margin-right: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btc-icon {
-    color: #F7931A;
-  }
-  
-  .usdt-icon {
-    color: #26A17B;
-  }
-  
-  .success-icon {
-    color: #4CAF50;
-  }
-  
-  .copy-icon {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  
-  /* 二维码样式 */
-  .qr-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .qr-box {
-    text-align: center;
-  }
-  
-  .qr-box img {
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
-    border: 1px solid #eaeaea;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .qr-box img:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .qr-box p {
-    margin-top: 8px;
-    color: #666;
-    font-size: 14px;
-  }
-  
-  /* 响应式调整 */
-  @media (max-width: 600px) {
-    .donation-container {
-      padding: 15px;
-      margin: 20px auto;
-    }
-    
-    .qr-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
-    
-    .qr-box img {
-      width: 130px;
-      height: 130px;
-    }
-  }
-</style>
+
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // 复制功能
-    const copyToClipboard = (text, element) => {
-      navigator.clipboard.writeText(text).then(() => {
-        // 显示复制成功反馈
-        const originalContent = element.innerHTML;
-        
-        if (element.querySelector('.success-icon')) {
-          // 已有成功图标，添加动画效果
-          const successIcon = element.querySelector('.success-icon');
-          successIcon.style.transform = 'scale(1.5)';
-          setTimeout(() => {
-            successIcon.style.transform = 'scale(1)';
-          }, 300);
-        } else {
-          // 替换图标为成功图标
-          const copyIcon = element.querySelector('.copy-icon');
-          const originalIcon = copyIcon.outerHTML;
-          copyIcon.outerHTML = '<span class="success-icon" style="color: #4CAF50;">✓</span>';
-          
-          setTimeout(() => {
-            element.innerHTML = originalContent;
-          }, 1500);
-        }
-      }).catch(err => {
-        // 如果clipboard API失败，回退到旧方法
-        const input = document.createElement('input');
-        input.value = text;
-        document.body.appendChild(input);
-        input.select();
-        document.execCommand('copy');
-        document.body.removeChild(input);
-        
-        // 显示复制成功反馈（同上）
-        const originalContent = element.innerHTML;
-        const copyIcon = element.querySelector('.copy-icon');
-        if (copyIcon) {
-          const originalIcon = copyIcon.outerHTML;
-          copyIcon.outerHTML = '<span class="success-icon" style="color: #4CAF50;">✓</span>';
-          
-          setTimeout(() => {
-            element.innerHTML = originalContent;
-          }, 1500);
-        }
-      });
+function loadTwikoo() {
+    const script = document.createElement('script');
+    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+    script.onload = function() {
+        initTwikoo();
     };
-    
-    // 为输入框和按钮添加点击复制功能
-    document.querySelectorAll('.crypto-input-wrapper input').forEach(input => {
-      input.addEventListener('click', function() {
-        const badge = this.nextElementSibling;
-        copyToClipboard(this.value, badge);
-      });
-    });
-    
-    document.querySelectorAll('.crypto-badge').forEach(badge => {
-      badge.addEventListener('click', function() {
-        const input = this.previousElementSibling;
-        copyToClipboard(input.value, this);
-      });
-    });
-  });
-</script>
+    script.onerror = function() {
+        console.error('Twikoo 脚本加载失败');
+        document.getElementById('tcomment').innerHTML = '评论系统加载失败，请刷新页面重试';
+    };
+    document.head.appendChild(script);
+}
 
-
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate"
-        ? "transparent_dark"
-        : "light"
-
-      // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-          // Instruct Giscus to change theme
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
+function initTwikoo() {
+    const commentEl = document.getElementById('tcomment');
+    if (!commentEl) return;
+    commentEl.classList.remove('loading');
+    twikoo.init({
+        envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
+        el: '#tcomment',
+        lang: 'zh-CN',
+        path: location.pathname,
+        onCommentLoaded: function () {
+            console.log('评论加载完成');
+        },
+        onError: function(err) {
+            console.error('Twikoo 初始化失败:', err);
+            commentEl.innerHTML = '评论系统初始化失败，请检查网络连接';
         }
-      })
-    })
-  </script>
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadTwikoo);
+} else {
+    loadTwikoo();
+}
+</script>
 
                 
               </article>
@@ -4722,47 +4429,54 @@ twikoo.init({
         <!-- Footer -->
 <footer class="md-footer">
   <!-- Link to previous and/or next page - 移到最上面 -->
+  
     
-  <nav
-    class="md-footer__inner md-grid"
-    aria-label="页脚"
-    
-  >
-    <!-- Link to previous page -->
-     
-    <a
-      href="../yuanjiaohua/"
-      class="md-footer__link md-footer__link--prev"
-      aria-label="上一页: 网页圆角化设计"
-    >
-      <div class="md-footer__button md-icon">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-      </div>
-      <div class="md-footer__title">
-        <span class="md-footer__direction"> 上一页 </span>
-        <div class="md-ellipsis">网页圆角化设计</div>
-      </div>
-    </a>
-    
+      
+      <nav
+        class="md-footer__inner md-grid"
+        aria-label="页脚"
+        
+      >
+        <!-- Link to previous page -->
+        
+          
+          <a
+            href="../yuanjiaohua/"
+            class="md-footer__link md-footer__link--prev"
+            aria-label="上一页: 网页圆角化设计"
+          >
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">上一页</span>
+              <div class="md-ellipsis">网页圆角化设计</div>
+            </div>
+          </a>
+        
 
-    <!-- Link to next page -->
-     
-    <a
-      href="../header/"
-      class="md-footer__link md-footer__link--next"
-      aria-label="下一页: 添加顶部公告栏"
-    >
-      <div class="md-footer__title">
-        <span class="md-footer__direction"> 下一页 </span>
-        <div class="md-ellipsis">添加顶部公告栏</div>
-      </div>
-      <div class="md-footer__button md-icon">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-      </div>
-    </a>
+        <!-- Link to next page -->
+        
+          
+          <a
+            href="../header/"
+            class="md-footer__link md-footer__link--next"
+            aria-label="下一页: 添加顶部公告栏"
+          >
+            <div class="md-footer__title">
+              <span class="md-footer__direction">下一页</span>
+              <div class="md-ellipsis">添加顶部公告栏</div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
-  </nav>
-   
+  
 
   <!-- Further information -->
   <div class="md-footer-meta md-typeset">
@@ -4772,23 +4486,20 @@ twikoo.init({
         <div class="footer-content">
           <div class="footer-visit-count">
             <div class="footer-item">
-              <!-- <span class="footer-icon">👀</span> -->
               <span>本站访问量：</span>
               <span id="finicount_views" class="footer-highlight"></span>
             </div>
 
             <div class="footer-item">
-              <!-- <span class="footer-icon">📝</span> -->
               <a
                 href="https://icp.gov.moe/?keyword=20230640"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="icp-link"
-                >萌ICP备20230640号</a>
+              >萌ICP备20230640号</a>
             </div>
 
             <div class="footer-item runtime-info">
-              <!-- <span class="footer-icon">⏱️</span> -->
               <span>本站已经运行</span>
               <span id="box1" class="footer-highlight"></span>
             </div>
@@ -5325,10 +5036,6 @@ twikoo.init({
             color: #518FC1;
             text-decoration: underline;
           }
-
-          /* .runtime-info {
-            display: none; 移动端隐藏运行时间
-          } */
         }
 
         /* 桌面端隐藏移动端布局 */

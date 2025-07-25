@@ -5621,6 +5621,62 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
     </fieldset>
   </form>
 
+<!-- overrides/partials/comments.html -->
+
+
+<!-- KaTeX 数学公式渲染支持 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<!-- Twikoo 预加载 -->
+<link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
+
+
+
+<br />
+<div id="tcomment" class="loading"></div>
+
+
+
+<script>
+function loadTwikoo() {
+    const script = document.createElement('script');
+    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+    script.onload = function() {
+        initTwikoo();
+    };
+    script.onerror = function() {
+        console.error('Twikoo 脚本加载失败');
+        document.getElementById('tcomment').innerHTML = '评论系统加载失败，请刷新页面重试';
+    };
+    document.head.appendChild(script);
+}
+
+function initTwikoo() {
+    const commentEl = document.getElementById('tcomment');
+    if (!commentEl) return;
+    commentEl.classList.remove('loading');
+    twikoo.init({
+        envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
+        el: '#tcomment',
+        lang: 'zh-CN',
+        path: location.pathname,
+        onCommentLoaded: function () {
+            console.log('评论加载完成');
+        },
+        onError: function(err) {
+            console.error('Twikoo 初始化失败:', err);
+            commentEl.innerHTML = '评论系统初始化失败，请检查网络连接';
+        }
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadTwikoo);
+} else {
+    loadTwikoo();
+}
+</script>
 
                 
               </article>
@@ -5643,47 +5699,54 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
         <!-- Footer -->
 <footer class="md-footer">
   <!-- Link to previous and/or next page - 移到最上面 -->
+  
     
-  <nav
-    class="md-footer__inner md-grid"
-    aria-label="页脚"
-    
-  >
-    <!-- Link to previous page -->
-     
-    <a
-      href="../recommend/"
-      class="md-footer__link md-footer__link--prev"
-      aria-label="上一页: 添加相关推荐文章"
-    >
-      <div class="md-footer__button md-icon">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-      </div>
-      <div class="md-footer__title">
-        <span class="md-footer__direction"> 上一页 </span>
-        <div class="md-ellipsis">添加相关推荐文章</div>
-      </div>
-    </a>
-    
+      
+      <nav
+        class="md-footer__inner md-grid"
+        aria-label="页脚"
+        
+      >
+        <!-- Link to previous page -->
+        
+          
+          <a
+            href="../recommend/"
+            class="md-footer__link md-footer__link--prev"
+            aria-label="上一页: 添加相关推荐文章"
+          >
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">上一页</span>
+              <div class="md-ellipsis">添加相关推荐文章</div>
+            </div>
+          </a>
+        
 
-    <!-- Link to next page -->
-     
-    <a
-      href="../reading_time/"
-      class="md-footer__link md-footer__link--next"
-      aria-label="下一页: 添加阅读信息统计"
-    >
-      <div class="md-footer__title">
-        <span class="md-footer__direction"> 下一页 </span>
-        <div class="md-ellipsis">添加阅读信息统计</div>
-      </div>
-      <div class="md-footer__button md-icon">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-      </div>
-    </a>
+        <!-- Link to next page -->
+        
+          
+          <a
+            href="../reading_time/"
+            class="md-footer__link md-footer__link--next"
+            aria-label="下一页: 添加阅读信息统计"
+          >
+            <div class="md-footer__title">
+              <span class="md-footer__direction">下一页</span>
+              <div class="md-ellipsis">添加阅读信息统计</div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
-  </nav>
-   
+  
 
   <!-- Further information -->
   <div class="md-footer-meta md-typeset">
@@ -5693,23 +5756,20 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
         <div class="footer-content">
           <div class="footer-visit-count">
             <div class="footer-item">
-              <!-- <span class="footer-icon">👀</span> -->
               <span>本站访问量：</span>
               <span id="finicount_views" class="footer-highlight"></span>
             </div>
 
             <div class="footer-item">
-              <!-- <span class="footer-icon">📝</span> -->
               <a
                 href="https://icp.gov.moe/?keyword=20230640"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="icp-link"
-                >萌ICP备20230640号</a>
+              >萌ICP备20230640号</a>
             </div>
 
             <div class="footer-item runtime-info">
-              <!-- <span class="footer-icon">⏱️</span> -->
               <span>本站已经运行</span>
               <span id="box1" class="footer-highlight"></span>
             </div>
@@ -6246,10 +6306,6 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
             color: #518FC1;
             text-decoration: underline;
           }
-
-          /* .runtime-info {
-            display: none; 移动端隐藏运行时间
-          } */
         }
 
         /* 桌面端隐藏移动端布局 */
