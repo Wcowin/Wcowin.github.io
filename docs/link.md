@@ -1,6 +1,5 @@
 ---
 title: 友链
-comments: true
 tags:
   - 友链
 hide:
@@ -8,7 +7,6 @@ hide:
 #   - toc #显示左
   - footer
   - feedback
-hide_comment: true
 ---
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css"> -->

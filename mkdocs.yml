@@ -535,14 +535,15 @@ markdown_extensions:
   
 extra_javascript:
   # 优先加载关键脚本
-  - javascripts/
-  - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
+  # - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
   # - javascripts/optimize.js
   # - javascripts/instant-handler.js
   # 延迟加载非关键脚本
   # - javascripts/extra.js
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
-  - javascripts/mathjax.js
+  # - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
   # - javascripts/liquid-glass-toc.js  # Liquid Glass TOC 增强效果
@@ -594,3 +595,4 @@ hooks:
   - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
   - docs/overrides/hooks/related_posts.py
   # - docs/overrides/hooks/reading_progress.py
+  - docs/overrides/hooks/comments.py       # 新添加的文章页面评论系统
