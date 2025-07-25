@@ -49,7 +49,7 @@ class AISummaryGenerator:
             'ci_enabled': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
             
             # 本地环境是否启用AI摘要（默认启用）
-            'local_enabled': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',
+            'local_enabled': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',
             
             # CI环境是否仅使用缓存（不用管，只在ci.yml中设置有效。默认关闭，即允许生成新摘要）
             'ci_cache_only': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',
