@@ -1,0 +1,8 @@
+{
+  "summary": "MkDocs文档日期插件提供精确的文档元信息显示，支持多种时间格式、灵活位置、样式定制，并适用于无Git环境。支持手动指定时间和作者，跨平台，构建效率高。",
+  "service": "glm",
+  "page_title": "MkDocs文档日期插件",
+  "timestamp": "2025-07-25T11:01:02.620603",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

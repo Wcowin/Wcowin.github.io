@@ -5,9 +5,11 @@ tags:
 status: new
 ---  
 
-# mkdocs-document-dates
+# MkDocs文档日期插件
 
 新一代用于显示文档精确元信息的 MkDocs 插件，如**创建时间、最后更新时间、作者、电子邮件**等。
+
+插件地址：https://github.com/jaywhj/mkdocs-document-dates
 
 ## 特性
 
