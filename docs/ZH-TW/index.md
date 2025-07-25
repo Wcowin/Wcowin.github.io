@@ -29,23 +29,7 @@ hide_reading_time: true
 </font>
 </center> -->
 
-<!-- <center>
-<font  color= #608DBD size=3>
-<p id="hitokoto">
-  <a href="#" id="hitokoto_text" target="_blank"></a>
-</p>
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.querySelector('#hitokoto_text')
-      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-</script>
-</font>
-</center> -->
+
 
 
 <div id="rcorners2" >

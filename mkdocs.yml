@@ -39,8 +39,8 @@ theme:
         name: 切换至日间模式
   features: 
     - announce.dismiss # 可关闭公告栏
-    - navigation.instant # 页面无刷新切换
-    - navigation.prune
+    # - navigation.instant # 页面无刷新切换
+    - navigation.prune # 只渲染可见导航项
     # - header.autohide  # 自动隐藏头部
     # - navigation.instant.progress # 页面切换进度条
     # - navigation.prune # 只渲染可见导航项
@@ -400,26 +400,24 @@ plugins:
   # - statistics
   # - git-authors
   # - rss:
-  #     enabled: !ENV [CI, false]
-  #     match_path: "(blog|develop|relax|trip|about)/(?!archive|category).*\\.md$"  # 匹配文章路径，排除归档和分类页面
-  #     image: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
+  #     match_path: "blog/.*"  # 只包含博客文章
   #     date_from_meta:
-  #       as_creation: date
-  #       as_update: date
-  #       datetime_format: "%Y-%m-%d %H:%M"
+  #       as_creation: "date"
+  #       as_update: "update"
+  #       datetime_format: "%Y-%m-%d"
   #     categories:
-  #       - categories
   #       - tags
-  #     # RSS feed 配置
-  #     abstract_chars_count: 200  # 摘要字符数
-  #     abstract_delimiter: "<!-- more -->"  # 摘要分隔符
-  #     comments_path: "#__comments"  # 评论链接
-  #     feed_ttl: 1440  # Feed 缓存时间（分钟）
-  #     length: 30  # RSS 条目数量
-  #     pretty_print: true  # 格式化输出
+  #       - categories
+  #     comments_path: "#__comments"
+  #     image: https://wcowin.work/assets/avatar.jpg
+  #     feed_ttl: 1440  # 24小时
+  #     length: 20  # 最新20篇文章
+  #     pretty_print: true
+  #     rss_description: "Wcowin 的个人博客 - 技术分享、学习笔记、生活随笔"
+  #     rss_name: "Wcowin's Blog RSS Feed"
   #     url_parameters:
   #       utm_source: "rss"
-  #       utm_medium: "referral"
+  #       utm_medium: "feed"
   # - social
   - search:
       enabled: !ENV [CI, false]
@@ -534,9 +532,8 @@ markdown_extensions:
 
   
 extra_javascript:
-  # 优先加载关键脚本
-  # - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
+  - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
   # - javascripts/optimize.js
   # - javascripts/instant-handler.js
   # 延迟加载非关键脚本
