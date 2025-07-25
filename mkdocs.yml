@@ -595,4 +595,4 @@ hooks:
   - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
   - docs/overrides/hooks/related_posts.py
   # - docs/overrides/hooks/reading_progress.py
-  - docs/overrides/hooks/comments.py       # 新添加的文章页面评论系统
+  # - docs/overrides/hooks/comments.py       # 新添加的文章页面评论系统
