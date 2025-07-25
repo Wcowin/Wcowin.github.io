@@ -60,24 +60,6 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/backdrop.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
-    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1447,6 +1429,8 @@
       
         
       
+        
+      
     
     
     
@@ -1505,6 +1489,37 @@
     Wcowin for MkDocs主题
     
   </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/mkdocs-document-dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs文档日期插件
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
   
 
       </a>
@@ -4006,7 +4021,7 @@
 <h1 id="3">第3章 分组密码<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">💾 AI智能摘要 (GLM-4)</p>
-<p>分组密码通过将明文分割成固定数据块，使用密钥进行独立加密，实现对称加密。其设计原则包括混淆和扩散，以抵抗统计分析。发展历程包括DES和AES等标准，面临新挑战如轻量级密码、侧信道攻击和量子计算威胁。</p>
+<p>分组密码通过将明文分割成固定块，使用密钥独立加密每个块，实现信息加密。其设计原则包括混淆和扩散，以抵抗统计分析。AES作为当前主流标准，具有多种密钥长度和块大小。随着技术发展，轻量级密码、侧信道攻击和量子计算等新挑战不断涌现，推动分组密码向更高安全性和效率发展。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
@@ -4398,7 +4413,6 @@ w_i = w_{i-N_k} \oplus w_{i-1}
 <li><strong>随机访问需求：</strong> 是否需要能随机解密密文的某一部分？</li>
 </ul>
 <p>目前，<strong>AES-GCM (Galois/Counter Mode)</strong> 和 <strong>AES-CCM (Counter Mode with CBC-MAC)</strong> 等认证加密模式 (Authenticated Encryption with Associated Data, AEAD) 因其能同时提供机密性、完整性和真实性认证，越来越受到推荐和广泛使用。这些模式通常基于 CTR 模式来提供加密。</p>
-<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin'><span data-tippy-content='创建时间: 2025-05-09'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-05-09T20:08:54' locale='zh_CN'>2025-05-09</time></span><span data-tippy-content='最后更新: 2025-07-24'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-07-24T14:12:58.034300+00:00' locale='zh_CN'>2025-07-24</time></span><span data-tippy-content='作者: &lt;a href="mailto:1135801806@qq.com"&gt;Wcowin&lt;/a&gt;'><span class='material-icons' data-icon='doc_author'></span>Wcowin</span></div></div>
 <style>
 .related-posts {
   margin-top: 1.5rem;
@@ -5303,14 +5317,6 @@ w_i = w_{i-N_k} \oplus w_{i-1}
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js"></script>
-      
-        <script src="../../../assets/document_dates/tippy/popper.min.js"></script>
-      
-        <script src="../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
-      
-        <script src="../../../assets/document_dates/core/core.js"></script>
-      
-        <script src="../../../assets/document_dates/user.config.js"></script>
       
     
   </body>
