@@ -2928,107 +2928,6 @@
 <p>“今宵酒醒何处？杨柳岸晓风残月。”这是写酒醒后的心境，也是他飘泊江湖的感受。这两句妙就妙在用景写情，真正做到“景语即情语”。“柳”、“留”谐音，写难留的离情；晓风凄冷，写别后的寒心；残月破碎，写此后难圆之意。这几句景语，将离人凄楚惆怅、孤独忧伤的感情，表现得十分充分、真切,创造出一种特有的意境。难怪它为人称道，成为名句。</p>
 <p>再从此后长远设想：“此去经年，应是良辰好景虚设。便纵有千种风情,更与何人说？”这四句更深一层推想离别以后惨不成欢的境况。此后漫长的孤独日子怎么挨得过呢？纵有良辰好景，也等于虚设，因为再没有心爱的人与自己共赏；再退一步，即便对着美景，能产生一些感受，但又能向谁去诉说呢？总之，一切都提不起兴致了。这几句把词人的思念之情、伤感之意刻画到了细致入微、至尽至极的地步，也传达出彼此关切的心情。结句用问句形式，感情显得更强烈。</p>
 <p>《雨霖铃》全词围绕“伤离别”而构思，先写离别之前，重在勾勒环境；次写离别时刻，重在描写情态；再写别后想象，在刻画心理。不论勾勒环境，描写情态，想象未来，词人都注意了前后照应，虚实相生，做到层层深入，尽情描绘，情景交融，读起来如行云流水，起伏跌宕中不见痕迹。这首词的情调因写真情实感而显得太伤感、太低沉，但却将词人抑郁的心情和失去爱情的痛苦刻画的极为生动。古往今来有离别之苦的人们在读到这首《雨霖铃》时，都会产生强烈的共鸣。</p>
-<!-- Twikoo 评论系统 -->
-<div class="twikoo-container" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.1);">
-    <h3 style="margin-bottom: 1rem; font-size: 1.2rem; font-weight: 500;">💬 评论</h3>
-    <div id="tcomment" class="loading" style="min-height: 200px;">
-        <p style="text-align: center; color: #666; padding: 2rem;">评论系统加载中...</p>
-    </div>
-</div>
-
-<style>
-.twikoo-container {
-    max-width: 100%;
-}
-
-/* 暗色模式适配 */
-[data-md-color-scheme="slate"] .twikoo-container {
-    border-top-color: rgba(255,255,255,0.1);
-}
-
-/* 加载状态样式 */
-#tcomment.loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0,0,0,0.02);
-    border-radius: 8px;
-}
-
-[data-md-color-scheme="slate"] #tcomment.loading {
-    background: rgba(255,255,255,0.05);
-}
-</style>
-
-<script>
-(function() {
-    // 防止重复加载
-    if (window.twikooLoaded) {
-        return;
-    }
-
-    function loadTwikoo() {
-        // 检查是否已经加载过 Twikoo
-        if (window.twikoo) {
-            initTwikoo();
-            return;
-        }
-
-        const script = document.createElement('script');
-        script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
-        script.onload = function() {
-            console.log('Twikoo 脚本加载成功');
-            initTwikoo();
-        };
-        script.onerror = function() {
-            console.error('Twikoo 脚本加载失败');
-            const commentEl = document.getElementById('tcomment');
-            if (commentEl) {
-                commentEl.classList.remove('loading');
-                commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统加载失败，请刷新页面重试</p>';
-            }
-        };
-        document.head.appendChild(script);
-    }
-
-    function initTwikoo() {
-        const commentEl = document.getElementById('tcomment');
-        if (!commentEl) {
-            console.warn('评论容器未找到');
-            return;
-        }
-
-        commentEl.classList.remove('loading');
-
-        try {
-            twikoo.init({
-                envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
-                el: '#tcomment',
-                lang: 'zh-CN',
-                path: location.pathname,
-                onCommentLoaded: function () {
-                    console.log('评论加载完成');
-                },
-                onError: function(err) {
-                    console.error('Twikoo 初始化失败:', err);
-                    commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化失败，请检查网络连接</p>';
-                }
-            });
-            window.twikooLoaded = true;
-        } catch (error) {
-            console.error('Twikoo 初始化异常:', error);
-            commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化异常</p>';
-        }
-    }
-
-    // 页面加载完成后初始化
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadTwikoo);
-    } else {
-        loadTwikoo();
-    }
-})();
-</script>
 
 
 
@@ -3186,6 +3085,62 @@
     </fieldset>
   </form>
 
+<!-- overrides/partials/comments.html -->
+
+
+<!-- KaTeX 数学公式渲染支持 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<!-- Twikoo 预加载 -->
+<link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
+
+
+
+<br />
+<div id="tcomment" class="loading"></div>
+
+
+
+<script>
+function loadTwikoo() {
+    const script = document.createElement('script');
+    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+    script.onload = function() {
+        initTwikoo();
+    };
+    script.onerror = function() {
+        console.error('Twikoo 脚本加载失败');
+        document.getElementById('tcomment').innerHTML = '评论系统加载失败，请刷新页面重试';
+    };
+    document.head.appendChild(script);
+}
+
+function initTwikoo() {
+    const commentEl = document.getElementById('tcomment');
+    if (!commentEl) return;
+    commentEl.classList.remove('loading');
+    twikoo.init({
+        envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
+        el: '#tcomment',
+        lang: 'zh-CN',
+        path: location.pathname,
+        onCommentLoaded: function () {
+            console.log('评论加载完成');
+        },
+        onError: function(err) {
+            console.error('Twikoo 初始化失败:', err);
+            commentEl.innerHTML = '评论系统初始化失败，请检查网络连接';
+        }
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadTwikoo);
+} else {
+    loadTwikoo();
+}
+</script>
 
                 
               </article>
