@@ -2928,6 +2928,107 @@
 <p>《邶风·击鼓》一诗反映了一个久戍不归的征夫对战争的怨恨和对家人的思念。诗人以袒露自身与主流意识的背离，宣泄自己对战争的抵触情绪。  </p>
 <p>全诗共五章。第一章总言卫人救陈，平陈宋之难，叙卫人之怨。结云“我独南行”者，诗本以抒写个人愤懑为主，这是全诗的线索。诗的第三句言“土国城漕”者，《鄘风·定之方中》毛诗序云：“卫为狄所灭，东徙渡河，野居漕邑，齐桓公攘夷狄而封之。文公徙居楚丘，始建城市而营宫室。”文公营楚丘，这就是诗所谓“土国”，到了穆公，又为漕邑筑城，故诗又曰“城漕”。“土国城漕”虽然也是劳役，犹在国境以内，南行救陈，其艰苦则更甚。第二章“从孙子仲，平陈与宋”，承“我独南行”为说。假使南行不久即返，犹之可也。诗之末两句云“不我以归，忧心有忡”，叙事更向前推进，如芭蕉剥心，使人酸鼻。第三章写安家失马，似乎是题外插曲，其实文心最细。《庄子》说：“犹系马而驰也。”好马是不受羁束、爱驰骋的；征人是不愿久役、想归家的。这个细节，真写得映带人情。毛传解释一二句为：“有不还者，有亡其马者。”把“爰”解释为“或”，作为代词，则两句通叙营中他人。其实全诗皆抒诗人一己之情，所以四、五两章文情哀苦，更为动人。第四章“死生契阔”，毛传以“契阔”为“勤苦”是错误的。黄生《义府》以为“契，合也；阔，离也；与死生对言”是正确的。至于如何解释全章诗义。四句为了把叶韵变成从AABB式，次序有颠倒，前人却未尝言及。今按此章的原意，次序应该是：“执子之手，与子成说；死生契阔，与子偕老。”这样诗的韵脚，就成为ABBA式了。本来“死生契阔，与子偕老”，是“成说”的内容，是分手时的信誓。诗为了以“阔”与“说”叶韵，“手”与“老”叶韵，韵脚更为紧凑，诗情更为激烈，所以作者把语句改为这一次序。第五章“于嗟阔兮”的“阔”，就是上章“契阔”的“阔”。“不我活兮”的“活”，应该是上章“契阔”的“契”。所以“活”是“佸”的假借，“佸，会也。”“于嗟洵兮”的“洵”，应该是“远”的假借，所以指的是“契阔”的“阔”。“不我信兮”的“信”，应该是“信誓旦旦”的“信誓”，承上章“成说”而言的。两章互相紧扣，一丝不漏。
 此诗前三章征人自叙出征情景，承接绵密，已经如怨如慕，如泣如诉；后两章转写征人与家人别时信誓，不料归期难望，信誓无凭，上下紧扣，词情激烈，更是哭声干霄：写士卒长期征战之悲，无以复加。</p>
+<!-- Twikoo 评论系统 -->
+<div class="twikoo-container" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.1);">
+    <h3 style="margin-bottom: 1rem; font-size: 1.2rem; font-weight: 500;">💬 评论</h3>
+    <div id="tcomment" class="loading" style="min-height: 200px;">
+        <p style="text-align: center; color: #666; padding: 2rem;">评论系统加载中...</p>
+    </div>
+</div>
+
+<style>
+.twikoo-container {
+    max-width: 100%;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .twikoo-container {
+    border-top-color: rgba(255,255,255,0.1);
+}
+
+/* 加载状态样式 */
+#tcomment.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] #tcomment.loading {
+    background: rgba(255,255,255,0.05);
+}
+</style>
+
+<script>
+(function() {
+    // 防止重复加载
+    if (window.twikooLoaded) {
+        return;
+    }
+
+    function loadTwikoo() {
+        // 检查是否已经加载过 Twikoo
+        if (window.twikoo) {
+            initTwikoo();
+            return;
+        }
+
+        const script = document.createElement('script');
+        script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+        script.onload = function() {
+            console.log('Twikoo 脚本加载成功');
+            initTwikoo();
+        };
+        script.onerror = function() {
+            console.error('Twikoo 脚本加载失败');
+            const commentEl = document.getElementById('tcomment');
+            if (commentEl) {
+                commentEl.classList.remove('loading');
+                commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统加载失败，请刷新页面重试</p>';
+            }
+        };
+        document.head.appendChild(script);
+    }
+
+    function initTwikoo() {
+        const commentEl = document.getElementById('tcomment');
+        if (!commentEl) {
+            console.warn('评论容器未找到');
+            return;
+        }
+
+        commentEl.classList.remove('loading');
+
+        try {
+            twikoo.init({
+                envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
+                el: '#tcomment',
+                lang: 'zh-CN',
+                path: location.pathname,
+                onCommentLoaded: function () {
+                    console.log('评论加载完成');
+                },
+                onError: function(err) {
+                    console.error('Twikoo 初始化失败:', err);
+                    commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化失败，请检查网络连接</p>';
+                }
+            });
+            window.twikooLoaded = true;
+        } catch (error) {
+            console.error('Twikoo 初始化异常:', error);
+            commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化异常</p>';
+        }
+    }
+
+    // 页面加载完成后初始化
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadTwikoo);
+    } else {
+        loadTwikoo();
+    }
+})();
+</script>
 
 
 
@@ -3085,62 +3186,6 @@
     </fieldset>
   </form>
 
-<!-- overrides/partials/comments.html -->
-
-
-<!-- KaTeX 数学公式渲染支持 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
-<!-- Twikoo 预加载 -->
-<link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
-
-
-
-<br />
-<div id="tcomment" class="loading"></div>
-
-
-
-<script>
-function loadTwikoo() {
-    const script = document.createElement('script');
-    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
-    script.onload = function() {
-        initTwikoo();
-    };
-    script.onerror = function() {
-        console.error('Twikoo 脚本加载失败');
-        document.getElementById('tcomment').innerHTML = '评论系统加载失败，请刷新页面重试';
-    };
-    document.head.appendChild(script);
-}
-
-function initTwikoo() {
-    const commentEl = document.getElementById('tcomment');
-    if (!commentEl) return;
-    commentEl.classList.remove('loading');
-    twikoo.init({
-        envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
-        el: '#tcomment',
-        lang: 'zh-CN',
-        path: location.pathname,
-        onCommentLoaded: function () {
-            console.log('评论加载完成');
-        },
-        onError: function(err) {
-            console.error('Twikoo 初始化失败:', err);
-            commentEl.innerHTML = '评论系统初始化失败，请检查网络连接';
-        }
-    });
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadTwikoo);
-} else {
-    loadTwikoo();
-}
-</script>
 
                 
               </article>
@@ -3828,13 +3873,11 @@ if (document.readyState === 'loading') {
     
       <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../javascripts/"></script>
-      
-        <script src="../../../javascripts/unified-instant-handler.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

@@ -3011,6 +3011,107 @@
 全篇采用对偶句，不但字面相对，而且音韵大体相对。如“天高地迥，觉宇宙之无穷；兴尽悲来，识盈虚之有数。”“屈贾谊于长沙，非无圣主；窜梁鸿于海曲，岂乏明时？”“落霞与孤鹜齐飞，秋水共长天一色”等，一句中平仄交替，上下句之间又平仄相对。如此讲求音律，又不影响意义表达，写出来的句子抑扬顿挫，富于乐感，富于诗意。这篇序文，如“物华天宝”“俊采星驰”“紫电青霜”“钟鸣鼎食”“青雀黄龙”“睢园绿竹”“邺水朱华”等，都是讲求辞采的典型例子。这样，文章辞采华美，赏心悦目。<br />
 （3）运用典故，简练含蓄<br />
 这篇序文用了大量典故来叙事抒情，有的是历史故事，有的是前人文句，而运用的手法又有所不同，有的是明用，如“冯唐易老，李广难封”；有的是暗用，如“酌贪泉而觉爽，处涸辙以犹欢”；有的是正用，如“孟尝高洁，空余报国之情”；有的是反用，如“阮籍猖狂，岂效穷途之哭”。典故的运用，加强了文章的表达效果</p>
+<!-- Twikoo 评论系统 -->
+<div class="twikoo-container" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.1);">
+    <h3 style="margin-bottom: 1rem; font-size: 1.2rem; font-weight: 500;">💬 评论</h3>
+    <div id="tcomment" class="loading" style="min-height: 200px;">
+        <p style="text-align: center; color: #666; padding: 2rem;">评论系统加载中...</p>
+    </div>
+</div>
+
+<style>
+.twikoo-container {
+    max-width: 100%;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .twikoo-container {
+    border-top-color: rgba(255,255,255,0.1);
+}
+
+/* 加载状态样式 */
+#tcomment.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] #tcomment.loading {
+    background: rgba(255,255,255,0.05);
+}
+</style>
+
+<script>
+(function() {
+    // 防止重复加载
+    if (window.twikooLoaded) {
+        return;
+    }
+
+    function loadTwikoo() {
+        // 检查是否已经加载过 Twikoo
+        if (window.twikoo) {
+            initTwikoo();
+            return;
+        }
+
+        const script = document.createElement('script');
+        script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+        script.onload = function() {
+            console.log('Twikoo 脚本加载成功');
+            initTwikoo();
+        };
+        script.onerror = function() {
+            console.error('Twikoo 脚本加载失败');
+            const commentEl = document.getElementById('tcomment');
+            if (commentEl) {
+                commentEl.classList.remove('loading');
+                commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统加载失败，请刷新页面重试</p>';
+            }
+        };
+        document.head.appendChild(script);
+    }
+
+    function initTwikoo() {
+        const commentEl = document.getElementById('tcomment');
+        if (!commentEl) {
+            console.warn('评论容器未找到');
+            return;
+        }
+
+        commentEl.classList.remove('loading');
+
+        try {
+            twikoo.init({
+                envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
+                el: '#tcomment',
+                lang: 'zh-CN',
+                path: location.pathname,
+                onCommentLoaded: function () {
+                    console.log('评论加载完成');
+                },
+                onError: function(err) {
+                    console.error('Twikoo 初始化失败:', err);
+                    commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化失败，请检查网络连接</p>';
+                }
+            });
+            window.twikooLoaded = true;
+        } catch (error) {
+            console.error('Twikoo 初始化异常:', error);
+            commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化异常</p>';
+        }
+    }
+
+    // 页面加载完成后初始化
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadTwikoo);
+    } else {
+        loadTwikoo();
+    }
+})();
+</script>
 
 
 
@@ -3168,62 +3269,6 @@
     </fieldset>
   </form>
 
-<!-- overrides/partials/comments.html -->
-
-
-<!-- KaTeX 数学公式渲染支持 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
-<!-- Twikoo 预加载 -->
-<link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
-
-
-
-<br />
-<div id="tcomment" class="loading"></div>
-
-
-
-<script>
-function loadTwikoo() {
-    const script = document.createElement('script');
-    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
-    script.onload = function() {
-        initTwikoo();
-    };
-    script.onerror = function() {
-        console.error('Twikoo 脚本加载失败');
-        document.getElementById('tcomment').innerHTML = '评论系统加载失败，请刷新页面重试';
-    };
-    document.head.appendChild(script);
-}
-
-function initTwikoo() {
-    const commentEl = document.getElementById('tcomment');
-    if (!commentEl) return;
-    commentEl.classList.remove('loading');
-    twikoo.init({
-        envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
-        el: '#tcomment',
-        lang: 'zh-CN',
-        path: location.pathname,
-        onCommentLoaded: function () {
-            console.log('评论加载完成');
-        },
-        onError: function(err) {
-            console.error('Twikoo 初始化失败:', err);
-            commentEl.innerHTML = '评论系统初始化失败，请检查网络连接';
-        }
-    });
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadTwikoo);
-} else {
-    loadTwikoo();
-}
-</script>
 
                 
               </article>
@@ -3911,13 +3956,11 @@ if (document.readyState === 'loading') {
     
       <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../javascripts/"></script>
-      
-        <script src="../../../javascripts/unified-instant-handler.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

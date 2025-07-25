@@ -3051,6 +3051,107 @@
 <span class="arithmatex">\(\displaystyle\int_0^{\frac{\pi}{2}} \sin ^n x \mathrm{~d} x= \displaystyle\begin{cases}\frac{(n-1) ! !}{n ! !}, &amp; n \text { 为奇数 } \\ \frac{(n-1) ! !}{n ! !} \frac{\pi}{2}, &amp; n \text { 为偶数 }\end{cases}\)</span>  </p>
 <p>可以证明 <span class="arithmatex">\(\displaystyle\lim _{n \rightarrow \infty} \frac{(n-1) ! !}{n ! !}=0\)</span> , 所以 <span class="arithmatex">\(\displaystyle\lim _{n \rightarrow \infty} \int_0^{\frac{\pi}{2}} \sin ^n x d x=0\)</span>.</p>
 <p>数学不难啊，无非就是，子集，真子集，交集，并集，补集，原命题，逆命题，否命题，逆否命题，或命题，且命题，非命题，充分条件，必要条件，充要条件，全称量词，存在量词，虚数，复数，函数，单调函数，奇偶函数，周期函数，指数函数，对数函数，幂函数，三角函数，平行变换，伸缩变换，对称变换，向量，平面向量，平行向量，向量夹角，共线条件，垂直条件，加法运算，减法运算，数乘运算，数量积运算线性规划，约束条件，目标函数，可行解，可行域，最优解，顺序结构，条件结构，循环结构，输入语句，循环语句，归纳推理，类别推理，合情推理，演绎推理，直接证明，间接证明，比较法，综合法，分析法，反证法，放缩法，数学归纳法，排列，组合，分类加法技术原理，分步乘法技术原理，二项式定理，导数，极值，最值，单调性，等差数列，等比数列，公式法，分类法，裂项法，错位相减法，倒序相加法，正视图，俯视图，侧视图，棱柱，棱锥，棱台，圆柱，圆锥，圆台，球，线线平行，线面平行，面面平行，线线垂直，线面垂直，面面垂直，线线角，线面角，面面角，点面距，线面距，面面距，光面向量，空间基底，方向向量，法向量，倾斜角，斜率，也就这么点儿东西，没别的</p>
+<!-- Twikoo 评论系统 -->
+<div class="twikoo-container" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.1);">
+    <h3 style="margin-bottom: 1rem; font-size: 1.2rem; font-weight: 500;">💬 评论</h3>
+    <div id="tcomment" class="loading" style="min-height: 200px;">
+        <p style="text-align: center; color: #666; padding: 2rem;">评论系统加载中...</p>
+    </div>
+</div>
+
+<style>
+.twikoo-container {
+    max-width: 100%;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .twikoo-container {
+    border-top-color: rgba(255,255,255,0.1);
+}
+
+/* 加载状态样式 */
+#tcomment.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] #tcomment.loading {
+    background: rgba(255,255,255,0.05);
+}
+</style>
+
+<script>
+(function() {
+    // 防止重复加载
+    if (window.twikooLoaded) {
+        return;
+    }
+
+    function loadTwikoo() {
+        // 检查是否已经加载过 Twikoo
+        if (window.twikoo) {
+            initTwikoo();
+            return;
+        }
+
+        const script = document.createElement('script');
+        script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+        script.onload = function() {
+            console.log('Twikoo 脚本加载成功');
+            initTwikoo();
+        };
+        script.onerror = function() {
+            console.error('Twikoo 脚本加载失败');
+            const commentEl = document.getElementById('tcomment');
+            if (commentEl) {
+                commentEl.classList.remove('loading');
+                commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统加载失败，请刷新页面重试</p>';
+            }
+        };
+        document.head.appendChild(script);
+    }
+
+    function initTwikoo() {
+        const commentEl = document.getElementById('tcomment');
+        if (!commentEl) {
+            console.warn('评论容器未找到');
+            return;
+        }
+
+        commentEl.classList.remove('loading');
+
+        try {
+            twikoo.init({
+                envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
+                el: '#tcomment',
+                lang: 'zh-CN',
+                path: location.pathname,
+                onCommentLoaded: function () {
+                    console.log('评论加载完成');
+                },
+                onError: function(err) {
+                    console.error('Twikoo 初始化失败:', err);
+                    commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化失败，请检查网络连接</p>';
+                }
+            });
+            window.twikooLoaded = true;
+        } catch (error) {
+            console.error('Twikoo 初始化异常:', error);
+            commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化异常</p>';
+        }
+    }
+
+    // 页面加载完成后初始化
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadTwikoo);
+    } else {
+        loadTwikoo();
+    }
+})();
+</script>
 
 
 
@@ -3208,62 +3309,6 @@
     </fieldset>
   </form>
 
-<!-- overrides/partials/comments.html -->
-
-
-<!-- KaTeX 数学公式渲染支持 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
-<!-- Twikoo 预加载 -->
-<link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
-
-
-
-<br />
-<div id="tcomment" class="loading"></div>
-
-
-
-<script>
-function loadTwikoo() {
-    const script = document.createElement('script');
-    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
-    script.onload = function() {
-        initTwikoo();
-    };
-    script.onerror = function() {
-        console.error('Twikoo 脚本加载失败');
-        document.getElementById('tcomment').innerHTML = '评论系统加载失败，请刷新页面重试';
-    };
-    document.head.appendChild(script);
-}
-
-function initTwikoo() {
-    const commentEl = document.getElementById('tcomment');
-    if (!commentEl) return;
-    commentEl.classList.remove('loading');
-    twikoo.init({
-        envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
-        el: '#tcomment',
-        lang: 'zh-CN',
-        path: location.pathname,
-        onCommentLoaded: function () {
-            console.log('评论加载完成');
-        },
-        onError: function(err) {
-            console.error('Twikoo 初始化失败:', err);
-            commentEl.innerHTML = '评论系统初始化失败，请检查网络连接';
-        }
-    });
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadTwikoo);
-} else {
-    loadTwikoo();
-}
-</script>
 
                 
               </article>
@@ -3951,13 +3996,11 @@ if (document.readyState === 'loading') {
     
       <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../javascripts/"></script>
-      
-        <script src="../../../javascripts/unified-instant-handler.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
