@@ -103,6 +103,7 @@ nav:
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化/补充:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
+        - MkDocs文档日期插件: blog/websitebeauty/mkdocs-document-dates.md
         - 为网站添加Google广告: blog/websitebeauty/GoogleAD.md
         - 添加相关推荐文章: blog/websitebeauty/recommend.md
         - MkDocs文档AI摘要: blog/websitebeauty/Mkdocs-AI-Summary.md
@@ -380,22 +381,22 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  - document-dates:
-      position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
-      type: date               # Date type: date  datetime  timeago, default: date
-      locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
-      date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
-      time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
-      exclude:                 # List of excluded files
-        - index.md
-        - tag.md
-        - waline.md
-        - blog/posts/*
-        - blog/index.md
-        - link.md
-        - blog/Mkdocs/linktech.md
-        - about/*            # Exclude all files in private directory, including subdirectories
-      show_author: true       # Show author or not, default: true
+  # - document-dates:
+  #     position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
+  #     type: date               # Date type: date  datetime  timeago, default: date
+  #     locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
+  #     date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
+  #     time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
+  #     exclude:                 # List of excluded files
+  #       - index.md
+  #       - tag.md
+  #       - waline.md
+  #       - blog/posts/*
+  #       - blog/index.md
+  #       - link.md
+  #       - blog/Mkdocs/linktech.md
+  #       - about/*            # Exclude all files in private directory, including subdirectories
+  #     show_author: true       # Show author or not, default: true
   # - statistics
   # - git-authors
   # - rss:
