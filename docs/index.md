@@ -736,3 +736,7 @@ body::before {
 
 <!-- [timeline(./docs/timeline/timeindex.json)] -->
 
+ <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
+    <meta name="sogou_site_verification" content="Zj3GyUNZ7J" />
+  </head>
