@@ -103,6 +103,7 @@ nav:
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化/补充:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
+        - 为MKdocs添加多语言翻译: blog/websitebeauty/mkdocs-translate.md
         - MkDocs文档日期插件: blog/websitebeauty/mkdocs-document-dates.md
         - 为网站添加Google广告: blog/websitebeauty/GoogleAD.md
         - 添加相关推荐文章: blog/websitebeauty/recommend.md
@@ -328,15 +329,36 @@ extra:
   #   app_id: 655cf3bc-734a-4d88-8317-be350621334c
   #   lang: zh-cn
   alternate:
-    - name: 简体中文
-      link: /
-      lang: zh   
+    - name: 中文
+      link: "javascript:translate.changeLanguage('chinese_simplified');"
+      lang: zh
+    - name: 繁体中文
+      link: "javascript:translate.changeLanguage('chinese_traditional');"
+      lang: zh-tw
     - name: English
-      link: /en/
+      link: "javascript:translate.changeLanguage('english');"
       lang: en
-    - name: ZH-TW
-      link: /ZH-TW/
-      lang: Taiwan
+    - name: 한국어
+      link: "javascript:translate.changeLanguage('korean');"
+      lang: ko
+    - name: 日本語
+      link: "javascript:translate.changeLanguage('japanese');"
+      lang: ja
+    - name: بالعربية
+      link: "javascript:translate.changeLanguage('arabic');"
+      lang: ar
+    - name: Deutsch
+      link: "javascript:translate.changeLanguage('deutsch');"
+      lang: de
+    - name: Français
+      link: "javascript:translate.changeLanguage('french');"
+      lang: fr
+    - name: Español
+      link: "javascript:translate.changeLanguage('spanish');"
+      lang: es
+    - name: português
+      link: "javascript:translate.changeLanguage('portuguese');"
+      lang: pt
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/weixin
@@ -534,6 +556,8 @@ markdown_extensions:
 
   
 extra_javascript:
+  # - docs/javascripts/translate.js
+  # - https://cdn.staticfile.net/translate.js/3.12.0/translate.js
   # - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
   # - javascripts/optimize.js
