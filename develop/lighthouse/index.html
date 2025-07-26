@@ -190,20 +190,62 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/" hreflang="zh" class="md-select__link">
-              简体中文
+            <a href="javascript:translate.changeLanguage('chinese_simplified');" hreflang="zh" class="md-select__link">
+              中文
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/en/" hreflang="en" class="md-select__link">
+            <a href="javascript:translate.changeLanguage('chinese_traditional');" hreflang="zh-tw" class="md-select__link">
+              繁体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translate.changeLanguage('english');" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/ZH-TW/" hreflang="Taiwan" class="md-select__link">
-              ZH-TW
+            <a href="javascript:translate.changeLanguage('korean');" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translate.changeLanguage('japanese');" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translate.changeLanguage('arabic');" hreflang="ar" class="md-select__link">
+              بالعربية
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translate.changeLanguage('deutsch');" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translate.changeLanguage('french');" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translate.changeLanguage('spanish');" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translate.changeLanguage('portuguese');" hreflang="pt" class="md-select__link">
+              português
             </a>
           </li>
         
@@ -2669,8 +2711,59 @@
       </div>
 
       <!-- 页脚脚本部分 -->
+      
+      <!-- 翻译功能脚本 - 放在其他脚本之前 -->
+      <script src="https://cdn.staticfile.net/translate.js/3.12.0/translate.js"></script>
+      <script>
+        // 翻译配置 - 包装在立即执行函数中避免全局污染
+        (function() {
+          // 通过 class 设置不翻译的元素
+          translate.ignore.class.push('md-select', 'footer-highlight', 'md-footer-copyright');
+          
+          // 自定义术语库，纠正翻译结果
+          translate.nomenclature.append('chinese_simplified','english',`
+                快讯=Newsflash
+                访问量=Page Views
+                本站已经运行=Site has been running
+                天=days
+                时=hours
+                分=minutes
+                秒=seconds
+                萌ICP备=Moe ICP
+                版权所有=Copyright
+                制作工具=Made with
+        `);
+
+          // 设置本地语种
+          translate.language.setLocal('chinese_simplified');
+          
+          // 设置首次使用时自动识别语种
+          translate.setAutoDiscriminateLocalLanguage();
+          
+          // 不显示 select 语言选择框
+          translate.selectLanguageTag.show = false;
+          
+          // 设置机器翻译服务通道
+          translate.service.use('client.edge');
+          
+          // 执行翻译
+          translate.execute();
+          
+          // 监听语言切换事件，确保动态内容也能被翻译
+          window.addEventListener('translate.languagechange', function() {
+            // 延迟重新翻译动态更新的内容
+            setTimeout(() => {
+              translate.execute();
+            }, 500);
+          });
+          
+          console.log('翻译功能已初始化');
+        })();
+      </script>
+
       <script>
         (function() {
+          // 现有的页脚功能代码...
           // 避免变量冲突，将所有代码包装在立即执行函数中
           
           // 存储计时器ID，用于清理
@@ -2698,6 +2791,11 @@
 
             if (el) el.textContent = time;
             if (elMobile) elMobile.textContent = time;
+            
+            // 触发翻译更新（如果翻译已激活）
+            if (window.translate && translate.currentLanguage !== 'chinese_simplified') {
+              setTimeout(() => translate.execute(), 100);
+            }
           }
 
           // 加载访问量计数器
@@ -3121,7 +3219,7 @@
           background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
 
-        [data-md-color-scheme="slate"] .md-footer-meta {
+        [data-md_color-scheme="slate"] .md-footer-meta {
           background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
         }
 

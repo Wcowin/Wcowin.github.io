@@ -12,13 +12,13 @@
         <meta name="author" content="王科文(Wcowin)">
       
       
-        <link rel="canonical" href="http://wcowin.work/blog/websitebeauty/mkcomments/">
+        <link rel="canonical" href="http://wcowin.work/blog/websitebeauty/mkdocs-translate/">
       
       
-        <link rel="prev" href="../yuanjiaohua/">
+        <link rel="prev" href="../mkdocs-wcowin1/">
       
       
-        <link rel="next" href="../header/">
+        <link rel="next" href="../mkdocs-document-dates/">
       
       
       <link rel="icon" href="https://i.stardots.io/wcowin/1750090373988.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>为网站添加评论系统 - Wcowin's Blog</title>
+        <title>为MKdocs添加多语言翻译 - Wcowin's Blog</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#giscus" class="md-skip">
+        <a href="#mkdocs" class="md-skip">
           跳转至
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              为网站添加评论系统
+              为MKdocs添加多语言翻译
             
           </span>
         </div>
@@ -1374,10 +1374,40 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../mkdocs-translate/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    为MKdocs添加多语言翻译
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1396,6 +1426,296 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌍 方案概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 实现步骤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 实现步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 引入翻译库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 配置翻译参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 在 mkdocs.yml 中配置语言切换
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 添加自定义术语库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 处理动态内容翻译
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 多语言样式优化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 多语言样式优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基础响应式样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 特定语言样式优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 深色模式兼容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 高级功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 高级功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 语言检测与样式应用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 数字和特殊内容保护
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 最佳实践
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 性能优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 用户体验优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 可访问性考虑
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📱 移动端适配
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📱 移动端适配">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 响应式布局
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 触摸友好设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 故障排除
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 故障排除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见问题及解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 效果展示
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 总结
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 相关资源
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1652,32 +1972,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    添加评论系统(giscus为例)
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mkcomments/" class="md-nav__link">
         
   
   
@@ -1688,71 +1986,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      第一步
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      第二步
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      最后
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      效果
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      其他评论系统
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3869,7 +4102,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      第一步
+      🌍 方案概述
     </span>
   </a>
   
@@ -3878,34 +4111,259 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      第二步
+      📋 实现步骤
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="📋 实现步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 引入翻译库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 配置翻译参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 在 mkdocs.yml 中配置语言切换
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 添加自定义术语库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 处理动态内容翻译
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      最后
+      🎨 多语言样式优化
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🎨 多语言样式优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基础响应式样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 特定语言样式优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 深色模式兼容
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      效果
+      🔧 高级功能
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔧 高级功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 语言检测与样式应用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 数字和特殊内容保护
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      其他评论系统
+      🚀 最佳实践
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 性能优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 用户体验优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 可访问性考虑
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📱 移动端适配
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📱 移动端适配">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 响应式布局
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 触摸友好设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 故障排除
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 故障排除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见问题及解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 效果展示
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 总结
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 相关资源
     </span>
   </a>
   
@@ -3933,6 +4391,12 @@
         <a href="../../../tag/#tag:mkdocs" class="md-tag">Mkdocs</a>
       
     
+      
+      
+      
+        <a href="../../../tag/#tag:多语言" class="md-tag">多语言</a>
+      
+    
   </nav>
 
 
@@ -3940,39 +4404,142 @@
   
 
 
-<h1 id="giscus">添加评论系统(giscus为例)<a class="headerlink" href="#giscus" title="Permanent link">&para;</a></h1>
+<h1 id="mkdocs">为 MkDocs 添加多语言翻译功能<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">💾 AI智能摘要 (GLM-4)</p>
-<p>giscus是一款基于GitHub Discussions的评论系统，开源、无跟踪、无广告，支持自定义主题和多种语言，自动同步评论，可自建服务，适用于网站评论功能。</p>
+<p>本文介绍了为 MkDocs 网站添加基于 JavaScript 的客户端翻译功能，支持多种语言的实时切换，无需刷新页面，优化了移动端和桌面端显示。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>1</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>397</strong> | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"/></svg></span>有效代码行数：<strong>116</strong></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>3</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>1148</strong> | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"/></svg></span>有效代码行数：<strong>328</strong></p>
 </div>
-<p>官方文档：<a href="https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/">Adding a comment system</a>  </p>
-<p>这里我同样推荐<a href="https://giscus.app/zh-CN">giscus</a></p>
-<p>利用 GitHub Discussions 实现的评论系统，让访客借助 GitHub 在你的网站上留下评论和反应吧！本项目深受 utterances 的启发。</p>
+<p>在全球化的今天，为网站添加多语言支持已成为提升用户体验的重要手段。本文将详细介绍如何为 MkDocs 网站添加基于 JavaScript 的客户端翻译功能，支持多种语言的实时切换。   </p>
+<p><a href="#_9">快速查看效果</a></p>
+<hr />
+<div class="intro-container">
+  <div class="intro-content">
+    <div class="intro-text">
+      <span class="greeting">特别感谢<a href="https://github.com/jaywhj" class="contributor-link">Aaron</a>对翻译方案的提议与实践<span class="wave">👋</span></span>
+    </div>
+  </div>
+</div>
+
+<style>
+.intro-container {
+  background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(240,240,240,0.6) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid rgba(200,200,200,0.2);
+  transition: all 0.3s ease;
+}
+
+.intro-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.greeting {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contributor-link {
+  color: #608DBD;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.contributor-link:hover {
+  background-color: rgba(96, 141, 189, 0.1);
+  color: #4a7ba7;
+  text-decoration: none;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .intro-container {
+  background: linear-gradient(145deg, rgba(31,33,40,0.9) 0%, rgba(31,33,40,0.8) 100%);
+  border: 1px solid rgba(80,80,80,0.2);
+}
+
+[data-md-color-scheme="slate"] .greeting {
+  color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .contributor-link {
+  color: #7BA7D7;
+}
+
+[data-md-color-scheme="slate"] .contributor-link:hover {
+  background-color: rgba(123, 167, 215, 0.1);
+  color: #A8C5E5;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .greeting {
+    font-size: 1.3rem;
+  }
+}
+</style>
+
+<h2 id="_1">🌍 方案概述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>我们采用的翻译方案具有以下特点：</p>
 <ul>
-<li>开源。🌏</li>
-<li>无跟踪，无广告，永久免费。📡 🚫</li>
-<li>无需数据库。所有数据均储存在 GitHub Discussions 中。:octocat:</li>
-<li>支持自定义主题！🌗</li>
-<li>支持多种语言。🌐</li>
-<li>高可配置性。🔧</li>
-<li>自动从 GitHub 拉取新评论与编辑。🔃</li>
-<li>可自建服务！🤳</li>
+<li><strong>🚀 客户端翻译</strong>：使用 <code>translate.js</code> 库实现前端翻译</li>
+<li><strong>🌐 多语言支持</strong>：支持中文、英文、日文、韩文、阿拉伯文等 9 种语言</li>
+<li><strong>⚡ 实时切换</strong>：无需刷新页面即可切换语言</li>
+<li><strong>🎨 样式优化</strong>：针对不同语言进行样式适配</li>
+<li><strong>📱 响应式支持</strong>：移动端和桌面端都有优化</li>
 </ul>
-<p>言归正传</p>
-<h2 id="_1">第一步<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>mkdocs.yml中添加custom_dir
+<hr />
+<h2 id="_2">📋 实现步骤<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 引入翻译库<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>首先在页脚或头部模板(例如：<a href="https://github.com/squidfunk/mkdocs-material/blob/master/material/templates/partials/footer.html">docs/overrides/partials/footer.html</a>)中引入 <code>translate.js</code> 库：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>theme:
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>  name: material
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="hll">  custom_dir: docs/overrides  #主要是这一行
-</span></code></pre></div></td></tr></table></div>
-参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件<br />
-树状结构如下:<br />
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cm">&lt;!-- 引入翻译库 --&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.staticfile.net/translate.js/3.12.0/translate.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="2">2. 配置翻译参数<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>创建翻译配置脚本，设置基本参数：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
@@ -3987,24 +4554,49 @@
 <span class="normal"><a href="#__codelineno-1-12">12</a></span>
 <span class="normal"><a href="#__codelineno-1-13">13</a></span>
 <span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>$ tree -a
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>.
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>├── .github
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>│   ├── .DS_Store
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>│   └── workflows
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>│       └── PublishMySite.yml
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a>├── docs
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a>│   └── index.md
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="hll">│   └──overrides
-</span><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="hll">│       └──assets
-</span><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="hll">│       └──main.html
-</span><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="hll">│       └──partials
-</span><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="hll">│          └──comments.html
-</span><a id="__codelineno-1-14" name="__codelineno-1-14"></a>│
-<a id="__codelineno-1-15" name="__codelineno-1-15"></a>└── mkdocs.yml
-</code></pre></div></td></tr></table></div></p>
-<p><img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/214447b92070792905259a843de3e233.png" /></p>
-<p>在comments.html中先复制粘贴下面的代码，后文会说怎么修改</p>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span>
+<span class="normal"><a href="#__codelineno-1-26">26</a></span>
+<span class="normal"><a href="#__codelineno-1-27">27</a></span>
+<span class="normal"><a href="#__codelineno-1-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="c1">// 设置不翻译的元素类名</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">ignore</span><span class="p">.</span><span class="kd">class</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="s1">&#39;md-select&#39;</span><span class="p">,</span><span class="w">           </span><span class="c1">// Material 选择框</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="s1">&#39;footer-highlight&#39;</span><span class="p">,</span><span class="w">    </span><span class="c1">// 页脚高亮文本</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="s1">&#39;md-footer-copyright&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 版权信息</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="s1">&#39;no-translate&#39;</span><span class="w">         </span><span class="c1">// 通用不翻译类</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="p">);</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">  </span><span class="c1">// 设置本地语种（默认中文简体）</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">language</span><span class="p">.</span><span class="nx">setLocal</span><span class="p">(</span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">  </span><span class="c1">// 自动识别用户首选语言</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">setAutoDiscriminateLocalLanguage</span><span class="p">();</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">  </span><span class="c1">// 隐藏默认语言选择框</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">selectLanguageTag</span><span class="p">.</span><span class="nx">show</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">  </span><span class="c1">// 设置翻译服务通道</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">service</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;client.edge&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">  </span><span class="c1">// 执行翻译初始化</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a>
+<a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;翻译功能已初始化&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="p">})();</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>目录结构如下：
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -4018,105 +4610,28 @@
 <span class="normal"><a href="#__codelineno-2-11">11</a></span>
 <span class="normal"><a href="#__codelineno-2-12">12</a></span>
 <span class="normal"><a href="#__codelineno-2-13">13</a></span>
-<span class="normal"><a href="#__codelineno-2-14">14</a></span>
-<span class="normal"><a href="#__codelineno-2-15">15</a></span>
-<span class="normal"><a href="#__codelineno-2-16">16</a></span>
-<span class="normal"><a href="#__codelineno-2-17">17</a></span>
-<span class="normal"><a href="#__codelineno-2-18">18</a></span>
-<span class="normal"><a href="#__codelineno-2-19">19</a></span>
-<span class="normal"><a href="#__codelineno-2-20">20</a></span>
-<span class="normal"><a href="#__codelineno-2-21">21</a></span>
-<span class="normal"><a href="#__codelineno-2-22">22</a></span>
-<span class="normal"><a href="#__codelineno-2-23">23</a></span>
-<span class="normal"><a href="#__codelineno-2-24">24</a></span>
-<span class="normal"><a href="#__codelineno-2-25">25</a></span>
-<span class="normal"><a href="#__codelineno-2-26">26</a></span>
-<span class="normal"><a href="#__codelineno-2-27">27</a></span>
-<span class="normal"><a href="#__codelineno-2-28">28</a></span>
-<span class="normal"><a href="#__codelineno-2-29">29</a></span>
-<span class="normal"><a href="#__codelineno-2-30">30</a></span>
-<span class="normal"><a href="#__codelineno-2-31">31</a></span>
-<span class="normal"><a href="#__codelineno-2-32">32</a></span>
-<span class="normal"><a href="#__codelineno-2-33">33</a></span>
-<span class="normal"><a href="#__codelineno-2-34">34</a></span>
-<span class="normal"><a href="#__codelineno-2-35">35</a></span>
-<span class="normal"><a href="#__codelineno-2-36">36</a></span>
-<span class="normal"><a href="#__codelineno-2-37">37</a></span>
-<span class="normal"><a href="#__codelineno-2-38">38</a></span>
-<span class="normal"><a href="#__codelineno-2-39">39</a></span>
-<span class="normal"><a href="#__codelineno-2-40">40</a></span>
-<span class="normal"><a href="#__codelineno-2-41">41</a></span>
-<span class="normal"><a href="#__codelineno-2-42">42</a></span>
-<span class="normal"><a href="#__codelineno-2-43">43</a></span>
-<span class="normal"><a href="#__codelineno-2-44">44</a></span>
-<span class="normal"><a href="#__codelineno-2-45">45</a></span>
-<span class="normal"><a href="#__codelineno-2-46">46</a></span>
-<span class="normal"><a href="#__codelineno-2-47">47</a></span>
-<span class="normal"><a href="#__codelineno-2-48">48</a></span>
-<span class="normal"><a href="#__codelineno-2-49">49</a></span>
-<span class="normal"><a href="#__codelineno-2-50">50</a></span>
-<span class="normal"><a href="#__codelineno-2-51">51</a></span>
-<span class="normal"><a href="#__codelineno-2-52">52</a></span>
-<span class="normal"><a href="#__codelineno-2-53">53</a></span>
-<span class="normal"><a href="#__codelineno-2-54">54</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>{% if page.meta.comments %}
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>  <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;__comments&quot;</span><span class="p">&gt;</span>{{ lang.t(&quot;meta.comments&quot;) }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>  <span class="cm">&lt;!-- Insert generated snippet here --&gt;</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="hll">  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://giscus.app/client.js&quot;</span>
-</span><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="hll">  <span class="na">data-repo</span><span class="o">=</span><span class="s">&quot;你的仓库名称（如Wcowin/hexo-site-comments）&quot;</span>
-</span><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="hll">  <span class="na">data-repo-id</span><span class="o">=</span><span class="s">&quot; &quot;</span>
-</span><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="hll">  <span class="na">data-category</span><span class="o">=</span><span class="s">&quot; &quot;</span>
-</span><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="hll">  <span class="na">data-category-id</span><span class="o">=</span><span class="s">&quot; &quot;</span>
-</span><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="hll">  <span class="na">data-mapping</span><span class="o">=</span><span class="s">&quot;pathname&quot;</span>
-</span><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="hll">  <span class="na">data-strict</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
-</span><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="hll">  <span class="na">data-reactions-enabled</span><span class="o">=</span><span class="s">&quot;1&quot;</span>
-</span><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="hll">  <span class="na">data-emit-metadata</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
-</span><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="hll">  <span class="na">data-input-position</span><span class="o">=</span><span class="s">&quot;bottom&quot;</span>
-</span><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="hll">  <span class="na">data-theme</span><span class="o">=</span><span class="s">&quot;preferred_color_scheme&quot;</span>
-</span><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="hll">  <span class="na">data-lang</span><span class="o">=</span><span class="s">&quot;zh-CN&quot;</span>
-</span><a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="hll">  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span>
-</span><a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="hll">  <span class="na">async</span><span class="p">&gt;</span>
-</span><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="hll"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span><a id="__codelineno-2-19" name="__codelineno-2-19"></a>  <span class="cm">&lt;!-- Synchronize Giscus theme with palette --&gt;</span>
-<a id="__codelineno-2-20" name="__codelineno-2-20"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">giscus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;script[src*=giscus]&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-22" name="__codelineno-2-22"></a>
-<a id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">    </span><span class="c1">// Set palette on initial load</span>
-<a id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">__md_get</span><span class="p">(</span><span class="s2">&quot;__palette&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">palette</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">palette</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">palette</span><span class="p">.</span><span class="nx">color</span><span class="p">.</span><span class="nx">scheme</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;slate&quot;</span>
-<a id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="w">        </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;transparent_dark&quot;</span>
-<a id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;light&quot;</span>
-<a id="__codelineno-2-29" name="__codelineno-2-29"></a>
-<a id="__codelineno-2-30" name="__codelineno-2-30"></a><span class="w">      </span><span class="c1">// Instruct Giscus to set theme</span>
-<a id="__codelineno-2-31" name="__codelineno-2-31"></a><span class="w">      </span><span class="nx">giscus</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;data-theme&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">theme</span><span class="p">)</span><span class="w"> </span>
-<a id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-2-33" name="__codelineno-2-33"></a>
-<a id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="w">    </span><span class="c1">// Register event handlers after documented loaded</span>
-<a id="__codelineno-2-35" name="__codelineno-2-35"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;DOMContentLoaded&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-36" name="__codelineno-2-36"></a><span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;[data-md-component=palette]&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-37" name="__codelineno-2-37"></a><span class="w">      </span><span class="nx">ref</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;change&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-38" name="__codelineno-2-38"></a><span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">__md_get</span><span class="p">(</span><span class="s2">&quot;__palette&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-39" name="__codelineno-2-39"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">palette</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">palette</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-40" name="__codelineno-2-40"></a><span class="w">          </span><span class="kd">var</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">palette</span><span class="p">.</span><span class="nx">color</span><span class="p">.</span><span class="nx">scheme</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;slate&quot;</span>
-<a id="__codelineno-2-41" name="__codelineno-2-41"></a><span class="w">            </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;transparent_dark&quot;</span>
-<a id="__codelineno-2-42" name="__codelineno-2-42"></a><span class="w">            </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;light&quot;</span>
-<a id="__codelineno-2-43" name="__codelineno-2-43"></a>
-<a id="__codelineno-2-44" name="__codelineno-2-44"></a><span class="w">          </span><span class="c1">// Instruct Giscus to change theme</span>
-<a id="__codelineno-2-45" name="__codelineno-2-45"></a><span class="w">          </span><span class="kd">var</span><span class="w"> </span><span class="nx">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;.giscus-frame&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-46" name="__codelineno-2-46"></a><span class="w">          </span><span class="nx">frame</span><span class="p">.</span><span class="nx">contentWindow</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span>
-<a id="__codelineno-2-47" name="__codelineno-2-47"></a><span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">giscus</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">setConfig</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-2-48" name="__codelineno-2-48"></a><span class="w">            </span><span class="s2">&quot;https://giscus.app&quot;</span>
-<a id="__codelineno-2-49" name="__codelineno-2-49"></a><span class="w">          </span><span class="p">)</span>
-<a id="__codelineno-2-50" name="__codelineno-2-50"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-2-51" name="__codelineno-2-51"></a><span class="w">      </span><span class="p">})</span>
-<a id="__codelineno-2-52" name="__codelineno-2-52"></a><span class="w">    </span><span class="p">})</span>
-<a id="__codelineno-2-53" name="__codelineno-2-53"></a><span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-2-54" name="__codelineno-2-54"></a>{% endif %}
-</code></pre></div></td></tr></table></div>
-<h2 id="_2">第二步<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>打开<a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a>  走完这个页面的流程就会得到(这会在你的Github创建新的仓库，建议自己先去新建个 Discussions)
-<img alt="" src="https://s1.imagehub.cc/images/2024/02/02/b0fabd6a0c967d5a846c087adea5b680.png" />  </p>
-<p><img alt="" src="https://s1.imagehub.cc/images/2024/02/02/d0c7b4e08a714b5c2b60421f58159c62.png" />  </p>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>$ tree -a
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>.
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>├── .github
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>│   ├── .DS_Store
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>│   └── workflows
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>│       └── ci.yml
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>├── docs
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>│   └── index.md
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>│   └──overrides
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>│       └──assets
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>│       └──partials
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="hll">│          └──footer.html
+</span><a id="__codelineno-2-13" name="__codelineno-2-13"></a>│
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>└── mkdocs.yml
+</code></pre></div></td></tr></table></div></p>
+<div class="admonition tip">
+<p class="admonition-title">重点提示</p>
+<p>请参考下方的footer.html示例代码  </p>
+<p>页脚教程: <a href="../footer/">Mkdocs页脚设计</a></p>
+</div>
+<details class="note">
+<summary>footer.html示例代码(无需修改,直接复制粘贴即可使用)</summary>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
@@ -4131,55 +4646,192 @@
 <span class="normal"><a href="#__codelineno-3-12">12</a></span>
 <span class="normal"><a href="#__codelineno-3-13">13</a></span>
 <span class="normal"><a href="#__codelineno-3-14">14</a></span>
-<span class="normal"><a href="#__codelineno-3-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://giscus.app/client.js&quot;</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>        <span class="na">data-repo</span><span class="o">=</span><span class="s">&quot;[在此输入仓库]&quot;</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>        <span class="na">data-repo-id</span><span class="o">=</span><span class="s">&quot;[在此输入仓库 ID]&quot;</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>        <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;[在此输入分类名]&quot;</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>        <span class="na">data-category-id</span><span class="o">=</span><span class="s">&quot;[在此输入分类 ID]&quot;</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a>        <span class="na">data-mapping</span><span class="o">=</span><span class="s">&quot;pathname&quot;</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a>        <span class="na">data-strict</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8"></a>        <span class="na">data-reactions-enabled</span><span class="o">=</span><span class="s">&quot;1&quot;</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9"></a>        <span class="na">data-emit-metadata</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10"></a>        <span class="na">data-input-position</span><span class="o">=</span><span class="s">&quot;bottom&quot;</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11"></a>        <span class="na">data-theme</span><span class="o">=</span><span class="s">&quot;preferred_color_scheme&quot;</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12"></a>        <span class="na">data-lang</span><span class="o">=</span><span class="s">&quot;zh-CN&quot;</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13"></a>        <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14"></a>        <span class="na">async</span><span class="p">&gt;</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span>
+<span class="normal"><a href="#__codelineno-3-26">26</a></span>
+<span class="normal"><a href="#__codelineno-3-27">27</a></span>
+<span class="normal"><a href="#__codelineno-3-28">28</a></span>
+<span class="normal"><a href="#__codelineno-3-29">29</a></span>
+<span class="normal"><a href="#__codelineno-3-30">30</a></span>
+<span class="normal"><a href="#__codelineno-3-31">31</a></span>
+<span class="normal"><a href="#__codelineno-3-32">32</a></span>
+<span class="normal"><a href="#__codelineno-3-33">33</a></span>
+<span class="normal"><a href="#__codelineno-3-34">34</a></span>
+<span class="normal"><a href="#__codelineno-3-35">35</a></span>
+<span class="normal"><a href="#__codelineno-3-36">36</a></span>
+<span class="normal"><a href="#__codelineno-3-37">37</a></span>
+<span class="normal"><a href="#__codelineno-3-38">38</a></span>
+<span class="normal"><a href="#__codelineno-3-39">39</a></span>
+<span class="normal"><a href="#__codelineno-3-40">40</a></span>
+<span class="normal"><a href="#__codelineno-3-41">41</a></span>
+<span class="normal"><a href="#__codelineno-3-42">42</a></span>
+<span class="normal"><a href="#__codelineno-3-43">43</a></span>
+<span class="normal"><a href="#__codelineno-3-44">44</a></span>
+<span class="normal"><a href="#__codelineno-3-45">45</a></span>
+<span class="normal"><a href="#__codelineno-3-46">46</a></span>
+<span class="normal"><a href="#__codelineno-3-47">47</a></span>
+<span class="normal"><a href="#__codelineno-3-48">48</a></span>
+<span class="normal"><a href="#__codelineno-3-49">49</a></span>
+<span class="normal"><a href="#__codelineno-3-50">50</a></span>
+<span class="normal"><a href="#__codelineno-3-51">51</a></span>
+<span class="normal"><a href="#__codelineno-3-52">52</a></span>
+<span class="normal"><a href="#__codelineno-3-53">53</a></span>
+<span class="normal"><a href="#__codelineno-3-54">54</a></span>
+<span class="normal"><a href="#__codelineno-3-55">55</a></span>
+<span class="normal"><a href="#__codelineno-3-56">56</a></span>
+<span class="normal"><a href="#__codelineno-3-57">57</a></span>
+<span class="normal"><a href="#__codelineno-3-58">58</a></span>
+<span class="normal"><a href="#__codelineno-3-59">59</a></span>
+<span class="normal"><a href="#__codelineno-3-60">60</a></span>
+<span class="normal"><a href="#__codelineno-3-61">61</a></span>
+<span class="normal"><a href="#__codelineno-3-62">62</a></span>
+<span class="normal"><a href="#__codelineno-3-63">63</a></span>
+<span class="normal"><a href="#__codelineno-3-64">64</a></span>
+<span class="normal"><a href="#__codelineno-3-65">65</a></span>
+<span class="normal"><a href="#__codelineno-3-66">66</a></span>
+<span class="normal"><a href="#__codelineno-3-67">67</a></span>
+<span class="normal"><a href="#__codelineno-3-68">68</a></span>
+<span class="normal"><a href="#__codelineno-3-69">69</a></span>
+<span class="normal"><a href="#__codelineno-3-70">70</a></span>
+<span class="normal"><a href="#__codelineno-3-71">71</a></span>
+<span class="normal"><a href="#__codelineno-3-72">72</a></span>
+<span class="normal"><a href="#__codelineno-3-73">73</a></span>
+<span class="normal"><a href="#__codelineno-3-74">74</a></span>
+<span class="normal"><a href="#__codelineno-3-75">75</a></span>
+<span class="normal"><a href="#__codelineno-3-76">76</a></span>
+<span class="normal"><a href="#__codelineno-3-77">77</a></span>
+<span class="normal"><a href="#__codelineno-3-78">78</a></span>
+<span class="normal"><a href="#__codelineno-3-79">79</a></span>
+<span class="normal"><a href="#__codelineno-3-80">80</a></span>
+<span class="normal"><a href="#__codelineno-3-81">81</a></span>
+<span class="normal"><a href="#__codelineno-3-82">82</a></span>
+<span class="normal"><a href="#__codelineno-3-83">83</a></span>
+<span class="normal"><a href="#__codelineno-3-84">84</a></span>
+<span class="normal"><a href="#__codelineno-3-85">85</a></span>
+<span class="normal"><a href="#__codelineno-3-86">86</a></span>
+<span class="normal"><a href="#__codelineno-3-87">87</a></span>
+<span class="normal"><a href="#__codelineno-3-88">88</a></span>
+<span class="normal"><a href="#__codelineno-3-89">89</a></span>
+<span class="normal"><a href="#__codelineno-3-90">90</a></span>
+<span class="normal"><a href="#__codelineno-3-91">91</a></span>
+<span class="normal"><a href="#__codelineno-3-92">92</a></span>
+<span class="normal"><a href="#__codelineno-3-93">93</a></span>
+<span class="normal"><a href="#__codelineno-3-94">94</a></span>
+<span class="normal"><a href="#__codelineno-3-95">95</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>{#-
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>  This file was automatically generated - do not edit
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>-#}
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">&lt;</span><span class="nt">footer</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>  {% if &quot;navigation.footer&quot; in features %}
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>    {% if page.previous_page or page.next_page %}
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>      {% if page.meta and page.meta.hide %}
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>        {% set hidden = &quot;hidden&quot; if &quot;footer&quot; in page.meta.hide %}
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>      {% endif %}
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>      <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__inner md-grid&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;{{ lang.t(&#39;footer&#39;) }}&quot;</span> <span class="err">{{</span> <span class="na">hidden</span> <span class="err">}}</span><span class="p">&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>        {% if page.previous_page %}
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>          {% set direction = lang.t(&quot;footer.previous&quot;) %}
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ page.previous_page.url | url }}&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__link md-footer__link--prev&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;{{ direction }}: {{ page.previous_page.title | e }}&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__button md-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a>              {% set icon = config.theme.icon.previous or &quot;material/arrow-left&quot; %}
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a>              {% include &quot;.icons/&quot; ~ icon ~ &quot;.svg&quot; %}
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__title&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a>              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__direction&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a>                {{ direction }}
+<a id="__codelineno-3-21" name="__codelineno-3-21"></a>              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22"></a>              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-ellipsis&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23"></a>                {{ page.previous_page.title }}
+<a id="__codelineno-3-24" name="__codelineno-3-24"></a>              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26"></a>          <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27"></a>        {% endif %}
+<a id="__codelineno-3-28" name="__codelineno-3-28"></a>        {% if page.next_page %}
+<a id="__codelineno-3-29" name="__codelineno-3-29"></a>          {% set direction = lang.t(&quot;footer.next&quot;) %}
+<a id="__codelineno-3-30" name="__codelineno-3-30"></a>          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ page.next_page.url | url }}&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__link md-footer__link--next&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;{{ direction }}: {{ page.next_page.title | e }}&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__title&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32"></a>              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__direction&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33"></a>                {{ direction }}
+<a id="__codelineno-3-34" name="__codelineno-3-34"></a>              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35"></a>              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-ellipsis&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-36" name="__codelineno-3-36"></a>                {{ page.next_page.title }}
+<a id="__codelineno-3-37" name="__codelineno-3-37"></a>              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__button md-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40"></a>              {% set icon = config.theme.icon.next or &quot;material/arrow-right&quot; %}
+<a id="__codelineno-3-41" name="__codelineno-3-41"></a>              {% include &quot;.icons/&quot; ~ icon ~ &quot;.svg&quot; %}
+<a id="__codelineno-3-42" name="__codelineno-3-42"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43"></a>          <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-3-44" name="__codelineno-3-44"></a>        {% endif %}
+<a id="__codelineno-3-45" name="__codelineno-3-45"></a>      <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+<a id="__codelineno-3-46" name="__codelineno-3-46"></a>    {% endif %}
+<a id="__codelineno-3-47" name="__codelineno-3-47"></a>  {% endif %}
+<a id="__codelineno-3-48" name="__codelineno-3-48"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer-meta md-typeset&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-49" name="__codelineno-3-49"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer-meta__inner md-grid&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-50" name="__codelineno-3-50"></a>      {% include &quot;partials/copyright.html&quot; %}
+<a id="__codelineno-3-51" name="__codelineno-3-51"></a>            <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.staticfile.net/translate.js/3.12.0/translate.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-52" name="__codelineno-3-52"></a>      <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-53" name="__codelineno-3-53"></a><span class="w">        </span><span class="c1">// 翻译配置 - 包装在立即执行函数中避免全局污染</span>
+<a id="__codelineno-3-54" name="__codelineno-3-54"></a><span class="w">        </span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-55" name="__codelineno-3-55"></a><span class="w">          </span><span class="c1">// 通过 class 设置不翻译的元素</span>
+<a id="__codelineno-3-56" name="__codelineno-3-56"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">ignore</span><span class="p">.</span><span class="kd">class</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;md-select&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;footer-highlight&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;md-footer-copyright&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-57" name="__codelineno-3-57"></a><span class="w">          </span><span class="c1">// 自定义术语库，纠正翻译结果</span>
+<a id="__codelineno-3-58" name="__codelineno-3-58"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">nomenclature</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">,</span><span class="s1">&#39;english&#39;</span><span class="p">,</span><span class="sb">`</span>
+<a id="__codelineno-3-59" name="__codelineno-3-59"></a><span class="sb">                快讯=Newsflash</span>
+<a id="__codelineno-3-60" name="__codelineno-3-60"></a><span class="sb">                访问量=Page Views</span>
+<a id="__codelineno-3-61" name="__codelineno-3-61"></a><span class="sb">                本站已经运行=Site has been running</span>
+<a id="__codelineno-3-62" name="__codelineno-3-62"></a><span class="sb">                天=days</span>
+<a id="__codelineno-3-63" name="__codelineno-3-63"></a><span class="sb">                时=hours</span>
+<a id="__codelineno-3-64" name="__codelineno-3-64"></a><span class="sb">                分=minutes</span>
+<a id="__codelineno-3-65" name="__codelineno-3-65"></a><span class="sb">                秒=seconds</span>
+<a id="__codelineno-3-66" name="__codelineno-3-66"></a><span class="sb">                萌ICP备=Moe ICP</span>
+<a id="__codelineno-3-67" name="__codelineno-3-67"></a><span class="sb">                版权所有=Copyright</span>
+<a id="__codelineno-3-68" name="__codelineno-3-68"></a><span class="sb">                制作工具=Made with</span>
+<a id="__codelineno-3-69" name="__codelineno-3-69"></a><span class="sb">        `</span><span class="p">);</span>
+<a id="__codelineno-3-70" name="__codelineno-3-70"></a><span class="w">          </span><span class="c1">// 设置本地语种</span>
+<a id="__codelineno-3-71" name="__codelineno-3-71"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">language</span><span class="p">.</span><span class="nx">setLocal</span><span class="p">(</span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">);</span><span class="w">     </span>
+<a id="__codelineno-3-72" name="__codelineno-3-72"></a><span class="w">          </span><span class="c1">// 设置首次使用时自动识别语种</span>
+<a id="__codelineno-3-73" name="__codelineno-3-73"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">setAutoDiscriminateLocalLanguage</span><span class="p">();</span>
+<a id="__codelineno-3-74" name="__codelineno-3-74"></a><span class="w">          </span><span class="c1">// 不显示 select 语言选择框</span>
+<a id="__codelineno-3-75" name="__codelineno-3-75"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">selectLanguageTag</span><span class="p">.</span><span class="nx">show</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<a id="__codelineno-3-76" name="__codelineno-3-76"></a><span class="w">          </span><span class="c1">// 设置机器翻译服务通道</span>
+<a id="__codelineno-3-77" name="__codelineno-3-77"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">service</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;client.edge&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-78" name="__codelineno-3-78"></a><span class="w">          </span><span class="c1">// 执行翻译</span>
+<a id="__codelineno-3-79" name="__codelineno-3-79"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+<a id="__codelineno-3-80" name="__codelineno-3-80"></a><span class="w">          </span><span class="c1">// 监听语言切换事件，确保动态内容也能被翻译</span>
+<a id="__codelineno-3-81" name="__codelineno-3-81"></a><span class="w">          </span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;translate.languagechange&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-82" name="__codelineno-3-82"></a><span class="w">            </span><span class="c1">// 延迟重新翻译动态更新的内容</span>
+<a id="__codelineno-3-83" name="__codelineno-3-83"></a><span class="w">            </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-84" name="__codelineno-3-84"></a><span class="w">              </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+<a id="__codelineno-3-85" name="__codelineno-3-85"></a><span class="w">            </span><span class="p">},</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span>
+<a id="__codelineno-3-86" name="__codelineno-3-86"></a><span class="w">          </span><span class="p">});</span>
+<a id="__codelineno-3-87" name="__codelineno-3-87"></a><span class="w">          </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;翻译功能已初始化&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-88" name="__codelineno-3-88"></a><span class="w">        </span><span class="p">})();</span>
+<a id="__codelineno-3-89" name="__codelineno-3-89"></a><span class="w">      </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-90" name="__codelineno-3-90"></a>      {% if config.extra.social %}
+<a id="__codelineno-3-91" name="__codelineno-3-91"></a>        {% include &quot;partials/social.html&quot; %}
+<a id="__codelineno-3-92" name="__codelineno-3-92"></a>      {% endif %}
+<a id="__codelineno-3-93" name="__codelineno-3-93"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-94" name="__codelineno-3-94"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-95" name="__codelineno-3-95"></a><span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>复制此代码，替换最上面👆🏻comments.html中高亮的代码</p>
-<p>终端里<code>mkdocs server</code>一下</p>
-<h2 id="_3">最后<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>在你想插入评论的地方的元数据：<code>comments: true</code></p>
+</details>
+<h3 id="3-mkdocsyml">3. 在 mkdocs.yml 中配置语言切换<a class="headerlink" href="#3-mkdocsyml" title="Permanent link">&para;</a></h3>
+<p>首先在mkdocs.yml文件中添加custom_dir:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span>
-<span class="normal"><a href="#__codelineno-4-7">7</a></span>
-<span class="normal"><a href="#__codelineno-4-8">8</a></span>
-<span class="normal"><a href="#__codelineno-4-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>---
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>title: 留言板
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a>hide:
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a>  #  - navigation # 显示右
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>  #  - toc #显示左
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a>  #  - footer
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a>  #  - feedback  
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="hll">comments: true  #默认不开启评论
-</span><a id="__codelineno-4-9" name="__codelineno-4-9"></a>---
-</code></pre></div></td></tr></table></div>
-<h2 id="_4">效果<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>完美!快速相应  </p>
-<figure>
-<p><img alt="" src="https://s1.imagehub.cc/images/2024/02/02/0619f922f930e7649fb40405c7e49339.png" />
-  </p>
-<figcaption>这是图片↑↑↑</figcaption>
-</figure>
-<h2 id="_5">其他评论系统<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>把想要内嵌的评论代码放在相应页面即可
-比如<a href="https://twikoo.js.org/">twikoo</a>
-去看它的官方配置文档很简单就配置好了</p>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>theme:
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>  name: material
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="hll">  custom_dir: docs/overrides #覆写路径
+</span></code></pre></div></td></tr></table></div></p>
+<p>然后在配置文件中添加多语言切换选项：
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
@@ -4200,52 +4852,492 @@
 <span class="normal"><a href="#__codelineno-5-18">18</a></span>
 <span class="normal"><a href="#__codelineno-5-19">19</a></span>
 <span class="normal"><a href="#__codelineno-5-20">20</a></span>
-<span class="normal"><a href="#__codelineno-5-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span> 
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span> <span class="p">/&gt;</span> 
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a> <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;tcomment&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> 
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="nx">twikoo</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="w">  </span><span class="nx">envId</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="w">  </span><span class="nx">el</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#tcomment&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 容器元素</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="w">   </span><span class="c1">//region: &#39;ap-guangzhou&#39;, // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填</span>
-<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="w">  </span><span class="c1">// path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数</span>
-<a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="w">   </span><span class="c1">//lang: &#39;zh-CN&#39;, // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js</span>
-<a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="w">   </span><span class="nx">onCommentLoaded</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;评论加载完成&#39;</span><span class="p">);</span>
-<a id="__codelineno-5-19" name="__codelineno-5-19"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="p">})</span>
-<a id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
+<span class="normal"><a href="#__codelineno-5-21">21</a></span>
+<span class="normal"><a href="#__codelineno-5-22">22</a></span>
+<span class="normal"><a href="#__codelineno-5-23">23</a></span>
+<span class="normal"><a href="#__codelineno-5-24">24</a></span>
+<span class="normal"><a href="#__codelineno-5-25">25</a></span>
+<span class="normal"><a href="#__codelineno-5-26">26</a></span>
+<span class="normal"><a href="#__codelineno-5-27">27</a></span>
+<span class="normal"><a href="#__codelineno-5-28">28</a></span>
+<span class="normal"><a href="#__codelineno-5-29">29</a></span>
+<span class="normal"><a href="#__codelineno-5-30">30</a></span>
+<span class="normal"><a href="#__codelineno-5-31">31</a></span>
+<span class="normal"><a href="#__codelineno-5-32">32</a></span>
+<span class="normal"><a href="#__codelineno-5-33">33</a></span>
+<span class="normal"><a href="#__codelineno-5-34">34</a></span>
+<span class="normal"><a href="#__codelineno-5-35">35</a></span>
+<span class="normal"><a href="#__codelineno-5-36">36</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zh</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.sections</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="nt">extra</span><span class="p">:</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="hll"><span class="w">  </span><span class="nt">alternate</span><span class="p">:</span>
+</span><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">中文</span>
+</span><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;chinese_simplified&#39;);&quot;</span>
+</span><a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zh</span>
+</span><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
+</span><a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;english&#39;);&quot;</span>
+</span><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+</span><a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">한국어</span>
+</span><a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;korean&#39;);&quot;</span>
+</span><a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ko</span>
+</span><a id="__codelineno-5-19" name="__codelineno-5-19"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">日本語</span>
+</span><a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;japanese&#39;);&quot;</span>
+</span><a id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ja</span>
+</span><a id="__codelineno-5-22" name="__codelineno-5-22"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">بالعربية</span>
+</span><a id="__codelineno-5-23" name="__codelineno-5-23"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;arabic&#39;);&quot;</span>
+</span><a id="__codelineno-5-24" name="__codelineno-5-24"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ar</span>
+</span><a id="__codelineno-5-25" name="__codelineno-5-25"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deutsch</span>
+</span><a id="__codelineno-5-26" name="__codelineno-5-26"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;german&#39;);&quot;</span>
+</span><a id="__codelineno-5-27" name="__codelineno-5-27"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">de</span>
+</span><a id="__codelineno-5-28" name="__codelineno-5-28"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Français</span>
+</span><a id="__codelineno-5-29" name="__codelineno-5-29"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;french&#39;);&quot;</span>
+</span><a id="__codelineno-5-30" name="__codelineno-5-30"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fr</span>
+</span><a id="__codelineno-5-31" name="__codelineno-5-31"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Español</span>
+</span><a id="__codelineno-5-32" name="__codelineno-5-32"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;spanish&#39;);&quot;</span>
+</span><a id="__codelineno-5-33" name="__codelineno-5-33"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">es</span>
+</span><a id="__codelineno-5-34" name="__codelineno-5-34"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">português</span>
+</span><a id="__codelineno-5-35" name="__codelineno-5-35"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;portuguese&#39;);&quot;</span>
+</span><a id="__codelineno-5-36" name="__codelineno-5-36"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pt</span>
+</span></code></pre></div></td></tr></table></div></p>
+<p>至此已经配置完成。简单！快速！</p>
+<hr />
+<hr />
+<p>后续步骤皆为可选，根据需求进行配置。可以不看。</p>
+<h3 id="4">4. 添加自定义术语库<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>为了提高翻译准确性，添加专业术语映射：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span>
+<span class="normal"><a href="#__codelineno-6-14">14</a></span>
+<span class="normal"><a href="#__codelineno-6-15">15</a></span>
+<span class="normal"><a href="#__codelineno-6-16">16</a></span>
+<span class="normal"><a href="#__codelineno-6-17">17</a></span>
+<span class="normal"><a href="#__codelineno-6-18">18</a></span>
+<span class="normal"><a href="#__codelineno-6-19">19</a></span>
+<span class="normal"><a href="#__codelineno-6-20">20</a></span>
+<span class="normal"><a href="#__codelineno-6-21">21</a></span>
+<span class="normal"><a href="#__codelineno-6-22">22</a></span>
+<span class="normal"><a href="#__codelineno-6-23">23</a></span>
+<span class="normal"><a href="#__codelineno-6-24">24</a></span>
+<span class="normal"><a href="#__codelineno-6-25">25</a></span>
+<span class="normal"><a href="#__codelineno-6-26">26</a></span>
+<span class="normal"><a href="#__codelineno-6-27">27</a></span>
+<span class="normal"><a href="#__codelineno-6-28">28</a></span>
+<span class="normal"><a href="#__codelineno-6-29">29</a></span>
+<span class="normal"><a href="#__codelineno-6-30">30</a></span>
+<span class="normal"><a href="#__codelineno-6-31">31</a></span>
+<span class="normal"><a href="#__codelineno-6-32">32</a></span>
+<span class="normal"><a href="#__codelineno-6-33">33</a></span>
+<span class="normal"><a href="#__codelineno-6-34">34</a></span>
+<span class="normal"><a href="#__codelineno-6-35">35</a></span>
+<span class="normal"><a href="#__codelineno-6-36">36</a></span>
+<span class="normal"><a href="#__codelineno-6-37">37</a></span>
+<span class="normal"><a href="#__codelineno-6-38">38</a></span>
+<span class="normal"><a href="#__codelineno-6-39">39</a></span>
+<span class="normal"><a href="#__codelineno-6-40">40</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1">// 自定义术语库配置</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nomenclatures</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">  </span><span class="nx">english</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="sb">访问量=Page Views</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="sb">本站已经运行=Site has been running for</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="sb">天=days</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="sb">时=hours</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="sb">分=minutes</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="sb">秒=seconds</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="sb">版权所有=Copyright</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="sb">制作工具=Made with</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="sb">统计中=Loading</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="sb">`</span><span class="p">,</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">  </span><span class="nx">japanese</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="sb">访问量=アクセス数</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="sb">本站已经运行=サイト運営期間</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="sb">天=日</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18"></a><span class="sb">时=時間</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19"></a><span class="sb">分=分</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="sb">秒=秒</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21"></a><span class="sb">版权所有=著作権</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22"></a><span class="sb">制作工具=制作ツール</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23"></a><span class="sb">`</span><span class="p">,</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24"></a><span class="w">  </span><span class="nx">korean</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25"></a><span class="sb">访问量=방문수</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26"></a><span class="sb">本站已经运行=사이트 운영 기간</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27"></a><span class="sb">天=일</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28"></a><span class="sb">时=시간</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29"></a><span class="sb">分=분</span>
+<a id="__codelineno-6-30" name="__codelineno-6-30"></a><span class="sb">秒=초</span>
+<a id="__codelineno-6-31" name="__codelineno-6-31"></a><span class="sb">版权所有=저작권</span>
+<a id="__codelineno-6-32" name="__codelineno-6-32"></a><span class="sb">制作工具=제작 도구</span>
+<a id="__codelineno-6-33" name="__codelineno-6-33"></a><span class="sb">`</span>
+<a id="__codelineno-6-34" name="__codelineno-6-34"></a><span class="w">  </span><span class="c1">// ... 其他语言配置</span>
+<a id="__codelineno-6-35" name="__codelineno-6-35"></a><span class="p">};</span>
+<a id="__codelineno-6-36" name="__codelineno-6-36"></a>
+<a id="__codelineno-6-37" name="__codelineno-6-37"></a><span class="c1">// 批量添加术语库</span>
+<a id="__codelineno-6-38" name="__codelineno-6-38"></a><span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">nomenclatures</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(([</span><span class="nx">lang</span><span class="p">,</span><span class="w"> </span><span class="nx">terms</span><span class="p">])</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-39" name="__codelineno-6-39"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">nomenclature</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">lang</span><span class="p">,</span><span class="w"> </span><span class="nx">terms</span><span class="p">);</span>
+<a id="__codelineno-6-40" name="__codelineno-6-40"></a><span class="p">});</span>
 </code></pre></div></td></tr></table></div>
-<p><head> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" /> 
-<br />
-<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script></p>
-<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
-
-<p></head></p>
-<body>
-  <div id="tcomment"></div> 
-  <script src="https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js"></script> 
-  <script>
-twikoo.init({
-  envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
-  el: '#tcomment', // 容器元素
-   //region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
-  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
-   //lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
-   onCommentLoaded: function () {
-    console.log('评论加载完成');
-  }
-})
-</script> 
-
-我感觉twikoo也好看！
+<h3 id="5">5. 处理动态内容翻译<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>对于实时更新的内容（如计时器、访问量等），需要特殊处理：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span>
+<span class="normal"><a href="#__codelineno-7-14">14</a></span>
+<span class="normal"><a href="#__codelineno-7-15">15</a></span>
+<span class="normal"><a href="#__codelineno-7-16">16</a></span>
+<span class="normal"><a href="#__codelineno-7-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">// 监听语言切换事件</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;translate.languagechange&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span><span class="c1">// 延迟重新翻译动态内容</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">  </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">    </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="p">});</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="c1">// 在动态内容更新时触发翻译</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="kd">function</span><span class="w"> </span><span class="nx">updateDynamicContent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">  </span><span class="c1">// 更新内容...</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="w">  </span><span class="c1">// 如果当前不是中文，重新执行翻译</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">translate</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">translate</span><span class="p">.</span><span class="nx">currentLanguage</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">(),</span><span class="w"> </span><span class="mf">100</span><span class="p">);</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="_3">🎨 多语言样式优化<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. 基础响应式样式<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p>为不同语言文本长度进行适配：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span>
+<span class="normal"><a href="#__codelineno-8-11">11</a></span>
+<span class="normal"><a href="#__codelineno-8-12">12</a></span>
+<span class="normal"><a href="#__codelineno-8-13">13</a></span>
+<span class="normal"><a href="#__codelineno-8-14">14</a></span>
+<span class="normal"><a href="#__codelineno-8-15">15</a></span>
+<span class="normal"><a href="#__codelineno-8-16">16</a></span>
+<span class="normal"><a href="#__codelineno-8-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c">/* 为翻译后的元素添加基础样式 */</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">]</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;chinese_simplified&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">  </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="w">  </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.4</span><span class="p">;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="p">}</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="c">/* 移动端长文本优化 */</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a><span class="w">  </span><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">]</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;chinese_simplified&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-visit-count-mobile</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a><span class="w">    </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">column</span><span class="p">;</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a><span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mf">0.4</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15"></a><span class="w">    </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6</span><span class="p">;</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="2_1">2. 特定语言样式优化<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p>针对不同语言的特殊需求：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span>
+<span class="normal"><a href="#__codelineno-9-18">18</a></span>
+<span class="normal"><a href="#__codelineno-9-19">19</a></span>
+<span class="normal"><a href="#__codelineno-9-20">20</a></span>
+<span class="normal"><a href="#__codelineno-9-21">21</a></span>
+<span class="normal"><a href="#__codelineno-9-22">22</a></span>
+<span class="normal"><a href="#__codelineno-9-23">23</a></span>
+<span class="normal"><a href="#__codelineno-9-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="c">/* 英文样式优化 */</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;english&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">  </span><span class="k">word-spacing</span><span class="p">:</span><span class="w"> </span><span class="mf">0.15</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="p">}</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="c">/* 日文样式优化 */</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;japanese&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="w">  </span><span class="k">letter-spacing</span><span class="p">:</span><span class="w"> </span><span class="mf">0.05</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="w">  </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">;</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="p">}</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13"></a>
+<a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="c">/* 阿拉伯文 RTL 支持 */</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;arabic&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-wrapper</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16"></a><span class="w">  </span><span class="k">direction</span><span class="p">:</span><span class="w"> </span><span class="kc">rtl</span><span class="p">;</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18"></a><span class="p">}</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19"></a>
+<a id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;arabic&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21"></a><span class="w">  </span><span class="k">direction</span><span class="p">:</span><span class="w"> </span><span class="kc">rtl</span><span class="p">;</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22"></a><span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23"></a><span class="w">  </span><span class="k">word-spacing</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="3">3. 深色模式兼容<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>确保所有语言在深色模式下的显示效果：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c">/* 深色模式下的翻译优化 */</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="o">[</span><span class="nt">data-md-color-scheme</span><span class="o">=</span><span class="s2">&quot;slate&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-counter-value</span><span class="o">,</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="o">[</span><span class="nt">data-md-color-scheme</span><span class="o">=</span><span class="s2">&quot;slate&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">no-translate</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#e2e8f0</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="p">}</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="c">/* 高对比度模式支持 */</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">prefers-contrast</span><span class="o">:</span><span class="w"> </span><span class="nt">high</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">  </span><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">]</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;chinese_simplified&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="p">;</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="_4">🔧 高级功能<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1_2">1. 语言检测与样式应用<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">applyLanguageStyles</span><span class="p">(</span><span class="nx">lang</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="w">  </span><span class="c1">// 设置语言属性</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;data-translate-lang&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">lang</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="w">  </span><span class="c1">// RTL 语言处理</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">lang</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;arabic&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;dir&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;rtl&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;rtl-language&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;dir&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;ltr&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;rtl-language&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="2_2">2. 数字和特殊内容保护<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<p>确保数字、链接等不被误翻译：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span>
+<span class="normal"><a href="#__codelineno-12-12">12</a></span>
+<span class="normal"><a href="#__codelineno-12-13">13</a></span>
+<span class="normal"><a href="#__codelineno-12-14">14</a></span>
+<span class="normal"><a href="#__codelineno-12-15">15</a></span>
+<span class="normal"><a href="#__codelineno-12-16">16</a></span>
+<span class="normal"><a href="#__codelineno-12-17">17</a></span>
+<span class="normal"><a href="#__codelineno-12-18">18</a></span>
+<span class="normal"><a href="#__codelineno-12-19">19</a></span>
+<span class="normal"><a href="#__codelineno-12-20">20</a></span>
+<span class="normal"><a href="#__codelineno-12-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">protectSpecialContent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="w">  </span><span class="c1">// 保护数字不被翻译</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">highlightElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.footer-highlight&#39;</span><span class="p">);</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">  </span><span class="nx">highlightElements</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">el</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">&#39;no-translate&#39;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="w">      </span><span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;no-translate&#39;</span><span class="p">);</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="w">  </span><span class="p">});</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="w">  </span><span class="c1">// 保护 ICP 号码</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">icpLinks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.icp-link&#39;</span><span class="p">);</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="w">  </span><span class="nx">icpLinks</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">el</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">icpNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">el</span><span class="p">.</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/\d+/</span><span class="p">);</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">icpNumber</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="w">      </span><span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="w">        </span><span class="sr">/(\d+)/g</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-12-17" name="__codelineno-12-17"></a><span class="w">        </span><span class="s1">&#39;&lt;span class=&quot;no-translate&quot;&gt;$1&lt;/span&gt;&#39;</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18"></a><span class="w">      </span><span class="p">);</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="w">  </span><span class="p">});</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="_5">🚀 最佳实践<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="1_3">1. 性能优化<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>延迟执行</strong>：翻译操作延迟执行，避免阻塞页面渲染</li>
+<li><strong>避免重复翻译</strong>：检查是否已翻译过相同内容</li>
+<li><strong>清理资源</strong>：页面切换时正确清理翻译相关资源</li>
+</ul>
+<h3 id="2_3">2. 用户体验优化<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>记住用户选择</strong>：使用 localStorage 保存用户的语言偏好</li>
+<li><strong>平滑过渡</strong>：添加过渡动画使语言切换更自然</li>
+<li><strong>加载状态</strong>：在翻译过程中显示加载提示</li>
+</ul>
+<h3 id="3_1">3. 可访问性考虑<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>屏幕阅读器支持</strong>：正确设置 <code>lang</code> 属性</li>
+<li><strong>键盘导航</strong>：确保语言切换按钮可通过键盘访问</li>
+<li><strong>对比度</strong>：保证翻译后文本的可读性</li>
+</ul>
+<hr />
+<h2 id="_6">📱 移动端适配<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="1_4">1. 响应式布局<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span>
+<span class="normal"><a href="#__codelineno-13-12">12</a></span>
+<span class="normal"><a href="#__codelineno-13-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="w">  </span><span class="c">/* 长语言文本换行优化 */</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">  </span><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;german&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-visit-count-mobile</span><span class="o">,</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">  </span><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;french&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-visit-count-mobile</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="w">    </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.7</span><span class="p">;</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="w">  </span><span class="c">/* 移动端语言切换优化 */</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="w">  </span><span class="p">.</span><span class="nc">md-header__option</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="w">    </span><span class="k">min-width</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="2_4">2. 触摸友好设计<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h3>
+<p>确保语言切换按钮在移动设备上易于点击：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">4</a></span>
+<span class="normal"><a href="#__codelineno-14-5">5</a></span>
+<span class="normal"><a href="#__codelineno-14-6">6</a></span>
+<span class="normal"><a href="#__codelineno-14-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="c">/* 移动端按钮优化 */</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">  </span><span class="p">.</span><span class="nc">md-header__option</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">    </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="mi">44</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="c">/* iOS 推荐的最小触摸目标 */</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="_7">🔍 故障排除<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">常见问题及解决方案<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>翻译不生效</strong></li>
+<li>检查 <code>translate.js</code> 是否正确加载</li>
+<li>
+<p>确认没有 JavaScript 错误阻止执行</p>
+</li>
+<li>
+<p><strong>动态内容不翻译</strong></p>
+</li>
+<li>在内容更新后调用 <code>translate.execute()</code></li>
+<li>
+<p>检查动态元素是否被忽略类名覆盖</p>
+</li>
+<li>
+<p><strong>样式错乱</strong></p>
+</li>
+<li>为不同语言添加对应的 CSS 规则</li>
+<li>
+<p>检查文本长度差异导致的布局问题</p>
+</li>
+<li>
+<p><strong>RTL 语言显示异常</strong></p>
+</li>
+<li>正确设置 <code>dir="rtl"</code> 属性</li>
+<li>为 RTL 语言添加特殊样式</li>
+</ol>
+<hr />
+<h2 id="_9">📊 效果展示<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>实现后的效果：</p>
+<p><img alt="2.gif" src="https://s2.loli.net/2025/07/26/uwokNjU1ipzc4v5.gif" /></p>
+<ul>
+<li>✅ <strong>多语言切换</strong>：支持 9 种语言实时切换</li>
+<li>✅ <strong>样式适配</strong>：每种语言都有优化的显示效果</li>
+<li>✅ <strong>响应式设计</strong>：桌面端和移动端都完美适配</li>
+<li>✅ <strong>性能优良</strong>：客户端翻译，服务器无额外负担</li>
+<li>✅ <strong>用户友好</strong>：无需刷新页面，切换流畅</li>
+</ul>
+<hr />
+<h2 id="_10">🎯 总结<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>通过以上步骤，我们成功为 MkDocs 网站添加了完整的多语言翻译功能。这个方案具有以下优势：</p>
+<ol>
+<li><strong>实现简单</strong>：仅需几个文件修改即可完成</li>
+<li><strong>功能完整</strong>：支持多种语言和样式适配</li>
+<li><strong>性能优秀</strong>：客户端翻译，不增加服务器负担</li>
+<li><strong>用户体验佳</strong>：切换流畅，样式美观</li>
+</ol>
+<p>虽然客户端翻译在 SEO 方面不如服务端多语言方案，但对于技术文档、个人博客等场景，这种方案提供了极佳的性价比和用户体验。</p>
+<hr />
+<h2 id="_11">🔗 相关资源<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/jerryc127/translate.js">Translate.js 官方文档</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/">Material for MkDocs 多语言配置</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Numbers_and_dates#internationalization">MDN Web 国际化指南</a></li>
+</ul>
+<p>希望这个教程能帮助你为自己的 MkDocs 网站添加多语言支持！如果遇到问题，欢迎在评论区讨论。</p>
 <style>
 .related-posts {
   margin-top: 1.5rem;
@@ -4289,10 +5381,10 @@ twikoo.init({
 <div class="related-posts">
 <h3>📚 相关文章推荐</h3>
 <ul>
-<li><a href="/blog/websitebeauty/mkdocsfont/">自定义Mkdocs显示字体(霞鹜文楷)</a></li>
-<li><a href="/blog/Mkdocs/mkdocs1/">利用Mkdocs部署静态网页至GitHubpages</a></li>
-<li><a href="/blog/websitebeauty/Mkdocs-AI-Summary/">MkDocs文档AI摘要</a></li>
+<li><a href="/blog/websitebeauty/mkdocs-document-dates/">MkDocs文档日期插件</a></li>
+<li><a href="/blog/Mkdocs/mkdocs2/">Mkdocs配置说明（mkdocs.yml）</a></li>
 <li><a href="/blog/websitebeauty/Relativeaddress/">相对地址的一些问题</a></li>
+<li><a href="/blog/websitebeauty/reading_time/">Mkdocs 阅读时间插件</a></li>
 <li><a href="/blog/technique%20sharing/comkdocs/">基于 Mkdocs 的主题与站点</a></li>
 </ul>
 </div>
@@ -4420,7 +5512,7 @@ twikoo.init({
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年7月8日 16:41:35 UTC">2025-07-08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年7月26日 14:03:46 UTC">2025-07-26</span>
   </span>
 
     
@@ -4430,7 +5522,7 @@ twikoo.init({
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2023年10月13日 16:16:37 UTC">2023-10-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年7月26日 14:03:46 UTC">2025-07-26</span>
   </span>
 
     
@@ -4556,78 +5648,6 @@ twikoo.init({
   </form>
 
 
-  <h2 id="__comments">评论</h2>
-  <!-- Insert generated snippet here -->
-  <script src="https://giscus.app/client.js"
-  data-repo="Wcowin/hexo-site-comments"
-  data-repo-id="R_kgDOIl9OJA"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOIl9OJM4CTHDe"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="noborder_light"
-  data-lang="zh-CN"
-  data-loading="lazy"  
-  crossorigin="anonymous"
-  async>
-</script>
-<!-- <div class="reward-container">
-  <div></div>
-  <button style="border-radius: 0.5rem;" onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    请作者喝杯咖啡
-  </button>
-  <div id="qr" style="display: none;">
-      <div style="display: inline-block;">
-        <img src="https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg" alt="Wcowin 微信支付">
-        <p>微信支付</p>
-      </div>
-      <div style="display: inline-block;">
-        <img src="https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg" alt="Wcowin 支付宝">
-        <p>支付宝</p>
-      </div>
-
-  </div>
-</div> -->
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate"
-        ? "transparent_dark"
-        : "light"
-
-      // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-          // Instruct Giscus to change theme
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
-
                 
               </article>
             </div>
@@ -4661,9 +5681,9 @@ twikoo.init({
         
           
           <a
-            href="../yuanjiaohua/"
+            href="../mkdocs-wcowin1/"
             class="md-footer__link md-footer__link--prev"
-            aria-label="上一页: 网页圆角化设计"
+            aria-label="上一页: Wcowin for MkDocs主题"
           >
             <div class="md-footer__button md-icon">
               
@@ -4671,7 +5691,7 @@ twikoo.init({
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">上一页</span>
-              <div class="md-ellipsis">网页圆角化设计</div>
+              <div class="md-ellipsis">Wcowin for MkDocs主题</div>
             </div>
           </a>
         
@@ -4680,13 +5700,13 @@ twikoo.init({
         
           
           <a
-            href="../header/"
+            href="../mkdocs-document-dates/"
             class="md-footer__link md-footer__link--next"
-            aria-label="下一页: 添加顶部公告栏"
+            aria-label="下一页: MkDocs文档日期插件"
           >
             <div class="md-footer__title">
               <span class="md-footer__direction">下一页</span>
-              <div class="md-ellipsis">添加顶部公告栏</div>
+              <div class="md-ellipsis">MkDocs文档日期插件</div>
             </div>
             <div class="md-footer__button md-icon">
               
