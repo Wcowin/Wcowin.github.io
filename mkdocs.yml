@@ -278,7 +278,7 @@ nav:
     
   - 旅行: 
     - trip/index.md
-    - Dify旅行规划助手: trip/tripdesign.md
+    # - Dify旅行规划助手: trip/tripdesign.md
     - 重庆: trip/InCQ/CQ.md
     - 西安: trip/Xian.md    
     - 我的家乡——漯河: trip/LH.md
