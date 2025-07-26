@@ -10,8 +10,8 @@ hide_comment: true
 ---
 <!-- 在头部添加预加载关键资源 -->
 <link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
-<link rel="preload" href="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" as="image">
-
+<link rel="preload" href="https://s1.imagehub.cc/images/2025/07/25/27c0e105ea7efbed5d046d3a8c303e9d.jpeg" as="image">
+<!-- https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg -->
 <!-- wcowin-header.html -->
 <div class="wcowin-header-row">
   <!-- 左侧：文字内容 -->
@@ -40,7 +40,7 @@ hide_comment: true
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
         <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image" class="flip-glow-ultimate-back" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image" class="flip-glow-ultimate-front" loading="lazy" width="280" height="280">
+        <img src="https://s1.imagehub.cc/images/2025/07/25/27c0e105ea7efbed5d046d3a8c303e9d.jpeg" alt="Front Image" class="flip-glow-ultimate-front" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>

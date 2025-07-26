@@ -21,6 +21,7 @@ EXCLUDED_PATTERNS = [
     r'.*\/index\.md$',  # 排除所有 index.md 文件
     r'.*\/archive\.md$',  # 排除所有 archive.md 文件
     r'^blog/posts/.*\.md$',  # 排除所有 blog/posts 目录下的文件
+    r'^blog/archive/.*\.md$',  # 排除所有 blog/archive 目录下的文件
 ]
 
 def is_page_excluded(file_path):

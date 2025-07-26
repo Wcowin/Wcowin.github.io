@@ -108,6 +108,7 @@ nav:
         - 添加相关推荐文章: blog/websitebeauty/recommend.md
         - MkDocs文档AI摘要: blog/websitebeauty/Mkdocs-AI-Summary.md
         - 添加阅读信息统计: blog/websitebeauty/reading_time.md
+        - 正则表达式基础: develop/regex.md
         - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
         - 如何自定义域名: blog/websitebeauty/Customdomain.md
         - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
@@ -533,8 +534,8 @@ markdown_extensions:
 
   
 extra_javascript:
-  - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
+  # - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
   # - javascripts/optimize.js
   # - javascripts/instant-handler.js
   # 延迟加载非关键脚本
@@ -551,6 +552,7 @@ extra_javascript:
 
 extra_css:
   # - stylesheets/extra.css
+  - stylesheets/extra2.css
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
   # - stylesheets/link.css  #友链
   # - stylesheets/optimize.css
@@ -574,6 +576,7 @@ extra_css:
   # - https://static.zeoseven.com/zsft/292/main/result.css #字体
   # - stylesheets/ziti.css  #字体
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css #字体
+  - https://fontsapi.zeoseven.com/292/main/result.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
@@ -588,9 +591,9 @@ watch: #监听文件变动自动刷新
 hooks:
   - docs/overrides/hooks/socialmedia.py
   - docs/overrides/hooks/reading_time.py
-  # - docs/overrides/hooks/toc_optimizer.py
-  # - docs/overrides/hooks/last_updated.py
   - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
   - docs/overrides/hooks/related_posts.py
+  # - docs/overrides/hooks/toc_optimizer.py
+  # - docs/overrides/hooks/last_updated.py
   # - docs/overrides/hooks/reading_progress.py
-  # - docs/overrides/hooks/comments.py       # 新添加的文章页面评论系统
+  - docs/overrides/hooks/comments.py       # 新添加的文章页面评论系统

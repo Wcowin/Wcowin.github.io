@@ -18,9 +18,14 @@ hide_comment: true
 ## 关于我
 
 <div class="intro-container">
-  <div class="intro-text">
-    <span class="greeting">你好，很高兴认识你 <span class="wave">👋</span></span>
-    <span class="name">我叫 <span class="highlight">Wáng Kēwén</span></span>
+  <div class="intro-content">
+    <div class="intro-avatar">
+      <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Wáng Kēwén" class="avatar-img">
+    </div>
+    <div class="intro-text">
+      <span class="greeting">你好，很高兴认识你 <span class="wave">👋</span></span>
+      <span class="name">我叫 <span class="highlight">Wáng Kēwén</span></span>
+    </div>
   </div>
 </div>
 
@@ -40,10 +45,35 @@ hide_comment: true
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.intro-avatar {
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.avatar-img:hover {
+  transform: scale(1.05);
+}
+
 .intro-text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex: 1;
 }
 
 .greeting, .name {
@@ -51,7 +81,6 @@ hide_comment: true
   font-size: 1.5rem;
   line-height: 1.6;
   color: #555;
-  /* font-family: 'LXGW WenKai', sans-serif; */
 }
 
 .highlight {
@@ -83,7 +112,7 @@ hide_comment: true
 
 /* 深色模式适配 */
 [data-md-color-scheme="slate"] .intro-container {
-  background: linear-gradient(145deg, rgba(31,33,40) 0%, rgba(31,33,40) 100%);
+  background: linear-gradient(145deg, rgba(31,33,40,0.9) 0%, rgba(31,33,40,0.8) 100%);
   border: 1px solid rgba(80,80,80,0.2);
 }
 
@@ -98,11 +127,26 @@ hide_comment: true
   -webkit-background-clip: text;
 }
 
+[data-md-color-scheme="slate"] .avatar-img {
+  border-color: rgba(255,255,255,0.2);
+}
+
 /* 移动端适配 */
 @media (max-width: 768px) {
   .intro-container {
     padding: 1.5rem;
     margin: 1.5rem 0;
+  }
+  
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .avatar-img {
+    width: 100px;
+    height: 100px;
   }
   
   .greeting, .name {
@@ -219,7 +263,6 @@ hide_comment: true
         <span class="about__info-name">贡献的开源</span>
     </div>
 </div>
-<br>
 <center>
 <a href="/assets/个人简历.pdf" target="_blank" class="md-button">下载简历</a>
 </center>
@@ -449,7 +492,7 @@ hide_comment: true
     </center> -->
 
 
-??? tip "公众号"
+??? tip "公众号(年更UP)"
     <figure markdown >
     ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1 }
     <figcaption>公众号</figcaption>
