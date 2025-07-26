@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra2.css">
+    
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css">
@@ -59,6 +61,8 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
+    
+      <link rel="stylesheet" href="https://fontsapi.zeoseven.com/292/main/result.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3075,46 +3079,6 @@
     </fieldset>
   </form>
 
-<!-- overrides/partials/comments.html -->
-
-
-<!-- 首先加载即时导航处理工具 -->
-<script src="../javascripts/unified-instant-handler.js"></script>
-
-
-
-
-
-<script>
-function loadTwikooComments() {
-    const el = document.getElementById('twikoo-comments');
-    if (!el) return;
-    
-    const script = document.createElement('script');
-    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
-    script.onload = () => {
-        twikoo.init({
-            envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
-            el: '#twikoo-comments',
-            path: location.pathname,
-            lang: 'zh-CN'
-        });
-    };
-    document.body.appendChild(script);
-}
-
-// 使用统一的即时导航处理
-if (window.InstantNav) {
-    window.InstantNav.register(loadTwikooComments);
-} else {
-    // 回退方案
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadTwikooComments);
-    } else {
-        loadTwikooComments();
-    }
-}
-</script>
 
                 
               </article>
@@ -3804,7 +3768,7 @@ if (window.InstantNav) {
     
       <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../javascripts/unified-instant-handler.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
       

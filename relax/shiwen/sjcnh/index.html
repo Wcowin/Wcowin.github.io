@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra2.css">
+    
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css">
@@ -59,6 +61,8 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
+    
+      <link rel="stylesheet" href="https://fontsapi.zeoseven.com/292/main/result.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -2924,6 +2928,107 @@
 　　“诗酒趁年华”，进一步申明：必须超然物外，忘却尘世间一切，而抓紧时机，借诗酒以自娱。“年华”，指好时光，与开头所说“春未老”相应合。全词所写，紧紧围绕着“超然”二字，至此，进入了“超然”的最高境界。这一境界，便是苏轼在密州时期心境与词境的具体体现。<br />
 　　这首词从“春未老”说起，既是针对时令，谓春风、春柳、春水、春花尚未老去，仍然充满春意，生机勃勃，同时也是针对自己老大无成而发的，所谓春未老而人空老，可见内心是不自在的。从这个意义上看，苏轼实际上并不真能超然，这种似是非是的境界，真是苏轼精神世界的真实体现。<br />
 　　这首词上片写景，下片抒情，是典型的借景抒情。上片之景，有“以乐景衬哀情”的成分，寄寓作者对有家难回、有志难酬的无奈与怅惘。更重要的是，整首词表达思乡的感情，作者以茶聊以慰藉尤其突出。</p>
+<!-- Twikoo 评论系统 -->
+<div class="twikoo-container" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.1);">
+    <h3 style="margin-bottom: 1rem; font-size: 1.2rem; font-weight: 500;">💬 评论</h3>
+    <div id="tcomment" class="loading" style="min-height: 200px;">
+        <p style="text-align: center; color: #666; padding: 2rem;">评论系统加载中...</p>
+    </div>
+</div>
+
+<style>
+.twikoo-container {
+    max-width: 100%;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .twikoo-container {
+    border-top-color: rgba(255,255,255,0.1);
+}
+
+/* 加载状态样式 */
+#tcomment.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] #tcomment.loading {
+    background: rgba(255,255,255,0.05);
+}
+</style>
+
+<script>
+(function() {
+    // 防止重复加载
+    if (window.twikooLoaded) {
+        return;
+    }
+
+    function loadTwikoo() {
+        // 检查是否已经加载过 Twikoo
+        if (window.twikoo) {
+            initTwikoo();
+            return;
+        }
+
+        const script = document.createElement('script');
+        script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+        script.onload = function() {
+            console.log('Twikoo 脚本加载成功');
+            initTwikoo();
+        };
+        script.onerror = function() {
+            console.error('Twikoo 脚本加载失败');
+            const commentEl = document.getElementById('tcomment');
+            if (commentEl) {
+                commentEl.classList.remove('loading');
+                commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统加载失败，请刷新页面重试</p>';
+            }
+        };
+        document.head.appendChild(script);
+    }
+
+    function initTwikoo() {
+        const commentEl = document.getElementById('tcomment');
+        if (!commentEl) {
+            console.warn('评论容器未找到');
+            return;
+        }
+
+        commentEl.classList.remove('loading');
+
+        try {
+            twikoo.init({
+                envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
+                el: '#tcomment',
+                lang: 'zh-CN',
+                path: location.pathname,
+                onCommentLoaded: function () {
+                    console.log('评论加载完成');
+                },
+                onError: function(err) {
+                    console.error('Twikoo 初始化失败:', err);
+                    commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化失败，请检查网络连接</p>';
+                }
+            });
+            window.twikooLoaded = true;
+        } catch (error) {
+            console.error('Twikoo 初始化异常:', error);
+            commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化异常</p>';
+        }
+    }
+
+    // 页面加载完成后初始化
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadTwikoo);
+    } else {
+        loadTwikoo();
+    }
+})();
+</script>
 
 
 
@@ -3081,49 +3186,6 @@
     </fieldset>
   </form>
 
-<!-- overrides/partials/comments.html -->
-
-
-<!-- 首先加载即时导航处理工具 -->
-<script src="../../../javascripts/unified-instant-handler.js"></script>
-
-
-
-<br />
-<div id="twikoo-comments"></div>
-
-
-
-<script>
-function loadTwikooComments() {
-    const el = document.getElementById('twikoo-comments');
-    if (!el) return;
-    
-    const script = document.createElement('script');
-    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
-    script.onload = () => {
-        twikoo.init({
-            envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
-            el: '#twikoo-comments',
-            path: location.pathname,
-            lang: 'zh-CN'
-        });
-    };
-    document.body.appendChild(script);
-}
-
-// 使用统一的即时导航处理
-if (window.InstantNav) {
-    window.InstantNav.register(loadTwikooComments);
-} else {
-    // 回退方案
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadTwikooComments);
-    } else {
-        loadTwikooComments();
-    }
-}
-</script>
 
                 
               </article>
@@ -3811,7 +3873,7 @@ if (window.InstantNav) {
     
       <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../javascripts/unified-instant-handler.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
       

@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra2.css">
+    
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css">
@@ -59,6 +61,8 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
+    
+      <link rel="stylesheet" href="https://fontsapi.zeoseven.com/292/main/result.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1790,9 +1794,14 @@
 <h1 id="_1"><span id="jinrishici-sentence">今日诗词</span><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">关于我<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="intro-container">
-  <div class="intro-text">
-    <span class="greeting">你好，很高兴认识你 <span class="wave">👋</span></span>
-    <span class="name">我叫 <span class="highlight">Wáng Kēwén</span></span>
+  <div class="intro-content">
+    <div class="intro-avatar">
+      <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Wáng Kēwén" class="avatar-img">
+    </div>
+    <div class="intro-text">
+      <span class="greeting">你好，很高兴认识你 <span class="wave">👋</span></span>
+      <span class="name">我叫 <span class="highlight">Wáng Kēwén</span></span>
+    </div>
   </div>
 </div>
 
@@ -1812,10 +1821,35 @@
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.intro-avatar {
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.avatar-img:hover {
+  transform: scale(1.05);
+}
+
 .intro-text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex: 1;
 }
 
 .greeting, .name {
@@ -1823,7 +1857,6 @@
   font-size: 1.5rem;
   line-height: 1.6;
   color: #555;
-  /* font-family: 'LXGW WenKai', sans-serif; */
 }
 
 .highlight {
@@ -1855,7 +1888,7 @@
 
 /* 深色模式适配 */
 [data-md-color-scheme="slate"] .intro-container {
-  background: linear-gradient(145deg, rgba(31,33,40) 0%, rgba(31,33,40) 100%);
+  background: linear-gradient(145deg, rgba(31,33,40,0.9) 0%, rgba(31,33,40,0.8) 100%);
   border: 1px solid rgba(80,80,80,0.2);
 }
 
@@ -1870,11 +1903,26 @@
   -webkit-background-clip: text;
 }
 
+[data-md-color-scheme="slate"] .avatar-img {
+  border-color: rgba(255,255,255,0.2);
+}
+
 /* 移动端适配 */
 @media (max-width: 768px) {
   .intro-container {
     padding: 1.5rem;
     margin: 1.5rem 0;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .avatar-img {
+    width: 100px;
+    height: 100px;
   }
 
   .greeting, .name {
@@ -1986,7 +2034,6 @@
         <span class="about__info-name">贡献的开源</span>
     </div>
 </div>
-<p><br></p>
 <center>
 <a href="/assets/个人简历.pdf" target="_blank" class="md-button">下载简历</a>
 </center>
@@ -2206,7 +2253,7 @@
     </center> -->
 
 <details class="tip">
-<summary>公众号</summary>
+<summary>公众号(年更UP)</summary>
 <p><figure markdown >
 <img alt="Image title" class="img1" src="https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png" />
 <figcaption>公众号</figcaption>
@@ -2251,7 +2298,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年7月25日 08:03:09 UTC">2025-07-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年7月26日 01:33:28 UTC">2025-07-26</span>
   </span>
 
     
@@ -2328,46 +2375,6 @@
 
 <!-- Was this page helpful? -->
 
-<!-- overrides/partials/comments.html -->
-
-
-<!-- 首先加载即时导航处理工具 -->
-<script src="../../javascripts/unified-instant-handler.js"></script>
-
-
-
-
-
-<script>
-function loadTwikooComments() {
-    const el = document.getElementById('twikoo-comments');
-    if (!el) return;
-    
-    const script = document.createElement('script');
-    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
-    script.onload = () => {
-        twikoo.init({
-            envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
-            el: '#twikoo-comments',
-            path: location.pathname,
-            lang: 'zh-CN'
-        });
-    };
-    document.body.appendChild(script);
-}
-
-// 使用统一的即时导航处理
-if (window.InstantNav) {
-    window.InstantNav.register(loadTwikooComments);
-} else {
-    // 回退方案
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadTwikooComments);
-    } else {
-        loadTwikooComments();
-    }
-}
-</script>
 
                 
               </article>
@@ -3057,7 +3064,7 @@ if (window.InstantNav) {
     
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../javascripts/unified-instant-handler.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
       
