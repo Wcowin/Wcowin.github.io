@@ -736,7 +736,10 @@ body::before {
 
 <!-- [timeline(./docs/timeline/timeindex.json)] -->
 
- <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
-    <meta name="sogou_site_verification" content="Zj3GyUNZ7J" />
-  </head>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sks5yth4qj");
+</script>
