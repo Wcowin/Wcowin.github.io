@@ -444,8 +444,8 @@ plugins:
   #       utm_medium: "feed"
   # - social
   - search:
-      enabled: false # 禁用内置搜索
-      # enabled: !ENV [CI, false]
+      # enabled: false # 禁用内置搜索
+      enabled: !ENV [CI, false]
       separator: '[\s\u200b\-\u3000\u3001\u3002\uFF0C\uFF0E\uFF1F\uFF01\uFF1B]+'
       lang:
         - en
@@ -557,7 +557,7 @@ markdown_extensions:
 
   
 extra_javascript:
-  - javascripts/highlight-search.js
+  # - javascripts/highlight-search.js
   # - docs/javascripts/translate.js
   # - https://cdn.staticfile.net/translate.js/3.12.0/translate.js
   # - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
@@ -577,7 +577,7 @@ extra_javascript:
 
 
 extra_css:
-  - stylesheets/highlight-search.css
+  # - stylesheets/highlight-search.css
   # - stylesheets/extra.css
   - stylesheets/extra2.css
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
@@ -624,4 +624,4 @@ hooks:
   # - docs/overrides/hooks/last_updated.py
   # - docs/overrides/hooks/reading_progress.py
   - docs/overrides/hooks/comments.py       # 新添加的文章页面评论系统
-  - docs/hook-sqlite-js/plugin.py
+  # - docs/hook-sqlite-js/plugin.py
