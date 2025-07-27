@@ -109,6 +109,9 @@ jobs:
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MKDOCS_ENABLE_SEARCH: true
+          # 生产环境不跳过重建
+          MKDOCS_DEV_SKIP_REBUILD: false
         run: mkdocs gh-deploy --force
       
       # 自动提交新生成的AI缓存文件

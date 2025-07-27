@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mkdocs-sqlite-search
+Version: 1.0.0
+Summary: SQLite搜索插件，支持环境变量控制
+Home-page: https://github.com/your-repo/mkdocs-sqlite-search
+Author: ROUIN
+Author-email: your-email@example.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
