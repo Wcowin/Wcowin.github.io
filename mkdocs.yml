@@ -624,4 +624,4 @@ hooks:
   # - docs/overrides/hooks/last_updated.py
   # - docs/overrides/hooks/reading_progress.py
   - docs/overrides/hooks/comments.py       # 新添加的文章页面评论系统
-  - hook-sqlite-js/plugin.py
+  - !ENV [ENABLE_SQLITE_HOOK, docs/hook-sqlite-js/plugin.py]
