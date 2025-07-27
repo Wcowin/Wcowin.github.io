@@ -4417,64 +4417,57 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
         </div>
       </div>
 
-      <!-- 页脚脚本部分 -->
-      
-      <!-- 翻译功能脚本 - 放在其他脚本之前 -->
-      <script src="https://cdn.staticfile.net/translate.js/3.12.0/translate.js"></script>
-      <script>
-        // 翻译配置 - 包装在立即执行函数中避免全局污染
-        (function() {
-          // 通过 class 设置不翻译的元素
-          translate.ignore.class.push('md-select', 'footer-highlight', 'md-footer-copyright');
-          
-          // 自定义术语库，纠正翻译结果
-          translate.nomenclature.append('chinese_simplified','english',`
-                快讯=Newsflash
-                访问量=Page Views
-                本站已经运行=Site has been running
-                天=days
-                时=hours
-                分=minutes
-                秒=seconds
-                萌ICP备=Moe ICP
-                版权所有=Copyright
-                制作工具=Made with
-        `);
+      <!-- 页脚脚本部分 - 优化版本 -->
 
-          // 设置本地语种
-          translate.language.setLocal('chinese_simplified');
-          
-          // 设置首次使用时自动识别语种
-          translate.setAutoDiscriminateLocalLanguage();
-          
-          // 不显示 select 语言选择框
-          translate.selectLanguageTag.show = false;
-          
-          // 设置机器翻译服务通道
-          translate.service.use('client.edge');
-          
-          // 执行翻译
-          translate.execute();
-          
-          // 监听语言切换事件，确保动态内容也能被翻译
-          window.addEventListener('translate.languagechange', function() {
-            // 延迟重新翻译动态更新的内容
-            setTimeout(() => {
-              translate.execute();
-            }, 500);
-          });
-          
-          console.log('翻译功能已初始化');
-        })();
+      <!-- 翻译功能脚本 - 只加载一次 -->
+      <script>
+        // 检查翻译是否已初始化，避免重复加载
+        if (!window.translateInitialized) {
+          // 动态加载翻译脚本
+          const translateScript = document.createElement('script');
+          translateScript.src = 'https://cdn.staticfile.net/translate.js/3.12.0/translate.js';
+          translateScript.onload = function() {
+            // 翻译配置
+            translate.ignore.class.push('md-select', 'footer-highlight', 'md-footer-copyright');
+            
+            translate.nomenclature.append('chinese_simplified','english',`
+              快讯=Newsflash
+              访问量=Page Views
+              本站已经运行=Site has been running
+              天=days
+              时=hours
+              分=minutes
+              秒=seconds
+              萌ICP备=Moe ICP
+              版权所有=Copyright
+              制作工具=Made with
+            `);
+
+            translate.language.setLocal('chinese_simplified');
+            translate.setAutoDiscriminateLocalLanguage();
+            translate.selectLanguageTag.show = false;
+            translate.service.use('client.edge');
+            translate.execute();
+            
+            window.translateInitialized = true;
+            console.log('翻译功能已初始化');
+          };
+          document.head.appendChild(translateScript);
+        }
       </script>
 
       <script>
         (function() {
-          // 现有的页脚功能代码...
-          // 避免变量冲突，将所有代码包装在立即执行函数中
+          // 全局状态管理，避免重复初始化
+          if (window.footerInitialized) {
+            console.log('页脚已初始化，跳过重复执行');
+            return;
+          }
           
-          // 存储计时器ID，用于清理
-          let timeUpdateInterval;
+          // 性能优化：使用 RequestAnimationFrame 优化计时器
+          let animationFrameId;
+          let lastUpdateTime = 0;
+          const UPDATE_INTERVAL = 1000; // 1秒更新一次
           
           function timingTime() {
             const start = "2022-10-20T00:00:00";
@@ -4490,79 +4483,113 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
             return `${days}天${hours}时${minutes}分${seconds}秒`;
           }
 
-          // 简化的计时器更新函数
-          function updateTime() {
-            const el = document.getElementById("box1");
-            const elMobile = document.getElementById("box1_mobile");
-            const time = timingTime();
+          // 优化的时间更新函数 - 使用 RAF 提升性能
+          function updateTime(timestamp) {
+            if (timestamp - lastUpdateTime >= UPDATE_INTERVAL) {
+              const el = document.getElementById("box1");
+              const elMobile = document.getElementById("box1_mobile");
+              const time = timingTime();
 
-            if (el) el.textContent = time;
-            if (elMobile) elMobile.textContent = time;
-            
-            // 触发翻译更新（如果翻译已激活）
-            if (window.translate && translate.currentLanguage !== 'chinese_simplified') {
-              setTimeout(() => translate.execute(), 100);
-            }
-          }
-
-          // 加载访问量计数器
-          async function loadVisitCounter() {
-            try {
-              // 检查是否已经加载过计数器脚本
-              if (document.querySelector('script[src*="finicounter.eu.org"]')) {
-                console.log('计数器脚本已加载，跳过重复加载');
-                return;
-              }
+              if (el) el.textContent = time;
+              if (elMobile) elMobile.textContent = time;
               
-              const script = document.createElement('script');
-              script.src = '//finicounter.eu.org/finicounter.js';
-              script.async = true;
-              script.onerror = function() {
-                console.log('访问量计数器加载失败，使用备用显示');
-                const desktop = document.getElementById("finicount_views");
-                const mobile = document.getElementById("finicount_views_mobile");
-                if (desktop) desktop.textContent = '统计中...';
-                if (mobile) mobile.textContent = '统计中...';
-              };
-              document.head.appendChild(script);
-            } catch (e) {
-              console.log('访问量计数器初始化失败:', e);
+              lastUpdateTime = timestamp;
             }
+            
+            animationFrameId = requestAnimationFrame(updateTime);
           }
 
-          // 同步访问量显示
+          // 防抖的访问量计数器加载
+          let counterLoadTimeout;
+          async function loadVisitCounter() {
+            // 清除之前的超时
+            if (counterLoadTimeout) {
+              clearTimeout(counterLoadTimeout);
+            }
+            
+            // 防抖延迟加载
+            counterLoadTimeout = setTimeout(async () => {
+              try {
+                // 检查是否已经加载
+                if (window.finicounterLoaded) {
+                  console.log('计数器已加载，跳过重复加载');
+                  return;
+                }
+                
+                const script = document.createElement('script');
+                script.src = '//finicounter.eu.org/finicounter.js';
+                script.async = true;
+                script.onload = () => {
+                  window.finicounterLoaded = true;
+                  console.log('访问量计数器加载完成');
+                };
+                script.onerror = function() {
+                  console.log('访问量计数器加载失败，使用备用显示');
+                  const desktop = document.getElementById("finicount_views");
+                  const mobile = document.getElementById("finicount_views_mobile");
+                  if (desktop) desktop.textContent = '统计中...';
+                  if (mobile) mobile.textContent = '统计中...';
+                };
+                document.head.appendChild(script);
+              } catch (e) {
+                console.log('访问量计数器初始化失败:', e);
+              }
+            }, 300); // 300ms 防抖延迟
+          }
+
+          // 优化的访问量同步 - 使用节流
+          let syncThrottleTimeout;
           function syncVisitCount() {
-            const desktop = document.getElementById("finicount_views");
-            const mobile = document.getElementById("finicount_views_mobile");
-            if (desktop && mobile && desktop.textContent && desktop.textContent !== '加载中...') {
-              mobile.textContent = desktop.textContent;
-            }
+            if (syncThrottleTimeout) return;
+            
+            syncThrottleTimeout = setTimeout(() => {
+              const desktop = document.getElementById("finicount_views");
+              const mobile = document.getElementById("finicount_views_mobile");
+              if (desktop && mobile && desktop.textContent && desktop.textContent !== '加载中...') {
+                mobile.textContent = desktop.textContent;
+              }
+              syncThrottleTimeout = null;
+            }, 100);
           }
 
-          // 监听访问量更新
+          // 观察器设置 - 添加错误处理
           function setupVisitCountObserver() {
             try {
-              // 清理旧的观察器
               if (window._visitCountObserver) {
                 window._visitCountObserver.disconnect();
               }
               
-              window._visitCountObserver = new MutationObserver(syncVisitCount);
               const visitCountTarget = document.getElementById("finicount_views");
               if (visitCountTarget) {
-                window._visitCountObserver.observe(visitCountTarget, { childList: true, subtree: true });
+                window._visitCountObserver = new MutationObserver(syncVisitCount);
+                window._visitCountObserver.observe(visitCountTarget, { 
+                  childList: true, 
+                  subtree: true,
+                  characterData: true 
+                });
               }
             } catch (e) {
               console.log('访问量监听器设置失败:', e);
             }
           }
 
-          // 清理函数 - 在页面切换前调用
+          // 清理函数 - 完善资源清理
           function cleanup() {
-            // 清除计时器
-            if (timeUpdateInterval) {
-              clearInterval(timeUpdateInterval);
-              timeUpdateInterval = null;
+            // 清除动画帧
+            if (animationFrameId) {
+              cancelAnimationFrame(animationFrameId);
+              animationFrameId = null;
+            }
+            
+            // 清除超时器
+            if (counterLoadTimeout) {
+              clearTimeout(counterLoadTimeout);
+              counterLoadTimeout = null;
+            }
+            
+            if (syncThrottleTimeout) {
+              clearTimeout(syncThrottleTimeout);
+              syncThrottleTimeout = null;
             }
             
             // 清除观察器
@@ -4570,108 +4597,76 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
               window._visitCountObserver.disconnect();
               window._visitCountObserver = null;
             }
+            
+            console.log('页脚资源已清理');
           }
 
-          // 初始化所有功能
+          // 初始化函数 - 添加性能监控
           function init() {
-            // 清理旧的计时器和观察器
+            const startTime = performance.now();
+            
             cleanup();
             
-            // 启动计时器
-            updateTime();
-            timeUpdateInterval = setInterval(updateTime, 1000);
+            // 启动优化的计时器
+            animationFrameId = requestAnimationFrame(updateTime);
 
-            // 加载访问量计数器
-            loadVisitCounter();
+            // 延迟加载访问量计数器
+            setTimeout(loadVisitCounter, 500);
 
             // 设置访问量同步
-            setupVisitCountObserver();
+            setTimeout(setupVisitCountObserver, 600);
 
-            // 调试信息
-            console.log('页脚功能已启动');
+            const endTime = performance.now();
+            console.log(`页脚初始化完成，耗时: ${(endTime - startTime).toFixed(2)}ms`);
           }
 
-          // 使用统一的即时导航处理器（如果可用）
-          if (window.InstantNavigation) {
-            window.InstantNavigation.register(init, 'footer-functions');
+          // 页面导航处理 - 简化逻辑
+          function handleNavigation() {
+            // 延迟执行，确保 DOM 更新完成
+            setTimeout(() => {
+              console.log('页面导航检测到，重新初始化页脚');
+              init();
+            }, 100);
+          }
+
+          // 统一的导航事件处理
+          if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
+            // Material for MkDocs 即时导航
+            window.document$.subscribe(handleNavigation);
           } else {
-            // 兼容 Material for MkDocs 的即时加载功能
-            // 关键条件: !window.document$.isStopped 确保在build模式下也能正常工作
-            if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
-              // 使用 Material 的 document$ 可观察对象处理页面切换
-              window.document$.subscribe(() => {
-                console.log('页面内容已更新，重新初始化页脚');
-                // 延迟执行以确保DOM已完全更新
-                setTimeout(init, 100);
-              });
+            // 标准页面加载
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', init);
             } else {
-              // 标准方式 - 仅在初始加载时执行
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', init);
-              } else {
-                init();
-              }
+              init();
             }
           }
 
-          // 在页面卸载前清理资源
+          // 页面卸载清理
           window.addEventListener('beforeunload', cleanup);
-
-          // 监听页脚重新初始化事件
-          document.addEventListener('footer.reinit', init);
+          
+          // 标记初始化完成
+          window.footerInitialized = true;
         })();
       </script>
 
+      <!-- 优化后的样式 - 移除重复和未使用的样式 -->
       <style>
-        /* 页脚背景配色方案 - 可根据喜好选择 */
-
-        /* 方案1: 现代深蓝灰色调 (当前使用) */
+        /* 页脚背景 - 简化版本 */
         .md-footer {
           background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
         }
-
         .md-footer-meta {
           background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
 
-        /* 方案2: 优雅紫色调 (取消注释使用)
-        .md-footer {
-          background: linear-gradient(135deg, #2d1b69 0%, #4c1d95 100%);
-        }
-
-        .md-footer-meta {
-          background: linear-gradient(135deg, #1e1b4b 0%, #2d1b69 100%);
-        }
-        */
-
-        /* 方案3: 温暖深绿色调 (取消注释使用)
-        .md-footer {
-          background: linear-gradient(135deg, #14532d 0%, #166534 100%);
-        }
-
-        .md-footer-meta {
-          background: linear-gradient(135deg, #052e16 0%, #14532d 100%);
-        }
-        */
-
-        /* 方案4: 经典深灰色调 (取消注释使用)
-        .md-footer {
-          background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
-        }
-
-        .md-footer-meta {
-          background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-        }
-        */
-
-        /* 整体页脚容器 */
+        /* 核心布局样式 */
         .footer-wrapper {
           width: 100%;
           padding: 0.2rem 0;
           text-align: center;
         }
 
-        /* 版权信息和社交媒体水平布局 */
         .footer-bottom-section {
           max-width: 900px;
           margin: 0.4rem auto 0;
@@ -4682,47 +4677,13 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
           align-items: center;
         }
 
-        /* 版权信息 */
-        .md-footer-copyright {
-          text-align: left;
-          font-size: 0.75rem;
-          opacity: 0.8;
-          line-height: 1.2;
-        }
-
-        /* 社交媒体图标 */
-        .footer-social {
-          display: -webkit-flex;
-          display: flex;
-          gap: 0.3rem;
-          -webkit-align-items: center;
-          align-items: center;
-        }
-
-        /* Safari兼容性修复 */
-        .footer-social .md-social__link svg {
-          -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-          opacity: 1 !important;
-          visibility: visible !important;
-          pointer-events: auto;
-        }
-
-        /* 强制Safari显示SVG图标 */
-        .footer-social .md-social__link {
-          opacity: 1 !important;
-          visibility: visible !important;
-        }
-        
-        /* 内容区域样式 */
         .footer-content {
           max-width: 900px;
           margin: 0 auto;
           padding: 0.4rem 0 0;
         }
 
+        /* 访问统计样式 */
         .footer-visit-count {
           display: flex;
           flex-direction: column;
@@ -4744,141 +4705,18 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
           min-width: 160px;
           font-size: 0.8rem;
           transition: all 0.2s ease;
+          will-change: transform; /* 优化动画性能 */
         }
 
-        .footer-item:hover {
-          background: rgba(255, 255, 255, 0.15);
-          border-color: rgba(81, 143, 193, 0.4);
-          transform: translateY(-1px);
-        }
-        
-        .footer-icon {
-          margin-right: 0.5rem;
-          font-size: 1rem;
-        }
-        
         .footer-highlight {
           color: #C2C4C9;
           font-weight: 600;
-          margin-left: 0rem;
         }
 
-        /* 移动端进一步减少间距 */
+        /* 移动端适配 */
         @media (max-width: 76.1875em) {
-          .footer-visit-count-mobile .footer-highlight {
-            margin-left: 0rem;
-          }
-        }
-
-        .icp-link {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .icp-link:hover {
-          color: #518FC1;
-        }
-        
-        /* 社交媒体图标样式 - 仅桌面端 */
-        @media (min-width: 76.1875em) {
-          .footer-social .md-social__link {
-            padding: 0.3rem;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            width: 2rem;
-            height: 2rem;
-            display: -webkit-inline-flex;
-            display: inline-flex;
-            -webkit-align-items: center;
-            align-items: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-          }
-
-          .footer-social .md-social__link svg {
-            width: 1.2rem;
-            height: 1.2rem;
-            fill: currentColor;
-            -webkit-flex-shrink: 0;
-            flex-shrink: 0;
-          }
-
-          .footer-social .md-social__link:hover {
-            background: rgba(81, 143, 193, 0.2);
-            border-color: rgba(81, 143, 193, 0.4);
-          }
-        }
-
-        /* 移动端社交媒体图标样式 - 恢复默认样式 */
-        @media (max-width: 76.1875em) {
-          .footer-social .md-social__link {
-            padding: 0.4rem;
-            background: transparent;
-            border: none;
-            width: auto;
-            height: auto;
-            display: inline-block;
-            border-radius: 0;
-            -webkit-transition: color 0.2s ease;
-            transition: color 0.2s ease;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-          }
-
-          .footer-social .md-social__link:hover {
-            background: transparent;
-            border: none;
-            color: var(--md-accent-fg-color);
-          }
-
-          .footer-social .md-social__link svg {
-            width: 1.6rem;
-            height: 1.6rem;
-            fill: currentColor;
-            -webkit-flex-shrink: 0;
-            flex-shrink: 0;
-            display: block;
-          }
-        }
-        
-        /* 导航链接样式 */
-        .md-footer__link {
-          transition: opacity 0.2s ease;
-        }
-        
-        .md-footer__link:hover {
-          opacity: 1;
-        }
-
-        /* 移动端响应式 - 使用 footercopy.html 样式 */
-        @media (max-width: 76.1875em) {
-          /* 隐藏桌面端的卡片式布局 */
-          .footer-visit-count {
-            display: none;
-          }
-
-          .footer-bottom-section {
-            flex-direction: column;
-            gap: 0.6rem;
-            text-align: center;
-          }
-
-          .md-footer-copyright {
-            text-align: center;
-            font-size: 0.75rem;
-          }
-
-          .footer-social .md-social__link {
-            width: 1.8rem;
-            height: 1.8rem;
-          }
-
-          /* 显示移动端的简洁布局 */
+          .footer-visit-count { display: none; }
+          
           .footer-visit-count-mobile {
             display: flex;
             flex-wrap: wrap;
@@ -4891,29 +4729,15 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
             text-align: center;
           }
 
-          .footer-visit-count-mobile > * {
-            white-space: nowrap;
-          }
-
-          .footer-visit-count-mobile .icp-link {
-            color: var(--md-footer-fg-color--light);
-            text-decoration: none;
-          }
-
-          .footer-visit-count-mobile .icp-link:hover {
-            color: #518FC1;
-            text-decoration: underline;
+          .footer-bottom-section {
+            flex-direction: column;
+            gap: 0.6rem;
+            text-align: center;
           }
         }
 
-        /* 桌面端隐藏移动端布局 */
         @media (min-width: 76.1875em) {
-          .footer-visit-count-mobile {
-            display: none;
-          }
-        }
-
-        @media (min-width: 768px) {
+          .footer-visit-count-mobile { display: none; }
           .footer-visit-count {
             flex-direction: row;
             justify-content: center;
@@ -4921,28 +4745,23 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
           }
         }
 
-        /* 深色模式适配 */
-        [data-md-color-scheme="slate"] .md-footer {
-          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        /* 其他必要样式保持不变 */
+        .md-footer-copyright {
+          text-align: left;
+          font-size: 0.75rem;
+          opacity: 0.8;
+          line-height: 1.2;
         }
 
-        [data-md_color-scheme="slate"] .md-footer-meta {
-          background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+        .footer-social {
+          display: flex;
+          gap: 0.3rem;
+          align-items: center;
         }
 
-        [data-md-color-scheme="slate"] .footer-item {
-          background: rgba(255, 255, 255, 0.08);
-          border-color: rgba(255, 255, 255, 0.12);
-        }
-
-        [data-md-color-scheme="slate"] .footer-item:hover {
-          background: rgba(255, 255, 255, 0.12);
-          border-color: rgba(81, 143, 193, 0.3);
-        }
-
-        [data-md-color-scheme="slate"] .footer-social .md-social__link {
-          background: rgba(255, 255, 255, 0.08);
-          border-color: rgba(255, 255, 255, 0.12);
+        .icp-link {
+          color: inherit;
+          text-decoration: none;
         }
       </style>
     </div>
