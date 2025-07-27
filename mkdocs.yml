@@ -444,12 +444,12 @@ plugins:
   #       utm_medium: "feed"
   # - social
   - search:
-      # enabled: false # 禁用内置搜索
       enabled: !ENV [CI, false]
       separator: '[\s\u200b\-\u3000\u3001\u3002\uFF0C\uFF0E\uFF1F\uFF01\uFF1B]+'
       lang:
-        - en
         - zh
+        - en
+
   # - offline
   # - glightbox:
   #     enabled: !ENV [glightbox, false]
@@ -470,7 +470,7 @@ plugins:
   #     manual: false
   # - open-in-new-tab
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
       type: iso_date
       enable_creation_date: true
       fallback_to_build_date: true
@@ -483,7 +483,7 @@ plugins:
         - "blog/archive/**"
         - "blog/category/**"
   - git-committers:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
       repository: Wcowin/Wcowin.github.io
       branch: main
       exclude:

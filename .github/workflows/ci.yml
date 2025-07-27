@@ -91,9 +91,7 @@ jobs:
       - run: pip install neoteroi-mkdocs
       - run: pip install mkdocs-document-dates
       - run: pip install pymdown-extensions
-      - run: pip install mkdocs-material 
-      - run: pip install beautifulsoup4  # 添加这行
-      - run: pip install lxml  # 添加这行      
+      - run: pip install mkdocs-material     
       - run: pip install --upgrade --force-reinstall mkdocs-material
       - name: Deploy with AI Summary
         env:
