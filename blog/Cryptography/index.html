@@ -52,8 +52,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/highlight-search.css">
-    
       <link rel="stylesheet" href="../../stylesheets/extra2.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css">
@@ -253,6 +251,50 @@
     
     
       
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       
     
     
@@ -3751,6 +3793,8 @@
   
 
 
+  <h1>王小云的十年“解码”启示录</h1>
+
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>1</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>57</strong></p>
@@ -3778,535 +3822,6 @@
 </li>
 </ul>
 </div>
-    <script src="/search/sql-wasm.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var nav = document.querySelector('nav.md-header__inner.md-grid')
-            var new_content = `
-                <!-- ============ 新插入的 ======================== -->
-                <!-- 移动端的 搜索按钮图标 -->
-                <label class="md-header__button md-icon" for="__search">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-                </label>
-                <!-- 电脑端 搜索按钮输入框 -->
-                <div class="md-search" data-md-component="search" role="dialog">
-                    <!-- 搜索框 > 遮挡区域, 用于点击任意区域 退出 搜索结果的显示 -->
-                    <label class="md-search__overlay" for="__search"></label>
-                    <div class="md-search__inner" role="search">
-                        <form class="md-search__form" name="search">
-                            <!-- 搜索框 > 文本输入区域 -->
-                            <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
-                            <!-- 搜索框 > 放大镜图标, 只是图标 不能点击 -->
-                            <label class="md-search__icon md-icon" for="__search">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
-                            </label>
-                            <!-- 搜索框 > 清除按钮, 默认: aria-label="查找" -->
-                            <nav class="md-search__options" aria-label="清除">
-                                <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
-                                </button>
-                            </nav>
-                        </form>
-                        <!-- 搜索结果显示的内容 -->
-                        <div class="md-search__output">
-                            <div class="md-search__scrollwrap" tabindex="0">
-                                <div class="md-search-result" data-md-component="search-result">
-                                    <!-- 搜索结果 > 搜索结果信息的提示 -->
-                                    <div class="md-search-result__meta">键入以开始搜索</div>
-                                    <!-- 搜索结果 > 真正的结果 List 容器, 子元素为 li.md-search-result__item -->
-                                    <ol class="md-search-result__list" role="presentation"></ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <style>
-                    /* 搜索功能 > 显示的内容 > 页面x 的内容部分 > 修复大屏时左边距过大, 影响视觉 */
-                    @media screen and (min-width: 60em) {
-                        /* 针对后续的 article（搜索结果）, 使用css选择器, 从 */
-                        ol.md-search-result__list li.md-search-result__item a article:nth-child(n+2)  {
-                            padding-left: 0.8rem;
-                        }
-                    }
-                    /* 搜索关键词高亮样式 */
-                    .search-highlight {
-                        background-color: #ffeb3b;
-                        color: #000;
-                        padding: 1px 2px;
-                        border-radius: 2px;
-                        font-weight: 500;
-                    }
-                    /* 深色主题下的高亮样式 */
-                    [data-md-color-scheme="slate"] .search-highlight {
-                        background-color: #ffa726;
-                        color: #000;
-                    }
-                    /* 搜索结果标题高亮 */
-                    .md-search-result__article h1 .search-highlight,
-                    .md-search-result__article h2 .search-highlight {
-                        background-color: #4caf50;
-                        color: #fff;
-                    }
-                    /* 深色主题下标题高亮 */
-                    [data-md_color-scheme="slate"] .md-search-result__article h1 .search-highlight,
-                    [data-md_color-scheme="slate"] .md-search-result__article h2 .search-highlight {
-                        background-color: #66bb6a;
-                        color: #000;
-                    }
-                </style>
-                `
-            // 查找仓库链接元素
-            var repoElement = nav.querySelector('.md-header__source');
-            if (repoElement) {
-                // 如果找到仓库链接，在它之前插入搜索框
-                repoElement.insertAdjacentHTML('beforebegin', new_content);
-            } else {
-                // 如果没有找到仓库链接，在nav的最后面插入
-                nav.insertAdjacentHTML('beforeend', new_content);
-            }
-            var search_input = nav.querySelector('.md-search .md-search__inner .md-search__form .md-search__input')
-            var toggle = document.querySelector(
-                'input.md-toggle[data-md-toggle="search"]'
-            )
-            search_input.addEventListener('focus', function () {
-                this.classList.add('focus-visible')
-                this.setAttribute('data-focus-visible-added', '')
-                toggle.checked = true
-            })
-        });
-
-        // 页面加载时处理URL中的highlight参数
-        document.addEventListener('DOMContentLoaded', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const highlight = urlParams.get('highlight');
-            
-            if (highlight) {
-                // 延迟执行，确保页面完全加载
-                setTimeout(function() {
-                    // 移除URL中的highlight参数，避免影响后续导航
-                    const newUrl = new URL(window.location);
-                    newUrl.searchParams.delete('highlight');
-                    window.history.replaceState({}, '', newUrl);
-                    
-                    // 高亮显示关键词
-                    highlightTextInPage(highlight);
-                    
-                    // 如果URL中有锚点，滚动到对应位置
-                    if (window.location.hash) {
-                        const targetElement = document.querySelector(window.location.hash);
-                        if (targetElement) {
-                            // 平滑滚动到目标元素
-                            targetElement.scrollIntoView({ 
-                                behavior: 'smooth', 
-                                block: 'start' 
-                            });
-                            
-                            // 添加临时高亮效果
-                            targetElement.style.background = '#ffeb3b';
-                            targetElement.style.transition = 'background 0.3s ease';
-                            setTimeout(() => {
-                                targetElement.style.background = '';
-                            }, 2000);
-                        }
-                    }
-                }, 100);
-            }
-        });
-        
-        // 在页面中高亮显示搜索关键词
-        function highlightTextInPage(keywords) {
-            if (!keywords) return;
-            
-            const keywordList = keywords.split(/\s+/).filter(k => k.trim().length > 0);
-            if (keywordList.length === 0) return;
-            
-            // 获取页面主要内容区域
-            const contentArea = document.querySelector('.md-content__inner') || document.body;
-            
-            // 遍历所有文本节点
-            const walker = document.createTreeWalker(
-                contentArea,
-                NodeFilter.SHOW_TEXT,
-                {
-                    acceptNode: function(node) {
-                        // 跳过script、style等标签
-                        if (node.parentElement && 
-                            ['SCRIPT', 'STYLE', 'NOSCRIPT'].includes(node.parentElement.tagName)) {
-                            return NodeFilter.FILTER_REJECT;
-                        }
-                        return NodeFilter.FILTER_ACCEPT;
-                    }
-                }
-            );
-            
-            const textNodes = [];
-            let node;
-            while (node = walker.nextNode()) {
-                textNodes.push(node);
-            }
-            
-            // 高亮关键词
-            textNodes.forEach(textNode => {
-                let text = textNode.textContent;
-                let hasMatch = false;
-                
-                keywordList.forEach(keyword => {
-                    const regex = new RegExp(`(${keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-                    if (regex.test(text)) {
-                        hasMatch = true;
-                        text = text.replace(regex, '<mark class="search-highlight">$1</mark>');
-                    }
-                });
-                
-                if (hasMatch) {
-                    const wrapper = document.createElement('span');
-                    wrapper.innerHTML = text;
-                    textNode.parentNode.replaceChild(wrapper, textNode);
-                }
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', async function () {
-            var search_input = document.querySelector('.md-search .md-search__inner .md-search__form .md-search__input')
-            var search_info = document.querySelector('.md-search-result__meta')
-            var resultList = document.querySelector('.md-search-result__list')
-            let debounceTimeout;
-            let currentSearchQuery = '';
-            const sqlPromise = initSqlJs({
-                locateFile: file => `/search/${file}`
-            });
-            const dataPromise = fetch("/search/database.sqlite").then(res => res.arrayBuffer());
-            const [SQL, buf] = await Promise.all([sqlPromise, dataPromise])
-            const db = new SQL.Database(new Uint8Array(buf));
-            const clearButton = document.querySelector('.md-search .md-search__inner .md-search__form .md-search__icon.md-icon');
-            clearButton.addEventListener('click', function() {
-                resultList.innerHTML = '';
-                search_input.value = '';
-                currentSearchQuery = '';
-                search_input.focus();
-            });
-            
-            function normalizeQuery(query) {
-                // 清理查询字符串，处理各种标点符号
-                return query
-                    .replace(/[：:]/g, ' ')      // 冒号替换为空格
-                    .replace(/[，,]/g, ' ')      // 逗号替换为空格
-                    .replace(/[。.]/g, ' ')      // 句号替换为空格
-                    .replace(/[！!]/g, ' ')      // 感叹号替换为空格
-                    .replace(/[？?]/g, ' ')      // 问号替换为空格
-                    .replace(/[；;]/g, ' ')      // 分号替换为空格
-                    .replace(/\s+/g, ' ')       // 多个空格合并为一个
-                    .trim();
-            }
-            
-            function highlightKeywords(text, keywords) {
-                if (!keywords || !text) return escapeHtml(text);
-                const keywordList = keywords.split(/\s+/).filter(k => k.trim().length > 0);
-                if (keywordList.length === 0) return escapeHtml(text);
-                let highlightedText = escapeHtml(text);
-                keywordList.forEach(keyword => {
-                    const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                    const regex = new RegExp(`(${escapedKeyword})`, 'gi');
-                    highlightedText = highlightedText.replace(regex, '<span class="search-highlight">$1</span>');
-                });
-                return highlightedText;
-            }
-            function escapeHtml(text) {
-                const div = document.createElement('div');
-                div.textContent = text;
-                return div.innerHTML;
-            }
-            function truncateAndHighlight(content, rawContent, maxLength, keywords) {
-                if (!content && !rawContent) return '';
-                
-                // 优先使用原始内容进行匹配
-                const keywordList = keywords.split(/\s+/).filter(k => k.trim().length > 0);
-                let bestContent = rawContent || content;
-                let bestMatch = -1;
-                
-                const textToSearch = (rawContent || (content ? new DOMParser().parseFromString(content, "text/html").body.textContent : "")).toLowerCase();
-
-                for (const keyword of keywordList) {
-                    const index = textToSearch.indexOf(keyword.toLowerCase());
-                    if (index !== -1) {
-                        bestMatch = index;
-                        break;
-                    }
-                }
-                
-                let finalText = textToSearch;
-                
-                let truncatedText = finalText;
-                if (finalText.length > maxLength) {
-                    let bestStart = 0;
-                    if (bestMatch !== -1) {
-                        bestStart = Math.max(0, bestMatch - Math.floor(maxLength / 3));
-                    }
-                    truncatedText = finalText.substring(bestStart, bestStart + maxLength);
-                    if (bestStart > 0) truncatedText = '...' + truncatedText;
-                    if (bestStart + maxLength < finalText.length) truncatedText += '...';
-                }
-                
-                return highlightKeywords(truncatedText, keywords);
-            }
-            search_input.addEventListener('input', function () {
-                if(!db){
-                    search_info.textContent = '正在初始化中...'
-                    return;
-                }
-                var search_query = this.value.trim(); // 去除首尾空白
-                currentSearchQuery = search_query;
-                if (!search_query) {
-                    search_info.textContent = '键入以开始搜索'
-                    resultList.innerHTML = '';
-                    return
-                }
-                if (search_query.length < 2) {
-                    search_info.textContent = '请输入2个以上的字符'
-                    return
-                }
-                if (debounceTimeout) clearTimeout(debounceTimeout);
-                debounceTimeout = setTimeout(function () {
-                    if (!search_query) {
-                        search_info.textContent = '键入以开始搜索';
-                        return;
-                    }
-                    if (search_query.length < 2) {
-                        search_info.textContent = '请输入2个以上的字符';
-                        return;
-                    }
-                    try {
-                        // 标准化查询字符串
-                        const normalizedQuery = normalizeQuery(search_query);
-                        const keywords = normalizedQuery.split(/\s+/).filter(k => k.trim().length >= 1);
-                        
-                        if (keywords.length === 0) return;
-
-                        // 改进的搜索策略：使用OR逻辑而不是AND逻辑
-                        let queryParts = [];
-                        let params = [];
-                        
-                        // 完整查询匹配（最高优先级）
-                        queryParts.push("(title LIKE ? OR search_text LIKE ?)");
-                        params.push(`%${search_query}%`, `%${search_query}%`);
-                        
-                        // 标准化查询匹配
-                        if (normalizedQuery !== search_query) {
-                            queryParts.push("(title LIKE ? OR search_text LIKE ?)");
-                            params.push(`%${normalizedQuery}%`, `%${normalizedQuery}%`);
-                        }
-                        
-                        // 单个关键词匹配
-                        keywords.forEach(kw => {
-                            if (kw.length >= 2) {
-                                queryParts.push("(title LIKE ? OR search_text LIKE ?)");
-                                params.push(`%${kw}%`, `%${kw}%`);
-                            }
-                        });
-                        
-                        const sqlQuery = `SELECT * FROM mkdocs WHERE ${queryParts.join(' OR ')}`;
-                        const stmt = db.prepare(sqlQuery);
-                        stmt.bind(params);
-                        
-                        const results = new Map();
-                        while (stmt.step()) {
-                            const row = stmt.getAsObject();
-                            
-                            let score = 0;
-                            const lowerQuery = search_query.toLowerCase();
-                            const lowerNormalizedQuery = normalizedQuery.toLowerCase();
-                            const lowerTitle = (row.title || '').toLowerCase();
-                            const lowerContent = (row.raw_content || '').toLowerCase();
-                            const lowerSearchText = (row.search_text || '').toLowerCase();
-
-                            // 完整查询匹配（最高分）
-                            if (lowerTitle.includes(lowerQuery)) score += 100;
-                            if (lowerSearchText.includes(lowerQuery)) score += 80;
-                            
-                            // 标准化查询匹配
-                            if (lowerTitle.includes(lowerNormalizedQuery)) score += 90;
-                            if (lowerSearchText.includes(lowerNormalizedQuery)) score += 70;
-                            
-                            // 标题完全匹配
-                            if (lowerTitle === lowerQuery || lowerTitle === lowerNormalizedQuery) score += 200;
-                            
-                            // 关键词匹配加分
-                            keywords.forEach(kw => {
-                                const lowerKw = kw.toLowerCase();
-                                if (lowerTitle.includes(lowerKw)) score += 30;
-                                if (lowerContent.includes(lowerKw)) score += 10;
-                            });
-                            
-                            // 多关键词同时出现加分
-                            let matchedKeywords = 0;
-                            keywords.forEach(kw => {
-                                if (lowerSearchText.includes(kw.toLowerCase())) {
-                                    matchedKeywords++;
-                                }
-                            });
-                            if (matchedKeywords > 1) {
-                                score += matchedKeywords * 15;
-                            }
-
-                            if (results.has(row.id)) {
-                                results.get(row.id).score += score;
-                            } else {
-                                results.set(row.id, { data: Object.values(row), score: score });
-                            }
-                        }
-                        stmt.free();
-                        
-                        const sortedResults = Array.from(results.values())
-                            .sort((a, b) => b.score - a.score)
-                            .slice(0, 50)
-                            .map(item => item.data);
-
-                        handleQueryResults(sortedResults);
-                    } catch (error) {
-                        console.error('Error: ' + error.message);
-                        search_info.textContent = '搜索出错，请重试';
-                    }
-                }, 300);
-                function handleQueryResults(datas) {
-                    if (datas.length === 0) {
-                        search_info.textContent = '没有符合条件的结果';
-                        resultList.innerHTML = '';
-                        return;
-                    } else {
-                        search_info.textContent = `${datas.length} 个符合条件的结果`;
-                    }
-                    var new_datas = {};
-                    var global_content_set = new Set(); // 全局去重集合
-
-                    datas.forEach(value => {
-                        const [id, url, name, title, link, body, raw_content] = value;
-                        const pageUrl = url.endsWith('/') ? url : url + '/';
-                        
-                        if (!new_datas[pageUrl]) {
-                            new_datas[pageUrl] = { url: pageUrl, name, matches: [] };
-                        }
-
-                        // 改进的去重逻辑：使用更精确的标识符
-                        const normalizedTitle = title.trim().toLowerCase();
-                        const normalizedContent = (raw_content || '').trim().toLowerCase();
-                        
-                        // 创建更精确的内容指纹
-                        const contentFingerprint = `${pageUrl}|${normalizedTitle}|${normalizedContent.substring(0, 200)}`;
-                        
-                        // 检查是否为页面主标题与页面名称相同的情况
-                        const isPageMainTitle = normalizedTitle === name.trim().toLowerCase() && link === '';
-                        
-                        // 如果是页面主标题且已经有其他匹配项，则跳过
-                        if (isPageMainTitle && new_datas[pageUrl].matches.length > 0) {
-                            return;
-                        }
-                        
-                        // 如果不是重复内容，则添加
-                        if (!global_content_set.has(contentFingerprint)) {
-                            new_datas[pageUrl].matches.push({ title, link, body, raw_content });
-                            global_content_set.add(contentFingerprint);
-                        }
-                    });
-
-                    // 清理空的页面条目
-                    Object.keys(new_datas).forEach(pageUrl => {
-                        if (new_datas[pageUrl].matches.length === 0) {
-                            delete new_datas[pageUrl];
-                        }
-                    });
-
-                    resultList.innerHTML = '';
-                    const resultItems = Object.values(new_datas).map(data => `
-                        <li class="md-search-result__item" style="border: 2px solid #bababa; margin: 10px; border-radius: 8px;">
-                            <div class="md-search-result__link search-result-main" style="border-bottom:1px solid #bababa; cursor: pointer; text-decoration: none;" data-url="${data.url}" data-query="${escapeHtml(currentSearchQuery)}">
-                                <article class="md-search-result__article md-typeset">
-                                    <div class="md-search-result__icon md-icon"></div>
-                                    <h1>${highlightKeywords(data.name, currentSearchQuery)}</h1>
-                                </article>
-                            </div>
-                            ${data.matches.map(match => `
-                                <div class="md-search-result__link search-result-item" style="cursor: pointer; text-decoration: none;" data-url="${data.url}${match.link}" data-query="${escapeHtml(currentSearchQuery)}">
-                                    <article class="md-search-result__article md-typeset">
-                                        <h2>${highlightKeywords(match.title, currentSearchQuery)}</h2>
-                                        <div class="search-content-preview">
-                                            ${truncateAndHighlight(match.body, match.raw_content, 200, currentSearchQuery)}
-                                        </div>
-                                    </article>
-                                </div>
-                            `).join('')}
-                        </li>
-                    `).join('');
-                    resultList.innerHTML = resultItems;
-                    
-                    // 优化点击事件处理，确保精准定位
-                    const resultLinks = resultList.querySelectorAll('.search-result-main, .search-result-item');
-                    resultLinks.forEach(link => {
-                        link.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            
-                            const targetUrl = link.getAttribute('data-url');
-                            const query = link.getAttribute('data-query');
-                            
-                            if (targetUrl && query) {
-                                // 关闭搜索框
-                                const toggle = document.querySelector('input[data-md-toggle="search"]');
-                                if (toggle) {
-                                    toggle.checked = false;
-                                }
-                                
-                                // 构建完整的目标URL
-                                const url = new URL(targetUrl, window.location.origin);
-                                url.searchParams.set('highlight', query);
-                                
-                                // 如果是当前页面，直接滚动定位
-                                const currentPath = window.location.pathname;
-                                const targetPath = url.pathname;
-                                
-                                if (currentPath === targetPath || 
-                                    (currentPath.endsWith('/') && currentPath.slice(0, -1) === targetPath) ||
-                                    (targetPath.endsWith('/') && targetPath.slice(0, -1) === currentPath)) {
-                                    
-                                    // 同一页面，直接处理锚点跳转
-                                    if (url.hash) {
-                                        const targetElement = document.querySelector(url.hash);
-                                        if (targetElement) {
-                                            // 平滑滚动到目标位置
-                                            targetElement.scrollIntoView({ 
-                                                behavior: 'smooth', 
-                                                block: 'start' 
-                                            });
-                                            
-                                            // 添加临时高亮效果
-                                            targetElement.style.background = '#ffeb3b';
-                                            targetElement.style.transition = 'background 0.3s ease';
-                                            setTimeout(() => {
-                                                targetElement.style.background = '';
-                                            }, 2000);
-                                            
-                                            // 高亮搜索关键词
-                                            setTimeout(() => {
-                                                highlightTextInPage(query);
-                                            }, 100);
-                                            return;
-                                        }
-                                    }
-                                    
-                                    // 没有锚点，只高亮关键词
-                                    highlightTextInPage(query);
-                                } else {
-                                    // 不同页面，跳转
-                                    window.location.href = url.toString();
-                                }
-                            }
-                        });
-                    });
-                }
-            })
-        })
-    </script>
-    
 
 
 
@@ -5206,8 +4721,6 @@
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
-      
-        <script src="../../javascripts/highlight-search.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js"></script>
       
