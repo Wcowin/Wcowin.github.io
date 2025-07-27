@@ -248,7 +248,7 @@ def on_files(files, config):
             except Exception as e:
                 print(f"❌ 处理文件 {file.src_path} 时出错: {e}")
     
-    print(f"✅ 已索引 {processed_count} 篇文章 (blog + develop)")
+    print(f"✅ 相关推荐功能已索引 {processed_count} 篇文章 (blog + develop)")
     if excluded_count > 0:
         print(f"📝 排除 {excluded_count} 篇禁用推荐或在排除列表中的文章")
     print(f"📊 分类数量: {len(category_index)}")

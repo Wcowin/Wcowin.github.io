@@ -4091,7 +4091,7 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
                         color: #fff;
                     }
                     /* 深色主题下标题高亮 */
-                    [data-md-color-scheme="slate"] .md-search-result__article h1 .search-highlight,
+                    [data-md_color-scheme="slate"] .md-search-result__article h1 .search-highlight,
                     [data-md_color-scheme="slate"] .md-search-result__article h2 .search-highlight {
                         background-color: #66bb6a;
                         color: #000;
@@ -4137,6 +4137,20 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
                 currentSearchQuery = '';
                 search_input.focus();
             });
+            
+            function normalizeQuery(query) {
+                // 清理查询字符串，处理各种标点符号
+                return query
+                    .replace(/[：:]/g, ' ')      // 冒号替换为空格
+                    .replace(/[，,]/g, ' ')      // 逗号替换为空格
+                    .replace(/[。.]/g, ' ')      // 句号替换为空格
+                    .replace(/[！!]/g, ' ')      // 感叹号替换为空格
+                    .replace(/[？?]/g, ' ')      // 问号替换为空格
+                    .replace(/[；;]/g, ' ')      // 分号替换为空格
+                    .replace(/\s+/g, ' ')       // 多个空格合并为一个
+                    .trim();
+            }
+            
             function highlightKeywords(text, keywords) {
                 if (!keywords || !text) return escapeHtml(text);
                 const keywordList = keywords.split(/\s+/).filter(k => k.trim().length > 0);
@@ -4159,51 +4173,26 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
                 
                 // 优先使用原始内容进行匹配
                 const keywordList = keywords.split(/\s+/).filter(k => k.trim().length > 0);
-                let bestContent = content;
+                let bestContent = rawContent || content;
                 let bestMatch = -1;
                 
-                // 在原始内容中查找最佳匹配
-                if (rawContent) {
-                    for (const keyword of keywordList) {
-                        const index = rawContent.toLowerCase().indexOf(keyword.toLowerCase());
-                        if (index !== -1) {
-                            bestContent = rawContent;
-                            bestMatch = index;
-                            break;
-                        }
+                const textToSearch = (rawContent || (content ? new DOMParser().parseFromString(content, "text/html").body.textContent : "")).toLowerCase();
+
+                for (const keyword of keywordList) {
+                    const index = textToSearch.indexOf(keyword.toLowerCase());
+                    if (index !== -1) {
+                        bestMatch = index;
+                        break;
                     }
                 }
                 
-                // 如果原始内容没有匹配，回退到清理后的内容
-                if (bestMatch === -1 && content) {
-                    const temp = document.createElement('div');
-                    temp.innerHTML = content;
-                    const text = temp.textContent || temp.innerText || '';
-                    for (const keyword of keywordList) {
-                        const index = text.toLowerCase().indexOf(keyword.toLowerCase());
-                        if (index !== -1) {
-                            bestContent = text;
-                            bestMatch = index;
-                            break;
-                        }
-                    }
-                }
-                
-                // 处理最终文本
-                let finalText;
-                if (bestContent === rawContent) {
-                    finalText = rawContent;
-                } else {
-                    const temp = document.createElement('div');
-                    temp.innerHTML = bestContent;
-                    finalText = temp.textContent || temp.innerText || '';
-                }
+                let finalText = textToSearch;
                 
                 let truncatedText = finalText;
                 if (finalText.length > maxLength) {
                     let bestStart = 0;
                     if (bestMatch !== -1) {
-                        bestStart = Math.max(0, bestMatch - Math.floor(maxLength / 2));
+                        bestStart = Math.max(0, bestMatch - Math.floor(maxLength / 3));
                     }
                     truncatedText = finalText.substring(bestStart, bestStart + maxLength);
                     if (bestStart > 0) truncatedText = '...' + truncatedText;
@@ -4239,76 +4228,92 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
                         return;
                     }
                     try {
-                        // 增强搜索逻辑，支持多种匹配模式
-                        var searchResults = new Set();
+                        // 标准化查询字符串
+                        const normalizedQuery = normalizeQuery(search_query);
+                        const keywords = normalizedQuery.split(/\s+/).filter(k => k.trim().length >= 1);
                         
-                        // 1. 精确匹配（优先级最高）
-                        var exactStmt = db.prepare(
-                            "SELECT * FROM mkdocs WHERE title LIKE '%' || ? || '%' OR raw_content LIKE '%' || ? || '%' OR search_text LIKE '%' || ? || '%'"
-                        );
-                        exactStmt.bind([search_query, search_query, search_query]);
-                        while (exactStmt.step()) {
-                            var row = Object.values(exactStmt.get());
-                            searchResults.add(JSON.stringify(row));
+                        if (keywords.length === 0) return;
+
+                        // 改进的搜索策略：使用OR逻辑而不是AND逻辑
+                        let queryParts = [];
+                        let params = [];
+                        
+                        // 完整查询匹配（最高优先级）
+                        queryParts.push("(title LIKE ? OR search_text LIKE ?)");
+                        params.push(`%${search_query}%`, `%${search_query}%`);
+                        
+                        // 标准化查询匹配
+                        if (normalizedQuery !== search_query) {
+                            queryParts.push("(title LIKE ? OR search_text LIKE ?)");
+                            params.push(`%${normalizedQuery}%`, `%${normalizedQuery}%`);
                         }
-                        exactStmt.free();
                         
-                        // 2. 分词搜索（处理空格分隔的多个关键词）
-                        var keywords = search_query.split(/\s+/).filter(k => k.trim().length > 0);
-                        if (keywords.length > 1) {
-                            for (var keyword of keywords) {
-                                if (keyword.length >= 2) {
-                                    var keywordStmt = db.prepare(
-                                        "SELECT * FROM mkdocs WHERE title LIKE '%' || ? || '%' OR raw_content LIKE '%' || ? || '%' OR search_text LIKE '%' || ? || '%'"
-                                    );
-                                    keywordStmt.bind([keyword, keyword, keyword]);
-                                    while (keywordStmt.step()) {
-                                        var row = Object.values(keywordStmt.get());
-                                        searchResults.add(JSON.stringify(row));
-                                    }
-                                    keywordStmt.free();
-                                }
+                        // 单个关键词匹配
+                        keywords.forEach(kw => {
+                            if (kw.length >= 2) {
+                                queryParts.push("(title LIKE ? OR search_text LIKE ?)");
+                                params.push(`%${kw}%`, `%${kw}%`);
                             }
-                        }
-                        
-                        // 3. 模糊搜索（去除特殊字符后搜索）
-                        var fuzzyQuery = search_query.replace(/[^\w\s\u4e00-\u9fff]/g, ' ').replace(/\s+/g, ' ').trim();
-                        if (fuzzyQuery && fuzzyQuery !== search_query) {
-                            var fuzzyStmt = db.prepare(
-                                "SELECT * FROM mkdocs WHERE search_text LIKE '%' || ? || '%'"
-                            );
-                            fuzzyStmt.bind([fuzzyQuery]);
-                            while (fuzzyStmt.step()) {
-                                var row = Object.values(fuzzyStmt.get());
-                                searchResults.add(JSON.stringify(row));
-                            }
-                            fuzzyStmt.free();
-                        }
-                        
-                        // 转换结果并排序
-                        var datas = Array.from(searchResults).map(item => JSON.parse(item));
-                        
-                        // 按相关性排序
-                        datas.sort((a, b) => {
-                            var aTitle = a[3] || '';
-                            var bTitle = b[3] || '';
-                            var aExactTitle = aTitle.toLowerCase().includes(search_query.toLowerCase());
-                            var bExactTitle = bTitle.toLowerCase().includes(search_query.toLowerCase());
-                            
-                            if (aExactTitle && !bExactTitle) return -1;
-                            if (!aExactTitle && bExactTitle) return 1;
-                            return 0;
                         });
                         
-                        // 限制结果数量
-                        datas = datas.slice(0, 50);
+                        const sqlQuery = `SELECT * FROM mkdocs WHERE ${queryParts.join(' OR ')}`;
+                        const stmt = db.prepare(sqlQuery);
+                        stmt.bind(params);
                         
-                        if (datas.length === 0) {
-                            search_info.textContent = '没有符合条件的结果';
-                            resultList.innerHTML = '';
-                            return;
+                        const results = new Map();
+                        while (stmt.step()) {
+                            const row = stmt.getAsObject();
+                            
+                            let score = 0;
+                            const lowerQuery = search_query.toLowerCase();
+                            const lowerNormalizedQuery = normalizedQuery.toLowerCase();
+                            const lowerTitle = (row.title || '').toLowerCase();
+                            const lowerContent = (row.raw_content || '').toLowerCase();
+                            const lowerSearchText = (row.search_text || '').toLowerCase();
+
+                            // 完整查询匹配（最高分）
+                            if (lowerTitle.includes(lowerQuery)) score += 100;
+                            if (lowerSearchText.includes(lowerQuery)) score += 80;
+                            
+                            // 标准化查询匹配
+                            if (lowerTitle.includes(lowerNormalizedQuery)) score += 90;
+                            if (lowerSearchText.includes(lowerNormalizedQuery)) score += 70;
+                            
+                            // 标题完全匹配
+                            if (lowerTitle === lowerQuery || lowerTitle === lowerNormalizedQuery) score += 200;
+                            
+                            // 关键词匹配加分
+                            keywords.forEach(kw => {
+                                const lowerKw = kw.toLowerCase();
+                                if (lowerTitle.includes(lowerKw)) score += 30;
+                                if (lowerContent.includes(lowerKw)) score += 10;
+                            });
+                            
+                            // 多关键词同时出现加分
+                            let matchedKeywords = 0;
+                            keywords.forEach(kw => {
+                                if (lowerSearchText.includes(kw.toLowerCase())) {
+                                    matchedKeywords++;
+                                }
+                            });
+                            if (matchedKeywords > 1) {
+                                score += matchedKeywords * 15;
+                            }
+
+                            if (results.has(row.id)) {
+                                results.get(row.id).score += score;
+                            } else {
+                                results.set(row.id, { data: Object.values(row), score: score });
+                            }
                         }
-                        handleQueryResults(datas);
+                        stmt.free();
+                        
+                        const sortedResults = Array.from(results.values())
+                            .sort((a, b) => b.score - a.score)
+                            .slice(0, 50)
+                            .map(item => item.data);
+
+                        handleQueryResults(sortedResults);
                     } catch (error) {
                         console.error('Error: ' + error.message);
                         search_info.textContent = '搜索出错，请重试';
@@ -4317,24 +4322,52 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
                 function handleQueryResults(datas) {
                     if (datas.length === 0) {
                         search_info.textContent = '没有符合条件的结果';
+                        resultList.innerHTML = '';
                         return;
                     } else {
                         search_info.textContent = `${datas.length} 个符合条件的结果`;
                     }
                     var new_datas = {};
-                    var new_datas_ids = new Set();
+                    var global_content_set = new Set(); // 全局去重集合
+
                     datas.forEach(value => {
                         const [id, url, name, title, link, body, raw_content] = value;
-                        if (!new_datas[url]) {
-                            new_datas[url] = { url, name, matches: [] };
+                        const pageUrl = url.endsWith('/') ? url : url + '/';
+                        
+                        if (!new_datas[pageUrl]) {
+                            new_datas[pageUrl] = { url: pageUrl, name, matches: [] };
                         }
-                        if (!new_datas_ids.has(id)) {
-                            new_datas_ids.add(id);
-                            new_datas[url].matches.push({ title, link, body, raw_content });
+
+                        // 改进的去重逻辑：使用更精确的标识符
+                        const normalizedTitle = title.trim().toLowerCase();
+                        const normalizedContent = (raw_content || '').trim().toLowerCase();
+                        
+                        // 创建更精确的内容指纹
+                        const contentFingerprint = `${pageUrl}|${normalizedTitle}|${normalizedContent.substring(0, 200)}`;
+                        
+                        // 检查是否为页面主标题与页面名称相同的情况
+                        const isPageMainTitle = normalizedTitle === name.trim().toLowerCase() && link === '';
+                        
+                        // 如果是页面主标题且已经有其他匹配项，则跳过
+                        if (isPageMainTitle && new_datas[pageUrl].matches.length > 0) {
+                            return;
+                        }
+                        
+                        // 如果不是重复内容，则添加
+                        if (!global_content_set.has(contentFingerprint)) {
+                            new_datas[pageUrl].matches.push({ title, link, body, raw_content });
+                            global_content_set.add(contentFingerprint);
                         }
                     });
+
+                    // 清理空的页面条目
+                    Object.keys(new_datas).forEach(pageUrl => {
+                        if (new_datas[pageUrl].matches.length === 0) {
+                            delete new_datas[pageUrl];
+                        }
+                    });
+
                     resultList.innerHTML = '';
-                    const baseUrl = window.location.origin;
                     const resultItems = Object.values(new_datas).map(data => `
                         <li class="md-search-result__item" style="border: 2px solid #bababa; margin: 10px; border-radius: 8px;">
                             <div class="md-search-result__link search-result-main" style="border-bottom:1px solid #bababa; cursor: pointer; text-decoration: none;" data-url="${data.url}" data-query="${escapeHtml(currentSearchQuery)}">
@@ -4374,21 +4407,9 @@ m此步骤失败 '尝试再次运行自动脚本选择其他下载源或者切�
                                     toggle.checked = false;
                                 }
                                 
-                                // 构建带有高亮参数的URL
-                                const currentPath = window.location.pathname;
-                                const targetPath = targetUrl.startsWith('/') ? targetUrl : '/' + targetUrl;
-                                
-                                if (currentPath === targetPath) {
-                                    // 如果是当前页面，直接高亮
-                                    if (window.highlightContent) {
-                                        window.highlightContent(query);
-                                    }
-                                } else {
-                                    // 如果是其他页面，跳转并传递高亮参数
-                                    const url = new URL(targetPath, window.location.origin);
-                                    url.searchParams.set('highlight', query);
-                                    window.location.href = url.toString();
-                                }
+                                const url = new URL(targetUrl, window.location.origin);
+                                url.searchParams.set('highlight', query);
+                                window.location.href = url.toString();
                             }
                         });
                     });
