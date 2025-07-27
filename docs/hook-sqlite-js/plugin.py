@@ -15,7 +15,7 @@ import warnings
 # ==================== 配置选项 ====================
 # ⚙️ 直接在代码中配置搜索功能（方便快速修改）
 # 设置为 True 启用本地搜索，False 禁用本地搜索
-LOCAL_SEARCH_ENABLED = False # 🔧 在这里直接修改：True=启用，False=禁用
+LOCAL_SEARCH_ENABLED = True # 🔧 在这里直接修改：True=启用，False=禁用
 
 # 搜索功能开关配置（便于开发时快速禁用）
 ENABLE_SEARCH = os.environ.get('MKDOCS_ENABLE_SEARCH', 'true').lower() == 'true'
@@ -621,6 +621,97 @@ def on_page_content(html, page, config, files):
             })
         });
 
+        // 页面加载时处理URL中的highlight参数
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const highlight = urlParams.get('highlight');
+            
+            if (highlight) {
+                // 延迟执行，确保页面完全加载
+                setTimeout(function() {
+                    // 移除URL中的highlight参数，避免影响后续导航
+                    const newUrl = new URL(window.location);
+                    newUrl.searchParams.delete('highlight');
+                    window.history.replaceState({}, '', newUrl);
+                    
+                    // 高亮显示关键词
+                    highlightTextInPage(highlight);
+                    
+                    // 如果URL中有锚点，滚动到对应位置
+                    if (window.location.hash) {
+                        const targetElement = document.querySelector(window.location.hash);
+                        if (targetElement) {
+                            // 平滑滚动到目标元素
+                            targetElement.scrollIntoView({ 
+                                behavior: 'smooth', 
+                                block: 'start' 
+                            });
+                            
+                            // 添加临时高亮效果
+                            targetElement.style.background = '#ffeb3b';
+                            targetElement.style.transition = 'background 0.3s ease';
+                            setTimeout(() => {
+                                targetElement.style.background = '';
+                            }, 2000);
+                        }
+                    }
+                }, 100);
+            }
+        });
+        
+        // 在页面中高亮显示搜索关键词
+        function highlightTextInPage(keywords) {
+            if (!keywords) return;
+            
+            const keywordList = keywords.split(/\\s+/).filter(k => k.trim().length > 0);
+            if (keywordList.length === 0) return;
+            
+            // 获取页面主要内容区域
+            const contentArea = document.querySelector('.md-content__inner') || document.body;
+            
+            // 遍历所有文本节点
+            const walker = document.createTreeWalker(
+                contentArea,
+                NodeFilter.SHOW_TEXT,
+                {
+                    acceptNode: function(node) {
+                        // 跳过script、style等标签
+                        if (node.parentElement && 
+                            ['SCRIPT', 'STYLE', 'NOSCRIPT'].includes(node.parentElement.tagName)) {
+                            return NodeFilter.FILTER_REJECT;
+                        }
+                        return NodeFilter.FILTER_ACCEPT;
+                    }
+                }
+            );
+            
+            const textNodes = [];
+            let node;
+            while (node = walker.nextNode()) {
+                textNodes.push(node);
+            }
+            
+            // 高亮关键词
+            textNodes.forEach(textNode => {
+                let text = textNode.textContent;
+                let hasMatch = false;
+                
+                keywordList.forEach(keyword => {
+                    const regex = new RegExp(`(${keyword.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')})`, 'gi');
+                    if (regex.test(text)) {
+                        hasMatch = true;
+                        text = text.replace(regex, '<mark class="search-highlight">$1</mark>');
+                    }
+                });
+                
+                if (hasMatch) {
+                    const wrapper = document.createElement('span');
+                    wrapper.innerHTML = text;
+                    textNode.parentNode.replaceChild(wrapper, textNode);
+                }
+            });
+        }
+
         document.addEventListener('DOMContentLoaded', async function () {
             var search_input = document.querySelector('.md-search .md-search__inner .md-search__form .md-search__input')
             var search_info = document.querySelector('.md-search-result__meta')
@@ -893,7 +984,7 @@ def on_page_content(html, page, config, files):
                     `).join('');
                     resultList.innerHTML = resultItems;
                     
-                    // 添加点击事件处理
+                    // 优化点击事件处理，确保精准定位
                     const resultLinks = resultList.querySelectorAll('.search-result-main, .search-result-item');
                     resultLinks.forEach(link => {
                         link.addEventListener('click', (e) => {
@@ -910,9 +1001,49 @@ def on_page_content(html, page, config, files):
                                     toggle.checked = false;
                                 }
                                 
+                                // 构建完整的目标URL
                                 const url = new URL(targetUrl, window.location.origin);
                                 url.searchParams.set('highlight', query);
-                                window.location.href = url.toString();
+                                
+                                // 如果是当前页面，直接滚动定位
+                                const currentPath = window.location.pathname;
+                                const targetPath = url.pathname;
+                                
+                                if (currentPath === targetPath || 
+                                    (currentPath.endsWith('/') && currentPath.slice(0, -1) === targetPath) ||
+                                    (targetPath.endsWith('/') && targetPath.slice(0, -1) === currentPath)) {
+                                    
+                                    // 同一页面，直接处理锚点跳转
+                                    if (url.hash) {
+                                        const targetElement = document.querySelector(url.hash);
+                                        if (targetElement) {
+                                            // 平滑滚动到目标位置
+                                            targetElement.scrollIntoView({ 
+                                                behavior: 'smooth', 
+                                                block: 'start' 
+                                            });
+                                            
+                                            // 添加临时高亮效果
+                                            targetElement.style.background = '#ffeb3b';
+                                            targetElement.style.transition = 'background 0.3s ease';
+                                            setTimeout(() => {
+                                                targetElement.style.background = '';
+                                            }, 2000);
+                                            
+                                            // 高亮搜索关键词
+                                            setTimeout(() => {
+                                                highlightTextInPage(query);
+                                            }, 100);
+                                            return;
+                                        }
+                                    }
+                                    
+                                    // 没有锚点，只高亮关键词
+                                    highlightTextInPage(query);
+                                } else {
+                                    // 不同页面，跳转
+                                    window.location.href = url.toString();
+                                }
                             }
                         });
                     });
