@@ -1,8 +1,0 @@
-plugin.py
-setup.py
-mkdocs_sqlite_search.egg-info/PKG-INFO
-mkdocs_sqlite_search.egg-info/SOURCES.txt
-mkdocs_sqlite_search.egg-info/dependency_links.txt
-mkdocs_sqlite_search.egg-info/entry_points.txt
-mkdocs_sqlite_search.egg-info/requires.txt
-mkdocs_sqlite_search.egg-info/top_level.txt
