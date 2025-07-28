@@ -338,9 +338,9 @@ extra:
     - name: English
       link: "javascript:translateTo('english');"
       lang: en
-    - name: 한국어
-      link: "javascript:translateTo('korean');"
-      lang: ko
+    # - name: 한국어
+    #   link: "javascript:translateTo('korean');"
+    #   lang: ko
     - name: 日本語
       link: "javascript:translateTo('japanese');"
       lang: ja
@@ -469,19 +469,19 @@ plugins:
   #     shadow: true
   #     manual: false
   # - open-in-new-tab
-  # - git-revision-date-localized:
-  #     enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
-  #     type: iso_date
-  #     enable_creation_date: true
-  #     fallback_to_build_date: true
-  #     exclude:
-  #       - index.md 
-  #       - tag.md
-  #       - waline.md
-  #       - link.md
-  #       - blog/Mkdocs/linktech.md
-  #       - "blog/archive/**"
-  #       - "blog/category/**"
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
+      type: iso_date
+      enable_creation_date: true
+      fallback_to_build_date: true
+      exclude:
+        - index.md 
+        - tag.md
+        - waline.md
+        - link.md
+        - blog/Mkdocs/linktech.md
+        - "blog/archive/**"
+        - "blog/category/**"
   - git-committers:
       enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
       repository: Wcowin/Wcowin.github.io

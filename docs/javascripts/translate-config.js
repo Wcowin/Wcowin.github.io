@@ -1,27 +1,27 @@
 // 自动生成的高性能智能翻译配置 - 请勿手动编辑
-// 生成时间: 2025-07-28 01:18:36
-// 环境: development
-// 优化特性: 自适应批处理、智能重试、性能监控、质量控制
+// 生成时间: 2025-07-28 15:30:00
+// 环境: production (优化版本)
+// 优化特性: 高速批处理、智能重试、长时间缓存、压缩请求
 window.GLM_TRANSLATE_CONFIG = {
   endpoint: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
   model: 'glm-4-flash',
   maxRetries: 3,
-  timeout: 10000,
-  batchSize: 10,
-  batchDelay: 80,
-  maxConcurrent: 5,
+  timeout: 8000,
+  batchSize: 15,
+  batchDelay: 50,
+  maxConcurrent: 8,
   
   // 高级配置
   adaptiveBatching: true,
-  minBatchSize: 2,
-  maxBatchSize: 20,
+  minBatchSize: 3,
+  maxBatchSize: 25,
   dynamicBatchAdjustment: true,
   preloadCache: true,
   intelligentRetry: true,
   adaptiveTimeout: true,
   cacheEnabled: true,
-  compressionEnabled: false,
-  streamingEnabled: false,
+  compressionEnabled: true,
+  streamingEnabled: true,
   
   // 翻译优化配置
   alwaysFromOriginal: true,  // 始终从原文翻译，提升质量和速度
@@ -100,37 +100,29 @@ window.GLM_TRANSLATE_CONFIG.shouldTranslate = function(text) {
   return true;
 };
 
-// 动态API参数优化
+// 动态API参数优化 - 针对速度优化
 window.GLM_TRANSLATE_CONFIG.getOptimalParams = function(textLength) {
   return {
-    temperature: textLength < 20 ? 0.1 : 0.2,
-    max_tokens: Math.min(Math.max(textLength * 2, 50), 800),
-    top_p: 0.85,
-    frequency_penalty: 0.1,
-    presence_penalty: 0.1
+    temperature: textLength < 10 ? 0.05 : (textLength < 50 ? 0.1 : 0.15),
+    max_tokens: Math.min(Math.max(Math.floor(textLength * 1.5), 30), 600),
+    top_p: 0.9,
+    frequency_penalty: 0.05,
+    presence_penalty: 0.05
   };
 };
 
-// 智能提示词生成 - 优化：始终从中文翻译，提升质量和速度
+// 智能提示词生成 - 高速优化版本
 window.GLM_TRANSLATE_CONFIG.generatePrompt = function(text, targetLang) {
   const isEnglish = targetLang === 'english';
-  const isShort = text.length < 20;
-  const isTechnical = /技术|代码|开发|编程|算法/.test(text);
+  const isShort = text.length < 30;
   
   if (isEnglish) {
-    if (isShort) return `Translate this Chinese text to English: ${text}`;
-    if (isTechnical) return `Translate this technical Chinese text to natural English, keeping technical terms accurate:
-
-${text}`;
-    return `Translate this Chinese text to natural, fluent English:
-
-${text}`;
+    if (isShort) return `Translate: ${text}`;
+    return `Translate to English:\n${text}`;
   } else {
     const targetLanguage = this.getLanguageName(targetLang);
-    if (isShort) return `请将这段中文翻译为${targetLanguage}：${text}`;
-    return `请将以下中文翻译为自然流畅的${targetLanguage}，保持原意和语境：
-
-${text}`;
+    if (isShort) return `译为${targetLanguage}：${text}`;
+    return `译为${targetLanguage}：\n${text}`;
   }
 };
 
@@ -184,23 +176,20 @@ window.GLM_TRANSLATE_CONFIG.adjustBatchSize = function(responseTime, errorRate) 
   return this.batchSize;
 };
 
-// 智能重试策略
+// 智能重试策略 - 高速优化
 window.GLM_TRANSLATE_CONFIG.getRetryDelay = function(attempt, error) {
   if (!this.intelligentRetry) return this.batchDelay * attempt;
   
-  // 根据错误类型调整重试延迟
   const baseDelay = this.batchDelay;
-  let multiplier = Math.pow(2, attempt - 1); // 指数退避
+  let multiplier = Math.pow(1.5, attempt - 1); // 减少指数增长
   
   if (error && error.status === 429) {
-    // 速率限制错误，使用更长的延迟
-    multiplier *= 3;
+    multiplier *= 2; // 减少429错误的延迟
   } else if (error && error.status >= 500) {
-    // 服务器错误，使用中等延迟
-    multiplier *= 2;
+    multiplier *= 1.5; // 减少服务器错误的延迟
   }
   
-  return Math.min(baseDelay * multiplier, 10000); // 最大10秒
+  return Math.min(baseDelay * multiplier, 5000); // 最大5秒
 };
 
 // 缓存管理
@@ -213,7 +202,7 @@ window.GLM_TRANSLATE_CONFIG.getFromCache = function(text, targetLang) {
   if (!this.cacheEnabled) return null;
   const key = this.getCacheKey(text, targetLang);
   const cached = this.cache.get(key);
-  if (cached && Date.now() - cached.timestamp < 3600000) { // 1小时过期
+  if (cached && Date.now() - cached.timestamp < 7200000) { // 增加到2小时过期
     this.metrics.cacheHitRate = (this.metrics.cacheHitRate * this.metrics.requestCount + 1) / (this.metrics.requestCount + 1);
     return cached.result;
   }
@@ -228,9 +217,33 @@ window.GLM_TRANSLATE_CONFIG.setCache = function(text, targetLang, result) {
     timestamp: Date.now()
   });
   
-  // 限制缓存大小
-  if (this.cache.size > 1000) {
+  // 限制缓存大小 - 增加缓存容量
+  if (this.cache.size > 2000) {
     const firstKey = this.cache.keys().next().value;
     this.cache.delete(firstKey);
+  }
+};
+
+// 添加预处理和并行处理优化
+window.GLM_TRANSLATE_CONFIG.batchProcessor = {
+  // 预处理队列
+  preprocessQueue: function(texts) {
+    return texts.filter(text => window.GLM_TRANSLATE_CONFIG.shouldTranslate(text))
+                .map(text => text.trim())
+                .filter(text => text.length > 0);
+  },
+  
+  // 智能分组 - 按长度分组以优化批处理
+  groupByLength: function(texts) {
+    const short = texts.filter(t => t.length < 50);
+    const medium = texts.filter(t => t.length >= 50 && t.length < 200);
+    const long = texts.filter(t => t.length >= 200);
+    return { short, medium, long };
+  },
+  
+  // 并行处理器
+  processInParallel: async function(batches, processor) {
+    const promises = batches.map(batch => processor(batch));
+    return await Promise.allSettled(promises);
   }
 };
