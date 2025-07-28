@@ -37,10 +37,23 @@ jobs:
       # 生成安全的翻译配置
       - name: Generate secure translate config
         env:
+          # 翻译相关的API密钥
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}  # 添加这行
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}      # 添加这行
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}      # 添加这行（如果需要）
+          
+          # 其他翻译配置
+          TRANSLATION_ENABLED: 'true'
+          TRANSLATION_CACHE_ENABLED: 'true'
         run: |
+          # 生成翻译API配置
           python scripts/generate_translate_config.py
           
+          # 如果您还需要生成其他配置文件
+          if [ -f "scripts/generate_api_config.py" ]; then
+            python scripts/generate_api_config.py
+          fi
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-git-authors-plugin
       - run: pip install mkdocs-git-committers-plugin-2

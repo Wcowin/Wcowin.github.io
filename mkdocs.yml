@@ -316,6 +316,9 @@ nav:
   - Mkdocs中文教程: https://wcowin.work/Mkdocs-Wcowin/
   # - 个人简介: https://wcowin.work/Personal-Profile/#
   - 开往: https://www.travellings.cn/go.html
+  - 测试: 
+      - test.md
+      - test2.md
   # - RSS: https://blog.csdn.net/m0_63203517/rss/list?spm=1001.2014.3001.5494
 
 
@@ -332,31 +335,39 @@ extra:
     - name: 中文
       link: "javascript:translateTo('chinese_simplified');"
       lang: zh
-    # - name: 繁体中文
-    #   link: "javascript:translateTo('chinese_traditional');"
-    #   lang: zh-tw
     - name: English
       link: "javascript:translateTo('english');"
       lang: en
-    # - name: 한국어
-    #   link: "javascript:translateTo('korean');"
-    #   lang: ko
     - name: 日本語
       link: "javascript:translateTo('japanese');"
       lang: ja
-    # - name: بالعربية
+    # 其他语言选项 - 取消注释以启用对应语言
+    # 繁体中文
+    # - name: 繁体中文
+    #   link: "javascript:translateTo('chinese_traditional');"
+    #   lang: zh-tw
+    # 韩语 - 支持敬语系统和语序优化
+    # - name: 한국어
+    #   link: "javascript:translateTo('korean');"
+    #   lang: ko
+    # 阿拉伯语 - 支持从右到左阅读和文化语境
+    # - name: العربية
     #   link: "javascript:translateTo('arabic');"
     #   lang: ar
+    # 德语 - 支持复合词和格变系统
     # - name: Deutsch
     #   link: "javascript:translateTo('deutsch');"
     #   lang: de
+    # 法语 - 支持性别一致和正式语体
     # - name: Français
     #   link: "javascript:translateTo('french');"
     #   lang: fr
+    # 西班牙语 - 支持性别一致和动词变位
     # - name: Español
     #   link: "javascript:translateTo('spanish');"
     #   lang: es
-    # - name: português
+    # 葡萄牙语 - 支持巴西葡萄牙语优化
+    # - name: Português
     #   link: "javascript:translateTo('portuguese');"
     #   lang: pt
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
@@ -469,29 +480,29 @@ plugins:
   #     shadow: true
   #     manual: false
   # - open-in-new-tab
-  - git-revision-date-localized:
-      enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
-      type: iso_date
-      enable_creation_date: true
-      fallback_to_build_date: true
-      exclude:
-        - index.md 
-        - tag.md
-        - waline.md
-        - link.md
-        - blog/Mkdocs/linktech.md
-        - "blog/archive/**"
-        - "blog/category/**"
-  - git-committers:
-      enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
-      repository: Wcowin/Wcowin.github.io
-      branch: main
-      exclude:
-        - index.md 
-        - tag.md
-        - waline.md
-        - link.md
-        - blog/Mkdocs/linktech.md
+  # - git-revision-date-localized:
+  #     enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
+  #     type: iso_date
+  #     enable_creation_date: true
+  #     fallback_to_build_date: true
+  #     exclude:
+  #       - index.md 
+  #       - tag.md
+  #       - waline.md
+  #       - link.md
+  #       - blog/Mkdocs/linktech.md
+  #       - "blog/archive/**"
+  #       - "blog/category/**"
+  # - git-committers:
+  #     enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
+  #     repository: Wcowin/Wcowin.github.io
+  #     branch: main
+  #     exclude:
+  #       - index.md 
+  #       - tag.md
+  #       - waline.md
+  #       - link.md
+  #       - blog/Mkdocs/linktech.md
   - blog:
       post_date_format: full #时间
       draft: true
@@ -557,6 +568,9 @@ markdown_extensions:
 
   
 extra_javascript:
+  # 智谱清言翻译系统
+  - javascripts/glm-config.js
+  - javascripts/glm-translate.js
   # - javascripts/translate-config.js
   # - javascripts/highlight-search.js
   # - docs/javascripts/translate.js
@@ -619,7 +633,7 @@ watch: #监听文件变动自动刷新
 hooks:
   - docs/overrides/hooks/socialmedia.py
   - docs/overrides/hooks/reading_time.py
-  - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
+  # - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
   - docs/overrides/hooks/related_posts.py
   # - docs/overrides/hooks/toc_optimizer.py
   # - docs/overrides/hooks/last_updated.py
