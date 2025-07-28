@@ -1,3 +1,49 @@
+# name: ci 
+# on:
+#   push:
+#     branches:
+#       - master 
+#       - main
+# permissions:
+#   contents: write
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#           sparse-checkout: |
+#             docs
+#             includes
+#       - uses: actions/setup-python@v4
+#         with:
+#           python-version: 3.x
+#       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+#       - uses: actions/cache@v3
+#         with:
+#           key: mkdocs-material-${ env.cache_id }
+#           path: .cache
+#           restore-keys: |
+#             mkdocs-material-
+#       - run: pip install mkdocs-git-revision-date-localized-plugin
+#       - run: pip install mkdocs-git-authors-plugin
+#       - run: pip install mkdocs-git-committers-plugin-2
+#       - run: pip install markdown-callouts
+#       # - run: pip install mkdocs-minify-plugin
+#       - run: pip install mkdocs-rss-plugin
+#       - run: pip install requests>=2.25.0
+#       - run: pip install python-dateutil>=2.8.0
+#       - run: pip install cachetools>=4.2.0
+#       # - run: pip install mkdocs-open-in-new-tab
+#       - run: pip install pymdown-extensions
+#       # - run: pip install mkdocs-glightbox
+#       # - run: pip install "mkdocs-material[imaging]"
+#       # - run: pip install mkdocs-statistics-plugin        
+#       - run: pip install mkdocs-material 
+#       - run: pip install --upgrade --force-reinstall mkdocs-material
+#       - run: mkdocs gh-deploy --force
+
 name: ci 
 on:
   push:
@@ -21,7 +67,6 @@ jobs:
             docs
             includes
             .ai_cache
-            scripts
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
@@ -33,27 +78,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      
-      # 生成安全的翻译配置
-      - name: Generate secure translate config
-        env:
-          # 翻译相关的API密钥
-          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}  # 添加这行
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}      # 添加这行
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}      # 添加这行（如果需要）
-          
-          # 其他翻译配置
-          TRANSLATION_ENABLED: 'true'
-          TRANSLATION_CACHE_ENABLED: 'true'
-        run: |
-          # 生成翻译API配置
-          python scripts/generate_translate_config.py
-          
-          # 如果您还需要生成其他配置文件
-          if [ -f "scripts/generate_api_config.py" ]; then
-            python scripts/generate_api_config.py
-          fi
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-git-authors-plugin
       - run: pip install mkdocs-git-committers-plugin-2
@@ -67,7 +91,7 @@ jobs:
       - run: pip install neoteroi-mkdocs
       - run: pip install mkdocs-document-dates
       - run: pip install pymdown-extensions
-      - run: pip install mkdocs-material     
+      - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
       - name: Deploy with AI Summary
         env:
@@ -102,4 +126,3 @@ jobs:
           else
             echo "ℹ️ 没有找到缓存目录或缓存为空"
           fi
-
