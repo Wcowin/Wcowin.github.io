@@ -202,12 +202,6 @@
           </li>
         
           <li class="md-select__item">
-            <a href="javascript:translateTo('korean');" hreflang="ko" class="md-select__link">
-              한국어
-            </a>
-          </li>
-        
-          <li class="md-select__item">
             <a href="javascript:translateTo('japanese');" hreflang="ja" class="md-select__link">
               日本語
             </a>
@@ -4235,11 +4229,33 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
 
 
   
+    
+  
+  
+    
   
 
 
   <aside class="md-source-file">
     
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年7月8日 16:41:35 UTC">2025-07-08</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2022年11月18日 17:17:21 UTC">2022-11-18</span>
+  </span>
+
     
     
     
@@ -4693,6 +4709,166 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
           }
         };
         
+        // DOM 操作优化工具类
+        const DOMUtils = {
+          // 缓存常用元素选择器
+          cache: new Map(),
+          
+          // 优化的元素选择器
+          select(selector, useCache = true) {
+            if (useCache && this.cache.has(selector)) {
+              const cached = this.cache.get(selector);
+              if (document.contains(cached)) return cached;
+              this.cache.delete(selector);
+            }
+            
+            const element = document.querySelector(selector);
+            if (useCache && element) {
+              this.cache.set(selector, element);
+            }
+            return element;
+          },
+          
+          // 批量选择元素
+          selectAll(selector) {
+            return document.querySelectorAll(selector);
+          },
+          
+          // 创建元素并设置属性
+          create(tag, attributes = {}, styles = {}) {
+            const element = document.createElement(tag);
+            
+            Object.entries(attributes).forEach(([key, value]) => {
+              if (key === 'textContent' || key === 'innerHTML') {
+                element[key] = value;
+              } else {
+                element.setAttribute(key, value);
+              }
+            });
+            
+            Object.entries(styles).forEach(([key, value]) => {
+              element.style[key] = value;
+            });
+            
+            return element;
+          },
+          
+          // 安全移除元素
+          remove(element) {
+            if (element && element.parentNode) {
+              element.parentNode.removeChild(element);
+            }
+          },
+          
+          // 清理缓存
+          clearCache() {
+            this.cache.clear();
+          }
+        };
+        
+        // 响应式设计工具类
+        const ResponsiveUtils = {
+          breakpoints: {
+            mobile: 768,
+            small: 480
+          },
+          
+          isMobile() {
+            return window.innerWidth <= this.breakpoints.mobile;
+          },
+          
+          isSmallScreen() {
+            return window.innerWidth <= this.breakpoints.small;
+          },
+          
+          getHeaderHeight() {
+            const header = DOMUtils.select('.md-header');
+            return header ? header.offsetHeight : 60;
+          },
+          
+          calculateTopOffset(baseOffset = 20) {
+            return this.getHeaderHeight() + baseOffset;
+          }
+        };
+        
+        // 事件管理工具类
+        const EventManager = {
+          listeners: new Map(),
+          
+          // 添加事件监听器并记录
+          add(element, event, handler, options = {}) {
+            const key = `${element.constructor.name}-${event}`;
+            
+            if (!this.listeners.has(key)) {
+              this.listeners.set(key, []);
+            }
+            
+            this.listeners.get(key).push({ element, handler, options });
+            element.addEventListener(event, handler, options);
+          },
+          
+          // 移除指定元素的所有事件监听器
+          removeAll(element) {
+            for (const [key, listeners] of this.listeners.entries()) {
+              this.listeners.set(key, listeners.filter(listener => {
+                if (listener.element === element) {
+                  element.removeEventListener(key.split('-')[1], listener.handler, listener.options);
+                  return false;
+                }
+                return true;
+              }));
+            }
+          },
+          
+          // 清理所有事件监听器
+          cleanup() {
+            for (const [key, listeners] of this.listeners.entries()) {
+              const eventType = key.split('-')[1];
+              listeners.forEach(({ element, handler, options }) => {
+                element.removeEventListener(eventType, handler, options);
+              });
+            }
+            this.listeners.clear();
+          }
+        };
+        
+        // 性能优化工具类
+        const PerformanceUtils = {
+          // 防抖函数
+          debounce(func, wait, immediate) {
+            let timeout;
+            return function executedFunction(...args) {
+              const later = () => {
+                timeout = null;
+                if (!immediate) func(...args);
+              };
+              const callNow = immediate && !timeout;
+              clearTimeout(timeout);
+              timeout = setTimeout(later, wait);
+              if (callNow) func(...args);
+            };
+          },
+          
+          // 节流函数
+          throttle(func, limit) {
+            let inThrottle;
+            return function(...args) {
+              if (!inThrottle) {
+                func.apply(this, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+              }
+            };
+          },
+          
+          // 批量操作
+          batch(operations) {
+            requestAnimationFrame(() => {
+              operations.forEach(op => op());
+            });
+          }
+        };
+
         // 全局状态管理
         let currentLanguage = 'chinese_simplified';
         let originalTexts = new Map();
@@ -5821,13 +5997,107 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
           
           let node;
           while (node = walker.nextNode()) {
-            textNodes.push({ 
+            const nodeData = { 
               node, 
-              text: node.textContent.trim()
-            });
+              text: node.textContent.trim(),
+              priority: getTranslationPriority(node)
+            };
+            textNodes.push(nodeData);
           }
           
+          // 按优先级排序，优先翻译正文内容
+          textNodes.sort((a, b) => b.priority - a.priority);
+          
           return textNodes;
+        }
+        
+        // 获取翻译优先级 - 正文内容优先
+        function getTranslationPriority(node) {
+          let element = node.parentElement;
+          let priority = 0;
+          
+          while (element) {
+            // 正文内容区域 - 最高优先级
+            if (element.matches('.md-content__inner, .md-typeset, article, main, [role="main"]')) {
+              priority += 100;
+            }
+            
+            // 标题优先级
+            if (element.matches('h1, h2, h3, h4, h5, h6')) {
+              priority += 80;
+            }
+            
+            // 段落内容
+            if (element.matches('p, li, td, th, blockquote, pre code')) {
+              priority += 60;
+            }
+            
+            // 重要文本元素
+            if (element.matches('strong, em, b, i, mark')) {
+              priority += 40;
+            }
+            
+            // 链接和按钮
+            if (element.matches('a, button, .md-button')) {
+              priority += 30;
+            }
+            
+            // 导航和菜单 - 中等优先级
+            if (element.matches('.md-nav, .md-tabs, .md-header')) {
+              priority += 20;
+            }
+            
+            // 其他UI元素 - 低优先级
+            if (element.matches('.md-footer, .md-sidebar, .md-search')) {
+              priority += 10;
+            }
+            
+            element = element.parentElement;
+          }
+          
+          // 根据文本长度调整优先级（长文本优先）
+          const textLength = node.textContent.trim().length;
+          if (textLength > 100) {
+            priority += 20;
+          } else if (textLength > 50) {
+            priority += 10;
+          } else if (textLength > 20) {
+            priority += 5;
+          }
+          
+          return priority;
+        }
+        
+        // 获取内容类型描述
+        function getContentTypeDescription(node) {
+          let element = node.parentElement;
+          
+          while (element) {
+            // 正文内容
+            if (element.matches('.md-content__inner, .md-typeset, article, main, [role="main"]')) {
+              if (element.matches('h1, h2, h3, h4, h5, h6')) return '标题';
+              if (element.matches('p')) return '正文段落';
+              if (element.matches('li')) return '列表内容';
+              if (element.matches('blockquote')) return '引用内容';
+              if (element.matches('td, th')) return '表格内容';
+              return '正文内容';
+            }
+            
+            // 导航元素
+            if (element.matches('.md-nav')) return '导航菜单';
+            if (element.matches('.md-tabs')) return '标签页';
+            if (element.matches('.md-header')) return '页面头部';
+            
+            // 其他UI元素
+            if (element.matches('.md-footer')) return '页脚内容';
+            if (element.matches('.md-sidebar')) return '侧边栏';
+            if (element.matches('button, .md-button')) return '按钮';
+            if (element.matches('a')) return '链接';
+            
+            element = element.parentElement;
+          }
+          
+          return '页面内容';
         }
         
         // 显示翻译状态 - 支持多语言通知和进度可视化
@@ -5933,73 +6203,140 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
             statusEl.id = 'translate-status';
             statusEl.style.cssText = `
               position: fixed;
-              top: 20px;
+              bottom: 20px;
               right: 20px;
-              background: rgba(0, 0, 0, 0.9);
-              color: white;
-              padding: 16px 20px;
-              border-radius: 12px;
-              font-size: 14px;
+              background: rgba(32, 33, 36, 0.95);
+              color: #ffffff;
+              padding: 12px 16px;
+              border-radius: 8px;
+              font-size: 13px;
+              font-weight: 500;
               z-index: 10000;
-              transition: all 0.3s ease;
-              backdrop-filter: blur(10px);
-              border: 1px solid rgba(255, 255, 255, 0.2);
-              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-              min-width: 200px;
-              max-width: 350px;
+              transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+              backdrop-filter: blur(12px);
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+              min-width: 180px;
+              max-width: 320px;
+              will-change: transform, opacity;
+              user-select: none;
+              -webkit-user-select: none;
+              -webkit-tap-highlight-color: transparent;
+              line-height: 1.4;
             `;
+            
+            // 添加移动端响应式样式
+            const isMobile = window.innerWidth <= 768;
+            const isSmallScreen = window.innerWidth <= 480;
+            
+            if (isMobile) {
+              const mobileStyles = `
+                bottom: ${isSmallScreen ? '15px' : '20px'};
+                right: ${isSmallScreen ? '10px' : '15px'};
+                left: ${isSmallScreen ? '10px' : 'auto'};
+                max-width: ${isSmallScreen ? 'calc(100vw - 20px)' : '280px'};
+                min-width: auto;
+                padding: ${isSmallScreen ? '10px 12px' : '12px 14px'};
+                font-size: ${isSmallScreen ? '12px' : '13px'};
+                border-radius: 6px;
+              `;
+              statusEl.style.cssText += mobileStyles;
+            }
             document.body.appendChild(statusEl);
+            
+            // 添加窗口大小变化监听器
+            const updatePosition = () => {
+              const isMobile = window.innerWidth <= 768;
+              const isSmallScreen = window.innerWidth <= 480;
+              
+              if (isMobile) {
+                statusEl.style.bottom = isSmallScreen ? '15px' : '20px';
+                statusEl.style.right = isSmallScreen ? '10px' : '15px';
+                statusEl.style.left = isSmallScreen ? '10px' : 'auto';
+                statusEl.style.maxWidth = isSmallScreen ? 'calc(100vw - 20px)' : '280px';
+                statusEl.style.minWidth = 'auto';
+                statusEl.style.padding = isSmallScreen ? '10px 12px' : '12px 14px';
+                statusEl.style.fontSize = isSmallScreen ? '12px' : '13px';
+                statusEl.style.borderRadius = '6px';
+              } else {
+                statusEl.style.bottom = '20px';
+                statusEl.style.right = '20px';
+                statusEl.style.left = 'auto';
+                statusEl.style.maxWidth = '320px';
+                statusEl.style.minWidth = '180px';
+                statusEl.style.padding = '12px 16px';
+                statusEl.style.fontSize = '13px';
+                statusEl.style.borderRadius = '8px';
+              }
+            };
+            
+            // 绑定窗口大小变化事件和屏幕方向变化事件
+            window.addEventListener('resize', updatePosition);
+            window.addEventListener('orientationchange', () => {
+              // 延迟执行以确保屏幕方向变化完成
+              setTimeout(updatePosition, 100);
+            });
+            
+            // 存储清理函数以供后续移除
+            statusEl._cleanupResize = () => {
+              window.removeEventListener('resize', updatePosition);
+              window.removeEventListener('orientationchange', updatePosition);
+            };
           }
           
-          // 创建状态内容
-          let statusContent = `<div style="display: flex; align-items: center; gap: 12px;">`;
+          // 创建状态内容 - 简洁版本
+          let statusContent = `<div style="display: flex; align-items: center; gap: 8px;">`;
           
-          // 添加图标
+          // 添加简洁图标
           if (message.includes('翻译中') || message.includes('Translation') || message.includes('번역') || message.includes('翻訳')) {
             statusContent += `<div class="translate-spinner" style="
-              width: 20px;
-              height: 20px;
+              width: 16px;
+              height: 16px;
               border: 2px solid rgba(255, 255, 255, 0.3);
-              border-top: 2px solid white;
+              border-top: 2px solid #ffffff;
               border-radius: 50%;
               animation: translateSpin 1s linear infinite;
+              flex-shrink: 0;
             "></div>`;
           } else if (message.includes('✅') || message.includes('完成') || message.includes('成功')) {
-            statusContent += `<span style="font-size: 18px;">✅</span>`;
+            statusContent += `<span style="font-size: 14px; flex-shrink: 0;">✅</span>`;
           } else if (message.includes('❌') || message.includes('失败') || message.includes('错误')) {
-            statusContent += `<span style="font-size: 18px;">❌</span>`;
+            statusContent += `<span style="font-size: 14px; flex-shrink: 0;">❌</span>`;
           } else {
-            statusContent += `<span style="font-size: 18px;">🌍</span>`;
+            statusContent += `<span style="font-size: 14px; flex-shrink: 0;">🌍</span>`;
           }
           
-          statusContent += `<div style="flex: 1;">
-            <div style="font-weight: 600; margin-bottom: 4px;">${localizedMessage}</div>`;
+          statusContent += `<div style="flex: 1; min-width: 0;">
+            <div style="
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            ">${localizedMessage}</div>`;
           
-          // 添加进度条
-          if (progress !== null && progress.current && progress.total) {
+          // 添加简化进度条（仅在进行中时显示）
+          if (progress !== null && progress.current && progress.total && (message.includes('翻译中') || message.includes('Translation') || message.includes('번역') || message.includes('翻訳'))) {
             const percentage = Math.round((progress.current / progress.total) * 100);
             statusContent += `
-              <div style="margin-bottom: 6px;">
+              <div style="
+                width: 100%;
+                height: 2px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 1px;
+                overflow: hidden;
+                margin-top: 6px;
+              ">
                 <div style="
-                  width: 100%;
-                  height: 4px;
-                  background: rgba(255, 255, 255, 0.2);
-                  border-radius: 2px;
-                  overflow: hidden;
-                ">
-                  <div style="
-                    width: ${percentage}%;
-                    height: 100%;
-                    background: linear-gradient(90deg, #4CAF50, #8BC34A);
-                    transition: width 0.3s ease;
-                  "></div>
-                </div>
+                  width: ${percentage}%;
+                  height: 100%;
+                  background: #4CAF50;
+                  transition: width 0.3s ease;
+                "></div>
               </div>
               <div style="
-                font-size: 12px;
-                color: rgba(255, 255, 255, 0.8);
-                text-align: center;
-              ">${progress.current}/${progress.total} (${percentage}%)</div>`;
+                font-size: 10px;
+                color: rgba(255, 255, 255, 0.7);
+                margin-top: 2px;
+              ">${percentage}%</div>`;
           }
           
           statusContent += `</div></div>`;
@@ -6027,6 +6364,10 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
               statusEl.style.transform = 'translateY(-10px)';
               setTimeout(() => {
                 if (statusEl.parentNode) {
+                  // 清理resize监听器
+                  if (statusEl._cleanupResize) {
+                    statusEl._cleanupResize();
+                  }
                   statusEl.parentNode.removeChild(statusEl);
                 }
               }, 300);
@@ -6118,7 +6459,7 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
             menu.id = 'translation-shortcut-menu';
             menu.style.cssText = `
               position: fixed;
-              top: 50%;
+              top: 100%;
               left: 50%;
               transform: translate(-50%, -50%);
               background: rgba(0, 0, 0, 0.95);
@@ -6416,7 +6757,7 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
             
             // 为所有可翻译的文本节点建立映射，确保中断时能正确恢复
             let mappingUpdated = false;
-            textNodeData.forEach(({ node, text }) => {
+            textNodeData.forEach(({ node, text, priority }) => {
               if (text && text.length > 1 && text.trim()) {
                 if (!originalTexts.has(node)) {
                   // 获取节点的当前原始文本（未翻译状态）
@@ -6435,15 +6776,17 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
               console.log(`📝 原始文本映射已存在，总计 ${originalTexts.size} 个节点`);
             }
             
-            // 准备翻译的文本 - 使用原始文本确保质量
+            // 准备翻译的文本 - 使用优先级排序和原始文本确保质量
             const textsToTranslate = [];
-            textNodeData.forEach(({ node, text }) => {
+            textNodeData.forEach(({ node, text, priority }) => {
               if (text && text.length > 1 && text.trim()) {
                 // 优先使用映射中的原始文本，确保翻译质量
                 const originalText = originalTexts.get(node) || text;
-                textsToTranslate.push({ node, text: originalText });
+                textsToTranslate.push({ node, text: originalText, priority });
               }
             });
+            
+            // textsToTranslate 已经通过 getTextNodes 按优先级排序
             
             if (textsToTranslate.length === 0) {
               console.log('⚠️ 没有找到需要翻译的内容');
@@ -6467,7 +6810,13 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
               
               const batch = textsToTranslate.slice(i, i + GLM_CONFIG.batchSize);
               
-              const promises = batch.map(async ({ node, text }) => {
+              // 获取当前批次的主要内容类型
+              const contentTypes = batch.map(({ node }) => getContentTypeDescription(node));
+              const mainContentType = contentTypes.find(type => type.includes('正文')) || 
+                                     contentTypes.find(type => type.includes('标题')) || 
+                                     contentTypes[0] || '页面内容';
+              
+              const promises = batch.map(async ({ node, text, priority }) => {
                 try {
                   // 增强的节点有效性检查
                   if (!node || !node.parentNode || !node.isConnected || !document.contains(node)) {
@@ -6574,8 +6923,8 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
               const totalProcessed = translatedCount + skippedCount + failedCount;
               const successRate = totalProcessed > 0 ? Math.round((translatedCount / totalProcessed) * 100) : 0;
               
-              // 优化的状态消息
-              let statusMessage = `翻译中... ${currentProgress}%`;
+              // 优化的状态消息 - 包含内容类型
+              let statusMessage = `翻译${mainContentType} ${currentProgress}%`;
               
               if (totalProcessed > 0) {
                 if (translatedCount > 0) {
@@ -6585,7 +6934,7 @@ Shift-Command–问号 (?)：打开“帮助”菜单。</p>
                   statusMessage += `)`;
                 } else if (skippedCount > 0 && failedCount === 0) {
                   // 翻译进行中时，不要显示"内容已是目标语言"，而是显示处理状态
-                  statusMessage += ` (分析内容...)`;
+                  statusMessage += ` (稍等片刻...)`;
                 } else if (failedCount > 0) {
                   statusMessage += ` (处理中...)`;
                 } else {
