@@ -12,6 +12,11 @@ ai_summary: false  # 禁用AI摘要
 
 ## </p><h1 id="01" name="01"><strong>2025-07-19</strong></h1><p>
 * 优化网站流畅度（玄学）
+* 添加网页翻译功能
+* 为每个页面添加评论区
+
+## </p><h1 id="01" name="01"><strong>2025-07-19</strong></h1><p>
+* 优化网站流畅度（玄学）
 * [首页](../../index.md)焕然一新
 * 更换网站字体为[汇文明朝体](https://chinese-font.netlify.app/zh-cn/fonts/hwmct/汇文明朝体){target=_blank}，提升阅读体验
 

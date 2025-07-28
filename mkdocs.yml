@@ -330,35 +330,35 @@ extra:
   #   lang: zh-cn
   alternate:
     - name: 中文
-      link: "javascript:translate.changeLanguage('chinese_simplified');"
+      link: "javascript:translateTo('chinese_simplified');"
       lang: zh
-    - name: 繁体中文
-      link: "javascript:translate.changeLanguage('chinese_traditional');"
-      lang: zh-tw
+    # - name: 繁体中文
+    #   link: "javascript:translateTo('chinese_traditional');"
+    #   lang: zh-tw
     - name: English
-      link: "javascript:translate.changeLanguage('english');"
+      link: "javascript:translateTo('english');"
       lang: en
     - name: 한국어
-      link: "javascript:translate.changeLanguage('korean');"
+      link: "javascript:translateTo('korean');"
       lang: ko
     - name: 日本語
-      link: "javascript:translate.changeLanguage('japanese');"
+      link: "javascript:translateTo('japanese');"
       lang: ja
-    - name: بالعربية
-      link: "javascript:translate.changeLanguage('arabic');"
-      lang: ar
-    - name: Deutsch
-      link: "javascript:translate.changeLanguage('deutsch');"
-      lang: de
-    - name: Français
-      link: "javascript:translate.changeLanguage('french');"
-      lang: fr
-    - name: Español
-      link: "javascript:translate.changeLanguage('spanish');"
-      lang: es
-    - name: português
-      link: "javascript:translate.changeLanguage('portuguese');"
-      lang: pt
+    # - name: بالعربية
+    #   link: "javascript:translateTo('arabic');"
+    #   lang: ar
+    # - name: Deutsch
+    #   link: "javascript:translateTo('deutsch');"
+    #   lang: de
+    # - name: Français
+    #   link: "javascript:translateTo('french');"
+    #   lang: fr
+    # - name: Español
+    #   link: "javascript:translateTo('spanish');"
+    #   lang: es
+    # - name: português
+    #   link: "javascript:translateTo('portuguese');"
+    #   lang: pt
   generator: true  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/weixin
@@ -401,7 +401,7 @@ extra:
   # consent:
   #   title: Cookie consent
   #   description: >- 
-  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+  #     我也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
@@ -469,19 +469,19 @@ plugins:
   #     shadow: true
   #     manual: false
   # - open-in-new-tab
-  - git-revision-date-localized:
-      enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
-      type: iso_date
-      enable_creation_date: true
-      fallback_to_build_date: true
-      exclude:
-        - index.md 
-        - tag.md
-        - waline.md
-        - link.md
-        - blog/Mkdocs/linktech.md
-        - "blog/archive/**"
-        - "blog/category/**"
+  # - git-revision-date-localized:
+  #     enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
+  #     type: iso_date
+  #     enable_creation_date: true
+  #     fallback_to_build_date: true
+  #     exclude:
+  #       - index.md 
+  #       - tag.md
+  #       - waline.md
+  #       - link.md
+  #       - blog/Mkdocs/linktech.md
+  #       - "blog/archive/**"
+  #       - "blog/category/**"
   - git-committers:
       enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
       repository: Wcowin/Wcowin.github.io
@@ -557,6 +557,7 @@ markdown_extensions:
 
   
 extra_javascript:
+  # - javascripts/translate-config.js
   # - javascripts/highlight-search.js
   # - docs/javascripts/translate.js
   # - https://cdn.staticfile.net/translate.js/3.12.0/translate.js
