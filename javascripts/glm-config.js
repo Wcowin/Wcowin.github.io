@@ -4,6 +4,7 @@
  * 版本: 2.0.0
  */
 
+
 window.GLM_CONFIG = {
   // 版本信息
   version: '2.1.0',
