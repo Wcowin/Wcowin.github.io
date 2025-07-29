@@ -316,9 +316,9 @@ nav:
   - Mkdocs中文教程: https://wcowin.work/Mkdocs-Wcowin/
   # - 个人简介: https://wcowin.work/Personal-Profile/#
   - 开往: https://www.travellings.cn/go.html
-  # - 测试: 
-  #     - test.md
-  #     - test2.md
+  - 测试: 
+      - test.md
+      - test2.md
   # - RSS: https://blog.csdn.net/m0_63203517/rss/list?spm=1001.2014.3001.5494
 
 

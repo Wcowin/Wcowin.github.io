@@ -31,7 +31,7 @@ hide_comment: true
     <!-- <div class="wcowin-header-motto">Free and diffuse</div> -->
     <div class="wcowin-header-btns">
       <a href="https://github.com/Wcowin" target="_blank" class="wcowin-header-btn">Github</a>
-      <a href="mailto:wcowin@qq.com" class="wcowin-header-btn">联系我</a>
+      <a href="mailto:wcowin@qq.com" class="wcowin-header-btn">Contact me</a>
     </div>
   </div>
   <!-- 右侧：头像及光辉 -->
