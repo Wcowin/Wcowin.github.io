@@ -37,7 +37,7 @@ window.GLM_CONFIG = {
   // 文本检测配置
   detection: {
     minTextLength: 2,
-    skipTags: ['script', 'style', 'noscript', 'code', 'pre', 'kbd', 'samp', 'var'],
+    skipTags: ['script', 'style', 'noscript', 'pre', 'kbd', 'samp', 'var'],
     // 跳过的元素选择器
     skipSelectors: [
       'script', 'style', 'noscript', 'iframe', 'object', 'embed',
@@ -45,7 +45,7 @@ window.GLM_CONFIG = {
       '.no-translate', '[data-no-translate]', '[translate="no"]',
       '.highlight', '.codehilite', '.code-block', 'pre code', 'pre',
       '.language-*', '[class*="language-"]', '[class*="lang-"]',
-      'code', 'kbd', 'samp', 'var', 'tt',
+      'kbd', 'samp', 'var', 'tt',
       '.math', '.katex', '.MathJax', '.tex',
       '.mermaid', '.diagram', '.flowchart',
       'input', 'textarea', 'select', 'button',
@@ -75,14 +75,20 @@ window.GLM_CONFIG = {
       // 更全面的代码块选择器（排除导航栏）
       '.highlight *:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)', 
       '.codehilite *:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)', 
-      'pre *:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)'
+      'pre *:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)',
       // 特定的代码高亮类（排除导航栏）
       '[class*="highlight"]:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)', 
       '[class*="codehilite"]:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)',
       '[class*="language-"] *:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)', 
-      '[class*="lang-"] *:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)'
+      '[class*="lang-"] *:not(.md-ellipsis):not(.md-tabs *):not(.md-nav *)',
       // 特殊跳过：语言选择器和某些UI元素
-      '.md-select', '.md-footer-copyright', '.footer-highlight'
+      '.md-select', '.md-footer-copyright', '.footer-highlight',
+      // 页脚相关元素
+      '.footer-wrapper', '.footer-wrapper *', '.footer-content', '.footer-content *',
+      '.footer-visit-count', '.footer-visit-count *', '.footer-visit-count-mobile', '.footer-visit-count-mobile *',
+      '.footer-item', '.footer-item *', '.footer-bottom-section', '.footer-bottom-section *',
+      '.footer-social', '.footer-social *', '.md-social', '.md-social *',
+      '.runtime-info', '.runtime-info *', '.icp-link', '.icp-link *'
     ]
   },
 
@@ -94,6 +100,25 @@ window.GLM_CONFIG = {
     
     const trimmedText = text.trim();
     const hasChinese = /[\u4e00-\u9fff]/.test(trimmedText);
+    
+    // 检查是否为版权信息或其他不应翻译的内容
+    if (/^Copyright\s*©|^©\s*\d{4}|^Made\s+with|^Powered\s+by|^\d{4}-\d{4}\s+\w+/i.test(trimmedText)) {
+      console.log(`⏭️ 跳过版权信息: ${trimmedText}`);
+      return false;
+    }
+    
+    // 检查是否在页脚区域内
+    if (element.closest && (
+      element.closest('.footer-wrapper') ||
+      element.closest('.footer-content') ||
+      element.closest('.footer-bottom-section') ||
+      element.closest('.md-footer-copyright') ||
+      element.closest('.footer-social') ||
+      element.closest('.md-social')
+    )) {
+      console.log(`⏭️ 跳过页脚区域内容: ${trimmedText}`);
+      return false;
+    }
     
     // 对于包含中文的导航栏和UI元素，优先允许翻译
     if (hasChinese) {
@@ -115,7 +140,7 @@ window.GLM_CONFIG = {
       
       // 检查是否为列表项或标题元素
       const tagName = element.tagName ? element.tagName.toLowerCase() : '';
-      const isListOrHeading = ['li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tagName);
+      const isListOrHeading = ['ul', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tagName);
       
       // 检查是否为span或a标签在导航区域内
       const isNavText = ['span', 'a', 'div'].includes(tagName) && isInNavContainer;
@@ -126,11 +151,21 @@ window.GLM_CONFIG = {
       }
     }
     
-    // 检查元素标签
+    // 检查元素标签（特殊处理code标签）
     const tagName = element.tagName ? element.tagName.toLowerCase() : '';
     if (this.detection.skipTags.includes(tagName)) {
       console.log(`⏭️ 跳过标签: ${tagName}`);
       return false;
+    }
+    
+    // 特殊处理code标签：如果包含中文则允许翻译
+    if (tagName === 'code' && hasChinese) {
+      // 检查是否为纯代码内容（包含特殊字符、英文关键词等）
+      const codePattern = /^[\w\s\-_\.\(\)\[\]\{\}\<\>\=\+\*\/\\\|\&\%\$\#\@\!\?\:;,"'`~]+$/;
+      if (!codePattern.test(trimmedText)) {
+        console.log(`✅ Code标签包含中文，允许翻译: ${trimmedText.slice(0, 30)}...`);
+        return true;
+      }
     }
     
     // 检查元素属性
@@ -183,8 +218,14 @@ window.GLM_CONFIG = {
     let parent = element.parentElement;
     while (parent) {
       const parentTag = parent.tagName ? parent.tagName.toLowerCase() : '';
-      if (['pre', 'code', 'script', 'style'].includes(parentTag)) {
+      if (['pre', 'script', 'style'].includes(parentTag)) {
         console.log(`⏭️ 跳过代码相关父元素: ${parentTag}`);
+        return false;
+      }
+      
+      // 特殊处理code父元素：如果当前元素包含中文则允许翻译
+      if (parentTag === 'code' && !hasChinese) {
+        console.log(`⏭️ 跳过code父元素（无中文）: ${parentTag}`);
         return false;
       }
       
@@ -360,7 +401,7 @@ window.GLM_CONFIG = {
 
   // 系统提示词模板 - 增强版本
   prompts: {
-    system: '你是一个专业的翻译引擎，专门提供高质量的中文到多语言翻译服务。请严格遵循以下要求：\n1. 准确传达原文含义，不遗漏、不添加任何内容，保持原文的完整性\n2. 保持地道自然的目标语言表达，符合当地语言习惯和文化背景\n3. 准确处理专业术语、技术词汇和习语表达，保持术语的一致性\n4. 保持文本的语气、语体风格和情感色彩，适应不同文本类型\n5. 对于标题、导航等UI元素，使用简洁准确的翻译，符合界面设计规范\n6. 只返回翻译结果，不要包含任何解释、注释或额外内容\n7. 确保翻译的一致性和连贯性，特别是在长文本中\n8. 特别注意英文和日文的语法结构和表达习惯，避免中式表达\n9. 对于技术文档，保持专业性和准确性，使用标准术语\n10. 注意上下文语境，确保翻译符合具体使用场景',
+    system: '你是专业翻译助手。只返回翻译结果，不要返回提示词、解释或其他内容。',
     
     // 上下文感知提示词 - 增强版本
     contextual: {
@@ -373,15 +414,15 @@ window.GLM_CONFIG = {
     },
     
     templates: {
-      short: {
-        english: 'Translate the following Chinese text to natural, idiomatic English. Use proper grammar, natural word order, and appropriate terminology. Avoid literal translation and Chinese-style expressions. For UI elements, use standard interface language. IMPORTANT: If you see placeholders like PROTECTED_TECH_1, PROTECTED_CUSTOM_2, etc., keep them exactly as they are - do not translate or modify these placeholders: {text}',
-        japanese: '以下の中国語テキストを自然で正確な日本語に翻訳してください。適切な敬語、自然な語順、専門用語を使用し、中国語的な表現を避けてください。UIエレメントには標準的なインターフェース用語を使用してください。重要：PROTECTED_TECH_1、PROTECTED_CUSTOM_2などのプレースホルダーが表示された場合は、そのまま保持してください。翻訳や変更はしないでください：{text}',
-        korean: '다음 중국어 텍스트를 자연스럽고 정확한 한국어로 번역해주세요. 적절한 존댓말, 자연스러운 어순, 전문용어를 사용하고, 중국어식 표현을 피해주세요. UI 요소에는 표준 인터페이스 용어를 사용해주세요. 중요: PROTECTED_TECH_1, PROTECTED_CUSTOM_2 등의 플레이스홀더가 보이면 그대로 유지하세요. 번역하거나 수정하지 마세요: {text}',
-        arabic: 'ترجم النص الصيني التالي إلى العربية الطبيعية والدقيقة. استخدم القواعد النحوية المناسبة والترتيب الطبيعي للكلمات والمصطلحات المناسبة. لعناصر واجهة المستخدم، استخدم لغة الواجهة المعيارية. مهم: إذا رأيت عناصر نائبة مثل PROTECTED_TECH_1، PROTECTED_CUSTOM_2، احتفظ بها كما هي ولا تترجمها: {text}',
-        deutsch: 'Übersetzen Sie den folgenden chinesischen Text ins natürliche, idiomatische Deutsche. Verwenden Sie korrekte Grammatik, natürliche Wortstellung und angemessene Terminologie. Für UI-Elemente verwenden Sie Standard-Interface-Sprache. WICHTIG: Wenn Sie Platzhalter wie PROTECTED_TECH_1, PROTECTED_CUSTOM_2 sehen, behalten Sie diese genau bei - übersetzen oder ändern Sie diese Platzhalter nicht: {text}',
-        french: 'Traduisez le texte chinois suivant en français naturel et idiomatique. Utilisez une grammaire appropriée, un ordre des mots naturel et une terminologie appropriée. Pour les éléments d\'interface, utilisez le langage d\'interface standard. IMPORTANT: Si vous voyez des espaces réservés comme PROTECTED_TECH_1, PROTECTED_CUSTOM_2, gardez-les exactement tels qu\'ils sont - ne traduisez pas ou ne modifiez pas ces espaces réservés: {text}',
-        spanish: 'Traduce el siguiente texto chino al español natural e idiomático. Usa gramática apropiada, orden natural de palabras y terminología adecuada. Para elementos de interfaz, usa lenguaje de interfaz estándar. IMPORTANTE: Si ves marcadores como PROTECTED_TECH_1, PROTECTED_CUSTOM_2, manténlos exactamente como están - no traduzcas o modifiques estos marcadores: {text}',
-        portuguese: 'Traduza o seguinte texto chinês para o português natural e idiomático. Use gramática apropriada, ordem natural das palavras e terminologia adequada. Para elementos de interface, use linguagem de interface padrão. IMPORTANTE: Se você ver marcadores como PROTECTED_TECH_1, PROTECTED_CUSTOM_2, mantenha-os exatamente como estão - não traduza ou modifique esses marcadores: {text}',
+        short: {
+          english: 'Translate to natural English: {text}',
+          japanese: '日本語に翻訳: {text}',
+        korean: '한국어로 번역: {text}',
+          arabic: 'ترجم إلى العربية: {text}',
+        deutsch: 'Ins Deutsche übersetzen: {text}',
+          french: 'Traduire en français: {text}',
+        spanish: 'Traducir al español: {text}',
+        portuguese: 'Traduzir para português: {text}',
         other: '请将以下中文文本翻译成地道、自然的{language}，保持原文的含义和语气。对于导航/界面元素，请使用简洁标准的翻译。重要：如果看到PROTECTED_TECH_1、PROTECTED_CUSTOM_2等占位符，请保持原样，不要翻译或修改这些占位符：{text}'
       },
       long: {
