@@ -673,3 +673,6 @@ function protectSpecialContent() {
 - [MDN Web 国际化指南](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Numbers_and_dates#internationalization)
 
 希望这个教程能帮助你为自己的 MkDocs 网站添加多语言支持！如果遇到问题，欢迎在评论区讨论。
+
+
+

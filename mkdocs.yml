@@ -618,12 +618,13 @@ extra_css:
   # - https://static.zeoseven.com/zsft/292/main/result.css #字体
   # - stylesheets/ziti.css  #字体
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css #字体
-  - https://fontsapi.zeoseven.com/292/main/result.css
+  # - https://fontsapi.zeoseven.com/292/main/result.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
+  - about/sty/portfolio.css
 
 watch: #监听文件变动自动刷新
   - docs

@@ -8,10 +8,13 @@ hide:
 hide_comment: true
 ---
 
+<!-- # 留言板 -->
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css">
 
 
-# 畅所欲言  
+<h1 style="text-align:center;">畅所欲言</h1>
+
 <div class="poem-wrap">
   <div class="poem-border poem-left"></div>
   <div class="poem-border poem-right"></div>
@@ -271,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script> -->
 
-
+<head> 
   <script src="https://giscus.app/client.js"
       data-repo="Wcowin/hexo-site-comments"
       data-repo-id="R_kgDOIl9OJA"
@@ -286,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function() {
       crossorigin="anonymous"
       async>
   </script>
-
+</head>
 
 <!-- tw开始 -->
 

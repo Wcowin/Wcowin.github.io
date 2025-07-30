@@ -24,7 +24,7 @@ hide_comment: true
     </div>
     <div class="intro-text">
       <span class="greeting">你好，很高兴认识你 <span class="wave">👋</span></span>
-      <span class="name">我叫 <span class="highlight">Wáng Kēwén</span></span>
+      <span class="name">我叫 <span class="contributor-link">Wáng Kēwén</span></span>
     </div>
   </div>
 </div>
@@ -43,6 +43,7 @@ hide_comment: true
 .intro-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+
 }
 
 .intro-content {
@@ -56,13 +57,13 @@ hide_comment: true
 }
 
 .avatar-img {
-  width: 130px;
-  height: 130px;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #ffffff;
   box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .avatar-img:hover {
@@ -83,14 +84,19 @@ hide_comment: true
   color: #555;
 }
 
-.highlight {
-  background: linear-gradient(120deg, #608DBD 0%, #7BA7D7 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+.contributor-link {
+  color: #608DBD;
+  text-decoration: none;
   font-weight: bold;
-  padding: 0 0.2rem;
-  position: relative;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.contributor-link:hover {
+  background-color: rgba(96, 141, 189, 0.1);
+  color: #4a7ba7;
+  text-decoration: none;
 }
 
 .wave {
@@ -245,11 +251,10 @@ hide_comment: true
      
   ——Wcowin </font></center>   -->
 
----
 
 <div class="about__info">
     <div>
-        <span class="about__info-title">1年+</span>
+        <span class="about__info-title">1年++</span>
         <span class="about__info-name">工作经验</span>
     </div>
     <div>
@@ -263,11 +268,76 @@ hide_comment: true
         <span class="about__info-name">贡献的开源</span>
     </div>
 </div>
+
 <center>
-<a href="/assets/个人简历.pdf" target="_blank" class="md-button">下载简历</a>
+<!-- 推荐按钮HTML结构 -->
+<a href="/assets/个人简历.pdf" class="wcowin-header-btn">
+<iconify-icon icon="material-symbols:download" style="margin-right: 12px; font-size: 1.125em; vertical-align: middle;"></iconify-icon>下载简历
+</a>
+
+<style>
+.wcowin-header-btn {
+  display: inline-flex;           /* 关键：用flex让内容居中 */
+  align-items: center;            /* 关键：垂直居中 */
+  padding: 7px 22px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #3a8dde;
+  background: #f5faff;
+  border: 1.5px solid #b6eaff;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(106, 203, 255, 0.07);
+}
+.wcowin-header-btn iconify-icon {
+  margin-right: 12px;
+  font-size: 1.3em;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+}
+.wcowin-header-btn:hover {
+  background: #e6f4ff;
+  color: #222;
+  border-color: #d5ecfdff;
+}
+
+/* 夜间模式按钮样式 */
+@media (prefers-color-scheme: dark) {
+  .wcowin-header-btn {
+    color: #6ecbff;
+    background: rgba(30, 41, 59, 0.8);
+    border-color: rgba(110, 203, 255, 0.4);
+    box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
+  }
+  .wcowin-header-btn:hover {
+    background: rgba(110, 203, 255, 0.15);
+    color: #fff;
+    border-color: #6ecbff;
+  }
+}
+
+/* MkDocs Material slate 主题适配 */
+[data-md-color-scheme="slate"] .wcowin-header-btn {
+  color: #6ecbff;
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(110, 203, 255, 0.4);
+  box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
+}
+[data-md-color-scheme="slate"] .wcowin-header-btn:hover {
+  background: rgba(110, 203, 255, 0.15);
+  color: #fff;
+  border-color: #6ecbff;
+}
+</style>
 </center>
 
 
+
+
+
+<!-- <a href="/assets/个人简历.pdf" target="_blank" class="md-button">下载简历</a> -->
 <!-- [下载简历 :fontawesome-solid-download:](个人简历2.pdf){.md-button target="_blank"} -->
 
 
@@ -282,11 +352,14 @@ hide_comment: true
 </div> -->
 
 ---
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css"> -->
+
 ## 我的履历
 
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 <!-- <link rel="stylesheet" href="sty/portfolio.css"> -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
+
 <div class="qualification__tabs">
     <div class="qualification__button qualification__active" data-target='#education'>
         <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
@@ -361,7 +434,7 @@ hide_comment: true
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
     - [x] 咖啡重度爱好者 
-    - [x] 热爱(xiā)折腾技术/Math
+    - [x] 热爱(xiā)折腾技术/Math，闲暇之余致力于Mkdocs主题开发
     - [ ] 目前的研究领域是[密码学](../blog/Cryptography/index.md)
     - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒知趣，明得失，知进退 

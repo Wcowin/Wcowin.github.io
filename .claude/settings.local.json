@@ -3,7 +3,8 @@
     "allow": [
       "Bash(node:*)",
       "Bash(grep:*)",
-      "Bash(python3 scripts/generate_translate_config.py --env production --profile high_performance)"
+      "Bash(python3 scripts/generate_translate_config.py --env production --profile high_performance)",
+      "mcp__ide__getDiagnostics"
     ],
     "deny": []
   }
