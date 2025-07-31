@@ -62,7 +62,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3854,19 +3854,19 @@
 <p>三步解决</p>
 <p>1.打开终端</p>
 <p>输入：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>find / -name com.apple.dock.launchpad 2&gt;/dev/null
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>find / -name com.apple.dock.launchpad 2&gt;/dev/null
 </code></pre></div></td></tr></table></div></p>
 <p>回车后需要<strong>等待一段时间</strong>才出结果<br />
 <img alt="image.png" src="https://s2.loli.net/2025/01/02/z5jqTu7Dko6YFvG.png" />
 复制上图框中的路径</p>
 <p>2.在终端输入cd+空格+刚才的路径+/db</p>
 <p>比如：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>cd /private/var/folders/qm/rr1078k96k3gn1xnr85ml8vm0000gn/0/com.apple.dock.launchpad/db
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>cd /private/var/folders/qm/rr1078k96k3gn1xnr85ml8vm0000gn/0/com.apple.dock.launchpad/db
 </code></pre></div></td></tr></table></div>
 成功后如下图 
 <img alt="image.png" src="https://s2.loli.net/2025/01/02/z9B43kqcJD52yLH.png" />
 3.在上图db%后复制粘贴下方命令
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo sqlite3 db &quot;delete from apps where title=&#39;程序名称&#39;;&quot;&amp;&amp;killall Dock
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo sqlite3 db &quot;delete from apps where title=&#39;程序名称&#39;;&quot;&amp;&amp;killall Dock
 </code></pre></div></td></tr></table></div>
 （程序名称是你想要删除的顽固图标）</p>
 <p>搞定！</p>

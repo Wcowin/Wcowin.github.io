@@ -62,7 +62,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -4011,18 +4011,18 @@
 <h2 id="_3">开启任何来源<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>先打开 系统偏好设置 -&gt; 安全与隐私 -&gt; 通用 选项卡，检查是否已经启用了 任何来源 选项。</p>
 <p>如果没有这个选项，复制以下面的命令：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo spctl --master-disable
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo spctl --master-disable
 </code></pre></div></td></tr></table></div>
 打开终端，右键粘贴上面命令，回车并输入密码： </p>
 <p>然而有的应用开启了任何来源还是不行，这是因为苹果进一步收缩了对未签名应用的权限，这时候就需要过终端执行命令行代码来绕过应用签名认证。  </p>
 <h2 id="_4">绕过公证<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>打开终端，输入以下命令：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo xattr -rd com.apple.quarantine /Applications/xxxxxx.app将上面的 xxxxxx.app 换成你的App名称，比如 Sketch.app
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo xattr -rd com.apple.quarantine /Applications/xxxxxx.app将上面的 xxxxxx.app 换成你的App名称，比如 Sketch.app
 </code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo xattr -rd com.apple.quarantine /Applications/Sketch.app
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo xattr -rd com.apple.quarantine /Applications/Sketch.app
 </code></pre></div></td></tr></table></div>
 或者复制以下命令粘贴到终端后
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo xattr -rd com.apple.quarantine 
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo xattr -rd com.apple.quarantine 
 </code></pre></div></td></tr></table></div>
 打开Finder（访达），点击左侧的 应用程序，将应用拖进终端中，然后按键盘的回车键（return），输入密码，再按回车键，完成。</p>
 <div class="admonition note">
@@ -4031,24 +4031,24 @@
 </div>
 <h2 id="_5">应用签名<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>安装Command Line Tools 工具 打开终端工具输入如下命令：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>xcode-select --install
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>xcode-select --install
 </code></pre></div></td></tr></table></div>
 弹出安装窗口后选择继续安装，安装过程需要几分钟，请耐心等待。如果安装的时候提示“不能安装该软件，因为当前无法从软件更新服务器获得”，  </p>
 <p>打开终端工具输入并执行如下命令对应用签名：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>sudo codesign --force --deep --sign - (应用路径)
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>sudo codesign --force --deep --sign - (应用路径)
 </code></pre></div></td></tr></table></div>
 应用路径：打开访达（Finder），点击左侧导航栏的 应用程序，找到相关应用，将它拖进终端命令- 的后面，然后按下回车即可，<strong>注意最后一个 - 后面有一个空格。</strong></p>
 <p>「正常情况下只有一行提示，即成功：」
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>/文件位置 : replacing existing signature
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>/文件位置 : replacing existing signature
 </code></pre></div></td></tr></table></div>
 「如遇如下错误：」
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>/文件位置 : replacing existing signature/文件位置 : resource fork,Finder information,or similar detritus not allowed
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>/文件位置 : replacing existing signature/文件位置 : resource fork,Finder information,or similar detritus not allowed
 </code></pre></div></td></tr></table></div></p>
 <p>1.先在终端执行：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>xattr -cr /文件位置（直接将应用拖进去即可）
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>xattr -cr /文件位置（直接将应用拖进去即可）
 </code></pre></div></td></tr></table></div></p>
 <p>2.然后再次执行如下指令即可：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>codesign --force --deep --sign - /文件位置（直接将应用拖进去即可）
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>codesign --force --deep --sign - /文件位置（直接将应用拖进去即可）
 </code></pre></div></td></tr></table></div></p>
 <h2 id="macos">macOS小助手<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h2>
 <p><a href="https://pan.quark.cn/s/f2302b6789b0" target="“_blank”">如果嫌麻烦，也可以下载 macwk.com 编写的 macos小助手进行快速操作。</a></p>

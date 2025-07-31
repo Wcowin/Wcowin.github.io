@@ -62,7 +62,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -2411,20 +2411,20 @@
 <h2 id="_3">创建虚拟环境<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>创建虚拟环境前先下载<a href="https://gitee.com/song-laogou/face_dlib_py37_42" target="_blank">源码</a>到本地。</p>
 <p>需要使用到python3.7的虚拟环境，命令如下：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>face<span class="w"> </span><span class="nv">python</span><span class="o">==</span><span class="m">3</span>.7.3
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>conda<span class="w"> </span>activate<span class="w"> </span>face
 </code></pre></div></td></tr></table></div></p>
 <p>跑轮子（原作者<a href="https://mbd.pub/o/bread/ZJeYkpdt?next=pay&amp;author_name=肆十二&amp;author_avatar=https%3A%2F%2Fcdn.2zimu.com%2Fmbd_file_1679134971152.jpg">这里</a>是要钱的，轮子也是必要的，其实也有其他方法实现，但是<strong>我也付费了的</strong>，也请尊重知识付费）
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>dlib-19.17.0-cp37-cp37m-win_amd64.whl
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>dlib-19.17.0-cp37-cp37m-win_amd64.whl
 </code></pre></div></td></tr></table></div></p>
 <p>安装必要的库
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </code></pre></div></td></tr></table></div></p>
 <p>运行<br />
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>python<span class="w"> </span>文件名.py
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>python<span class="w"> </span>文件名.py
 </code></pre></div></td></tr></table></div></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2471,7 +2471,7 @@
 </ol>
 <p><strong>后面几条暂未实现</strong>，但是也增加了100多行代码</p>
 <p>代码如下，已做注释：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">  1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">  1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">  2</a></span>
 <span class="normal"><a href="#__codelineno-4-3">  3</a></span>
 <span class="normal"><a href="#__codelineno-4-4">  4</a></span>
@@ -3294,7 +3294,7 @@
 <p>恰逢Pytho课程设计，于是我便拿出来作为小组设计作品，但是做了进一步完善  </p>
 <p>团队(姚双、本作者、张平、刘银杰)优化后最终版本：<br />
 <strong>识别精度大幅提升，支持多人脸识别，支持多种人脸识别模型，支持人脸图像预处理，支持使用更高级的人脸识别模型，支持增加人脸图像的数量和多样性，支持使用更高级的人脸识别模型，支持人脸图像预处理，支持人脸匹配，支持结果显示，支持用户交互，支持数据收集与预处理，支持人脸特征提取</strong>  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">  1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">  1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">  2</a></span>
 <span class="normal"><a href="#__codelineno-5-3">  3</a></span>
 <span class="normal"><a href="#__codelineno-5-4">  4</a></span>

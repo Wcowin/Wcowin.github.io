@@ -62,7 +62,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3929,7 +3929,7 @@
 <p>MkDocs 支持自定义页脚。</p>
 <p><img alt="" src="https://s1.imagehub.cc/images/2024/02/02/73179baf6402e27c92afc51eb59645a6.png" /></p>
 <p>在docs/overrides/partials/footer.html中（没有该文件时，创建footer.html文件）添加以下代码：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
@@ -4116,10 +4116,10 @@
 <p>高亮部分自行修改即可</p>
 <h2 id="_3">页脚版权设置<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>mkdocs.yml中添加：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Copyright &amp;copy; 2022~2025 Wcowin</span><span class="w"> </span><span class="c1"># 左下角的版权声明</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Copyright &amp;copy; 2022~2025 Wcowin</span><span class="w"> </span><span class="c1"># 左下角的版权声明</span>
 </code></pre></div></td></tr></table></div></p>
 <p>如果想删除页脚显示“Made with Material for MkDocs”(不建议)</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">extra</span><span class="p">:</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">generator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">  </span><span class="c1">#删除页脚显示“使用 MkDocs 材料制造”</span>
 </code></pre></div></td></tr></table></div>

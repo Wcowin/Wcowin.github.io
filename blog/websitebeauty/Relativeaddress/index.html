@@ -62,7 +62,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -4000,7 +4000,7 @@
 <p>在使用 MkDocs 构建文档网站时，常常会遇到相对地址引用的问题，尤其是在图片、PDF、其他静态资源等的引用上。合理使用相对地址可以让你的文档在本地预览和线上部署时都能正常显示。下面总结一些常见场景和注意事项：</p>
 <h2 id="1">1. 图片引用<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <p><strong>推荐写法：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>![图片描述](./img/example.png)
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>![图片描述](./img/example.png)
 </code></pre></div></td></tr></table></div>
 <code>./img/example.png</code> 表示当前 Markdown 文件同级目录下的 <code>img</code> 文件夹中的图片。<br />
  如果图片在上级目录：<code>../assets/example.png</code></p>
@@ -4011,17 +4011,17 @@
 </ul>
 <h2 id="2-pdf">2. PDF 文件引用<a class="headerlink" href="#2-pdf" title="Permanent link">&para;</a></h2>
 <p><strong>内嵌或下载 PDF：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>[查看PDF](./files/example.pdf)
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>[查看PDF](./files/example.pdf)
 </code></pre></div></td></tr></table></div></p>
 <p>或使用 HTML 方式内嵌：  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">embed</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./files/example.pdf&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;600px&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/pdf&quot;</span><span class="p">&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">embed</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./files/example.pdf&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;600px&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/pdf&quot;</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <p><code>./files/example.pdf</code> 表示当前文档同级的 <code>files</code> 文件夹下的 PDF 文件。
 <code>../files/example.pdf</code> 表示上级目录的 <code>files</code> 文件夹下的 PDF 文件。
 <code>../../files/example.pdf</code> 表示上上级目录的 <code>files</code> 文件夹下的 PDF 文件。</p>
 <h2 id="3">3. 跨页面引用<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <p><strong>引用同一项目下的其他 Markdown 页面：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>[跳转到其他页面](../otherpage.md)
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>[跳转到其他页面](../otherpage.md)
 </code></pre></div></td></tr></table></div></p>
 <ul>
 <li>MkDocs 会自动将 <code>.md</code> 转换为 <code>.html</code>，所以可以直接用 Markdown 文件名。</li>
@@ -4029,7 +4029,7 @@
 </ul>
 <h2 id="4">4. 静态资源引用<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <p><strong>如 CSS、JS 文件：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../assets/style.css&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../assets/script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div></p>

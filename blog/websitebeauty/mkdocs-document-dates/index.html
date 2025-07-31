@@ -62,7 +62,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -4096,16 +4096,16 @@
 <p><img alt="render" src="https://s1.imagehub.cc/images/2025/07/25/15500bc26b250e6d4e6fa49da015c3a6.png" />
 <img alt="eba81837509fce7c2d7fd7fce8e0196e" src="https://s1.imagehub.cc/images/2025/07/25/8a9e9bcf0af67d6bead6551aa0c0acab.png" />  </p>
 <h2 id="_3">安装<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-document-dates
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-document-dates
 </code></pre></div></td></tr></table></div>
 <h2 id="_4">配置<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>在你的 mkdocs.yml 中添加插件即可：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">plugins</span><span class="p">:</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">document-dates</span>
 </code></pre></div></td></tr></table></div>
 <p>或者，你要个性化配置：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
@@ -4130,7 +4130,7 @@
 <h2 id="_5">手动指定时间<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>插件会自动获取文档的准确时间信息，会自动缓存创建时间，当然，你也可以在 <code>Front Matter</code> 中手动指定</p>
 <p>优先级顺序：<code>Front Matter</code> &gt; <code>文件系统时间戳(缓存)</code> &gt; <code>Git时间戳</code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
 <span class="normal"><a href="#__codelineno-3-4">4</a></span>
@@ -4149,7 +4149,7 @@
 <h2 id="_6">手动指定作者<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>插件会自动获取文档的作者信息，会解析邮件后做链接，你也可以在 <code>Front Matter</code> 中手动指定</p>
 <p>优先级顺序：<code>Front Matter</code> &gt; <code>Git作者</code> &gt; <code>site_author(mkdocs.yml)</code> &gt; <code>PC用户名</code> </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
 <span class="normal"><a href="#__codelineno-4-3">3</a></span>
 <span class="normal"><a href="#__codelineno-4-4">4</a></span>
@@ -4193,7 +4193,7 @@
 <ul>
 <li>在 <code>user.config.js</code> 中，参考最下面 <a href="https://github.com/jaywhj/mkdocs-document-dates/blob/main/mkdocs_document_dates/static/config/user.config.js">注释掉的 Demo</a>，自行翻译成本地语言</li>
 <li>在 <code>mkdocs.yml</code> 中，配置 full 版本的 timeago.full.min.js，一次性加载所有语言
-    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+    <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span>
 <span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nt">extra_javascript</span><span class="p">:</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/document_dates/core/timeago.full.min.js</span>
@@ -4208,7 +4208,7 @@
 <li>page.meta.document_dates_authors</li>
 </ul>
 <p>比如像这样：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-6-4"> 4</a></span>

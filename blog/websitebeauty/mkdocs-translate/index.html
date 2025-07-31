@@ -62,7 +62,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -4564,13 +4564,13 @@
 <h2 id="_2">📋 实现步骤<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="1">1. 引入翻译库<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <p>首先在页脚或头部模板(例如：<a href="https://github.com/squidfunk/mkdocs-material/blob/master/material/templates/partials/footer.html">docs/overrides/partials/footer.html</a>)中引入 <code>translate.js</code> 库：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cm">&lt;!-- 引入翻译库 --&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.staticfile.net/translate.js/3.12.0/translate.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="2">2. 配置翻译参数<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <p>创建翻译配置脚本，设置基本参数：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
@@ -4627,7 +4627,7 @@
 <a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="o">&lt;</span><span class="err">/script&gt;</span>
 </code></pre></div></td></tr></table></div>
 <p>目录结构如下：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
@@ -4662,7 +4662,7 @@
 </div>
 <details class="note">
 <summary>footer.html示例代码(无需修改,直接复制粘贴即可使用)</summary>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HTML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
@@ -4855,14 +4855,14 @@
 </details>
 <h3 id="3-mkdocsyml">3. 在 mkdocs.yml 中配置语言切换<a class="headerlink" href="#3-mkdocsyml" title="Permanent link">&para;</a></h3>
 <p>首先在mkdocs.yml文件中添加custom_dir:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
 <span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>theme:
 <a id="__codelineno-4-2" name="__codelineno-4-2"></a>  name: material
 <a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="hll">  custom_dir: docs/overrides #覆写路径
 </span></code></pre></div></td></tr></table></div></p>
 <p>然后在配置文件中添加多语言切换选项：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
@@ -4940,7 +4940,7 @@
 <p>后续步骤皆为可选，根据需求进行配置。可以不看。</p>
 <h3 id="4">4. 添加自定义术语库<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
 <p>为了提高翻译准确性，添加专业术语映射：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
@@ -5022,7 +5022,7 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="5">5. 处理动态内容翻译<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
 <p>对于实时更新的内容（如计时器、访问量等），需要特殊处理：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
@@ -5060,7 +5060,7 @@
 <h2 id="_3">🎨 多语言样式优化<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="1_1">1. 基础响应式样式<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <p>为不同语言文本长度进行适配：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CSS</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
@@ -5096,7 +5096,7 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="2_1">2. 特定语言样式优化<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
 <p>针对不同语言的特殊需求：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CSS</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
@@ -5146,7 +5146,7 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="3">3. 深色模式兼容<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <p>确保所有语言在深色模式下的显示效果：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CSS</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
@@ -5175,7 +5175,7 @@
 <hr />
 <h2 id="_4">🔧 高级功能<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h3 id="1_2">1. 语言检测与样式应用<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
@@ -5203,7 +5203,7 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="2_2">2. 数字和特殊内容保护<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
 <p>确保数字、链接等不被误翻译：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
@@ -5268,7 +5268,7 @@
 <hr />
 <h2 id="_6">📱 移动端适配<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <h3 id="1_4">1. 响应式布局<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CSS</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
@@ -5296,7 +5296,7 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="2_4">2. 触摸友好设计<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h3>
 <p>确保语言切换按钮在移动设备上易于点击：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CSS</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
 <span class="normal"><a href="#__codelineno-14-2">2</a></span>
 <span class="normal"><a href="#__codelineno-14-3">3</a></span>
 <span class="normal"><a href="#__codelineno-14-4">4</a></span>

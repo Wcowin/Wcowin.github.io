@@ -62,7 +62,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -4263,7 +4263,7 @@
 <span class="arithmatex">\(\gcd(48, 18) = \gcd(18, 12)\)</span>
 $ = \gcd(12, 6) = \gcd(6, 0) = 6$</p>
 <p><strong>伪代码：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
 <span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
@@ -4283,7 +4283,7 @@ $ = \gcd(12, 6) = \gcd(6, 0) = 6$</p>
 <p><strong>递推关系：</strong>
 若 <span class="arithmatex">\(b \neq 0\)</span>，则 <span class="arithmatex">\(ax + by = bx' + (a \bmod b)y'\)</span>，可递归求解。</p>
 <p><strong>伪代码：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
 <span class="normal"><a href="#__codelineno-1-4">4</a></span>
@@ -4350,7 +4350,7 @@ $ = \gcd(12, 6) = \gcd(6, 0) = 6$</p>
 <li><strong>欧拉筛法</strong>：每个合数只被其最小质因子筛去一次，时间复杂度 <span class="arithmatex">\(O(n)\)</span>。</li>
 </ul>
 <p><strong>埃氏筛伪代码：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
 <span class="normal"><a href="#__codelineno-2-4">4</a></span>
@@ -4365,7 +4365,7 @@ $ = \gcd(12, 6) = \gcd(6, 0) = 6$</p>
 <a id="__codelineno-2-7" name="__codelineno-2-7"></a>            <span class="n">is_prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
 </code></pre></div></td></tr></table></div></p>
 <p><strong>欧拉筛伪代码：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
@@ -4404,7 +4404,7 @@ $ = \gcd(12, 6) = \gcd(6, 0) = 6$</p>
 <li>结果：<span class="arithmatex">\(7^{222} \bmod 13 = 9\)</span>。</li>
 </ol>
 <p><strong>代码实现：</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
