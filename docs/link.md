@@ -913,18 +913,29 @@ hide_comment: true
       <a href="https://vindlog.com" target="_blank">Vindlog</a> 
       </div> 
       <div class="info">
-      Vindlog的个人网站
+      真心走过每个瞬间 - 摄影和乐器爱好分享
       </div> 
      </div> 
     </div>
-<div class="card"> 
+    <div class="card"> 
      <img class="ava" src="https://cn.cravatar.com/avatar/868740183b995d2707e307ce0a89633a?s=200" /> 
      <div class="card-header"> 
       <div> 
       <a href="https://feng.pub" target="_blank">Feng</a> 
       </div> 
       <div class="info">
-      Feng的个人网站
+      沧海一粟，微亮而渺小。
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://www.zeruo.net/wp-content/uploads/2025/07/1753778958-IMG_7458.jpeg" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://www.zeruo.net/" target="_blank">Zeruo</a> 
+      </div> 
+      <div class="info">
+      酌贪泉而觉爽，处涸辙以犹欢。
       </div> 
      </div> 
     </div>

@@ -58,6 +58,9 @@ mkdocs serve          # 本地预览，支持热更新
 
 ## 常用资源
 
+<!-- 
+https://cdn.jsdelivr.net/gh/Wcowin/picx-images-hosting@master/IMG/Cravatar.jpg.1zihar9day.png -->
+
 - [jsDelivr CDN 加速 GitHub 文件](https://www.jsdelivr.com/github)
 - [MkDocs Material 官方文档](https://squidfunk.github.io/mkdocs-material/)
 - [MkDocs 插件列表](https://github.com/mkdocs/catalog)

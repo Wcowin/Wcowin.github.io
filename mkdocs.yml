@@ -546,7 +546,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format 
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.arithmatex:  
       generic: true
   - toc:
@@ -569,8 +569,10 @@ markdown_extensions:
   
 extra_javascript:
   # 智谱清言翻译系统
-  - javascripts/glm-config.js
-  - javascripts/glm-translate.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js
+  # - javascripts/glm-config.js
+  # - javascripts/glm-translate.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js
   # - javascripts/translate-config.js
   # - javascripts/highlight-search.js
   # - docs/javascripts/translate.js
