@@ -556,7 +556,7 @@ markdown_extensions:
   - pymdownx.highlight: # 代码块高亮
       anchor_linenums: true
       linenums: true # 显示行号
-      # auto_title: true # 显示编程语言名称
+      auto_title: true # 显示编程语言名称
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -626,7 +626,8 @@ extra_css:
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
-  - about/sty/portfolio.css
+  # - about/sty/portfolio.css
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css
 
 watch: #监听文件变动自动刷新
   - docs

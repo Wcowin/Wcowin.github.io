@@ -928,17 +928,29 @@ hide_comment: true
       </div> 
      </div> 
     </div>
-    <div class="card"> 
-     <img class="ava" src="https://www.zeruo.net/wp-content/uploads/2025/07/1753778958-IMG_7458.jpeg" /> 
-     <div class="card-header"> 
-      <div> 
-      <a href="https://www.zeruo.net/" target="_blank">Zeruo</a> 
+      <div class="card"> 
+      <img class="ava" src="https://www.zeruo.net/wp-content/uploads/2025/07/1753778958-IMG_7458.jpeg" /> 
+      <div class="card-header"> 
+        <div> 
+        <a href="https://www.zeruo.net/" target="_blank">Zeruo</a> 
+        </div> 
+        <div class="info">
+        酌贪泉而觉爽，处涸辙以犹欢。
+        </div> 
       </div> 
-      <div class="info">
-      酌贪泉而觉爽，处涸辙以犹欢。
-      </div> 
-     </div> 
-    </div>
+      </div>
+      <div class="card">
+      <img class="ava" src="https://img.hestudio.net/img/2022/12/13/639872e717350.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.hestudio.net/" target="_blank">heStudio</a>
+        </div>
+        <div class="info">
+          Welcome to the pit!
+        </div>
+      </div>
+      </div>
+
 
 
 
