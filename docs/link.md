@@ -950,7 +950,17 @@ hide_comment: true
         </div>
       </div>
       </div>
-
+    <div class="card"> 
+    <img class="ava" src="https://www.nodeseek.com/static/image/favicon/android-chrome-192x192.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://www.nodeseek.com/" target="_blank">NodeSeek</a> 
+      </div> 
+      <div class="info">
+      旨在为主机爱好者打造高品质社区
+      </div> 
+    </div> 
+    </div>
 
 
 
