@@ -39,7 +39,7 @@ $ tree -a
 ├── .github
 │   ├── .DS_Store
 │   └── workflows
-│       └── PublishMySite.yml
+│       └── ci.yml
 ├── docs
 │   └── index.md
 │   └──overrides
