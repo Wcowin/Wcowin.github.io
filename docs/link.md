@@ -1005,7 +1005,17 @@ hide_comment: true
         </div>
       </div>
     </div>  
-
+    <div class="card">
+      <img class="ava" src="https://www.biibii.cn/usr/uploads/2025/07/3155658037.webp" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.biibii.cn" target="_blank">BIIBII</a>
+        </div>
+        <div class="info">
+          记录生活中的技术脉搏。
+        </div>
+      </div>
+    </div>
 
 
 
