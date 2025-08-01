@@ -961,6 +961,19 @@ hide_comment: true
       </div> 
     </div> 
     </div>
+    <div class="card">
+      <img class="ava" src="https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.vvhan.com/" target="_blank">韩小韩博客</a>
+        </div>
+        <div class="info">
+          运气是计划之外的东西.
+        </div>
+      </div>
+    </div>
+
+
 
 
 
