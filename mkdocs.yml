@@ -103,8 +103,8 @@ nav:
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化/补充:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
-        - 为MKdocs添加多语言翻译: blog/websitebeauty/mkdocs-translate.md
         - MkDocs文档日期插件: blog/websitebeauty/mkdocs-document-dates.md
+        - 为MKdocs添加多语言翻译: blog/websitebeauty/mkdocs-translate.md
         - 为网站添加Google广告: blog/websitebeauty/GoogleAD.md
         - 添加相关推荐文章: blog/websitebeauty/recommend.md
         - MkDocs文档AI摘要: blog/websitebeauty/Mkdocs-AI-Summary.md
