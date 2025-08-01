@@ -29,6 +29,13 @@ img.twitter { color: #1DA1F2; }
   transform: translateZ(0); /* 强制GPU加速 */
 }
 
+
+/* .md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+} */
+
 /* 自定义提示框图标 */
 :root {
   --md-admonition-icon--pied-piper: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
@@ -66,7 +73,7 @@ img.twitter { color: #1DA1F2; }
 
 .md-typeset .pied-piper1>.admonition-title,
 .md-typeset .pied-piper1>summary {
-  background-color: rgba(238, 243, 254, 1); /* 修复线性渐变为单色 */
+  /* background-color: rgba(238, 243, 254, 1); 修复线性渐变为单色 */
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   height: 45px;

@@ -416,70 +416,9 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  # - document-dates:
-  #     position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
-  #     type: date               # Date type: date  datetime  timeago, default: date
-  #     locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
-  #     date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
-  #     time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
-  #     exclude:                 # List of excluded files
-  #       - index.md
-  #       - tag.md
-  #       - waline.md
-  #       - blog/posts/*
-  #       - blog/index.md
-  #       - link.md
-  #       - blog/Mkdocs/linktech.md
-  #       - about/*            # Exclude all files in private directory, including subdirectories
-  #     show_author: true       # Show author or not, default: true
-  # - statistics
-  # - git-authors
-  # - rss:
-  #     match_path: "blog/.*"  # 只包含博客文章
-  #     date_from_meta:
-  #       as_creation: "date"
-  #       as_update: "update"
-  #       datetime_format: "%Y-%m-%d"
-  #     categories:
-  #       - tags
-  #       - categories
-  #     comments_path: "#__comments"
-  #     image: https://wcowin.work/assets/avatar.jpg
-  #     feed_ttl: 1440  # 24小时
-  #     length: 20  # 最新20篇文章
-  #     pretty_print: true
-  #     rss_description: "Wcowin 的个人博客 - 技术分享、学习笔记、生活随笔"
-  #     rss_name: "Wcowin's Blog RSS Feed"
-  #     url_parameters:
-  #       utm_source: "rss"
-  #       utm_medium: "feed"
-  # - social
   - search:
       enabled: !ENV [CI, false]
       separator: '[\s\u200b\-\u3000\u3001\u3002\uFF0C\uFF0E\uFF1F\uFF01\uFF1B]+'
-      lang:
-        - zh
-        - en
-
-  # - offline
-  # - glightbox:
-  #     enabled: !ENV [glightbox, false]
-  #     touchNavigation: true
-  #     loop: false
-  #     effect: fade
-  #     slide_effect: slide
-  #     width: 100%
-  #     height: auto
-  #     zoomable: true
-  #     draggable: true
-  #     skip_classes:
-  #       - custom-skip-class-name
-  #     auto_caption: false
-  #     caption_position: bottom
-  #     background: white
-  #     shadow: true
-  #     manual: false
-  # - open-in-new-tab
   # - git-revision-date-localized:
   #     enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
   #     type: iso_date
@@ -518,7 +457,63 @@ plugins:
       pagination_url_format: "page/{page}"
       # authors_file: "{blog}/.authors.yml"  #作者信息
   - tags
+  - document-dates:
+      position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
+      type: date               # Date type: date  datetime  timeago, default: date
+      locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
+      date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
+      time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
+      exclude:                 # List of excluded files
+        - index.md
+        - tag.md
+        - waline.md
+        - blog/posts/*
+        - blog/index.md
+        - link.md
+        - blog/Mkdocs/linktech.md
+        - about/*            # Exclude all files in private directory, including subdirectories
+      show_author: true       # Show author or not, default: true
+  # - statistics
+  # - git-authors
+  # - rss:
+  #     match_path: "blog/.*"  # 只包含博客文章
+  #     date_from_meta:
+  #       as_creation: "date"
+  #       as_update: "update"
+  #       datetime_format: "%Y-%m-%d"
+  #     categories:
+  #       - tags
+  #       - categories
+  #     comments_path: "#__comments"
+  #     image: https://wcowin.work/assets/avatar.jpg
+  #     feed_ttl: 1440  # 24小时
+  #     length: 20  # 最新20篇文章
+  #     pretty_print: true
+  #     rss_description: "Wcowin 的个人博客 - 技术分享、学习笔记、生活随笔"
+  #     rss_name: "Wcowin's Blog RSS Feed"
+  #     url_parameters:
+  #       utm_source: "rss"
+  #       utm_medium: "feed"
 
+  # - offline
+  # - glightbox:
+  #     enabled: !ENV [glightbox, false]
+  #     touchNavigation: true
+  #     loop: false
+  #     effect: fade
+  #     slide_effect: slide
+  #     width: 100%
+  #     height: auto
+  #     zoomable: true
+  #     draggable: true
+  #     skip_classes:
+  #       - custom-skip-class-name
+  #     auto_caption: false
+  #     caption_position: bottom
+  #     background: white
+  #     shadow: true
+  #     manual: false
+  # - open-in-new-tab
 
 markdown_extensions:
   - abbr
@@ -595,9 +590,9 @@ extra_javascript:
 
 extra_css:
   # - stylesheets/highlight-search.css
-  # - stylesheets/extra.css
+  - stylesheets/extra.css
   - stylesheets/extra2.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
   # - stylesheets/link.css  #友链
   # - stylesheets/optimize.css
   # - stylesheets/poem.css
