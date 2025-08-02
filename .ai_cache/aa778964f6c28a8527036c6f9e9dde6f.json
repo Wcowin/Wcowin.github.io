@@ -1,0 +1,8 @@
+{
+  "summary": "Lighthouse作为浏览器内置工具，可快速评估网站性能，通过F12进入分析页面即可使用，助力优化网站加载速度和用户体验。",
+  "service": "glm",
+  "page_title": "利用Lighthouse测试网站性能",
+  "timestamp": "2025-08-01T19:31:24.737353",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

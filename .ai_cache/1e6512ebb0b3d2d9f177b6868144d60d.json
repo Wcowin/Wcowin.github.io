@@ -1,8 +1,0 @@
-{
-  "summary": "通过终端输入特定指令，实现Mac Dock栏仅显示当前运行的应用程序，方便用户管理多任务。",
-  "service": "glm",
-  "page_title": "小小Mac技巧",
-  "timestamp": "2025-07-09T00:02:55.557483",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

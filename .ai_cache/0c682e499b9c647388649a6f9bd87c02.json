@@ -1,8 +1,0 @@
-{
-  "summary": "pip是Python包管理工具，仅限命令行使用，可快速查找命令并安装包。支持指定路径安装，并更新包依赖。",
-  "service": "glm",
-  "page_title": "PIP",
-  "timestamp": "2025-07-09T00:03:24.782712",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

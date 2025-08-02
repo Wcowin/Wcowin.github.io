@@ -32,11 +32,11 @@ class AISummaryGenerator:
             # 是否启用缓存功能（默认启用）
             'enabled': os.getenv('AI_SUMMARY_CACHE_ENABLED', 'true').lower() == 'true',
             
-            # 缓存过期天数（默认7天）
-            'expire_days': int(os.getenv('AI_SUMMARY_CACHE_EXPIRE_DAYS', '3000')),
+            # 缓存过期天数（默认30天）
+            'expire_days': int(os.getenv('AI_SUMMARY_CACHE_EXPIRE_DAYS', '30')),
             
-            # 是否自动清理过期缓存（默认启用）
-            'auto_clean': os.getenv('AI_SUMMARY_CACHE_AUTO_CLEAN', 'true').lower() == 'true'
+            # 是否自动清理过期缓存（默认禁用）
+            'auto_clean': os.getenv('AI_SUMMARY_CACHE_AUTO_CLEAN', 'false').lower() == 'true'
         }
         
         # 🚀 环境配置 - 清晰的环境控制
@@ -49,7 +49,7 @@ class AISummaryGenerator:
             'ci_enabled': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
             
             # 本地环境是否启用AI摘要（默认启用）
-            'local_enabled': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',
+            'local_enabled': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',
             
             # CI环境是否仅使用缓存（不用管，只在ci.yml中设置有效。默认关闭，即允许生成新摘要）
             'ci_cache_only': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',

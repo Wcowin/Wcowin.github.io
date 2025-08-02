@@ -630,9 +630,9 @@ watch: #监听文件变动自动刷新
   - docs/overrides
 
 hooks:
-  - docs/overrides/hooks/socialmedia.py
+  # - docs/overrides/hooks/socialmedia.py
   - docs/overrides/hooks/reading_time.py
-  # - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
+  - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
   - docs/overrides/hooks/related_posts.py
   # - docs/overrides/hooks/toc_optimizer.py
   # - docs/overrides/hooks/last_updated.py

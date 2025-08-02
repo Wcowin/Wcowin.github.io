@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了为 MkDocs 网站添加基于 JavaScript 的客户端多语言翻译功能，支持实时切换和多种语言，优化样式及响应式设计，实现步骤包括引入翻译库和配置翻译参数。",
+  "service": "glm",
+  "page_title": "为MKdocs添加多语言翻译",
+  "timestamp": "2025-08-01T19:30:41.789729",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

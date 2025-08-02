@@ -1,0 +1,8 @@
+{
+  "summary": "Mkdocs博客插件轻松集成，仅需添加配置行至mkdocs.yml，配置作者信息于.authors.yml，即可快速搭建个人博客。",
+  "service": "glm",
+  "page_title": "网站添加Mkdocs博客",
+  "timestamp": "2025-08-01T19:29:15.750207",
+  "language": "zh",
+  "cache_version": "1.3.0"
+}

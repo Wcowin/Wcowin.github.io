@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了如何利用JavaScript和Canvas API实现网页背景特效，包括雪花、樱花和粒子效果，通过设置LocalStorage控制特效显示，适用于特定页面增强用户体验。",
-  "service": "glm",
-  "page_title": "背景特效",
-  "timestamp": "2025-07-24T14:16:49.713437",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}
