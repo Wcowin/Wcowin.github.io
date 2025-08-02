@@ -103,6 +103,7 @@ nav:
         - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化/补充:
         - Wcowin for MkDocs主题: blog/websitebeauty/mkdocs-wcowin1.md
+        - 为MKdocs添加AI摘要(Plus版本): blog/websitebeauty/MkDocs-AI-Summary-plus.md
         - MkDocs文档日期插件: blog/websitebeauty/mkdocs-document-dates.md
         - 为MKdocs添加多语言翻译: blog/websitebeauty/mkdocs-translate.md
         - 为网站添加Google广告: blog/websitebeauty/GoogleAD.md
@@ -416,6 +417,26 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
+  - ai-summary:
+      ai_service: "glm"  # or "openai", "gemini", "glm"
+      summary_language: "zh"  # or "en"
+      cache_enabled: true
+      local_enabled: false
+      cache_expire_days: 30
+      debug: true # 是否显示调试信息（默认：false）
+      enabled_folders:
+        - blog/    # 添加blog文件夹
+        - develop/ # 添加develop文件夹
+        # - docs/    # 保留docs文件夹
+      exclude_patterns:
+        - about/
+        - index.md
+        - blog/indexblog.md
+        - tag.md
+        - blog/posts/update.md
+        - blog/category/
+        - blog/posts/
+        - blog/archive/
   - search:
       enabled: !ENV [CI, false]
       separator: '[\s\u200b\-\u3000\u3001\u3002\uFF0C\uFF0E\uFF1F\uFF01\uFF1B]+'
@@ -458,6 +479,7 @@ plugins:
       # authors_file: "{blog}/.authors.yml"  #作者信息
   - tags
   - document-dates:
+      enabled: !ENV [CI, false]  
       position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
       type: date               # Date type: date  datetime  timeago, default: date
       locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
@@ -632,7 +654,7 @@ watch: #监听文件变动自动刷新
 hooks:
   # - docs/overrides/hooks/socialmedia.py
   - docs/overrides/hooks/reading_time.py
-  - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
+  # - docs/overrides/hooks/ai_summary.py  # 添加AI摘要hook
   - docs/overrides/hooks/related_posts.py
   # - docs/overrides/hooks/toc_optimizer.py
   # - docs/overrides/hooks/last_updated.py

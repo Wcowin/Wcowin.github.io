@@ -1,0 +1,8 @@
+{
+  "summary": "MkDocs AI Summary是一个集成AI摘要生成和智能阅读统计功能的MkDocs插件。支持多AI服务，自动生成摘要，并具备智能缓存和灵活配置。同时提供智能阅读统计功能，包括字符统计、代码检测和阅读时间估算。支持快速安装和配置，适用于技术文档和博客。",
+  "service": "glm",
+  "page_title": "MkDocs文档AI摘要",
+  "timestamp": "2025-08-02T21:58:23.248915",
+  "cache_version": "1.1.6",
+  "content_hash": "1930ab0a47a963e3600f1fc81b7b5095"
+}

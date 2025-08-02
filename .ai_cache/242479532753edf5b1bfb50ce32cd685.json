@@ -1,8 +1,0 @@
-{
-  "summary": "MkDocs支持自定义页脚，通过在`docs/overrides/partials/footer.html`中添加代码实现，适用于个性化文档设置。",
-  "service": "glm",
-  "page_title": "页脚设置",
-  "timestamp": "2025-08-01T19:30:23.754167",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

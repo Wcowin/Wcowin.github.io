@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了加速MkDocs网站访问的心得，包括优化图片格式、使用CDN加速静态资源、调整本地渲染配置等，并推荐了freeconvert、jsDelivr CDN和Lighthouse等工具。",
+  "service": "glm",
+  "page_title": "加速网站访问的一些心得",
+  "timestamp": "2025-08-02T21:58:29.336527",
+  "cache_version": "1.1.6",
+  "content_hash": "6f60e9dee47e0524e1a27d42a11c6bcb"
+}

@@ -94,6 +94,8 @@ jobs:
       - run: pip install pymdown-extensions
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
+
+      - run: pip install mkdocs-ai-summary-wcowin
       - name: Deploy with AI Summary
         env:
           # AI摘要开关控制
@@ -106,7 +108,6 @@ jobs:
           # AI_SUMMARY_LOCAL_ENABLED: 'false'       # 本地部署环境禁用AI摘要 (true=本地开发时也生成摘要)（不需要管这条）
           # API密钥配置
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: mkdocs gh-deploy --force
       

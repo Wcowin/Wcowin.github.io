@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了为MKdocs页面添加相关文章推荐的方法。需在`docs/overrides/hooks/`下新建文件，根据仓库情况配置，实现推荐功能。",
+  "service": "glm",
+  "page_title": "添加相关推荐文章",
+  "timestamp": "2025-08-02T21:58:55.600049",
+  "cache_version": "1.1.6",
+  "content_hash": "4cbcf0ab288a3ecbef485970c9faec23"
+}

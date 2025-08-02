@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了背景特效的实现方法。通过判断当前页面，设置LocalStorage标志，加载相应脚本，实现雪花、樱花、线条、粒子等背景效果。",
+  "service": "glm",
+  "page_title": "背景特效",
+  "timestamp": "2025-08-02T21:58:30.727587",
+  "cache_version": "1.1.6",
+  "content_hash": "a5e9aa091f23ade0a1c6394328abf628"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "oh-my-zsh更新时出现特定提示，原因是修改了git文件。可按指定方法更新，解决此问题。",
+  "service": "glm",
+  "page_title": "oh-my-zsh 更新",
+  "timestamp": "2025-08-02T21:58:03.402666",
+  "cache_version": "1.1.6",
+  "content_hash": "34ef7e64af0b87702b6a5c3ab6d4db28"
+}

@@ -1,8 +1,0 @@
-{
-  "summary": "将Python脚本转换为.exe可执行程序，实现跨平台运行，无需安装Python环境，方便分享和部署。",
-  "service": "glm",
-  "page_title": "将Python文件.py打包成.exe可执行程序",
-  "timestamp": "2025-08-01T19:29:34.012047",
-  "language": "zh",
-  "cache_version": "1.3.0"
-}

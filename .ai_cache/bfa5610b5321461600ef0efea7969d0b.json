@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了如何使用Lighthouse测试网站性能。在谷歌或Edge浏览器中，通过按F12打开开发者工具，点击Lighthouse进行分析，即可评估网站性能。",
+  "service": "glm",
+  "page_title": "利用Lighthouse测试网站性能",
+  "timestamp": "2025-08-02T21:59:31.474980",
+  "cache_version": "1.1.6",
+  "content_hash": "d10e979fac1d8261fb3779a9446d5694"
+}
