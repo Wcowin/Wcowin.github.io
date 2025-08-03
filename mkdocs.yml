@@ -479,7 +479,7 @@ plugins:
       # authors_file: "{blog}/.authors.yml"  #作者信息
   - tags
   - document-dates:
-      enabled: !ENV [CI, false]  
+      # enabled: !ENV [CI, false]  
       position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
       type: date               # Date type: date  datetime  timeago, default: date
       locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
@@ -612,9 +612,9 @@ extra_javascript:
 
 extra_css:
   # - stylesheets/highlight-search.css
-  - stylesheets/extra.css
+  # - stylesheets/extra.css
   - stylesheets/extra2.css
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
   # - stylesheets/link.css  #友链
   # - stylesheets/optimize.css
   # - stylesheets/poem.css
