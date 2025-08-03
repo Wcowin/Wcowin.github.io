@@ -1,0 +1,5489 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="知足且上进，温柔且坚定">
+      
+      
+        <meta name="author" content="王科文(Wcowin)">
+      
+      
+        <link rel="canonical" href="http://wcowin.work/blog/Cryptography/Groupcipher/">
+      
+      
+        <link rel="prev" href="../Symmetriccryptography/">
+      
+      
+        <link rel="next" href="../../Mkdocs/MIT/">
+      
+      
+      <link rel="icon" href="https://i.stardots.io/wcowin/1750090373988.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>分组密码 - Wcowin's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra2.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/backdrop.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-29HZMNR0KG"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-29HZMNR0KG",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-29HZMNR0KG",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Wcowin&#39;s Blog" class="md-header__button md-logo" aria-label="Wcowin's Blog" data-md-component="logo">
+      
+  <img src="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wcowin's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              分组密码
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="关闭自动模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="关闭自动模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M160 0c17.7 0 32 14.3 32 32v32h128c17.7 0 32 14.3 32 32s-14.3 32-32 32h-9.6l-8.4 23.1c-16.4 45.2-41.1 86.5-72.2 122 14.2 8.8 29 16.6 44.4 23.5l50.4 22.4 62.2-140c5.1-11.6 16.6-19 29.2-19s24.1 7.4 29.2 19l128 288c7.2 16.2-.1 35.1-16.2 42.2s-35.1-.1-42.2-16.2l-20-45H337.3l-20 45c-7.2 16.2-26.1 23.4-42.2 16.2s-23.4-26.1-16.2-42.2l39.8-89.5-50.4-22.4c-23-10.2-45-22.4-65.8-36.4-21.3 17.2-44.6 32.2-69.5 44.7l-34.7 17.2c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9l34.5-17.3c16.3-8.2 31.8-17.7 46.4-28.3-13.8-12.7-26.8-26.4-38.9-40.9l-10.1-12.2c-11.3-13.6-9.5-33.8 4.1-45.1s33.8-9.5 45.1 4.1l10.2 12.2c11.5 13.9 24.1 26.8 37.4 38.7 27.5-30.4 49.2-66.1 63.5-105.4l.5-1.2H32.1C14.3 128 0 113.7 0 96s14.3-32 32-32h96V32c0-17.7 14.3-32 32-32m256 270.8L365.7 384h100.6z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="javascript:translateTo('chinese_simplified');" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translateTo('english');" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="javascript:translateTo('japanese');" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Wcowin/Wcowin.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Wcowin.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../indexblog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  技术
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../develop/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  开发
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../relax/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  闲聊
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../trip/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  旅行
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../tag/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  标签
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../waline/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  留言板
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../link/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  朋友
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  博客
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../about/geren/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  关于
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://wcowin.work/Mkdocs-Wcowin/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Mkdocs中文教程
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://www.travellings.cn/go.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  开往
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Wcowin&#39;s Blog" class="md-nav__button md-logo" aria-label="Wcowin's Blog" data-md-component="logo">
+      
+  <img src="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" alt="logo">
+
+    </a>
+    Wcowin's Blog
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Wcowin/Wcowin.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Wcowin.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    技术
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            技术
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indexblog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    导览
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temp-email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    临时邮箱是什么？
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webplay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    好用/好玩网站分享
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/comkdocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    基于Mkdocs主题的站点
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/ttq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    甜甜圈🍩代码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../macsoft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mac/windows软件网站汇总
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yuque/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    语雀
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    密码学
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_8" id="__nav_1_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            密码学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Numbertheory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数论基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    密码学引言
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Symmetriccryptography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    流密码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    分组密码
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    分组密码
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 分组密码的基本原理及发展现状
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 分组密码的基本原理及发展现状">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      发展现状
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-feistel-des" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Feistel 结构和 DES 算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Feistel 结构和 DES 算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feistel-feistel-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feistel 结构 (Feistel Network)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#des-data-encryption-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      DES 算法 (Data Encryption Standard)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-aes-advanced-encryption-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 AES 算法 (Advanced Encryption Standard)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-modes-of-operation-for-block-ciphers" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0-electronic-codebook-mode-ecb-" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. 电子密码本模式 (Electronic Codebook Mode, ECB) - 作为对比基线
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-cipher-block-chaining-mode-cbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 密文分组链接模式 (Cipher Block Chaining Mode, CBC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-counter-mode-ctr" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 计数器模式 (Counter Mode, CTR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cipher-feedback-mode-cfb" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 密文反馈模式 (Cipher Feedback Mode, CFB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-output-feedback-mode-ofb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 输出反馈模式 (Output Feedback Mode, OFB)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    MKdocs教程
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            MKdocs教程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/MIT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MIT许可声明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/mkfirst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0.Mkdocs教程前言
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/mkdocs1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.利用Mkdocs部署静态网页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/mkdocs2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.Mkdocs配置说明(mkdocs.yml)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/mkdocs3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.解决Github Pages部署mkdocs自定义域名失效的问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/mkdocsblog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    网站添加Mkdocs博客
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mkdocs美化/补充
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            Mkdocs美化/补充
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/mkdocs-wcowin1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wcowin for MkDocs主题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/MkDocs-AI-Summary-plus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    为MKdocs添加AI摘要(Plus版本)
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/mkdocs-document-dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs文档日期插件
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/mkdocs-translate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    为MKdocs添加多语言翻译
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/GoogleAD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    为网站添加Google广告
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/recommend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加相关推荐文章
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/Mkdocs-AI-Summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs文档AI摘要
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/reading_time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加阅读信息统计
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="最近添加">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../develop/regex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    正则表达式基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/linktech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何给MKdocs添加友链
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/Customdomain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何自定义域名
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/yuanjiaohua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    网页圆角化设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/mkcomments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加评论系统(giscus为例)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/header/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加顶部公告栏
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/webtalknow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加在线聊天
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/mkdocsfont/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    修改网站字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/shubiao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JS实现鼠标样式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/backgroud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    背景特效
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/mkpdf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    嵌入PDF文件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/Relativeaddress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    相对地址的一些问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/404/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加404页面
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    为MKdocs添加文章修订时间戳
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/footer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    页脚设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/accelerate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    加速网站访问的一些心得
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_11" id="__nav_1_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    技术分享
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            技术分享
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/win/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Win11镜像下载/KMS激活
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--deprecated" title="已弃用">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/jiaoben/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    实用脚本分享
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/tuchuang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    搭建个人图床
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/ohmuzsh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    oh-my-zsh 更新
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/googletranslate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    解决谷歌翻译用不了的问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/aixin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    爱心代码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/matlabrose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    用Matlab画玫瑰百合花
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/kexue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    科学上网
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique%20sharing/jisuanjibiannianshi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    计算机编年史
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_12" id="__nav_1_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    学术
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            学术
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Academic/LaTeX/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LaTeX常用符号整理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://mirrors.sjtug.sjtu.edu.cn/ctan/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    一份简短的关于LATEX安装的介绍
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Academic/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    希腊字母总结
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Academic/math/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Math
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../Academic/Math/14/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    数学竞赛
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Academic/diancichang.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    电磁场期末复习索引
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Academic/ddiancichang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    电磁场期末公式总结(手写)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_13" id="__nav_1_13_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mac
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            Mac
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://mp.weixin.qq.com/s/qjSx09tqNq1KfVug2WtQFg" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mac电脑安装软件报错解决办法汇总
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/Pd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PD虚拟机
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/sunhuai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    提示 「“XXX”已损坏,无法打开。 您应该将它移到废纸篓。」「打不开 xxx,因为它来自身份不明的开发者」解决方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/shanchu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Macbook启动台顽固应用图标删除方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/homebrew/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Homebrew国内如何自动安装(国内地址)(Mac & Linux)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/jiasugithub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    mac 无法访问 github 的解决办法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/Macesc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mac的esc键失效的解决方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/Launchpad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    启动台图标顺序错乱怎么办
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/jietu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mac小技巧:去除系统截图名的日期后缀
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/xjiq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    小小Mac技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/maccd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mac隐藏彩蛋
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mac/kjj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mac 键盘快捷键
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_14" id="__nav_1_14_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    iPhone
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_14">
+            <span class="md-nav__icon md-icon"></span>
+            iPhone
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iphone/iphoneduozhanghao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iphone多账号如何不频繁登录,双重认证
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iphone/iphonexianmian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    苹果iphone /iOS 限免网站合集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iphone/iphonequchukaiping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    苹果手机如何去除开屏广告
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_15" id="__nav_1_15_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    WIN
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_15">
+            <span class="md-nav__icon md-icon"></span>
+            WIN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Win/360/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    彻底卸载360安全卫士的方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Win/edgexz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    三步卸载 Microsoft Edge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Win/winkjj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows快捷键
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_16" id="__nav_1_16_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_16">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../py/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    将Python文件.py打包成.exe可执行程序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../py/pip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PIP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../develop/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    开发
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../relax/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    闲聊
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../trip/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    旅行
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    标签
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../waline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    留言板
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../link/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    朋友
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    博客
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../about/geren/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    关于
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://wcowin.work/Mkdocs-Wcowin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mkdocs中文教程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.travellings.cn/go.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开往
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 分组密码的基本原理及发展现状
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 分组密码的基本原理及发展现状">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      发展现状
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-feistel-des" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Feistel 结构和 DES 算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Feistel 结构和 DES 算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feistel-feistel-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feistel 结构 (Feistel Network)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#des-data-encryption-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      DES 算法 (Data Encryption Standard)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-aes-advanced-encryption-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 AES 算法 (Advanced Encryption Standard)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-modes-of-operation-for-block-ciphers" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0-electronic-codebook-mode-ecb-" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. 电子密码本模式 (Electronic Codebook Mode, ECB) - 作为对比基线
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-cipher-block-chaining-mode-cbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 密文分组链接模式 (Cipher Block Chaining Mode, CBC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-counter-mode-ctr" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 计数器模式 (Counter Mode, CTR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cipher-feedback-mode-cfb" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 密文反馈模式 (Cipher Feedback Mode, CFB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-output-feedback-mode-ofb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 输出反馈模式 (Output Feedback Mode, OFB)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <a href="../../../tag/#tag:密码学" class="md-tag">密码学</a>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="3">第3章 分组密码<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">📖 阅读信息</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>17</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>6732</strong></p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">⚡ AI摘要 (GLM)</p>
+<p>分组密码是对称加密体制的重要类别，将明文分割成固定数据块，使用密钥独立加密。其设计原则包括混淆和扩散，通过代换和置换操作实现。发展历程包括DES和AES等标准。AES是目前应用最广泛的对称加密标准，但新挑战不断出现。</p>
+</div>
+<h2 id="31">3.1 分组密码的基本原理及发展现状<a class="headerlink" href="#31" title="Permanent link">&para;</a></h2>
+<h3 id="_1">基本原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p><strong>分组密码 (Block Cipher)</strong> 是对称密码体制中的一个重要类别。与流密码逐比特或逐字节处理明文不同，分组密码将明文消息分割成固定长度的数据块 (blocks)，然后使用相同的密钥对每个数据块独立地进行加密和解密操作。</p>
+<p><strong>核心概念：</strong></p>
+<ol>
+<li><strong>数据块 (Block)：</strong> 明文和密文都被分割成固定大小的单元，称为数据块。典型的数据块大小有 64 比特 (如 DES、3DES)、128 比特 (如 AES)。如果最后一段明文不足一个完整块，通常需要进行<strong>填充 (Padding)</strong>。</li>
+<li><strong>密钥 (Key)：</strong> 一个固定长度的比特序列，用于控制加密和解密过程。密钥的长度（密钥空间大小）是衡量密码强度的一个重要指标。</li>
+<li><strong>轮函数 (Round Function)：</strong> 分组密码的加密过程通常不是一步完成，而是通过多次迭代相同的或相似的变换函数来完成，每一次迭代称为一<strong>轮 (Round)</strong>。每一轮都使用一个从主密钥派生出来的<strong>轮密钥 (Round Key)</strong>。</li>
+<li><strong>代换 (Substitution)：</strong> 将输入数据块中的一部分（例如几个比特）替换为另一部分。这通常通过<strong>S盒 (Substitution Box)</strong> 实现，S盒是非线性组件，用于引入混淆。</li>
+<li><strong>置换 (Permutation)：</strong> 将输入数据块中的比特位置进行重新排列。这通常通过<strong>P盒 (Permutation Box)</strong> 实现，P盒是线性组件，用于引入扩散。</li>
+</ol>
+<p><strong>香农 (Shannon) 的设计原则：</strong></p>
+<p>现代分组密码的设计深受克劳德·香农提出的两个基本原则的影响，旨在抵抗统计分析：</p>
+<ul>
+<li><strong>混淆 (Confusion)：</strong> 使密文与密钥之间的统计关系尽可能复杂，使得攻击者即使拥有大量密文和明文，也难以从中推断出密钥。主要通过代换操作（如S盒）来实现。</li>
+<li><strong>扩散 (Diffusion)：</strong> 将明文的统计特性散布到尽可能多的密文中，使得明文中的一位改变会导致密文中多位（理想情况下约一半）的改变，并且密文中的一位也依赖于明文中的多位。主要通过置换操作（如P盒或更复杂的线性变换）来实现。重复多轮的代换和置换操作可以有效地达到混淆和扩散的目的。</li>
+</ul>
+<p><strong>理想分组密码 (Ideal Block Cipher)：</strong></p>
+<p>一个理想的 <span class="arithmatex">\(n\)</span> 比特分组密码可以被看作是一个巨大的、固定的、可逆的代换表，其中每个可能的 <span class="arithmatex">\(n\)</span> 比特明文块都唯一地映射到一个 <span class="arithmatex">\(n\)</span> 比特密文块，具体映射关系由密钥决定。对于一个 <span class="arithmatex">\(n\)</span> 比特的块，有 <span class="arithmatex">\(2^n!\)</span> 种可能的这样的映射。密钥的作用就是从这些映射中选择一个。然而，实际构造这样一个巨大的密码本是不现实的，因此实际的分组密码通过轮函数迭代来逼近这种理想特性。</p>
+<h3 id="_2">发展现状<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>分组密码的发展经历了几个重要阶段：</p>
+<ol>
+<li><strong>早期阶段与 DES (Data Encryption Standard)：</strong></li>
+<li>1970年代，IBM 设计了 Lucifer 算法，后被美国国家标准局 (NBS，现在的 NIST) 采纳并修改为 DES。</li>
+<li>DES 是第一个被广泛应用的商业级分组密码标准，块大小为64位，密钥长度为56位（实际输入64位，但8位为奇偶校验位）。它采用了<strong>Feistel结构</strong>。</li>
+<li>
+<p>由于其56位密钥长度在计算能力飞速发展的今天已不足以抵抗暴力破解，DES 已不再被认为是安全的（尽管 3DES 仍在某些传统系统中使用）。</p>
+</li>
+<li>
+<p><strong>AES (Advanced Encryption Standard) 的出现：</strong></p>
+</li>
+<li>1990年代末，NIST 发起公开竞赛，旨在征集一个新的、更安全、更高效的分组密码标准来取代 DES。</li>
+<li>2001年，比利时密码学家 Joan Daemen 和 Vincent Rijmen 提交的 <strong>Rijndael 算法</strong>胜出，成为 AES。</li>
+<li>AES 支持128位、192位和256位三种密钥长度，数据块大小固定为128位。它采用<strong>代换-置换网络 (Substitution-Permutation Network, SPN)</strong> 结构。</li>
+<li>
+<p>AES 目前是全球应用最广泛的对称加密标准，被认为是安全的。</p>
+</li>
+<li>
+<p><strong>后AES时代与新挑战：</strong></p>
+</li>
+<li><strong>密码分析的进展：</strong> 尽管 AES 本身仍然安全，但密码分析技术（如线性密码分析、差分密码分析、积分密码分析、不可能差分、中间相遇攻击等）不断发展，对新的密码设计提出了更高的要求。</li>
+<li><strong>轻量级密码 (Lightweight Cryptography)：</strong> 随着物联网 (IoT)、RFID 标签、嵌入式系统等资源受限设备的大量涌现，对能够在计算能力、功耗、存储空间等方面都非常有限的环境下高效运行的密码算法的需求日益增加。NIST 近期也完成了轻量级密码的标准化项目（如 ASCON 算法族）。</li>
+<li><strong>侧信道攻击 (Side-Channel Attacks)：</strong> 这类攻击利用密码算法在物理实现（硬件或软件）过程中的信息泄露（如功耗、电磁辐射、执行时间等）来获取密钥信息，对分组密码的实际部署提出了严峻挑战。对应的防御措施（掩码、隐藏、乱序执行等）是研究热点。</li>
+<li><strong>量子计算的威胁：</strong> 虽然 Grover 算法理论上可以将暴力破解对称密钥的复杂度从 <span class="arithmatex">\(O(2^k)\)</span> 降低到 <span class="arithmatex">\(O(2^{k/2})\)</span>，但对于 AES-256 这样的长密钥分组密码，量子计算的威胁相对较小（仍需 <span class="arithmatex">\(2^{128}\)</span> 量级操作）。然而，对未来更强大的量子计算机的预期，也促使研究者思考后量子时代的对称密码设计，尽管目前主流观点认为现有安全分组密码（如AES）在后量子时代仍是安全的，只需适当增加密钥长度。</li>
+<li><strong>专用算法和新设计理念：</strong> 不断有新的分组密码设计被提出，探索新的结构、新的非线性组件和新的安全证明方法。例如，基于 ARX (Addition-Rotation-XOR) 的设计因其在软件中高效实现而受到关注。</li>
+<li><strong>可证明安全性 (Provable Security)：</strong> 密码设计越来越重视形式化的安全模型和在这些模型下的安全性证明，尽管完全的可证明安全仍然是一个挑战。</li>
+</ol>
+<p>总的来说，分组密码领域仍然是一个活跃的研究领域，不断适应新的应用场景、新的攻击技术和新的计算范式。</p>
+<h2 id="32-feistel-des">3.2 Feistel 结构和 DES 算法<a class="headerlink" href="#32-feistel-des" title="Permanent link">&para;</a></h2>
+<h3 id="feistel-feistel-network">Feistel 结构 (Feistel Network)<a class="headerlink" href="#feistel-feistel-network" title="Permanent link">&para;</a></h3>
+<p>Feistel 结构是一种用于构造分组密码的对称结构，由 Horst Feistel 在 IBM 的 Lucifer 项目中首次使用，并因其在 DES 中的应用而广为人知。其核心思想是将数据块分成左右两半，并通过多轮处理，在每一轮中，一半数据通过一个轮函数 <span class="arithmatex">\(F\)</span> 进行变换，然后与另一半数据进行异或操作。</p>
+<p><strong>Feistel 结构的一轮操作通常如下：</strong></p>
+<p>设 <span class="arithmatex">\(L_i\)</span> 和 <span class="arithmatex">\(R_i\)</span> 分别是第 <span class="arithmatex">\(i\)</span> 轮加密输入的左半部分和右半部分， <span class="arithmatex">\(K_i\)</span> 是第 <span class="arithmatex">\(i\)</span> 轮的轮密钥。</p>
+<ol>
+<li><strong>输入分割：</strong> 将输入的 <span class="arithmatex">\(2w\)</span> 比特数据块分为左右两半，每半 <span class="arithmatex">\(w\)</span> 比特：<span class="arithmatex">\((L_{i-1}, R_{i-1})\)</span>。</li>
+<li><strong>右半部分处理：</strong> 右半部分 <span class="arithmatex">\(R_{i-1}\)</span> 与轮密钥 <span class="arithmatex">\(K_i\)</span> 一起作为轮函数 <span class="arithmatex">\(F\)</span> 的输入，即 <span class="arithmatex">\(F(R_{i-1}, K_i)\)</span>。</li>
+<li><strong>异或操作：</strong> 轮函数 <span class="arithmatex">\(F\)</span> 的输出与左半部分 <span class="arithmatex">\(L_{i-1}\)</span> 进行异或操作：<span class="arithmatex">\(L_i = L_{i-1} \oplus F(R_{i-1}, K_i)\)</span>。</li>
+<li><strong>左右交换 (通常在下一轮之前)：</strong> 新的右半部分直接等于上一轮的右半部分：<span class="arithmatex">\(R_i = R_{i-1}\)</span> (这是经典描述，但更常见的是 <span class="arithmatex">\(L_i = \text{old } L_{i-1} \oplus F(\text{old } R_{i-1}, K_i)\)</span> 和 <span class="arithmatex">\(R_i = \text{old } R_{i-1}\)</span>，然后将 <span class="arithmatex">\((L_i, R_i)\)</span> 传递给下一轮，或者在传递前交换 <span class="arithmatex">\(L_i\)</span> 和 <span class="arithmatex">\(R_i\)</span>)。</li>
+</ol>
+<p>更标准的 Feistel 轮结构描述：</p>
+<div class="arithmatex">\[
+L_i = R_{i-1} \\
+R_i = L_{i-1} \oplus F(R_{i-1}, K_i)
+\]</div>
+<p>经过 <span class="arithmatex">\(n\)</span> 轮迭代后，通常在最后一轮之后不再进行左右交换（或者说，进行一次额外的交换以统一加密和解密的形式）。</p>
+<p><strong>Feistel 结构的优点：</strong></p>
+<ul>
+<li><strong>加密和解密过程相似：</strong> 这是 Feistel 结构最显著的优点。解密过程可以使用与加密完全相同的算法，只需将轮密钥按相反的顺序使用即可。</li>
+<li>对于一轮加密：<span class="arithmatex">\(L_i = R_{i-1}\)</span>, <span class="arithmatex">\(R_i = L_{i-1} \oplus F(R_{i-1}, K_i)\)</span></li>
+<li>要进行解密，从 <span class="arithmatex">\((L_i, R_i)\)</span> 得到 <span class="arithmatex">\((L_{i-1}, R_{i-1})\)</span>：<ul>
+<li><span class="arithmatex">\(R_{i-1} = L_i\)</span></li>
+<li><span class="arithmatex">\(L_{i-1} = R_i \oplus F(R_{i-1}, K_i) = R_i \oplus F(L_i, K_i)\)</span></li>
+</ul>
+</li>
+<li>这意味着轮函数 <span class="arithmatex">\(F\)</span> 不需要是可逆的，大大简化了 <span class="arithmatex">\(F\)</span> 函数的设计。</li>
+<li><strong>灵活性：</strong> 轮函数 <span class="arithmatex">\(F\)</span> 的具体设计可以非常复杂，可以包含代换、置换等多种操作，以实现良好的混淆和扩散。</li>
+</ul>
+<h3 id="des-data-encryption-standard">DES 算法 (Data Encryption Standard)<a class="headerlink" href="#des-data-encryption-standard" title="Permanent link">&para;</a></h3>
+<p>DES 是一个典型的 Feistel 结构分组密码。</p>
+<ul>
+<li><strong>历史：</strong> 1970年代由IBM基于Lucifer算法开发，1977年被美国国家标准局 (NBS，后来的NIST) 选定为官方的加密标准。</li>
+<li><strong>参数：</strong></li>
+<li><strong>块大小 (Block Size)：</strong> 64 比特。</li>
+<li><strong>密钥长度 (Key Length)：</strong> 表面上是64比特，但每8比特的最后1比特是奇偶校验位，因此有效密钥长度为 56 比特。</li>
+<li><strong>轮数 (Number of Rounds)：</strong> 16 轮。</li>
+</ul>
+<p><strong>DES 加密过程概述：</strong></p>
+<ol>
+<li><strong>初始置换 (Initial Permutation, IP)：</strong> 64位明文块首先经过一个固定的初始置换，重新排列比特顺序。这个置换没有密码学意义，据称是为了方便在1970年代的硬件上装载数据。</li>
+<li><strong>16轮 Feistel 迭代：</strong></li>
+<li>经过 IP 后的64位块被分成左右两半，各32位：<span class="arithmatex">\((L_0, R_0)\)</span>。</li>
+<li>进行16轮迭代，每轮操作如下 (<span class="arithmatex">\(i\)</span> 从 1 到 16)：</li>
+</ol>
+<div class="arithmatex">\[
+L_i = R_{i-1} \\  
+R_i = L_{i-1} \oplus F(R_{i-1}, K_i)
+\]</div>
+<p>其中 <span class="arithmatex">\(K_i\)</span> 是48位的轮密钥，由56位主密钥通过<strong>密钥调度算法 (Key Schedule)</strong> 生成。  </p>
+<ol>
+<li><strong>最终置换 (Final Permutation, FP)：</strong> 16轮迭代后，将 <span class="arithmatex">\((L_{16}, R_{16})\)</span> 合并（但通常是在 <span class="arithmatex">\((R_{16}, L_{16})\)</span> 的顺序上，即最后一轮后不交换或等效于交换），然后经过一个初始置换的逆置换 FP，得到64位密文块。</li>
+</ol>
+<p><strong>DES 的轮函数 <span class="arithmatex">\(F(R, K)\)</span>：</strong></p>
+<p>轮函数 <span class="arithmatex">\(F\)</span> 是 DES 安全性的核心，它对32位的右半部分 <span class="arithmatex">\(R_{i-1}\)</span> 和48位的轮密钥 <span class="arithmatex">\(K_i\)</span> 进行操作，输出32位。</p>
+<ol>
+<li><strong>扩展置换 (Expansion Permutation, E)：</strong> 将32位的 <span class="arithmatex">\(R_{i-1}\)</span> 扩展为48位。这个扩展通过复制 <span class="arithmatex">\(R_{i-1}\)</span> 中的某些比特来实现，使得扩展后的结果能够与48位的轮密钥 <span class="arithmatex">\(K_i\)</span> 进行异或。</li>
+<li><strong>密钥混合 (Key Mixing)：</strong> 扩展后的48位结果与48位轮密钥 <span class="arithmatex">\(K_i\)</span> 进行异或。</li>
+<li><strong>S盒代换 (S-box Substitution)：</strong> 异或结果被分成8个6比特的小组，每个小组输入到一个对应的<strong>S盒 (Substitution Box)</strong>。DES 有8个不同的S盒 (<span class="arithmatex">\(S_1, S_2, \dots, S_8\)</span>)。每个S盒都是一个固定的非线性代换表，将6比特输入映射为4比特输出。这是DES中唯一的非线性操作，也是其安全性的关键来源（提供混淆）。</li>
+<li>每个6比特输入 <span class="arithmatex">\((b_1 b_2 b_3 b_4 b_5 b_6)\)</span> 中，<span class="arithmatex">\(b_1b_6\)</span> 两位决定S盒的行号 (0-3)，<span class="arithmatex">\(b_2b_3b_4b_5\)</span> 四位决定S盒的列号 (0-15)。</li>
+<li><strong>P盒置换 (P-box Permutation, P)：</strong> 8个S盒输出的4比特结果（共32比特）再经过一个固定的32位P盒置换，进一步打乱比特顺序，以实现扩散。</li>
+</ol>
+<p><strong>DES 密钥调度算法：</strong></p>
+<p>从56位主密钥生成16个48位轮密钥的过程：</p>
+<ol>
+<li><strong>初始密钥置换 (Permuted Choice 1, PC-1)：</strong> 64位输入密钥（含校验位）先去掉校验位，然后对剩余的56位进行置换，并分成左右两半 <span class="arithmatex">\(C_0\)</span> 和 <span class="arithmatex">\(D_0\)</span> (各28位)。</li>
+<li><strong>循环左移 (Circular Left Shift)：</strong> 在每一轮 <span class="arithmatex">\(i\)</span>，根据一个预设的移位数目（第1, 2, 9, 16轮移1位，其他轮移2位），分别对 <span class="arithmatex">\(C_{i-1}\)</span> 和 <span class="arithmatex">\(D_{i-1}\)</span> 进行循环左移，得到 <span class="arithmatex">\(C_i\)</span> 和 <span class="arithmatex">\(D_i\)</span>。</li>
+<li><strong>轮密钥生成 (Permuted Choice 2, PC-2)：</strong> 将 <span class="arithmatex">\(C_i\)</span> 和 <span class="arithmatex">\(D_i\)</span> 合并成56位，然后通过另一个置换选择 (PC-2) 从中选出48位作为轮密钥 <span class="arithmatex">\(K_i\)</span>。</li>
+</ol>
+<p><strong>DES 的安全性与弱点：</strong></p>
+<ul>
+<li><strong>密钥长度：</strong> 56位密钥长度是 DES 最主要的弱点。在1990年代末，通过暴力破解（尝试所有 <span class="arithmatex">\(2^{56}\)</span> 个可能密钥）已经变得可行。</li>
+<li><strong>S盒设计：</strong> DES的S盒设计准则最初并未公开，引发了一些关于是否存在后门或隐藏弱点的猜测。后来分析表明S盒设计良好，能抵抗差分密码分析。</li>
+<li><strong>弱密钥 (Weak Keys)：</strong> DES有4个弱密钥，使用这些密钥加密和解密过程完全相同 (<span class="arithmatex">\(E_K(E_K(P)) = P\)</span>)。</li>
+<li><strong>半弱密钥 (Semi-weak Keys)：</strong> DES有6对（12个）半弱密钥。若用一对中的一个密钥加密，用另一个密钥解密，效果等同于用前者加密。</li>
+<li><strong>补特性 (Complementation Property)：</strong> <span class="arithmatex">\(E_{\overline{K}}(\overline{P}) = \overline{E_K(P)}\)</span>，其中 <span class="arithmatex">\(\overline{X}\)</span> 是 <span class="arithmatex">\(X\)</span> 的按位取反。这可以将暴力破解的密钥空间减半。</li>
+</ul>
+<p><strong>DES 的变体：</strong></p>
+<ul>
+<li><strong>2DES (Double DES)：</strong> <span class="arithmatex">\(C = E_{K2}(E_{K1}(P))\)</span>。由于中间相遇攻击 (Meet-in-the-Middle Attack)，其有效密钥长度仅为 <span class="arithmatex">\(2 \times 56\)</span> 理论强度的一小部分，大约为 <span class="arithmatex">\(2^{57}\)</span>，因此安全性提升有限。</li>
+<li><strong>3DES (Triple DES)：</strong> 最常见的是 EDE (Encrypt-Decrypt-Encrypt) 模式：</li>
+<li><strong>双密钥3DES (2TDES)：</strong> <span class="arithmatex">\(C = E_{K1}(D_{K2}(E_{K1}(P)))\)</span>。有效密钥长度为 <span class="arithmatex">\(2 \times 56 = 112\)</span> 位。</li>
+<li><strong>三密钥3DES (3TDES)：</strong> <span class="arithmatex">\(C = E_{K3}(D_{K2}(E_{K1}(P)))\)</span>。有效密钥长度为 <span class="arithmatex">\(3 \times 56 = 168\)</span> 位。
+  3DES 通过增加密钥长度和迭代次数，显著增强了对暴力破解的抵抗能力，曾被广泛用于替代DES。但其操作速度较慢（三次DES运算），且块大小仍为64位，不适合处理大量数据。目前也逐渐被 AES 取代。</li>
+</ul>
+<h2 id="33-aes-advanced-encryption-standard">3.3 AES 算法 (Advanced Encryption Standard)<a class="headerlink" href="#33-aes-advanced-encryption-standard" title="Permanent link">&para;</a></h2>
+<p>AES，即高级加密标准，是由美国国家标准与技术研究院 (NIST) 于2001年发布的一个对称分组密码标准，用以取代DES。AES基于比利时密码学家 Joan Daemen 和 Vincent Rijmen 提出的 Rijndael 算法。</p>
+<p><strong>主要特点：</strong></p>
+<ul>
+<li><strong>结构：</strong> 采用<strong>代换-置换网络 (Substitution-Permutation Network, SPN)</strong> 结构，而非 Feistel 结构。这意味着加密和解密路径不同（但密切相关）。</li>
+<li><strong>块大小 (Block Size)：</strong> 固定为 128 比特。</li>
+<li><strong>密钥长度 (Key Lengths)：</strong> 支持三种长度：128 比特、192 比特、256 比特。</li>
+<li><strong>轮数 (Number of Rounds)：</strong> 轮数取决于密钥长度：</li>
+<li>128位密钥：10 轮</li>
+<li>192位密钥：12 轮</li>
+<li>256位密钥：14 轮</li>
+</ul>
+<p><strong>AES 的数据单元：</strong></p>
+<p>AES 的所有操作都在一个称为<strong>状态 (State)</strong> 的 <span class="arithmatex">\(4 \times 4\)</span> 字节矩阵上进行。输入的128位明文块被排列成这个矩阵，其中矩阵的列优先填充。例如，明文块 <span class="arithmatex">\(b_0, b_1, \dots, b_{15}\)</span> 形成状态：</p>
+<div class="arithmatex">\[
+\text{State} = \begin{pmatrix}
+b_0 &amp; b_4 &amp; b_8 &amp; b_{12} \\
+b_1 &amp; b_5 &amp; b_9 &amp; b_{13} \\
+b_2 &amp; b_6 &amp; b_{10} &amp; b_{14} \\
+b_3 &amp; b_7 &amp; b_{11} &amp; b_{15}
+\end{pmatrix}
+\]</div>
+<p>每一轮变换都会更新这个状态矩阵。</p>
+<p><strong>AES 加密过程：</strong></p>
+<ol>
+<li><strong>初始轮密钥加 (Initial AddRoundKey)：</strong> 将状态与第一个轮密钥（也称为白化密钥，直接从主密钥派生或等于主密钥）进行按字节异或。</li>
+<li><strong>主要轮 (Rounds)：</strong> 进行 <span class="arithmatex">\(N_r-1\)</span> 轮标准迭代，其中 <span class="arithmatex">\(N_r\)</span> 是总轮数。每轮包含以下四个步骤：</li>
+<li><strong>SubBytes (字节代换)：</strong></li>
+<li><strong>ShiftRows (行移位)：</strong></li>
+<li><strong>MixColumns (列混淆)：</strong></li>
+<li><strong>AddRoundKey (轮密钥加)：</strong></li>
+<li><strong>最终轮 (Final Round)：</strong> 进行最后一轮迭代，与主要轮类似，但<strong>不包含 MixColumns</strong> 步骤。</li>
+<li><strong>SubBytes</strong></li>
+<li><strong>ShiftRows</strong></li>
+<li><strong>AddRoundKey</strong></li>
+</ol>
+<p><strong>AES 的轮操作详解：</strong></p>
+<ul>
+<li><strong>a) SubBytes (字节代换)：</strong></li>
+<li>这是一个非线性代换步骤，状态矩阵中的每个字节都通过一个固定的8位S盒 (Rijndael S-box) 进行独立的代换。</li>
+<li>该S盒是通过在有限域 GF(<span class="arithmatex">\(2^8\)</span>) 中先计算每个字节的乘法逆元（0映射到0），然后再对结果字节进行一个固定的仿射变换 (affine transformation) 得到的。</li>
+<li>
+<p>此步骤提供混淆，是AES中唯一的非线性操作。</p>
+</li>
+<li>
+<p><strong>b) ShiftRows (行移位)：</strong></p>
+</li>
+<li>这是一个线性置换步骤，状态矩阵的每一行中的字节都进行循环左移。</li>
+<li>第0行：不移位。</li>
+<li>第1行：循环左移1个字节。</li>
+<li>第2行：循环左移2个字节。</li>
+<li>第3行：循环左移3个字节。</li>
+<li>
+<p>此步骤提供跨列的扩散。</p>
+</li>
+<li>
+<p><strong>c) MixColumns (列混淆)：</strong></p>
+</li>
+<li>这是一个线性混合步骤，对状态矩阵的每一列独立进行操作。</li>
+<li>每一列被视为 GF(<span class="arithmatex">\(2^8\)</span>) 上的一个四项式，然后乘以一个固定的四项式 <span class="arithmatex">\(a(x) = \{03\}x^3 + \{01\}x^2 + \{01\}x + \{02\}\)</span>，模 <span class="arithmatex">\(x^4+1\)</span>。</li>
+<li>
+<p>这等效于将每列向量左乘一个固定的 <span class="arithmatex">\(4 \times 4\)</span> 矩阵 (其元素在 GF(<span class="arithmatex">\(2^8\)</span>) 中)：  </p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+02 &amp; 03 &amp; 01 &amp; 01 \\
+01 &amp; 02 &amp; 03 &amp; 01 \\
+01 &amp; 01 &amp; 02 &amp; 03 \\
+03 &amp; 01 &amp; 01 &amp; 02
+\end{pmatrix}
+\]</div>
+</li>
+<li>
+<p>此步骤提供列内的扩散，与 ShiftRows 结合，确保经过几轮后每个字节都依赖于所有明文字节。</p>
+</li>
+<li>
+<p><strong>注意：</strong> 在最终轮中省略此步骤。</p>
+</li>
+<li>
+<p><strong>d) AddRoundKey (轮密钥加)：</strong></p>
+</li>
+<li>将当前轮的状态矩阵与该轮的128位轮密钥（同样排列成 <span class="arithmatex">\(4 \times 4\)</span> 字节矩阵）进行按字节异或。</li>
+<li>轮密钥由主密钥通过<strong>密钥扩展算法 (Key Expansion / Key Schedule)</strong> 生成。</li>
+</ul>
+<p><strong>AES 密钥扩展算法 (Key Schedule)：</strong></p>
+<p>密钥扩展算法从主密钥生成 AES 加密所需的全部轮密钥。总共需要 <span class="arithmatex">\(N_r+1\)</span> 个128位的轮密钥。</p>
+<ul>
+<li>主密钥首先被复制到扩展密钥数组的前 <span class="arithmatex">\(N_k\)</span> 个字 (<span class="arithmatex">\(N_k\)</span> 是主密钥的字数，128位密钥为4字，192位为6字，256位为8字)。</li>
+<li>后续的字 <span class="arithmatex">\(w_i\)</span> 通过前一个字 <span class="arithmatex">\(w_{i-1}\)</span> 和 <span class="arithmatex">\(N_k\)</span> 个字之前的字 <span class="arithmatex">\(w_{i-N_k}\)</span> 的组合来生成。</li>
+<li>如果 <span class="arithmatex">\(i\)</span> 是 <span class="arithmatex">\(N_k\)</span> 的倍数，则 <span class="arithmatex">\(w_{i-1}\)</span> 在组合前会经过一个称为 <strong>g函数</strong> 的特殊处理：</li>
+<li><strong>RotWord：</strong> 将 <span class="arithmatex">\(w_{i-1}\)</span> 的四个字节循环左移一位。</li>
+<li><strong>SubWord：</strong> 对 RotWord 结果的每个字节应用 AES 的 S盒。</li>
+<li><strong>Rcon：</strong> 将 SubWord 结果的第一个字节与一个轮常数 (Round Constant, Rcon) 进行异或。Rcon 是一个预定义的值，每轮不同，用于消除对称性。  </li>
+</ul>
+<div class="arithmatex">\[
+w_i = w_{i-N_k} \oplus g(w_{i-1})
+\]</div>
+<ul>
+<li>如果 <span class="arithmatex">\(i\)</span> 不是 <span class="arithmatex">\(N_k\)</span> 的倍数 (并且对于 <span class="arithmatex">\(N_k &gt; 6\)</span>，当 <span class="arithmatex">\(i \pmod{N_k} = 4\)</span> 时有特殊处理，仅对256位密钥)：</li>
+</ul>
+<div class="arithmatex">\[
+w_i = w_{i-N_k} \oplus w_{i-1}
+\]</div>
+<p>(对于256位密钥且 <span class="arithmatex">\(i \pmod{N_k} = 4\)</span>，则 <span class="arithmatex">\(w_i = w_{i-N_k} \oplus \text{SubWord}(w_{i-1})\)</span>)</p>
+<p><strong>AES 解密过程：</strong></p>
+<p>解密过程是加密过程的逆运算。它使用相同的轮密钥，但顺序相反，并且每一轮操作都替换为其逆操作：</p>
+<ol>
+<li><strong>初始轮密钥加 (Initial AddRoundKey)：</strong> 使用最后一个轮密钥 (<span class="arithmatex">\(K_{N_r}\)</span>)。</li>
+<li><strong>主要轮 (Rounds)：</strong> <span class="arithmatex">\(N_r-1\)</span> 轮 (从 <span class="arithmatex">\(N_r-1\)</span> 轮到第1轮)：</li>
+<li><strong>InvShiftRows (逆行移位)：</strong> ShiftRows 的逆操作（循环右移）。</li>
+<li><strong>InvSubBytes (逆字节代换)：</strong> SubBytes 的逆操作（使用逆S盒）。</li>
+<li><strong>AddRoundKey (轮密钥加)：</strong> 使用对应的轮密钥。</li>
+<li><strong>InvMixColumns (逆列混淆)：</strong> MixColumns 的逆操作（乘以逆矩阵）。</li>
+<li><strong>最终轮 (Final Round)：</strong></li>
+<li><strong>InvShiftRows</strong></li>
+<li><strong>InvSubBytes</strong></li>
+<li><strong>AddRoundKey (轮密钥加)：</strong> 使用第一个轮密钥 (<span class="arithmatex">\(K_0\)</span>)。</li>
+</ol>
+<p>注意 AddRoundKey 的逆操作就是它本身（因为异或的逆是异或）。InvMixColumns 是在最终轮之前，与加密过程的结构对应。</p>
+<p><strong>AES 的安全性与现状：</strong></p>
+<ul>
+<li><strong>安全性：</strong> AES 被认为是目前最安全和分析最透彻的分组密码之一。已知的针对 AES 的最佳攻击（如积分攻击、不可能差分攻击、中间相遇攻击的变种）都远未达到实际可行的程度，通常需要不切实际的数据量或计算复杂度，或者只能攻击简化的轮数版本。</li>
+<li><strong>性能：</strong> AES 在硬件和软件上都能高效实现。许多现代处理器都内置了 AES 指令集 (AES-NI)，可以极大地加速 AES 的运算。</li>
+<li><strong>广泛应用：</strong> AES 已成为全球范围内数据加密的事实标准，广泛应用于各种安全协议 (如 TLS/SSL, SSH, IPsec)、磁盘加密 (如 BitLocker, FileVault)、文件加密、数据库加密等。</li>
+</ul>
+<h2 id="34-modes-of-operation-for-block-ciphers">3.4 分组密码的工作模式 (Modes of Operation for Block Ciphers)<a class="headerlink" href="#34-modes-of-operation-for-block-ciphers" title="Permanent link">&para;</a></h2>
+<p>分组密码本身只能加密固定长度的数据块。为了能够安全地加密长度可变的明文消息（通常远大于一个数据块的长度），需要使用<strong>工作模式 (Modes of Operation)</strong>。工作模式定义了如何重复使用分组密码的单块加密功能来处理多块数据。</p>
+<p>选择合适的工作模式对于保证整体加密方案的安全性至关重要。不同的模式在错误传播、并行性、是否需要填充、是否能用于流加密等方面有不同特性。</p>
+<p>以下是一些常见的分组密码工作模式：</p>
+<h3 id="0-electronic-codebook-mode-ecb-">0. 电子密码本模式 (Electronic Codebook Mode, ECB) - <em>作为对比基线</em><a class="headerlink" href="#0-electronic-codebook-mode-ecb-" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> 最简单的工作模式。将明文分割成多个数据块，然后对每个明文块使用相同的密钥独立进行加密。</li>
+</ul>
+<div class="arithmatex">\[
+  C_i = E_K(P_i)\\   
+\]</div>
+<div class="arithmatex">\[  
+  P_i = D_K(C_i)
+\]</div>
+<ul>
+<li><strong>优点：</strong></li>
+<li>简单直观。</li>
+<li>每个块的加密/解密可以并行处理，速度快。</li>
+<li>一个密文块的错误不会影响其他块的解密。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>致命缺陷：</strong> 如果明文中存在重复的数据块，那么加密后对应的密文块也会完全相同。这会暴露明文数据的模式和统计特性。例如，一张位图图像用 ECB 模式加密后，图像的轮廓通常依然可见。</li>
+<li>容易受到重放攻击、块替换攻击等。</li>
+<li><strong>应用：</strong> 由于其严重的安全性缺陷，<strong>ECB 模式通常不推荐用于大多数应用</strong>，除非是在极少数情况下，例如加密完全随机的数据（如会话密钥）且数据量很小。</li>
+<li><strong>填充：</strong> 如果最后一个明文块不足一个完整块，需要进行填充。</li>
+</ul>
+<h3 id="1-cipher-block-chaining-mode-cbc">1. 密文分组链接模式 (Cipher Block Chaining Mode, CBC)<a class="headerlink" href="#1-cipher-block-chaining-mode-cbc" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> 为了克服 ECB 的缺点，CBC 模式引入了链接机制。每个明文块在加密前，首先与前一个密文块进行异或 (XOR) 操作，然后再用密钥加密。对于第一个明文块，由于没有“前一个密文块”，它会与一个称为<strong>初始化向量 (Initialization Vector, IV)</strong> 的随机数据块进行异或。  </li>
+</ul>
+<div class="arithmatex">\[
+  C_i = E_K(P_i \oplus C_{i-1}) \quad (\text{其中 } C_0 = IV)
+\]</div>
+<div class="arithmatex">\[
+  P_i = D_K(C_i) \oplus C_{i-1} \quad (\text{其中 } C_0 = IV)
+\]</div>
+<ul>
+<li><strong>初始化向量 (IV)：</strong> IV 必须是不可预测的（最好是随机生成的），并且对于使用相同密钥加密的每条消息都必须是唯一的。IV 不需要保密，但其完整性必须得到保护。通常与密文一起传输。</li>
+<li><strong>优点：</strong></li>
+<li>相同的明文块如果出现在消息的不同位置，或者在两条用不同IV加密的不同消息中，会产生不同的密文块，隐藏了明文的模式。</li>
+<li>是最常用的模式之一。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>加密过程是串行的：</strong> 加密第 <span class="arithmatex">\(i\)</span> 块必须等待第 <span class="arithmatex">\(i-1\)</span> 块的密文 <span class="arithmatex">\(C_{i-1}\)</span> 生成。</li>
+<li><strong>错误传播 (Error Propagation) - 加密时：</strong> 如果明文块 <span class="arithmatex">\(P_i\)</span> 中有一位错误，那么 <span class="arithmatex">\(C_i\)</span> 及其后的所有密文块都会受到影响。</li>
+<li><strong>错误传播 (Error Propagation) - 解密时：</strong><ul>
+<li>如果密文块 <span class="arithmatex">\(C_i\)</span> 中有一位错误，则解密后的 <span class="arithmatex">\(P_i\)</span> 会完全损坏（平均一半的比特出错）。</li>
+<li>同时，<span class="arithmatex">\(C_i\)</span> 中的错误只会影响 <span class="arithmatex">\(P_{i+1}\)</span> 中与 <span class="arithmatex">\(C_i\)</span> 错误比特对应的那个比特，即 <span class="arithmatex">\(P_{i+1} = D_K(C_{i+1}) \oplus C_i\)</span>，错误在 <span class="arithmatex">\(C_i\)</span> 中影响了 <span class="arithmatex">\(P_{i+1}\)</span>。之后的 <span class="arithmatex">\(P_{i+2}, P_{i+3}, \dots\)</span> 不受影响。这种有限的错误传播性有时被视为一种优势。</li>
+</ul>
+</li>
+<li><strong>需要填充：</strong> 如果最后明文块不完整，需要填充到标准块大小。填充方案必须明确，以便解密时能正确移除。</li>
+<li><strong>解密并行性：</strong> 解密时，如果所有密文块 <span class="arithmatex">\(C_i\)</span> 和 <span class="arithmatex">\(C_{i-1}\)</span> 都已知，则 <span class="arithmatex">\(D_K(C_i)\)</span> 可以并行计算，然后与 <span class="arithmatex">\(C_{i-1}\)</span> 异或得到 <span class="arithmatex">\(P_i\)</span>。</li>
+</ul>
+<h3 id="2-counter-mode-ctr">2. 计数器模式 (Counter Mode, CTR)<a class="headerlink" href="#2-counter-mode-ctr" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> CTR 模式将分组密码用作一个密钥流产生器，从而将分组密码转换成流密码。它通过加密一个<strong>计数器 (Counter)</strong> 的连续值来生成密钥流块，然后将密钥流块与明文块进行异或得到密文块。</li>
+<li>计数器通常由两部分组成：一个<strong>随机数或一次性数 (Nonce)</strong>，对每条消息唯一；以及一个从0开始递增的序列号。</li>
+</ul>
+<div class="arithmatex">\[\displaystyle O_i = E_K(\text{Nonce} || \text{Counter}_i) \]</div>
+<div class="arithmatex">\[C_i = P_i \oplus O_i \]</div>
+<div class="arithmatex">\[P_i = C_i \oplus O_i \]</div>
+<p>其中 <span class="arithmatex">\(\text{Counter}_i\)</span> 通常是 <span class="arithmatex">\(0, 1, 2, \dots\)</span>。  </p>
+<ul>
+<li><strong>Nonce 和 Counter：</strong> 组合的 (Nonce, Counter) 值对于给定的密钥必须是唯一的。Nonce 的作用是确保即使计数器序列相同，不同消息的密钥流也不同。Nonce 不需要保密，但必须唯一。</li>
+<li><strong>优点：</strong></li>
+<li><strong>高度并行性：</strong> 加密和解密过程中的 <span class="arithmatex">\(E_K(\text{Nonce} || \text{Counter}_i)\)</span> 操作可以完全并行执行，因为每个密钥流块的生成独立于其他块。</li>
+<li><strong>随机访问：</strong> 可以直接解密密文中的任意块，而无需先解密前面的块。</li>
+<li><strong>无需填充：</strong> 因为它是流模式，如果最后一个明文块不完整，只需使用相应长度的密钥流即可。</li>
+<li><strong>预处理：</strong> 密钥流 <span class="arithmatex">\(O_i\)</span> 可以在明文到达之前预先计算好。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>密钥流重用是灾难性的：</strong> 如果 (Nonce, Counter, Key) 的组合被重用（例如，两条消息使用了相同的Nonce和Key，导致相同的计数器序列生成了相同的密钥流），则会导致严重的安全问题 (类似于流密码中的 "two-time pad")。<span class="arithmatex">\(C_1 \oplus C_2 = (P_1 \oplus O) \oplus (P_2 \oplus O) = P_1 \oplus P_2\)</span>。</li>
+<li>对IV（Nonce）的唯一性要求非常严格。</li>
+<li><strong>错误传播：</strong> 密文中的一位错误只影响对应明文中的一位，不影响其他块。</li>
+</ul>
+<h3 id="3-cipher-feedback-mode-cfb">3. 密文反馈模式 (Cipher Feedback Mode, CFB)<a class="headerlink" href="#3-cipher-feedback-mode-cfb" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> CFB 模式也可以将分组密码用作成一个自同步的流密码。它将前一个密文块（或其一部分）作为分组密码的输入，加密后的输出再与当前明文块异或得到当前密文块。</li>
+<li>对于第一个块，使用一个初始化向量 (IV) 作为“前一个密文块”。</li>
+<li>可以定义为 CFB-<span class="arithmatex">\(s\)</span> 模式，其中 <span class="arithmatex">\(s\)</span> 是反馈的比特数 (通常 $s=1, 8, $ 或块大小)。这里以全块反馈 (<span class="arithmatex">\(s=\)</span>块大小) 为例：</li>
+</ul>
+<div class="arithmatex">\[
+    C_i = E_K(C_{i-1}) \oplus P_i \quad (\text{其中 } C_0 = IV)
+\]</div>
+<div class="arithmatex">\[
+    P_i = E_K(C_{i-1}) \oplus C_i \quad (\text{其中 } C_0 = IV)
+\]</div>
+<p>注意，这里解密时仍然使用的是分组密码的<strong>加密函数 <span class="arithmatex">\(E_K\)</span></strong>，因为 <span class="arithmatex">\(E_K(C_{i-1})\)</span> 扮演的是密钥流的角色。  </p>
+<ul>
+<li><strong>初始化向量 (IV)：</strong> 与CBC类似，IV需要随机且唯一，不需要保密。</li>
+<li><strong>优点：</strong></li>
+<li><strong>自同步 (Self-synchronizing)：</strong> 如果密文中丢失或损坏了一些比特，经过一定数量的正确密文块后，解密过程可以自动恢复同步（具体是当错误数据完全移出反馈寄存器后）。</li>
+<li>可以加密小于一个完整块的数据单元 (例如CFB-8模式，每次处理1字节)。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>加密过程是串行的：</strong> 生成 <span class="arithmatex">\(C_i\)</span> 依赖于 <span class="arithmatex">\(C_{i-1}\)</span>。</li>
+<li><strong>错误传播 (Error Propagation) - 解密时：</strong> 密文块 <span class="arithmatex">\(C_i\)</span> 中的一位错误会使 <span class="arithmatex">\(P_i\)</span> 完全损坏，并且还会影响后续 <span class="arithmatex">\(P_j\)</span> 的解密，直到错误的 <span class="arithmatex">\(C_i\)</span> 被移出反馈链（对于全块CFB，会影响 <span class="arithmatex">\(P_{i+1}\)</span> 的一个比特）。具体来说，如果 <span class="arithmatex">\(C_j\)</span> 有一个比特错误，那么 <span class="arithmatex">\(P_j\)</span> 会被损坏，并且 <span class="arithmatex">\(C_{j+1}\)</span> 的解密也会出错（因为 <span class="arithmatex">\(E_K(C_j)\)</span> 出错）。</li>
+<li><strong>效率：</strong> 如果 <span class="arithmatex">\(s\)</span> 远小于块大小 (如 CFB-1, CFB-8)，则每加密 <span class="arithmatex">\(s\)</span> 位明文就需要执行一次完整的分组密码加密操作，效率较低。</li>
+<li><strong>解密并行性：</strong> 与加密类似，解密也是串行的。</li>
+</ul>
+<h3 id="4-output-feedback-mode-ofb">4. 输出反馈模式 (Output Feedback Mode, OFB)<a class="headerlink" href="#4-output-feedback-mode-ofb" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>原理：</strong> OFB 模式也将分组密码用作一个同步的流密码。它通过将分组密码的输出（而不是密文）反馈回输入来生成密钥流。</li>
+<li>首先，使用一个初始化向量 (IV) 作为分组密码的第一次输入。</li>
+<li>后续，将前一次分组密码的输出 <span class="arithmatex">\(O_{i-1}\)</span> 作为下一次的输入。  </li>
+</ul>
+<div class="arithmatex">\[O_i = E_K(O_{i-1}) \quad (\text{其中 } O_0 = IV)\]</div>
+<div class="arithmatex">\[
+    C_i = P_i \oplus O_i \]</div>
+<div class="arithmatex">\[
+    P_i = C_i \oplus O_i
+\]</div>
+<ul>
+<li><strong>初始化向量 (IV)：</strong> 与CTR模式类似，IV对于给定的密钥必须是唯一的，不需要保密。</li>
+<li><strong>优点：</strong></li>
+<li><strong>无错误传播到明文：</strong> 密文块 <span class="arithmatex">\(C_i\)</span> 中的一位错误只会导致解密后对应明文 <span class="arithmatex">\(P_i\)</span> 中的一位错误，不会影响其他明文块。</li>
+<li><strong>密钥流可以预计算：</strong> 与 CTR 模式类似。</li>
+<li><strong>缺点：</strong></li>
+<li><strong>密钥流生成是串行的：</strong> <span class="arithmatex">\(O_i\)</span> 的生成依赖于 <span class="arithmatex">\(O_{i-1}\)</span>。</li>
+<li><strong>同步性要求高：</strong> 如果发送方和接收方的密钥流产生过程失去同步（例如，IV不同或实现有误），则所有后续解密都会失败。</li>
+<li><strong>对IV唯一性要求严格：</strong> 如果 (IV, Key) 被重用，则会产生相同的密钥流，导致与 CTR 模式相同的 "two-time pad" 安全问题。</li>
+<li><strong>内部状态周期：</strong> 如果密钥流产生器 <span class="arithmatex">\(O_i = E_K(O_{i-1})\)</span> 进入一个短周期，那么密钥流也会重复，可能导致安全风险。CTR模式通过显式使用计数器避免了这个问题。</li>
+<li><strong>与CFB的区别：</strong> OFB将加密算法的<em>输出</em>反馈，而CFB将<em>密文</em>反馈。因此，OFB的密钥流生成独立于明文和密文，而CFB的密钥流依赖于先前的密文。</li>
+</ul>
+<p><strong>选择工作模式的考虑因素：</strong></p>
+<ul>
+<li><strong>安全性需求：</strong> 是否需要抵抗特定模式的攻击？是否能容忍IV重用带来的风险？</li>
+<li><strong>错误容忍度：</strong> 应用是否对传输错误敏感？错误传播的特性是否可接受？</li>
+<li><strong>性能需求：</strong> 是否需要并行处理？是否可以预计算？</li>
+<li><strong>实现复杂度：</strong></li>
+<li><strong>随机访问需求：</strong> 是否需要能随机解密密文的某一部分？</li>
+</ul>
+<p>目前，<strong>AES-GCM (Galois/Counter Mode)</strong> 和 <strong>AES-CCM (Counter Mode with CBC-MAC)</strong> 等认证加密模式 (Authenticated Encryption with Associated Data, AEAD) 因其能同时提供机密性、完整性和真实性认证，越来越受到推荐和广泛使用。这些模式通常基于 CTR 模式来提供加密。</p>
+<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin'><span data-tippy-content='创建时间: 2025-05-09'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-05-09T20:08:54' locale='zh_CN'>2025-05-09</time></span><span data-tippy-content='最后更新: 2025-08-03'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-08-03T08:42:40.370847+00:00' locale='zh_CN'>2025-08-03</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Wcowin' data-tippy-content='作者: &lt;a href="mailto:1135801806@qq.com"&gt;Wcowin&lt;/a&gt;'><img class='avatar' src='https://avatars.githubusercontent.com/Wcowin' /><span class='avatar-text'></span></div></div></div></div>
+<style>
+.related-posts {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  max-height: none !important; /* 防止Safari错误计算高度 */
+  overflow: visible !important; /* 防止内容被截断 */
+}
+.related-posts h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.related-posts ul {
+  margin: 0 0 0.5rem 0 !important; /* 强制覆盖可能的冲突样式 */
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+.related-posts li {
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .related-posts {
+  border-top-color: rgba(255,255,255,0.1);
+}
+/* Safari特定修复 */
+@supports (-webkit-hyphens:none) {
+  .related-posts {
+    display: block;
+    position: relative;
+    height: auto !important;
+  }
+  .related-posts ul {
+    position: static;
+  }
+}
+</style>
+<div class="related-posts">
+<h3>📚 相关文章推荐</h3>
+<ul>
+<li><a href="/blog/Cryptography/Symmetriccryptography/">流密码</a></li>
+<li><a href="/blog/Academic/LaTeX/">LaTeX常用符号整理</a></li>
+<li><a href="/blog/Cryptography/Introduction/">密码学引言</a></li>
+<li><a href="/blog/Cryptography/Numbertheory/">数论基础</a></li>
+</ul>
+</div>
+
+<!-- Twikoo 评论系统 -->
+<div class="twikoo-container" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.1);">
+    <h3 style="margin-bottom: 1rem; font-size: 1.2rem; font-weight: 500;">💬 评论</h3>
+    <div id="tcomment" class="loading" style="min-height: 200px;">
+        <p style="text-align: center; color: #666; padding: 2rem;">评论系统加载中...</p>
+    </div>
+</div>
+
+<style>
+.twikoo-container {
+    max-width: 100%;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .twikoo-container {
+    border-top-color: rgba(255,255,255,0.1);
+}
+
+/* 加载状态样式 */
+#tcomment.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] #tcomment.loading {
+    background: rgba(255,255,255,0.05);
+}
+</style>
+
+<script>
+(function() {
+    // 防止重复加载
+    if (window.twikooLoaded) {
+        return;
+    }
+
+    function loadTwikoo() {
+        // 检查是否已经加载过 Twikoo
+        if (window.twikoo) {
+            initTwikoo();
+            return;
+        }
+
+        const script = document.createElement('script');
+        script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+        script.onload = function() {
+            console.log('Twikoo 脚本加载成功');
+            initTwikoo();
+        };
+        script.onerror = function() {
+            console.error('Twikoo 脚本加载失败');
+            const commentEl = document.getElementById('tcomment');
+            if (commentEl) {
+                commentEl.classList.remove('loading');
+                commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统加载失败，请刷新页面重试</p>';
+            }
+        };
+        document.head.appendChild(script);
+    }
+
+    function initTwikoo() {
+        const commentEl = document.getElementById('tcomment');
+        if (!commentEl) {
+            console.warn('评论容器未找到');
+            return;
+        }
+
+        commentEl.classList.remove('loading');
+
+        try {
+            twikoo.init({
+                envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo',
+                el: '#tcomment',
+                lang: 'zh-CN',
+                path: location.pathname,
+                onCommentLoaded: function () {
+                    console.log('评论加载完成');
+                },
+                onError: function(err) {
+                    console.error('Twikoo 初始化失败:', err);
+                    commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化失败，请检查网络连接</p>';
+                }
+            });
+            window.twikooLoaded = true;
+        } catch (error) {
+            console.error('Twikoo 初始化异常:', error);
+            commentEl.innerHTML = '<p style="text-align: center; color: #f56565; padding: 2rem;">评论系统初始化异常</p>';
+        }
+    }
+
+    // 页面加载完成后初始化
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadTwikoo);
+    } else {
+        loadTwikoo();
+    }
+})();
+</script>
+
+
+
+
+
+
+
+  
+  
+
+
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine feedback configuration -->
+
+  
+
+
+<!-- Determine whether to show feedback -->
+
+
+<!-- Was this page helpful? -->
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        此页面有帮助吗？
+      </legend>
+      <div class="md-feedback__inner">
+
+        <!-- Feedback ratings -->
+        <div class="md-feedback__list">
+          
+            <button
+              class="md-feedback__icon md-icon"
+              type="submit"
+              title="This page was helpful"
+              data-md-value="1"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button
+              class="md-feedback__icon md-icon"
+              type="submit"
+              title="This page could be improved"
+              data-md-value="0"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+
+        <!-- Feedback rating notes (shown after submission) -->
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+
+              <!-- Determine title -->
+              
+                
+              
+
+              <!-- Replace {url} and {title} placeholders in note -->
+              谢谢你的反馈！
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+
+              <!-- Determine title -->
+              
+                
+              
+
+              <!-- Replace {url} and {title} placeholders in note -->
+              Thanks for your feedback! Help us improve this page by using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <!-- Footer -->
+<footer class="md-footer">
+  <!-- Link to previous and/or next page - 移到最上面 -->
+    
+  <nav
+    class="md-footer__inner md-grid"
+    aria-label="页脚"
+    
+  >
+    <!-- Link to previous page -->
+     
+    <a
+      href="../Symmetriccryptography/"
+      class="md-footer__link md-footer__link--prev"
+      aria-label="上一页: 流密码"
+    >
+      <div class="md-footer__button md-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </div>
+      <div class="md-footer__title">
+        <span class="md-footer__direction"> 上一页 </span>
+        <div class="md-ellipsis">流密码</div>
+      </div>
+    </a>
+    
+
+    <!-- Link to next page -->
+     
+    <a
+      href="../../Mkdocs/MIT/"
+      class="md-footer__link md-footer__link--next"
+      aria-label="下一页: MIT许可声明"
+    >
+      <div class="md-footer__title">
+        <span class="md-footer__direction"> 下一页 </span>
+        <div class="md-ellipsis">MIT许可声明</div>
+      </div>
+      <div class="md-footer__button md-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+      </div>
+    </a>
+    
+  </nav>
+   
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="footer-wrapper">
+        <!-- 访问统计区域 -->
+        <div class="footer-content">
+          <div class="footer-visit-count">
+            <div class="footer-item">
+              <!-- <span class="footer-icon">👀</span> -->
+              <span>本站访问量：</span>
+              <span id="finicount_views" class="footer-highlight"></span>
+            </div>
+
+            <div class="footer-item">
+              <!-- <span class="footer-icon">📝</span> -->
+              <a
+                href="https://icp.gov.moe/?keyword=20230640"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icp-link"
+                >萌ICP备20230640号</a>
+            </div>
+
+            <div class="footer-item runtime-info">
+              <!-- <span class="footer-icon">⏱️</span> -->
+              <span>本站已经运行</span>
+              <span id="box1" class="footer-highlight"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 移动端简洁布局 (仿 footercopy.html) -->
+        <div class="footer-visit-count-mobile">
+          <span>本站访问量：</span>
+          <span id="finicount_views_mobile" class="footer-highlight"></span>
+          |
+          <a
+            href="https://icp.gov.moe/?keyword=20230640"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icp-link"
+          >萌ICP备20230640号</a>
+          <!-- |&nbsp; -->
+          <span class="runtime-info">
+            <span>本站已经运行</span>
+            <span id="box1_mobile"></span>
+          </span>
+        </div>
+
+        <!-- 版权信息和社交媒体水平布局 -->
+        <div class="footer-bottom-section">
+          <div class="md-footer-copyright">
+            <p>Copyright © 2022-2025 Wcowin</p>
+            <p>Made with <a href="https://squidfunk.github.io/mkdocs-material/" style="color: #518FC1; text-decoration: none;">Material for MkDocs</a></p>
+          </div>
+
+          
+            <div class="footer-social">
+              <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" target="_blank" rel="noopener" title="pic1.zhimg.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154m-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4m-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2M563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4m-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6m107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://t.me/Wcowin" target="_blank" rel="noopener" title="t.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m115 168.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7.2-.7.3-3.1-1.2-4.4s-3.6-.8-5.1-.5c-2.2.5-37.1 23.5-104.6 69.1-9.9 6.8-18.9 10.1-26.9 9.9-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3.6-4.5 6.7-9 18.4-13.7 72.3-31.5 120.5-52.3 144.6-62.3 68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6.5 9.6 2.9 2 1.7 3.2 4.1 3.5 6.7.5 3.2.6 6.5.4 9.8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/wcowin_" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/Wcowin" target="_blank" rel="noopener" title="Github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/1407028951/lists/4566631?type=series" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92c-26.4-.8-48.2-9.8-65.3-27.2S.7 396.5 0 368.2V169.8c.8-26 9.7-47.6 26.7-65.7C43.8 87.8 65.5 78.8 92 78h29.4L96 52.2c-5.7-5.7-8.6-13-8.6-21.8S90.3 14.3 96 8.6 109 0 117.9 0s16.1 2.9 21.9 8.6L213.1 78h88l74.5-69.4C381.7 2.9 389.2 0 398 0s16.1 2.9 21.9 8.6c5.7 5.7 8.6 13 8.6 21.8s-2.9 16.1-8.6 21.8L394.6 78h29.3c26.4.8 48 9.8 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96c-9.6.4-17.4 3.7-23.6 9.8-6.1 6.1-9.4 13.9-9.8 23.5v194.4c0 9.2 3.3 17 9.8 23.5s14.4 9.8 23.6 9.8h320.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.csdn.net/m0_63203517?spm=1000.2115.3001.5343" target="_blank" rel="noopener" title="CSDN" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0h149.5c17 0 33.3 6.7 45.3 18.7l106.5 106.6c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm208-5.5V152c0 13.3 10.7 24 24 24h93.5zm-53.8 237.1c8.6-10.1 7.5-25.2-2.6-33.8s-25.2-7.5-33.8 2.6l-48 56c-7.7 9-7.7 22.2 0 31.2l48 56c8.6 10.1 23.8 11.2 33.8 2.6s11.2-23.8 2.6-33.8L119.6 336zm112-31.2c-8.6-10.1-23.8-11.2-33.8-2.6s-11.2 23.8-2.6 33.8l34.6 40.4-34.6 40.4c-8.6 10.1-7.5 25.2 2.6 33.8s25.2 7.5 33.8-2.6l48-56c7.7-9 7.7-22.2 0-31.2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<wangkewen821@gmail.com>" target="_blank" rel="noopener" title="Email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M61.4 64C27.5 64 0 91.5 0 125.4c0 .9 0 1.7.1 2.6H0v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V128h-.1c0-.9.1-1.7.1-2.6 0-33.9-27.5-61.4-61.4-61.4zM464 192.3V384c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192.3l154.8 117.4c31.4 23.9 74.9 23.9 106.4 0zM48 125.4c0-7.4 6-13.4 13.4-13.4h389.2c7.4 0 13.4 6 13.4 13.4 0 4.2-2 8.2-5.3 10.7L280.2 271.5c-14.3 10.8-34.1 10.8-48.4 0L53.3 136.1c-3.3-2.5-5.3-6.5-5.3-10.7"/></svg>
+    </a>
+  
+</div>
+            </div>
+          
+        </div>
+      </div>
+
+      <!-- 页脚脚本部分 -->
+      <script>
+        (function() {
+          // 避免变量冲突，将所有代码包装在立即执行函数中
+          
+          // 存储计时器ID，用于清理
+          let timeUpdateInterval;
+          
+          function timingTime() {
+            const start = "2022-10-20T00:00:00";
+            const startTime = new Date(start).getTime();
+            const now = Date.now();
+            let diff = Math.floor((now - startTime) / 1000);
+            const days = Math.floor(diff / 86400);
+            diff %= 86400;
+            const hours = Math.floor(diff / 3600);
+            diff %= 3600;
+            const minutes = Math.floor(diff / 60);
+            const seconds = diff % 60;
+            return `${days}天${hours}时${minutes}分${seconds}秒`;
+          }
+
+          // 简化的计时器更新函数
+          function updateTime() {
+            const el = document.getElementById("box1");
+            const elMobile = document.getElementById("box1_mobile");
+            const time = timingTime();
+
+            if (el) el.textContent = time;
+            if (elMobile) elMobile.textContent = time;
+          }
+
+          // 加载访问量计数器
+          async function loadVisitCounter() {
+            try {
+              // 检查是否已经加载过计数器脚本
+              if (document.querySelector('script[src*="finicounter.eu.org"]')) {
+                console.log('计数器脚本已加载，跳过重复加载');
+                return;
+              }
+              
+              const script = document.createElement('script');
+              script.src = '//finicounter.eu.org/finicounter.js';
+              script.async = true;
+              script.onerror = function() {
+                console.log('访问量计数器加载失败，使用备用显示');
+                const desktop = document.getElementById("finicount_views");
+                const mobile = document.getElementById("finicount_views_mobile");
+                if (desktop) desktop.textContent = '统计中...';
+                if (mobile) mobile.textContent = '统计中...';
+              };
+              document.head.appendChild(script);
+            } catch (e) {
+              console.log('访问量计数器初始化失败:', e);
+            }
+          }
+
+          // 同步访问量显示
+          function syncVisitCount() {
+            const desktop = document.getElementById("finicount_views");
+            const mobile = document.getElementById("finicount_views_mobile");
+            if (desktop && mobile && desktop.textContent && desktop.textContent !== '加载中...') {
+              mobile.textContent = desktop.textContent;
+            }
+          }
+
+          // 监听访问量更新
+          function setupVisitCountObserver() {
+            try {
+              // 清理旧的观察器
+              if (window._visitCountObserver) {
+                window._visitCountObserver.disconnect();
+              }
+              
+              window._visitCountObserver = new MutationObserver(syncVisitCount);
+              const visitCountTarget = document.getElementById("finicount_views");
+              if (visitCountTarget) {
+                window._visitCountObserver.observe(visitCountTarget, { childList: true, subtree: true });
+              }
+            } catch (e) {
+              console.log('访问量监听器设置失败:', e);
+            }
+          }
+
+          // 清理函数 - 在页面切换前调用
+          function cleanup() {
+            // 清除计时器
+            if (timeUpdateInterval) {
+              clearInterval(timeUpdateInterval);
+              timeUpdateInterval = null;
+            }
+            
+            // 清除观察器
+            if (window._visitCountObserver) {
+              window._visitCountObserver.disconnect();
+              window._visitCountObserver = null;
+            }
+          }
+
+          // 初始化所有功能
+          function init() {
+            // 清理旧的计时器和观察器
+            cleanup();
+            
+            // 启动计时器
+            updateTime();
+            timeUpdateInterval = setInterval(updateTime, 1000);
+
+            // 加载访问量计数器
+            loadVisitCounter();
+
+            // 设置访问量同步
+            setupVisitCountObserver();
+
+            // 调试信息
+            console.log('页脚功能已启动');
+          }
+
+          // 使用统一的即时导航处理器（如果可用）
+          if (window.InstantNavigation) {
+            window.InstantNavigation.register(init, 'footer-functions');
+          } else {
+            // 兼容 Material for MkDocs 的即时加载功能
+            // 关键条件: !window.document$.isStopped 确保在build模式下也能正常工作
+            if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
+              // 使用 Material 的 document$ 可观察对象处理页面切换
+              window.document$.subscribe(() => {
+                console.log('页面内容已更新，重新初始化页脚');
+                // 延迟执行以确保DOM已完全更新
+                setTimeout(init, 100);
+              });
+            } else {
+              // 标准方式 - 仅在初始加载时执行
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+              } else {
+                init();
+              }
+            }
+          }
+
+          // 在页面卸载前清理资源
+          window.addEventListener('beforeunload', cleanup);
+
+          // 监听页脚重新初始化事件
+          document.addEventListener('footer.reinit', init);
+        })();
+      </script>
+
+      <style>
+        /* 页脚背景配色方案 - 可根据喜好选择 */
+
+        /* 方案1: 现代深蓝灰色调 (当前使用) */
+        .md-footer {
+          background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        }
+
+        .md-footer-meta {
+          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        /* 方案2: 优雅紫色调 (取消注释使用)
+        .md-footer {
+          background: linear-gradient(135deg, #2d1b69 0%, #4c1d95 100%);
+        }
+
+        .md-footer-meta {
+          background: linear-gradient(135deg, #1e1b4b 0%, #2d1b69 100%);
+        }
+        */
+
+        /* 方案3: 温暖深绿色调 (取消注释使用)
+        .md-footer {
+          background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+        }
+
+        .md-footer-meta {
+          background: linear-gradient(135deg, #052e16 0%, #14532d 100%);
+        }
+        */
+
+        /* 方案4: 经典深灰色调 (取消注释使用)
+        .md-footer {
+          background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+        }
+
+        .md-footer-meta {
+          background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+        }
+        */
+
+        /* 整体页脚容器 */
+        .footer-wrapper {
+          width: 100%;
+          padding: 0.2rem 0;
+          text-align: center;
+        }
+
+        /* 版权信息和社交媒体水平布局 */
+        .footer-bottom-section {
+          max-width: 900px;
+          margin: 0.4rem auto 0;
+          padding: 0.4rem 1rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.15);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        /* 版权信息 */
+        .md-footer-copyright {
+          text-align: left;
+          font-size: 0.75rem;
+          opacity: 0.8;
+          line-height: 1.2;
+        }
+
+        /* 社交媒体图标 */
+        .footer-social {
+          display: -webkit-flex;
+          display: flex;
+          gap: 0.3rem;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+
+        /* Safari兼容性修复 */
+        .footer-social .md-social__link svg {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          opacity: 1 !important;
+          visibility: visible !important;
+          pointer-events: auto;
+        }
+
+        /* 强制Safari显示SVG图标 */
+        .footer-social .md-social__link {
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+        
+        /* 内容区域样式 */
+        .footer-content {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0.4rem 0 0;
+        }
+
+        .footer-visit-count {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.3rem;
+          font-size: 0.75rem;
+          color: var(--md-footer-fg-color--light);
+        }
+
+        .footer-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.4rem 0.8rem;
+          border-radius: 16px;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          -webkit-backdrop-filter: blur(10px); /* Safari 9+ 支持 */
+          backdrop-filter: blur(10px);
+          min-width: 160px;
+          font-size: 0.8rem;
+          transition: all 0.2s ease;
+        }
+
+        .footer-item:hover {
+          background: rgba(255, 255, 255, 0.15);
+          border-color: rgba(81, 143, 193, 0.4);
+          transform: translateY(-1px);
+        }
+        
+        .footer-icon {
+          margin-right: 0.5rem;
+          font-size: 1rem;
+        }
+        
+        .footer-highlight {
+          color: #C2C4C9;
+          font-weight: 600;
+          margin-left: 0rem;
+        }
+
+        /* 移动端进一步减少间距 */
+        @media (max-width: 76.1875em) {
+          .footer-visit-count-mobile .footer-highlight {
+            margin-left: 0rem;
+          }
+        }
+
+        .icp-link {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .icp-link:hover {
+          color: #518FC1;
+        }
+        
+        /* 社交媒体图标样式 - 仅桌面端 */
+        @media (min-width: 76.1875em) {
+          .footer-social .md-social__link {
+            padding: 0.3rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 2rem;
+            height: 2rem;
+            display: -webkit-inline-flex;
+            display: inline-flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+
+          .footer-social .md-social__link svg {
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: currentColor;
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+          }
+
+          .footer-social .md-social__link:hover {
+            background: rgba(81, 143, 193, 0.2);
+            border-color: rgba(81, 143, 193, 0.4);
+          }
+        }
+
+        /* 移动端社交媒体图标样式 - 恢复默认样式 */
+        @media (max-width: 76.1875em) {
+          .footer-social .md-social__link {
+            padding: 0.4rem;
+            background: transparent;
+            border: none;
+            width: auto;
+            height: auto;
+            display: inline-block;
+            border-radius: 0;
+            -webkit-transition: color 0.2s ease;
+            transition: color 0.2s ease;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+
+          .footer-social .md-social__link:hover {
+            background: transparent;
+            border: none;
+            color: var(--md-accent-fg-color);
+          }
+
+          .footer-social .md-social__link svg {
+            width: 1.6rem;
+            height: 1.6rem;
+            fill: currentColor;
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+            display: block;
+          }
+        }
+        
+        /* 导航链接样式 */
+        .md-footer__link {
+          transition: opacity 0.2s ease;
+        }
+        
+        .md-footer__link:hover {
+          opacity: 1;
+        }
+
+        /* 移动端响应式 - 使用 footercopy.html 样式 */
+        @media (max-width: 76.1875em) {
+          /* 隐藏桌面端的卡片式布局 */
+          .footer-visit-count {
+            display: none;
+          }
+
+          .footer-bottom-section {
+            flex-direction: column;
+            gap: 0.6rem;
+            text-align: center;
+          }
+
+          .md-footer-copyright {
+            text-align: center;
+            font-size: 0.75rem;
+          }
+
+          .footer-social .md-social__link {
+            width: 1.8rem;
+            height: 1.8rem;
+          }
+
+          /* 显示移动端的简洁布局 */
+          .footer-visit-count-mobile {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4em 0.8em;
+            padding: 0.2em 0;
+            font-size: 0.75rem;
+            color: var(--md-footer-fg-color--light);
+            text-align: center;
+          }
+
+          .footer-visit-count-mobile > * {
+            white-space: nowrap;
+          }
+
+          .footer-visit-count-mobile .icp-link {
+            color: var(--md-footer-fg-color--light);
+            text-decoration: none;
+          }
+
+          .footer-visit-count-mobile .icp-link:hover {
+            color: #518FC1;
+            text-decoration: underline;
+          }
+
+          /* .runtime-info {
+            display: none; 移动端隐藏运行时间
+          } */
+        }
+
+        /* 桌面端隐藏移动端布局 */
+        @media (min-width: 76.1875em) {
+          .footer-visit-count-mobile {
+            display: none;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .footer-visit-count {
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+          }
+        }
+
+        /* 深色模式适配 */
+        [data-md-color-scheme="slate"] .md-footer {
+          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        [data-md-color-scheme="slate"] .md-footer-meta {
+          background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+        }
+
+        [data-md-color-scheme="slate"] .footer-item {
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        [data-md-color-scheme="slate"] .footer-item:hover {
+          background: rgba(255, 255, 255, 0.12);
+          border-color: rgba(81, 143, 193, 0.3);
+        }
+
+        [data-md-color-scheme="slate"] .footer-social .md-social__link {
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(255, 255, 255, 0.12);
+        }
+      </style>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "navigation.prune", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "toc.follow", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js"></script>
+      
+        <script src="../../../assets/document_dates/tippy/popper.min.js"></script>
+      
+        <script src="../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../assets/document_dates/core/core.js"></script>
+      
+        <script src="../../../assets/document_dates/user.config.js"></script>
+      
+    
+  </body>
+</html>

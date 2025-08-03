@@ -2,11 +2,11 @@
     including icons, fonts, colors, etc
     */
 /* 
-.document-dates-plugin {
+.md-main .document-dates-plugin {
     color: rgba(109, 157, 204, 0.7);
     font-size: 0.75rem;
 }
-.document-dates-plugin .material-icons {
+.md-main .document-dates-plugin .material-icons {
     font-size: 0.9rem;
 } */
 
@@ -34,21 +34,23 @@
 
 
 /* 2. Plug-in wrapper styles
-    including divider, margin, padding, etc
+    including divider line, margin, padding, and the hiding of this plugin, etc
     */
+/* Remove the divider line: */
 /* 
-.document-dates-plugin-wrapper.document-dates-top {
-    border-bottom: 1px solid rgba(142, 142, 142, 0.15);
-}
+.document-dates-plugin-wrapper.document-dates-top,
 .document-dates-plugin-wrapper.document-dates-bottom {
     border-bottom: none;
 } */
-.document-dates-plugin-wrapper.document-dates-top {
-    border-bottom: none;
-} 
-.document-dates-plugin-wrapper.document-dates-bottom {
-    border-bottom: none;
-}
+
+/* Hide this plugin (default build version):
+    and then you can reformulate the plugin's arbitrary display position and style based on template variables */
+/* 
+.document-dates-plugin-wrapper {
+    display: none;
+} */
+
+
 
 /* 3. Tooltip styles
     including theme, arrow, font, color, background color, etc
@@ -70,4 +72,18 @@
 }
 .tippy-box[data-theme~='sublime'] > .tippy-arrow::before {
     color: #474747;
+} */
+
+
+
+/* 4. Author Avatar styles
+    e.g. shape, hover scale, grayscale mode
+    */
+/* 
+.avatar-wrapper {
+    border-radius: 4px;
+    filter: grayscale(0%);
+}
+.avatar-wrapper:hover {
+    transform: scale(1.08);
 } */

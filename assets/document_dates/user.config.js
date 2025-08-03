@@ -18,7 +18,7 @@ DocumentDates.setConfig({
     },
     tooltip: {
         placement: 'bottom',    // placement: top bottom left right auto
-        offset: [0, 6],         // placement offset: [horizontal, vertical]
+        offset: [0, 10],         // placement offset: [horizontal, vertical]
         interactive: true,      // content in Tooltip is interactive
         allowHTML: true,        // whether to allow HTML in the tooltip content
         
@@ -76,10 +76,18 @@ const localeFunc = (number, index) => {
 };
 const localeStr = 'whatever';
 timeago.register(localeStr, localeFunc);
-
-if (typeof timeago !== 'undefined') {
-    document.querySelectorAll('.document-dates-plugin time').forEach(timeElement => {
-        timeElement.textContent = timeago.format(timeElement.getAttribute('datetime'), localeStr);
-    });
+function formatTimeagoElements() {
+    if (typeof timeago !== 'undefined') {
+        document.querySelectorAll('.document-dates-plugin time').forEach(timeElement => {
+            timeElement.textContent = timeago.format(timeElement.getAttribute('datetime'), localeStr);
+        });
+    }
+}
+if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
+    // Compatible with Material for MkDocs 'navigation.instant'
+    window.document$.subscribe(formatTimeagoElements);
+} else {
+    // Fallback to standard DOMContentLoaded for other themes
+    formatTimeagoElements();
 }
 */
