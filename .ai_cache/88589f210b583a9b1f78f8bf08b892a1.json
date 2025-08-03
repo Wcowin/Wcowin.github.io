@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了三步卸载Microsoft Edge的方法：首先以管理员模式运行Powershell，然后执行卸载命令，最后确认卸载完成。",
+  "summary": "本文介绍了三步卸载Microsoft Edge的方法：首先以管理员模式运行Powershell，然后执行卸载命令，最后重启电脑以完成卸载。",
   "service": "glm",
   "page_title": "三步卸载 Microsoft Edge",
-  "timestamp": "2025-08-02T21:57:28.405750",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:19:45.754722",
+  "cache_version": "1.2.2",
   "content_hash": "0c1e2d4e7a3c918a96144e709ea77815"
 }

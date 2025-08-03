@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了Mkdocs相关插件，包括Mkdocs AI Summary、MkDocs文档日期插件和Mkdocs阅读时间插件等，旨在帮助用户优化文档展示和阅读体验。",
+  "summary": "本文介绍了Mkdocs相关插件，包括Mkdocs AI Summary、MkDocs文档日期插件和MKdocs页面添加相关文章推荐等。这些插件可增强Mkdocs文档功能，提供更丰富的元信息和阅读体验。",
   "service": "glm",
   "page_title": "Mkdocs相关插件",
-  "timestamp": "2025-08-02T22:00:00.808495",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:21:55.893389",
+  "cache_version": "1.2.2",
   "content_hash": "65a80d5b85970da712e9c94a648db580"
 }

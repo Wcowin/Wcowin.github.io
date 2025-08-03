@@ -1,8 +1,8 @@
 {
-  "summary": "为MKdocs添加AI摘要(Plus版本)是一款利用AI技术为MkDocs文档生成智能摘要的插件。支持多种AI服务，具备智能缓存、多语言支持、自动降级机制等特点，易于安装和配置，与MkDocs主题完美兼容。",
+  "summary": "为MKdocs添加AI摘要(Plus版本)是一款利用AI技术为MkDocs文档生成智能摘要的插件。支持多种AI服务，具有智能缓存、多语言支持、自动降级等特性，易于安装和使用，兼容所有MkDocs主题。",
   "service": "glm",
   "page_title": "为MKdocs添加AI摘要(Plus版本)",
-  "timestamp": "2025-08-02T21:58:20.428330",
-  "cache_version": "1.1.6",
-  "content_hash": "ccb5118d497d4f8273ca2d06904d2b59"
+  "timestamp": "2025-08-03T23:20:26.750905",
+  "cache_version": "1.2.2",
+  "content_hash": "8514e96bf987b4ed7a78a7e238932276"
 }

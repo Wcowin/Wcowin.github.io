@@ -1,8 +1,8 @@
 {
-  "summary": "本文整理了LaTeX中常用的希腊字母符号及其显示形式，包括大写和小写字母的显示和变量形式。",
+  "summary": "本文整理了LaTeX中常用的希腊字母符号及其显示形式，包括大写和小写字母的显示和变量形式，方便LaTeX用户快速查找和使用。",
   "service": "glm",
   "page_title": "LaTeX常用符号整理",
-  "timestamp": "2025-08-02T21:56:30.637140",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:18:45.228231",
+  "cache_version": "1.2.2",
   "content_hash": "870d5506e92a09529c6f2b0774d4d75d"
 }

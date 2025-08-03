@@ -2,7 +2,7 @@
   "summary": "Mac esc键失效多因Siri占用，解决方法为打开活动监视器杀掉Siri进程。",
   "service": "glm",
   "page_title": "Mac的esc键失效的解决方法",
-  "timestamp": "2025-08-02T21:56:52.814537",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:19:07.273743",
+  "cache_version": "1.2.2",
   "content_hash": "5f46b29cecb98e346076182c43d55f0d"
 }

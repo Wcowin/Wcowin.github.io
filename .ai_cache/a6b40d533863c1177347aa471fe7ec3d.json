@@ -1,8 +1,8 @@
 {
-  "summary": "MWeb Pro是一款macOS上的Markdown写作与笔记应用，支持GFM语法，具备强大的图片插入、表格和LaTeX辅助功能。支持多种格式导出和发布到多个平台，拥有强大的笔记功能和文档库管理，适合博客写作和个人知识管理。",
+  "summary": "MWeb Pro是一款macOS上的Markdown写作和笔记应用，支持GFM语法、多种输出格式和强大的笔记功能。它提供简洁界面、高效编辑体验，并支持图片、表格、LaTeX等元素，适用于博客写作、知识管理和文档输出。",
   "service": "glm",
   "page_title": "MWeb Pro",
-  "timestamp": "2025-08-02T21:59:42.352894",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:21:35.360835",
+  "cache_version": "1.2.2",
   "content_hash": "db7067da222af1196ed054d4ddf10c09"
 }

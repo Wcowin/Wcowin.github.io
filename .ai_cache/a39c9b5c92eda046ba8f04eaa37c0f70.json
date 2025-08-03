@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了如何使用JavaScript和CSS实现鼠标样式，重点在于调整鼠标尺寸和颜色。文档提供了具体代码示例，并强调需在mkdocs.yml中引入相关资源。",
+  "summary": "本文介绍了如何使用JavaScript和CSS实现鼠标样式，重点在于调整鼠标尺寸和颜色。颜色支持RGB和固有名称写法。需在mkdocs.yml中引入相关js和css文件。",
   "service": "glm",
   "page_title": "JS实现鼠标样式",
-  "timestamp": "2025-08-02T21:58:56.705431",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:20:53.986074",
+  "cache_version": "1.2.2",
   "content_hash": "1b01906328f67c4e3cdd0cd8306d63df"
 }

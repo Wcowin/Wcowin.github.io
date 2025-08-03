@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了如何使用Tidio免费版添加在线聊天功能。只需访问Tidio官网创建账户，获取独特的javascript代码，将其粘贴到网站代码中即可实现。安装过程简单快捷。",
+  "summary": "本文介绍了如何使用Tidio免费版在线聊天工具。通过访问Tidio官网创建账户，获取独特的javascript代码，将其粘贴到网站代码中即可实现安装。操作简单，无需梯子。",
   "service": "glm",
   "page_title": "添加在线聊天",
-  "timestamp": "2025-08-02T21:59:00.238018",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:21:00.607579",
+  "cache_version": "1.2.2",
   "content_hash": "42b6ac1633587b5919219cfb2142c7e3"
 }

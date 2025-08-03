@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了如何在Mac和Linux系统上通过国内地址自动安装Homebrew。提供了常规和极速安装脚本，并针对SSL证书过期问题给出了解决方法。",
+  "summary": "本文介绍了Homebrew在Mac和Linux系统上的国内自动安装方法，包括常规和极速安装脚本，并针对SSL证书过期问题提供了解决方案。",
   "service": "glm",
   "page_title": "Homebrew国内如何自动安装(国内地址)(Mac & Linux)",
-  "timestamp": "2025-08-02T21:56:56.017235",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:19:12.057467",
+  "cache_version": "1.2.2",
   "content_hash": "ab454f49fa7f24aa2f0835be0be7c1ef"
 }

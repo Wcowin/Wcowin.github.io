@@ -5,12 +5,10 @@ hide:
 #   - toc #显示左
   - footer
   - feedback
-comments: false
 status: new
-ai_summary_lang: zh  # 摘要语言，支持 "zh" 和 "en"
 ---  
 
-
+# MkDocs AI Summary中文教程
 
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"

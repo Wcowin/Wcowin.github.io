@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了实用脚本管理器Tampermonkey的安装和使用方法，包括获取和安装脚本，推荐了多个实用脚本，如网页加速器、网盘直链下载助手、CSDN广告过滤等，旨在优化网页浏览体验。",
+  "summary": "本文介绍了实用脚本管理器Tampermonkey的安装和使用方法，并推荐了多个获取好玩的脚本平台和实用脚本，如网页加速器、网盘直链下载助手、CSDN广告过滤等。",
   "service": "glm",
   "page_title": "实用脚本分享",
-  "timestamp": "2025-08-02T21:57:52.059049",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:20:04.953164",
+  "cache_version": "1.2.2",
   "content_hash": "0ec2d6aac4b699b4fb6935b1418a1d41"
 }

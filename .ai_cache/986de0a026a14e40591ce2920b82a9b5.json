@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了在网站中添加Mkdocs博客的方法。通过在mkdocs.yml中添加特定行，并在/docs/blog/posts下创建md文件，即可实现。需注意，blog文件夹下需有index.md文件，作者信息在/docs/blog/.authors.yml中配置。",
+  "summary": "本文介绍了如何在网站中添加Mkdocs博客。通过在mkdocs.yml中添加配置行，并在/docs/blog/posts下创建md文件，即可实现。需注意创建index.md文件和配置作者信息。",
   "service": "glm",
   "page_title": "网站添加Mkdocs博客",
-  "timestamp": "2025-08-02T21:57:23.506535",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:19:39.763378",
+  "cache_version": "1.2.2",
   "content_hash": "08763d138472f31be9eea529967d43be"
 }

@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了在文档“docs/overrides”目录下新建“main.html”文件，并针对该文件添加顶部公告栏的步骤。要求在main.html中进行修改，实现公告栏功能。",
+  "summary": "本文档介绍了在“docs/overrides”目录下新建“main.html”文件，并针对该文件添加顶部公告栏的修改方法。要求自行修改main.html文件以实现此功能。",
   "service": "glm",
   "page_title": "添加顶部公告栏",
-  "timestamp": "2025-08-02T21:58:34.613691",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:20:38.082523",
+  "cache_version": "1.2.2",
   "content_hash": "bbbc88dcb7759ce64739534ae9c468ee"
 }

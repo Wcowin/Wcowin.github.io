@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了Windows系统中的快捷键，包括Win键、Ctrl键和触控板使用技巧。Win键组合可快速打开设置、任务栏、通知面板等，Ctrl键组合用于复制、粘贴、删除等操作，触控板操作则包括拖动、滑动、切换等。",
+  "summary": "本文介绍了Windows系统中的快捷键，包括Win键、Ctrl键和触控板使用技巧。涵盖了快速操作、窗口管理、文件管理、输入法切换等功能，旨在提高用户操作效率。",
   "service": "glm",
   "page_title": "Windows快捷键",
-  "timestamp": "2025-08-02T21:57:31.632192",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-08-03T23:19:47.189482",
+  "cache_version": "1.2.2",
   "content_hash": "dea9474607614f0ceebec9daec0de57a"
 }
