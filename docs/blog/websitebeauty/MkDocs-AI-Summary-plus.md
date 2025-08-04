@@ -35,6 +35,8 @@ status: new
     <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README.md">中文</a> | <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README-en.md">English</a>
 </p>
 
+> 仓库地址：https://github.com/Wcowin/Mkdocs-AI-Summary-Plus
+
 🚀 **您的MkDocs文档首选智能摘要！**   
 这个项目利用MkDocs hooks，为您的技术文档和博客添加AI驱动的摘要生成和智能阅读统计功能。
 
