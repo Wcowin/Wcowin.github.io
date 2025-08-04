@@ -56,7 +56,8 @@ status: new
 ### 从 PyPI 安装（推荐）
 
 ```bash
-pip install mkdocs-ai-summary-wcowin
+pip install mkdocs-ai-summary-wcowin -i https://pypi.org/simple
+pip install --upgrade mkdocs-ai-summary-wcowin -i https://pypi.org/simple
 ```
 
 ## 快速开始
@@ -65,22 +66,28 @@ pip install mkdocs-ai-summary-wcowin
 
 在 `mkdocs.yml` 中添加插件：
 
-```yaml
+```yaml hl_lines="2-9"
 plugins:
   - ai-summary:
       ai_service: "glm"          # 推荐使用GLM
       # local_enabled: true             # 本地环境启用
+      # debug: false                    # 是否显示调试信息（默认：false）
       enabled_folders:
-        - docs                       # 处理 docs 文件夹
+        - blog/                      # 处理 blog 文件夹
       exclude_patterns:
         - index.md                    # 排除 index.md 文件
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - admonition
 ```
 
 ### 2. 获取 API 密钥
 
-推荐使用 **GLM**（性价比最高）：
-1. 访问 [GLM 开放平台](https://open.bigmodel.cn/)
-2. 注册并创建 API 密钥
+推荐使用 **GLM**（性价比最高）：  
+1. 访问 [GLM 开放平台](https://open.bigmodel.cn/)  
+2. 注册并创建 API 密钥  
 3. 在项目根目录创建 `.env` 文件：
 
 ```env
@@ -270,6 +277,8 @@ mkdocs serve
 
 #### 2. 配置 GitHub Actions 工作流
 
+推荐在根目录下创建一个requirements.txt
+
 ##### 方案 A：创建新的工作流
 
 创建 `.github/workflows/ci.yml` 文件：
@@ -313,17 +322,18 @@ jobs:
           restore-keys: |
             mkdocs-material-
       
-      # 安装您现有的依赖
+      # 安装您现有的依赖!!!
       - run: pip install mkdocs-material
-      - run: pip install mkdocs-ai-summary-wcowin
+      - run: pip install -r requirements.txt # 安装其他依赖
+      - run: pip install mkdocs-ai-summary-wcowin # 安装本AI 摘要插件
       
       # 使用 AI 摘要部署
       - name: 使用 AI 摘要部署
         env:
-          AI_SUMMARY_CI_ENABLED: 'true'
-          AI_SUMMARY_CACHE_ENABLED: 'true'
-          AI_SUMMARY_CACHE_EXPIRE_DAYS: '300'
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          AI_SUMMARY_CI_ENABLED: 'true' # 在 CI 中启用
+          AI_SUMMARY_CACHE_ENABLED: 'true' # 使用缓存
+          AI_SUMMARY_CACHE_EXPIRE_DAYS: '30' # 缓存 30 天
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}  # 添加 GLM API 密钥
         run: mkdocs gh-deploy --force
       
       # 自动提交 AI 缓存文件
@@ -344,16 +354,18 @@ jobs:
 
 如果您已经有 `ci.yml` 文件，请在现有工作流中添加以下步骤：
 
-```yaml
+```yaml 
 # 在现有的依赖安装部分添加
-- run: pip install mkdocs-ai-summary-wcowin
+- run: pip install mkdocs-ai-summary-wcowin # 安装 AI 摘要插件
+- run: pip install -r requirements.txt # 安装其他依赖
 
 # 替换您的 mkdocs 构建/部署步骤为：
 - name: 使用 AI 摘要部署
   env:
-    AI_SUMMARY_CI_ENABLED: 'true'
-    AI_SUMMARY_CACHE_ENABLED: 'true'
-    GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+    AI_SUMMARY_CI_ENABLED: 'true' # 在 CI 中启用
+    AI_SUMMARY_CACHE_ENABLED: 'true' # 使用缓存
+    AI_SUMMARY_CACHE_EXPIRE_DAYS: '30' # 缓存 30
+    GLM_API_KEY: ${{ secrets.GLM_API_KEY }} # 添加 GLM API 密钥
   run: mkdocs gh-deploy --force
 
 # 在部署后添加（可选 - 用于缓存管理）
@@ -385,7 +397,7 @@ jobs:
 ```yaml
 - name: 部署文档
   env:
-    DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}  # 添加这一行
+    GLM_API_KEY: ${{ secrets.GLM_API_KEY }}  # 添加这一行
   run: mkdocs gh-deploy --force
 ```
 
@@ -395,8 +407,8 @@ jobs:
 env:
   AI_SUMMARY_CI_ENABLED: 'true'        # 在 CI 中启用
   AI_SUMMARY_CACHE_ENABLED: 'true'     # 使用缓存
-  AI_SUMMARY_CACHE_EXPIRE_DAYS: '300'  # 缓存 300 天
-  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+  AI_SUMMARY_CACHE_EXPIRE_DAYS: '30'  # 缓存 30 天
+  GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
 ```
 
 ##### 步骤 4：添加缓存管理（推荐/可选）
@@ -440,7 +452,7 @@ plugins:
 ```yaml
 plugins:
   - ai-summary:
-      ai_service: "deepseek"          # 主服务
+      ai_service: "glm"          # 主服务
       fallback_services:               # 备用服务
         - "openai"
         - "gemini"
