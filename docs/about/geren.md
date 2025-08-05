@@ -254,17 +254,17 @@ hide_comment: true
 
 <div class="about__info">
     <div>
-        <span class="about__info-title">1年++</span>
-        <span class="about__info-name">工作经验</span>
+        <span class="about__info-title">2年++</span>
+        <span class="about__info-name">实习经验</span>
     </div>
     <div>
         <a href="https://github.com/Wcowin" target="_blank">
-            <span class="about__info-title">3项+</span>
+            <span class="about__info-title">5项+</span>
             <span class="about__info-name">完成的项目</span>
         </a>
     </div>
     <div>
-        <span class="about__info-title">2个+</span>
+        <span class="about__info-title">3个+</span>
         <span class="about__info-name">贡献的开源</span>
     </div>
 </div>
