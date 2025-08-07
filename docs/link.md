@@ -1016,7 +1016,17 @@ comments: true
         </div>
       </div>
     </div>
-
+    <div class="card">
+      <img class="ava" src="https://www.eilo.uk/img/logo.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.eilo.uk/" target="_blank">Eilo's Blog</a>
+        </div>
+        <div class="info">
+          等等我记一下
+        </div>
+      </div>
+    </div>
 
 
 
