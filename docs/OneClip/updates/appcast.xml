@@ -3,12 +3,12 @@
     <channel>
         <title>OneClip</title>
         <item>
-            <title>1.2.1</title>
-            <pubDate>Wed, 20 Aug 2025 00:11:45 +0800</pubDate>
-            <sparkle:version>1.2.1</sparkle:version>
-            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <title>1.2.2</title>
+            <pubDate>Wed, 20 Aug 2025 00:58:45 +0800</pubDate>
+            <sparkle:version>1.2.2</sparkle:version>
+            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.2.1/OneClip-1.2.1.zip" length="3921582" type="application/octet-stream" sparkle:edSignature="xZLHtMkbfP/JkA5qrWYaL+uC3Yk4WVJZfgyTGITM6U8RpTlkvMdxO1QKnSX99fT6yoqJEA8GeBScZormNOSICw=="/>
+            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.2.2/OneClip-1.2.2.zip" length="3921582" type="application/octet-stream" sparkle:edSignature="CwY93slKUpS3m8XEJF1vrYRyM+16+A6Fm7gWzeaYXV0T06veTtBkHJXpAwzqYPMkLCqPrZvYGvQR+Crw/OkxDg=="/>
         </item>
     </channel>
 </rss>
