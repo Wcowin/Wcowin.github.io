@@ -2,7 +2,7 @@
   "summary": "本项目是一个基于原生JavaScript、HTML和CSS的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、顺序/随机/单曲循环播放等功能，适合学习Web前端开发。它支持多终端适配、暗黑模式，并集成了在线音乐API搜索。",
   "service": "glm",
   "page_title": "简单的 JavaScript 音乐播放器",
-  "timestamp": "2025-08-03T23:21:58.141997",
+  "timestamp": "2025-09-10T07:06:03.330983",
   "cache_version": "1.2.2",
   "content_hash": "95708f68f8fcb6320133dfc27906c404"
 }

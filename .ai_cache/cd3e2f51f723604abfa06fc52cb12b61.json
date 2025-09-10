@@ -1,8 +1,8 @@
 {
-  "summary": "Mkdocs-Wcowin主题是一款基于Material for MkDocs的美化主题，简洁美观，功能多元化，易于上手，教程详细。支持主页、文章页、博客页等多种页面展示，并提供友链页面和页面底部设计。快速使用只需克隆模板至本地文件夹，详细教程见相关链接。",
+  "summary": "Mkdocs-Wcowin主题是一款基于Material for MkDocs的美化主题，简洁美观，功能多元化，易于上手，教程详细。支持主页、文章页、博客页等多种页面展示，并提供友链页面和底部信息。快速使用方法见文档，适合部署静态网页至GitHub pages。",
   "service": "glm",
   "page_title": "Wcowin for MkDocs主题",
-  "timestamp": "2025-08-03T23:21:53.617526",
+  "timestamp": "2025-09-10T07:05:57.780048",
   "cache_version": "1.2.2",
   "content_hash": "6a7305a4587ba033a84b366d03420a41"
 }

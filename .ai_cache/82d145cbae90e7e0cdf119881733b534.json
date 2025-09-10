@@ -1,8 +1,8 @@
 {
-  "summary": "Wcowin for MkDocs主题是一款简洁美观、功能丰富的文档主题，基于Material for MkDocs美化。支持小白快速配置，并提供详细使用教程。",
+  "summary": "Wcowin for MkDocs主题是一款简洁美观、功能丰富的MkDocs主题，基于Material for MkDocs美化。支持小白快速配置，并提供详细教程。主题包含主页、文章页、博客页等，支持友链和Lighthouse测试。",
   "service": "glm",
   "page_title": "Wcowin for MkDocs主题",
-  "timestamp": "2025-08-03T23:20:46.608975",
+  "timestamp": "2025-09-10T07:04:38.671336",
   "cache_version": "1.2.2",
   "content_hash": "f75a383ef83b1ac67d6df9f144581de6"
 }
