@@ -3,12 +3,13 @@
     <channel>
         <title>OneClip</title>
         <item>
-            <title>1.2.3</title>
-            <pubDate>Sun, 24 Aug 2025 18:18:18 +0800</pubDate>
-            <sparkle:version>1.2.3</sparkle:version>
-            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.4</sparkle:minimumSystemVersion>
-            <enclosure url="https://wcowin.work/OneClip/updates/OneClip-1.2.3.zip" length="4758563" type="application/octet-stream" sparkle:edSignature="BjnROG09jydCLVwCjtal5erowTBh9UmNmP1RAM2jRuGxM+acXF24WmAY/OfVv428h9XibqxaW4twrSebmQrdDA=="/>
-        </item>
+            <title>1.2.4</title>
+            <pubDate>Wed, 10 Sep 2025 14:57:12 +0800</pubDate>
+            <sparkle:version>1.2.4</sparkle:version>
+            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/v1.2.4/OneClip-1.2.4-apple-silicon.zip" length="4455055" type="application/octet-stream" sparkle:edSignature="K7XE2E9hXMxHtVEmzK3RX/yaSb4gqQlx5zCLQ3Uf5gCMGYol1MHjUqhHwfVj/IqfZxznhPiRD8qqBSj8kvbdBQ=="/>
+        <sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.2.4-zh.html</sparkle:releaseNotesLink>
+</item>
     </channel>
 </rss>

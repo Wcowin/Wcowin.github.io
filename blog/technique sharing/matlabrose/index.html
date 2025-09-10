@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="https://i.stardots.io/wcowin/1750090373988.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
@@ -68,17 +68,17 @@
     
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/backdrop.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
-    
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
     
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
+    
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
     
@@ -3814,9 +3814,13 @@
 
 
 <h1 id="matlab">用Matlab画玫瑰百合花<a class="headerlink" href="#matlab" title="Permanent link">&para;</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">📖 阅读信息</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>1</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>62</strong> | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span>有效代码行数：<strong>144</strong></p>
+</div>
 <div class="admonition abstract">
 <p class="admonition-title">⚡ AI摘要 (GLM)</p>
-<p>本文介绍了如何使用Matlab绘制玫瑰和百合花。通过Matlab的绘图功能，可以创建出美观的花卉图像。</p>
+<p>本文介绍了如何使用Matlab绘制玫瑰和百合花。通过编写代码，实现两种花卉的图形化展示，旨在帮助读者掌握Matlab在图形绘制方面的应用。</p>
 </div>
 <p><img alt="image.png" src="https://s2.loli.net/2024/02/02/BXhu8zVaOxU4WLt.png" /></p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Matlab</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">  1</a></span>
@@ -4107,7 +4111,7 @@
 <a id="__codelineno-0-143" name="__codelineno-0-143"></a><span class="nb">view</span><span class="p">(</span><span class="o">-</span><span class="mi">15</span><span class="p">,</span><span class="mi">35</span><span class="p">);</span>
 <a id="__codelineno-0-144" name="__codelineno-0-144"></a><span class="k">end</span>
 </code></pre></div></td></tr></table></div>
-<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin'><span data-tippy-content='创建时间: 2023-08-25'><span class='material-icons' data-icon='doc_created'></span><time datetime='2023-08-25T21:40:43' locale='zh_CN'>2023-08-25</time></span><span data-tippy-content='最后更新: 2025-08-26'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-08-26T16:34:54.911853+00:00' locale='zh_CN'>2025-08-26</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Wcowin' data-tippy-content='作者: &lt;a href="mailto:1135801806@qq.com"&gt;Wcowin&lt;/a&gt;'><img class='avatar' src='https://avatars.githubusercontent.com/Wcowin' /><span class='avatar-text'></span></div></div></div></div>
+<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin'><span data-tippy-content='创建时间: 2023-08-25'><span class='material-icons' data-icon='doc_created'></span><time datetime='2023-08-25T21:40:43' locale='zh_CN'>2023-08-25</time></span><span data-tippy-content='最后更新: 2025-09-10'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-09-10T07:01:14.571290+00:00' locale='zh_CN'>2025-09-10</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Wcowin' data-tippy-content='作者: &lt;a href="mailto:1135801806@qq.com"&gt;Wcowin&lt;/a&gt;'><img class='avatar' src='https://avatars.githubusercontent.com/Wcowin' /><span class='avatar-text'></span></div></div></div></div>
 <style>
 .related-posts {
   margin-top: 1.5rem;

@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="https://i.stardots.io/wcowin/1750090373988.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
@@ -68,17 +68,17 @@
     
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/backdrop.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
-    
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
     
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
+    
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
     
@@ -3806,11 +3806,11 @@
 <h1 id="_1">启动台图标顺序错乱怎么办<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>1</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>189</strong></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>1</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>190</strong></p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">⚡ AI摘要 (GLM)</p>
-<p>若启动台图标顺序错乱，可重置Launchpad设置。方法包括删除Finder目录下的desktoppicture.db文件或在Terminal中执行特定命令。操作后，图标将恢复默认布局，用户可自行重新排列。</p>
+<p>启动台图标错乱可重置设置恢复。方法包括删除桌面图片数据库文件或在终端输入特定命令。操作后，图标将恢复默认排列，用户可自行调整。</p>
 </div>
 <h1>重置 Launchpad 设置 </h1>
 
@@ -3818,7 +3818,7 @@
 <p>重置 Dock 图标数据库：在 Finder 中进入<code>~/Library/Application Support/Dock/</code>目录，删除该目录下的desktoppicture.db 文件。或者在 Terminal 中键入 <code>rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall Dock</code> 后回车。  </p>
 <p>重置 Launchpad 图标数据库：在 Terminal 中键入 <code>defaults write com.apple.dock ResetLaunchPad -bool true &amp;&amp; killall Dock</code>后回车。  </p>
 <p>完成以上操作后，Launchpad 图标布局已经恢复默认设置，苹果官方提供的 App 都被重新排列到 Launchpad 第一屏幕中，然后根据自己的需要来进行重新排列 App 即可。</p>
-<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin'><span data-tippy-content='创建时间: 2023-06-22'><span class='material-icons' data-icon='doc_created'></span><time datetime='2023-06-22T22:09:02' locale='zh_CN'>2023-06-22</time></span><span data-tippy-content='最后更新: 2025-08-26'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-08-26T16:34:54.909853+00:00' locale='zh_CN'>2025-08-26</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Wcowin' data-tippy-content='作者: &lt;a href="mailto:1135801806@qq.com"&gt;Wcowin&lt;/a&gt;'><img class='avatar' src='https://avatars.githubusercontent.com/Wcowin' /><span class='avatar-text'></span></div></div></div></div>
+<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin'><span data-tippy-content='创建时间: 2023-06-22'><span class='material-icons' data-icon='doc_created'></span><time datetime='2023-06-22T22:09:02' locale='zh_CN'>2023-06-22</time></span><span data-tippy-content='最后更新: 2025-09-10'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-09-10T07:01:14.569290+00:00' locale='zh_CN'>2025-09-10</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Wcowin' data-tippy-content='作者: &lt;a href="mailto:1135801806@qq.com"&gt;Wcowin&lt;/a&gt;'><img class='avatar' src='https://avatars.githubusercontent.com/Wcowin' /><span class='avatar-text'></span></div></div></div></div>
 <style>
 .related-posts {
   margin-top: 1.5rem;
