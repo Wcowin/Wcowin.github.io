@@ -2,7 +2,7 @@
   "summary": "MkDocs支持自定义页脚，通过修改`footer.html`文件和`mkdocs.yml`配置文件实现。可自定义页脚内容，并选择是否显示“Made with Material for MkDocs”字样。",
   "service": "glm",
   "page_title": "页脚设置",
-  "timestamp": "2025-08-03T23:20:36.748800",
+  "timestamp": "2025-09-10T07:04:26.215806",
   "cache_version": "1.2.2",
   "content_hash": "cb8f13adebeaae5c0999abf803775739"
 }

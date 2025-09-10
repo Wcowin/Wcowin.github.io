@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了为MKdocs页面添加相关文章推荐的方法。步骤包括在`overrides`文件夹下创建一个钩子文件，并按需配置。最终实现展示与当前页面相关的推荐文章。",
+  "summary": "本文介绍了为MKdocs页面添加相关文章推荐的方法。通过在`docs/overrides/hooks/`下新建文件并配置，实现根据文章内容推荐相关文章。具体配置需根据仓库情况调整。",
   "service": "glm",
   "page_title": "添加相关推荐文章",
-  "timestamp": "2025-08-03T23:20:52.662601",
+  "timestamp": "2025-09-10T07:04:47.721424",
   "cache_version": "1.2.2",
   "content_hash": "4cbcf0ab288a3ecbef485970c9faec23"
 }

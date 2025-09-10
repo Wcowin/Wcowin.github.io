@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了利用百度API进行植物识别的方法。首先申请应用获取ID和key，然后在Vscode中输入代码，使用base64编码图像数据，通过API获取植物百科信息。",
+  "summary": "本文介绍了利用百度API进行植物识别的方法。首先申请应用获取ID和key，然后在Vscode中输入代码，使用base64编码图像数据，并通过API获取植物百科信息。",
   "service": "glm",
   "page_title": "利用百度API进行植物识别",
-  "timestamp": "2025-08-03T23:21:42.516923",
+  "timestamp": "2025-09-10T07:05:44.003244",
   "cache_version": "1.2.2",
   "content_hash": "cc8b3d894e8e80ce37c904db0d7d33a3"
 }
