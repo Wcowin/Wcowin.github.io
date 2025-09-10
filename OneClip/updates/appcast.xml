@@ -8,20 +8,20 @@
             <sparkle:version>1.2.5</sparkle:version>
             <sparkle:shortVersionString>1.2.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.2.5/OneClip-1.2.5-apple-silicon.zip" length="3487779" type="application/octet-stream" sparkle:edSignature="i1vhKoO1xv4ys8mVqCvO6CCPa7Yj5hGvtDaH8n+ErvKaMCOalRtf+PM+n1WcMpcGpotozx6le516+6gg1rhSBA=="/>
+            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.2.5/OneClip-1.2.5-apple-silicon.zip" length="3487779" type="application/octet-stream" sparkle:edSignature="1UdqBGGAkmZAZoshBpM8xDAfyNW7fACMK5Ehi8oglDhGUHZEPqJl+iqqzMHZJo76SkT8md9RJ24Ek2Y/sZm0Bw=="/>
             <sparkle:deltas>
-            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.2.5/OneClip-1.2.5-apple-silicon.zip" length="3487779" type="application/octet-stream" sparkle:edSignature="i1vhKoO1xv4ys8mVqCvO6CCPa7Yj5hGvtDaH8n+ErvKaMCOalRtf+PM+n1WcMpcGpotozx6le516+6gg1rhSBA=="/>
+                <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.2.5/OneClip1.2.5-1.2.4.delta" length="567806" type="application/octet-stream" sparkle:deltaFrom="1.2.4" sparkle:edSignature="MFh3UWGqjVzZtSGd5Fd7m5xiMVEjNpgdR+CMuQt4HW33lAb8kvuzMooLc6tHePid2+cW5vlVhdaLE6AH1kqsAA=="/>
             </sparkle:deltas>
-        <sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.2.5-zh.html</sparkle:releaseNotesLink>
-</item>
+            <sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.2.5-zh.html</sparkle:releaseNotesLink>
+        </item>
         <item>
             <title>1.2.4</title>
             <pubDate>Wed, 10 Sep 2025 17:55:20 +0800</pubDate>
             <sparkle:version>1.2.4</sparkle:version>
             <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.2.5/OneClip-1.2.5-apple-silicon.zip" length="3487779" type="application/octet-stream" sparkle:edSignature="i1vhKoO1xv4ys8mVqCvO6CCPa7Yj5hGvtDaH8n+ErvKaMCOalRtf+PM+n1WcMpcGpotozx6le516+6gg1rhSBA=="/>
-        <sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.2.5-zh.html</sparkle:releaseNotesLink>
-</item>
+            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.2.4/OneClip-1.2.4-apple-silicon.zip" length="3490144" type="application/octet-stream" sparkle:edSignature="+/24750n74ty9JEN9nx4o1VH4koJyG66oMKIykDUuTM1HPx2emSFn18QIk2Zmo5F7osVgbptqUTaWuc/DDRgCA=="/>
+            <sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.2.4-zh.html</sparkle:releaseNotesLink>
+        </item>
     </channel>
 </rss>
