@@ -1027,7 +1027,17 @@ comments: true
         </div>
       </div>
     </div>
-
+    <div class="card">
+      <img class="ava" src="https://www.jcblog.com/public/a.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.jcblog.com.cn" target="_blank">间窗札记</a>
+        </div>
+        <div class="info">
+          窗外是蓝天白云，心里是小杏扉间。
+        </div>
+      </div>
+    </div>
 
 
    </div> 
