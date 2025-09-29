@@ -90,7 +90,7 @@ jobs:
       - run: pip install Pillow
       - run: pip install neoteroi-mkdocs
 
-      - run: pip install mkdocs-document-dates==3.3
+      - run: pip install mkdocs-document-dates
       - run: pip install pymdown-extensions
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material

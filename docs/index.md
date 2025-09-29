@@ -8,6 +8,17 @@ hide:
 comments: false
 hide_comment: true
 ---
+
+<!-- OneClip 公告栏 -->
+<div class="oneclip-announcement">
+  <div class="oneclip-announcement-content">
+    🎉 <strong>新产品发布！</strong> 
+    <a href="https://oneclip.cloud/" target="_blank">OneClip</a> 
+    - 专为 macOS 设计的剪贴板管理工具，让你的工作效率翻倍！
+    <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">立即体验 →</a>
+  </div>
+</div>
+
 <!-- 在头部添加预加载关键资源 -->
 <link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
 <link rel="preload" href="https://s1.imagehub.cc/images/2025/07/25/27c0e105ea7efbed5d046d3a8c303e9d.jpeg" as="image">
@@ -278,9 +289,9 @@ hide_comment: true
   }
   
   @keyframes glow-ultimate-breath {
-    0% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9);}
-    50% { opacity: 0.75; filter: blur(50px) brightness(1.0) saturate(1.15); transform: translate(-50%, -50%) scale(0.98);}
-    100% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9);}
+    0% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9); }
+    50% { opacity: 0.75; filter: blur(50px) brightness(1.0) saturate(1.15); transform: translate(-50%, -50%) scale(0.98); }
+    100% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9); }
   }
 }
 
@@ -424,10 +435,7 @@ hide_comment: true
 
 <!-- 修改分隔线上下的间距 -->
 <style>
-/* 默认显示换行 */
-/* .desktop-only {
-  display: none; 
-} */
+/* 移除了冗余的 .desktop-only 样式 */
 
 /* 减少分隔线的边距 */
 hr {
@@ -703,20 +711,23 @@ body::before {
   body::before {
     display: none; /* 在手机端隐藏网格效果 */
   }
+  
+  /* 在移动端禁用复杂动画以提升性能 */
+  .flip-glow-ultimate-glow {
+    animation: none;
+    opacity: 0.3;
+  }
 }
 </style>
 
 <!-- 
   将所有页面级脚本和元数据统一放置在这里 
 -->
-<head> 
-  <!-- Umami Analytics -->
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
-</head>
-  <!-- Google Adsense -->
-  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
-     crossorigin="anonymous"></script>
-</head> -->
+<!-- Umami Analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
+<!-- Google Adsense -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
+     crossorigin="anonymous"></script> -->
 
 <!-- 
   Google Adsense 广告单元

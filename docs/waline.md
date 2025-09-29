@@ -82,7 +82,7 @@ hide_comment: true
 </style>
 <script>
 // Bark 配置
-const BARK_BASE_URL = 'https://api.day.app/SbAMEuK6WagQiFzAifiyKJ';
+const BARK_BASE_URL = 'https://api.day.app/YOUR_BARK_KEY_HERE';
 // 主要的 Bark 消息发送函数
 async function sendBarkMessage(event) {
     event.preventDefault();    
@@ -274,22 +274,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script> -->
 
-<head> 
-  <script src="https://giscus.app/client.js"
-      data-repo="Wcowin/hexo-site-comments"
-      data-repo-id="R_kgDOIl9OJA"
-      data-mapping="number"
-      data-term="8"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="top"
-      data-theme="noborder_light"
-      data-lang="zh-CN"
-      data-loading="lazy"  
-      crossorigin="anonymous"
-      async>
-  </script>
-</head>
+<script src="https://giscus.app/client.js"
+    data-repo="Wcowin/hexo-site-comments"
+    data-repo-id="R_kgDOIl9OJA"
+    data-mapping="number"
+    data-term="8"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="noborder_light"
+    data-lang="zh-CN"
+    data-loading="lazy"  
+    crossorigin="anonymous"
+    async>
+</script>
 
 <!-- tw开始 -->
 

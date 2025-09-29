@@ -424,10 +424,10 @@ plugins:
         - "gemini"
       summary_language: "zh"  # or "en"
       cache_enabled: true
-      # local_enabled: false
-      local_enabled: true
+      local_enabled: false
+      # local_enabled: true
       cache_expire_days: 30
-      debug: true # 是否显示调试信息（默认：false）
+      debug: false # 是否显示调试信息（默认：false）
       enabled_folders:
         - blog/    # 添加blog文件夹
         - develop/ # 添加develop文件夹
@@ -443,7 +443,7 @@ plugins:
         - blog/archive/
   - search:
       enabled: !ENV [CI, false]
-      separator: '[\s\u200b\-\u3000\u3001\u3002\uFF0C\uFF0E\uFF1F\uFF01\uFF1B]+'
+      separator: '[\s\u200b\-]'
   # - git-revision-date-localized:
   #     enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
   #     type: iso_date

@@ -117,16 +117,17 @@ status: new
 
 ## 特性
 
-- 始终显示文档的精确元信息，且适用于任何环境（无 Git、Git 环境、所有 CI/CD 构建系统等）
+- 始终显示文档的**精确**元信息，且适用于任何环境（无 Git、Git 环境、所有 CI/CD 构建系统等）
 - 支持在 `Front Matter` 中手动指定时间和作者
 - 支持多种时间格式（date、datetime、timeago）
 - 灵活的显示位置（顶部或底部）
 - 优雅的样式设计（完全可定制）
 - 支持 Tooltip 悬浮提示
-  - 智能位置动态调整，始终以最佳方式浮动在视图中
-  - 支持主题跟随 Material 亮/暗配色变化而变化
-- 多语言支持，跨平台支持（Windows、macOS、Linux）
-- **极致的构建效率**：O(1)，通常不到0.2秒
+    - 智能位置动态调整，始终以最佳方式浮动在视图中
+    - 支持主题跟随 Material 亮/暗配色变化而变化
+- 多语言支持，本地化支持，智能识别用户语言，自动适配
+- 跨平台支持（Windows、macOS、Linux）
+- **极致的构建效率**：O(1)，无需设置环境变量 `!ENV` 来区别运行
 
 | 构建效率对比：                | 100个md： | 1000个md： | 时间复杂度： |
 | --------------------------- | :------: | :-------: | :---------: |
@@ -164,10 +165,8 @@ plugins:
       exclude:                 # 排除文件列表
         - temp.md              # 排除指定文件
         - drafts/*             # 排除 drafts 目录下所有文件，包括子目录
-      locale: zh               # 本地化语言：en zh zh_TW es fr de ar ja ko ru，默认：en
       date_format: '%Y-%m-%d'  # 日期格式化字符串，例如：%Y年%m月%d日、%b %d, %Y
       time_format: '%H:%M:%S'  # 时间格式化字符串（仅在 type=datetime 时有效）
-      show_author: true        # 是否显示作者信息，默认：true
 ```
 
 ## 手动指定时间
@@ -191,7 +190,7 @@ plugins:
 默认情况下，插件会**自动获取**文档的作者信息，会自动解析邮件后做链接，无需人工干预
 
 - **优先级**：`Front Matter` > `Git作者` > `site_author(mkdocs.yml)` > `PC用户名` 
-- 如果你要自定义，则可在 Front Matter 中通过字段 `name` 配置一个作者：
+- 如果你要自定义，在 Front Matter 中通过字段 `name` 就可配置一个作者：
     ```markdown
     ---
     name: any-name
@@ -213,7 +212,7 @@ plugins:
 3. 自定义头像：可在 Front Matter 中通过自定义作者的 `avatar` 字段进行自定义
     ```markdown
     ---
-    # 方式1：配置一个完整的作者
+    # 方式1：配置一个完整的作者(字段可选配)
     author:
         name: jay
         email: jay@qq.com
@@ -224,35 +223,38 @@ plugins:
     # 方式2：配置多个作者
     authors:
         - jaywhj
-        - squidfunk
+        - dawang
         - sunny
+
     ---
-    
     ```
-- 如果要配置多个作者的完整信息，则可在 `docs/` 或 `docs/blog/` 目录下新建单独的配置文件 `.authors.yml`，格式参考 [.authors.yml](https://github.com/jaywhj/mkdocs-document-dates/blob/main/templates/.authors.yml) 
-- 如果 URL 头像加载失败，则会回退到字符头像
-  
+- 如果要配置多个作者的完整信息，则可在 `docs/` 目录下新建单独的配置文件 `authors.yml`，格式参考 [authors.yml](https://github.com/jaywhj/mkdocs-document-dates/blob/main/templates/authors.yml) 
+- 如果 URL 头像加载失败，则会自动回退到字符头像
+
 ## 插件定制化
 
-插件支持深度自定义，比如**图标样式、主题颜色、字体、动画、分界线**等等，一切都可以自定义（找到下方对应位置的文件，取消注释即可）：
+插件支持完全自定义，比如**图标样式、主题颜色、字体、动画、分界线**等，已经预置了入口，你只需要，找到下方文件取消里面的注释即可：
 
 |    类别：    | 位置：                                         |
 | :---------: | --------------------------------------------- |
 | **样式与主题** | `docs/assets/document_dates/user.config.css` |
 | **属性与功能** | `docs/assets/document_dates/user.config.js`  |
-| **本地化语言** | `docs/assets/document_dates/languages/` <br />可参考模板文件 `en.json` 任意新增或修改 |
 
-**提示**：当设置 `type: timeago` 时，会启用 timeago.js 来渲染动态时间，timeago.min.js 默认只包含英文和中文，如需加载其他语言，可以按如下方式（2选1）配置：
-
-- 在 `user.config.js` 中，参考最下面 [注释掉的 Demo](https://github.com/jaywhj/mkdocs-document-dates/blob/main/mkdocs_document_dates/static/config/user.config.js)，自行翻译成本地语言
-- 在 `mkdocs.yml` 中，配置 full 版本的 timeago.full.min.js，一次性加载所有语言
-    ```yaml
-    extra_javascript:
-      - assets/document_dates/core/timeago.full.min.js
-      - assets/document_dates/core/timeago-load.js
-    ```
 
 ![customization.gif](https://s2.loli.net/2025/08/01/6axDBwOJ5Hpyoh9.gif)
+
+## 语言本地化
+
+- **tooltip** ：插件内置了 10 种语言：`en zh zh_TW es fr de ar ja ko ru`，**无需手动配置**，智能识别，自动切换
+    - 如语言缺失或内置语言不准确，可在 `user.config.js` 中，参考 [Part 3](https://github.com/jaywhj/mkdocs-document-dates/blob/main/mkdocs_document_dates/static/config/user.config.js)，自行注册添加，也可以提交 issue
+    - 保留了原来的配置项 `locale`，但已经不建议手动配置了
+- **timeago**：当设置 `type: timeago` 时，会启用 timeago.js 来渲染动态时间，timeago.min.js 默认只包含英文和中文，如需加载其他语言，可以按如下方式配置（2选1）：
+    - 在 `user.config.js` 中，参考 [Part 2](https://github.com/jaywhj/mkdocs-document-dates/blob/main/mkdocs_document_dates/static/config/user.config.js)，自行注册添加
+    - 在 `mkdocs.yml` 中，配置 full 版本的 timeago.full.min.js，一次性重载所有语言
+        ```yaml
+        extra_javascript:
+        - assets/document_dates/core/timeago.full.min.js
+        ```
 
 ## 模板变量
 
@@ -261,8 +263,6 @@ plugins:
 - page.meta.document_dates_created
 - page.meta.document_dates_modified
 - page.meta.document_dates_authors
-- page.meta.document_dates_locale
-- page.meta.document_dates_translation
 
 应用示例：
 

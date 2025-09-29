@@ -18,42 +18,36 @@ mkdocs-open-in-new-tab
 jieba>=0.42.1
 
 # 网络请求
-urllib3<2
 requests>=2.25.0
 
 # 数据处理和分析
 pyyaml>=6.0
-hashlib-compat  # 用于内容哈希计算
 
-# 自然语言处理 (用于您的推荐系统和阅读时间统计)
+# 自然语言处理
 nltk>=3.8
-scikit-learn>=1.0.0  # 用于相似度计算
+scikit-learn>=1.0.0
 
 # 缓存和性能优化
 python-dateutil>=2.8.0
 markupsafe>=2.1.0
 
-# AI 功能支持 (基于您的 AI Summary 功能)
+# AI 功能支持
 openai>=1.0.0
-deepseek-api  # 如果使用 DeepSeek API
 
-# 图像处理 (如果需要)
+# 图像处理
 pillow>=9.0.0
 
 # 开发和调试工具
-mkdocs-minify-plugin  # 代码压缩
-mkdocs-awesome-pages-plugin  # 页面管理
-mkdocs-redirects  # 重定向管理
+mkdocs-minify-plugin
+mkdocs-awesome-pages-plugin
+mkdocs-redirects
 
 # 数学公式支持
 python-markdown-math
 
 # RSS 和 Sitemap 支持
 mkdocs-rss-plugin>=1.10.0
-lxml>=4.9.0  # XML 处理
-
-# 搜索增强
-mkdocs-search-pro
+lxml>=4.9.0
 
 # 多语言支持
 mkdocs-static-i18n

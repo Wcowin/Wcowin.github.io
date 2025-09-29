@@ -43,7 +43,6 @@ hide_comment: true
 .intro-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-
 }
 
 .intro-content {
@@ -180,7 +179,6 @@ hide_comment: true
     /* 将文字放置右上角 */
     }
     .image-container {
-        position: relative;
         position: relative;
         width: 280px;
         height: 280px;
@@ -452,21 +450,17 @@ hide_comment: true
 
 ## 联系我
 
-<head>
-  <style>
-    @media (min-width: 768px) {
-      .mobile-only {
-        display: none;
-      }
+<style>
+  @media (min-width: 768px) {
+    .mobile-only {
+      display: none;
     }
-  </style>
-</head>
-<body>
+  }
+</style>
   <a href="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" target="_blank" class="mobile-only">
    <center>
     <img class="img1" src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="width: 450px; height: auto;">
-      <div style="color:orange; 
-      color: #999;
+      <div style="color: #999;
       padding: 2px;">我的Wechat</div>
     </center>  
   </a>  
@@ -474,12 +468,10 @@ hide_comment: true
   <a href="https://t.me/wecowin" target="_blank" class="mobile-only">
    <center>
     <img class="img1" src="https://pica.zhimg.com/80/v2-d5876bc0c8c756ecbba8ff410ed29c14_1440w.webp" style="width: 450px; height: auto;">
-      <div style="color:orange; 
-      color: #999;
+      <div style="color: #999;
       padding: 2px;">我的TG</div>
     </center>  
   </a>
-</body>
 
 <style>
 @media (max-width: 768px) { /* 移动端隐藏 */
