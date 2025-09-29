@@ -1038,6 +1038,17 @@ comments: true
         </div>
       </div>
     </div>
+    <div class="card"> 
+    <img class="ava" src="https://maxlhy0424.github.io/web/avatar.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://MaxLHy0424.github.io" target="_blank">MaxLHy0424</a> 
+      </div> 
+      <div class="info">
+      Where All Miracle Begins.
+      </div> 
+    </div> 
+    </div>    
 
 
    </div> 
