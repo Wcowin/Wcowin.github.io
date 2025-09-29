@@ -12,9 +12,9 @@ hide_comment: true
 <!-- OneClip 公告栏 -->
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
-    🎉 <strong>新产品发布！</strong> 
+    🎉 <strong>新产品限免！</strong> 
     <a href="https://oneclip.cloud/" target="_blank">OneClip</a> 
-    - 专为 macOS 设计的剪贴板管理工具，让你的工作效率翻倍！
+    - 专为 macOS 打造的剪贴板管理工具，让你的工作效率翻倍！
     <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">立即体验 →</a>
   </div>
 </div>

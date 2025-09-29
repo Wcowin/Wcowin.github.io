@@ -6,7 +6,11 @@ tags:
   - 推广
 ---
 
+
+
 # OneClip
+
+<div align="center" markdown="1">
 
 **一个简单专业的macOS 剪贴板管理工具**
 
@@ -18,6 +22,8 @@ tags:
 ![Homebrew](https://img.shields.io/badge/Homebrew-Available-orange?style=for-the-badge&logo=homebrew&logoColor=white)
 ![macOS 12+](https://img.shields.io/badge/macOS-12%2B-0f172a?style=for-the-badge&logo=apple&logoColor=white)
 ![Swift 5.9+](https://img.shields.io/badge/Swift-5.9%2B-F05138?style=for-the-badge&logo=swift&logoColor=white)
+
+</div>
 
 ## 概览
 
@@ -235,6 +241,10 @@ A: 可在设置中调整历史记录数量限制和检测间隔。
 
 ---
 
-**OneClip - 一个简单专业的macOS 剪贴板管理工具**
+<div align="center" markdown="1">
+
+**OneClip —— 一个简单专业的macOS 剪贴板管理工具**
 
 © 2025 Wcowin. All rights reserved.
+
+</div>
