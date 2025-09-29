@@ -66,7 +66,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css">
     
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="../assets/document_dates/fonts/material-icons.css">
     
       <link rel="stylesheet" href="../assets/document_dates/tippy/light.css">
     
@@ -1296,7 +1296,7 @@
 </style>
 <script>
 // Bark 配置
-const BARK_BASE_URL = 'https://api.day.app/SbAMEuK6WagQiFzAifiyKJ';
+const BARK_BASE_URL = 'https://api.day.app/YOUR_BARK_KEY_HERE';
 // 主要的 Bark 消息发送函数
 async function sendBarkMessage(event) {
     event.preventDefault();    
@@ -1485,23 +1485,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script> -->
 
-<p><head> 
-<br />
 <script src="https://giscus.app/client.js"
-      data-repo="Wcowin/hexo-site-comments"
-      data-repo-id="R_kgDOIl9OJA"
-      data-mapping="number"
-      data-term="8"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="top"
-      data-theme="noborder_light"
-      data-lang="zh-CN"
-      data-loading="lazy"  
-      crossorigin="anonymous"
-      async>
-  </script></p>
-<p></head></p>
+    data-repo="Wcowin/hexo-site-comments"
+    data-repo-id="R_kgDOIl9OJA"
+    data-mapping="number"
+    data-term="8"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="noborder_light"
+    data-lang="zh-CN"
+    data-loading="lazy"  
+    crossorigin="anonymous"
+    async>
+</script>
+
 <!-- tw开始 -->
 
 <!-- <head> 
@@ -2243,9 +2241,13 @@ document.addEventListener('DOMContentLoaded', function() {
       
         <script src="../assets/document_dates/tippy/tippy.umd.min.js"></script>
       
-        <script src="../assets/document_dates/core/core.js"></script>
+        <script src="../assets/document_dates/core/default.config.js"></script>
       
         <script src="../assets/document_dates/user.config.js"></script>
+      
+        <script src="../assets/document_dates/core/utils.js"></script>
+      
+        <script src="../assets/document_dates/core/core.js"></script>
       
     
   </body>
