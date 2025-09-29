@@ -1049,7 +1049,17 @@ comments: true
       </div> 
     </div> 
     </div>    
-
+    <div class="card"> 
+    <img class="ava" src="https://avatars.githubusercontent.com/u/56161071?v=4" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="www.philfan.cn" target="_blank">PhilFan's Note</a> 
+      </div> 
+      <div class="info">
+      Learn, Build, Share
+      </div> 
+    </div> 
+    </div>
 
    </div> 
   </div>
