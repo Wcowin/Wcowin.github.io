@@ -44,7 +44,7 @@
 #       - run: pip install --upgrade --force-reinstall mkdocs-material
 #       - run: mkdocs gh-deploy --force
 
-name: ci 
+name: deploy 
 on:
   push:
     branches:
