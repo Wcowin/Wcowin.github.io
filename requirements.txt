@@ -11,8 +11,13 @@ mkdocs-encryptcontent-plugin
 mkdocs-glightbox
 mkdocs-git-committers-plugin-2
 mkdocs-git-revision-date-localized-plugin
+mkdocs-git-authors-plugin
 mkdocs-markdownextradata-plugin
 mkdocs-open-in-new-tab
+markdown-callouts
+mkdocs-document-dates
+neoteroi-mkdocs
+mkdocs-ai-summary-wcowin
 
 # 中文处理
 jieba>=0.42.1
@@ -30,6 +35,8 @@ scikit-learn>=1.0.0
 # 缓存和性能优化
 python-dateutil>=2.8.0
 markupsafe>=2.1.0
+cachetools>=4.2.0
+python-dotenv>=0.19.0
 
 # AI 功能支持
 openai>=1.0.0
