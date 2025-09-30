@@ -56,6 +56,12 @@ on:
     branches: [main, master]
   # 添加手动触发功能
   workflow_dispatch:
+
+# 允许取消正在进行的工作流
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 jobs:
