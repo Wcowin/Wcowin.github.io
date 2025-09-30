@@ -57,7 +57,7 @@ t.parentNode.insertBefore(e,t)}})();
 
 -   :material-tooltip-edit:{ .lg .middle } __关于__
 
-    ---    
+    ---
     - [效率][Software]
     [Software]: javascript:document.getElementById('software').scrollIntoView()
 
@@ -186,7 +186,7 @@ t.parentNode.insertBefore(e,t)}})();
     <script>
       Fancybox.bind('[data-fancybox="gallery"]', {
         //
-      });    
+      });
     </script>
   </body>
 </html>
@@ -375,10 +375,10 @@ sequenceDiagram
     euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
     purus auctor massa, nec semper lorem quam in massa.
 
-++ctrl+alt+del++  
+++ctrl+alt+del++
 
 
-:octicons-arrow-right-24: [点我回到顶部](#) 
+:octicons-arrow-right-24: [点我回到顶部](#)
 
 [Hover me][example]
 
@@ -430,7 +430,7 @@ Wcowin
   </body>
 
 
-来看看两个重要极限  
+来看看两个重要极限
 
 $$\displaystyle\lim_{x \rightarrow 0}\frac{\sin x}{x} = 1$$
 
@@ -453,21 +453,21 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
     var player = new ckplayer(videoObject);//初始化播放器
 </script>   -->
 
-***  
+***
 
 <div id="grad1"></div>
 
 <button class="buttoncss">按钮</button>
  <button class="buttonxuan buttonxuan1">Green</button>
 
- <div class="hide">我是会隐藏的元素。</div>  
- 
-***  
+ <div class="hide">我是会隐藏的元素。</div>
+
+***
 
  <div class="grid-container">
   <div class="item1">头部</div>
   <div class="item2">菜单</div>
-  <div class="item3">主要内容区域</div>  
+  <div class="item3">主要内容区域</div>
   <div class="item4">右侧</div>
   <div class="item5">底部</div>
 </div>
@@ -789,8 +789,8 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
 <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 
 <p align="left">
-&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  
-&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
+&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>
+&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>
 &nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
 </p>
 

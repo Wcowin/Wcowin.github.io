@@ -5,14 +5,14 @@ tags:
 ---
 
 # 用AirScript脚本给女/男朋友发送每日早安邮件(极简版本)
-## 先看效果  
+## 先看效果
 
 ![image.png](https://s2.loli.net/2025/02/07/UpHaDLIWyMuOixh.png)
 
 
 ## 工具
 
-金山文档/WPS提供了每日定时的AirScript脚本服务，非常方便～  
+金山文档/WPS提供了每日定时的AirScript脚本服务，非常方便～
 ![image.png](https://s2.loli.net/2025/02/07/vJFficRPdQKmOXE.png)
 
 ---
@@ -73,12 +73,12 @@ const config = {
         sendEmail: "C"
     }
 };
- 
+
 // 获取当前日期
 var myDate = new Date();
 var data_time = myDate.toLocaleDateString();
 var daysAtHome = Math.floor((myDate - config.startDate) / (1000 * 60 * 60 * 24)) + 1;
- 
+
 // 祝福语数组
 const greetings = [
     "早上好呀～祝你今天有美好的一天！",
@@ -87,16 +87,16 @@ const greetings = [
     "早上好！今天又是美好的一天！",
     "早上好！希望你今天顺利快乐！"
 ];
- 
+
 // 随机选择祝福语
 function getRandomGreeting() {
     return greetings[Math.floor(Math.random() * greetings.length)];
 }
- 
+
 // 发送邮件函数
 function sendEmail(to, subject, text) {
     let mailer = SMTP.login(config.smtp);
- 
+
     mailer.send({
         from: `每日早安提醒<${config.smtp.username}>`, // 确保发件人地址与登录用户名一致
         to: to,
@@ -104,20 +104,20 @@ function sendEmail(to, subject, text) {
         text: text
     });
 }
- 
+
 // 记录日志函数
 function log(message) {
     console.log(message); // 打印消息到控制台
     // TODO: 将日志写入文件或其他存储
 }
- 
+
 // 生成邮件内容函数（自行修改/自行修改/自行修改）
 function generateEmailContent(date, daysAtHome) {
     const greeting = getRandomGreeting();
     return `${greeting}
     今天是${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}号，你已经回家${daysAtHome}天。想念你～`;
 }
- 
+
 // 遍历数据行并发送早安邮件
 function processEmails() {
     for (let row = 2; row <= config.maxRows; row++) {
@@ -125,7 +125,7 @@ function processEmails() {
             var sflq = Application.Range(config.columns.signIn + row).Text;
             var jsyx = Application.Range(config.columns.email + row).Text;
             var sendEmailFlag = Application.Range(config.columns.sendEmail + row).Text;
- 
+
             if (sflq === "是" && sendEmailFlag === "是") {
                 const logMessage = generateEmailContent(myDate, daysAtHome);
                 sendEmail(jsyx, "每日早安提醒 - " + data_time, logMessage);
@@ -136,7 +136,7 @@ function processEmails() {
         }
     }
 }
- 
+
 // 调用函数处理邮件发送
 processEmails();
 

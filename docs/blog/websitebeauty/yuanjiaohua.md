@@ -4,7 +4,7 @@ hide:
   #  - navigation # 显示右
   #  - toc #显示左
   #  - footer
-  #  - feedback  
+  #  - feedback
 tags:
   - Mkdocs
 comments: false
@@ -12,12 +12,12 @@ comments: false
 
 # 网页圆角化设计
 
-## 示例  
-![iShot_2024-04-26_12.17.20.png](https://s2.loli.net/2024/04/26/gvu7ASWfU8eKVOd.png)  
+## 示例
+![iShot_2024-04-26_12.17.20.png](https://s2.loli.net/2024/04/26/gvu7ASWfU8eKVOd.png)
 ![image.png](https://s2.loli.net/2024/04/26/Czi9uAQhmbBlkfG.png)
 
 ## 如何设计
-新建css文件，在mkdocs.yml引入css  
+新建css文件，在mkdocs.yml引入css
 
 ```css
 :root {
@@ -196,7 +196,7 @@ border-radius: 25px;
       </font>
     </body>
   </div>
-</div> 
+</div>
 
 ## 利用内置的grid cards
 
@@ -214,9 +214,9 @@ border-radius: 25px;
     - [Blogger](blog/index.md)
 </div>
 
-```  
+```
 
-效果：  
+效果：
 <div class="grid cards" markdown>
 
 -   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程__
@@ -232,6 +232,6 @@ border-radius: 25px;
 
 ```
 [Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}
-```  
-效果：  
+```
+效果：
 [Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}

@@ -13,7 +13,7 @@ ai_summary: false  # 禁用AI摘要
 ## </p><h1 id="01" name="01"><strong>2022-10-20</strong></h1><p>
 * 建立Github仓库，正式建站
 * 取消cookie确认,简化网站打开流程
-* 新增首页反馈收集 
+* 新增首页反馈收集
 
 ## </p><h1 id="01" name="01"><strong>2022-10-06</strong></h1><p>
 
@@ -23,5 +23,5 @@ ai_summary: false  # 禁用AI摘要
 ## <h1 id="01" name="01"><strong>2022-06-06</strong></h1>
 
 * 研究如何建设网站，初步定框架为MKdocs
-* 早期网址：<https://github.com/Wcowin/mymkdocs>   
+* 早期网址：<https://github.com/Wcowin/mymkdocs>
 

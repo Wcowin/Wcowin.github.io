@@ -9,7 +9,7 @@ status: new
 
 ## 1. 基础配置
 
-### **步骤1**    
+### **步骤1**
 
 创建reading_time.py
 
@@ -59,7 +59,7 @@ status: new
     # 支持的编程和标记语言（扩展版本）
     PROGRAMMING_LANGUAGES = frozenset({
         # 编程语言
-        'python', 'py', 'javascript', 'js', 'typescript', 'ts', 'java', 'cpp', 'c', 
+        'python', 'py', 'javascript', 'js', 'typescript', 'ts', 'java', 'cpp', 'c',
         'go', 'rust', 'php', 'ruby', 'swift', 'kotlin', 'csharp', 'cs',
         # 脚本语言
         'bash', 'sh', 'powershell', 'ps1', 'zsh', 'fish', 'bat', 'cmd',
@@ -80,7 +80,7 @@ status: new
     def clean_markdown_content_for_chinese(content_hash, markdown):
         """清理Markdown内容，只保留中文文本用于统计（添加缓存）"""
         content = markdown
-        
+
         # 使用预编译的正则表达式
         content = YAML_FRONT_PATTERN.sub('', content)
         content = HTML_TAG_PATTERN.sub('', content)
@@ -88,39 +88,39 @@ status: new
         content = LINK_PATTERN.sub(r'\1', content)
         content = CODE_BLOCK_PATTERN.sub('', content)
         content = INLINE_CODE_PATTERN.sub('', content)
-        
+
         return content
 
     def count_code_lines(markdown):
         """统计代码行数（修复版本 - 正确处理所有代码行）"""
         code_blocks = CODE_BLOCK_PATTERN.findall(markdown)
         total_code_lines = 0
-        
+
         for i, block in enumerate(code_blocks):
             # 提取语言标识
             lang_match = re.match(r'^```(\w*)', block)
             language = lang_match.group(1).lower() if lang_match else ''
-            
+
             # 移除开头的语言标识和结尾的```
             code_content = re.sub(r'^```\w*\n?', '', block)
             code_content = re.sub(r'\n?```$', '', code_content)
-            
+
             # 过滤空代码块
             if not code_content.strip():
                 continue
-            
+
             # 计算有效行数（包含所有非空行，包括注释行）
             lines = [line for line in code_content.split('\n') if line.strip()]
             line_count = len(lines)
-            
+
             # 如果有明确的编程语言标识，直接统计
             if language and language in PROGRAMMING_LANGUAGES:
                 total_code_lines += line_count
                 continue
-            
+
             # 增强的检测策略 - 更宽松的判断
             is_code = False
-            
+
             # 1. 命令行检测
             command_indicators = [
                 'sudo ', 'npm ', 'pip ', 'git ', 'cd ', 'ls ', 'mkdir ', 'rm ', 'cp ', 'mv ',
@@ -136,10 +136,10 @@ status: new
                 'C:\\', 'D:\\', '.app', '.exe', '.pkg', '.dmg', '.zip', '.tar',
                 '#!/',
             ]
-            
+
             if any(indicator in code_content for indicator in command_indicators):
                 is_code = True
-            
+
             # 2. 编程语法检测（增强版）
             if not is_code:
                 programming_indicators = [
@@ -176,24 +176,24 @@ status: new
                     # 数学公式和LaTeX
                     '\\', '$', '$$', '\\begin', '\\end', '\\frac', '\\sum',
                 ]
-                
+
                 if any(indicator in code_content for indicator in programming_indicators):
                     is_code = True
-            
+
             # 3. 结构化检测
             if not is_code:
                 # 缩进结构检测
                 if len(lines) > 1 and any(line.startswith('  ') or line.startswith('\t') for line in lines):
                     is_code = True
-                
+
                 # HTML标签结构
                 elif '<' in code_content and '>' in code_content:
                     is_code = True
-                
+
                 # 包含特殊字符组合
                 elif any(char in code_content for char in ['{', '}', '(', ')', '[', ']']) and ('=' in code_content or ':' in code_content):
                     is_code = True
-            
+
             # 4. 模式匹配检测（宽松策略）
             if not is_code and len(lines) >= 1:
                 special_patterns = [
@@ -204,62 +204,62 @@ status: new
                     r'if\s+\w+', r'while\s+\w+', r'for\s+\w+', r'return\s+\w*',
                     r'\w+\s*=\s*\w+', r'\w+\.\w+', r'#.*输出', r'#.*结果'
                 ]
-                
+
                 if any(re.search(pattern, code_content) for pattern in special_patterns):
                     is_code = True
-            
+
             # 如果判断为代码，则统计行数
             if is_code:
                 total_code_lines += line_count
-        
+
         return total_code_lines
 
     def calculate_reading_stats(markdown):
         """计算中文字符数和代码行数"""
         # 生成内容哈希用于缓存
         content_hash = hash(markdown)
-        
+
         # 使用缓存的清理函数
         clean_content = clean_markdown_content_for_chinese(content_hash, markdown)
         chinese_chars = len(CHINESE_CHARS_PATTERN.findall(clean_content))
-        
+
         # 统计代码行数
         code_lines = count_code_lines(markdown)
-        
+
         # 计算阅读时间（中文：400字/分钟）
         reading_time = max(1, round(chinese_chars / 400))
-        
+
         return reading_time, chinese_chars, code_lines
 
     def on_page_markdown(markdown, **kwargs):
         page = kwargs['page']
-        
+
         # 快速排除检查
         if page.meta.get('hide_reading_time', False):
             return markdown
-        
+
         # 保持原有的EXCLUDE_PATTERNS循环检查方式
         src_path = page.file.src_path
         for pattern in EXCLUDE_PATTERNS:
             if pattern.match(src_path):
                 return markdown
-        
+
         # 优化类型检查
         page_type = page.meta.get('type', '')
         if page_type in EXCLUDE_TYPES:
             return markdown
-        
+
         # 快速预检查
         if len(markdown) < 300:
             return markdown
-        
+
         # 计算统计信息
         reading_time, chinese_chars, code_lines = calculate_reading_stats(markdown)
-        
+
         # 过滤太短的内容
         if chinese_chars < 50:
             return markdown
-        
+
         # 生成阅读信息
         if code_lines > 0:
             reading_info = f"""!!! info "📖 阅读信息"
@@ -271,7 +271,7 @@ status: new
         阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}**
 
     """
-        
+
         return reading_info + markdown
     ```
 
@@ -279,7 +279,7 @@ status: new
 
 ### **步骤2**
 
-把reading_time.py放到docs/overrides/hooks目录下，然后在mkdocs.yml中添加：  
+把reading_time.py放到docs/overrides/hooks目录下，然后在mkdocs.yml中添加：
 
 ```yaml
 # 在 mkdocs.yml 中添加
@@ -287,7 +287,7 @@ hooks:
   - docs/overrides/hooks/reading_time.py    # 阅读时间统计
 ```
 
-### **步骤3**  
+### **步骤3**
 配置MkDocs主题以及覆写路径custom_dir
 ```yaml
 # 在 mkdocs.yml 中添加
@@ -331,7 +331,7 @@ mkdocs serve  # 本地预览
 ## 3.高级配置
 
 ### 3.1 排除特定页面
-如果有一些页面不想统计阅读时间，可以在页面的元数据中添加 `hide_reading_time: true`。例如：  
+如果有一些页面不想统计阅读时间，可以在页面的元数据中添加 `hide_reading_time: true`。例如：
 
 ```markdown
 ---
@@ -340,7 +340,7 @@ hide_reading_time: true
 ---
 ```
 
-或者直接在reading_time.py中添加：  
+或者直接在reading_time.py中添加：
 ```python
 # 你想排除的页面路径
 EXCLUDE_PATTERNS = [
@@ -354,14 +354,14 @@ EXCLUDE_PATTERNS = [
     re.compile(r'link\.md$'),
     re.compile(r'404\.md$'),
 ]
-``` 
+```
 
 ### 3.2 自定义统计信息
 如果需要自定义统计信息的格式，可以修改reading_time.py中的calculate_reading_stats函数。例如：
 ```python
 def calculate_reading_stats(markdown):
     # 计算统计信息
-    reading_time, chinese_chars, code_lines = calculate_reading_stats(markdown) 
+    reading_time, chinese_chars, code_lines = calculate_reading_stats(markdown)
     # 自定义统计信息格式
     if code_lines > 0:
         reading_info = f"""!!! info "📖 阅读信息"

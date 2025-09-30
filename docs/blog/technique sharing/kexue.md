@@ -6,19 +6,19 @@ tags:
 
 # 科学上网
 
-> **流程**    
-> 
-> - 准备工作：科学上网客户端如Clash、Quantumult X、小火箭(Shadowrocket)  
-> - 拥有一个订阅节点  
-> - 将节点导入到科学上网客户端  
-> - 打开科学上网客户端开始网上冲浪～  
+> **流程**
+>
+> - 准备工作：科学上网客户端如Clash、Quantumult X、小火箭(Shadowrocket)
+> - 拥有一个订阅节点
+> - 将节点导入到科学上网客户端
+> - 打开科学上网客户端开始网上冲浪～
 > [流行的科学上网工具-Android/Windows/macOS/iOS/Linux](https://clashverge.net/other_tools/){target=“_blank”}
 
 ## 客户端下载
 
 ### iOS
 
-需要使用**外区Apple ID**购买 Shadowrocket 或 Quantumult X  
+需要使用**外区Apple ID**购买 Shadowrocket 或 Quantumult X
 [Shadowrocket购买与下载教程](https://www.shadowrocket.vip/shadowrocket使用教程/shadowrocket小火箭怎么购买，美区小火箭下载购买教程.html){target=“_blank”}
 
 - [Shadowrocket 规则与广告过滤](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever){target=“_blank”}

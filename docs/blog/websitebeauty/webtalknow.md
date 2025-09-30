@@ -4,7 +4,7 @@ hide:
   #  - navigation # 显示右
   #  - toc #显示左
   #  - footer
-  #  - feedback  
+  #  - feedback
 tags:
   - Mkdocs
 comments: false
@@ -16,9 +16,9 @@ comments: false
 
 ## 访问Tidio官网
 
-要在您的网站上使用 javascript 代码方法安装 Tidio，您需要创建一个 Tidio 帐户。要创建 Tidio 帐户，请访问我们的网站<tidio.com>，然后单击 “开始” 按钮创建新的 Tidio 帐户。您还可以使用 “登录” 选项来使用您现有的帐户。   
+要在您的网站上使用 javascript 代码方法安装 Tidio，您需要创建一个 Tidio 帐户。要创建 Tidio 帐户，请访问我们的网站<tidio.com>，然后单击 “开始” 按钮创建新的 Tidio 帐户。您还可以使用 “登录” 选项来使用您现有的帐户。
 
-安装过程很简单，因为它只需要您将一行代码粘贴到网站代码的适当位置。  
+安装过程很简单，因为它只需要您将一行代码粘贴到网站代码的适当位置。
 
 ## 找到安装代码
 

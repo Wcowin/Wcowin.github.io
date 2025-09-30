@@ -6,7 +6,7 @@ tags:
 
 
 # 简单的 JavaScript 音乐播放器
- 
+
 
 !!! note
     **GitHub 地址**：https://github.com/Wcowin/Muplayer
@@ -52,7 +52,7 @@ tags:
 
 ## 效果预览
 
-![image](https://s1.imagehub.cc/images/2025/05/28/1f96d34d5d45d78acb29689c3bb8e13e.png) 
+![image](https://s1.imagehub.cc/images/2025/05/28/1f96d34d5d45d78acb29689c3bb8e13e.png)
 
 ## 扩展建议
 

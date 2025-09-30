@@ -2,7 +2,7 @@
 title: Markdown写作应用推荐
 tags:
   - Markdown
----  
+---
 
 # MWeb Pro
 
@@ -116,7 +116,7 @@ Markdown 语法：
 
 	}
 	```
-	
+
 效果如下：
 
 ```js
@@ -181,7 +181,7 @@ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 
 行内公式： ``\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N``
 
-<!-- 注意：为了兼容 MWeb 3，也支持 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ 
+<!-- 注意：为了兼容 MWeb 3，也支持 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
 和块级语法
 $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 但是建议用新的语法。 -->
@@ -205,9 +205,9 @@ mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图
         John->Bob: How about you?
         Bob-->John: Jolly good!
     ```
- 
+
 **效果如下：**
- 
+
 ```mermaid
 sequenceDiagram
     participant Alice

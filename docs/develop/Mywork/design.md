@@ -5,12 +5,12 @@ tags:
 ---
 
 # 玩的设计
-![F4D1D647-2CCE-487A-98AC-30B84CC85695.png](https://s2.loli.net/2024/02/04/5vpWyP6ZVjr3whT.png) 
+![F4D1D647-2CCE-487A-98AC-30B84CC85695.png](https://s2.loli.net/2024/02/04/5vpWyP6ZVjr3whT.png)
 
 ## 测试工作
 ![未命名.png](https://s2.loli.net/2024/02/04/M23zoSZ4wDc8Kbj.png)
 
-以下是我捣鼓设计着玩的作品，不是很专业  
+以下是我捣鼓设计着玩的作品，不是很专业
 ***
 [MacApp](https://macapp.org.cn/){target="_blank" rel="noopener noreferrer"} logo设计
 
@@ -24,18 +24,18 @@ tags:
 ![7EF61156D14_1_105_c.jpeg](https://s2.loli.net/2024/02/04/C9XfgY4zWPpvEVh.jpg)
 
 ***
-## 早期购物网站制作  
+## 早期购物网站制作
 ![image.png](https://s2.loli.net/2024/02/04/Itp2g9VeUObaJ14.png)
 
 ***
 ## 果味Apple网站
-学习模仿Austin Li大佬的[果味Apple网站](https://wcowinastro.netlify.app/)  
+学习模仿Austin Li大佬的[果味Apple网站](https://wcowinastro.netlify.app/)
 ![image.png](https://s2.loli.net/2024/02/04/w9mTaFPNUq7uihI.png)
 ***
 
-## Hexo的butterfly主题制作的网站  
+## Hexo的butterfly主题制作的网站
 
-[Wcowin的个人网站](https://wcowin.gitee.io/myhexo/)  
+[Wcowin的个人网站](https://wcowin.gitee.io/myhexo/)
 ![image.png](https://s2.loli.net/2024/02/04/zKJon7wlPGNmAtZ.png)
 ***
 

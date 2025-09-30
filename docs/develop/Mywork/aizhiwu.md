@@ -72,7 +72,7 @@ def get_access_token():
     url = "https://aip.baidubce.com/oauth/2.0/token"
     params = {"grant_type": "client_credentials", "client_id": API_KEY, "client_secret": SECRET_KEY}
     response = requests.post(url, params=params)
-    
+
     if response.status_code == 200:
         access_token = response.json().get("access_token")
         return access_token

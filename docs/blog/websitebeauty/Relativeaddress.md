@@ -15,7 +15,7 @@ tags:
 ```
 ![图片描述](./img/example.png)
 ```
-`./img/example.png` 表示当前 Markdown 文件同级目录下的 `img` 文件夹中的图片。  
+`./img/example.png` 表示当前 Markdown 文件同级目录下的 `img` 文件夹中的图片。
  如果图片在上级目录：`../assets/example.png`
 
 **注意事项：**
@@ -28,13 +28,13 @@ tags:
 **内嵌或下载 PDF：**
 ```
 [查看PDF](./files/example.pdf)
-```  
+```
 
-或使用 HTML 方式内嵌：  
+或使用 HTML 方式内嵌：
 
 ```html
 <embed src="./files/example.pdf" width="100%" height="600px" type="application/pdf">
-```  
+```
 
 `./files/example.pdf` 表示当前文档同级的 `files` 文件夹下的 PDF 文件。
 `../files/example.pdf` 表示上级目录的 `files` 文件夹下的 PDF 文件。
@@ -46,7 +46,7 @@ tags:
 **引用同一项目下的其他 Markdown 页面：**
 ```
 [跳转到其他页面](../otherpage.md)
-```  
+```
 
 - MkDocs 会自动将 `.md` 转换为 `.html`，所以可以直接用 Markdown 文件名。
 - （）内的路径是相对于当前 Markdown 文件的路径，可以参考[PDF文件引用](#2-pdf)的方法。
@@ -57,7 +57,7 @@ tags:
 ```html
 <link rel="stylesheet" href="../assets/style.css">
 <script src="../assets/script.js"></script>
-```  
+```
 
 - 推荐将静态资源放在 `docs/assets` 目录下，引用时用相对路径。
 
@@ -69,5 +69,5 @@ tags:
 
 ---
 
-## **总结**  
+## **总结**
 在 MkDocs 项目中，所有资源的相对路径都应以当前 Markdown 文件为基准，确保本地和线上都能正确访问。建议统一资源管理目录结构，便于维护和引用。

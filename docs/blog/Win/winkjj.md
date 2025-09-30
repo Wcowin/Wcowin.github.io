@@ -1,5 +1,5 @@
 ---
-title: Windows基础操作（快捷键）  
+title: Windows基础操作（快捷键）
 tags:
   - win
 ---
@@ -43,7 +43,7 @@ tags:
 
 16、Win+R 运行
 
-17、Win+T 跳转到任务栏 
+17、Win+T 跳转到任务栏
 
 18、Win+V 打开云剪贴板（如果正在码字，会定位到光标附近）
 

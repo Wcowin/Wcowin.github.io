@@ -8,37 +8,37 @@ tags:
 # 人脸识别系统
 
 **原文：**
->Bilibili:  [用300行代码实现人脸识别系统_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ZZ4y1S76N/){target="_blank"}    
+>Bilibili:  [用300行代码实现人脸识别系统_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ZZ4y1S76N/){target="_blank"}
 
 > CSDN博客：[用300行Python代码实现一个人脸识别系统_dejahu的博客-CSDN博客](https://blog.csdn.net/ECHOSON/article/details/122404926){target="_blank"}
 
 ## 基本原理
 
-数据收集与预处理:  
+数据收集与预处理:
 首先，主要是借助dlib库，系统需要收集用于人脸识别的数据。这些数据包括已知身份的人脸图像，通常是系统的训练数据集。这些图像将用于创建人脸特征向量以及后续的人脸匹配。在收集数据后，对图像进行预处理，包括增强图像质量、调整大小和归一化等操作，以便进行更准确的识别。
 
-人脸特征提取:  
+人脸特征提取:
 对于每个人脸图像，系统使用人脸识别模型（通常是深度学习模型）来提取人脸的特征向量。这些特征向量是对人脸的独特表示，用于后续的比对和匹配。
 
-人脸识别模型:  
+人脸识别模型:
 通常，系统使用已经训练好的深度学习模型，例如基于卷积神经网络（CNN）的模型来进行人脸特征提取。这些模型在训练阶段学会了如何从人脸图像中提取有用的特征。
 
-实时检测与识别:  
+实时检测与识别:
 在实时检测过程中，系统捕捉视频流或图像帧，并使用人脸检测算法（例如Haar级联分类器或更高级的人脸检测器）来检测图像中的人脸位置。一旦检测到人脸，系统会提取该人脸的特征向量。
 
-人脸匹配:  
+人脸匹配:
 提取的人脸特征向量与已知的人脸特征向量进行比对。这可以通过计算两个特征向量之间的相似度来实现。如果相似度超过预定的阈值（例如0.5），则认为是同一个人，否则被标记为“未知”。
 
-结果显示:  
+结果显示:
 识别结果会显示在屏幕上，通常会在人脸周围绘制边界框，并显示人名或"Unknown"，表示未知身份。这些结果会实时更新，以便用户可以在视频流或图像中看到识别的人脸。
 
-用户交互:  
+用户交互:
 系统通常提供用户交互界面，允许用户上传图像、开始或停止实时识别，并可能提供管理已知人脸数据的功能
 
 
 
 **示意图**
-![image-20220109232309780](https://vehicle4cm.oss-cn-beijing.aliyuncs.com/typoraimgs/image-20220109232309780.png)  
+![image-20220109232309780](https://vehicle4cm.oss-cn-beijing.aliyuncs.com/typoraimgs/image-20220109232309780.png)
 
 ## 创建虚拟环境
 
@@ -49,7 +49,7 @@ tags:
 conda create -n face python==3.7.3
 
 conda activate face
-```  
+```
 
 跑轮子（原作者[这里](https://mbd.pub/o/bread/ZJeYkpdt?next=pay&author_name=肆十二&author_avatar=https%3A%2F%2Fcdn.2zimu.com%2Fmbd_file_1679134971152.jpg)是要钱的，轮子也是必要的，其实也有其他方法实现，但是**我也付费了的**，也请尊重知识付费）
 ```bash
@@ -60,15 +60,15 @@ pip install dlib-19.17.0-cp37-cp37m-win_amd64.whl
 安装必要的库
 ```bash
 pip install -r requirements.txt
-```  
+```
 
-运行  
+运行
 ```bash
 python 文件名.py
 ```
-!!! note 
-    如果Anaconda都不会，移步：  
-    [如何在pycharm中配置anaconda的虚拟环境](https://blog.csdn.net/ECHOSON/article/details/117220445){target="_blank"}   
+!!! note
+    如果Anaconda都不会，移步：
+    [如何在pycharm中配置anaconda的虚拟环境](https://blog.csdn.net/ECHOSON/article/details/117220445){target="_blank"}
     [Python学习中Anaconda和Pycharm的正确打开方式](https://www.bilibili.com/video/BV15o4y127Rt/?vd_source=4c6908c51297ba49ec55863b71e0d24f){target="_blank"}
 
 Pycharm/Vs code也不会的话，那…………下面的内容就不推荐阅读了
@@ -123,7 +123,7 @@ def enhance_image_quality(image):
     alpha = 1.5  # 调整对比度的参数
     beta = 30    # 调整亮度的参数
     enhanced_image = cv2.convertScaleAbs(image, alpha=alpha, beta=beta)
-    
+
     return enhanced_image
 
 
@@ -156,7 +156,7 @@ class MainWindow(QTabWidget):
         self.set_down()
 
 
-        
+
 
     # 初始化数据库的人脸
     def initFaces(self):
@@ -215,7 +215,7 @@ class MainWindow(QTabWidget):
         th = threading.Thread(target=self.display_video)
         th.start()
 
-    
+
     # 初始化界面
     def initUI(self):
         # 设置字体
@@ -410,7 +410,7 @@ class MainWindow(QTabWidget):
                 QMessageBox.information(self, "上传成功", "数据已上传！")
 
     '''
-    ### 3. 视频识别相关功能 ### 
+    ### 3. 视频识别相关功能 ###
     '''
 
     # 关闭事件 询问用户是否退出
@@ -520,13 +520,13 @@ if __name__ == "__main__":
 
 ![image.png](https://s2.loli.net/2024/02/04/AcdiBjGqRu3zZnO.jpg)
 
-**准确度显著提高，多人照片识别也更快，UI交互也做了改进**  
+**准确度显著提高，多人照片识别也更快，UI交互也做了改进**
 
 ## 持续优化ing
-恰逢Pytho课程设计，于是我便拿出来作为小组设计作品，但是做了进一步完善  
+恰逢Pytho课程设计，于是我便拿出来作为小组设计作品，但是做了进一步完善
 
-团队(姚双、本作者、张平、刘银杰)优化后最终版本：  
-**识别精度大幅提升，支持多人脸识别，支持多种人脸识别模型，支持人脸图像预处理，支持使用更高级的人脸识别模型，支持增加人脸图像的数量和多样性，支持使用更高级的人脸识别模型，支持人脸图像预处理，支持人脸匹配，支持结果显示，支持用户交互，支持数据收集与预处理，支持人脸特征提取**  
+团队(姚双、本作者、张平、刘银杰)优化后最终版本：
+**识别精度大幅提升，支持多人脸识别，支持多种人脸识别模型，支持人脸图像预处理，支持使用更高级的人脸识别模型，支持增加人脸图像的数量和多样性，支持使用更高级的人脸识别模型，支持人脸图像预处理，支持人脸匹配，支持结果显示，支持用户交互，支持数据收集与预处理，支持人脸特征提取**
 
 ```py
 from PyQt5.QtWidgets import *
@@ -768,7 +768,7 @@ class MainWindow(QTabWidget):
                 QMessageBox.information(self, "上传成功", "数据已上传！")
 
     '''
-    ### 3. 视频识别相关功能 ### 
+    ### 3. 视频识别相关功能 ###
     '''
 
     # 关闭事件 询问用户是否退出
@@ -809,7 +809,7 @@ class MainWindow(QTabWidget):
         # 点击关闭按钮后重新初始化界面
         self.stopEvent.set()
         self.set_down()
-        
+
     #转换中文显示
     def nameText(self,img, text, position, textColor=(255, 0, 0), textSize=30):
         if (isinstance(img, np.ndarray)):  # 判断是否OpenCV图片类型
@@ -863,8 +863,8 @@ class MainWindow(QTabWidget):
                             name_list[i]="*"
                     name=''.join(name_list)
                 frame=self.nameText(frame, name,(left+55, bottom+15),(255, 0, 0), 30)
-                
-            
+
+
             # 保存图片并进行实时的显示
             frame = frame
             frame_height = frame.shape[0]
@@ -902,13 +902,13 @@ if __name__ == "__main__":
 
 
 ## 参考文献
-[1] 龙慧,朱孟春,邓娅倩等.基于 OpenCV 的智能校园人脸门禁系统的设计与实现[J].工业控制 计算机,2023,36(09):73-75.  
-[2] 冯婧,顾梅花.基于 OpenCV 的人脸识别算法研究与实现[J].电脑知识与技 术,2020,16(14):3-5.DOI:10.14004/j.cnki.ckt.2020.1473  
-[3] 廖周宇,王钰婷,陈科良.基于 OpenCV 的人脸识别算法[J].电子技术与软件工 程,2020,(09):133-136.  
-[4] 李颖聪,陈贝文,廖晓芳等.基于 OpenCV 的人脸识别系统设计与实现[J].电脑知识与技 术,2022,18(18):53-55.DOI:10.14004/j.cnki.ckt.2022.1155  
-[5] 张绿云,韦肖雨,李琳.基于Python与OpenCV的人脸识别系统设计与实现[J].电脑知识与技 术,2022,18(10):87-88.DOI:10.14004/j.cnki.ckt.2022.0783  
-[6] 黄安祺, & 陈争奇. (2017). 基于 OpenCV 的人脸识别技术研究. 电子技术与软件工程, 16(13), 36-37.  
-[7] 郑亚军, & 王丽娟. (2019). 基于 OpenCV 的人脸识别技术研究与实现. 电子技术与软件工 程, 18(5), 46-48.  
-[8] 王志敏, & 刘杰. (2019). 基于 OpenCV 的人脸识别算法研究与实现. 现代计算机, (11), 26-28.  
-[9] 张海波, & 王振华. (2019). 基于 OpenCV 的人脸识别算法研究与实现. 计算机与数字工程, (6), 169-170.  
-[10] 赵宇航, & 张晓艳. (2018). 基于 OpenCV 的人脸识别算法研究与实现. 现代计算机, (12), 16-18.  
+[1] 龙慧,朱孟春,邓娅倩等.基于 OpenCV 的智能校园人脸门禁系统的设计与实现[J].工业控制 计算机,2023,36(09):73-75.
+[2] 冯婧,顾梅花.基于 OpenCV 的人脸识别算法研究与实现[J].电脑知识与技 术,2020,16(14):3-5.DOI:10.14004/j.cnki.ckt.2020.1473
+[3] 廖周宇,王钰婷,陈科良.基于 OpenCV 的人脸识别算法[J].电子技术与软件工 程,2020,(09):133-136.
+[4] 李颖聪,陈贝文,廖晓芳等.基于 OpenCV 的人脸识别系统设计与实现[J].电脑知识与技 术,2022,18(18):53-55.DOI:10.14004/j.cnki.ckt.2022.1155
+[5] 张绿云,韦肖雨,李琳.基于Python与OpenCV的人脸识别系统设计与实现[J].电脑知识与技 术,2022,18(10):87-88.DOI:10.14004/j.cnki.ckt.2022.0783
+[6] 黄安祺, & 陈争奇. (2017). 基于 OpenCV 的人脸识别技术研究. 电子技术与软件工程, 16(13), 36-37.
+[7] 郑亚军, & 王丽娟. (2019). 基于 OpenCV 的人脸识别技术研究与实现. 电子技术与软件工 程, 18(5), 46-48.
+[8] 王志敏, & 刘杰. (2019). 基于 OpenCV 的人脸识别算法研究与实现. 现代计算机, (11), 26-28.
+[9] 张海波, & 王振华. (2019). 基于 OpenCV 的人脸识别算法研究与实现. 计算机与数字工程, (6), 169-170.
+[10] 赵宇航, & 张晓艳. (2018). 基于 OpenCV 的人脸识别算法研究与实现. 现代计算机, (12), 16-18.

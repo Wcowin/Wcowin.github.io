@@ -20,11 +20,11 @@ pip install mkdocs-git-revision-date-localized-plugin
 .github/workflows/下的ci.yml增加高亮的几行：
 
 ```yaml hl_lines="14-15 26-28"
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 permissions:
   contents: write
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${ env.cache_id }
@@ -47,8 +47,8 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-git-authors-plugin
-      # - run: pip install mkdocs-rss-plugin           
-      - run: pip install mkdocs-material 
+      # - run: pip install mkdocs-rss-plugin
+      - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
 ```
 

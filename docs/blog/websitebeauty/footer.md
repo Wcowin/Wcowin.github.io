@@ -4,7 +4,7 @@ hide:
   #  - navigation # 显示右
   #  - toc #显示左
   #  - footer
-  #  - feedback  
+  #  - feedback
 tags:
   - Mkdocs
 comments: false
@@ -12,7 +12,7 @@ comments: false
 
 # 页脚设置
 
-## 页脚设置  
+## 页脚设置
 
 MkDocs 支持自定义页脚。
 
@@ -56,7 +56,7 @@ MkDocs 支持自定义页脚。
                 {{ page.previous_page.title }}
               </div>
             </div>
-            
+
           </a>
         {% endif %}
 
@@ -90,7 +90,7 @@ MkDocs 支持自定义页脚。
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       {% include "partials/copyright.html" %}
-   
+
     <font color="#B9B9B9">
       <div class="footer-visit-count" style="display: flex; justify-content: center; align-items: center;">
     本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script>

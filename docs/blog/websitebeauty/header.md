@@ -14,8 +14,8 @@ comments: false  #评论，默认不开启
 # 添加顶部公告栏
 ![image.png](https://s2.loli.net/2024/02/02/mvCEgeP4lANuXI8.png)
 
-docs/overrides下新建main.html ，针对main.html文件    
-树状结构如下:  
+docs/overrides下新建main.html ，针对main.html文件
+树状结构如下:
 ``` hl_lines="11"
 $ tree -a
 .
@@ -32,7 +32,7 @@ $ tree -a
 │          └──comments.html
 │
 └── mkdocs.yml
-``` 
+```
 
 ```html hl_lines="9-22"
 {#-

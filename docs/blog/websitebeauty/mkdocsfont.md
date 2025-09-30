@@ -20,20 +20,20 @@ tags:
 
 # 修改网站字体
 
-本页面目前在用的字体：[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank}  
-想必你可以直观从我的网站感受到，[这款字体](https://chawyehsu.github.io/lxgw-wenkai-webfont/)的美观程度。  
+本页面目前在用的字体：[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank}
+想必你可以直观从我的网站感受到，[这款字体](https://chawyehsu.github.io/lxgw-wenkai-webfont/)的美观程度。
 
 [快速教程]
 [快速教程]: #mkdocs
 
 https://hsiaofeng.com/archives/224.html
 
-***  
+***
 
 **以下是摘录的部分字体官方介绍文档**
 
 > **注意事项**
-> 
+>
 > - 添字请在 [Issue #33](https://github.com/lxgw/LxgwWenKai/issues/33) 反馈，字形调整请在 [Issue #14](https://github.com/lxgw/LxgwWenKai/issues/14) 反馈，不要另开议题，以便于整理。
 > - 若需要在网站上使用这款字体，请参阅 [Issue #24](https://github.com/lxgw/LxgwWenKai/issues/24)。
 > - 有关 Magisk 字体模块等手机字体替换有关的问题，请移步[模块模板](https://github.com/lxgw/advanced-cjk-font-magisk-module-template)的 Issues 里反馈，不要在本项目开议题。
@@ -46,7 +46,7 @@ https://hsiaofeng.com/archives/224.html
 
 # LXGW WenKai / 霞鹜文楷
 
-An open-source Chinese font derived from Fontworks' Klee One. 一款开源中文字体，基于 FONTWORKS 出品字体 Klee One 衍生。  
+An open-source Chinese font derived from Fontworks' Klee One. 一款开源中文字体，基于 FONTWORKS 出品字体 Klee One 衍生。
 
 [![开源授权](https://img.shields.io/github/license/lxgw/LxgwWenKai?style=flat-square)](https://github.com/lxgw/LxgwWenKai)
 [![最新版](https://img.shields.io/github/release/lxgw/LxgwWenKai?style=flat-square)](https://github.com/lxgw/LxgwWenKai/releases/latest)
@@ -104,7 +104,7 @@ An open-source Chinese font derived from Fontworks' Klee One. 一款开源中文
 
 1. 进入 [Release](https://github.com/lxgw/LxgwWenKai/releases) 界面下载对应版本的 TTF 格式文件，或在本仓库 `fonts/TTF` 文件夹中下载。
 2. 在 [Gitee 官方镜像仓库](https://gitee.com/mirrors/lxgw-wenkai) `fonts/TTF` 文件夹中下载。
-3. 进入 [猫啃网](https://www.maoken.com/freefonts/9704.html)、[Zfont.cn](https://zfont.cn/cn/font_286.html)、[自由字体](https://ziyouziti.com/mianfeiziti-302.html) 进行下载。GitHub 项目更新后，会联系站长进行更新，更新会稍晚些。 **注意：** 其它收录免费商用字体的网站上可能也收录了本字体，但可能不是最新版。 
+3. 进入 [猫啃网](https://www.maoken.com/freefonts/9704.html)、[Zfont.cn](https://zfont.cn/cn/font_286.html)、[自由字体](https://ziyouziti.com/mianfeiziti-302.html) 进行下载。GitHub 项目更新后，会联系站长进行更新，更新会稍晚些。 **注意：** 其它收录免费商用字体的网站上可能也收录了本字体，但可能不是最新版。
 4. [永硕Ｅ盘](http://lxgw.ysepan.com/)、[蓝奏云（密码：8ppk）](https://lxgw.lanzoui.com/b0cqwpt3i) 会在 GitHub 项目更新后 72 小时之内更新。
 5. 如果您使用 macOS，已经安装过 [Homebrew](https://brew.sh/)，可以在终端输入命令：`brew tap homebrew/cask-fonts && brew install font-lxgw-wenkai` 来安装本字体。
 6. 如果您使用 Windows，已经安装过 [Scoop](https://scoop.sh/)，可以在终端输入命令：`scoop bucket add nerd-fonts && scoop install LXGWWenKai` 或者 `scoop bucket add nerd-fonts && scoop install LXGWWenKaiMono` 来安装本字体。亦可查看微软官方教程：[如何在 Windows 中安装或删除字体](https://support.microsoft.com/zh-cn/windows/如何在-windows-中安装或删除字体-f12d0657-2fc8-7613-c76f-88d043b334b8)。
@@ -115,7 +115,7 @@ An open-source Chinese font derived from Fontworks' Klee One. 一款开源中文
 
 ## 注意事项
 
-1. 截至目前，完整版本字体含有全部 CJK 基本区汉字，以及零星扩展 A~G 区汉字。 **如有补字需求，请在 [Issue #33](https://github.com/lxgw/LxgwWenKai/issues/33) 提出，不要另开 Issue**，以便于整理。 
+1. 截至目前，完整版本字体含有全部 CJK 基本区汉字，以及零星扩展 A~G 区汉字。 **如有补字需求，请在 [Issue #33](https://github.com/lxgw/LxgwWenKai/issues/33) 提出，不要另开 Issue**，以便于整理。
 2. 本人并不是专业的设计师，并未考虑设计美感，所以看起来可能略丑，补进去的字与原版可能略有违和感，且在 Bold 字重中部分字的轮廓曲线会有毛刺，Light 字重中部分字的轮廓会存在飞点；此外由于时间仓促，并没有多余的时间细修，部分字的部件拼接会很生硬。**如有字形优化建议，请在 [Issue #14](https://github.com/lxgw/LxgwWenKai/issues/14) 提出，不要另开 Issue**，以便于整理。 *（以上两个 issue 均已加上 long term 标签，且均已在 Issues 页面置顶。）*
 3. **若需要在网站上使用这款字体，请参阅 [Issue #24](https://github.com/lxgw/LxgwWenKai/issues/24)。**
 4. 对于搭配的西文字体，个人推荐 [Ysabeau](https://github.com/CatharsisFonts/Ysabeau) 系列字体。另有 Ysabeau Office 与霞鹜文楷轻便版的合并字体 [LXGW Bright](https://github.com/lxgw/LxgwBright)，采用 [字体合并补全工具](https://github.com/nowar-fonts/Warcraft-Font-Merger) 将两款字体合并而成，提供 TTF、OTF、WOFF、WOFF2 四种格式。

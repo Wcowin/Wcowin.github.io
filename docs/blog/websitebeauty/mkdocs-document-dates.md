@@ -3,7 +3,7 @@ title: MkDocs文档日期插件
 tags:
   - Mkdocs
 status: new
----  
+---
 
 # MkDocs文档日期插件
 
@@ -108,7 +108,7 @@ status: new
     padding: 1.5rem;
     margin: 1.5rem 0;
   }
-  
+
   .greeting {
     font-size: 1.3rem;
   }
@@ -180,7 +180,7 @@ plugins:
     created: 2023-01-01
     modified: 2025-02-23
     ---
-    
+
     ```
 - `created` 可替换为：`created, date, creation`
 - `modified` 可替换为：`modified, updated, last_modified, last_updated`
@@ -189,21 +189,21 @@ plugins:
 
 默认情况下，插件会**自动获取**文档的作者信息，会自动解析邮件后做链接，无需人工干预
 
-- **优先级**：`Front Matter` > `Git作者` > `site_author(mkdocs.yml)` > `PC用户名` 
+- **优先级**：`Front Matter` > `Git作者` > `site_author(mkdocs.yml)` > `PC用户名`
 - 如果你要自定义，在 Front Matter 中通过字段 `name` 就可配置一个作者：
     ```markdown
     ---
     name: any-name
     email: e-name@gmail.com
     ---
-    
+
     ```
 
 ## 配置头像
 
 默认情况下，插件会**自动加载**作者头像，无需人工干预
 
-**优先级**：`自定义头像` > `GitHub头像` > `字符头像` 
+**优先级**：`自定义头像` > `GitHub头像` > `字符头像`
 
 1. 字符头像：会根据作者姓名自动生成，规则如下
     - 提取 initials：英文取首字母组合，中文取首字
@@ -219,7 +219,7 @@ plugins:
         avatar: https://xxx.author-avatar-URL.com/xxx.png
         url: https://xxx.website-URL.com/xxx
         description: author description
-    
+
     # 方式2：配置多个作者
     authors:
         - jaywhj
@@ -228,7 +228,7 @@ plugins:
 
     ---
     ```
-- 如果要配置多个作者的完整信息，则可在 `docs/` 目录下新建单独的配置文件 `authors.yml`，格式参考 [authors.yml](https://github.com/jaywhj/mkdocs-document-dates/blob/main/templates/authors.yml) 
+- 如果要配置多个作者的完整信息，则可在 `docs/` 目录下新建单独的配置文件 `authors.yml`，格式参考 [authors.yml](https://github.com/jaywhj/mkdocs-document-dates/blob/main/templates/authors.yml)
 - 如果 URL 头像加载失败，则会自动回退到字符头像
 
 ## 插件定制化
@@ -280,7 +280,7 @@ plugins:
 
 ## 开发小故事（可选）
 
-一个可有可无、微不足道的小插件，没事的朋友可以看看 \^\_\^ 
+一个可有可无、微不足道的小插件，没事的朋友可以看看 \^\_\^
 
 - **起源**：
     - 是因为 [mkdocs-git-revision-date-localized-plugin](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin) ，一个很棒的项目。在2024年底使用时，发现我这本地用不了，因为我的 mkdocs 文档没有纳入 git 管理，然后我就不理解为什么不读取文件系统的时间，而要用 git 时间，而且文件系统时间更准确，还给作者提了 issue，结果等了一周左右没得到回复（后面作者回复了，人不错，估计他当时在忙没来得及），然后就想，过年期间没啥事，现在 AI 这么火，要不借助 AI 自己试试，就诞生了，诞生于2025年2月

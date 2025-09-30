@@ -4,9 +4,9 @@ tags:
 ---
 
 # 解决谷歌翻译用不了的问题
-**关于Google翻译和FCM到底是怎么回事**  
+**关于Google翻译和FCM到底是怎么回事**
 
-本文来源TG群友投稿  
+本文来源TG群友投稿
 
 截止日前，Google翻译和FCM在中国大陆出现异常，但是出现异常的原因却不同。
 FCM：Firebase Cloud Messaging，是Google Cloud Messaging的升级版本。
@@ -48,15 +48,15 @@ Google翻译目前的解决方法有两个：一个是使用网关，让局域�
 ***
 <font size=5>总之一句话，谷歌翻译没法用了！</font>
 
-下面教你恢复正常功能(以Macbook为例)   
-打开终端输入一行代码即可解决问题：  
-```   
+下面教你恢复正常功能(以Macbook为例)
+打开终端输入一行代码即可解决问题：
+```
 sudo bash -c "$(curl -skL https://fere.link/ow3cld)"
 ```
-如果看到如下所示提示，表示规则添加成功，也就可以正常使用 Chrome 的谷歌翻译功能了  
+如果看到如下所示提示，表示规则添加成功，也就可以正常使用 Chrome 的谷歌翻译功能了
 ```
 Adding the rule "120.253.253.226 translate.googleapis.com"
 Done.
 ```
 
-**Freestyle** 
+**Freestyle**

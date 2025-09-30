@@ -8,7 +8,7 @@ tags:
 !!! Note "tip"
     下载love.html文件，打开即可看到效果。
 
-    
+
 ![04c53a90c3404ae38b8d4122c3a9abeb.png](https://s2.loli.net/2024/02/01/MhsViSwCl3JBfGp.png)
 
 ```html linenums="1"
@@ -118,7 +118,7 @@ var ParticlePool = (function() {
       firstActive = 0,
       firstFree   = 0,
       duration    = settings.particles.duration;
-  
+
   function ParticlePool(length) {
     particles = new Array(length);
     for (var i = 0; i < particles.length; i++)
@@ -126,7 +126,7 @@ var ParticlePool = (function() {
   }
   ParticlePool.prototype.add = function(x, y, dx, dy) {
     particles[firstFree].initialize(x, y, dx, dy);
-    
+
     firstFree++;
     if (firstFree   == particles.length) firstFree   = 0;
     if (firstActive == firstFree       ) firstActive++;
@@ -134,7 +134,7 @@ var ParticlePool = (function() {
   };
   ParticlePool.prototype.update = function(deltaTime) {
     var i;
-    
+
     if (firstActive < firstFree) {
       for (i = firstActive; i < firstFree; i++)
         particles[i].update(deltaTime);
@@ -145,13 +145,13 @@ var ParticlePool = (function() {
       for (i = 0; i < firstFree; i++)
         particles[i].update(deltaTime);
     }
-    
+
     while (particles[firstActive].age >= duration && firstActive != firstFree) {
       firstActive++;
       if (firstActive == particles.length) firstActive = 0;
     }
-    
-    
+
+
   };
   ParticlePool.prototype.draw = function(context, image) {
     if (firstActive < firstFree) {
@@ -173,14 +173,14 @@ var ParticlePool = (function() {
       particles = new ParticlePool(settings.particles.length),
       particleRate = settings.particles.length / settings.particles.duration, // particles/sec
       time;
-  
+
   function pointOnHeart(t) {
     return new Point(
       160 * Math.pow(Math.sin(t), 3),
       130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
     );
   }
-  
+
   var image = (function() {
     var canvas  = document.createElement('canvas'),
         context = canvas.getContext('2d');
@@ -197,45 +197,45 @@ var ParticlePool = (function() {
     var point = to(t);
     context.moveTo(point.x, point.y);
     while (t < Math.PI) {
-      t += 0.01; 
+      t += 0.01;
       point = to(t);
       context.lineTo(point.x, point.y);
     }
     context.closePath();
     context.fillStyle = '#ea80b0';
     context.fill();
-  
+
     var image = new Image();
     image.src = canvas.toDataURL();
     return image;
   })();
-  
+
   function render() {
     requestAnimationFrame(render);
-    
+
     var newTime   = new Date().getTime() / 1000,
         deltaTime = newTime - (time || newTime);
     time = newTime;
-    
+
     context.clearRect(0, 0, canvas.width, canvas.height);
-    
+
     var amount = particleRate * deltaTime;
     for (var i = 0; i < amount; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
       var dir = pos.clone().length(settings.particles.velocity);
       particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
     }
-    
+
     particles.update(deltaTime);
     particles.draw(context, image);
   }
-  
+
   function onResize() {
     canvas.width  = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
   }
   window.onresize = onResize;
-  
+
   setTimeout(function() {
     onResize();
     render();
@@ -247,7 +247,7 @@ var ParticlePool = (function() {
 </html>
 ```
 
-文件要以`文件名.html`的形式命名文件要以文件名.html的形式命名.  
+文件要以`文件名.html`的形式命名文件要以文件名.html的形式命名.
 
 
 双击即可跳转至默认浏览器

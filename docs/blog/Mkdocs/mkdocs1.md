@@ -7,10 +7,10 @@ tags:
 # 利用Mkdocs部署静态网页至GitHubpages
 
 !!! info
-    Material for MkDocs官方网站: [Material for MkDocs](https://www.mkdocs.org/)  
+    Material for MkDocs官方网站: [Material for MkDocs](https://www.mkdocs.org/)
     MkDocs中文文档: [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
 ---
-推荐看下这个视频：  
+推荐看下这个视频：
 :fontawesome-brands-bilibili:{ style="color: #EE98A7" }
 __[How to set up Material for MkDocs]__ by @Wcowin – :octicons-clock-24:
 10m – 用MKdocs构建一个博客网站.
@@ -27,21 +27,21 @@ __[How to set up Material for MkDocs]__ by @Wcowin – :octicons-clock-24:
 ***
 ## 二、Creating your site
 
-参考教程： 
+参考教程：
 
 [利用mkdocs部署静态网页至GitHubpages（更新版）](https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501){target=“_blank”}[^注]
 
 与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库
 ![img](https://s1.imagehub.cc/images/2024/02/02/5074a3e2b7284355e0f777fd9e621ee3.png)
 
-![img](https://s1.imagehub.cc/images/2024/02/02/5c39f0c9754f067759497361524d2b95.png)  
+![img](https://s1.imagehub.cc/images/2024/02/02/5c39f0c9754f067759497361524d2b95.png)
 
 然后打开github Desktop 克隆到本地
 ![img](https://s1.imagehub.cc/images/2024/02/02/5c06d33549ea0c4a1357697acc6f8f5d.png)
 
 ![img](https://s1.imagehub.cc/images/2024/02/02/f862b16316fa4ad0f727a0f656cc5cf1.png)
 
-![img](https://s1.imagehub.cc/images/2024/02/02/6483c0b9ee144e0c1e035dccf3339991.png) 
+![img](https://s1.imagehub.cc/images/2024/02/02/6483c0b9ee144e0c1e035dccf3339991.png)
 
 
 打开Wcowin.github.io目录进入终端依次运行:
@@ -49,12 +49,12 @@ __[How to set up Material for MkDocs]__ by @Wcowin – :octicons-clock-24:
 pip install mkdocs-material
 mkdocs new mkdocs-site
 ```
-出现下图的几个文件 
+出现下图的几个文件
 ![img](https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png)
 
 !!! tip
 
-    这里建议把**mkdocs-site**文件里的东西全部剪切出来到**Wcowin.github.io**文件里  
+    这里建议把**mkdocs-site**文件里的东西全部剪切出来到**Wcowin.github.io**文件里
     ![img](https://s1.imagehub.cc/images/2024/02/02/b4a5ac989f1f390573a85bad8c80f49b.png)
 
 **Wcowin.github.io**是克隆到本地的仓库（里面包含docs,yml文件等等），docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题，目录，插件等）
@@ -62,11 +62,11 @@ mkdocs new mkdocs-site
 你在这个目录下写的任何东西都可以通过Github Desktop 上传到github上
 
 执行下面的代码添加一个GitHub Workflow
-***  
+***
 ???note "过时的PublishMySite.yml"
     (执行下面的代码添加一个GitHub Workflow(**已经过时但是仍然能用，最新方法见下方ci.yml**)
 
-    ``` 
+    ```
     mkdir .github
     cd .github
     mkdir workflows
@@ -98,24 +98,24 @@ mkdocs new mkdocs-site
 
     ```
     )
-***  
+***
 
-``` 
+```
 mkdir .github
 cd .github
 mkdir workflows
 cd workflows
 vim ci.yml
-```  
+```
 
-进入.github/workflows/ci.yml，然后复制并粘贴以下内容：  
+进入.github/workflows/ci.yml，然后复制并粘贴以下内容：
 
 ```yaml
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 permissions:
   contents: write
@@ -131,19 +131,19 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
 ```
 
 
-到这里先检查一下你的目录结构  
+到这里先检查一下你的目录结构
 目录树状图:
 ```
 $ tree -a
@@ -164,9 +164,9 @@ Github仓库setings/Actions/General  勾选这两项
 
 ## 三、配置完善
 
-打开**mkdocs.yml** 
+打开**mkdocs.yml**
 
- 把以下的内容输入进去（最简单最基础的配置）  
+ 把以下的内容输入进去（最简单最基础的配置）
 
 ```yaml
 site_name: 网站名字
@@ -174,7 +174,7 @@ site_url: 网站链接
 site_author: 你的名字
 theme:
   name: material #主题
-```  
+```
 
 
 详细mkdocs.yml配置见[Changing the colors - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
@@ -195,11 +195,11 @@ mkdocs serve
 上图可以看到，我上传了Wcowin.github.io文件夹，这个文件夹里面包含了mkdocs.yml和docs文件夹(mkdocs-site文件夹现在没有东西，可以删除)
 
 
-**！！！重点**  
+**！！！重点**
 **去仓库的setings/pages选择下图示意的路径**
-![](https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png)
 
-等待一会网址就出来了  
+等待一会网址就出来了
 
 你的网站网址就是：​
 

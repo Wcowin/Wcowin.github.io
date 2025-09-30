@@ -1,6 +1,6 @@
 ---
 title: 基于 Mkdocs 的主题与站点
-categories: 
+categories:
   - 好玩
 tags:
   - 技术分享
@@ -19,20 +19,20 @@ tags:
 * [FastAPI](https://fastapi.tiangolo.com/) - FastAPI 框架官方文档
 * [FDU-MSC 论坛](https://fdu-msc.github.io/forum/) - 复旦大学微软学生俱乐部
 * [Chrisjing 的运维之旅](http://www.chrisjing.com/)
-* [艇仔粥 TingZaiZuk](https://herointene.github.io/) 
-* [Arisa's Blog](https://blog.arisa.moe/) 
-* [嬉戏实验室](https://blog.xiiigame.com/) 
-* [老胡的周刊](https://weekly.howie6879.com/) 
-* [Jeremy Feng](https://fengchao.pro/) 
-* [我的工作学习生活笔记](https://hellowac.github.io/) 
-* [Power's Wiki](https://wiki-power.com/) 
-* [wnc's note](https://wncfht.github.io/notes/) 
+* [艇仔粥 TingZaiZuk](https://herointene.github.io/)
+* [Arisa's Blog](https://blog.arisa.moe/)
+* [嬉戏实验室](https://blog.xiiigame.com/)
+* [老胡的周刊](https://weekly.howie6879.com/)
+* [Jeremy Feng](https://fengchao.pro/)
+* [我的工作学习生活笔记](https://hellowac.github.io/)
+* [Power's Wiki](https://wiki-power.com/)
+* [wnc's note](https://wncfht.github.io/notes/)
   ---
-- [Lenny's Web](https://lennychen.top)  
-- [苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)  
-- [世界天光的笔记本](https://lastwish.icu/)  
+- [Lenny's Web](https://lennychen.top)
+- [苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)
+- [世界天光的笔记本](https://lastwish.icu/)
 - [Wen-Chieh Lee的生活](https://wenchiehlee.github.io/mkdocs-life/)
-- [BruceJin's Notebook](https://brucejqs.github.io/MyNotebook/)  
+- [BruceJin's Notebook](https://brucejqs.github.io/MyNotebook/)
 - [0X10CC的代码空间](https://tang-jiapeng.github.io/)
 - [GENG Wei's Homepage](https://wgeng.site/index.html)
 - [Wcowin's Web](https://wcowin.work/) 我的博客

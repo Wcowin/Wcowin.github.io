@@ -12,8 +12,8 @@ hide_comment: true
 <!-- OneClip 公告栏 -->
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
-    🎉 <strong>新产品限免！</strong> 
-    <a href="https://oneclip.cloud/" target="_blank">OneClip</a> 
+    🎉 <strong>新产品限免！</strong>
+    <a href="https://oneclip.cloud/" target="_blank">OneClip</a>
     - 专为 macOS 打造的剪贴板管理工具，让你的工作效率翻倍！
     <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">立即体验 →</a>
   </div>
@@ -126,7 +126,7 @@ hide_comment: true
 }
 
 /* Safari特定修复 */
-@media not all and (min-resolution:.001dpcm) { 
+@media not all and (min-resolution:.001dpcm) {
   @supports (-webkit-appearance:none) {
     .wcowin-header-subtitle-inner {
       display: inline-block;
@@ -141,16 +141,16 @@ hide_comment: true
   .wcowin-header-subtitle {
     color: #757575;
   }
-  
+
   .wcowin-header-subtitle-inner {
     color: #757575;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* 增强阴影 */
   }
-  
+
   .wcowin-header-motto {
     color: #d0d0d0 !important; /* 更亮的灰色 */
   }
-  
+
   /* 确保SVG波浪线在深色模式下可见 */
   .wcowin-header-underline path {
     stroke: #6ecbff !important; /* 确保波浪线颜色鲜明 */
@@ -208,7 +208,7 @@ hide_comment: true
     border-color: rgba(110, 203, 255, 0.4);
     box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
   }
-  
+
   .wcowin-header-btn:hover {
     background: rgba(110, 203, 255, 0.15);
     color: #ffffff;
@@ -264,8 +264,8 @@ hide_comment: true
     );
   filter: blur(50px) brightness(1.1) saturate(1.2); /* 减小模糊半径和亮度 */
   opacity: 0.85; /* 降低不透明度 */
-  animation: 
-    glow-ultimate-rotate 15s linear infinite, 
+  animation:
+    glow-ultimate-rotate 15s linear infinite,
     glow-ultimate-breath 5s ease-in-out infinite alternate,
     glow-ultimate-hue 25s linear infinite;
 }
@@ -287,7 +287,7 @@ hide_comment: true
     filter: blur(45px) brightness(0.95) saturate(1.1); /* 降低亮度 */
     opacity: 0.75; /* 降低不透明度 */
   }
-  
+
   @keyframes glow-ultimate-breath {
     0% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9); }
     50% { opacity: 0.75; filter: blur(50px) brightness(1.0) saturate(1.15); transform: translate(-50%, -50%) scale(0.98); }
@@ -382,7 +382,7 @@ hide_comment: true
   .wcowin-header-motto {
     margin-bottom: 16px; /* 减小座右铭下方间距 */
   }
-  
+
   /* 调整头像大小，使其在移动端更小 */
   .flip-glow-ultimate,
   .flip-glow-ultimate-imgs {
@@ -421,7 +421,7 @@ hide_comment: true
   .wcowin-header-row {
     display: none !important;
   }
-  
+
   /* 显示移动端标语 */
   .mobile-motto {
     display: block;
@@ -482,7 +482,7 @@ hr {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
   }
-  
+
   .greeting-text {
     font-size: 1.5rem;
     font-weight: bold;
@@ -491,25 +491,25 @@ hr {
     /* 添加最小高度避免布局抖动 */
     min-height: 1.5rem;
   }
-  
+
   /* 夜间模式适配 */
   [data-md-color-scheme="slate"] .greeting-container {
     background-color: rgba(30, 41, 59, 0.6);
     border-color: rgba(80, 100, 140, 0.2);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   }
-  
+
   [data-md-color-scheme="slate"] .greeting-text {
     color: #e0e0e0;
   }
-  
+
   /* 响应式调整 */
   @media (max-width: 768px) {
     .greeting-container {
       padding: 10px;
       margin-bottom: 15px;
     }
-    
+
     .greeting-text {
       font-size: 1.3rem;
     }
@@ -528,7 +528,7 @@ hr {
 
     const hour = new Date().getHours();
     let greeting;
-    
+
     if (hour >= 0 && hour < 5) {
       greeting = "夜深了，注意休息 🌙";
     } else if (hour >= 5 && hour < 7) {
@@ -550,7 +550,7 @@ hr {
     } else {
       greeting = "夜深了，早点休息哦 🌠";
     }
-    
+
     greetingElement.textContent = greeting;
   }
 
@@ -583,7 +583,7 @@ hr {
     - [x] 通过{==目录==}以打开文章
     - [x] 搜索{~~~>关键词~~}查询文章
     - [x] 如遇页面卡顿，请使用[{--科学上网--}](blog/technique%20sharing/kexue.md)
-    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !  
+    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
 
     === "Mac/PC端"
 
@@ -592,7 +592,7 @@ hr {
     === "移动端"
 
         请点击左上角图标选择分类和文章
-    
+
 </div>
 <style>
     @media only screen and (max-width: 768px) {
@@ -603,7 +603,7 @@ hr {
 </style>
 
 
-***  
+***
 
 
 <div class="grid cards" markdown>
@@ -615,15 +615,15 @@ hr {
     - [模型上下文协议(MCP)简述](develop/AI/mcp.md)
     - [DeepSeek:从入门到精通](develop/deepseek.md)
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
-    - [Homebrew如何安装(Mac & Linux)](blog/Mac/homebrew.md) 
-    
+    - [Homebrew如何安装(Mac & Linux)](blog/Mac/homebrew.md)
+
 -   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程(三步搞定)__
 
     ---
-    
+
     - [Mkdocs前言](blog/Mkdocs/mkfirst.md)
     - [利用Mkdocs部署静态网页](blog/Mkdocs/mkdocs1.md)
-    - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)   
+    - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
     - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
 
 
@@ -635,30 +635,30 @@ hr {
     - [好用/好玩网站分享](blog/Webplay.md)
     - [Mac/windows软件网站汇总](blog/macsoft.md)
     - [重庆旅游推荐路线](trip/InCQ/CQ.md)
-    
+
 -   :simple-aboutdotme:{ .lg .middle } __关于__
 
     ---
 
-    - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending] 
+    - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending]
     - [博客](blog/index.md)
     - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
-    - [支持作者](about/zcw.md) 
+    - [支持作者](about/zcw.md)
 </div>
 
 
-[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
+[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵
 [^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
 
 
 
-<!--  
-____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
-\   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  | 
- \   \/    \/   / |  ,----'|  |  |  |  \   \/    \/   /  |  | |   \|  | 
-  \            /  |  |     |  |  |  |   \            /   |  | |  . `  | 
-   \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   | 
-    \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
+<!--
+____    __    ____  ______   ______   ____    __    ____  __  .__   __.
+\   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  |
+ \   \/    \/   / |  ,----'|  |  |  |  \   \/    \/   /  |  | |   \|  |
+  \            /  |  |     |  |  |  |   \            /   |  | |  . `  |
+   \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   |
+    \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__|
 -->
 
 
@@ -711,7 +711,7 @@ body::before {
   body::before {
     display: none; /* 在手机端隐藏网格效果 */
   }
-  
+
   /* 在移动端禁用复杂动画以提升性能 */
   .flip-glow-ultimate-glow {
     animation: none;
@@ -720,8 +720,8 @@ body::before {
 }
 </style>
 
-<!-- 
-  将所有页面级脚本和元数据统一放置在这里 
+<!--
+  将所有页面级脚本和元数据统一放置在这里
 -->
 <!-- Umami Analytics -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
@@ -729,11 +729,11 @@ body::before {
 <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script> -->
 
-<!-- 
+<!--
   Google Adsense 广告单元
   (如果需要，可以取消注释)
 -->
-<!-- 
+<!--
 <ins class="adsbygoogle"
     style="display:block"
     data-ad-client="ca-pub-2327435979273742"

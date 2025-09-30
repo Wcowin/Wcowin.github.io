@@ -13,9 +13,9 @@ status: new
 <div class="grid cards" markdown>
 
 -   :octicons-bookmark-16:{ .lg .middle } __继续阅读__
-   
+
     ---
-    - [密码学家王小云](../Cryptography/WXY.pdf)   
+    - [密码学家王小云](../Cryptography/WXY.pdf)
     - [数论基础](../Cryptography/Numbertheory.md)
 
 

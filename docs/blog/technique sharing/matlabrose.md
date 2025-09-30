@@ -24,7 +24,7 @@ rb=0:.01:1;
 tb=linspace(0,2,151);
 wb=rb'*((abs((1-mod(tb*5,2))))/2+.3);
 xb=wb.*cospi(tb);
-yb=wb.*sinpi(tb); 
+yb=wb.*sinpi(tb);
 zb=@(a)(-cospi(wb*a)+1).^.2;
 Zb=zb(1.2);
 g=@(i)i(:,1:30:151)/2;
@@ -105,7 +105,7 @@ for k=1:4
     surface(nXr,nYr,nZr-.1,'EdgeAlpha',0.05,...
     'EdgeColor',[0 0 0],'FaceColor','interp','CData',colorMapr)
     drawStraw(nXr,nYr,nZr-.1)
-end   
+end
 % -------------------------------------------------------------------------
 [nXb,nYb,nZb]=rotateXYZ(xb./2.5,yb./2.5,Zb./2.5+.32,R_x_2);
 nYb=nYb-1.35;
@@ -113,7 +113,7 @@ for k=1:5
     [nXb,nYb,nZb]=rotateXYZ(nXb,nYb,nZb,R_z_2);
     surface(nXb,nYb,nZb,'EdgeColor','none','FaceColor','interp','CData',colorMapb)
     drawStraw(nXb,nYb,nZb)
-end  
+end
 [nXb,nYb,nZb]=rotateXYZ(xb./2.5,yb./2.5,Zb./2.5+.32,R_x_2);
 nYb=nYb-1.15;
 [nXb,nYb,nZb]=rotateXYZ(nXb,nYb,nZb,R_z_1);
@@ -129,7 +129,7 @@ for k=1:5
     [nXb,nYb,nZb]=rotateXYZ(nXb,nYb,nZb,R_z_2);
     surface(nXb,nYb,nZb,'EdgeColor','none','FaceColor','interp','CData',colorMapb)
     drawStraw(nXb,nYb,nZb)
-end  
+end
 [nXb,nYb,nZb]=rotateXYZ(xb./2.5,yb./2.5,Zb./2.5+.32,R_x_2);
 nYb=nYb-1.25;
 [nXb,nYb,nZb]=rotateXYZ(nXb,nYb,nZb,R_z_3);
@@ -138,7 +138,7 @@ for k=1:5
     [nXb,nYb,nZb]=rotateXYZ(nXb,nYb,nZb,R_z_2);
     surface(nXb,nYb,nZb,'EdgeColor','none','FaceColor','interp','CData',colorMapb)
     drawStraw(nXb,nYb,nZb)
-end  
+end
 %axes属性调整 ==============================================================
 ax=gca;
 ax.Position=[0,0,1,1];

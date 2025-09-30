@@ -92,7 +92,7 @@ ai_summary: false  # 禁用AI摘要
 * 一切都是最好的安排
 * 昔日龌龊不足夸，今朝放荡思无涯。
 **春风得意马蹄疾，一日看尽长安花。**
-<!-- !!! note 
+<!-- !!! note
     ![bf74748e5f6db724264e5f16310d353a.png](https://picx.zhimg.com/80/v2-8fb95aee59e3298710a674a150cb862b_1440w.webp) -->
 
 ## </p><h1 id="01" name="01"><strong>2025-02-19</strong></h1><p>

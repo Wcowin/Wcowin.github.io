@@ -175,8 +175,8 @@ if (typeof document$ !== "undefined") {
 * 优化网站流畅度（玄学）
 * 在mkdocs.yml的plugins模块中引入`!ENV [CI, false]`语句，极大缩短`mkdocs serve`静态预览时间（3-5s）
 * 本Mkdocs-Wcowin主题案例：
-    - [Lenny's Web](https://lennychen.top) 
- 
+    - [Lenny's Web](https://lennychen.top)
+
 
 ## </p><h1 id="01" name="01"><strong>2024-03-14</strong></h1><p>
 * 优化网站流畅度（玄学）
@@ -205,5 +205,5 @@ if (typeof document$ !== "undefined") {
 ## </p><h1 id="01" name="01"><strong>2024-01-05</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 引入[git-revision-date-localized-plugin](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)插件，以便记录文档创建和最后一次修改时间
-* 和小王一起看了更多的猫咪  
+* 和小王一起看了更多的猫咪
 

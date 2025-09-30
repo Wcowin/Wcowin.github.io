@@ -233,7 +233,7 @@ A: 可在设置中调整历史记录数量限制和检测间隔。
 ## 🤝 反馈与支持
 
 如果您在使用过程中遇到问题或有改进建议，欢迎通过以下方式联系：
-  
+
 - 📧 邮件: [wcowin@qq.com](mailto:wcowin@qq.com)
 - 🐛 问题反馈: [GitHub Issues](https://github.com/Wcowin/OneClip/issues)
 - 💡 功能建议: [GitHub Discussions](https://github.com/Wcowin/OneClip/discussions)
@@ -248,3 +248,21 @@ A: 可在设置中调整历史记录数量限制和检测间隔。
 © 2025 Wcowin. All rights reserved.
 
 </div>
+
+### 🌍 海外购买（还没有开放）
+
+<div align="center" style="margin:2.5rem 0;">
+  <div style="display:inline-block;padding:1.75rem 2.25rem;border-radius:18px;background:linear-gradient(145deg,#0ea5e9,#6366f1);box-shadow:0 18px 40px rgba(15,23,42,0.18);max-width:520px;color:#f8fafc;">
+    <p style="font-size:1.15rem;font-weight:600;margin:0 0 0.75rem;">在全球范围获取 OneClip Pro</p>
+    <p style="font-size:0.95rem;margin:0 0 1.25rem;color:rgba(248,250,252,0.85);">
+      使用 Polar 的安全结账通道支持海外信用卡与主流支付方式，立即解锁专业功能。
+    </p>
+    <a href="https://buy.polar.sh/polar_cl_nw2R2jSfGtwVQMbmDUTl4JBbf6E292me4GHM32sIPcr" data-polar-checkout data-polar-checkout-theme="dark" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 1.75rem;background:#f8fafc;color:#1e293b;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;box-shadow:0 10px 20px rgba(15,23,42,0.22);">
+      🌐 立即购买（海外）
+    </a>
+    <p style="font-size:0.85rem;margin:1.25rem 0 0;color:rgba(248,250,252,0.75);">
+      Polar Checkout 提供多币种转换及实时电子发票。
+    </p>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js" defer data-auto-init></script>

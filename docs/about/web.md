@@ -1,7 +1,7 @@
 ---
 tags:
   - Mkdocs
----  
+---
 
 
 # 发布一个包含MkDocs和GitHub页面材料的网站
@@ -14,14 +14,14 @@ tags:
 </div>
 
 ???+Note "Tip"
-    Mkdocs material主题 :[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}  
-    Mkdocs-Wcowin主题: [Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/)     
-    详细文档：[MkDocs](https://www.mkdocs.org/getting-started/){target=“_blank”}   
+    Mkdocs material主题 :[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}
+    Mkdocs-Wcowin主题: [Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/)
+    详细文档：[MkDocs](https://www.mkdocs.org/getting-started/){target=“_blank”}
 
-## 我在CSDN上写的Mkdocs教程 
+## 我在CSDN上写的Mkdocs教程
 
-1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501){target=“_blank”}  
-2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501){target=“_blank”}  
+1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501){target=“_blank”}
+2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501){target=“_blank”}
 3.[如何在Mkdocs里自定义字体（霞鹜文楷）](https://blog.csdn.net/m0_63203517/article/details/131946304?spm=1001.2014.3001.5502){target=“_blank”}
 
 
@@ -31,7 +31,7 @@ tags:
 
 也可以学习一下git：<https://www.runoob.com/git/git-tutorial.html>{target=“_blank”}
 ***
-这是一个记录[十年之约](https://www.foreverblog.cn/){target=“_blank”}的网站，所以，这个网站会存在十年或者更久:  
+这是一个记录[十年之约](https://www.foreverblog.cn/){target=“_blank”}的网站，所以，这个网站会存在十年或者更久:
 <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>
 ## 实现自定义域名访问
 
@@ -40,9 +40,9 @@ tags:
 
 ***
 
-[萌国ICP备案查询](https://icp.gov.moe/)  
-我的备案号：  
-<a href="https://icp.gov.moe/?keyword=20230640" target="_blank">萌ICP备20230640号</a>   
+[萌国ICP备案查询](https://icp.gov.moe/)
+我的备案号：
+<a href="https://icp.gov.moe/?keyword=20230640" target="_blank">萌ICP备20230640号</a>
 哈哈可爱而已，并不是国家备案
 
 <p align="center">
@@ -51,28 +51,28 @@ tags:
     alt="Build"
   /></a>
   <a href="https://pypistats.org/packages/mkdocs-material"><img
-    src="https://img.shields.io/pypi/dm/mkdocs-material.svg" 
+    src="https://img.shields.io/pypi/dm/mkdocs-material.svg"
     alt="Downloads"
   /></a>
-  <a href="https://gitter.im/squidfunk/mkdocs-material"><img 
-    src="https://badges.gitter.im/squidfunk/mkdocs-material.svg" 
+  <a href="https://gitter.im/squidfunk/mkdocs-material"><img
+    src="https://badges.gitter.im/squidfunk/mkdocs-material.svg"
     alt="Chat on Gitter"
   /></a>
-  <a href="https://pypi.org/project/mkdocs-material"><img 
-    src="https://img.shields.io/pypi/v/mkdocs-material.svg" 
+  <a href="https://pypi.org/project/mkdocs-material"><img
+    src="https://img.shields.io/pypi/v/mkdocs-material.svg"
     alt="Python Package Index"
   /></a>
-  <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/"><img 
-    src="https://img.shields.io/docker/pulls/squidfunk/mkdocs-material" 
+  <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/"><img
+    src="https://img.shields.io/docker/pulls/squidfunk/mkdocs-material"
     alt="Docker Pulls"
   /></a>
 </p>
 ## Web 创建设计
 
 <h2>用户是浏览者</h2>
-一个典型的访问者将无法读取您的网页的全部内容！  
-无论您在网页中发布了多么有用的信息，一个访问者在决定是否继续阅读之前仅仅会花几秒钟的时间进行浏览。  
-请确保使你的观点，在页面的第一句！另外，您还需要在整个页面中使用简短的段落以及有趣的标题。  
+一个典型的访问者将无法读取您的网页的全部内容！
+无论您在网页中发布了多么有用的信息，一个访问者在决定是否继续阅读之前仅仅会花几秒钟的时间进行浏览。
+请确保使你的观点，在页面的第一句！另外，您还需要在整个页面中使用简短的段落以及有趣的标题。
 <hr>
 <h2>少即是多</h2>
 <p>保持章节尽可能短。</p>

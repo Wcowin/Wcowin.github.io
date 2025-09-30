@@ -96,7 +96,7 @@ class Cursor {
     // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
 ```
-其中比较重要的参数就是鼠标的尺寸和颜色，已经在上图中标出，目前发现颜色只支持RGB写法和固有名称写法（例如red这种），其他参数也可以自行摸索：  
+其中比较重要的参数就是鼠标的尺寸和颜色，已经在上图中标出，目前发现颜色只支持RGB写法和固有名称写法（例如red这种），其他参数也可以自行摸索：
 
 ```javascript
 * {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='1.0' fill='rgb(57, 197, 187)'/></svg>") 4 4, auto}`

@@ -14,14 +14,14 @@ tags:
 
     ---
     - 入门 MKdocs 请看[Mkdocs 官方教程](https://www.mkdocs.org/user-guide/writing-your-docs/){target=“_blank”}
-    - [Material for MkDocs（只看这个也可以）](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}教程  
+    - [Material for MkDocs（只看这个也可以）](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}教程
     - [令人惊叹的MkDocs项目和插件列表](https://github.com/mkdocs/catalog#-theming){target=“_blank”}
-    --- 
-    我写的中文教程（同步在其他平台）：  
+    ---
+    我写的中文教程（同步在其他平台）：
 
-    - [x] [Mkdocs中文教程(语雀)](https://www.yuque.com/wcowin/mkdocs-wcowin?# 《Mkdocs-Wcowin中文教程》){target=“_blank”}(推荐，展示效果好)  
-    - [x] [Mkdocs中文教程](https://blog.csdn.net/m0_63203517/category_12472184.html?spm=1001.2014.3001.5482){target=“_blank”} (CSDN | 观感更纯净)    
-    - [x] [MKdocs博客中文系列教程](https://www.zhihu.com/column/c_1754218140098387968){target=“_blank”}(知乎专栏)   
+    - [x] [Mkdocs中文教程(语雀)](https://www.yuque.com/wcowin/mkdocs-wcowin?# 《Mkdocs-Wcowin中文教程》){target=“_blank”}(推荐，展示效果好)
+    - [x] [Mkdocs中文教程](https://blog.csdn.net/m0_63203517/category_12472184.html?spm=1001.2014.3001.5482){target=“_blank”} (CSDN | 观感更纯净)
+    - [x] [MKdocs博客中文系列教程](https://www.zhihu.com/column/c_1754218140098387968){target=“_blank”}(知乎专栏)
 
 </div>
 
@@ -30,20 +30,20 @@ flowchart TD
     subgraph 内容创作
         A[Markdown文件创作] --> B{内容分类}
         B --> C[技术博客/blog]
-        B --> D[开发项目/develop] 
+        B --> D[开发项目/develop]
         B --> E[生活随笔/relax]
         B --> F[旅行记录/trip]
-        
+
         C & D & E & F --> G[元数据处理]
     end
-    
+
     subgraph AI功能
         G --> H[AI摘要生成]
         H --> I[缓存/.ai_cache]
         J[MCP助手] --> K[智能内容处理]
         K --> H
     end
-    
+
     subgraph 构建系统
         G --> L[MkDocs配置]
         L --> M[资源处理]
@@ -51,7 +51,7 @@ flowchart TD
         N --> O[多语言支持]
         O --> P[站点生成]
     end
-    
+
     subgraph 部署流程
         Q[Git推送] --> R[Actions触发]
         R --> S[自动构建]
@@ -59,7 +59,7 @@ flowchart TD
         S --> T[Vercel部署]
         T --> U[CDN分发]
     end
-    
+
     subgraph 用户体验
         U --> V[用户访问]
         V --> W[导航浏览]
@@ -68,18 +68,18 @@ flowchart TD
         X --> Z[智能搜索]
         X --> AA[友链访问]
     end
-    
+
     I --> L
 ```
 
-<!-- 入门 MKdocs 请看官方教程:   
+<!-- 入门 MKdocs 请看官方教程:
 [Mkdocs 官方教程](https://www.mkdocs.org/user-guide/writing-your-docs/){target=“_blank”}
 
-Mkdocs Materials 教程:   
+Mkdocs Materials 教程:
 [Mkdocs Materials](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}
 
-我写的中文教程（同步在其他平台）：    
-[Mkdocs中文教程](https://blog.csdn.net/m0_63203517/category_12472184.html?spm=1001.2014.3001.5482){target=“_blank”} (CSDN | 观感更纯净)    
+我写的中文教程（同步在其他平台）：
+[Mkdocs中文教程](https://blog.csdn.net/m0_63203517/category_12472184.html?spm=1001.2014.3001.5482){target=“_blank”} (CSDN | 观感更纯净)
 [MKdocs博客中文系列教程](https://www.zhihu.com/column/c_1754218140098387968){target=“_blank”}(知乎专栏)   -->
 
 ## 快速开始
@@ -98,7 +98,7 @@ Mkdocs Materials 教程:
 ## 视频教程
 
 
-已经发布  
+已经发布
 
 
 <div class="grid cards" markdown>
@@ -123,7 +123,7 @@ Mkdocs Materials 教程:
 .md-main {
     width: 130%;
     margin: 0 auto;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 </style> -->
 ---

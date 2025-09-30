@@ -8,7 +8,7 @@ status: new
 
 # 为 MkDocs 添加多语言翻译功能
 
-在全球化的今天，为网站添加多语言支持已成为提升用户体验的重要手段。本文将详细介绍如何为 MkDocs 网站添加基于 JavaScript 的客户端翻译功能，支持多种语言的实时切换。   
+在全球化的今天，为网站添加多语言支持已成为提升用户体验的重要手段。本文将详细介绍如何为 MkDocs 网站添加基于 JavaScript 的客户端翻译功能，支持多种语言的实时切换。
 
 [快速查看效果](#_9)
 
@@ -112,7 +112,7 @@ status: new
     padding: 1.5rem;
     margin: 1.5rem 0;
   }
-  
+
   .greeting {
     font-size: 1.3rem;
   }
@@ -156,22 +156,22 @@ status: new
     'md-footer-copyright', // 版权信息
     'no-translate'         // 通用不翻译类
   );
-  
+
   // 设置本地语种（默认中文简体）
   translate.language.setLocal('chinese_simplified');
-  
+
   // 自动识别用户首选语言
   translate.setAutoDiscriminateLocalLanguage();
-  
+
   // 隐藏默认语言选择框
   translate.selectLanguageTag.show = false;
-  
+
   // 设置翻译服务通道
   translate.service.use('client.edge');
-  
+
   // 执行翻译初始化
   translate.execute();
-  
+
   console.log('翻译功能已初始化');
 })();
 </script>
@@ -193,11 +193,11 @@ $ tree -a
 │          └──footer.html
 │
 └── mkdocs.yml
-``` 
+```
 
 !!! tip "重点提示"
-    请参考下方的footer.html示例代码  
-    
+    请参考下方的footer.html示例代码
+
     页脚教程: [Mkdocs页脚设计](../../blog/websitebeauty/footer.md)
 
 ??? note "footer.html示例代码(无需修改,直接复制粘贴即可使用)"
@@ -272,7 +272,7 @@ $ tree -a
                     制作工具=Made with
             `);
               // 设置本地语种
-              translate.language.setLocal('chinese_simplified');     
+              translate.language.setLocal('chinese_simplified');
               // 设置首次使用时自动识别语种
               translate.setAutoDiscriminateLocalLanguage();
               // 不显示 select 语言选择框
@@ -306,7 +306,7 @@ $ tree -a
 theme:
   name: material
   custom_dir: docs/overrides #覆写路径
-```  
+```
 
 然后在配置文件中添加多语言切换选项：
 ```yaml hl_lines="9-36"
@@ -317,7 +317,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-  
+
 extra:
   alternate:
     - name: 中文
@@ -420,7 +420,7 @@ window.addEventListener('translate.languagechange', function() {
 // 在动态内容更新时触发翻译
 function updateDynamicContent() {
   // 更新内容...
-  
+
   // 如果当前不是中文，重新执行翻译
   if (window.translate && translate.currentLanguage !== 'chinese_simplified') {
     setTimeout(() => translate.execute(), 100);
@@ -517,7 +517,7 @@ function updateDynamicContent() {
 function applyLanguageStyles(lang) {
   // 设置语言属性
   document.documentElement.setAttribute('data-translate-lang', lang || 'chinese_simplified');
-  
+
   // RTL 语言处理
   if (lang === 'arabic') {
     document.documentElement.setAttribute('dir', 'rtl');
@@ -549,7 +549,7 @@ function protectSpecialContent() {
     const icpNumber = el.textContent.match(/\d+/);
     if (icpNumber) {
       el.innerHTML = el.innerHTML.replace(
-        /(\d+)/g, 
+        /(\d+)/g,
         '<span class="no-translate">$1</span>'
       );
     }
@@ -593,7 +593,7 @@ function protectSpecialContent() {
     gap: 0.6em;
     line-height: 1.7;
   }
-  
+
   /* 移动端语言切换优化 */
   .md-header__option {
     min-width: auto;

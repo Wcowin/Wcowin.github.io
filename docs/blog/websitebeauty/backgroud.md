@@ -44,7 +44,7 @@ tags:
 ```js
 //雪花
 const fps = 30;
-const mspf = Math.floor(1000 / fps) ; 
+const mspf = Math.floor(1000 / fps) ;
 
 let width = window.innerWidth || document.documentElement.clientWidth;
 let height = window.innerHeight || document.documentElement.clientHeight;
@@ -96,13 +96,13 @@ function update_pos(dt) {
     const v = velocity(particles[i].radius);
     particles[i].x += calc_sine(particles[i].sine_components, particles[i].y) * v / 5 * dt;
     particles[i].y += v * dt;
-    
+
     // const dist = Math.hypot(particles[i].x - cursor[0], particles[i].y - cursor[1]) + 1;
     // particles[i].x += wind[0] * dt / dist
     // particles[i].y += wind[1] * dt / dist;
-    
+
     if (particles[i].y - particles[i].radius > height) {
-      particles[i] = gen_particle();  
+      particles[i] = gen_particle();
     }
   }
 }
@@ -111,7 +111,7 @@ let context_cache;
 function get_context() {
   if (context_cache)
     return context_cache;
-  
+
   canvas = document.createElement('canvas');
   canvas.id = 'snow-canvas';
   canvas.width = width;
@@ -120,16 +120,16 @@ function get_context() {
   if ((document.documentElement.dataset.darkreaderMode || "").startsWith('filter'))
     canvas.style.filter = 'invert(1)';
   document.body.appendChild(canvas);
-  
+
   context_cache = canvas.getContext('2d');
   return context_cache;
 }
 
 function draw() {
   const ctx = get_context();
-  
+
   ctx.clearRect(0, 0, width, height);
-  
+
   const n = particles.length;
   for (let i = 0; i < n; i++) {
     const p = particles[i];
@@ -148,14 +148,14 @@ let lastTime = performance.now();
 const requestFrame = () => setTimeout(loop, mspf);
 function loop() {
   const dt = (performance.now() - lastTime) / 1000;
-  
+
   if (particles.length < 120 && Math.random() < 0.1) {
     particles.push(gen_particle());
   }
-  
+
   update_pos(dt);
   draw();
-  
+
   lastTime = performance.now();
   if (focused && !disabled)
     requestFrame();

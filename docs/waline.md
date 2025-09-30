@@ -85,12 +85,12 @@ hide_comment: true
 const BARK_BASE_URL = 'https://api.day.app/YOUR_BARK_KEY_HERE';
 // 主要的 Bark 消息发送函数
 async function sendBarkMessage(event) {
-    event.preventDefault();    
+    event.preventDefault();
     const form = event.target;
     const title = document.getElementById('message-title').value.trim();
     const body = document.getElementById('message-body').value.trim();
     const senderName = document.getElementById('sender-name').value.trim();
-    const sendBtn = document.getElementById('send-btn');    
+    const sendBtn = document.getElementById('send-btn');
     // 输入验证
     if (!title) {
         showStatus('❌ 请输入消息标题', 'error');
@@ -108,7 +108,7 @@ async function sendBarkMessage(event) {
     // 设置发送中状态
     sendBtn.disabled = true;
     sendBtn.innerHTML = '📤 发送中...';
-    showStatus('📡 正在发送消息...', 'info');  
+    showStatus('📡 正在发送消息...', 'info');
     try {
         const success = await sendBarkMessage_internal(title, fullBody);
         if (success) {
@@ -129,8 +129,8 @@ async function sendBarkMessage(event) {
 function sendBarkMessage_internal(title, body) {
     return new Promise((resolve) => {
         const encodedTitle = encodeURIComponent(title);
-        const encodedBody = encodeURIComponent(body || ''); 
-        const barkUrl = body 
+        const encodedBody = encodeURIComponent(body || '');
+        const barkUrl = body
             ? `${BARK_BASE_URL}/${encodedTitle}/${encodedBody}`
             : `${BARK_BASE_URL}/${encodedTitle}`;
         const img = new Image();
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
       data-input-position="top"
       data-theme="noborder_light"
       data-lang="zh-CN"
-      data-loading="lazy"  
+      data-loading="lazy"
       crossorigin="anonymous"
       async>
   </script>
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '//unpkg.com/@waline/emojis@1.1.0/weibo',
       ],
       comment: true,
-      pageview: true, 
+      pageview: true,
       lang: 'zh',
     });
   </script>
@@ -284,22 +284,22 @@ document.addEventListener('DOMContentLoaded', function() {
     data-input-position="top"
     data-theme="noborder_light"
     data-lang="zh-CN"
-    data-loading="lazy"  
+    data-loading="lazy"
     crossorigin="anonymous"
     async>
 </script>
 
 <!-- tw开始 -->
 
-<!-- <head> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" /> 
-  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script> 
-  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script> 
-  
+<!-- <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+
  </head>
 <body>
   <link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
-  
+
   <div id="tcomment" class="loading"></div>
   <script>
   function loadTwikoo() {

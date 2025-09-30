@@ -6,7 +6,7 @@ hide:
   - footer
   - feedback
 status: new
----  
+---
 
 # MkDocs AI Summary中文教程
 
@@ -37,7 +37,7 @@ status: new
 
 > 仓库地址：https://github.com/Wcowin/Mkdocs-AI-Summary-Plus
 
-🚀 **您的MkDocs文档首选智能摘要！**   
+🚀 **您的MkDocs文档首选智能摘要！**
 这个项目利用MkDocs hooks，为您的技术文档和博客添加AI驱动的摘要生成和智能阅读统计功能。
 
 ![预览图1](https://s1.imagehub.cc/images/2025/06/03/d1563500263b22cfd0ffc3679993aa83.jpg)
@@ -87,9 +87,9 @@ markdown_extensions:
 
 ### 2. 获取 API 密钥
 
-推荐使用 **GLM**（性价比最高）：  
-1. 访问 [GLM 开放平台](https://open.bigmodel.cn/)  
-2. 注册并创建 API 密钥  
+推荐使用 **GLM**（性价比最高）：
+1. 访问 [GLM 开放平台](https://open.bigmodel.cn/)
+2. 注册并创建 API 密钥
 3. 在项目根目录创建 `.env` 文件：
 
 ```env
@@ -166,15 +166,15 @@ plugins:
       # AI 服务设置
       ai_service: "deepseek"          # 主要服务
       fallback_services: ["openai"]   # 备用服务
-      
+
       # 语言与内容
       summary_language: "zh"          # zh/en/both
       max_content_length: 8000         # 内容长度限制
-      
+
       # 文件选择
       enabled_folders: ["docs"]       # 处理的文件夹
       exclude_patterns: ["**/api/**"] # 排除模式
-      
+
       # 性能相关
       cache_enabled: true              # 启用缓存
       local_enabled: true              # 本地环境启用
@@ -309,26 +309,26 @@ jobs:
             includes
             requirements.txt
             .ai_cache
-      
+
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      
+
       - name: 设置缓存 ID
         run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      
+
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ github.run_number }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      
+
       # 安装您现有的依赖!!!
       - run: pip install mkdocs-material
       - run: pip install -r requirements.txt # 安装其他依赖
       - run: pip install mkdocs-ai-summary-wcowin # 安装本AI 摘要插件
-      
+
       # 使用 AI 摘要部署
       - name: 使用 AI 摘要部署
         env:
@@ -337,7 +337,7 @@ jobs:
           AI_SUMMARY_CACHE_EXPIRE_DAYS: '30' # 缓存 30 天
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}  # 添加 GLM API 密钥
         run: mkdocs gh-deploy --force
-      
+
       # 自动提交 AI 缓存文件
       - name: 自动提交 AI 缓存
         run: |
@@ -356,7 +356,7 @@ jobs:
 
 如果您已经有 `ci.yml` 文件，请在现有工作流中添加以下步骤：
 
-```yaml 
+```yaml
 # 在现有的依赖安装部分添加
 - run: pip install mkdocs-ai-summary-wcowin # 安装 AI 摘要插件
 - run: pip install -r requirements.txt # 安装其他依赖
@@ -532,7 +532,7 @@ plugins:
 <img src="https://pica.zhimg.com/80/v2-d5876bc0c8c756ecbba8ff410ed29c14_1440w.webp" alt="Telegram" style="border-radius: 10px;" width="300px">
 </a>
 
-### 微信交流  
+### 微信交流
 
 <img src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="border-radius: 10px;" width="300px">
 

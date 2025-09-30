@@ -121,7 +121,7 @@ hide_comment: true
   border: 1px solid rgba(80,80,80,0.2);
 }
 
-[data-md-color-scheme="slate"] .greeting, 
+[data-md-color-scheme="slate"] .greeting,
 [data-md-color-scheme="slate"] .name {
   color: #e0e0e0;
 }
@@ -142,18 +142,18 @@ hide_comment: true
     padding: 1.5rem;
     margin: 1.5rem 0;
   }
-  
+
   .intro-content {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
   }
-  
+
   .avatar-img {
     width: 100px;
     height: 100px;
   }
-  
+
   .greeting, .name {
     font-size: 1.3rem;
   }
@@ -217,26 +217,26 @@ hide_comment: true
 
 
 <center><font size=6 color= #757575>
-观史知今，当思进退，读书明志可识春秋  
+观史知今，当思进退，读书明志可识春秋
 <br>
 ——Wcowin </font></center>
 
 <!-- <center>
-  <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" 
+  <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg"
        style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
 </center> -->
 
 
 
 <!-- <center>
-  <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" 
+  <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg"
        style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
 </center> -->
 
 
-<!-- <center>  
+<!-- <center>
 
-![](https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}  
+![](https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}
 
 ![](https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg#only-dark){style="width: 270px; border-radius: 50%;"}
 
@@ -245,8 +245,8 @@ hide_comment: true
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
 
 <!-- <center><font size=6rem color= #757575>
-观史知今，当思进退，读书明志，可识春秋 
-     
+观史知今，当思进退，读书明志，可识春秋
+
   ——Wcowin </font></center>   -->
 
 
@@ -431,11 +431,11 @@ hide_comment: true
 
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
-    - [x] 咖啡重度爱好者 
+    - [x] 咖啡重度爱好者
     - [x] 热爱(xiā)折腾技术/Math，闲暇之余致力于Mkdocs主题开发
     - [ ] 目前的研究领域是[密码学](../blog/Cryptography/index.md)
     - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
-    - [x] 清醒知趣，明得失，知进退 
+    - [x] 清醒知趣，明得失，知进退
 
 ## 人生态度
 
@@ -462,15 +462,15 @@ hide_comment: true
     <img class="img1" src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="width: 450px; height: auto;">
       <div style="color: #999;
       padding: 2px;">我的Wechat</div>
-    </center>  
-  </a>  
+    </center>
+  </a>
 
   <a href="https://t.me/wecowin" target="_blank" class="mobile-only">
    <center>
     <img class="img1" src="https://pica.zhimg.com/80/v2-d5876bc0c8c756ecbba8ff410ed29c14_1440w.webp" style="width: 450px; height: auto;">
       <div style="color: #999;
       padding: 2px;">我的TG</div>
-    </center>  
+    </center>
   </a>
 
 <style>
@@ -486,9 +486,9 @@ hide_comment: true
 
 -   <center>![WeChat](https://picx.zhimg.com/80/v2-21045fd6f42e98fb136c6d7d0958f2f1_1440w.webp#only-light){ .lg .middle style="width: 50px; height: 50px;"} ![WeChat](https://img.icons8.com/?size=100&id=19977&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"}</center>
 
-    ---    
-      
-    <center><font  color= #757575 size=6>WeChat</font>  
+    ---
+
+    <center><font  color= #757575 size=6>WeChat</font>
     <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: auto; height: auto; border-radius: 25px;">
     <font color= #999 >扫一扫上面的二维码图案<br>
     加我为朋友</font></center>
@@ -519,9 +519,9 @@ hide_comment: true
 
 -   <center>![](https://pic3.zhimg.com/80/v2-aa11d437a377f1a0deac132eb800b306_1440w.webp#only-light){ .lg .middle style="width: 50px; height: 50px;"} ![WeChat](https://img.icons8.com/?size=100&id=13963&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"}</center>
 
-    ---    
-      
-    <center><font  color= #757575 size=6>Twitter</font>  
+    ---
+
+    <center><font  color= #757575 size=6>Twitter</font>
     [@Wcowin :material-twitter:](https://twitter.com/wcowin_){.md-button}</center>
 
 </div>
@@ -563,20 +563,20 @@ hide_comment: true
     <figcaption>公众号</figcaption>
     </figure>
 
----  
+---
 
-> 💬我电话号码的`MD5`码：7037F514864088F907CC921687B670EE（破解有奖） 
+> 💬我电话号码的`MD5`码：7037F514864088F907CC921687B670EE（破解有奖）
 
 
-## 须知  
+## 须知
 
-如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角**微信添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
+如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角**微信添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。
 
 
 !!! note "与我联系"
     如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
 
-    ---  
+    ---
     <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}</center>
 
 

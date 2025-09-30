@@ -13,7 +13,7 @@ tags:
 git init
 ```
 
-![](https://img.iszy.xyz/1669185106451.png)  
+![](https://img.iszy.xyz/1669185106451.png)
 
 ```git
 git init -b main
@@ -50,18 +50,18 @@ git commit -am "first commit"
 
 
 ### 4. 查看仓库状态
- 
+
 ```git
 git status
 ```
 
-![](https://img.iszy.xyz/1669185760241.png)  
+![](https://img.iszy.xyz/1669185760241.png)
 
 ```
 git status -s
 ```
 
-![](https://img.iszy.xyz/1669185789446.png)  
+![](https://img.iszy.xyz/1669185789446.png)
 
 
 ### 5. 查看提交历史
@@ -99,15 +99,15 @@ git merge test
 git branch -d test-not-need
 ```
 
-![Alt text](https://img.iszy.xyz/1669185836945.png)  
+![Alt text](https://img.iszy.xyz/1669185836945.png)
 
 ### 9. 合并冲突
 
-![Alt text](https://img.iszy.xyz/1669185846981.png)  
+![Alt text](https://img.iszy.xyz/1669185846981.png)
 
 当两个分支都对同一行进行了修改，git 便会产生冲突，并标记为未合并
 
-![Alt text](https://img.iszy.xyz/1669185854676.png)  
+![Alt text](https://img.iszy.xyz/1669185854676.png)
 
 此时将每个文件进行修改，确认最后的内容，使用 git add 方法标记为冲突已解决
 ```git
@@ -154,7 +154,7 @@ git pull
 git pull origin main
 ```
 
-## 二、常见技巧  
+## 二、常见技巧
 
 ### 1. 临时保存成果
 
@@ -163,7 +163,7 @@ git stash
 ```
 
 
-![Alt text](https://img.iszy.xyz/1669186037294.png)  
+![Alt text](https://img.iszy.xyz/1669186037294.png)
 
 ```git
 git stash pop

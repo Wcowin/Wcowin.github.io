@@ -77,8 +77,8 @@ int main() {
 }
 ```
 
-然后  
-`gcc math.c -o math`  
+然后
+`gcc math.c -o math`
 
 `./math`
 

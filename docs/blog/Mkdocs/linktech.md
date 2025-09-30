@@ -163,19 +163,19 @@ hide:
 ## 效果
 
 <!-- <div>
-  <div class="links-content"> 
-   <div class="link-navigation"> 
-    <div class="card"> 
-     <img class="ava" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://wcowin.work/ " target=“_blank”>Wcowin’s blog</a> 
-      </div> 
+  <div class="links-content">
+   <div class="link-navigation">
+    <div class="card">
+     <img class="ava" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" />
+     <div class="card-header">
+      <div>
+       <a href="https://wcowin.work/ " target=“_blank”>Wcowin’s blog</a>
+      </div>
       <div class="info">
        这是一个分享技术的小站。
-      </div> 
-     </div> 
-    </div> 
+      </div>
+     </div>
+    </div>
 </div> -->
 
 
@@ -316,7 +316,7 @@ hide:
 ## 自动化友链(可选)
 
 ![image](https://s1.imagehub.cc/images/2025/07/10/e1ac1a596a8715e09b797ba95a7f9392.png)
-支持GUI操作，无需编写代码。智能识别并添加友链。   
+支持GUI操作，无需编写代码。智能识别并添加友链。
 感兴趣的可以尝试一下。给我的仓库star🌟后，添加我的[微信](https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp)私发你Python文件。
 
 ## 友链预览小工具

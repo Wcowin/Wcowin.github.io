@@ -3,9 +3,9 @@ title: 我的目标
 # icon: simple/rocket
 status: new
 ---
-</p><h1 id="01" name="01"><strong>01</strong></h1><p> 
+</p><h1 id="01" name="01"><strong>01</strong></h1><p>
 
-## 近期目标  
+## 近期目标
 
 - [ ] 考研上岸
 - [x] 四级
@@ -19,14 +19,14 @@ status: new
 - [x] 少喝咖啡
 - [ ] 看番
 
-</p><h1 id="01" name="02"><strong>02</strong></h1><p>  
+</p><h1 id="01" name="02"><strong>02</strong></h1><p>
 
 ## 长期目标
 
 - [x] 遇到对的她
 - [x] 三两知己
 - [ ] 稳定的工作
-- [ ] 创业 
+- [ ] 创业
 - [ ] 实现财富自由
 - [ ] 保时捷Cayenne
   ![13383929922691970.jpg.jpeg](https://s2.loli.net/2025/02/13/qm2PTkDoyVeFKSx.jpg)

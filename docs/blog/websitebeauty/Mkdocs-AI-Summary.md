@@ -4,13 +4,13 @@ tags:
   - Mkdocs
 staues:
   - draft
----  
+---
 
 # Mkdocs AI Summary
 
 ![logo 2](https://s1.imagehub.cc/images/2025/06/06/ee327dc2912fd2f31d38ee8a16a1e1ff.png){.img1}
 
-仓库地址:[https://github.com/Wcowin/Mkdocs-AI-Summary](https://github.com/Wcowin/Mkdocs-AI-Summary)  
+仓库地址:[https://github.com/Wcowin/Mkdocs-AI-Summary](https://github.com/Wcowin/Mkdocs-AI-Summary)
 🌐 **在线演示**:[https://wcowin.work/Mkdocs-AI-Summary-Plus/](https://wcowin.work/Mkdocs-AI-Summary-Plus/)
 
 <p align="center">
@@ -23,7 +23,7 @@ staues:
     <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README.md">中文</a> | <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README-en.md">English</a>
 </p>
 
-🚀 **您的MkDocs文档首选智能摘要！**   
+🚀 **您的MkDocs文档首选智能摘要！**
 这个项目利用MkDocs hooks，为您的技术文档和博客添加AI驱动的摘要生成和智能阅读统计功能。
 
 ![预览图1](https://s1.imagehub.cc/images/2025/06/03/d1563500263b22cfd0ffc3679993aa83.jpg)
@@ -36,25 +36,25 @@ staues:
 ## ✨ 功能特性
 
 ### 🤖 AI智能摘要
-- **多AI服务集成**: 支持DeepSeek、OpenAI、Claude、Gemini等主流AI服务  
-- **自动摘要生成**: 生成高质量的80-120字智能摘要  
-- **多语言支持**: 支持中文、英文、双语摘要生成  
-- **智能内容清理**: 自动过滤YAML、HTML、代码块等格式内容  
-- **备用摘要机制**: API失败时提供基于关键词的本地摘要  
-- **智能缓存系统**: 7天智能过期，避免重复API调用  
-- **灵活配置**: 支持文件夹级别和页面级别的精确控制  
+- **多AI服务集成**: 支持DeepSeek、OpenAI、Claude、Gemini等主流AI服务
+- **自动摘要生成**: 生成高质量的80-120字智能摘要
+- **多语言支持**: 支持中文、英文、双语摘要生成
+- **智能内容清理**: 自动过滤YAML、HTML、代码块等格式内容
+- **备用摘要机制**: API失败时提供基于关键词的本地摘要
+- **智能缓存系统**: 7天智能过期，避免重复API调用
+- **灵活配置**: 支持文件夹级别和页面级别的精确控制
 
 ### 📊 智能阅读统计（可选）
-- **精准字符统计**: 专门优化的中英文内容识别  
-- **智能代码检测**: 识别30+编程语言和命令行代码  
-- **阅读时间估算**: 基于语言特性的智能计算（中文400字/分钟，英文200词/分钟）  
-- **美观信息展示**: 使用MkDocs Material风格的信息框  
+- **精准字符统计**: 专门优化的中英文内容识别
+- **智能代码检测**: 识别30+编程语言和命令行代码
+- **阅读时间估算**: 基于语言特性的智能计算（中文400字/分钟，英文200词/分钟）
+- **美观信息展示**: 使用MkDocs Material风格的信息框
 
 ### 🚀 智能化特性
-- **环境自适应**: 自动识别CI/本地环境，本地或者部署都可选启用/禁用  
-- **自动语言识别**: 支持30+编程语言和标记语言  
-- **内容类型检测**: 区分代码、配置、命令行等不同内容  
-- **LRU缓存优化**: 提升处理性能（Todo）  
+- **环境自适应**: 自动识别CI/本地环境，本地或者部署都可选启用/禁用
+- **自动语言识别**: 支持30+编程语言和标记语言
+- **内容类型检测**: 区分代码、配置、命令行等不同内容
+- **LRU缓存优化**: 提升处理性能（Todo）
 - **完善错误处理**: 异常处理和日志记录（Todo）
 
 ---
@@ -88,7 +88,7 @@ theme:
 ### 方法2: Git克隆
 ```bash
 git clone https://github.com/Wcowin/mkdocs-ai-hooks.git
-cd mkdocs-ai-hooks 
+cd mkdocs-ai-hooks
 pip install -r requirements.txt
 ```
 
@@ -154,15 +154,15 @@ $ tree -a
 
 ### 2. 配置AI服务
 
-**选择AI服务提供商**：  
-- 🌟 **DeepSeek**（推荐）：性价比高，中文表现优秀  
-- 🔥 **OpenAI**：功能强大，广泛支持  
-- ⚡ **Claude**：逻辑清晰，文本理解佳  
-- 🧠 **Gemini**：Google出品，多语言支持  
+**选择AI服务提供商**：
+- 🌟 **DeepSeek**（推荐）：性价比高，中文表现优秀
+- 🔥 **OpenAI**：功能强大，广泛支持
+- ⚡ **Claude**：逻辑清晰，文本理解佳
+- 🧠 **Gemini**：Google出品，多语言支持
 
 **获取API密钥**：
-- [DeepSeek](https://platform.deepseek.com/usage) - 注册获取API密钥  
-- [ChatAnywhere](https://github.com/chatanywhere/GPT_API_free) - 免费OpenAI额度  
+- [DeepSeek](https://platform.deepseek.com/usage) - 注册获取API密钥
+- [ChatAnywhere](https://github.com/chatanywhere/GPT_API_free) - 免费OpenAI额度
 
 **获取的密钥存放于上一步创建的`.env` 文件中！！！**
 
@@ -186,11 +186,11 @@ mkdocs serve  # 本地预览
 
 ```yaml
 #ci.yml
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
   # 禁止从 fork 仓库访问 secrets
   pull_request:
@@ -214,7 +214,7 @@ jobs:
         with:
           python-version: 3.x
       - name: Set cache ID
-        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ github.run_number }}
@@ -231,7 +231,7 @@ jobs:
       - run: pip install cachetools>=4.2.0
       - run: pip install python-dotenv>=0.19.0
       - run: pip install pymdown-extensions
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
       - run: pip install --upgrade --force-reinstall mkdocs-material
       - name: Deploy with AI Summary
         env:
@@ -245,7 +245,7 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: mkdocs gh-deploy --force
-      
+
       # 自动提交新生成的AI缓存文件
       - name: Auto-commit AI cache (if any new files)
         run: |
@@ -271,25 +271,25 @@ jobs:
 self.ci_config = {
     # CI部署环境开关 (不用管，只在ci.yml中设置有效)
     'enabled_in_ci': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
-    
+
     # 本地部署环境开关 (true=本地开发时启用AI摘要)
     'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',
-    
+
     # CI部署仅缓存模式(不用管，只在ci.yml中设置有效)
     'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',
-    
+
     # 本地部署缓存功能开关 (true=启用缓存避免重复生成, false=总是生成新摘要)
     'cache_enabled': os.getenv('AI_SUMMARY_CACHE_ENABLED', 'true').lower() == 'true',
-    
+
     # CI部署备用摘要开关 (不用管，只在ci.yml中设置有效)
     'ci_fallback_enabled': os.getenv('AI_SUMMARY_CI_FALLBACK', 'true').lower() == 'true',
 }
-```  
+```
 
-**几种运行模式**：  
-1. **完全禁用**: 本地和CI部署都不运行摘要生成  
-2. **仅CI部署启用**: 本地禁用，CI部署生成新摘要  
-3. **缓存模式**：本地已经生成过摘要，CI部署使用缓存（**推荐。上方配置项中已默认CI部署的缓存模式，可自行搭配选择**）  
+**几种运行模式**：
+1. **完全禁用**: 本地和CI部署都不运行摘要生成
+2. **仅CI部署启用**: 本地禁用，CI部署生成新摘要
+3. **缓存模式**：本地已经生成过摘要，CI部署使用缓存（**推荐。上方配置项中已默认CI部署的缓存模式，可自行搭配选择**）
 4. **完全启用**: 本地和CI部署都运行(API消耗会更多)
 
 ### 6. GitHub Secrets配置
@@ -338,7 +338,7 @@ description: 自定义摘要内容  # 可选手动摘要
 # 📂 可自定义的文件夹配置
 self.enabled_folders = [
     'blog/',      # blog文件夹
-    'index.md',     
+    'index.md',
     # 'develop/',   # develop文件夹
     # 'posts/',     # posts文件夹
     # 'trip/',     # trip文件夹
@@ -361,7 +361,7 @@ self.exclude_files = [
 
 ## 🎨 显示效果
 
-### AI摘要显示  
+### AI摘要显示
 **实际效果预览**：
 ![image](https://s1.imagehub.cc/images/2025/06/04/152205c10ef1bfd7658b383a3e5e6e9f.png)
 
@@ -401,10 +401,10 @@ self.service_fallback_order = ['openai', 'deepseek', 'claude', 'gemini'] # 按�
 ```python
 def generate_ai_summary(self, content, page_title=""):
     prompt = f"""请为以下技术文档生成一个简洁的中文摘要（80-120字）：
-    
+
     文章标题：{page_title}
     文章内容：{content[:2500]}
-    
+
     要求：
     1. 突出核心技术要点
     2. 使用简洁专业的语言
@@ -474,7 +474,7 @@ pip install -r requirements.txt
 
 ## 📝 更新日志
 
-### [v1.3.0] (2025-06-04) - 最新版本  
+### [v1.3.0] (2025-06-04) - 最新版本
 
 #### 核心改进
 
@@ -499,10 +499,10 @@ pip install -r requirements.txt
 - **性能优化**: LRU缓存和正则预编译
 
 ### [v1.0.0] (2025-06-01) - 初始版本
-- 🤖 **AI智能摘要功能**  
-- 📖 **阅读时间统计功能**  
-- 💾 **基础缓存系统**  
-- 🎯 **基本配置选项**  
+- 🤖 **AI智能摘要功能**
+- 📖 **阅读时间统计功能**
+- 💾 **基础缓存系统**
+- 🎯 **基本配置选项**
 
 ---
 
@@ -510,12 +510,12 @@ pip install -r requirements.txt
 
 遇到问题？请在 [Issues](https://github.com/Wcowin/mkdocs-ai-hooks/issues) 中反馈。
 
-**反馈时请包含**：  
-- MkDocs版本  
-- Python版本  
-- 完整错误信息  
-- 复现步骤  
-- 配置文件（去除敏感信息）  
+**反馈时请包含**：
+- MkDocs版本
+- Python版本
+- 完整错误信息
+- 复现步骤
+- 配置文件（去除敏感信息）
 
 ---
 
@@ -527,10 +527,10 @@ pip install -r requirements.txt
 
 ## 🙏 致谢
 
-感谢以下项目和服务：    
+感谢以下项目和服务：
 
-- [MkDocs](https://www.mkdocs.org/) - 优秀的静态站点生成器  
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - 精美的主题  
+- [MkDocs](https://www.mkdocs.org/) - 优秀的静态站点生成器
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - 精美的主题
 - [DeepSeek](https://deepseek.com/) - 高性价比的AI API服务
 - 所有贡献者和使用者
 
@@ -549,7 +549,7 @@ pip install -r requirements.txt
 </p>
 
 
-**Wechat**  
+**Wechat**
 <!-- ![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg) -->
 <p align="center">
 <img src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="border-radius: 10px;" width="50%">
@@ -563,13 +563,13 @@ pip install -r requirements.txt
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/mkdocs-ai-hooks&type=Date)](https://www.star-history.com/#Wcowin/mkdocs-ai-hooks&Date)
 
 
-## 请作者喝杯咖啡  
+## 请作者喝杯咖啡
 
 <p align="center">
   <a href="https://s1.imagehub.cc/images/2025/05/11/36eb33bf18f9041667267605b6b99bd0.jpeg" target="_blank">
    <center>
     <img src="https://s1.imagehub.cc/images/2025/05/11/36eb33bf18f9041667267605b6b99bd0.jpeg" style="width: 450px; height: auto; border-radius: 25px;" >
-    </center>  
+    </center>
   </a>
 </center>
 

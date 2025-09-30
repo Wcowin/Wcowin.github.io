@@ -1,6 +1,6 @@
 ---
 title: 正则表达式
-tags: 
+tags:
     - 技术分享
     - Mkdocs
 ---
@@ -98,5 +98,5 @@ EXCLUDED_PATTERNS = [
 
 ---
 
-> **推荐阅读**  
-> [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)  
+> **推荐阅读**
+> [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)

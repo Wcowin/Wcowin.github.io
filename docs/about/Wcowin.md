@@ -1,6 +1,6 @@
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="200"/>
-  
+
   <h1>
     Hey, I'm <a href="https://wcowin.work/VitePress/">Wcowin</a>!
     <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
@@ -45,7 +45,7 @@
 
 ## 🌟 A Quote I Like
 
-> “知足且上进，温柔且坚定。”  
+> “知足且上进，温柔且坚定。”
 
 
 ---
@@ -62,13 +62,13 @@
 
 ## ☕ Support Me
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'U6U5HAO6B');kofiwidget2.draw();</script> 
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'U6U5HAO6B');kofiwidget2.draw();</script>
 
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" /> 
-</div> 
+  <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" />
+</div>
 
 ---
 

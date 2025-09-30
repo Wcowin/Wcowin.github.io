@@ -3,7 +3,7 @@ tags:
   - 技术分享
 ---
 
-# 我的设备  
+# 我的设备
 
 ## Macbook pro
 
@@ -23,8 +23,8 @@ tags:
 
     - [x] 屏幕，键盘，触控板体验一流
 
-    - [x] 16GB RAM / 1TB 存储  
-    
+    - [x] 16GB RAM / 1TB 存储
+
     - [x] 开发，娱乐，办公
 </div>
 
@@ -45,7 +45,7 @@ tags:
 
     - [x] 拍照不错，运行流畅
 
-    - [x] 256G 存储  
+    - [x] 256G 存储
 </div>
 
 
@@ -93,22 +93,22 @@ tags:
     margin: 0 !important;
     padding: 0.5rem !important;
   }
-  
+
   .grid.cards img {
     max-width: 200px !important;
     height: auto !important;
     margin-bottom: 1rem !important;
   }
-  
+
   .grid.cards > ul > li {
     padding: 0.75rem !important;
   }
-  
+
   /* 改善移动端字体大小 */
   .grid.cards span {
     font-size: 16px !important;
   }
-  
+
   /* 确保列表项在移动端正确显示 */
   .grid.cards li {
     margin-bottom: 0.5rem !important;

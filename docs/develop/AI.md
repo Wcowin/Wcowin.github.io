@@ -59,15 +59,15 @@ status: new
 
 - 🐘 [网站智能客服](https://elephant.ai){target=“_blank”}
 - [cursor](https://www.cursor.com/){target=“_blank”}  (伟大，无需多言)
-- [Trae](https://www.trae.com.cn/){target=“_blank”} 
+- [Trae](https://www.trae.com.cn/){target=“_blank”}
 
 ## AI合集
-- [Ai导航](https://www.ainavpro.com/){target=“_blank”}  
+- [Ai导航](https://www.ainavpro.com/){target=“_blank”}
 - [AI工具集](https://ai-bot.cn/){target=“_blank”}
 - [猫猫鱼AI工具窝](https://www.maomaoyu.coffee/zh){target=“_blank”}
 - [Molica Al](https://pc.molica.com.cn/chat/76376bb7-aec4-4d08-ae92-94e7ec831123){target=“_blank”}
 
-## AI 写作工具  
+## AI 写作工具
 - [智影AI智能创作工具](https://ai-bot.cn/){target=“_blank”}
 - [笔灵AI](https://ibiling.cn/paper?from=itabpaper02){target=“_blank”}
 - [萝卜写作](https://98.luoboxiezuo.com/modelessay?shareId=){target=“_blank”}
@@ -75,7 +75,7 @@ status: new
 - [SpeedAI科研小助手](https://kylw.kuaipaper.com/home){target=“_blank”}
 - [橙篇](https://cp.baidu.com/){target=“_blank”}
 
-## AI 翻译工具  
+## AI 翻译工具
 - [SimplifyAI 文档翻译](https://translate.simplifyai.cn/){target=“_blank”}
 - [书译](https://www.booktranslator.app/zh-CN/){target=“_blank”}
 
@@ -84,7 +84,7 @@ status: new
 - [WPS PPT](https://ai.wps.cn/){target=“_blank”}
 - [PPT市场](https://www.pptsupermarket.com/customizes){target=“_blank”}
 
-## AI 应用  
+## AI 应用
 
 - [ChatGPT](https://chatgpt.com/?oai-dm=1){target=“_blank”}
 - [AI 查询生成桌面悬浮助手应用](https://github.com/mushan0x0/AI0x0.com){target=“_blank”}

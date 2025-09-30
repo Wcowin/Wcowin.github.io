@@ -2,11 +2,11 @@
 title: 网站添加Mkdocs博客
 tags:
   - Mkdocs
----  
+---
 
 # 网站添加Mkdocs博客
 
-博客效果展示：[博客](../index.md)  
+博客效果展示：[博客](../index.md)
 
 官方文档：[Built-in blog plugin](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
 
@@ -30,17 +30,17 @@ nav:
 元标签参考：
 ```
 ---
-title: 
+title:
 authors: [Wcowin]  #作者
 date: 2023-10-04   #时间
 draft: true   # 是否为草稿
 categories:  #分类
   - Hello
 ---
-```  
+```
 
 
-作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）  
+作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）
 
 ```yml
 authors:
@@ -49,5 +49,5 @@ authors:
     description: Free and casual # Author description
     avatar: https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png          # Author avatar
 
-```  
+```
 结束

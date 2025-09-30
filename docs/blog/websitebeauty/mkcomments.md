@@ -6,7 +6,7 @@ tags:
 ---
 
 # 添加评论系统(giscus为例)
-官方文档：[Adding a comment system](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)  
+官方文档：[Adding a comment system](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)
 
 这里我同样推荐[giscus](https://giscus.app/zh-CN)
 
@@ -31,8 +31,8 @@ theme:
   name: material
   custom_dir: docs/overrides  #主要是这一行
 ```
-参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件  
-树状结构如下:  
+参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件
+树状结构如下:
 ``` hl_lines="9-13"
 $ tree -a
 .
@@ -49,7 +49,7 @@ $ tree -a
 │          └──comments.html
 │
 └── mkdocs.yml
-``` 
+```
 
 ![img](https://s1.imagehub.cc/images/2024/02/02/214447b92070792905259a843de3e233.png)
 
@@ -86,7 +86,7 @@ $ tree -a
         : "light"
 
       // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
+      giscus.setAttribute("data-theme", theme)
     }
 
     // Register event handlers after documented loaded
@@ -113,9 +113,9 @@ $ tree -a
 ```
 ## 第二步
 打开<https://giscus.app/zh-CN>  走完这个页面的流程就会得到(这会在你的Github创建新的仓库，建议自己先去新建个 Discussions)
-![](https://s1.imagehub.cc/images/2024/02/02/b0fabd6a0c967d5a846c087adea5b680.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/b0fabd6a0c967d5a846c087adea5b680.png)
 
-![](https://s1.imagehub.cc/images/2024/02/02/d0c7b4e08a714b5c2b60421f58159c62.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/d0c7b4e08a714b5c2b60421f58159c62.png)
 
 ```html
 <script src="https://giscus.app/client.js"
@@ -149,13 +149,13 @@ hide:
   #  - navigation # 显示右
   #  - toc #显示左
   #  - footer
-  #  - feedback  
+  #  - feedback
 comments: true  #默认不开启评论
 ---
 ```
-## 效果  
+## 效果
 
-完美!快速相应  
+完美!快速相应
 
 <figure markdown >
   ![](https://s1.imagehub.cc/images/2024/02/02/0619f922f930e7649fb40405c7e49339.png)
@@ -169,15 +169,15 @@ comments: true  #默认不开启评论
 去看它的官方配置文档很简单就配置好了
 
 ```html
-<head> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" /> 
-  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script> 
-  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script> 
-  
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+
  </head>
 <body>
-  <div id="tcomment"></div> 
-  <script src="https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js"></script> 
+  <div id="tcomment"></div>
+  <script src="https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js"></script>
   <script>
 twikoo.init({
   envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
@@ -189,18 +189,18 @@ twikoo.init({
     console.log('评论加载完成');
   }
 })
-</script> 
+</script>
 ```
 
-<head> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" /> 
-  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script> 
-  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script> 
-  
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+
  </head>
 <body>
-  <div id="tcomment"></div> 
-  <script src="https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js"></script> 
+  <div id="tcomment"></div>
+  <script src="https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js"></script>
   <script>
 twikoo.init({
   envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
@@ -212,6 +212,6 @@ twikoo.init({
     console.log('评论加载完成');
   }
 })
-</script> 
+</script>
 
-我感觉twikoo也好看！  
+我感觉twikoo也好看！

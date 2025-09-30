@@ -8,7 +8,7 @@ tags:
 ##  安装脚本管理器
 比较知名的脚本管理器有：Tampermonkey ，Violentmonkey ，Greasemonkey 。
 
-这里以功能最强的 Tampermonkey  为例：  
+这里以功能最强的 Tampermonkey  为例：
 
 !!! Note
     Tampermonkey，俗称“油猴”，是一款免费的浏览器扩展和最为流行的用户脚本管理器。
@@ -16,25 +16,25 @@ tags:
     所谓脚本就是一段代码，它们能够优化您的网页浏览体验。安装之后，有些脚本能为网站添加新的功能，有些能使网站的界面更加易用，有些则能隐藏网站上烦人的广告。
 
 Edge上油猴下载地址:
-[点我](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)  
+[点我](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
 
 
 实在找不到请自行去：
-[Tampermonkey官方网站](https://www.tampermonkey.net/)  
+[Tampermonkey官方网站](https://www.tampermonkey.net/)
 
 其他浏览器可自行在扩展里搜索Tampermonkey下载
 
-## 安装脚本  
-找到需要的脚本，点击安装即可(前提是完成上一步:安装脚本管理器)  
+## 安装脚本
+找到需要的脚本，点击安装即可(前提是完成上一步:安装脚本管理器)
 
 ## 获取好玩的脚本
 
 - [Crx搜搜](https://www.crxsoso.com/)
-- [greasyfork](https://greasyfork.org/) 
-- [OpenUserJs](https://openuserjs.org/) 
+- [greasyfork](https://greasyfork.org/)
+- [OpenUserJs](https://openuserjs.org/)
 - [Userscript.Zone](https://www.userscript.zone/?utm_source=tm.net&utm_medium=scripts)
 
-## 我认为好用的脚本  
+## 我认为好用的脚本
 
 **持续收录中**
 
@@ -45,6 +45,6 @@ Edge上油猴下载地址:
 - [Github 增强](https://greasyfork.org/zh-CN/scripts/412245-github-%E5%A2%9E%E5%BC%BA-%E9%AB%98%E9%80%9F%E4%B8%8B%E8%BD%BD){target="_blank"}
 - [骚扰拦截](https://github.com/AirBashX/UserScript){target="_blank"}
 - [自动翻页](https://greasyfork.org/zh-CN/scripts/419215-%E8%87%AA%E5%8A%A8%E6%97%A0%E7%BC%9D%E7%BF%BB%E9%A1%B5){target="_blank"}
-- [双语翻译](https://immersive-translate.owenyoung.com/){target="_blank"}  
+- [双语翻译](https://immersive-translate.owenyoung.com/){target="_blank"}
 - [KeepChatGPT](https://greasyfork.org/zh-CN/scripts/462804-keepchatgpt){target="_blank"}  (超好用的 chatGPT扩展脚本)
 - [91-plus](https://greasyfork.org/zh-CN/scripts/466107-91-plus){target="_blank"}

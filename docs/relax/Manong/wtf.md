@@ -1,6 +1,6 @@
-文源：[程序员学习路线图](https://www.runoob.com/coder-learn-path){target=_blank}  
+文源：[程序员学习路线图](https://www.runoob.com/coder-learn-path){target=_blank}
 
-程序猿是一种非常特殊的、可以从事程序开发、维护的动物。一般分为程序设计猿和程序编码猿，但两者的界限并不非常清楚，都可以进行开发、维护工作。  
+程序猿是一种非常特殊的、可以从事程序开发、维护的动物。一般分为程序设计猿和程序编码猿，但两者的界限并不非常清楚，都可以进行开发、维护工作。
 ![](https://th.bing.com/th/id/R.30abe9e76be10b659d5665cbd9a65ecf?rik=EaGBgoTiGl%2fmLg&riu=http%3a%2f%2fwww.accessoft.com%2fforum_attached%2f2016%2fimage%2f201605%2f201605061659447719.jpg&ehk=yjFlv95TBWizY5yt199Cz2QM3NorUNljlqJtV5vtJJc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1)
 
 <h2>前端工程师</h2>

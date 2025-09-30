@@ -26,6 +26,6 @@ status: new
 
     <iframe src="../AI/DeepSeek从入门到精通.pdf" width="100%" height="800px" style="border: 1px solid #ccc; overflow: auto;">
     </iframe>
-    
+
 
 </div>

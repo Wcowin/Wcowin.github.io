@@ -129,7 +129,7 @@ tags:
         - name: 简体中文
           link: /
           # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-          lang: zh   
+          lang: zh
         - name: English
           link: /Mkdocs-Wcowin/en/
           # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
@@ -310,7 +310,7 @@ tags:
       - docs/overrides/hooks/socialmedia.py
     ```
 ***
-从头开始分析 
+从头开始分析
 
 ```yaml
 site_name: 网站名字
@@ -319,7 +319,7 @@ site_author: 作者名字
 ```
 **无须多言**
 
-## theme部分  
+## theme部分
 
 ### 顶部颜色
 ```yaml
@@ -327,7 +327,7 @@ theme:
   palette:
     primary: yellow #顶部颜色
 ```
-primary后面是网站顶部栏目的颜色（也用于标题、边栏、文本链接和其他几个组件）  
+primary后面是网站顶部栏目的颜色（也用于标题、边栏、文本链接和其他几个组件）
 目前支持下面几个颜色：
 ![img](https://s1.imagehub.cc/images/2024/02/02/c7eb8b52d0b17c8e5321cbd21d9710a0.png)
 
@@ -336,13 +336,13 @@ primary后面是网站顶部栏目的颜色（也用于标题、边栏、文本�
 
 ```yaml
 theme:
-  palette: 
+  palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
- 
+
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
@@ -392,15 +392,15 @@ theme:
 
 
 
-## nav部分 
+## nav部分
 这一部分就是网站文档目录
 ![img](https://s1.imagehub.cc/images/2024/02/02/02da4022bd8af67b670e4da0dffbe95f.png)
 
 ```yaml
-nav: 
+nav:
   - 博客:
     - 好用/好玩网站分享: blog/Webplay.md  #.md文件的相对路径
-  - 开发: 
+  - 开发:
     - Markdown: develop/markdown.md
 ```
 依照上面的模版为例，你可以在顶部栏目建立博客和开发两个大标签
@@ -411,18 +411,18 @@ nav:
 ![img](https://s1.imagehub.cc/images/2024/02/02/ab0212029567b7a6cd3fb4089de888cf.png)
 
 .md文件路径(相对路径)：
-![img](https://s1.imagehub.cc/images/2024/02/02/0361e9d863ccb15e83006feac1b12c0a.png)  
+![img](https://s1.imagehub.cc/images/2024/02/02/0361e9d863ccb15e83006feac1b12c0a.png)
 
 ### 如何写一篇文章
 
 可能看起比较复杂，总结一下就是：我想写一篇文章在docs/blog下写一篇名为`Wcowin最帅`的文章，首先在docs/blog下新建一个`xxx.md`文件，里面写写东西，再去mkdocs.yml里找到nav，这样写：
 ```yaml
-nav: 
+nav:
   - 博客:
     - Wcowin最帅: blog/xxx.md  #.md文件的相对路径
-```  
+```
 
-**nav才是最终决定这篇文章位置的配置，docs下的md文件只是存放功能**  
+**nav才是最终决定这篇文章位置的配置，docs下的md文件只是存放功能**
 
 ***
 这里也注意：**所有文件都在docs文件下，文件类型除CSS，Javascript,yml等都是.md结尾的文件**
@@ -440,8 +440,8 @@ $ tree -a
 │       └── ci.yml
 ├── docs
 │   └── index.md
-│   └──blog
-│       └──xxx.md
+│   └── blog
+│       └── xxx.md
 │
 └── mkdocs.yml
 ```
@@ -453,7 +453,7 @@ extra:
     - name: 简体中文
       link: /
       # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-      lang: zh   
+      lang: zh
     - name: English
       link: /Mkdocs-Wcowin/en/
       # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
@@ -506,26 +506,26 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 ```
 ### alternate
-可以设置网页翻译(但是不太建议使用，很麻烦，这里就不细讲了)  
+可以设置网页翻译(但是不太建议使用，很麻烦，这里就不细讲了)
 [官网教程网址](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/)
 
 ```yaml
   alternate:
     - name: English
-      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
+      link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: en
     - name: 中国(台湾)
       link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
       lang: zh-TW
 ```
-### generator 
-设置为`generator: false`可以选择是否删除左下方页脚显示“使用 MkDocs 材料制造”   
+### generator
+设置为`generator: false`可以选择是否删除左下方页脚显示“使用 MkDocs 材料制造”
 
-### social  
-可设置网站右下角的社交链接（icon是小图标，link后填自己链接即可）： 
+### social
+可设置网站右下角的社交链接（icon是小图标，link后填自己链接即可）：
 ![img](https://s1.imagehub.cc/images/2024/02/02/73179baf6402e27c92afc51eb59645a6.png)
 
-注意social的格式：  
+注意social的格式：
 ```yaml
 extra:
   social:
@@ -541,7 +541,7 @@ extra:
 
 ### cookie consent
 ```yaml
-analytics: 
+analytics:
     provider: google
     property: G-XXXXXXXXXX  #你的Google Analytics ID
     feedback:
@@ -555,18 +555,18 @@ analytics:
         - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
-          note: >- 
+          note: >-
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
-  
+
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
       我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
       如果你同意,你可以帮助我们让我们的网站更好
 
 ```
-![img](https://s1.imagehub.cc/images/2024/02/02/a303166e7a67a2bc7bddde77c3d1277a.png)  
+![img](https://s1.imagehub.cc/images/2024/02/02/a303166e7a67a2bc7bddde77c3d1277a.png)
 
 ![img](https://s1.imagehub.cc/images/2024/02/02/79d1f726b8105e0657cea3e2cef628ce.png)
 注意property: G-XXXXXXXXXX  #你的Google Analytics ID，这里的G-XXXXXXXXXX是你的Google Analytics ID，你可以在Google Analytics中找到，如果你不想使用Google Analytics，可以删除这一部分。
@@ -613,11 +613,11 @@ plugins:
   - tags
 ```
 
-### search  
+### search
 
-`- search`开启搜索功能  
+`- search`开启搜索功能
 
-![img](https://s1.imagehub.cc/images/2024/02/02/0e5f75464543f1c9785f54a1b7271e47.png)  
+![img](https://s1.imagehub.cc/images/2024/02/02/0e5f75464543f1c9785f54a1b7271e47.png)
 
 ### blog
 
@@ -626,9 +626,9 @@ plugins:
 nav:
   - Blog:
     - blog/index.md
-```   
-博客效果：   
-![](https://s1.imagehub.cc/images/2024/02/02/cee8d935a920668b738593850c7eb7f8.png)  
+```
+博客效果：
+![](https://s1.imagehub.cc/images/2024/02/02/cee8d935a920668b738593850c7eb7f8.png)
 详细配置可以去看[添加Mkdocs博客](mkdocsblog.md)
 
 ### tags
@@ -640,7 +640,7 @@ plugins:
 ```
 ![img](https://s1.imagehub.cc/images/2024/02/02/d20f0562838a8396724f18bfd09e19e8.png)
 
-docs文件夹下新建tags.md文件  
+docs文件夹下新建tags.md文件
 ![](https://s1.imagehub.cc/images/2024/02/02/d9fa43225a6dd3932c36038c605954a4.png)
 
 注意！！
@@ -709,7 +709,7 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
 
 ***
 ## extra_javascript和extra_css部分
-这两部分可以进一步美化网站  
+这两部分可以进一步美化网站
 ```yaml
 extra_javascript:
   # - javascripts/extra.js #自定义javascript
@@ -737,7 +737,7 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
 ```
-javascripts/mathjax.js里有对数学公式的扩展   
+javascripts/mathjax.js里有对数学公式的扩展
 
 **当你需要自定义网页CSS/JS,可以在docs文件夹下新建stylesheets/javascripts文件夹，然后在stylesheets/javascripts文件夹里新建xx.css/xx.js文件，然后在mkdocs.yml的extra_javascript和extra_css引入xx.css/xx.js即可**
 
@@ -749,16 +749,16 @@ extra_css:
   - stylesheets/extra.css # 自定义的CSS
 ```
 
-如果你想自定义网站的样式，可以参考这几篇文章：  
+如果你想自定义网站的样式，可以参考这几篇文章：
 
-[JS实现鼠标样式](../websitebeauty/shubiao.md)   
+[JS实现鼠标样式](../websitebeauty/shubiao.md)
 
-[背景特效](../websitebeauty/backgroud.md)  
+[背景特效](../websitebeauty/backgroud.md)
 
-[自定义网站字体](../websitebeauty/mkdocsfont.md)  
+[自定义网站字体](../websitebeauty/mkdocsfont.md)
 
 [添加友链](linktech.md)
 
-[添加评论系统](../websitebeauty/mkcomments.md)  
+[添加评论系统](../websitebeauty/mkcomments.md)
 
 [为MKdocs添加文章修订时间戳](../websitebeauty/time.md)

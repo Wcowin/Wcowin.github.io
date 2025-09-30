@@ -6,7 +6,7 @@ hide_reading_time: true
 
 # MIT许可声明
 
-![](https://pic3.zhimg.com/80/v2-a0c07e85f2dfdfa5f1eed932883daa50_1440w.webp)  
+![](https://pic3.zhimg.com/80/v2-a0c07e85f2dfdfa5f1eed932883daa50_1440w.webp)
 
 === "麻省理工学院许可证"
 

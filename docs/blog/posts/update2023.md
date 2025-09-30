@@ -12,7 +12,7 @@ ai_summary: false  # 禁用AI摘要
 
 ## </p><h1 id="01" name="01"><strong>2023-12-21</strong></h1><p>
 * 优化网站流畅度（玄学）
-* 脱单了;手执烟火以谋生，心怀诗意以谋爱  
+* 脱单了;手执烟火以谋生，心怀诗意以谋爱
 
 <!-- <div>
 <div id="rcorners2" >
@@ -84,7 +84,7 @@ ai_summary: false  # 禁用AI摘要
 ## </p><h1 id="01" name="01"><strong>2023-12-14</strong></h1><p>
 * 优化个别网页标签的显示问题
 * 优化网站图片加载流畅度（玄学）
-* 看了更多的猫咪 
+* 看了更多的猫咪
 
 ## </p><h1 id="01" name="01"><strong>2023-12-09</strong></h1><p>
 * 首次引入人工智能问答机器人:<https://wcowin.work/about/geren/>，缺点是每月25条消息限制，优点是可以智能回复本站所有信息，包括但不限于：个人信息，技术分享，博客，留言板，友链等等
@@ -129,7 +129,7 @@ ai_summary: false  # 禁用AI摘要
 
 ## </p><h1 id="01" name="01"><strong>2023-07-19</strong></h1><p>
 
-* 修改网页字体为[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank} 
+* 修改网页字体为[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank}
 * 修复鼠标上滑"回到页面顶部"不适配问题
 
 ## <h1 id="01" name="01"><strong>2023-01-12</strong></h1>
