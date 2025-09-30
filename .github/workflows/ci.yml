@@ -54,6 +54,8 @@ on:
   pull_request:
     types: [closed]
     branches: [main, master]
+  # 添加手动触发功能
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
