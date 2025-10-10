@@ -418,30 +418,30 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  - ai-summary:
-      ai_service: "glm"  # or "openai", "gemini", "glm"
-      fallback_services:               # 备用服务（按优先级顺序）
-        - "openai"
-        - "gemini"
-      summary_language: "zh"  # or "en"
-      cache_enabled: true
-      # local_enabled: false
-      local_enabled: true
-      cache_expire_days: 30
-      debug: false # 是否显示调试信息（默认：false）
-      enabled_folders:
-        - blog/    # 添加blog文件夹
-        - develop/ # 添加develop文件夹
-        # - docs/    # 保留docs文件夹
-      exclude_patterns:
-        - about/
-        - index.md
-        - blog/indexblog.md
-        - tag.md
-        - blog/posts/update.md
-        - blog/category/
-        - blog/posts/
-        - blog/archive/
+  # - ai-summary:
+  #     ai_service: "glm"  # or "openai", "gemini", "glm"
+  #     fallback_services:               # 备用服务（按优先级顺序）
+  #       - "openai"
+  #       - "gemini"
+  #     summary_language: "zh"  # or "en"
+  #     cache_enabled: true
+  #     # local_enabled: false
+  #     local_enabled: true
+  #     cache_expire_days: 30
+  #     debug: false # 是否显示调试信息（默认：false）
+  #     enabled_folders:
+  #       - blog/    # 添加blog文件夹
+  #       - develop/ # 添加develop文件夹
+  #       # - docs/    # 保留docs文件夹
+  #     exclude_patterns:
+  #       - about/
+  #       - index.md
+  #       - blog/indexblog.md
+  #       - tag.md
+  #       - blog/posts/update.md
+  #       - blog/category/
+  #       - blog/posts/
+  #       - blog/archive/
   - search:
       # enabled: !ENV [CI, false]
       separator: '[\s\u200b\-]'
