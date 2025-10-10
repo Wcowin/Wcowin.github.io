@@ -12,31 +12,31 @@
         <meta name="author" content="王科文(Wcowin)">
       
       
-        <link rel="canonical" href="http://wcowin.work/blog/Mkdocs/mkdocs3/">
+        <link rel="canonical" href="http://wcowin.work/blog/environment/">
       
       
-        <link rel="prev" href="../mkdocs2/">
+        <link rel="prev" href="../Cryptography/Groupcipher/">
       
       
-        <link rel="next" href="../mkdocsblog/">
+        <link rel="next" href="../Mkdocs/MIT/">
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../feed_rss_updated.xml">
       
       <link rel="icon" href="https://i.stardots.io/wcowin/1750090373988.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
-        <title>解决Github Pages部署mkdocs自定义域名失效的问题 - Wcowin's Blog</title>
+        <title>Python 环境管理最佳实践 - Wcowin's Blog</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -55,39 +55,39 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra2.css">
+      <link rel="stylesheet" href="../../stylesheets/extra2.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/link.css">
+      <link rel="stylesheet" href="../../stylesheets/link.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/poem.css">
+      <link rel="stylesheet" href="../../stylesheets/poem.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/customize.css">
+      <link rel="stylesheet" href="../../stylesheets/customize.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/ziti.css">
+      <link rel="stylesheet" href="../../stylesheets/ziti.css">
     
-      <link rel="stylesheet" href="../../../about/sty/portfolio.css">
+      <link rel="stylesheet" href="../../about/sty/portfolio.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/fonts/material-icons.css">
+      <link rel="stylesheet" href="../../assets/document_dates/fonts/material-icons.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/light.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/material.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/shift-away.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/scale.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/backdrop.css">
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/backdrop.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/tippy.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
+      <link rel="stylesheet" href="../../assets/document_dates/core/core.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
+      <link rel="stylesheet" href="../../assets/document_dates/user.config.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -123,7 +123,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#3github-pagesmkdocs" class="md-skip">
+        <a href="#python" class="md-skip">
           跳转至
         </a>
       
@@ -137,7 +137,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="Wcowin&#39;s Blog" class="md-header__button md-logo" aria-label="Wcowin's Blog" data-md-component="logo">
+    <a href="../.." title="Wcowin&#39;s Blog" class="md-header__button md-logo" aria-label="Wcowin's Blog" data-md-component="logo">
       
   <img src="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" alt="logo">
 
@@ -156,7 +156,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              解决Github Pages部署mkdocs自定义域名失效的问题
+              Python 环境管理最佳实践
             
           </span>
         </div>
@@ -320,7 +320,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../indexblog/" class="md-tabs__link">
+        <a href="../indexblog/" class="md-tabs__link">
           
   
   
@@ -342,7 +342,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../develop/" class="md-tabs__link">
+        <a href="../../develop/" class="md-tabs__link">
           
   
   
@@ -364,7 +364,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../relax/" class="md-tabs__link">
+        <a href="../../relax/" class="md-tabs__link">
           
   
   
@@ -386,7 +386,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../trip/" class="md-tabs__link">
+        <a href="../../trip/" class="md-tabs__link">
           
   
   
@@ -406,7 +406,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../tag/" class="md-tabs__link">
+      <a href="../../tag/" class="md-tabs__link">
         
   
   
@@ -425,7 +425,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../waline/" class="md-tabs__link">
+      <a href="../../waline/" class="md-tabs__link">
         
   
   
@@ -446,7 +446,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../link/" class="md-tabs__link">
+        <a href="../../link/" class="md-tabs__link">
           
   
   
@@ -468,7 +468,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -490,7 +490,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../about/geren/" class="md-tabs__link">
+        <a href="../../about/geren/" class="md-tabs__link">
           
   
   
@@ -564,7 +564,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Wcowin&#39;s Blog" class="md-nav__button md-logo" aria-label="Wcowin's Blog" data-md-component="logo">
+    <a href="../.." title="Wcowin&#39;s Blog" class="md-nav__button md-logo" aria-label="Wcowin's Blog" data-md-component="logo">
       
   <img src="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" alt="logo">
 
@@ -681,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../indexblog/" class="md-nav__link">
+      <a href="../indexblog/" class="md-nav__link">
         
   
   
@@ -704,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OneClip/" class="md-nav__link">
+      <a href="../OneClip/" class="md-nav__link">
         
   
   
@@ -735,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../temp-email/" class="md-nav__link">
+      <a href="../temp-email/" class="md-nav__link">
         
   
   
@@ -766,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Webplay/" class="md-nav__link">
+      <a href="../Webplay/" class="md-nav__link">
         
   
   
@@ -789,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/comkdocs/" class="md-nav__link">
+      <a href="../technique%20sharing/comkdocs/" class="md-nav__link">
         
   
   
@@ -812,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/ttq/" class="md-nav__link">
+      <a href="../technique%20sharing/ttq/" class="md-nav__link">
         
   
   
@@ -835,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../macsoft/" class="md-nav__link">
+      <a href="../macsoft/" class="md-nav__link">
         
   
   
@@ -858,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../yuque/" class="md-nav__link">
+      <a href="../yuque/" class="md-nav__link">
         
   
   
@@ -919,7 +919,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Cryptography/" class="md-nav__link ">
+            <a href="../Cryptography/" class="md-nav__link ">
               
   
   
@@ -962,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Numbertheory/" class="md-nav__link">
+      <a href="../Cryptography/Numbertheory/" class="md-nav__link">
         
   
   
@@ -985,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Introduction/" class="md-nav__link">
+      <a href="../Cryptography/Introduction/" class="md-nav__link">
         
   
   
@@ -1008,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Symmetriccryptography/" class="md-nav__link">
+      <a href="../Cryptography/Symmetriccryptography/" class="md-nav__link">
         
   
   
@@ -1031,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cryptography/Groupcipher/" class="md-nav__link">
+      <a href="../Cryptography/Groupcipher/" class="md-nav__link">
         
   
   
@@ -1059,10 +1059,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../environment/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Python 环境管理最佳实践
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1073,6 +1095,401 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 环境管理原则
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 环境管理原则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心理念
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 标准工作流程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 标准工作流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      开始新项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      日常开发流程
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 项目类型模板
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 项目类型模板">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Web 开发项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 数据科学项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 AI/机器学习项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 文档项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 通用开发项目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 最佳实践
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      命名规范
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      项目目录结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境配置文件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="环境配置文件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirementstxt-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      requirements.txt (pip 方式)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environmentyml-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      environment.yml (conda 方式)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧹 环境维护
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧹 环境维护">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看和管理环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境备份与恢复
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 高级技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 高级技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-python-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 使用 .python-version 文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 环境变量管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 开发工具配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 快速参考
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 快速参考">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用命令
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python 版本选择指南
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 项目示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 项目示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs 博客项目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 常见问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题：环境冲突
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题：包版本冲突
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题：环境过多
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题：忘记激活环境
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 相关资源
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1082,8 +1499,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1115,11 +1530,13 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_11" >
         
           
           <label class="md-nav__link" for="__nav_1_11" id="__nav_1_11_label" tabindex="">
@@ -1135,7 +1552,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_11">
             <span class="md-nav__icon md-icon"></span>
             MKdocs教程
@@ -1149,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MIT/" class="md-nav__link">
+      <a href="../Mkdocs/MIT/" class="md-nav__link">
         
   
   
@@ -1172,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkfirst/" class="md-nav__link">
+      <a href="../Mkdocs/mkfirst/" class="md-nav__link">
         
   
   
@@ -1195,7 +1612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocs1/" class="md-nav__link">
+      <a href="../Mkdocs/mkdocs1/" class="md-nav__link">
         
   
   
@@ -1218,7 +1635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocs2/" class="md-nav__link">
+      <a href="../Mkdocs/mkdocs2/" class="md-nav__link">
         
   
   
@@ -1238,19 +1655,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Mkdocs/mkdocs3/" class="md-nav__link">
         
   
   
@@ -1261,7 +1669,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1274,7 +1681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocsblog/" class="md-nav__link">
+      <a href="../Mkdocs/mkdocsblog/" class="md-nav__link">
         
   
   
@@ -1405,7 +1812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/mkdocs-wcowin1/" class="md-nav__link">
+      <a href="../websitebeauty/mkdocs-wcowin1/" class="md-nav__link">
         
   
   
@@ -1428,7 +1835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/MkDocs-AI-Summary-plus/" class="md-nav__link">
+      <a href="../websitebeauty/MkDocs-AI-Summary-plus/" class="md-nav__link">
         
   
   
@@ -1459,7 +1866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/mkdocs-document-dates/" class="md-nav__link">
+      <a href="../websitebeauty/mkdocs-document-dates/" class="md-nav__link">
         
   
   
@@ -1490,7 +1897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/mkdocs-translate/" class="md-nav__link">
+      <a href="../websitebeauty/mkdocs-translate/" class="md-nav__link">
         
   
   
@@ -1521,7 +1928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/GoogleAD/" class="md-nav__link">
+      <a href="../websitebeauty/GoogleAD/" class="md-nav__link">
         
   
   
@@ -1552,7 +1959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/recommend/" class="md-nav__link">
+      <a href="../websitebeauty/recommend/" class="md-nav__link">
         
   
   
@@ -1583,7 +1990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/Mkdocs-AI-Summary/" class="md-nav__link">
+      <a href="../websitebeauty/Mkdocs-AI-Summary/" class="md-nav__link">
         
   
   
@@ -1606,7 +2013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/reading_time/" class="md-nav__link">
+      <a href="../websitebeauty/reading_time/" class="md-nav__link">
         
   
   
@@ -1637,7 +2044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../develop/regex/" class="md-nav__link">
+      <a href="../../develop/regex/" class="md-nav__link">
         
   
   
@@ -1660,7 +2067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linktech/" class="md-nav__link">
+      <a href="../Mkdocs/linktech/" class="md-nav__link">
         
   
   
@@ -1683,7 +2090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/Customdomain/" class="md-nav__link">
+      <a href="../websitebeauty/Customdomain/" class="md-nav__link">
         
   
   
@@ -1706,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/yuanjiaohua/" class="md-nav__link">
+      <a href="../websitebeauty/yuanjiaohua/" class="md-nav__link">
         
   
   
@@ -1729,7 +2136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/mkcomments/" class="md-nav__link">
+      <a href="../websitebeauty/mkcomments/" class="md-nav__link">
         
   
   
@@ -1752,7 +2159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/header/" class="md-nav__link">
+      <a href="../websitebeauty/header/" class="md-nav__link">
         
   
   
@@ -1775,7 +2182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/webtalknow/" class="md-nav__link">
+      <a href="../websitebeauty/webtalknow/" class="md-nav__link">
         
   
   
@@ -1798,7 +2205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/mkdocsfont/" class="md-nav__link">
+      <a href="../websitebeauty/mkdocsfont/" class="md-nav__link">
         
   
   
@@ -1821,7 +2228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/shubiao/" class="md-nav__link">
+      <a href="../websitebeauty/shubiao/" class="md-nav__link">
         
   
   
@@ -1844,7 +2251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/backgroud/" class="md-nav__link">
+      <a href="../websitebeauty/backgroud/" class="md-nav__link">
         
   
   
@@ -1867,7 +2274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/mkpdf/" class="md-nav__link">
+      <a href="../websitebeauty/mkpdf/" class="md-nav__link">
         
   
   
@@ -1890,7 +2297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/Relativeaddress/" class="md-nav__link">
+      <a href="../websitebeauty/Relativeaddress/" class="md-nav__link">
         
   
   
@@ -1913,7 +2320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/404/" class="md-nav__link">
+      <a href="../websitebeauty/404/" class="md-nav__link">
         
   
   
@@ -1936,7 +2343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/time/" class="md-nav__link">
+      <a href="../websitebeauty/time/" class="md-nav__link">
         
   
   
@@ -1959,7 +2366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/footer/" class="md-nav__link">
+      <a href="../websitebeauty/footer/" class="md-nav__link">
         
   
   
@@ -1982,7 +2389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/accelerate/" class="md-nav__link">
+      <a href="../websitebeauty/accelerate/" class="md-nav__link">
         
   
   
@@ -2083,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/win/" class="md-nav__link">
+      <a href="../technique%20sharing/win/" class="md-nav__link">
         
   
   
@@ -2114,7 +2521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/jiaoben/" class="md-nav__link">
+      <a href="../technique%20sharing/jiaoben/" class="md-nav__link">
         
   
   
@@ -2137,7 +2544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/tuchuang/" class="md-nav__link">
+      <a href="../technique%20sharing/tuchuang/" class="md-nav__link">
         
   
   
@@ -2160,7 +2567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/ohmuzsh/" class="md-nav__link">
+      <a href="../technique%20sharing/ohmuzsh/" class="md-nav__link">
         
   
   
@@ -2183,7 +2590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/googletranslate/" class="md-nav__link">
+      <a href="../technique%20sharing/googletranslate/" class="md-nav__link">
         
   
   
@@ -2206,7 +2613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/aixin/" class="md-nav__link">
+      <a href="../technique%20sharing/aixin/" class="md-nav__link">
         
   
   
@@ -2229,7 +2636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/matlabrose/" class="md-nav__link">
+      <a href="../technique%20sharing/matlabrose/" class="md-nav__link">
         
   
   
@@ -2252,7 +2659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/kexue/" class="md-nav__link">
+      <a href="../technique%20sharing/kexue/" class="md-nav__link">
         
   
   
@@ -2275,7 +2682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique%20sharing/jisuanjibiannianshi/" class="md-nav__link">
+      <a href="../technique%20sharing/jisuanjibiannianshi/" class="md-nav__link">
         
   
   
@@ -2372,7 +2779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Academic/LaTeX/" class="md-nav__link">
+      <a href="../Academic/LaTeX/" class="md-nav__link">
         
   
   
@@ -2418,7 +2825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Academic/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D.pdf" class="md-nav__link">
+      <a href="../Academic/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D.pdf" class="md-nav__link">
         
   
   
@@ -2441,7 +2848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Academic/math/" class="md-nav__link">
+      <a href="../Academic/math/" class="md-nav__link">
         
   
   
@@ -2490,7 +2897,7 @@
   
   
   
-    <a href="../../Academic/Math/14/" class="md-nav__link">
+    <a href="../Academic/Math/14/" class="md-nav__link">
       
   
   
@@ -2519,7 +2926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Academic/diancichang.html" class="md-nav__link">
+      <a href="../Academic/diancichang.html" class="md-nav__link">
         
   
   
@@ -2542,7 +2949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Academic/ddiancichang/" class="md-nav__link">
+      <a href="../Academic/ddiancichang/" class="md-nav__link">
         
   
   
@@ -2672,7 +3079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/Pd/" class="md-nav__link">
+      <a href="../Mac/Pd/" class="md-nav__link">
         
   
   
@@ -2695,7 +3102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/sunhuai/" class="md-nav__link">
+      <a href="../Mac/sunhuai/" class="md-nav__link">
         
   
   
@@ -2718,7 +3125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/shanchu/" class="md-nav__link">
+      <a href="../Mac/shanchu/" class="md-nav__link">
         
   
   
@@ -2741,7 +3148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/homebrew/" class="md-nav__link">
+      <a href="../Mac/homebrew/" class="md-nav__link">
         
   
   
@@ -2764,7 +3171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/jiasugithub/" class="md-nav__link">
+      <a href="../Mac/jiasugithub/" class="md-nav__link">
         
   
   
@@ -2787,7 +3194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/Macesc/" class="md-nav__link">
+      <a href="../Mac/Macesc/" class="md-nav__link">
         
   
   
@@ -2810,7 +3217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/Launchpad/" class="md-nav__link">
+      <a href="../Mac/Launchpad/" class="md-nav__link">
         
   
   
@@ -2833,7 +3240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/jietu/" class="md-nav__link">
+      <a href="../Mac/jietu/" class="md-nav__link">
         
   
   
@@ -2856,7 +3263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/xjiq/" class="md-nav__link">
+      <a href="../Mac/xjiq/" class="md-nav__link">
         
   
   
@@ -2879,7 +3286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/maccd/" class="md-nav__link">
+      <a href="../Mac/maccd/" class="md-nav__link">
         
   
   
@@ -2902,7 +3309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mac/kjj/" class="md-nav__link">
+      <a href="../Mac/kjj/" class="md-nav__link">
         
   
   
@@ -2991,7 +3398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iphone/iphoneduozhanghao/" class="md-nav__link">
+      <a href="../iphone/iphoneduozhanghao/" class="md-nav__link">
         
   
   
@@ -3014,7 +3421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iphone/iphonexianmian/" class="md-nav__link">
+      <a href="../iphone/iphonexianmian/" class="md-nav__link">
         
   
   
@@ -3037,7 +3444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iphone/iphonequchukaiping/" class="md-nav__link">
+      <a href="../iphone/iphonequchukaiping/" class="md-nav__link">
         
   
   
@@ -3126,7 +3533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Win/360/" class="md-nav__link">
+      <a href="../Win/360/" class="md-nav__link">
         
   
   
@@ -3149,7 +3556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Win/edgexz/" class="md-nav__link">
+      <a href="../Win/edgexz/" class="md-nav__link">
         
   
   
@@ -3172,7 +3579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Win/winkjj/" class="md-nav__link">
+      <a href="../Win/winkjj/" class="md-nav__link">
         
   
   
@@ -3259,7 +3666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../py/python/" class="md-nav__link">
+      <a href="../py/python/" class="md-nav__link">
         
   
   
@@ -3282,7 +3689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../py/pip/" class="md-nav__link">
+      <a href="../py/pip/" class="md-nav__link">
         
   
   
@@ -3378,7 +3785,7 @@
   
   
   
-    <a href="../../../develop/" class="md-nav__link">
+    <a href="../../develop/" class="md-nav__link">
       
   
   
@@ -3468,7 +3875,7 @@
   
   
   
-    <a href="../../../relax/" class="md-nav__link">
+    <a href="../../relax/" class="md-nav__link">
       
   
   
@@ -3530,7 +3937,7 @@
   
   
   
-    <a href="../../../trip/" class="md-nav__link">
+    <a href="../../trip/" class="md-nav__link">
       
   
   
@@ -3558,7 +3965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tag/" class="md-nav__link">
+      <a href="../../tag/" class="md-nav__link">
         
   
   
@@ -3580,7 +3987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../waline/" class="md-nav__link">
+      <a href="../../waline/" class="md-nav__link">
         
   
   
@@ -3628,7 +4035,7 @@
   
   
   
-    <a href="../../../link/" class="md-nav__link">
+    <a href="../../link/" class="md-nav__link">
       
   
   
@@ -3686,7 +4093,7 @@
   
   
   
-    <a href="../../" class="md-nav__link">
+    <a href="../" class="md-nav__link">
       
   
   
@@ -3762,7 +4169,7 @@
   
   
   
-    <a href="../../../about/geren/" class="md-nav__link">
+    <a href="../../about/geren/" class="md-nav__link">
       
   
   
@@ -3847,6 +4254,389 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 环境管理原则
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 环境管理原则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心理念
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 标准工作流程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 标准工作流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      开始新项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      日常开发流程
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 项目类型模板
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 项目类型模板">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Web 开发项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 数据科学项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 AI/机器学习项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 文档项目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 通用开发项目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 最佳实践
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      命名规范
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      项目目录结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境配置文件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="环境配置文件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirementstxt-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      requirements.txt (pip 方式)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environmentyml-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      environment.yml (conda 方式)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧹 环境维护
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧹 环境维护">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看和管理环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境备份与恢复
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 高级技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 高级技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-python-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 使用 .python-version 文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 环境变量管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 开发工具配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 快速参考
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 快速参考">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用命令
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python 版本选择指南
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 项目示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 项目示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs 博客项目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 常见问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题：环境冲突
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题：包版本冲突
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题：环境过多
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题：忘记激活环境
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 相关资源
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3864,7 +4654,7 @@
       
       
       
-        <a href="../../../tag/#tag:mkdocs" class="md-tag">Mkdocs</a>
+        <a href="../../tag/#tag:python" class="md-tag">Python</a>
       
     
   </nav>
@@ -3874,18 +4664,452 @@
   
 
 
-<h1 id="3github-pagesmkdocs">3.解决Github Pages部署mkdocs自定义域名失效的问题<a class="headerlink" href="#3github-pagesmkdocs" title="Permanent link">&para;</a></h1>
+<h1 id="python">Python 环境管理最佳实践<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
 <div class="admonition tip">
 <p class="admonition-title">📖 阅读信息</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>1</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>87</strong></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span>阅读时间：<strong>1</strong> 分钟 | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span>中文字符：<strong>457</strong> | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span>有效代码行数：<strong>155</strong></p>
 </div>
-<p>在/docs目录下创建一个 CNAME 的 无后缀 文件，然后在里面填入你的域名
-<img alt="" src="https://s1.imagehub.cc/images/2024/02/02/d23082e5d3ebb839dba8b589a1cb5b7c.png" /></p>
-<div class="admonition tip">
-<p class="admonition-title">原因</p>
-<p>因为每次在 Custom domain 添加后都会给我们生成一个 CNAME 的文件，但是因为项目我们没有 pull 到本地，所以造成了，每次 push 之后 CNAME 信息被 clear 了</p>
-</div>
-<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin' locale='zh'><span data-tippy-content data-tippy-raw='2022-11-18'><span class='material-icons' data-icon='doc_created'></span><time datetime='2022-11-18T21:06:42'>2022-11-18</time></span><span data-tippy-content data-tippy-raw='2025-10-10'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-10-10T06:56:15.728609+00:00'>2025-10-10</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Wcowin' data-tippy-content data-tippy-raw='<a href="mailto:1135801806@qq.com">Wcowin</a>'><span class='avatar-text'></span><img class='avatar' src='https://avatars.githubusercontent.com/Wcowin' /></div></div></div></div>
+<blockquote>
+<p>本文总结了在 macOS 上使用 Anaconda 进行 Python 环境管理的最佳实践，适用于各种开发项目。</p>
+</blockquote>
+<h2 id="_1">🎯 环境管理原则<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">核心理念<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>一个项目，一个环境</strong> - 避免依赖冲突</li>
+<li><strong>版本明确</strong> - 指定具体的 Python 版本</li>
+<li><strong>文档化</strong> - 记录环境配置和依赖</li>
+<li><strong>可复现</strong> - 能够在其他机器上重建相同环境</li>
+</ul>
+<h2 id="_3">🚀 标准工作流程<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">开始新项目<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 1. 创建项目专用环境</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>项目名<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12<span class="w"> </span>-y
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># 2. 激活环境</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>conda<span class="w"> </span>activate<span class="w"> </span>项目名
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># 3. 安装项目依赖</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>pip<span class="w"> </span>install<span class="w"> </span>需要的包
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># 或从文件安装</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="c1"># 4. 导出环境配置（重要！）</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="c1"># 或导出完整 conda 环境</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span>&gt;<span class="w"> </span>environment.yml
+</code></pre></div></td></tr></table></div>
+<h3 id="_5">日常开发流程<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># 开始工作</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>/path/to/project
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>conda<span class="w"> </span>activate<span class="w"> </span>项目名
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1"># 结束工作时更新依赖文件</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>conda<span class="w"> </span>deactivate
+</code></pre></div></td></tr></table></div>
+<h2 id="_6">📋 项目类型模板<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="web">🌐 Web 开发项目<a class="headerlink" href="#web" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>webdev<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12<span class="w"> </span>-y
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>webdev
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># 核心框架</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>pip<span class="w"> </span>install<span class="w"> </span>flask<span class="w"> </span>django<span class="w"> </span>fastapi<span class="w"> </span>uvicorn
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1"># 数据处理</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>pip<span class="w"> </span>install<span class="w"> </span>requests<span class="w"> </span>beautifulsoup4<span class="w"> </span>pandas
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="c1"># 数据库</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>pip<span class="w"> </span>install<span class="w"> </span>sqlalchemy<span class="w"> </span>psycopg2-binary<span class="w"> </span>pymongo
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="c1"># 开发工具</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>pip<span class="w"> </span>install<span class="w"> </span>pytest<span class="w"> </span>black<span class="w"> </span>flake8<span class="w"> </span>mypy
+</code></pre></div></td></tr></table></div>
+<h3 id="_7">📊 数据科学项目<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>datascience<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.11<span class="w"> </span>-y
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>datascience
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="c1"># 核心数据科学包</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>conda<span class="w"> </span>install<span class="w"> </span>pandas<span class="w"> </span>numpy<span class="w"> </span>matplotlib<span class="w"> </span>seaborn<span class="w"> </span>scikit-learn<span class="w"> </span>jupyter
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="c1"># 可视化</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>pip<span class="w"> </span>install<span class="w"> </span>plotly<span class="w"> </span>dash<span class="w"> </span>streamlit
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="c1"># 机器学习</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>pip<span class="w"> </span>install<span class="w"> </span>xgboost<span class="w"> </span>lightgbm<span class="w"> </span>catboost
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="c1"># 开发工具</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a>pip<span class="w"> </span>install<span class="w"> </span>pytest<span class="w"> </span>ipykernel
+</code></pre></div></td></tr></table></div>
+<h3 id="ai">🤖 AI/机器学习项目<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>aiproject<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.11<span class="w"> </span>-y
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>aiproject
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1"># 深度学习框架（选择一个）</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>pip<span class="w"> </span>install<span class="w"> </span>torch<span class="w"> </span>torchvision<span class="w">  </span><span class="c1"># PyTorch</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="c1"># 或</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>pip<span class="w"> </span>install<span class="w"> </span>tensorflow<span class="w"> </span>keras<span class="w">  </span><span class="c1"># TensorFlow</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="c1"># AI 工具</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>pip<span class="w"> </span>install<span class="w"> </span>transformers<span class="w"> </span>datasets<span class="w"> </span>accelerate
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a>pip<span class="w"> </span>install<span class="w"> </span>openai<span class="w"> </span>anthropic<span class="w"> </span>langchain
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="c1"># 科学计算</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a>pip<span class="w"> </span>install<span class="w"> </span>numpy<span class="w"> </span>pandas<span class="w"> </span>matplotlib<span class="w"> </span>scikit-learn
+</code></pre></div></td></tr></table></div>
+<h3 id="_8">📝 文档项目<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>docproject<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12<span class="w"> </span>-y
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>docproject
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="c1"># 文档生成</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-committers-plugin-2
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="c1"># 内容处理</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a>pip<span class="w"> </span>install<span class="w"> </span>markdown<span class="w"> </span>pymdown-extensions<span class="w"> </span>pillow
+</code></pre></div></td></tr></table></div>
+<h3 id="_9">🔧 通用开发项目<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>devproject<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12<span class="w"> </span>-y
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>devproject
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="c1"># 基础工具</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a>pip<span class="w"> </span>install<span class="w"> </span>requests<span class="w"> </span>click<span class="w"> </span>typer<span class="w"> </span>rich
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a>pip<span class="w"> </span>install<span class="w"> </span>python-dotenv<span class="w"> </span>pyyaml<span class="w"> </span>toml
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="c1"># 开发工具</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a>pip<span class="w"> </span>install<span class="w"> </span>pytest<span class="w"> </span>black<span class="w"> </span>isort<span class="w"> </span>flake8<span class="w"> </span>mypy<span class="w"> </span>pre-commit
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="c1"># 实用工具</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a>pip<span class="w"> </span>install<span class="w"> </span>tqdm<span class="w"> </span>loguru
+</code></pre></div></td></tr></table></div>
+<h2 id="_10">💡 最佳实践<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="_11">命名规范<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">8</a></span>
+<span class="normal"><a href="#__codelineno-7-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># ✅ 好的命名</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>myproject-web<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12<span class="w">      </span><span class="c1"># 项目名-类型</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>blog2024<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12<span class="w">           </span><span class="c1"># 项目名+年份</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>ecommerce-api<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.11<span class="w">      </span><span class="c1"># 功能描述</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>ml-research<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.11<span class="w">        </span><span class="c1"># 用途-类型</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="c1"># ❌ 避免的命名</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span><span class="nb">test</span><span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12<span class="w">               </span><span class="c1"># 太通用</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>proj1<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12<span class="w">              </span><span class="c1"># 不描述性</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_12">项目目录结构<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>my-project/
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>├── README.md
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>├── requirements.txt          # pip 依赖
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>├── environment.yml          # conda 环境配置
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a>├── .python-version         # 指定 Python 版本
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a>├── .env                    # 环境变量
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a>├── src/                    # 源代码
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a>├── tests/                  # 测试代码
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a>├── docs/                   # 文档
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a>└── data/                   # 数据文件
+</code></pre></div></td></tr></table></div>
+<h3 id="_13">环境配置文件<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h4 id="requirementstxt-pip">requirements.txt (pip 方式)<a class="headerlink" href="#requirementstxt-pip" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="c1"># 生成</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="c1"># 安装</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div></td></tr></table></div>
+<h4 id="environmentyml-conda">environment.yml (conda 方式)<a class="headerlink" href="#environmentyml-conda" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myproject</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="nt">channels</span><span class="p">:</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defaults</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="nt">dependencies</span><span class="p">:</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python=3.12</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pip</span><span class="p">:</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flask</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">requests</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1"># 生成</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span>&gt;<span class="w"> </span>environment.yml
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="c1"># 创建环境</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
+</code></pre></div></td></tr></table></div>
+<h2 id="_14">🧹 环境维护<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="_15">查看和管理环境<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span>
+<span class="normal"><a href="#__codelineno-12-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="c1"># 查看所有环境</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>conda<span class="w"> </span>env<span class="w"> </span>list
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="c1"># 查看当前环境的包</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a>conda<span class="w"> </span>list
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a>pip<span class="w"> </span>list
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="c1"># 删除环境</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>-n<span class="w"> </span>环境名
+<a id="__codelineno-12-10" name="__codelineno-12-10"></a>
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="c1"># 清理缓存</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a>conda<span class="w"> </span>clean<span class="w"> </span>--all
+</code></pre></div></td></tr></table></div>
+<h3 id="_16">环境备份与恢复<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="c1"># 备份环境</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span>-n<span class="w"> </span>环境名<span class="w"> </span>&gt;<span class="w"> </span>backup-environment.yml
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="c1"># 从备份恢复</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>backup-environment.yml
+</code></pre></div></td></tr></table></div>
+<h2 id="_17">🔧 高级技巧<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h3 id="1-python-version">1. 使用 .python-version 文件<a class="headerlink" href="#1-python-version" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="c1"># 在项目目录中指定 Python 版本</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;3.12.7&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>.python-version
+</code></pre></div></td></tr></table></div>
+<h3 id="2">2. 环境变量管理<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">5</a></span>
+<span class="normal"><a href="#__codelineno-15-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="c1"># 安装 python-dotenv</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a>pip<span class="w"> </span>install<span class="w"> </span>python-dotenv
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="c1"># 创建 .env 文件</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;DATABASE_URL=sqlite:///app.db&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>.env
+<a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;DEBUG=True&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>.env
+</code></pre></div></td></tr></table></div>
+<h3 id="3">3. 开发工具配置<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span>
+<span class="normal"><a href="#__codelineno-16-5">5</a></span>
+<span class="normal"><a href="#__codelineno-16-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="c1"># 安装代码格式化工具</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a>pip<span class="w"> </span>install<span class="w"> </span>black<span class="w"> </span>isort<span class="w"> </span>flake8<span class="w"> </span>mypy
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="c1"># 配置 pre-commit</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a>pip<span class="w"> </span>install<span class="w"> </span>pre-commit
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a>pre-commit<span class="w"> </span>install
+</code></pre></div></td></tr></table></div>
+<h2 id="_18">📝 快速参考<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="_19">常用命令<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-17-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-17-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-17-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-17-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-17-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-17-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-17-10">10</a></span>
+<span class="normal"><a href="#__codelineno-17-11">11</a></span>
+<span class="normal"><a href="#__codelineno-17-12">12</a></span>
+<span class="normal"><a href="#__codelineno-17-13">13</a></span>
+<span class="normal"><a href="#__codelineno-17-14">14</a></span>
+<span class="normal"><a href="#__codelineno-17-15">15</a></span>
+<span class="normal"><a href="#__codelineno-17-16">16</a></span>
+<span class="normal"><a href="#__codelineno-17-17">17</a></span>
+<span class="normal"><a href="#__codelineno-17-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="c1"># 🆕 新项目</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>项目名<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a>conda<span class="w"> </span>activate<span class="w"> </span>项目名
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a>pip<span class="w"> </span>install<span class="w"> </span>依赖包
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+<a id="__codelineno-17-6" name="__codelineno-17-6"></a>
+<a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="c1"># 🔄 日常使用</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8"></a>conda<span class="w"> </span>activate<span class="w"> </span>项目名<span class="w">      </span><span class="c1"># 开始工作</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9"></a>conda<span class="w"> </span>deactivate<span class="w">          </span><span class="c1"># 结束工作</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10"></a>
+<a id="__codelineno-17-11" name="__codelineno-17-11"></a><span class="c1"># 🧹 维护</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12"></a>conda<span class="w"> </span>env<span class="w"> </span>list<span class="w">            </span><span class="c1"># 查看环境</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13"></a>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>-n<span class="w"> </span>环境名<span class="w">  </span><span class="c1"># 删除环境</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14"></a>conda<span class="w"> </span>clean<span class="w"> </span>--all<span class="w">         </span><span class="c1"># 清理缓存</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15"></a>
+<a id="__codelineno-17-16" name="__codelineno-17-16"></a><span class="c1"># 📦 分享项目</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17"></a>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+<a id="__codelineno-17-18" name="__codelineno-17-18"></a>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span>&gt;<span class="w"> </span>environment.yml
+</code></pre></div></td></tr></table></div>
+<h3 id="python_1">Python 版本选择指南<a class="headerlink" href="#python_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Python 3.11</strong> - 数据科学、AI/ML 项目（稳定，库支持好）</li>
+<li><strong>Python 3.12</strong> - Web 开发、通用项目（现代特性，性能好）</li>
+<li><strong>Python 3.13</strong> - 实验性项目（最新特性，可能有兼容性问题）</li>
+</ul>
+<h2 id="_20">🎯 项目示例<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<h3 id="mkdocs">MkDocs 博客项目<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-18-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-18-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-18-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-18-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-18-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-18-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-18-10">10</a></span>
+<span class="normal"><a href="#__codelineno-18-11">11</a></span>
+<span class="normal"><a href="#__codelineno-18-12">12</a></span>
+<span class="normal"><a href="#__codelineno-18-13">13</a></span>
+<span class="normal"><a href="#__codelineno-18-14">14</a></span>
+<span class="normal"><a href="#__codelineno-18-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="c1"># 我的博客项目配置</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>MKdocs<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.13<span class="w"> </span>-y
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a>conda<span class="w"> </span>activate<span class="w"> </span>MKdocs
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="c1"># 安装依赖</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material<span class="o">==</span><span class="m">9</span>.6.21
+<a id="__codelineno-18-7" name="__codelineno-18-7"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-document-dates
+<a id="__codelineno-18-8" name="__codelineno-18-8"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="c1"># ... 其他插件</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10"></a>
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="c1"># 使用</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="nb">cd</span><span class="w"> </span>~/Wcowin.github.io
+<a id="__codelineno-18-13" name="__codelineno-18-13"></a>conda<span class="w"> </span>activate<span class="w"> </span>MKdocs
+<a id="__codelineno-18-14" name="__codelineno-18-14"></a>mkdocs<span class="w"> </span>serve<span class="w">  </span><span class="c1"># 开发服务器</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15"></a>mkdocs<span class="w"> </span>build<span class="w">  </span><span class="c1"># 构建静态网站</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_21">🚨 常见问题<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<h3 id="_22">问题：环境冲突<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p><strong>解决方案：</strong> 为每个项目创建独立环境，避免在 base 环境中安装包。</p>
+<h3 id="_23">问题：包版本冲突<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p><strong>解决方案：</strong> 使用 <code>requirements.txt</code> 锁定版本，定期更新依赖。</p>
+<h3 id="_24">问题：环境过多<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p><strong>解决方案：</strong> 定期清理不用的环境，使用描述性命名。</p>
+<h3 id="_25">问题：忘记激活环境<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p><strong>解决方案：</strong> 在项目 README 中写明环境激活命令，或使用 direnv 自动激活。</p>
+<h2 id="_26">📚 相关资源<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://docs.conda.io/">Conda 官方文档</a></li>
+<li><a href="https://pip.pypa.io/en/stable/user_guide/">pip 用户指南</a></li>
+<li><a href="https://docs.python.org/3/tutorial/venv.html">Python 虚拟环境指南</a></li>
+</ul>
+<hr />
+<blockquote>
+<p>💡 <strong>提示：</strong> 良好的环境管理是高效开发的基础。投入时间建立规范的环境管理流程，将大大提高开发效率和项目的可维护性。</p>
+</blockquote>
+<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin' locale='zh'><span data-tippy-content data-tippy-raw='2025-10-10'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-10-10T14:07:42.074903+08:00'>2025-10-10</time></span><span data-tippy-content data-tippy-raw='2025-10-10'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-10-10T06:56:15.729609+00:00'>2025-10-10</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Wcowin' data-tippy-content data-tippy-raw='<a href="mailto:1135801806@qq.com">Wcowin</a>'><span class='avatar-text'></span><img class='avatar' src='https://avatars.githubusercontent.com/Wcowin' /></div></div></div></div>
 <style>
 .related-posts {
   margin-top: 1.5rem;
@@ -3929,11 +5153,11 @@
 <div class="related-posts">
 <h3>📚 相关文章推荐</h3>
 <ul>
-<li><a href="/blog/websitebeauty/Relativeaddress/">相对地址的一些问题</a></li>
-<li><a href="/blog/Mkdocs/linktech/">如何给MKdocs添加友链</a></li>
-<li><a href="/blog/Mkdocs/mkdocs1/">利用Mkdocs部署静态网页至GitHubpages</a></li>
-<li><a href="/blog/Mkdocs/mkdocs2/">Mkdocs配置说明（mkdocs.yml）</a></li>
-<li><a href="/blog/Mkdocs/mkdocsblog/">网站添加Mkdocs博客</a></li>
+<li><a href="/blog/websitebeauty/mkdocs-document-dates/">MkDocs文档日期插件</a></li>
+<li><a href="/blog/technique%20sharing/comkdocs/">基于 Mkdocs 的主题与站点</a></li>
+<li><a href="/blog/websitebeauty/MkDocs-AI-Summary-plus/">MkDocs AI Summary中文教程</a></li>
+<li><a href="/blog/websitebeauty/Mkdocs-AI-Summary/">MkDocs文档AI摘要</a></li>
+<li><a href="/blog/OneClip/">OneClip 一款简单专业的macOS 剪贴板管理工具</a></li>
 </ul>
 </div>
 
@@ -4174,16 +5398,16 @@
     <!-- Link to previous page -->
      
     <a
-      href="../mkdocs2/"
+      href="../Cryptography/Groupcipher/"
       class="md-footer__link md-footer__link--prev"
-      aria-label="上一页: 2.Mkdocs配置说明(mkdocs.yml)"
+      aria-label="上一页: 分组密码"
     >
       <div class="md-footer__button md-icon">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
       </div>
       <div class="md-footer__title">
         <span class="md-footer__direction"> 上一页 </span>
-        <div class="md-ellipsis">2.Mkdocs配置说明(mkdocs.yml)</div>
+        <div class="md-ellipsis">分组密码</div>
       </div>
     </a>
     
@@ -4191,13 +5415,13 @@
     <!-- Link to next page -->
      
     <a
-      href="../mkdocsblog/"
+      href="../Mkdocs/MIT/"
       class="md-footer__link md-footer__link--next"
-      aria-label="下一页: 网站添加Mkdocs博客"
+      aria-label="下一页: MIT许可声明"
     >
       <div class="md-footer__title">
         <span class="md-footer__direction"> 下一页 </span>
-        <div class="md-ellipsis">网站添加Mkdocs博客</div>
+        <div class="md-ellipsis">MIT许可声明</div>
       </div>
       <div class="md-footer__button md-icon">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
@@ -4732,34 +5956,34 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "navigation.prune", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "toc.follow", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.prune", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "toc.follow", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
-        <script src="../../../javascripts/glm-config.js"></script>
+        <script src="../../javascripts/glm-config.js"></script>
       
-        <script src="../../../javascripts/glm-translate.js"></script>
+        <script src="../../javascripts/glm-translate.js"></script>
       
-        <script src="../../../javascripts/unified-instant-handler.js"></script>
+        <script src="../../javascripts/unified-instant-handler.js"></script>
       
-        <script src="../../../javascripts/extra.js"></script>
+        <script src="../../javascripts/extra.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="../../../assets/document_dates/tippy/popper.min.js"></script>
+        <script src="../../assets/document_dates/tippy/popper.min.js"></script>
       
-        <script src="../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+        <script src="../../assets/document_dates/tippy/tippy.umd.min.js"></script>
       
-        <script src="../../../assets/document_dates/core/default.config.js"></script>
+        <script src="../../assets/document_dates/core/default.config.js"></script>
       
-        <script src="../../../assets/document_dates/user.config.js"></script>
+        <script src="../../assets/document_dates/user.config.js"></script>
       
-        <script src="../../../assets/document_dates/core/utils.js"></script>
+        <script src="../../assets/document_dates/core/utils.js"></script>
       
-        <script src="../../../assets/document_dates/core/core.js"></script>
+        <script src="../../assets/document_dates/core/core.js"></script>
       
     
   </body>
