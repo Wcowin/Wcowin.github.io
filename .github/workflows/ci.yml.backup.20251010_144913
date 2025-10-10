@@ -68,18 +68,19 @@ jobs:
           # 移除 sparse-checkout，确保所有文件都被检出
       - uses: actions/setup-python@v5  # 更新到最新版本
         with:
-          python-version: '3.12'  # 使用 Python 3.12
-          cache: 'pip'  # 自动缓存 pip 依赖
+          python-version: '3.11'  # 使用具体版本号
       
-      - uses: actions/cache@v4  # 缓存 MkDocs 构建文件
+      - name: Set cache ID
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      
+      - uses: actions/cache@v4  # 更新到最新版本
         with:
-          key: mkdocs-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+          key: mkdocs-material-${{ github.run_number }}
           path: |
             .cache
             ~/.cache/pip
           restore-keys: |
-            mkdocs-${{ runner.os }}-py3.12-
-            mkdocs-${{ runner.os }}-
+            mkdocs-material-
       
       # 使用 requirements.txt 安装依赖（更高效）
       - name: Install dependencies
@@ -88,27 +89,33 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
-      # 预构建测试，快速失败（保留 AI 功能支持）
-      - name: Test build
-        timeout-minutes: 5  # AI 功能可能需要更多时间
-        env:
-          AI_SUMMARY_CI_ENABLED: 'false'  # 测试阶段禁用 AI 以加快速度
-        run: mkdocs build --strict
+      # 预构建测试，快速失败
+      - name: Test build (without AI)
+        timeout-minutes: 3  # 测试构建应该很快
+        run: |
+          # 临时禁用 AI 摘要进行快速测试构建
+          export AI_SUMMARY_CI_ENABLED=false
+          mkdocs build --strict
       
-      - name: Deploy to GitHub Pages
+      - name: Deploy (AI Summary Disabled)
         timeout-minutes: 8  # 部署步骤，包含构建和推送
-        env:
-          # AI 摘要功能已禁用，如需启用请取消注释以下配置
-          AI_SUMMARY_CI_ENABLED: 'false'
-          # AI_SUMMARY_CI_ONLY_CACHE: 'true'        # 优先使用缓存，减少 API 调用
-          # AI_SUMMARY_CI_FALLBACK: 'true'          
-          # AI_SUMMARY_CACHE_ENABLED: 'true'        
-          # AI_SUMMARY_CACHE_EXPIRE_DAYS: '30'      
-          # AI_SUMMARY_CACHE_AUTO_CLEAN: 'true'     
-          # API 密钥配置（如启用 AI 功能需要配置）
-          # GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
-          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: mkdocs gh-deploy --force
+        # env:
+        #   # AI摘要开关控制
+        #   AI_SUMMARY_CI_ENABLED: 'true'           
+        #   AI_SUMMARY_CI_ONLY_CACHE: 'true'        # 优先使用缓存，减少 API 调用
+        #   AI_SUMMARY_CI_FALLBACK: 'true'          
+        #   AI_SUMMARY_CACHE_ENABLED: 'true'        
+        #   AI_SUMMARY_CACHE_EXPIRE_DAYS: '30'      
+        #   AI_SUMMARY_CACHE_AUTO_CLEAN: 'true'     
+        #   # API密钥配置
+        #   GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+        #   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          # 使用 timeout 命令作为额外保护（6分钟）
+          timeout 360 mkdocs gh-deploy --force || {
+            echo "❌ 部署超时或失败"
+            exit 1
+          }
       
       # 有条件的缓存提交（避免无限循环）- 已禁用 AI 摘要功能
       # - name: Auto-commit AI cache (if any new files)

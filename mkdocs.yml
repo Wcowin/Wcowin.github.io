@@ -95,6 +95,7 @@ nav:
         - 密码学引言: blog/Cryptography/Introduction.md
         - 流密码: blog/Cryptography/Symmetriccryptography.md
         - 分组密码: blog/Cryptography/Groupcipher.md
+    - Python 环境管理最佳实践: blog/environment.md
     - MKdocs教程:
         - MIT许可声明: blog/Mkdocs/MIT.md
         - 0.Mkdocs教程前言: blog/Mkdocs/mkfirst.md
