@@ -425,8 +425,8 @@ plugins:
         - "gemini"
       summary_language: "zh"  # or "en"
       cache_enabled: true
-      local_enabled: false
-      # local_enabled: true
+      # local_enabled: false
+      local_enabled: true
       cache_expire_days: 30
       debug: false # 是否显示调试信息（默认：false）
       enabled_folders:
@@ -443,7 +443,7 @@ plugins:
         - blog/posts/
         - blog/archive/
   - search:
-      enabled: !ENV [CI, false]
+      # enabled: !ENV [CI, false]
       separator: '[\s\u200b\-]'
   # - git-revision-date-localized:
   #     enabled: !ENV [CI, false]  # 改为 false 禁用本地渲染
@@ -522,25 +522,20 @@ plugins:
       url_parameters:
         utm_source: "rss"
         utm_medium: "feed"
+  # - document-dates:
+  #     type: timeago
+  #     exclude:
+  #       - index.md
+  #       - blog/*
+  #     recently-updated:
+  #       limit: 50
+  #       exclude:
+  #         - index.md
+        # template: templates/recently_updated.html
+
 
   # - offline
-  # - glightbox:
-  #     enabled: !ENV [glightbox, false]
-  #     touchNavigation: true
-  #     loop: false
-  #     effect: fade
-  #     slide_effect: slide
-  #     width: 100%
-  #     height: auto
-  #     zoomable: true
-  #     draggable: true
-  #     skip_classes:
-  #       - custom-skip-class-name
-  #     auto_caption: false
-  #     caption_position: bottom
-  #     background: white
-  #     shadow: true
-  #     manual: false
+  # - glightbox
   # - open-in-new-tab
 
 markdown_extensions:
@@ -592,25 +587,25 @@ markdown_extensions:
   
 extra_javascript:
   # 智谱清言翻译系统
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js
-  # - javascripts/glm-config.js
-  # - javascripts/glm-translate.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js
+  - javascripts/glm-config.js
+  - javascripts/glm-translate.js
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js
   # - javascripts/translate-config.js
   # - javascripts/highlight-search.js
   # - docs/javascripts/translate.js
   # - https://cdn.staticfile.net/translate.js/3.12.0/translate.js
-  # - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
+  - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
   # - javascripts/optimize.js
   # - javascripts/instant-handler.js
   # 延迟加载非关键脚本
-  # - javascripts/extra.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  - javascripts/extra.js
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
   # - javascripts/liquid-glass-toc.js  # Liquid Glass TOC 增强效果
   # - javascripts/font-loader.js
 
@@ -618,18 +613,18 @@ extra_javascript:
 
 extra_css:
   # - stylesheets/highlight-search.css
-  # - stylesheets/extra.css
+  - stylesheets/extra.css
   - stylesheets/extra2.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
-  # - stylesheets/link.css  #友链
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
+  - stylesheets/link.css  #友链
   # - stylesheets/optimize.css
-  # - stylesheets/poem.css
+  - stylesheets/poem.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
   # - stylesheets/card2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
-  # - stylesheets/customize.css  #按钮圆角化
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
+  - stylesheets/customize.css  #按钮圆角化
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
   # - stylesheets/flink.css
   # - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
@@ -641,17 +636,17 @@ extra_css:
   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
   # - https://static.zeoseven.com/zsft/292/main/result.css #字体
-  # - stylesheets/ziti.css  #字体
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css #字体
+  - stylesheets/ziti.css  #字体
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css #字体
   # - https://fontsapi.zeoseven.com/292/main/result.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
-  # - about/sty/portfolio.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
+  - about/sty/portfolio.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
 
 watch: #监听文件变动自动刷新
   - docs

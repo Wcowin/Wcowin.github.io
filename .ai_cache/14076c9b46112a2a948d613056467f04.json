@@ -1,8 +1,8 @@
 {
-  "summary": "MkDocs文档日期插件是一款显示文档精确元信息的插件，包括创建时间、更新时间、作者和电子邮件等。支持深色模式和移动端适配，始终显示文档关键信息。",
+  "summary": "MkDocs文档日期插件是一款显示文档元信息（如创建时间、更新时间、作者、邮箱）的新插件，支持深色模式和移动端适配。",
   "service": "glm",
   "page_title": "MkDocs文档日期插件",
-  "timestamp": "2025-09-29T06:27:30.965840",
+  "timestamp": "2025-09-30T21:04:38.048996",
   "cache_version": "1.2.2",
-  "content_hash": "468378cbd5c5b6c2e02fa91b32c68cad"
+  "content_hash": "8a5db058174342e4cb8c1ad1527a7a35"
 }

@@ -1,8 +1,8 @@
 {
-  "summary": "本文摘自C.R.Rao的《统计与真理》，强调知识、科学和判断的本质都与数学密切相关，指出一切知识源于历史，科学抽象为数学，判断基于统计学。",
+  "summary": "C.R.Rao在《统计与真理》中提出，知识、科学和判断都蕴含着历史、数学和统计的元素。",
   "service": "glm",
   "page_title": "Math",
-  "timestamp": "2025-09-10T07:02:10.419033",
+  "timestamp": "2025-09-30T21:03:11.160072",
   "cache_version": "1.2.2",
-  "content_hash": "bf38da9e4a451b1efdc204123fec47a0"
+  "content_hash": "7876c0a4e9b7482347193cc08a1f4947"
 }

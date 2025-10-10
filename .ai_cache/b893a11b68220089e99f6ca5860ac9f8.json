@@ -1,8 +1,8 @@
 {
-  "summary": "本文档为Mkdocs教程前言，介绍了Mkdocs官方教程、Material for MkDocs教程、中文教程以及视频教程等资源，并提供了Mkdocs部署配置说明和快速开始指南。同时，文档还呼吁读者注明教程来源，并欢迎加入友链。",
+  "summary": "本文档为Mkdocs教程前言，介绍了Mkdocs官方教程、Material for MkDocs教程、中文教程以及视频教程等资源，并提供了Mkdocs部署配置说明和快速开始指南。同时，呼吁读者注明教程来源，并欢迎加入友链。",
   "service": "glm",
   "page_title": "0.Mkdocs教程前言",
-  "timestamp": "2025-09-10T07:03:13.764074",
+  "timestamp": "2025-09-30T21:03:47.771252",
   "cache_version": "1.2.2",
-  "content_hash": "398d8fe02f622d96910253427963c789"
+  "content_hash": "4f4e65afa8923f9eeab01e7d43881f6e"
 }

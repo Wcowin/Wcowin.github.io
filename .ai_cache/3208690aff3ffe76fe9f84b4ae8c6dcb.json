@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了加速网站访问的三个方法：优化图片格式、使用CDN加速静态资源、优化本地渲染。通过使用WebP、JPEG2000等格式压缩图片，利用CDN缓存资源，以及调整git插件配置，可提升网站访问速度。",
+  "summary": "本文分享了加速MkDocs网站访问的心得，包括优化图片格式、使用CDN加速静态资源、调整本地渲染配置等策略，并推荐了freeconvert、jsDelivr CDN等工具，以提升网站访问速度。",
   "service": "glm",
   "page_title": "加速网站访问的一些心得",
-  "timestamp": "2025-09-10T07:04:21.239288",
+  "timestamp": "2025-09-30T21:04:31.414398",
   "cache_version": "1.2.2",
-  "content_hash": "6f60e9dee47e0524e1a27d42a11c6bcb"
+  "content_hash": "f9e169ef8ed367cfad2168253e7e8229"
 }

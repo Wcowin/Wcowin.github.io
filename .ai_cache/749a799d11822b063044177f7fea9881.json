@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了如何使用Matlab绘制玫瑰和百合花。通过编写代码，实现两种花卉的图形化展示，旨在帮助读者掌握Matlab在图形绘制方面的应用。",
+  "summary": "本文介绍如何使用Matlab绘制玫瑰和百合花。通过Matlab绘图函数和技巧，实现两种花卉的逼真效果。",
   "service": "glm",
   "page_title": "用Matlab画玫瑰百合花",
-  "timestamp": "2025-09-10T07:03:51.930402",
+  "timestamp": "2025-10-10T13:07:27.758649",
   "cache_version": "1.2.2",
   "content_hash": "06344c1e473b1cb1417bdb4d812fab7d"
 }

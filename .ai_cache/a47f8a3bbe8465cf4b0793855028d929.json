@@ -1,8 +1,8 @@
 {
-  "summary": "本文提供Win11镜像下载和KMS激活方法。包含镜像网站、壁纸及激活命令。下载链接及提取码在文档中。只需管理员权限运行cmd执行命令即可激活。",
+  "summary": "本文提供Win11镜像下载和KMS激活方法。镜像下载链接及提取码在文中给出，KMS激活只需管理员权限运行cmd执行一句命令即可。",
   "service": "glm",
   "page_title": "Win11镜像下载/KMS激活",
-  "timestamp": "2025-09-10T07:04:04.046481",
+  "timestamp": "2025-09-30T21:04:20.940173",
   "cache_version": "1.2.2",
-  "content_hash": "4b6dae6433b491875adc4c9f63437b35"
+  "content_hash": "b10fa8fbb84c965e9daf2f39e3e8eb7b"
 }

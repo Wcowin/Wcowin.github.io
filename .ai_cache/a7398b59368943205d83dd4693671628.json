@@ -1,8 +1,8 @@
 {
-  "summary": "模型上下文协议（MCP）是一种标准化接口规范，旨在实现AI模型与外部工具的无缝交互。MCP简化了集成过程，支持多种编程语言，保障安全性，适用于多模态AI系统、智能助手开发和企业级解决方案。",
+  "summary": "模型上下文协议（MCP）是一种标准化接口规范，旨在实现AI模型与外部工具的无缝交互。MCP简化了集成过程，支持多种编程语言，确保数据安全，适用于多模态AI系统、智能助手和企业级解决方案。",
   "service": "glm",
   "page_title": "What is MCP",
-  "timestamp": "2025-09-10T07:05:36.086990",
+  "timestamp": "2025-09-30T21:05:09.441554",
   "cache_version": "1.2.2",
-  "content_hash": "ba0ff3465d7135f4089abce3d367b1b5"
+  "content_hash": "d14677516f03f3e29beadb7c5f2acac4"
 }

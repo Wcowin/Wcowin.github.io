@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了如何为MKdocs添加友链，包括复制代码粘贴到.md文件、设置样式和效果展示。同时，还提供了自动化友链工具，支持GUI操作，无需编写代码。",
+  "summary": "本文介绍了如何为MKdocs添加友链，包括复制代码到.md文件、设置样式和加入友链。同时，还介绍了自动化友链工具，支持GUI操作，无需编写代码。",
   "service": "glm",
   "page_title": "如何给MKdocs添加友链",
-  "timestamp": "2025-09-10T07:03:00.173094",
+  "timestamp": "2025-09-30T21:03:38.168126",
   "cache_version": "1.2.2",
-  "content_hash": "5967e35eeae2c307940b7dbe807c0988"
+  "content_hash": "321ef137c37e8d7516b06c0e518ed31b"
 }
