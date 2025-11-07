@@ -1060,6 +1060,19 @@ comments: true
       </div>
     </div>
     </div>
+    <div class="card">
+      <img class="ava" src="https://www.80tz.cn/avatar.jpg" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.80tz.cn" target="_blank">同城便民</a>
+        </div>
+        <div class="info">
+          同城系统，合作共赢。
+        </div>
+      </div>
+    </div>
+
+
 
    </div>
   </div>
@@ -1558,9 +1571,9 @@ window.friendLinkUtils = {
 
 === "Txt"
 
-    >名称: Wcowin's Blog
-    >链接: https://wcowin.work/
-    >头像: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
+    >名称: Wcowin's Blog  
+    >链接: https://wcowin.work/  
+    >头像: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp  
     >简介: 循此苦旅，以达星辰
 
 === "HTML(推荐)"

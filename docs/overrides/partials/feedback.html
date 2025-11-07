@@ -69,7 +69,8 @@
               {% endif %}
 
               <!-- Replace {url} and {title} placeholders in note -->
-              {{ rating.note.format(url = url, title = title) }}
+              <!-- Zensical 兼容：使用 Jinja2 replace 过滤器而非 Python format -->
+              {{ rating.note | replace("{url}", url) | replace("{title}", title) }}
             </div>
           {% endfor %}
         </div>

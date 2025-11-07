@@ -1,0 +1,208 @@
+name: Auto Renew SSL and Upload to Tencent Cloud CDN
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 每20天执行一次（UTC时间0点，即北京时间上午8点）
+    - cron: '0 0 */20 * *'
+
+jobs:
+  issue_cert:
+    name: Issue / Renew SSL
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure acme.sh folder exists
+        run: mkdir -p ~/.acme.sh
+
+      - name: Cache acme.sh data
+        uses: actions/cache@v4
+        with:
+          path: ~/.acme.sh
+          key: acme-sh-${{ secrets.DOMAIN }}-${{ hashFiles('**/acme-auto.yml') }}
+
+      - name: Install acme.sh
+        env:
+          ACME_EMAIL: ${{ secrets.ACME_EMAIL }}
+        run: |
+          echo "::add-mask::$ACME_EMAIL"
+          export PATH="$HOME/.acme.sh:$PATH"
+          if [ -x "$HOME/.acme.sh/acme.sh" ]; then
+            echo "✅ acme.sh already installed, skipping reinstall."
+          else
+            echo "⬇️ Installing acme.sh ..."
+            curl https://get.acme.sh | sh -s email=$ACME_EMAIL
+          fi
+          ~/.acme.sh/acme.sh --upgrade --auto-upgrade
+
+      - name: Check certificate expiration and renew if needed
+        id: renew
+        env:
+          DP_Id: ${{ secrets.DP_ID }}
+          DP_Key: ${{ secrets.DP_KEY }}
+          DOMAIN: ${{ secrets.DOMAIN }}
+        run: |
+          export PATH="$HOME/.acme.sh:$PATH"
+          echo "🔍 Checking certificate for $DOMAIN ..."
+
+          CERT_PATH="$HOME/.acme.sh/${DOMAIN}_ecc/fullchain.cer"
+          if [ -f "$CERT_PATH" ]; then
+            EXPIRY_DATE=$(openssl x509 -in "$CERT_PATH" -noout -enddate | cut -d= -f2)
+            EXPIRY_TS=$(date -u -d "$EXPIRY_DATE" +%s 2>/dev/null || date -u -j -f "%b %d %T %Y" "$EXPIRY_DATE" +%s 2>/dev/null || gdate -u -d "$EXPIRY_DATE" +%s)
+            NOW_TS=$(date +%s)
+            DAYS_LEFT=$(( ($EXPIRY_TS - $NOW_TS) / 86400 ))
+            echo "📅 Certificate expires in $DAYS_LEFT days"
+
+            if [ $DAYS_LEFT -le 30 ]; then
+              echo "🟡 Certificate will expire soon, renewing..."
+              ~/.acme.sh/acme.sh --renew -d $DOMAIN --dns dns_dp --ecc --days 30 || \
+              ~/.acme.sh/acme.sh --issue --dns dns_dp -d $DOMAIN -d www.$DOMAIN --server letsencrypt --ecc --log
+              echo "renewed=true" >> $GITHUB_OUTPUT
+            else
+              echo "✅ Certificate still valid, skip renew"
+              echo "renewed=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "🚫 No existing certificate found, issuing new one..."
+            ~/.acme.sh/acme.sh --issue --dns dns_dp -d $DOMAIN -d www.$DOMAIN --server letsencrypt --ecc --log
+            echo "renewed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Prepare certificate files
+        if: steps.renew.outputs.renewed == 'true'
+        env:
+          DOMAIN: ${{ secrets.DOMAIN }}
+        run: |
+          mkdir -p certs
+          cp ~/.acme.sh/${DOMAIN}_ecc/${DOMAIN}.key certs/
+          cp ~/.acme.sh/${DOMAIN}_ecc/fullchain.cer certs/
+
+      - name: Upload to Tencent Cloud SSL + Apply to CDN
+        if: steps.renew.outputs.renewed == 'true'
+        env:
+          QCLOUD_SECRET_ID: ${{ secrets.QCLOUD_SECRET_ID }}
+          QCLOUD_SECRET_KEY: ${{ secrets.QCLOUD_SECRET_KEY }}
+          DOMAIN: ${{ secrets.DOMAIN }}
+        run: |
+          pip install tencentcloud-sdk-python
+          python3 <<'EOF'
+          import os, json, time
+          from tencentcloud.common import credential
+          from tencentcloud.common.profile.http_profile import HttpProfile
+          from tencentcloud.common.profile.client_profile import ClientProfile
+          from tencentcloud.ssl.v20191205 import ssl_client, models
+          from tencentcloud.cdn.v20180606 import cdn_client, models as cdn_models
+
+          secret_id = os.getenv("QCLOUD_SECRET_ID")
+          secret_key = os.getenv("QCLOUD_SECRET_KEY")
+          domain = os.getenv("DOMAIN")
+
+          cred = credential.Credential(secret_id, secret_key)
+
+          # ---------- 1. SSL 客户端 ----------
+          ssl_http = HttpProfile(endpoint="ssl.tencentcloudapi.com")
+          ssl_client_profile = ClientProfile(httpProfile=ssl_http)
+          ssl = ssl_client.SslClient(cred, "ap-guangzhou", ssl_client_profile)
+
+          # 删除旧证书（同名 Alias）
+          print("🧹 Checking existing certificates...")
+          try:
+              list_req = models.DescribeCertificatesRequest()
+              list_req.Limit = 100
+              list_resp = ssl.DescribeCertificates(list_req)
+              for item in json.loads(list_resp.to_json_string()).get("Certificates", []):
+                  if item.get("Alias") == f"AutoSSL-{domain}":
+                      del_req = models.DeleteCertificateRequest()
+                      del_req.CertificateId = item["CertificateId"]
+                      ssl.DeleteCertificate(del_req)
+                      print("🧹 Deleted old certificate:", item["CertificateId"])
+          except Exception as e:
+              print("⚠️ Warning: failed to list/delete old certificates:", e)
+
+
+          # ---------- 2. 上传新证书 ----------
+          pub = open("certs/fullchain.cer").read()
+          key = open(f"certs/{domain}.key").read()
+          upload_req = models.UploadCertificateRequest()
+          upload_req.from_json_string(json.dumps({
+              "CertificatePublicKey": pub,
+              "CertificatePrivateKey": key,
+              "Alias": f"AutoSSL-{domain}"
+          }))
+          upload_resp = ssl.UploadCertificate(upload_req)
+          cert_id = json.loads(upload_resp.to_json_string())["CertificateId"]
+          print("✅ Uploaded new certificate:", cert_id)
+
+          # ---------- 等待证书状态可用 ----------
+          print("⏳ Waiting for certificate to become available...")
+          for i in range(6):  # 最多等待60秒
+              try:
+                  req = models.DescribeCertificateDetailRequest()
+                  req.CertificateId = cert_id
+                  resp = ssl.DescribeCertificateDetail(req)
+                  status = resp.Status
+                  print(f"   → Attempt {i+1}: status={status}")
+                  if status in (1, 7):  # 1=已签发, 7=已部署
+                      print("✅ Certificate is ready for use.")
+                      break
+              except Exception as e:
+                  print(f"⚠️ Failed to check certificate status (attempt {i+1}): {e}")
+              time.sleep(10)
+          else:
+              raise RuntimeError("❌ Certificate did not become ready after waiting 60 seconds.")
+
+
+          # ---------- 3. 应用到 CDN（region fallback，多域名支持） ----------
+          domains_to_update = [domain, f"www.{domain}"]
+          regions = ["ap-guangzhou", "ap-beijing", "ap-shanghai"]
+          cdn_http = HttpProfile(endpoint="cdn.tencentcloudapi.com")
+
+          for d in domains_to_update:
+              print(f"\n🔧 Updating CDN HTTPS for domain: {d}")
+              updated = False
+
+              for region in regions:
+                  cdn_profile = ClientProfile(httpProfile=cdn_http)
+                  cdn = cdn_client.CdnClient(cred, region, cdn_profile)
+                  cdn_req = cdn_models.UpdateDomainConfigRequest()
+                  cdn_params = {
+                      "Domain": d,
+                      "Https": {
+                          "Switch": "on",
+                          "CertInfo": {"CertId": cert_id}
+                      }
+                  }
+                  cdn_req.from_json_string(json.dumps(cdn_params))
+
+                  print(f"🌏 Trying region: {region}")
+                  for attempt in range(3):
+                      try:
+                          resp = cdn.UpdateDomainConfig(cdn_req)
+                          print(f"✅ CDN HTTPS updated successfully for {d} in {region} (attempt {attempt+1})")
+                          updated = True
+                          break
+                      except Exception as e:
+                          err_msg = str(e)
+                          # 判断域名不存在
+                          if "DomainNotFound" in err_msg or "NoSuchDomain" in err_msg:
+                              print(f"⚠️ Domain {d} not found in CDN. Please check if it exists in CDN console.")
+                              updated = True  # 认为本域名无需继续尝试，跳出 Region 循环
+                              break
+                          print(f"⚠️ {d} attempt {attempt+1} in {region} failed: {err_msg}")
+                          time.sleep(10)
+                  if updated:
+                      break
+
+              if not updated:
+                  print(f"❌ Failed to update CDN HTTPS for domain: {d} in all regions")
+                  print("⚠️ Please verify CDN domain configuration manually!")
+
+      - name: Notify result
+        if: always()
+        run: |
+          if [ "${{ steps.renew.outputs.renewed }}" = "true" ]; then
+            echo "✅ SSL renewed and uploaded successfully."
+          else
+            echo "🔹 No renewal needed this cycle."
+          fi

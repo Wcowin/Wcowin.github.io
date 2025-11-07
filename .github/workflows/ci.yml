@@ -44,93 +44,34 @@
 #       - run: pip install --upgrade --force-reinstall mkdocs-material
 #       - run: mkdocs gh-deploy --force
 
-name: ci 
+# Zensical 官方推荐的 GitHub Pages 部署工作流
+# 文档: https://zensical.org/docs/publish-your-site/
+name: Documentation
 on:
   push:
     branches:
-      - master 
+      - master
       - main
-    # 避免因 AI 缓存提交触发无限循环
-    paths-ignore:
-      - '.ai_cache/**'
-  # 移除 pull_request 触发，减少不必要的构建
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    # 设置总体超时时间（15分钟，适合中等规模项目）
-    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
         with:
-          fetch-depth: 0
-          # 移除 sparse-checkout，确保所有文件都被检出
-      - uses: actions/setup-python@v5  # 更新到最新版本
+          python-version: 3.x
+      - run: pip install zensical
+      - run: zensical build --clean
+      - uses: actions/upload-pages-artifact@v4
         with:
-          python-version: '3.12'  # 使用 Python 3.12
-          cache: 'pip'  # 自动缓存 pip 依赖
-      
-      - uses: actions/cache@v4  # 缓存 MkDocs 构建文件
-        with:
-          key: mkdocs-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-          path: |
-            .cache
-            ~/.cache/pip
-          restore-keys: |
-            mkdocs-${{ runner.os }}-py3.12-
-            mkdocs-${{ runner.os }}-
-      
-      # 使用 requirements.txt 安装依赖（更高效）
-      - name: Install dependencies
-        timeout-minutes: 5  # 依赖安装通常2-3分钟足够
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      
-      # 预构建测试，快速失败（保留 AI 功能支持）
-      - name: Test build
-        timeout-minutes: 5  # AI 功能可能需要更多时间
-        env:
-          AI_SUMMARY_CI_ENABLED: 'false'  # 测试阶段禁用 AI 以加快速度
-        run: mkdocs build --strict
-      
-      - name: Deploy to GitHub Pages
-        timeout-minutes: 8  # 部署步骤，包含构建和推送
-        env:
-          # AI 摘要功能已禁用，如需启用请取消注释以下配置
-          AI_SUMMARY_CI_ENABLED: 'false'
-          # AI_SUMMARY_CI_ONLY_CACHE: 'true'        # 优先使用缓存，减少 API 调用
-          # AI_SUMMARY_CI_FALLBACK: 'true'          
-          # AI_SUMMARY_CACHE_ENABLED: 'true'        
-          # AI_SUMMARY_CACHE_EXPIRE_DAYS: '30'      
-          # AI_SUMMARY_CACHE_AUTO_CLEAN: 'true'     
-          # API 密钥配置（如启用 AI 功能需要配置）
-          # GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
-          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: mkdocs gh-deploy --force
-      
-      # 有条件的缓存提交（避免无限循环）- 已禁用 AI 摘要功能
-      # - name: Auto-commit AI cache (if any new files)
-      #   timeout-minutes: 5
-      #   # 只在有新缓存且不是由机器人提交触发时才执行
-      #   if: github.actor != 'github-actions[bot]'
-      #   run: |
-      #     if [ -d ".ai_cache" ] && [ "$(ls -A .ai_cache 2>/dev/null)" ]; then
-      #       git config --local user.email "action@github.com"
-      #       git config --local user.name "GitHub Action"
-      #       git add .ai_cache/
-      #       if ! git diff --cached --quiet; then
-      #         git commit -m "🤖 Auto-update AI summary cache [skip ci]"
-      #         # 使用 timeout 保护推送操作
-      #         timeout 300 git push || {
-      #           echo "⚠️ 缓存推送超时，跳过此步骤"
-      #           exit 0  # 不让整个工作流失败
-      #         }
-      #         echo "✅ 自动提交了新的 AI 缓存文件"
-      #       else
-      #         echo "ℹ️ 没有新的缓存文件需要提交"
-      #       fi
-      #     else
-      #       echo "ℹ️ 没有找到缓存目录或缓存为空"
-      #     fi
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
