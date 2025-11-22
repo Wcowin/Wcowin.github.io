@@ -45,7 +45,7 @@ tags:
 ```
 git config --global http.sslVerify false
 ```
-摘自知乎：[Homebrew国内如何自动安装（国内地址）（Mac & Linux）](https://zhuanlan.zhihu.com/p/111014448)
+摘自知乎： [Homebrew国内如何自动安装（国内地址）（Mac & Linux）](https://zhuanlan.zhihu.com/p/111014448)
 
 Gitee地址:<https://gitee.com/cunkai/HomebrewCN>
 

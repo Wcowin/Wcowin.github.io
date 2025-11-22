@@ -7,7 +7,7 @@ tags:
 
 # 2.Mkdocs配置说明(mkdocs.yml)
 
-官方文件：[Changing the colors - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
+官方文件： [Changing the colors - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 
 **建议详细学习一下上面的官方网站↑↑↑**
 

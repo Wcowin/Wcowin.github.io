@@ -19,11 +19,6 @@ repo_url = "https://github.com/Wcowin/Wcowin.github.io"  # 右上角点击跳转
 repo_name = "Wcowin.github.io"                           # 右上角的名字
 edit_uri = "edit/main/docs"                              # 编辑按钮跳转的链接
 
-# ===== 监听文件变动 =====
-# 注意：watch 和 hooks 是 MkDocs 特有配置，Zensical 可能不完全支持
-# 如果遇到问题，请注释掉这些配置
-# watch = ["docs", "docs/overrides"]
-
 # ===== Hooks 配置 =====
 # ⚠️ 重要：Zensical 目前不支持 MkDocs hooks
 # Zensical 正在开发模块系统来替代 hooks 和 plugins
@@ -209,7 +204,6 @@ nav = [
             { "唐·诺曼—情感设计的三个层次" = "develop/designbeauty/db1.md" },
             { "我对设计的一些观点" = "develop/designbeauty/my-to-desihn.md" }
         ]},
-        { "1024code" = "develop/1024code.md" },
         { "利用Lighthouse测试网站性能" = "develop/lighthouse.md" },
         { "What is Github" = "develop/Github.md" },
         { "如何将 github pages 迁移到 vercel 上托管" = "develop/vercel.md" },
@@ -329,6 +323,7 @@ nav = [
         { "25考研(已完结)" = "about/kaoyan.md" }
     ]},
     { "Mkdocs中文教程" = "https://wcowin.work/Mkdocs-Wcowin/" },
+    { "Zensical中文教程" = "https://wcowin.work/Zensical-Chinese-Tutorial/" },
     { "开往" = "https://www.travellings.cn/go.html" }
 ]
 
@@ -352,13 +347,14 @@ features = [
     "navigation.footer",          # 上一页/下一页导航
     "navigation.instant",      # 即时导航
     "navigation.instant.prefetch",  # 预加载
+    "navigation.path",            # URL路径导航
     "search.suggest",             # 搜索建议
     "search.highlight",           # 搜索结果高亮
     "search.share",               # 搜索结果分享
     "toc.follow",                 # 目录跟随滚动
     "navigation.expand",          # 默认展开导航
     "navigation.indexes",         # 章节索引页
-    # "content.tabs.link",          # 内容标签页链接
+    "content.tabs.link",          # 内容标签页链接
     "content.tooltips",           # 内容提示框
     "content.code.copy",          # 代码复制按钮
     "content.code.select",        # 代码选择功能
@@ -403,6 +399,7 @@ generator = true
 [project.extra.status]
 new = "最近添加"
 deprecated = "已弃用"
+
 
 # ===== 多语言切换配置 =====
 # 基于智谱清言翻译系统
@@ -456,7 +453,7 @@ link = "mailto:wangkewen821@gmail.com"  # 联系方式
 name = "Email"
 
 # ===== Google Analytics =====
-# 如果你 clone 了我的模板，请将 property 修改为你的
+# 如果你 clone 了我的模板，请将 property 修改为你的。求求了
 [project.extra.analytics]
 provider = "google"
 property = "G-29HZMNR0KG"  # Google Analytics 追踪 ID
@@ -499,25 +496,31 @@ pagination_url_format = "page/{page}"         # 分页URL格式
 # ===== 标签插件 =====
 [project.plugins.tags]
 
+# ===== 最小化插件 =====
+[project.plugins.minify]
+minify_html = true
+minify_css = true
+minify_js = true
+
 # ===== 文档日期插件 =====
 # 显示文档的创建和更新时间
-[project.plugins."document-dates"]
-position = "bottom"            # 显示位置：bottom (文档末尾) 或 top (标题后)
-type = "date"                  # 日期类型：date (日期) / datetime (日期时间) / timeago (相对时间)
-locale = "zh"                  # 本地化语言
-date_format = "%Y-%m-%d"       # 日期格式
-time_format = "%H:%M:%S"       # 时间格式
-show_author = true             # 显示作者信息
-exclude = [                    # 排除以下文件
-    "index.md",
-    "tag.md",
-    "waline.md",
-    "blog/posts/*",
-    "blog/index.md",
-    "link.md",
-    "blog/Mkdocs/linktech.md",
-    "about/*"
-]
+# [project.plugins."document-dates"]
+# position = "bottom"            # 显示位置：bottom (文档末尾) 或 top (标题后)
+# type = "date"                  # 日期类型：date (日期) / datetime (日期时间) / timeago (相对时间)
+# locale = "zh"                  # 本地化语言
+# date_format = "%Y-%m-%d"       # 日期格式
+# time_format = "%H:%M:%S"       # 时间格式
+# show_author = true             # 显示作者信息
+# exclude = [                    # 排除以下文件
+#     "index.md",
+#     "tag.md",
+#     "waline.md",
+#     "blog/posts/*",
+#     "blog/index.md",
+#     "link.md",
+#     "blog/Mkdocs/linktech.md",
+#     "about/*"
+# ]
 
 # ===== RSS 订阅插件 =====
 [project.plugins.rss]
@@ -559,7 +562,7 @@ permalink = true  # 固定标题位置为当前位置，显示 # 符号
 [project.markdown_extensions.pymdownx.arithmatex]
 generic = true
 [project.markdown_extensions.pymdownx.betterem]
-smart_enable = "all"
+smart_enable = false
 [project.markdown_extensions.pymdownx.caret]
 [project.markdown_extensions.pymdownx.details]
 [project.markdown_extensions.pymdownx.emoji]

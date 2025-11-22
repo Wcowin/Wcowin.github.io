@@ -135,7 +135,7 @@ status: new
 
 ### 1. 引入翻译库
 
-首先在页脚或头部模板(例如：[docs/overrides/partials/footer.html](https://github.com/squidfunk/mkdocs-material/blob/master/material/templates/partials/footer.html))中引入 `translate.js` 库：
+首先在页脚或头部模板(例如： [docs/overrides/partials/footer.html](https://github.com/squidfunk/mkdocs-material/blob/master/material/templates/partials/footer.html))中引入 `translate.js` 库：
 
 ```html
 <!-- 引入翻译库 -->

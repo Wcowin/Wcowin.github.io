@@ -9,6 +9,7 @@ hide:
 tags:
 comments: false  #评论，默认不开启
 ---
+pip install --upgrade --force-reinstall zensical
 
 ## 常用环境与命令
 

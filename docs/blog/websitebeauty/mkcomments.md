@@ -6,7 +6,7 @@ tags:
 ---
 
 # 添加评论系统(giscus为例)
-官方文档：[Adding a comment system](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)
+官方文档： [Adding a comment system](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)
 
 这里我同样推荐[giscus](https://giscus.app/zh-CN)
 

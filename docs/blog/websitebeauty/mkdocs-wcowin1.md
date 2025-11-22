@@ -27,7 +27,7 @@ comments: false  #评论，默认不开启
 
 ## 展示
 
-> 感受一下它的简洁美观：[Wcowin for MkDocs主题](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”}
+> 感受一下它的简洁美观： [Wcowin for MkDocs主题](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”}
 
 
 
@@ -67,7 +67,7 @@ comments: false  #评论，默认不开启
 
 ![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png){ loading=lazy }
 
-详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](../Mkdocs/mkdocs1.md)
+详细的初步教程见： [利用Mkdocs部署静态网页至GitHubpages](../Mkdocs/mkdocs1.md)
 
 ## 联系我
 

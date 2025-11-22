@@ -16,7 +16,7 @@ status: new
 
     文档里主要讲了大模型的基本概念、发展历程，国内外主要大模型，以及大模型的应用和实践。非常适合不了解的朋友对大模型有一个概括性、完整的理解。
 
-    链接：https://pan.quark.cn/s/4691006cb600
+    链接： https://pan.quark.cn/s/4691006cb600
 
 <div class="grid cards" markdown>
 

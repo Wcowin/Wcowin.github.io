@@ -7,9 +7,9 @@
 
 
 /* 悬停时显示下划线（可选，提供视觉反馈） */
-.md-typeset a:hover {
+/* .md-typeset a:hover {
   text-decoration: underline;
-}
+} */
 
 /* 卡片圆角与悬浮阴影 */
 .md-typeset .grid.cards > ul > li,

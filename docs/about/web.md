@@ -16,7 +16,7 @@ tags:
 ???+Note "Tip"
     Mkdocs material主题 :[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}
     Mkdocs-Wcowin主题: [Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/)
-    详细文档：[MkDocs](https://www.mkdocs.org/getting-started/){target=“_blank”}
+    详细文档： [MkDocs](https://www.mkdocs.org/getting-started/){target=“_blank”}
 
 ## 我在CSDN上写的Mkdocs教程
 
@@ -27,7 +27,7 @@ tags:
 
 ***
 
-建议下载Github Desktop然后克隆到本地仓库，这样以后pull和push的同步也会方便（个人见解：可能需要科学上网不然速度很慢） 操作详见：[这个视频](https://www.bilibili.com/video/BV194411s7Bq/?spm_id_from=333.880.my_history.page.click&vd_source=4c6908c51297ba49ec55863b71e0d24f)
+建议下载Github Desktop然后克隆到本地仓库，这样以后pull和push的同步也会方便（个人见解：可能需要科学上网不然速度很慢） 操作详见： [这个视频](https://www.bilibili.com/video/BV194411s7Bq/?spm_id_from=333.880.my_history.page.click&vd_source=4c6908c51297ba49ec55863b71e0d24f)
 
 也可以学习一下git：<https://www.runoob.com/git/git-tutorial.html>{target=“_blank”}
 ***

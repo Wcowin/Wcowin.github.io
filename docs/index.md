@@ -13,11 +13,10 @@ hide:
 <!-- OneClip 公告栏 -->
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
-    🎉 <a href="https://oneclip.cloud/" target="_blank">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">了解更多 →</a>
+    🎉 <a href="https://oneclip.cloud/" target="_blank">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">了解更多 →</a><br>
+    ☺️ <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新zensical中文教程   
   </div>
 </div>
-
-
 
 <!-- 在头部添加预加载关键资源 -->
 <link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
@@ -75,7 +74,7 @@ hide:
   align-items: center;
   justify-content: center;
   gap: 64px;
-  margin: 48px 0 32px 0;
+  margin: 20px 0 16px 0;
   flex-wrap: wrap;
   min-height: 320px;
 }
@@ -365,7 +364,7 @@ hide:
   display: none;
   text-align: center;
   padding: 15px 0;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .mobile-motto h1 {

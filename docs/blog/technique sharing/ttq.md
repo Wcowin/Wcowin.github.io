@@ -83,6 +83,6 @@ int main() {
 `./math`
 
 ​
-感兴趣的可以去研究背后的数学知识，地址：[donut.c without a math library](https://www.a1k0n.net/2021/01/13/optimizing-donut.html)
+感兴趣的可以去研究背后的数学知识，地址： [donut.c without a math library](https://www.a1k0n.net/2021/01/13/optimizing-donut.html)
 
 ​

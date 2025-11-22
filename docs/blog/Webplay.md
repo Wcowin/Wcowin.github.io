@@ -10,7 +10,7 @@ tags:
 
 ## **工具类:material-tools:**
 
-* [万物指南](https://zh.wikihow.com/首页){target="_blank"}  （互联网上最值得信赖的指南网站）
+- [万物指南](https://zh.wikihow.com/首页){target="_blank"}  （互联网上最值得信赖的指南网站）
 - [ChatGPT](https://chat.openai.com/chat){target="_blank"}
 - [空投快传](https://airportal.cn/){target="_blank"}   （超级好用的全平台文件隔空投送）
 - [Snapdrip](https://snapdrop.net/){target="_blank"} （在线传文件）
@@ -97,6 +97,7 @@ tags:
 - [1024code](https://1024code.com/){target="_blank"}
 - [必看网](https://www.biikan.com/){target="_blank"}（人生必看的书籍）
 - [男孩子武器训练手册](https://jiba.plus/){target="_blank"}(女生勿看)
+
 ## **观影:material-movie-open:**
 
 - [茶杯狐](https://cupfox.app/){target="_blank"} （资源多，广告少）
@@ -121,8 +122,10 @@ tags:
 - [知乎搬运工](https://www.sxctp.org/){target="_blank"}
 
 ## **音乐:material-music:**
+
 - [Listen 1](https://listen1.github.io/listen1/){target="_blank"}(Listen 1可以搜索和播放来自网易云音乐，QQ音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲)
 - [落雪音乐](https://lxmusic.toside.cn/){target="_blank"}
+
 ## **博客/导航:simple-blogger:**
 
 - [Wcowin的个人网站](https://wcowin.github.io/mymkdocs/){target="_blank"}  （分享点有趣的技术）
@@ -158,12 +161,13 @@ tags:
 - [Hexo](https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85-Hexo){target="_blank"}
 - [Git](https://git-scm.com/){target="_blank"}
 - [Node](https://nodejs.org/en/){target="_blank"}
-- [YAMl](http://www.ruanyifeng.com/blog/2016/07/yaml.html){target="_blank"}
+- [YAML](http://www.ruanyifeng.com/blog/2016/07/yaml.html){target="_blank"}
 - [Emmet语法](https://docs.emmet.io/cheat-sheet/){target="_blank"}
 - [在线接口测试](https://getman.cn/){target="_blank"}
 - [Docker教程](https://docker.easydoc.net/doc/81170005/cCewZWoN/lTKfePfP){target="_blank"}
 - [Unity](https://unity.cn/){target="_blank"}
-- [软仓](https://ruancang.net/#/sim?page=0&id=0&q=){target=“_blank”}
+- [软仓](https://ruancang.net/#/sim?page=0&id=0&q=){target="_blank"}
+
 ## **设计:material-material-design:**
 
 - [Fotor](https://www.fotor.com/cn/){target="_blank"}(简单好用的在线图片编辑软件)

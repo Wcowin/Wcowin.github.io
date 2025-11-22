@@ -51,17 +51,20 @@ img.img1, img.img2, img.img3 {
 
 /* 心跳动画优化 */
 @keyframes heart {
-  0%, 40%, 80%, 100% { transform: scale(1); }
-  20%, 60% { transform: scale(1.15); }
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
 }
-
 .heart {
   animation: heart 1000ms infinite;
-  will-change: transform; /* 提示浏览器将有变换 */
-  transform: translateZ(0); /* 强制GPU加速 */
 }
 
-
+.md-social__link svg {
+  max-height: 1rem;
+}
 /* .md-typeset .admonition,
 .md-typeset details {
   border-width: 0;
@@ -69,17 +72,16 @@ img.img1, img.img2, img.img3 {
 } */
 
 /* 自定义提示框图标 */
-:root {
+/* :root {
   --md-admonition-icon--pied-piper: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
-  --md-admonition-icon--pied-piper1: var(--md-admonition-icon--pied-piper); /* 复用相同的图标 */
+  --md-admonition-icon--pied-piper1: var(--md-admonition-icon--pied-piper); 
 }
 
-/* 提示框样式 - pied-piper */
 .md-typeset .admonition.pied-piper,
 .md-typeset details.pied-piper {
   border-color: rgb(43, 155, 70);
   font-size: large;
-  contain: content; /* 包含内容重绘 */
+  contain: content; 
 }
 
 .md-typeset .pied-piper>.admonition-title,
@@ -94,18 +96,16 @@ img.img1, img.img2, img.img3 {
   mask-image: var(--md-admonition-icon--pied-piper);
 }
 
-/* 提示框样式 - pied-piper1 */
 .md-typeset .admonition.pied-piper1,
 .md-typeset details.pied-piper1 {
   font-size: large;
   width: 100%;
-  border-radius: 25px; /* 简化边框半径设置 */
-  contain: content; /* 包含内容重绘 */
+  border-radius: 25px; 
+  contain: content; 
 }
 
 .md-typeset .pied-piper1>.admonition-title,
 .md-typeset .pied-piper1>summary {
-  /* background-color: rgba(238, 243, 254, 1); 修复线性渐变为单色 */
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   height: 45px;
@@ -116,7 +116,7 @@ img.img1, img.img2, img.img3 {
   background-color: rgb(31, 31, 33);
   -webkit-mask-image: var(--md-admonition-icon--pied-piper1);
   mask-image: var(--md-admonition-icon--pied-piper1);
-}
+} */
 
 /* 调整提示框字体大小 */
 /* .md-typeset .admonition,
@@ -465,8 +465,8 @@ div.hide {
   padding: 0.8rem;
   transition: border 0.25s, box-shadow 0.25s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  contain: content; /* 包含内容重绘 */
-  will-change: box-shadow, border; /* 提示浏览器将有变化 */
+  contain: content; 
+  will-change: box-shadow, border;
 }
 
 /* 打赏容器 */

@@ -3,7 +3,7 @@ title: 唐·诺曼—情感设计的三个层次
 tags:
   - 设计美学
 ---
-原文：[Norman's Three Levels of Design](https://www.interaction-design.org/literature/article/norman-s-three-levels-of-design)
+原文： [Norman's Three Levels of Design](https://www.interaction-design.org/literature/article/norman-s-three-levels-of-design)
 ![](https://pic2.zhimg.com/80/v2-775977de1d9ccd4ff61344ccc523b5b1_1440w.jpg)
 # 唐·诺曼—情感设计的三个层次
 

@@ -82,7 +82,7 @@ ai_summary: false  # 禁用AI摘要
 
 ## </p><h1 id="01" name="01"><strong>2024-05-15</strong></h1><p>
 * 优化网站流畅度（玄学）
-* 全站引入自动在新标签页打开，仓库地址：[mkdocs-open-in-new-tab](https://newtab.kubaandrysek.cz/)
+* 全站引入自动在新标签页打开，仓库地址： [mkdocs-open-in-new-tab](https://newtab.kubaandrysek.cz/)
 <details><summary>Show source code</summary>
 <p>
 
