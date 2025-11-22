@@ -88,6 +88,17 @@ hide:
      </div>
     </div>
     <div class="card">
+      <img class="ava" loading="lazy" src="https://www.80tz.cn/view/img/logo.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.80tz.cn" target="_blank">滨州论坛</a>
+        </div>
+        <div class="info">
+          同城系统，合作共赢。
+        </div>
+      </div>
+    </div>
+    <div class="card">
      <img class="ava" loading="lazy" src="https://s2.loli.net/2025/06/16/qdWCDgjEpy4Airl.png" />
      <div class="card-header">
       <div>
@@ -1058,17 +1069,6 @@ hide:
       Learn, Build, Share
       </div>
     </div>
-    </div>
-    <div class="card">
-      <img class="ava" loading="lazy" src="https://www.80tz.cn/view/img/logo.png" />
-      <div class="card-header">
-        <div>
-          <a href="https://www.80tz.cn" target="_blank">同城便民</a>
-        </div>
-        <div class="info">
-          同城系统，合作共赢。
-        </div>
-      </div>
     </div>
     <div class="card">
       <img class="ava" loading="lazy" src="https://collaigo.com/collagelogo.ico" />
