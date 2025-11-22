@@ -207,17 +207,19 @@ class SiteEnhancer {
       window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
-          // 重新计算响应式布局
-          const container = document.querySelector('.container');
-          const boxes = document.querySelectorAll('p');
+          // 更新移动设备状态
+          this.isMobile = window.innerWidth <= 768;
           
-          if (container && boxes.length > 0) {
-            const newWidth = container.offsetWidth;
-            requestAnimationFrame(() => {
-              boxes.forEach(box => {
-                if (box && box.style) box.style.width = `${newWidth}px`;
-              });
-            });
+          // 重新应用响应式设置
+          const video = document.getElementById('video1');
+          if (video) {
+            if (this.isMobile) {
+              video.style.display = 'none';
+              video.muted = true;
+            } else {
+              video.style.display = '';
+              video.volume = 0.5;
+            }
           }
         }, 250);
       });
@@ -225,49 +227,60 @@ class SiteEnhancer {
   }
 }
 
-// 初始化
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => new SiteEnhancer());
-} else {
-  new SiteEnhancer();
+// 提示框控制功能
+function setupTipsBox() {
+  const tipBox = document.querySelector('.mobile-tips-box');
+  
+  if (!tipBox) return;
+  
+  // 检查用户是否已经关闭过提示
+  if (localStorage.getItem('tipsClosed') === 'true') {
+    tipBox.style.display = 'none';
+    return;
+  }
+  
+  // 检查是否为移动设备
+  const isMobile = window.innerWidth <= 768;
+  
+  // 只在移动设备上显示提示框
+  if (!isMobile) {
+    tipBox.style.display = 'none';
+    return;
+  }
+  
+  // 添加过渡效果
+  tipBox.style.transition = 'opacity 0.5s ease';
+  
+  // 显示5秒后自动隐藏
+  setTimeout(() => {
+    tipBox.style.opacity = '0';
+    setTimeout(() => {
+      tipBox.style.display = 'none';
+    }, 500);
+  }, 5000);
+  
+  // 添加关闭按钮功能
+  const closeBtn = tipBox.querySelector('.close-btn');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      tipBox.style.opacity = '0';
+      setTimeout(() => {
+        tipBox.style.display = 'none';
+      }, 500);
+      
+      // 存储用户已关闭提示的状态
+      localStorage.setItem('tipsClosed', 'true');
+    });
+  }
 }
 
-// 添加提示框控制逻辑
-document.addEventListener('DOMContentLoaded', function() {
-  // 获取提示框元素
-  const tipBox = document.querySelector('.mobile-tips-box'); // 替换为实际的选择器
-  
-  if (tipBox) {
-    // 检查是否为移动设备
-    const isMobile = window.innerWidth <= 768;
-    
-    // 只在移动设备上显示提示框
-    if (!isMobile) {
-      tipBox.style.display = 'none';
-    } else {
-      // 显示5秒后自动隐藏
-      setTimeout(() => {
-        tipBox.style.opacity = '0';
-        setTimeout(() => {
-          tipBox.style.display = 'none';
-        }, 500);
-      }, 5000);
-      
-      // 添加关闭按钮功能
-      const closeBtn = tipBox.querySelector('.close-btn');
-      if (closeBtn) {
-        closeBtn.addEventListener('click', function() {
-          tipBox.style.display = 'none';
-          
-          // 可选：存储用户已关闭提示的状态
-          localStorage.setItem('tipsClosed', 'true');
-        });
-      }
-    }
-    
-    // 检查用户是否已经关闭过提示
-    if (localStorage.getItem('tipsClosed') === 'true') {
-      tipBox.style.display = 'none';
-    }
-  }
-});
+// 初始化所有功能
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    new SiteEnhancer();
+    setupTipsBox();
+  });
+} else {
+  new SiteEnhancer();
+  setupTipsBox();
+}

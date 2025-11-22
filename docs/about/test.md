@@ -347,16 +347,16 @@ $$
 
 ![](https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg#only-dark)
 
-``` mermaid
+<pre class="mermaid">
 graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
+  A[Start] --> B{Error?}
+  B -->|Yes| C[Hmm...]
+  C --> D[Debug]
+  D --> B
+  B -->|No| E[Yay!]
+</pre>
 
-``` mermaid
+<pre class="mermaid">
 sequenceDiagram
   Alice->>John: Hello John, how are you?
   loop Healthcheck
@@ -366,14 +366,13 @@ sequenceDiagram
   John-->>Alice: Great!
   John->>Bob: How about you?
   Bob-->>John: Jolly good!
-```
+</pre>
 
-
-!!! pied-piper "Pied Piper"
+<!-- !!! pied-piper "Pied Piper"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
     euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-    purus auctor massa, nec semper lorem quam in massa.
+    purus auctor massa, nec semper lorem quam in massa. -->
 
 ++ctrl+alt+del++
 
@@ -418,16 +417,12 @@ Wcowin
 ```
 
 
-
-  <body>
-    <pre class="mermaid">
+<pre class="mermaid">
   graph LR
       A --- B
       B-->C[fa:fa-ban forbidden]
       B-->D(fa:fa-spinner);
-    </pre>
-
-  </body>
+</pre>
 
 
 来看看两个重要极限

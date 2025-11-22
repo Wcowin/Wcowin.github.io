@@ -1,12 +1,38 @@
 :root>* {
   --md-primary-fg-color: #518FC1;
   --md-primary-fg-color--light: #518FC1;
-  --md-primary-fg-color--dark: #518FC1;
+  /* --md-primary-fg-color--dark: #518FC1; */
 }
 
 /* 移除链接下划线 */
 .md-typeset a {
   text-decoration: none;
+}
+
+/* 标记和删除线样式 */
+.md-typeset del {
+  color: rgba(81, 143, 193, 0.6);
+  text-decoration: line-through;
+  text-decoration-color: rgba(81, 143, 193, 0.5);
+}
+
+.md-typeset ins {
+  color: #518FC1;
+  background: rgba(81, 143, 193, 0.08);
+  text-decoration: none;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .md-typeset del {
+  color: rgba(110, 203, 255, 0.6);
+  text-decoration-color: rgba(110, 203, 255, 0.5);
+}
+
+[data-md-color-scheme="slate"] .md-typeset ins {
+  color: #6ecbff;
+  background: rgba(110, 203, 255, 0.08);
 }
 
 
@@ -91,6 +117,14 @@ img.twitter { color: #1DA1F2; }
   -webkit-mask-image: var(--md-admonition-icon--pied-piper1);
   mask-image: var(--md-admonition-icon--pied-piper1);
 }
+
+/* 调整提示框字体大小 */
+/* .md-typeset .admonition,
+.md-typeset details {
+  font-size: 17px;
+} */
+
+
 
 
 /* 滚动条 */

@@ -47,20 +47,29 @@ extra_javascript = [
     "javascripts/glm-config.js",                              # 智谱清言翻译配置
     "javascripts/glm-translate.js",                           # 智谱清言翻译系统
     # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
-    "javascripts/extra.js",                                   # 额外功能脚本
-    "javascripts/mathjax.js",                                 # MathJax 配置
-    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"       # MathJax CDN (数学公式渲染)
+    # "javascripts/extra.js",                                   # 额外功能脚本
+    # "javascripts/mathjax.js",                                 # MathJax 配置
+    # "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"       # MathJax CDN (数学公式渲染)
+    # KaTeX 数学公式渲染（注意加载顺序）
+    "https://unpkg.com/katex@0/dist/katex.min.js",            # 1. 先加载 KaTeX 核心库
+    "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",  # 2. 再加载自动渲染插件
+    "javascripts/katex.js"                                     # 3. 最后加载配置文件
 ]
 
 # ===== 额外的 CSS 文件 =====
 extra_css = [
     "stylesheets/extra.css",         # 额外样式
     "stylesheets/extra2.css",        # 额外样式2
-    "stylesheets/link.css",          # 友链样式
-    "stylesheets/poem.css",          # 诗词样式
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra2.css", # 额外样式2CDN
+    # "stylesheets/link.css",          # 友链样式
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css", #友链CDN
+    # "stylesheets/poem.css",          # 诗词样式
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css", # 诗词样式CDN
     # "stylesheets/customize.css",     # 按钮圆角化等自定义样式
     "stylesheets/ziti.css",          # 字体样式
-    "about/sty/portfolio.css"        # 作品集样式
+    # "about/sty/portfolio.css"        # 作品集样式
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
+    "https://unpkg.com/katex@0/dist/katex.min.css"
 ]
 
 # ===== 导航配置 [Navigation] =====
@@ -534,65 +543,34 @@ utm_medium = "feed"            # UTM 媒介标记
 # ==========================================
 # Markdown 扩展配置 [Markdown Extensions]
 # ==========================================
-[project.markdown_extensions]
-abbr = {}           # 支持缩写
-attr_list = {}      # 支持属性列表
-admonition = {}     # 支持警告框
-def_list = {}       # 支持定义列表
-footnotes = {}      # 支持脚注
-md_in_html = {}     # 支持在 HTML 中使用 Markdown
-tables = {}         # 支持表格
 
-# ===== 基础扩展 =====
-# 注意：abbr 已在上面配置过，这里不需要重复配置
-# [project.markdown_extensions."markdown.extensions.abbr"]
-
-# ===== PyMdown 扩展 =====
-[project.markdown_extensions."pymdownx.magiclink"]        # 自动转换链接
-[project.markdown_extensions."pymdownx.blocks.caption"]   # 图片说明
-[project.markdown_extensions."pymdownx.caret"]            # 插入符号 (^text^)
-[project.markdown_extensions."pymdownx.betterem"]         # 更好的斜体/粗体
-smart_enable = "all"  # Zensical 推荐配置
-[project.markdown_extensions."pymdownx.critic"]           # 批评标记
-[project.markdown_extensions."pymdownx.details"]          # 可折叠详情
-[project.markdown_extensions."pymdownx.inlinehilite"]     # 行内代码高亮
-[project.markdown_extensions."pymdownx.keys"]             # 键盘按键 (++ctrl+alt+del++)
-[project.markdown_extensions."pymdownx.mark"]             # 标记文本 (==text==)
-[project.markdown_extensions."pymdownx.snippets"]         # 代码片段
-[project.markdown_extensions."pymdownx.smartsymbols"]     # 智能符号
-[project.markdown_extensions."pymdownx.tilde"]            # 删除线 (~~text~~)
-
-# ===== SuperFences 配置 =====
-# 支持代码块和 Mermaid 图表
-[project.markdown_extensions."pymdownx.superfences"]
-custom_fences = [
-    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
-]
-
-# ===== 数学公式支持 =====
-[project.markdown_extensions."pymdownx.arithmatex"]
-generic = true  # 使用 MathJax 渲染数学公式
-
-# ===== 目录配置 =====
+# ===== 官方默认配置（严格按照 Zensical 官方文档）=====
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
 [project.markdown_extensions.toc]
+toc_depth = 3
 permalink = true  # 固定标题位置为当前位置，显示 # 符号
-
-# ===== 代码高亮配置 =====
-[project.markdown_extensions."pymdownx.highlight"]
-anchor_linenums = true  # 行号锚点
-linenums = true         # 显示行号
-auto_title = true       # 自动显示编程语言名称
-
-# ===== Emoji 表情支持 =====
-# 注意：必须使用 zensical 命名空间而非 material，以支持图标内联功能
-[project.markdown_extensions."pymdownx.emoji"]
-emoji_index = "zensical.extensions.emoji.twemoji"      # 使用 Twemoji (zensical 命名空间)
-emoji_generator = "zensical.extensions.emoji.to_svg"   # 转换为 SVG (zensical 命名空间)
-
-# ===== 标签页配置 =====
-[project.markdown_extensions."pymdownx.tabbed"]
-alternate_style = true  # 使用替代样式
-
-# ===== 任务列表配置 =====
-[project.markdown_extensions."pymdownx.tasklist"]
-custom_checkbox = true  # 自定义复选框样式
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+[project.markdown_extensions.pymdownx.betterem]
+smart_enable = "all"
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+[project.markdown_extensions.pymdownx.highlight]
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.superfences]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+[project.markdown_extensions.pymdownx.tilde]

@@ -13,10 +13,7 @@ hide:
 <!-- OneClip 公告栏 -->
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
-    🎉 <strong>新产品限免！</strong>
-    <a href="https://oneclip.cloud/" target="_blank">OneClip</a>
-    - 专为 macOS 打造的剪贴板管理工具，让你的工作效率翻倍！
-    <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">立即体验 →</a>
+    🎉 <a href="https://oneclip.cloud/" target="_blank">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">了解更多 →</a>
   </div>
 </div>
 
@@ -44,8 +41,14 @@ hide:
     </div>
     <!-- <div class="wcowin-header-motto">Free and diffuse</div> -->
     <div class="wcowin-header-btns">
-      <a href="https://github.com/Wcowin" target="_blank" class="wcowin-header-btn">Github</a>
-      <a href="mailto:wcowin@qq.com" class="wcowin-header-btn">Contact me</a>
+      <a href="https://github.com/Wcowin" target="_blank" class="md-button">
+        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></span>
+        Github
+      </a>
+      <a href="mailto:wcowin@qq.com" class="md-button">
+        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+        Contact me
+      </a>
     </div>
   </div>
   <!-- 右侧：头像及光辉 -->
@@ -184,54 +187,6 @@ hide:
   margin-top: 8px;
 }
 
-.wcowin-header-btn {
-  display: inline-block;
-  padding: 7px 22px;
-  font-size: 1.08rem;
-  font-weight: 500;
-  color: #3a8dde;
-  background: #f5faff;
-  border: 1.5px solid #b6eaff;
-  border-radius: 24px;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s, border 0.2s;
-  box-shadow: 0 2px 8px rgba(106, 203, 255, 0.07);
-}
-.wcowin-header-btn:hover {
-  background: #e6f4ff;
-  color: #222;
-  border-color: #3a8dde;
-}
-
-/* 夜间模式按钮样式 */
-@media (prefers-color-scheme: dark) {
-  .wcowin-header-btn {
-    color: #6ecbff;
-    background: rgba(30, 41, 59, 0.8);
-    border-color: rgba(110, 203, 255, 0.4);
-    box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
-  }
-
-  .wcowin-header-btn:hover {
-    background: rgba(110, 203, 255, 0.15);
-    color: #ffffff;
-    border-color: #6ecbff;
-  }
-}
-
-/* 为使用 data-md-color-scheme 的主题添加支持 */
-[data-md-color-scheme="slate"] .wcowin-header-btn {
-  color: #6ecbff;
-  background: rgba(30, 41, 59, 0.8);
-  border-color: rgba(110, 203, 255, 0.4);
-  box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
-}
-
-[data-md-color-scheme="slate"] .wcowin-header-btn:hover {
-  background: rgba(110, 203, 255, 0.15);
-  color: #ffffff;
-  border-color: #6ecbff;
-}
 
 /* ====== 右侧头像区 ====== */
 .wcowin-header-avatar {
@@ -583,9 +538,9 @@ hr {
     ---
     ![image](https://pic1.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp?source=2c26e567){ class="responsive-image" loading="lazy" align=right width="340" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
 
-    - [x] 通过{==目录==}以打开文章
-    - [x] 搜索{~~~>关键词~~}查询文章
-    - [x] 如遇页面卡顿，请使用[{--科学上网--}](blog/technique%20sharing/kexue.md)
+    - [x] 通过<mark>目录</mark>以打开文章
+    - [x] 搜索<ins>关键词</ins>查询文章
+    - [x] 如遇页面卡顿，请使用<del>[科学上网](blog/technique%20sharing/kexue.md)</del>
     - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
 
     === "Mac/PC端"

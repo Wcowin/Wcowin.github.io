@@ -355,7 +355,7 @@ hide_comment: true
 
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-<!-- <link rel="stylesheet" href="sty/portfolio.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
 
 <div class="qualification__tabs">
     <div class="qualification__button qualification__active" data-target='#education'>
@@ -422,19 +422,23 @@ hide_comment: true
     </div>
 </div>
 
-<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
+<HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" />
 
 
 
 ## 个人简介
 
-!!! pied-piper1 "About me"
-    - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
+!!! quote "About me"
+    <div style="font-size: 1.3em;">
+    
+    - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target="_blank"}~
     - [x] 咖啡重度爱好者
     - [x] 热爱(xiā)折腾技术/Math，闲暇之余致力于Mkdocs主题开发
     - [ ] 目前的研究领域是[密码学](../blog/Cryptography/index.md)
     - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒知趣，明得失，知进退
+
+    </div>
 
 ## 人生态度
 
@@ -569,11 +573,13 @@ hide_comment: true
 
 ## 须知
 
-如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角**微信添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。
+如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角 **微信添加好友**，请写上您的 **真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会 **直接忽略**，谢谢。
 
 
 !!! note "与我联系"
+    <div style="font-size: 1.2em;">
     如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
+    </div>
 
     ---
     <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}</center>

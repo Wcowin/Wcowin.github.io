@@ -37,7 +37,7 @@ ai_summary: false  # 禁用AI摘要
 
 [Send Email :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){ .md-button }
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a><br />本博客所有原创文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">知识共享署名 4.0 国际许可协议</a>进行许可。
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"></a><br />本博客所有原创文章采用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">知识共享署名 4.0 国际许可协议</a>进行许可。
 
 
 ---
