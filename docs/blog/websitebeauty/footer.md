@@ -20,7 +20,6 @@ MkDocs 支持自定义页脚。
 
 在docs/overrides/partials/footer.html中（没有该文件时，创建footer.html文件）添加以下代码：
 
-{% raw %}
 ```html hl_lines="71-86"
 <!-- Footer -->
 <footer class="md-footer">
@@ -117,7 +116,6 @@ MkDocs 支持自定义页脚。
 
 
 ```
-{% endraw %}
 
 高亮部分自行修改即可
 
