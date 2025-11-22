@@ -267,16 +267,17 @@ hide_comment: true
     </div>
 </div>
 
+
+<!--  
 <center>
-<!-- 推荐按钮HTML结构 -->
 <a href="/assets/个人简历.pdf" class="wcowin-header-btn">
 <iconify-icon icon="material-symbols:download" style="margin-right: 12px; font-size: 1.125em; vertical-align: middle;"></iconify-icon>下载简历
 </a>
 
 <style>
 .wcowin-header-btn {
-  display: inline-flex;           /* 关键：用flex让内容居中 */
-  align-items: center;            /* 关键：垂直居中 */
+  display: inline-flex;           
+  align-items: center;            
   padding: 7px 22px;
   font-size: 1.125rem;
   font-weight: 500;
@@ -300,8 +301,6 @@ hide_comment: true
   color: #222;
   border-color: #d5ecfdff;
 }
-
-/* 夜间模式按钮样式 */
 @media (prefers-color-scheme: dark) {
   .wcowin-header-btn {
     color: #6ecbff;
@@ -316,7 +315,6 @@ hide_comment: true
   }
 }
 
-/* MkDocs Material slate 主题适配 */
 [data-md-color-scheme="slate"] .wcowin-header-btn {
   color: #6ecbff;
   background: rgba(30, 41, 59, 0.8);
@@ -330,9 +328,10 @@ hide_comment: true
 }
 </style>
 </center>
+-->
 
-
-
+[:material-download: 下载简历](../assets/个人简历.pdf){ .md-button}
+{: style="text-align: center;" }
 
 
 <!-- <a href="/assets/个人简历.pdf" target="_blank" class="md-button">下载简历</a> -->

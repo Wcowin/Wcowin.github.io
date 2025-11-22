@@ -5,8 +5,7 @@ hide:
 #   - toc #显示左
   - footer
   - feedback
-comments: false
-hide_comment: true
+# comments: true
 ---
 
 

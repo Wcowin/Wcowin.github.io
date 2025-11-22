@@ -37,11 +37,11 @@
     including divider line, margin, padding, and the hiding of this plugin, etc
     */
 /* Remove the divider line: */
-/* 
+
 .document-dates-plugin-wrapper.document-dates-top,
 .document-dates-plugin-wrapper.document-dates-bottom {
     border-bottom: none;
-} */
+}
 
 /* Hide this plugin (default build version):
     and then you can reformulate the plugin's arbitrary display position and style based on template variables */

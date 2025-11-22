@@ -7,15 +7,15 @@ hide:
 #   - toc #显示左
   - footer
   - feedback
-comments: true
+# comments: true
 ---
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css"> -->
 
 # 欢迎加入友链(不分先后)
 
-- [x] [快速加入友链](#_4)
-- [x] **非常定期**检查友链有效性
+- [x] [快速加入友链](#_4)  
+- [x] **非常定期** 检查友链有效性
 
 <div id="rcorners4" >
 
@@ -1017,7 +1017,7 @@ comments: true
       </div>
     </div>
     <div class="card">
-      <img class="ava" src="https://www.eilo.uk/img/logo.png" />
+      <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
       <div class="card-header">
         <div>
           <a href="https://www.eilo.uk/" target="_blank">Eilo's Blog</a>
@@ -1039,7 +1039,7 @@ comments: true
       </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://maxlhy0424.github.io/web/avatar.png" />
+    <img class="ava" src="https://maxlhy0424.github.io/web/avatar.webp" />
     <div class="card-header">
       <div>
       <a href="https://MaxLHy0424.github.io" target="_blank">MaxLHy0424</a>
@@ -1061,7 +1061,7 @@ comments: true
     </div>
     </div>
     <div class="card">
-      <img class="ava" src="https://www.80tz.cn/avatar.jpg" />
+      <img class="ava" src="https://www.80tz.cn/view/img/logo.png" />
       <div class="card-header">
         <div>
           <a href="https://www.80tz.cn" target="_blank">同城便民</a>
@@ -1071,7 +1071,18 @@ comments: true
         </div>
       </div>
     </div>
-
+    <div class="card">
+      <img class="ava" src="https://collaigo.com/collagelogo.ico" />
+      <div class="card-header">
+        <div>
+          <a href="https://collaigo.com" target="_blank">Collaigo</a>
+        </div>
+        <div class="info">
+          好用的免费在线拼图工具
+        </div>
+      </div>
+    </div>
+    
 
 
    </div>
@@ -1625,7 +1636,7 @@ window.friendLinkUtils = {
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>
 
-<!-- <head>
+<head>
 <script src="https://giscus.app/client.js"
 data-repo="Wcowin/hexo-site-comments"
 data-repo-id="R_kgDOIl9OJA"
@@ -1642,4 +1653,4 @@ data-loading="lazy"
 crossorigin="anonymous"
 async>
 </script>
-</head> -->
+</head>

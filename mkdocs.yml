@@ -49,6 +49,7 @@ theme:
     # - navigation.tabs.sticky  # Tab栏吸顶
     - navigation.sections # 侧边栏分组
     - navigation.top # 返回顶部按钮
+    - navigation.path
     - navigation.footer # 页脚显示在侧边栏
     - search.suggest # 搜索建议
     - search.highlight # 搜索高亮
@@ -419,6 +420,7 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
+  - optimize
   # - ai-summary:
   #     ai_service: "glm"  # or "openai", "gemini", "glm"
   #     fallback_services:               # 备用服务（按优先级顺序）

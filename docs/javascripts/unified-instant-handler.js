@@ -55,10 +55,10 @@
    * 初始化即时导航处理
    */
   function init() {
-    // 检查是否支持Material for MkDocs的document$可观察对象
+    // 检查是否支持 Zensical/Material for MkDocs 的 document$ 可观察对象
     // 关键条件: !window.document$.isStopped 确保在build模式下也能正常工作
     if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
-      console.log('检测到Material for MkDocs的即时导航功能');
+      console.log('检测到 Zensical 即时导航功能');
       
       // 监听页面内容变化
       window.document$.subscribe(function() {
@@ -72,7 +72,7 @@
         setTimeout(executeCallbacks, 100);
       });
     } else {
-      console.log('未检测到Material for MkDocs的即时导航功能或已停止');
+      console.log('未检测到 Zensical 即时导航功能或已停止');
       
       // 对于不支持即时导航的情况，仅在初始加载时执行一次
       if (document.readyState === 'loading') {

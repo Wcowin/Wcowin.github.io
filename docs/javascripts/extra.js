@@ -1,6 +1,7 @@
 /**
- * MkDocs 网站增强脚本
+ * Zensical 网站增强脚本
  * 提供错误处理、兼容性修复和性能优化
+ * 兼容 Material for MkDocs
  */
 
 // 全局错误处理

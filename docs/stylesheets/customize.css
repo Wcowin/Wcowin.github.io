@@ -4,6 +4,16 @@
   /* --card-hover-shadow: 0 0 0.2rem #ffffff40; */
 }
 
+/* 移除链接下划线 - 覆盖主题默认样式 */
+.md-typeset a {
+  text-decoration: none;
+}
+
+/* 悬停时显示下划线（可选，提供视觉反馈） */
+.md-typeset a:hover {
+  text-decoration: underline;
+}
+
 /* 卡片圆角与悬浮阴影 */
 .md-typeset .grid.cards > ul > li,
 .md-typeset .md-button,

@@ -20,23 +20,33 @@ repo_name = "Wcowin.github.io"                           # 右上角的名字
 edit_uri = "edit/main/docs"                              # 编辑按钮跳转的链接
 
 # ===== 监听文件变动 =====
-# 监听这些文件/目录的变动，自动刷新页面
-watch = ["docs", "mkdocs.yml", "docs/overrides"]
+# 注意：watch 和 hooks 是 MkDocs 特有配置，Zensical 可能不完全支持
+# 如果遇到问题，请注释掉这些配置
+# watch = ["docs", "docs/overrides"]
 
 # ===== Hooks 配置 =====
-# 自定义 Python 脚本钩子，用于扩展功能
-hooks = [
-    "docs/overrides/hooks/reading_time.py",    # 阅读时间统计
-    "docs/overrides/hooks/related_posts.py",   # 相关文章推荐
-    "docs/overrides/hooks/comments.py"         # 文章页面评论系统
-]
+# ⚠️ 重要：Zensical 目前不支持 MkDocs hooks
+# Zensical 正在开发模块系统来替代 hooks 和 plugins
+# 参考：https://zensical.org/about/roadmap/
+# 
+# 临时解决方案：
+# - 阅读时间：使用 blog 插件的 post_readtime 功能
+# - 文档日期：使用 document-dates 插件
+# - 评论系统：在 overrides/partials/comments.html 中配置
+# - 其他功能：等待模块系统发布或使用 JavaScript 实现
+#
+# hooks = [
+#     "overrides/hooks/reading_time.py",
+#     "overrides/hooks/related_posts.py",
+#     "overrides/hooks/comments.py"
+# ]
 
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
 extra_javascript = [
     "javascripts/glm-config.js",                              # 智谱清言翻译配置
     "javascripts/glm-translate.js",                           # 智谱清言翻译系统
-    "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
+    # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
     "javascripts/extra.js",                                   # 额外功能脚本
     "javascripts/mathjax.js",                                 # MathJax 配置
     "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"       # MathJax CDN (数学公式渲染)
@@ -48,7 +58,7 @@ extra_css = [
     "stylesheets/extra2.css",        # 额外样式2
     "stylesheets/link.css",          # 友链样式
     "stylesheets/poem.css",          # 诗词样式
-    "stylesheets/customize.css",     # 按钮圆角化等自定义样式
+    # "stylesheets/customize.css",     # 按钮圆角化等自定义样式
     "stylesheets/ziti.css",          # 字体样式
     "about/sty/portfolio.css"        # 作品集样式
 ]
@@ -56,7 +66,7 @@ extra_css = [
 # ===== 导航配置 [Navigation] =====
 # 网站的导航菜单结构，支持多层嵌套
 nav = [
-    { "主页" = "index.md" },
+    { "主页" = ["index.md"] },
     { "技术" = [
         "blog/indexblog.md",
         { "OneClip 一款简单专业的macOS 剪贴板管理工具" = "blog/OneClip.md" },
@@ -316,8 +326,8 @@ nav = [
 # ===== 主题配置 [UI] =====
 [project.theme]
 variant = "modern"                # Zensical 特有：使用 modern 主题变体
-name = "material"                 # 使用 Material for MkDocs 主题
-custom_dir = "docs/overrides"     # 自定义主题目录（已修复 Zensical 兼容性）
+# name = "material"                 # 使用 Material for MkDocs 主题
+custom_dir = "docs/overrides"          # 自定义主题目录（相对于配置文件）
 logo = "https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp"  # 网站 Logo
 favicon = "https://i.stardots.io/wcowin/1750090373988.png"                         # 网站图标
 language = "zh"                   # 网站语言：中文
@@ -337,7 +347,7 @@ features = [
     "toc.follow",                 # 目录跟随滚动
     "navigation.expand",          # 默认展开导航
     "navigation.indexes",         # 章节索引页
-    "content.tabs.link",          # 内容标签页链接
+    # "content.tabs.link",          # 内容标签页链接
     "content.tooltips",           # 内容提示框
     "content.code.copy",          # 代码复制按钮
     "content.code.select",        # 代码选择功能
@@ -354,7 +364,7 @@ toggle = { icon = "material/link", name = "关闭自动模式" }
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"                # 日间模式配色
-primary = "blue"                  # 主色
+primary = "custom"                # 使用自定义颜色（在 extra.css 中定义）
 accent = "indigo"                 # 强调色
 toggle = { icon = "material/toggle-switch", name = "切换至夜间模式" }
 
@@ -362,7 +372,7 @@ toggle = { icon = "material/toggle-switch", name = "切换至夜间模式" }
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"                  # 夜间模式配色
-primary = "black"                 # 主色
+primary = "custom"                # 使用自定义颜色（在 extra.css 中定义）
 accent = "indigo"                 # 强调色
 toggle = { icon = "material/toggle-switch-off-outline", name = "切换至日间模式" }
 
@@ -376,7 +386,7 @@ alternate = "fontawesome/solid/language"    # 语言切换图标
 # 额外配置 [Extra]
 # ==========================================
 [project.extra]
-generator = true  # 删除页脚显示"使用 MkDocs 材料制造"
+generator = true  
 
 # ===== 状态标签 =====
 [project.extra.status]
@@ -531,15 +541,18 @@ admonition = {}     # 支持警告框
 def_list = {}       # 支持定义列表
 footnotes = {}      # 支持脚注
 md_in_html = {}     # 支持在 HTML 中使用 Markdown
+tables = {}         # 支持表格
 
 # ===== 基础扩展 =====
-[project.markdown_extensions."markdown.extensions.abbr"]  # Markdown 文件上方自定义标题标签等
+# 注意：abbr 已在上面配置过，这里不需要重复配置
+# [project.markdown_extensions."markdown.extensions.abbr"]
 
 # ===== PyMdown 扩展 =====
 [project.markdown_extensions."pymdownx.magiclink"]        # 自动转换链接
 [project.markdown_extensions."pymdownx.blocks.caption"]   # 图片说明
 [project.markdown_extensions."pymdownx.caret"]            # 插入符号 (^text^)
 [project.markdown_extensions."pymdownx.betterem"]         # 更好的斜体/粗体
+smart_enable = "all"  # Zensical 推荐配置
 [project.markdown_extensions."pymdownx.critic"]           # 批评标记
 [project.markdown_extensions."pymdownx.details"]          # 可折叠详情
 [project.markdown_extensions."pymdownx.inlinehilite"]     # 行内代码高亮

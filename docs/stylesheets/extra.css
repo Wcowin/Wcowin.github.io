@@ -4,6 +4,12 @@
   --md-primary-fg-color--dark: #518FC1;
 }
 
+/* 移除链接下划线 */
+.md-typeset a {
+  text-decoration: none;
+}
+
+
 
 /* 图片样式优化 - 合并相似规则 */
 img.img1, img.img2, img.img3 {

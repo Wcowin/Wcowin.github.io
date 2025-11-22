@@ -3,16 +3,16 @@
     <channel>
         <title>OneClip</title>
         <item>
-            <title>1.3.3</title>
-            <pubDate>Tue, 04 Nov 2025 18:37:35 +0800</pubDate>
-            <sparkle:version>1.3.3</sparkle:version>
-            <sparkle:shortVersionString>1.3.3</sparkle:shortVersionString>
+            <title>1.3.5</title>
+            <pubDate>Sat, 15 Nov 2025 21:09:42 +0800</pubDate>
+            <sparkle:version>1.3.5</sparkle:version>
+            <sparkle:shortVersionString>1.3.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://gitee.com/Wcowin/OneClip/releases/download/1.3.3/OneClip-1.3.3.zip" length="9776600" type="application/octet-stream" sparkle:edSignature="tnBKaMNrXnuFSzj8EC+l6A/8DmntRsjpreGcWJi/30rZqjU/0ibRnvk4LO1GiEMt25SZ+8yuDiPUdG6KufpNCg=="/>
-        <sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.3.3-zh.html</sparkle:releaseNotesLink>
-                <sparkle:fallbackURL>https://gh-proxy.com/https://github.com/Wcowin/OneClip/releases/download/1.3.3/OneClip-1.3.3.zip</sparkle:fallbackURL>
-                <sparkle:fallbackURL>https://github.com/Wcowin/OneClip/releases/download/1.3.3/OneClip-1.3.3.zip</sparkle:fallbackURL>
-                <sparkle:fallbackURL>https://hk.gh-proxy.com/https://github.com/Wcowin/OneClip/releases/download/1.3.3/OneClip-1.3.3.zip</sparkle:fallbackURL>
+            <enclosure url="https://gitee.com/Wcowin/OneClip/releases/download/1.3.5/OneClip-1.3.5.zip" length="12630420" type="application/octet-stream" sparkle:edSignature="rLptIBqXp3lZeN9zAl8CYOMT+dUCwdZynYfgLaW58CctVjY0MQOWUjLggEeioowmORdgzd/On3Y2lXZLxhToDw=="/>
+        <sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.3.5-zh.html</sparkle:releaseNotesLink>
+                <sparkle:fallbackURL>https://gh-proxy.com/https://github.com/Wcowin/OneClip/releases/download/1.3.5/OneClip-1.3.5.zip</sparkle:fallbackURL>
+                <sparkle:fallbackURL>https://github.com/Wcowin/OneClip/releases/download/1.3.5/OneClip-1.3.5.zip</sparkle:fallbackURL>
+                <sparkle:fallbackURL>https://hk.gh-proxy.com/https://github.com/Wcowin/OneClip/releases/download/1.3.5/OneClip-1.3.5.zip</sparkle:fallbackURL>
 </item>
     </channel>
 </rss>
