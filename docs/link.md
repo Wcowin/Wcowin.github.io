@@ -44,6 +44,17 @@ hide:
      </div>
     </div>
    <div class="card">
+     <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
+     <div class="card-header">
+      <div>
+       <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
+      </div>
+      <div class="info">
+      撰写最新的Zensical中文教程
+      </div>
+     </div>
+    </div>
+   <div class="card">
      <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png" />
      <div class="card-header">
       <div>
@@ -1099,7 +1110,7 @@ hide:
 >简介: 循此苦旅，以达星辰
 -->
 
-<HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" />
+<!-- <HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" /> -->
 
 <!-- <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -1522,7 +1533,7 @@ window.friendLinkUtils = {
 
    </div>
   </div>
-  <HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" />
+  <!-- <HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" /> -->
 </div>
 
 
@@ -1633,7 +1644,7 @@ window.friendLinkUtils = {
 
 ## 快来交换友链～
 
-<HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" />
+
 
 <head>
 <script src="https://giscus.app/client.js"

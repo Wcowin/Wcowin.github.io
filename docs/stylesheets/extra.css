@@ -1,4 +1,4 @@
-:root>* {
+:root {
   --md-primary-fg-color: #518FC1;
   --md-primary-fg-color--light: #518FC1;
   /* --md-primary-fg-color--dark: #518FC1; */
@@ -43,11 +43,11 @@ img.img1, img.img2, img.img3 {
   contain: paint; /* 限制重绘区域 */
 }
 
-/* 社交图标颜色 */
-img.twitter { color: #1DA1F2; }
-.bilibili { color: #EA7A99; }
-.github { color: #25292E; }
-.laptop { color: #d1e82a; }
+/* 社交图标颜色 - 注：img 标签不支持 color 属性，需要用 filter 或其他方式实现 */
+/* img.twitter { filter: hue-rotate(200deg); }
+.bilibili { filter: hue-rotate(330deg); }
+.github { filter: brightness(0.8); }
+.laptop { filter: hue-rotate(60deg); } */
 
 /* 心跳动画优化 */
 @keyframes heart {
@@ -254,7 +254,7 @@ footer a:hover {
 }
 
 #rcorners4 {
-  width: 110%;
+  width: 100%;
 }
 
 #rcorners6 {
@@ -290,7 +290,6 @@ footer a:hover {
 /* 渐变容器 */
 #grad1 {
   height: 200px;
-  background-color: red;
   background-image: linear-gradient(to bottom right, red, yellow);
   contain: paint; /* 限制重绘 */
 }
@@ -305,7 +304,7 @@ footer a:hover {
 }
 
 /* 基础按钮样式 */
-.buttoncss, .buttoncss1 {
+.buttoncss, .buttoncss1, .buttonxuan {
   border-radius: var(--button-border-radius);
   border: none;
   color: white;
@@ -317,6 +316,7 @@ footer a:hover {
   margin: var(--button-margin);
   cursor: pointer;
   will-change: background-color, color; /* 提示浏览器将有变化 */
+  transition-duration: var(--button-transition);
 }
 
 .buttoncss {
@@ -327,19 +327,8 @@ footer a:hover {
   background-color: #567fd0;
 }
 
-/* 按钮样式 - buttonxuan */
 .buttonxuan {
   background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: var(--button-font-size);
-  margin: var(--button-margin);
-  transition-duration: var(--button-transition);
-  cursor: pointer;
 }
 
 .buttonxuan1 {
@@ -396,9 +385,9 @@ footer a:hover {
 }
 
 /* 按钮样式 - buttonxuan3 */
-.buttonxuan3:hover {
+.buttonxuan3 {
   display: inline-block;
-  background-color: #5577D1;
+  background-color: #ACE48E;
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
@@ -409,6 +398,12 @@ footer a:hover {
   margin: 5px;
   border: 2px solid;
   border-radius: 25px;
+  will-change: background-color; /* 提示浏览器将有变化 */
+}
+
+.buttonxuan3:hover {
+  background-color: #5577D1;
+  color: #FFFFFF;
 }
 
 /* 响应式隐藏 */

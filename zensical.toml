@@ -350,6 +350,8 @@ features = [
     "navigation.sections",        # 侧边栏分组
     "navigation.top",             # 返回顶部按钮
     "navigation.footer",          # 上一页/下一页导航
+    "navigation.instant",      # 即时导航
+    "navigation.instant.prefetch",  # 预加载
     "search.suggest",             # 搜索建议
     "search.highlight",           # 搜索结果高亮
     "search.share",               # 搜索结果分享
