@@ -9,7 +9,7 @@ tags:
 
 
 !!! note
-    **GitHub 地址**：https://github.com/Wcowin/Muplayer
+    **GitHub 地址**： https://github.com/Wcowin/Muplayer
 
 本项目是一个基于原生 JavaScript、HTML 和 CSS 实现的响应式音乐播放器，支持本地音乐添加、播放列表管理、搜索、顺序/随机/单曲循环播放等功能。适合初学者学习 Web 前端开发、音频 API 应用和响应式布局设计。
 

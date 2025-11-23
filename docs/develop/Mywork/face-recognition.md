@@ -10,7 +10,7 @@ tags:
 **原文：**
 >Bilibili:  [用300行代码实现人脸识别系统_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ZZ4y1S76N/){target="_blank"}
 
-> CSDN博客：[用300行Python代码实现一个人脸识别系统_dejahu的博客-CSDN博客](https://blog.csdn.net/ECHOSON/article/details/122404926){target="_blank"}
+> CSDN博客： [用300行Python代码实现一个人脸识别系统_dejahu的博客-CSDN博客](https://blog.csdn.net/ECHOSON/article/details/122404926){target="_blank"}
 
 ## 基本原理
 

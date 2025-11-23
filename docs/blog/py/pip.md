@@ -25,7 +25,7 @@ pip命令只能用在命令行中；但是不能用在python命令行中。
 ### 1.Windows 环境下
 使用```py -m pip --version```检查是否安装pip。
 使用命令行获得一个python文件：```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py```
-然后，在命令行中使用cd命令导航到此 .py 文件所在的文件夹，使用：```py get-pip.py```即可安全安装。（附：[pip官方网站](https://pip.pypa.io/en/stable/#)）
+然后，在命令行中使用cd命令导航到此 .py 文件所在的文件夹，使用：```py get-pip.py```即可安全安装。（附： [pip官方网站](https://pip.pypa.io/en/stable/#)）
 
 ### 2.Linux环境下
 使用```python -m pip --version```检查是否安装pip。
@@ -66,6 +66,6 @@ pip-review  # 查看可更新的包
 
 pip-review --auto  # 自动更新所有包
 
-pip-review --local --interactive  # 更新包，提供操作可选项：[Y]es, [N]o, [A]ll, [Q]uit
+pip-review --local --interactive  # 更新包，提供操作可选项： [Y]es, [N]o, [A]ll, [Q]uit
 ```
 

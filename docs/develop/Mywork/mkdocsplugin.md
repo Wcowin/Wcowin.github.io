@@ -28,8 +28,8 @@ status: new
 [MkDocs文档日期插件](../../blog/websitebeauty/mkdocs-document-dates.md)
 新一代用于显示文档精确元信息的 MkDocs 插件，如**创建时间、最后更新时间、作者、电子邮件**等。
 
-插件地址：https://github.com/jaywhj/mkdocs-document-dates
-这个插件原作者是：https://github.com/jaywhj
+插件地址： https://github.com/jaywhj/mkdocs-document-dates
+这个插件原作者是： https://github.com/jaywhj
 
 ![image](https://s1.imagehub.cc/images/2025/07/25/fd29cda1b5c0908ac6389f07280f3a29.png)
 ![image](https://s1.imagehub.cc/images/2025/07/25/3cb0ff363f4f3157abcfb412d8668e18.png)

@@ -7,7 +7,7 @@ tags:
 
 **施法开始！**
 
-指路：[神注释大全](https://github.com/Blankj/awesome-comment)
+指路： [神注释大全](https://github.com/Blankj/awesome-comment)
 ```
 ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 \   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  |

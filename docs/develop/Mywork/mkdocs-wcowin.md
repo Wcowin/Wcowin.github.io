@@ -31,7 +31,7 @@ comments: false  #评论，默认不开启
 </div>
 
 ## 展示
-感受一下它的简洁美观：[Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”}
+感受一下它的简洁美观： [Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/){target="_blank"}
 
 
 **主页**
@@ -70,7 +70,7 @@ comments: false  #评论，默认不开启
 把Mkdocs-Wcowin文件里的东西全部复制出来到Wcowin.github.io文件里(如下图)，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
 ![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png){ loading=lazy }
 
-详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](https://wcowin.work/blog/Mkdocs/mkdocs1/){target=“_blank”}
+详细的初步教程见： [利用Mkdocs部署静态网页至GitHubpages](https://wcowin.work/blog/Mkdocs/mkdocs1/){target="_blank"}
 
 ## 联系我
 
