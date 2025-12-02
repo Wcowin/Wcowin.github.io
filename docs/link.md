@@ -99,7 +99,7 @@ hide:
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://www.80tz.cn/view/img/logo.png" />
+      <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/12/02/9774ba74d70b97034dd775ab7b0dd8c7.png" />
       <div class="card-header">
         <div>
           <a href="https://www.80tz.cn" target="_blank">滨州论坛</a>

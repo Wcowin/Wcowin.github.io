@@ -348,6 +348,7 @@ features = [
     "navigation.instant",      # 即时导航
     "navigation.instant.prefetch",  # 预加载
     "navigation.path",            # URL路径导航
+    # "navigation.tabs.sticky",   # 顶部导航栏始终可见
     "search.suggest",             # 搜索建议
     "search.highlight",           # 搜索结果高亮
     "search.share",               # 搜索结果分享
