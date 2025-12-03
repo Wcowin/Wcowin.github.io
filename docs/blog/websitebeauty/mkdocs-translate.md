@@ -3,7 +3,7 @@ title: 为MKdocs添加多语言翻译
 tags:
   - Mkdocs
   - 多语言
-status: new
+# status: new
 ---
 
 # 为 MkDocs 添加多语言翻译功能

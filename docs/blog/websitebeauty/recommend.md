@@ -2,7 +2,7 @@
 title: 为MKdocs页面添加相关文章推荐
 tags:
   - Mkdocs
-status: new
+# status: new
 ---
 
 # 为MKdocs页面添加相关文章推荐

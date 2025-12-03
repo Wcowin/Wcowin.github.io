@@ -2,8 +2,6 @@
 title: MkDocs文档AI摘要
 tags:
   - Mkdocs
-staues:
-  - draft
 ---
 
 # Mkdocs AI Summary

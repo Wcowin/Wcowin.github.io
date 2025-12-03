@@ -182,6 +182,8 @@ nav = [
             { "What is MCP" = "develop/AI/mcp.md" }
         ]},
         { "macOS开发" = [
+            { "OneClip 架构设计与核心模块解析" = "develop/Mac-development/OneClip-Architecture-Design.md" },
+            { "OneClip 开发经验分享：从零到一" = "develop/Mac-development/OneClip-Development-Experience.md" },
             { "应用分发签名————OneClip为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" }
         ]},
         { "AI工具" = "develop/AI.md" },
@@ -192,7 +194,8 @@ nav = [
             { "MWeb Pro" = "develop/Markdown/MWeb.md" }
         ]},
         { "Git 实用技巧" = "develop/git.md" },
-        { "我的项目/作品" = [
+        { "我的开发项目/作品/应用" = [
+            { "OneClip" = "develop/Mywork/OneClip.md" },
             { "Wcowin for MkDocs主题" = "develop/Mywork/mkdocs-wcowin.md" },
             { "Mkdocs相关插件" = "develop/Mywork/mkdocsplugin.md" },
             { "简单的 JavaScript 音乐播放器" = "develop/Mywork/muplayer.md" },
@@ -586,6 +589,9 @@ linenums = true
 [project.markdown_extensions.pymdownx.mark]
 [project.markdown_extensions.pymdownx.smartsymbols]
 [project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
 [project.markdown_extensions.pymdownx.tasklist]

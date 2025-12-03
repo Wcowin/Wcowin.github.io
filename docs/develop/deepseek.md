@@ -6,7 +6,6 @@ hide:
 tags:
     - AI
     - DeepSeek
-status: new
 ---
 
 # DeepSeek:从入门到精通

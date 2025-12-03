@@ -1,3 +1,11 @@
+---
+title: OneClip 代码签名与辅助功能授权方案
+description: 分享 OneClip 代码签名与辅助功能授权方案
+tags:
+  - macOS
+  - SwiftUI
+---
+
 # OneClip 代码签名与辅助功能授权方案
 
 ## 概述

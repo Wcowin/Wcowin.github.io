@@ -8,7 +8,7 @@ hide:
 tags:
   - Mkdocs
 comments: false
-status: new
+# status: new
 ---
 
 # 为网站添加Google广告
