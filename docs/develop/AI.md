@@ -8,6 +8,7 @@ status: new
 # AI工具
 
 ## AI 对话
+
 - [openai.com](https://openai.com/){target=“_blank”}
 - [claude](https://claude.ai/new){target=“_blank”}
 - [grok](https://grok.com/){target=“_blank”}
@@ -45,6 +46,7 @@ status: new
 - [PIKA](https://pika.art/login){target=“_blank”}
 
 ## AI 编程
+
 - 🔧 [AI 写网页](https://heyleia.com/welcome){target=“_blank”}
 
 - 🏢 [AI WordPress 建站工具](https://10web.io){target=“_blank”}
@@ -62,12 +64,14 @@ status: new
 - [Trae](https://www.trae.com.cn/){target=“_blank”}
 
 ## AI合集
+
 - [Ai导航](https://www.ainavpro.com/){target=“_blank”}
 - [AI工具集](https://ai-bot.cn/){target=“_blank”}
 - [猫猫鱼AI工具窝](https://www.maomaoyu.coffee/zh){target=“_blank”}
 - [Molica Al](https://pc.molica.com.cn/chat/76376bb7-aec4-4d08-ae92-94e7ec831123){target=“_blank”}
 
 ## AI 写作工具
+
 - [智影AI智能创作工具](https://ai-bot.cn/){target=“_blank”}
 - [笔灵AI](https://ibiling.cn/paper?from=itabpaper02){target=“_blank”}
 - [萝卜写作](https://98.luoboxiezuo.com/modelessay?shareId=){target=“_blank”}
@@ -76,6 +80,7 @@ status: new
 - [橙篇](https://cp.baidu.com/){target=“_blank”}
 
 ## AI 翻译工具
+
 - [SimplifyAI 文档翻译](https://translate.simplifyai.cn/){target=“_blank”}
 - [书译](https://www.booktranslator.app/zh-CN/){target=“_blank”}
 

@@ -472,7 +472,7 @@ hide:
      </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://s2.loli.net/2025/01/25/x4aS23Z1uypqhc7.jpg" />
+    <img class="ava" loading="lazy" src="https://s2.loli.net/2025/01/25/x4aS23Z1uypqhc7.jpg" />
     <div class="card-header">
       <div>
       <a href="https://fanovian.github.io" target="_blank">Fanovian</a>
@@ -483,7 +483,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://tendcode.com/static/blog/img/friend.png" />
+    <img class="ava" loading="lazy" src="https://tendcode.com/static/blog/img/friend.png" />
     <div class="card-header">
       <div>
       <a href="https://tendcode.com" target="_blank">TendCode</a>
@@ -494,7 +494,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://www.chujiaweicode.top/static/favicons/site-logo.png" />
+    <img class="ava" loading="lazy" src="https://www.chujiaweicode.top/static/favicons/site-logo.png" />
     <div class="card-header">
       <div>
       <a href="https://www.chujiaweicode.top/" target="_blank">JW.DEV🚀</a>
@@ -505,7 +505,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://magren.cc/avatar.png" />
+    <img class="ava" loading="lazy" src="https://magren.cc/avatar.png" />
     <div class="card-header">
       <div>
       <a href="https://magren.cc" target="_blank">Magren's Blog</a>
@@ -756,7 +756,7 @@ hide:
      </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://s1.imagehub.cc/images/2025/05/01/96b63458377dd41261803d9a07d35cd2.png" />
+    <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/05/01/96b63458377dd41261803d9a07d35cd2.png" />
     <div class="card-header">
       <div>
       <a href="https://yangzhang.site" target="_blank">张杨的博客</a>
@@ -767,7 +767,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://pic1.imgdb.cn/item/681ad56458cb8da5c8e1f5aa.webp" />
+    <img class="ava" loading="lazy" src="https://pic1.imgdb.cn/item/681ad56458cb8da5c8e1f5aa.webp" />
     <div class="card-header">
       <div>
       <a href="https://sufine.top/" target="_blank">Suffine Hub</a>
@@ -778,7 +778,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://shef.cc/logo.png" />
+    <img class="ava" loading="lazy" src="https://shef.cc/logo.png" />
     <div class="card-header">
       <div>
       <a href="https://shef.cc" target="_blank">SheepChef Blog</a>
@@ -789,7 +789,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://mingcy.cn/image/mcy.png" />
+    <img class="ava" loading="lazy" src="https://mingcy.cn/image/mcy.png" />
     <div class="card-header">
       <div>
       <a href="https://mingcy.cn " target="_blank">茗辰原</a>
@@ -800,7 +800,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://avatars.githubusercontent.com/u/121679359?v=4" />
+    <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/121679359?v=4" />
     <div class="card-header">
       <div>
       <a href="https://linexic.top " target="_blank">LineXic书屋</a>
@@ -811,7 +811,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://yanggenjie.cn/assets/avatar.webp" />
+    <img class="ava" loading="lazy" src="https://yanggenjie.cn/assets/avatar.webp" />
     <div class="card-header">
       <div>
       <a href="https://yanggenjie.cn/ " target="_blank">阿杰的自学之路</a>
@@ -822,7 +822,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://s1.imagehub.cc/images/2025/06/03/6c3c7438679c077410dd5439d09da78b.jpg" />
+    <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/06/03/6c3c7438679c077410dd5439d09da78b.jpg" />
     <div class="card-header">
       <div>
       <a href="https://r-z-zhang-ai.github.io/" target="_blank">吉吉学弟的小站</a>
@@ -855,7 +855,7 @@ hide:
      </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://zimingyuan.github.io/img/profile.jpg" />
+    <img class="ava" loading="lazy" src="https://zimingyuan.github.io/img/profile.jpg" />
     <div class="card-header">
       <div>
       <a href="https://zimingyuan.github.io" target="_blank">VnYzm的博客</a>
@@ -972,7 +972,7 @@ hide:
       </div>
       </div>
     <div class="card">
-    <img class="ava" src="https://www.nodeseek.com/static/image/favicon/android-chrome-192x192.png" />
+    <img class="ava" loading="lazy" src="https://www.nodeseek.com/static/image/favicon/android-chrome-192x192.png" />
     <div class="card-header">
       <div>
       <a href="https://www.nodeseek.com/" target="_blank">NodeSeek</a>
@@ -1060,7 +1060,7 @@ hide:
       </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://maxlhy0424.github.io/web/avatar.webp" />
+    <img class="ava" loading="lazy" src="https://maxlhy0424.github.io/web/avatar.webp" />
     <div class="card-header">
       <div>
       <a href="https://MaxLHy0424.github.io" target="_blank">MaxLHy0424</a>
@@ -1071,7 +1071,7 @@ hide:
     </div>
     </div>
     <div class="card">
-    <img class="ava" src="https://avatars.githubusercontent.com/u/56161071?v=4" />
+    <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/56161071?v=4" />
     <div class="card-header">
       <div>
       <a href="www.philfan.cn" target="_blank">PhilFan's Note</a>
@@ -1545,7 +1545,7 @@ window.friendLinkUtils = {
 </div> -->
 
 <!-- <div class="card">
-   <img class="ava" src="{avatarurl}" />
+   <img class="ava" loading="lazy" src="{avatarurl}" />
    <div class="card-header">
       <div>
          <a href="{link}">{name}</a>

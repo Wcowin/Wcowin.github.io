@@ -11,6 +11,7 @@ ai_summary: false  # 禁用AI摘要
 # 2022网站更新记录
 
 ## </p><h1 id="01" name="01"><strong>2022-10-20</strong></h1><p>
+
 * 建立Github仓库，正式建站
 * 取消cookie确认,简化网站打开流程
 * 新增首页反馈收集

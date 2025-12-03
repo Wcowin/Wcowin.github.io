@@ -182,6 +182,7 @@ plugins:
     ---
 
     ```
+
 - `created` 可替换为：`created, date, creation`
 - `modified` 可替换为：`modified, updated, last_modified, last_updated`
 
@@ -228,6 +229,7 @@ plugins:
 
     ---
     ```
+
 - 如果要配置多个作者的完整信息，则可在 `docs/` 目录下新建单独的配置文件 `authors.yml`，格式参考 [authors.yml](https://github.com/jaywhj/mkdocs-document-dates/blob/main/templates/authors.yml)
 - 如果 URL 头像加载失败，则会自动回退到字符头像
 

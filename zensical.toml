@@ -70,7 +70,7 @@ extra_css = [
 # ===== 导航配置 [Navigation] =====
 # 网站的导航菜单结构，支持多层嵌套
 nav = [
-    { "主页" = ["index.md"] },
+    { "主页" = "index.md" },
     { "技术" = [
         "blog/indexblog.md",
         { "OneClip 一款简单专业的macOS 剪贴板管理工具" = "blog/OneClip.md" },
@@ -180,6 +180,9 @@ nav = [
         { "MCP" = [
             { "MCP中文文档" = "https://mcp-docs.cn/introduction" },
             { "What is MCP" = "develop/AI/mcp.md" }
+        ]},
+        { "macOS开发" = [
+            { "应用分发签名————OneClip为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" }
         ]},
         { "AI工具" = "develop/AI.md" },
         { "如何注册ChatGPT" = "develop/ChatGPT.md" },
@@ -362,33 +365,38 @@ features = [
     "content.code.annotate"       # 代码注释功能
 ]
 
+
 # ===== 调色板配置 =====
-# 自动模式（跟随系统）
+# Palette toggle for automatic mode
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
-toggle = { icon = "material/link", name = "关闭自动模式" }
+toggle.icon = "lucide/sun-moon"
+toggle.name = "切换到浅色模式"
 
-# 日间模式
+# Palette toggle for light mode
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
-scheme = "default"                # 日间模式配色
-primary = "custom"                # 使用自定义颜色（在 extra.css 中定义）
-accent = "indigo"                 # 强调色
-toggle = { icon = "material/toggle-switch", name = "切换至夜间模式" }
+scheme = "default"
+primary = "custom"
+accent = "blue"
+toggle.icon = "lucide/sun"
+toggle.name = "切换到夜间模式"
 
-# 夜间模式
+# Palette toggle for dark mode
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
-scheme = "slate"                  # 夜间模式配色
-primary = "custom"                # 使用自定义颜色（在 extra.css 中定义）
-accent = "indigo"                 # 强调色
-toggle = { icon = "material/toggle-switch-off-outline", name = "切换至日间模式" }
+scheme = "slate"
+primary = "custom"
+accent = "blue"
+toggle.icon = "lucide/moon"
+toggle.name = "切换到日间模式"
 
 # ===== 图标配置 =====
 [project.theme.icon]
-repo = "fontawesome/brands/github"          # 仓库图标
-previous = "fontawesome/solid/angle-left"   # 上一页图标
-alternate = "fontawesome/solid/language"    # 语言切换图标
+repo = "lucide/github"                      # 仓库图标
+previous = "lucide/arrow-left"              # 上一页图标
+next = "lucide/arrow-right"                 # 下一页图标
+alternate = "lucide/languages"              # 语言切换图标
 
 # ==========================================
 # 额外配置 [Extra]
@@ -570,6 +578,9 @@ smart_enable = false
 emoji_generator = "zensical.extensions.emoji.to_svg"
 emoji_index = "zensical.extensions.emoji.twemoji"
 [project.markdown_extensions.pymdownx.highlight]
+pygments_lang_class = true
+auto_title = true
+linenums = true
 [project.markdown_extensions.pymdownx.inlinehilite]
 [project.markdown_extensions.pymdownx.keys]
 [project.markdown_extensions.pymdownx.mark]
@@ -580,3 +591,5 @@ alternate_style = true
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
+[project.markdown_extensions.tables]
+[project.markdown_extensions.pymdownx.snippets]

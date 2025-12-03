@@ -1,10 +1,8 @@
 # 核心框架（放宽版本限制以获取补丁更新）
-mkdocs>=1.6.0,<2.0.0
-mkdocs-material>=9.6.0,<10.0.0
+zensical
 
 # 扩展功能
-pymdown-extensions>=10.16.0,<11.0.0
-jinja2>=3.1.0,<4.0.0
+pymdown-extensions
 
 # 内容增强插件
 mkdocs-encryptcontent-plugin
@@ -19,30 +17,25 @@ mkdocs-document-dates
 neoteroi-mkdocs
 # mkdocs-ai-summary-wcowin  # 已禁用AI摘要功能
 
-# 中文处理
-jieba>=0.42.1
-
 # 网络请求
-requests>=2.32.0
+requests
 
 # 数据处理和分析
-pyyaml>=6.0.0
+pyyaml
 
 # 自然语言处理（AI摘要相关，暂时注释）
 # nltk>=3.8
 # scikit-learn>=1.0.0
 
 # 缓存和性能优化
-python-dateutil>=2.9.0
-markupsafe>=2.1.0  # 支持 2.x 和 3.x
-cachetools>=4.2.0
-python-dotenv>=0.19.0
+cachetools
+python-dotenv
 
 # AI 功能支持（已禁用，暂时注释）
 # openai>=1.0.0
 
 # 图像处理
-pillow>=9.0.0
+pillow
 
 # 开发和调试工具
 mkdocs-minify-plugin
@@ -53,8 +46,8 @@ mkdocs-redirects
 python-markdown-math
 
 # RSS 和 Sitemap 支持
-mkdocs-rss-plugin>=1.10.0
-lxml>=4.9.0
+mkdocs-rss-plugin
+lxml
 
 # 多语言支持
 mkdocs-static-i18n

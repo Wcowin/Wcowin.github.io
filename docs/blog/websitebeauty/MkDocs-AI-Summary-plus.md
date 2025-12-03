@@ -358,10 +358,12 @@ jobs:
 
 ```yaml
 # 在现有的依赖安装部分添加
+
 - run: pip install mkdocs-ai-summary-wcowin # 安装 AI 摘要插件
 - run: pip install -r requirements.txt # 安装其他依赖
 
 # 替换您的 mkdocs 构建/部署步骤为：
+
 - name: 使用 AI 摘要部署
   env:
     AI_SUMMARY_CI_ENABLED: 'true' # 在 CI 中启用
@@ -371,6 +373,7 @@ jobs:
   run: mkdocs gh-deploy --force
 
 # 在部署后添加（可选 - 用于缓存管理）
+
 - name: 自动提交 AI 缓存
   run: |
     if [ -d ".ai_cache" ] && [ "$(ls -A .ai_cache 2>/dev/null)" ]; then

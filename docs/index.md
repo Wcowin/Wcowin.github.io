@@ -684,9 +684,9 @@ body::before {
   将所有页面级脚本和元数据统一放置在这里
 -->
 <!-- 访问统计区域 -->
-<div style="text-align: center; margin: 2rem 0; font-size: 0.9rem;">
+<!-- <div style="text-align: center; margin: 2rem 0; font-size: 0.9rem;">
   本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script><span id="finicount_views" style="font-weight: bold; color: #518FC1;"></span>
-</div>
+</div> -->
 
 <!-- Umami Analytics -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
@@ -721,4 +721,4 @@ body::before {
 </script> -->
 
 
-<meta name="algolia-site-verification"  content="3CAAB2C27102AD08" />
+<!-- <meta name="algolia-site-verification"  content="3CAAB2C27102AD08" /> -->

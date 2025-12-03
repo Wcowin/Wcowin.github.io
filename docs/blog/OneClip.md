@@ -19,13 +19,11 @@ tags:
 
 点击链接加入群聊[OneClip交流群](https://qm.qq.com/q/xiImGHVMcM)
 
-
-
 <div align="center">
   <img src="https://picx.zhimg.com/80/v2-34b000e56d1af7ef61092dcd031dfd9a_1440w.webp?source=2c26e567" alt="OneClip Logo" width="120" height="120">
   <h1>OneClip</h1>
   <p><strong>一个简单专业的 macOS 剪贴板管理工具</strong></p>
-  <p>🚀 高效 · 🎨 现代 · ⚡ 流畅 · 🔒 安全</p>
+  <p>🚀 高效 · 🎨 现代 · ⚡️ 流畅 · 🔒 安全</p>
 </div>
 
 <p align="center">
@@ -35,7 +33,7 @@ tags:
   <a href="https://github.com/Wcowin/OneClip/releases">
     <img src="https://img.shields.io/github/downloads/Wcowin/OneClip/total?style=for-the-badge&color=22c55e" alt="Downloads" />
   </a>
-  <!-- <img src="https://img.shields.io/badge/Homebrew-Available-orange?style=for-the-badge&logo=homebrew&logoColor=white" alt="Homebrew" /> -->
+  <img src="https://img.shields.io/badge/Homebrew-Available-orange?style=for-the-badge&logo=homebrew&logoColor=white" alt="Homebrew" />
   <img src="https://img.shields.io/badge/macOS-12%2B-0f172a?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 12+" />
   <img src="https://img.shields.io/badge/Swift-5.9%2B-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 5.9+" />
 </p>
@@ -52,8 +50,8 @@ OneClip 是一款专为 macOS 打造的**专业级剪贴板管理工具**。采�
 > - ✅ **纯原生开发**：100% SwiftUI，无第三方框架依赖，性能卓越
 > - ✅ **独特创新**：栈粘贴板、拖拽容器等创新功能，提升工作效率
 > - ✅ **隐私安全**：数据完全本地存储，无任何网络上传
-> - ✅ **持续更新**：积极维护，快速响应用户反馈
-> - ✅ **免费试用**：提供完整功能试用，支持多种优惠码
+> - ✅ **持续更新**：社群积极维护，快速响应用户反馈
+> - ✅ **免费试用**：提供完整功能试用
 
 ### 🎯 核心功能
 
@@ -67,26 +65,36 @@ OneClip 是一款专为 macOS 打造的**专业级剪贴板管理工具**。采�
 
 - **🔄 快捷回复**: `Cmd+Option+R` 呼出快捷回复界面，支持自定义组合
 
+- **🎨 布局多样**：支持列表/卡片双模式切换。支持Paste同款布局。
+
+- **😼 文本/图片编辑**：支持文本/图片编辑。
+
 - **📥 栈粘贴板**：`Control+Shift+C`呼出栈粘贴板，方便管理。`Control+Shift+V`依次粘贴栈粘贴板内容。
 
-- **🎯 菜单栏集成**：一键粘贴最近内容，状态实时可见
+- **🎯 菜单栏集成**：一键复制粘贴最近内容，状态实时可见。左键复制，右键粘贴，所见即所得。
+
+- **💾 自定义存储位置**：支持自定义存储位置，方便管理
 
 - **📦 拖拽容器**：`Control+Shift+D`呼出拖拽容器，方便管理
 
 - **🔧 灵活控制**：Dock 图标、后台模式、主题适配均可配置
 
-- **🍺 便捷安装**：支持 Homebrew 一键安装和Sparkle自动更新
+- **🍺 便捷安装**：支持 Homebrew 一键安装(即将支持)和Sparkle自动更新
 
 - **🎨 现代界面**：遵循 macOS 设计规范，毛玻璃与暗黑模式适配
 
 - **🤖 AI 集成**：支持本地 AI 模型（Ollama）和在线 AI 服务
 
-- **☁️ 云同步**：支持 Syncthing 多设备同步，数据安全可控
+- **☁️ 云同步**：支持 Syncthing 和自定义iCloud等等方式的多设备同步，数据安全可控
 
-- **👍 访达增强**：支持访达Cmd+X剪切文件，然后Cmd+V移动文件（别处单独付费的功能，OneClip免费开放给大家）
+- **👍 访达增强**：支持访达Cmd+X剪切文件，然后Cmd+V移动文件（别处单独付费的功能，**OneClip免费开放给大家**）
+
 
 ![OneClip 主界面](https://s1.imagehub.cc/images/2025/11/03/972b5640666e851cf4625f1b6d88f785.png)
-
+![iShot 2025 12 02 20.20.57](https://s1.imagehub.cc/images/2025/12/02/e667ddd51d493e551f73cc83fbdd7114.jpg)
+![image](https://s1.imagehub.cc/images/2025/12/02/ce24ca11047d3a4cbb2d9672786266eb.png)
+<!--![image](https://s1.imagehub.cc/images/2025/11/30/88aefc6139fdb49164a50d166ea83ed1.png)-->
+![oQICFYhCBWZFfF5W8SfyuU6mEkboX9ND.webp](https://cdn.nodeimage.com/i/oQICFYhCBWZFfF5W8SfyuU6mEkboX9ND.webp)
 ### ✨ 独特优势
 
 | 特性 | OneClip | 其他剪贴板工具 |
@@ -98,7 +106,7 @@ OneClip 是一款专为 macOS 打造的**专业级剪贴板管理工具**。采�
 | **拖拽容器** | ✅  | ❌ |
 | **AI 集成** | ✅ 本地+云端 | 部分支持 |
 | **数据安全** | 完全本地存储 | 部分需云端 |
-| **自动更新** | Sparkle + Homebrew | 不统一 |
+| **自动更新** | Sparkle | 不统一 |
 
 ## ⬇️ 下载与安装
 
@@ -119,6 +127,20 @@ OneClip 是一款专为 macOS 打造的**专业级剪贴板管理工具**。采�
 
 - [123网盘下载](https://www.123912.com/s/bXcDVv-HauG3)
 
+**方式三：Homebrew 安装**
+
+使用 Homebrew 安装 OneClip：
+
+```bash
+brew install --cask Wcowin/oneclip/oneclip
+```
+
+如遇到报错请先卸载再重新安装：
+
+```bash
+brew uninstall --cask oneclip
+```
+
 ---
 
 #### 🔓 首次打开若提示"来自未知开发者/已被隔离"如何解决
@@ -136,8 +158,8 @@ sudo xattr -rd com.apple.quarantine /Applications/OneClip.app
 
 **方法二：系统设置**
 
-1. 打开 `系统设置` → `隐私与安全性`
-2. 找到 OneClip 相关提示
+1. 打开 `系统设置` → `隐私与安全性`  
+2. 找到 OneClip 相关提示  
 3. 点击"仍然打开"
 
 ![系统设置示例](https://s1.imagehub.cc/images/2025/09/29/3ac62762dc125b32cba708eca3ba2144.png)
@@ -147,17 +169,18 @@ sudo xattr -rd com.apple.quarantine /Applications/OneClip.app
 
 - 使用 [macOS 小助手](https://pan.quark.cn/s/f2302b6789b0) 一键处理
 
-> 💡 **仍有问题？**
-> - 详细教程： https://mp.weixin.qq.com/s/qjSx09tqNq1KfVug2WtQFg
-> - 联系作者： vip@oneclip.cloud
+> 💡 **仍有问题？**  
+> 详细教程：https://mp.weixin.qq.com/s/qjSx09tqNq1KfVug2WtQFg   
+> 联系作者：vip@oneclip.cloud
 
 
 
-## 🎬 功能演示
+## 🎬 功能演示  
 
-> 📹 **视频教程**（即将上线）
-> - B 站：OneClip 完整使用教程
-> - YouTube：OneClip Full Tutorial
+> 📹 **视频教程**（即将上线）  
+> B 站：OneClip 完整使用教程  
+> YouTube：OneClip Full Tutorial
+
 
 ### 核心功能展示
 

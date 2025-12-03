@@ -36,6 +36,7 @@ staues:
 ## ✨ 功能特性
 
 ### 🤖 AI智能摘要
+
 - **多AI服务集成**: 支持DeepSeek、OpenAI、Claude、Gemini等主流AI服务
 - **自动摘要生成**: 生成高质量的80-120字智能摘要
 - **多语言支持**: 支持中文、英文、双语摘要生成
@@ -45,12 +46,14 @@ staues:
 - **灵活配置**: 支持文件夹级别和页面级别的精确控制
 
 ### 📊 智能阅读统计（可选）
+
 - **精准字符统计**: 专门优化的中英文内容识别
 - **智能代码检测**: 识别30+编程语言和命令行代码
 - **阅读时间估算**: 基于语言特性的智能计算（中文400字/分钟，英文200词/分钟）
 - **美观信息展示**: 使用MkDocs Material风格的信息框
 
 ### 🚀 智能化特性
+
 - **环境自适应**: 自动识别CI/本地环境，本地或者部署都可选启用/禁用
 - **自动语言识别**: 支持30+编程语言和标记语言
 - **内容类型检测**: 区分代码、配置、命令行等不同内容
@@ -64,6 +67,7 @@ staues:
 ### 方法1: 直接下载（推荐）
 
 **步骤1**: 下载文件
+
 - 从 [Releases页面](https://github.com/Wcowin/mkdocs-ai-hooks/releases) 下载最新版本
 - 或直接下载 `ai_summary.py`文件
 
@@ -155,12 +159,14 @@ $ tree -a
 ### 2. 配置AI服务
 
 **选择AI服务提供商**：
+
 - 🌟 **DeepSeek**（推荐）：性价比高，中文表现优秀
 - 🔥 **OpenAI**：功能强大，广泛支持
 - ⚡ **Claude**：逻辑清晰，文本理解佳
 - 🧠 **Gemini**：Google出品，多语言支持
 
 **获取API密钥**：
+
 - [DeepSeek](https://platform.deepseek.com/usage) - 注册获取API密钥
 - [ChatAnywhere](https://github.com/chatanywhere/GPT_API_free) - 免费OpenAI额度
 
@@ -287,6 +293,7 @@ self.ci_config = {
 ```
 
 **几种运行模式**：
+
 1. **完全禁用**: 本地和CI部署都不运行摘要生成
 2. **仅CI部署启用**: 本地禁用，CI部署生成新摘要
 3. **缓存模式**：本地已经生成过摘要，CI部署使用缓存（**推荐。上方配置项中已默认CI部署的缓存模式，可自行搭配选择**）
@@ -316,6 +323,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 在Markdown文件最上面的yaml meta中：
 
 **启用AI摘要**：
+
 ```yaml
 ---
 title: 文章标题
@@ -324,6 +332,7 @@ ai_summary: true   # 启用AI摘要
 ```
 
 **禁用AI摘要**：
+
 ```yaml
 ---
 title: 文章标题
@@ -363,10 +372,12 @@ self.exclude_files = [
 
 ### AI摘要显示
 **实际效果预览**：
+
 ![image](https://s1.imagehub.cc/images/2025/06/04/152205c10ef1bfd7658b383a3e5e6e9f.png)
 
 
 ### 💰 成本说明
+
 - **单次费用**: 约0.03-0.05元（中大型文档）
 - **月度预估**: 普通博客约1-5元
 - **免费额度**: 多数AI服务商提供新用户免费额度
@@ -434,6 +445,7 @@ self.summary_language = 'zh'    # 中文摘要
 ```
 
 ### 支持的语言
+
 - **完全支持**: 中文、English
 - **部分支持**: 日本語です、한글、Français、Deutsch
 
@@ -442,12 +454,14 @@ self.summary_language = 'zh'    # 中文摘要
 ## 📊 性能优化
 
 ### 已实现优化
+
 - **LRU缓存**: 函数级别缓存提升性能
 - **正则预编译**: 提高文本处理速度
 - **智能过滤**: 减少不必要的API调用
 - **内容哈希**: 基于内容变化的智能缓存
 
 ### 性能建议
+
 - 使用 `ci_only_cache: true` 在CI环境中仅使用缓存
 - 合理设置 `enabled_folders` 避免处理不必要的文件
 - 定期清理过期缓存文件
@@ -488,17 +502,20 @@ pip install -r requirements.txt
 ### [v1.2.0] (2025-06-03)
 
 #### ✨ 主要新功能
+
 - **多AI服务支持**: 集成DeepSeek、OpenAI、Gemini、Claude
 - **环境自适应**: 自动识别CI/本地环境
 - **智能缓存系统**: 内容哈希缓存，7天自动过期
 - **安全配置**: GitHub Secrets集成，API密钥安全管理
 
 #### 🔧 技术改进
+
 - **统一API接口**: 自适配不同AI服务格式
 - **错误处理增强**: 完善的异常处理机制
 - **性能优化**: LRU缓存和正则预编译
 
 ### [v1.0.0] (2025-06-01) - 初始版本
+
 - 🤖 **AI智能摘要功能**
 - 📖 **阅读时间统计功能**
 - 💾 **基础缓存系统**
@@ -511,6 +528,7 @@ pip install -r requirements.txt
 遇到问题？请在 [Issues](https://github.com/Wcowin/mkdocs-ai-hooks/issues) 中反馈。
 
 **反馈时请包含**：
+
 - MkDocs版本
 - Python版本
 - 完整错误信息

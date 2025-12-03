@@ -17,6 +17,7 @@ tags:
 ```
 defaults write com.apple.screencapture "include-date" 0
 ```
+
 * 第三步：接着输入如下命令，然后再次按 return 键。
 ```
 killall SystemUIServer
