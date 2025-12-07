@@ -30,8 +30,10 @@ comments: false
 
     <iframe src="/assets/个人简历.pdf" width="100%" height="1250px" style="border: 1.5px solid #ccc; overflow: auto; border-radius: 18px; background: #fff;"></iframe>
     <center>
-    <a href="https://wcowin.work/assets/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86.pdf" download="王科文-个人简历.pdf" class="md-button md-button--primary">
+    <!-- <a href="https://wcowin.work/assets/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86.pdf" download="王科文-个人简历.pdf" class="md-button md-button--primary">
         :material-download: 下载PDF
-    </a>
+    </a> -->
+    [:material-download: 下载简历](https://wcowin.work/assets/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86.pdf){ .md-button}
     </center>
+    
 </div>

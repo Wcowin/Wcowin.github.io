@@ -7,7 +7,7 @@ hide:
 #   - toc #显示左
   - footer
   - feedback
-# comments: true
+comments: false
 ---
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css"> -->
@@ -47,7 +47,7 @@ hide:
      <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
      <div class="card-header">
       <div>
-       <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
+       <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
       </div>
       <div class="info">
       撰写最新的Zensical中文教程
@@ -76,6 +76,15 @@ hide:
       </div>
      </div>
     </div>  -->
+    <div class="card">
+        <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/jaywhj" />
+        <div class="card-header">
+            <div>
+                <a href="https://jaywhj.netlify.app/" target="_blank">极简主义</a>
+            </div>
+            <div class="info">文档即产品</div>
+        </div>
+    </div>
        <div class="card">
      <img class="ava" loading="lazy" src="https://picx.zhimg.com/v2-164bee4f6cb4d13ea680f8bada5b6a3e_xll.jpg?source=32738c0c&needBackground=1" />
      <div class="card-header">
@@ -120,7 +129,7 @@ hide:
       </div>
      </div>
     </div>
-       <div class="card">
+       <!-- <div class="card">
      <img class="ava" loading="lazy" src="https://img.ixintu.com/upload/jpg/20210524/3a8cbb0f2da716313a3b18984a9ffe73_78863_800_772.jpg!con" />
      <div class="card-header">
       <div>
@@ -130,7 +139,7 @@ hide:
        Wcowin的个人Hexo网站
       </div>
      </div>
-    </div>
+    </div> -->
    <div class="card">
      <img class="ava" loading="lazy" src="https://www.iszy.cc/images/avatar.png" />
      <div class="card-header">
@@ -604,17 +613,6 @@ hide:
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://xxu.do/_next/image?url=https%3A%2F%2Fgithub.com%2FJaaayden.png&w=640&q=75" />
-     <div class="card-header">
-      <div>
-      <a href="https://xxu.do/" target="_blank">Jayden's site</a>
-      </div>
-      <div class="info">
-      为天地立心,为生民立命, 为往圣继绝学,为万世开太平。
-      </div>
-     </div>
-    </div>
-    <div class="card">
      <img class="ava" loading="lazy" src="https://s2.loli.net/2025/02/12/Sw9QAN5cfau8eZr.jpg" />
      <div class="card-header">
       <div>
@@ -866,15 +864,6 @@ hide:
     </div>
     </div>
     <div class="card">
-        <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/jaywhj" />
-        <div class="card-header">
-            <div>
-                <a href="https://jaywhj.netlify.app/" target="_blank">极简主义</a>
-            </div>
-            <div class="info">文档即产品</div>
-        </div>
-    </div>
-    <div class="card">
         <img class="ava" loading="lazy" src="https://s2.loli.net/2024/10/07/fNIsM1jqOJlYmkz.jpg" />
         <div class="card-header">
             <div>
@@ -1074,7 +1063,7 @@ hide:
     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/56161071?v=4" />
     <div class="card-header">
       <div>
-      <a href="www.philfan.cn" target="_blank">PhilFan's Note</a>
+      <a href="https://www.philfan.cn/" target="_blank">PhilFan's Note</a>
       </div>
       <div class="info">
       Learn, Build, Share
@@ -1498,7 +1487,7 @@ window.friendLinkUtils = {
      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
-       <a href="https://www.imerduo.com" target="_blank">耳朵的主人(打不开)</a>
+       <a href="https://www.edzbe.com" target="_blank">耳朵的主人(打不开)</a>
       </div>
       <div class="info">
       耳朵电台，庆幸我们还有耳朵
@@ -1527,7 +1516,17 @@ window.friendLinkUtils = {
       </div>
      </div>
     </div>
-
+    <div class="card">
+     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <div class="card-header">
+      <div>
+      <a href="https://xxu.do/" target="_blank">Jayden's site</a>
+      </div>
+      <div class="info">
+      为天地立心,为生民立命, 为往圣继绝学,为万世开太平。
+      </div>
+     </div>
+    </div>
 
 
 
@@ -1594,7 +1593,7 @@ window.friendLinkUtils = {
 
     >名称: Wcowin's Blog  
     >链接: https://wcowin.work/  
-    >头像: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp  
+    >头像: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png  
     >简介: 循此苦旅，以达星辰
 
 === "HTML(推荐)"
@@ -1619,7 +1618,7 @@ window.friendLinkUtils = {
     ```yaml
     - name: Wcowin's Blog
       link: https://wcowin.work/
-      avatar: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
+      avatar: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png
       descr: 循此苦旅，以达星辰
     ```
 <!-- === "通用"
@@ -1646,7 +1645,7 @@ window.friendLinkUtils = {
 
 
 
-<head>
+<!-- <head>
 <script src="https://giscus.app/client.js"
 data-repo="Wcowin/hexo-site-comments"
 data-repo-id="R_kgDOIl9OJA"
@@ -1663,4 +1662,19 @@ data-loading="lazy"
 crossorigin="anonymous"
 async>
 </script>
-</head>
+</head> -->
+
+<script src="https://giscus.app/client.js"
+    data-repo="Wcowin/hexo-site-comments"
+    data-repo-id="R_kgDOIl9OJA"
+    data-mapping="number"
+    data-term="10"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light_tritanopia"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+</script>

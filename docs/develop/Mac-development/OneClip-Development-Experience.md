@@ -10,7 +10,7 @@ tags:
 
 ## 前言
 
-OneClip 从最初的想法到现在的功能完整的应用，经历了多个版本的迭代。本文分享开发过程中的真实经验、遇到的问题、解决方案和最佳实践，希望能为其他 macOS 开发者提供参考。
+[OneClip](https://github.com/Wcowin/OneClip) 从最初的想法到现在的功能完整的应用，经历了多个版本的迭代。本文分享开发过程中的真实经验、遇到的问题、解决方案和最佳实践，希望能为其他 macOS 开发者提供参考。
 
 ## 技术选型
 
@@ -195,39 +195,42 @@ let MODIFIER_KEYS = [
 
 ### 3. 数据持久化
 
-**选择 Core Data 而不是 SQLite**：
+**选择 SQLite 而不是 Core Data**：
+
+OneClip 使用原生 SQLite 而非 Core Data，原因：
+- 更轻量，启动更快
+- 更灵活的查询控制
+- 更容易进行数据迁移
 
 ```swift
-// Core Data 模型定义
-@Entity
-final class ClipboardItemEntity {
-    @Attribute(.unique) var id: UUID
-    var content: String?
-    var contentType: String
-    var timestamp: Date
-    var sourceApp: String?
-    var isFavorite: Bool = false
-    var metadata: Data?  // JSON 格式的额外信息
-}
-
-// 初始化 Core Data Stack
-class PersistenceController {
-    static let shared = PersistenceController()
+// SQLite 数据库封装
+class ClipboardDatabase {
+    private var db: OpaquePointer?
     
-    let container: NSPersistentContainer
-    
-    init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "OneClip")
-        
-        if inMemory {
-            container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+    init(at path: String) throws {
+        // 打开数据库连接
+        guard sqlite3_open(path, &db) == SQLITE_OK else {
+            throw ClipboardError.databaseNotReady
         }
         
-        container.loadPersistentStores { description, error in
-            if let error = error as NSError? {
-                fatalError("❌ Core Data 加载失败: \(error)")
-            }
-        }
+        // 创建表结构
+        try createTables()
+    }
+    
+    // 保存项目
+    func saveItem(_ item: ClipboardItem) throws {
+        let sql = """
+            INSERT OR REPLACE INTO clipboard_items 
+            (id, content, type, timestamp, source_app, is_favorite, is_pinned, content_hash)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """
+        // 执行 SQL
+    }
+    
+    // 加载最近项目
+    func loadHotData(limit: Int) throws -> [ClipboardItem] {
+        let sql = "SELECT * FROM clipboard_items ORDER BY timestamp DESC LIMIT ?"
+        // 执行查询并返回结果
     }
 }
 ```
@@ -235,32 +238,29 @@ class PersistenceController {
 **性能优化**：
 
 ```swift
-// 批量插入优化
-func batchInsertClipboardItems(_ items: [ClipboardItem]) {
-    let context = container.newBackgroundContext()
-    
-    context.perform {
-        for item in items {
-            let entity = ClipboardItemEntity(context: context)
-            entity.id = UUID()
-            entity.content = item.content
-            entity.timestamp = item.timestamp
-            // ... 其他字段
-        }
-        
-        try? context.save()
-    }
+// 使用索引加速查询
+func createTables() throws {
+    let sql = """
+        CREATE TABLE IF NOT EXISTS clipboard_items (
+            id TEXT PRIMARY KEY,
+            content TEXT,
+            type TEXT NOT NULL,
+            timestamp REAL NOT NULL,
+            source_app TEXT,
+            is_favorite INTEGER DEFAULT 0,
+            is_pinned INTEGER DEFAULT 0,
+            content_hash TEXT
+        );
+        CREATE INDEX IF NOT EXISTS idx_timestamp ON clipboard_items(timestamp DESC);
+        CREATE INDEX IF NOT EXISTS idx_content_hash ON clipboard_items(content_hash);
+    """
+    // 执行 SQL
 }
 
-// 查询优化：使用 NSFetchRequest 的 fetchLimit
-func fetchRecentItems(limit: Int = 50) -> [ClipboardItem] {
-    let request = ClipboardItemEntity.fetchRequest()
-    request.fetchLimit = limit
-    request.sortDescriptors = [
-        NSSortDescriptor(keyPath: \ClipboardItemEntity.timestamp, ascending: false)
-    ]
-    
-    return try? container.viewContext.fetch(request)
+// 使用哈希索引快速去重 - O(1) 时间复杂度
+func findItemByHash(_ hash: String) -> UUID? {
+    let sql = "SELECT id FROM clipboard_items WHERE content_hash = ? LIMIT 1"
+    // 执行查询
 }
 ```
 

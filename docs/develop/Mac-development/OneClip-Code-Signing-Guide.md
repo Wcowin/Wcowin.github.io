@@ -12,6 +12,8 @@ tags:
 
 苹果官方的开发者证书99美刀一年，独立开发者可能无力承担，本文介绍 [OneClip](https://github.com/Wcowin/OneClip) 如何通过**脚本自动化**实现个人证书对应用签名和应用分发，确保用户首次授权后，后续更新无需重新授权辅助功能。
 
+[直接看示例](#_12)
+
 ## 核心原理
 
 ### 为什么需要代码签名？
@@ -44,25 +46,24 @@ PROJECT="OneClip.xcodeproj"
 CONFIGURATION="Release"
 
 # 获取开发者身份
-SIGNING_IDENTITY="Apple Development: 1135801806@qq.com (3HX5XF2L63)"
-TEAM_ID="3HX5XF2L63"
+# 使用固定的证书 ID 确保签名一致性
+FIXED_SIGNING_IDENTITY="xx"
 
 # 构建应用
 xcodebuild -project "$PROJECT" \
     -scheme "$SCHEME" \
     -configuration "$CONFIGURATION" \
     -derivedDataPath build \
-    CODE_SIGN_IDENTITY="$SIGNING_IDENTITY" \
-    DEVELOPMENT_TEAM="$TEAM_ID" \
+    CODE_SIGN_IDENTITY="$FIXED_SIGNING_IDENTITY" \
     build
 
 # 验证签名
-codesign -v build/Release/OneClip.app
+codesign -v dist/builds/universal/OneClip.app
 ```
 
 **关键点**：
 
-- 使用固定的 `SIGNING_IDENTITY` 和 `TEAM_ID`
+- 使用固定的 `FIXED_SIGNING_IDENTITY` 证书 ID
 - 所有版本使用相同身份签名
 - 构建后验证签名有效性
 
@@ -139,11 +140,11 @@ echo "✅ 发布完成！"
 
 ### 3. 配置文件
 
-#### `OneClip.entitlements`
+#### `OneClip/OneClip.entitlements`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList.1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <!-- 应用标识符：唯一标识应用 -->
@@ -154,16 +155,21 @@ echo "✅ 发布完成！"
     <key>com.apple.security.device.keyboard-input</key>
     <true/>
     
+    <!-- 文件访问权限 -->
+    <key>com.apple.security.files.user-selected.read-only</key>
+    <true/>
+    
     <!-- Apple Events 权限：支持辅助功能 -->
     <key>com.apple.security.temporary-exception.apple-events</key>
     <array>
         <string>com.apple.systemevents</string>
     </array>
     
-    <!-- 其他权限 -->
+    <!-- 调试权限 -->
     <key>com.apple.security.get-task-allow</key>
     <true/>
     
+    <!-- 钥匙串访问 -->
     <key>com.apple.security.keychain-access-groups</key>
     <array>
         <string>$(AppIdentifierPrefix)wcowin.OneClip</string>
@@ -274,7 +280,7 @@ codesign -dvvv /path/to/OneClip.app
 # Identifier=wcowin.OneClip
 # Format=Mach-O universal (Intel x86_64 + Apple Silicon arm64)
 # CodeDirectory v=20500 size=12345 flags=0x10000(runtime)
-# Authority=Apple Development: 1135801806@qq.com (3HX5XF2L63)
+# Authority=Apple Development: your-email@example.com (TEAM_ID)
 # Authority=Apple Worldwide Developer Relations Certification Authority
 # Authority=Apple Root CA
 # Timestamp=2025-12-04 02:00:00 +0000
@@ -329,7 +335,7 @@ plutil -p "$PLIST_FILE" | grep -E "CFBundle.*Version"
 
 ```bash
 # 确保使用相同的证书
-SIGNING_IDENTITY="Apple Development: 1135801806@qq.com (3HX5XF2L63)"
+FIXED_SIGNING_IDENTITY="C023E278FA1F9703B91EF46D36C73D22CF2EC9AE"
 
 # 检查所有版本的 Bundle ID
 for app in build/Release/OneClip*.app; do
@@ -337,7 +343,7 @@ for app in build/Release/OneClip*.app; do
 done
 
 # 重新签名
-codesign -f -s "$SIGNING_IDENTITY" build/Release/OneClip.app
+codesign -f -s "$FIXED_SIGNING_IDENTITY" dist/builds/universal/OneClip.app
 ```
 
 ### Q2: 如何在 CI/CD 中自动签名？
@@ -359,11 +365,10 @@ security default-keychain -s ~/Library/Keychains/login.keychain
 xcodebuild -project OneClip.xcodeproj \
     -scheme OneClip \
     -configuration Release \
-    CODE_SIGN_IDENTITY="$SIGNING_IDENTITY" \
-    DEVELOPMENT_TEAM="$TEAM_ID"
+    CODE_SIGN_IDENTITY="$FIXED_SIGNING_IDENTITY"
 
 # 验证
-codesign -v build/Release/OneClip.app
+codesign -v dist/builds/universal/OneClip.app
 ```
 
 ### Q3: 如何测试更新流程？
@@ -456,9 +461,119 @@ OneClip 通过脚本自动化实现了完整的代码签名和分发流程：
 - ✅ 完整的签名验证链
 - ✅ 可靠的版本管理
 
+## **完整脚本示例**
+
+```bash
+#!/bin/bash
+# OneClip 完整构建发布脚本
+# 用法: ./release.sh <版本号>
+# 示例: ./release.sh 1.3.9
+
+set -e  # 遇到错误立即退出
+
+# ==================== 配置 ====================
+APP_NAME="OneClip"
+PROJECT="OneClip.xcodeproj"
+SCHEME="OneClip"
+CONFIGURATION="Release"
+FIXED_SIGNING_IDENTITY="YOUR_CERTIFICATE_ID"  # 替换为你的证书 ID
+SPARKLE_PRIVATE_KEY="./tools/sparkle/keys/private.ed25519" #你的sparkle私钥
+DIST_DIR="./dist" #输出目录
+
+# ==================== 参数检查 ====================
+VERSION=${1:-$(plutil -p "$APP_NAME/Info.plist" | grep CFBundleShortVersionString | awk -F'"' '{print $2}')}
+
+if [[ ! $VERSION =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+    echo "❌ 版本格式错误: $VERSION (应为 x.y.z)"
+    exit 1
+fi
+
+echo "🚀 开始构建 $APP_NAME v$VERSION"
+
+# ==================== 更新版本号 ====================
+echo "📝 更新版本号..."
+plutil -replace CFBundleShortVersionString -string "$VERSION" "$APP_NAME/Info.plist"
+plutil -replace CFBundleVersion -string "$VERSION" "$APP_NAME/Info.plist"
+
+# ==================== 构建应用 ====================
+echo "🔨 构建应用..."
+xcodebuild -project "$PROJECT" \
+    -scheme "$SCHEME" \
+    -configuration "$CONFIGURATION" \
+    -derivedDataPath build \
+    CODE_SIGN_IDENTITY="$FIXED_SIGNING_IDENTITY" \
+    clean build
+
+# ==================== 验证签名 ====================
+APP_PATH="build/Build/Products/$CONFIGURATION/$APP_NAME.app"
+echo "🔐 验证签名..."
+if ! codesign -v "$APP_PATH"; then
+    echo "❌ 签名验证失败"
+    exit 1
+fi
+echo "✅ 签名验证成功"
+
+# ==================== 创建发布目录 ====================
+RELEASE_DIR="$DIST_DIR/releases/$VERSION"
+mkdir -p "$RELEASE_DIR"
+
+# ==================== 创建 DMG ====================
+echo "📀 创建 DMG..."
+DMG_PATH="$RELEASE_DIR/$APP_NAME-$VERSION.dmg"
+hdiutil create -volname "$APP_NAME" \
+    -srcfolder "$APP_PATH" \
+    -ov -format UDZO \
+    "$DMG_PATH"
+
+# ==================== 生成 Sparkle 签名 ====================
+echo "🔏 生成 Sparkle 签名..."
+SIGNATURE=$(./tools/sparkle/bin/sign_update "$DMG_PATH" "$SPARKLE_PRIVATE_KEY")
+FILE_SIZE=$(stat -f%z "$DMG_PATH")
+PUB_DATE=$(date -u +"%a, %d %b %Y %H:%M:%S +0000")
+
+# ==================== 生成 appcast.xml ====================
+echo "📝 生成 appcast.xml..."
+cat > "$RELEASE_DIR/appcast.xml" << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>$APP_NAME Updates</title>
+    <item>
+      <title>Version $VERSION</title>
+      <sparkle:version>$VERSION</sparkle:version>
+      <sparkle:shortVersionString>$VERSION</sparkle:shortVersionString>
+      <link>https://github.com/Wcowin/OneClip/releases</link>
+      <description>$APP_NAME $VERSION 更新</description>
+      <pubDate>$PUB_DATE</pubDate>
+      <enclosure url="https://github.com/Wcowin/OneClip/releases/download/v$VERSION/$APP_NAME-$VERSION.dmg"
+                 sparkle:version="$VERSION"
+                 sparkle:shortVersionString="$VERSION"
+                 sparkle:edSignature="$SIGNATURE"
+                 length="$FILE_SIZE"
+                 type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>
+EOF
+
+# ==================== 完成 ====================
+echo ""
+echo "=========================================="
+echo "✅ $APP_NAME v$VERSION 构建完成！"
+echo "=========================================="
+echo "📦 DMG: $DMG_PATH"
+echo "📄 Appcast: $RELEASE_DIR/appcast.xml"
+echo ""
+echo "下一步："
+echo "  1. gh release create v$VERSION $DMG_PATH"
+echo "  2. 上传 appcast.xml 到更新服务器"
+echo "=========================================="
+```
+
+
 ## 参考资源
 
 - [Sparkle Framework Documentation](https://sparkle-project.org/)
 - [Apple Code Signing Guide](https://developer.apple.com/documentation/security/code_signing_services)
 - [macOS Entitlements](https://developer.apple.com/documentation/bundleresources/entitlements)
-- [OneClip GitHub Repository](https://github.com/Wcowin/OneClip)
+- [OneClip 官网](https://oneclip.cloud)

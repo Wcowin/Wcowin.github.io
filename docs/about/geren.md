@@ -84,7 +84,7 @@ hide_comment: true
 }
 
 .contributor-link {
-  color: #608DBD;
+  color: #333333;
   text-decoration: none;
   font-weight: bold;
   padding: 0.2rem 0.4rem;
@@ -93,8 +93,8 @@ hide_comment: true
 }
 
 .contributor-link:hover {
-  background-color: rgba(96, 141, 189, 0.1);
-  color: #4a7ba7;
+  background-color: rgba(51, 51, 51, 0.1);
+  color: #555555;
   text-decoration: none;
 }
 
@@ -124,6 +124,10 @@ hide_comment: true
 [data-md-color-scheme="slate"] .greeting,
 [data-md-color-scheme="slate"] .name {
   color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .contributor-link {
+  color: #DFDFDF;
 }
 
 [data-md-color-scheme="slate"] .highlight {
@@ -355,7 +359,9 @@ hide_comment: true
 
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css"> -->
+
+
 
 <div class="qualification__tabs">
     <div class="qualification__button qualification__active" data-target='#education'>
@@ -422,7 +428,21 @@ hide_comment: true
     </div>
 </div>
 
-<HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" />
+<HR class="section-divider" />
+
+<style>
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, #EEF3FE, #333333, #EEF3FE);
+  box-shadow: 0 2px 4px rgba(35, 40, 46, 0.2);
+}
+
+[data-md-color-scheme="slate"] .section-divider {
+  background: linear-gradient(to right, transparent, #e0e0e0, transparent);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+</style>
 
 
 

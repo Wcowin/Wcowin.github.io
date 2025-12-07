@@ -64,7 +64,8 @@ extra_css = [
     "stylesheets/ziti.css",          # 字体样式
     # "about/sty/portfolio.css"        # 作品集样式
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
-    "https://unpkg.com/katex@0/dist/katex.min.css"
+    "https://unpkg.com/katex@0/dist/katex.min.css",
+    "about/sty/portfolio.css"
 ]
 
 # ===== 导航配置 [Navigation] =====
@@ -88,6 +89,13 @@ nav = [
             { "分组密码" = "blog/Cryptography/Groupcipher.md" }
         ]},
         { "Python 环境管理最佳实践" = "blog/environment.md" },
+        { "Zensical中文教程" =[
+            { "前言" = "blog/Zensical/indexfirst.md" },
+            { "5分钟快速开始" = "blog/Zensical/quick-start.md" },
+            { "配置详解" = "blog/Zensical/configuration.md" },
+            { "GitHub Pages 部署" = "blog/Zensical/github-pages.md"},
+            { "从MkDocs迁移" = "blog/Zensical/migration.md" }
+        ]},
         { "MKdocs教程" = [
             { "MIT许可声明" = "blog/Mkdocs/MIT.md" },
             { "0.Mkdocs教程前言" = "blog/Mkdocs/mkfirst.md" },
@@ -181,7 +189,9 @@ nav = [
             { "MCP中文文档" = "https://mcp-docs.cn/introduction" },
             { "What is MCP" = "develop/AI/mcp.md" }
         ]},
+        { "GitHub 解封指南——This account is flagged" = "develop/GitHub-unblocked.md"},
         { "macOS开发" = [
+            "develop/Mac-development/index.md",
             { "OneClip 架构设计与核心模块解析" = "develop/Mac-development/OneClip-Architecture-Design.md" },
             { "OneClip 开发经验分享：从零到一" = "develop/Mac-development/OneClip-Development-Experience.md" },
             { "应用分发签名————OneClip为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" }
@@ -329,7 +339,7 @@ nav = [
         { "25考研(已完结)" = "about/kaoyan.md" }
     ]},
     { "Mkdocs中文教程" = "https://wcowin.work/Mkdocs-Wcowin/" },
-    { "Zensical中文教程" = "https://wcowin.work/Zensical-Chinese-Tutorial/" },
+    { "Zensical中文教程" = "https://wcowin.github.io/Zensical-Chinese-Tutorial/" },
     { "开往" = "https://www.travellings.cn/go.html" }
 ]
 
@@ -338,7 +348,8 @@ nav = [
 variant = "modern"                # Zensical 特有：使用 modern 主题变体
 # name = "material"                 # 使用 Material for MkDocs 主题
 custom_dir = "docs/overrides"          # 自定义主题目录（相对于配置文件）
-logo = "https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp"  # 网站 Logo
+logo = "https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png"
+# "https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp"  # 网站 Logo
 favicon = "https://i.stardots.io/wcowin/1750090373988.png"                         # 网站图标
 language = "zh"                   # 网站语言：中文
 

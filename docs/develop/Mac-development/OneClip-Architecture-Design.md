@@ -4,7 +4,6 @@ description: 深入解析 OneClip 的系统架构、核心模块设计、数据�
 tags:
   - macOS
   - SwiftUI
-status: new
 ---
 
 # OneClip 架构设计与核心模块解析
@@ -44,7 +43,7 @@ graph TD
     D6["SyncManager"]
     
     E["💾 Data Access Layer"]
-    E1["ClipboardStore<br/>Core Data"]
+    E1["ClipboardStore<br/>SQLite"]
     E2["FileHandler"]
     E3["ImageProcessor"]
     E4["ContentProcessor"]
@@ -53,7 +52,7 @@ graph TD
     F1["NSPasteboard"]
     F2["Carbon"]
     F3["Accessibility API"]
-    F4["Core Data"]
+    F4["SQLite"]
     F5["FileManager"]
     F6["Sparkle"]
     
@@ -110,55 +109,51 @@ class ClipboardManager: NSObject, ObservableObject {
 **监控机制**：
 
 - 使用 `NSPasteboard.general.changeCount` 检测变化
-- 定时轮询（默认 100ms）检查剪贴板
-- 自适应监控频率：活跃时 100ms，空闲时 500ms
+- 定时轮询检查剪贴板（间隔可在设置中配置）
+- 使用内容哈希（SHA256）进行去重
 - 避免重复记录相同内容
 
 ### 2. ClipboardStore（数据持久化）
 
-**职责**：使用 Core Data 实现数据的持久化存储和查询
+**职责**：使用 SQLite 实现数据的持久化存储和查询
 
 **数据模型**：
 
 ```swift
-@Entity
-final class ClipboardItemEntity {
-    @Attribute(.unique) var id: UUID
-    var content: String?              // 文本内容
-    var contentType: String           // 类型：text/image/file/link
+// ClipboardItem 结构体（内存模型）
+struct ClipboardItem: Identifiable, Codable {
+    var id: UUID
+    var content: String               // 文本内容
+    var type: ClipboardItemType       // 类型：text/image/file/link 等
     var timestamp: Date               // 创建时间
     var sourceApp: String?            // 来源应用
-    var category: String?             // 分类标签
+    var smartCategory: String?        // 智能分类
     var isFavorite: Bool              // 是否收藏
-    var metadata: Data?               // 元数据（JSON）
-    var fileURL: URL?                 // 文件路径
-    var imageData: Data?              // 图片二进制数据
+    var isPinned: Bool                // 是否置顶
+    var contentHash: String?          // 内容哈希（用于去重）
+    var filePath: String?             // 文件路径
+    var data: Data?                   // 二进制数据
 }
 ```
 
-**查询优化**：
+**SQLite 数据库实现**：
 
 ```swift
-// 使用谓词和排序优化查询性能
-func fetchClipboardItems(
-    limit: Int = 100,
-    offset: Int = 0,
-    predicate: NSPredicate? = nil,
-    sortBy: NSSortDescriptor? = nil
-) -> [ClipboardItem] {
-    let request = ClipboardItemEntity.fetchRequest()
-    request.fetchLimit = limit
-    request.fetchOffset = offset
+// ClipboardDatabase - SQLite 封装
+class ClipboardDatabase {
+    private var db: OpaquePointer?
     
-    if let predicate = predicate {
-        request.predicate = predicate
+    // 保存项目
+    func saveItem(_ item: ClipboardItem) throws {
+        let sql = "INSERT OR REPLACE INTO clipboard_items ..."
+        // 执行 SQL
     }
     
-    if let sortBy = sortBy {
-        request.sortDescriptors = [sortBy]
+    // 加载热数据（最近项目）
+    func loadHotData(limit: Int) throws -> [ClipboardItem] {
+        let sql = "SELECT * FROM clipboard_items ORDER BY timestamp DESC LIMIT ?"
+        // 执行查询
     }
-    
-    return try? container.viewContext.fetch(request)
 }
 ```
 
@@ -290,39 +285,39 @@ class WindowManager: NSObject {
 
 ### 6. AIService（AI 服务集成）
 
-**职责**：集成多个 AI 服务提供商，提供智能功能
+**职责**：集成 AI 服务，提供 OCR、翻译、摘要等智能功能
 
-**支持的 AI 服务**：
+**支持的 AI 功能**：
 
 ```swift
-protocol AIServiceProvider {
-    func generateSummary(_ content: String) -> String
-    func extractKeywords(_ content: String) -> [String]
-    func classifyContent(_ content: String) -> String
+// AI 功能类型
+enum AIFeature: String {
+    case ocr = "ocr"                    // 图片文字提取
+    case translateToChinese = "zh"      // 翻译为中文
+    case translateToEnglish = "en"      // 翻译为英文
+    case summary = "summary"            // 文本摘要
+    case formatText = "format"          // 智能格式化
 }
 
-class AIService {
-    // 支持的服务
-    enum Provider {
-        case ollama(url: String)        // 本地 Ollama
-        case openai(apiKey: String)     // OpenAI
-        case deepseek(apiKey: String)   // DeepSeek
-        case claude(apiKey: String)     // Claude
+// AI 服务管理器
+class AIService: ObservableObject {
+    static let shared = AIService()
+    
+    private let settingsManager = SettingsManager.shared
+    
+    // 支持的后端：
+    // - 本地 Ollama（视觉模型）
+    // - LM Studio（文本模型）
+    // - 智谱清言 API
+    
+    // 获取配置状态
+    func getConfigurationStatus() -> AIConfigurationStatus {
+        // 检查 API Key 和模型配置
     }
     
-    private var provider: AIServiceProvider?
-    
-    func setProvider(_ provider: Provider) {
-        switch provider {
-        case .ollama(let url):
-            self.provider = OllamaProvider(baseURL: url)
-        case .openai(let key):
-            self.provider = OpenAIProvider(apiKey: key)
-        case .deepseek(let key):
-            self.provider = DeepSeekProvider(apiKey: key)
-        case .claude(let key):
-            self.provider = ClaudeProvider(apiKey: key)
-        }
+    // 执行 AI 任务
+    func performTask(_ feature: AIFeature, content: String) async throws -> String {
+        // 根据配置选择后端执行
     }
 }
 ```
@@ -337,7 +332,7 @@ graph TD
     B["📥 检测到变化<br/>获取新内容"]
     C["⚙️ ContentProcessor<br/>处理内容<br/>检测类型 | 清理格式 | 生成摘要"]
     D["🔄 去重检查<br/>与最近项比对<br/>避免重复记录"]
-    E["💾 ClipboardStore<br/>保存到 Core Data"]
+    E["💾 ClipboardStore<br/>保存到 SQLite"]
     F["📢 发布 @Published<br/>更新 UI"]
     G["🎨 SwiftUI 视图<br/>自动更新显示"]
     
@@ -510,7 +505,7 @@ enum ClipboardError: LocalizedError {
 OneClip 的架构设计遵循以下原则：
 
 - ✅ **清晰的分层**：UI、业务逻辑、数据访问分离
-- ✅ **高效的数据管理**：Core Data 优化查询，智能缓存
+- ✅ **高效的数据管理**：SQLite 优化查询，智能缓存
 - ✅ **响应式 UI**：SwiftUI + Combine 自动更新
 - ✅ **性能优先**：自适应监控、内存管理、搜索优化
 - ✅ **可扩展性**：模块化设计，易于添加新功能

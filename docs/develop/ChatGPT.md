@@ -57,13 +57,16 @@ window.localStorage.removeItem(Object.keys(window.localStorage).find(i=>i.starts
 `javascript:`
 
 请注意，这里一定要输入，因为你复制的话是粘贴不了的。
-然后再粘贴我们第一段复制的内容：
-![label](https://lh6.googleusercontent.com/nZPZ-jlp6ZW_4DH6YpIPFJJGsL6Dz6g2_P3JcGlg8C18mvcmLSLC3FKI7cVeSLe-A0yq_8IdlocOGcmPmF0f7K-IHlQZSWekYbyi6kZXAbMC_mSovCG58f5EQuhDLydd9PWCf3eM47A2YNY790U11ka0Qw1PYUuhL3LyTnegsRRuMc9aTzX8FifLl2WOZg)
-然后按下回车键，刷新页面。如果你的代理没问题，就可以看到正常工作的注册页面了。
+然后再粘贴我们第一段复制的内容：  
+
+![label](https://lh6.googleusercontent.com/nZPZ-jlp6ZW_4DH6YpIPFJJGsL6Dz6g2_P3JcGlg8C18mvcmLSLC3FKI7cVeSLe-A0yq_8IdlocOGcmPmF0f7K-IHlQZSWekYbyi6kZXAbMC_mSovCG58f5EQuhDLydd9PWCf3eM47A2YNY790U11ka0Qw1PYUuhL3LyTnegsRRuMc9aTzX8FifLl2WOZg)  
+然后按下回车键，刷新页面。如果你的代理没问题，就可以看到正常工作的注册页面了。  
+
 ## 第三步输入手机号码
 ![label](https://lh5.googleusercontent.com/-P8__DqW8L2ALL1R-prXR67miAndgWSKd1nyRVX6GIOLqqBM-pIYr9-ItBB4Y-dvbK4IsVomBl7ZLrHr60rkJIPh6ra1293C7CNKIgNGo0nRChZQSH4BnAtJ1IZfjJRZDhGnfNp_aGlo_O46QOChyz5REw0Xu3nOP2yqJSQmKRXbIP1xaWhiVmlAHtXE3g)
 
-这里选的是韩国，这是因为我们使用韩国的代理，但是我们最好选择印度。然后到我们的接码网站上去。在左侧搜索OpenAi，然后点击印度。
+这里选的是韩国，这是因为我们使用韩国的代理，但是我们最好选择印度。然后到我们的接码网站上去。在左侧搜索OpenAi，然后点击印度。  
+
 ![label](https://lh6.googleusercontent.com/CF_2ilYYa3bJndavHZkG2CRuKOIBnI_pRd7ljOik61P42vHUdfGN-yOautzgUI9Jty04jdoqf9tOQdsAfSlqKDO-SQwyrzS9JvriuPwO3UD7MlMJgbZi_E4M76FhzcL8X5zz8HewvTtwOCHziihUKESUovjR2f8pVg5QYF5gVWxCIOpJJ5NhKP2uruGrJA)
 
 点击”小黄车”。

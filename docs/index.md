@@ -14,7 +14,7 @@ hide:
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
     🎉 <a href="https://oneclip.cloud/" target="_blank">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">了解更多 →</a><br>
-    ☺️ <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新的zensical中文教程   
+    ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新的zensical中文教程   
   </div>
 </div>
 
@@ -32,7 +32,7 @@ hide:
         A college student
         <svg width="280" height="18" class="wcowin-header-underline" xmlns="http://www.w3.org/2000/svg">
           <path d="M8,12 Q38,18 68,12 Q98,6 128,12 Q158,18 188,12 Q218,6 248,12 Q278,18 308,12"
-            stroke="#6ecbff" stroke-width="5" fill="none"
+            stroke="#424242" stroke-width="5" fill="none"
             stroke-linecap="round" stroke-linejoin="round"
             style="filter: blur(0.2px); opacity: 0.85;" />
         </svg>
@@ -55,8 +55,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image" class="flip-glow-ultimate-back" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://s1.imagehub.cc/images/2025/07/25/27c0e105ea7efbed5d046d3a8c303e9d.jpeg" alt="Front Image" class="flip-glow-ultimate-front" loading="lazy" width="280" height="280">
+        <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
+        <img src="https://s1.imagehub.cc/images/2025/07/25/27c0e105ea7efbed5d046d3a8c303e9d.jpeg" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>
@@ -74,7 +74,7 @@ hide:
   align-items: center;
   justify-content: center;
   gap: 64px;
-  margin: 20px 0 16px 0;
+  margin: -30px 0 16px 0;
   flex-wrap: wrap;
   min-height: 320px;
 }
@@ -96,20 +96,15 @@ hide:
   font-weight: 800;
   letter-spacing: 2px;
   margin-bottom: 18px;
-  background: linear-gradient(to right, #3a8dde, #6ecbff, #a2d8ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: #6D6D6D;
   display: flex;
   align-items: center;
-  text-shadow: 0 2px 10px rgba(106, 203, 255, 0.13);
 }
 
 .wcowin-header-subtitle {
   font-size: 1.7rem;
   font-weight: bold;
-  color: #222;
+  color: #6D6D6D;
   position: relative;
   margin-bottom: 22px;
   /* font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif; */
@@ -121,7 +116,7 @@ hide:
 }
 
 .wcowin-header-subtitle-inner {
-  color: #757575;
+  color: #6D6D6D;
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
@@ -150,7 +145,7 @@ hide:
   }
 
   .wcowin-header-subtitle-inner {
-    color: #757575;
+    color: #b0b0b0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* 增强阴影 */
   }
 
@@ -160,7 +155,7 @@ hide:
 
   /* 确保SVG波浪线在深色模式下可见 */
   .wcowin-header-underline path {
-    stroke: #6ecbff !important; /* 确保波浪线颜色鲜明 */
+    stroke: #b0b0b0 !important; /* 深色模式下使用较亮的灰色 */
     opacity: 1 !important;
   }
 }
@@ -570,13 +565,13 @@ hr {
 -   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
 
     ---
-
+    - [macOS 开发经验分享](develop/Mac-development/index.md)(最新更新)
     - [模型上下文协议(MCP)简述](develop/AI/mcp.md)
     - [DeepSeek:从入门到精通](develop/deepseek.md)
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
     - [Homebrew如何安装(Mac & Linux)](blog/Mac/homebrew.md)
 
--   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程(三步搞定)__
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs/Zensical教程(三步搞定)__
 
     ---
 
@@ -584,7 +579,8 @@ hr {
     - [利用Mkdocs部署静态网页](blog/Mkdocs/mkdocs1.md)
     - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
     - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
-
+    ---
+    - [Zensical教程](blog/Zensical/indexfirst.md)(新)
 
 -   :material-format-font:{ .lg .middle } __好用/好玩__
 

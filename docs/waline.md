@@ -3,9 +3,7 @@ title: 留言板
 hide:
   - footer
   - feedback
-# comments: true
-# disqus: true
-hide_comment: true
+comments: false
 ---
 
 <!-- # 留言板 -->
@@ -282,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data-reactions-enabled="1"
     data-emit-metadata="0"
     data-input-position="top"
-    data-theme="noborder_light"
+    data-theme="light_tritanopia"
     data-lang="zh-CN"
     data-loading="lazy"
     crossorigin="anonymous"

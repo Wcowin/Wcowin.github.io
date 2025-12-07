@@ -1,7 +1,7 @@
 :root {
   /*========== Colors ==========*/
-  --first-color: #608DBD;
-  --title-color: #608DBD;
+  --first-color: #333333;
+  --title-color: #333333;
   --text-color: #757575;
   --light-bg: rgba(255,255,255,0.8);
   --light-bg-secondary: rgba(240,240,240,0.6);
@@ -49,7 +49,7 @@
 
 
 h1, h2, h3, h4 {
-  color: var(--title-color);
+  color: #333333;
   font-weight: var(--font-semi-bold);
 }
 
@@ -69,7 +69,7 @@ h1, h2, h3, h4 {
 
 .about__info:hover {
   transform: translateY(-5px);
-  color: #4a7ba7;
+  /* color: #4a7ba7; */
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
@@ -94,11 +94,7 @@ h1, h2, h3, h4 {
 .about__info-title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-  background: linear-gradient(120deg, #608DBD 0%, #7BA7D7 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #333333;
 }
 
 .about__info-name {
@@ -128,9 +124,7 @@ h1, h2, h3, h4 {
 }
 
 [data-md-color-scheme="slate"] .about__info-title {
-  background: linear-gradient(120deg, #7BA7D7 0%, #A8C5E5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #e0e0e0;
 }
 
 [data-md-color-scheme="slate"] .about__info-name {
@@ -173,7 +167,7 @@ h1, h2, h3, h4 {
 }
 
 .qualification__button:hover {
-  color: var(--first-color);
+  color: #555555;
 }
 
 .qualification__icon {
@@ -208,14 +202,14 @@ h1, h2, h3, h4 {
 
 .qualification__calendar {
   font-size: var(--smaller-font-size);
-  color: var(--md-primary-fg-color--dark);
+  color: #555555;
 }
 
 .qualification__rounder {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: var(--md-primary-fg-color);
+  background-color: #333333;
   border-radius: 50%;
 }
 
@@ -223,7 +217,7 @@ h1, h2, h3, h4 {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: var(--md-primary-fg-color);
+  background-color: #333333;
   transform: translate(6px, -7px);
 }
 
@@ -236,7 +230,43 @@ h1, h2, h3, h4 {
 }
 
 .qualification__button.qualification__active {
-  color: var(--first-color);
+  color: #333333;
+}
+
+/* 深色模式 - 履历时间线 */
+[data-md-color-scheme="slate"] h1,
+[data-md-color-scheme="slate"] h2,
+[data-md-color-scheme="slate"] h3,
+[data-md-color-scheme="slate"] h4 {
+  color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .qualification__title {
+  color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .qualification__subtitle {
+  color: #b0b0b0;
+}
+
+[data-md-color-scheme="slate"] .qualification__calendar {
+  color: #a0a0a0;
+}
+
+[data-md-color-scheme="slate"] .qualification__rounder {
+  background-color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .qualification__line {
+  background-color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .qualification__button {
+  color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .qualification__button.qualification__active {
+  color: #ffffff;
 }
 
 /* 动画效果 */

@@ -14,14 +14,18 @@ tags:
 </div>  
 
 ???+ note "Mkdocs"
-    Mkdocs material主题 :[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}
-    Mkdocs-Wcowin主题: [Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/)
-    详细文档： [MkDocs](https://www.mkdocs.org/getting-started/){target=“_blank”}
+    Mkdocs material主题 :[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}  
+
+    Mkdocs-Wcowin主题: [Mkdocs-Wcowin主题](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”}
+
+    详细文档： [MkDocs](https://www.mkdocs.org/getting-started/){target=“_blank”}   
 
 ## 我在CSDN上写的Mkdocs教程
 
-1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501){target=“_blank”}
-2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501){target=“_blank”}
+1.[利用mkdocs部署静态网页至GitHub pages](https://blog.csdn.net/m0_63203517/article/details/127019819?spm=1001.2014.3001.5501){target=“_blank”}  
+
+2.[Mkdocs部署静态网页至GitHub pages配置说明](https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5501){target=“_blank”}  
+
 3.[如何在Mkdocs里自定义字体（霞鹜文楷）](https://blog.csdn.net/m0_63203517/article/details/131946304?spm=1001.2014.3001.5502){target=“_blank”}
 
 
