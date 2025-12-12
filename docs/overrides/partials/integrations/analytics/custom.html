@@ -1,0 +1,15 @@
+<script defer src="{{ config.extra.analytics.script_url }}" data-website-id="{{ config.extra.analytics.website_id }}"></script>
+<script>
+  /* Umami Analytics Integration */
+  var umamiWebsiteId = "{{ config.extra.analytics.website_id }}"
+
+  /* Wait for page to load and application to mount */
+  document.addEventListener("DOMContentLoaded", function() {
+    location$.subscribe(function(url) {
+      /* Track page view on SPA navigation */
+      if (typeof umami !== "undefined") {
+        umami.track()
+      }
+    })
+  })
+</script>

@@ -77,3 +77,39 @@ https://cdn.jsdelivr.net/gh/Wcowin/picx-images-hosting@master/IMG/Cravatar.jpg.1
     ---
 
 </div>
+
+
+## 🎉 1.4.0版本更新日志
+
+
+### 功能修复
+
+- 修复富文本丢失问题
+- 修复切换分类标签卡顿问题
+- 修复存在的占用内存过大问题
+- 修复了提问题的用户
+
+### 功能新增
+
+- 新增搜索筛选功能
+- 新增收藏标签功能
+- 新增云同步设备识别
+- 新增⌘+↑/↓跳到历史记录第一个/最后一个
+
+### 功能改进
+
+- 改进上下按键交互，现在搜索完成按下键即可选中第一个历史记录。从第一个历史记录按下上键即可继续聚焦搜索框进行搜索
+- 改进设置切换视图性能
+
+---
+
+## 下载
+
+[1.4.0版本点我自行下载](https://github.com/Wcowin/OneClip/releases/download/1.4.0/OneClip-1.4.0.dmg)
+
+如果您有好的建议请直接发邮件到[vip@oneclip.cloud](mailto:<vip@oneclip.cloud>)
+
+### TODO
+- [ ] 性能优化
+
+

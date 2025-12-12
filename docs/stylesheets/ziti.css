@@ -4,10 +4,11 @@ https://chinese-font.netlify.app/zh-cn/fonts/hwmct/汇文明朝体
 */
 
 @import url('https://fontsapi.zeoseven.com/292/main/result.css');
+
 body {
-font-family: "LXGW WenKai";
-font-weight: normal;
-} 
+  font-family: "LXGW WenKai", sans-serif;
+  font-weight: normal;
+}
 
 /* button.md-top {
     font-family: LXGW WenKai;

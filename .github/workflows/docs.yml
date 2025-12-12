@@ -17,6 +17,8 @@ jobs:
     steps:
       - uses: actions/configure-pages@v5
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
@@ -26,3 +28,11 @@ jobs:
         with:
           path: site
       - uses: actions/deploy-pages@v4
+        id: deployment
+      
+      # IndexNow - 通知搜索引擎内容更新
+      - name: IndexNow
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: 'https://wcowin.work/sitemap.xml'
+          key: ${{ secrets.INDEXNOW_KEY }}

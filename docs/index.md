@@ -9,7 +9,6 @@ hide:
 ---
 
 
-
 <!-- OneClip 公告栏 -->
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
@@ -55,8 +54,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://s1.imagehub.cc/images/2025/07/25/27c0e105ea7efbed5d046d3a8c303e9d.jpeg" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
+        <img src="https://image.66ghz.com/uploads/6935568cb6265_1765103244.png" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
+        <img src="https://image.66ghz.com/uploads/69352a8120f13_1765091969.png" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>
@@ -126,15 +125,15 @@ hide:
 }
 
 /* Safari特定修复 */
-@media not all and (min-resolution:.001dpcm) {
+/* @media not all and (min-resolution:.001dpcm) {
   @supports (-webkit-appearance:none) {
     .wcowin-header-subtitle-inner {
       display: inline-block;
       width: auto !important;
-      min-width: 280px; /* 确保足够宽度容纳文本 */
+      min-width: 280px; 
     }
   }
-}
+} */
 
 
 
@@ -565,7 +564,7 @@ hr {
 -   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
 
     ---
-    - [macOS 开发经验分享](develop/Mac-development/index.md)(最新更新)
+    - [macOS 开发经验分享](develop/Mac-development/index.md){ data-preview }(最新更新)
     - [模型上下文协议(MCP)简述](develop/AI/mcp.md)
     - [DeepSeek:从入门到精通](develop/deepseek.md)
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
@@ -597,8 +596,8 @@ hr {
 
     - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending]
     - [博客](blog/index.md)
-    - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
-    - [支持作者](about/zcw.md)
+    - [:octicons-arrow-right-24: 了解我](about/geren/#_4){ data-preview }
+    - [支持作者](about/zcw/#alipay){ data-preview }
 </div>
 
 
@@ -684,6 +683,7 @@ body::before {
   本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script><span id="finicount_views" style="font-weight: bold; color: #518FC1;"></span>
 </div> -->
 
+ 
 <!-- Umami Analytics -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
 <!-- Google Adsense -->
