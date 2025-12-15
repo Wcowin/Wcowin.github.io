@@ -349,7 +349,7 @@ nav = [
 variant = "modern"                # Zensical 特有：使用 modern 主题变体
 # name = "material"                 # 使用 Material for MkDocs 主题
 custom_dir = "docs/overrides"          # 自定义主题目录（相对于配置文件）
-logo = "https://image.66ghz.com/uploads/69352a8120f13_1765091969.png"
+logo = "https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png"
 # "https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png"
 # "https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp"  # 网站 Logo
 favicon = "https://i.stardots.io/wcowin/1750090373988.png"                         # 网站图标

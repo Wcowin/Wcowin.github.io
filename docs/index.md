@@ -19,7 +19,7 @@ hide:
 
 <!-- 在头部添加预加载关键资源 -->
 <link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
-<link rel="preload" href="https://s1.imagehub.cc/images/2025/07/25/27c0e105ea7efbed5d046d3a8c303e9d.jpeg" as="image">
+<link rel="preload" href="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" as="image">
 <!-- https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg -->
 <!-- wcowin-header.html -->
 <div class="wcowin-header-row">
@@ -54,8 +54,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://image.66ghz.com/uploads/6935568cb6265_1765103244.png" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://image.66ghz.com/uploads/69352a8120f13_1765091969.png" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
+        <img src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
+        <img src="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>
