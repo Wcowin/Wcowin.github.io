@@ -269,6 +269,12 @@ hide_comment: true
         <span class="about__info-title">3个+</span>
         <span class="about__info-name">贡献的开源</span>
     </div>
+    <div>
+        <a href="https://oneclip.cloud/" target="_blank">
+            <span class="about__info-title">2+</span>
+            <span class="about__info-name">独立开发软件</span>
+        </a>
+    </div>
 </div>
 
 

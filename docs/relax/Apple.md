@@ -1,15 +1,19 @@
 ---
 title: Apple
 ---
-<center> <font size=7> :simple-apple:</font></center>
-<center><b><font size=7>Ethics and Compliance</b>  </font>
+<center>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="320" height="320"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M447.1 332.7C446.9 296 463.5 268.3 497.1 247.9C478.3 221 449.9 206.2 412.4 203.3C376.9 200.5 338.1 224 323.9 224C308.9 224 274.5 204.3 247.5 204.3C191.7 205.2 132.4 248.8 132.4 337.5C132.4 363.7 137.2 390.8 146.8 418.7C159.6 455.4 205.8 545.4 254 543.9C279.2 543.3 297 526 329.8 526C361.6 526 378.1 543.9 406.2 543.9C454.8 543.2 496.6 461.4 508.8 424.6C443.6 393.9 447.1 334.6 447.1 332.7zM390.5 168.5C417.8 136.1 415.3 106.6 414.5 96C390.4 97.4 362.5 112.4 346.6 130.9C329.1 150.7 318.8 175.2 321 202.8C347.1 204.8 370.9 191.4 390.5 168.5z"/></svg>
+
+</center>  
+
+<center><b><font size=7>Ethics and Compliance</b>  </font><br>  
 
 <font size=5>
-Apple conducts business ethically, honestly, and in full compliance with the law.
-We believe that how we conduct ourselves is as critical to Apple’s success as making the best products in the world.
- Our Business Conduct and Compliance policies are foundational to how we do business and how we put our values into practice every day.
+Apple conducts business ethically, honestly, and in full compliance with the law.  
+We believe that how we conduct ourselves is as critical to Apple’s success as making the best products in the world.  
+Our Business Conduct and Compliance policies are foundational to how we do business and how we put our values into practice every day.  
 
-<b>We do the right thing, even when it’s not easy.
+<br><b>We do the right thing, even when it’s not easy.  
 
 ——Tim Cook</b> </font></center>
 
@@ -33,7 +37,8 @@ Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，
 
 ![](https://user-assets.sxlcdn.com/images/951476/FkEoM-JH0F6SYwS6RXR2ZIcSh45Q.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 
-<iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 560px; height: 315px; max-width: 100%"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 835px; height: 386px; max-width: 100%"> </iframe>
+
 
 
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1839403159&auto=0&height=32"></iframe> -->

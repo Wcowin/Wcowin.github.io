@@ -195,7 +195,9 @@ nav = [
             "develop/Mac-development/index.md",
             { "OneClip 架构设计与核心模块解析" = "develop/Mac-development/OneClip-Architecture-Design.md" },
             { "OneClip 开发经验分享：从零到一" = "develop/Mac-development/OneClip-Development-Experience.md" },
-            { "应用分发签名————OneClip为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" }
+            { "应用分发签名————OneClip为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" },
+            { "Mac Shell 环境优化指南" = "develop/Mac-Shell-Environment-Optimization.md" },
+            { "Mac 开发环境检查清单" = "develop/Mac-Development-Environment-Checklist.md" }
         ]},
         { "AI工具" = "develop/AI.md" },
         { "如何注册ChatGPT" = "develop/ChatGPT.md" },
@@ -312,15 +314,15 @@ nav = [
         { "我的家乡——漯河" = "trip/LH.md" },
         { "足迹" = "trip/footmark.md" }
     ]},
-    { "标签" = "tag.md" },
+    # { "标签" = "tag.md" },
     { "留言板" = "waline.md" },
     { "朋友" = [
         { "友链" = "link.md" },
         { "如何给MKdocs添加友链" = "blog/Mkdocs/linktech.md" }
     ]},
-    { "博客" = [
-        "blog/index.md"
-    ]},
+    # { "博客" = [
+    #     "blog/index.md"
+    # ]},
     { "关于" = [
         { "个人简介" = "about/geren.md" },
         { "个人简历" = "about/resume.md" },
