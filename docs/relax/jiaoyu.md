@@ -1,3 +1,7 @@
+---
+title: 关于教育革命的谈话
+---
+
 <h1>关于教育革命的谈话</h1>
 
 ![label](https://picx.zhimg.com/70/v2-7741f25cb1746815f9674f6f0edd1372_1440w.awebp?source%253D172ae18b%2526biz_tag%253DPost)

@@ -1,5 +1,6 @@
 ---
-# title: 欢迎来到我的博客
+title: Wcowin's Blog - 技术分享、开发笔记、生活随笔
+description: 知足且上进，温柔且坚定。分享 MkDocs 教程、Mac 技巧、Python 开发、旅行记录等内容。
 hide:
 #   - navigation # 显示右
 #   - toc #显示左

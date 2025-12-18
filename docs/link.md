@@ -32,38 +32,38 @@ comments: false
       </div>
      </div>
     </div>
-   <div class="card">
-     <img class="ava" loading="lazy" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" />
-     <div class="card-header">
-      <div>
-       <a href="https://wcowin.work/VitePress/" target="_blank">Wcowin's VitePress</a>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" />
+      <div class="card-header">
+        <div>
+          <a href="https://wcowin.work/VitePress/" target="_blank">Wcowin's VitePress</a>
+        </div>
+        <div class="info">
+          A college student
+        </div>
       </div>
-      <div class="info">
-      A college student
-      </div>
-     </div>
     </div>
-   <div class="card">
-     <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
-     <div class="card-header">
-      <div>
-       <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
+      <div class="card-header">
+        <div>
+          <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
+        </div>
+        <div class="info">
+          撰写最新的Zensical中文教程
+        </div>
       </div>
-      <div class="info">
-      撰写最新的Zensical中文教程
-      </div>
-     </div>
     </div>
-   <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png" />
-     <div class="card-header">
-      <div>
-       <a href="https://wcowin.work/Mkdocs-Wcowin/" target="_blank">Wcowin for MkDocs</a>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://wcowin.work/Mkdocs-Wcowin/" target="_blank">Wcowin for MkDocs</a>
+        </div>
+        <div class="info">
+          撰写最新的Mkdocs中文教程
+        </div>
       </div>
-      <div class="info">
-      撰写最新的Mkdocs中文教程
-      </div>
-     </div>
     </div>
    <!-- <div class="card">
      <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/07/S8GYheTZmCU96HK.png" />
@@ -85,16 +85,16 @@ comments: false
             <div class="info">文档即产品</div>
         </div>
     </div>
-       <div class="card">
-     <img class="ava" loading="lazy" src="https://picx.zhimg.com/v2-164bee4f6cb4d13ea680f8bada5b6a3e_xll.jpg?source=32738c0c&needBackground=1" />
-     <div class="card-header">
-      <div>
-       <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://picx.zhimg.com/v2-164bee4f6cb4d13ea680f8bada5b6a3e_xll.jpg?source=32738c0c&needBackground=1" />
+      <div class="card-header">
+        <div>
+          <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a>
+        </div>
+        <div class="info">
+          Mungeryang写字的地方
+        </div>
       </div>
-      <div class="info">
-       Mungeryang写字的地方
-      </div>
-     </div>
     </div>
    <div class="card">
      <img class="ava" loading="lazy" src="https://s2.loli.net/2024/03/31/Ht3QBqhgLYNAuwj.png" />
@@ -119,15 +119,15 @@ comments: false
       </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2025/06/16/qdWCDgjEpy4Airl.png" />
-     <div class="card-header">
-      <div>
-       <a href="https://finisky.github.io/" target="_blank">Finisky Garden</a>
+      <img class="ava" loading="lazy" src="https://s2.loli.net/2025/06/16/qdWCDgjEpy4Airl.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://finisky.github.io/" target="_blank">Finisky Garden</a>
+        </div>
+        <div class="info">
+          互联网技术那些事儿
+        </div>
       </div>
-      <div class="info">
-       互联网技术那些事儿
-      </div>
-     </div>
     </div>
        <!-- <div class="card">
      <img class="ava" loading="lazy" src="https://img.ixintu.com/upload/jpg/20210524/3a8cbb0f2da716313a3b18984a9ffe73_78863_800_772.jpg!con" />
@@ -711,7 +711,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://imgurl.zishu.me/favicon.png" />
+     <img class="ava" loading="lazy" src="https://zishu.me/favicon.ico" />
      <div class="card-header">
       <div>
       <a href="https://zishu.me" target="_blank">子舒的博客</a>
@@ -1005,17 +1005,6 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://images.6uu.us/20250511114301488.JPG" />
-      <div class="card-header">
-        <div>
-          <a href="https://blog.6uu.us/" target="_blank">bbb-lsy07</a>
-        </div>
-        <div class="info">
-          科技激荡人文，洞见智慧本真。
-        </div>
-      </div>
-    </div>
-    <div class="card">
       <img class="ava" loading="lazy" src="https://www.biibii.cn/usr/uploads/2025/07/3155658037.webp" />
       <div class="card-header">
         <div>
@@ -1023,17 +1012,6 @@ comments: false
         </div>
         <div class="info">
           记录生活中的技术脉搏。
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
-      <div class="card-header">
-        <div>
-          <a href="https://www.eilo.uk/" target="_blank">Eilo's Blog</a>
-        </div>
-        <div class="info">
-          等等我记一下
         </div>
       </div>
     </div>
@@ -1071,7 +1049,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://collaigo.com/collagelogo.ico" />
+      <img class="ava" loading="lazy" src="https://www.collaigo.com/assets/collagelogo-DJwLHSgZ.png" />
       <div class="card-header">
         <div>
           <a href="https://collaigo.com" target="_blank">Collaigo</a>
@@ -1537,6 +1515,29 @@ window.friendLinkUtils = {
       </div>
      </div>
     </div>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+      <div class="card-header">
+        <div>
+          <a href="https://blog.6uu.us/" target="_blank">bbb-lsy07(打不开)</a>
+        </div>
+        <div class="info">
+          科技激荡人文，洞见智慧本真。
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.eilo.uk/" target="_blank">Eilo's Blog</a>
+        </div>
+        <div class="info">
+          等等我记一下
+        </div>
+      </div>
+    </div>
+
 
 
 

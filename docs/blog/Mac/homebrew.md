@@ -1,4 +1,5 @@
 ---
+title: Homebrew国内如何自动安装(国内地址)(Mac & Linux)
 tags:
   - Mac
 ---

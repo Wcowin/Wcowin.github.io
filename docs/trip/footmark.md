@@ -1,4 +1,5 @@
 ---
+title: 足迹
 tags: [旅行]
 comments: false  #评论，默认不开启
 hide:

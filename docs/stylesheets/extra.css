@@ -1,7 +1,29 @@
 :root {
+  /* 主题色 */
   --md-primary-fg-color: #518FC1;
   --md-primary-fg-color--light: #518FC1;
   /* --md-primary-fg-color--dark: #518FC1; */
+  
+  /* 圆角容器 */
+  --rcorners-border-radius: 25px;
+  --rcorners-border-color: #518FC1;
+  --rcorners-padding: 20px;
+  --rcorners-width: 100%;
+  
+  /* 按钮 */
+  --button-border-radius: 12px;
+  --button-padding: 15px 32px;
+  --button-margin: 4px 2px;
+  --button-font-size: 16px;
+  --button-transition: 0.4s;
+  
+  /* 网格布局 */
+  --grid-bg-color: #2196F3;
+  --grid-gap: 10px;
+  --grid-padding: 10px;
+  --grid-item-bg-color: rgba(255, 255, 255, 0.8);
+  --grid-item-padding: 20px 0;
+  --grid-item-font-size: 30px;
 }
 
 /* 移除链接下划线 */
@@ -211,13 +233,6 @@ footer a:hover {
 
 
 /*圆角*/
-:root {
-  --rcorners-border-radius: 25px;
-  --rcorners-border-color: #518FC1;
-  --rcorners-padding: 20px;
-  --rcorners-width: 100%;
-}
-
 /* 圆角容器1 - 渐变背景 */
 #rcorners1 {
   border-radius: var(--rcorners-border-radius);
@@ -295,14 +310,6 @@ footer a:hover {
 }
 
 /* 按钮样式 - 使用CSS变量统一管理 */
-:root {
-  --button-border-radius: 12px;
-  --button-padding: 15px 32px;
-  --button-margin: 4px 2px;
-  --button-font-size: 16px;
-  --button-transition: 0.4s;
-}
-
 /* 基础按钮样式 */
 .buttoncss, .buttoncss1, .buttonxuan {
   border-radius: var(--button-border-radius);
@@ -419,15 +426,6 @@ div.hide {
 }
 
 /* 网格布局 - 使用CSS变量 */
-:root {
-  --grid-bg-color: #2196F3;
-  --grid-gap: 10px;
-  --grid-padding: 10px;
-  --grid-item-bg-color: rgba(255, 255, 255, 0.8);
-  --grid-item-padding: 20px 0;
-  --grid-item-font-size: 30px;
-}
-
 /* 网格区域定义 */
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }

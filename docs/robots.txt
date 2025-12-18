@@ -1,0 +1,13 @@
+# Robots.txt for wcowin.work
+# 允许所有搜索引擎爬取
+
+User-agent: *
+Allow: /
+
+# 禁止爬取的目录
+Disallow: /assets/
+Disallow: /stylesheets/
+Disallow: /javascripts/
+
+# Sitemap 位置
+Sitemap: https://wcowin.work/sitemap.xml

@@ -1,9 +1,15 @@
 /* 字体资源：
 https://fonts.zeoseven.com/ 
 https://chinese-font.netlify.app/zh-cn/fonts/hwmct/汇文明朝体
+https://github.com/CMBill/lxgw-wenkai-web (推荐，智能分包)
 */
 
+/* 旧方案：zeoseven CDN，加载 30+ 个分片，共 490KB
 @import url('https://fontsapi.zeoseven.com/292/main/result.css');
+*/
+
+/* 新方案：使用 jsDelivr CDN 的智能分包版本，只加载页面实际使用的汉字 */
+@import url('https://cdn.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest/style.css');
 
 body {
   font-family: "LXGW WenKai", sans-serif;

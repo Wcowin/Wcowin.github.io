@@ -1,3 +1,6 @@
+---
+title: 小米
+---
 
 <font face="宋体" color=orange size=6><b>:simple-xiaomi:</font><font face="宋体" color=orange size=7>永远相信美好的事情即将发生</b> </font>
 

@@ -1,4 +1,5 @@
 ---
+title: Macbook启动台顽固应用图标删除方法
 tags:
   - Mac
 ---

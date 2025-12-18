@@ -1,4 +1,5 @@
 ---
+title: 小小Mac技巧
 tags:
   - Mac
 ---

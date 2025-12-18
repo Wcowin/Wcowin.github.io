@@ -1,3 +1,7 @@
+---
+title: 配置详解
+---
+
 # zensical.toml 配置详解
 
 > 全面了解 Zensical 的配置选项

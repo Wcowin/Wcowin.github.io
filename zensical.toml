@@ -1,6 +1,7 @@
 # ==========================================
 # Zensical 配置文件
 # 从 MkDocs 迁移而来
+# pip install --upgrade --force-reinstall zensical
 # ==========================================
 
 [project]
@@ -39,17 +40,22 @@ edit_uri = "edit/main/docs"                              # 编辑按钮跳转的
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
 extra_javascript = [
-    "javascripts/glm-config.js",                              # 智谱清言翻译配置
-    "javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    # "javascripts/glm-config.js",                              # 智谱清言翻译配置
+    # "javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
     # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
     # "javascripts/extra.js",                                   # 额外功能脚本
     # "javascripts/mathjax.js",                                 # MathJax 配置
     # "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"       # MathJax CDN (数学公式渲染)
     # KaTeX 数学公式渲染（注意加载顺序）
-    "https://unpkg.com/katex@0/dist/katex.min.js",            # 1. 先加载 KaTeX 核心库
-    "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",  # 2. 再加载自动渲染插件
-    "javascripts/katex.js",                                    # 3. 最后加载配置文件
-    "javascripts/feedback.js"                                  # Umami 反馈追踪
+    # "https://unpkg.com/katex@0/dist/katex.min.js",            # 1. 先加载 KaTeX 核心库
+    # "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",  # 2. 再加载自动渲染插件
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js",            # 1. 先加载 KaTeX 核心库
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js",  # 2. 再加载自动渲染插件
+    # "javascripts/katex.js",                                    # 3. 最后加载配置文件
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/katex.js",
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/feedback.js"                                  # Umami 反馈追踪
 ]
 
 # ===== 额外的 CSS 文件 =====
@@ -65,7 +71,7 @@ extra_css = [
     "stylesheets/ziti.css",          # 字体样式
     # "about/sty/portfolio.css"        # 作品集样式
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
-    "https://unpkg.com/katex@0/dist/katex.min.css",
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
     "about/sty/portfolio.css"
 ]
 
@@ -190,6 +196,7 @@ nav = [
             { "MCP中文文档" = "https://mcp-docs.cn/introduction" },
             { "What is MCP" = "develop/AI/mcp.md" }
         ]},
+        { "RAG技术（检索增强生成）" = "develop/AI/rag.md" },
         { "GitHub 解封指南——This account is flagged" = "develop/GitHub-unblocked.md"},
         { "macOS开发" = [
             "develop/Mac-development/index.md",
@@ -356,6 +363,7 @@ logo = "https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc9706
 # "https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp"  # 网站 Logo
 favicon = "https://i.stardots.io/wcowin/1750090373988.png"                         # 网站图标
 language = "zh"                   # 网站语言：中文
+font.code = "JetBrains Mono"  
 
 # 主题功能特性
 features = [
