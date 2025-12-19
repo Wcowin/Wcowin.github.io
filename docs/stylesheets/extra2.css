@@ -10,8 +10,9 @@
   color: var(--md-default-fg-color);
   text-align: center;
   padding: 10px 20px;
-  margin: -20px 0 10px 0;
+  margin: -20px auto 50px auto;
   border-radius: 20px;
+  max-width: 600px;
 }
 
 /* 暗色模式适配 */
@@ -21,7 +22,7 @@
 }
 
 .oneclip-announcement-content {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 

@@ -1,17 +1,4 @@
 :root {
-  /*========== Colors ==========*/
-  --first-color: #333333;
-  --title-color: #333333;
-  --text-color: #757575;
-  --light-bg: rgba(255,255,255,0.8);
-  --light-bg-secondary: rgba(240,240,240,0.6);
-  --dark-bg: rgba(31,33,40,0.9);
-  --dark-bg-secondary: rgba(31,33,40,0.8);
-  --card-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  --card-shadow-hover: 0 8px 25px rgba(0,0,0,0.1);
-  --border-light: rgba(200,200,200,0.2);
-  --border-dark: rgba(80,80,80,0.2);
-
   /*========== Font and typography ==========*/
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -27,11 +14,6 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
-
-  /*========== Transitions ==========*/
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.6s ease;
 }
 
 /* Font size for large devices */
@@ -49,8 +31,8 @@
 
 
 h1, h2, h3, h4 {
-  color: #333333;
-  font-weight: var(--font-semi-bold);
+  color: #757575;
+  font-weight: 600;
 }
 
 
@@ -93,13 +75,13 @@ h1, h2, h3, h4 {
 
 .about__info-title {
   font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  color: #333333;
+  font-weight: 600;
+  color: #757575;
 }
 
 .about__info-name {
   font-size: var(--smaller-font-size);
-  color: #555;
+  color: #757575;
   margin-top: 0.5rem;
 }
 
@@ -167,7 +149,7 @@ h1, h2, h3, h4 {
 }
 
 .qualification__button:hover {
-  color: #555555;
+  color: #757575;
 }
 
 .qualification__icon {
@@ -202,14 +184,14 @@ h1, h2, h3, h4 {
 
 .qualification__calendar {
   font-size: var(--smaller-font-size);
-  color: #555555;
+  color: #757575;
 }
 
 .qualification__rounder {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: #333333;
+  background-color: #757575;
   border-radius: 50%;
 }
 
@@ -217,7 +199,7 @@ h1, h2, h3, h4 {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: #333333;
+  background-color: #757575;
   transform: translate(6px, -7px);
 }
 
@@ -230,7 +212,7 @@ h1, h2, h3, h4 {
 }
 
 .qualification__button.qualification__active {
-  color: #333333;
+  color: #757575;
 }
 
 /* 深色模式 - 履历时间线 */
@@ -270,12 +252,6 @@ h1, h2, h3, h4 {
 }
 
 /* 动画效果 */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -288,7 +264,8 @@ h1, h2, h3, h4 {
 }
 
 .about__info > div {
-  animation: fadeInUp 0.6s ease-out;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
 }
 
 .about__info > div:nth-child(1) { animation-delay: 0.1s; }

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * 智谱清言翻译系统配置文件 - 高性能简化版
  * 专注于核心功能，删除冗余配置
@@ -399,9 +400,13 @@ window.GLM_CONFIG = {
     domainAdaptation: false       // 领域适应
   },
 
-  // 系统提示词模板 - 增强版本
+  // 系统提示词模板 - 简洁版本
   prompts: {
-    system: '你是专业翻译助手。只返回翻译结果，不要返回提示词、解释或其他内容。',
+    system: `你是翻译助手。规则：
+1. 直接输出译文，不要解释
+2. 中英混合文本要整体翻译成目标语言
+3. 例如"Mkdocs中文Tutorial"翻译成英文应该是"Mkdocs Chinese Tutorial"
+4. 产品名如MkDocs、Zensical、OneClip保持原样`,
     
     // 上下文感知提示词 - 增强版本
     contextual: {
@@ -415,39 +420,37 @@ window.GLM_CONFIG = {
     
     templates: {
         short: {
-          english: 'Translate to natural English: {text}',
-          japanese: '日本語に翻訳: {text}',
-        korean: '한국어로 번역: {text}',
-          arabic: 'ترجم إلى العربية: {text}',
-        deutsch: 'Ins Deutsche übersetzen: {text}',
-          french: 'Traduire en français: {text}',
-        spanish: 'Traducir al español: {text}',
-        portuguese: 'Traduzir para português: {text}',
-        other: '请将以下中文文本翻译成地道、自然的{language}，保持原文的含义和语气。对于导航/界面元素，请使用简洁标准的翻译。重要：如果看到PROTECTED_TECH_1、PROTECTED_CUSTOM_2等占位符，请保持原样，不要翻译或修改这些占位符：{text}'
+          english: '翻译成英文: {text}',
+          japanese: '翻译成日文: {text}',
+          korean: '翻译成韩文: {text}',
+          arabic: '翻译成阿拉伯文: {text}',
+          deutsch: '翻译成德文: {text}',
+          french: '翻译成法文: {text}',
+          spanish: '翻译成西班牙文: {text}',
+          portuguese: '翻译成葡萄牙文: {text}',
+          other: '翻译成{language}: {text}'
       },
       long: {
-        english: 'Please provide a high-quality English translation of the following Chinese text. Focus on:\n- Natural English expression and proper grammar, avoiding Chinese-style syntax\n- Accurate terminology and consistent usage throughout the text\n- Appropriate tone and style for the context and target audience\n- Clear and readable structure with proper flow\n- Cultural adaptation where necessary\n- Professional language for technical content\n\nIMPORTANT: If you see placeholders like PROTECTED_TECH_1, PROTECTED_CUSTOM_2, PROTECTED_FORMAT_3, etc., keep them exactly as they are - do not translate or modify these placeholders. They represent protected technical terms that will be restored later.\n\n{context}\n\nText to translate: {text}',
-        japanese: '以下の中国語テキストを高品質な日本語に翻訳してください。以下の点に注意してください：\n- 自然な日本語表現と正しい文法、中国語的な表現の回避\n- 正確な専門用語と一貫した使用\n- 文脈に適した敬語と文体の選択\n- 明確で読みやすい構造と自然な文章の流れ\n- 日本の文化的背景に適した表現\n- 技術的内容には専門的な言語使用\n\n重要：PROTECTED_TECH_1、PROTECTED_CUSTOM_2、PROTECTED_FORMAT_3などのプレースホルダーが表示された場合は、そのまま保持してください。翻訳や変更はしないでください。これらは後で復元される保護された技術用語を表しています。\n\n{context}\n\n翻訳するテキスト：{text}',
-        korean: '다음 중국어 텍스트를 고품질 한국어로 번역해주세요. 다음 사항에 주의해주세요:\n- 자연스러운 한국어 표현과 올바른 문법, 중국어식 표현 회피\n- 정확한 전문용어와 일관된 사용\n- 문맥에 적합한 존댓말과 문체 선택\n- 명확하고 읽기 쉬운 구조와 자연스러운 문장 흐름\n- 한국 문화적 배경에 적합한 표현\n- 기술적 내용에는 전문적인 언어 사용\n\n중요: PROTECTED_TECH_1, PROTECTED_CUSTOM_2, PROTECTED_FORMAT_3 등의 플레이스홀더가 보이면 그대로 유지하세요. 번역하거나 수정하지 마세요. 이들은 나중에 복원될 보호된 기술 용어를 나타냅니다.\n\n{context}\n\n번역할 텍스트: {text}',
-        arabic: 'يرجى تقديم ترجمة عالية الجودة للنص الصيني التالي. ركز على:\n- التعبير العربي الطبيعي والقواعد النحوية الصحيحة\n- المصطلحات الدقيقة والاستخدام المتسق\n- النبرة والأسلوب المناسبين للسياق\n- البنية الواضحة والقابلة للقراءة\n\nمهم: إذا رأيت عناصر نائبة مثل PROTECTED_TECH_1، PROTECTED_CUSTOM_2، PROTECTED_FORMAT_3، احتفظ بها كما هي ولا تترجمها أو تعدلها. إنها تمثل مصطلحات تقنية محمية سيتم استعادتها لاحقاً.\n\n{context}\n\nالنص المراد ترجمته: {text}',
-        deutsch: 'Bitte liefern Sie eine hochwertige deutsche Übersetzung des folgenden chinesischen Textes. Konzentrieren Sie sich auf:\n- Natürlichen deutschen Ausdruck und korrekte Grammatik\n- Genaue Terminologie und konsistente Verwendung\n- Angemessenen Ton und Stil für den Kontext\n- Klare und lesbare Struktur\n\nWICHTIG: Wenn Sie Platzhalter wie PROTECTED_TECH_1, PROTECTED_CUSTOM_2, PROTECTED_FORMAT_3 sehen, behalten Sie diese genau bei - übersetzen oder ändern Sie diese Platzhalter nicht. Sie repräsentieren geschützte technische Begriffe, die später wiederhergestellt werden.\n\n{context}\n\nZu übersetzender Text: {text}',
-        french: 'Veuillez fournir une traduction française de haute qualité du texte chinois suivant. Concentrez-vous sur:\n- Expression française naturelle et grammaire appropriée\n- Terminologie précise et usage cohérent\n- Ton et style appropriés au contexte\n- Structure claire et lisible\n\nIMPORTANT: Si vous voyez des espaces réservés comme PROTECTED_TECH_1, PROTECTED_CUSTOM_2, PROTECTED_FORMAT_3, gardez-les exactement tels qu\'ils sont - ne traduisez pas ou ne modifiez pas ces espaces réservés. Ils représentent des termes techniques protégés qui seront restaurés plus tard.\n\n{context}\n\nTexte à traduire: {text}',
-        spanish: 'Por favor, proporcione una traducción al español de alta calidad del siguiente texto chino. Enfóquese en:\n- Expresión española natural y gramática apropiada\n- Terminología precisa y uso consistente\n- Tono y estilo apropiados para el contexto\n- Estructura clara y legible\n\nIMPORTANTE: Si ve marcadores como PROTECTED_TECH_1, PROTECTED_CUSTOM_2, PROTECTED_FORMAT_3, manténgalos exactamente como están - no traduzca o modifique estos marcadores. Representan términos técnicos protegidos que serán restaurados más tarde.\n\n{context}\n\nTexto a traducir: {text}',
-        portuguese: 'Por favor, forneça uma tradução em português de alta qualidade do seguinte texto chinês. Foque em:\n- Expressão portuguesa natural e gramática apropriada\n- Terminologia precisa e uso consistente\n- Tom e estilo apropriados para o contexto\n- Estrutura clara e legível\n\nIMPORTANTE: Se você ver marcadores como PROTECTED_TECH_1, PROTECTED_CUSTOM_2, PROTECTED_FORMAT_3, mantenha-os exatamente como estão - não traduza ou modifique esses marcadores. Eles representam termos técnicos protegidos que serão restaurados mais tarde.\n\n{context}\n\nTexto a traduzir: {text}',
-        other: '请将以下中文文本翻译为准确、地道的{language}。在保证翻译质量的同时，确保表达自然流畅。请特别注意上下文和术语一致性。\n\n重要：如果看到PROTECTED_TECH_1、PROTECTED_CUSTOM_2、PROTECTED_FORMAT_3等占位符，请保持原样，不要翻译或修改这些占位符。它们代表受保护的技术术语，稍后会被恢复。\n\n{context}\n\n待翻译文本：{text}'
+        english: '翻译成英文: {text}',
+        japanese: '翻译成日文: {text}',
+        korean: '翻译成韩文: {text}',
+        arabic: '翻译成阿拉伯文: {text}',
+        deutsch: '翻译成德文: {text}',
+        french: '翻译成法文: {text}',
+        spanish: '翻译成西班牙文: {text}',
+        portuguese: '翻译成葡萄牙文: {text}',
+        other: '翻译成{language}: {text}'
       },
-      
-      // 专门的导航/标题翻译模板 - 增强版本
       navigation: {
-        english: 'Translate this Chinese navigation/UI text to concise, standard English using proper interface terminology. Follow international web standards and maintain consistency with standard interface terminology. Avoid verbose expressions. IMPORTANT: Keep any placeholders like PROTECTED_TECH_1, PROTECTED_CUSTOM_2 exactly as they are: {text}',
-        japanese: 'この中国語のナビゲーション/UIテキストを、標準的なインターフェース用語を使用して簡潔な日本語に翻訳してください。国際的なWeb標準に従い、標準的なインターフェース用語との一貫性を保ってください。冗長な表現は避けてください。重要：PROTECTED_TECH_1、PROTECTED_CUSTOM_2などのプレースホルダーはそのまま保持してください：{text}',
-        korean: '이 중국어 내비게이션/UI 텍스트를 표준 인터페이스 용어를 사용하여 간결한 한국어로 번역해주세요. 국제적인 웹 표준을 따르며, 표준 인터페이스 용어와의 일관성을 유지해주세요. 장황한 표현은 피해주세요. 중요: PROTECTED_TECH_1, PROTECTED_CUSTOM_2 등의 플레이스홀더는 그대로 유지하세요: {text}',
-        arabic: 'ترجم نص التنقل/واجهة المستخدم الصيني هذا إلى العربية المختصرة والمعيارية باستخدام مصطلحات الواجهة المناسبة. مهم: احتفظ بأي عناصر نائبة مثل PROTECTED_TECH_1، PROTECTED_CUSTOM_2 كما هي: {text}',
-        deutsch: 'Übersetzen Sie diesen chinesischen Navigations-/UI-Text ins prägnante, standardmäßige Deutsche unter Verwendung angemessener Interface-Terminologie. WICHTIG: Behalten Sie alle Platzhalter wie PROTECTED_TECH_1, PROTECTED_CUSTOM_2 genau bei: {text}',
-        french: 'Traduisez ce texte de navigation/interface chinois en français concis et standard en utilisant la terminologie d\'interface appropriée. IMPORTANT: Gardez tous les espaces réservés comme PROTECTED_TECH_1, PROTECTED_CUSTOM_2 exactement tels qu\'ils sont: {text}',
-        spanish: 'Traduce este texto de navegación/interfaz chino al español conciso y estándar usando terminología de interfaz apropiada. IMPORTANTE: Mantén todos los marcadores como PROTECTED_TECH_1, PROTECTED_CUSTOM_2 exactamente como están: {text}',
-        portuguese: 'Traduza este texto de navegação/interface chinês para o português conciso e padrão usando terminologia de interface apropriada. IMPORTANTE: Mantenha todos os marcadores como PROTECTED_TECH_1, PROTECTED_CUSTOM_2 exatamente como estão: {text}',
-        other: '请将此中文导航/界面文本翻译为简洁、标准的{language}。重要：保持所有PROTECTED_TECH_1、PROTECTED_CUSTOM_2等占位符原样：{text}'
+        english: '翻译成英文: {text}',
+        japanese: '翻译成日文: {text}',
+        korean: '翻译成韩文: {text}',
+        arabic: '翻译成阿拉伯文: {text}',
+        deutsch: '翻译成德文: {text}',
+        french: '翻译成法文: {text}',
+        spanish: '翻译成西班牙文: {text}',
+        portuguese: '翻译成葡萄牙文: {text}',
+        other: '翻译成{language}: {text}'
       }
     },
     
@@ -822,6 +825,117 @@ window.GLM_CONFIG = {
         french: 'Interface Utilisateur',
         spanish: 'Interfaz de Usuario',
         portuguese: 'Interface do Usuário'
+      },
+      // 网站特定术语
+      '留言板': {
+        english: 'Guestbook',
+        japanese: '掲示板',
+        korean: '방명록'
+      },
+      '友链': {
+        english: 'Friends',
+        japanese: 'リンク',
+        korean: '링크'
+      },
+      '了解更多': {
+        english: 'Learn more',
+        japanese: '詳細を見る',
+        korean: '더 알아보기'
+      },
+      '剪贴板管理工具': {
+        english: 'Clipboard Manager',
+        japanese: 'クリップボードマネージャー',
+        korean: '클립보드 관리자'
+      },
+      'macOS剪贴板管理工具': {
+        english: 'macOS Clipboard Manager',
+        japanese: 'macOSクリップボードマネージャー',
+        korean: 'macOS 클립보드 관리자'
+      },
+      '最新的zensical中文教程': {
+        english: 'Latest Zensical Chinese Tutorial',
+        japanese: '最新のZensical中国語チュートリアル',
+        korean: '최신 Zensical 중국어 튜토리얼'
+      },
+      '中文教程': {
+        english: 'Chinese Tutorial',
+        japanese: '中国語チュートリアル',
+        korean: '중국어 튜토리얼'
+      },
+      'Mkdocs中文Tutorial': {
+        english: 'MkDocs Chinese Tutorial',
+        japanese: 'MkDocs中国語チュートリアル',
+        korean: 'MkDocs 중국어 튜토리얼'
+      },
+      'Zensical中文Tutorial': {
+        english: 'Zensical Chinese Tutorial',
+        japanese: 'Zensical中国語チュートリアル',
+        korean: 'Zensical 중국어 튜토리얼'
+      },
+      '中文': {
+        english: 'Chinese',
+        japanese: '中国語',
+        korean: '중국어'
+      },
+      '最新的': {
+        english: 'Latest',
+        japanese: '最新の',
+        korean: '최신'
+      },
+      '推荐阅读': {
+        english: 'Recommended',
+        japanese: 'おすすめ',
+        korean: '추천'
+      },
+      '个人简介': {
+        english: 'Profile',
+        japanese: 'プロフィール',
+        korean: '프로필'
+      },
+      '个人简历': {
+        english: 'Resume',
+        japanese: '履歴書',
+        korean: '이력서'
+      },
+      '免责声明': {
+        english: 'Disclaimer',
+        japanese: '免責事項',
+        korean: '면책 조항'
+      },
+      '支持作者': {
+        english: 'Support',
+        japanese: 'サポート',
+        korean: '후원'
+      },
+      '网站制作': {
+        english: 'Site Building',
+        japanese: 'サイト制作',
+        korean: '사이트 제작'
+      },
+      '测试组件': {
+        english: 'Test Components',
+        japanese: 'テストコンポーネント',
+        korean: '테스트 컴포넌트'
+      },
+      '网站状态': {
+        english: 'Site Status',
+        japanese: 'サイト状態',
+        korean: '사이트 상태'
+      },
+      '个人目标': {
+        english: 'Goals',
+        japanese: '目標',
+        korean: '목표'
+      },
+      '年度总结': {
+        english: 'Annual Review',
+        japanese: '年間まとめ',
+        korean: '연간 리뷰'
+      },
+      '密码学': {
+        english: 'Cryptography',
+        japanese: '暗号学',
+        korean: '암호학'
       }
     }
   },
@@ -958,113 +1072,19 @@ window.GLM_CONFIG.getLanguageRules = function(langCode) {
   return this.advanced.languageSpecificRules[langCode] || {};
 };
 
-// 检查是否应该跳过翻译 - 增强版本：支持代码注释翻译
-window.GLM_CONFIG.shouldSkipTranslation = function(text, targetLang = null) {
-  if (!text || text.length < this.detection.minTextLength) {
-    return true;
-  }
+// 检查是否应该跳过翻译 - 简化版本
+window.GLM_CONFIG.shouldSkipTranslation = function(text) {
+  if (!text || text.length < 2) return true;
   
   const trimmedText = text.trim();
   
-  // 优先检查代码注释 - 如果是包含中文的注释，应该翻译
-  if (this.isCodeComment && this.isCodeComment(trimmedText)) {
-    console.log('✅ 发现代码注释，允许翻译:', trimmedText.slice(0, 50) + '...');
-    return false; // 不跳过，应该翻译
-  }
-  
-  // 检查普通的Markdown代码区域
-  if (this.isMarkdownCode(trimmedText)) {
-    console.log(`⚠️ 跳过Markdown代码区域: ${trimmedText.slice(0, 50)}...`);
-    return true;
-  }
-  
-  // 检查是否包含中文字符
-  const hasChinese = /[\u4e00-\u9fff]/.test(trimmedText);
-  
-  // 扩展的技术术语列表
-  const technicalTerms = [
-    'GitHub', 'MkDocs', 'Front Matter', 'API', 'URL', 'HTML', 'CSS', 'JavaScript',
-    'Git', 'Node.js', 'npm', 'yarn', 'pnpm', 'React', 'Vue', 'Angular',
-    'TypeScript', 'JSON', 'XML', 'YAML', 'Markdown', 'SQL', 'NoSQL',
-    'Docker', 'Kubernetes', 'AWS', 'Azure', 'GCP', 'CI/CD', 'DevOps',
-    'REST', 'GraphQL', 'OAuth', 'JWT', 'HTTPS', 'SSH', 'FTP', 'HTTP',
-    'Priority Order', 'Cache', 'Redis', 'MongoDB', 'MySQL', 'PostgreSQL',
-    'Plugins', 'Document Dates', 'Position', 'Top', 'Date', 'Display',
-    'Author', 'Please', 'Localization', 'Chinese', 'Exclude', 'File'
-  ];
-  
-  // 如果包含中文，应用智能跳过规则
-  if (hasChinese) {
-    // 检查是否为纯技术术语列表（没有中文描述性内容）
-    const words = trimmedText.split(/[\s\>\<\|\(\)\[\]\{\}\,\.\/\\\-\+\=\:]+/).filter(word => word.length > 0);
-    const chineseWords = words.filter(word => /[\u4e00-\u9fff]/.test(word));
-    const technicalWordCount = words.filter(word => 
-      technicalTerms.some(term => term.toLowerCase() === word.toLowerCase())
-    ).length;
-    
-    // 只有当中文词汇很少（<20%）且技术术语很多（>80%）时才跳过
-    // 这样可以确保像"优先级顺序：Front Matter > 文件系统时间戳"这样的描述性文本被翻译
-    if (words.length > 0 && 
-        (chineseWords.length / words.length) < 0.2 && 
-        (technicalWordCount / words.length) > 0.8) {
-      console.log(`⚠️ 跳过技术术语密集文本: ${trimmedText.slice(0, 50)}...`);
-      return true;
-    }
-    
-    // 跳过纯英文技术术语组合（如 "Priority Order"）
-    if (/^[a-zA-Z\s\>\<\|\(\)\[\]\{\}\,\.\/\\\-\+\=\:]+$/.test(trimmedText)) {
-      const englishWords = trimmedText.split(/[\s\>\<\|\(\)\[\]\{\}\,\.\/\\\-\+\=\:]+/).filter(word => word.length > 0);
-      const technicalEnglishCount = englishWords.filter(word => 
-        technicalTerms.some(term => term.toLowerCase() === word.toLowerCase())
-      ).length;
-      
-      if (englishWords.length > 0 && (technicalEnglishCount / englishWords.length) > 0.5) {
-        console.log(`⚠️ 跳过英文技术术语组合: ${trimmedText}`);
-        return true;
-      }
-    }
-    
-    // 其他包含中文的内容都不跳过
+  // 包含中文就翻译，不跳过
+  if (/[\u4e00-\u9fff]/.test(trimmedText)) {
     return false;
   }
   
-  // 对于不包含中文的文本，应用基本跳过规则
-  
-  // 跳过纯英文技术术语
-  if (technicalTerms.some(term => trimmedText === term)) {
-    return true;
-  }
-  
-  // 跳过技术术语组合
-  const words = trimmedText.split(/[\s\>\<\|\(\)\[\]\{\}\,\.\/\\\-\+\=\:]+/).filter(word => word.length > 0);
-  const technicalWordCount = words.filter(word => 
-    technicalTerms.some(term => term.toLowerCase() === word.toLowerCase())
-  ).length;
-  
-  if (words.length > 0 && (technicalWordCount / words.length) > 0.6) {
-    return true;
-  }
-  
-  // 跳过纯代码和模板语法
-  if (/^[a-zA-Z_][a-zA-Z0-9_]*\([^)]*\)$/.test(trimmedText) || // 函数调用
-      /^\w+@\w+\.\w+$/.test(trimmedText) || // 邮箱
-      /^https?:\/\/[^\s]+$/.test(trimmedText) || // URL
-      /^[a-zA-Z0-9_\-\.]+\.[a-zA-Z]{2,}$/.test(trimmedText) || // 域名
-      /^\$[a-zA-Z_][a-zA-Z0-9_]*$/.test(trimmedText) || // 变量
-      /^#[a-fA-F0-9]{3,8}$/.test(trimmedText) || // 颜色代码
-      /^\d+(\.\d+)?(px|em|rem|%|vh|vw)$/.test(trimmedText) || // CSS单位
-      // 模板语法检测
-      /\{%[\s\S]*?%\}/.test(trimmedText) || // Jinja2/Django 模板语法
-      /\{\{[\s\S]*?\}\}/.test(trimmedText) || // 变量输出语法
-      /\{#[\s\S]*?#\}/.test(trimmedText) || // 模板注释
-      /^\{%\s*(set|if|for|endif|endfor|else|elif)[\s\S]*?%\}$/.test(trimmedText) || // 模板控制语句
-      /page\.(meta|title|content)\.[a-zA-Z_][a-zA-Z0-9_]*/.test(trimmedText) || // 页面变量访问
-      /^[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*[^\s]/.test(trimmedText)) { // 变量赋值
-    console.log(`⚠️ 跳过代码/模板语法: ${trimmedText.slice(0, 50)}...`);
-    return true;
-  }
-  
-  return false;
+  // 纯英文/数字/符号，跳过
+  return true;
 };
 
 // 检查是否为Markdown代码区域
@@ -1244,88 +1264,11 @@ window.GLM_CONFIG.extractCommentText = function(text) {
   return null;
 };
 
-// 生成提示词 - 增强版本：支持代码注释
-window.GLM_CONFIG.generatePrompt = function(text, targetLang, context = 'content') {
-  const isEnglish = targetLang === 'english';
-  const isJapanese = targetLang === 'japanese';
-  const isShort = text.length < 30;
-  
-  // 检查是否为代码注释
-  const isCodeComment = this.isCodeComment && this.isCodeComment(text);
-  
-  // 检查是否为导航/UI元素
-  const isNavigation = this.isNavigationText(text) || context === 'navigation';
-  
-  // 为代码注释使用专门的提示词
-  if (isCodeComment) {
-    if (isEnglish) {
-      return `You are a professional code comment translator. Translate the following Chinese code comment to natural, clear English while preserving the technical accuracy and code format. Only translate the comment content, keep any code syntax symbols unchanged:
-
-${text}
-
-Requirements:
-- Maintain technical precision
-- Use natural English expression
-- Keep the original code comment format (// # /* etc.)
-- Only return the translated comment, no explanation`;
-    } else if (isJapanese) {
-      return `あなたは専門的なコード注釈翻訳者です。以下の中国語コード注釈を自然で明確な日本語に翻訳し、技術的な正確性とコード形式を保持してください。注釈の内容のみを翻訳し、コード構文記号は変更しないでください：
-
-${text}
-
-要件：
-- 技術的な精度を維持
-- 自然な日本語表現を使用
-- 元のコード注釈形式を保持（// # /* など）
-- 翻訳された注釈のみを返し、説明は不要`;
-    } else {
-      const languageName = this.getLanguage(targetLang)?.name || targetLang;
-      return `You are a professional code comment translator. Translate the following Chinese code comment to natural, clear ${languageName} while preserving the technical accuracy and code format. Only translate the comment content, keep any code syntax symbols unchanged:
-
-${text}
-
-Requirements:
-- Maintain technical precision
-- Use natural ${languageName} expression
-- Keep the original code comment format (// # /* etc.)
-- Only return the translated comment, no explanation`;
-    }
-  }
-  
-  // 选择合适的模板
-  let template;
-  if (isNavigation) {
-    template = this.prompts.templates.navigation;
-  } else {
-    template = isShort ? this.prompts.templates.short : this.prompts.templates.long;
-  }
-  
-  // 检查术语字典
-  const terminologyHint = this.getTerminologyHint(text, targetLang);
-  
-  if (isEnglish) {
-    let prompt = template.english.replace('{text}', text);
-    if (!isNavigation && !isShort) {
-      const contextHint = this.prompts.contextual[context] || '';
-      prompt = prompt.replace('{context}', contextHint + terminologyHint);
-    }
-    return prompt;
-  } else if (isJapanese) {
-    let prompt = template.japanese.replace('{text}', text);
-    if (!isNavigation && !isShort) {
-      const contextHint = this.prompts.contextual[context] || '';
-      prompt = prompt.replace('{context}', contextHint + terminologyHint);
-    }
-    return prompt;
-  } else {
-    const languageName = this.getLanguage(targetLang)?.name || targetLang;
-    let prompt = template.other.replace('{language}', languageName).replace('{text}', text);
-    if (!isNavigation && !isShort) {
-      const contextHint = this.prompts.contextual[context] || '';
-      prompt = prompt.replace('{context}', contextHint + terminologyHint);
-    }
-    return prompt;
-  }
+// 生成提示词 - 简化版本
+window.GLM_CONFIG.generatePrompt = function(text, targetLang) {
+  const template = this.prompts.templates.short[targetLang] || this.prompts.templates.short.other;
+  const languageName = this.getLanguage(targetLang)?.name || targetLang;
+  return template.replace('{text}', text).replace('{language}', languageName);
 };
 
 // 检查是否为导航文本 - 增强版本

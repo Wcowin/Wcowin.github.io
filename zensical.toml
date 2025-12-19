@@ -40,10 +40,10 @@ edit_uri = "edit/main/docs"                              # 编辑按钮跳转的
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
 extra_javascript = [
-    # "javascripts/glm-config.js",                              # 智谱清言翻译配置
-    # "javascripts/glm-translate.js",                           # 智谱清言翻译系统
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
+    "javascripts/glm-config.js",                              # 智谱清言翻译配置
+    "javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
     # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
     # "javascripts/extra.js",                                   # 额外功能脚本
     # "javascripts/mathjax.js",                                 # MathJax 配置

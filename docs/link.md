@@ -711,7 +711,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://zishu.me/favicon.ico" />
+     <img class="ava" loading="lazy" src="https://i.111666.best/image/crFUarrdx5jWQBNXsrgPWp.png" />
      <div class="card-header">
       <div>
       <a href="https://zishu.me" target="_blank">子舒的博客</a>

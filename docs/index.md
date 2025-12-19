@@ -18,6 +18,11 @@ hide:
   </div>
 </div>
 
+<!-- 加载 Inter 字体 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+
 <!-- 在头部添加预加载关键资源 -->
 <link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
 <link rel="preload" href="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" as="image">
@@ -29,13 +34,7 @@ hide:
     <div class="wcowin-header-title">Wcowin</div>
     <div class="wcowin-header-subtitle">
       <span class="wcowin-header-subtitle-inner">
-        A college student
-        <svg width="280" height="18" class="wcowin-header-underline" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8,12 Q38,18 68,12 Q98,6 128,12 Q158,18 188,12 Q218,6 248,12 Q278,18 308,12"
-            stroke="#424242" stroke-width="5" fill="none"
-            stroke-linecap="round" stroke-linejoin="round"
-            style="filter: blur(0.2px); opacity: 0.85;" />
-        </svg>
+        <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
       </span>
     </div>
     <!-- <div class="wcowin-header-motto">Free and diffuse</div> -->
@@ -46,7 +45,7 @@ hide:
       </a>
       <a href="mailto:wcowin@qq.com" class="md-button">
         <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
-        Contact me
+        Email me
       </a>
     </div>
   </div>
@@ -92,11 +91,11 @@ hide:
 
 .wcowin-header-title {
   font-size: 3.2rem;
-  /* font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', 'Hiragino Sans', Arial, sans-serif; */
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-family: 'Inter', 'Montserrat', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700; /* 使用最粗的字重 */
+  letter-spacing: 1px;
   margin-bottom: 18px;
-  color: #6D6D6D;
+  color: #4a4a4a;
   display: flex;
   align-items: center;
 }
@@ -123,6 +122,21 @@ hide:
   letter-spacing: 0.5px;
   white-space: nowrap; /* 确保文本不会换行 */
   width: auto; /* 确保宽度自适应内容 */
+  min-width: 280px; /* 防止打字时宽度跳动 */
+}
+
+/* 打字机光标样式 */
+.typewriter-cursor {
+  display: inline-block;
+  color: #518FC1;
+  font-weight: 300;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 
 /* Safari特定修复 */
@@ -203,56 +217,113 @@ hide:
   justify-content: center;
 }
 
+/* 彩虹渐变动画 - 完全复刻VitePress效果 */
+@keyframes rainbow {
+  0% { --rainbow-prev: #009ff7; --rainbow-next: #c76dd1; }
+  1.25% { --rainbow-prev: #009dfa; --rainbow-next: #cf69c9; }
+  2.5% { --rainbow-prev: #009bfc; --rainbow-next: #d566c2; }
+  3.75% { --rainbow-prev: #0098fd; --rainbow-next: #dc63ba; }
+  5% { --rainbow-prev: #0096fd; --rainbow-next: #e160b3; }
+  6.25% { --rainbow-prev: #0093fd; --rainbow-next: #e65eab; }
+  7.5% { --rainbow-prev: #2e90fc; --rainbow-next: #e95ca2; }
+  8.75% { --rainbow-prev: #4d8dfa; --rainbow-next: #ed5a9a; }
+  10% { --rainbow-prev: #638af8; --rainbow-next: #ef5992; }
+  11.25% { --rainbow-prev: #7587f5; --rainbow-next: #f15989; }
+  12.5% { --rainbow-prev: #8583f1; --rainbow-next: #f25981; }
+  13.75% { --rainbow-prev: #9280ed; --rainbow-next: #f25a79; }
+  15% { --rainbow-prev: #9f7ce9; --rainbow-next: #f25c71; }
+  16.25% { --rainbow-prev: #aa78e3; --rainbow-next: #f15e69; }
+  17.5% { --rainbow-prev: #b574dd; --rainbow-next: #ef6061; }
+  18.75% { --rainbow-prev: #be71d7; --rainbow-next: #ed635a; }
+  20% { --rainbow-prev: #c76dd1; --rainbow-next: #eb6552; }
+  21.25% { --rainbow-prev: #cf69c9; --rainbow-next: #e8694b; }
+  22.5% { --rainbow-prev: #d566c2; --rainbow-next: #e46c44; }
+  23.75% { --rainbow-prev: #dc63ba; --rainbow-next: #e06f3d; }
+  25% { --rainbow-prev: #e160b3; --rainbow-next: #db7336; }
+  26.25% { --rainbow-prev: #e65eab; --rainbow-next: #d77630; }
+  27.5% { --rainbow-prev: #e95ca2; --rainbow-next: #d17a2a; }
+  28.75% { --rainbow-prev: #ed5a9a; --rainbow-next: #cc7d24; }
+  30% { --rainbow-prev: #ef5992; --rainbow-next: #c6811e; }
+  31.25% { --rainbow-prev: #f15989; --rainbow-next: #bf8418; }
+  32.5% { --rainbow-prev: #f25981; --rainbow-next: #b98713; }
+  33.75% { --rainbow-prev: #f25a79; --rainbow-next: #b28a0f; }
+  35% { --rainbow-prev: #f25c71; --rainbow-next: #ab8d0c; }
+  36.25% { --rainbow-prev: #f15e69; --rainbow-next: #a3900b; }
+  37.5% { --rainbow-prev: #ef6061; --rainbow-next: #9c920d; }
+  38.75% { --rainbow-prev: #ed635a; --rainbow-next: #949510; }
+  40% { --rainbow-prev: #eb6552; --rainbow-next: #8b9715; }
+  41.25% { --rainbow-prev: #e8694b; --rainbow-next: #83991b; }
+  42.5% { --rainbow-prev: #e46c44; --rainbow-next: #7a9b21; }
+  43.75% { --rainbow-prev: #e06f3d; --rainbow-next: #719d27; }
+  45% { --rainbow-prev: #db7336; --rainbow-next: #679e2e; }
+  46.25% { --rainbow-prev: #d77630; --rainbow-next: #5da035; }
+  47.5% { --rainbow-prev: #d17a2a; --rainbow-next: #51a13c; }
+  48.75% { --rainbow-prev: #cc7d24; --rainbow-next: #44a244; }
+  50% { --rainbow-prev: #c6811e; --rainbow-next: #34a44b; }
+  51.25% { --rainbow-prev: #bf8418; --rainbow-next: #1ba553; }
+  52.5% { --rainbow-prev: #b98713; --rainbow-next: #00a65b; }
+  53.75% { --rainbow-prev: #b28a0f; --rainbow-next: #00a663; }
+  55% { --rainbow-prev: #ab8d0c; --rainbow-next: #00a76c; }
+  56.25% { --rainbow-prev: #a3900b; --rainbow-next: #00a874; }
+  57.5% { --rainbow-prev: #9c920d; --rainbow-next: #00a87d; }
+  58.75% { --rainbow-prev: #949510; --rainbow-next: #00a985; }
+  60% { --rainbow-prev: #8b9715; --rainbow-next: #00a98e; }
+  61.25% { --rainbow-prev: #83991b; --rainbow-next: #00a996; }
+  62.5% { --rainbow-prev: #7a9b21; --rainbow-next: #00a99f; }
+  63.75% { --rainbow-prev: #719d27; --rainbow-next: #00a9a7; }
+  65% { --rainbow-prev: #679e2e; --rainbow-next: #00a9b0; }
+  66.25% { --rainbow-prev: #5da035; --rainbow-next: #00a9b8; }
+  67.5% { --rainbow-prev: #51a13c; --rainbow-next: #00a9c0; }
+  68.75% { --rainbow-prev: #44a244; --rainbow-next: #00a8c7; }
+  70% { --rainbow-prev: #34a44b; --rainbow-next: #00a8cf; }
+  71.25% { --rainbow-prev: #1ba553; --rainbow-next: #00a7d5; }
+  72.5% { --rainbow-prev: #00a65b; --rainbow-next: #00a6dc; }
+  73.75% { --rainbow-prev: #00a663; --rainbow-next: #00a6e2; }
+  75% { --rainbow-prev: #00a76c; --rainbow-next: #00a4e7; }
+  76.25% { --rainbow-prev: #00a874; --rainbow-next: #00a3ec; }
+  77.5% { --rainbow-prev: #00a87d; --rainbow-next: #00a2f1; }
+  78.75% { --rainbow-prev: #00a985; --rainbow-next: #00a0f4; }
+  80% { --rainbow-prev: #00a98e; --rainbow-next: #009ff7; }
+  81.25% { --rainbow-prev: #00a996; --rainbow-next: #009dfa; }
+  82.5% { --rainbow-prev: #00a99f; --rainbow-next: #009bfc; }
+  83.75% { --rainbow-prev: #00a9a7; --rainbow-next: #0098fd; }
+  85% { --rainbow-prev: #00a9b0; --rainbow-next: #0096fd; }
+  86.25% { --rainbow-prev: #00a9b8; --rainbow-next: #0093fd; }
+  87.5% { --rainbow-prev: #00a9c0; --rainbow-next: #2e90fc; }
+  88.75% { --rainbow-prev: #00a8c7; --rainbow-next: #4d8dfa; }
+  90% { --rainbow-prev: #00a8cf; --rainbow-next: #638af8; }
+  91.25% { --rainbow-prev: #00a7d5; --rainbow-next: #7587f5; }
+  92.5% { --rainbow-prev: #00a6dc; --rainbow-next: #8583f1; }
+  93.75% { --rainbow-prev: #00a6e2; --rainbow-next: #9280ed; }
+  95% { --rainbow-prev: #00a4e7; --rainbow-next: #9f7ce9; }
+  96.25% { --rainbow-prev: #00a3ec; --rainbow-next: #aa78e3; }
+  97.5% { --rainbow-prev: #00a2f1; --rainbow-next: #b574dd; }
+  98.75% { --rainbow-prev: #00a0f4; --rainbow-next: #be71d7; }
+  100% { --rainbow-prev: #009ff7; --rainbow-next: #c76dd1; }
+}
+
 .flip-glow-ultimate-glow {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px; height: 320px; /* 从360px减小到320px */
+  width: 260px; height: 260px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
-  background:
-    radial-gradient(circle at 60% 40%, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.08) 60%, transparent 100%),
-    conic-gradient(from 0deg,
-      #ff9edb 0%, #a2d8ff 20%, #a8ffb0 40%, #fff5a8 60%, #ffb0b0 80%, #ff9edb 100%
-    );
-  filter: blur(50px) brightness(1.1) saturate(1.2); /* 减小模糊半径和亮度 */
-  opacity: 0.85; /* 降低不透明度 */
-  animation:
-    glow-ultimate-rotate 15s linear infinite,
-    glow-ultimate-breath 5s ease-in-out infinite alternate,
-    glow-ultimate-hue 25s linear infinite;
+  --rainbow-prev: #009ff7;
+  --rainbow-next: #c76dd1;
+  background: linear-gradient(-45deg, var(--rainbow-prev) 30%, var(--rainbow-next));
+  filter: blur(60px);
+  opacity: 0.85;
+  animation: rainbow 8s linear infinite;
 }
 
-@keyframes glow-ultimate-rotate {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-@keyframes glow-ultimate-breath {
-  0% { opacity: 0.7; filter: blur(50px) brightness(1.05) saturate(1.1); transform: translate(-50%, -50%) scale(0.92);}
-  50% { opacity: 0.85; filter: blur(55px) brightness(1.15) saturate(1.25); transform: translate(-50%, -50%) scale(1.0);}
-  100% { opacity: 0.7; filter: blur(50px) brightness(1.05) saturate(1.1); transform: translate(-50%, -50%) scale(0.92);}
-}
-
-/* 为深色模式添加特定的光辉调整 */
+/* 深色模式调整 */
 @media (prefers-color-scheme: dark) {
   .flip-glow-ultimate-glow {
-    width: 300px; height: 300px; /* 在深色模式下进一步减小 */
-    filter: blur(45px) brightness(0.95) saturate(1.1); /* 降低亮度 */
-    opacity: 0.75; /* 降低不透明度 */
+    filter: blur(60px);
+    opacity: 0.7;
   }
-
-  @keyframes glow-ultimate-breath {
-    0% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9); }
-    50% { opacity: 0.75; filter: blur(50px) brightness(1.0) saturate(1.15); transform: translate(-50%, -50%) scale(0.98); }
-    100% { opacity: 0.65; filter: blur(45px) brightness(0.9) saturate(1.0); transform: translate(-50%, -50%) scale(0.9); }
-  }
-}
-
-@keyframes glow-ultimate-hue {
-  0% { filter: blur(60px) brightness(1.2) saturate(1.3) hue-rotate(0deg); }
-  50% { filter: blur(60px) brightness(1.2) saturate(1.3) hue-rotate(20deg); }
-  100% { filter: blur(60px) brightness(1.2) saturate(1.3) hue-rotate(0deg); }
 }
 
 .flip-glow-ultimate-imgs {
@@ -383,6 +454,102 @@ hide:
 }
 </style>
 
+<!-- 打字机效果脚本 - 支持多语言 -->
+<script>
+(function() {
+  // 多语言文字列表
+  const phrasesData = {
+    chinese_simplified: [
+      "A college student",
+      "A developer",
+      "A dreamer",
+      "循此苦旅 以达星辰"
+    ],
+    english: [
+      "A college student",
+      "A developer",
+      "A dreamer",
+      "Through hardship to the stars"
+    ],
+    japanese: [
+      "A college student",
+      "A developer",
+      "A dreamer",
+      "苦難を経て星へ"
+    ]
+  };
+  
+  // 获取当前语言
+  function getCurrentLanguage() {
+    try {
+      const saved = localStorage.getItem('glm_global_translation_preference');
+      return saved && saved !== 'null' ? saved : 'chinese_simplified';
+    } catch (e) {
+      return 'chinese_simplified';
+    }
+  }
+  
+  // 获取当前语言的短语列表
+  function getPhrases() {
+    const lang = getCurrentLanguage();
+    return phrasesData[lang] || phrasesData.chinese_simplified;
+  }
+  
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typewriterElement = null;
+  
+  const typeSpeed = 100;
+  const deleteSpeed = 50;
+  const pauseTime = 2000;
+  const startDelay = 500;
+  
+  function typeWriter() {
+    if (!typewriterElement) {
+      typewriterElement = document.getElementById('typewriter-text');
+      if (!typewriterElement) {
+        setTimeout(typeWriter, 100);
+        return;
+      }
+    }
+    
+    const phrases = getPhrases();
+    const currentPhrase = phrases[phraseIndex % phrases.length];
+    
+    if (isDeleting) {
+      charIndex--;
+      typewriterElement.textContent = currentPhrase.substring(0, charIndex);
+      
+      if (charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        setTimeout(typeWriter, startDelay);
+      } else {
+        setTimeout(typeWriter, deleteSpeed);
+      }
+    } else {
+      charIndex++;
+      typewriterElement.textContent = currentPhrase.substring(0, charIndex);
+      
+      if (charIndex === currentPhrase.length) {
+        isDeleting = true;
+        setTimeout(typeWriter, pauseTime);
+      } else {
+        setTimeout(typeWriter, typeSpeed);
+      }
+    }
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(typeWriter, startDelay);
+    });
+  } else {
+    setTimeout(typeWriter, startDelay);
+  }
+})();
+</script>
 
 <!-- 移除这个换行符，它会产生额外的空间 -->
 <!-- <br class="desktop-only"/> -->
@@ -639,29 +806,7 @@ body {
   position: relative; /* 确保 body 元素的 position 属性为非静态值 */
 }
 
-body::before {
-  --size: 35px; /* 调整网格单元大小 */
-  --line: color-mix(in hsl, canvasText, transparent 80%); /* 调整线条透明度 */
-  content: '';
-  height: 100vh;
-  /* width: 100%; */
-  width: 100vw;
-  position: absolute; /* 修改为 absolute 以使其随页面滚动 */
-  background: linear-gradient(
-        90deg,
-        var(--line) 1px,
-        transparent 1px var(--size)
-      )
-      50% 50% / var(--size) var(--size),
-    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
-      var(--size) var(--size);
-  -webkit-mask: linear-gradient(-20deg, transparent 50%, white);
-          mask: linear-gradient(-20deg, transparent 50%, white);
-  top: 0;
-  transform-style: flat;
-  pointer-events: none;
-  z-index: -1;
-}
+/* 原CSS网格已替换为Canvas交互网格 */
 
 @media (max-width: 768px) {
   body::before {
@@ -672,6 +817,120 @@ body::before {
   .flip-glow-ultimate-glow {
     animation: none;
     opacity: 0.3;
+  }
+}
+
+</style>
+
+<!-- 网格起伏效果 Canvas -->
+<canvas id="gridCanvas"></canvas>
+
+<script>
+(function() {
+  const canvas = document.getElementById('gridCanvas');
+  if (!canvas) return;
+  
+  const ctx = canvas.getContext('2d');
+  let mouseX = -1000, mouseY = -1000;
+  const gridSize = 50;
+  const influenceRadius = 150;
+  const maxDisplacement = 8;
+  
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = 600; // 只覆盖首页头部区域
+  }
+  
+  resize();
+  window.addEventListener('resize', resize);
+  
+  document.addEventListener('mousemove', function(e) {
+    const rect = canvas.getBoundingClientRect();
+    mouseX = e.clientX - rect.left;
+    mouseY = e.clientY - rect.top;
+  });
+  
+  document.addEventListener('mouseleave', function() {
+    mouseX = -1000;
+    mouseY = -1000;
+  });
+  
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // 获取当前主题颜色
+    const isDark = document.documentElement.getAttribute('data-md-color-scheme') === 'slate';
+    ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)';
+    ctx.lineWidth = 1;
+    
+    // 绘制垂直线
+    for (let x = 0; x <= canvas.width; x += gridSize) {
+      ctx.beginPath();
+      for (let y = 0; y <= canvas.height; y += 5) {
+        const dx = x - mouseX;
+        const dy = y - mouseY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        
+        let offsetX = 0;
+        if (dist < influenceRadius) {
+          const force = (1 - dist / influenceRadius) * maxDisplacement;
+          offsetX = (dx / dist) * force || 0;
+        }
+        
+        if (y === 0) {
+          ctx.moveTo(x + offsetX, y);
+        } else {
+          ctx.lineTo(x + offsetX, y);
+        }
+      }
+      ctx.stroke();
+    }
+    
+    // 绘制水平线
+    for (let y = 0; y <= canvas.height; y += gridSize) {
+      ctx.beginPath();
+      for (let x = 0; x <= canvas.width; x += 5) {
+        const dx = x - mouseX;
+        const dy = y - mouseY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        
+        let offsetY = 0;
+        if (dist < influenceRadius) {
+          const force = (1 - dist / influenceRadius) * maxDisplacement;
+          offsetY = (dy / dist) * force || 0;
+        }
+        
+        if (x === 0) {
+          ctx.moveTo(x, y + offsetY);
+        } else {
+          ctx.lineTo(x, y + offsetY);
+        }
+      }
+      ctx.stroke();
+    }
+    
+    requestAnimationFrame(draw);
+  }
+  
+  draw();
+})();
+</script>
+
+<style>
+#gridCanvas {
+  position: absolute;
+  top: 95px; /* 从公告栏下方开始 */
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1;
+  -webkit-mask: linear-gradient(-20deg, transparent 50%, white);
+  mask: linear-gradient(-20deg, transparent 50%, white);
+}
+
+@media (max-width: 768px) {
+  #gridCanvas {
+    display: none;
   }
 }
 </style>

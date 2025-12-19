@@ -40,11 +40,6 @@ hide_comment: true
   transition: all 0.3s ease;
 }
 
-.intro-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
 .intro-content {
   display: flex;
   align-items: center;
@@ -128,12 +123,6 @@ hide_comment: true
 
 [data-md-color-scheme="slate"] .contributor-link {
   color: #DFDFDF;
-}
-
-[data-md-color-scheme="slate"] .highlight {
-  background: linear-gradient(120deg, #7BA7D7 0%, #A8C5E5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 [data-md-color-scheme="slate"] .avatar-img {
