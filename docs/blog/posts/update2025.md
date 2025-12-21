@@ -8,7 +8,13 @@ readtime: 2
 hide_reading_time: true
 ai_summary: false  # 禁用AI摘要
 ---
-# 2025网站更新记录
+# 2025网站更新记录  
+
+
+## </p><h1 id="01" name="01"><strong>2025-12-21</strong></h1><p>
+
+* 优化网站流畅度（玄学）
+* 该用Zensical
 
 ## </p><h1 id="01" name="01"><strong>2025-07-28</strong></h1><p>
 

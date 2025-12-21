@@ -1,5 +1,0 @@
-# MkDocs 教程重定向
-/Mkdocs-Wcowin/* https://mkdocs-wcowin-me.netlify.app/:splat 200
-
-# 将 .html 后缀重定向到目录格式（解决 Google 索引重定向问题）
-/*.html /:splat/ 301
