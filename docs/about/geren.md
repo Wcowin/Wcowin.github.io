@@ -11,6 +11,7 @@ hide_reading_time: true
 hide_comment: true
 ---
 
+<link rel="stylesheet" href="/about/sty/portfolio.css">
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
 # <span id="jinrishici-sentence">今日诗词</span>

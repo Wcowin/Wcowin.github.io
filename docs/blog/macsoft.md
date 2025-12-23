@@ -1,4 +1,5 @@
 ---
+title: Mac/windows软件网站汇总
 hide:
   #- navigation # 显示右
   # - toc #显示左

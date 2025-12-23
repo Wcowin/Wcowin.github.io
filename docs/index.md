@@ -76,6 +76,9 @@ hide:
   margin: -30px 0 16px 0;
   flex-wrap: wrap;
   min-height: 320px;
+  /* Safari flexbox 兼容性 */
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
 }
 
 /* ====== 左侧文字区 ====== */
@@ -130,13 +133,25 @@ hide:
   display: inline-block;
   color: #518FC1;
   font-weight: 300;
-  animation: blink 1s step-end infinite;
+  animation: blink 1s steps(1, end) infinite;
   margin-left: 2px;
+  /* 跨浏览器优化 */
+  -webkit-animation: blink 1s steps(1, end) infinite;
+  will-change: opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@-webkit-keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }
 
 /* Safari特定修复 */
@@ -195,6 +210,31 @@ hide:
   display: flex;
   gap: 18px;
   margin-top: 8px;
+}
+
+/* Safari 按钮兼容性修复 */
+.wcowin-header-btns .md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+}
+
+.wcowin-header-btns .md-button .twemoji {
+  display: inline-flex;
+  align-items: center;
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+}
+
+.wcowin-header-btns .md-button .twemoji svg {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -316,13 +356,28 @@ hide:
   filter: blur(60px);
   opacity: 0.85;
   animation: rainbow 8s linear infinite;
+  /* Safari 兼容性修复 */
+  -webkit-filter: blur(60px);
+  will-change: filter, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* 深色模式调整 */
 @media (prefers-color-scheme: dark) {
   .flip-glow-ultimate-glow {
     filter: blur(60px);
+    -webkit-filter: blur(60px);
     opacity: 0.7;
+  }
+}
+
+/* Safari 特定修复 - 减少模糊值以改善性能 */
+@supports (-webkit-appearance: none) {
+  .flip-glow-ultimate-glow {
+    filter: blur(45px);
+    -webkit-filter: blur(45px);
+    opacity: 0.9;
   }
 }
 
@@ -926,6 +981,15 @@ body {
   z-index: -1;
   -webkit-mask: linear-gradient(-20deg, transparent 50%, white);
   mask: linear-gradient(-20deg, transparent 50%, white);
+  /* Safari 渲染优化 */
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* Safari mask 兼容性增强 */
+  -webkit-mask-image: linear-gradient(-20deg, transparent 50%, white);
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: 0 0;
+  -webkit-mask-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {

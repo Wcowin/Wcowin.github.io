@@ -1,3 +1,7 @@
+---
+title: printf心形代码
+---
+
 ```c
 #include<stdio.h>
 int main()

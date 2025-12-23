@@ -1717,20 +1717,35 @@
     }
   }
 
-  // 取消当前翻译
-  async function cancelCurrentTranslation(reason = '用户取消') {
-    console.log(`🛑 取消翻译: ${reason}`);
+  // 取消当前翻译 - 立即中断版本
+  async function cancelCurrentTranslation(reason = '用户取消', restoreToOriginal = false) {
+    console.log(`🛑 立即取消翻译: ${reason}`);
     shouldCancelTranslation = true;
     
+    // 立即中止所有进行中的API请求
     if (translationAbortController) {
       translationAbortController.abort();
       translationAbortController = null;
     }
     
-    // 等待当前请求完成
-    await new Promise(resolve => setTimeout(resolve, 100));
-    
+    // 立即重置状态，不等待
     isTranslating = false;
+    
+    // 移除进度提示
+    ProgressManager.hide();
+    const statusElement = document.querySelector('.translate-status');
+    if (statusElement) statusElement.remove();
+    
+    // 如果需要恢复原文，立即执行
+    if (restoreToOriginal) {
+      restoreOriginalText();
+      currentLanguage = 'chinese_simplified';
+      saveGlobalTranslationPreference(null);
+      console.log('✅ 已立即恢复为中文');
+    }
+    
+    // 短暂延迟确保状态同步
+    await new Promise(resolve => setTimeout(resolve, 10));
     shouldCancelTranslation = false;
   }
 
@@ -2208,9 +2223,17 @@
       return false;
     }
 
-    // 如果正在翻译，无论目标语言是什么都先取消当前翻译
+    // 如果正在翻译，立即中断
     if (isTranslating) {
-      await cancelCurrentTranslation('切换翻译语言');
+      // 如果切换到中文，立即中断并恢复原文
+      const shouldRestoreImmediately = (language === 'chinese_simplified');
+      await cancelCurrentTranslation('切换翻译语言', shouldRestoreImmediately);
+      
+      // 如果已经恢复到中文，直接返回成功
+      if (shouldRestoreImmediately) {
+        showTranslateStatus(getLocalizedMessage('restored', language), 2000, language);
+        return true;
+      }
     }
 
     // 检查目标语言与当前语言的关系
@@ -2363,13 +2386,30 @@
       // 拦截语言切换链接，防止404
       document.addEventListener('click', function(e) {
         const link = e.target.closest('a');
-        if (link && link.href && link.href.includes('translateTo')) {
-          e.preventDefault();
-          e.stopPropagation();
-          const match = link.href.match(/translateTo\(['"]([^'"]+)['"]\)/);
-          if (match) {
-            console.log(`🌐 语言切换: ${match[1]}`);
-            window.translateTo(match[1]);
+        if (link && link.href) {
+          // 支持 #glm-translate-{language} 格式的锚点
+          const hashMatch = link.href.match(/#glm-translate-(\w+)$/);
+          if (hashMatch) {
+            e.preventDefault();
+            e.stopPropagation();
+            const targetLang = hashMatch[1];
+            console.log(`🌐 语言切换: ${targetLang}`);
+            window.translateTo(targetLang);
+            // 移除URL中的hash，避免页面跳转
+            if (window.history && window.history.replaceState) {
+              window.history.replaceState(null, '', window.location.pathname + window.location.search);
+            }
+            return;
+          }
+          // 兼容旧的 javascript:translateTo() 格式
+          if (link.href.includes('translateTo')) {
+            e.preventDefault();
+            e.stopPropagation();
+            const match = link.href.match(/translateTo\(['"]([^'"]+)['"]\)/);
+            if (match) {
+              console.log(`🌐 语言切换: ${match[1]}`);
+              window.translateTo(match[1]);
+            }
           }
         }
       }, true);

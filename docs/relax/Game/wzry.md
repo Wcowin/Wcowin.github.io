@@ -1,3 +1,7 @@
+---
+title: 如何玩好王者荣耀
+---
+
 ## 以毛泽东军事思想作为指导思想
 
 ![img](https://picd.zhimg.com/80/v2-ad4456cba6eb5227628054d55cbda8bb_1440w.jpg?source=1940ef5c)

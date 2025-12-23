@@ -10,7 +10,7 @@ site_name = "Wcowin's Blog"                      # 网站名称
 site_url = "https://wcowin.work/"                # 网站URL
 site_description = "知足且上进，温柔且坚定"         # 网站描述
 site_author = "王科文(Wcowin)"                    # 网站作者
-copyright = "Copyright &copy; 2022~2025 Wcowin" # 左下角的版权声明
+copyright = "Copyright &copy; 2022~2026 Wcowin" # 左下角的版权声明
 docs_dir = "docs"                                # 文档目录
 site_dir = "site"                                # 生成的网站目录
 use_directory_urls = true                        # 使用目录形式的URL (例如: /page/ 而不是 /page.html)
@@ -60,7 +60,8 @@ extra_javascript = [
 
 # ===== 额外的 CSS 文件 =====
 extra_css = [
-    "stylesheets/extra.css",         # 额外样式
+    # "stylesheets/extra.css",         # 额外样式
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css", # 额外样式 CDN
     "stylesheets/extra2.css",        # 额外样式2
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra2.css", # 额外样式2CDN
     # "stylesheets/link.css",          # 友链样式
@@ -69,10 +70,10 @@ extra_css = [
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css", # 诗词样式CDN
     # "stylesheets/customize.css",     # 按钮圆角化等自定义样式
     "stylesheets/ziti.css",          # 字体样式
-    # "about/sty/portfolio.css"        # 作品集样式
+    # "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
+    # "about/sty/portfolio.css"        # 作品集样式（已移至 geren.md 单独引入）
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
-    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
-    "about/sty/portfolio.css"
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"  # KaTeX 样式 CDN
 ]
 
 # ===== 导航配置 [Navigation] =====
@@ -98,10 +99,11 @@ nav = [
         { "Python 环境管理最佳实践" = "blog/environment.md" },
         { "Zensical中文教程" =[
             { "前言" = "blog/Zensical/indexfirst.md" },
+            { "从MkDocs迁移" = "blog/Zensical/migration.md" },
             { "5分钟快速开始" = "blog/Zensical/quick-start.md" },
             { "配置详解" = "blog/Zensical/configuration.md" },
             { "GitHub Pages 部署" = "blog/Zensical/github-pages.md"},
-            { "从MkDocs迁移" = "blog/Zensical/migration.md" }
+            { "炫彩光辉头像效果实现指南" = "blog/websitebeauty/avatar-glow.md" },
         ]},
         { "MKdocs教程" = [
             { "MIT许可声明" = "blog/Mkdocs/MIT.md" },
@@ -240,8 +242,8 @@ nav = [
     { "闲聊" = [
         "relax/index.md",
         { "推荐的Books" = "relax/tuijianyuedu.md" },
-        { "小米" = "relax/xiaomo.md" },
         { "Apple" = "relax/Apple.md" },
+        { "小米" = "relax/xiaomo.md" },
         { "诗文" = [
             { "枫桥夜泊" = "relax/shiwen/fqyb.md" },
             { "滕王阁序" = "relax/shiwen/twgx.md" },
@@ -441,17 +443,17 @@ deprecated = "已弃用"
 # 基于智谱清言翻译系统
 [[project.extra.alternate]]
 name = "中文"
-link = "javascript:translateTo('chinese_simplified');"
+link = "#glm-translate-chinese_simplified"
 lang = "zh"
 
 [[project.extra.alternate]]
 name = "English"
-link = "javascript:translateTo('english');"
+link = "#glm-translate-english"
 lang = "en"
 
 [[project.extra.alternate]]
 name = "日本語"
-link = "javascript:translateTo('japanese');"
+link = "#glm-translate-japanese"
 lang = "ja"
 
 # ===== 社交媒体链接 =====
@@ -561,27 +563,27 @@ minify_js = true
 # ]
 
 # ===== RSS 订阅插件 =====
-[project.plugins.rss]
-enabled = true                                                                    # 启用 RSS 订阅
-match_path = "(blog|develop|relax|trip)/.*"                                       # 包含的路径：博客、开发、闲聊、旅行
-use_git = false                                                                   # 禁用Git日志读取，避免警告
-categories = ["tags", "categories"]                                               # 分类标签
-comments_path = "#__comments"                                                     # 评论区锚点
-image = "https://wcowin.work/assets/avatar.jpg"                                   # RSS 订阅图片
-feed_ttl = 1440                                                                   # 订阅更新时间（分钟），24小时
-length = 20                                                                       # 最新文章数量
-pretty_print = true                                                               # 格式化输出
-feed_description = "Wcowin 的个人网站 - 技术分享、开发笔记、生活随笔、旅行记录"        # RSS 描述
-feed_title = "Wcowin's Blog RSS Feed"                                             # RSS 标题
+# [project.plugins.rss]
+# enabled = true                                                                    # 启用 RSS 订阅
+# match_path = "(blog|develop|relax|trip)/.*"                                       # 包含的路径：博客、开发、闲聊、旅行
+# use_git = false                                                                   # 禁用Git日志读取，避免警告
+# categories = ["tags", "categories"]                                               # 分类标签
+# comments_path = "#__comments"                                                     # 评论区锚点
+# image = "https://wcowin.work/assets/avatar.jpg"                                   # RSS 订阅图片
+# feed_ttl = 1440                                                                   # 订阅更新时间（分钟），24小时
+# length = 20                                                                       # 最新文章数量
+# pretty_print = true                                                               # 格式化输出
+# feed_description = "Wcowin 的个人网站 - 技术分享、开发笔记、生活随笔、旅行记录"        # RSS 描述
+# feed_title = "Wcowin's Blog RSS Feed"                                             # RSS 标题
 
-[project.plugins.rss.date_from_meta]
-as_creation = "date"           # 创建日期来源
-as_update = "update"           # 更新日期来源
-datetime_format = "%Y-%m-%d"   # 日期格式
+# [project.plugins.rss.date_from_meta]
+# as_creation = "date"           # 创建日期来源
+# as_update = "update"           # 更新日期来源
+# datetime_format = "%Y-%m-%d"   # 日期格式
 
-[project.plugins.rss.url_parameters]
-utm_source = "rss"             # UTM 来源标记
-utm_medium = "feed"            # UTM 媒介标记
+# [project.plugins.rss.url_parameters]
+# utm_source = "rss"             # UTM 来源标记
+# utm_medium = "feed"            # UTM 媒介标记
 
 # ==========================================
 # Markdown 扩展配置 [Markdown Extensions]

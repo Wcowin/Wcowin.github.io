@@ -20,18 +20,19 @@ Our Business Conduct and Compliance policies are foundational to how we do busin
 ![img](https://user-assets.sxlcdn.com/images/951476/FpR4zSBa8kJxXSlkmL3yE9O1PNJB.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png)
 <!-- <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/the-darkness-that-you-fear/1562007433?i=1562007434"></iframe> -->
 
-<b>
-苹果一直都不在意成本，也一直在追寻进步，进步不一定是要眼睛看到的，就是那种能感受到，但是看不到的美。信息来源于互联网，未必精准。
-1.iPhone X的屏幕造价平均下来大概是4000元人民币，要考虑封装，机器，折损等，据说当时良品率只有50%不到。iPhone X是工业史上第一款大规模量产的COP封装屏幕。
-2.Apple Pencil，也是艺术品级别的封装，2022年还没有一家科技公司能做到同样的8ms延迟，同样的体积重量。
-3.Apple Watch，这个不用说了，2022年还是没有人能赶上。
-4.AirPods，国产用的TWS都是台湾的科技，目前不知道有没有自研的。
-5.芯片能耗比，也是全球最佳没有之一
-6.5s的指纹模块当初领先全球一年半，在智能机时代第二家做出来的就是魅族。
-7.faceID，2022年还是没人做，为什么？因为贵，而且做出来也绕不开专利。具体可以看zealer的视频。
+<b>  
+
+苹果一直都不在意成本，也一直在追寻进步，进步不一定是要眼睛看到的，就是那种能感受到，但是看不到的美。信息来源于互联网，未必精准。  
+1.iPhone X的屏幕造价平均下来大概是4000元人民币，要考虑封装，机器，折损等，据说当时良品率只有50%不到。iPhone X是工业史上第一款大规模量产的COP封装屏幕。  
+2.Apple Pencil，也是艺术品级别的封装，2022年还没有一家科技公司能做到同样的8ms延迟，同样的体积重量。  
+3.Apple Watch，这个不用说了，2022年还是没有人能赶上。  
+4.AirPods，国产用的TWS都是台湾的科技，目前不知道有没有自研的。  
+5.芯片能耗比，也是全球最佳没有之一  
+6.5s的指纹模块当初领先全球一年半，在智能机时代第二家做出来的就是魅族。  
+7.faceID，2022年还是没人做，为什么？因为贵，而且做出来也绕不开专利。具体可以看zealer的视频。  
 8.我忘记从哪一年开始，苹果的全系列产品都是一整块铝合金用CNC工艺加工出来的。
-9.超瓷晶面板，用人话说就是把瓷器做成透明的。
-10.异性电池，iPhone XS，MacBook。为了塞进去尽可能多的电池。
+9.超瓷晶面板，用人话说就是把瓷器做成透明的。  
+10.异性电池，iPhone XS，MacBook。为了塞进去尽可能多的电池。  
 
 Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，外观好像一样的情况下，内部元器件的堆叠甚至是一些微不足道的小更新，都是苹果和他的团队在背后努力研发的成果。  </b>
 

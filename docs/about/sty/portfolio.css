@@ -30,10 +30,7 @@
 /*==================== BASE ====================*/
 
 
-h1, h2, h3, h4 {
-  color: #757575;
-  font-weight: 600;
-}
+/* h1, h2, h3, h4 使用默认颜色 */
 
 
 
@@ -215,13 +212,7 @@ h1, h2, h3, h4 {
   color: #757575;
 }
 
-/* 深色模式 - 履历时间线 */
-[data-md-color-scheme="slate"] h1,
-[data-md-color-scheme="slate"] h2,
-[data-md-color-scheme="slate"] h3,
-[data-md-color-scheme="slate"] h4 {
-  color: #e0e0e0;
-}
+/* 深色模式 - 履历时间线（标题使用默认颜色） */
 
 [data-md-color-scheme="slate"] .qualification__title {
   color: #e0e0e0;

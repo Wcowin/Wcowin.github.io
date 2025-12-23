@@ -1,3 +1,7 @@
+---
+title: luv letter
+---
+
 <font face="宋体" size=6 >情书</font>
 
 <b>王小波致李银河：
