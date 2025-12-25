@@ -657,17 +657,6 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://mushuo.xyz/img/avatar.png" />
-     <div class="card-header">
-      <div>
-       <a href="https://mushuo.xyz/index" target="_blank">沐硕</a>
-      </div>
-      <div class="info">
-       做一个追求幸福的人
-      </div>
-     </div>
-    </div>
-   <div class="card">
      <img class="ava" loading="lazy" src="https://blog.btwoa.com/author.gif" />
      <div class="card-header">
       <div>
@@ -1537,7 +1526,17 @@ window.friendLinkUtils = {
         </div>
       </div>
     </div>
-
+   <div class="card">
+     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <div class="card-header">
+      <div>
+       <a href="https://mushuo.xyz/index" target="_blank">沐硕</a>
+      </div>
+      <div class="info">
+       做一个追求幸福的人
+      </div>
+     </div>
+    </div>
 
 
 

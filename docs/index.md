@@ -31,7 +31,7 @@ hide:
 <div class="wcowin-header-row">
   <!-- 左侧：文字内容 -->
   <div class="wcowin-header-text">
-    <div class="wcowin-header-title">Wcowin</div>
+    <div class="wcowin-header-title">Hi, I'm Wcowin</div>
     <div class="wcowin-header-subtitle">
       <span class="wcowin-header-subtitle-inner">
         <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
@@ -93,7 +93,7 @@ hide:
 }
 
 .wcowin-header-title {
-  font-size: 3.2rem;
+  font-size: 2.1rem;
   font-family: 'Inter', 'Montserrat', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 700; /* 使用最粗的字重 */
   letter-spacing: 1px;
@@ -640,8 +640,6 @@ hr {
   padding: 8px !important;
 }
 </style>
-
----
 
 <div id="greeting" class="greeting-container">
   <span id="greeting-text" class="greeting-text">加载中...</span>
