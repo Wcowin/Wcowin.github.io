@@ -113,3 +113,17 @@ https://cdn.jsdelivr.net/gh/Wcowin/picx-images-hosting@master/IMG/Cravatar.jpg.1
 - [ ] 性能优化
 
 
+<div id="map-container">
+  <iframe id="google-map-frame" src="https://www.google.com/maps/d/embed?mid=1r5_nsemni9ylpFNBFTWFhGaEkwGrFf0&ehbc=2E312F" width="100%" height="500"></iframe>
+</div>
+<script>
+fetch('https://ipapi.co/json/')
+  .then(res => res.json())
+  .then(data => {
+    if (data && data.country_code === 'CN') {
+      // 中国大陆IP，隐藏地图
+      document.getElementById('map-container').innerHTML = '<p style="text-align:center;color:#888;">因为采用了谷歌地图，仅中国大陆之外的IP可见</p>';
+    }
+  })
+  .catch(() => {});
+</script>

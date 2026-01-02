@@ -791,7 +791,7 @@ hr {
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)
     - [Homebrew如何安装(Mac & Linux)](blog/Mac/homebrew.md)
 
--   :simple-materialformkdocs:{ .lg .middle } __Mkdocs/Zensical教程(三步搞定)__
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs/Zensical教程__
 
     ---
 
@@ -800,7 +800,7 @@ hr {
     - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
     - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
     ---
-    - [Zensical教程](blog/Zensical/indexfirst.md)(新)
+    - [Zensical教程](blog/Zensical/indexfirst.md)(🌟2026最新更新)
 
 -   :material-format-font:{ .lg .middle } __好用/好玩__
 
@@ -997,46 +997,7 @@ body {
 }
 </style>
 
-<!--
-  将所有页面级脚本和元数据统一放置在这里
--->
-<!-- 访问统计区域 -->
-<!-- <div style="text-align: center; margin: 2rem 0; font-size: 0.9rem;">
-  本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script><span id="finicount_views" style="font-weight: bold; color: #518FC1;"></span>
-</div> -->
 
  
 <!-- Umami Analytics -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
-<!-- Google Adsense -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
-     crossorigin="anonymous"></script> -->
-
-<!--
-  Google Adsense 广告单元
-  (如果需要，可以取消注释)
--->
-<!--
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2327435979273742"
-    data-ad-slot="3702206121"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
--->
-
-<!-- [timeline(./docs/timeline/timeindex.json)] -->
-
-<!-- <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "sks5yth4qj");
-</script> -->
-
-
-<!-- <meta name="algolia-site-verification"  content="3CAAB2C27102AD08" /> -->

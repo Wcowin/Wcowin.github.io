@@ -1059,6 +1059,18 @@ comments: false
       </div> 
     </div> 
     </div>    
+    <div class="card">
+     <img class="ava" loading="lazy" src="https://i.111666.best/image/4WGNoz2wgNPgxdi51H4SDD.png" />
+     <div class="card-header">
+      <div>
+      <a href="https://xxu.do/" target="_blank">Jayden's site</a>
+      </div>
+      <div class="info">
+      为天地立心,为生民立命, 为往圣继绝学,为万世开太平。
+      </div>
+     </div>
+    </div>
+
 
 
    </div>
@@ -1490,17 +1502,6 @@ window.friendLinkUtils = {
       </div>
       <div class="info">
       记录学习、生活和有趣的事
-      </div>
-     </div>
-    </div>
-    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
-     <div class="card-header">
-      <div>
-      <a href="https://xxu.do/" target="_blank">Jayden's site</a>
-      </div>
-      <div class="info">
-      为天地立心,为生民立命, 为往圣继绝学,为万世开太平。
       </div>
      </div>
     </div>
