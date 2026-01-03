@@ -5,15 +5,6 @@ status: new
 
 # 支持作者
 
-<div class="grid cards" markdown>
-
-- :material-email-mark-as-unread: 给我发送[邮箱](mailto:wcowin@qq.com)
-
-- :material-github: [点击此处](https://github.com/Wcowin/Wcowin.github.io){target="\_blank" rel="noopener"}访问Github仓库
-
-</div>
-
-
 可以的话 请我喝一杯咖啡吧☕️
 
 ## **:simple-alipay:** **Alipay**
@@ -25,7 +16,7 @@ status: new
 </p> -->
 
 <p align="center">
-  <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" class="img1" style="width:60%; " />
+  <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" class="img1" style="width:40%; " />
 </p>
 
 ## **:simple-wechat:** **WeChat Pay**
@@ -35,7 +26,7 @@ status: new
 </p> -->
 
 <p align="center">
-  <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" class="img1" style="width:80%; " />
+  <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" style="width:50%; " />
 </p>
 
 
@@ -280,64 +271,80 @@ status: new
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // 复制功能
-    const copyToClipboard = (text, element) => {
-      navigator.clipboard.writeText(text).then(() => {
-        // 显示复制成功反馈
-        const originalContent = element.innerHTML;
+    // 复制功能 — 更稳健的实现，使用 clipboard API 并回退到 textarea + execCommand
+    const copyTextToClipboard = async (text) => {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(text);
+      }
 
-        if (element.querySelector('.success-icon')) {
-          // 已有成功图标，添加动画效果
-          const successIcon = element.querySelector('.success-icon');
-          successIcon.style.transform = 'scale(1.5)';
-          setTimeout(() => {
-            successIcon.style.transform = 'scale(1)';
-          }, 300);
-        } else {
-          // 替换图标为成功图标
-          const copyIcon = element.querySelector('.copy-icon');
-          const originalIcon = copyIcon.outerHTML;
-          copyIcon.outerHTML = '<span class="success-icon" style="color: #4CAF50;">✓</span>';
-
-          setTimeout(() => {
-            element.innerHTML = originalContent;
-          }, 1500);
-        }
-      }).catch(err => {
-        // 如果clipboard API失败，回退到旧方法
-        const input = document.createElement('input');
-        input.value = text;
-        document.body.appendChild(input);
-        input.select();
+      // fallback
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
         document.execCommand('copy');
-        document.body.removeChild(input);
-
-        // 显示复制成功反馈（同上）
-        const originalContent = element.innerHTML;
-        const copyIcon = element.querySelector('.copy-icon');
-        if (copyIcon) {
-          const originalIcon = copyIcon.outerHTML;
-          copyIcon.outerHTML = '<span class="success-icon" style="color: #4CAF50;">✓</span>';
-
-          setTimeout(() => {
-            element.innerHTML = originalContent;
-          }, 1500);
-        }
-      });
+        document.body.removeChild(textarea);
+        return Promise.resolve();
+      } catch (e) {
+        document.body.removeChild(textarea);
+        return Promise.reject(e);
+      }
     };
 
-    // 为输入框和按钮添加点击复制功能
+    const showSuccess = (badge) => {
+      const copyIcon = badge.querySelector('.copy-icon');
+      if (badge.querySelector('.success-icon')) {
+        const s = badge.querySelector('.success-icon');
+        s.style.transform = 'scale(1.5)';
+        setTimeout(() => { s.style.transform = 'scale(1)'; }, 300);
+        return;
+      }
+
+      if (copyIcon) copyIcon.style.display = 'none';
+      const span = document.createElement('span');
+      span.className = 'success-icon';
+      span.style.color = '#4CAF50';
+      span.style.marginLeft = '6px';
+      span.textContent = '✓';
+      badge.appendChild(span);
+
+      setTimeout(() => {
+        span.remove();
+        if (copyIcon) copyIcon.style.display = '';
+      }, 1500);
+    };
+
+    // 输入框点击复制（也选中内容）
     document.querySelectorAll('.crypto-input-wrapper input').forEach(input => {
-      input.addEventListener('click', function() {
-        const badge = this.nextElementSibling;
-        copyToClipboard(this.value, badge);
+      input.addEventListener('click', function(e) {
+        e.preventDefault();
+        const wrapper = this.parentElement;
+        const badge = wrapper ? wrapper.querySelector('.crypto-badge') : null;
+        if (!badge) return;
+        copyTextToClipboard(this.value).then(() => {
+          showSuccess(badge);
+        }).catch(() => {
+          showSuccess(badge);
+        });
+        this.select();
       });
     });
 
+    // 徽章点击复制
     document.querySelectorAll('.crypto-badge').forEach(badge => {
-      badge.addEventListener('click', function() {
-        const input = this.previousElementSibling;
-        copyToClipboard(input.value, this);
+      badge.addEventListener('click', function(e) {
+        e.preventDefault();
+        const wrapper = this.closest('.crypto-input-wrapper');
+        const input = wrapper ? wrapper.querySelector('input') : null;
+        if (!input) return;
+        copyTextToClipboard(input.value).then(() => {
+          showSuccess(this);
+        }).catch(() => {
+          showSuccess(this);
+        });
       });
     });
   });

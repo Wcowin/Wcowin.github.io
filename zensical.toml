@@ -94,7 +94,10 @@ nav = [
             { "数论基础" = "blog/Cryptography/Numbertheory.md" },
             { "密码学引言" = "blog/Cryptography/Introduction.md" },
             { "流密码" = "blog/Cryptography/Symmetriccryptography.md" },
-            { "分组密码" = "blog/Cryptography/Groupcipher.md" }
+            { "分组密码" = "blog/Cryptography/Groupcipher.md" },
+            { "非对称密码" = "blog/Cryptography/Asymmetriccryptography.md" },
+            { "消息认证与哈希函数" = "blog/Cryptography/HashAndMAC.md" },
+            { "比特币体系：从零开始理解加密货币" = "blog/Cryptography/Bitcoin.md" },
         ]},
         { "Python 环境管理最佳实践" = "blog/environment.md" },
         { "Zensical中文教程" =[
@@ -111,6 +114,7 @@ nav = [
             { "1.利用Mkdocs部署静态网页" = "blog/Mkdocs/mkdocs1.md" },
             { "2.Mkdocs配置说明(mkdocs.yml)" = "blog/Mkdocs/mkdocs2.md" },
             { "3.解决Github Pages部署mkdocs自定义域名失效的问题" = "blog/Mkdocs/mkdocs3.md" },
+            { "4.解决mkdocs serve 后127.0.0.1:8000无法自动刷新的问题" = "blog/Mkdocs/click.md" },
             { "网站添加Mkdocs博客" = "blog/Mkdocs/mkdocsblog.md" }
         ]},
         { "Mkdocs美化/补充" = [
@@ -205,8 +209,8 @@ nav = [
             { "OneClip 架构设计与核心模块解析" = "develop/Mac-development/OneClip-Architecture-Design.md" },
             { "OneClip 开发经验分享：从零到一" = "develop/Mac-development/OneClip-Development-Experience.md" },
             { "应用分发签名————OneClip为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" },
-            { "Mac Shell 环境优化指南" = "develop/Mac-Shell-Environment-Optimization.md" },
-            { "Mac 开发环境检查清单" = "develop/Mac-Development-Environment-Checklist.md" }
+            { "Mac Shell 环境优化指南" = "develop/Mac-development/Mac-Shell-Environment-Optimization.md" },
+            { "Mac 开发环境检查清单" = "develop/Mac-development/Mac-Development-Environment-Checklist.md" }
         ]},
         { "AI工具" = "develop/AI.md" },
         { "如何注册ChatGPT" = "develop/ChatGPT.md" },
@@ -346,7 +350,8 @@ nav = [
         { "个人目标" = "about/goal.md" },
         { "年度总结" = [
             { "2023" = "about/zongjie/2023.md" },
-            { "2024" = "about/zongjie/2024.md" }
+            { "2024" = "about/zongjie/2024.md" },
+            { "2025" = "about/zongjie/2025.md"}
         ]},
         { "25考研(已完结)" = "about/kaoyan.md" }
     ]},
@@ -610,7 +615,7 @@ emoji_generator = "zensical.extensions.emoji.to_svg"
 emoji_index = "zensical.extensions.emoji.twemoji"
 [project.markdown_extensions.pymdownx.highlight]
 pygments_lang_class = true
-auto_title = true
+auto_title = false
 linenums = true
 [project.markdown_extensions.pymdownx.inlinehilite]
 [project.markdown_extensions.pymdownx.keys]

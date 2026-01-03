@@ -786,6 +786,7 @@ hr {
 
     ---
     - [macOS 开发经验分享](develop/Mac-development/index.md){ data-preview }(最新更新)
+    - [密码学｜加密货币｜区块链](blog/Cryptography/#_1){ data-preview }  (最新更新)
     - [模型上下文协议(MCP)简述](develop/AI/mcp.md)
     - [DeepSeek:从入门到精通](develop/deepseek.md)
     - [将Python文件打包成.exe可执行程序](blog/py/python.md)

@@ -405,6 +405,16 @@ $$
   - **内部状态周期：** 如果密钥流产生器 $O_i = E_K(O_{i-1})$ 进入一个短周期，那么密钥流也会重复，可能导致安全风险。CTR模式通过显式使用计数器避免了这个问题。
 - **与CFB的区别：** OFB将加密算法的*输出*反馈，而CFB将*密文*反馈。因此，OFB的密钥流生成独立于明文和密文，而CFB的密钥流依赖于先前的密文。
 
+**工作模式对比总结：**
+
+| 模式 | 加密并行性 | 解密并行性 | 错误传播 | 需要填充 | 随机访问 | 预计算 | 主要特点 |
+|------|------------|------------|----------|----------|----------|--------|----------|
+| ECB | ✅ | ✅ | 无 | ✅ | ✅ | ✅ | 简单但不安全 |
+| CBC | ❌ | ✅ | 有限 | ✅ | ❌ | ❌ | 最常用，安全性好 |
+| CTR | ✅ | ✅ | 无 | ❌ | ✅ | ✅ | 高性能，类似流密码 |
+| CFB | ❌ | ❌ | 有限 | ❌ | ❌ | ❌ | 自同步流密码 |
+| OFB | ❌ | ❌ | 无 | ❌ | ❌ | ✅ | 同步流密码 |
+
 **选择工作模式的考虑因素：**
 
 - **安全性需求：** 是否需要抵抗特定模式的攻击？是否能容忍IV重用带来的风险？
@@ -414,3 +424,32 @@ $$
 - **随机访问需求：** 是否需要能随机解密密文的某一部分？
 
 目前，**AES-GCM (Galois/Counter Mode)** 和 **AES-CCM (Counter Mode with CBC-MAC)** 等认证加密模式 (Authenticated Encryption with Associated Data, AEAD) 因其能同时提供机密性、完整性和真实性认证，越来越受到推荐和广泛使用。这些模式通常基于 CTR 模式来提供加密。
+
+## 结论
+
+分组密码是现代对称密码学的核心，从早期的DES到现在广泛使用的AES，分组密码技术不断发展和完善。通过Feistel结构和SPN结构等设计方法，分组密码实现了良好的安全性和实用性的平衡。
+
+工作模式的选择对于分组密码的实际应用至关重要。不同的模式在安全性、性能、错误处理等方面各有特点，需要根据具体应用场景进行选择。随着认证加密模式的发展，现代密码学越来越注重同时提供机密性和完整性保护。
+
+未来的分组密码发展将继续面对新的挑战，包括量子计算威胁、轻量级设备需求、侧信道攻击防护等。但基于香农的混淆和扩散原理，分组密码仍将是信息安全的重要基石。
+
+## 分组密码发展时间线
+
+| 年份 | 里程碑 | 重要性 |
+|------|--------|--------|
+| 1970s | IBM Lucifer → DES | 第一个商业标准分组密码 |
+| 1990s | 3DES | 增强DES安全性的过渡方案 |
+| 2001 | AES标准化 | 现代分组密码标准 |
+| 2000s | 轻量级密码研究 | 适应物联网等新应用 |
+| 2010s | 认证加密模式 | 同时提供机密性和完整性 |
+
+---
+
+## 引文
+
+- [NIST FIPS 197: Advanced Encryption Standard (AES)](https://csrc.nist.gov/publications/detail/fips/197/final)
+- [NIST Special Publication 800-38A: Recommendation for Block Cipher Modes of Operation](https://csrc.nist.gov/publications/detail/sp/800-38a/final)
+- [Wikipedia: Block cipher](https://en.wikipedia.org/wiki/Block_cipher)
+- [Wikipedia: Data Encryption Standard](https://en.wikipedia.org/wiki/Data_Encryption_Standard)
+- [Schneier, Bruce: Applied Cryptography](https://www.schneier.com/books/applied-cryptography/)
+- [Menezes, van Oorschot, Vanstone: Handbook of Applied Cryptography](http://cacr.uwaterloo.ca/hac/)

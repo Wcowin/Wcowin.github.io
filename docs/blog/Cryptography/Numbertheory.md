@@ -105,7 +105,7 @@ def exgcd(a, b):
 - 若 $m, n$ 互质，$\varphi(mn) = \varphi(m)\varphi(n)$
 
 **例子：**
-$\varphi(12)=2^2\times3^1 = 12 \times (1-\frac{1}{2}) \times (1-\frac{1}{3})$
+$\varphi(12)$：$12 = 2^2 \times 3^1$，所以 $\varphi(12) = 12 \times (1-\frac{1}{2}) \times (1-\frac{1}{3})$
 $= 12 \times \frac{1}{2} \times \frac{2}{3} = 4$
 
 ---
@@ -250,8 +250,14 @@ x \equiv 2 \pmod{7}
 \end{cases}
 $$
 
-$M=105=3\times5\times7$，$M_1=35=5\times7$，$M_2=21=3\times7$，$M_3=15=3\times5$，$M_1^{-1}=2$，$M_2^{-1}=1$，$M_3^{-1}=1$
-$x \equiv 2\times35\times2 + 3\times21\times1 + 2\times15\times1$
+$M=105=3\times5\times7$，$M_1=35=5\times7$，$M_2=21=3\times7$，$M_3=15=3\times5$
+
+计算逆元：
+- $M_1^{-1} \equiv 35^{-1} \pmod{3}$：$35 \equiv 2 \pmod{3}$，$2 \times 2 = 4 \equiv 1 \pmod{3}$，所以 $M_1^{-1} = 2$
+- $M_2^{-1} \equiv 21^{-1} \pmod{5}$：$21 \equiv 1 \pmod{5}$，所以 $M_2^{-1} = 1$  
+- $M_3^{-1} \equiv 15^{-1} \pmod{7}$：$15 \equiv 1 \pmod{7}$，所以 $M_3^{-1} = 1$
+
+$x \equiv 2\times35\times2 + 3\times21\times1 + 2\times15\times1 \pmod{105}$
 
 $= 140+63+30=233 \equiv 23 \pmod{105}$
 
@@ -343,4 +349,30 @@ $$
 - 计算 $\gcd$ 和 $\mathrm{lcm}$ 的质因数分解法
 - RSA 等加密算法的安全性基础
 
+## 结论
+
+数论作为密码学的数学基础，为现代加密算法提供了坚实的理论支撑。从基础的整除、同余概念，到复杂的原根、二次剩余理论，这些数学工具在RSA、ECC、DH等密码算法中发挥着关键作用。
+
+掌握这些数论知识不仅有助于理解现有密码算法的工作原理，更为设计新的密码方案和分析密码系统的安全性提供了必要的数学工具。随着密码学的不断发展，数论在信息安全领域的重要性将持续增长。
+
+## 数论在密码学中的应用总结
+
+| 数论概念 | 主要应用 | 典型算法 |
+|----------|----------|----------|
+| 大整数分解 | 公钥密码安全性基础 | RSA |
+| 离散对数 | 密钥交换、数字签名 | DH, DSA, ECC |
+| 模运算 | 加密解密运算 | 所有模运算密码 |
+| 欧拉函数 | 密钥生成、安全性分析 | RSA |
+| 中国剩余定理 | 加速计算 | RSA-CRT |
+| 二次剩余 | 概率加密、零知识证明 | Goldwasser-Micali |
+| 原根 | 密钥生成、随机数生成 | DH, ElGamal |
+
 ---
+
+## 引文
+
+- [Wikipedia: Number theory](https://en.wikipedia.org/wiki/Number_theory)
+- [Rosen, Kenneth H.: Elementary Number Theory and Its Applications](https://www.pearson.com/us/higher-education/program/Rosen-Elementary-Number-Theory-and-Its-Applications-6th-Edition/PGM110738.html)
+- [Menezes, van Oorschot, Vanstone: Handbook of Applied Cryptography, Chapter 2](http://cacr.uwaterloo.ca/hac/)
+- [Shoup, Victor: A Computational Introduction to Number Theory and Algebra](https://shoup.net/ntb/)
+- [Hardy, G.H. & Wright, E.M.: An Introduction to the Theory of Numbers](https://global.oup.com/academic/product/an-introduction-to-the-theory-of-numbers-9780199219858)

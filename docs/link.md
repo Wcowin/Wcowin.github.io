@@ -1070,6 +1070,39 @@ comments: false
       </div>
      </div>
     </div>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://blog.6uu.us/upload/lsyb.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://blog.6uu.us/" target="_blank">bbb-lsy07</a>
+        </div>
+        <div class="info">
+          科技激荡人文，洞见智慧本真。
+        </div>
+      </div>
+    </div>
+   <div class="card">
+     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/40554571?v=4" />
+     <div class="card-header">
+      <div>
+       <a href="https://baiwumm.com/" target="_blank">白雾茫茫</a>
+      </div>
+      <div class="info">
+      记录学习、生活和有趣的事
+      </div>
+     </div>
+    </div>
+   <div class="card">
+     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <div class="card-header">
+      <div>
+       <a href="https://www.edzbe.com" target="_blank">耳朵的主人</a>
+      </div>
+      <div class="info">
+      耳朵电台，庆幸我们还有耳朵
+      </div>
+     </div>
+    </div>
 
 
 
@@ -1089,244 +1122,6 @@ comments: false
 -->
 
 <!-- <HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" /> -->
-
-<!-- <script>
-document.addEventListener("DOMContentLoaded", function () {
-  // 获取友链容器
-  const friendLinksContainer = document.querySelector(".links-content");
-  const lostLinksContainer = document.querySelector("#失联人员 + #rcorners4 .links-content");
-
-  if (friendLinksContainer) {
-    // 获取所有正常友链卡片
-    const activeFriendLinks = friendLinksContainer.querySelectorAll(".card");
-    const totalActiveLinks = activeFriendLinks.length;
-
-    // 获取失联友链数量
-    let lostLinksCount = 0;
-    if (lostLinksContainer) {
-      const lostFriendLinks = lostLinksContainer.querySelectorAll(".card");
-      lostLinksCount = lostFriendLinks.length;
-    }
-
-    // 计算总数
-    const totalLinks = totalActiveLinks + lostLinksCount;
-
-    // 创建统计信息容器
-    const statsContainer = document.createElement("div");
-    statsContainer.style.cssText = `
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-      padding: 15px;
-      background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%);
-      border-radius: 8px;
-      border: 1px solid #e1e4e8;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      flex-wrap: wrap;
-      gap: 20px;
-    `;
-
-    // 创建统计卡片
-    function createStatCard(title, count, color, icon) {
-      return `
-        <div style="
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          padding: 8px 12px;
-          background: ${color};
-          border-radius: 6px;
-          color: white;
-          font-weight: 500;
-          font-size: 14px;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        ">
-          <span style="font-size: 16px;">${icon}</span>
-          <span>${title}: ${count}</span>
-        </div>
-      `;
-    }
-
-    // 构建统计信息（只显示总友链和正常友链）
-    statsContainer.innerHTML = `
-      <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-        ${createStatCard('总友链', totalLinks, '#28a745', '🔗')}
-        ${createStatCard('正常', totalActiveLinks, '#17a2b8', '✅')}
-      </div>
-      <div style="color: #666; font-size: 14px; text-align: center; margin-top: 8px;">
-        <span>欢迎交换友链！</span>
-        <span style="margin-left: 10px;">最后更新: ${new Date().toLocaleDateString('zh-CN')}</span>
-      </div>
-    `;
-
-    // 将统计信息插入到友链容器的上方
-    friendLinksContainer.parentNode.insertBefore(statsContainer, friendLinksContainer);
-
-    // 为友链卡片添加交互效果
-    activeFriendLinks.forEach((card, index) => {
-      // 添加序号
-      const indexBadge = document.createElement("div");
-      indexBadge.style.cssText = `
-        position: absolute;
-        top: -8px;
-        right: -8px;
-        background: #007bff;
-        color: white;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 10px;
-        font-weight: bold;
-        z-index: 1;
-      `;
-      indexBadge.textContent = index + 1;
-
-      // 设置卡片为相对定位
-      card.style.position = 'relative';
-      card.appendChild(indexBadge);
-
-      // 添加悬停效果
-      card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-2px)';
-        this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
-        this.style.transition = 'all 0.3s ease';
-      });
-
-      card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
-        this.style.boxShadow = '';
-      });
-    });
-
-    // 添加友链检测功能（可选）
-    if (window.location.search.includes('check=true')) {
-      checkFriendLinks(activeFriendLinks);
-    }
-  }
-
-  // 为失联友链添加特殊样式
-  if (lostLinksContainer) {
-    const lostCards = lostLinksContainer.querySelectorAll(".card");
-    lostCards.forEach(card => {
-      card.style.cssText += `
-        opacity: 0.6;
-        filter: grayscale(50%);
-        border: 2px solid #dc3545;
-        position: relative;
-      `;
-
-      // 添加失联标识
-      const lostBadge = document.createElement("div");
-      lostBadge.style.cssText = `
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        background: #dc3545;
-        color: white;
-        padding: 2px 6px;
-        border-radius: 4px;
-        font-size: 10px;
-        font-weight: bold;
-        z-index: 1;
-      `;
-      lostBadge.textContent = '失联';
-      card.appendChild(lostBadge);
-    });
-  }
-});
-
-// 友链检测功能（可选）
-async function checkFriendLinks(cards) {
-  console.log('开始检测友链状态...');
-
-  for (let i = 0; i < cards.length; i++) {
-    const card = cards[i];
-    const link = card.querySelector('a');
-
-    if (link && link.href) {
-      try {
-        // 创建状态指示器
-        const statusIndicator = document.createElement("div");
-        statusIndicator.style.cssText = `
-          position: absolute;
-          top: 5px;
-          left: 5px;
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background: orange;
-          z-index: 1;
-        `;
-        card.style.position = 'relative';
-        card.appendChild(statusIndicator);
-
-        // 简单的连通性检测（由于CORS限制，这里只是示例）
-        setTimeout(() => {
-          // 模拟检测结果
-          const isOnline = Math.random() > 0.1; // 90% 概率在线
-          statusIndicator.style.background = isOnline ? '#28a745' : '#dc3545';
-          statusIndicator.title = isOnline ? '在线' : '可能离线';
-        }, i * 100);
-
-      } catch (error) {
-        console.log(`检测 ${link.href} 时出错:`, error);
-      }
-    }
-  }
-}
-
-// 添加一些实用工具函数
-window.friendLinkUtils = {
-  // 导出友链数据
-  exportLinks() {
-    const cards = document.querySelectorAll('.links-content .card');
-    const links = Array.from(cards).map(card => {
-      const img = card.querySelector('.ava');
-      const link = card.querySelector('a');
-      const info = card.querySelector('.info');
-
-      return {
-        name: link ? link.textContent.trim() : '',
-        url: link ? link.href : '',
-        avatar: img ? img.src : '',
-        description: info ? info.textContent.trim() : ''
-      };
-    });
-
-    console.log('友链数据:', JSON.stringify(links, null, 2));
-    return links;
-  },
-
-  // 检查重复友链
-  checkDuplicates() {
-    const cards = document.querySelectorAll('.links-content .card');
-    const urls = new Set();
-    const duplicates = [];
-
-    cards.forEach(card => {
-      const link = card.querySelector('a');
-      if (link && link.href) {
-        if (urls.has(link.href)) {
-          duplicates.push(link.href);
-        } else {
-          urls.add(link.href);
-        }
-      }
-    });
-
-    if (duplicates.length > 0) {
-      console.warn('发现重复友链:', duplicates);
-    } else {
-      console.log('没有发现重复友链');
-    }
-    return duplicates;
-  }
-};
-</script> -->
 
 </div>
 
@@ -1377,7 +1172,7 @@ window.friendLinkUtils = {
      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
-       <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源(打不开)</a>
+       <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源(打开是广告)</a>
       </div>
       <div class="info">
        探索互联网新大陆 in N ways.
@@ -1476,17 +1271,6 @@ window.friendLinkUtils = {
      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
-       <a href="https://www.edzbe.com" target="_blank">耳朵的主人(打不开)</a>
-      </div>
-      <div class="info">
-      耳朵电台，庆幸我们还有耳朵
-      </div>
-     </div>
-    </div>
-   <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
-     <div class="card-header">
-      <div>
        <a href="https://www.crant.cn/" target="_blank">Crant(打不开)</a>
       </div>
       <div class="info">
@@ -1494,33 +1278,11 @@ window.friendLinkUtils = {
       </div>
      </div>
     </div>
-   <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
-     <div class="card-header">
-      <div>
-       <a href="https://baiwumm.com/" target="_blank">白雾茫茫(内容不符)</a>
-      </div>
-      <div class="info">
-      记录学习、生活和有趣的事
-      </div>
-     </div>
-    </div>
     <div class="card">
       <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
       <div class="card-header">
         <div>
-          <a href="https://blog.6uu.us/" target="_blank">bbb-lsy07(打不开)</a>
-        </div>
-        <div class="info">
-          科技激荡人文，洞见智慧本真。
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
-      <div class="card-header">
-        <div>
-          <a href="https://www.eilo.uk/" target="_blank">Eilo's Blog</a>
+          <a href="https://www.eilo.uk/" target="_blank">Eilo's Blog(内容不符)</a>
         </div>
         <div class="info">
           等等我记一下
@@ -1531,7 +1293,7 @@ window.friendLinkUtils = {
      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
-       <a href="https://mushuo.xyz/index" target="_blank">沐硕</a>
+       <a href="https://mushuo.xyz/index" target="_blank">沐硕(打不开)</a>
       </div>
       <div class="info">
        做一个追求幸福的人
@@ -1566,7 +1328,7 @@ window.friendLinkUtils = {
 
 ## 如何交换友链
 
-<h3>请添加<del>本站友链</del>后，在下方留言申请，<mark>期望您的站点</mark>:</h3>
+<font size=4>请添加**本站友链**后，在下方留言申请，<mark>期望您的站点</mark>:</font>
 
 
 <div class="grid cards" markdown>
@@ -1579,6 +1341,7 @@ window.friendLinkUtils = {
     * 处于活跃状态，有一定的更新频率
     * 建站15天以上
     * 未添加我站友链或你的申请未通过，评论留言会被隐藏
+    * 误判为失联的站点，请重新留言申请/联系我重新恢复
     * 无法评论区留言的，可以通过[邮箱](mailto:wcowin@qq.com)联系我
 
 
@@ -1611,7 +1374,7 @@ window.friendLinkUtils = {
 
     推荐在评论区发送这种格式，*号的需要填写自己的信息
 
-    ```html
+    ```html hl_lines="2 5 8"
     <div class="card">
      <img class="ava" loading="lazy" src="*你的头像链接*" />
      <div class="card-header">
