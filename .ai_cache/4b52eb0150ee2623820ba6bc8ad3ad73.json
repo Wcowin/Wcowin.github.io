@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了pip命令的使用，包括在Windows和Linux环境下安装pip、检查安装状态、换源安装、查询包信息以及查询和更新安装的包。pip主要用于Python包的安装和管理，需在命令行中操作。",
-  "service": "glm",
-  "page_title": "PIP",
-  "timestamp": "2025-09-30T21:03:59.351360",
-  "cache_version": "1.2.2",
-  "content_hash": "705182b69edffd045eda03149ed2364f"
-}

@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了Mac系统中隐藏的小游戏，这些游戏预装在内置的Emacs编辑器下。通过终端输入特定命令，可查看游戏列表并启动游戏，如贪吃蛇、俄罗斯方块等。操作简单，只需在终端输入游戏名称即可开始游戏。",
-  "service": "glm",
-  "page_title": "Mac隐藏彩蛋",
-  "timestamp": "2025-09-30T21:03:32.216049",
-  "cache_version": "1.2.2",
-  "content_hash": "5c2116ff6c12a2cedddb9230a98feeeb"
-}

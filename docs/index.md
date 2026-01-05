@@ -1,5 +1,5 @@
 ---
-title: Wcowin's Blog - 技术分享、开发笔记、生活随笔
+title: Wcowin's Blog
 description: 知足且上进，温柔且坚定。分享 MkDocs 教程、Mac 技巧、Python 开发、旅行记录等内容。
 hide:
 #   - navigation # 显示右
@@ -23,15 +23,13 @@ hide:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 
-<!-- 在头部添加预加载关键资源 -->
-<link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
-<link rel="preload" href="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" as="image">
-<!-- https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg -->
+<!-- 预加载头像图片 -->
+<link rel="preload" href="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" as="image" fetchpriority="high">
 <!-- wcowin-header.html -->
 <div class="wcowin-header-row">
   <!-- 左侧：文字内容 -->
   <div class="wcowin-header-text">
-    <div class="wcowin-header-title">Hi, I'm Wcowin</div>
+    <div class="wcowin-header-title">Hi, I'm <span class="wcowin-name-box"><span class="name-text">Wcowin</span><span class="corner-bl"></span><span class="corner-br"></span></span></div>
     <div class="wcowin-header-subtitle">
       <span class="wcowin-header-subtitle-inner">
         <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
@@ -54,8 +52,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
+        <img src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="250" height="250">
+        <img src="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="250" height="250">
       </div>
     </div>
   </div>
@@ -95,12 +93,96 @@ hide:
 .wcowin-header-title {
   font-size: 2.1rem;
   font-family: 'Inter', 'Montserrat', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 700; /* 使用最粗的字重 */
+  font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 18px;
   color: #4a4a4a;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+/* Wcowin 名字带边框效果 */
+.wcowin-name-box {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding: 4px 14px;
+  margin-left: 8px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px dashed #6b8e6b;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(107, 142, 107, 0.15);
+  vertical-align: middle;
+}
+
+/* 四角小方块装饰 */
+.wcowin-name-box::before,
+.wcowin-name-box::after,
+.wcowin-name-box .corner-bl,
+.wcowin-name-box .corner-br {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #6b8e6b;
+  border-radius: 1.5px;
+}
+
+.wcowin-name-box::before {
+  top: -3px;
+  left: -3px;
+}
+
+.wcowin-name-box::after {
+  top: -3px;
+  right: -3px;
+}
+
+.wcowin-name-box .corner-bl {
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  background: #6b8e6b;
+  border-radius: 1.5px;
+}
+
+.wcowin-name-box .corner-br {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 6px;
+  height: 6px;
+  background: #6b8e6b;
+  border-radius: 1.5px;
+}
+
+.wcowin-name-box .name-text {
+  font-weight: 800;
+  color: #2d3436;
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .wcowin-name-box {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border-color: #68d391;
+  box-shadow: 0 2px 8px rgba(104, 211, 145, 0.2);
+}
+
+[data-md-color-scheme="slate"] .wcowin-name-box::before,
+[data-md-color-scheme="slate"] .wcowin-name-box::after,
+[data-md-color-scheme="slate"] .wcowin-name-box .corner-bl,
+[data-md-color-scheme="slate"] .wcowin-name-box .corner-br {
+  background: #68d391;
+}
+
+[data-md-color-scheme="slate"] .wcowin-name-box .name-text {
+  color: #f7fafc;
 }
 
 .wcowin-header-subtitle {
@@ -167,33 +249,18 @@ hide:
 
 
 
-/* 添加深色模式的文字颜色适配 - 更强烈的对比度 */
-@media (prefers-color-scheme: dark) {
-  .wcowin-header-subtitle {
-    color: #757575;
-  }
-
-  .wcowin-header-subtitle-inner {
-    color: #b0b0b0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* 增强阴影 */
-  }
-
-  .wcowin-header-motto {
-    color: #d0d0d0 !important; /* 更亮的灰色 */
-  }
-
-  /* 确保SVG波浪线在深色模式下可见 */
-  .wcowin-header-underline path {
-    stroke: #b0b0b0 !important; /* 深色模式下使用较亮的灰色 */
-    opacity: 1 !important;
-  }
+/* 添加深色模式的文字颜色适配 */
+[data-md-color-scheme="slate"] .wcowin-header-subtitle {
+  color: #757575;
 }
 
-.wcowin-header-underline {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  pointer-events: none;
+[data-md-color-scheme="slate"] .wcowin-header-subtitle-inner {
+  color: #b0b0b0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+[data-md-color-scheme="slate"] .wcowin-header-motto {
+  color: #d0d0d0;
 }
 
 .wcowin-header-motto {
@@ -243,14 +310,14 @@ hide:
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 240px;
-  flex: 0 0 280px;
+  min-width: 220px;
+  flex: 0 0 250px;
 }
 
 .flip-glow-ultimate {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -346,7 +413,7 @@ hide:
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 260px; height: 260px;
+  width: 230px; height: 230px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
@@ -354,37 +421,23 @@ hide:
   --rainbow-next: #c76dd1;
   background: linear-gradient(-45deg, var(--rainbow-prev) 30%, var(--rainbow-next));
   filter: blur(60px);
+  -webkit-filter: blur(60px);
   opacity: 0.85;
   animation: rainbow 8s linear infinite;
-  /* Safari 兼容性修复 */
-  -webkit-filter: blur(60px);
   will-change: filter, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 /* 深色模式调整 */
-@media (prefers-color-scheme: dark) {
-  .flip-glow-ultimate-glow {
-    filter: blur(60px);
-    -webkit-filter: blur(60px);
-    opacity: 0.7;
-  }
-}
-
-/* Safari 特定修复 - 减少模糊值以改善性能 */
-@supports (-webkit-appearance: none) {
-  .flip-glow-ultimate-glow {
-    filter: blur(45px);
-    -webkit-filter: blur(45px);
-    opacity: 0.9;
-  }
+[data-md-color-scheme="slate"] .flip-glow-ultimate-glow {
+  opacity: 0.7;
 }
 
 .flip-glow-ultimate-imgs {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   perspective: 1200px;
   z-index: 2;
 }
@@ -433,45 +486,44 @@ hide:
     height: 200px;
   }
   .flip-glow-ultimate-glow {
-    width: 260px;
-    height: 260px;
+    width: 180px;
+    height: 180px;
   }
 }
 @media (max-width: 700px) {
   .wcowin-header-row {
     flex-direction: column-reverse;
-    gap: 0px; /* 减少到最小间距 */
+    gap: 0px;
     min-height: unset;
-    margin: 12px 0 12px 0; /* 减小上下边距 */
+    margin: 12px 0 12px 0;
   }
   .wcowin-header-text {
     align-items: center;
     text-align: center;
     max-width: 98vw;
-    margin-top: -10px; /* 添加负边距拉近与头像的距离 */
+    margin-top: -10px;
   }
   .wcowin-header-avatar {
-    margin-bottom: 0px; /* 移除底部间距 */
+    margin-bottom: 0px;
   }
   .wcowin-header-title {
-    margin-bottom: 12px; /* 减小标题下方间距 */
+    margin-bottom: 12px;
   }
   .wcowin-header-subtitle {
-    margin-bottom: 16px; /* 减小副标题下方间距 */
+    margin-bottom: 16px;
   }
   .wcowin-header-motto {
-    margin-bottom: 16px; /* 减小座右铭下方间距 */
+    margin-bottom: 16px;
   }
 
-  /* 调整头像大小，使其在移动端更小 */
   .flip-glow-ultimate,
   .flip-glow-ultimate-imgs {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
   }
   .flip-glow-ultimate-glow {
-    width: 220px;
-    height: 220px;
+    width: 160px;
+    height: 160px;
   }
 }
 /* 添加一个额外的样式类，可以直接应用到元素上 */
@@ -606,9 +658,6 @@ hide:
 })();
 </script>
 
-<!-- 移除这个换行符，它会产生额外的空间 -->
-<!-- <br class="desktop-only"/> -->
-
 <!-- 修改分隔线上下的间距 -->
 <style>
 /* 移除了冗余的 .desktop-only 样式 */
@@ -691,65 +740,42 @@ hr {
 </style>
 
 <script>
-  // 优化的问候函数
-  function updateGreeting() {
-    const greetingElement = document.getElementById('greeting-text');
-    if (!greetingElement) {
-      // 如果元素不存在，延迟重试
-      setTimeout(updateGreeting, 100);
-      return;
+  // 问候函数
+  (function() {
+    function updateGreeting() {
+      const el = document.getElementById('greeting-text');
+      if (!el) return;
+      
+      const hour = new Date().getHours();
+      const greetings = [
+        [0, 5, "夜深了，注意休息 🌙"],
+        [5, 7, "早安，新的一天开始啦 🌅"],
+        [7, 9, "早上好，开始美好的一天 ☀️"],
+        [9, 11, "上午好，保持专注 ✨"],
+        [11, 13, "中午好，该休息一下了 🍲"],
+        [13, 15, "午后时光，继续加油 ☕"],
+        [15, 18, "下午好，别忘了喝水 🌤️"],
+        [18, 20, "傍晚好，放松一下吧 🌆"],
+        [20, 22, "晚上好，享受宁静时光 🌃"],
+        [22, 24, "夜深了，早点休息哦 🌠"]
+      ];
+      
+      el.textContent = greetings.find(([s, e]) => hour >= s && hour < e)?.[2] || "夜深了，注意休息 🌙";
     }
-
-    const hour = new Date().getHours();
-    let greeting;
-
-    if (hour >= 0 && hour < 5) {
-      greeting = "夜深了，注意休息 🌙";
-    } else if (hour >= 5 && hour < 7) {
-      greeting = "早安，新的一天开始啦 🌅";
-    } else if (hour >= 7 && hour < 9) {
-      greeting = "早上好，开始美好的一天 ☀️";
-    } else if (hour >= 9 && hour < 11) {
-      greeting = "上午好，保持专注 ✨";
-    } else if (hour >= 11 && hour < 13) {
-      greeting = "中午好，该休息一下了 🍲";
-    } else if (hour >= 13 && hour < 15) {
-      greeting = "午后时光，继续加油 ☕";
-    } else if (hour >= 15 && hour < 18) {
-      greeting = "下午好，别忘了喝水 🌤️";
-    } else if (hour >= 18 && hour < 20) {
-      greeting = "傍晚好，放松一下吧 🌆";
-    } else if (hour >= 20 && hour < 22) {
-      greeting = "晚上好，享受宁静时光 🌃";
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateGreeting);
     } else {
-      greeting = "夜深了，早点休息哦 🌠";
+      updateGreeting();
     }
-
-    greetingElement.textContent = greeting;
-  }
-
-  // 多重保险的初始化
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', updateGreeting);
-  } else {
-    // DOM 已经加载完成
-    updateGreeting();
-  }
-
-  // 额外的后备方案
-  if (document.getElementById('greeting-text')) {
-    updateGreeting();
-  } else {
-    // 如果元素还没有加载，等待一下
-    setTimeout(updateGreeting, 200);
-  }
+  })();
 </script>
 
 ---
 
 <div class="grid cards" markdown>
 
--   :material-notebook-edit-outline:{ .lg .middle } __导航栏__
+-   :material-notebook-edit-outline:{ .lg .middle } __𝚆𝚎 𝚖𝚎𝚎𝚝 𝚒𝚗 𝚝𝚑𝚎 𝚏𝚊𝚕𝚕.__
 
     ---
     ![image](https://pic1.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp?source=2c26e567){ class="responsive-image" loading="lazy" align=right width="340" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
@@ -803,7 +829,7 @@ hr {
     ---
     - [Zensical教程](blog/Zensical/indexfirst.md)(🌟2026最新更新)
 
--   :material-format-font:{ .lg .middle } __好用/好玩__
+-   :material-gamepad-variant-outline:{ .lg .middle } __好用/好玩__
 
     ---
 
@@ -812,11 +838,11 @@ hr {
     - [Mac/windows软件网站汇总](blog/macsoft.md)
     - [重庆旅游推荐路线](trip/InCQ/CQ.md)
 
--   :simple-aboutdotme:{ .lg .middle } __关于__
+-   :material-account-box-outline:{ .lg .middle } __关于__
 
     ---
 
-    - [留言板](waline.md)[^Knowing-that-loving-you-has-no-ending]
+    - [留言板](waline.md)
     - [博客](blog/index.md)
     - [:octicons-arrow-right-24: 了解我](about/geren/#_4){ data-preview }
     - [支持作者](about/zcw/#alipay){ data-preview }
@@ -824,7 +850,7 @@ hr {
 
 
 
-[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵
+[^Knowing-that-loving-you-has-no-ending]:剩下的话留在秋天慢慢说吧🍂
 [^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
 
 
@@ -847,12 +873,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 2. TEL:18939533255(微信号)
 3. 点击右下角[:simple-bilibili:](https://space.bilibili.com/1407028951/lists/4566631?type=series)图标查看视频教程. -->
 
-
-<style>
-.md-grid {
-  max-width: 1220px;
-}
-</style>
 
 
 <style>
@@ -892,7 +912,7 @@ body {
   
   function resize() {
     canvas.width = window.innerWidth;
-    canvas.height = 600; // 只覆盖首页头部区域
+    canvas.height = 600;
   }
   
   resize();
@@ -912,7 +932,6 @@ body {
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
-    // 获取当前主题颜色
     const isDark = document.documentElement.getAttribute('data-md-color-scheme') === 'slate';
     ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)';
     ctx.lineWidth = 1;

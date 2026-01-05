@@ -361,8 +361,7 @@ hide_comment: true
 
 <div class="qualification__tabs">
     <div class="qualification__button qualification__active" data-target='#education'>
-        <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
-        来时路
+        <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon><span>来时路</span>
     </div>
 </div>
 <div class="qualification__data">
@@ -449,8 +448,8 @@ hide_comment: true
     
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target="_blank"}~
     - [x] 咖啡重度爱好者
-    - [x] 热爱(xiā)折腾技术/Math，闲暇之余致力于Mkdocs主题开发
-    - [ ] 目前的研究领域是[密码学](../blog/Cryptography/index.md)
+    - [x] 热爱(xiā)折腾技术/Math，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
+    - [x] 目前的研究领域是[密码学/区块链](../blog/Cryptography/index.md)
     - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒知趣，明得失，知进退
 

@@ -85,10 +85,8 @@ nav = [
         { "OneClip 一款简单专业的macOS 剪贴板管理工具" = "blog/OneClip.md" },
         { "临时邮箱是什么？" = "blog/temp-email.md" },
         { "好用/好玩网站分享" = "blog/Webplay.md" },
-        { "基于Mkdocs主题的站点" = "blog/technique sharing/comkdocs.md" },
         { "甜甜圈🍩代码" = "blog/technique sharing/ttq.md" },
         { "Mac/windows软件网站汇总" = "blog/macsoft.md" },
-        { "语雀" = "blog/yuque.md" },
         { "密码学" = [
             "blog/Cryptography/index.md",
             { "数论基础" = "blog/Cryptography/Numbertheory.md" },
@@ -99,7 +97,6 @@ nav = [
             { "消息认证与哈希函数" = "blog/Cryptography/HashAndMAC.md" },
             { "比特币体系：从零开始理解加密货币" = "blog/Cryptography/Bitcoin.md" },
         ]},
-        { "Python 环境管理最佳实践" = "blog/environment.md" },
         { "Zensical中文教程" =[
             { "前言" = "blog/Zensical/indexfirst.md" },
             { "从MkDocs迁移" = "blog/Zensical/migration.md" },
@@ -117,6 +114,7 @@ nav = [
             { "4.解决mkdocs serve 后127.0.0.1:8000无法自动刷新的问题" = "blog/Mkdocs/click.md" },
             { "网站添加Mkdocs博客" = "blog/Mkdocs/mkdocsblog.md" }
         ]},
+        { "基于Mkdocs主题的站点" = "blog/technique sharing/comkdocs.md" },
         { "Mkdocs美化/补充" = [
             { "Wcowin for MkDocs主题" = "blog/websitebeauty/mkdocs-wcowin1.md" },
             { "为MKdocs添加AI摘要(Plus版本)" = "blog/websitebeauty/MkDocs-AI-Summary-plus.md" },
@@ -143,6 +141,7 @@ nav = [
             { "页脚设置" = "blog/websitebeauty/footer.md" },
             { "加速网站访问的一些心得" = "blog/websitebeauty/accelerate.md" }
         ]},
+        { "语雀" = "blog/yuque.md" },        
         { "技术分享" = [
             { "Win11镜像下载/KMS激活" = "blog/technique sharing/win.md" },
             { "实用脚本分享" = "blog/technique sharing/jiaoben.md" },
@@ -215,6 +214,7 @@ nav = [
         { "AI工具" = "develop/AI.md" },
         { "如何注册ChatGPT" = "develop/ChatGPT.md" },
         { "我的设备" = "develop/mydevice.md" },
+        { "Python 环境管理最佳实践" = "develop/environment.md" },
         { "Markdown" = [
             { "Markdown指南" = "develop/Markdown/markdown.md" },
             { "MWeb Pro" = "develop/Markdown/MWeb.md" }
@@ -442,6 +442,7 @@ generator = true
 [project.extra.status]
 new = "最近添加"
 deprecated = "已弃用"
+draft = "草稿"
 
 
 # ===== 多语言切换配置 =====
@@ -485,10 +486,6 @@ name = "Github"
 icon = "fontawesome/brands/bilibili"
 link = "https://space.bilibili.com/1407028951/lists/4566631?type=series"
 
-[[project.extra.social]]
-icon = "fontawesome/solid/file-code"
-link = "https://blog.csdn.net/m0_63203517?spm=1000.2115.3001.5343"
-name = "CSDN"
 
 [[project.extra.social]]
 icon = "fontawesome/regular/envelope"

@@ -1,8 +1,0 @@
-{
-  "summary": "启动台图标错乱可重置设置解决。方法包括：删除Finder目录下的desktoppicture.db文件或使用Terminal命令。操作后，图标将恢复默认排列，可自行调整。",
-  "service": "glm",
-  "page_title": "启动台图标顺序错乱怎么办",
-  "timestamp": "2025-09-30T21:03:23.189196",
-  "cache_version": "1.2.2",
-  "content_hash": "c6a40eb20e633a97331351016d76af75"
-}

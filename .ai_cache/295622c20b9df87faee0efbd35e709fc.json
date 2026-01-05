@@ -1,8 +1,0 @@
-{
-  "summary": "MkDocs支持自定义页脚，通过修改`footer.html`文件和`mkdocs.yml`配置文件实现。在`mkdocs.yml`中可设置版权信息，并选择是否显示“Made with Material for MkDocs”。",
-  "service": "glm",
-  "page_title": "页脚设置",
-  "timestamp": "2025-09-30T21:04:33.042509",
-  "cache_version": "1.2.2",
-  "content_hash": "6641fdcdea6b9b6fb32af1a403abf41d"
-}

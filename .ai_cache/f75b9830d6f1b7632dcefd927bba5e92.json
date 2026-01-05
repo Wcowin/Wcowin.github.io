@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了Mac操作系统中，通过终端命令控制Dock栏显示当前运行应用的技巧。首先输入特定指令使Dock栏仅显示当前活动应用，如需恢复原状态，再输入另一指令即可。",
-  "service": "glm",
-  "page_title": "小小Mac技巧",
-  "timestamp": "2025-10-10T13:07:18.184506",
-  "cache_version": "1.2.2",
-  "content_hash": "31135afdec37002599d28f423cf4508a"
-}

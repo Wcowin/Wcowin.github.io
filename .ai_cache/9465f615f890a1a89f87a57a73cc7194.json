@@ -1,8 +1,0 @@
-{
-  "summary": "本文档介绍了MkDocs配置文件mkdocs.yml的设置方法，包括主题、导航、插件等配置。详细说明了如何设置网站颜色、添加目录、搜索功能、博客、标签等，并提供了Markdown、HTML5、CSS3、JavaScript等知识学习建议，以实现网站自定义。",
-  "service": "glm",
-  "page_title": "2.Mkdocs配置说明(mkdocs.yml)",
-  "timestamp": "2025-09-30T21:03:42.195252",
-  "cache_version": "1.2.2",
-  "content_hash": "6542bb58a162a38409efe3b8e253d622"
-}

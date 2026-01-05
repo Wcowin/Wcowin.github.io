@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了基于MkDocs主题的站点，列举了多个知名开源项目如django-rest-framework、FastAPI等使用MkDocs搭建的文档网站，并提供了丰富的MkDocs主题与站点供参考。",
-  "service": "glm",
-  "page_title": "基于Mkdocs主题的站点",
-  "timestamp": "2025-09-30T21:04:02.182612",
-  "cache_version": "1.2.2",
-  "content_hash": "e433609666b2970ef42b7f5b9fcfbaf4"
-}

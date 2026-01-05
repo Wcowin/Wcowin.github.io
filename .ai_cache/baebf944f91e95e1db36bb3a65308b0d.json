@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了解决Github Pages部署mkdocs自定义域名失效的方法：在/docs目录下创建无后缀的CNAME文件，填写域名。问题源于每次添加自定义域名后，CNAME文件被清除。",
-  "service": "glm",
-  "page_title": "3.解决Github Pages部署mkdocs自定义域名失效的问题",
-  "timestamp": "2025-09-30T21:03:43.896363",
-  "cache_version": "1.2.2",
-  "content_hash": "0c7cb5662d84c9eef3e2ec4695e1d392"
-}

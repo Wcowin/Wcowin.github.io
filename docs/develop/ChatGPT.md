@@ -3,6 +3,7 @@ title: 注册ChatGPT详细指南
 tags:
     - ChatGPT
     - AI
+status: deprecated
 ---
 
 # 如何注册ChatGPT

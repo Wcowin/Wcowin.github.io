@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了Mkdocs的三个相关插件：Mkdocs AI Summary用于自动生成文档摘要，MkDocs文档日期插件显示文档元信息，MKdocs页面添加相关文章推荐插件增强文档阅读体验。",
-  "service": "glm",
-  "page_title": "Mkdocs相关插件",
-  "timestamp": "2025-09-30T21:05:25.802484",
-  "cache_version": "1.2.2",
-  "content_hash": "fbe9e57f95d423b464e77ed518618c82"
-}

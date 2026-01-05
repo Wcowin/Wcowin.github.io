@@ -5,15 +5,23 @@
    font-size: 1rem;
    padding: 10px 20px;
    border-radius: 25px;
+   -webkit-transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
+               box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
                box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* 使用更高效的过渡 */
    margin-bottom: 1rem;
+   display: -webkit-box;
+   display: -webkit-flex;
    display: flex;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
    align-items: center;
    color: #333;
    contain: layout style; /* 性能优化：限制重绘范围 */
    will-change: transform; /* 提前告知浏览器变换意图 */
+   -webkit-backface-visibility: hidden;
    backface-visibility: hidden; /* 减少复合层 */
+   -webkit-transform: translateZ(0);
    transform: translateZ(0); /* 强制GPU加速 */
 }
 
@@ -27,6 +35,7 @@
 
 /* 在大屏幕上保留悬停效果 */
 .card:hover {
+   -webkit-transform: translateZ(0) scale(1.05);
    transform: translateZ(0) scale(1.05);
    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
    background-color: rgba(68, 138, 255, 0.1);
@@ -72,6 +81,7 @@
    -webkit-line-clamp: 2; /* 限制最多显示两行 */
    line-clamp: 2; /* 标准属性以实现兼容性 */
    -webkit-box-orient: vertical;
+   box-orient: vertical;
 }
 
 /* 媒体查询：小屏幕 */

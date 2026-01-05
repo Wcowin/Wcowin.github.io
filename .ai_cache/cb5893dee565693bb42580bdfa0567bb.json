@@ -1,8 +1,0 @@
-{
-  "summary": "本程序基于百度API和opencv实现智能车牌识别，可识别车牌号和颜色，代码简洁易懂，界面简单。但仅支持PNG格式图片，界面不够美观。程序由本团队原创，尊重知识产权。",
-  "service": "glm",
-  "page_title": "基于百度API和opencv的智能车牌识别程序",
-  "timestamp": "2025-09-30T21:05:27.503803",
-  "cache_version": "1.2.2",
-  "content_hash": "b2148a176a977a61910266d67f1fa374"
-}

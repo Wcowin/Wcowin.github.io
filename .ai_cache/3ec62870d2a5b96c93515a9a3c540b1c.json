@@ -1,8 +1,0 @@
-{
-  "summary": "本文介绍了搭建个人图床的方法，包括使用Github+cloudflare、免费图床（如SMMS、Hello图床）以及图床上传工具（如PicGo、PicList）。通过这些方法，用户可以方便地存储和分享图片。",
-  "service": "glm",
-  "page_title": "搭建个人图床",
-  "timestamp": "2025-09-30T21:04:19.227153",
-  "cache_version": "1.2.2",
-  "content_hash": "779e19acac3977d021d5868f52a6290c"
-}

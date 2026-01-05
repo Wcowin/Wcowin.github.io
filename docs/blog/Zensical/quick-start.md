@@ -15,6 +15,7 @@ categories:
 !!! info "官方文档"
     Zensical 官方网站: [https://zensical.org/](https://zensical.org/)  
     Zensical 官方文档: [https://zensical.org/docs/](https://zensical.org/docs/)
+    我写的Zensical教程：https://wcowin.work/Zensical-Chinese-Tutorial/
 
 ## 第一步：环境准备
 

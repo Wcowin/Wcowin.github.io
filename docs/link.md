@@ -14,8 +14,18 @@ comments: false
 
 # 欢迎加入友链(不分先后)
 
-- [x] [快速加入友链](#_4)  
-- [x] **非常定期** 检查友链有效性
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 0rem;" markdown>
+<div markdown>
+
+- [x] [快速加入友链](#_4)
+
+</div>
+<div markdown>
+
+- [x] **非常定期**检查
+
+</div>
+</div>
 
 <div id="rcorners4" >
 
@@ -97,7 +107,7 @@ comments: false
       </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2024/03/31/Ht3QBqhgLYNAuwj.png" />
+     <img class="ava" loading="lazy" src="https://i.111666.best/image/RZ4GuYFkuIvUOezJRC7sjt.png" />
      <div class="card-header">
       <div>
        <a href="https://lennychen.top/" target="_blank">Lenny's Web</a>
@@ -635,7 +645,7 @@ comments: false
         </div>
       </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://www.yaguwu.com/zb_users/theme/tpure/style/images/sethead.png" />
+     <img class="ava" loading="lazy" src="https://i.111666.best/image/4rTToahgN3jyhAx1zopHHp.png" />
      <div class="card-header">
       <div>
        <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a>
@@ -657,7 +667,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.btwoa.com/author.gif" />
+     <img class="ava" loading="lazy" src="https://blog.btwoa.com/screenshot.avif" />
      <div class="card-header">
       <div>
        <a href="https://blog.btwoa.com" target="_blank">btwoa</a>
@@ -1071,7 +1081,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://blog.6uu.us/upload/lsyb.png" />
+      <img class="ava" loading="lazy" src="https://i.111666.best/image/BxMKaCZk8wypAQma9c4HfR.png" />
       <div class="card-header">
         <div>
           <a href="https://blog.6uu.us/" target="_blank">bbb-lsy07</a>
@@ -1093,7 +1103,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" src="https://i.111666.best/image/vOWybU9IFt18GcbfLcw88X.png" />
      <div class="card-header">
       <div>
        <a href="https://www.edzbe.com" target="_blank">耳朵的主人</a>
@@ -1103,18 +1113,28 @@ comments: false
       </div>
      </div>
     </div>
-    <div class="card">
-      <img class="ava" src="https://s21.ax1x.com/2025/08/06/pVU2ERg.png" />
-      <div class="card-header">
-        <div>
-          <a href="https://www.shiguang.ink/" target="_blank">时光印记</a>
-        </div>
-        <div class="info">
-          在时光中留下印记
+      <div class="card">
+        <img class="ava" src="https://s21.ax1x.com/2025/08/06/pVU2ERg.png" />
+        <div class="card-header">
+          <div>
+            <a href="https://www.shiguang.ink/" target="_blank">时光印记</a>
+          </div>
+          <div class="info">
+            在时光中留下印记
+          </div>
         </div>
       </div>
-    </div>
-
+      <div class="card">
+        <img class="ava" src="https://dev.oneall.eu.org/favicon.webp" />
+        <div class="card-header">
+          <div>
+            <a href="https://blog.oneall.eu.org" target="_blank">r1a dev</a>
+          </div>
+          <div class="info">
+            r1a的开发记录/博客
+          </div>
+        </div>
+      </div>    
 
 
 
@@ -1355,7 +1375,6 @@ comments: false
     * 独立博客(不要求独立域名)，HTTPS，访问流畅
     * 原创内容为主，原创内容5篇以上
     * 处于活跃状态，有一定的更新频率
-    * 建站15天以上
     * 未添加我站友链或你的申请未通过，评论留言会被隐藏
     * 误判为失联的站点，请重新留言申请/联系我重新恢复
     * 无法评论区留言的，可以通过[邮箱](mailto:wcowin@qq.com)联系我
