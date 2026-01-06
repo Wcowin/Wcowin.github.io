@@ -14,7 +14,7 @@ hide:
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
     🎉 <a href="https://oneclip.cloud/" target="_blank">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">了解更多 →</a><br>
-    ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新的zensical中文教程   
+    ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Zensical中文教程</a> —— 最新的Zensical中文教程   
   </div>
 </div>
 

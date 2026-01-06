@@ -198,7 +198,6 @@ nav = [
         "develop/index.md",
         { "DeepSeek:从入门到精通" = "develop/deepseek.md" },
         { "MCP" = [
-            { "MCP中文文档" = "https://mcp-docs.cn/introduction" },
             { "What is MCP" = "develop/AI/mcp.md" }
         ]},
         { "RAG技术（检索增强生成）" = "develop/AI/rag.md" },

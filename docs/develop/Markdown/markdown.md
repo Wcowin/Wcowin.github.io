@@ -401,46 +401,100 @@ Markdown 是一个强大而简洁的文档格式化工具。掌握这些语法�
 <style>
 .markdown-guide-header {
   text-align: center;
-  padding: 2rem 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 12px;
-  margin-bottom: 2rem;
+  padding: 2.5rem 1.5rem;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 16px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+[data-md-color-scheme="slate"] .markdown-guide-header {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .markdown-guide-header h1 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.75rem 0;
   font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  letter-spacing: -0.02em;
+}
+
+[data-md-color-scheme="slate"] .markdown-guide-header h1 {
+  color: #f1f5f9;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+[data-md-color-scheme="slate"] .subtitle {
+  color: #cbd5e1;
 }
 
 .guide-stats {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .stat-item {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  background: #ffffff;
+  color: #475569;
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
   font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] .stat-item {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+[data-md-color-scheme="slate"] .stat-item:hover {
+  background: #1e293b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
+  .markdown-guide-header {
+    padding: 2rem 1rem;
+  }
+
   .markdown-guide-header h1 {
     font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 
   .guide-stats {
     flex-direction: column;
     align-items: center;
+    gap: 0.75rem;
+  }
+
+  .stat-item {
+    width: 100%;
+    max-width: 280px;
   }
 }
 </style>

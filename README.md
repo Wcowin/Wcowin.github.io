@@ -5,7 +5,7 @@
 
 <p align="center">
     <!-- <img src="https://s1.imagehub.cc/images/2025/05/11/3d9c30078bc549c44534248c7558c3b5.png" alt="arv-anshul"/ width="100%" style="border-radius: 10px;" > -->
-    <img src="https://s2.loli.net/2025/12/17/WuGZp8LQcSxNgRi.png" alt="arv-anshul" width="100%" style="border-radius: 10px;">
+    <img src="https://s1.imagehub.cc/images/2026/01/06/6b182f285a36d94635f4eb5766d775d3.png" alt="arv-anshul" width="100%" style="border-radius: 10px;">
     <img src="https://pic3.zhimg.com/80/v2-afef47cac915ad51071fdc2f6d990b30_1440w.webp" alt="arv-anshul" width="100%" style="border-radius: 10px;">
     
 </p>
@@ -73,12 +73,3 @@
 <!-- [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/) -->
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a><br />本博客所有原创文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">知识共享署名 4.0 国际许可协议</a>进行许可。
-
-<!-- 
- _       __                            _         
-| |     / /  _____  ____  _      __   (_)   ____ 
-| | /| / /  / ___/ / __ \| | /| / /  / /   / __ \
-| |/ |/ /  / /__  / /_/ /| |/ |/ /  / /   / / / /
-|__/|__/   \___/  \____/ |__/|__/  /_/   /_/ /_/ 
-
--->
