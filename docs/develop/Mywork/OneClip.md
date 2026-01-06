@@ -3,7 +3,7 @@ title: OneClip 一款简单专业的macOS 剪贴板管理工具
 description: OneClip 是一款专为 macOS 打造的专业级剪贴板管理工具。采用 100% SwiftUI 原生技术，实现更顺滑的动画、更自然的系统融合与更低的资源占用。
 status: new
 tags:
-  - 推广
+  - 我的作品
 ---
 
 

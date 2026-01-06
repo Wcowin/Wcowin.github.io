@@ -43,3 +43,8 @@
   display: inline;
 }
 
+/* 隐藏右侧目录滚动条，保留滚动功能 */
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE/Edge */
+}

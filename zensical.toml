@@ -214,17 +214,9 @@ nav = [
             { "Mac Shell 环境优化指南" = "develop/Mac-development/Mac-Shell-Environment-Optimization.md" },
             { "Mac 开发环境检查清单" = "develop/Mac-development/Mac-Development-Environment-Checklist.md" }
         ]},
-        { "AI工具" = "develop/AI.md" },
-        { "如何注册ChatGPT" = "develop/ChatGPT.md" },
-        { "我的设备" = "develop/mydevice.md" },
-        { "Python 环境管理最佳实践" = "develop/environment.md" },
-        { "Markdown" = [
-            { "Markdown指南" = "develop/Markdown/markdown.md" },
-            { "MWeb Pro" = "develop/Markdown/MWeb.md" }
-        ]},
-        { "Git 实用技巧" = "develop/git.md" },
         { "我的开发项目/作品/应用" = [
             { "OneClip" = "develop/Mywork/OneClip.md" },
+            { "FinderClip(为macOS Finder提供直观的剪切粘贴体验)" = "develop/Mywork/Mac-Finder-Clipboard.md" },
             { "Wcowin for MkDocs主题" = "develop/Mywork/mkdocs-wcowin.md" },
             { "Mkdocs相关插件" = "develop/Mywork/mkdocsplugin.md" },
             { "简单的 JavaScript 音乐播放器" = "develop/Mywork/muplayer.md" },
@@ -235,6 +227,15 @@ nav = [
             { "利用百度API进行植物识别" = "develop/Mywork/aizhiwu.md" },
             { "玩的设计" = "develop/Mywork/design.md" }
         ]},
+        { "AI工具" = "develop/AI.md" },
+        { "如何注册ChatGPT" = "develop/ChatGPT.md" },
+        { "我的设备" = "develop/mydevice.md" },
+        { "Python 环境管理最佳实践" = "develop/environment.md" },
+        { "Markdown" = [
+            { "Markdown指南" = "develop/Markdown/markdown.md" },
+            { "MWeb Pro" = "develop/Markdown/MWeb.md" }
+        ]},
+        { "Git 实用技巧" = "develop/git.md" },
         { "设计美学" = [
             { "唐·诺曼—情感设计的三个层次" = "develop/designbeauty/db1.md" },
             { "我对设计的一些观点" = "develop/designbeauty/my-to-desihn.md" }

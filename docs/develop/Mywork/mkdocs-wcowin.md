@@ -1,14 +1,8 @@
 ---
 title: Mkdocs-Wcowin主题
-# 隐藏的模块
-hide:
-  #  - navigation # 隐藏左边导航
-  #  - toc #隐藏右边导航
-  #  - footer #隐藏翻页
-  #  - feedback  #隐藏反馈
+description: Mkdocs-Wcowin主题是一个简洁美观的Mkdocs主题，基于Material for MkDocs美化，功能多元化，简单易上手，小白配置，教程详细，清晰易懂。
 tags:
-    - 我的作品
-comments: false  #评论，默认不开启
+  - 我的作品
 ---
 
 # Mkdocs-Wcowin主题

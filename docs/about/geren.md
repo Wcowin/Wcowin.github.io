@@ -359,69 +359,163 @@ hide_comment: true
 
 
 
-<div class="qualification__tabs">
-    <div class="qualification__button qualification__active" data-target='#education'>
-        <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon><span>来时路</span>
+<div class="qualification">
+    <div class="qualification__tabs">
+        <button class="qualification__toggle qualification__button qualification__active" data-target="#education">
+            <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon><span>来时路</span>
+        </button>
     </div>
-</div>
-<div class="qualification__data">
-    <div>
-        <h3 class="qualification__title">漯河高中</h3>
-        <span class="qualification__subtitle">平凡的三年</span>
-        <div class="qualification__calendar">
-            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-            <span>2018 - 2021</span>
+    <div class="qualification__sections">
+        <div class="qualification__content qualification__active" data-content id="education">
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">漯河高中</h3>
+                    <span class="qualification__subtitle">平凡的三年</span>
+                    <div class="qualification__calendar">
+                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <span>2018 - 2021</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div>
+            <div class="qualification__data">
+                <div></div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+                <div>
+                    <h3 class="qualification__title">CTBU</h3>
+                    <span class="qualification__subtitle">电子信息工程学士</span>
+                    <div class="qualification__calendar">
+                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <span>2021 - 2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">家里蹲大学</h3>
+                    <span class="qualification__subtitle">密码学硕士</span>
+                    <div class="qualification__calendar">
+                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <span>2026 - 2029</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div>
+            <div class="qualification__data">
+                <div></div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+                <div>
+                    <h3 class="qualification__title">未完待续</h3>
+                    <span class="qualification__subtitle">于道各努力，千里自同风</span>
+                    <div class="qualification__calendar">
+                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <span>Before - After</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qualification__content" data-content id="work">
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">工作经历待添加</h3>
+                    <span class="qualification__subtitle">点击上方切换即可展示</span>
+                    <div class="qualification__calendar">
+                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <span>敬请期待</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div>
         </div>
     </div>
-    <div>
-        <span class="qualification__rounder"></span>
-        <span class="qualification__line"></span>
-    </div>
 </div>
-<div class="qualification__data">
-    <div></div>
-    <div>
-        <span class="qualification__rounder"></span>
-        <span class="qualification__line"></span>
-    </div>
-    <div>
-        <h3 class="qualification__title">CTBU</h3>
-        <span class="qualification__subtitle">电子信息工程学士</span>
-        <div class="qualification__calendar">
-            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-            <span>2021 - 2025</span>
-        </div>
-    </div>
-</div>
-<div class="qualification__data">
-    <div>
-        <h3 class="qualification__title">家里蹲大学</h3>
-        <span class="qualification__subtitle">密码学硕士</span>
-        <div class="qualification__calendar">
-            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-            <span>2026 - 2029</span>
-        </div>
-    </div>
-    <div>
-        <span class="qualification__rounder"></span>
-        <span class="qualification__line"></span>
-    </div>
-</div>
-<div class="qualification__data">
-    <div></div>
-    <div>
-        <span class="qualification__rounder"></span>
-        <span class="qualification__line"></span>
-    </div>
-    <div>
-        <h3 class="qualification__title">未完待续</h3>
-        <span class="qualification__subtitle">于道各努力，千里自同风</span>
-        <div class="qualification__calendar">
-            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-            <span>Before - After</span>
-        </div>
-    </div>
-</div>
+
+<style>
+/* 切换按钮居中且仅显示当前标题 */
+.qualification__tabs {
+  justify-content: center;
+}
+.qualification__toggle {
+  border: none;
+  background: transparent;
+  padding: 0.3rem 0.8rem;
+  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+}
+.qualification__toggle:active {
+  transform: scale(0.96);
+  opacity: 0.8;
+}
+
+/* 内容区丝滑切换：淡入 + 轻微上移动画，只展示一个 */
+.qualification__sections {
+  position: relative;
+  overflow: hidden;
+}
+.qualification__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.qualification__content.qualification__active {
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.querySelector('.qualification__toggle');
+  const contents = document.querySelectorAll('.qualification__content');
+
+  if (!toggleBtn) return;
+
+  const states = [
+    { id: '#education', label: '来时路', icon: 'fluent:hat-graduation-12-regular' },
+    { id: '#work', label: '工作经历', icon: 'ph:briefcase' },
+  ];
+
+  let current = 0;
+
+  const applyState = () => {
+    const { id, label, icon } = states[current];
+    const target = document.querySelector(id);
+    if (!target) return;
+
+    contents.forEach(c => c.classList.remove('qualification__active'));
+    target.classList.add('qualification__active');
+
+    toggleBtn.dataset.target = id;
+    toggleBtn.innerHTML = `<iconify-icon icon="${icon}" class="qualification__icon"></iconify-icon><span>${label}</span>`;
+  };
+
+  toggleBtn.addEventListener('click', () => {
+    current = (current + 1) % states.length;
+    applyState();
+  });
+
+  applyState();
+});
+</script>
 
 <HR class="section-divider" />
 
