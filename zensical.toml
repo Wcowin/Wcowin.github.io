@@ -42,6 +42,8 @@ edit_uri = "edit/main/docs"                              # 编辑按钮跳转的
 extra_javascript = [
     "javascripts/glm-config.js",                              # 智谱清言翻译配置
     "javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
+    "javascripts/chat-widget.js",                             # Ask AI 聊天组件
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
     # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
@@ -60,6 +62,7 @@ extra_javascript = [
 
 # ===== 额外的 CSS 文件 =====
 extra_css = [
+    "stylesheets/chat-widget.css",   # Ask AI 聊天组件样式
     # "stylesheets/extra.css",         # 额外样式
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css", # 额外样式 CDN
     "stylesheets/extra2.css",        # 额外样式2

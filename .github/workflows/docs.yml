@@ -23,6 +23,12 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install zensical
+      
+      # 生成 Ask AI 的 API Key 配置文件
+      - name: Generate GLM API Config
+        run: |
+          echo "window.GLM_API_KEY = '${{ secrets.GLM_API_KEY }}';" > docs/javascripts/glm-api-config.js
+          
       - run: zensical build --clean 
       - uses: actions/upload-pages-artifact@v4
         with:
