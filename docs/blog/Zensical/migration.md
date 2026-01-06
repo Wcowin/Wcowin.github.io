@@ -1,11 +1,7 @@
 ---
 title: 从 MkDocs 迁移到 Zensical
-date: 2025-01-22
-authors:
-  - name: Wcowin
-    email: wcowin@qq.com
-categories:
-  - 迁移指南
+tags:
+  - Zensical
 ---
 
 # 从 MkDocs 迁移到 Zensical

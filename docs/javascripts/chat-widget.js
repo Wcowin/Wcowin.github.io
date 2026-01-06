@@ -1,6 +1,7 @@
 /**
  * Ask AI 聊天组件 - 使用智谱清言 GLM API
  * 版本: 1.0.0
+ * author: Wcowin (https://wcowin.work/)
  */
 
 (function() {
@@ -11,13 +12,20 @@
     apiEndpoint: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
     model: 'glm-4-flash',
     maxMessageLength: 500,
-    maxContextLength: 2000,
-    systemPrompt: `你是一个友好的AI助手，专门帮助用户了解这个网站的内容。
-规则：
-1. 用简洁、友好的语言回答问题
-2. 如果问题与网站内容相关，基于提供的页面内容回答
-3. 如果不确定，诚实地说不知道
-4. 回答要简短精炼，不要太长`,
+    maxContextLength: 50000,
+    systemPrompt: `你是 Wcowin's Blog 的 AI 助手，帮助访客了解网站内容。
+
+关于网站：
+- 博主：Wcowin，一名开发者
+- 内容：技术博客、MkDocs/Zensical 教程、Mac 技巧、Python 开发、旅行记录等
+- 特色项目：OneClip（macOS 剪贴板管理工具）、MkDocs 主题和插件
+
+回答规则：
+1. 基于当前页面内容回答，简洁友好
+2. 如果页面内容能回答问题，直接引用相关信息
+3. 如果问题超出页面范围，可以简要介绍网站其他相关内容
+4. 不确定时诚实说明
+5. 用中文回答，技术术语保持原样`,
     // 按钮位置: 'left', 'center', 'right'
     defaultPosition: 'right'
   };
@@ -109,6 +117,14 @@
       </div>
     </div>
 
+    <div id="ai-chat-messages" class="ai-chat-messages">
+      <div class="ai-message ai-message-bot">
+        <div class="ai-message-content">
+          你好！我是 AI 助手，可以帮你了解Wcowin的网站内容。有什么想问的吗？
+        </div>
+      </div>
+    </div>
+
     <div class="ai-chat-input-area">
       <input type="text" id="ai-chat-input" placeholder="输入你的问题..." autocomplete="off">
       <button class="ai-chat-send-btn" id="ai-chat-send" aria-label="发送">
@@ -117,14 +133,6 @@
           <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
         </svg>
       </button>
-    </div>
-
-    <div id="ai-chat-messages" class="ai-chat-messages">
-      <div class="ai-message ai-message-bot">
-        <div class="ai-message-content">
-          你好！我是 AI 助手，可以帮你了解这个网站的内容。有什么想问的吗？
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -200,7 +208,7 @@
       messagesDiv.innerHTML = `
         <div class="ai-message ai-message-bot">
           <div class="ai-message-content">
-            你好！我是 AI 助手，可以帮你了解这个网站的内容。有什么想问的吗？
+            你好！我是 AI 助手，可以帮你了解Wcowin的网站内容。有什么想问的吗？
           </div>
         </div>
       `;
@@ -290,7 +298,7 @@
     return context;
   }
 
-  // 发送消息
+  // 发送消息（流式输出）
   async function sendMessage() {
     const input = document.getElementById('ai-chat-input');
     if (!input) return;
@@ -310,8 +318,18 @@
     // 添加用户消息
     addMessage(message, 'user');
 
-    // 添加加载指示器
-    const loadingDiv = addLoadingMessage();
+    // 创建 AI 回复的消息容器
+    const messagesDiv = document.getElementById('ai-chat-messages');
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'ai-message ai-message-bot';
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'ai-message-content';
+    contentDiv.innerHTML = '<span class="ai-typing-cursor">|</span>';
+    messageDiv.appendChild(contentDiv);
+    messagesDiv.appendChild(messageDiv);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+    let fullAnswer = '';
 
     try {
       const apiKey = getApiKey();
@@ -332,7 +350,7 @@
       // 添加当前问题
       messages.push({ role: 'user', content: message });
 
-      // 调用 API
+      // 调用 API（流式）
       const response = await fetch(CONFIG.apiEndpoint, {
         method: 'POST',
         headers: {
@@ -343,7 +361,8 @@
           model: CONFIG.model,
           messages: messages,
           temperature: 0.7,
-          max_tokens: 1024
+          max_tokens: 4096,
+          stream: true
         })
       });
 
@@ -353,22 +372,48 @@
         throw new Error(`API_ERROR_${response.status}`);
       }
 
-      const data = await response.json();
-      const answer = data.choices?.[0]?.message?.content || '抱歉，我没有理解你的问题。';
+      // 读取流式响应
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value);
+        const lines = chunk.split('\n');
+
+        for (const line of lines) {
+          if (line.startsWith('data: ')) {
+            const data = line.slice(6);
+            if (data === '[DONE]') continue;
+
+            try {
+              const json = JSON.parse(data);
+              const delta = json.choices?.[0]?.delta?.content || '';
+              if (delta) {
+                fullAnswer += delta;
+                contentDiv.innerHTML = parseMarkdown(fullAnswer) + '<span class="ai-typing-cursor">|</span>';
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+              }
+            } catch (e) {
+              // 忽略解析错误
+            }
+          }
+        }
+      }
+
+      // 移除光标，显示最终结果
+      contentDiv.innerHTML = parseMarkdown(fullAnswer);
 
       // 更新对话历史
       conversationHistory.push(
         { role: 'user', content: message },
-        { role: 'assistant', content: answer }
+        { role: 'assistant', content: fullAnswer }
       );
-
-      // 移除加载指示器，显示回答
-      loadingDiv?.remove();
-      addMessage(answer, 'bot');
 
     } catch (error) {
       console.error('Chat error:', error);
-      loadingDiv?.remove();
 
       let errorMessage = '抱歉，发生了错误，请稍后再试。';
       if (error.message === 'API_KEY_MISSING') {

@@ -1,5 +1,7 @@
 ---
-title: 配置详解
+title: Zensical配置详解
+tags:
+  - Zensical
 ---
 
 # zensical.toml 配置详解

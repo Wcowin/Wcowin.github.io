@@ -1,11 +1,7 @@
 ---
-title: GitHub Pages 部署
-date: 2025-01-22
-authors:
-  - name: Wcowin
-    email: wcowin@qq.com
-categories:
-  - 部署指南
+title: Zensical 使用 GitHub Pages 部署
+tags:
+  - Zensical
 ---
 
 # GitHub Pages 部署（推荐）

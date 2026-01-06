@@ -15,15 +15,15 @@ tags:
     ---  
 
     - 入门 Zensical  请看[Zensical官方教程](https://zensical.org/){target=“_blank”}  
-    - 我写的中文教程：<https://wcowin.github.io/Zensical-Chinese-Tutorial/>
-
+    - 我写的中文教程：[Zensical中文教程](https://wcowin.github.io/Zensical-Chinese-Tutorial/){target=“_blank”}
+    - 目前 Zensical 还在开发中，本站已经使用 Zensical 构建
 </div>
 
-目前 Zensical 还在开发中，本站已经使用 Zensical 构建
+
 
 ## 一点请求
 
-<font  color= #518FC1 size=6 class="ml3">如果您参考了本教程，如果可以的话，烦请在您的网站注明教程来源！感谢！</font>
+<font  color= #757575 size=6 ">如果您参考了本教程，如果可以的话，烦请在您的网站注明教程来源！感谢！</font>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 示例：
@@ -33,7 +33,7 @@ tags:
 
     ---
 
-    - 在构建网站的过程中参考了[Wcowin同学的Zensical 教程](https://wcowin.work/Zensical -Wcowin/)
+    - 在构建网站的过程中参考了[Wcowin同学的Zensical 教程](https://wcowin.github.io/Zensical-Chinese-Tutorial/)
 
 </div>
 
@@ -44,7 +44,7 @@ tags:
 
     ---
 
-    - 在构建本网站的过程中参考了[Wcowin同学的Zensical 教程](https://wcowin.work/Zensical -Wcowin/)
+    - 在构建本网站的过程中参考了[Wcowin同学的Zensical 教程](https://wcowin.github.io/Zensical-Chinese-Tutorial/)
 
 </div>
 ```

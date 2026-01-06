@@ -1,11 +1,7 @@
 ---
 title: 5 分钟快速开始
-date: 2025-01-22
-authors:
-  - name: Wcowin
-    email: wcowin@qq.com
-categories:
-  - 快速开始
+tags:
+  - Zensical
 ---
 
 # 5 分钟快速开始 Zensical

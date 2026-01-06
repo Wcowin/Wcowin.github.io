@@ -1389,6 +1389,188 @@ comments: false
 <a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>，请放心添加本站友链
 
 
+## 友链预览与代码生成
+
+> 填写信息即可实时预览，并生成 HTML 代码 [评论区](#_5)**发给我** 即可。<mark>推荐使用HTML格式</mark>
+
+<!-- 友链预览小工具，按钮居中，适配响应式和夜间模式 -->
+<style>
+#friendlink-preview-tool {
+  margin: 2em auto;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #EEF3FE;
+  max-width: 720px;
+  min-width: 320px;
+  width: 100%;
+  transition: background 0.3s;
+}
+#friendlink-preview-tool h3 {
+  margin-top: 0;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+#friendlink-preview-tool input,
+#friendlink-preview-tool textarea {
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+  font-size: 16px;
+  background: #fff;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+#friendlink-preview-tool textarea {
+  min-height: 140px;
+  resize: vertical;
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: pre;
+  overflow: auto;
+  word-break: break-all;
+  scrollbar-width: none;       /* Firefox 隐藏滚动条 */
+}
+#friendlink-preview-tool textarea::-webkit-scrollbar {
+  display: none;               /* WebKit 隐藏滚动条 */
+}
+#friendlink-preview-tool .btn-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0.5em;
+}
+#friendlink-preview-tool button {
+  padding: 7px 18px;
+  border-radius: 6px;
+  background: #2196F3;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+#friendlink-preview-tool button:hover {
+  background: #1976d2;
+}
+#fl_preview_area {
+  margin-top: 1.2em;
+  min-height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#fl_preview_area .card {
+  float: none !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: static !important;
+}
+#fl_preview_area .card .ava {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+/* 响应式适配 */
+@media (max-width: 900px) {
+  #friendlink-preview-tool {
+    max-width: 98vw;
+    min-width: 0;
+    padding: 1em 0.5em;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  #friendlink-preview-tool input,
+  #friendlink-preview-tool textarea,
+  #friendlink-preview-tool button {
+    font-size: 1em;
+  }
+}
+
+/* 夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+  #friendlink-preview-tool {
+    background: #23272f;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+  #friendlink-preview-tool h3 {
+    color: #e3e6eb;
+  }
+  #friendlink-preview-tool input,
+  #friendlink-preview-tool textarea {
+    background: #181a20;
+    color: #e3e6eb;
+    border: 1px solid #333a45;
+  }
+  #friendlink-preview-tool button {
+    background: #1976d2;
+    color: #fff;
+  }
+}
+</style>
+
+<div id="friendlink-preview-tool">
+  <h3>友链效果预览</h3>
+  <div style="display:flex;flex-direction:column;gap:10px;">
+    <input id="fl_name" placeholder="网站名称" oninput="renderFriendLinkPreview()">
+    <input id="fl_link" placeholder="网站链接(含http/https)" oninput="renderFriendLinkPreview()">
+    <input id="fl_avatar" placeholder="头像链接(图片URL)" oninput="renderFriendLinkPreview()">
+    <input id="fl_desc" placeholder="简介" oninput="renderFriendLinkPreview()">
+  </div><br>
+  <div class="btn-row">
+    <button type="button" onclick="renderFriendLinkPreview()">预览效果</button>
+    <button type="button" onclick="copyFriendLinkHtml()">复制HTML</button>
+  </div>
+  <div id="fl_preview_area"></div>
+  <div style="margin-top:1em;">
+    <label for="fl_preview_code"><strong>生成的 HTML（复制发给我即可）</strong></label>
+    <textarea id="fl_preview_code" readonly></textarea>
+  </div>
+</div>
+
+<script>
+function escapeHtml(str) {
+  return str.replace(/[<>&"]/g, function(c) {
+    return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];
+  });
+}
+function renderFriendLinkPreview() {
+  var name = document.getElementById('fl_name').value.trim() || '你的网站名称';
+  var link = document.getElementById('fl_link').value.trim() || 'https://your.site/';
+  var avatar = document.getElementById('fl_avatar').value.trim() || 'https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp';
+  var desc = document.getElementById('fl_desc').value.trim() || '你的网站简介';
+  var html = `
+  <div class="card">
+    <img class="ava" src="${escapeHtml(avatar)}" />
+    <div class="card-header">
+      <div>
+        <a href="${escapeHtml(link)}" target="_blank">${escapeHtml(name)}</a>
+      </div>
+      <div class="info">
+        ${escapeHtml(desc)}
+      </div>
+    </div>
+  </div>
+  `;
+  document.getElementById('fl_preview_area').innerHTML = html;
+  document.getElementById('fl_preview_code').value = html.trim();
+}
+function copyFriendLinkHtml() {
+  var codeArea = document.getElementById('fl_preview_code');
+  codeArea.select();
+  codeArea.setSelectionRange(0, codeArea.value.length);
+  try { document.execCommand('copy'); } catch (e) {}
+}
+
+// 初始化一次预览（使用默认占位内容）
+document.addEventListener('DOMContentLoaded', function () {
+  renderFriendLinkPreview();
+});
+</script>
+
 ***
 
 **友链格式示例/本站信息:**
