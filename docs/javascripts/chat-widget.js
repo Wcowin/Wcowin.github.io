@@ -15,17 +15,23 @@
     maxContextLength: 50000,
     systemPrompt: `你是 Wcowin's Blog 的 AI 助手，帮助访客了解网站内容。
 
-关于网站：
-- 博主：Wcowin，一名开发者
-- 内容：技术博客、MkDocs/Zensical 教程、Mac 技巧、Python 开发、旅行记录等
-- 特色项目：OneClip（macOS 剪贴板管理工具）、MkDocs 主题和插件
+关于网站（Wcowin's Blog）：
+- 博主：Wcowin，一名开发者，专注于技术分享和开源项目
+- 主要内容分类：
+  * 技术博客：MkDocs/Zensical 教程、Mac 技巧、Python 开发、前端技术等
+  * 开源项目：OneClip（macOS 剪贴板管理工具）、FinderClip、MkDocs 主题和插件等
+  * 技术分享：密码学/区块链、算法学习、系统设计等
+  * 生活记录：旅行记录、读书笔记、个人思考等
+  * 开发工具：Mac 开发环境配置、GitHub 使用技巧等
+- 网站特色：使用 Zensical 构建，提供多语言支持（中英文），响应式设计
 
 回答规则：
-1. 基于当前页面内容回答，简洁友好
-2. 如果页面内容能回答问题，直接引用相关信息
-3. 如果问题超出页面范围，可以简要介绍网站其他相关内容
-4. 不确定时诚实说明
-5. 用中文回答，技术术语保持原样`,
+1. 优先使用当前页面内容回答相关问题，这样可以提供更精准的信息
+2. 如果问题涉及网站整体内容、其他页面或项目，可以基于你对网站的了解来回答
+3. 回答要简洁友好，可以直接引用当前页面的相关信息
+4. 如果问题超出网站范围或不确定，诚实说明
+5. 用中文回答，技术术语保持原样
+6. 当用户询问网站整体情况、其他项目或文章时，可以基于网站的结构和内容来回答`,
     // 按钮位置: 'left', 'center', 'right'
     defaultPosition: 'right'
   };
@@ -76,6 +82,32 @@
   let conversationHistory = [];
   let sessionId = Date.now().toString(36);
 
+  // 建议提示配置
+  const PROMPTS = {
+    default: [
+      "介绍一下这个网站的主要内容",
+      "Wcowin有哪些技术项目？"
+    ],
+    projects: [
+      "这个项目使用了哪些技术栈？",
+      "如何快速上手这个项目？"
+    ],
+    blog: [
+      "这篇文章的核心内容是什么？",
+      "这篇文章有哪些技术亮点？"
+    ]
+  };
+
+  function getPagePrompts() {
+    const path = window.location.pathname;
+    if (path.includes('/develop/Mywork/') || path.includes('/projects/')) {
+      return PROMPTS.projects;
+    } else if (path.includes('/blog/')) {
+      return PROMPTS.blog;
+    }
+    return PROMPTS.default;
+  }
+
   // UI 模板
   const template = `
 <div id="ai-chat-trigger" class="ai-chat-trigger" aria-label="Ask AI">
@@ -96,19 +128,18 @@
   <div class="ai-chat-container">
     <div class="ai-chat-header">
       <div class="ai-chat-header-info">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="ai-chat-header-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
         </svg>
-        <span>Ask AI 助手</span>
+        <span class="ai-chat-header-title">Ask AI 助手</span>
       </div>
       <div class="ai-chat-header-actions">
-        <button class="ai-chat-action-btn" id="ai-chat-clear" title="清空对话">
+        <button class="ai-chat-action-btn" id="ai-chat-maximize" aria-label="最大化" title="最大化">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="3 6 5 6 21 6"></polyline>
-            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
           </svg>
         </button>
-        <button class="ai-chat-close" aria-label="关闭">
+        <button class="ai-chat-close" aria-label="关闭" title="关闭">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -120,19 +151,56 @@
     <div id="ai-chat-messages" class="ai-chat-messages">
       <div class="ai-message ai-message-bot">
         <div class="ai-message-content">
-          你好！我是 AI 助手，可以帮你了解Wcowin的网站内容。有什么想问的吗？
+          你好！我是 Wcowin's Blog 的 AI 助手 ✨<br><br>
+          我可以帮你：
+          <ul style="margin: 8px 0 4px 0; padding-left: 20px;">
+            <li>了解网站内容和文章要点</li>
+            <li>解答技术项目相关问题</li>
+            <li>介绍博客的技术栈和特色</li>
+          </ul>
+          有什么想了解的吗？可以点击下方提示快速开始 🚀
         </div>
       </div>
     </div>
 
+    <div id="ai-chat-prompts" class="ai-chat-prompts visible">
+      <button class="ai-chat-prompt-btn" data-prompt-index="0"></button>
+      <button class="ai-chat-prompt-btn" data-prompt-index="1"></button>
+    </div>
+
     <div class="ai-chat-input-area">
       <input type="text" id="ai-chat-input" placeholder="输入你的问题..." autocomplete="off">
-      <button class="ai-chat-send-btn" id="ai-chat-send" aria-label="发送">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button class="ai-chat-send-btn" id="ai-chat-send" aria-label="发送" title="发送">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="22" y1="2" x2="11" y2="13"></line>
           <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
         </svg>
       </button>
+      <div class="ai-chat-menu-wrapper">
+        <button class="ai-chat-menu-btn" id="ai-chat-menu-toggle" aria-label="更多选项" aria-expanded="false" title="更多选项">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="5" r="1.5"></circle>
+            <circle cx="12" cy="12" r="1.5"></circle>
+            <circle cx="12" cy="19" r="1.5"></circle>
+          </svg>
+        </button>
+        <div class="ai-chat-menu" id="ai-chat-menu">
+          <button class="ai-chat-menu-item" id="ai-chat-clear" title="清空对话">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+            <span>清空</span>
+          </button>
+          <button class="ai-chat-menu-item" id="ai-chat-copy" title="复制对话">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>复制</span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -144,6 +212,89 @@
     bindEvents();
   }
 
+  // 更新建议提示
+  function updatePrompts() {
+    const promptsContainer = document.getElementById('ai-chat-prompts');
+    const promptBtns = promptsContainer?.querySelectorAll('.ai-chat-prompt-btn');
+    if (!promptsContainer || !promptBtns) return;
+
+    const prompts = getPagePrompts();
+    promptBtns.forEach((btn, index) => {
+      if (prompts[index]) {
+        btn.textContent = prompts[index];
+        btn.style.display = '';
+      } else {
+        btn.style.display = 'none';
+      }
+    });
+  }
+
+  // 显示/隐藏建议提示
+  function togglePrompts(show) {
+    const promptsContainer = document.getElementById('ai-chat-prompts');
+    if (!promptsContainer) return;
+    
+    if (show) {
+      promptsContainer.classList.add('visible');
+    } else {
+      promptsContainer.classList.remove('visible');
+    }
+  }
+
+  // 关闭菜单
+  function closeMenu() {
+    const menu = document.getElementById('ai-chat-menu');
+    const menuToggle = document.getElementById('ai-chat-menu-toggle');
+    if (menu) menu.classList.remove('active');
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  // 切换最大化
+  function toggleMaximize() {
+    const container = document.querySelector('.ai-chat-container');
+    if (!container) return;
+    
+    container.classList.toggle('maximized');
+    const messagesDiv = document.getElementById('ai-chat-messages');
+    if (messagesDiv) {
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
+  }
+
+  // 复制对话内容
+  function copyConversation() {
+    const messages = document.querySelectorAll('.ai-message-content');
+    let text = '';
+    messages.forEach(msg => {
+      const sender = msg.closest('.ai-message')?.classList.contains('ai-message-user') ? '你' : 'AI';
+      text += `${sender}: ${msg.textContent}\n\n`;
+    });
+    
+    navigator.clipboard.writeText(text).then(() => {
+      showToast('对话已复制到剪贴板');
+    }).catch(() => {
+      showToast('复制失败，请手动复制');
+    });
+  }
+
+  // 显示提示信息
+  function showToast(message) {
+    let toast = document.getElementById('ai-chat-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'ai-chat-toast';
+      toast.className = 'ai-chat-toast';
+      document.body.appendChild(toast);
+    }
+    
+    toast.textContent = message;
+    toast.classList.add('ai-chat-toast-visible');
+    
+    setTimeout(() => {
+      toast.classList.remove('ai-chat-toast-visible');
+    }, 2000);
+  }
+
   // 绑定事件
   function bindEvents() {
     const trigger = document.getElementById('ai-chat-trigger');
@@ -152,8 +303,13 @@
     const modal = document.getElementById('ai-chat-modal');
     const closeBtn = document.querySelector('.ai-chat-close');
     const clearBtn = document.getElementById('ai-chat-clear');
+    const copyBtn = document.getElementById('ai-chat-copy');
+    const maximizeBtn = document.getElementById('ai-chat-maximize');
+    const menuToggle = document.getElementById('ai-chat-menu-toggle');
+    const menu = document.getElementById('ai-chat-menu');
     const input = document.getElementById('ai-chat-input');
     const sendBtn = document.getElementById('ai-chat-send');
+    const promptBtns = document.querySelectorAll('.ai-chat-prompt-btn');
 
     mainBtn?.addEventListener('click', openModal);
     positionBtn?.addEventListener('click', (e) => {
@@ -161,7 +317,41 @@
       cyclePosition();
     });
     closeBtn?.addEventListener('click', closeModal);
-    clearBtn?.addEventListener('click', clearChat);
+    maximizeBtn?.addEventListener('click', toggleMaximize);
+    
+    clearBtn?.addEventListener('click', () => {
+      closeMenu();
+      clearChat();
+    });
+    
+    copyBtn?.addEventListener('click', () => {
+      closeMenu();
+      copyConversation();
+    });
+
+    menuToggle?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isActive = menu?.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+    });
+
+    // 点击外部关闭菜单
+    document.addEventListener('click', (e) => {
+      if (!menu?.contains(e.target) && !menuToggle?.contains(e.target)) {
+        closeMenu();
+      }
+    });
+    
+    // 提示按钮点击事件
+    promptBtns.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const prompts = getPagePrompts();
+        if (prompts[index]) {
+          input.value = prompts[index];
+          sendMessage();
+        }
+      });
+    });
     
     modal?.addEventListener('click', (e) => {
       if (e.target === modal) closeModal();
@@ -177,11 +367,15 @@
     sendBtn?.addEventListener('click', sendMessage);
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeModal();
+      if (e.key === 'Escape') {
+        closeMenu();
+        closeModal();
+      }
     });
     
-    // 初始化按钮位置
+    // 初始化按钮位置和提示
     updateButtonPosition(getButtonPosition());
+    updatePrompts();
   }
 
   // 打开模态框
@@ -208,13 +402,21 @@
       messagesDiv.innerHTML = `
         <div class="ai-message ai-message-bot">
           <div class="ai-message-content">
-            你好！我是 AI 助手，可以帮你了解Wcowin的网站内容。有什么想问的吗？
+            你好！我是 Wcowin's Blog 的 AI 助手 ✨<br><br>
+            我可以帮你：
+            <ul style="margin: 8px 0 4px 0; padding-left: 20px;">
+              <li>了解网站内容和文章要点</li>
+              <li>解答技术项目相关问题</li>
+              <li>介绍博客的技术栈和特色</li>
+            </ul>
+            有什么想了解的吗？可以点击下方提示快速开始 🚀
           </div>
         </div>
       `;
     }
     conversationHistory = [];
     sessionId = Date.now().toString(36);
+    togglePrompts(true); // 显示提示
   }
 
   // 添加消息到界面
@@ -314,6 +516,9 @@
 
     // 清空输入框
     input.value = '';
+    
+    // 隐藏提示
+    togglePrompts(false);
 
     // 添加用户消息
     addMessage(message, 'user');
@@ -338,17 +543,28 @@
       }
 
       // 构建消息历史
+      // 智能判断是否需要包含当前页面上下文
+      const isGlobalQuestion = /网站|博客|整体|所有|全部|项目列表|文章列表|有哪些|介绍一下/.test(message);
+      
       const messages = [
-        { role: 'system', content: CONFIG.systemPrompt },
-        { role: 'user', content: `当前页面信息:\n${getPageContext()}` }
+        { role: 'system', content: CONFIG.systemPrompt }
       ];
 
-      // 添加对话历史（最近5轮）
+      // 添加对话历史（最近5轮）- 放在当前问题之前
       const recentHistory = conversationHistory.slice(-10);
       messages.push(...recentHistory);
-
-      // 添加当前问题
-      messages.push({ role: 'user', content: message });
+      
+      // 根据问题类型决定是否包含当前页面上下文
+      if (!isGlobalQuestion) {
+        // 针对具体内容的问题，添加当前页面上下文
+        messages.push({ 
+          role: 'user', 
+          content: `当前页面上下文：\n${getPageContext()}\n\n用户问题：${message}` 
+        });
+      } else {
+        // 全局性问题，直接提问，不添加页面上下文
+        messages.push({ role: 'user', content: message });
+      }
 
       // 调用 API（流式）
       const response = await fetch(CONFIG.apiEndpoint, {
