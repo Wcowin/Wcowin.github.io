@@ -1135,7 +1135,15 @@ comments: false
           </div>
         </div>
       </div>    
-
+      <div class="card">
+        <img class="ava" src="https://blog.zhipro.com/favicon.ico" />
+        <div class="card-header">
+          <div>
+            <a href="https://blog.zhipro.com" target="_blank">求知学习社</a>
+          </div>
+          <div class="info">持续分享实用知识技巧</div>
+        </div>
+      </div>
 
 
 
