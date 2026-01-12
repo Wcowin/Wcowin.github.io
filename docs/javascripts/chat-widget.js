@@ -25,13 +25,31 @@
   * 开发工具：Mac 开发环境配置、GitHub 使用技巧等
 - 网站特色：使用 Zensical 构建，提供多语言支持（中英文），响应式设计
 
-回答规则：
-1. 优先使用当前页面内容回答相关问题，这样可以提供更精准的信息
-2. 如果问题涉及网站整体内容、其他页面或项目，可以基于你对网站的了解来回答
-3. 回答要简洁友好，可以直接引用当前页面的相关信息
-4. 如果问题超出网站范围或不确定，诚实说明
-5. 用中文回答，技术术语保持原样
-6. 当用户询问网站整体情况、其他项目或文章时，可以基于网站的结构和内容来回答`,
+回答规则（重要，请严格遵守）：
+1. **基于上下文回答**：
+   - 如果提供了"当前页面上下文"，优先基于该页面的实际内容回答
+   - 引用具体信息时，确保信息准确，不要编造或猜测
+   - 如果页面内容能完全回答问题，直接引用并总结
+
+2. **回答格式**：
+   - 开头简洁概括，然后提供详细说明
+   - 使用清晰的段落分隔
+   - 可以使用列表、加粗等方式突出重点
+   - 避免冗长的重复性描述
+
+3. **回答质量**：
+   - 回答要准确、有用、具体
+   - 避免说"根据您提供的上下文"这类冗余表述，直接回答问题
+   - 如果问题简单，答案也要简洁；如果问题复杂，提供详细说明
+
+4. **超出范围**：
+   - 如果问题超出当前页面或网站范围，诚实说明
+   - 可以基于网站整体结构提供方向性建议
+
+5. **语言**：
+   - 用中文回答，语气友好自然
+   - 技术术语保持原样（英文、代码等）
+   - 避免过于正式或机械化的表达`,
     // 按钮位置: 'left', 'center', 'right'
     defaultPosition: 'right'
   };
@@ -492,12 +510,44 @@
     return result;
   }
 
-  // 获取页面上下文
+  // 获取页面上下文（优化版本）
   function getPageContext() {
     const title = document.title || '';
-    const mainContent = document.querySelector('.md-content')?.innerText || '';
-    const context = `页面标题: ${title}\n\n页面内容摘要:\n${mainContent.substring(0, CONFIG.maxContextLength)}`;
-    return context;
+    
+    // 尝试多种选择器获取主要内容
+    let mainContent = '';
+    const selectors = ['.md-content', 'main', 'article', '.content', '[role="main"]'];
+    
+    for (const selector of selectors) {
+      const element = document.querySelector(selector);
+      if (element) {
+        mainContent = element.innerText || element.textContent || '';
+        if (mainContent.trim().length > 100) break; // 找到有足够内容的元素
+      }
+    }
+    
+    // 如果还是找不到，尝试获取 body 内容（排除导航、页脚等）
+    if (!mainContent || mainContent.trim().length < 100) {
+      const body = document.body;
+      const nav = body.querySelector('nav');
+      const footer = body.querySelector('footer');
+      const header = body.querySelector('header');
+      
+      mainContent = body.innerText || body.textContent || '';
+      
+      // 移除导航、页脚等干扰内容（简单处理）
+      if (nav) mainContent = mainContent.replace(nav.innerText || '', '');
+      if (footer) mainContent = mainContent.replace(footer.innerText || '', '');
+      if (header) mainContent = mainContent.replace(header.innerText || '', '');
+    }
+    
+    // 清理和截取
+    mainContent = mainContent
+      .replace(/\s+/g, ' ')  // 合并多个空白字符
+      .trim()
+      .substring(0, CONFIG.maxContextLength);
+    
+    return `页面标题: ${title}\n\n页面内容:\n${mainContent}`;
   }
 
   // 发送消息（流式输出）
@@ -557,13 +607,17 @@
       // 根据问题类型决定是否包含当前页面上下文
       if (!isGlobalQuestion) {
         // 针对具体内容的问题，添加当前页面上下文
+        const pageContext = getPageContext();
         messages.push({ 
           role: 'user', 
-          content: `当前页面上下文：\n${getPageContext()}\n\n用户问题：${message}` 
+          content: `【当前页面信息】\n${pageContext}\n\n【用户问题】\n${message}\n\n请基于上述页面内容回答用户问题，回答要准确、有用、具体。` 
         });
       } else {
-        // 全局性问题，直接提问，不添加页面上下文
-        messages.push({ role: 'user', content: message });
+        // 全局性问题，可以包含页面上下文作为参考，但不强制
+        messages.push({ 
+          role: 'user', 
+          content: `${message}\n\n（当前页面：${document.title || '未知'}，可作为参考，但主要回答网站整体情况）`
+        });
       }
 
       // 调用 API（流式）

@@ -763,14 +763,16 @@
 }
 
 [data-md-color-scheme="slate"] .ai-chat-container {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 255, 255, 0.1);
-  background: var(--md-default-bg-color);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(30, 30, 35, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 [data-md-color-scheme="slate"] .ai-chat-header {
-  background: var(--md-default-bg-color);
-  border-bottom-color: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 30, 35, 0.98);
+  border-bottom-color: rgba(255, 255, 255, 0.15);
 }
 
 [data-md-color-scheme="slate"] .ai-chat-header-title {
@@ -793,7 +795,7 @@
 }
 
 [data-md-color-scheme="slate"] .ai-chat-messages {
-  background: var(--md-default-bg-color);
+  background: rgba(30, 30, 35, 0.98);
 }
 
 [data-md-color-scheme="slate"] .ai-message-bot .ai-message-content {
@@ -807,12 +809,12 @@
 }
 
 [data-md-color-scheme="slate"] .ai-chat-input-area {
-  background: var(--md-default-bg-color);
-  border-top-color: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 30, 35, 0.98);
+  border-top-color: rgba(255, 255, 255, 0.15);
 }
 
 [data-md-color-scheme="slate"] #ai-chat-input {
-  background: var(--md-default-bg-color);
+  background: rgba(20, 20, 25, 0.8);
   color: var(--md-default-fg-color);
   border-color: rgba(255, 255, 255, 0.2);
 }
@@ -841,6 +843,106 @@
 [data-md-color-scheme="slate"] .ai-chat-toast {
   background: var(--md-default-fg-color);
   color: var(--md-default-bg-color);
+}
+
+/* 深色模式 - 滚动条 */
+[data-md-color-scheme="slate"] .ai-chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+[data-md-color-scheme="slate"] .ai-chat-messages::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 深色模式 - 加载状态 */
+[data-md-color-scheme="slate"] .ai-message-loading .ai-message-content {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--md-default-fg-color--light);
+}
+
+/* 深色模式 - 菜单项 */
+[data-md-color-scheme="slate"] .ai-chat-menu-item {
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .ai-chat-menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] .ai-chat-menu-item svg {
+  color: var(--md-default-fg-color--light);
+}
+
+/* 深色模式 - 链接颜色 */
+[data-md-color-scheme="slate"] .ai-chat-link {
+  color: var(--md-typeset-a-color);
+}
+
+[data-md-color-scheme="slate"] .ai-chat-link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* 深色模式 - 发送按钮 */
+[data-md-color-scheme="slate"] .ai-chat-send-btn {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+[data-md-color-scheme="slate"] .ai-chat-send-btn:hover {
+  opacity: 0.85;
+}
+
+[data-md-color-scheme="slate"] .ai-chat-send-btn:disabled {
+  opacity: 0.5;
+}
+
+/* 深色模式 - 加载动画点 */
+[data-md-color-scheme="slate"] .ai-dot {
+  background: var(--md-default-fg-color--light);
+}
+
+/* 深色模式 - 打字光标 */
+[data-md-color-scheme="slate"] .ai-typing-cursor {
+  color: var(--md-primary-fg-color);
+}
+
+/* 深色模式 - 消息内容列表 */
+[data-md-color-scheme="slate"] .ai-message-content ul,
+[data-md-color-scheme="slate"] .ai-message-content ol {
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .ai-message-content li {
+  color: var(--md-default-fg-color);
+}
+
+/* 深色模式 - 建议提示区域背景 */
+[data-md-color-scheme="slate"] .ai-chat-prompts {
+  background: transparent;
+}
+
+/* 确保所有按钮在深色模式下都没有意外的边框 */
+[data-md-color-scheme="slate"] button {
+  outline: none;
+}
+
+[data-md-color-scheme="slate"] button:focus,
+[data-md-color-scheme="slate"] button:focus-visible {
+  outline: none;
+}
+
+/* 深色模式 - 代码块样式（如果消息中有代码） */
+[data-md-color-scheme="slate"] .ai-message-content code {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--md-default-fg-color);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* 深色模式 - 分隔线 */
+[data-md-color-scheme="slate"] .ai-message-content hr {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 
