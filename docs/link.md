@@ -1144,7 +1144,17 @@ comments: false
           <div class="info">持续分享实用知识技巧</div>
         </div>
       </div>
-
+      <div class="card">
+          <img class="ava" src="https://xiashuangjv123.github.io/photos/avatar.jpg" />
+          <div class="card-header">
+            <div>
+              <a href="https://xiashuangjv123.github.io/" target="_blank">夏双菊的土地 - 分享生活、特摄、宠物</a>
+            </div>
+            <div class="info">
+              分享生活、特摄、宠物
+            </div>
+          </div>
+        </div>
 
 
 
