@@ -282,7 +282,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://bu.dusays.com/2023/12/23/65867c3357bb6.jpg" />
+     <img class="ava" loading="lazy" src="https://weavatar.com/avatar/0b01396273cca253aa6876c020449b655a9cc12e75f921b38ac088569e814b5e" />
      <div class="card-header">
       <div>
        <a href="https://kegongteng.cn/" target="_blank">Kegongteng</a>
