@@ -1145,13 +1145,13 @@ comments: false
         </div>
       </div>
       <div class="card">
-          <img class="ava" src="https://xiashuangjv123.github.io/photos/avatar.jpg" />
+          <img class="ava" src="https://xiashuangjv123.github.io/photos/%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87.jpg" />
           <div class="card-header">
             <div>
-              <a href="https://xiashuangjv123.github.io/" target="_blank">夏双菊的土地 - 分享生活、特摄、宠物</a>
+              <a href="https://xiashuangjv123.github.io/" target="_blank">梁栋烨的博客 - 分享生活和技术</a>
             </div>
             <div class="info">
-              分享生活、特摄、宠物
+              喜欢一切有意义的事情
             </div>
           </div>
         </div>
