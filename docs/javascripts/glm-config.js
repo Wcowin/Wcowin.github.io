@@ -12,7 +12,7 @@ window.GLM_CONFIG = {
   // API配置
   api: {
     endpoint: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
-    model: 'glm-4-flash',
+    model: 'glm-4-flash-250414',
     timeout: 5000,
     maxRetries: 2,
     retryDelay: 500

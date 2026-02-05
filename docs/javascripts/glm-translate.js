@@ -256,6 +256,7 @@
         fastMode: true
       },
       api: {
+        model: 'glm-4-flash-250414',
         timeout: 5000,
         maxRetries: 2,
         retryDelay: 500
@@ -721,7 +722,7 @@
       
       // 简化API参数
       const requestBody = {
-        model: config.api?.model || 'glm-4-flash',
+        model: config.api?.model || 'glm-4-flash-250414',
         messages: [
           {
             role: 'system',

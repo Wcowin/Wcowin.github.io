@@ -491,17 +491,6 @@ comments: false
      </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://s2.loli.net/2025/01/25/x4aS23Z1uypqhc7.jpg" />
-    <div class="card-header">
-      <div>
-      <a href="https://fanovian.github.io" target="_blank">Fanovian</a>
-      </div>
-      <div class="info">
-      Get in, you beauty!
-      </div>
-    </div>
-    </div>
-    <div class="card">
     <img class="ava" loading="lazy" src="https://tendcode.com/static/blog/img/friend.png" />
     <div class="card-header">
       <div>
@@ -1145,17 +1134,27 @@ comments: false
         </div>
       </div>
       <div class="card">
-          <img class="ava" src="https://xiashuangjv123.github.io/photos/%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87.jpg" />
+          <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
           <div class="card-header">
             <div>
-              <a href="https://xiashuangjv123.github.io/" target="_blank">梁栋烨的博客 - 分享生活和技术</a>
+              <a href="https://orebaka.github.io/" target="_blank">梁栋烨的博客</a>
             </div>
             <div class="info">
               喜欢一切有意义的事情
             </div>
           </div>
         </div>
-
+    <div class="card">
+        <img class="ava" src="https://s2.loli.net/2025/08/30/No2OBAn7h3JTtXZ.png" />
+        <div class="card-header">
+          <div>
+            <a href="https://blog.flyburg.cc/" target="_blank">雨露霜雪</a>
+          </div>
+          <div class="info">
+            相信彩虹
+          </div>
+        </div>
+      </div>
 
 
 
