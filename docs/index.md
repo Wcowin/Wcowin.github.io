@@ -14,7 +14,7 @@ hide:
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
     🎉 <a href="https://oneclip.cloud/" target="_blank">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">了解更多 →</a><br>
-    ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新的zensical中文教程   
+    ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Zensical中文教程</a> —— 最新的Zensical中文教程   
   </div>
 </div>
 
@@ -644,7 +644,7 @@ hr {
 ---
 
 <div id="greeting" class="greeting-container">
-  <span id="greeting-text" class="greeting-text">加载中...</span>
+  <span id="greeting-text" class="greeting-text">🐈</span>
 </div>
 
 <style>
@@ -693,58 +693,35 @@ hr {
 </style>
 
 <script>
-  // 优化的问候函数
-  function updateGreeting() {
-    const greetingElement = document.getElementById('greeting-text');
-    if (!greetingElement) {
-      // 如果元素不存在，延迟重试
-      setTimeout(updateGreeting, 100);
-      return;
+  // 问候函数
+  (function() {
+    function updateGreeting() {
+      const el = document.getElementById('greeting-text');
+      if (!el) return;
+
+      const hour = new Date().getHours();
+      const greetings = [
+        [0, 5, "夜深了，注意休息 🌙"],
+        [5, 7, "早安，新的一天开始啦 🌅"],
+        [7, 9, "早上好，开始美好的一天 ☀️"],
+        [9, 11, "上午好，保持专注 ✨"],
+        [11, 13, "中午好，该休息一下了 🍲"],
+        [13, 15, "午后时光，继续加油 ☕"],
+        [15, 18, "下午好，别忘了喝水 🌤️"],
+        [18, 20, "傍晚好，放松一下吧 🌆"],
+        [20, 22, "晚上好，享受宁静时光 🌃"],
+        [22, 24, "夜深了，早点休息哦 🌠"]
+      ];
+
+      el.textContent = greetings.find(([s, e]) => hour >= s && hour < e)?.[2] || "夜深了，注意休息 🌙";
     }
 
-    const hour = new Date().getHours();
-    let greeting;
-
-    if (hour >= 0 && hour < 5) {
-      greeting = "夜深了，注意休息 🌙";
-    } else if (hour >= 5 && hour < 7) {
-      greeting = "早安，新的一天开始啦 🌅";
-    } else if (hour >= 7 && hour < 9) {
-      greeting = "早上好，开始美好的一天 ☀️";
-    } else if (hour >= 9 && hour < 11) {
-      greeting = "上午好，保持专注 ✨";
-    } else if (hour >= 11 && hour < 13) {
-      greeting = "中午好，该休息一下了 🍲";
-    } else if (hour >= 13 && hour < 15) {
-      greeting = "午后时光，继续加油 ☕";
-    } else if (hour >= 15 && hour < 18) {
-      greeting = "下午好，别忘了喝水 🌤️";
-    } else if (hour >= 18 && hour < 20) {
-      greeting = "傍晚好，放松一下吧 🌆";
-    } else if (hour >= 20 && hour < 22) {
-      greeting = "晚上好，享受宁静时光 🌃";
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateGreeting);
     } else {
-      greeting = "夜深了，早点休息哦 🌠";
+      updateGreeting();
     }
-
-    greetingElement.textContent = greeting;
-  }
-
-  // 多重保险的初始化
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', updateGreeting);
-  } else {
-    // DOM 已经加载完成
-    updateGreeting();
-  }
-
-  // 额外的后备方案
-  if (document.getElementById('greeting-text')) {
-    updateGreeting();
-  } else {
-    // 如果元素还没有加载，等待一下
-    setTimeout(updateGreeting, 200);
-  }
+  })();
 </script>
 
 ---

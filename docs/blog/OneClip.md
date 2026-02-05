@@ -587,5 +587,5 @@ open dist/OneClip.app
   <p><strong>OneClip —— 简单专业的 macOS 剪贴板管理工具</strong></p>
   <p>让复杂的事情变简单，让简单的事情变优雅</p>
   <p>Made with ❤️ by <a href="https://github.com/Wcowin">Wcowin</a></p>
-  <p>© 2025 Wcowin. All rights reserved.</p>
+  <p>© 2026 Wcowin. All rights reserved.</p>
 </div>

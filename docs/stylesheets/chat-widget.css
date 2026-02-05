@@ -2,6 +2,18 @@
    Ask AI 聊天组件样式 - 适配博客主题
    ========================================================================== */
 
+:root {
+  /* 通用变量 */
+  --ai-backdrop-blur: 0.4rem;
+  --ai-transition-fast: 0.15s ease;
+  --ai-transition-normal: 0.3s ease;
+  --ai-border-radius-btn: 4px;
+  --ai-border-radius-main: 6px;
+  --ai-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --ai-shadow-md: 0 2px 10px rgba(0, 0, 0, 0.08);
+  --ai-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
 /* 浮动触发按钮容器 */
 .ai-chat-trigger {
   position: fixed;
@@ -54,8 +66,8 @@
   font-size: 0.8rem;
   font-weight: 400;
   font-family: inherit;
-  backdrop-filter: blur(0.4rem);
-  -webkit-backdrop-filter: blur(0.4rem);
+  backdrop-filter: blur(var(--ai-backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--ai-backdrop-blur));
 }
 
 .ai-chat-main-btn:focus,
@@ -94,12 +106,12 @@
   align-items: center;
   justify-content: center;
   margin-right: 8px;
-  transition: all 0.2s ease;
+  transition: all var(--ai-transition-fast);
   opacity: 0;
   transform: scale(0.8);
-  backdrop-filter: blur(0.4rem);
-  -webkit-backdrop-filter: blur(0.4rem);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(var(--ai-backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--ai-backdrop-blur));
+  box-shadow: var(--ai-shadow-sm);
 }
 
 .ai-chat-position-btn:focus,
@@ -206,8 +218,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
-  transition: all 0.15s ease;
+  border-radius: var(--ai-border-radius-btn);
+  transition: all var(--ai-transition-fast);
   opacity: 0.7;
 }
 
@@ -230,8 +242,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
-  transition: all 0.15s ease;
+  border-radius: var(--ai-border-radius-btn);
+  transition: all var(--ai-transition-fast);
 }
 
 .ai-chat-close:hover {
@@ -261,7 +273,7 @@
   font-family: inherit;
   color: var(--md-default-fg-color, #333);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all var(--ai-transition-fast);
   max-width: calc(50% - 4px);
   text-align: center;
   line-height: 1.4;
@@ -300,7 +312,7 @@
   font-family: inherit;
   background: var(--md-default-bg-color, #fff);
   color: var(--md-default-fg-color, #333);
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color var(--ai-transition-fast), box-shadow var(--ai-transition-fast);
 }
 
 #ai-chat-input:focus {
@@ -325,7 +337,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.15s ease;
+  transition: all var(--ai-transition-fast);
   flex-shrink: 0;
 }
 
@@ -364,7 +376,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.15s ease;
+  transition: all var(--ai-transition-fast);
   flex-shrink: 0;
 }
 
@@ -401,7 +413,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
-  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  transition: opacity var(--ai-transition-fast), transform var(--ai-transition-fast), visibility var(--ai-transition-fast);
   z-index: 10;
 }
 
@@ -711,26 +723,6 @@
 }
 
 /* Dark mode / Slate theme adjustments */
-@media (prefers-color-scheme: dark) {
-  .ai-chat-trigger {
-    box-shadow: none;
-    background: none;
-    border: none;
-  }
-
-  .ai-message-bot .ai-message-content {
-    background: rgba(255, 255, 255, 0.05);
-  }
-
-  .ai-chat-link {
-    color: var(--md-typeset-a-color);
-  }
-
-  .ai-chat-link:hover {
-    color: var(--md-accent-fg-color);
-  }
-}
-
 [data-md-color-scheme="slate"] .ai-chat-trigger {
   box-shadow: none;
   background: none;

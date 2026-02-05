@@ -317,26 +317,11 @@ status: new
       }, 1500);
     };
 
-    // 输入框点击复制（也选中内容）
-    document.querySelectorAll('.crypto-input-wrapper input').forEach(input => {
-      input.addEventListener('click', function(e) {
-        e.preventDefault();
-        const wrapper = this.parentElement;
-        const badge = wrapper ? wrapper.querySelector('.crypto-badge') : null;
-        if (!badge) return;
-        copyTextToClipboard(this.value).then(() => {
-          showSuccess(badge);
-        }).catch(() => {
-          showSuccess(badge);
-        });
-        this.select();
-      });
-    });
-
     // 徽章点击复制
     document.querySelectorAll('.crypto-badge').forEach(badge => {
       badge.addEventListener('click', function(e) {
         e.preventDefault();
+        e.stopPropagation();
         const wrapper = this.closest('.crypto-input-wrapper');
         const input = wrapper ? wrapper.querySelector('input') : null;
         if (!input) return;
@@ -345,6 +330,13 @@ status: new
         }).catch(() => {
           showSuccess(this);
         });
+      });
+    });
+
+    // 输入框点击选中文本
+    document.querySelectorAll('.crypto-input-wrapper input').forEach(input => {
+      input.addEventListener('click', function(e) {
+        this.select();
       });
     });
   });
