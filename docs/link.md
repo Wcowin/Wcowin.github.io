@@ -1015,7 +1015,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://maxlhy0424.github.io/web/avatar.webp" />
+    <img class="ava" loading="lazy" src="https://maxlhy0424.is-a.dev/web/avatar.webp" />
     <div class="card-header">
       <div>
       <a href="https://MaxLHy0424.github.io" target="_blank">MaxLHy0424</a>
