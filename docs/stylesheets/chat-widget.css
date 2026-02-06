@@ -22,29 +22,63 @@
   align-items: center;
   gap: 0;
   z-index: 999;
-  transition: all 0.3s ease;
+  transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              bottom 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   background: none;
   border: none;
   outline: none;
 }
 
-/* 位置变体 */
-.ai-chat-trigger.ai-chat-left {
-  left: 24px;
-  right: auto;
-  transform: none;
-}
-
-.ai-chat-trigger.ai-chat-center {
-  left: 50%;
-  right: auto;
-  transform: translateX(-50%);
-}
-
+/* 默认固定在右侧 */
 .ai-chat-trigger.ai-chat-right {
   left: auto;
   right: 24px;
   transform: none;
+}
+
+/* 贴边：标签形态 - 竖向贴边，像书签一样 */
+.ai-chat-trigger.ai-chat-right.ai-chat-pinned {
+  right: 0;
+  flex-direction: column;
+  bottom: 160px;
+}
+
+.ai-chat-trigger.ai-chat-right.ai-chat-pinned .ai-chat-main-btn {
+  order: -1;
+}
+
+.ai-chat-trigger.ai-chat-right.ai-chat-pinned .ai-chat-main-btn {
+  width: 44px;
+  min-height: 120px;
+  height: auto;
+  padding: 16px 8px;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.ai-chat-trigger.ai-chat-right.ai-chat-pinned .ai-chat-main-btn .ai-chat-trigger-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  transition: opacity 0.25s ease;
+}
+
+.ai-chat-trigger.ai-chat-right.ai-chat-pinned .ai-chat-main-btn:hover {
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.12);
+}
+
+.ai-chat-trigger.ai-chat-right.ai-chat-pinned .ai-chat-main-btn svg {
+  flex-shrink: 0;
+}
+
+/* 贴边时位置按钮：小圆钮在标签下方，用于取消贴边 */
+.ai-chat-trigger.ai-chat-right.ai-chat-pinned .ai-chat-position-btn {
+  margin-right: 0;
+  margin-top: 8px;
+  align-self: center;
 }
 
 /* 主按钮 - 液态玻璃风格 */
@@ -62,7 +96,14 @@
   justify-content: center;
   gap: 8px;
   padding: 0 1rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              min-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              padding 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              gap 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              border-radius 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 0.8rem;
   font-weight: 400;
   font-family: inherit;
@@ -106,7 +147,11 @@
   align-items: center;
   justify-content: center;
   margin-right: 8px;
-  transition: all var(--ai-transition-fast);
+  margin-top: 0;
+  transition: opacity 0.2s ease,
+              transform 0.2s ease,
+              margin 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow var(--ai-transition-fast);
   opacity: 0;
   transform: scale(0.8);
   backdrop-filter: blur(var(--ai-backdrop-blur));
@@ -132,46 +177,85 @@
 }
 
 .ai-chat-position-btn svg {
-  transform: rotate(0deg);
+  transition: transform var(--ai-transition-fast);
 }
 
-/* 模态框遮罩 */
+.ai-chat-trigger.ai-chat-pinned .ai-chat-position-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ai-chat-trigger.ai-chat-pinned .ai-chat-position-btn svg {
+  transform: rotate(-90deg);
+}
+
+/* 模态框 - 客服风格：侧边抽屉，不居中打断 */
 .ai-chat-modal {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-  display: none;
-  align-items: flex-start;
-  justify-content: center;
+  background: transparent;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
   z-index: 1000;
-  padding: 48px 16px 16px;
-  overflow-y: auto;
-  /* Prevent scroll chaining to body */
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--ai-transition-normal), visibility var(--ai-transition-normal);
 }
 
 .ai-chat-modal.active {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
-/* 聊天容器 */
+/* 激活时可点击：点击空白区域（非面板）关闭 */
+.ai-chat-modal.active {
+  pointer-events: auto;
+}
+
+/* 聊天容器 - 侧边抽屉，从右侧滑入 */
 .ai-chat-container {
-  background: var(--md-default-bg-color, #fff);
-  border-radius: 8px;
-  box-shadow: var(--md-shadow-z3, 0 8px 32px rgba(0, 0, 0, 0.12));
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
-  max-width: 560px;
-  max-height: calc(100vh - 96px);
+  max-width: 400px;
+  height: 100vh;
+  background: var(--md-default-bg-color, #fff);
+  border-radius: 0;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0;
+  transform: translateX(100%);
+  transition: transform var(--ai-transition-normal);
+  pointer-events: auto;
+  z-index: 1001;
+}
+
+.ai-chat-modal.active .ai-chat-container {
+  transform: translateX(0);
+}
+
+/* 按钮在左侧时，面板从左侧滑入 */
+.ai-chat-modal.panel-left .ai-chat-container {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
+}
+
+.ai-chat-modal.panel-left.active .ai-chat-container {
+  transform: translateX(0);
+}
+
+.ai-chat-modal.panel-left {
+  justify-content: flex-start;
 }
 
 /* 头部 */
@@ -485,7 +569,7 @@
   flex-direction: column;
   gap: 12px;
   min-height: 200px;
-  max-height: 400px;
+  max-height: none;
   /* Prevent scroll chaining to parent/body */
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
@@ -633,9 +717,9 @@
   }
 }
 
-/* Tablet - Centered like desktop */
+/* Tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .ai-chat-trigger {
+  .ai-chat-trigger:not(.ai-chat-pinned) {
     bottom: 24px;
   }
 }
@@ -659,6 +743,7 @@
   color: var(--md-default-fg-color, #fff);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
+
 
 [data-md-color-scheme="slate"] .ai-chat-position-btn {
   background-color: rgba(40, 40, 40, 0.85);
@@ -893,15 +978,15 @@
   transform: translateX(-50%) translateY(0);
 }
 
-/* Maximized State */
+/* Maximized State - 侧边模式下最大化即全屏宽度 */
 .ai-chat-container.maximized {
-  max-width: 96vw;
-  max-height: 90vh;
-  width: 96vw;
-  height: 90vh;
+  max-width: 520px;
+  width: 100%;
 }
 
-.ai-chat-container.maximized .ai-chat-messages {
-  max-height: none;
-  flex: 1;
+/* 移动端 - 侧边面板全宽 */
+@media (max-width: 480px) {
+  .ai-chat-container {
+    max-width: 100%;
+  }
 }

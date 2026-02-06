@@ -483,7 +483,8 @@ hide_comment: true
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
+// 直接在脚本执行时初始化（脚本写在 DOM 后面，DOMContentLoaded 在某些场景下已经触发）
+(function () {
   const toggleBtn = document.querySelector('.qualification__toggle');
   const contents = document.querySelectorAll('.qualification__content');
 
@@ -514,7 +515,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   applyState();
-});
+})();
 </script>
 
 <HR class="section-divider" />

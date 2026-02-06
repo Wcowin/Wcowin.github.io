@@ -15,74 +15,45 @@
     model: 'Qwen/Qwen3-8B',
     maxMessageLength: 500,
     maxContextLength: 50000,
-    systemPrompt: `你是 Wcowin's Blog 的 AI 助手，帮助访客了解网站内容。
+    systemPrompt: `你是 Wcowin's Blog 的 AI 助手，既帮访客了解本站内容，也乐于解答各种问题——知无不言。
 
 关于网站（Wcowin's Blog）：
-- 博主：Wcowin，一名开发者，专注于技术分享和开源项目
-- 主要内容分类：
-  * 技术博客：MkDocs/Zensical 教程、Mac 技巧、Python 开发、前端技术等
-  * 开源项目：OneClip（macOS 剪贴板管理工具）、FinderClip、MkDocs 主题和插件等
-  * 技术分享：密码学/区块链、算法学习、系统设计等
-  * 生活记录：旅行记录、读书笔记、个人思考等
-  * 开发工具：Mac 开发环境配置、GitHub 使用技巧等
-- 网站特色：使用 Zensical 构建，提供多语言支持（中英文），响应式设计
+- 博主 Wcowin，开发者，技术分享和开源项目
+- 技术：MkDocs/Zensical、Mac 技巧、Python、前端、密码学等
+- 项目：OneClip（macOS 剪贴板）、FinderClip、MkDocs 主题插件等
+- 生活：旅行、读书、随笔
 
-回答规则（重要，请严格遵守）：
-1. **基于上下文回答**：
-   - 如果提供了"当前页面上下文"，优先基于该页面的实际内容回答
-   - 引用具体信息时，确保信息准确，不要编造或猜测
-   - 如果页面内容能完全回答问题，直接引用并总结
-
-2. **回答格式**：
-   - 开头简洁概括，然后提供详细说明
-   - 使用清晰的段落分隔
-   - 可以使用列表、加粗等方式突出重点
-   - 避免冗长的重复性描述
-
-3. **回答质量**：
-   - 回答要准确、有用、具体
-   - 避免说"根据您提供的上下文"这类冗余表述，直接回答问题
-   - 如果问题简单，答案也要简洁；如果问题复杂，提供详细说明
-
-4. **超出范围**：
-   - 如果问题超出当前页面或网站范围，诚实说明
-   - 可以基于网站整体结构提供方向性建议
-
-5. **语言**：
-   - 用中文回答，语气友好自然
-   - 技术术语保持原样（英文、代码等）
-   - 避免过于正式或机械化的表达`,
-    // 按钮位置: 'left', 'center', 'right'
-    defaultPosition: 'right'
+回答风格：
+- 自然、亲切，别像说明书
+- 有上下文时优先基于页面内容，别瞎编
+- 问题跟网站无关也照答，知无不言，能帮就帮
+- 该简则简，该详则详，别啰嗦也别惜字如金
+- 中文为主，技术词保持原样`,
   };
 
-  // 位置管理
-  const POSITIONS = ['left', 'center', 'right'];
-  
-  function getButtonPosition() {
-    return localStorage.getItem('ai-chat-position') || CONFIG.defaultPosition;
+  // 贴边状态：默认贴边，按下可取消
+  function isPinned() {
+    const stored = localStorage.getItem('ai-chat-pinned');
+    return stored !== '0';
   }
   
-  function setButtonPosition(position) {
-    localStorage.setItem('ai-chat-position', position);
-    updateButtonPosition(position);
+  function setPinned(pinned) {
+    localStorage.setItem('ai-chat-pinned', pinned ? '1' : '0');
+    updatePinnedState();
   }
   
-  function updateButtonPosition(position) {
+  function togglePinned() {
+    setPinned(!isPinned());
+  }
+  
+  function updatePinnedState() {
     const trigger = document.getElementById('ai-chat-trigger');
-    if (!trigger) return;
-    
-    // 移除所有位置类
-    trigger.classList.remove('ai-chat-left', 'ai-chat-center', 'ai-chat-right');
-    // 添加新位置类
-    trigger.classList.add(`ai-chat-${position}`);
-  }
-  
-  function cyclePosition() {
-    const current = getButtonPosition();
-    const currentIndex = POSITIONS.indexOf(current);
-    const nextIndex = (currentIndex + 1) % POSITIONS.length;
-    setButtonPosition(POSITIONS[nextIndex]);
+    const positionBtn = document.querySelector('.ai-chat-position-btn');
+    if (!trigger || !positionBtn) return;
+    const pinned = isPinned();
+    trigger.classList.toggle('ai-chat-pinned', pinned);
+    positionBtn.setAttribute('title', pinned ? '取消贴边' : '贴边');
+    positionBtn.setAttribute('aria-label', pinned ? '取消贴边' : '贴边');
   }
 
   // 获取 API Key（从 window 或环境变量）
@@ -105,8 +76,8 @@
   // 建议提示配置
   const PROMPTS = {
     default: [
-      "介绍一下这个网站的主要内容",
-      "Wcowin有哪些技术项目？"
+      "介绍一下这个网站",
+      "Wcowin有哪些项目？"
     ],
     projects: [
       "这个项目使用了哪些技术栈？",
@@ -120,9 +91,14 @@
 
   function getPagePrompts() {
     const path = window.location.pathname;
-    if (path.includes('/develop/Mywork/') || path.includes('/projects/')) {
+    // 项目页：我的开发项目、OneClip、macOS 开发等
+    if (path.includes('/develop/Mywork/') ||
+        path.includes('/develop/Mac-development/') ||
+        path.includes('/OneClip/')) {
       return PROMPTS.projects;
-    } else if (path.includes('/blog/')) {
+    }
+    // 博客/技术文章：blog 下所有内容（Zensical、MkDocs、技术分享等）
+    if (path.includes('/blog/')) {
       return PROMPTS.blog;
     }
     return PROMPTS.default;
@@ -131,7 +107,7 @@
   // UI 模板
   const template = `
 <div id="ai-chat-trigger" class="ai-chat-trigger" aria-label="Ask AI">
-  <button class="ai-chat-position-btn" aria-label="切换位置" title="切换按钮位置">
+  <button class="ai-chat-position-btn" aria-label="贴边" title="贴边">
     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <polyline points="9 18 15 12 9 6"></polyline>
     </svg>
@@ -178,7 +154,7 @@
             <li>解答技术项目相关问题</li>
             <li>介绍博客的技术栈和特色</li>
           </ul>
-          有什么想了解的吗？可以点击下方提示快速开始 🚀
+          有什么想了解的吗？可以点击下方提示快速开始
         </div>
       </div>
     </div>
@@ -334,7 +310,7 @@
     mainBtn?.addEventListener('click', openModal);
     positionBtn?.addEventListener('click', (e) => {
       e.stopPropagation();
-      cyclePosition();
+      togglePinned();
     });
     closeBtn?.addEventListener('click', closeModal);
     maximizeBtn?.addEventListener('click', toggleMaximize);
@@ -393,15 +369,17 @@
       }
     });
     
-    // 初始化按钮位置和提示
-    updateButtonPosition(getButtonPosition());
+    // 初始化：默认右侧，贴边状态，提示
+    if (trigger) trigger.classList.add('ai-chat-right');
+    updatePinnedState();
     updatePrompts();
   }
 
-  // 打开模态框
+  // 打开模态框（客服风格：根据按钮位置决定面板从哪侧滑入）
   function openModal() {
     const modal = document.getElementById('ai-chat-modal');
     if (modal) {
+      modal.classList.remove('panel-left');
       modal.classList.add('active');
       document.getElementById('ai-chat-input')?.focus();
     }
