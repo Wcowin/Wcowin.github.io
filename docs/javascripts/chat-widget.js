@@ -1,5 +1,5 @@
 /**
- * Ask AI 聊天组件 - 使用智谱清言 GLM API
+ * Ask AI 聊天组件 - 使用硅基流动 Qwen3-8B API
  * 版本: 1.0.0
  * author: Wcowin (https://wcowin.work/)
  */
@@ -9,8 +9,10 @@
 
   // 配置
   const CONFIG = {
-    apiEndpoint: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
-    model: 'glm-4-flash-250414',
+    // 硅基流动 OpenAI 兼容 Chat Completions 接口
+    apiEndpoint: 'https://api.siliconflow.cn/v1/chat/completions',
+    // 使用硅基流动的 Qwen3-8B 模型
+    model: 'Qwen/Qwen3-8B',
     maxMessageLength: 500,
     maxContextLength: 50000,
     systemPrompt: `你是 Wcowin's Blog 的 AI 助手，帮助访客了解网站内容。
