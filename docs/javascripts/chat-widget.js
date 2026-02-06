@@ -10,7 +10,7 @@
   // 配置
   const CONFIG = {
     apiEndpoint: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
-    model: 'glm-4-flash',
+    model: 'glm-4-flash-250414',
     maxMessageLength: 500,
     maxContextLength: 50000,
     systemPrompt: `你是 Wcowin's Blog 的 AI 助手，帮助访客了解网站内容。

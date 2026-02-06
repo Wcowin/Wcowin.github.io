@@ -713,6 +713,27 @@
       max-height: 100dvh;
     }
   }
+
+  /* Input area mobile optimization */
+  .ai-chat-input-area {
+    padding: 12px 12px;
+    gap: 8px;
+  }
+
+  #ai-chat-input {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+  }
+
+  .ai-chat-send-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ai-chat-menu-btn {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Tablet - Centered like desktop */
