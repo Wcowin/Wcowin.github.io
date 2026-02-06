@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * 智谱清言翻译系统配置文件 - 高性能简化版
+ * 硅基流动 Qwen3-8B 翻译系统配置文件 - 高性能简化版
  * 专注于核心功能，删除冗余配置
  * 版本: 2.1.0
  */
@@ -9,10 +9,12 @@ window.GLM_CONFIG = {
   // 基本信息
   version: '2.1.0',
   
-  // API配置
+  // API配置（已切换到硅基流动 Qwen3-8B）
   api: {
-    endpoint: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
-    model: 'glm-4-flash-250414',
+    // OpenAI 兼容 Chat Completions 接口
+    endpoint: 'https://api.siliconflow.cn/v1/chat/completions',
+    // 使用硅基流动的 Qwen3-8B 模型
+    model: 'Qwen/Qwen3-8B',
     timeout: 5000,
     maxRetries: 2,
     retryDelay: 500

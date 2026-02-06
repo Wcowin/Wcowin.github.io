@@ -451,15 +451,15 @@ draft = "草稿"
 
 # ===== 多语言切换配置 =====
 # 基于智谱清言翻译系统
-# [[project.extra.alternate]]
-# name = "中文"
-# link = "#glm-translate-chinese_simplified"
-# lang = "zh"
+[[project.extra.alternate]]
+name = "中文"
+link = "#glm-translate-chinese_simplified"
+lang = "zh"
 
-# [[project.extra.alternate]]
-# name = "English"
-# link = "#glm-translate-english"
-# lang = "en"
+[[project.extra.alternate]]
+name = "English"
+link = "#glm-translate-english"
+lang = "en"
 
 # [[project.extra.alternate]]
 # name = "日本語"

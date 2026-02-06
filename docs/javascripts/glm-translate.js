@@ -1,7 +1,7 @@
 // @ts-nocheck
 /**
- * 智谱清言API翻译系统 - 高性能版本
- * 为MkDocs Material提供高质量、高速度的页面翻译功能
+ * 硅基流动 Qwen3-8B 翻译系统 - 高性能版本
+ * 为 MkDocs Material 提供高质量、高速度的页面翻译功能
  * 作者: Wcowin
  * 版本: 2.0.0
  */
@@ -300,43 +300,28 @@
   
   const LANGUAGE_MAP = getLanguageMap();
 
-  // 双API密钥配置 - 协同翻译系统
-  const API_KEYS = {
-    primary: 'cec9c14ba1f44daa8b7d578790fb81ec.eVyBp1Zo66NHgl4p',
-    secondary: '46ad7781e9fa44cb9b31d11a9696da89.GCUpkep25U5Y6vBg' // 第二个API密钥用于协同翻译
-  };
-
-  // API状态监控
-  const API_STATUS = {
-    primary: { available: true, lastError: null, requestCount: 0 },
-    secondary: { available: true, lastError: null, requestCount: 0 }
-  };
-
-  // 获取API密钥（支持双API协同翻译）
+  // 获取 API 密钥（支持从全局配置中读取）
   function getApiKey(apiIndex = 0) {
-    // 优先从GLM_TRANSLATE_CONFIG获取
+    // 1. 优先从 GLM_TRANSLATE_CONFIG 获取（如果你单独为翻译配置了 key）
     if (window.GLM_TRANSLATE_CONFIG && typeof window.GLM_TRANSLATE_CONFIG.getApiKey === 'function') {
       const key = window.GLM_TRANSLATE_CONFIG.getApiKey();
       if (key && key !== 'placeholder') {
         return key;
       }
     }
-    
-    // 根据索引返回对应的API密钥
-    const apiType = apiIndex === 0 ? 'primary' : 'secondary';
-    const apiKey = API_KEYS[apiType];
-    
-    if (!apiKey) {
-      console.error(`❌ 未找到智谱清言API密钥 (索引: ${apiIndex}, 类型: ${apiType})`);
-      API_STATUS[apiType].available = false;
-      return null;
+
+    // 2. 其次：统一复用全局的 GLM_API_KEY（现在实际为硅基流动 API Key）
+    if (window.GLM_API_KEY) {
+      return window.GLM_API_KEY;
     }
-    
-    // 记录API使用
-    API_STATUS[apiType].requestCount++;
-    console.log(`🔑 使用 ${apiType} API密钥 (请求计数: ${API_STATUS[apiType].requestCount})`);
-    
-    return apiKey;
+
+    // 3. 再次：从 GLM_CONFIG 中读取（如果你在那边单独挂了 apiKey）
+    if (window.GLM_CONFIG && window.GLM_CONFIG.apiKey) {
+      return window.GLM_CONFIG.apiKey;
+    }
+
+    console.error('❌ 未找到翻译用的 API 密钥，请确保已在 glm-api-config.js 中配置 GLM_API_KEY');
+    return null;
   }
 
   // 简化的文本检测 - 包含中文就翻译
@@ -722,7 +707,7 @@
       
       // 简化API参数
       const requestBody = {
-        model: config.api?.model || 'glm-4-flash-250414',
+        model: config.api?.model || 'Qwen/Qwen3-8B',
         messages: [
           {
             role: 'system',
@@ -743,13 +728,15 @@
       
       const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT);
 
-      const response = await fetch('https://open.bigmodel.cn/api/paas/v4/chat/completions', {
+      // 使用配置里的 endpoint（已在 glm-config.js 中切换到硅基流动）
+      const endpoint = config.api?.endpoint || 'https://api.siliconflow.cn/v1/chat/completions';
+
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${apiKey}`,
-          'Connection': config.api?.keepAlive ? 'keep-alive' : 'close',
-          'Keep-Alive': config.api?.keepAlive ? 'timeout=30, max=100' : undefined
+          // 硅基流动为标准 HTTPS 接口，额外的 Connection/Keep-Alive 头不是必须
         },
         body: JSON.stringify(requestBody),
         signal: controller.signal
@@ -1580,42 +1567,47 @@
     
     const bgColor = languageColors[targetLanguage] || '#2196F3';
     
-    // 简化样式
+    // 简化样式：参考 Ask AI 按钮的「玻璃」质感，统一视觉风格
     if (isSimple) {
       statusDiv.style.cssText = `
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: ${bgColor};
-        color: white;
-        padding: 8px 16px;
-        border-radius: 6px;
+        bottom: 80px;
+        right: 24px;
+        background: var(--md-default-bg-color--light, rgba(255, 255, 255, 0.9));
+        color: var(--md-default-fg-color, #333);
+        padding: 8px 14px;
+        border-radius: 999px;
         font-size: 13px;
         font-weight: 400;
         z-index: 10000;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         animation: slideInUp 0.2s ease-out;
-        max-width: 280px;
-        backdrop-filter: blur(5px);
+        max-width: 320px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         display: flex;
         align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.04);
       `;
     } else {
       statusDiv.style.cssText = `
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: ${bgColor};
-        color: white;
-        padding: 12px 20px;
-        border-radius: 8px;
+        bottom: 80px;
+        right: 24px;
+        background: var(--md-default-bg-color--light, rgba(255, 255, 255, 0.95));
+        color: var(--md-default-fg-color, #333);
+        padding: 10px 18px;
+        border-radius: 999px;
         font-size: 14px;
         font-weight: 500;
         z-index: 10000;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
         animation: slideInUp 0.3s ease-out;
         display: flex;
         align-items: center;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 0, 0, 0.05);
       `;
     }
 
