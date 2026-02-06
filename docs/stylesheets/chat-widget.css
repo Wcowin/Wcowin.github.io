@@ -301,10 +301,12 @@
   gap: 10px;
   background: var(--md-default-bg-color, #fff);
   flex-shrink: 0;
+  min-width: 0;
 }
 
 #ai-chat-input {
   flex: 1;
+  min-width: 0;
   padding: 10px 14px;
   border: 1px solid var(--md-default-fg-color--lighter, #ddd);
   border-radius: 6px;
@@ -312,6 +314,7 @@
   font-family: inherit;
   background: var(--md-default-bg-color, #fff);
   color: var(--md-default-fg-color, #333);
+  box-sizing: border-box;
   transition: border-color var(--ai-transition-fast), box-shadow var(--ai-transition-fast);
 }
 
@@ -670,15 +673,20 @@
     padding: 0;
     align-items: stretch;
     overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
   }
 
   .ai-chat-container {
-    max-width: 100%;
+    width: 100%;
+    max-width: 100vw;
     max-height: 100%;
     height: 100%;
     border-radius: 0;
     touch-action: pan-y;
     overflow: hidden;
+    box-sizing: border-box;
   }
 
   .ai-chat-messages {
@@ -687,6 +695,8 @@
     flex: 1;
     touch-action: pan-y;
     overscroll-behavior: contain;
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
   }
 
   /* Hide maximize button on mobile - already fullscreen */
@@ -696,6 +706,8 @@
 
   .ai-chat-prompts {
     padding: 12px 12px 12px;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
   }
 
   .ai-chat-prompt-btn {
@@ -714,15 +726,21 @@
     }
   }
 
-  /* Input area mobile optimization */
+  /* Input area mobile optimization - 防止输入框把发送按钮挤出视口 */
   .ai-chat-input-area {
     padding: 12px 12px;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
     gap: 8px;
+    min-width: 0;
+    box-sizing: border-box;
   }
 
   #ai-chat-input {
+    min-width: 0;
     padding: 8px 12px;
     font-size: 0.75rem;
+    box-sizing: border-box;
   }
 
   .ai-chat-send-btn {
