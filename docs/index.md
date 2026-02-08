@@ -1,6 +1,5 @@
 ---
-title: Wcowin's Blog - 技术分享、开发笔记、生活随笔
-description: 知足且上进，温柔且坚定。分享 MkDocs 教程、Mac 技巧、Python 开发、旅行记录等内容。
+title: Wcowin's Blog
 hide:
 #   - navigation # 显示右
 #   - toc #显示左
@@ -733,10 +732,10 @@ hr {
     ---
     ![image](https://pic1.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp?source=2c26e567){ class="responsive-image" loading="lazy" align=right width="340" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
 
-    - [x] 通过<mark>目录</mark>以打开文章
-    - [x] 搜索<ins>关键词</ins>查询文章
-    - [x] 如遇页面卡顿，请使用<del>[科学上网](blog/technique%20sharing/kexue.md)</del>
-    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
+    - 通过<mark>目录</mark>以打开文章
+    - 搜索<ins>关键词</ins>查询文章
+    - 如遇页面卡顿，请使用<del>[科学上网](blog/technique%20sharing/kexue.md)</del>
+    - 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
 
     === "Mac/PC端"
 
@@ -752,6 +751,45 @@ hr {
         .responsive-image {
             display: none;
         }
+    }
+    /* 高亮 / 插入 / 删除：背景+装饰，文字用默认色 */
+    .grid.cards mark {
+        background: #fef08a;
+        color: inherit;
+        padding: 0.1em 0.25em;
+        border-radius: 2px;
+    }
+    .grid.cards ins {
+        background: #dcfce7;
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: #22c55e;
+        text-underline-offset: 0.2em;
+        padding: 0.1em 0.2em;
+        border-radius: 2px;
+    }
+    .grid.cards del,
+    .grid.cards del a {
+        background: #fee2e2;
+        color: inherit;
+        text-decoration: line-through;
+        padding: 0.1em 0.2em;
+        border-radius: 2px;
+    }
+    .grid.cards del a:hover {
+        color: inherit;
+    }
+    /* 暗色模式：深色背景 + 默认浅色字，保证对比度 */
+    [data-md-color-scheme="slate"] .grid.cards mark {
+        background: rgba(202, 138, 4, 0.35);
+    }
+    [data-md-color-scheme="slate"] .grid.cards ins {
+        background: rgba(34, 197, 94, 0.25);
+        text-decoration-color: rgba(74, 222, 128, 0.8);
+    }
+    [data-md-color-scheme="slate"] .grid.cards del,
+    [data-md-color-scheme="slate"] .grid.cards del a {
+        background: rgba(239, 68, 68, 0.25);
     }
 </style>
 

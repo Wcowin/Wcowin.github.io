@@ -369,6 +369,11 @@ $$
 
 ---
 
+## 延伸阅读（本系列）
+
+- [第2章 流密码](Symmetriccryptography.md)、[第3章 分组密码](Groupcipher.md) — 模运算、随机数在对称密码中的应用
+- [第4章 非对称密码](Asymmetriccryptography.md) — 欧拉函数、原根、离散对数在 RSA、DH、ECC 中的应用
+
 ## 引文
 
 - [Wikipedia: Number theory](https://en.wikipedia.org/wiki/Number_theory)
@@ -376,3 +381,5 @@ $$
 - [Menezes, van Oorschot, Vanstone: Handbook of Applied Cryptography, Chapter 2](http://cacr.uwaterloo.ca/hac/)
 - [Shoup, Victor: A Computational Introduction to Number Theory and Algebra](https://shoup.net/ntb/)
 - [Hardy, G.H. & Wright, E.M.: An Introduction to the Theory of Numbers](https://global.oup.com/academic/product/an-introduction-to-the-theory-of-numbers-9780199219858)
+
+**本文作者：** [<img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" />](https://github.com/Wcowin)

@@ -1,85 +1,42 @@
-# 敏感信息和环境变量
+# 敏感信息
 .env
-.env.local
 .env.*
 *.key
 *.pem
 secrets/
 
-# 环境变量文件
-.env.production
-.env.development
-
-# 自动生成的API配置文件（包含敏感信息）
+# 自动生成的 API/翻译配置（含密钥）
 docs/javascripts/translate-config.js
 docs/javascripts/glm-api-config.js
 docs/javascripts/api-config.js
-
-# 本地开发配置
 docs/javascripts/*.local.js
 
-# 构建输出和临时文件
-/site/
-/temp/
-/build/
-/dist/
-/.cache/
+# Zensical / 构建输出
+site/
+.cache/
+build/
+dist/
+temp/
 *.tmp
-*.cache
 *.bak
 
-# 日志文件
+# 日志
 *.log
 logs/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# IDE 和编辑器
+# 本机与编辑器
+.DS_Store
 .idea/
 .vscode/
-*.sublime-*
-.project
-.classpath
-*.iml
 *.swp
 *.swo
 
-# 操作系统
-.DS_Store
-Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
-
-# Python
+# Python（script.py 等）
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
 .venv/
-ENV/
+venv/
 .pytest_cache/
 .coverage
-htmlcov/
-.tox/
-.nox/
 
-# Node.js
+# Node 依赖（若有本地工具）
 node_modules/
-package-lock.json
-yarn.lock
-
-# AI摘要缓存 - 允许提交
-!.ai_cache/
-!.ai_cache/*.json
-
-# 其他常见忽略
-*.zip
-*.tar.gz
-*.rar
-*.pdf
-*.docx
-*.xlsx

@@ -1,5 +1,5 @@
 ---
-title:  闲话一直有 不听自然无
+title: 闲聊
 # 隐藏的模块
 hide:
   - footer
@@ -11,7 +11,7 @@ comments: false  #评论，默认不开启
 hide_comment: true
 ---
 
-# 闲话一直有 不听自然无
+<h1>闲话一直有 不听自然无</h1>
 
 
 <div class="grid cards" markdown>

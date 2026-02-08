@@ -8,7 +8,9 @@ status: new
 
 ![image](https://s1.imagehub.cc/images/2025/05/08/95791bc65fa16772f50c98c3540d5878.png){.img1}
 
-我会持续更新密码学系列文章，欢迎有兴趣的同学与我交流🙂。
+我会持续更新<mark>密码学系列文章</mark>，欢迎有兴趣的同学与我交流🙂
+
+建议按下方学习路径顺序阅读，也可按卡片分类跳读；各篇文章文末有「延伸阅读（本系列）」或相关链接，便于串起整条线。
 
 ## 密码学系列文章
 
@@ -51,8 +53,8 @@ status: new
 
     ---
 
-    - 密码协议与应用 (即将更新)
-    - 现代密码学发展 (即将更新)
+    - [密码协议与应用](../Cryptography/ProtocolAndApplication.md)
+    - [现代密码学发展](../Cryptography/ModernCryptography.md)
 
 </div>
 
@@ -63,5 +65,5 @@ status: new
 3. **对称密码**：依次学习[流密码](../Cryptography/Symmetriccryptography.md)和[分组密码](../Cryptography/Groupcipher.md)
 4. **非对称密码**：深入理解[非对称密码](../Cryptography/Asymmetriccryptography.md)的原理和应用
 5. **消息认证**：学习[消息认证与哈希函数](../Cryptography/HashAndMAC.md)，掌握数据完整性和认证机制
-6. **实际应用**：通过[比特币体系全解](../Cryptography/Bitcoin.md)了解密码学在现实世界的应用
-7. **综合应用**：结合实际案例理解密码学在现代信息安全中的应用
+6. **实际应用**：通过[比特币体系](../Cryptography/Bitcoin.md)了解密码学在现实世界的应用
+7. **协议与前沿**：学习[密码协议与应用](../Cryptography/ProtocolAndApplication.md)（TLS、SSH 等）与[现代密码学发展](../Cryptography/ModernCryptography.md)（后量子、同态加密、零知识证明），理解密码学在协议与前沿方向的应用

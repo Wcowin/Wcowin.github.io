@@ -99,6 +99,8 @@ nav = [
             { "非对称密码" = "blog/Cryptography/Asymmetriccryptography.md" },
             { "消息认证与哈希函数" = "blog/Cryptography/HashAndMAC.md" },
             { "比特币体系：从零开始理解加密货币" = "blog/Cryptography/Bitcoin.md" },
+            { "密码协议与应用" = "blog/Cryptography/ProtocolAndApplication.md" },
+            { "现代密码学发展" = "blog/Cryptography/ModernCryptography.md" },
         ]},
         { "Zensical中文教程" =[
             { "前言" = "blog/Zensical/indexfirst.md" },
@@ -386,7 +388,7 @@ features = [
     "navigation.sections",        # 侧边栏分组
     "navigation.top",             # 返回顶部按钮
     "navigation.footer",          # 上一页/下一页导航
-    "navigation.instant",      # 即时导航
+    # "navigation.instant",      # 即时导航
     "navigation.instant.progress",
     "navigation.instant.prefetch",  # 预加载
     "navigation.path",            # URL路径导航

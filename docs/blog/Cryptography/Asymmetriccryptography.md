@@ -311,6 +311,12 @@ HTTPS协议使用非对称密码学建立安全连接：
 
 ---
 
+## 延伸阅读（本系列）
+
+- [第5章 消息认证与哈希函数](HashAndMAC.md) — 数字签名中的哈希与 HMAC
+- [密码协议与应用](ProtocolAndApplication.md) — TLS/SSH 中的证书与密钥交换
+- [现代密码学发展](ModernCryptography.md) — 后量子密码（PQC）对 RSA/ECC 的替代
+
 ## 引文
 
 - [Wikipedia: Public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography)
@@ -318,3 +324,5 @@ HTTPS协议使用非对称密码学建立安全连接：
 - [RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3](https://tools.ietf.org/html/rfc8446)
 - [FIPS 186-4: Digital Signature Standard (DSS)](https://csrc.nist.gov/publications/detail/fips/186/4/final)
 - [IEEE P1363: Standard Specifications for Public Key Cryptography](https://standards.ieee.org/standard/1363-2000.html)
+
+**本文作者：** [<img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" />](https://github.com/Wcowin)

@@ -43,15 +43,15 @@ comments: false
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" />
-      <div class="card-header">
-        <div>
-          <a href="https://wcowin.work/VitePress/" target="_blank">Wcowin's VitePress</a>
-        </div>
-        <div class="info">
-          A college student
-        </div>
+     <img class="ava" loading="lazy" src="https://picx.zhimg.com/80/v2-34b000e56d1af7ef61092dcd031dfd9a_1440w.webp?source=2c26e567" />
+     <div class="card-header">
+      <div>
+       <a href="https://oneclip.cloud/ ">OneClip</a>
       </div>
+      <div class="info">
+       简单专业的Mac剪贴板管理工具
+      </div>
+     </div>
     </div>
     <div class="card">
       <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
@@ -86,6 +86,17 @@ comments: false
       </div>
      </div>
     </div>  -->
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" />
+      <div class="card-header">
+        <div>
+          <a href="https://wcowin.work/VitePress/" target="_blank">Wcowin's VitePress</a>
+        </div>
+        <div class="info">
+          A college student
+        </div>
+      </div>
+    </div>
     <div class="card">
         <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/jaywhj" />
         <div class="card-header">
@@ -184,7 +195,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://h4ck.org.cn/wp-content/uploads/2025/06/WechatIMG1630.jpg?v=1751006192" />
+     <img class="ava" loading="lazy" src="https://zhongxiaojie.cn/avatar/_30A1738tuya.webp" />
      <div class="card-header">
       <div>
        <a href="https://zhongxiaojie.cn" target="_blank">obaby@mars</a>
@@ -425,7 +436,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://upload.minimablog.cn/upload/109/user/avatar/a61757c2.png" />
+     <img class="ava" loading="lazy" src="https://upload.minimablog.cn/upload/109/user/blog-image/f62f8669.jpg" />
      <div class="card-header">
       <div>
        <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a>

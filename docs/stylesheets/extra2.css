@@ -48,3 +48,14 @@
   scrollbar-width: none;      /* Firefox */
   -ms-overflow-style: none;   /* IE/Edge */
 }
+
+/* 本文作者头像：悬浮轻微放大 */
+img.author-avatar {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  transition: transform 0.25s ease;
+}
+img.author-avatar:hover {
+  transform: scale(1.15);
+}

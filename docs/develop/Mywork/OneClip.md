@@ -3,7 +3,8 @@ title: OneClip 一款简单专业的macOS 剪贴板管理工具
 description: OneClip 是一款专为 macOS 打造的专业级剪贴板管理工具。采用 100% SwiftUI 原生技术，实现更顺滑的动画、更自然的系统融合与更低的资源占用。
 status: new
 tags:
-  - 我的作品
+  - 开发
+  - OneClip
 ---
 
 
@@ -45,57 +46,40 @@ OneClip 是一款专为 macOS 打造的**专业级剪贴板管理工具**。采�
 > 💡 **为什么选择 OneClip？**
 > 
 > - ✅ **纯原生开发**：100% SwiftUI，无第三方框架依赖，性能卓越
-> - ✅ **独特创新**：栈粘贴板、拖拽容器等创新功能，提升工作效率
+> - ✅ **独特创新**：栈粘贴板、拖拽容器、脚本系统、AI 集成等创新功能，提升工作效率
 > - ✅ **隐私安全**：数据完全本地存储，无任何网络上传
 > - ✅ **持续更新**：社群积极维护，快速响应用户反馈
-> - ✅ **免费试用**：提供完整功能试用
+> - ✅ **免费功能足够强大**：提供完整功能，无任何限制，无任何广告，无任何隐私收集
 
-### 🎯 核心功能
+### 核心功能
 
-- **📋 智能记录**：自动保存剪贴板历史，支持文本、图片、文件等格式  
-
-- **🔎 极速搜索**：随打随搜，多维筛选快速定位
-
-- **🗂️ 全格式支持**：图片/视频/音频/文档等，完整保留元数据
-
-- **⌨️ 全局快捷键**：`⌘+⇧+V` 呼出主界面，支持自定义组合
-
-- **🔄 快捷回复**: `⌘+⇧+R` 呼出快捷回复界面，支持自定义组合
-
-- **🎨 布局多样**：支持列表/卡片双模式切换。支持Paste同款布局。
-
-- **💁‍♂️ 快速粘贴面板**：`⌘+；`呼出快速粘贴面板，粘贴方便快捷，支持快速粘贴最近内容。
-
-- **😼 文本/图片编辑**：支持文本/图片编辑。删除内容可撤销。置顶、收藏、删除样样有。
-
-- **📥 栈粘贴板**：`⌘+⇧+C`呼出栈粘贴板，方便管理。`⌘+V`依次粘贴栈粘贴板内容。
-
-- **🎯 菜单栏集成**：支持菜单栏分类搜索，一键复制粘贴最近内容，状态实时可见。只需要左键复制/粘贴，所见即所得。
-
-- **💾 自定义存储位置**：支持自定义存储位置，方便管理
-
-- **📦 拖拽容器**：`⌘+⇧+D`呼出拖拽容器，存取文件方便快捷 
-
-- **🧀 OCR识别**：支持主动识别屏幕/图片内容识别，OCR翻译，快速提取文字和翻译
-
-- **🔧 灵活控制**：Dock 图标、后台模式、主题适配均可配置。列表/卡片双模式切换。支持Paste同款布局。
-
-- **🍺 便捷安装**：支持 Homebrew 一键安装(即将支持)和Sparkle自动更新
-
-- **🎨 现代界面**：遵循 macOS 设计规范，毛玻璃与暗黑模式适配
-
-- **🤖 AI 集成**：支持本地 AI 模型（Ollama/LMStudio）和在线 AI 服务（比如智谱清言、通义千问），智能总结与翻译
-
-- **☁️ 云同步**：支持iCloud/Dropbox等自定义方式的多设备历史记录同步，数据安全可控
-
-- **👍 访达增强**：支持访达⌘+X剪切文件，然后⌘+V移动文件（别处单独付费的功能，**OneClip免费开放给大家**）
+- **智能记录**：自动保存剪贴板历史，支持文本、图片、文件等格式
+- **全格式支持**：图片/视频/音频/文档等，完整保留元数据
+- **文本/图片编辑**：支持文本/图片编辑，删除可撤销；支持置顶、收藏、删除等管理操作
+- **栈粘贴板**：`⌘+⇧+C` 呼出栈粘贴板，方便批量管理；`⌘+V` 依次粘贴栈内容，`⌘+⇧+S` 按行拆分捕获内容
+- **快速粘贴面板**：`⌘+；` 呼出快速粘贴面板，快速粘贴最近内容
+- **拖拽容器**：`⌘+⇧+D` 呼出拖拽容器，暂存并拖出文件/图片到其他应用
+- **极速搜索**：`⌘+F`随打随搜，多维筛选与搜索高亮，快速定位历史内容
+- **菜单栏集成**：菜单栏快速访问、分类搜索、悬停预览与一键复制粘贴(左键复制，右键粘贴一气呵成)
+- **全局快捷键**：`⌘+⇧+V` 呼出主界面（支持自定义组合）
+- **快捷回复**：`⌘+⇧+R` 呼出快捷回复界面，支持文本/图片/文件模板及导入导出
+- **OCR 识别**：主动识别屏幕或图片文本，支持 OCR 翻译与快速提取
+- **脚本功能**：支持 JS 脚本编写，实现自动化操作
+- **AI 集成**：支持本地 AI（Ollama/LMStudio）与在线 AI 服务，智能总结与翻译
+- **云同步**：支持 iCloud/Dropbox 等自定义同步方案与数据备份/导入导出
+- **自定义存储位置**：支持自定义数据存储位置，便于管理
+- **灵活控制**：Dock 图标、后台模式、主题适配等配置；支持列表/卡片视图切换
+- **现代界面**：遵循 macOS 设计规范，毛玻璃与暗黑模式适配
+- **便捷安装**：支持 Homebrew 一键安装（也支持Sparkle 自动更新）
+- **访达增强**：支持访达 ⌘+X 剪切文件，然后 ⌘+V 在其他位置移动文件（别处单独付费的功能，**OneClip 免费开放给大家**）
 
 
 <!-- ![OneClip 主界面](https://s1.imagehub.cc/images/2025/11/03/972b5640666e851cf4625f1b6d88f785.png) -->
 
-![screenshot_1.5x_postspark_2025-12-08_18-46-39.png](https://s1.imagehub.cc/images/2026/01/12/651185803cf1d16d156b47928db3d537.png)  
-![screenshot_1.5x_postspark_2025-12-08_18-50-28.png](https://i.imgant.com/v2/Zn6arLh.png)
-![screenshot_1.5x_postspark_2025-12-08_19-02-21.png](https://s1.imagehub.cc/images/2026/01/12/a26a96c52c6a0629979cffe671bf8d27.png)
+![img1.png](https://cdn.nodeimage.com/i/eYSz3X0E6J8JZl3wGXF3KecrbHCFhz2O.webp)  
+![img2.png](https://s1.imagehub.cc/images/2026/01/12/a26a96c52c6a0629979cffe671bf8d27.png)
+![img3.png](https://i.imgant.com/v2/Zn6arLh.png)
+![img4.png](https://s1.imagehub.cc/images/2026/02/06/9e116bd44476ce5d599f9d5a022fc3ce.png)
 
 
 <!-- ### ✨ 独特优势
@@ -220,6 +204,11 @@ sudo xattr -rd com.apple.quarantine /Applications/OneClip.app
 - 支持拖拽操作
 - 快速粘贴常用内容
 
+#### 6️⃣ 快速粘贴面板 - 快速粘贴最近内容
+
+- `⌘+；`呼出快速粘贴面板
+- 粘贴方便快捷，支持快速粘贴最近内容
+
 ## 🏗️ 技术与架构
 
 ### 核心技术栈
@@ -234,20 +223,19 @@ sudo xattr -rd com.apple.quarantine /Applications/OneClip.app
 
 ### 架构设计
 
-```
-      ┌─────────────────────────────────────────┐
-      │              OneClip App                │
-      ├─────────────────────────────────────────┤
-      │     SwiftUI Views & ViewModels          │
-      ├─────────────────────────────────────────┤
-      │  ClipboardManager | SettingsManager     │
-      │  HotkeyManager    | WindowManager       │
-      │  FavoriteManager  | BackupManager       │
-      ├─────────────────────────────────────────┤
-      │     SQLite  | Carbon  | Accessibility   │
-      ├─────────────────────────────────────────┤
-      │         macOS System APIs               │
-      └─────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph App["OneClip App"]
+        L1["SwiftUI Views & ViewModels"]
+        L2["ClipboardManager | SettingsManager<br/>HotkeyManager | WindowManager<br/>FavoriteManager | BackupManager"]
+        L3["SQLite | Carbon | Accessibility"]
+        L4["macOS System APIs"]
+        L1 --> L2 --> L3 --> L4
+    end
+    style L1 fill:#e3f2fd
+    style L2 fill:#fff3e0
+    style L3 fill:#e8f5e9
+    style L4 fill:#f3e5f5
 ```
 
 ### 核心组件
@@ -495,7 +483,7 @@ open dist/OneClip.app
 </details>
 
 
-## 🗺️ 开发路线图
+## 开发路线图
 
 ### ✅ 已完成
 
@@ -509,37 +497,36 @@ open dist/OneClip.app
 - [x] Sparkle 自动更新
 - [x] 更多 AI 服务商集成
 - [x] 自定义同步方案
+- [x] 快速粘贴面板
+- [x] 云同步功能
+- [x] UI/UX 改进
+- [x] 脚本系统 
+- [x] 密码保护
 
 ### 🚧 进行中
 
-- [ ] 性能持续优化
-- [ ] UI/UX 改进
+- [ ] 性能/功能持续优化
 - [ ] 多语言支持完善
 
 ### 📋 计划中
 
 - [ ] 插件系统
 - [ ] 团队协作功能
-- [ ] 保密剪切板空间
-- [ ] iOS/iPadOS 客户端
+- [ ] iOS/iPadOS/Windows客户端
 
 💡 有功能建议？欢迎在 [GitHub Discussions](https://github.com/Wcowin/OneClip/discussions) 提出！
 
-## 👨‍💻 关于作者
+## 关于作者
 
 <div align="center">
   <img src="https://s1.imagehub.cc/images/2025/07/25/27c0e105ea7efbed5d046d3a8c303e9d.jpeg" alt="Wcowin" width="80" height="80" style="border-radius: 50%;">
   <h3>Wcowin</h3>
   <p>
-    <a href="https://wcowin.work/blog/Mac/sunhuai/">📝 博客</a> •
-    <a href="https://github.com/Wcowin">🐙 GitHub</a> •
-    <a href="mailto:vip@oneclip.cloud">📧 邮箱</a>
+    <a href="https://wcowin.work/blog/Mac/sunhuai/"> 博客</a> |
+    <a href="https://github.com/Wcowin"> GitHub</a> |
+    <a href="mailto:vip@oneclip.cloud"> 邮箱</a>
   </p>
 </div>
-
-<!--- **开发者**: [Wcowin](https://wcowin.work/blog/Mac/sunhuai/)
-- **官方网站**: [https://oneclip.cloud](https://oneclip.cloud/)
-- **联系邮箱**: [vip@oneclip.cloud](mailto:vip@oneclip.cloud)-->
 
 ## 🤝 反馈与支持
 
@@ -589,5 +576,5 @@ open dist/OneClip.app
   <p><strong>OneClip —— 简单专业的 macOS 剪贴板管理工具</strong></p>
   <p>让复杂的事情变简单，让简单的事情变优雅</p>
   <p>Made with ❤️ by <a href="https://github.com/Wcowin">Wcowin</a></p>
-  <p>© 2025 Wcowin. All rights reserved.</p>
+  <p>© 2026 Wcowin. All rights reserved.</p>
 </div>

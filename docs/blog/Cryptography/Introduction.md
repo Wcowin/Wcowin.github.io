@@ -30,7 +30,7 @@ tags:
 密码学的历史可以追溯到古代文明，例如凯撒密码（Caesar cipher），由罗马皇帝尤利乌斯·凯撒用于与将军的通信，通过将字母表循环移动三位来加密消息（[Wikipedia: Cryptography](https://en.wikipedia.org/wiki/Cryptography)）。
 随着时间的推移，密码学从简单的替换密码和转置密码（如古希腊的 scytale）发展到更复杂的系统。
 
-20 世纪的两次世界大战推动了密码学的现代化，特别是在第一次世界大战中出现了转子密码机（如恩尼格玛机），第二次世界大战中计算机的广泛使用进一步加速了这一进程。
+20 世纪的两次世界大战推动了密码学的现代化。转子密码机在 20 世纪初已出现（恩尼格玛机 1918 年申请专利），在第二次世界大战期间被广泛使用；二战中计算机的广泛使用进一步加速了这一进程。
 根据 [GeeksforGeeks: History of Cryptography](https://www.geeksforgeeks.org/history-of-cryptography/)，现代密码学依赖于数学理论和计算硬度假设，被称为“计算安全”（computationally secure）。信息理论安全方案（如一次性密码本）被证明在无限计算能力下不可破解，但使用起来较为困难。
 
 ## 密码学类型
@@ -77,6 +77,8 @@ tags:
 
 根据 [Fortinet: What is Cryptography?](https://www.fortinet.com/resources/cyberglossary/what-is-cryptography)，现代密码学技术如 128 位和 256 位加密密钥被认为是几乎不可破解的，广泛应用于银行卡、计算机密码和电子商务。
 
+本系列将依次介绍数论基础、对称密码（流密码与分组密码）、非对称密码、消息认证与哈希函数、区块链应用（比特币）以及密码协议与现代密码学发展，建议按[学习路径](index.md)阅读。
+
 ## 结论
 
 密码学是现代信息安全的基础，其发展历程从古代的简单加密到今天的复杂算法，体现了人类对通信安全需求的不断提升。通过对称和非对称密钥密码学的结合，密码学在电子商务、安全通信和数据保护等领域发挥了关键作用。随着技术的进步，密码学将继续适应新的挑战和威胁，确保数字世界的安全。
@@ -90,9 +92,19 @@ tags:
 
 ---
 
+## 延伸阅读（本系列）
+
+- [数论基础](Numbertheory.md) — 整除、同余、欧拉函数等密码学常用数学工具
+- [第2章 流密码](Symmetriccryptography.md)、[第3章 分组密码](Groupcipher.md) — 对称密码原理与应用
+- [第4章 非对称密码](Asymmetriccryptography.md) — 公钥加密与数字签名
+- [第5章 消息认证与哈希函数](HashAndMAC.md) — 完整性与认证
+- [密码协议与应用](ProtocolAndApplication.md)、[现代密码学发展](ModernCryptography.md) — 协议与前沿
+
 ## 引文
 
 - [Wikipedia: Cryptography](https://en.wikipedia.org/wiki/Cryptography)
 - [GeeksforGeeks: Cryptography Introduction](https://www.geeksforgeeks.org/cryptography-introduction/)
 - [GeeksforGeeks: History of Cryptography](https://www.geeksforgeeks.org/history-of-cryptography/)
 - [Fortinet: What is Cryptography? Definition, Importance, Types](https://www.fortinet.com/resources/cyberglossary/what-is-cryptography)
+
+**本文作者：** [<img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" />](https://github.com/Wcowin)

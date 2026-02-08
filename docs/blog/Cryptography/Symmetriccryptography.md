@@ -418,6 +418,11 @@ Berlekamp-Massey 算法是破译基于 LFSR 的流密码（特别是那些直接
 
 ---
 
+## 延伸阅读（本系列）
+
+- [第3章 分组密码](Groupcipher.md) — 分组密码与流密码的对比及工作模式
+- [密码协议与应用](ProtocolAndApplication.md) — TLS/SSH 中的密钥交换与对称加密
+
 ## 引文
 
 - [Wikipedia: Stream cipher](https://en.wikipedia.org/wiki/Stream_cipher)
@@ -425,3 +430,5 @@ Berlekamp-Massey 算法是破译基于 LFSR 的流密码（特别是那些直接
 - [Menezes, van Oorschot, Vanstone: Handbook of Applied Cryptography, Chapter 6](http://cacr.uwaterloo.ca/hac/)
 - [Rueppel, Rainer A.: Analysis and Design of Stream Ciphers](https://link.springer.com/book/10.1007/978-3-642-82865-2)
 - [Golomb, Solomon W.: Shift Register Sequences](https://www.worldscientific.com/worldscibooks/10.1142/4632)
+
+**本文作者：** [<img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" />](https://github.com/Wcowin)

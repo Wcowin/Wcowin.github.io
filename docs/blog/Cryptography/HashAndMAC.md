@@ -599,6 +599,14 @@ stored_hash = Argon2id(password, salt, time_cost, memory_cost, parallelism)
 - 硬件加速：使用CPU的哈希指令集
 - 并行处理：利用多核处理器
 - 缓存优化：减少内存访问延迟
+
+### 5.9.4 常见误区
+
+- **仅用 MD5/SHA-1 做完整性校验**：二者已遭碰撞攻击，仅适合非安全场景（如缓存键、校验和）；安全场景应使用 SHA-256 或 SHA-3。
+- **MAC 密钥过短或复用**：密钥长度应至少等于哈希输出长度；不同用途（如不同接口、不同用户）应使用不同密钥，避免密钥复用导致伪造风险。
+- **用普通哈希直接“加密”密码**：密码存储应使用专门设计（抗穷举、抗 GPU）的密码哈希函数（如 Argon2、scrypt、PBKDF2）并加盐，而非单次 MD5/SHA。
+- **忽略长度扩展攻击**：Merkle-Damgård 类哈希（如 MD5、SHA-1、SHA-2）在“密钥+消息”拼接时易受长度扩展攻击；HMAC 或 SHA-3 等可避免该问题。
+
 ## 结论
 
 消息认证与哈希函数是现代密码学的重要基石，为数据完整性和身份认证提供了可靠的技术手段。从早期的MD5到现代的SHA-3，哈希函数技术不断发展以应对新的安全威胁。消息认证码作为对称密码学中的重要工具，与数字签名一起构成了完整的消息认证体系。
@@ -611,7 +619,7 @@ stored_hash = Argon2id(password, salt, time_cost, memory_cost, parallelism)
 
 | 年份 | 里程碑 | 重要性 |
 |------|--------|--------|
-| 1991 | MD5发布 | 第一个广泛使用的密码学哈希函数 |
+| 1992 | MD5发布（RFC 1321） | 第一个广泛使用的密码学哈希函数 |
 | 1995 | SHA-1标准化 | 美国政府标准，160比特输出 |
 | 2001 | SHA-2发布 | 更长的输出长度，更强的安全性 |
 | 2005 | MD5碰撞攻击 | 王小云等人的突破性工作 |
@@ -630,6 +638,12 @@ stored_hash = Argon2id(password, salt, time_cost, memory_cost, parallelism)
 
 ---
 
+## 延伸阅读（本系列）
+
+- [比特币体系](Bitcoin.md) — 哈希与数字签名在区块链中的应用
+- [密码协议与应用](ProtocolAndApplication.md) — TLS/SSH 中的 HMAC、证书与完整性校验
+- [现代密码学发展](ModernCryptography.md) — 后量子哈希与隐私计算
+
 ## 引文
 
 - [NIST FIPS 180-4: Secure Hash Standard (SHS)](https://csrc.nist.gov/publications/detail/fips/180/4/final)
@@ -638,3 +652,5 @@ stored_hash = Argon2id(password, salt, time_cost, memory_cost, parallelism)
 - [RFC 5869: HMAC-based Extract-and-Expand Key Derivation Function (HKDF)](https://tools.ietf.org/html/rfc5869)
 - [Keccak Team: The Keccak SHA-3 submission](https://keccak.team/keccak.html)
 - [Wang, X., et al.: Finding Collisions in the Full SHA-1](https://people.csail.mit.edu/yiqun/SHA1AttackProceedingVersion.pdf)
+
+**本文作者：** [<img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" />](https://github.com/Wcowin)

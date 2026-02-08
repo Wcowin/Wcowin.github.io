@@ -420,7 +420,7 @@ $$
 - **安全性需求：** 是否需要抵抗特定模式的攻击？是否能容忍IV重用带来的风险？
 - **错误容忍度：** 应用是否对传输错误敏感？错误传播的特性是否可接受？
 - **性能需求：** 是否需要并行处理？是否可以预计算？
-- **实现复杂度：**
+- **实现复杂度：** 硬件/软件实现成本、是否需认证加密（AEAD）及密钥管理复杂度。
 - **随机访问需求：** 是否需要能随机解密密文的某一部分？
 
 目前，**AES-GCM (Galois/Counter Mode)** 和 **AES-CCM (Counter Mode with CBC-MAC)** 等认证加密模式 (Authenticated Encryption with Associated Data, AEAD) 因其能同时提供机密性、完整性和真实性认证，越来越受到推荐和广泛使用。这些模式通常基于 CTR 模式来提供加密。
@@ -445,6 +445,12 @@ $$
 
 ---
 
+## 延伸阅读（本系列）
+
+- [第4章 非对称密码](Asymmetriccryptography.md) — 密钥交换与数字签名，常与分组密码结合使用
+- [第5章 消息认证与哈希函数](HashAndMAC.md) — 认证加密（AEAD）中的 MAC 与哈希
+- [现代密码学发展](ModernCryptography.md) — 轻量级密码与 NIST ASCON 标准化
+
 ## 引文
 
 - [NIST FIPS 197: Advanced Encryption Standard (AES)](https://csrc.nist.gov/publications/detail/fips/197/final)
@@ -453,3 +459,5 @@ $$
 - [Wikipedia: Data Encryption Standard](https://en.wikipedia.org/wiki/Data_Encryption_Standard)
 - [Schneier, Bruce: Applied Cryptography](https://www.schneier.com/books/applied-cryptography/)
 - [Menezes, van Oorschot, Vanstone: Handbook of Applied Cryptography](http://cacr.uwaterloo.ca/hac/)
+
+**本文作者：** [<img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" />](https://github.com/Wcowin)
