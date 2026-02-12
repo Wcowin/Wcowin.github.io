@@ -1166,7 +1166,17 @@ comments: false
           </div>
         </div>
       </div>
-
+      <div class="card">
+          <img class="ava" src="https://emlog.090909.top/favicon.ico" />
+          <div class="card-header">
+            <div>
+              <a href="https://emlog.090909.top/" target="_blank">临久</a>
+            </div>
+            <div class="info">
+              岁月静好，我便安好。
+            </div>
+          </div>
+        </div>
 
 
 
