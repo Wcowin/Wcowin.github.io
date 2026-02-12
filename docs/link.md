@@ -1145,17 +1145,6 @@ comments: false
         </div>
       </div>
       <div class="card">
-          <img class="ava" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
-          <div class="card-header">
-            <div>
-              <a href="https://orebaka.github.io/" target="_blank">梁栋烨的博客</a>
-            </div>
-            <div class="info">
-              喜欢一切有意义的事情
-            </div>
-          </div>
-        </div>
-    <div class="card">
         <img class="ava" src="https://s2.loli.net/2025/08/30/No2OBAn7h3JTtXZ.png" />
         <div class="card-header">
           <div>
@@ -1176,7 +1165,7 @@ comments: false
               岁月静好，我便安好。
             </div>
           </div>
-        </div>
+      </div>
 
 
 
