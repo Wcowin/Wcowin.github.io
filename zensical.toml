@@ -9,7 +9,7 @@
 site_name = "Wcowin's Blog"                      # 网站名称
 site_url = "https://wcowin.work/"                # 网站URL
 site_description = "知足且上进，温柔且坚定"         # 网站描述
-site_author = "王科文(Wcowin)"                    # 网站作者
+site_author = "Wcowin"                    # 网站作者
 copyright = "Copyright &copy; 2022~2026 Wcowin" # 左下角的版权声明
 docs_dir = "docs"                                # 文档目录
 site_dir = "site"                                # 生成的网站目录

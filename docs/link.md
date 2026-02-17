@@ -10,8 +10,6 @@ hide:
 comments: false
 ---
 
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css"> -->
-
 # 欢迎加入友链(不分先后)
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 0rem;" markdown>
@@ -1166,7 +1164,15 @@ comments: false
             </div>
           </div>
       </div>
-
+      <div class="card">
+        <img class="ava" src="https://i.zhyong.site/i/2026/02/17/6994661354dc2.png" />
+        <div class="card-header">
+          <div>
+            <a href="https://zhyong.site/" target="_blank">材料与逻辑</a>
+          </div>
+          <div class="info">从原子到结构，从数据到洞察</div>
+        </div>
+      </div>
 
 
    </div>
@@ -1178,10 +1184,10 @@ comments: false
 
 <!--
 已经添加贵站友链～
->名称: Wcowin's Blog
->链接: https://wcowin.work/
->头像: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
->简介: 循此苦旅，以达星辰
+名称: Wcowin's Web
+链接: https://wcowin.work/
+头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
+简介: 循此苦旅，以达星辰 
 -->
 
 <!-- <HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" /> -->
@@ -1372,22 +1378,6 @@ comments: false
 </div>
 
 
-
-
-
-<!-- <div class="markdown-content">
-    <h3>交换友链，请添加本站友链后下方留言申请，期望您的站点:</h3>
-</div> -->
-
-<!-- <div class="card">
-   <img class="ava" loading="lazy" src="{avatarurl}" />
-   <div class="card-header">
-      <div>
-         <a href="{link}">{name}</a>
-      </div>
-      <div class="info">{description}</div>
-   </div>
-</div> -->
 
 ## 如何交换友链
 
@@ -1602,10 +1592,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 **友链格式示例/本站信息:**
 
-<!-- >名称: Wcowin's Web
->链接: https://wcowin.work/
->头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
->简介: 循此苦旅，以达星辰 -->
+<!-- >
+名称: Wcowin's Web
+链接: https://wcowin.work/
+头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
+简介: 循此苦旅，以达星辰 
+-->
 
 === "Txt"
 
