@@ -17,10 +17,10 @@ hide:
   </div>
 </div>
 
-<!-- 加载 Inter 字体 -->
+<!-- 加载 Montserrat 字体（用于首页标题） -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 
 <!-- 在头部添加预加载关键资源 -->
 <link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
@@ -93,8 +93,8 @@ hide:
 
 .wcowin-header-title {
   font-size: 3.2rem;
-  font-family: 'Inter', 'Montserrat', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 700; /* 使用最粗的字重 */
+  font-family: 'Montserrat', 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 18px;
   color: #4a4a4a;
@@ -730,7 +730,7 @@ hr {
 -   :material-notebook-edit-outline:{ .lg .middle } __𝚆𝚎 𝚖𝚎𝚎𝚝 𝚒𝚗 𝚝𝚑𝚎 𝚏𝚊𝚕𝚕.__
 
     ---
-    ![image](https://pic1.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp?source=2c26e567){ class="responsive-image" loading="lazy" align=right width="340" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
+    ![image](https://pic1.zhimg.com/80/v2-b9ae6898d33359da6be815bf60626af2_1440w.webp?source=2c26e567){ class="responsive-image" loading="lazy" align=right width="340" height="226" }
 
     - 通过<mark>目录</mark>以打开文章
     - 搜索<ins>关键词</ins>查询文章
@@ -747,6 +747,9 @@ hr {
 
 </div>
 <style>
+    .responsive-image {
+        border-radius: 24px;
+    }
     @media only screen and (max-width: 768px) {
         .responsive-image {
             display: none;
@@ -795,6 +798,474 @@ hr {
 
 
 ***
+
+
+<!-- GitHub Contribution Heatmap Card -->
+<div class="github-heatmap-glass-container">
+  <div class="github-heatmap-glass-card">
+    <div class="github-heatmap-header">
+      <span class="github-heatmap-title">GitHub</span>
+      <span id="contribution-stats" class="github-heatmap-stats">过去一年 <strong id="stats-count">--</strong> 次贡献</span>
+      <div class="github-heatmap-legend">
+        <span class="legend-label">少</span>
+        <div class="legend-cell" style="--opacity: 0.05;"></div>
+        <div class="legend-cell" style="--opacity: 0.25;"></div>
+        <div class="legend-cell" style="--opacity: 0.5;"></div>
+        <div class="legend-cell" style="--opacity: 0.75;"></div>
+        <div class="legend-cell" style="--opacity: 1;"></div>
+        <span class="legend-label">多</span>
+      </div>
+    </div>
+    <div class="github-heatmap-content">
+      <svg id="heatmapSvg" class="github-heatmap-svg" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+  </div>
+  <div id="heatmapTooltip" class="github-heatmap-tooltip">
+    <div class="github-heatmap-tooltip__arrow"></div>
+    <div class="github-heatmap-tooltip__content"></div>
+  </div>
+</div>
+
+<style>
+  .github-heatmap-glass-container {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .github-heatmap-glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 14px 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  /* MkDocs 深色主题（slate）下的 GitHub 卡片专用样式 */
+  [data-md-color-scheme="slate"] .github-heatmap-glass-card {
+    /* 比周围背景稍亮一点的深色卡片，保证对比度 */
+    background: rgba(17, 24, 39, 0.96); /* #111827 */
+    border-color: rgba(148, 163, 184, 0.55);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.65);
+  }
+
+  [data-md-color-scheme="slate"] .github-heatmap-title,
+  [data-md-color-scheme="slate"] .github-heatmap-stats,
+  [data-md-color-scheme="slate"] .github-heatmap-legend {
+    color: #e5e7eb;
+  }
+
+  [data-md-color-scheme="slate"] .github-heatmap-stats {
+    opacity: 0.85;
+  }
+
+  [data-md-color-scheme="slate"] .github-heatmap-legend {
+    opacity: 0.8;
+  }
+
+  .github-heatmap-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 12px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .github-heatmap-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--md-typeset-color);
+    letter-spacing: 0.5px;
+  }
+
+  .github-heatmap-stats {
+    font-size: 0.8rem;
+    color: var(--md-typeset-color);
+    opacity: 0.6;
+    white-space: nowrap;
+  }
+
+  .github-heatmap-stats strong {
+    color: #239a3b;
+    font-weight: 700;
+    opacity: 1;
+  }
+
+  .github-heatmap-content {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 -12px;
+    padding: 0 12px;
+  }
+
+  .github-heatmap-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    min-height: 110px;
+    cursor: default;
+  }
+
+
+  .github-heatmap-legend {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    color: var(--md-typeset-color);
+    opacity: 0.6;
+    margin-left: auto;
+  }
+
+  .legend-label {
+    font-weight: 500;
+  }
+
+  .legend-cell {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    background-color: #239a3b;
+    opacity: var(--opacity, 0.5);
+    flex-shrink: 0;
+  }
+
+  .github-heatmap-tooltip {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    display: none;
+  }
+
+  .github-heatmap-tooltip.visible {
+    display: block;
+    animation: tooltipFadeIn 150ms ease-out;
+  }
+
+  .github-heatmap-tooltip__content {
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+
+  /* 深色模式适配 */
+  [data-md-color-scheme="slate"] .github-heatmap-tooltip__content {
+    background: rgba(17, 24, 39, 0.95);
+  }
+
+  .github-heatmap-tooltip__arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  /* 箭头向上（Tooltip 在格子下方时） */
+  .github-heatmap-tooltip.arrow-top .github-heatmap-tooltip__arrow {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent rgba(30, 30, 30, 0.95) transparent;
+    filter: drop-shadow(0 -2px 4px rgba(0, 0, 0, 0.1));
+    margin-bottom: -1px; /* 让箭头和 content 无缝连接 */
+  }
+
+  [data-md-color-scheme="slate"] .github-heatmap-tooltip.arrow-top .github-heatmap-tooltip__arrow {
+    border-color: transparent transparent rgba(17, 24, 39, 0.95) transparent;
+  }
+
+  /* 箭头向下（Tooltip 在格子上方时） */
+  .github-heatmap-tooltip.arrow-bottom .github-heatmap-tooltip__arrow {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px 6px 0 6px;
+    border-color: rgba(30, 30, 30, 0.95) transparent transparent transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    margin-top: -1px; /* 让箭头和 content 无缝连接 */
+  }
+
+  [data-md-color-scheme="slate"] .github-heatmap-tooltip.arrow-bottom .github-heatmap-tooltip__arrow {
+    border-color: rgba(17, 24, 39, 0.95) transparent transparent transparent;
+  }
+
+  @keyframes tooltipFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .github-heatmap-glass-container {
+      display: none;
+    }
+
+    .github-heatmap-glass-card {
+      padding: 12px;
+    }
+
+    .github-heatmap-header {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .github-heatmap-legend {
+      margin-left: 0;
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    .github-heatmap-title {
+      font-size: 1.1rem;
+    }
+
+    .github-heatmap-stats {
+      font-size: 0.8rem;
+    }
+
+    .github-heatmap-legend {
+      font-size: 0.7rem;
+      gap: 4px;
+    }
+
+    .legend-cell {
+      width: 9px;
+      height: 9px;
+    }
+  }
+</style>
+
+<script>
+(function() {
+  const username = 'Wcowin';
+  const CELL = 11;
+  const GAP = 2;
+  const ROWS = 7;
+  const LEVEL_OPACITY = [0.05, 0.25, 0.5, 0.75, 1.0];
+  const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const DAYS = ["", "Mon", "", "Wed", "", "Fri", ""];
+
+  function formatDate(dateStr) {
+    const d = new Date(dateStr);
+    return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
+  }
+
+  async function loadHeatmap() {
+    try {
+      const response = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`);
+      const data = await response.json();
+      renderHeatmap(data);
+    } catch (error) {
+      console.error('Error loading GitHub contributions:', error);
+      document.getElementById('stats-count').textContent = '--';
+    }
+  }
+
+  function renderHeatmap(data) {
+    const svg = document.getElementById('heatmapSvg');
+    const statsEl = document.getElementById('stats-count');
+    const tooltipEl = document.getElementById('heatmapTooltip');
+    
+    if (!svg) return;
+
+    statsEl.textContent = data.total.lastYear;
+
+    const weeks = Math.ceil(data.contributions.length / ROWS);
+    const labelOffset = 28;
+    const headerOffset = 16;
+    const svgWidth = labelOffset + weeks * (CELL + GAP);
+    const svgHeight = headerOffset + ROWS * (CELL + GAP);
+
+    svg.setAttribute('viewBox', `0 0 ${svgWidth} ${svgHeight}`);
+    svg.innerHTML = '';
+
+    const monthLabels = [];
+    let lastMonth = -1;
+    for (let w = 0; w < weeks; w++) {
+      const idx = w * ROWS;
+      if (idx < data.contributions.length) {
+        const month = new Date(data.contributions[idx].date).getMonth();
+        if (month !== lastMonth) {
+          monthLabels.push({ label: MONTHS[month], x: labelOffset + w * (CELL + GAP) });
+          lastMonth = month;
+        }
+      }
+    }
+
+    const ns = "http://www.w3.org/2000/svg";
+
+    monthLabels.forEach((m) => {
+      const text = document.createElementNS(ns, 'text');
+      text.setAttribute('x', m.x);
+      text.setAttribute('y', 11);
+      text.setAttribute('class', 'heatmap-label');
+      text.setAttribute('font-size', 10);
+      text.textContent = m.label;
+      svg.appendChild(text);
+    });
+
+    DAYS.forEach((d, i) => {
+      if (d) {
+        const text = document.createElementNS(ns, 'text');
+        text.setAttribute('x', 0);
+        text.setAttribute('y', headerOffset + i * (CELL + GAP) + CELL - 1);
+        text.setAttribute('class', 'heatmap-label');
+        text.setAttribute('font-size', 9);
+        text.textContent = d;
+        svg.appendChild(text);
+      }
+    });
+
+    data.contributions.forEach((day, idx) => {
+      const col = Math.floor(idx / ROWS);
+      const row = idx % ROWS;
+      const rect = document.createElementNS(ns, 'rect');
+      
+      rect.setAttribute('x', labelOffset + col * (CELL + GAP));
+      rect.setAttribute('y', headerOffset + row * (CELL + GAP));
+      rect.setAttribute('width', CELL);
+      rect.setAttribute('height', CELL);
+      rect.setAttribute('rx', 2);
+      rect.setAttribute('ry', 2);
+      rect.setAttribute('class', 'heatmap-cell');
+      rect.setAttribute('data-date', day.date);
+      rect.setAttribute('data-count', day.count);
+      
+      const opacity = LEVEL_OPACITY[Math.min(day.level, 4)];
+      rect.setAttribute('fill', `rgba(35, 154, 59, ${opacity})`);
+      
+      rect.addEventListener('mouseenter', (e) => {
+        const rect = e.currentTarget;
+        const date = rect.getAttribute('data-date');
+        const count = parseInt(rect.getAttribute('data-count'));
+        tooltip(date, count, e);
+      });
+      
+      rect.addEventListener('mousemove', (e) => {
+        const rect = e.currentTarget;
+        const date = rect.getAttribute('data-date');
+        const count = parseInt(rect.getAttribute('data-count'));
+        tooltip(date, count, e);
+      });
+      
+      rect.addEventListener('mouseleave', () => {
+        tooltipEl.classList.remove('visible');
+      });
+
+      // 点击某一天，跳转到该日期在 GitHub 的概览页（from=to=当天）
+      rect.addEventListener('click', () => {
+        const date = day.date;
+        const url = `https://github.com/${username}?tab=overview&from=${date}&to=${date}`;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
+
+      svg.appendChild(rect);
+    });
+
+    if (!document.querySelector('style[data-heatmap-style]')) {
+      const style = document.createElement('style');
+      style.setAttribute('data-heatmap-style', '');
+      style.textContent = `
+        .heatmap-label {
+          fill: rgba(0, 0, 0, 0.4);
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+          font-size: 10px;
+        }
+        [data-md-color-scheme="slate"] .heatmap-label {
+          /* 暗色下标签文字更亮一些，提升可读性 */
+          fill: rgba(255, 255, 255, 0.7);
+        }
+        .heatmap-cell {
+          transition: opacity 150ms, filter 150ms;
+          cursor: default;
+          filter: drop-shadow(0 0 0 rgba(35, 154, 59, 0));
+        }
+        .heatmap-cell:hover {
+          opacity: 1 !important;
+          filter: drop-shadow(0 2px 6px rgba(35, 154, 59, 0.4));
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    function tooltip(date, count, event) {
+      const text = count > 0 ? `${formatDate(date)}: ${count} 次贡献` : `${formatDate(date)}: 无贡献`;
+      const contentEl = tooltipEl.querySelector('.github-heatmap-tooltip__content');
+      if (contentEl) {
+        contentEl.textContent = text;
+      }
+      tooltipEl.classList.add('visible');
+      
+      // 按格子定位：显示在对应格子正上方居中，箭头指向格子
+      const target = event.currentTarget;
+      const margin = 8;
+      const gap = 8; // 箭头高度 + 间距
+
+      if (target && target.getBoundingClientRect) {
+        const cellRect = target.getBoundingClientRect();
+        const tooltipRect = tooltipEl.getBoundingClientRect();
+
+        // 默认显示在格子上方
+        let x = cellRect.left + cellRect.width / 2 - tooltipRect.width / 2;
+        let y = cellRect.top - tooltipRect.height - gap;
+        let arrowPosition = cellRect.left + cellRect.width / 2; // 箭头指向格子的中心
+        let isAbove = true;
+
+        // 防止左右溢出视口
+        const maxX = window.innerWidth - tooltipRect.width - margin;
+        x = Math.max(margin, Math.min(x, maxX));
+
+        // 如果顶部空间不足，放到格子下方
+        if (y < margin) {
+          y = cellRect.bottom + gap;
+          isAbove = false;
+        }
+
+        tooltipEl.style.left = x + 'px';
+        tooltipEl.style.top = y + 'px';
+
+        // 设置箭头方向并计算箭头位置
+        tooltipEl.classList.remove('arrow-top', 'arrow-bottom');
+        tooltipEl.classList.add(isAbove ? 'arrow-bottom' : 'arrow-top');
+
+        // 计算箭头相对于 Tooltip 的偏移（让箭头指向格子中心）
+        const arrowEl = tooltipEl.querySelector('.github-heatmap-tooltip__arrow');
+        if (arrowEl) {
+          const arrowOffset = arrowPosition - x; // 格子中心相对于 Tooltip 左边的距离
+          arrowEl.style.left = arrowOffset + 'px';
+        }
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadHeatmap);
+  } else {
+    loadHeatmap();
+  }
+})();
+</script>
 
 
 <div class="grid cards" markdown>

@@ -45,33 +45,12 @@ tags:
 
 ***
 
-[萌国ICP备案查询](https://icp.gov.moe/)
+<!-- [萌国ICP备案查询](https://icp.gov.moe/)
 我的备案号：
 <a href="https://icp.gov.moe/?keyword=20230640" target="_blank">萌ICP备20230640号</a>
-哈哈可爱而已，并不是国家备案
+哈哈可爱而已，并不是国家备案 -->
 
-<p align="center">
-  <a href="https://github.com/squidfunk/mkdocs-material/actions"><img
-    src="https://github.com/squidfunk/mkdocs-material/workflows/build/badge.svg?branch=master"
-    alt="Build"
-  /></a>
-  <a href="https://pypistats.org/packages/mkdocs-material"><img
-    src="https://img.shields.io/pypi/dm/mkdocs-material.svg"
-    alt="Downloads"
-  /></a>
-  <a href="https://gitter.im/squidfunk/mkdocs-material"><img
-    src="https://badges.gitter.im/squidfunk/mkdocs-material.svg"
-    alt="Chat on Gitter"
-  /></a>
-  <a href="https://pypi.org/project/mkdocs-material"><img
-    src="https://img.shields.io/pypi/v/mkdocs-material.svg"
-    alt="Python Package Index"
-  /></a>
-  <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/"><img
-    src="https://img.shields.io/docker/pulls/squidfunk/mkdocs-material"
-    alt="Docker Pulls"
-  /></a>
-</p>
+
 ## Web 创建设计
 
 <h2>用户是浏览者</h2>

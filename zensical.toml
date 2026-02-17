@@ -110,6 +110,7 @@ nav = [
             { "GitHub Pages 部署" = "blog/Zensical/github-pages.md"},
             { "为网站添加 Ask AI 功能" = "blog/Zensical/ask-ai.md" },
             { "为 Zensical 添加多语言翻译" = "blog/Zensical/translate-multilang.md" },
+            { "添加 GitHub 热力图卡片" = "blog/Zensical/github-heatmap.md" },
             { "炫彩光辉头像效果实现" = "blog/websitebeauty/avatar-glow.md" },
         ]},
         { "MKdocs教程" = [

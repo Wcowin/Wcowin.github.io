@@ -30,7 +30,7 @@ comments: false
   <div class="links-content">
    <div class="link-navigation">
     <div class="card">
-     <img class="ava" loading="lazy" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" />
+     <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" />
      <div class="card-header">
       <div>
        <a href="https://wcowin.work/ ">Wcowin's Blog</a>
@@ -1186,7 +1186,7 @@ comments: false
 已经添加贵站友链～
 名称: Wcowin's Web
 链接: https://wcowin.work/
-头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
+头像: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png
 简介: 循此苦旅，以达星辰 
 -->
 
@@ -1593,9 +1593,9 @@ document.addEventListener('DOMContentLoaded', function () {
 **友链格式示例/本站信息:**
 
 <!-- >
-名称: Wcowin's Web
+名称: Wcowin's Blog
 链接: https://wcowin.work/
-头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
+头像: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png
 简介: 循此苦旅，以达星辰 
 -->
 
