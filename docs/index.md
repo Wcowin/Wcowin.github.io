@@ -30,7 +30,7 @@ hide:
 <div class="wcowin-header-row">
   <!-- 左侧：文字内容 -->
   <div class="wcowin-header-text">
-    <div class="wcowin-header-title">Hi, I'm <span class="wcowin-name-box"><span class="name-text">Wcowin</span><span class="corner-bl"></span><span class="corner-br"></span></span></div>
+    <div class="wcowin-header-title">Hi, I'm <span class="wcowin-name-box"><span class="name-text">Wcowin</span></span></div>
     <div class="wcowin-header-subtitle">
       <span class="wcowin-header-subtitle-inner">
         <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
@@ -104,7 +104,7 @@ hide:
   white-space: nowrap;
 }
 
-/* Wcowin 名字带边框效果 */
+/* Wcowin 名字带圆角虚线边框 */
 .wcowin-name-box {
   display: inline-flex;
   align-items: center;
@@ -113,52 +113,9 @@ hide:
   margin-left: 8px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border: 2px dashed #6b8e6b;
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(107, 142, 107, 0.15);
   vertical-align: middle;
-}
-
-/* 四角小方块装饰 */
-.wcowin-name-box::before,
-.wcowin-name-box::after,
-.wcowin-name-box .corner-bl,
-.wcowin-name-box .corner-br {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: #6b8e6b;
-  border-radius: 1.5px;
-}
-
-.wcowin-name-box::before {
-  top: -3px;
-  left: -3px;
-}
-
-.wcowin-name-box::after {
-  top: -3px;
-  right: -3px;
-}
-
-.wcowin-name-box .corner-bl {
-  position: absolute;
-  bottom: -3px;
-  left: -3px;
-  width: 6px;
-  height: 6px;
-  background: #6b8e6b;
-  border-radius: 1.5px;
-}
-
-.wcowin-name-box .corner-br {
-  position: absolute;
-  bottom: -3px;
-  right: -3px;
-  width: 6px;
-  height: 6px;
-  background: #6b8e6b;
-  border-radius: 1.5px;
 }
 
 .wcowin-name-box .name-text {
@@ -168,18 +125,11 @@ hide:
   line-height: 1.2;
 }
 
-/* 深色模式适配 */
+/* 深色模式适配：仅调整背景和边框颜色 */
 [data-md-color-scheme="slate"] .wcowin-name-box {
   background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
   border-color: #68d391;
   box-shadow: 0 2px 8px rgba(104, 211, 145, 0.2);
-}
-
-[data-md-color-scheme="slate"] .wcowin-name-box::before,
-[data-md-color-scheme="slate"] .wcowin-name-box::after,
-[data-md-color-scheme="slate"] .wcowin-name-box .corner-bl,
-[data-md-color-scheme="slate"] .wcowin-name-box .corner-br {
-  background: #68d391;
 }
 
 [data-md-color-scheme="slate"] .wcowin-name-box .name-text {
@@ -855,13 +805,26 @@ hr {
         padding: 0.1em 0.2em;
         border-radius: 2px;
     }
-    .grid.cards del,
-    .grid.cards del a {
-        background: #fee2e2;
+    .grid.cards del {
+        display: inline-block;
+        background: #fee2e2;       /* 浅红实心背景，高亮效果 */
         color: inherit;
-        text-decoration: line-through;
-        padding: 0.1em 0.2em;
-        border-radius: 2px;
+        padding: 0.05em 0.25em;    /* 和 mark/ins 接近的内边距 */
+        border-radius: 3px;        /* 小圆角 */
+        border: none;              /* 不再使用描边 */
+        /* 底部波浪下划线 */
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #f97373;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 0.16em;
+    }
+
+    .grid.cards del a {
+        border: none;              /* 避免双层边框 */
+        padding: 0;                /* 让内层链接不再撑开 */
+        text-decoration: inherit;  /* 继承外层的波浪线 */
+        color: inherit;
     }
     .grid.cards del a:hover {
         color: inherit;
@@ -874,9 +837,8 @@ hr {
         background: rgba(34, 197, 94, 0.25);
         text-decoration-color: rgba(74, 222, 128, 0.8);
     }
-    [data-md-color-scheme="slate"] .grid.cards del,
-    [data-md-color-scheme="slate"] .grid.cards del a {
-        background: rgba(239, 68, 68, 0.25);
+    [data-md-color-scheme="slate"] .grid.cards del {
+        background: rgba(239, 68, 68, 0.25); /* 深色模式下的浅红块背景 */
     }
 </style>
 

@@ -1173,6 +1173,17 @@ comments: false
           <div class="info">从原子到结构，从数据到洞察</div>
         </div>
       </div>
+      <div class="card">
+        <img class="ava" src="https://blog.keepchen.com/favicon.ico" />
+        <div class="card-header">
+          <div>
+            <a href="https://blog.keepchen.com" target="_blank">希仁之拥</a>
+          </div>
+          <div class="info">独立开发者 & 开源爱好者。喜欢猫猫狗狗、花花草草，热衷于创造酷酷的东西。 </div>
+        </div>
+      </div>
+
+
 
 
    </div>

@@ -65,8 +65,8 @@ extra_javascript = [
 # ===== 额外的 CSS 文件 =====
 extra_css = [
     "stylesheets/chat-widget.css",   # Ask AI 聊天组件样式
-    # "stylesheets/extra.css",         # 额外样式
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css", # 额外样式 CDN
+    "stylesheets/extra.css",         # 额外样式
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css", # 额外样式 CDN
     "stylesheets/extra2.css",        # 额外样式2
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra2.css", # 额外样式2CDN
     # "stylesheets/link.css",          # 友链样式

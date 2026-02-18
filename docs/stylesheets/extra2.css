@@ -59,3 +59,11 @@ img.author-avatar {
 img.author-avatar:hover {
   transform: scale(1.15);
 }
+
+
+
+
+/* 目录导航的缩进参考线 */
+nav.md-nav--secondary ul {
+  border-left: 1px solid #B0B4BA; /* 使用主题淡灰色，更符合整体风格 */
+}
