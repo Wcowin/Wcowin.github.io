@@ -268,67 +268,25 @@ hide_comment: true
 </div>
 
 
-<!--  
-<center>
-<a href="/assets/个人简历.pdf" class="wcowin-header-btn">
-<iconify-icon icon="material-symbols:download" style="margin-right: 12px; font-size: 1.125em; vertical-align: middle;"></iconify-icon>下载简历
-</a>
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/OneClip"
+    href="https://github.com/Wcowin/OneClip"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
 
-<style>
-.wcowin-header-btn {
-  display: inline-flex;           
-  align-items: center;            
-  padding: 7px 22px;
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #3a8dde;
-  background: #f5faff;
-  border: 1.5px solid #b6eaff;
-  border-radius: 24px;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s, border 0.2s;
-  box-shadow: 0 2px 8px rgba(106, 203, 255, 0.07);
-}
-.wcowin-header-btn iconify-icon {
-  margin-right: 12px;
-  font-size: 1.3em;
-  vertical-align: middle;
-  display: inline-block;
-  line-height: 1;
-}
-.wcowin-header-btn:hover {
-  background: #e6f4ff;
-  color: #222;
-  border-color: #d5ecfdff;
-}
-@media (prefers-color-scheme: dark) {
-  .wcowin-header-btn {
-    color: #6ecbff;
-    background: rgba(30, 41, 59, 0.8);
-    border-color: rgba(110, 203, 255, 0.4);
-    box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
-  }
-  .wcowin-header-btn:hover {
-    background: rgba(110, 203, 255, 0.15);
-    color: #fff;
-    border-color: #6ecbff;
-  }
-}
-
-[data-md-color-scheme="slate"] .wcowin-header-btn {
-  color: #6ecbff;
-  background: rgba(30, 41, 59, 0.8);
-  border-color: rgba(110, 203, 255, 0.4);
-  box-shadow: 0 2px 8px rgba(106, 203, 255, 0.1);
-}
-[data-md-color-scheme="slate"] .wcowin-header-btn:hover {
-  background: rgba(110, 203, 255, 0.15);
-  color: #fff;
-  border-color: #6ecbff;
-}
-</style>
-</center>
--->
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/Mac-Finder-Clipboard"
+    href="https://github.com/Wcowin/Mac-Finder-Clipboard"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
 
 [:material-download: 下载简历](../assets/个人简历.pdf){ .md-button}
 {: style="text-align: center;" }

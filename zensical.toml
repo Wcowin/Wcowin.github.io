@@ -57,7 +57,9 @@ extra_javascript = [
     "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js",  # 2. 再加载自动渲染插件
     # "javascripts/katex.js",                                    # 3. 最后加载配置文件
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/katex.js",
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/feedback.js"                                  # Umami 反馈追踪
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/feedback.js",  # Umami 反馈追踪
+    "javascripts/github-heatmap.js",                        # GitHub 贡献热力图
+    "javascripts/github-repo-card.js"                       # GitHub 仓库卡片
 ]
 
 # ===== 额外的 CSS 文件 =====
@@ -76,7 +78,8 @@ extra_css = [
     # "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
     # "about/sty/portfolio.css"        # 作品集样式（已移至 geren.md 单独引入）
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
-    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"  # KaTeX 样式 CDN
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
+    "stylesheets/github-widgets.css"            # GitHub 相关组件样式
 ]
 
 # ===== 导航配置 [Navigation] =====
@@ -111,6 +114,7 @@ nav = [
             { "为网站添加 Ask AI 功能" = "blog/Zensical/ask-ai.md" },
             { "为 Zensical 添加多语言翻译" = "blog/Zensical/translate-multilang.md" },
             { "添加 GitHub 热力图卡片" = "blog/Zensical/github-heatmap.md" },
+            { "添加 GitHub 仓库卡片" = "blog/Zensical/github-repo-card.md" },
             { "炫彩光辉头像效果实现" = "blog/websitebeauty/avatar-glow.md" },
         ]},
         { "MKdocs教程" = [
