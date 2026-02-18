@@ -5,8 +5,7 @@ comments: false  #评论，默认不开启
 ---
 
 ## 花束般的恋爱
-
-![img](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F33603132-3054-4cd1-bab2-4c9dfa64744b%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1709451819&t=7f10aa9078424e3a450ff137fceaf1e9)
+![](https://n.sinaimg.cn/sinakd10110/133/w2000h1333/20220222/b17b-16a9b3b819bbc72ccd5d6a42db076df0.jpg)
 
 山音麦 (菅田将晖 饰) 和八谷绢 (有村架纯 饰) 因错过尾班车而相遇，在深夜咖啡馆聊起文学、电影和音乐，喜好竟奇蹟地相似，二人瞬间坠入爱河。他们毕业后开始一边兼职工作，一边开始同居生活，更一起养拾回来的街猫，最大的目标就是维持俩口子的日常。 但时日流逝，不想改变也得改变。他失约于《牯岭街》， 她独赏郭利斯马基黑色幽默。五年盛放，世上唯一的花未必结果，爱情若只如初见。《垫底辣妹》《借着雨点说爱你》导演土井裕泰联同《东京爱的故事》神级编剧坂元裕二，强调真实生活感的浪漫，菅田将晖和有村架纯衬到绝合演，谱出这代最揪心的爱的故事。
 

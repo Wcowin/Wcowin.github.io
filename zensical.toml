@@ -148,9 +148,9 @@ nav = [
             { "为MKdocs添加文章修订时间戳" = "blog/websitebeauty/time.md" },
             { "页脚设置" = "blog/websitebeauty/footer.md" },
             { "加速网站访问的一些心得" = "blog/websitebeauty/accelerate.md" }
-        ]},
-        { "语雀" = "blog/yuque.md" },        
+        ]},       
         { "技术分享" = [
+            { "语雀" = "blog/yuque.md" },
             { "Win11镜像下载/KMS激活" = "blog/technique sharing/win.md" },
             { "实用脚本分享" = "blog/technique sharing/jiaoben.md" },
             { "搭建个人图床" = "blog/technique sharing/tuchuang.md" },
@@ -198,17 +198,19 @@ nav = [
             { "Windows快捷键" = "blog/Win/winkjj.md" }
         ]},
         { "Python" = [
+            { "uv:新一代Python包管理工具入门" = "blog/py/uv.md" },
             { "将Python文件.py打包成.exe可执行程序" = "blog/py/python.md" },
             { "PIP" = "blog/py/pip.md" }
         ]}
     ]},
     { "开发" = [
         "develop/index.md",
-        { "DeepSeek:从入门到精通" = "develop/deepseek.md" },
+        { "AI工具" = "develop/AI.md" },
         { "MCP" = [
             { "What is MCP" = "develop/AI/mcp.md" }
         ]},
-        { "RAG技术（检索增强生成）" = "develop/AI/rag.md" },
+        { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
+        { "DeepSeek:从入门到精通" = "develop/deepseek.md" },
         { "GitHub 解封指南——This account is flagged" = "develop/GitHub-unblocked.md"},
         { "macOS开发" = [
             "develop/Mac-development/index.md",
@@ -231,7 +233,6 @@ nav = [
             { "利用百度API进行植物识别" = "develop/Mywork/aizhiwu.md" },
             { "玩的设计" = "develop/Mywork/design.md" }
         ]},
-        { "AI工具" = "develop/AI.md" },
         { "如何注册ChatGPT" = "develop/ChatGPT.md" },
         { "我的设备" = "develop/mydevice.md" },
         { "Python 环境管理最佳实践" = "develop/environment.md" },

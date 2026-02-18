@@ -23,8 +23,8 @@ hide:
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 
 <!-- 在头部添加预加载关键资源 -->
-<link rel="preload" href="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" as="image" fetchpriority="high">
-<link rel="preload" href="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" as="image">
+<link rel="preload" href="https://s3.bmp.ovh/2026/02/18/sFOiWjPs.png" as="image" fetchpriority="high">
+<link rel="preload" href="https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png" as="image">
 <!-- https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg -->
 <!-- wcowin-header.html -->
 <div class="wcowin-header-row">
@@ -53,8 +53,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
+        <img src="https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
+        <img src="https://s3.bmp.ovh/2026/02/18/sFOiWjPs.png" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>
@@ -889,7 +889,7 @@ hr {
   <div class="github-heatmap-glass-card">
     <div class="github-heatmap-header">
       <span class="github-heatmap-title">GitHub</span>
-      <span id="contribution-stats" class="github-heatmap-stats">过去一年 <strong id="stats-count">--</strong> 次贡献</span>
+      <span id="contribution-stats" class="github-heatmap-stats">Wcowin过去一年 <strong id="stats-count">--</strong> 次贡献</span>
       <div class="github-heatmap-legend">
         <span class="legend-label">少</span>
         <div class="legend-cell" style="--opacity: 0.05;"></div>
@@ -1360,8 +1360,8 @@ hr {
     - [macOS 开发经验分享](develop/Mac-development/index.md){ data-preview }(最新更新)
     - [密码学｜加密货币｜区块链](blog/Cryptography/#_1){ data-preview }  (最新更新)
     - [模型上下文协议(MCP)简述](develop/AI/mcp.md)
-    - [DeepSeek:从入门到精通](develop/deepseek.md)
-    - [将Python文件打包成.exe可执行程序](blog/py/python.md)
+    - [RAG技术(检索增强生成)](develop/AI/rag.md)
+    - [uv：新一代 Python 包管理工具入门](blog/py/uv.md)
     - [Homebrew如何安装(Mac & Linux)](blog/Mac/homebrew.md)
 
 -   :simple-materialformkdocs:{ .lg .middle } __Mkdocs/Zensical教程__
@@ -1371,9 +1371,10 @@ hr {
     - [Mkdocs前言](blog/Mkdocs/mkfirst.md)
     - [利用Mkdocs部署静态网页](blog/Mkdocs/mkdocs1.md)
     - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
-    - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
     ---
     - [Zensical教程](blog/Zensical/indexfirst.md)(🌟2026最新更新)
+    - [从MkDocs迁移到Zensical](blog/Zensical/migration.md)
+    - [5分钟快速开始Zensical](blog/Zensical/quick-start.md)
 
 -   :material-gamepad-variant-outline:{ .lg .middle } __好用/好玩__
 

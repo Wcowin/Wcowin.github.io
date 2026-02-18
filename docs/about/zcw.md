@@ -16,8 +16,11 @@ status: new
 </p> -->
 
 <p align="center">
-  <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" class="img1" style="width:40%; " />
+  <img src="https://s3.bmp.ovh/2026/02/18/9wkTMyGb.png" class="img1" style="width:40%; " />
 </p>
+<!-- <p align="center">
+  <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" class="img1" style="width:40%; " />
+</p> -->
 
 ## **:simple-wechat:** **WeChat Pay**
 

@@ -40,3 +40,11 @@ venv/
 
 # Node 依赖（若有本地工具）
 node_modules/
+.windsurf/
+.codeium/
+.claude/
+.idea/
+.vscode/
+.cursor/
+.cursorrules/
+.cursorrules/

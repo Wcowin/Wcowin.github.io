@@ -187,9 +187,6 @@ tags:
 
 ## **:simple-ios:捷径**
 
-✅ ShortCuts - 快捷指令网站合集
-▎快捷指令
-
 - [捷径社区](https://sharecuts.cn/){target="_blank"}
 - [捷径盒](https://jiejinghe.com/){target="_blank"}
 - [捷径库](https://jiejingku.net/){target="_blank"}

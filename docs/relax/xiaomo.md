@@ -42,20 +42,17 @@ title: 小米
 <!-- [关于小米](https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4) -->
 <!-- ![xiaomi](https://user-assets.sxlcdn.com/images/951476/FhDY4DJUZ76Xz3CJ6sdjBLIZV-si.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg) -->
 
-<a href="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4">
-    <img src="https://user-assets.sxlcdn.com/images/951476/FhDY4DJUZ76Xz3CJ6sdjBLIZV-si.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg" >
-  </a>
 
 <!-- <iframe  src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 400px; max-width: 100%"></iframe>   -->
 小米创业8年内部影像资料，首次公开！
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=27087520&bvid=BV1Ps411E7w6&cid=46647207&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
 
-<iframe width="560" height="315" max-width: 100% src="//player.bilibili.com/player.html?aid=27087520&bvid=BV1Ps411E7w6&cid=46647207&page=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://player.bilibili.com/player.html?aid=27087520&bvid=BV1Ps411E7w6&cid=46647207&page=1&autoplay=0" allowfullscreen="true" style="width: 100%; max-width: 560px; aspect-ratio: 16/9; border: 0;" title="小米相关 B站视频"> </iframe>
 
 <!-- <iframe frameborder=0 border="0" marginwidth="0" marginheight="0" scrolling="no" height=720 width=1280 src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4"></iframe> -->
 
-<iframe width="560" height="315" scrolling="no" max-width: 100% src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<video src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/pc/about/struggle.mp4" controls style="width: 100%; max-width: 720px; aspect-ratio: 16/9; border: 0;" title="小米创业 8 年内部影像"> </video>
 
 <!-- <link type="text/css" rel="stylesheet" href="/ckplayer/css/ckplayer.css" />
 <script type="text/javascript" src="/ckplayer/js/ckplayer.js" charset="UTF-8"></script>
@@ -76,6 +73,6 @@ title: 小米
 
 ## 雷总专辑单曲
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=31814005&auto=0&height=66"></iframe>
+<iframe title="雷总专辑单曲 - 网易云音乐" frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&id=31814005&auto=0&height=66"></iframe>
 
 <!-- height=720 width=1280 -->

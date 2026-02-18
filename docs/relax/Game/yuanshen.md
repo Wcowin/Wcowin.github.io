@@ -102,4 +102,4 @@ CNM歪迪卢克（LJ 原神直接卸载），但是枫丹好评，水下系统�
 
 ## 宣传片
 
-<iframe  src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 720px; height: 385px; max-width: 100%"></iframe>
+<video src="https://webstatic.mihoyo.com/upload/op-public/2020/09/27/fd431739ff26ceeb3010ac561d68446b_345688670889091949.mp4" controls style="width: 100%; max-width: 720px; aspect-ratio: 16/9; border: 0;" title="原神宣传片"></video>

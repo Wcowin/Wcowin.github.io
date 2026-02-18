@@ -4,9 +4,20 @@ tags:
   - 我的作品
 ---
 
-# 基于百度API和opencv的智能车牌识别程序
-:simple-github:Github地址：<https://github.com/Wcowin/License-plate-recognition/releases/tag/exe>{target=“_blank”}
-:simple-bilibili:Bilibili[视频教程](https://www.bilibili.com/video/BV1zM411W7xU/?share_source=copy_web&vd_source=4dbf1142085feeb1d5010d6a9e4199be){target=“_blank”}
+# 基于百度API和opencv的智能车牌识别程序  
+
+
+<div class="grid cards" markdown>
+
+-   :simple-github:{ .lg .middle } __Github地址__
+
+    [Github地址](https://github.com/Wcowin/License-plate-recognition/releases/tag/exe){target="_blank"}   
+
+-   :simple-bilibili:{ .lg .middle } __视频教程__
+
+    [视频教程](https://www.bilibili.com/video/BV1zM411W7xU/?share_source=copy_web&vd_source=4dbf1142085feeb1d5010d6a9e4199be){target="_blank"}
+
+</div>
 
 ![](https://s1.imagehub.cc/images/2024/02/01/2c99ad9187609f236ae8080995a6e370.png)
 ![](https://s1.imagehub.cc/images/2024/02/01/1e8b8db5847e7bf66453869632d497af.png)
@@ -41,3 +52,5 @@ tags:
 
 
 <iframe src="//player.bilibili.com/player.html?aid=526039186&bvid=BV1zM411W7xU&cid=1054475396&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 560px; height: 315px; max-width: 100%"> </iframe>
+
+---

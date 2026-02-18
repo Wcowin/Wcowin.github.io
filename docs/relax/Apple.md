@@ -17,7 +17,6 @@ Our Business Conduct and Compliance policies are foundational to how we do busin
 
 ——Tim Cook</b> </font></center>
 
-![img](https://user-assets.sxlcdn.com/images/951476/FpR4zSBa8kJxXSlkmL3yE9O1PNJB.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png)
 <!-- <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/the-darkness-that-you-fear/1562007433?i=1562007434"></iframe> -->
 
 <b>  
@@ -36,9 +35,7 @@ Our Business Conduct and Compliance policies are foundational to how we do busin
 
 Apple还有很多很多奇奇怪怪的设计，设计不一定要浮于表面，外观好像一样的情况下，内部元器件的堆叠甚至是一些微不足道的小更新，都是苹果和他的团队在背后努力研发的成果。  </b>
 
-![](https://user-assets.sxlcdn.com/images/951476/FkEoM-JH0F6SYwS6RXR2ZIcSh45Q.jpg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
-
-<iframe src="//player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 835px; height: 386px; max-width: 100%"> </iframe>
+<iframe src="https://player.bilibili.com/player.html?aid=381647441&bvid=BV1VZ4y1d7BP&cid=514597194&page=1&autoplay=0" allowfullscreen="true" style="width: 100%; max-width: 835px; aspect-ratio: 16/9; border: 0;" title="Zealer 苹果产品解析视频"> </iframe>
 
 
 

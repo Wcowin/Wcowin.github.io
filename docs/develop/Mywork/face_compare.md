@@ -5,10 +5,12 @@ tags:
 ---
 
 # 基于讯飞人脸算法进行人脸比对
-## 先看结果
+## 先看结果  
+
 ![image.png](https://s2.loli.net/2024/02/02/wH5lXKQDObRTgBZ.png)
 
-遥遥领先！
+遥遥领先！  
+
 ![alt text](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0416%2F2191007fj00rt61pm007ec000ej00mbm.jpg&thumbnail=660x2147483647&quality=80&type=jpg)
 ## 准备工作
 
@@ -232,4 +234,4 @@ root.mainloop()
 ## 视频
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 540px; height: 315px; max-width: 100%"> </iframe> -->
-<iframe src="//player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 560px; height: 315px; max-width: 100%"> </iframe>
+<iframe src="https://player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1&autoplay=0" allowfullscreen="true" style="width: 100%; max-width: 560px; aspect-ratio: 16/9; border: 0;" title="人脸对比演示视频"> </iframe>
