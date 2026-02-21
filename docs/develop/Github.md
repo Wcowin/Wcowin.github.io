@@ -31,4 +31,4 @@ GitHub 可以被视为代码的云存储，您还可以在其中轻松协作、�
 
 截至 2020 年 1 月，GitHub 是世界上最大的源代码宿主，拥有超过 1 亿个软件存储库（其中 2800 万个是公共存储库）和超过 4000 万用户使用其平台。
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats)
+<div class="github-heatmap" data-username="Wcowin"></div>

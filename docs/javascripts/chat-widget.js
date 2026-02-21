@@ -248,13 +248,29 @@
   // 切换最大化
   function toggleMaximize() {
     const container = document.querySelector('.ai-chat-container');
-    if (!container) return;
+    const maximizeBtn = document.getElementById('ai-chat-maximize');
+    if (!container || !maximizeBtn) return;
     
-    container.classList.toggle('maximized');
-    const messagesDiv = document.getElementById('ai-chat-messages');
-    if (messagesDiv) {
-      messagesDiv.scrollTop = messagesDiv.scrollHeight;
-    }
+    // 使用 requestAnimationFrame 确保在下一帧执行，避免阻塞
+    requestAnimationFrame(() => {
+      const isMaximized = container.classList.toggle('maximized');
+      
+      // 延迟更新 UI，避免影响动画性能
+      requestAnimationFrame(() => {
+        const svg = maximizeBtn.querySelector('svg');
+        if (svg) {
+          if (isMaximized) {
+            svg.innerHTML = '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>';
+            maximizeBtn.setAttribute('aria-label', '恢复');
+            maximizeBtn.setAttribute('title', '恢复');
+          } else {
+            svg.innerHTML = '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>';
+            maximizeBtn.setAttribute('aria-label', '最大化');
+            maximizeBtn.setAttribute('title', '最大化');
+          }
+        }
+      });
+    });
   }
 
   // 复制对话内容
@@ -313,7 +329,10 @@
       togglePinned();
     });
     closeBtn?.addEventListener('click', closeModal);
-    maximizeBtn?.addEventListener('click', toggleMaximize);
+    maximizeBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMaximize();
+    });
     
     clearBtn?.addEventListener('click', () => {
       closeMenu();
@@ -375,11 +394,10 @@
     updatePrompts();
   }
 
-  // 打开模态框（客服风格：根据按钮位置决定面板从哪侧滑入）
+  // 打开模态框（侧边抽屉，从右侧滑入）
   function openModal() {
     const modal = document.getElementById('ai-chat-modal');
     if (modal) {
-      modal.classList.remove('panel-left');
       modal.classList.add('active');
       document.getElementById('ai-chat-input')?.focus();
     }

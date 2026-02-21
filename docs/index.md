@@ -12,21 +12,19 @@ hide:
 <!-- OneClip 公告栏 -->
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
-    🎉 <a href="https://oneclip.cloud/" target="_blank">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" class="oneclip-cta">了解更多 →</a><br>
-    ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Zensical中文教程</a> —— 最新的Zensical中文教程   
+    🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a><br>
+    ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" rel="noopener noreferrer">Zensical中文教程</a> —— 最新的Zensical中文教程   
   </div>
 </div>
 
-<!-- 加载 Inter 字体 -->
+<!-- 加载 Inter 字体 - 使用 font-display: swap 优化加载性能 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 
 <!-- 在头部添加预加载关键资源 -->
-<link rel="preload" href="https://s3.bmp.ovh/2026/02/18/sFOiWjPs.png" as="image" fetchpriority="high">
-<link rel="preload" href="https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png" as="image">
-<!-- https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg -->
-<!-- wcowin-header.html -->
+<!-- 只预加载首屏可见的关键图片，与 img 标签的 loading 属性保持一致 -->
+<link rel="preload" href="https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png" as="image" fetchpriority="high">
 <div class="wcowin-header-row">
   <!-- 左侧：文字内容 -->
   <div class="wcowin-header-text">
@@ -38,12 +36,16 @@ hide:
     </div>
     <!-- <div class="wcowin-header-motto">Free and diffuse</div> -->
     <div class="wcowin-header-btns">
-      <a href="https://github.com/Wcowin" target="_blank" class="md-button">
-        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></span>
+      <a href="https://github.com/Wcowin" target="_blank" rel="noopener noreferrer" class="md-button md-button--primary">
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </span>
         Github
       </a>
       <a href="mailto:wcowin@qq.com" class="md-button">
-        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </span>
         Email me
       </a>
     </div>
@@ -53,8 +55,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png" alt="Back Image" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://s3.bmp.ovh/2026/02/18/sFOiWjPs.png" alt="Front Image" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
+        <img src="https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png" alt="Wcowin头像背面" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
+        <img src="https://s3.bmp.ovh/2026/02/18/sFOiWjPs.png" alt="Wcowin头像正面" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>
@@ -187,16 +189,6 @@ hide:
   50%, 100% { opacity: 0; }
 }
 
-/* Safari特定修复 */
-/* @media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-    .wcowin-header-subtitle-inner {
-      display: inline-block;
-      width: auto !important;
-      min-width: 280px; 
-    }
-  }
-} */
 
 
 
@@ -215,18 +207,6 @@ hide:
     color: #d0d0d0 !important; /* 更亮的灰色 */
   }
 
-  /* 确保SVG波浪线在深色模式下可见 */
-  .wcowin-header-underline path {
-    stroke: #b0b0b0 !important; /* 深色模式下使用较亮的灰色 */
-    opacity: 1 !important;
-  }
-}
-
-.wcowin-header-underline {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  pointer-events: none;
 }
 
 .wcowin-header-motto {
@@ -639,13 +619,9 @@ hide:
 })();
 </script>
 
-<!-- 移除这个换行符，它会产生额外的空间 -->
-<!-- <br class="desktop-only"/> -->
 
 <!-- 修改分隔线上下的间距 -->
 <style>
-/* 移除了冗余的 .desktop-only 样式 */
-
 /* 减少分隔线的边距 */
 hr {
   margin: 0.5rem 0 !important;
@@ -819,7 +795,6 @@ hr {
         text-decoration-thickness: 1.5px;
         text-underline-offset: 0.16em;
     }
-
     .grid.cards del a {
         border: none;              /* 避免双层边框 */
         padding: 0;                /* 让内层链接不再撑开 */
@@ -913,22 +888,11 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 
 
-<!-- 发邮件(1) 微信(2) MKdocs视频教程(3)
-{ .annotate }
-
-1. 点击右下角[:material-email:](mailto:<wangkewen821@gmail.com>)即可发送邮件.
-2. TEL:18939533255(微信号)
-3. 点击右下角[:simple-bilibili:](https://space.bilibili.com/1407028951/lists/4566631?type=series)图标查看视频教程. -->
-
-
 <style>
 .md-grid {
   max-width: 1220px;
 }
-</style>
 
-
-<style>
 body {
   position: relative; /* 确保 body 元素的 position 属性为非静态值 */
 }
@@ -982,7 +946,27 @@ body {
     mouseY = -1000;
   });
   
+  let animationFrameId = null;
+  let isVisible = true;
+  
+  // 使用 Intersection Observer 优化性能：当 Canvas 不可见时暂停动画
+  const observer = new IntersectionObserver((entries) => {
+    isVisible = entries[0].isIntersecting;
+    if (isVisible && !animationFrameId) {
+      draw();
+    }
+  }, { threshold: 0 });
+  
+  if (canvas) {
+    observer.observe(canvas);
+  }
+  
   function draw() {
+    if (!isVisible) {
+      animationFrameId = null;
+      return;
+    }
+    
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     // 获取当前主题颜色
@@ -1036,10 +1020,13 @@ body {
       ctx.stroke();
     }
     
-    requestAnimationFrame(draw);
+    animationFrameId = requestAnimationFrame(draw);
   }
   
-  draw();
+  // 初始绘制
+  if (canvas) {
+    draw();
+  }
 })();
 </script>
 
@@ -1071,47 +1058,8 @@ body {
 }
 </style>
 
-<!--
-  将所有页面级脚本和元数据统一放置在这里
--->
-<!-- 访问统计区域 -->
-<!-- <div style="text-align: center; margin: 2rem 0; font-size: 0.9rem;">
-  本站访问量：<script async src="//finicounter.eu.org/finicounter.js"></script><span id="finicount_views" style="font-weight: bold; color: #518FC1;"></span>
-</div> -->
 
  
 <!-- Umami Analytics -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
-<!-- Google Adsense -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
-     crossorigin="anonymous"></script> -->
-
-<!--
-  Google Adsense 广告单元
-  (如果需要，可以取消注释)
--->
-<!--
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2327435979273742"
-    data-ad-slot="3702206121"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
--->
-
-<!-- [timeline(./docs/timeline/timeindex.json)] -->
-
-<!-- <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "sks5yth4qj");
-</script> -->
-
-
-<!-- <meta name="algolia-site-verification"  content="3CAAB2C27102AD08" /> -->
 

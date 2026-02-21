@@ -330,6 +330,11 @@
   gap: 6px;
 }
 
+/* 无开源许可时不显示许可证图标和占位 */
+.github-repo-meta-item:has(.github-repo-license:empty) {
+  display: none;
+}
+
 .github-repo-meta-icon {
   display: inline-flex;
   align-items: center;
@@ -401,6 +406,12 @@
 [data-md-color-scheme='slate'] .github-repo-logo-inner {
   background: #f9fafb;
   color: #020617;
+}
+
+[data-md-color-scheme='slate'] .github-repo-card:hover .github-repo-card-inner {
+  background-color: #0f172a;
+  border-color: #334155;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.85);
 }
 
 @media (max-width: 768px) {

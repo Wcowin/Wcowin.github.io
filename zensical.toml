@@ -69,8 +69,8 @@ extra_css = [
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css", # 额外样式 CDN
     "stylesheets/extra2.css",        # 额外样式2
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra2.css", # 额外样式2CDN
-    # "stylesheets/link.css",          # 友链样式
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css", #友链CDN
+    "stylesheets/link.css",          # 友链样式
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css", #友链CDN
     # "stylesheets/poem.css",          # 诗词样式
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css", # 诗词样式CDN
     # "stylesheets/customize.css",     # 按钮圆角化等自定义样式

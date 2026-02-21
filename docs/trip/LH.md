@@ -10,12 +10,15 @@ comments: false  #评论，默认不开启
 
 “漯字怎么念？漯河在哪里？”
 
-漯（luò）河人会告诉你，没错，就是那个产<b>双汇火腿、卫龙辣条、北京牌方便面</b>的地方！
-![image.png](https://s2.loli.net/2024/02/02/kSshpB2wjEdYfTQ.png){ loading=lazy }
+漯（luò）河人会告诉你，没错，就是那个产**双汇火腿、卫龙辣条、北京牌方便面**的地方！  
+
+<!-- ![image.png](https://s2.loli.net/2024/02/02/kSshpB2wjEdYfTQ.png)   -->
+![image.png](https://s3.bmp.ovh/2026/02/19/zeOCH0fU.png)  
 千年的漯河因河而建，因河而兴，她的基因中流淌着如水般的灵活与通达。沙河、澧河之水依旧静静流淌，塑造着漯河人生活的气质。
 
 漯河的饮食无非是胡辣汤、烩面、水煎包等等。但这颗“河南之心”，既汇聚了全省的人与物，也因此汇聚了河南的文化风俗，融合了地道的河南味儿。
-![image.png](https://s2.loli.net/2024/02/02/2zsDOm7iXhtdeyG.png){ loading=lazy }
+<!-- ![image.png](https://s2.loli.net/2024/02/02/2zsDOm7iXhtdeyG.png){ loading=lazy } -->
+![3D8AzwwYfYSEnzPXd5d2gmiR5ppkYTpM.webp](https://cdn.nodeimage.com/i/3D8AzwwYfYSEnzPXd5d2gmiR5ppkYTpM.webp)  
 
 - 节选自公众号：中科院地质地球所
 ***

@@ -211,9 +211,7 @@ hide_comment: true
 
 
 <center><font size=6 color= #757575>
-观史知今，当思进退，读书明志可识春秋
-<br>
-——Wcowin </font></center>
+观史知今，当思进退，读书明志可识春秋</font></center>
 
 <!-- <center>
   <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg"
@@ -260,7 +258,7 @@ hide_comment: true
         <span class="about__info-name">贡献的开源</span>
     </div>
     <div>
-        <a href="https://oneclip.cloud/" target="_blank">
+        <a href="https://github.com/Wcowin/OneClip" target="_blank">
             <span class="about__info-title">2+</span>
             <span class="about__info-name">独立开发软件</span>
         </a>
@@ -283,6 +281,26 @@ hide_comment: true
     class="github-repo-card"
     data-repo="Wcowin/Mac-Finder-Clipboard"
     href="https://github.com/Wcowin/Mac-Finder-Clipboard"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
+
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/Mkdocs-Wcowin"
+    href="https://github.com/Wcowin/Mkdocs-Wcowin"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
+
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/Wcowin.github.io"
+    href="https://github.com/Wcowin/Wcowin.github.io"
     target="_blank"
     rel="noopener noreferrer"
   ></a>

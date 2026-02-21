@@ -222,8 +222,9 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
-  max-width: 400px;
+  --ai-container-base-width: 400px;
+  width: var(--ai-container-base-width);
+  max-width: var(--ai-container-base-width);
   height: 100vh;
   background: var(--md-default-bg-color, #fff);
   border-radius: 0;
@@ -232,30 +233,18 @@
   flex-direction: column;
   overflow: hidden;
   margin: 0;
-  transform: translateX(100%);
-  transition: transform var(--ai-transition-normal);
+  transform: translateX(100%) translateZ(0);
+  transition: transform var(--ai-transition-normal),
+              max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: auto;
   z-index: 1001;
+  contain: layout style paint;
+  isolation: isolate;
 }
 
 .ai-chat-modal.active .ai-chat-container {
-  transform: translateX(0);
-}
-
-/* 按钮在左侧时，面板从左侧滑入 */
-.ai-chat-modal.panel-left .ai-chat-container {
-  right: auto;
-  left: 0;
-  transform: translateX(-100%);
-  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
-}
-
-.ai-chat-modal.panel-left.active .ai-chat-container {
-  transform: translateX(0);
-}
-
-.ai-chat-modal.panel-left {
-  justify-content: flex-start;
+  transform: translateX(0) translateZ(0);
 }
 
 /* 头部 */
@@ -342,6 +331,7 @@
   gap: 8px;
   padding: 12px 16px 16px;
   justify-content: center;
+  contain: layout style;
 }
 
 .ai-chat-prompts.visible {
@@ -357,8 +347,11 @@
   font-family: inherit;
   color: var(--md-default-fg-color, #333);
   cursor: pointer;
-  transition: all var(--ai-transition-fast);
-  max-width: calc(50% - 4px);
+  transition: background var(--ai-transition-fast), 
+              border-color var(--ai-transition-fast),
+              color var(--ai-transition-fast);
+  flex: 1 1 0;
+  min-width: 0;
   text-align: center;
   line-height: 1.4;
   white-space: nowrap;
@@ -370,11 +363,10 @@
   background: var(--md-primary-fg-color, #518FC1);
   border-color: var(--md-primary-fg-color, #518FC1);
   color: var(--md-primary-bg-color, #fff);
-  transform: translateY(-1px);
 }
 
 .ai-chat-prompt-btn:active {
-  transform: translateY(0) scale(0.98);
+  opacity: 0.9;
 }
 
 /* 输入区域 - 底部 */
@@ -386,6 +378,8 @@
   background: var(--md-default-bg-color, #fff);
   flex-shrink: 0;
   min-width: 0;
+  contain: layout style;
+  will-change: contents;
 }
 
 #ai-chat-input {
@@ -399,13 +393,12 @@
   background: var(--md-default-bg-color, #fff);
   color: var(--md-default-fg-color, #333);
   box-sizing: border-box;
-  transition: border-color var(--ai-transition-fast), box-shadow var(--ai-transition-fast);
+  transition: border-color var(--ai-transition-fast);
 }
 
 #ai-chat-input:focus {
   outline: none;
   border-color: var(--md-primary-fg-color, #518FC1);
-  box-shadow: 0 0 0 3px var(--md-accent-fg-color--transparent, rgba(81, 143, 193, 0.1));
 }
 
 #ai-chat-input::placeholder {
@@ -573,6 +566,7 @@
   /* Prevent scroll chaining to parent/body */
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
+  contain: layout style paint;
 }
 
 .ai-message {
@@ -980,8 +974,25 @@
 
 /* Maximized State - 侧边模式下最大化即全屏宽度 */
 .ai-chat-container.maximized {
-  max-width: 520px;
-  width: 100%;
+  --ai-container-base-width: 50vw;
+  max-width: var(--ai-container-base-width);
+  width: var(--ai-container-base-width);
+  min-width: 600px;
+}
+
+/* 小屏幕下最大化时占据更多空间 */
+@media (max-width: 1200px) {
+  .ai-chat-container.maximized {
+    --ai-container-base-width: 60vw;
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-chat-container.maximized {
+    --ai-container-base-width: 80vw;
+    min-width: 400px;
+  }
 }
 
 /* 移动端 - 侧边面板全宽 */
