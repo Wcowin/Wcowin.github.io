@@ -1,6 +1,5 @@
 # ==========================================
 # Zensical 配置文件
-# 从 MkDocs 迁移而来
 # pip install --upgrade --force-reinstall zensical
 # ==========================================
 
@@ -19,23 +18,6 @@ use_directory_urls = true                        # 使用目录形式的URL (例
 repo_url = "https://github.com/Wcowin/Wcowin.github.io"  # 右上角点击跳转的链接
 repo_name = "Wcowin.github.io"                           # 右上角的名字
 edit_uri = "edit/main/docs"                              # 编辑按钮跳转的链接
-
-# ===== Hooks 配置 =====
-# ⚠️ 重要：Zensical 目前不支持 MkDocs hooks
-# Zensical 正在开发模块系统来替代 hooks 和 plugins
-# 参考：https://zensical.org/about/roadmap/
-# 
-# 临时解决方案：
-# - 阅读时间：使用 blog 插件的 post_readtime 功能
-# - 文档日期：使用 document-dates 插件
-# - 评论系统：在 overrides/partials/comments.html 中配置
-# - 其他功能：等待模块系统发布或使用 JavaScript 实现
-#
-# hooks = [
-#     "overrides/hooks/reading_time.py",
-#     "overrides/hooks/related_posts.py",
-#     "overrides/hooks/comments.py"
-# ]
 
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
@@ -105,6 +87,7 @@ nav = [
             { "密码协议与应用" = "blog/Cryptography/ProtocolAndApplication.md" },
             { "现代密码学发展" = "blog/Cryptography/ModernCryptography.md" },
         ]},
+        { "基于Mkdocs/zensical主题的站点" = "blog/technique sharing/comkdocs.md" },
         { "Zensical中文教程" =[
             { "前言" = "blog/Zensical/indexfirst.md" },
             { "从MkDocs迁移" = "blog/Zensical/migration.md" },
@@ -126,7 +109,6 @@ nav = [
             { "4.解决mkdocs serve 后127.0.0.1:8000无法自动刷新的问题(补充版)" = "blog/Mkdocs/click.md" },
             { "网站添加Mkdocs博客" = "blog/Mkdocs/mkdocsblog.md" }
         ]},
-        { "基于Mkdocs主题的站点" = "blog/technique sharing/comkdocs.md" },
         { "Mkdocs美化/补充" = [
             { "Wcowin for MkDocs主题" = "blog/websitebeauty/mkdocs-wcowin1.md" },
             { "为MKdocs添加AI摘要(Plus版本)" = "blog/websitebeauty/MkDocs-AI-Summary-plus.md" },

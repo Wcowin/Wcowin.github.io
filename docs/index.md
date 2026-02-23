@@ -19,7 +19,7 @@ hide:
       ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" rel="noopener noreferrer">Zensical中文教程</a> —— 最新的Zensical中文教程
     </div>
     <div class="oneclip-announcement-item">
-      🙌🏻 <a href="https://jaywhj.github.io/mkdocs-materialx/index.html" target="_blank" rel="noopener noreferrer">MaterialX</a> —— 下一代 MkDocs主题，让你继续用熟悉的方式构建漂亮文档
+      🙌🏻 <a href="https://hongjun.vip/materialx-for-mkdocs" target="_blank" rel="noopener noreferrer">MaterialX</a> —— 下一代 MkDocs主题，让你继续用熟悉的方式构建漂亮文档
     </div>
   </div>
 </div>

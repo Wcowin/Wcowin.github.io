@@ -49,6 +49,7 @@ tags:
 - [Awesome Tech Share](https://wncfht.github.io/Awesome-Tech-Share/)
 - [Chenxi Ma](https://algebra-mcx.github.io/Academic-Profile/)
 - [Aaron's blog](https://jaywhj.netlify.app/)
+- [Curriculum Vitae](https://joapuiib.github.io/curs-git/)
 
 ---
 
