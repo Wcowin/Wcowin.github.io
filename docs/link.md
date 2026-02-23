@@ -1082,7 +1082,7 @@ comments: false
       <img class="ava" loading="lazy" src="https://i.111666.best/image/BxMKaCZk8wypAQma9c4HfR.png" />
       <div class="card-header">
         <div>
-          <a href="https://blog.6uu.us/" target="_blank">bbb-lsy07</a>
+          <a href="https://blog.tsoo.net/" target="_blank">bbb-lsy07</a>
         </div>
         <div class="info">
           科技激荡人文，洞见智慧本真。

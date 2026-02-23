@@ -12,8 +12,15 @@ hide:
 <!-- OneClip 公告栏 -->
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
-    🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— macOS剪贴板管理工具   <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a><br>
-    ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" rel="noopener noreferrer">Zensical中文教程</a> —— 最新的Zensical中文教程   
+    <div class="oneclip-announcement-item">
+      🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— macOS剪贴板管理工具 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a>
+    </div>
+    <div class="oneclip-announcement-item">
+      ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" rel="noopener noreferrer">Zensical中文教程</a> —— 最新的Zensical中文教程
+    </div>
+    <div class="oneclip-announcement-item">
+      🙌🏻 <a href="https://jaywhj.github.io/mkdocs-materialx/index.html" target="_blank" rel="noopener noreferrer">MaterialX</a> —— 下一代 MkDocs主题，让你继续用熟悉的方式构建漂亮文档
+    </div>
   </div>
 </div>
 
@@ -55,8 +62,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png" alt="Wcowin头像背面" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://s3.bmp.ovh/2026/02/18/sFOiWjPs.png" alt="Wcowin头像正面" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
+        <img src="https://s3.bmp.ovh/2026/02/22/umAalWGQ.jpg" alt="Wcowin头像背面" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
+        <img src="https://s3.bmp.ovh/2026/02/22/wc1iSlRi.jpg" alt="Wcowin头像正面" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>
@@ -398,6 +405,8 @@ hide:
   position: relative;
   width: 280px;
   height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
   perspective: 1200px;
   z-index: 2;
 }
@@ -446,8 +455,8 @@ hide:
     height: 200px;
   }
   .flip-glow-ultimate-glow {
-    width: 260px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
   }
 }
 @media (max-width: 700px) {

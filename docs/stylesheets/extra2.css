@@ -15,6 +15,13 @@
   max-width: 600px;
 }
 
+/* 电脑端加宽公告栏，避免第三行换行 */
+@media (min-width: 768px) {
+  .oneclip-announcement {
+    max-width: 900px;
+  }
+}
+
 /* 暗色模式适配 */
 [data-md-color-scheme="slate"] .oneclip-announcement {
   background: linear-gradient(135deg, rgba(81, 143, 193, 0.04) 0%, rgba(81, 143, 193, 0.02) 100%);
@@ -24,6 +31,43 @@
 .oneclip-announcement-content {
   font-size: 16px;
   line-height: 1.5;
+}
+
+/* 移动端：每条公告独立成块，分隔清晰、减少拥挤感 */
+@media (max-width: 767px) {
+  .oneclip-announcement {
+    padding: 12px 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 16px;
+  }
+  .oneclip-announcement-content {
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: left;
+  }
+  .oneclip-announcement-item {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(81, 143, 193, 0.12);
+  }
+  .oneclip-announcement-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .oneclip-announcement-item:first-child {
+    padding-top: 0;
+  }
+  /* “了解更多”在窄屏单独成行，避免与主文案挤在一起断行混乱 */
+  .oneclip-cta {
+    display: block;
+    margin-left: 0;
+    margin-top: 4px;
+    font-size: 13px;
+    opacity: 0.9;
+  }
+  [data-md-color-scheme="slate"] .oneclip-announcement-item {
+    border-bottom-color: rgba(81, 143, 193, 0.1);
+  }
 }
 
 .oneclip-announcement a {
