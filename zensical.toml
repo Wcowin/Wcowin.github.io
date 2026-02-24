@@ -26,7 +26,7 @@ extra_javascript = [
     "javascripts/glm-translate.js",                           # 智谱清言翻译系统
     "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
     "javascripts/chat-widget.js",                             # Ask AI 聊天组件
-    "javascripts/twt-chat.js",                                # TWT Chat 在线客服
+    # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
     # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器

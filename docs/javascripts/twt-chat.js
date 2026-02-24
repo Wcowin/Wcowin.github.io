@@ -8,7 +8,7 @@
   'use strict';
 
   var TWT_CONFIG = {
-    appid: '3098b5a57e82c0102faac7fb3a862576',
+    appid: 'a4e3634dc3c8ec65c40ebedcb8c9c72f',
     lang: 'zh-cn',
     theme: 'light',
     sbs: '',
