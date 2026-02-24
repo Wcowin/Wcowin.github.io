@@ -330,8 +330,14 @@
   gap: 6px;
 }
 
-/* 无开源许可时不显示许可证图标和占位 */
-.github-repo-meta-item:has(.github-repo-license:empty) {
+/* 无 fork 信息时隐藏 fork 图标和占位（例如 fork 数为 0 时） */
+.github-repo-meta-item:has(.github-repo-forks:empty) {
+  display: none;
+}
+
+/* 无开源许可时不显示许可证图标和占位（:has 兼容 + JS 回退类） */
+.github-repo-meta-item:has(.github-repo-license:empty),
+.github-repo-meta-item.github-repo-license-empty {
   display: none;
 }
 

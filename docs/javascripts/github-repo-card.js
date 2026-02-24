@@ -97,17 +97,28 @@
 
     try {
       const res = await fetch(apiUrl, { headers: { Accept: 'application/vnd.github+json' } });
-      if (!res.ok) throw new Error('GitHub API error: ' + res.status);
+      if (!res.ok) {
+        if (res.status === 403) {
+          console.warn('GitHub API 限流（403），仓库卡片可能不完整：', repo);
+        }
+        throw new Error('GitHub API error: ' + res.status);
+      }
 
       const data = await res.json();
       if (typeof data.stargazers_count === 'number' && starsEl) {
         starsEl.textContent = data.stargazers_count.toString();
       }
       if (typeof data.forks_count === 'number' && forksEl) {
-        forksEl.textContent = data.forks_count.toString();
+        // 当 fork 数为 0 时，不显示该项（保持内容为空，交给 CSS 隐藏）
+        forksEl.textContent = data.forks_count > 0 ? data.forks_count.toString() : '';
       }
-      if (data.license && data.license.spdx_id && licenseEl) {
-        licenseEl.textContent = data.license.spdx_id;
+      // 兼容 spdx_id 与 name，部分仓库或 API 版本可能只返回其一
+      const licenseText = (data.license && (data.license.spdx_id || data.license.name)) || '';
+      if (licenseEl) {
+        licenseEl.textContent = licenseText;
+        if (!licenseText) {
+          licenseEl.closest('.github-repo-meta-item')?.classList.add('github-repo-license-empty');
+        }
       }
       if (data.description && descEl) {
         descEl.textContent = data.description;
@@ -119,6 +130,10 @@
       }
     } catch (e) {
       console.warn('加载 GitHub 仓库信息失败：', repo, e);
+      const failedLicenseEl = card.querySelector('.github-repo-license');
+      if (failedLicenseEl) {
+        failedLicenseEl.closest('.github-repo-meta-item')?.classList.add('github-repo-license-empty');
+      }
     }
   }
 

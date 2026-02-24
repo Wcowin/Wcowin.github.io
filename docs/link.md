@@ -1182,7 +1182,15 @@ comments: false
           <div class="info">独立开发者 & 开源爱好者。喜欢猫猫狗狗、花花草草，热衷于创造酷酷的东西。 </div>
         </div>
       </div>
-
+      <div class="card">
+        <img class="ava" src="https://ssshooter.com/logo.png" />
+        <div class="card-header">
+          <div>
+            <a href="https://ssshooter.com" target="_blank">UsubeniFantasy</a>
+          </div>
+          <div class="info">Write like you're running out of time.</div>
+        </div>
+      </div>
 
 
 

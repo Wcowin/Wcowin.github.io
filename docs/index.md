@@ -29,9 +29,6 @@ hide:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 
-<!-- 在头部添加预加载关键资源 -->
-<!-- 只预加载首屏可见的关键图片，与 img 标签的 loading 属性保持一致 -->
-<link rel="preload" href="https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png" as="image" fetchpriority="high">
 <div class="wcowin-header-row">
   <!-- 左侧：文字内容 -->
   <div class="wcowin-header-text">
@@ -210,20 +207,6 @@ hide:
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* 增强阴影 */
   }
 
-  .wcowin-header-motto {
-    color: #d0d0d0 !important; /* 更亮的灰色 */
-  }
-
-}
-
-.wcowin-header-motto {
-  /* font-family: 'LXGW WenKai', sans-serif; */
-  font-size: 1.2rem;
-  color: #757575;
-  letter-spacing: 1px;
-  font-weight: 500;
-  margin-bottom: 22px;
-  opacity: 0.92;
 }
 
 .wcowin-header-btns {
@@ -496,12 +479,6 @@ hide:
     height: 220px;
   }
 }
-/* 添加一个额外的样式类，可以直接应用到元素上 */
-.dark-visible-text {
-  color: #ffffff !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
-}
-
 /* 移动端样式 */
 .mobile-motto {
   display: none;
@@ -841,8 +818,8 @@ hr {
 -   :octicons-bookmark-16:{ .lg .middle } __推荐的文章__
 
     ---
-    - [macOS 开发经验分享](develop/Mac-development/index.md){ data-preview }(最新更新)
-    - [密码学｜加密货币｜区块链](blog/Cryptography/#_1){ data-preview }  (最新更新)
+    - [macOS 开发经验分享](develop/Mac-development/index.md){ data-preview }(最近更新)
+    - [密码学｜加密货币｜区块链](blog/Cryptography/#_1){ data-preview }  (最近更新)
     - [模型上下文协议(MCP)简述](develop/AI/mcp.md)
     - [RAG技术(检索增强生成)](develop/AI/rag.md)
     - [uv：新一代 Python 包管理工具入门](blog/py/uv.md)
@@ -856,25 +833,26 @@ hr {
     - [利用Mkdocs部署静态网页](blog/Mkdocs/mkdocs1.md)
     - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
     ---
-    - [Zensical教程](blog/Zensical/indexfirst.md)(🌟2026最新更新)
+    - [Zensical教程](blog/Zensical/indexfirst.md)(🌟2026最新)
     - [从MkDocs迁移到Zensical](blog/Zensical/migration.md)
     - [5分钟快速开始Zensical](blog/Zensical/quick-start.md)
 
--   :material-gamepad-variant-outline:{ .lg .middle } __好用/好玩__
+-   :material-gamepad-variant-outline:{ .lg .middle } __好用/好玩/AI__
 
     ---
 
-    - [AI网站分享](develop/AI.md)
+    - [AI网站分享](develop/AI.md)、[Skill 使用介绍](develop/AI/skill.md)
+    - [AI Agent 入门](develop/AI/agent.md)、[深度推理与测试时计算](develop/AI/deep-reasoning.md)
+    - [多智能体协作入门](develop/AI/multi-agent.md)、[Prompt 工程入门](develop/AI/prompt.md)
     - [好用/好玩网站分享](blog/Webplay.md)
-    - [Mac/windows软件网站汇总](blog/macsoft.md)
-    - [重庆旅游推荐路线](trip/InCQ/CQ.md)
 
 -   :material-account-box-outline:{ .lg .middle } __关于__
 
     ---
 
     - [留言板](waline.md)
-    - [博客](blog/index.md)
+    - [我的开发项目/作品/应用](develop/Mywork/index.md)
+    <!-- - [博客](blog/index.md) -->
     - [:octicons-arrow-right-24: 了解我](about/geren/#_4){ data-preview }
     - [支持作者](about/zcw/#alipay){ data-preview }
 </div>

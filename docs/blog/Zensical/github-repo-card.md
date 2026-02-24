@@ -1,18 +1,33 @@
 ---
 title: 添加 GitHub 仓库卡片
-hide:
-  - toc
 ---
+
+# 添加 GitHub 仓库卡片  
 
 在 Zensical 里，你可以像官方文档那样，为任意 GitHub 仓库生成一张「动态信息卡片」：
 
 - 自动从 GitHub API 获取 **Star / Fork / License / 仓库描述 / 头像**
 - 适配浅色 / 深色模式
 - 支持 PC 和移动端自适应布局
+- 当 **Fork 数为 0** 或 **没有 License** 时，会自动隐藏对应的指标，避免显示一串「0」
 
-本文以 `Wcowin/OneClip` 为例，完整演示如何在页面中添加 GitHub 仓库卡片。
+从当前版本开始，主题已经内置了这张卡片的 **CSS 和 JavaScript**，你只需要在文档中插入一小段 HTML 即可，下面的示例会详细说明；再往后的章节则保留了旧版「手写实现」作为原理参考。
 
----
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/OneClip"
+    href="https://github.com/Wcowin/OneClip"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
+
+!!! note "快速用法（推荐）"
+    - 现在只需要上面这一小段 HTML（通过 `data-repo="所有者/仓库名"` 指定仓库），其他样式和脚本都已经由 Zensical 主题在全局注入。
+    - 如果你只是想在几篇文章里展示 GitHub 仓库卡片，可以直接复制这一段到任意 Markdown 页面中，无需再单独维护 `<style>` / `<script>`。
+    - 下文第 1～4 节保留的是最初版本的「手写实现」，更适合作为实现原理或进阶自定义的参考，如果你使用的是最新主题，可以按需跳过。
+
 
 ## 1. 在页面中插入 HTML 结构
 
@@ -213,6 +228,16 @@ hide:
     gap: 6px;
   }
 
+  /* 无 fork 信息时隐藏 fork 项（例如 fork 数为 0） */
+  .github-repo-meta-item:has(#oneclip-forks:empty) {
+    display: none;
+  }
+
+  /* 无开源许可证时隐藏对应项 */
+  .github-repo-meta-item:has(#oneclip-license:empty) {
+    display: none;
+  }
+
   .github-repo-meta-icon {
     display: inline-flex;
     align-items: center;
@@ -336,7 +361,8 @@ hide:
         starEl.textContent = data.stargazers_count.toString();
       }
       if (typeof data.forks_count === 'number' && forkEl) {
-        forkEl.textContent = data.forks_count.toString();
+        // 当 fork 数为 0 时不显示，保持为空并交给 CSS 隐藏整项
+        forkEl.textContent = data.forks_count > 0 ? data.forks_count.toString() : '';
       }
       if (data.license && data.license.spdx_id && licenseEl) {
         licenseEl.textContent = data.license.spdx_id;

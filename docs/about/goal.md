@@ -30,7 +30,8 @@ status: new
 - [ ] 实现财富自由
 - [ ] 保时捷Cayenne
   <!-- ![13383929922691970.jpg.jpeg](https://s2.loli.net/2025/02/13/qm2PTkDoyVeFKSx.jpg) -->
-![qm2PTkDoyVeFKSx.jpg](https://i.imgant.com/v2/n5XGtf4.jpeg)
+![qm2PTkDoyVeFKSx.jpg](https://i.imgant.com/v2/n5XGtf4.jpeg)  
+
 - [ ] 环游世界
 - [ ] 读完想读的书
 

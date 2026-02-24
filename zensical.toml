@@ -26,6 +26,7 @@ extra_javascript = [
     "javascripts/glm-translate.js",                           # 智谱清言翻译系统
     "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
     "javascripts/chat-widget.js",                             # Ask AI 聊天组件
+    "javascripts/twt-chat.js",                                # TWT Chat 在线客服
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
     # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
@@ -91,11 +92,11 @@ nav = [
         { "Zensical中文教程" =[
             { "前言" = "blog/Zensical/indexfirst.md" },
             { "从MkDocs迁移" = "blog/Zensical/migration.md" },
-            { "5分钟快速开始" = "blog/Zensical/quick-start.md" },
-            { "配置详解" = "blog/Zensical/configuration.md" },
+            { "快速开始Zensical" = "blog/Zensical/quick-start.md" },
+            { "Zensical配置详解" = "blog/Zensical/configuration.md" },
             { "GitHub Pages 部署" = "blog/Zensical/github-pages.md"},
             { "为网站添加 Ask AI 功能" = "blog/Zensical/ask-ai.md" },
-            { "为 Zensical 添加多语言翻译" = "blog/Zensical/translate-multilang.md" },
+            { "添加多语言翻译" = "blog/Zensical/translate-multilang.md" },
             { "添加 GitHub 热力图卡片" = "blog/Zensical/github-heatmap.md" },
             { "添加 GitHub 仓库卡片" = "blog/Zensical/github-repo-card.md" },
             { "炫彩光辉头像效果实现" = "blog/websitebeauty/avatar-glow.md" },
@@ -212,6 +213,7 @@ nav = [
             { "Mac 开发环境检查清单" = "develop/Mac-development/Mac-Development-Environment-Checklist.md" }
         ]},
         { "我的开发项目/作品/应用" = [
+            "develop/Mywork/index.md",
             { "OneClip" = "develop/Mywork/OneClip.md" },
             { "FinderClip(为macOS Finder提供直观的剪切粘贴体验)" = "develop/Mywork/Mac-Finder-Clipboard.md" },
             { "Wcowin for MkDocs主题" = "develop/Mywork/mkdocs-wcowin.md" },
@@ -354,9 +356,9 @@ nav = [
         ]},
         { "25考研(已完结)" = "about/kaoyan.md" }
     ]},
-    { "Mkdocs中文教程" = "https://wcowin.work/Mkdocs-Wcowin/" },
-    { "Zensical中文教程" = "https://wcowin.github.io/Zensical-Chinese-Tutorial/" },
-    { "开往" = "https://www.travellings.cn/go.html" }
+    { "Mkdocs教程" = "https://wcowin.work/Mkdocs-Wcowin/" },
+    { "Zensical教程" = "https://wcowin.github.io/Zensical-Chinese-Tutorial/" },
+    # { "开往" = "https://www.travellings.cn/go.html" }
 ]
 
 # ===== 主题配置 [UI] =====
