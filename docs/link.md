@@ -4,7 +4,7 @@ tags:
   - 友链
 hide:
 #   - navigation # 显示右
-#   - toc #显示左
+  - toc #显示左
   - footer
   - feedback
 comments: false
@@ -533,17 +533,6 @@ comments: false
     </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://blog3.ryanjoy.top/avatar.png" />
-     <div class="card-header">
-      <div>
-       <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web</a>
-      </div>
-      <div class="info">
-       🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
-      </div>
-     </div>
-    </div>
-    <div class="card">
      <img class="ava" loading="lazy" src="https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg" />
      <div class="card-header">
       <div>
@@ -555,7 +544,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://weiyan.cc/assets/logo.png" />
+     <img class="ava" loading="lazy" src="https://shenwy.com/assets/logo.png" />
      <div class="card-header">
       <div>
       <a href="https://weiyan.cc" target="_blank">维燕的知识花园</a>
@@ -729,10 +718,10 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://nnkin.com/wp-content/uploads/2024/12/cropped-favicon.jpg" />
+     <img class="ava" loading="lazy" src="https://www.rpzm.com/avatar.jpg" />
      <div class="card-header">
       <div>
-      <a href="https://nnkin.com" target="_blank">诺诺博客</a>
+      <a href="https://www.rpzm.com" target="_blank">如品之茗</a>
       </div>
       <div class="info">
       春风不语即随本心
@@ -1388,7 +1377,17 @@ comments: false
       </div>
      </div>
     </div>
-
+    <div class="card">
+     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <div class="card-header">
+      <div>
+       <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web(404了)</a>
+      </div>
+      <div class="info">
+       🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
+      </div>
+     </div>
+    </div>
 
 
    </div>
@@ -1432,12 +1431,10 @@ comments: false
 <!-- 友链预览小工具，按钮居中，适配响应式和夜间模式 -->
 <style>
 #friendlink-preview-tool {
-  margin: 2em auto;
+  margin: 2em 0;
   padding: 1.5em;
   border-radius: 12px;
   box-shadow: 0 2px 8px #EEF3FE;
-  max-width: 720px;
-  min-width: 320px;
   width: 100%;
   transition: background 0.3s;
 }
@@ -1457,7 +1454,8 @@ comments: false
   transition: background 0.3s, color 0.3s;
 }
 #friendlink-preview-tool textarea {
-  min-height: 140px;
+  min-height: 270px;
+  max-height: 350px;
   resize: vertical;
   width: 100%;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1500,6 +1498,8 @@ comments: false
 #fl_preview_area .card {
   float: none !important;
   margin: 0 auto !important;
+  max-width: 450px;
+  width: 80%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -1562,7 +1562,7 @@ comments: false
   </div>
   <div id="fl_preview_area"></div>
   <div style="margin-top:1em;">
-    <label for="fl_preview_code"><strong>生成的 HTML（复制发给我即可）</strong></label>
+    <label for="fl_preview_code"><strong>生成的Markdown代码块（评论区发给我即可）</strong></label>
     <textarea id="fl_preview_code" readonly></textarea>
   </div>
 </div>
@@ -1591,8 +1591,12 @@ function renderFriendLinkPreview() {
     </div>
   </div>
   `;
+  // 预览区域直接渲染 HTML
   document.getElementById('fl_preview_area').innerHTML = html;
-  document.getElementById('fl_preview_code').value = html.trim();
+  // 文本区域输出带 ```html ``` 包裹的代码块，方便直接贴到评论区
+  var trimmed = html.trim();
+  var fenced = '```html\n' + trimmed + '\n```';
+  document.getElementById('fl_preview_code').value = fenced;
 }
 function copyFriendLinkHtml() {
   var codeArea = document.getElementById('fl_preview_code');
@@ -1609,16 +1613,137 @@ document.addEventListener('DOMContentLoaded', function () {
 
 ***
 
-**友链格式示例/本站信息:**
+## **本站信息:**
 
-<!-- >
-名称: Wcowin's Blog
-链接: https://wcowin.work/
-头像: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png
-简介: 循此苦旅，以达星辰 
--->
+<!-- 一键复制本站信息（方便朋友们添加友链） -->
+<div class="friend-info-copy" markdown="0">
+  <div class="friend-info-row">
+    <span class="friend-info-label">站点名称：</span>
+    <input
+      id="friend-info-name"
+      class="friend-info-input"
+      type="text"
+      readonly
+      value="Wcowin's Blog"
+    />
+    <button
+      type="button"
+      class="friend-info-copy-btn"
+      data-field="friend-info-name"
+    >
+      复制
+    </button>
+  </div>
+  <div class="friend-info-row">
+    <span class="friend-info-label">站点简介：</span>
+    <input
+      id="friend-info-desc"
+      class="friend-info-input"
+      type="text"
+      readonly
+      value="循此苦旅，以达星辰"
+    />
+    <button
+      type="button"
+      class="friend-info-copy-btn"
+      data-field="friend-info-desc"
+    >
+      复制
+    </button>
+  </div>
+  <div class="friend-info-row">
+    <span class="friend-info-label">博客地址：</span>
+    <input
+      id="friend-info-link"
+      class="friend-info-input"
+      type="text"
+      readonly
+      value="https://wcowin.work/"
+    />
+    <button
+      type="button"
+      class="friend-info-copy-btn"
+      data-field="friend-info-link"
+    >
+      复制
+    </button>
+  </div>
+  <div class="friend-info-row">
+    <span class="friend-info-label">头像地址：</span>
+    <input
+      id="friend-info-avatar"
+      class="friend-info-input"
+      type="text"
+      readonly
+      value="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png"
+    />
+    <button
+      type="button"
+      class="friend-info-copy-btn"
+      data-field="friend-info-avatar"
+    >
+      复制
+    </button>
+  </div>
+</div>
 
-=== "Txt"
+<script>
+  function copyFriendInfoField(id, btn) {
+    var input = document.getElementById(id);
+    if (!input) return;
+
+    input.select();
+    input.setSelectionRange(0, input.value.length);
+
+    function doCopy() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(input.value);
+      } else {
+        document.execCommand('copy');
+        return Promise.resolve();
+      }
+    }
+
+    doCopy()
+      .catch(function () {
+        try {
+          document.execCommand('copy');
+        } catch (e) {}
+      })
+      .finally(function () {
+        if (!btn) return;
+        var originalText = btn.dataset.originalText || btn.textContent.trim() || '复制';
+        btn.dataset.originalText = originalText;
+
+        if (btn.dataset.copyTimeoutId) {
+          clearTimeout(Number(btn.dataset.copyTimeoutId));
+        }
+
+        btn.textContent = '已复制';
+        btn.classList.add('friend-info-copy-btn--copied');
+
+        var timeoutId = setTimeout(function () {
+          btn.textContent = btn.dataset.originalText;
+          btn.classList.remove('friend-info-copy-btn--copied');
+          btn.dataset.copyTimeoutId = '';
+        }, 1500);
+
+        btn.dataset.copyTimeoutId = String(timeoutId);
+      });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('.friend-info-copy-btn[data-field]');
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-field');
+        copyFriendInfoField(id, btn);
+      });
+    });
+  });
+</script>
+
+=== "通用"
 
     >名称: Wcowin's Blog  
     >链接: https://wcowin.work/  
@@ -1650,12 +1775,6 @@ document.addEventListener('DOMContentLoaded', function () {
       avatar: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png
       descr: 循此苦旅，以达星辰
     ```
-<!-- === "通用"
-
-    点击填写[**友链申请**问卷](https://wj.qq.com/s2/14878680/20ac/)
-
-    [![](https://s2.loli.net/2024/06/27/9gw37T4vPASxiD8.png){width=50%}](https://wj.qq.com/s2/14878680/20ac/) -->
-
 
 ***
 

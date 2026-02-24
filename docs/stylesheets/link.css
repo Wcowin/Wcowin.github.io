@@ -1,6 +1,14 @@
+/* 链接导航容器 - 使用 CSS Grid 实现响应式布局 */
+.link-navigation {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1rem;
+   width: 100%;
+}
+
 /* 用于大屏幕和小屏幕的通用样式 */
 .card {
-   width: 345px;
+   width: 100%;
    height: 90px;
    font-size: 1rem;
    padding: 10px 20px;
@@ -9,7 +17,6 @@
                box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
                box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* 使用更高效的过渡 */
-   margin-bottom: 1rem;
    display: -webkit-box;
    display: -webkit-flex;
    display: flex;
@@ -23,14 +30,13 @@
    backface-visibility: hidden; /* 减少复合层 */
    -webkit-transform: translateZ(0);
    transform: translateZ(0); /* 强制GPU加速 */
+   box-sizing: border-box;
 }
 
-.card:nth-child(odd) {
-   float: left;
-}
-
+/* 移除旧的 float 布局 */
+.card:nth-child(odd),
 .card:nth-child(even) {
-   float: right;
+   float: none;
 }
 
 /* 在大屏幕上保留悬停效果 */
@@ -86,11 +92,29 @@
 
 /* 媒体查询：小屏幕 */
 @media (max-width: 768px) {
+   .link-navigation {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+   }
+   
    .card {
       width: 100%;
       height: auto;
-      float: none;
-      contain: content; /* 小屏幕上使用更宽松的包含策略 */
+      min-height: 70px;
+      padding: 8px 12px;
+      contain: content;
+   }
+   
+   .card .ava {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+      margin: 0 0.75em 0 0 !important;
+   }
+   
+   .card .card-header .info {
+      font-size: 12px;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
    }
 }
 

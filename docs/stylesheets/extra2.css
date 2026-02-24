@@ -93,6 +93,98 @@
   -ms-overflow-style: none;   /* IE/Edge */
 }
 
+/* 友链页面：一键复制本站信息 */
+.friend-info-copy {
+  margin: 1rem 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(96, 141, 189, 0.2);
+  background: linear-gradient(135deg, rgba(96, 141, 189, 0.04), rgba(96, 141, 189, 0.02));
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.friend-info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.friend-info-label {
+  min-width: 5.5rem;
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color);
+}
+
+.friend-info-input {
+  flex: 1;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.friend-info-input:focus {
+  outline: none;
+  border-color: #608DBD;
+  box-shadow: 0 0 0 1px rgba(96, 141, 189, 0.35);
+}
+
+.friend-info-copy-btn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #608DBD;
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.friend-info-copy-btn:hover:not(.friend-info-copy-btn--copied) {
+  background-color: #4b76a5;
+  transform: translateY(-0.5px);
+}
+
+.friend-info-copy-btn:active:not(.friend-info-copy-btn--copied) {
+  transform: translateY(0);
+}
+
+/* 复制成功状态 */
+.friend-info-copy-btn--copied {
+  background-color: #e3f7e9;
+  color: #1a7f3b;
+  box-shadow: 0 0 0 1px rgba(56, 142, 60, 0.2);
+}
+
+@media (max-width: 600px) {
+  .friend-info-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .friend-info-copy {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .friend-info-label {
+    min-width: auto;
+  }
+
+  .friend-info-copy-btn {
+    /* 移动端直接隐藏复制按钮，避免布局挤压 */
+    display: none;
+  }
+}
+
 /* 本文作者头像：悬浮轻微放大 */
 img.author-avatar {
   width: 28px;
@@ -107,7 +199,7 @@ img.author-avatar:hover {
 
 
 
-/* 目录导航的缩进参考线 */
-nav.md-nav--secondary ul {
-  border-left: 1px solid #B0B4BA; /* 使用主题淡灰色，更符合整体风格 */
+/* 目录导航的缩进参考线：仅二级及以上目录显示 */
+nav.md-nav--secondary ul ul {
+  border-left: 1px solid #B0B4BA;
 }
