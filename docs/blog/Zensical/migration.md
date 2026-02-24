@@ -1,7 +1,11 @@
 ---
 title: 从 MkDocs 迁移到 Zensical
-tags:
-  - Zensical
+date: 2025-01-22
+authors:
+  - name: Wcowin
+    email: wcowin@qq.com
+categories:
+  - 迁移指南
 ---
 
 # 从 MkDocs 迁移到 Zensical
@@ -12,9 +16,9 @@ tags:
 
 ### MkDocs 的现状
 
-- ⚠️ **已停止更新** - MkDocs 和 Material for MkDocs 不再积极开发
-- ⚠️ **功能受限** - 缺少现代化功能（即时导航、博客系统等）
-- ⚠️ **性能一般** - 加载速度和渲染性能有待提升
+- ⚠️ **维护力度下降** - MkDocs 核心长期缺乏新版本维护，Material for MkDocs 进入维护模式（主要以修复为主），官方团队已将主要精力转向 Zensical
+- ⚠️ **功能受限** - MkDocs 本身缺少即时导航、内置博客系统等现代化能力，很多能力依赖额外插件
+- ⚠️ **性能一般** - 构建和加载性能相较 Zensical 有明显差距
 
 ### Zensical 的优势
 
@@ -22,7 +26,7 @@ tags:
 - ✅ **现代化** - 即时导航、博客系统、Modern 主题
 - ✅ **高性能** - 优化的渲染引擎，更快的加载速度
 - ✅ **向后兼容** - 支持读取 `mkdocs.yml` 配置文件
-- ✅ **平滑过渡** - 提供自动迁移工具
+- ✅ **平滑过渡** - 通过兼容层支持直接从 `mkdocs.yml` 构建，官方也规划了自动迁移工具，后续会逐步补齐
 
 ## 迁移前准备
 
@@ -50,6 +54,10 @@ git commit -am "Backup before migrating to Zensical"
 ### 3. 安装 Zensical
 
 ```bash
+# （推荐）为迁移测试创建并激活虚拟环境
+python3 -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
 # 安装 Zensical
 pip install zensical
 
@@ -57,11 +65,90 @@ pip install zensical
 zensical --version
 ```
 
-## 迁移步骤
+## 快速迁移（推荐）
 
-### 第一步：创建 zensical.toml
+### 第一步：创建 zensical.toml（或继续使用 mkdocs.yml）
+
+然后使用 AI IDE，将 `mkdocs.yml` 转换为 `zensical.toml`，可以直接把下面这段提示词丢给任意一个通用大模型（ChatGPT / Claude / Qwen 等），再把你自己的 `mkdocs.yml` 粘在最后，最好能**联网搜索**：
+
+```markdown
+你是 Zensical 配置助手。请将下面的 MkDocs / Material for MkDocs 的 `mkdocs.yml` 配置转换为 Zensical 使用的 `zensical.toml`。  
+可以参考：https://raw.githubusercontent.com/Wcowin/Wcowin.github.io/refs/heads/main/zensical.toml 中的配置。
+
+务必严格遵守 Zensical 官方文档中的 `zensical.toml` 规则，特别是 **配置顺序规则**：
+- 只使用一个顶级表 `[project]` 作为项目作用域。
+- 先在 `[project]` 下写完所有直接属于项目的键值对，例如：
+  - `site_name`, `site_url`, `site_description`, `site_author`, `copyright`
+  - `docs_dir`, `site_dir`, `use_directory_urls`
+  - `repo_url`, `repo_name`, `edit_uri`
+  - `extra_javascript`, `extra_css`
+  - `nav`（导航配置）
+- 然后再依次声明子表，常见有：
+  - `[project.theme]`
+  - `[project.theme.font]`
+  - `[[project.theme.palette]]`
+  - `[project.extra]`
+  - `[project.plugins.blog]`, `[project.plugins.search]`, `[project.plugins.tags]` 等
+  - `[project.markdown_extensions.*]`（例如 `"pymdownx.highlight"` 等）
+- **一旦声明了子表（例如 `[project.theme]`），之后就不能再回到父表 `[project]` 继续追加新的键。**
+
+转换要求：
+- 只输出一个完整、可直接使用的 `zensical.toml` 文件内容，不要额外解释。
+- 尽量保持原有 `mkdocs.yml` 中的语义和结构不变：
+  - `theme` 映射到 `[project.theme]` 及其子表；
+  - `plugins` 映射到 `[project.plugins.*]`；
+  - `markdown_extensions` 映射到 `[project.markdown_extensions.*]`；
+  - `nav` 转成 TOML 数组形式：`nav = [ { "标题" = "路径" }, ... ]`，并保持嵌套结构。
+- 对于 Zensical 文档中已有的推荐写法（如 `project.theme.features`、`project.markdown_extensions` 的分组写法），在不影响原有配置含义的前提下，可以直接采用推荐形式。
+- 如果 `mkdocs.yml` 里存在 Zensical 暂不支持的字段，请忽略这些字段，不要报错。
+
+```
+
+## 第二步：测试和验证
+
+```bash
+# 启动开发服务器
+zensical serve
+
+# 检查以下内容：
+# - 页面是否正常显示
+# - 导航是否正确
+# - 样式是否正常
+# - 搜索是否工作
+# - 博客是否正常
+```
+
+### 第三步：构建测试
+
+```bash
+# 清理并构建
+zensical build --clean
+
+# 检查 site/ 目录
+ls -la site/
+
+# 检查是否有错误或警告
+```
+
+### 第四步：功能检查清单
+
+- [ ] 所有页面都能正常访问
+- [ ] 导航菜单正确显示
+- [ ] 搜索功能正常
+- [ ] 博客文章正确显示
+- [ ] 自定义样式生效
+- [ ] JavaScript 功能正常
+- [ ] 图片和资源正确加载
+- [ ] 移动端显示正常
+
+## 手动完整迁移步骤
+
+### 第一步：创建 zensical.toml（或继续使用 mkdocs.yml）
 
 Zensical 推荐使用 `zensical.toml` 配置文件（虽然也支持 `mkdocs.yml`）。
+
+!!! info "兼容：继续使用 mkdocs.yml"
+    Zensical 原生理解现有 `mkdocs.yml` 并自动适配为内部格式，**无需修改即可构建**。插件会匹配到对应的 Zensical 模块。详见官方 [Compatibility - Configuration](https://zensical.org/compatibility/configuration/)。
 
 #### 自动转换（推荐）
 
@@ -394,7 +481,8 @@ admonition = {}
 
 #### PyMdown 扩展
 
-**MkDocs:**
+**MkDocs:**  
+
 ```yaml
 markdown_extensions:
   - pymdownx.superfences:
@@ -404,7 +492,8 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 ```
 
-**Zensical:**
+**Zensical:**  
+
 ```toml
 [project.markdown_extensions."pymdownx.superfences"]
 custom_fences = [
@@ -541,7 +630,8 @@ A: 大部分情况下可以。如果使用 Classic 主题，完全兼容。如�
 
 ### Q: Hooks 怎么办？
 
-A: Zensical 不支持 hooks。大部分功能可以通过：
+A: Zensical 不支持 hooks。大部分功能可以通过：  
+
 - 模板覆盖
 - JavaScript
 - 内置插件
@@ -549,7 +639,8 @@ A: Zensical 不支持 hooks。大部分功能可以通过：
 
 ### Q: 迁移需要多长时间？
 
-A: 取决于项目复杂度：
+A: 取决于项目复杂度：  
+
 - 简单项目：10-30 分钟
 - 中等项目：1-2 小时
 - 复杂项目：半天到一天
@@ -641,9 +732,20 @@ nav = [
 
 **恭喜！你已经成功迁移到 Zensical！** 🎉
 
----
+---  
+
+## 不想迁移
+
+如果不想迁移，请看这个项目：[mkdocs-materialx](https://github.com/jaywhj/mkdocs-materialx)，material for mkdocs虽然不更了，但是博主的朋友[jaywhj](https://github.com/jaywhj)在延续mkdocs的灵魂，materialX将作为独立项目延续mkdocs风格！
+
+![alLBrK27q2JAbJoLTdovAblZBPXMZNoo.webp](https://cdn.nodeimage.com/i/alLBrK27q2JAbJoLTdovAblZBPXMZNoo.webp)
+![z45P5Ky5pYxB0yNiHZ2530XqE8FYadgr.webp](https://cdn.nodeimage.com/i/z45P5Ky5pYxB0yNiHZ2530XqE8FYadgr.webp)
+
+<!-- ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/055bc9ab97b94b2c8327d60eaed57b47.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/83234bae31734226aa3ecccdb435ef1f.png) -->
 
 **需要帮助？**  
 
+- 查看 [常见问题](../faq.md)
 - 访问 [Zensical 官方文档](https://zensical.org/docs/)
-- 加入 [Zensical-Wcowin 社区](https://support.qq.com/products/646913/)
+- 加入 [Zensical-Chinese-Tutorial 社区](https://support.qq.com/products/646913/)

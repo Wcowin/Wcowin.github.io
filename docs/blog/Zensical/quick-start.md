@@ -1,23 +1,26 @@
 ---
 title: 5 分钟快速开始
-tags:
-  - Zensical
+date: 2025-01-22
+authors:
+  - name: Wcowin
+    email: wcowin@qq.com
+categories:
+  - 快速开始
 ---
 
 # 5 分钟快速开始 Zensical
 
-> 从零到一，快速搭建你的 Zensical 博客
+> 从零到一，快速搭建你的 Zensical 文档站点
 
 !!! info "官方文档"
     Zensical 官方网站: [https://zensical.org/](https://zensical.org/)  
     Zensical 官方文档: [https://zensical.org/docs/](https://zensical.org/docs/)
-    我写的Zensical教程：https://wcowin.work/Zensical-Chinese-Tutorial/
 
 ## 第一步：环境准备
 
 ### 检查 Python 版本
 
-Zensical 需要 Python 3.8 或更高版本。首先检查你的 Python 版本：
+Zensical 需要 **Python 3.10** 或更高版本（以 [PyPI 当前要求](https://pypi.org/project/zensical/) 为准）。首先检查你的 Python 版本：
 
 ```bash
 python3 --version
@@ -25,10 +28,10 @@ python3 --version
 python --version
 ```
 
-如果版本低于 3.8，请先升级 Python。
+如果版本低于 3.10，请先升级 Python。
 
 !!! tip "推荐版本"
-    推荐使用 Python 3.9 或更高版本，以获得最佳性能和兼容性。
+    推荐使用 Python 3.11 或更高版本，以获得最佳性能和兼容性。
 
 ### 创建项目目录
 
@@ -42,7 +45,7 @@ cd my-zensical-site
 
 ## 第二步：安装 Zensical
 
-Zensical 是用 Rust 和 Python 编写的，以 Python 包的形式发布。**强烈推荐使用 Python 虚拟环境**进行安装，避免依赖冲突。
+Zensical 是用 Rust 和 Python 编写的，以 [Python 包](https://pypi.org/project/zensical) 形式发布。安装方式有三种：**pip**（推荐）、**uv**、**Docker**，与 [官方 Get started](https://zensical.org/docs/get-started/) 一致。使用 pip 或 uv 时**强烈推荐先创建 Python 虚拟环境**，避免依赖冲突。
 
 ### 使用 pip 安装（推荐）
 
@@ -70,7 +73,7 @@ Zensical 是用 Rust 和 Python 编写的，以 Python 包的形式发布。**�
 
     ```bash
     # 1. 创建虚拟环境
-    python3 -m venv .venv
+    python -m venv .venv
     
     # 2. 激活虚拟环境
     # 激活后，终端提示符前会显示 (.venv)
@@ -86,27 +89,53 @@ Zensical 是用 Rust 和 Python 编写的，以 Python 包的形式发布。**�
     zensical --version
     ```
 
-!!! warning "权限问题"
-    如果遇到权限错误，可以尝试：
-    - macOS/Linux: `pip install --user zensical`
-    - 或使用 `sudo pip install zensical`（不推荐）
+!!! warning "权限问题 / Permission denied"
+    如果遇到权限错误，通常是因为**没有在虚拟环境中安装**。请先确认已激活 `.venv`，再执行 `pip install zensical`。
     
-    详细解决方案请参考 [常见问题解答](../faq.md#权限问题)
+    如果你确实要安装到用户目录（不推荐用于项目开发），可使用：
+    
+    - macOS/Linux: `pip install --user zensical`
+    
+    更多说明见 [FAQ - 权限问题](../faq.md#权限问题)。
 
 ### 使用 uv 安装（开发者推荐）
 
 如果你是 Python 开发者，可能已经在使用 [uv](https://docs.astral.sh/uv/) 作为包管理器：
 
 ```bash
-# 初始化项目
+# 初始化项目（若目录中尚未有 Python 项目配置）
 uv init
 
-# 添加 Zensical
-uv add zensical
+# 添加 Zensical（推荐作为开发依赖）
+uv add --dev zensical
 
 # 验证安装
 uv run zensical --version
 ```
+
+!!! tip "已有 uv 项目？"
+    如果你已经有 `pyproject.toml` / `uv.lock`，通常可以跳过 `uv init`，直接执行 `uv add --dev zensical`。
+
+### 使用 Docker 安装
+
+若已熟悉 Docker，可直接使用官方镜像，无需在宿主机安装 Python 或虚拟环境：
+
+- **镜像**：[zensical/zensical](https://hub.docker.com/r/zensical/zensical)（Docker Hub）
+- **用法**：在项目根目录（含 `zensical.toml` 或 `mkdocs.yml`）下运行构建或预览（与 Docker Hub 示例一致）：
+
+```bash
+# 拉取镜像（可选）
+docker pull zensical/zensical
+
+# 预览（默认等价于 zensical serve）
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs zensical/zensical
+
+# 构建（等价于 zensical build）
+docker run --rm -it -v ${PWD}:/docs zensical/zensical build
+```
+
+!!! info "何时用 Docker"
+    适合 CI/CD、无本地 Python 环境或希望环境隔离的场景。日常开发仍推荐 pip/uv + 虚拟环境，便于调试与扩展。
 
 ## 第三步：创建项目
 
@@ -128,6 +157,9 @@ zensical new .
     zensical new my-site  # 在 my-site 目录创建
     ```
 
+!!! warning "建议在空目录执行"
+    `zensical new .` 可能会写入/覆盖当前目录中的文件。为避免误覆盖，建议在一个**空目录**里执行，或用 `zensical new my-site` 新建到子目录。
+
 ### 检查项目结构
 
 创建完成后，检查一下目录结构是否正确：
@@ -144,9 +176,6 @@ tree -a
 
 ```
 .
-├── .github/
-│   └── workflows/
-│       └── ci.yml          # GitHub Actions 工作流
 ├── docs/
 │   ├── index.md            # 网站首页
 │   └── markdown.md         # Markdown 示例
@@ -158,17 +187,21 @@ tree -a
     
     ```bash
     # 克隆模板项目
-    git clone https://github.com/Wcowin/Zensical-Chinese-Tutorial.git my-blog
-    cd my-blog
+    git clone https://github.com/Wcowin/Zensical-Chinese-Tutorial.git my-site
+    cd my-site
     
-    # 安装依赖
-    pip install zensical
+    # （推荐）创建并激活虚拟环境
+    python3 -m venv .venv
+    source .venv/bin/activate
+    
+    # 安装依赖（本仓库有额外依赖，如 Markdown 扩展等）
+    pip install -r requirements.txt
     
     # 启动开发服务器测试
     zensical serve
     ```
     
-    模板项目包含了完整的配置示例和博客系统设置。
+    模板项目包含了更完整的配置示例（含部分插件/博客相关示例）。
 
 ## 第四步：配置项目
 
@@ -180,7 +213,7 @@ Zensical 提供了许多配置选项，都有合理的默认值。`site_name` �
 
 ```toml title="zensical.toml"
 [project]
-site_name = "我的博客"
+site_name = "我的网站"
 ```
 
 ### 推荐配置
@@ -190,14 +223,14 @@ site_name = "我的博客"
 ```toml title="zensical.toml"
 [project]
 # 基本信息（必需）
-site_name = "我的博客"
+site_name = "我的网站"
 
 # 网站 URL（强烈推荐！）
 # 这是即时导航、即时预览、自定义错误页面的前提
 site_url = "https://example.com"
 
 # 网站描述（可选，但推荐）
-site_description = "我的 Zensical 博客"
+site_description = "我的 Zensical 站点"
 
 # 作者信息（可选）
 site_author = "你的名字"
@@ -233,9 +266,9 @@ language = "zh"       # 界面语言：中文
 
 ```toml title="zensical.toml"
 [project]
-site_name = "我的博客"
+site_name = "我的网站"
 site_url = "https://example.com"
-site_description = "我的 Zensical 博客"
+site_description = "我的 Zensical 站点"
 site_author = "你的名字"
 docs_dir = "docs"
 site_dir = "site"
@@ -267,7 +300,7 @@ zensical serve
 你会看到类似以下的输出：
 
 ```
-Serving /Users/wangkewen/Zensical-Chinese-Tutorial/site on http://localhost:8000
+Serving on http://localhost:8000
 Build started
 ```
 
@@ -287,81 +320,56 @@ Build started
     zensical serve --port 8001
     ```
 
-## 第六步：创建第一篇文章（可选）
+## 第六步：添加第一篇文档页面（可选）
 
-如果你想使用博客功能，需要先配置博客插件，然后创建文章。
+Zensical 的内容源文件默认都放在 `docs/` 目录下。要“添加一篇文章/页面”，本质上就是**新增一个 Markdown 文件**（必要时再把它加入导航）。
 
-### 配置博客插件
+### 创建页面文件
 
-在 `zensical.toml` 中添加博客插件配置：
-
-```toml title="zensical.toml"
-# ... 之前的配置 ...
-
-# 博客插件配置（在父表配置之后）
-[project.plugins.blog]
-post_date_format = "full"
-post_readtime = true
-post_readtime_words_per_minute = 265  # 中文适配
-draft = true
-```
-
-### 创建博客目录结构
+例如，新建 `docs/notes/hello-world.md`：
 
 ```bash
-# 创建博客目录
-mkdir -p docs/blog/posts
-
-# 创建博客首页（必需！）
-touch docs/blog/index.md
+mkdir -p docs/notes
+touch docs/notes/hello-world.md
 ```
 
-在 `docs/blog/index.md` 中添加：
+在 `docs/notes/hello-world.md` 中写入内容：
 
-```markdown title="docs/blog/index.md"
-# 博客
-
-欢迎来到我的博客！
-```
-
-### 创建第一篇文章
-
-在 `docs/blog/posts/` 目录下创建文件 `2025-01-22-hello-world.md`：
-
-```markdown title="docs/blog/posts/2025-01-22-hello-world.md"
----
-title: Hello World
-date: 2025-01-22
-authors:
-  - name: 你的名字
-    email: your@email.com
-categories:
-  - 开始
----
-
+```markdown title="docs/notes/hello-world.md"
 # Hello World
 
-这是我的第一篇 Zensical 博客文章！
+这是我的第一篇文档页面！
 
-## 特点
-
-- ✅ 简单易用
-- ✅ 功能强大
-- ✅ 性能优异
-
-## 下一步
-
-继续阅读 [博客系统完全指南](../tutorials/blog-tutorial.md) 了解更多功能。
+- 支持 Markdown
+- 保存后会自动重建并刷新
 ```
 
-!!! warning "重要"
-    - `docs/blog/index.md` 文件是**必需的**，没有这个文件博客功能无法正常工作
-    - 文章文件名推荐使用 `YYYY-MM-DD-文章标题.md` 格式
+保存后，开发服务器会自动刷新。默认情况下（`use_directory_urls = true`），你可以访问：
 
-保存文件后，网站会自动刷新，你就能看到新文章了！
+- `http://localhost:8000/notes/hello-world/`
 
-!!! tip "查看博客"
-    访问 `http://localhost:8000/blog/` 即可查看博客列表。
+!!! tip "文件命名建议"
+    文件名建议使用小写 + 连字符（如 `hello-world.md`），这样生成的 URL 更清晰。
+
+### （可选）把页面加入导航
+
+如果你希望它出现在左侧目录/顶部导航中，需要在 `zensical.toml` 的 `[project]` 里，把文件路径加入 `nav`。
+
+示例（添加一个新的“笔记”分组）：
+
+```toml title="zensical.toml"
+nav = [
+  # ... 原有导航 ...
+  { "笔记" = [
+    { "Hello World" = "notes/hello-world.md" },
+  ] },
+]
+```
+
+!!! tip "不加导航也能访问"
+    即使不写进 `nav`，页面仍会被构建。你也可以在其他页面里用链接引用它，例如在 `docs/index.md` 添加：
+    
+    `- [Hello World](notes/hello-world.md)`
 
 ## 第七步：构建网站
 
@@ -390,11 +398,9 @@ ls -la site/
 ```
 site/
 ├── index.html
-├── blog/
-│   ├── index.html
-│   └── posts/
-│       └── 2025-01-22-hello-world/
-│           └── index.html
+├── notes/
+│   └── hello-world/
+│       └── index.html
 └── assets/
     └── ...
 ```
@@ -420,7 +426,7 @@ python3 -m http.server 8001
 
 ## 完成！🎉
 
-恭喜！你已经成功创建了一个 Zensical 博客！
+恭喜！你已经成功创建了一个 Zensical 站点！
 
 ### 验证项目结构
 
@@ -429,35 +435,35 @@ python3 -m http.server 8001
 ```bash
 # 查看完整目录结构
 tree -a
-# 如果没有 tree 命令，使用: find . -type f | head -20
+# 如果没有 tree 命令：
+# - macOS/Linux: ls -la
+# - Windows: dir
 ```
 
 应该看到类似这样的结构：
 
 ```
 .
-├── .github/
-│   └── workflows/
-│       └── ci.yml
 ├── .venv/              # 虚拟环境（如果使用）
 ├── docs/
 │   ├── index.md
 │   ├── markdown.md
-│   └── blog/           # 博客目录（如果创建了）
-│       ├── index.md
-│       └── posts/
-│           └── 2025-01-22-hello-world.md
+│   └── notes/
+│       └── hello-world.md
 ├── site/               # 构建输出目录（运行 build 后生成）
-└── zensical.toml       # 配置文件
+├── zensical.toml       # 配置文件
+└── .github/            # （可选）如需 GitHub Actions 部署
+    └── workflows/
+        └── docs.yml
 ```
 
 ### 接下来可以做什么？
 
-1. **编写更多文章** - 在 `docs/blog/posts/` 中添加更多 Markdown 文件
-2. **自定义样式** - 创建 `docs/stylesheets/extra.css` 自定义样式
-3. **添加页面** - 在 `docs/` 中创建新的 Markdown 文件
-4. **配置导航** - 在 `zensical.toml` 中配置 `nav` 导航菜单
-5. **部署到线上** - 参考 [GitHub Pages 部署指南](github-pages.md)
+1. **编写更多页面** - 在 `docs/` 中添加更多 Markdown 文件
+2. **组织内容结构** - 用子目录管理内容（如 `docs/notes/`、`docs/tutorials/`）
+3. **配置导航** - 在 `zensical.toml` 中配置 `nav` 导航菜单
+4. **自定义样式** - 创建 `docs/stylesheets/extra.css` 自定义样式
+5. **部署到线上** - 参考 [GitHub Pages 部署指南](../blog/deployment/github-pages.md)
 
 ### 常用命令速查
 
@@ -483,8 +489,10 @@ zensical --version
 
 ### 推荐阅读
 
-- ⚙️ [项目配置详解](configuration.md) - 完整的配置选项说明
-- 🚀 [GitHub Pages 部署](github-pages.md) - 将网站部署到线上
+- 📖 [Zensical 博客系统完全指南](../tutorials/blog-tutorial.md) - （可选）了解博客相关能力
+- ⚙️ [项目配置详解](../tutorials/configuration.md) - 完整的配置选项说明
+- 🎨 [主题定制指南](../tutorials/theme-customization.md) - 自定义网站外观
+- 🚀 [GitHub Pages 部署](../blog/deployment/github-pages.md) - 将网站部署到线上
 
 ### 遇到问题？
 
