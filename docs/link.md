@@ -1143,10 +1143,10 @@ comments: false
         </div>
       </div>
       <div class="card">
-          <img class="ava" src="https://emlog.090909.top/favicon.ico" />
+          <img class="ava" src="https://blog.090909.top/wp-content/uploads/2026/02/1771871137-141499505-1-e1771871305226.jpg" />
           <div class="card-header">
             <div>
-              <a href="https://emlog.090909.top/" target="_blank">临久</a>
+              <a href="https://blog.090909.top/" target="_blank">临久</a>
             </div>
             <div class="info">
               岁月静好，我便安好。
