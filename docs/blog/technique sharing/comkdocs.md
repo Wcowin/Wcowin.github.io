@@ -14,6 +14,8 @@ tags:
 
 下面列的是搜集的一些 Mkdocs/Zensical 主题与站点，以供参考。
 
+- [Wcowin's Web](https://wcowin.work/) 我的博客，目前基于Zensical主题搭建
+--- 
 * [Hello 算法](https://www.hello-algo.com/) - 动画图解、一键运行的数据结构与算法教程
 * [Django REST framework](https://www.django-rest-framework.org/) - Django REST 框架官方文档
 * [FastAPI](https://fastapi.tiangolo.com/) - FastAPI 框架官方文档
@@ -27,32 +29,30 @@ tags:
 * [我的工作学习生活笔记](https://hellowac.github.io/)
 * [Power's Wiki](https://wiki-power.com/)
 * [wnc's note](https://wncfht.github.io/notes/)
-  ---
-- [Lenny's Web](https://lennychen.top)
-- [苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)
-- [世界天光的笔记本](https://lastwish.icu/)
-- [Wen-Chieh Lee的生活](https://wenchiehlee.github.io/mkdocs-life/)
-- [BruceJin's Notebook](https://brucejqs.github.io/MyNotebook/)
-- [0X10CC的代码空间](https://tang-jiapeng.github.io/)
-- [GENG Wei's Homepage](https://wgeng.site/index.html)
-- [Blog of Derrick Marcus](https://blog.yanxuchen.com/)
-- [yangzhang's Site](https://yangzhang.site/)
-- [维燕的数字花园](https://weiyan.cc/)
-- [Isshiki修's Notebook](https://note.isshikih.top/)
-- [Darstib's KG!](https://kg.darstib.cn/)
-- [Singularityu's blog](https://github.com/singularityu820/artical)
-- [HomePage of CaiYa](https://j-yi-11.github.io/index.html)
-- [My Pamphlet Blog](https://ronaldln.github.io/MyPamphlet-Blog/)
-- [Lmhhh's Note!](https://lmhhh28.github.io/)
-- [Cola Pig's Wiki](https://cp-wiki.onrender.com/)
-- [Josh's Blog](https://joshzhong.top/)
-- [Awesome Tech Share](https://wncfht.github.io/Awesome-Tech-Share/)
-- [Chenxi Ma](https://algebra-mcx.github.io/Academic-Profile/)
-- [Aaron's blog](https://jaywhj.netlify.app/)
-- [Curriculum Vitae](https://joapuiib.github.io/curs-git/)
-
----
-
+* [Lenny's Web](https://lennychen.top)
+* [苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)
+* [世界天光的笔记本](https://lastwish.icu/)
+* [Wen-Chieh Lee的生活](https://wenchiehlee.github.io/mkdocs-life/)
+* [BruceJin's Notebook](https://brucejqs.github.io/MyNotebook/)
+* [0X10CC的代码空间](https://tang-jiapeng.github.io/)
+* [GENG Wei's Homepage](https://wgeng.site/index.html)
+* [Blog of Derrick Marcus](https://blog.yanxuchen.com/)
+* [yangzhang's Site](https://yangzhang.site/)
+* [维燕的数字花园](https://weiyan.cc/)   (推荐)
+* [Isshiki修's Notebook](https://note.isshikih.top/)
+* [Darstib's KG!](https://kg.darstib.cn/)
+* [Singularityu's blog](https://github.com/singularityu820/artical)
+* [HomePage of CaiYa](https://j-yi-11.github.io/index.html)
+* [My Pamphlet Blog](https://ronaldln.github.io/MyPamphlet-Blog/)
+* [Lmhhh's Note!](https://lmhhh28.github.io/)
+* [Cola Pig's Wiki](https://cp-wiki.onrender.com/)
+* [Josh's Blog](https://joshzhong.top/)
+* [Awesome Tech Share](https://wncfht.github.io/Awesome-Tech-Share/)
+* [Chenxi Ma](https://algebra-mcx.github.io/Academic-Profile/)
+* [Aaron's blog](https://jaywhj.netlify.app/)  (推荐)
+* [Suffine Hub](https://sufine.top/)  (推荐)
+* [Curriculum Vitae](https://joapuiib.github.io/curs-git/)
+* [Kinlau's Blog](https://kinlauu.github.io/Kinlauu/)
 
 
-- [Wcowin's Web](https://wcowin.work/) 我的博客，目前基于Zensical主题搭建
+

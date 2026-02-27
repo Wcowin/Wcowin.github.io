@@ -23,7 +23,7 @@ tags:
 
     ---
 
-    <iframe src="../AI/DeepSeek从入门到精通.pdf" width="100%" height="800px" style="border: 1px solid #ccc; overflow: auto;">
+    <iframe src="../AI/DeepSeek从入门到精通.pdf" width="100%" height="1800px" style="border: 1.5px solid #ccc; overflow: auto; border-radius: 18px; background: #fff;">
     </iframe>
 
 

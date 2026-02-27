@@ -192,14 +192,18 @@ nav = [
     ]},
     { "开发" = [
         "develop/index.md",
-        { "AI工具(2026最新)" = "develop/AI.md" },
-        { "What is MCP" = "develop/AI/mcp.md" },
-        { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
-        { "Skill 使用介绍" = "develop/AI/skill.md" },
-        { "AI Agent 入门" = "develop/AI/agent.md" },
-        { "Prompt 工程入门" = "develop/AI/prompt.md" },
-        { "多智能体协作入门" = "develop/AI/multi-agent.md" },
-        { "深度推理与测试时计算" = "develop/AI/deep-reasoning.md" },
+        { "AI" = [
+            { "AI工具(2026最新)" = "develop/AI.md" },
+            { "What is MCP" = "develop/AI/mcp.md" },
+            { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
+            { "Skill 使用介绍" = "develop/AI/skill.md" },
+            { "AI Agent 入门" = "develop/AI/agent.md" },
+            { "Agentic AI：从 Chatbot 到可行动的智能体" = "develop/AI/agentic-ai.md" },
+            { "Prompt 工程入门" = "develop/AI/prompt.md" },
+            { "多智能体协作入门" = "develop/AI/multi-agent.md" },
+            { "深度推理与测试时计算" = "develop/AI/deep-reasoning.md" },
+            { "OpenClaw：本地开源AI助手" = "develop/AI/openclaw.md" }
+        ]},
         { "Python 环境管理最佳实践" = "develop/environment.md" },
         { "Anaconda 语法与简单使用教程" = "develop/Anaconda.md" },
         { "DeepSeek:从入门到精通" = "develop/deepseek.md" },
@@ -366,7 +370,7 @@ nav = [
 variant = "modern"                # Zensical 特有：使用 modern 主题变体
 # name = "material"                 # 使用 Material for MkDocs 主题
 custom_dir = "docs/overrides"          # 自定义主题目录（相对于配置文件）
-logo = "https://s3.bmp.ovh/2026/02/22/niJPY68q.png"
+logo = "https://pic2.zhimg.com/100/v2-864dbf5fe2906aae3f5f18b491320a0d_r.jpg"
 # "https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png"
 # "https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp"  # 网站 Logo
 favicon = "https://i.stardots.io/wcowin/1750090373988.png"                         # 网站图标

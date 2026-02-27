@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneClip 1.4.8 更新说明</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007AFF;
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .version {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .feature {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007AFF;
+            padding: 12px 16px;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 1.4.8版本更新日志</h1>
+        <div class="version">版本 1.4.8</div>
+
+        <p>感谢每一位曾经和未来支持OneClip的朋友，更感谢目前支持OneClip的用户，OneClip在持续更新中。</p>
+        <p>我们的官方QQ群请记得加一下：1060157293｜<a href="https://qm.qq.com/q/k4U6QJrWj8" style="color: #007AFF; text-decoration: none; font-weight: 500;">【OneClip交流群】</a></p>
+
+        <h2>功能修复</h2>
+        <ul>
+            <li>修复内存占用问题</li>
+            <li>AI结果窗口的图片丢失问题，改为使用base64存储/解码</li>
+            <li>筛选来源应用功能布局问题</li>
+            <li>快速粘贴面板布局问题</li>
+        </ul>
+
+        <h2>功能新增</h2>
+        <ul>
+            <li>快速粘贴面板新增保存图片功能</li>
+            <li>暂停监控新增HUD提示</li>
+            <li>快速粘贴面板支持空格预览，现在还要什么主窗口，快速粘贴面板足够了！</li>
+            <li>新增禁止更新功能（测试功能）</li>
+        </ul>
+
+        <h2>功能改进</h2>
+        <ul>
+            <li>改进快速粘贴面板</li>
+            <li>改进缩略图生成和加载机制</li>
+            <li>去重机制原子化，消除竞态条件</li>
+        </ul>
+
+        <hr style="margin: 24px 0; border: none; border-top: 1px solid #eee;">
+
+        <h2>📥 下载</h2>
+        <div class="feature" style="border-left-color: #34C759;">
+            <p style="margin: 8px 0;">
+                <a href="https://github.com/Wcowin/OneClip/releases/download/1.4.8/OneClip-1.4.8.dmg" style="color: #007AFF; text-decoration: none; font-weight: 500;">
+                    1.4.8版本点我自行下载
+                </a>
+            </p>
+        </div>
+
+        <div class="feature" style="border-left-color: #007AFF;">
+            <strong>📬 反馈建议：</strong>
+            <p style="margin: 8px 0;">
+                如果您有好的建议请直接发邮件到 
+                <a href="mailto:vip@oneclip.cloud" style="color: #007AFF; text-decoration: none;">
+                    vip@oneclip.cloud
+                </a>
+            </p>
+        </div>
+
+        <h2>📋 TODO</h2>
+        <ul style="list-style: none; padding-left: 0;">
+            <li>☐ 主窗口的卡顿不流畅问题</li>
+            <li>☐ 插件系统</li>
+        </ul>
+    </div>
+</body>
+</html>

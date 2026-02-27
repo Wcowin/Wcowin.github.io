@@ -59,8 +59,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://s3.bmp.ovh/2026/02/22/umAalWGQ.jpg" alt="Wcowin头像背面" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://s3.bmp.ovh/2026/02/22/wc1iSlRi.jpg" alt="Wcowin头像正面" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
+        <img src="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg" alt="Wcowin头像背面" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
+        <img src="https://pic2.zhimg.com/100/v2-d6a47de28a761522a8e07ac3b5bd458d_r.jpg" alt="Wcowin头像正面" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
       </div>
     </div>
   </div>

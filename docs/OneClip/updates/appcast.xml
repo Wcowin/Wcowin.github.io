@@ -3,14 +3,14 @@
     <channel>
         <title>OneClip</title>
         <item>
-            <title>1.4.7</title>
-            <pubDate>Sat, 21 Feb 2026 23:40:44 +0800</pubDate>
-            <sparkle:version>1.4.7</sparkle:version>
-            <sparkle:shortVersionString>1.4.7</sparkle:shortVersionString>
+            <title>1.4.8</title>
+            <pubDate>Fri, 27 Feb 2026 22:55:53 +0800</pubDate>
+            <sparkle:version>1.4.8</sparkle:version>
+            <sparkle:shortVersionString>1.4.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/Wcowin/OneClip/releases/download/1.4.7/OneClip-1.4.7.zip" length="14989845" type="application/octet-stream" sparkle:edSignature="SWIa23AWVAgEA+YiICsBL9JLFoqn0j+pqlb/GE0ME5kHlrhuZdZSKcR5iOOwgEbBDOhUtcOQaXtN3HFUH5crCw=="/>
-        <sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.4.7-zh.html</sparkle:releaseNotesLink>
-                <sparkle:fallbackURL>https://gitee.com/Wcowin/OneClip/releases/download/1.4.7/OneClip-1.4.7.zip</sparkle:fallbackURL>
-</item>
+            <enclosure url="https://gitee.com/Wcowin/OneClip/releases/download/1.4.8/OneClip-1.4.8.zip" length="15056291" type="application/octet-stream" sparkle:edSignature="eHCJFYGNvrodjocBL6JOHdiVIPdzF3p91XwNks6kVUplaTQYabs4rLPXwIJ/DQ3lNXz89hAh+ULCly1TEX1XCQ=="/>
+<sparkle:releaseNotesLink>https://wcowin.work/OneClip/updates/notes/OneClip-1.4.8-zh.html</sparkle:releaseNotesLink>
+                <sparkle:fallbackURL>https://github.com/Wcowin/OneClip/releases/download/1.4.8/OneClip-1.4.8.zip</sparkle:fallbackURL>
+        </item>
     </channel>
 </rss>
