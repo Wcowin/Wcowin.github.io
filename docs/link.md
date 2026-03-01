@@ -1189,6 +1189,24 @@ comments: false
           <div class="info">收录开源，好用的互联网项目</div>
         </div>
       </div>
+      <div class="card">
+        <img class="ava" src="https://www.qixz.cn/avatar.avif" />
+        <div class="card-header">
+          <div>
+            <a href="https://www.qixz.cn/" target="_blank">筱序二十</a>
+          </div>
+          <div class="info">青序成栈·向简而生</div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="ava" src="https://www.zhilu.site/api/avatar.png" />
+        <div class="card-header">
+          <div>
+            <a href="https://blog.zhilu.site/" target="_blank">纸鹿本鹿</a>
+          </div>
+          <div class="info">纸鹿至麓不知路,支炉制露不止漉</div>
+        </div>
+      </div>
 
 
 
