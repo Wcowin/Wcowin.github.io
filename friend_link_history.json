@@ -22,5 +22,21 @@
     "avatar": "https://ssshooter.com/logo.png",
     "html": "<div class=\"card\">\n  <img class=\"ava\" src=\"https://ssshooter.com/logo.png\" />\n  <div class=\"card-header\">\n    <div>\n      <a href=\"https://ssshooter.com\" target=\"_blank\">UsubeniFantasy</a>\n    </div>\n    <div class=\"info\">Write like you're running out of time.</div>\n  </div>\n</div>",
     "timestamp": "2026-02-24 13:54:27"
+  },
+  {
+    "name": "周润发",
+    "link": "https://blog.zrf.me/",
+    "desc": "siteshot: https://blog.zrf.me/img/web_img.webp",
+    "avatar": "https://blog.zrf.me/img/logo.webp",
+    "html": "<div class=\"card\">\n  <img class=\"ava\" src=\"https://blog.zrf.me/img/logo.webp\" />\n  <div class=\"card-header\">\n    <div>\n      <a href=\"https://blog.zrf.me/\" target=\"_blank\">周润发</a>\n    </div>\n    <div class=\"info\">siteshot: https://blog.zrf.me/img/web_img.webp</div>\n  </div>\n</div>",
+    "timestamp": "2026-03-01 20:37:30"
+  },
+  {
+    "name": "周润发",
+    "link": "https://blog.zrf.me/",
+    "desc": "收录开源，好用的互联网项目",
+    "avatar": "https://blog.zrf.me/img/logo.webp",
+    "html": "<div class=\"card\">\n  <img class=\"ava\" src=\"https://blog.zrf.me/img/logo.webp\" />\n  <div class=\"card-header\">\n    <div>\n      <a href=\"https://blog.zrf.me/\" target=\"_blank\">周润发</a>\n    </div>\n    <div class=\"info\">收录开源，好用的互联网项目</div>\n  </div>\n</div>",
+    "timestamp": "2026-03-01 20:38:06"
   }
 ]

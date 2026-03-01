@@ -1180,6 +1180,16 @@ comments: false
           <div class="info">Write like you're running out of time.</div>
         </div>
       </div>
+      <div class="card">
+        <img class="ava" src="https://blog.zrf.me/img/logo.webp" />
+        <div class="card-header">
+          <div>
+            <a href="https://blog.zrf.me/" target="_blank">周润发</a>
+          </div>
+          <div class="info">收录开源，好用的互联网项目</div>
+        </div>
+      </div>
+
 
 
 
