@@ -17,12 +17,12 @@ tags:
 
 ## 什么是 OpenClaw
 
-**[OpenClaw](https://github.com/openclaw/openclaw)** 是一个开源的个人 AI 助手平台，由 Peter Steinberger（PSPDFKit 创始人）于 2025 年 11 月创建。它的核心特点是：
+**[OpenClaw](https://github.com/openclaw/openclaw)** 是一个开源的个人 AI 助手平台，由 Peter Steinberger（PSPDFKit 创始人）于 2025 年 11 月创建。[中文社区版](https://clawd.org.cn)（`openclaw-cn`）是其开源分支，提供中文文档、国内镜像加速和本地化支持。它的核心特点是：
 
 - **本地运行**：完全在你的 Mac、Windows 或 Linux 上运行，数据不经过第三方服务器
 - **真正执行任务**：不只是聊天，能操作浏览器、执行命令、管理文件、发送消息
-- **多平台集成**：通过 WhatsApp、Telegram、Discord、Slack、Signal、iMessage 等聊天工具与你交互
-- **模型自由**：支持 Claude、GPT、Gemini，也可通过 Ollama 接入本地模型
+- **多平台集成**：通过飞书、WhatsApp、Telegram、Discord、Slack、Signal、iMessage、Mattermost 等聊天工具与你交互
+- **模型自由**：支持 Claude、GPT、Gemini、DeepSeek、豆包（火山引擎）等，也可通过 Ollama 接入本地模型
 - **技能扩展**：ClawHub 技能市场有 3,000+ 社区贡献的技能插件
 
 ### 名字的演变
@@ -45,8 +45,8 @@ OpenClaw 有个有趣的改名史：
 | **隐私** | 数据不出本机 | 所有数据经过 OpenAI | 所有数据经过 Anthropic |
 | **系统权限** | 完整系统访问（文件、命令、浏览器） | 无系统权限 | 无系统权限 |
 | **自动化** | 可主动执行定时任务、监控邮件 | 被动响应 | 被动响应 |
-| **聊天平台** | WhatsApp/Telegram/Discord/Slack 等 | 官方 Web/App | 官方 Web/App |
-| **模型选择** | 任意模型（Claude/GPT/本地） | 仅 OpenAI 模型 | 仅 Anthropic 模型 |
+| **聊天平台** | 飞书/WhatsApp/Telegram/Discord/Slack 等 | 官方 Web/App | 官方 Web/App |
+| **模型选择** | 任意模型（Claude/GPT/DeepSeek/本地） | 仅 OpenAI 模型 | 仅 Anthropic 模型 |
 | **成本** | 软件免费，API 按用量付费 | 订阅制或 API | 订阅制或 API |
 | **技能扩展** | 3,000+ 社区技能 | 官方 GPTs | 有限的工具集成 |
 
@@ -66,12 +66,14 @@ OpenClaw 采用 **Gateway（网关）** 架构，这是它与其他 AI 助手的
 ```mermaid
 graph TB
     subgraph "消息平台"
+        A0[飞书]
         A1[WhatsApp]
         A2[Telegram]
         A3[Slack]
         A4[Discord]
         A5[Signal]
         A6[iMessage]
+        A7[Mattermost]
     end
     
     subgraph "Gateway 网关"
@@ -93,7 +95,7 @@ graph TB
         D3[Tools<br/>工具调用]
     end
     
-    A1 & A2 & A3 & A4 & A5 & A6 --> B
+    A0 & A1 & A2 & A3 & A4 & A5 & A6 & A7 --> B
     B --> B1 & B2 & B3
     B --> C1 & C2 & C3
     C1 & C2 & C3 --> D1 & D2 & D3
@@ -204,17 +206,23 @@ OpenClaw 使用多种技术避免"失忆"：
 
 ### 2. 多平台消息集成
 
-OpenClaw 支持的聊天平台：
+OpenClaw 支持的聊天平台（据官网 2026 年 3 月数据）：
 
+**已支持** ✅：
+
+- **飞书**（WebSocket 长连接模式）
 - **WhatsApp**（通过 Baileys）
 - **Telegram**（Bot API）
 - **Discord**（Bot API）
 - **Slack**（Bolt）
 - **Signal**（signal-cli）
 - **iMessage**（BlueBubbles 或原生）
-- **Microsoft Teams**
-- **Google Chat**
-- **Matrix**、**Zalo** 等
+- **Mattermost**
+
+**即将上线** 🚧：
+
+- **钉钉**
+- **企业微信**
 
 你可以在任何设备上通过这些平台与 OpenClaw 对话，它在你的电脑上执行任务。
 
@@ -256,7 +264,7 @@ OpenClaw 采用 Anthropic 于 2025 年 12 月推出的 **AgentSkills** 开放标
 | **生产力** | gog (Google), notion, obsidian | 邮件、日历、笔记同步 |
 | **通信** | slack, discord, teams | 消息发送、频道管理 |
 | **智能家居** | homekit, philips-hue | 设备控制、场景自动化 |
-| **AI 集成** | ollama, openai, anthropic | 多模型切换、RAG 检索 |
+| **AI 集成** | ollama, openai, anthropic, deepseek | 多模型切换、RAG 检索 |
 | **数据处理** | postgres, mongodb, redis | 数据库操作、数据分析 |
 | **浏览器自动化** | puppeteer, playwright | 网页抓取、表单填写 |
 | **文件处理** | pdf-tools, image-tools | PDF 操作、图像处理 |
@@ -390,7 +398,7 @@ my-custom-skill/
 
 ```bash
 # 1. 测试技能
-openclaw agent --message "测试我的技能"
+openclaw-cn agent --message "测试我的技能"
 
 # 2. 提交到 GitHub
 git push origin main
@@ -405,50 +413,98 @@ git push origin main
 
 ### 前置要求
 
-- **Node.js 22+**（必需）
-- **操作系统**：macOS、Linux 或 Windows（WSL2）
-- **AI 模型 API Key**：Claude、GPT 或本地 Ollama
+- **Node.js 22+**（必需，安装脚本可自动安装）
+- **操作系统**：macOS、Linux 或 Windows（推荐 WSL2）
+- **AI 模型 API Key**：Claude、GPT、DeepSeek 或本地 Ollama
 
 ### 安装步骤
 
-#### 1. 安装 OpenClaw CLI
+#### 方式 1：一键安装脚本（推荐）
+
+安装脚本会自动检测 Node.js、安装 CLI 并启动配置向导。
+
+**macOS / Linux / WSL2：**
 
 ```bash
-npm install -g openclaw@latest
-# 或使用 pnpm
-pnpm add -g openclaw@latest
+curl -fsSL https://clawd.org.cn/install.sh | bash
 ```
 
-#### 2. 运行向导式配置
+**中国大陆用户（国内镜像加速）：**
 
 ```bash
-openclaw onboard --install-daemon
+curl -fsSL https://clawd.org.cn/install.sh | bash -s -- --registry https://registry.npmmirror.com
+```
+
+**Windows（PowerShell）：**
+
+```powershell
+iwr -useb https://clawd.org.cn/install.ps1 | iex
+```
+
+**Windows（国内镜像）：**
+
+```powershell
+iwr -useb https://clawd.org.cn/install.ps1 -OutFile install.ps1; ./install.ps1 -Registry https://registry.npmmirror.com
+```
+
+#### 方式 2：npm / pnpm 手动安装
+
+如果已有 Node.js 22+ 环境：
+
+```bash
+# npm
+npm install -g openclaw-cn@latest
+openclaw-cn onboard --install-daemon
+
+# pnpm
+pnpm add -g openclaw-cn@latest
+openclaw-cn onboard --install-daemon
+```
+
+**国内镜像加速**：
+
+```bash
+npm install -g openclaw-cn@latest --registry https://registry.npmmirror.com
+```
+
+#### 方式 3：Docker 一键部署
+
+适合服务器和 NAS 用户，无需手动安装 Node.js 环境：
+
+```bash
+docker compose up -d
+```
+
+详见 [Docker 部署指南](https://clawd.org.cn/install/docker-quick.html)。
+
+#### 运行向导式配置
+
+```bash
+openclaw-cn onboard --install-daemon
 ```
 
 向导会引导你：
 
 - 配置 AI 模型（输入 API Key）
-- 选择聊天平台（Telegram/Discord/WhatsApp 等）
+- 选择聊天平台（飞书/Telegram/Discord/WhatsApp 等）
 - 安装可选技能
 - 设置 Gateway 守护进程
 
-#### 3. 启动 Gateway
+#### 启动 Gateway
 
 ```bash
-openclaw gateway --port 18789 --verbose
+openclaw-cn gateway --port 18789
 ```
 
-或后台运行（已安装 daemon）：
+或使用控制 UI 快速开始聊天：
 
 ```bash
-# macOS (launchd)
-launchctl start com.openclaw.gateway
-
-# Linux (systemd)
-systemctl --user start openclaw-gateway
+openclaw-cn dashboard
 ```
 
-#### 4. 配置 Telegram（示例）
+控制 UI 打开后可在浏览器中直接与 OpenClaw 对话，无需配置任何聊天平台。
+
+#### 配置 Telegram（示例）
 
 1.在 Telegram 找 [@BotFather](https://t.me/BotFather) 创建 Bot，获取 Token  
 
@@ -469,9 +525,27 @@ systemctl --user start openclaw-gateway
 
 3.重启 Gateway，在 Telegram 找到你的 Bot 开始对话
 
+#### 配置飞书（示例）
+
+飞书是中文用户常用的平台，配置步骤如下：
+
+1.在 [飞书开放平台](https://open.feishu.cn/app) 创建企业自建应用  
+2.获取 App ID 和 App Secret  
+3.使用向导添加飞书渠道：
+
+```bash
+openclaw-cn channels add
+```
+
+4.选择 Feishu，输入 App ID 和 App Secret  
+5.在飞书开放平台配置事件订阅（`im.message.receive_v1`），选择长连接模式  
+6.发布应用并重启 Gateway
+
+详细配置请参考 [飞书机器人文档](https://clawd.org.cn/channels/feishu)。
+
 ### 第一次对话
 
-在 Telegram 发送：
+在聊天平台发送：
 
 ```
 /status
@@ -491,6 +565,14 @@ OpenClaw 会：
 2. 读取结果
 3. 总结成要点
 4. 回复给你
+
+### 伴侣应用
+
+OpenClaw 还提供跨平台的伴侣应用，让你随时随地与 AI 助手交互：
+
+- **macOS 菜单栏应用** — 快捷访问和语音唤醒
+- **iOS 应用** — Canvas 支持 + 语音唤醒
+- **Android 应用** — Canvas + 聊天 + 相机
 
 ---
 
@@ -609,7 +691,7 @@ npx clawhub@latest install kubernetes-deploy
 
 1.**配置 Gmail Pub/Sub**：
 
-参考[官方文档](https://docs.openclaw.ai/gmail-pubsub)设置 Google Cloud Pub/Sub。
+参考[官方文档](https://clawd.org.cn/automation/gmail-pubsub)设置 Google Cloud Pub/Sub。
 
 2.**安装 Google Workspace 技能**：
 
@@ -928,7 +1010,7 @@ sessions_send(
 OpenClaw 对陌生人 DM 采用 **配对模式**（`dmPolicy="pairing"`）：
 
 - 陌生人发消息会收到配对码
-- 你需要手动批准：`openclaw pairing approve <channel> <code>`
+- 你需要手动批准：`openclaw-cn pairing approve <channel> <code>`
 - 批准后才会处理消息
 
 ### 沙箱隔离
@@ -986,10 +1068,10 @@ OpenClaw 软件本身**完全免费**（MIT 协议），成本来自 AI 模型 A
 |------|----------|--------|----------|-------------|
 | **定位** | 通用 AI 助手 | AI 代码编辑器 | Agentic IDE | AI 编程助手 |
 | **主要场景** | 系统自动化、多平台集成 | 代码编写、重构 | 多文件编辑、Agent 流 | 代码生成、调试 |
-| **交互方式** | 聊天平台（Telegram/Slack 等） | IDE 内（Composer） | IDE 内（Cascade） | IDE 内 + 远程控制 |
+| **交互方式** | 聊天平台（飞书/Telegram/Slack 等） | IDE 内（Composer） | IDE 内（Cascade） | IDE 内 + 远程控制 |
 | **系统权限** | 完整系统访问 | 仅项目目录 | 仅项目目录 | 仅项目目录 |
 | **自动化** | 定时任务、Webhook、主动触发 | 无 | 有限 | 无 |
-| **多平台** | 10+ 聊天平台 | 无 | 无 | 移动端远程 |
+| **多平台** | 飞书等 10+ 聊天平台 | 无 | 无 | 移动端远程 |
 | **价格** | 免费（API 费用自付） | $20/月 | $15/月 | $20/月 |
 | **最佳用途** | 非编码任务自动化 | 快速编码 | 复杂重构 | 深度编程 |
 
@@ -1024,7 +1106,7 @@ OpenClaw 软件本身**完全免费**（MIT 协议），成本来自 AI 模型 A
 | **成熟度** | 生产就绪 | 实验性 | 概念验证 |
 | **稳定性** | 高（有错误处理） | 中（易陷入循环） | 低（需要监督） |
 | **易用性** | 开箱即用 | 需要配置 | 需要编程 |
-| **消息集成** | 原生支持 10+ 平台 | 无 | 无 |
+| **消息集成** | 原生支持飞书等 10+ 平台 | 无 | 无 |
 | **社区** | 活跃（191k stars） | 活跃（170k stars） | 小众 |
 | **适用场景** | 日常使用 | 研究实验 | 学习概念 |
 
@@ -1115,7 +1197,7 @@ OpenClaw:
 | 发送消息 | ❌ 不能 | ✅ 能 |
 | 定时任务 | ❌ 不能 | ✅ 能 |
 | 跨会话记忆 | ⚠️ 有限 | ✅ 完整 |
-| 多平台集成 | ❌ 无 | ✅ 10+ 平台 |
+| 多平台集成 | ❌ 无 | ✅ 飞书等 10+ 平台 |
 
 **使用场景分工**：
 
@@ -1524,7 +1606,7 @@ A: 运行 `npm install` 或 `pip install -r requirements.txt`。
 设置环境变量启用详细日志：
 
 ```bash
-DEBUG=1 openclaw agent --message "测试技能"
+DEBUG=1 openclaw-cn agent --message "测试技能"
 ```
 
 ## 测试
@@ -1539,7 +1621,7 @@ cd ~/.openclaw/workspace/skills/my-skill
 ### 集成测试
 
 ```bash
-openclaw agent --message "运行完整测试流程"
+openclaw-cn agent --message "运行完整测试流程"
 ```
 ```
 
@@ -1594,7 +1676,7 @@ https://your-machine.tailnet-name.ts.net
 
 ```bash
 # 在远程服务器
-openclaw gateway --port 18789
+openclaw-cn gateway --port 18789
 
 # 在本地机器
 ssh -L 18789:localhost:18789 user@remote-server
@@ -1627,7 +1709,7 @@ RUN apk add --no-cache \
     py3-pip
 
 # 安装 OpenClaw
-RUN npm install -g openclaw@latest
+RUN npm install -g openclaw-cn@latest
 
 # 创建工作目录
 WORKDIR /root/.openclaw
@@ -1640,7 +1722,7 @@ COPY workspace/ workspace/
 EXPOSE 18789
 
 # 启动 Gateway
-CMD ["openclaw", "gateway", "--port", "18789"]
+CMD ["openclaw-cn", "gateway", "--port", "18789"]
 ```
 
 **docker-compose.yml**：
@@ -1696,7 +1778,7 @@ curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 apt install -y nodejs
 
 # 安装 OpenClaw
-npm install -g openclaw@latest
+npm install -g openclaw-cn@latest
 
 # 创建 systemd 服务
 cat > /etc/systemd/system/openclaw.service <<EOF
@@ -1708,7 +1790,7 @@ After=network.target
 Type=simple
 User=openclaw
 WorkingDirectory=/home/openclaw
-ExecStart=/usr/bin/openclaw gateway --port 18789
+ExecStart=/usr/bin/openclaw-cn gateway --port 18789
 Restart=always
 RestartSec=10
 
@@ -1830,7 +1912,7 @@ Gateway 启动时预先建立到常用服务的连接。
 
 ```bash
 # 运行安全检查
-openclaw doctor --security
+openclaw-cn doctor --security
 ```
 
 **检查项**：
@@ -2008,7 +2090,7 @@ echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 # 然后重新安装
-npm install -g openclaw@latest
+npm install -g openclaw-cn@latest
 ```
 
 **Q: Gateway 启动失败，提示端口被占用**
@@ -2026,7 +2108,7 @@ ps aux | grep openclaw
 kill <PID>
 
 # 或使用 OpenClaw 命令
-openclaw gateway --stop
+openclaw-cn gateway --stop
 ```
 
 ---
@@ -2108,11 +2190,12 @@ curl https://api.anthropic.com/v1/messages \
 
 **Q: 支持中文吗？**
 
-A: 完全支持！OpenClaw 本身是语言无关的，支持取决于：
+A: 完全支持！OpenClaw 中文社区（[clawd.org.cn](https://clawd.org.cn)）提供完整的中文文档和国内镜像加速。中文支持取决于：
 
-- **模型能力**：Claude、GPT 都支持中文
+- **模型能力**：Claude、GPT、DeepSeek、豆包（火山引擎）等都支持中文
 - **技能文档**：SKILL.md 可以用中文编写
-- **聊天平台**：微信、Telegram 等都支持中文
+- **聊天平台**：飞书、Telegram 等都支持中文
+- **国产模型**：中文社区版支持 DeepSeek、MiniMax、Moonshot、通义千问、智谱 GLM 等国产模型
 
 **示例**：
 
@@ -2207,29 +2290,29 @@ A: 更新步骤：
 
 ```bash
 # 1. 更新 CLI
-npm update -g openclaw@latest
+npm update -g openclaw-cn@latest
 
 # 2. 检查配置兼容性
-openclaw doctor
+openclaw-cn doctor
 
 # 3. 查看更新日志
-openclaw changelog
+openclaw-cn changelog
 
 # 4. 重启 Gateway
-openclaw gateway --restart
+openclaw-cn gateway --restart
 ```
 
 **版本管理**：
 
 ```bash
 # 查看当前版本
-openclaw --version
+openclaw-cn --version
 
 # 切换到 beta 频道
-openclaw update --channel beta
+openclaw-cn update --channel beta
 
 # 回退到稳定版
-openclaw update --channel stable
+openclaw-cn update --channel stable
 ```
 
 ---
@@ -2275,10 +2358,10 @@ ls ~/.openclaw/workspace/skills/
 cat ~/.openclaw/workspace/skills/<skill-name>/SKILL.md
 
 # 3. 重启 Gateway
-openclaw gateway --restart
+openclaw-cn gateway --restart
 
 # 4. 测试技能
-openclaw agent --message "测试 <skill-name> 技能"
+openclaw-cn agent --message "测试 <skill-name> 技能"
 ```
 
 **Q: 内存占用过高**
@@ -2304,7 +2387,7 @@ A: 优化方法：
 
 ```bash
 # 清理旧会话
-openclaw sessions clean --older-than 7d
+openclaw-cn sessions clean --older-than 7d
 ```
 
 3. **使用更小的模型**：
@@ -2350,7 +2433,7 @@ sudo apt-get install -y \
   libasound2
 
 # 测试浏览器
-openclaw browser --test
+openclaw-cn browser --test
 ```
 
 ---
@@ -2519,10 +2602,11 @@ A: 可以！OpenClaw 使用 MIT 许可：
 
 A: 支持渠道：
 
-1. **官方文档**：[docs.openclaw.ai](https://docs.openclaw.ai)
-2. **GitHub Issues**：[github.com/openclaw/openclaw/issues](https://github.com/openclaw/openclaw/issues)
-3. **Discord 社区**：[discord.com/invite/clawd](https://discord.com/invite/clawd)
-4. **GitHub Discussions**：技术讨论和问答
+1. **中文社区文档**：[clawd.org.cn](https://clawd.org.cn)
+2. **中文社区 GitHub**：[github.com/jiulingyun/openclaw-cn/issues](https://github.com/jiulingyun/openclaw-cn/issues)
+3. **上游 GitHub Issues**：[github.com/openclaw/openclaw/issues](https://github.com/openclaw/openclaw/issues)
+4. **Discord 社区**：[discord.com/invite/clawd](https://discord.com/invite/clawd)
+5. **GitHub Discussions**：技术讨论和问答
 
 **提问技巧**：
 
@@ -2577,9 +2661,11 @@ A: 根据社区讨论，可能的方向：
 
 ## 社区与资源
 
-- **官网**：[openclaw.ai](https://openclaw.ai)
-- **GitHub**：[github.com/openclaw/openclaw](https://github.com/openclaw/openclaw)（191,000+ 星）
-- **文档**：[docs.openclaw.ai](https://docs.openclaw.ai)
+- **中文社区官网**：[clawd.org.cn](https://clawd.org.cn)（中文文档、国内镜像、社区论坛）
+- **中文社区 GitHub**：[github.com/jiulingyun/openclaw-cn](https://github.com/jiulingyun/openclaw-cn)
+- **上游官网**：[openclaw.ai](https://openclaw.ai)
+- **上游 GitHub**：[github.com/openclaw/openclaw](https://github.com/openclaw/openclaw)（191,000+ 星）
+- **官方文档**：[docs.openclaw.ai](https://docs.openclaw.ai)
 - **Discord**：[discord.com/invite/clawd](https://discord.com/invite/clawd)
 - **ClawHub**：[claw-hub.net](https://claw-hub.net)（技能市场）
 - **作者 Twitter**：[@steipete](https://twitter.com/steipete)
@@ -2655,14 +2741,18 @@ OpenClaw 是 2026 年最值得尝试的选择。
 **快速开始**：
 
 ```bash
-# 1. 安装
-npm install -g openclaw@latest
+# 1. 一键安装（推荐）
+curl -fsSL https://clawd.org.cn/install.sh | bash
+
+# 或手动安装
+npm install -g openclaw-cn@latest
 
 # 2. 配置
-openclaw onboard --install-daemon
+openclaw-cn onboard --install-daemon
 
 # 3. 开始使用
-# 在 Telegram/Discord/Slack 与你的 AI 助手对话
+openclaw-cn dashboard  # 浏览器直接聊天
+# 或在飞书/Telegram/Discord/Slack 与你的 AI 助手对话
 ```
 
 ### 学习路径
@@ -2722,8 +2812,10 @@ journey
 
 **官方资源**：
 
-- 📖 [官方文档](https://docs.openclaw.ai) - 完整技术文档
-- 💻 [GitHub 仓库](https://github.com/openclaw/openclaw) - 源码和 Issues
+- 📖 [中文社区文档](https://clawd.org.cn) - 中文完整文档和安装指南
+- 📖 [上游官方文档](https://docs.openclaw.ai) - 英文技术文档
+- 💻 [中文社区 GitHub](https://github.com/jiulingyun/openclaw-cn) - 中文分支源码
+- 💻 [上游 GitHub 仓库](https://github.com/openclaw/openclaw) - 上游源码和 Issues
 - 🎯 [ClawHub](https://claw-hub.net) - 技能市场
 - 💬 [Discord 社区](https://discord.com/invite/clawd) - 实时讨论
 - 🐦 [作者 Twitter](https://twitter.com/steipete) - 最新动态
@@ -2756,8 +2848,10 @@ OpenClaw 不仅仅是一个工具，它代表了一种理念：**AI 应该为你
 
 本文综合参考了以下来源，所有内容已重新组织和改写：
 
+- [OpenClaw 中文社区](https://clawd.org.cn) - 中文文档、安装指南、社区论坛
 - [OpenClaw 官方文档](https://docs.openclaw.ai) - 架构设计、API 参考
 - [OpenClaw GitHub 仓库](https://github.com/openclaw/openclaw) - 源码分析、Issue 讨论
+- [中文社区 GitHub](https://github.com/jiulingyun/openclaw-cn) - 中文分支
 - [ClawHub 技能市场](https://claw-hub.net) - 技能生态、使用案例
 - 多篇技术博客和对比文章 - 实战经验、最佳实践
 - 社区讨论和用户反馈 - 真实使用场景、问题解决

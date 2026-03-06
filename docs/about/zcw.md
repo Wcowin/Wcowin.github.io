@@ -16,7 +16,7 @@ status: new
 </p> -->
 
 <p align="center">
-  <img src="https://s3.bmp.ovh/2026/02/18/9wkTMyGb.png" class="img1" style="width:40%; " />
+  <img src="https://s3.bmp.ovh/2026/03/02/Q0SGN7kG.jpg" class="img1" style="width:50%; " />
 </p>
 <!-- <p align="center">
   <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" class="img1" style="width:40%; " />
@@ -29,7 +29,7 @@ status: new
 </p> -->
 
 <p align="center">
-  <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" style="width:50%; " />
+  <img src="https://s3.bmp.ovh/2026/03/02/NM9jJ3rb.jpg" style="width:50%; " />
 </p>
 
 

@@ -203,3 +203,11 @@ img.author-avatar:hover {
 nav.md-nav--secondary ul ul {
   border-left: 1px solid #B0B4BA;
 }
+
+/* 表格圆角与裁剪溢出（不带自定义 class 的标准表格） */
+.md-typeset table:not([class]) {
+  border-radius: 0.75rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
