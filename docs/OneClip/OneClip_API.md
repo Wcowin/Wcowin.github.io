@@ -42,7 +42,7 @@ open "oneclip://latest"
 
 ---
 
-## 27 个实用功能
+## 26 个实用功能
 
 ### 基础操作
 
@@ -481,7 +481,45 @@ open "oneclip://add?content=$result"
 
 ---
 
-### 场景 6：编辑历史记录工作流
+### 场景 6：快速 OCR 识别
+
+在 Raycast 中创建 Script Command：
+
+```bash
+#!/bin/bash
+# 静默模式 OCR，直接复制结果
+open "oneclip://ocr?silent=true"
+```
+
+设置快捷键 `⌘⇧O`，复制图片后一键识别文字。
+
+---
+
+### 场景 7：截图翻译工作流
+
+在 Alfred 中创建 Workflow：
+
+1. 触发器：`⌘⇧T`
+2. 动作 1：截图 OCR → `oneclip://screenshot-ocr?silent=true`
+3. 等待 2 秒
+4. 动作 2：翻译 → `oneclip://translate?text={clipboard}&to=zh`
+
+一键截图、识别、翻译。
+
+---
+
+### 场景 8：AI 摘要助手
+
+在快捷指令中创建：
+
+1. 获取剪贴板文本
+2. 打开 URL → `oneclip://ai?text={clipboard}&feature=summary`
+
+选中长文本后，一键生成摘要。
+
+---
+
+### 场景 9：编辑历史记录工作流
 
 ```bash
 #!/bin/bash
@@ -502,7 +540,7 @@ open "oneclip://set-title?id=YOUR-UUID&title=API文档v2"
 
 ---
 
-### 场景 7：快捷回复自动化
+### 场景 10：快捷回复自动化
 
 ```bash
 #!/bin/bash
@@ -518,7 +556,7 @@ open "oneclip://use-quick-reply?id=YOUR-UUID"
 
 ---
 
-### 场景 8：窗口控制快捷键
+### 场景 11：窗口控制快捷键
 
 在 Raycast 中创建多个 Script Command：
 
@@ -673,6 +711,12 @@ done
 | 20 | `paste-plain` | 粘贴纯文本 | id 或 index |
 | 21 | `clear` | 清空历史 | - |
 | 22 | `delete` | 删除项目 | id |
+| 23 | `ocr` | 剪贴板 OCR | - |
+| 24 | `screenshot-ocr` | 截图 OCR | - |
+| 25 | `ai` | AI 处理文本 | text, feature |
+| 26 | `translate` | 翻译文本 | text, to |
+
+---
 
 ---
 
@@ -763,46 +807,6 @@ open "oneclip://translate?text=你好世界&to=en"
 - 快速翻译外文内容
 - 双语写作辅助
 - 学习外语时查词
-
----
-
-## 实用场景示例（更新）
-
-### 场景 6：快速 OCR 识别
-
-在 Raycast 中创建 Script Command：
-
-```bash
-#!/bin/bash
-# 静默模式 OCR，直接复制结果
-open "oneclip://ocr?silent=true"
-```
-
-设置快捷键 `⌘⇧O`，复制图片后一键识别文字。
-
----
-
-### 场景 7：截图翻译工作流
-
-在 Alfred 中创建 Workflow：
-
-1. 触发器：`⌘⇧T`
-2. 动作 1：截图 OCR → `oneclip://screenshot-ocr?silent=true`
-3. 等待 2 秒
-4. 动作 2：翻译 → `oneclip://translate?text={clipboard}&to=zh`
-
-一键截图、识别、翻译。
-
----
-
-### 场景 8：AI 摘要助手
-
-在快捷指令中创建：
-
-1. 获取剪贴板文本
-2. 打开 URL → `oneclip://ai?text={clipboard}&feature=summary`
-
-选中长文本后，一键生成摘要。
 
 ---
 

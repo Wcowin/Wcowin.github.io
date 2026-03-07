@@ -50,6 +50,12 @@ OneClip 是一款简单专业的 macOS 剪贴板管理工具。
 | 1.2.5 | [查看更新说明](updates/notes/OneClip-1.2.5-zh.html) |
 | 1.2.4 | [查看更新说明](updates/notes/OneClip-1.2.4-zh.html) |
 
+## 许可证购买
+
+如果您需要购买许可证，请访问 [OneClip 许可证购买页面](https://oneclip.cloud/purchase/lifetime) 进行购买。
+
+
+
 ## 相关链接
 
 - [OneClip 介绍](/blog/OneClip/)
