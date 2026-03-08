@@ -34,10 +34,10 @@ zensical
 **vercel.json**（Vercel 配置）：
 ```json
 {
-  "buildCommand": "pip install zensical && zensical build --clean",
-  "outputDirectory": "site",
-  "installCommand": "echo 'Skip pip upgrade'"
+  "buildCommand": "zensical build",
+  "outputDirectory": "site"
 }
+
 ```
 
 ### 2. 提交到 GitHub
