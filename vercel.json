@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pip install zensical && zensical build",
+  "outputDirectory": "site",
+  "installCommand": "pip install --upgrade pip"
+}
