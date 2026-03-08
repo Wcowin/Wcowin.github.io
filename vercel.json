@@ -1,5 +1,4 @@
 {
-  "buildCommand": "pip install zensical && zensical build --clean",
-  "outputDirectory": "site",
-  "installCommand": "echo 'Skip pip upgrade'"
+  "buildCommand": "zensical build",
+  "outputDirectory": "site"
 }
