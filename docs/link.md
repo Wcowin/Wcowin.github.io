@@ -687,10 +687,10 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://cdn.jsdelivr.net/gh/Eurekaimer/MyIMGs@main/img/profile.jpg" />
+     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/88918522?v=4" />
      <div class="card-header">
       <div>
-      <a href="https://www.eurekaimer.xyz/" target="_blank">Eurekaimer's Digital Garden</a>
+      <a href="https://www.eurekaimer.icu/" target="_blank">Eurekaimer's Digital Garden</a>
       </div>
       <div class="info">
       </div>
@@ -1207,7 +1207,17 @@ comments: false
           <div class="info">纸鹿至麓不知路,支炉制露不止漉</div>
         </div>
       </div>
-
+      <div class="card">
+          <img class="ava" src="https://avatars.githubusercontent.com/W-Mai" />
+          <div class="card-header">
+            <div>
+              <a href="https://benign.host" target="_blank">Benign's Blog</a>
+            </div>
+            <div class="info">
+              Overflow Stack Developer.
+            </div>
+          </div>
+        </div>
 
 
 
