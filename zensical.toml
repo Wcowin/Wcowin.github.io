@@ -203,7 +203,8 @@ nav = [
             { "Prompt 工程入门" = "develop/AI/prompt.md" },
             { "多智能体协作入门" = "develop/AI/multi-agent.md" },
             { "深度推理与测试时计算" = "develop/AI/deep-reasoning.md" },
-            { "OpenClaw：本地开源AI助手" = "develop/AI/openclaw.md" }
+            { "OpenClaw：本地开源AI助手" = "develop/AI/openclaw.md" },
+            { "nanobot：超轻量级 AI 助手" = "develop/AI/nanobot.md" }
         ]},
         { "Python 环境管理最佳实践" = "develop/environment.md" },
         { "Anaconda 语法与简单使用教程" = "develop/Anaconda.md" },
