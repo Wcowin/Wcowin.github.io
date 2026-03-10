@@ -1218,6 +1218,17 @@ comments: false
             </div>
           </div>
         </div>
+      <div class="card">
+        <img class="ava" src="https://lvyovo-wiki.tech/images/blogger/8bef74996f3f1aeb.png" />
+        <div class="card-header">
+          <div>
+            <a href="https://lvyovo-wiki.tech" target="_blank">ivyneko</a>
+          </div>
+          <div class="info">
+            莫西莫西 (=^. .^=)
+          </div>
+        </div>
+      </div>
 
 
 
