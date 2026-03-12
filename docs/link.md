@@ -390,7 +390,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://yy.liveout.cn/photo/photo2.jpg" />
+     <img class="ava" loading="lazy" src="https://liveout.cn/usr/uploads/pic/icon1.jpg" />
      <div class="card-header">
       <div>
        <a href="https://www.liveout.cn/" target="_blank">Echo 的小窝</a>
