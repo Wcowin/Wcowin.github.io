@@ -1229,7 +1229,17 @@ comments: false
           </div>
         </div>
       </div>
-
+    <div class="card">
+        <img class="ava" src="https://chrjeb.cn/images/avatar.png" />
+        <div class="card-header">
+          <div>
+            <a href="https://chrjeb.cn/" target="_blank">星潮星屿</a>
+          </div>
+          <div class="info">
+            Less is more
+          </div>
+        </div>
+      </div>
 
 
    </div>
