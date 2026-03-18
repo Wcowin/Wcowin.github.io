@@ -13,9 +13,10 @@ tags:
 
 **适用读者**：已在使用 Cursor、Codex、Claude Code、VS Code、OpenCode、Roo Code 或其他支持 Agent Skills 的 IDE/平台，希望为 Agent 增加可复用流程与规范的开发者或进阶用户。
 
-**重要更新**：
-- **2025 年 12 月 18 日**：Anthropic 正式发布 [Agent Skills 开放标准](https://agentskills.io/)
-- **2026 年 1 月 22 日**：Cursor 2.4 正式引入 Agent Skills 支持，同时引入了 Subagents（子代理）功能
+**重要更新**：  
+
+- **2025 年 12 月 18 日**：Anthropic 正式发布 [Agent Skills 开放标准](https://agentskills.io/)  
+- **2026 年 1 月 22 日**：Cursor 2.4 正式引入 Agent Skills 支持，同时引入了 Subagents（子代理）功能  
 - 目前已被 **35+** 个 Agent 产品采用
 
 ## 什么是 Skill
