@@ -15,7 +15,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
@@ -30,15 +30,13 @@ jobs:
           echo "window.GLM_API_KEY = '${{ secrets.GLM_API_KEY }}';" > docs/javascripts/glm-api-config.js
           
       - run: zensical build --clean 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
         id: deployment
       
       # IndexNow - 通知搜索引擎内容更新
-      - name: IndexNow
-        uses: bojieyang/indexnow-action@v2
-        with:
-          sitemap-location: 'https://wcowin.work/sitemap.xml'
-          key: ${{ secrets.INDEXNOW_KEY }}
+      - name: IndexNow Submit
+        run: |
+          curl -s "https://api.indexnow.org/indexnow?url=https://wcowin.work/sitemap.xml&key=${{ secrets.INDEXNOW_KEY }}"
