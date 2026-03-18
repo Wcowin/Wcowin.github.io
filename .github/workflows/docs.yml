@@ -14,8 +14,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      - uses: actions/configure-pages@v6
+      - uses: actions/configure-pages@v5
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
@@ -33,7 +35,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      - uses: actions/deploy-pages@v5
+      - uses: actions/deploy-pages@v4
         id: deployment
       
       # IndexNow - 通知搜索引擎内容更新
