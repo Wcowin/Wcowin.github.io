@@ -6,6 +6,10 @@
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const DAYS = ['', 'Mon', '', 'Wed', '', 'Fri', ''];
 
+  // 缓存配置
+  const CACHE_DURATION = 3 * 60 * 60 * 1000; // 3小时
+  const CACHE_KEY_PREFIX = 'github-heatmap-';
+
   function formatDate(dateStr) {
     const d = new Date(dateStr);
     return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
@@ -42,7 +46,50 @@
     `;
   }
 
+  // 从缓存获取数据
+  function getCachedData(username) {
+    try {
+      const cacheKey = CACHE_KEY_PREFIX + username;
+      const cached = localStorage.getItem(cacheKey);
+      const cacheTime = localStorage.getItem(cacheKey + '-time');
+
+      if (cached && cacheTime) {
+        const age = Date.now() - parseInt(cacheTime, 10);
+        if (age < CACHE_DURATION) {
+          return JSON.parse(cached);
+        }
+      }
+    } catch (e) {
+      // localStorage 不可用（隐私模式等），静默失败
+    }
+    return null;
+  }
+
+  // 保存数据到缓存
+  function setCachedData(username, data) {
+    try {
+      const cacheKey = CACHE_KEY_PREFIX + username;
+      localStorage.setItem(cacheKey, JSON.stringify(data));
+      localStorage.setItem(cacheKey + '-time', Date.now().toString());
+    } catch (e) {
+      // localStorage 不可用或已满，静默失败
+    }
+  }
+
+  // 从 API 获取数据
+  async function fetchHeatmapData(username) {
+    const response = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`);
+    if (!response.ok) {
+      throw new Error('GitHub contributions API error: ' + response.status);
+    }
+    return await response.json();
+  }
+
   async function loadHeatmap(container) {
+    // 避免重复初始化
+    if (container.dataset.githubHeatmapInitialized === 'true') return;
+    container.dataset.githubHeatmapInitialized = 'true';
+
     const username = container.getAttribute('data-username') || 'Wcowin';
     container.innerHTML = buildHeatmapInnerHTML(username);
 
@@ -52,13 +99,32 @@
 
     if (!svg || !statsEl || !tooltipEl) return;
 
-    try {
-      const response = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`);
-      const data = await response.json();
-      renderHeatmap(container, data, username);
-    } catch (error) {
-      console.error('Error loading GitHub contributions:', error);
-      statsEl.textContent = '--';
+    // 尝试获取缓存数据
+    const cachedData = getCachedData(username);
+
+    if (cachedData) {
+      // 有缓存：先显示缓存数据
+      renderHeatmap(container, cachedData, username);
+
+      // 后台静默刷新（不阻塞，失败也不影响）
+      fetchHeatmapData(username)
+        .then(data => {
+          setCachedData(username, data);
+          renderHeatmap(container, data, username);
+        })
+        .catch(() => {
+          // 静默失败，继续使用缓存数据
+        });
+    } else {
+      // 无缓存：从 API 获取
+      try {
+        const data = await fetchHeatmapData(username);
+        setCachedData(username, data);
+        renderHeatmap(container, data, username);
+      } catch (error) {
+        console.error('Error loading GitHub contributions:', error);
+        statsEl.textContent = '--';
+      }
     }
   }
 
@@ -241,4 +307,3 @@
     initHeatmaps();
   }
 })();
-

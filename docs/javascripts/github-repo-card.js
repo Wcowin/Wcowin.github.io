@@ -1,4 +1,8 @@
 (function () {
+  // 缓存配置
+  const CACHE_DURATION = 2 * 60 * 60 * 1000; // 2小时
+  const CACHE_KEY_PREFIX = 'github-repo-card-';
+
   function parseRepoFromHref(href) {
     if (!href) return null;
     const match = href.match(/github\.com\/([^/]+)\/([^/?#]+)/i);
@@ -71,17 +75,38 @@
     `;
   }
 
-  async function initCard(card) {
-    const href = card.getAttribute('href') || '';
-    const explicitRepo = card.getAttribute('data-repo');
-    const repo = explicitRepo || parseRepoFromHref(href);
-    if (!repo) return;
+  // 从缓存获取数据
+  function getCachedData(repo) {
+    try {
+      const cacheKey = CACHE_KEY_PREFIX + repo;
+      const cached = localStorage.getItem(cacheKey);
+      const cacheTime = localStorage.getItem(cacheKey + '-time');
 
-    // 统一生成内部结构（无论原来是否有内容）
-    card.innerHTML = buildCardInnerHTML();
+      if (cached && cacheTime) {
+        const age = Date.now() - parseInt(cacheTime, 10);
+        if (age < CACHE_DURATION) {
+          return JSON.parse(cached);
+        }
+      }
+    } catch (e) {
+      // localStorage 不可用（隐私模式等），静默失败
+    }
+    return null;
+  }
 
-    const [owner, name] = repo.split('/');
+  // 保存数据到缓存
+  function setCachedData(repo, data) {
+    try {
+      const cacheKey = CACHE_KEY_PREFIX + repo;
+      localStorage.setItem(cacheKey, JSON.stringify(data));
+      localStorage.setItem(cacheKey + '-time', Date.now().toString());
+    } catch (e) {
+      // localStorage 不可用或已满，静默失败
+    }
+  }
 
+  // 填充卡片数据
+  function fillCardData(card, data, owner, name) {
     const ownerEl = card.querySelector('.github-repo-owner');
     const nameEl = card.querySelector('.github-repo-name');
     const descEl = card.querySelector('.github-repo-description');
@@ -93,46 +118,86 @@
     if (ownerEl) ownerEl.textContent = owner;
     if (nameEl) nameEl.textContent = name;
 
+    if (typeof data.stargazers_count === 'number' && starsEl) {
+      starsEl.textContent = data.stargazers_count.toString();
+    }
+    if (typeof data.forks_count === 'number' && forksEl) {
+      forksEl.textContent = data.forks_count > 0 ? data.forks_count.toString() : '';
+    }
+    const licenseText = (data.license && (data.license.spdx_id || data.license.name)) || '';
+    if (licenseEl) {
+      licenseEl.textContent = licenseText;
+      if (!licenseText) {
+        licenseEl.closest('.github-repo-meta-item')?.classList.add('github-repo-license-empty');
+      }
+    }
+    if (data.description && descEl) {
+      descEl.textContent = data.description;
+    }
+    if (data.owner && data.owner.avatar_url && avatarEl) {
+      avatarEl.style.backgroundImage = `url(${data.owner.avatar_url})`;
+      avatarEl.setAttribute('aria-label', data.owner.login || 'Repository owner avatar');
+      avatarEl.setAttribute('role', 'img');
+    }
+  }
+
+  // 从 API 获取数据
+  async function fetchRepoData(repo) {
     const apiUrl = `https://api.github.com/repos/${repo}`;
+    const res = await fetch(apiUrl, { headers: { Accept: 'application/vnd.github+json' } });
+    if (!res.ok) {
+      throw new Error('GitHub API error: ' + res.status);
+    }
+    return await res.json();
+  }
 
-    try {
-      const res = await fetch(apiUrl, { headers: { Accept: 'application/vnd.github+json' } });
-      if (!res.ok) {
-        if (res.status === 403) {
-          console.warn('GitHub API 限流（403），仓库卡片可能不完整：', repo);
-        }
-        throw new Error('GitHub API error: ' + res.status);
-      }
+  async function initCard(card) {
+    // 避免重复初始化
+    if (card.dataset.githubCardInitialized === 'true') return;
+    card.dataset.githubCardInitialized = 'true';
 
-      const data = await res.json();
-      if (typeof data.stargazers_count === 'number' && starsEl) {
-        starsEl.textContent = data.stargazers_count.toString();
-      }
-      if (typeof data.forks_count === 'number' && forksEl) {
-        // 当 fork 数为 0 时，不显示该项（保持内容为空，交给 CSS 隐藏）
-        forksEl.textContent = data.forks_count > 0 ? data.forks_count.toString() : '';
-      }
-      // 兼容 spdx_id 与 name，部分仓库或 API 版本可能只返回其一
-      const licenseText = (data.license && (data.license.spdx_id || data.license.name)) || '';
-      if (licenseEl) {
-        licenseEl.textContent = licenseText;
-        if (!licenseText) {
+    const href = card.getAttribute('href') || '';
+    const explicitRepo = card.getAttribute('data-repo');
+    const repo = explicitRepo || parseRepoFromHref(href);
+    if (!repo) return;
+
+    const [owner, name] = repo.split('/');
+
+    // 生成卡片结构
+    card.innerHTML = buildCardInnerHTML();
+
+    // 尝试获取缓存数据
+    const cachedData = getCachedData(repo);
+
+    if (cachedData) {
+      // 有缓存：先显示缓存数据
+      fillCardData(card, cachedData, owner, name);
+
+      // 后台静默刷新（不阻塞，失败也不影响）
+      fetchRepoData(repo)
+        .then(data => {
+          setCachedData(repo, data);
+          fillCardData(card, data, owner, name);
+        })
+        .catch(() => {
+          // 静默失败，继续使用缓存数据
+        });
+    } else {
+      // 无缓存：从 API 获取
+      try {
+        const data = await fetchRepoData(repo);
+        setCachedData(repo, data);
+        fillCardData(card, data, owner, name);
+      } catch (e) {
+        console.warn('加载 GitHub 仓库信息失败：', repo, e);
+        // 显示基础信息（仓库名）
+        fillCardData(card, {}, owner, name);
+
+        // 隐藏 license 项
+        const licenseEl = card.querySelector('.github-repo-license');
+        if (licenseEl) {
           licenseEl.closest('.github-repo-meta-item')?.classList.add('github-repo-license-empty');
         }
-      }
-      if (data.description && descEl) {
-        descEl.textContent = data.description;
-      }
-      if (data.owner && data.owner.avatar_url && avatarEl) {
-        avatarEl.style.backgroundImage = `url(${data.owner.avatar_url})`;
-        avatarEl.setAttribute('aria-label', data.owner.login || 'Repository owner avatar');
-        avatarEl.setAttribute('role', 'img');
-      }
-    } catch (e) {
-      console.warn('加载 GitHub 仓库信息失败：', repo, e);
-      const failedLicenseEl = card.querySelector('.github-repo-license');
-      if (failedLicenseEl) {
-        failedLicenseEl.closest('.github-repo-meta-item')?.classList.add('github-repo-license-empty');
       }
     }
   }
@@ -149,4 +214,3 @@
     initGitHubRepoCards();
   }
 })();
-

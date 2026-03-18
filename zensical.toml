@@ -22,10 +22,10 @@ edit_uri = "edit/main/docs"                              # 编辑按钮跳转的
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
 extra_javascript = [
-    "javascripts/glm-config.js",                              # 智谱清言翻译配置
-    "javascripts/glm-translate.js",                           # 智谱清言翻译系统
-    "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
-    "javascripts/chat-widget.js",                             # Ask AI 聊天组件
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",                              # 智谱清言翻译配置
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-api-config.js",                          # Ask AI API Key 配置
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
     # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
@@ -47,13 +47,13 @@ extra_javascript = [
 
 # ===== 额外的 CSS 文件 =====
 extra_css = [
-    "stylesheets/chat-widget.css",   # Ask AI 聊天组件样式
-    "stylesheets/extra.css",         # 额外样式
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/chat-widget.css",   # Ask AI 聊天组件样式
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css",         # 额外样式
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css", # 额外样式 CDN
     "stylesheets/extra2.css",        # 额外样式2
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra2.css", # 额外样式2CDN
-    "stylesheets/link.css",          # 友链样式
-    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css", #友链CDN
+    # "stylesheets/link.css",          # 友链样式
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css", #友链CDN
     # "stylesheets/poem.css",          # 诗词样式
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css", # 诗词样式CDN
     # "stylesheets/customize.css",     # 按钮圆角化等自定义样式
@@ -62,7 +62,9 @@ extra_css = [
     # "about/sty/portfolio.css"        # 作品集样式（已移至 geren.md 单独引入）
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
     "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
-    "stylesheets/github-widgets.css"            # GitHub 相关组件样式
+    # "stylesheets/github-widgets.css",            # GitHub 相关组件样式
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/github-widgets.css"            # GitHub 相关组件样式
+
 ]
 
 # ===== 导航配置 [Navigation] =====
@@ -195,6 +197,7 @@ nav = [
         "develop/index.md",
         { "AI" = [
             { "AI工具(2026最新)" = "develop/AI.md" },
+            { "Attention Residuals：Kimi架构创新" = "develop/AI/attention-residuals.md" },
             { "What is MCP" = "develop/AI/mcp.md" },
             { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
             { "Skill 使用介绍" = "develop/AI/skill.md" },

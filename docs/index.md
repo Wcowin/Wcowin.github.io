@@ -820,6 +820,7 @@ hr {
     ---
     - [macOS 开发经验分享](develop/Mac-development/index.md){ data-preview }(最近更新)
     - [密码学｜加密货币｜区块链](blog/Cryptography/#_1){ data-preview }  (最近更新)
+    - [Attention Residuals：Kimi如何撬动大模型的"祖传地基"](develop/AI/attention-residuals.md)
     - [模型上下文协议(MCP)简述](develop/AI/mcp.md)
     - [RAG技术(检索增强生成)](develop/AI/rag.md)
     - [uv：新一代 Python 包管理工具入门](blog/py/uv.md)

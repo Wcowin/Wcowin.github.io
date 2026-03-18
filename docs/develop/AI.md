@@ -9,11 +9,37 @@ status: new
 
 > 更多 AI 工具请访问 [AI工具集](https://ai-bot.cn/){target="_blank"}
 
-2026 年最新动态（更新于 2026.2）
+<div class="grid cards" markdown>
 
-- **主流模型版本**：OpenAI **GPT-5.2**（400K 上下文、强推理）、Anthropic **Claude Opus 4.5/4.6**（编码与安全领先）、Google **Gemini 3.0 Pro**（百万级上下文、多模态）。
-- **趋势**：从「生成内容」转向「解决复杂问题」——深度推理（System 2）、智能体化、多模态原生、幻觉率降低。
-- **国内**：通义千问 Qwen3、DeepSeek V4、Kimi K2.5、智谱 GLM-5、文心 5.0、可灵 3.0 等密集更新，开源与 Agent 能力成为标配。
+-   :octicons-rocket-16:{ .lg .middle } __2026 年最新动态（更新于 2026.3）__
+
+    ---
+
+    **主流模型版本**
+    
+    - OpenAI **GPT-5.4** — 原生电脑操作、Agent 能力强化
+    - Anthropic **Claude 4.5 Opus** — 编码与多模态领先
+    - Google **Gemini 2.5 Pro** — 原生多模态、百万级上下文
+    
+    **趋势**
+    
+    从「生成内容」转向「解决复杂问题」——深度推理（System 2）、智能体化、多模态原生、幻觉率降低
+    
+    **国内动态**
+    
+    - **Kimi K2.5** — 原生多模态、Agent 集群
+    - **DeepSeek V4** — 性价比突出
+    - **通义千问 Qwen3** — 旗舰推理与 Agent
+    - **智谱 GLM-5**、**文心 5.0**、**可灵 3.0** 等密集更新
+    - 开源与 Agent 能力成为标配
+    
+    **Agent 爆发**
+    
+    - **OpenClaw**（250K+ Stars）— 本地优先 AI Agent
+    - **Manus** — 通用型 AI Agent
+    - **扣子空间** — 字节跳动多功能智能体
+
+</div>
 
 ---
 
@@ -42,6 +68,7 @@ status: new
 
 > 2026 年已进入「智能体时代」：自主执行、多智能体协作成为主流，OpenAI Agents SDK、Google ADK、Anthropic 等均提供智能体框架。
 
+- [OpenClaw](https://clawcave.wyld.cc/){target="_blank"} - 2026年最火的本地优先 AI Agent（GitHub 250K+ Stars），支持多智能体协同与强化学习
 - [Manus](https://manus.im/){target="_blank"} - Monica 团队推出的通用型 AI Agent
 - [扣子空间](https://www.coze.cn/){target="_blank"} - 字节跳动推出的多功能 AI 智能体
 - [Operator](https://operator.chatgpt.com/){target="_blank"} - OpenAI 推出的 AI 智能体
