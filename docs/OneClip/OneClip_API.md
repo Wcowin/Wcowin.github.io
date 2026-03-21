@@ -277,6 +277,35 @@ open "oneclip://add-quick-reply?content=内容&title=标题&category=分类"
 
 ---
 
+#### 27. 添加并收藏
+添加内容到剪贴板历史并直接收藏（专为自动化工具设计）。
+
+```bash
+open "oneclip://add-and-favorite?content=这是一段重要文本&title=我的收藏"
+```
+
+**参数**：
+
+- `content` (必需): 要添加的内容
+- `title` (可选): 自定义标题
+
+**使用场景**：
+
+- **Rime 输入法集成**：将首选词一键收藏
+- **自动化工作流**：批量添加并收藏内容
+- **输入法联动**：其他输入法扩展收藏高频语句
+
+**与 `add` 的区别**：
+
+| API | 添加到历史 | 自动收藏 | 适用场景 |
+|-----|-----------|---------|---------|
+| `add` | ✅ | ❌ | 普通添加 |
+| `add-and-favorite` | ✅ | ✅ | 收藏重要内容 |
+
+---
+
+---
+
 ### 查询功能
 
 #### 14. 获取历史列表
@@ -652,6 +681,119 @@ tail -f ~/Library/Application\ Support/OneClip/Logs/*.log
 
 ---
 
+### Q: 如何在终端中直接查看返回结果？
+
+**方法 1：输出到终端（使用 AppleScript）**
+
+```bash
+# 添加 output=stdout 参数
+open "oneclip://stats?output=stdout"
+```
+
+这会在 Terminal 窗口中显示结果：
+```
+✅ Success
+Message: 统计信息已复制到剪贴板
+Data:
+{
+  "total": 150,
+  "favorites": 23,
+  ...
+}
+```
+
+**方法 2：写入文件（推荐用于脚本）**
+
+```bash
+# 使用 write 参数指定输出文件
+open "oneclip://favorites?limit=10&write=/tmp/oneclip_result.json"
+
+# 等待 OneClip 执行完成
+sleep 0.5
+
+# 读取结果
+cat /tmp/oneclip_result.json
+```
+
+输出文件格式：
+```json
+{
+  "success": true,
+  "timestamp": "2026-03-20T10:30:00Z",
+  "message": "已复制 10 个收藏到剪贴板",
+  "data": {
+    "favorites": [...]
+  }
+}
+```
+
+**方法 3：配合剪贴板使用**
+
+```bash
+# 调用 API（结果会自动复制到剪贴板）
+open "oneclip://favorites?limit=5"
+
+# 等待一下
+sleep 0.3
+
+# 从剪贴板读取结果
+pbpaste
+```
+
+---
+
+### Q: 如何在脚本中获取 API 返回数据？
+
+**完整示例脚本：**
+
+```bash
+#!/bin/bash
+# oneclip_api.sh - OneClip API 调用脚本
+
+# 调用 API 并将结果写入临时文件
+OUTPUT_FILE="/tmp/oneclip_$$.json"
+open "oneclip://favorites?limit=10&write=$OUTPUT_FILE"
+
+# 等待 OneClip 执行（根据网络情况调整）
+sleep 0.5
+
+# 检查文件是否存在
+if [ ! -f "$OUTPUT_FILE" ]; then
+    echo "❌ API 调用失败或超时"
+    exit 1
+fi
+
+# 解析结果
+SUCCESS=$(cat "$OUTPUT_FILE" | python3 -c "import sys,json; print(json.load(sys.stdin)['success'])")
+
+if [ "$SUCCESS" = "True" ]; then
+    echo "✅ API 调用成功"
+    # 提取数据
+    cat "$OUTPUT_FILE" | python3 -m json.tool
+else
+    echo "❌ API 调用失败"
+    cat "$OUTPUT_FILE" | python3 -c "import sys,json; print(json.load(sys.stdin)['message'])"
+fi
+
+# 清理临时文件
+rm -f "$OUTPUT_FILE"
+```
+
+**使用示例：**
+
+```bash
+# 查找包含 "API" 的历史记录
+./oneclip_api.sh "search?query=API"
+
+# 获取最近 5 条记录
+./oneclip_api.sh "list?limit=5"
+
+# 获取统计信息
+./oneclip_api.sh "stats"
+```
+
+---
+
 ### Q: 可以在 iOS 上使用吗？
 
 目前 OneClip API 仅支持 macOS。
@@ -715,6 +857,7 @@ done
 | 24 | `screenshot-ocr` | 截图 OCR | - |
 | 25 | `ai` | AI 处理文本 | text, feature |
 | 26 | `translate` | 翻译文本 | text, to |
+| 27 | `add-and-favorite` | 添加并收藏 | content |
 
 ---
 

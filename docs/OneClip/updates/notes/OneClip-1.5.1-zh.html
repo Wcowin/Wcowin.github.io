@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneClip 1.5.1 更新说明</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007AFF;
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .version {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .feature {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007AFF;
+            padding: 12px 16px;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+        .download-section {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #e8e8e8;
+        }
+        .download-section h2 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+        .download-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 1px solid #e8e8e8;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            transition: all 0.2s ease;
+        }
+        .download-card:hover {
+            border-color: #007AFF;
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.08);
+        }
+        .download-card .info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .download-card .text {
+            display: flex;
+            flex-direction: column;
+        }
+        .download-card .title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .download-card .subtitle {
+            font-size: 13px;
+            color: #666;
+            margin-top: 2px;
+        }
+        .download-card .action {
+            color: #007AFF;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(0, 122, 255, 0.08);
+            transition: all 0.2s ease;
+        }
+        .download-card .action:hover {
+            background: rgba(0, 122, 255, 0.15);
+        }
+        .todo-section {
+            margin-top: 32px;
+        }
+        .todo-section h2 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+        .todo-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .todo-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #444;
+            font-size: 14px;
+        }
+        .todo-item:last-child {
+            border-bottom: none;
+        }
+        .todo-checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #d0d0d0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 1.5.1版本更新日志</h1>
+        <div class="version">版本 1.5.1(20260321)</div>
+
+        <p>感谢每一位支持OneClip的朋友，OneClip在持续更新中。</p>
+        <p>我们的官方QQ群请记得加一下：1060157293｜<a href="https://qm.qq.com/q/k4U6QJrWj8" style="color: #007AFF; text-decoration: none; font-weight: 500;">【OneClip交流群】</a></p>
+
+        <h2>功能修复</h2>
+        <ul>
+            <li>应用自启动应用内设置覆盖了系统设置</li>
+            <li>快捷键权限问题(感谢热心用户 我是小肚兜啊)</li>
+            <li>划词翻译快捷键判断错误的问题</li>
+            <li>快捷回复标题不起作用的问题</li>
+        </ul>
+
+        <h2>功能新增</h2>
+        <ul>
+            <li>新增了几个OneClip API</li>
+            <li>新增来源应用显示开关</li>
+            <li>新增退出应用时自动执行深度清理</li>
+            <li>新增自定义分类下的子分类（目前测试功能）</li>
+            <li>快捷回复子分类支持重命名</li>
+        </ul>
+
+        <h2>功能改进</h2>
+        <ul>
+            <li>改进快捷键冲突检测</li>
+            <li>改进加载机制</li>
+            <li>改进拖拽机制</li>
+            <li>主窗口的掉帧问题有改善</li>
+            <li>更新隐私政策• 使用条款• 免责声明</li>
+        </ul>
+
+        <div class="download-section">
+            <h2>手动下载</h2>
+            <div class="download-card">
+                <div class="info">
+                    <div class="text">
+                        <span class="title">OneClip 1.5.1</span>
+                        <span class="subtitle">macOS 应用安装包</span>
+                    </div>
+                </div>
+                <a href="https://github.com/Wcowin/OneClip/releases/download/1.5.1/OneClip-1.5.1.dmg" class="action">立即下载</a>
+            </div>
+        </div>
+
+        <p>如果您有好的建议请直接发邮件到<a href="mailto:vip@oneclip.cloud" style="color: #007AFF; text-decoration: none; font-weight: 500;">vip@oneclip.cloud</a></p>
+
+        <div class="todo-section">
+            <h2>TODO</h2>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <span class="todo-checkbox"></span>
+                    <span>Windows版本</span>
+                </li>
+                <li class="todo-item">
+                    <span class="todo-checkbox"></span>
+                    <span>插件系统（暂缓）</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
