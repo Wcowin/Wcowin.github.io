@@ -5,7 +5,7 @@
 
 <p align="center">
     <!-- <img src="https://s1.imagehub.cc/images/2025/05/11/3d9c30078bc549c44534248c7558c3b5.png" alt="arv-anshul"/ width="100%" style="border-radius: 10px;" > -->
-    <img src="https://s1.imagehub.cc/images/2026/01/06/6b182f285a36d94635f4eb5766d775d3.png" alt="arv-anshul" width="100%" style="border-radius: 10px;">
+    <img src="https://i.imgant.com/v2/EQMw8NQ.png" alt="arv-anshul" width="100%" style="border-radius: 10px;">
     <img src="https://pic3.zhimg.com/80/v2-afef47cac915ad51071fdc2f6d990b30_1440w.webp" alt="arv-anshul" width="100%" style="border-radius: 10px;">
     
 </p>
