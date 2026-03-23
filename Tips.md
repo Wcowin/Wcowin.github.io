@@ -32,6 +32,44 @@ git push   # 推送到远程仓库
 git status   # 查看当前仓库状态
 ```
 
+### 常用 Git 命令速查
+
+| 命令 | 作用 |
+|------|------|
+| `git status` | 查看当前修改状态 |
+| `git add 文件名` | 添加指定文件到暂存区 |
+| `git add .` | 添加所有修改的文件 |
+| `git commit -m "说明"` | 提交更改 |
+| `git push` | 推送到远程仓库 |
+| `git pull` | 拉取远程最新代码 |
+| `git log` | 查看提交历史 |
+
+### 在 VS Code 中使用 Git
+
+1. **左侧源代码管理图标**（或按 `Ctrl+Shift+G`）
+2. 点击 `+` 号暂存修改的文件
+3. 输入提交信息，点击 ✓ 提交
+4. 点击 `...` → 推送
+
+### 在终端中快速提交
+
+```bash
+# 进入项目目录
+cd /Users/wangkewen/Wcowin.github.io
+
+# 查看修改了哪些文件
+git status
+
+# 添加所有修改
+git add .
+
+# 提交
+git commit -m "你的提交说明"
+
+# 推送
+git push
+```
+
 ### MkDocs 安装与升级
 ```bash
 pip install mkdocs-material  # 安装 mkdocs-material
