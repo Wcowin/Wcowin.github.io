@@ -204,7 +204,7 @@ scores = bm25.get_scores(tokenized_query)
 ```
 
 **混合检索（Hybrid Search）**：
-结合稠密检索和稀疏检索的优势，是2024年RAG系统的主流方案。
+结合稠密检索和稀疏检索的优势，到了 2026 年仍然是很多 RAG 系统的默认基线方案。
 
 ```python
 def hybrid_search(query, alpha=0.5):
@@ -872,3 +872,7 @@ RAG（检索增强生成）通过将**信息检索**与**大语言模型生成**
 7. LlamaIndex Documentation: https://docs.llamaindex.ai  
 8. RAGAS: https://docs.ragas.io  
 9. RAGFlow: https://ragflow.io
+
+---
+
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

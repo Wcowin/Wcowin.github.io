@@ -25,7 +25,8 @@ extra_javascript = [
     # "javascripts/glm-config.js",                              # 智谱清言翻译配置
     # "javascripts/glm-translate.js",                           # 智谱清言翻译系统
     "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
+    "javascripts/chat-widget.js",
     # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
@@ -47,7 +48,8 @@ extra_javascript = [
 
 # =====  CSS 文件 =====
 extra_css = [
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/chat-widget.css",   # Ask AI 聊天组件样式
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/chat-widget.css",   # Ask AI 聊天组件样式
+    "stylesheets/chat-widget.css",
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css",         # 额外样式
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css", # 额外样式 CDN
     "stylesheets/extra2.css",        # 额外样式2

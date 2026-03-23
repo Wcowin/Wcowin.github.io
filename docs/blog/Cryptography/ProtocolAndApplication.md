@@ -145,4 +145,4 @@ SSH（Secure Shell）用于远程登录、文件传输（SCP/SFTP）和隧道，
 - [RFC 4251 - SSH 架构](https://www.rfc-editor.org/rfc/rfc4251)
 - [Wikipedia: Diffie–Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
 
-**本文作者：** [<img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" />](https://github.com/Wcowin)
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

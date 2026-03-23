@@ -9,7 +9,7 @@ tags:
 
 ## 模型上下文协议（MCP）简介
 
-模型上下文协议（Model Context Protocol，简称MCP）是一种标准化的接口规范，旨在实现人工智能模型与外部工具、资源之间的无缝交互。通过定义统一的数据交换格式和通信机制，MCP能够打破数据孤岛现象，促进不同系统之间的互操作性，从而提升AI应用的灵活性和扩展性。
+模型上下文协议（Model Context Protocol，简称 MCP）是一种标准化的开放协议，旨在实现 AI 应用与外部工具、资源、提示模板之间的无缝交互。通过定义统一的数据交换格式和通信机制，MCP 能够打破数据孤岛，促进不同系统之间的互操作性，从而提升 AI 应用的灵活性和扩展性。
 
 > 在MCP出现之前，AI应用与外部工具的交互依赖于手动API连接、插件接口和Agent框架等方法。然而，这些传统方法存在诸多问题：
 > **复杂性高**：开发者需要针对每个外部工具单独编写适配代码，增加了开发和维护的难度。
@@ -54,7 +54,7 @@ flowchart LR
 
 **核心概念**：
 
-- **MCP Host（客户端）**：AI 应用（如 Cursor、Claude Desktop、OpenClaw），负责调用 MCP 服务器
+- **MCP Host（客户端）**：AI 应用（如 Cursor、Claude Desktop、ChatGPT 等），负责调用 MCP 服务器
 - **MCP Server（服务器）**：提供工具和数据源的独立进程，通过 MCP 协议暴露能力
 - **MCP 协议**：基于 JSON-RPC 2.0 的通信协议，定义了请求/响应格式
 
@@ -94,13 +94,15 @@ sequenceDiagram
 
 ### MCP 协议要素
 
-MCP 基于 JSON-RPC 2.0，定义了三类核心能力：
+MCP 基于 JSON-RPC 2.0。对服务器侧来说，最常见的三类核心能力是：
 
 | 能力类型 | 说明 | 示例 |
 |---------|------|------|
 | **Resources** | 数据源（只读） | 文件内容、数据库记录、API 响应 |
 | **Tools** | 可执行操作 | 文件写入、命令执行、API 调用 |
 | **Prompts** | 预定义提示模板 | 代码审查模板、文档生成模板 |
+
+除此之外，最新版架构文档还强调了客户端能力，例如 **Sampling**（向宿主模型请求补全）、**Elicitation**（向用户追问/确认）和 **Logging**。
 
 ## 快速上手：配置 MCP 服务器
 
@@ -330,17 +332,14 @@ if __name__ == "__main__":
 
 ### 支持 MCP 的平台
 
-- **IDE**：Cursor、Windsurf、Zed、Continue
-- **AI 应用**：Claude Desktop、OpenClaw、Cline
-- **框架**：LangChain、LlamaIndex、Haystack
-- **其他**：30+ 平台和工具
+- **IDE / 开发工具**：VS Code、Cursor、Zed、Continue 等
+- **AI 应用**：Claude、ChatGPT，以及其他支持 MCP 的客户端
+- **框架 / 生态工具**：LangChain、LlamaIndex、Haystack 等正在持续接入或提供集成能力
+- 具体支持名单变化很快，建议以官方目录与各产品文档为准
 
 ### 社区发展
 
-- **GitHub Stars**：MCP SDK 仓库 15,000+ 星
-- **服务器数量**：官方 + 社区超过 200 个
-- **开发者**：活跃贡献者 1,000+
-- **企业采用**：多家 AI 公司和企业集成
+- MCP 已形成较强生态，但星标、服务器数量、平台数量增长很快，文章中不建议长期写死具体数字
 
 ## 最佳实践
 
@@ -407,12 +406,16 @@ A: 检查：
 
 ## 总结
 
-- **MCP** 是 AI 模型与外部工具之间的标准化协议，由 Anthropic 于 2024 年 11 月推出
+- **MCP** 是 AI 应用与外部工具之间的标准化开放协议，当前已被多类客户端和开发工具采用
 - **核心优势**：标准化、跨平台、安全隔离、动态发现、双向通信
 - **应用场景**：开发工具、企业系统、数据分析、内容创作、智能助手
-- **生态现状**：2026 年已被 30+ 平台采用，200+ 服务器可用
+- **生态现状**：2026 年生态扩张很快，具体平台数和服务器数建议以官方目录实时查询
 - **开发建议**：遵循规范、注重安全、优化性能、完善文档
 
 MCP 正在成为 AI Agent 生态的核心基础设施，统一了工具接入方式，降低了开发成本，促进了生态繁荣。
 
 **延伸阅读**：[MCP 官方文档](https://modelcontextprotocol.io/)、[MCP SDK](https://github.com/modelcontextprotocol/sdk)、[MCP 服务器目录](https://github.com/modelcontextprotocol/servers)。
+
+---
+
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

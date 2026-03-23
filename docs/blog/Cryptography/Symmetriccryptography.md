@@ -431,4 +431,4 @@ Berlekamp-Massey 算法是破译基于 LFSR 的流密码（特别是那些直接
 - [Rueppel, Rainer A.: Analysis and Design of Stream Ciphers](https://link.springer.com/book/10.1007/978-3-642-82865-2)
 - [Golomb, Solomon W.: Shift Register Sequences](https://www.worldscientific.com/worldscibooks/10.1142/4632)
 
-**本文作者：** [<img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" />](https://github.com/Wcowin)
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

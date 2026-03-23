@@ -1,14 +1,14 @@
 ---
-title: 多智能体协作入门：从概念到实战
+title: 多智能体协作入门：概念、模式与上手路径
 tags:
   - AI
   - 多智能体
   - Agent
 ---
 
-# 多智能体协作入门：从概念到实战
+# 多智能体协作入门：概念、模式与上手路径
 
-> 本文介绍基于 LLM 的多智能体（Multi-Agent）协作是什么、与单 Agent 的差异、常见架构与应用场景，以及如何用 Dify、MetaGPT、LangGraph 等框架快速上手。**2025–2026 年被行业视为多智能体规模化落地的关键期，从「单 Agent」到「虚拟团队」的转变已成为主流方向。**
+> 本文介绍基于 LLM 的多智能体（Multi-Agent）协作是什么、与单 Agent 的差异、常见架构与应用场景，以及如何用 Dify、MetaGPT、LangGraph 等框架快速上手。**到了 2025–2026 年，多智能体开始从研究概念逐步进入更实际的工程讨论，但是否值得采用，仍然要看任务复杂度与协调成本。**
 
 **适用读者**：已了解 [AI Agent 入门](agent.md)，希望理解多智能体协作概念并动手搭建一个「多角色协作」的小闭环。
 
@@ -16,7 +16,7 @@ tags:
 
 **多智能体协作（Multi-Agent Collaboration）** 指多个由 LLM 驱动的智能体，通过**角色分工、通信协调、共享知识**，共同完成超越单智能体能力的复杂任务。
 
-可以简单类比为：**一个人包办所有事** → **虚拟团队分工协作**。每个智能体有明确的角色（如产品经理、架构师、工程师）、专属工具和职责，通过自然语言或结构化接口相互通信，形成可扩展的协作流程。
+可以把它理解为：**从单个智能体包办所有事，到多个角色分工协作**。每个智能体有明确的角色（如产品经理、架构师、工程师）、专属工具和职责，通过自然语言或结构化接口相互通信，形成可扩展的协作流程。
 
 | 单 Agent | 多智能体 |
 |----------|----------|
@@ -136,3 +136,7 @@ tags:
 - **入门路径**：从 Dify 可视化工作流或 MetaGPT/ChatDev 的「虚拟软件公司」示例开始，再根据需要深入 LangGraph 等编程框架
 
 **延伸阅读**：[Large Language Model based Multi-Agents: A Survey](https://arxiv.org/abs/2402.01680)、[LangGraph 多智能体协作教程](https://langchain-ai.github.io/langgraph/tutorials/multi_agent/multi-agent-collaboration/)、[Dify 文档](https://docs.dify.ai/)。
+
+---
+
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

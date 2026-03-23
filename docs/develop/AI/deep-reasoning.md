@@ -8,7 +8,7 @@ tags:
 
 # 深度推理与测试时计算：从 CoT 到 o1、DeepSeek-R1
 
-> 本文介绍**测试时计算（Test-Time Compute）** 概念、代表模型 o1 与 DeepSeek-R1、API 使用方法，以及何时适合采用深度推理。**2025–2026 年，大模型的「思考过程」正从隐藏走向可选可见，开发者可在推理成本与推理质量之间做更灵活权衡。**
+> 本文介绍**测试时计算（Test-Time Compute）** 概念、代表性的推理模型家族（如 OpenAI reasoning models、DeepSeek-R1）、API 使用方法，以及何时适合采用深度推理。**截至 2026 年 3 月，主流产品路线更接近「内部推理 + 可控输出」：模型会在内部做更多推理，但是否向用户暴露中间思路，取决于具体提供商与产品策略。**
 
 **适用读者**：已了解 [Prompt 工程入门](prompt.md)，希望理解「推理阶段加算力」的机制与实际用法。
 
@@ -21,7 +21,7 @@ tags:
 | 对比 | 传统 LLM | 深度推理 / TTC |
 |------|----------|----------------|
 | 推理成本 | 主要由生成长度决定 | 推理步数 × 模型规模 |
-| 输出内容 | 直接答案 | 答案 + 可选推理过程 |
+| 输出内容 | 直接答案 | 通常为更高质量答案；中间推理是否可见取决于模型与平台 |
 | 典型能力 | 知识、简单推理 | 数学、代码、复杂逻辑 |
 
 ---
@@ -32,15 +32,15 @@ tags:
 
 CoT 是最早被广泛使用的推理增强方式：在提示词中要求模型「一步步想」，输出中会包含推理步骤。但 CoT 的「思考」仍是可见的、与最终答案混在一起，受限于提示词设计和单次前向传播。
 
-### o1 系列（OpenAI）
+### OpenAI 推理模型
 
-OpenAI 的 **o1** 将推理过程完全隐藏：模型在内部做大量计算，对外只返回最终答案。用户看不到「草稿」，只能看到结论。o1-mini 等型号在数学、代码等基准上表现优秀，但推理过程不可审计，成本也相对较高。
+OpenAI 的推理模型会在**内部**做更多计算，再输出结果。对开发者来说，重点通常不是“看见完整草稿”，而是通过更直接的提示拿到更稳的复杂任务结果。官方最新文档也强调：对这类模型，先用简洁提示，不要默认要求它“step by step”展示思维链。
 
 ### DeepSeek-R1
 
 **DeepSeek-R1** 是 DeepSeek 推出的深度推理模型，特点包括：
 
-- **推理过程可见**：API 返回 `reasoning_content` 与 `content`，可查看模型的思考步骤
+- **可暴露推理字段**：部分接口会返回 `reasoning_content` 与 `content`，便于调试或审计
 - **开放与可审计**：便于调试、合规与教学
 - **成本更低**：相比 o1 约便宜 10–30 倍
 - **架构**：671B MoE，约 37B 激活参数；蒸馏版覆盖 1.5B–70B，MIT 开源
@@ -121,8 +121,12 @@ answer = response.choices[0].message.content
 ## 小结
 
 - **测试时计算（TTC）**：推理阶段增加算力，让模型在输出前进行多步思考
-- **o1**：推理隐藏，只输出结论；**DeepSeek-R1**：推理可见，API 返回 `reasoning_content` 与 `content`
+- **OpenAI 推理模型**：内部推理为主；**DeepSeek-R1**：可在部分接口中暴露 `reasoning_content`
 - **R1 优势**：成本更低、可审计、蒸馏版能力强；**使用注意**：简单任务未必受益，需权衡成本与延迟
 - **使用建议**：数学、代码、逻辑、Agent 推理等优先考虑；知识问答、创意写作可继续用普通模型
 
-**延伸阅读**：[DeepSeek-R1 技术报告](https://github.com/deepseek-ai/DeepSeek-R1)、[OpenAI o1 官方介绍](https://openai.com/zh-Hans-CN/index/introducing-openai-o1-preview/)、[The Art of Scaling Test-Time Compute for Large Language Models](https://arxiv.org/abs/2512.02008)。
+**延伸阅读**：[DeepSeek-R1 技术报告](https://github.com/deepseek-ai/DeepSeek-R1)、[OpenAI Reasoning Best Practices](https://developers.openai.com/api/docs/guides/reasoning-best-practices)、[The Art of Scaling Test-Time Compute for Large Language Models](https://arxiv.org/abs/2512.02008)。
+
+---
+
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

@@ -185,15 +185,74 @@
   }
 }
 
-/* 本文作者头像：悬浮轻微放大 */
+/* 本文作者头像：悬浮轻微放大 + 显示名字 popover */
 img.author-avatar {
   width: 28px;
   height: 28px;
   vertical-align: middle;
   transition: transform 0.25s ease;
+  cursor: pointer;
 }
+
 img.author-avatar:hover {
   transform: scale(1.15);
+}
+
+/* 作者头像容器 */
+.author-avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* 作者名字 popover */
+.author-name-popover {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* popover 箭头 */
+.author-name-popover::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: rgba(30, 30, 30, 0.95) transparent transparent transparent;
+}
+
+/* 悬停时显示 popover */
+.author-avatar-wrapper:hover .author-name-popover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .author-name-popover {
+  background: rgba(17, 24, 39, 0.95);
+}
+
+[data-md-color-scheme="slate"] .author-name-popover::after {
+  border-color: rgba(17, 24, 39, 0.95) transparent transparent transparent;
 }
 
 

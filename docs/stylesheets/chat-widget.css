@@ -576,12 +576,31 @@
   max-width: 100%;
 }
 
+.ai-message-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 85%;
+}
+
 .ai-message-content {
   padding: 10px 14px;
   border-radius: 8px;
   font-size: 0.8rem;
   line-height: 1.6;
   word-wrap: break-word;
+}
+
+/* 时间戳样式 */
+.ai-message-time {
+  font-size: 0.65rem;
+  color: var(--md-default-fg-color--light, #999);
+  opacity: 0.7;
+  padding: 0 4px;
+}
+
+.ai-message-user .ai-message-time {
+  text-align: right;
 }
 
 .ai-message-bot .ai-message-content {
@@ -600,87 +619,7 @@
   border-bottom-right-radius: 2px;
 }
 
-.ai-message-loading .ai-message-content {
-  background: var(--md-default-fg-color--lightest, #f5f5f5);
-  color: var(--md-default-fg-color--light, #999);
-}
 
-/* 加载动画 */
-.ai-loading-content {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.ai-loading-text {
-  font-weight: 500;
-}
-
-.ai-loading-dots {
-  display: inline-flex;
-  gap: 3px;
-  margin-left: 2px;
-}
-
-.ai-dot {
-  width: 4px;
-  height: 4px;
-  background: var(--md-default-fg-color--light, #999);
-  border-radius: 50%;
-  animation: dotPulse 1.4s ease-in-out infinite;
-}
-
-.ai-dot:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.ai-dot:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.ai-dot:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-@keyframes dotPulse {
-  0%, 60%, 100% {
-    opacity: 0.3;
-    transform: scale(1);
-  }
-  30% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-}
-
-/* 消息内链接和样式 */
-.ai-chat-link {
-  color: var(--md-typeset-a-color, #518FC1);
-  text-decoration: underline;
-  font-weight: 500;
-  transition: color 0.15s ease;
-  word-break: break-word;
-}
-
-.ai-chat-link:hover {
-  color: var(--md-accent-fg-color, #3a8dde);
-}
-
-.ai-message-content p {
-  margin: 0 0 8px 0;
-}
-
-.ai-message-content p:last-child {
-  margin-bottom: 0;
-}
-
-.ai-message-content strong {
-  font-weight: 600;
-}
-
-.ai-message-content em {
-  font-style: italic;
-}
 
 /* 滚动条 */
 .ai-chat-messages::-webkit-scrollbar {
@@ -895,14 +834,9 @@
   color: var(--md-primary-fg-color);
 }
 
-/* 深色模式 - 消息内容列表 */
-[data-md-color-scheme="slate"] .ai-message-content ul,
-[data-md-color-scheme="slate"] .ai-message-content ol {
-  color: var(--md-default-fg-color);
-}
-
-[data-md-color-scheme="slate"] .ai-message-content li {
-  color: var(--md-default-fg-color);
+/* 深色模式 - 时间戳 */
+[data-md-color-scheme="slate"] .ai-message-time {
+  color: var(--md-default-fg-color--light);
 }
 
 /* 深色模式 - 建议提示区域背景 */
@@ -920,19 +854,6 @@
   outline: none;
 }
 
-/* 深色模式 - 代码块样式（如果消息中有代码） */
-[data-md-color-scheme="slate"] .ai-message-content code {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--md-default-fg-color);
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-size: 0.9em;
-}
-
-/* 深色模式 - 分隔线 */
-[data-md-color-scheme="slate"] .ai-message-content hr {
-  border-color: rgba(255, 255, 255, 0.1);
-}
 
 
 /* 打字光标动画 */
@@ -970,29 +891,6 @@
 .ai-chat-toast-visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
-}
-
-/* Maximized State - 侧边模式下最大化即全屏宽度 */
-.ai-chat-container.maximized {
-  --ai-container-base-width: 50vw;
-  max-width: var(--ai-container-base-width);
-  width: var(--ai-container-base-width);
-  min-width: 600px;
-}
-
-/* 小屏幕下最大化时占据更多空间 */
-@media (max-width: 1200px) {
-  .ai-chat-container.maximized {
-    --ai-container-base-width: 60vw;
-    min-width: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  .ai-chat-container.maximized {
-    --ai-container-base-width: 80vw;
-    min-width: 400px;
-  }
 }
 
 /* 移动端 - 侧边面板全宽 */

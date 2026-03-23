@@ -15,20 +15,21 @@
     model: 'Qwen/Qwen3-8B',
     maxMessageLength: 500,
     maxContextLength: 50000,
-    systemPrompt: `你是 Wcowin's Blog 的 AI 助手，既帮访客了解本站内容，也乐于解答各种问题——知无不言。
+    systemPrompt: `你是 Wcowin 博客的 AI 助手，一个懂技术、会聊天、有温度的存在。
 
-关于网站（Wcowin's Blog）：
-- 博主 Wcowin，开发者，技术分享和开源项目
-- 技术：MkDocs/Zensical、Mac 技巧、Python、前端、密码学等
-- 项目：OneClip（macOS 剪贴板）、FinderClip、MkDocs 主题插件等
-- 生活：旅行、读书、随笔
+关于 Wcowin：
+- 一个爱折腾的开发者，喜欢分享技术干货和生活随笔
+- 主要折腾：MkDocs/Zensical 主题、Mac 效率工具、Python 脚本、前端小玩意、密码学入门
+- 代表作：OneClip（macOS 剪贴板工具）、FinderClip、几个 MkDocs 插件
+- 非技术：旅行照片、读书笔记、偶尔的生活感悟
 
-回答风格：
-- 自然、亲切，别像说明书
-- 有上下文时优先基于页面内容，别瞎编
-- 问题跟网站无关也照答，知无不言，能帮就帮
-- 该简则简，该详则详，别啰嗦也别惜字如金
-- 中文为主，技术词保持原样`,
+怎么回答：
+- 像朋友聊天，别端着，可以幽默一点
+- 有页面内容就基于内容答，别瞎编；没有就凭常识答
+- 技术问题给干货，生活问题给温度，奇怪问题给脑洞
+- 不用每句都带emoji，但语气可以活泼
+- 不知道就说不知道，别硬编
+- 中文为主，技术术语保留英文`,
   };
 
   // 贴边状态：默认贴边，按下可取消
@@ -58,13 +59,17 @@
 
   // 获取 API Key（从 window 或环境变量）
   function getApiKey() {
-    // 优先从 GLM_API_KEY 获取
+    // 优先从 AI_API_KEY 获取
+    if (window.AI_API_KEY) {
+      return window.AI_API_KEY;
+    }
+    // 兼容旧命名
     if (window.GLM_API_KEY) {
       return window.GLM_API_KEY;
     }
-    // 备用：从 GLM_CONFIG 获取（如果有的话）
-    if (window.GLM_CONFIG && window.GLM_CONFIG.apiKey) {
-      return window.GLM_CONFIG.apiKey;
+    // 备用：从 AI_CONFIG 获取
+    if (window.AI_CONFIG && window.AI_CONFIG.apiKey) {
+      return window.AI_CONFIG.apiKey;
     }
     return null;
   }
@@ -72,6 +77,68 @@
   // 会话历史
   let conversationHistory = [];
   let sessionId = Date.now().toString(36);
+  const STORAGE_KEY = 'ai-chat-history';
+  const STORAGE_EXPIRY = 24 * 60 * 60 * 1000; // 24小时过期
+
+  // 加载历史记录
+  function loadHistory() {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (!stored) return;
+      
+      const data = JSON.parse(stored);
+      // 检查是否过期
+      if (data.timestamp && (Date.now() - data.timestamp > STORAGE_EXPIRY)) {
+        localStorage.removeItem(STORAGE_KEY);
+        return;
+      }
+      
+      if (data.messages && Array.isArray(data.messages)) {
+        conversationHistory = data.messages;
+        sessionId = data.sessionId || Date.now().toString(36);
+        // 恢复界面显示
+        restoreMessagesToUI();
+      }
+    } catch (e) {
+      console.warn('Failed to load chat history:', e);
+    }
+  }
+
+  // 保存历史记录
+  function saveHistory() {
+    try {
+      const data = {
+        messages: conversationHistory,
+        sessionId: sessionId,
+        timestamp: Date.now()
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch (e) {
+      console.warn('Failed to save chat history:', e);
+    }
+  }
+
+  // 恢复消息到界面
+  function restoreMessagesToUI() {
+    const messagesDiv = document.getElementById('ai-chat-messages');
+    if (!messagesDiv || conversationHistory.length === 0) return;
+
+    // 清空默认欢迎消息
+    messagesDiv.innerHTML = '';
+
+    // 按顺序恢复消息
+    for (let i = 0; i < conversationHistory.length; i += 2) {
+      const userMsg = conversationHistory[i];
+      const botMsg = conversationHistory[i + 1];
+      
+      if (userMsg && userMsg.role === 'user') {
+        addMessage(userMsg.content, 'user', userMsg.timestamp);
+      }
+      if (botMsg && botMsg.role === 'assistant') {
+        addMessage(botMsg.content, 'bot', botMsg.timestamp);
+      }
+    }
+  }
 
   // 建议提示配置
   const PROMPTS = {
@@ -80,12 +147,12 @@
       "Wcowin有哪些项目？"
     ],
     projects: [
-      "这个项目使用了哪些技术栈？",
-      "如何快速上手这个项目？"
+      "用了哪些技术栈？",
+      "如何快速上手？"
     ],
     blog: [
-      "这篇文章的核心内容是什么？",
-      "这篇文章有哪些技术亮点？"
+      "核心内容是什么？",
+      "文章有哪些技术亮点？"
     ]
   };
 
@@ -130,11 +197,6 @@
         <span class="ai-chat-header-title">Ask AI 助手</span>
       </div>
       <div class="ai-chat-header-actions">
-        <button class="ai-chat-action-btn" id="ai-chat-maximize" aria-label="最大化" title="最大化">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
-          </svg>
-        </button>
         <button class="ai-chat-close" aria-label="关闭" title="关闭">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -245,34 +307,6 @@
     if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
   }
 
-  // 切换最大化
-  function toggleMaximize() {
-    const container = document.querySelector('.ai-chat-container');
-    const maximizeBtn = document.getElementById('ai-chat-maximize');
-    if (!container || !maximizeBtn) return;
-    
-    // 使用 requestAnimationFrame 确保在下一帧执行，避免阻塞
-    requestAnimationFrame(() => {
-      const isMaximized = container.classList.toggle('maximized');
-      
-      // 延迟更新 UI，避免影响动画性能
-      requestAnimationFrame(() => {
-        const svg = maximizeBtn.querySelector('svg');
-        if (svg) {
-          if (isMaximized) {
-            svg.innerHTML = '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>';
-            maximizeBtn.setAttribute('aria-label', '恢复');
-            maximizeBtn.setAttribute('title', '恢复');
-          } else {
-            svg.innerHTML = '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>';
-            maximizeBtn.setAttribute('aria-label', '最大化');
-            maximizeBtn.setAttribute('title', '最大化');
-          }
-        }
-      });
-    });
-  }
-
   // 复制对话内容
   function copyConversation() {
     const messages = document.querySelectorAll('.ai-message-content');
@@ -316,7 +350,6 @@
     const closeBtn = document.querySelector('.ai-chat-close');
     const clearBtn = document.getElementById('ai-chat-clear');
     const copyBtn = document.getElementById('ai-chat-copy');
-    const maximizeBtn = document.getElementById('ai-chat-maximize');
     const menuToggle = document.getElementById('ai-chat-menu-toggle');
     const menu = document.getElementById('ai-chat-menu');
     const input = document.getElementById('ai-chat-input');
@@ -329,11 +362,6 @@
       togglePinned();
     });
     closeBtn?.addEventListener('click', closeModal);
-    maximizeBtn?.addEventListener('click', (e) => {
-      e.stopPropagation();
-      toggleMaximize();
-    });
-    
     clearBtn?.addEventListener('click', () => {
       closeMenu();
       clearChat();
@@ -392,6 +420,7 @@
     if (trigger) trigger.classList.add('ai-chat-right');
     updatePinnedState();
     updatePrompts();
+    loadHistory(); // 加载历史记录
   }
 
   // 打开模态框（侧边抽屉，从右侧滑入）
@@ -432,11 +461,30 @@
     }
     conversationHistory = [];
     sessionId = Date.now().toString(36);
+    localStorage.removeItem(STORAGE_KEY);
     togglePrompts(true); // 显示提示
   }
 
+  // 格式化时间戳
+  function formatTime(date) {
+    const now = new Date();
+    const msgDate = new Date(date);
+    const isToday = now.toDateString() === msgDate.toDateString();
+    
+    const hours = msgDate.getHours().toString().padStart(2, '0');
+    const minutes = msgDate.getMinutes().toString().padStart(2, '0');
+    
+    if (isToday) {
+      return `${hours}:${minutes}`;
+    } else {
+      const month = (msgDate.getMonth() + 1).toString().padStart(2, '0');
+      const day = msgDate.getDate().toString().padStart(2, '0');
+      return `${month}-${day} ${hours}:${minutes}`;
+    }
+  }
+
   // 添加消息到界面
-  function addMessage(text, sender) {
+  function addMessage(text, sender, timestamp) {
     const messagesDiv = document.getElementById('ai-chat-messages');
     if (!messagesDiv) return null;
 
@@ -452,60 +500,48 @@
       contentDiv.textContent = text;
     }
 
-    messageDiv.appendChild(contentDiv);
+    // 添加时间戳
+    const timeDiv = document.createElement('div');
+    timeDiv.className = 'ai-message-time';
+    timeDiv.textContent = timestamp ? formatTime(timestamp) : formatTime(new Date());
+    
+    const wrapperDiv = document.createElement('div');
+    wrapperDiv.className = 'ai-message-wrapper';
+    wrapperDiv.appendChild(contentDiv);
+    wrapperDiv.appendChild(timeDiv);
+
+    messageDiv.appendChild(wrapperDiv);
     messagesDiv.appendChild(messageDiv);
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
     return messageDiv;
   }
 
-  // 添加加载指示器
-  function addLoadingMessage() {
-    const messagesDiv = document.getElementById('ai-chat-messages');
-    if (!messagesDiv) return null;
-
-    const messageDiv = document.createElement('div');
-    messageDiv.className = 'ai-message ai-message-loading';
-    messageDiv.innerHTML = `
-      <div class="ai-message-content ai-loading-content">
-        <span class="ai-loading-text">思考中</span>
-        <span class="ai-loading-dots">
-          <span class="ai-dot"></span>
-          <span class="ai-dot"></span>
-          <span class="ai-dot"></span>
-        </span>
-      </div>
-    `;
-
-    messagesDiv.appendChild(messageDiv);
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
-
-    return messageDiv;
-  }
-
-  // 简单的 Markdown 解析
+  // Markdown 文本处理（转义 HTML + 标题 + 加粗 + 斜体 + 链接 + 换行）
   function parseMarkdown(text) {
     if (!text) return '';
     
-    // 转义 HTML
-    let result = text
+    return text
+      // 1. 转义 HTML 特殊字符
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
-    
-    // 粗体
-    result = result.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-    
-    // 斜体
-    result = result.replace(/\*([^*]+)\*/g, '<em>$1</em>');
-    
-    // 链接
-    result = result.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
-    
-    // 换行
-    result = result.replace(/\n/g, '<br>');
-    
-    return result;
+      .replace(/>/g, '&gt;')
+      // 2. 处理标题（# ## ###）
+      .replace(/^###\s+(.+)$/gm, '<strong style="font-size:1.1em">$1</strong>')
+      .replace(/^##\s+(.+)$/gm, '<strong style="font-size:1.15em">$1</strong>')
+      .replace(/^#\s+(.+)$/gm, '<strong style="font-size:1.2em">$1</strong>')
+      // 3. 处理链接 [文本](URL) - 需要在处理加粗/斜体之前，避免干扰
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:var(--ai-chat-link-color, #3b82f6);text-decoration:underline;">$1</a>')
+      // 4. 处理加粗 **文本** 或 __文本__
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/__([^_]+)__/g, '<strong>$1</strong>')
+      // 5. 处理斜体 *文本* 或 _文本_（注意要排除已匹配的加粗）
+      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+      .replace(/_([^_]+)_/g, '<em>$1</em>')
+      // 6. 处理行内代码 `代码`
+      .replace(/`([^`]+)`/g, '<code style="background:var(--ai-chat-code-bg, rgba(0,0,0,0.1));padding:2px 6px;border-radius:4px;font-size:0.9em;">$1</code>')
+      // 7. 处理换行
+      .replace(/\n/g, '<br>');
   }
 
   // 获取页面上下文（优化版本）
@@ -602,6 +638,16 @@
       const recentHistory = conversationHistory.slice(-10);
       messages.push(...recentHistory);
       
+      // 检查上下文长度，如果过长则截断
+      const totalLength = messages.reduce((sum, msg) => sum + (msg.content?.length || 0), 0);
+      if (totalLength > CONFIG.maxContextLength) {
+        // 保留系统提示和最近的消息
+        const systemMsg = messages[0];
+        const recentMsgs = messages.slice(-4);
+        messages.length = 0;
+        messages.push(systemMsg, ...recentMsgs);
+      }
+      
       // 根据问题类型决定是否包含当前页面上下文
       if (!isGlobalQuestion) {
         // 针对具体内容的问题，添加当前页面上下文
@@ -675,10 +721,14 @@
       contentDiv.innerHTML = parseMarkdown(fullAnswer);
 
       // 更新对话历史
+      const now = Date.now();
       conversationHistory.push(
-        { role: 'user', content: message },
-        { role: 'assistant', content: fullAnswer }
+        { role: 'user', content: message, timestamp: now },
+        { role: 'assistant', content: fullAnswer, timestamp: now }
       );
+      
+      // 保存到本地存储
+      saveHistory();
 
     } catch (error) {
       console.error('Chat error:', error);
