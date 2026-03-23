@@ -24,7 +24,7 @@ edit_uri = "edit/main/docs"                              # 编辑按钮跳转的
 extra_javascript = [
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",                              # 智谱清言翻译配置
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js",                           # 智谱清言翻译系统
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-api-config.js",                          # Ask AI API Key 配置
+    # 注意：glm-api-config.js 已移除，API Key 通过 Cloudflare Worker 代理安全存储
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
     # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN

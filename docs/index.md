@@ -1,5 +1,5 @@
 ---
-title: Wcowin's Blog
+title: 首页
 hide:
 #   - navigation # 显示右
 #   - toc #显示左
@@ -1050,4 +1050,3 @@ body {
  
 <!-- Umami Analytics -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
-

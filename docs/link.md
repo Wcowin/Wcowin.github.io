@@ -1229,7 +1229,17 @@ comments: false
           </div>
         </div>
       </div>
-
+      <div class="card">
+          <img class="ava" src="https://090909.top/avatar.png" />
+          <div class="card-header">
+            <div>
+              <a href="https://090909.top/" target="_blank">梁栋烨</a>
+            </div>
+            <div class="info">
+              记录我的生活和学习经历
+            </div>
+          </div>
+        </div>
 
    </div>
   </div>

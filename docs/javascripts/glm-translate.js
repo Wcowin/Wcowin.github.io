@@ -300,28 +300,11 @@
   
   const LANGUAGE_MAP = getLanguageMap();
 
-  // 获取 API 密钥（支持从全局配置中读取）
+  // 获取 API 密钥（已废弃，使用 Cloudflare Worker 代理后不需要前端传递 Key）
+  // Worker 代理会在服务端处理认证
   function getApiKey(apiIndex = 0) {
-    // 1. 优先从 GLM_TRANSLATE_CONFIG 获取（如果你单独为翻译配置了 key）
-    if (window.GLM_TRANSLATE_CONFIG && typeof window.GLM_TRANSLATE_CONFIG.getApiKey === 'function') {
-      const key = window.GLM_TRANSLATE_CONFIG.getApiKey();
-      if (key && key !== 'placeholder') {
-        return key;
-      }
-    }
-
-    // 2. 其次：统一复用全局的 GLM_API_KEY（现在实际为硅基流动 API Key）
-    if (window.GLM_API_KEY) {
-      return window.GLM_API_KEY;
-    }
-
-    // 3. 再次：从 GLM_CONFIG 中读取（如果你在那边单独挂了 apiKey）
-    if (window.GLM_CONFIG && window.GLM_CONFIG.apiKey) {
-      return window.GLM_CONFIG.apiKey;
-    }
-
-    console.error('❌ 未找到翻译用的 API 密钥，请确保已在 glm-api-config.js 中配置 GLM_API_KEY');
-    return null;
+    // 返回一个占位符，实际认证在 Worker 中处理
+    return 'worker-proxy';
   }
 
   // 简化的文本检测 - 包含中文就翻译
@@ -686,10 +669,8 @@
       return terminologyResult;
     }
     
-    const apiKey = getApiKey(apiIndex);
-    if (!apiKey) {
-      throw new Error(`API密钥未配置 (索引: ${apiIndex})`);
-    }
+    // 使用 Cloudflare Worker 代理，不需要检查 API Key
+    // API Key 在 Worker 中安全存储
 
     // 检查缓存
     const cached = getFromCache(text, targetLang);
@@ -734,9 +715,9 @@
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
-          // 硅基流动为标准 HTTPS 接口，额外的 Connection/Keep-Alive 头不是必须
+          'Content-Type': 'application/json'
+          // 使用 Cloudflare Worker 代理，不需要传递 Authorization
+          // API Key 在 Worker 中安全存储
         },
         body: JSON.stringify(requestBody),
         signal: controller.signal

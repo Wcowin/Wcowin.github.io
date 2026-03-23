@@ -1,0 +1,6 @@
+name = "siliconflow-proxy"
+main = "siliconflow-proxy.js"
+compatibility_date = "2024-01-01"
+
+# 环境变量（部署时通过命令行或 Cloudflare Dashboard 设置）
+# SILICONFLOW_API_KEY = "your-api-key-here"
