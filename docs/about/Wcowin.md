@@ -1,16 +1,18 @@
 ---
 title: Github主页介绍
+hide:
+  - toc
 ---
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="200"/>
-
+  
   <h1>
-    Hey, I'm <a href="https://wcowin.work/VitePress/">Wcowin</a>!
+    Hey, I'm <a href="https://github.com/Wcowin">Wcowin</a>!
     <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
   </h1>
   <p align="center">
-    <b>学生 | 技术开源&数学爱好者 | 咖啡控 | 诗词爱好者 | 羽毛球</b>
+    <b>Student | Open-source Technology & Math Enthusiast | Coffee Lover | Poetry Lover | Badminton Player</b>
   </p>
 </div>
 
@@ -37,20 +39,12 @@ title: Github主页介绍
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github" style="margin: 0 10px;"/>
 </p> -->
 
----
+## 🚀 Currently Learning & Working On  
 
-## 🚀 Currently Learning & Working On
-
+- 💻 Try to be an independent developer,I use Swift to develop applications
 - 🤔 Exploring new frameworks and open source ideas
-- 🛠️ Building personal website/blog with Mkdocs
+- 🛠️ Building personal website/blog with [Zensical]
 - 💡 Deeply study the interdisciplinary field of mathematics and programming
-
----
-
-## 🌟 A Quote I Like
-
-> “知足且上进，温柔且坚定。”
-
 
 ---
 
@@ -61,14 +55,6 @@ title: Github主页介绍
   <a href="https://www.instagram.com/wcowin_/" target="_blank"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>
   <a href="mailto:wangkewen821@gmail.com" target="_blank"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png" width="50" /></a>
 </p>
-
----
-
-## ☕ Support Me
-
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'U6U5HAO6B');kofiwidget2.draw();</script>
-
----
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" />

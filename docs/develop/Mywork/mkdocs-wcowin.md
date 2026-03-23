@@ -64,13 +64,13 @@ tags:
 把Mkdocs-Wcowin文件里的东西全部复制出来到Wcowin.github.io文件里(如下图)，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
 ![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png){ loading=lazy }
 
-详细的初步教程见： [利用Mkdocs部署静态网页至GitHubpages](https://wcowin.work/blog/Mkdocs/mkdocs1/){target="_blank"}
+详细的初步教程见： [利用Mkdocs部署静态网页至GitHubpages](../../blog/Mkdocs/mkdocs1/)
 
 ## 联系我
 
-<a href="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" target="_blank">
+<a href="https://i.imgant.com/v2/ll6fUM7.jpeg" target="_blank">
  <center>
-  <img class="img1" src="https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp" style="width: 450px; height: auto;">
+  <img class="img1" src="https://i.imgant.com/v2/ll6fUM7.jpeg" style="width: 450px; height: auto;">
     <div style="color:orange;
     color: #999;
     padding: 2px;">我的Wechat</div>
@@ -79,7 +79,7 @@ tags:
 
 <a href="https://t.me/wecowin" target="_blank">
  <center>
-  <img class="img1" src="https://pica.zhimg.com/80/v2-7a19e2b5db241428373186e54f363670_1440w.webp" style="width: 450px; height: auto;">
+  <img class="img1" src="https://i.imgant.com/v2/v0DwLZH.png" style="width: 450px; height: auto;">
     <div style="color:orange;
     color: #999;
     padding: 2px;">我的TG</div>

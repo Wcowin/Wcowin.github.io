@@ -1,83 +1,413 @@
 ---
-title: 注册ChatGPT详细指南
+title: Codex指南
 tags:
-    - ChatGPT
+    - Codex
     - AI
-status: deprecated
+    - OpenAI
 ---
 
-# 如何注册ChatGPT
+# OpenAI Codex 完全指南
 
-**2023.5.27昨天又是大规模封号，只能说且行切珍惜你的GPT**
+## 什么是 Codex？
 
-**注册ChatGPT详细指南**
+OpenAI Codex 是 OpenAI 在 2025 年正式推出的新一代 AI 软件工程智能体（Coding Agent），被定位为"AI 软件工程队友"。截至目前（2026 年），Codex 被认为是与 Claude Code 并列的最强编程智能体之一。
 
-最近ChatGPT真受欢迎，但是有些人注册时会经常面临不服务它们的地区问题，现在我们给你详细问题解决。
-作者[twitter](https://twitter.com/BoxMrChen)
-## 准备
-代理。要求是韩国，日本，印度，新加坡，美国这些国家的地址都合适。对其他的我们还不太清楚，反正香港或中国的代理肯定不行。
-找一个国外手机号码，如果你没有用过接码平台也行，有些接码平台是无法接的，所以我们推荐一个就是 [sms-activate.  org](https://sms-activate.org/cn)
-## 第一步准备一个浏览器
+!!! info "注意"
+    现在的 Codex 已经远超 2021 年的那个纯代码生成模型（那个老 Codex 早已下线），它是完整的自主编码 Agent 系统，能真正"像工程师一样工作"。
 
-开始一步一步注册
-### 接验证码
-打开接码平台 sms-activate.org，注册一个账号
-![](https://lh6.googleusercontent.com/cMeZQKgY35Bnn9cqLhmZuNP4wYfgawEmklF8HfGU6vAXCsIN8WnpmZ4zwEq3lhi116Gw9epgJOGyDjVLET0skBytiuT41ZGa08crSpt1yh6gnpCni-JJjSmPYiFTj9csfrgDStp3iANCPsbHcToModOOSUvhQzQFQtdziT6A6QzMjXez82OcaIQu5h1iCA)
+**一句话理解：Codex = 会"读项目、改代码、跑测试、给补丁"的 AI 程序员，而不是只会聊天的代码生成器。**
 
-### 然后要充值余额
-![label](https://lh5.googleusercontent.com/yVgQqWlnP3Rk0thUlNUP7SAtU66CTD1L4HRHm5KhC_ZSfy0PdY1ANoLJRE_NRRttSCyGdBuR2WprtzCfbbyrXJ4oY99QCg4fg8lH2GbPAYc9GcZ33hPSRirWq1nFhPytxkeJ4VQgvpQlMFNDnw3RAdWcgwK-QXXPh-JqcdRE-ofSl5CM_UZDOm1o2GvWuA)
-充值，这里单位是卢布
-一次接码OpenAi的验证码费用是大概11卢布，人民币来看差不多是1块钱，不过只能充美金，就先充直个1美金钱。可以选择对你任何方便方式。支付宝也有
-![label](https://lh3.googleusercontent.com/g7fMxTmyZN6gl2uY0ZYdWebtbwrOZz7mEtdM3h1WwNGJxMcOVEeASgWk_qHmUYh68nRZ8mTuS5Wm7ZPvm8iAlDP8ChF6fDQZtLJYurScOr0SU8thZP9BKYwMPoRoMdg3OSksBQo_Z01Cxaun2knKymAItvkI51Uz8I9fZoRvDocoDD8jph-E0iJuZtLK3Q)
-充值完成可能需要等一会，就先放着，直接进行下一步。
-## 第二步是注册一个OpenAI账号
-首先打开[ChatGPT的账户注册页面](https://beta.openai.com/signup)。谷歌注册或者邮箱注册都可以，无所谓，我们这里用邮箱注册作为例子。
+## Codex 的核心能力
 
-![label](https://lh4.googleusercontent.com/5FAoNOuw0v992RG1BreZuHjLJv1TpWYSs8Vk8nfTI4YnuKKgO-54rRHromwVnwjXGvHhdoDj0Lu_yjH2E4G4lOV2pvlgC1G-5g6SpvrVGnoxz6yQWtBiryWutOymCtW2UuHzEooXF1O-ilKMdBknLtEskP3MeaI1RZavvrDCXweIUnhdJ8t6eN1vjFoP3Q)
+- **代码生成**：通过自然语言描述生成代码
+- **代码解释**：解释现有代码功能和逻辑
+- **代码调试**：识别并修复代码错误
+- **代码优化**：提供代码改进建议
+- **多方案生成**：一次生成多个解决方案供选择
+- **并行任务处理**：同时处理多个独立编程任务
+- **多模态理解**：支持截图、草图等图像输入
+- **沙盒环境**：在云端隔离容器中运行，安全可靠
 
-用邮箱注册后你要验证邮件。进去邮箱，查看email里的链接。
+## Codex 与普通 ChatGPT 写代码的区别
 
-![label](https://lh6.googleusercontent.com/8bcYtPuGvpYcfLzGqi4uF1cHeuiYRW0zYwTUc5EX--LVenBC0iDtpp00UWxbvk7aJAyW08RIhpArfDORzd8N8Eko6fK7prIZxBGEcZmYZ6NlAInYo9mls9S85R-rdsos4joQfLS0-l15GIvblEyXLc3jzoht24aecm-m9CeZIui76iZX3FOWapRuigyYYQ)
+| 特性 | 普通 ChatGPT | Codex |
+|------|-------------|-------|
+| 代码执行 | ❌ 只能生成代码 | ✅ 可实际运行代码 |
+| 项目理解 | ❌ 上下文有限 | ✅ 理解大型代码库 |
+| 测试能力 | ❌ 无法测试 | ✅ 自动执行测试 |
+| 文件操作 | ❌ 无法操作文件 | ✅ 读取/修改文件 |
+| 环境控制 | ❌ 无环境 | ✅ 沙盒环境 |
+| 执行时间 | 即时响应 | 1-30 分钟 |
 
-这里你需要输入需要的信息。
-当然，有一些人会在这里遇到一个问题，会出现说不能在当前国家服务的提示。
-![label](https://lh5.googleusercontent.com/7R1aY59o0MNxWmlONV5KktskGbifyEAP9cn2zYxxvIMkKO5bpaLtAo-76iHN0yPcL413dUxHytKI2hOgFzDi2SShQ60NrEdhhjNTUcjKUtf3xYFNBaiDe3yDdWH90gBmDoQRuVuz3fsNuQaVxUiPqlVWYULR3dAyOB35C2MmT3kOVfWk5fMOty0MUSZ48A)
-**不用怕，我写这文章就是为了解决这个问题**
+## 使用 Codex 的方式
 
-一般你出现这种问题，就是因为你的代理没有全局，或者位置不对。香港或中国的的代理是100%无法通过的。
+### 1. ChatGPT 中使用（推荐新手）
 
-这个问题是非常神奇的，只要你出现了这个提示，那么你接下来怎么切换代理，都是没用的。现在提供给你你一招解决。
+Codex 已集成到 ChatGPT 中，付费用户可直接使用：
 
-解决地区问题
-先，你要把你的代理切换到任何合适的地区，我们这里选择了韩国。
-然后，先复制下面这段代码
-`
-window.localStorage.removeItem(Object.keys(window.localStorage).find(i=>i.startsWith('@@auth0spajs')))
-`
-接着在地址栏里输入
-`javascript:`
+1. 订阅 ChatGPT Plus/Pro（20美元/月起）
+2. 在 ChatGPT 侧边栏找到 Codex 入口
+3. 点击 "Code" 按钮分配编码任务
+4. 点击 "Ask" 按钮咨询代码问题
 
-请注意，这里一定要输入，因为你复制的话是粘贴不了的。
-然后再粘贴我们第一段复制的内容：  
+**使用示例**：
 
-![label](https://lh6.googleusercontent.com/nZPZ-jlp6ZW_4DH6YpIPFJJGsL6Dz6g2_P3JcGlg8C18mvcmLSLC3FKI7cVeSLe-A0yq_8IdlocOGcmPmF0f7K-IHlQZSWekYbyi6kZXAbMC_mSovCG58f5EQuhDLydd9PWCf3eM47A2YNY790U11ka0Qw1PYUuhL3LyTnegsRRuMc9aTzX8FifLl2WOZg)  
-然后按下回车键，刷新页面。如果你的代理没问题，就可以看到正常工作的注册页面了。  
+```
+帮我修复这个 bug
+为这个函数编写单元测试
+重构这个模块，提高性能
+将这个 Python 脚本迁移到 TypeScript
+```
 
-## 第三步输入手机号码
-![label](https://lh5.googleusercontent.com/-P8__DqW8L2ALL1R-prXR67miAndgWSKd1nyRVX6GIOLqqBM-pIYr9-ItBB4Y-dvbK4IsVomBl7ZLrHr60rkJIPh6ra1293C7CNKIgNGo0nRChZQSH4BnAtJ1IZfjJRZDhGnfNp_aGlo_O46QOChyz5REw0Xu3nOP2yqJSQmKRXbIP1xaWhiVmlAHtXE3g)
+**支持的订阅类型**：
 
-这里选的是韩国，这是因为我们使用韩国的代理，但是我们最好选择印度。然后到我们的接码网站上去。在左侧搜索OpenAi，然后点击印度。  
+| 订阅类型 | Codex 访问权限 |
+|---------|---------------|
+| Free | ❌ 不可用 |
+| Plus | ✅ 可用 |
+| Pro | ✅ 可用（优先） |
+| Team | ✅ 可用 |
+| Enterprise | ✅ 可用 |
 
-![label](https://lh6.googleusercontent.com/CF_2ilYYa3bJndavHZkG2CRuKOIBnI_pRd7ljOik61P42vHUdfGN-yOautzgUI9Jty04jdoqf9tOQdsAfSlqKDO-SQwyrzS9JvriuPwO3UD7MlMJgbZi_E4M76FhzcL8X5zz8HewvTtwOCHziihUKESUovjR2f8pVg5QYF5gVWxCIOpJJ5NhKP2uruGrJA)
+### 2. Codex CLI（命令行工具）
 
-点击”小黄车”。
-![label](https://lh5.googleusercontent.com/DSqE8eZhRe_v_jftZH4nf7KN74jL5ll3WqWeVQHd3EznubDpdsb2Tp9iI5R8dRtF9ZTlG5hZw2vaP3ihm-Ottk-1Yf6NSku7jdYAEM6APR8HwuLZbF_6dVe6uvtN0Ay9NlqhWiPyhnpeFkXnlsBXWPBA006_Li5SeuIzLLrceyTVw_ja71xCLaqK3v3HDw)
+Codex CLI 是 OpenAI 推出的开源命令行编码智能体，可在终端直接运行。
 
-然后我们复制这个号码，粘贴过去。然后我们点击发送验证码就完成了。
-等一会网站会提示验证码，我们复制粘贴。
+#### 系统要求
 
-这里你要选择你打算如何使用OpenAI。随便选择吧。
-使用ChatGPT
-注册完后，打开ChatGPT网站去登陆。
-![label](https://lh3.googleusercontent.com/6ZdsiN3icfui0AdbF5_D5gRsK6BGlNBbNYusO4jrPHzZOJYov0zE9qukPwlA1jmGET4og0s9oYlZ0cHtaM1Ty8nW9BpnHxf14SZ9Jkq7NrgTfYC7qwx8fl4IpRykNdcRic4dAiQ3c_VRrLe8E7MNdZEAf9prceEdOAd6btO5FiWDOXt8VTu0PJz8Iq69Cg)
-在下面这个地方就可以开始写你的任何巧妙的句子了。
+- Node.js 18 或更高版本
+- npm、yarn、pnpm 或 bun 包管理器
+- OpenAI API Key
+
+#### 安装
+
+```bash
+# 推荐：通过 npm 安装
+npm install -g @openai/codex
+
+# 或使用 yarn
+yarn global add @openai/codex
+
+# 或使用 pnpm
+pnpm add -g @openai/codex
+
+# 或使用 bun
+bun add -g @openai/codex
+```
+
+#### 验证安装
+
+```bash
+codex --version
+```
+
+#### 配置 API Key
+
+```bash
+# macOS/Linux（临时设置）
+export OPENAI_API_KEY="sk-你的API密钥"
+
+# macOS/Linux（永久设置，添加到 ~/.zshrc 或 ~/.bashrc）
+echo 'export OPENAI_API_KEY="sk-你的API密钥"' >> ~/.zshrc
+source ~/.zshrc
+
+# Windows PowerShell（临时）
+$env:OPENAI_API_KEY="sk-你的API密钥"
+
+# Windows CMD（临时）
+set OPENAI_API_KEY=sk-你的API密钥
+```
+
+#### 基本使用
+
+```bash
+# 修复构建错误
+codex "fix build errors"
+
+# 编写单元测试
+codex "Write unit tests for utils/date.ts"
+
+# 解释正则表达式
+codex "Explain what this regex does: ^(?=.*[A-Z]).{8,}$"
+
+# 全自动模式生成迁移脚本
+codex --approval-mode full-auto "Generate SQL migrations"
+
+# 分析代码库
+codex "Analyze the architecture of this project"
+
+# 安全审计
+codex "Find potential security vulnerabilities in this codebase"
+```
+
+#### 运行模式
+
+| 模式 | 命令参数 | 说明 |
+|------|---------|------|
+| 建议模式 | `--approval-mode suggest` | 仅建议修改，不自动执行 |
+| 半自动模式 | `--approval-mode auto-edit` | 自动修改，需确认 |
+| 全自动模式 | `--approval-mode full-auto` | 全自动执行，无需确认 |
+
+!!! warning "警告"
+    使用 `full-auto` 模式时请确保在 Git 环境下工作，以便在出现问题时回滚更改。
+
+#### 常用命令参数
+
+```bash
+# 指定模型
+codex --model gpt-5-codex "你的任务"
+
+# 设置推理努力程度
+codex --reasoning-effort high "你的任务"
+
+# 使用图片输入
+codex --image screenshot.png "根据这个截图生成代码"
+
+# 查看帮助
+codex --help
+```
+
+### 3. VS Code 插件
+
+1. 打开 VS Code 扩展市场
+2. 搜索 "OpenAI Codex"
+3. 安装官方插件
+4. 配置 API 密钥
+5. 使用快捷键或命令面板调用 Codex
+
+### 4. API 调用
+
+开发者可以通过 OpenAI API 直接调用 Codex：
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="你的API密钥",
+    base_url="https://api.openai.com/v1"
+)
+
+response = client.responses.create(
+    model="codex-1",
+    input="编写一个 Python 函数，实现快速排序算法",
+    tools=[{
+        "type": "code_interpreter"
+    }]
+)
+
+print(response.output_text)
+```
+
+## 配置文件说明
+
+Codex CLI 支持通过配置文件自定义行为。
+
+### 配置文件位置
+
+- **macOS/Linux**：`~/.codex/config.toml`
+- **Windows**：`C:\Users\<用户名>\.codex\config.toml`
+
+### 配置示例
+
+```toml
+# 模型配置
+model = "gpt-5-codex"
+model_reasoning_effort = "high"  # low, medium, high
+disable_response_storage = true
+
+# OpenAI 提供商配置
+[model_providers.openai]
+api_key = "你的API密钥"
+
+# 自定义提供商（如使用中转服务）
+[model_providers.custom]
+name = "Custom Provider"
+api_key = "你的API密钥"
+base_url = "https://your-api-endpoint.com/v1"
+```
+
+## AGENTS.md 规范
+
+Codex 支持通过 `AGENTS.md` 文件提供项目级别的指导，该文件可以放在项目的任何位置（通常在根目录）。
+
+### 示例 AGENTS.md
+
+```markdown
+# 项目指南
+
+## 测试规范
+- 使用 pytest 运行测试：`pytest tests/`
+- 测试覆盖率要求 80% 以上
+- 每个新功能必须包含测试用例
+
+## 代码风格
+- 遵循 PEP 8 规范
+- 使用 black 格式化代码
+- 行长度限制 88 字符
+
+## PR 要求
+- 描述清晰的变更内容
+- 关联相关 issue
+- 通过所有 CI 检查
+
+## 禁止事项
+- 不要修改 .env 文件
+- 不要直接提交到 main 分支
+- 不要删除现有测试用例
+```
+
+## 最新模型
+
+### GPT-5.2-Codex
+
+2025 年 12 月发布，主要特性：
+
+| 特性 | 说明 |
+|------|------|
+| 长程任务优化 | 原生上下文压缩技术，处理大型代码仓库不丢失进度 |
+| 重构增强 | 大规模代码重构和迁移更稳定 |
+| Windows 适配 | Windows 环境性能大幅提升 |
+| 安全能力 | 网络安全能力显著增强 |
+| 词元效率 | 编码任务的词元效率显著提升 |
+
+### GPT-5.2-Codex-Max
+
+更高性能变体，为复杂开发场景提供支持：
+
+- 更强的推理能力
+- 更长的上下文窗口
+- 更复杂的多步骤任务处理
+
+## Codex vs Claude Code
+
+| 特性 | Codex | Claude Code |
+|------|-------|-------------|
+| 开发商 | OpenAI | Anthropic |
+| 擅长领域 | 代码审查、问题发现、系统分析 | 原始代码生成、快速开发 |
+| 推理风格 | 系统化、深入分析 | 快速、直觉式 |
+| 多模态 | ✅ 支持 | ✅ 支持 |
+| CLI | ✅ 开源 | ✅ 可用 |
+| IDE 集成 | ✅ VS Code | ✅ 多种 IDE |
+
+**推荐工作流**：使用 Claude Code 写代码，使用 Codex 做代码审查和 bug 检测。
+
+## 实用技巧
+
+### 1. 编写高效的 Prompt
+
+```markdown
+# 好的 Prompt 示例
+为 utils/date.ts 文件中的 formatDate 函数编写单元测试：
+- 测试正常日期格式化
+- 测试边界情况（空值、无效日期）
+- 测试不同时区的处理
+- 使用 Jest 测试框架
+```
+
+```markdown
+# 不好的 Prompt 示例
+写个测试
+```
+
+### 2. 分步处理复杂任务
+
+```bash
+# 第一步：分析项目结构
+codex "分析这个项目的架构和主要模块"
+
+# 第二步：生成具体代码
+codex "为 user 模块实现登录功能"
+
+# 第三步：编写测试
+codex "为登录功能编写单元测试和集成测试"
+
+# 第四步：代码审查
+codex "审查刚才的代码变更，检查潜在问题"
+```
+
+### 3. 使用 Git 工作流
+
+```bash
+# 在开始前创建新分支
+git checkout -b codex-feature
+
+# 运行 Codex 任务
+codex "实现用户认证功能"
+
+# 检查变更
+git diff
+
+# 如果满意，提交
+git add .
+git commit -m "feat: add user authentication"
+
+# 如果不满意，回滚
+git checkout .
+```
+
+### 4. 利用多模态能力
+
+```bash
+# 从截图生成代码
+codex --image ui-design.png "根据这个设计图生成 React 组件"
+
+# 分析架构图
+codex --image architecture.png "根据这个架构图创建项目结构"
+```
+
+## 常见问题
+
+### Q: Codex 任务需要多长时间？
+
+大多数任务在 1 到 30 分钟内完成，具体取决于任务复杂度。
+
+### Q: Codex 支持哪些编程语言？
+
+支持主流编程语言，包括 Python、JavaScript、TypeScript、Go、Rust、Java、C/C++、Ruby、PHP 等。
+
+### Q: 如何获取 OpenAI API Key？
+
+1. 访问 [OpenAI API 平台](https://platform.openai.com/)
+2. 注册/登录账号
+3. 进入 API Keys 页面
+4. 创建新的 API Key
+
+### Q: Codex CLI 在国内如何使用？
+
+可以使用 API 中转服务，在配置文件中设置自定义 `base_url`：
+
+```toml
+[model_providers.custom]
+base_url = "https://your-proxy.com/v1"
+```
+
+### Q: 如何查看 Codex 的执行日志？
+
+Codex 会记录详细的终端日志和测试结果，任务完成后可查看完整记录。
+
+### Q: Codex 会修改我的代码吗？
+
+取决于运行模式：
+
+- `suggest` 模式：只提供建议，不修改
+- `auto-edit` 模式：修改但需确认
+- `full-auto` 模式：自动修改
+
+## 官方资源
+
+- **Codex 官方产品页**：https://openai.com/codex/
+- **Codex 开发者文档**：https://developers.openai.com/codex/
+- **Codex CLI GitHub**：https://github.com/openai/codex
+- **OpenAI API 平台**：https://platform.openai.com/
+
+## 注意事项
+
+1. **API 费用**：API 调用为收费服务，注意监控使用量，避免意外账单
+2. **代码审查**：生成的代码需人工审查，确保质量和安全性
+3. **数据安全**：敏感项目谨慎使用，注意数据隐私
+4. **版本控制**：强烈建议在 Git 环境下使用，方便回滚
+5. **API Key 安全**：不要将 API Key 提交到代码仓库
+
+---
+
+*最后更新：2026年3月*

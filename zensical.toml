@@ -22,13 +22,13 @@ edit_uri = "edit/main/docs"                              # 编辑按钮跳转的
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
 extra_javascript = [
-    "javascripts/glm-config.js",                              # 智谱清言翻译配置
-    "javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    # "javascripts/glm-config.js",                              # 智谱清言翻译配置
+    # "javascripts/glm-translate.js",                           # 智谱清言翻译系统
     "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
     # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
-    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
-    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
     # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
     # "javascripts/extra.js",                                   # 额外功能脚本
     # "javascripts/mathjax.js",                                 # MathJax 配置
@@ -197,6 +197,8 @@ nav = [
         "develop/index.md",
         { "AI" = [
             { "AI工具(2026最新)" = "develop/AI.md" },
+            { "Claude Code指南" = "develop/Claude-Code.md" },
+            { "Codex指南" = "develop/ChatGPT.md" },
             { "Attention Residuals：Kimi架构创新" = "develop/AI/attention-residuals.md" },
             { "What is MCP" = "develop/AI/mcp.md" },
             { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
@@ -235,7 +237,6 @@ nav = [
             { "利用百度API进行植物识别" = "develop/Mywork/aizhiwu.md" },
             { "玩的设计" = "develop/Mywork/design.md" }
         ]},
-        { "如何注册ChatGPT" = "develop/ChatGPT.md" },
         { "我的设备" = "develop/mydevice.md" },
         { "Markdown" = [
             { "Markdown指南" = "develop/Markdown/markdown.md" },
@@ -348,7 +349,7 @@ nav = [
     # ]},
     { "关于" = [
         { "个人简介" = "about/geren.md" },
-        { "个人简历" = "about/resume.md" },
+        # { "个人简历" = "about/resume.md" },
         { "免责声明" = "about/shengming.md" },
         { "支持作者" = "about/zcw.md" },
         { "Github主页介绍" = "about/Wcowin.md" },

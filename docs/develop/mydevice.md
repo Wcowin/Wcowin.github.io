@@ -69,6 +69,7 @@ tags:
 
 ## 开发工具
 
+* Claude CLI :simple-claude:
 * Vs code :material-microsoft-visual-studio-code:
 * Xcode :simple-xcode:
 * PyCharm :simple-pycharm:
@@ -79,9 +80,10 @@ tags:
 * Node.js :fontawesome-brands-node:
 * vue :material-vuejs:
 * [SwitchHost](https://switchhosts.vercel.app/zh) :material-toggle-switch:
-* Mkdocs/mkdocs-material :logo-monochrome:
+* CC Switch :material-toggle-switch:
+* Mkdocs/mkdocs-material :material-file-document:
 ***
-* Arc/Chrome/Safari浏览器 :simple-safari:
+* Dia/Arc/Chrome:material-google-chrome:/Safari浏览器 :simple-safari:
 * GitHub :material-github:
 * CSDN :material-file-code:
 ***
