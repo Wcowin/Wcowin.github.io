@@ -830,6 +830,12 @@
     const processSingleText = async (node, apiIndex = 0) => {
       const textStartTime = Date.now();
       try {
+        // 立即检查是否已取消
+        if (shouldCancelTranslation) {
+          console.log('⏹️ 翻译已取消，跳过处理');
+          return;
+        }
+        
         const originalText = originalTexts.get(node);
         if (!originalText || !shouldTranslateText(originalText, node.parentElement)) {
           completedCount++;
@@ -843,6 +849,12 @@
         if (!cleanedOriginalText || cleanedOriginalText.length < 2) {
           console.warn('⚠️ 文本包含过多占位符或清理后为空，跳过翻译:', originalText);
           completedCount++;
+          return;
+        }
+        
+        // 再次检查是否已取消
+        if (shouldCancelTranslation) {
+          console.log('⏹️ 翻译已取消，跳过缓存检查');
           return;
         }
         
@@ -863,7 +875,13 @@
           console.log(`🔧 API-${apiIndex + 1} 翻译: ${originalText.slice(0, 20)}...`);
         }
         
-        if (!shouldCancelTranslation && node.parentNode) {
+        // API 返回后再次检查是否已取消，如果取消则不更新页面
+        if (shouldCancelTranslation) {
+          console.log('⏹️ 翻译已取消，不更新页面文本');
+          return;
+        }
+        
+        if (node.parentNode) {
           node.textContent = translatedText;
           const parent = node.parentElement;
           if (parent) {
@@ -1710,9 +1728,11 @@
     }
   }
 
-  // 取消当前翻译 - 立即中断版本
+  // 取消当前翻译 - 立即中断版本（优化版）
   async function cancelCurrentTranslation(reason = '用户取消', restoreToOriginal = false) {
     console.log(`🛑 立即取消翻译: ${reason}`);
+    
+    // 立即设置取消标志，阻止新的翻译任务开始
     shouldCancelTranslation = true;
     
     // 立即中止所有进行中的API请求
@@ -1729,12 +1749,18 @@
     const statusElement = document.querySelector('.translate-status');
     if (statusElement) statusElement.remove();
     
-    // 如果需要恢复原文，立即执行
+    // 如果需要恢复原文，立即执行（使用 requestAnimationFrame 确保视觉立即更新）
     if (restoreToOriginal) {
-      restoreOriginalText();
+      // 使用 requestAnimationFrame 确保在下一帧立即恢复，提供视觉反馈
+      requestAnimationFrame(() => {
+        restoreOriginalText();
+        console.log('✅ 已立即恢复为中文（视觉更新）');
+      });
+      
+      // 同时立即更新状态
       currentLanguage = 'chinese_simplified';
       saveGlobalTranslationPreference(null);
-      console.log('✅ 已立即恢复为中文');
+      console.log('✅ 已立即恢复为中文（状态更新）');
     }
     
     // 短暂延迟确保状态同步
