@@ -22,8 +22,8 @@ edit_uri = "edit/main/docs"                              # 编辑按钮跳转的
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
 extra_javascript = [
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",                              # 智谱清言翻译配置
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    "javascripts/glm-config.js",                              # 智谱清言翻译配置
+    "javascripts/glm-translate.js",                           # 智谱清言翻译系统
     "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
     "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
     # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
