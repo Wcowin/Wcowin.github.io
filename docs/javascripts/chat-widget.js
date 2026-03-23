@@ -9,8 +9,8 @@
 
   // 配置
   const CONFIG = {
-    // Cloudflare Worker 代理地址
-    apiEndpoint: 'https://siliconflow-proxy.wangkewen821.workers.dev',
+    // 硅基流动 OpenAI 兼容 Chat Completions 接口
+    apiEndpoint: 'https://api.siliconflow.cn/v1/chat/completions',
     // 使用硅基流动的 Qwen3-8B 模型
     model: 'Qwen/Qwen3-8B',
     maxMessageLength: 500,
@@ -56,10 +56,17 @@
     positionBtn.setAttribute('aria-label', pinned ? '取消贴边' : '贴边');
   }
 
-  // 获取 API Key（已废弃，使用 Cloudflare Worker 代理后不需要前端传递 Key）
+  // 获取 API Key（从 window 或环境变量）
   function getApiKey() {
-    // Worker 代理会在服务端处理认证，前端不需要传递 Key
-    return 'worker-proxy';
+    // 优先从 GLM_API_KEY 获取
+    if (window.GLM_API_KEY) {
+      return window.GLM_API_KEY;
+    }
+    // 备用：从 GLM_CONFIG 获取（如果有的话）
+    if (window.GLM_CONFIG && window.GLM_CONFIG.apiKey) {
+      return window.GLM_CONFIG.apiKey;
+    }
+    return null;
   }
 
   // 会话历史
@@ -578,8 +585,10 @@
     let fullAnswer = '';
 
     try {
-      // 使用 Cloudflare Worker 代理，不需要检查 API Key
-      // API Key 在 Worker 中安全存储
+      const apiKey = getApiKey();
+      if (!apiKey) {
+        throw new Error('API_KEY_MISSING');
+      }
 
       // 构建消息历史
       // 智能判断是否需要包含当前页面上下文
@@ -609,13 +618,12 @@
         });
       }
 
-      // 调用 API（流式）- 通过 Cloudflare Worker 代理
+      // 调用 API（流式）
       const response = await fetch(CONFIG.apiEndpoint, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
-          // 使用 Worker 代理，不需要传递 Authorization
-          // API Key 在 Worker 中安全存储
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`
         },
         body: JSON.stringify({
           model: CONFIG.model,
@@ -676,7 +684,9 @@
       console.error('Chat error:', error);
 
       let errorMessage = '抱歉，发生了错误，请稍后再试。';
-      if (error.message.includes('API_ERROR_401')) {
+      if (error.message === 'API_KEY_MISSING') {
+        errorMessage = 'API Key 未配置，请联系网站管理员。';
+      } else if (error.message.includes('API_ERROR_401')) {
         errorMessage = 'API 认证失败，请检查配置。';
       } else if (error.message.includes('API_ERROR_429')) {
         errorMessage = '请求太频繁，请稍后再试。';

@@ -9,10 +9,10 @@ window.GLM_CONFIG = {
   // 基本信息
   version: '2.1.0',
   
-  // API配置（使用 Cloudflare Worker 代理，保护 API Key）
+  // API配置（已切换到硅基流动 Qwen3-8B）
   api: {
-    // Cloudflare Worker 代理地址
-    endpoint: 'https://siliconflow-proxy.wangkewen821.workers.dev',
+    // OpenAI 兼容 Chat Completions 接口
+    endpoint: 'https://api.siliconflow.cn/v1/chat/completions',
     // 使用硅基流动的 Qwen3-8B 模型
     model: 'Qwen/Qwen3-8B',
     timeout: 5000,
