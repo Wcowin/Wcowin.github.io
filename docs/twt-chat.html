@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chat with us</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<style>
+  * { margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  iframe { width: 100%; height: 100%; border: none; }
+</style>
+</head>
+<body>
+<iframe
+  id="twt-chat-iframe"
+  allow="microphone; camera; clipboard-read; clipboard-write; autoplay; display-capture; fullscreen; storage-access"
+></iframe>
+<script>
+(function () {
+  const STORE_KEY = "__twt_visitor__";
+  const BASE_URL = "https://visitorchat.twt.com/direct/a4e3634dc3c8ec65c40ebedcb8c9c72f";
+  let stored = {};
+  try {
+    stored = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
+  } catch (e) {
+    // localStorage 不可用时静默降级，不阻塞页面加载
+  }
+  let src = BASE_URL;
+  if (stored.bs)    src += (src.indexOf("?") > -1 ? "&" : "?") + "ext_bs="    + encodeURIComponent(stored.bs);
+  if (stored.bs_mm) src += "&ext_bs_mm=" + encodeURIComponent(stored.bs_mm);
+  if (stored.fk_id) src += "&ext_fk_id=" + encodeURIComponent(stored.fk_id);
+  document.getElementById("twt-chat-iframe").src = src;
+  window.addEventListener("message", function (e) {
+    if (!e.data || e.data.type !== "twtVisitorIdentity") return;
+    try {
+      localStorage.setItem(STORE_KEY, JSON.stringify({
+        bs:    e.data.bs,
+        bs_mm: e.data.bs_mm || "",
+        fk_id: e.data.fk_id || "",
+      }));
+    } catch (err) {
+      // 写入失败时静默处理（可接受降级）
+    }
+  });
+})();
+</script>
+</body>
+</html>

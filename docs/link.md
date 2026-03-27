@@ -1240,6 +1240,20 @@ comments: false
             </div>
           </div>
         </div>
+      <div class="card">
+          <img class="ava" src="https://github.com/lm-xiao-fen/lm-xiao-fen.github.io/blob/main/image/MEITU_20260128_220225596.jpg?raw=true" />
+          <div class="card-header">
+            <div>
+              <a href="https://lm-xiao-fen.github.io/" target="_blank">xf_blog</a>
+            </div>
+            <div class="info">
+              立志用 cloudflare workers，GitHub pages 和 vercel 做出整个互联网的up（虽然不会成功
+            </div>
+          </div>
+        </div>
+
+
+
 
    </div>
   </div>
