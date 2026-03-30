@@ -258,6 +258,8 @@
   align-items: center;
   gap: 10px;
   min-width: 0;
+  flex: 1;
+  overflow: hidden;
 }
 
 .github-repo-avatar-wrapper {
@@ -285,18 +287,22 @@
 }
 
 .github-repo-title {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 4px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
   color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .github-repo-owner {
   color: #6b7280;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .github-repo-slash {
@@ -306,6 +312,10 @@
 .github-repo-name {
   color: #111827;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .github-repo-description {
@@ -424,6 +434,10 @@
   .github-repo-card-inner {
     padding: 14px 16px;
     border-radius: 18px;
+  }
+
+  .github-repo-title {
+    font-size: 0.9rem;
   }
 
   .github-repo-description {

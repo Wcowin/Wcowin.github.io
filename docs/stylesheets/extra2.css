@@ -270,3 +270,10 @@ nav.md-nav--secondary ul ul {
   border-spacing: 0;
   overflow: hidden;
 }
+
+/* 移动端隐藏侧边栏按钮 */
+@media screen and (max-width: 768px) {
+  .md-sidebar-button {
+    display: none !important;
+  }
+}

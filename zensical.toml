@@ -64,8 +64,8 @@ extra_css = [
     # "about/sty/portfolio.css"        # 作品集样式（已移至 geren.md 单独引入）
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
     "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
-    # "stylesheets/github-widgets.css",            # GitHub 相关组件样式
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/github-widgets.css"            # GitHub 相关组件样式
+    "stylesheets/github-widgets.css",            # GitHub 相关组件样式
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/github-widgets.css"            # GitHub 相关组件样式
 
 ]
 

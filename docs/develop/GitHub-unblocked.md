@@ -30,7 +30,7 @@ I would like to clarify first, my account is: <a href="https://github.com/Wcowin
 
 ## 第二步
 
-需要一个国外的手机号接码，推荐用<a href="https://sms-activate.io/cn/rent" target="_blank">https://sms-activate.io/cn/rent</a> 临时搞个加拿大的手机号接收验证码。  
+需要一个国外的手机号接码，推荐用<a href="https://hero-sms.com/cn" target="_blank">https://hero-sms.com/cn</a> 临时搞个加拿大的手机号接收验证码。  
 
 ![image](https://s1.imagehub.cc/images/2025/12/06/1cb3eaf34b1ac50552f19f5af3489c99.png)  
 
