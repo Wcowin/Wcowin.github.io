@@ -1251,6 +1251,17 @@ comments: false
             </div>
           </div>
         </div>
+      <div class="card">
+          <img class="ava" src="https://vpnnew.net/youyou.png" />
+          <div class="card-header">
+            <div>
+              <a href="https://vpnnew.net/blog/" target="_blank">YouYou</a>
+            </div>
+            <div class="info">
+              学无止境
+            </div>
+          </div>
+        </div>
 
 
 

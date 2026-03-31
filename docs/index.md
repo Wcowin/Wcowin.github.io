@@ -13,7 +13,7 @@ hide:
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
     <div class="oneclip-announcement-item">
-      🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— macOS剪贴板管理工具 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a>
+      🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— macOS剪贴板管理工具 <a href="https://github.com/Wcowin/OneClip" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a>
     </div>
     <div class="oneclip-announcement-item">
       ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" rel="noopener noreferrer">Zensical中文教程</a> —— 最新的Zensical中文教程
