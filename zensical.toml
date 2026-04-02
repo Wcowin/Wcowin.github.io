@@ -440,10 +440,10 @@ toggle.name = "切换到日间模式"
 
 # ===== 图标配置 =====
 [project.theme.icon]
-repo = "lucide/github"                      # 仓库图标
-previous = "lucide/arrow-left"              # 上一页图标
-next = "lucide/arrow-right"                 # 下一页图标
-alternate = "lucide/languages"              # 语言切换图标
+repo = "fontawesome/brands/github"                      # 仓库图标
+previous = "fontawesome/solid/arrow-left"              # 上一页图标
+next = "fontawesome/solid/arrow-right"                 # 下一页图标
+alternate = "fontawesome/solid/language"               # 语言切换图标
 
 # ==========================================
 # 额外配置 [Extra]
@@ -512,8 +512,6 @@ provider = "custom"
 property = "foobar"
 script_url = "https://cloud.umami.is/script.js"
 website_id = "061b4dea-9b7b-4ffa-9071-74cde70f3dfb"
-
-# 用户反馈配置
 [project.extra.analytics.feedback]
 title = "此页面有帮助吗？"
 
