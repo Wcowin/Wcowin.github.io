@@ -87,7 +87,7 @@ OpenAI 的 Operator、DeepSeek 的多轮任务、各种 Agent 框架（LangGraph
 ### 3.1 模型层（Model）
 
 - 核心仍然是一个或多个大语言模型 / 多模态模型：
-  - 通用模型：GPT‑4.x / GPT‑o 系列、Claude、Gemini、DeepSeek 等
+  - 通用模型：GPT‑5.x / o 系列、Claude、Gemini、DeepSeek 等
   - 本地模型：Llama、Qwen、Yi 等
 - 如果任务需要「深度推理」或「测试时计算」，常会用到强调推理能力的模型家族，例如 OpenAI reasoning models、DeepSeek‑R1 等。
 

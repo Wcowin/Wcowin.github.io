@@ -423,14 +423,6 @@ description: >
 
 ---
 
-## 注意事项与常见问题
-
-- **安装或更新 Skill 后不生效**：重启 IDE/Agent 后再试；确认 Skill 目录无误（项目级 vs 用户级）。各平台路径可能不同，参考上文「Skill 从哪里加载」章节。
-- **Agent 从不选用某个 Skill**：检查 `description` 是否清晰描述了适用场景，便于模型做相关性判断；或改用 `disable-model-invocation: true` 后通过 `/skill-name` 手动调用。
-- **脚本执行失败**：确认 `scripts/` 下文件有执行权限（`chmod +x scripts/*.sh`），且 SKILL.md 中引用的路径为相对路径、与目录结构一致。注意不同平台对脚本语言的支持可能不同（如 Windows 可能需要 PowerShell 脚本）。
-
----
-
 ## 推荐去哪找 Skill
 
 ### 官方资源

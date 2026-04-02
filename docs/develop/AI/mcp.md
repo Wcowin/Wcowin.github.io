@@ -278,7 +278,15 @@ async def list_tools():
 @app.call_tool()
 async def call_tool(name: str, arguments: dict):
     if name == "calculate":
-        result = eval(arguments["expression"])
+        # 注意：生产环境中请勿使用 eval()，应使用安全的表达式解析库
+        # 如 simpleeval、asteval 等，避免代码注入风险
+        import ast
+        try:
+            result = ast.literal_eval(arguments["expression"])
+        except (ValueError, SyntaxError):
+            # literal_eval 不支持运算符，此处仅作示例
+            # 实际部署建议使用 simpleeval 等库
+            result = "不支持的运算表达式"
         return {"result": result}
 
 if __name__ == "__main__":

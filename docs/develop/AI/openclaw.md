@@ -17,7 +17,7 @@ tags:
 
 ## 什么是 OpenClaw
 
-**[OpenClaw](https://github.com/openclaw/openclaw)** 是一个开源的个人 AI 助手平台，由 Peter Steinberger（PSPDFKit 创始人）于 2025 年 11 月创建。[中文社区版](https://clawd.org.cn)（`openclaw-cn`）是其开源分支，提供中文文档、国内镜像加速和本地化支持。它的核心特点是：
+**[OpenClaw](https://github.com/openclaw/openclaw)** 是一个开源的个人 AI 助手平台，由 Peter Steinberger（PSPDFKit 创始人）于 2025 年 11 月创建。[中文社区版](https://clawd.org.cn)（`openclaw-cn`）是其开源分支，提供中文文档、国内镜像加速和本地化支持。2026 年 2 月，Steinberger 加入 OpenAI 负责个人智能体研发，OpenClaw 项目已过渡至开源基金会管理，由社区驱动发展。它的核心特点是：
 
 - **本地运行**：完全在你的 Mac、Windows 或 Linux 上运行，数据不经过第三方服务器
 - **真正执行任务**：不只是聊天，能操作浏览器、执行命令、管理文件、发送消息
