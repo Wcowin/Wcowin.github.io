@@ -42,12 +42,12 @@ tags:
 
 最后可以打开 [Google](https://www.google.com/?hl=zh-CN&sa=X&ved=0ahUKEwjTmpfQ-u31AhVaEXAKHUcyBmcQnZcCCAc){target=“_blank”} 页面即为成功。
 
-## 推荐机场
+## 推荐机场  
 
+- [魔戒](https://mojie.me/#/register?code=5wKWtMbc){target=“_blank”}
 - [鹰云](https://huluyuncloud.site/#/register?code=RNvR2q4E){target=“_blank”}
 - [一元机场](https://一元机场.com/#/dashboard){target=“_blank”}
 - [三分机场](https://三分机场.xyz/){target=“_blank”}
-- [魔戒](https://mojie.me/#/dashboard){target=“_blank”}
 
 ## 图文教程
 
