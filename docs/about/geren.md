@@ -329,16 +329,13 @@ hide_comment: true
 
 ## 我的履历
 
-<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css"> -->
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <div class="qualification">
     <div class="qualification__tabs">
         <button class="qualification__toggle qualification__button qualification__active" data-target="#education">
-            <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon><span>来时路</span>
+            <i class="qualification__icon fa-solid fa-graduation-cap"></i><span>来时路</span>
+            <i class="qualification__hover-hint fa-solid fa-mouse-pointer"></i>
         </button>
     </div>
     <div class="qualification__sections">
@@ -348,7 +345,7 @@ hide_comment: true
                     <h3 class="qualification__title">漯河高中</h3>
                     <span class="qualification__subtitle">平凡的三年</span>
                     <div class="qualification__calendar">
-                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <i class="fa-regular fa-calendar"></i>
                         <span>2018 - 2021</span>
                     </div>
                 </div>
@@ -367,7 +364,7 @@ hide_comment: true
                     <h3 class="qualification__title">CTBU</h3>
                     <span class="qualification__subtitle">电子信息工程学士</span>
                     <div class="qualification__calendar">
-                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <i class="fa-regular fa-calendar"></i>
                         <span>2021 - 2025</span>
                     </div>
                 </div>
@@ -377,7 +374,7 @@ hide_comment: true
                     <h3 class="qualification__title">家里蹲大学</h3>
                     <span class="qualification__subtitle">密码学硕士</span>
                     <div class="qualification__calendar">
-                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <i class="fa-regular fa-calendar"></i>
                         <span>2026 - 2029</span>
                     </div>
                 </div>
@@ -396,7 +393,7 @@ hide_comment: true
                     <h3 class="qualification__title">未完待续</h3>
                     <span class="qualification__subtitle">于道各努力，千里自同风</span>
                     <div class="qualification__calendar">
-                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                        <i class="fa-regular fa-calendar"></i>
                         <span>Before - After</span>
                     </div>
                 </div>
@@ -405,11 +402,11 @@ hide_comment: true
         <div class="qualification__content" data-content id="work">
             <div class="qualification__data">
                 <div>
-                    <h3 class="qualification__title">工作经历待添加</h3>
-                    <span class="qualification__subtitle">点击上方切换即可展示</span>
+                    <h3 class="qualification__title">独立开发者</h3>
+                    <span class="qualification__subtitle">Swift开发/<a href="https://github.com/Wcowin/OneClip" target="_blank" style="color: inherit; text-decoration: underline;">OneClip</a> 作者</span>
                     <div class="qualification__calendar">
-                        <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
-                        <span>敬请期待</span>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>2025-至今</span>
                     </div>
                 </div>
                 <div>
@@ -421,43 +418,6 @@ hide_comment: true
     </div>
 </div>
 
-<style>
-/* 切换按钮居中且仅显示当前标题 */
-.qualification__tabs {
-  justify-content: center;
-}
-.qualification__toggle {
-  border: none;
-  background: transparent;
-  padding: 0.3rem 0.8rem;
-  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
-}
-.qualification__toggle:active {
-  transform: scale(0.96);
-  opacity: 0.8;
-}
-
-/* 内容区丝滑切换：淡入 + 轻微上移动画，只展示一个 */
-.qualification__sections {
-  position: relative;
-  overflow: hidden;
-}
-.qualification__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-.qualification__content.qualification__active {
-  position: relative;
-  opacity: 1;
-  pointer-events: auto;
-}
-</style>
-
 <script>
 // 直接在脚本执行时初始化（脚本写在 DOM 后面，DOMContentLoaded 在某些场景下已经触发）
 (function () {
@@ -467,14 +427,14 @@ hide_comment: true
   if (!toggleBtn) return;
 
   const states = [
-    { id: '#education', label: '来时路', icon: 'fluent:hat-graduation-12-regular' },
-    { id: '#work', label: '工作经历', icon: 'ph:briefcase' },
+    { id: '#education', label: '来时路', iconClass: 'fa-solid fa-graduation-cap' },
+    { id: '#work', label: '工作经历', iconClass: 'fa-solid fa-briefcase' },
   ];
 
   let current = 0;
 
   const applyState = () => {
-    const { id, label, icon } = states[current];
+    const { id, label, iconClass } = states[current];
     const target = document.querySelector(id);
     if (!target) return;
 
@@ -482,7 +442,20 @@ hide_comment: true
     target.classList.add('qualification__active');
 
     toggleBtn.dataset.target = id;
-    toggleBtn.innerHTML = `<iconify-icon icon="${icon}" class="qualification__icon"></iconify-icon><span>${label}</span>`;
+    toggleBtn.innerHTML = `<i class="qualification__icon ${iconClass}"></i><span>${label}</span><i class="qualification__hover-hint fa-solid fa-mouse-pointer"></i>`;
+
+    // 重新绑定hover事件到新的hint元素
+    bindHoverEvent();
+  };
+
+  const bindHoverEvent = () => {
+    const hint = toggleBtn.querySelector('.qualification__hover-hint');
+    if (hint) {
+      hint.addEventListener('mouseenter', () => {
+        current = (current + 1) % states.length;
+        applyState();
+      });
+    }
   };
 
   toggleBtn.addEventListener('click', () => {
@@ -519,8 +492,8 @@ hide_comment: true
     
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target="_blank"}~
     - [x] 咖啡重度爱好者
-    - [x] 热爱(xiā)折腾技术/Math，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
-    - [x] 目前的研究领域是[密码学/区块链](../blog/Cryptography/index.md)
+    - [x] 热爱(xiā)研究/Math，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
+    - [x] 目前的研究领域是[AI](../develop/AI/attention-residuals)、[密码学/区块链](../blog/Cryptography/index.md)
     - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒知趣，明得失，知进退
 

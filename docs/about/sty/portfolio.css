@@ -125,8 +125,8 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
+  -webkit-justify-content: center;
+  justify-content: center;
   margin-bottom: var(--mb-2);
 }
 
@@ -141,14 +141,45 @@
   -webkit-align-items: center;
   align-items: center;
   white-space: nowrap;
+  border: none;
+  background: transparent;
+  padding: 0.3rem 0.8rem;
+  color: var(--md-default-fg-color);
+  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+  position: relative;
 }
 
 .qualification__button:hover {
   opacity: 0.7;
 }
 
+.qualification__button:active {
+  transform: scale(0.96);
+}
+
+/* 右上角点击提示图标 */
+.qualification__hover-hint {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  font-size: 0.65rem;
+  opacity: 0.4;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.qualification__button:hover .qualification__hover-hint {
+  opacity: 0.8;
+}
+
+.qualification__hover-hint:hover {
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
 .qualification__icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-right: var(--mb-0-25);
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
@@ -207,43 +238,25 @@
   transform: translate(6px, -7px);
 }
 
+/* 统一使用 opacity + visibility 实现淡入动画 */
+.qualification__sections {
+  position: relative;
+}
+
 .qualification [data-content] {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .qualification__active[data-content] {
-  display: block;
-}
-
-.qualification__button.qualification__active {
   opacity: 1;
+  visibility: visible;
+  position: relative;
 }
 
 /* 深色模式 - 履历时间线（使用默认颜色，无需额外覆盖） */
-
-/* 动画效果 */
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
