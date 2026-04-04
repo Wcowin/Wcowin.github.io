@@ -16,7 +16,7 @@ status: new
 </p> -->
 
 <p align="center">
-  <img src="https://s3.bmp.ovh/2026/03/02/Q0SGN7kG.jpg" class="img1" style="width:50%; " />
+  <img src="https://pic2.zhimg.com/80/v2-42db1a89cc3e402891212189f444f081_1440w.webp" class="img1" style="width:50%; " />
 </p>
 <!-- <p align="center">
   <img src="https://s2.loli.net/2025/02/07/YbLBRWztDM1lgUC.jpg" class="img1" style="width:40%; " />

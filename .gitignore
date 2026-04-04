@@ -40,3 +40,4 @@ venv/
 
 # Node 依赖（若有本地工具）
 node_modules/
+temp/

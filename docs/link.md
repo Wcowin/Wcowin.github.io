@@ -55,7 +55,7 @@ comments: false
       <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
       <div class="card-header">
         <div>
-          <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
+          <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Zensical教程</a>
         </div>
         <div class="info">
           撰写最新的Zensical中文教程
@@ -66,7 +66,7 @@ comments: false
       <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png" />
       <div class="card-header">
         <div>
-          <a href="https://wcowin.work/Mkdocs-Wcowin/" target="_blank">Wcowin for MkDocs</a>
+          <a href="https://wcowin.work/Mkdocs-Wcowin/" target="_blank">Mkdocs教程</a>
         </div>
         <div class="info">
           撰写最新的Mkdocs中文教程
@@ -430,17 +430,6 @@ comments: false
       </div>
       <div class="info">
       欢迎光临小城故事!
-      </div>
-     </div>
-    </div>
-   <div class="card">
-     <img class="ava" loading="lazy" src="https://upload.minimablog.cn/upload/109/user/blog-image/f62f8669.jpg" />
-     <div class="card-header">
-      <div>
-       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a>
-      </div>
-      <div class="info">
-       慈善义工在行动
       </div>
      </div>
     </div>
@@ -903,17 +892,6 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://vindlog.com/images/icon.png" />
-     <div class="card-header">
-      <div>
-      <a href="https://vindlog.com" target="_blank">Vindlog</a>
-      </div>
-      <div class="info">
-      真心走过每个瞬间 - 摄影和乐器爱好分享
-      </div>
-     </div>
-    </div>
-    <div class="card">
      <img class="ava" loading="lazy" src="https://cn.cravatar.com/avatar/868740183b995d2707e307ce0a89633a?s=200" />
      <div class="card-header">
       <div>
@@ -924,17 +902,6 @@ comments: false
       </div>
      </div>
     </div>
-      <div class="card">
-      <img class="ava" loading="lazy" src="https://www.zeruo.net/wp-content/uploads/2025/07/1753778958-IMG_7458.jpeg" />
-      <div class="card-header">
-        <div>
-        <a href="https://www.zeruo.net/" target="_blank">Zeruo</a>
-        </div>
-        <div class="info">
-        酌贪泉而觉爽，处涸辙以犹欢。
-        </div>
-      </div>
-      </div>
       <div class="card">
       <img class="ava" loading="lazy" src="https://img.hestudio.net/img/2022/12/13/639872e717350.png" />
       <div class="card-header">
@@ -980,7 +947,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://blog.lusyoe.com/lusyoe-logo.webp" />
+      <img class="ava" loading="lazy" src="https://cdn.lusyoe.com/images/person.webp" />
       <div class="card-header">
         <div>
           <a href="https://blog.lusyoe.com" target="_blank">青萍叙事</a>
@@ -1011,17 +978,6 @@ comments: false
           窗外是蓝天白云，心里是小杏扉间。
         </div>
       </div>
-    </div>
-    <div class="card">
-    <img class="ava" loading="lazy" src="https://maxlhy0424.is-a.dev/web/avatar.webp" />
-    <div class="card-header">
-      <div>
-      <a href="https://MaxLHy0424.github.io" target="_blank">MaxLHy0424</a>
-      </div>
-      <div class="info">
-      Where All Miracle Begins.
-      </div>
-    </div>
     </div>
     <div class="card">
     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/56161071?v=4" />
@@ -1112,7 +1068,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://dev.oneall.eu.org/favicon.webp" />
+        <img class="ava" src="https://avatars.githubusercontent.com/u/134772645?v=4" />
         <div class="card-header">
           <div>
             <a href="https://blog.oneall.eu.org" target="_blank">r1a dev</a>
@@ -1230,7 +1186,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-          <img class="ava" src="https://090909.top/avatar.png" />
+          <img class="ava" src="https://090909.top/assets/images/avatar.webp" />
           <div class="card-header">
             <div>
               <a href="https://090909.top/" target="_blank">梁栋烨</a>
@@ -1309,7 +1265,7 @@ comments: false
      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
-       <a href="https://xpmrobot.tech/" target="_blank">Xpm's Robot Lab</a>
+       <a href="https://xpmrobot.tech/" target="_blank">Xpm's Robot Lab(打不开)</a>
       </div>
       <div class="info">
        星星之火可以燎原
@@ -1478,6 +1434,39 @@ comments: false
       </div>
       <div class="info">
        🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
+      </div>
+     </div>
+    </div>
+      <div class="card">
+      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+      <div class="card-header">
+        <div>
+        <a href="https://www.zeruo.net/" target="_blank">Zeruo(打不开)</a>
+        </div>
+        <div class="info">
+        酌贪泉而觉爽，处涸辙以犹欢。
+        </div>
+      </div>
+      </div>
+    <div class="card">
+    <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+    <div class="card-header">
+      <div>
+      <a href="https://MaxLHy0424.github.io" target="_blank">MaxLHy0424(打不开)</a>
+      </div>
+      <div class="info">
+      Where All Miracle Begins.
+      </div>
+    </div>
+    </div>
+   <div class="card">
+     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <div class="card-header">
+      <div>
+       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a>
+      </div>
+      <div class="info">
+       慈善义工在行动 （多次变动，且未加我方友链）
       </div>
      </div>
     </div>

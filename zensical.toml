@@ -479,7 +479,7 @@ lang = "en"
 # 显示在页脚的社交媒体图标
 [[project.extra.social]]
 icon = "fontawesome/brands/weixin"
-link = "https://pic1.zhimg.com/80/v2-8ad8e415b3eb139134b0373ff95c6846_1440w.webp"
+link = "https://picx.zhimg.com/80/v2-ff732fe4d4b59cd111ca0e4a6eb5e1a9_1440w.webp"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/telegram"
@@ -487,7 +487,7 @@ link = "https://t.me/Wcowin"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/x-twitter"
-link = "https://twitter.com/wcowin_"
+link = "https://x.com/intent/follow?screen_name=Wcowin_"
 name = "Twitter"
 
 [[project.extra.social]]
@@ -502,7 +502,7 @@ link = "https://space.bilibili.com/1407028951/lists/4566631?type=series"
 
 [[project.extra.social]]
 icon = "fontawesome/regular/envelope"
-link = "mailto:wangkewen821@gmail.com"  # 联系方式
+link = "mailto:wcowin@qq.com"  # 联系方式
 name = "Email"
 
 # ===== Umami Analytics =====

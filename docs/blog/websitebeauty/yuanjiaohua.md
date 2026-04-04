@@ -234,4 +234,4 @@ border-radius: 25px;
 [Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}
 ```
 效果：
-[Send Email :fontawesome-solid-paper-plane:](mailto:<wangkewen821@gmail.com>){.md-button}
+[Send Email :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}
