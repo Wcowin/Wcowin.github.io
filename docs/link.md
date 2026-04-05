@@ -1229,6 +1229,17 @@ comments: false
           </div>
         </div>
         </div>
+   <div class="card">
+     <img class="ava" loading="lazy" src="https://ravelloh.com/avatar.jpg" />
+     <div class="card-header">
+      <div>
+       <a href="https://ravelloh.com" target="_blank">RavelloH's Blog</a>
+      </div>
+      <div class="info">
+      Beginning of meditation.
+      </div>
+     </div>
+    </div>
 
 
 
