@@ -2,9 +2,7 @@
 title: 炫彩光辉头像效果实现指南
 description: 详细讲解如何实现类似 VitePress 的炫彩光辉头像效果，包括彩虹渐变动画、模糊滤镜、3D 翻转等技术
 tags:
-  - CSS
-  - 动画
-  - 前端设计
+  - zensical
 status: new
 ---
 

@@ -8,14 +8,20 @@ tags:
 
 # 基于Mkdocs/Zensical主题的站点
 
+!!! note "提示"
+    基于 Mkdocs、Zensical 的主题与站点现在汇总在：<https://gist.github.com/Wcowin/d36a31b86aec04c203fec1562bb2391b>         
+    支持评论提交，欢迎补充！
+
 鉴于 MkDocs /Zensical 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 [django-rest-framework](https://www.django-rest-framework.org/)、[FastAPI](https://fastapi.tiangolo.com/) 以及基于 Go 编写的云网关代理服务器 [traefik](https://github.com/traefik/traefik) 等项目的官方文档站点，都是通过 MkDocs /Zensical 进行搭建。
 
 <!-- more -->
 
 下面列的是搜集的一些 Mkdocs/Zensical 主题与站点，以供参考。
 
-- [Wcowin's Web](https://wcowin.work/) 我的博客，目前基于Zensical主题搭建
+- [Wcowin's Web](https://wcowin.work/) 我的博客，目前基于Zensical主题搭建  
+
 --- 
+
 * [Hello 算法](https://www.hello-algo.com/) - 动画图解、一键运行的数据结构与算法教程
 * [Django REST framework](https://www.django-rest-framework.org/) - Django REST 框架官方文档
 * [FastAPI](https://fastapi.tiangolo.com/) - FastAPI 框架官方文档

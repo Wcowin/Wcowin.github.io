@@ -1,5 +1,6 @@
 ---
 title: nanobot：超轻量级 AI 助手
+comments: true
 date: 2026-03-10
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: MCP技术（模型上下文协议）
+comments: true
 tags:
     - 技术分享
     - AI

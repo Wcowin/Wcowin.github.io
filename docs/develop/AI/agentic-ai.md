@@ -1,5 +1,6 @@
 ---
 title: Agentic AI：从 Chatbot 到可行动的智能体
+comments: true
 summary: 用开发者视角，系统讲清什么是 Agentic AI、和传统聊天模型有何差别、典型架构长什么样，以及 2026 年普通开发者可以如何快速上手。
 date: 2026-02-27
 status: new

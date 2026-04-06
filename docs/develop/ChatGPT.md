@@ -1,5 +1,6 @@
 ---
 title: Codex指南
+comments: true
 tags:
     - Codex
     - AI

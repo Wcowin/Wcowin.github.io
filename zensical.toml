@@ -199,22 +199,24 @@ nav = [
         "develop/index.md",
         { "AI" = [
             { "AI工具(2026最新)" = "develop/AI.md" },
-            { "Claude Code指南" = "develop/Claude-Code.md" },
-            { "Codex指南" = "develop/ChatGPT.md" },
-            { "Attention Residuals：Kimi架构创新" = "develop/AI/attention-residuals.md" },
-            { "What is MCP" = "develop/AI/mcp.md" },
-            { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
-            { "Skill 使用介绍" = "develop/AI/skill.md" },
+            { "Prompt 工程入门" = "develop/AI/prompt.md" },
             { "AI Agent 入门" = "develop/AI/agent.md" },
             { "Agentic AI：从 Chatbot 到可行动的智能体" = "develop/AI/agentic-ai.md" },
-            { "Prompt 工程入门" = "develop/AI/prompt.md" },
+            { "What is MCP" = "develop/AI/mcp.md" },
+            { "A2A 协议（Agent-to-Agent）" = "develop/AI/a2a.md" },
+            { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
+            { "Skill 使用介绍" = "develop/AI/skill.md" },
             { "多智能体协作入门" = "develop/AI/multi-agent.md" },
             { "深度推理与测试时计算" = "develop/AI/deep-reasoning.md" },
+            { "AI 安全与对抗" = "develop/AI/ai-security.md" },
+            { "Attention Residuals：Kimi架构创新" = "develop/AI/attention-residuals.md" },
+            { "Claude Code指南" = "develop/Claude-Code.md" },
+            { "Codex指南" = "develop/ChatGPT.md" },
             { "OpenClaw：本地开源AI助手" = "develop/AI/openclaw.md" },
             { "nanobot：超轻量级 AI 助手" = "develop/AI/nanobot.md" }
         ]},
         { "Python 环境管理最佳实践" = "develop/environment.md" },
-        { "Anaconda 语法与简单使用教程" = "develop/Anaconda.md" },
+        { "Anaconda 使用教程" = "develop/Anaconda.md" },
         { "DeepSeek:从入门到精通" = "develop/deepseek.md" },
         { "GitHub 解封指南——This account is flagged" = "develop/GitHub-unblocked.md"},
         { "macOS开发" = [
@@ -280,6 +282,9 @@ nav = [
             ]},
             { "2025" = [
                 { "20250419" = "relax/diary/2025/20250419.md" }
+            ]},
+            { "2026" = [
+                { "20260407" = "relax/diary/2026/20260407.md" }
             ]}
         ]},
         { "数至十" = [
@@ -322,7 +327,7 @@ nav = [
                 { "《朱生豪情书全集摘录》(055)" = "relax/Letter/luvletter/zhushenghao6.md" }
             ]}
         ]},
-        { "王冰冰♡" = "relax/wbb.md" },
+        # { "王冰冰♡" = "relax/wbb.md" },
         { "Game" = [
             { "Genshin" = "relax/Game/yuanshen.md" },
             { "如何玩好王者荣耀" = "relax/Game/wzry.md" }
@@ -436,7 +441,7 @@ scheme = "slate"
 primary = "custom"
 accent = "blue"
 toggle.icon = "lucide/moon"
-toggle.name = "切换到日间模式"
+toggle.name = "切换到系统偏好设置"
 
 # ===== 图标配置 =====
 [project.theme.icon]

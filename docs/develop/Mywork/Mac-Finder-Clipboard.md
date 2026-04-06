@@ -12,6 +12,7 @@ tags:
 
 <div align="center">
 <img src="https://img.shields.io/github/v/release/Wcowin/Mac-Finder-Clipboard?style=for-the-badge&color=3b82f6" alt="Release" />
+<img src="https://img.shields.io/github/downloads/Wcowin/Mac-Finder-Clipboard/total?style=for-the-badge&color=3b82f6" alt="Downloads" />
 <img src="https://img.shields.io/badge/Swift-5.9%2B-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 5.9+" />
 <a href="https://github.com/Wcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
 

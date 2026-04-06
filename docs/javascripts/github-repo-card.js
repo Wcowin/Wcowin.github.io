@@ -114,30 +114,60 @@
     const starsEl = card.querySelector('.github-repo-stars');
     const forksEl = card.querySelector('.github-repo-forks');
     const licenseEl = card.querySelector('.github-repo-license');
+    
+    // 自定义属性
+    const customOwner = card.getAttribute('data-owner');
+    const customName = card.getAttribute('data-name');
+    const customDescription = card.getAttribute('data-description');
+    const customAvatar = card.getAttribute('data-avatar');
+    const customStars = card.getAttribute('data-stars');
+    const customForks = card.getAttribute('data-forks');
+    const customLicense = card.getAttribute('data-license');
 
-    if (ownerEl) ownerEl.textContent = owner;
-    if (nameEl) nameEl.textContent = name;
+    // 填充数据，优先使用自定义属性
+    if (ownerEl) ownerEl.textContent = customOwner || owner;
+    if (nameEl) nameEl.textContent = customName || name;
 
-    if (typeof data.stargazers_count === 'number' && starsEl) {
-      starsEl.textContent = data.stargazers_count.toString();
-    }
-    if (typeof data.forks_count === 'number' && forksEl) {
-      forksEl.textContent = data.forks_count > 0 ? data.forks_count.toString() : '';
-    }
-    const licenseText = (data.license && (data.license.spdx_id || data.license.name)) || '';
-    if (licenseEl) {
-      licenseEl.textContent = licenseText;
-      if (!licenseText) {
-        licenseEl.closest('.github-repo-meta-item')?.classList.add('github-repo-license-empty');
+    if (starsEl) {
+      if (customStars !== null) {
+        starsEl.textContent = customStars === '0' ? '' : customStars;
+      } else if (typeof data.stargazers_count === 'number') {
+        starsEl.textContent = data.stargazers_count > 0 ? data.stargazers_count.toString() : '';
       }
     }
-    if (data.description && descEl) {
-      descEl.textContent = data.description;
+    if (forksEl) {
+      if (customForks !== null) {
+        forksEl.textContent = customForks === '0' ? '' : customForks;
+      } else if (typeof data.forks_count === 'number') {
+        forksEl.textContent = data.forks_count > 0 ? data.forks_count.toString() : '';
+      }
     }
-    if (data.owner && data.owner.avatar_url && avatarEl) {
-      avatarEl.style.backgroundImage = `url(${data.owner.avatar_url})`;
-      avatarEl.setAttribute('aria-label', data.owner.login || 'Repository owner avatar');
-      avatarEl.setAttribute('role', 'img');
+    if (licenseEl) {
+      // 优先使用自定义许可证
+      const licenseText = customLicense !== null ? customLicense : ((data.license && (data.license.spdx_id || data.license.name)) || '');
+      licenseEl.textContent = licenseText;
+      const metaItem = licenseEl.closest('.github-repo-meta-item');
+      if (metaItem) {
+        if (!licenseText) {
+          metaItem.classList.add('github-repo-license-empty');
+        } else {
+          metaItem.classList.remove('github-repo-license-empty');
+        }
+      }
+    }
+    if (descEl) {
+      descEl.textContent = customDescription || (data.description || '');
+    }
+    if (avatarEl) {
+      if (customAvatar) {
+        avatarEl.style.backgroundImage = `url(${customAvatar})`;
+        avatarEl.setAttribute('aria-label', 'Custom avatar');
+        avatarEl.setAttribute('role', 'img');
+      } else if (data.owner && data.owner.avatar_url) {
+        avatarEl.style.backgroundImage = `url(${data.owner.avatar_url})`;
+        avatarEl.setAttribute('aria-label', data.owner.login || 'Repository owner avatar');
+        avatarEl.setAttribute('role', 'img');
+      }
     }
   }
 
@@ -192,12 +222,6 @@
         console.warn('加载 GitHub 仓库信息失败：', repo, e);
         // 显示基础信息（仓库名）
         fillCardData(card, {}, owner, name);
-
-        // 隐藏 license 项
-        const licenseEl = card.querySelector('.github-repo-license');
-        if (licenseEl) {
-          licenseEl.closest('.github-repo-meta-item')?.classList.add('github-repo-license-empty');
-        }
       }
     }
   }

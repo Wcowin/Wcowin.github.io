@@ -38,7 +38,6 @@ hide:
         <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
       </span>
     </div>
-    <!-- <div class="wcowin-header-motto">Free and diffuse</div> -->
     <div class="wcowin-header-btns">
       <a href="https://github.com/Wcowin" target="_blank" rel="noopener noreferrer" class="md-button md-button--primary">
         <span class="twemoji">
@@ -122,6 +121,7 @@ hide:
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(107, 142, 107, 0.15);
   vertical-align: middle;
+  overflow: hidden;
 }
 
 .wcowin-name-box .name-text {
@@ -129,6 +129,25 @@ hide:
   color: #2d3436;
   font-size: 1em;
   line-height: 1.2;
+  position: relative;
+  z-index: 2;
+}
+
+/* 从左向右的擦亮效果 */
+.wcowin-name-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  transition: left 0.6s ease;
+  z-index: 1;
+}
+
+.wcowin-name-box:hover::before {
+  left: 100%;
 }
 
 /* 深色模式适配：仅调整背景和边框颜色 */
@@ -140,6 +159,11 @@ hide:
 
 [data-md-color-scheme="slate"] .wcowin-name-box .name-text {
   color: #f7fafc;
+}
+
+/* 深色模式下的擦亮效果 */
+[data-md-color-scheme="slate"] .wcowin-name-box::before {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
 }
 
 .wcowin-header-subtitle {
@@ -197,16 +221,13 @@ hide:
 
 
 /* 添加深色模式的文字颜色适配 - 更强烈的对比度 */
-@media (prefers-color-scheme: dark) {
-  .wcowin-header-subtitle {
-    color: #757575;
-  }
+[data-md-color-scheme="slate"] .wcowin-header-subtitle {
+  color: #757575;
+}
 
-  .wcowin-header-subtitle-inner {
-    color: #b0b0b0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* 增强阴影 */
-  }
-
+[data-md-color-scheme="slate"] .wcowin-header-subtitle-inner {
+  color: #b0b0b0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* 增强阴影 */
 }
 
 .wcowin-header-btns {
@@ -367,12 +388,10 @@ hide:
 }
 
 /* 深色模式调整 */
-@media (prefers-color-scheme: dark) {
-  .flip-glow-ultimate-glow {
-    filter: blur(60px);
-    -webkit-filter: blur(60px);
-    opacity: 0.7;
-  }
+[data-md-color-scheme="slate"] .flip-glow-ultimate-glow {
+  filter: blur(60px);
+  -webkit-filter: blur(60px);
+  opacity: 0.7;
 }
 
 /* Safari 特定修复 - 减少模糊值以改善性能 */
@@ -464,9 +483,6 @@ hide:
   .wcowin-header-subtitle {
     margin-bottom: 16px; /* 减小副标题下方间距 */
   }
-  .wcowin-header-motto {
-    margin-bottom: 16px; /* 减小座右铭下方间距 */
-  }
 
   /* 调整头像大小，使其在移动端更小 */
   .flip-glow-ultimate,
@@ -514,14 +530,12 @@ hide:
   // 多语言文字列表
   const phrasesData = {
     chinese_simplified: [
-      "A college student",
-      "A developer",
+      "A Swift Developer",
       "A dreamer",
       "循此苦旅 以达星辰"
     ],
     english: [
-      "A college student",
-      "A developer",
+      "A Swift Developer",
       "A dreamer",
       "Through hardship to the stars"
     ],
@@ -833,12 +847,13 @@ hr {
     - [Mkdocs前言](blog/Mkdocs/mkfirst.md)
     - [利用Mkdocs部署静态网页](blog/Mkdocs/mkdocs1.md)
     - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
+    - [MKDocs 的缓慢崩溃](blog/Mkdocs/collapse-of-mkdocs.md)
     ---
     - [Zensical教程](blog/Zensical/indexfirst.md)(🌟2026最新)
     - [从MkDocs迁移到Zensical](blog/Zensical/migration.md)
     - [5分钟快速开始Zensical](blog/Zensical/quick-start.md)
 
--   :material-gamepad-variant-outline:{ .lg .middle } __好用/好玩/AI__
+-   :material-gamepad-variant-outline:{ .lg .middle } __AI/前沿技术__
 
     ---
 
@@ -846,7 +861,7 @@ hr {
     - [AI网站分享](develop/AI.md)、[Skill 使用介绍](develop/AI/skill.md)
     - [AI Agent 入门](develop/AI/agent.md)、[深度推理与测试时计算](develop/AI/deep-reasoning.md)
     - [多智能体协作入门](develop/AI/multi-agent.md)、[Prompt 工程入门](develop/AI/prompt.md)
-    - [好用/好玩网站分享](blog/Webplay.md)
+    - [A2A 协议](develop/AI/a2a.md)、[AI 安全与对抗](develop/AI/ai-security.md)
 
 -   :material-account-box-outline:{ .lg .middle } __关于__
 
@@ -854,7 +869,6 @@ hr {
 
     - [留言板](waline.md)
     - [我的开发项目/作品/应用](develop/Mywork/index.md)
-    <!-- - [博客](blog/index.md) -->
     - [:octicons-arrow-right-24: 了解我](about/geren/#_4){ data-preview }
     - [支持作者](about/zcw/#alipay){ data-preview }
 </div>
@@ -866,27 +880,14 @@ hr {
 
 
 
-<!--
-____    __    ____  ______   ______   ____    __    ____  __  .__   __.
-\   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  |
- \   \/    \/   / |  ,----'|  |  |  |  \   \/    \/   /  |  | |   \|  |
-  \            /  |  |     |  |  |  |   \            /   |  | |  . `  |
-   \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   |
-    \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__|
--->
-
-
-
 <style>
 .md-grid {
   max-width: 1220px;
 }
 
 body {
-  position: relative; /* 确保 body 元素的 position 属性为非静态值 */
+  position: relative;
 }
-
-/* 原CSS网格已替换为Canvas交互网格 */
 
 @media (max-width: 768px) {
   body::before {

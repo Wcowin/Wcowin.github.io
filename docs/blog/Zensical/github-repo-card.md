@@ -7,9 +7,10 @@ title: 添加 GitHub 仓库卡片
 在 Zensical 里，你可以像官方文档那样，为任意 GitHub 仓库生成一张「动态信息卡片」：
 
 - 自动从 GitHub API 获取 **Star / Fork / License / 仓库描述 / 头像**
+- 支持自定义所有属性，更加灵活
 - 适配浅色 / 深色模式
 - 支持 PC 和移动端自适应布局
-- 当 **Fork 数为 0** 或 **没有 License** 时，会自动隐藏对应的指标，避免显示一串「0」
+- 当 **Star 数为 0**、**Fork 数为 0** 或 **没有 License** 时，会自动隐藏对应的指标，避免显示一串「0」
 
 从当前版本开始，主题已经内置了这张卡片的 **CSS 和 JavaScript**，你只需要在文档中插入一小段 HTML 即可，下面的示例会详细说明；再往后的章节则保留了旧版「手写实现」作为原理参考。
 
@@ -27,7 +28,6 @@ title: 添加 GitHub 仓库卡片
     - 现在只需要上面这一小段 HTML（通过 `data-repo="所有者/仓库名"` 指定仓库），其他样式和脚本都已经由 Zensical 主题在全局注入。
     - 如果你只是想在几篇文章里展示 GitHub 仓库卡片，可以直接复制这一段到任意 Markdown 页面中，无需再单独维护 `<style>` / `<script>`。
     - 下文第 1～4 节保留的是最初版本的「手写实现」，更适合作为实现原理或进阶自定义的参考，如果你使用的是最新主题，可以按需跳过。
-
 
 ## 1. 在页面中插入 HTML 结构
 
@@ -411,4 +411,47 @@ title: 添加 GitHub 仓库卡片
    - `https://api.github.com/repos/Wcowin/OneClip` / `https://github.com/Wcowin/OneClip` → 你的仓库地址
 
 你也可以把这段实现抽到单独的 `partial` 或 JS 组件里，但对大多数文档站来说，直接在需要的位置嵌入这一小段就已经足够简洁实用。
+
+## 自定义属性（高级用法）
+
+从最新版本开始，GitHub 仓库卡片支持通过 `data-*` 属性自定义所有显示内容，更加灵活：
+
+| 属性 | 说明 | 示例值 |
+|------|------|--------|
+| `data-owner` | 仓库所有者名称 | `Wcowin` |
+| `data-name` | 仓库名称 | `OneClip` |
+| `data-description` | 仓库描述 | `一个功能强大的 Mac 剪贴板管理器` |
+| `data-avatar` | 头像 URL | `https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg` |
+| `data-stars` | 星标数 | `123` |
+| `data-forks` | 分叉数 | `45` |
+| `data-license` | 许可证 | `MIT` |
+
+### 使用示例
+
+```html
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/OneClip"
+    data-owner="Wcowin"
+    data-name="OneClip"
+    data-description="一个功能强大的 Mac 剪贴板管理器，支持历史记录、搜索和快速访问"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
+    data-stars="123"
+    data-forks="45"
+    data-license="MIT"
+    href="https://github.com/Wcowin/OneClip"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
+```
+
+### 注意事项
+
+- 所有自定义属性都是可选的，未设置的属性会使用从 GitHub API 获取的默认值
+- 当设置 `data-stars="0"` 或 `data-forks="0"` 时，对应项会被自动隐藏
+- 当设置 `data-license` 为空字符串时，许可证项会被自动隐藏
+- 即使 GitHub API 请求失败，自定义属性也会正常显示
+- 缓存会在2小时后自动刷新，确保数据保持最新
 

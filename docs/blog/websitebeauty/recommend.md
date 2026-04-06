@@ -529,6 +529,13 @@ def calculate_similarity(article1, article2):
 
     return score
 ```
+然后需要在 mkdocs.yml 中添加：
 
+```yaml
+hooks:
+  - docs/overrides/hooks/reading_time.py
+```
 
 ## 效果如下
+
+![paste-20260407004009.png](https://picturebed.xhyun.eu.cc/uploads/7040ac6e97b44778.png)

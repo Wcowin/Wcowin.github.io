@@ -280,7 +280,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://bu.dusays.com/2022/12/28/63ac2812183aa.png" />
+     <img class="ava" loading="lazy" src="https://img.zhheo.com/i/67d8fa75943e4.webp" />
      <div class="card-header">
       <div>
        <a href="https://blog.zhheo.com/" target="_blank">张洪Heo</a>

@@ -1,5 +1,6 @@
 ---
 title: 深度推理与测试时计算：从 CoT 到 o1、DeepSeek-R1
+comments: true
 tags:
   - AI
   - 推理

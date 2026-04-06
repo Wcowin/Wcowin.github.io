@@ -1,5 +1,6 @@
 ---
 title: RAG技术（检索增强生成）
+comments: true
 tags:
     - 技术分享
     - AI

@@ -270,16 +270,39 @@ hide_comment: true
   <a
     class="github-repo-card"
     data-repo="Wcowin/OneClip"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/Wcowin/OneClip"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
 </div>
 
+<!-- <div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/OneClip"
+    data-owner="Wcowin"
+    data-name="OneClip"
+    data-description="一个功能强大的 Mac 剪贴板管理器，支持历史记录、搜索和快速访问"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
+    data-stars="123"
+    data-forks="45"
+    data-license="MIT"
+    href="https://github.com/Wcowin/OneClip"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div> -->
+
 <div class="github-repo-card-wrapper">
   <a
     class="github-repo-card"
     data-repo="Wcowin/Mac-Finder-Clipboard"
+    data-description="FinderClip 是一款免费开源且轻量级的 macOS 应用，让你可以在 Finder 中使用熟悉的 ⌘X 和 ⌘V 快捷键来剪切和移动文件。"
+    data-stars="78"
+    data-forks="0"
+    data-license="MIT"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/Wcowin/Mac-Finder-Clipboard"
     target="_blank"
     rel="noopener noreferrer"
@@ -290,6 +313,11 @@ hide_comment: true
   <a
     class="github-repo-card"
     data-repo="Wcowin/Mkdocs-Wcowin"
+    data-description="MKDocs 中文教程"
+    data-stars="65"
+    data-forks="5"
+    data-license="MIT"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/Wcowin/Mkdocs-Wcowin"
     target="_blank"
     rel="noopener noreferrer"
@@ -300,6 +328,11 @@ hide_comment: true
   <a
     class="github-repo-card"
     data-repo="Wcowin/Wcowin.github.io"
+    data-description="个人博客"
+    data-stars="64"
+    data-forks="10"
+    data-license="MIT"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/Wcowin/Wcowin.github.io"
     target="_blank"
     rel="noopener noreferrer"

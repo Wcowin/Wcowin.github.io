@@ -3,7 +3,6 @@ title: 为 Zensical 添加多语言翻译
 date: 2026-02-06
 tags:
   - Zensical
-  - 多语言
 status: draft
 ---
 

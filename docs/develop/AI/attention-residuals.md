@@ -1,5 +1,6 @@
 ---
 title: Attention Residuals：重新思考 Transformer 的残差连接
+comments: true
 tags:
   - AI
 ---
