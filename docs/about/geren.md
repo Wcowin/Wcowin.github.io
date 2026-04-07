@@ -299,7 +299,7 @@ hide_comment: true
     class="github-repo-card"
     data-repo="Wcowin/Mac-Finder-Clipboard"
     data-description="FinderClip 是一款免费开源且轻量级的 macOS 应用，让你可以在 Finder 中使用熟悉的 ⌘X 和 ⌘V 快捷键来剪切和移动文件。"
-    data-stars="78"
+    data-stars="79"
     data-forks="0"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
@@ -329,7 +329,7 @@ hide_comment: true
     class="github-repo-card"
     data-repo="Wcowin/Wcowin.github.io"
     data-description="个人博客"
-    data-stars="64"
+    data-stars="65"
     data-forks="10"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
@@ -339,7 +339,7 @@ hide_comment: true
   ></a>
 </div>
 
-[:material-download: 下载简历](../assets/个人简历.pdf){ .md-button}
+[:material-download: 查看简历](../assets/个人简历.pdf){ .md-button}
 {: style="text-align: center;" }
 
 
@@ -526,7 +526,7 @@ hide_comment: true
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target="_blank"}~
     - [x] 咖啡重度爱好者
     - [x] 热爱(xiā)研究/Math，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
-    - [x] 目前的研究领域是[AI](../develop/AI/attention-residuals)、[密码学/区块链](../blog/Cryptography/index.md)
+    - [x] 目前的研究领域是[AI](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
     - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒知趣，明得失，知进退
 

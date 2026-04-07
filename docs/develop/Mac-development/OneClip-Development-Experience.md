@@ -311,19 +311,18 @@ class SearchOptimizer {
     }
     
     private func performSearch(_ query: String) {
-        let predicate = NSPredicate(format: "content CONTAINS[cd] %@", query)
-        
-        let request = ClipboardItemEntity.fetchRequest()
-        request.predicate = predicate
-        request.fetchLimit = 50  // 限制结果数
-        request.sortDescriptors = [
-            NSSortDescriptor(keyPath: \ClipboardItemEntity.timestamp, ascending: false)
-        ]
+        // 使用 SQLite 查询
+        let sql = """
+        SELECT * FROM clipboard_items
+        WHERE content LIKE ? OR summary LIKE ?
+        ORDER BY timestamp DESC LIMIT 50
+        """
         
         DispatchQueue.global(qos: .userInitiated).async {
-            let results = try? self.container.viewContext.fetch(request)
+            // 执行 SQL 查询
+            let results = self.database.executeQuery(sql, with: query)
             DispatchQueue.main.async {
-                self.updateSearchResults(results ?? [])
+                self.updateSearchResults(results)
             }
         }
     }

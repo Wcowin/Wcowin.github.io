@@ -133,6 +133,7 @@ struct ClipboardItem: Identifiable, Codable {
     var contentHash: String?          // 内容哈希（用于去重）
     var filePath: String?             // 文件路径
     var data: Data?                   // 二进制数据
+    var summary: String?              // 内容摘要
 }
 ```
 
@@ -369,9 +370,9 @@ class MemoryOptimizer {
     func cleanupOldItems() {
         let calendar = Calendar.current
         let sevenDaysAgo = calendar.date(byAdding: .day, value: -7, to: Date())!
-        
-        let predicate = NSPredicate(format: "timestamp < %@", sevenDaysAgo as NSDate)
-        store.deleteItems(matching: predicate)
+
+        let sql = "DELETE FROM clipboard_items WHERE timestamp < ?"
+        // 执行 SQL，传入 sevenDaysAgo 时间戳
     }
     
     // 图片压缩存储
@@ -395,18 +396,14 @@ class MemoryOptimizer {
 
 ```swift
 class SearchOptimizer {
-    // 使用 Core Data 谓词优化查询
+    // 使用 SQLite FTS5 全文搜索优化查询
     func searchClipboard(_ query: String) -> [ClipboardItem] {
-        let predicate = NSPredicate(format: "content CONTAINS[cd] %@", query)
-        
-        let request = ClipboardItemEntity.fetchRequest()
-        request.predicate = predicate
-        request.fetchLimit = 50  // 限制结果数
-        
-        // 按时间倒序排列
-        request.sortDescriptors = [NSSortDescriptor(keyPath: \ClipboardItemEntity.timestamp, ascending: false)]
-        
-        return try? container.viewContext.fetch(request)
+        let sql = """
+        SELECT * FROM clipboard_items
+        WHERE content LIKE ? OR summary LIKE ?
+        ORDER BY timestamp DESC LIMIT 50
+        """
+        // 执行查询并返回结果
     }
     
     // 搜索防抖

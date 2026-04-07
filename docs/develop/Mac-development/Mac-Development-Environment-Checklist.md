@@ -1,3 +1,10 @@
+---
+title: Mac 开发环境检查清单
+tags:
+  - macOS
+  - 开发环境
+---
+
 # Mac 开发环境检查清单
 
 ## 概述
@@ -221,10 +228,6 @@
 
 ### 编辑器/IDE
 
-- [ ] Xcode 已安装
-  ```bash
-  xcode-select -p
-  ```
 - [ ] VS Code 已安装（可选）
   ```bash
   code --version
@@ -407,7 +410,7 @@
 
 - [ ] 运行 `brew doctor` 检查
 - [ ] 检查 PATH 健康状态
-- [ ] 清理 npm 缓存：`npm cache clean --force`
+- [ ] 验证 npm 缓存：`npm cache verify`
 
 ### 每季度
 
@@ -424,8 +427,6 @@
 ## 相关文档
 
 - [Mac Shell 环境优化指南](./Mac-Shell-Environment-Optimization.md)
-- [Xcode 最佳实践](./Xcode-Best-Practices.md)
-- [Homebrew 包管理指南](./Homebrew-Guide.md)
 
 ## 快速参考
 

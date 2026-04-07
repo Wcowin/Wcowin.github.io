@@ -12,7 +12,7 @@ tags:
 
 苹果官方的开发者证书99美刀一年，独立开发者可能无力承担，本文介绍 [OneClip](https://github.com/Wcowin/OneClip) 如何通过**脚本自动化**实现个人证书对应用签名和应用分发，确保用户首次授权后，后续更新无需重新授权辅助功能。
 
-[直接看示例](#_12)
+[直接看完整脚本示例](#_12)
 
 ## 核心原理
 
@@ -194,7 +194,7 @@ echo "✅ 发布完成！"
 <string>https://wcowin.work/OneClip/updates/appcast.xml</string>
 
 <key>SUPublicEDKey</key>
-<string>XYr/ney3HUeeeitXuBj3AL5ZuCHJTT+8giZbPiJh/lY=</string>
+<string>YOUR_PUBLIC_ED_KEY</string>
 
 <!-- 权限声明 -->
 <key>NSAccessibilityUsageDescription</key>
@@ -335,7 +335,7 @@ plutil -p "$PLIST_FILE" | grep -E "CFBundle.*Version"
 
 ```bash
 # 确保使用相同的证书
-FIXED_SIGNING_IDENTITY="C023E278FA1F9703B91EF46D36C73D22CF2EC9AE"
+FIXED_SIGNING_IDENTITY="YOUR_CERTIFICATE_ID"
 
 # 检查所有版本的 Bundle ID
 for app in build/Release/OneClip*.app; do

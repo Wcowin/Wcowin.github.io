@@ -1,7 +1,11 @@
 /**
  * Ask AI 聊天组件 - 使用硅基流动 Qwen3-8B API
- * 版本: 1.0.0
+ * 版本: 1.1.0
  * author: Wcowin (https://wcowin.work/)
+ * 
+ * 更新日志:
+ * v1.1.0 - 增强 Markdown 解析（代码块、列表、引用），添加请求频率限制，
+ *          优化上下文截取，改进错误处理，添加请求超时机制
  */
 
 (function() {
@@ -14,7 +18,9 @@
     // 使用硅基流动的 Qwen3-8B 模型
     model: 'Qwen/Qwen3-8B',
     maxMessageLength: 500,
-    maxContextLength: 50000,
+    maxContextLength: 30000,
+    maxContextChars: 15000,
+    rateLimitMs: 2000,
     systemPrompt: `你是 Wcowin 博客的 AI 助手，负责解答访客关于博客内容的问题。
 
 ## 关于 Wcowin
@@ -30,6 +36,9 @@
 4. **诚实坦率**：不知道就说不知道，不要硬编
 5. **语言习惯**：中文为主，技术术语保留英文`,
   };
+
+  let lastRequestTime = 0;
+  let isSending = false;
 
   // 贴边状态：默认贴边，按下可取消
   function isPinned() {
@@ -516,38 +525,59 @@
     return messageDiv;
   }
 
-  // Markdown 文本处理（转义 HTML + 标题 + 加粗 + 斜体 + 链接 + 换行）
   function parseMarkdown(text) {
     if (!text) return '';
     
-    return text
-      // 1. 转义 HTML 特殊字符
+    const codeBlockPlaceholders = [];
+    let processed = text;
+    
+    processed = processed.replace(/```(\w*)\n([\s\S]*?)```/g, (match, lang, code) => {
+      const index = codeBlockPlaceholders.length;
+      let escapedCode = code
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      const html = `<pre class="ai-code-block"><code class="language-${lang || 'text'}">${escapedCode}</code></pre>`;
+      codeBlockPlaceholders.push(html);
+      return `__CODE_BLOCK_${index}__`;
+    });
+    
+    processed = processed
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      // 2. 处理标题（# ## ###）
-      .replace(/^###\s+(.+)$/gm, '<strong style="font-size:1.1em">$1</strong>')
-      .replace(/^##\s+(.+)$/gm, '<strong style="font-size:1.15em">$1</strong>')
-      .replace(/^#\s+(.+)$/gm, '<strong style="font-size:1.2em">$1</strong>')
-      // 3. 处理链接 [文本](URL) - 需要在处理加粗/斜体之前，避免干扰
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:var(--ai-chat-link-color, #3b82f6);text-decoration:underline;">$1</a>')
-      // 4. 处理加粗 **文本** 或 __文本__
+      .replace(/>/g, '&gt;');
+    
+    codeBlockPlaceholders.forEach((html, index) => {
+      processed = processed.replace(`__CODE_BLOCK_${index}__`, html);
+    });
+    
+    processed = processed
+      .replace(/^###\s+(.+)$/gm, '<strong class="ai-heading ai-heading-3">$1</strong>')
+      .replace(/^##\s+(.+)$/gm, '<strong class="ai-heading ai-heading-2">$1</strong>')
+      .replace(/^#\s+(.+)$/gm, '<strong class="ai-heading ai-heading-1">$1</strong>')
+      .replace(/^>\s*(.+)$/gm, '<blockquote class="ai-quote">$1</blockquote>')
+      .replace(/^\s*[-*+]\s+(.+)$/gm, '<li>$1</li>')
+      .replace(/^\s*(\d+)\.\s+(.+)$/gm, '<li data-num="$1">$2</li>')
+      .replace(/(<li>[\s\S]*?<\/li>\n?)+/g, (match) => `<ul class="ai-list">${match}</ul>`)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="ai-link">$1</a>')
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/__([^_]+)__/g, '<strong>$1</strong>')
-      // 5. 处理斜体 *文本* 或 _文本_（注意要排除已匹配的加粗）
       .replace(/\*([^*]+)\*/g, '<em>$1</em>')
       .replace(/_([^_]+)_/g, '<em>$1</em>')
-      // 6. 处理行内代码 `代码`
-      .replace(/`([^`]+)`/g, '<code style="background:var(--ai-chat-code-bg, rgba(0,0,0,0.1));padding:2px 6px;border-radius:4px;font-size:0.9em;">$1</code>')
-      // 7. 处理换行
+      .replace(/`([^`]+)`/g, '<code class="ai-inline-code">$1</code>')
       .replace(/\n/g, '<br>');
+    
+    processed = processed
+      .replace(/<\/ul><br><ul class="ai-list">/g, '')
+      .replace(/<br><\/li>/g, '</li>')
+      .replace(/<\/blockquote><br><blockquote class="ai-quote">/g, '<br>');
+    
+    return processed;
   }
 
-  // 获取页面上下文（优化版本）
   function getPageContext() {
     const title = document.title || '';
     
-    // 尝试多种选择器获取主要内容
     let mainContent = '';
     const selectors = ['.md-content', 'main', 'article', '.content', '[role="main"]'];
     
@@ -555,11 +585,10 @@
       const element = document.querySelector(selector);
       if (element) {
         mainContent = element.innerText || element.textContent || '';
-        if (mainContent.trim().length > 100) break; // 找到有足够内容的元素
+        if (mainContent.trim().length > 100) break;
       }
     }
     
-    // 如果还是找不到，尝试获取 body 内容（排除导航、页脚等）
     if (!mainContent || mainContent.trim().length < 100) {
       const body = document.body;
       const nav = body.querySelector('nav');
@@ -568,22 +597,43 @@
       
       mainContent = body.innerText || body.textContent || '';
       
-      // 移除导航、页脚等干扰内容（简单处理）
       if (nav) mainContent = mainContent.replace(nav.innerText || '', '');
       if (footer) mainContent = mainContent.replace(footer.innerText || '', '');
       if (header) mainContent = mainContent.replace(header.innerText || '', '');
     }
     
-    // 清理和截取
     mainContent = mainContent
-      .replace(/\s+/g, ' ')  // 合并多个空白字符
-      .trim()
-      .substring(0, CONFIG.maxContextLength);
+      .replace(/\s+/g, ' ')
+      .replace(/\n\s*\n/g, '\n')
+      .trim();
     
-    return `页面标题: ${title}\n\n页面内容:\n${mainContent}`;
+    const smartTruncate = (text, maxLen) => {
+      if (text.length <= maxLen) return text;
+      
+      const sentences = text.match(/[^。！？.!?]+[。！？.!?]+/g) || [text];
+      let result = '';
+      
+      for (const sentence of sentences) {
+        if ((result + sentence).length > maxLen) break;
+        result += sentence;
+      }
+      
+      if (!result && text.length > 0) {
+        result = text.substring(0, maxLen);
+        const lastSpace = result.lastIndexOf(' ');
+        if (lastSpace > maxLen * 0.7) {
+          result = result.substring(0, lastSpace);
+        }
+      }
+      
+      return result + '...';
+    };
+    
+    const truncatedContent = smartTruncate(mainContent, CONFIG.maxContextChars);
+    
+    return `页面标题: ${title}\n\n页面内容摘要:\n${truncatedContent}`;
   }
 
-  // 发送消息（流式输出）
   async function sendMessage() {
     const input = document.getElementById('ai-chat-input');
     if (!input) return;
@@ -591,22 +641,30 @@
     const message = input.value.trim();
     if (!message) return;
 
-    // 检查消息长度
-    if (message.length > CONFIG.maxMessageLength) {
-      addMessage(`请将问题控制在 ${CONFIG.maxMessageLength} 字以内。`, 'bot');
+    if (isSending) {
+      showToast('正在处理中，请稍候...');
       return;
     }
 
-    // 清空输入框
-    input.value = '';
-    
-    // 隐藏提示
-    togglePrompts(false);
+    const now = Date.now();
+    if (now - lastRequestTime < CONFIG.rateLimitMs) {
+      const waitTime = Math.ceil((CONFIG.rateLimitMs - (now - lastRequestTime)) / 1000);
+      showToast(`请等待 ${waitTime} 秒后再发送`);
+      return;
+    }
 
-    // 添加用户消息
+    if (message.length > CONFIG.maxMessageLength) {
+      showToast(`问题过长，请控制在 ${CONFIG.maxMessageLength} 字以内`);
+      return;
+    }
+
+    input.value = '';
+    togglePrompts(false);
+    isSending = true;
+    lastRequestTime = now;
+
     addMessage(message, 'user');
 
-    // 创建 AI 回复的消息容器
     const messagesDiv = document.getElementById('ai-chat-messages');
     const messageDiv = document.createElement('div');
     messageDiv.className = 'ai-message ai-message-bot';
@@ -625,45 +683,39 @@
         throw new Error('API_KEY_MISSING');
       }
 
-      // 构建消息历史
-      // 智能判断是否需要包含当前页面上下文
       const isGlobalQuestion = /网站|博客|整体|所有|全部|项目列表|文章列表|有哪些|介绍一下/.test(message);
       
       const messages = [
         { role: 'system', content: CONFIG.systemPrompt }
       ];
 
-      // 添加对话历史（最近5轮）- 放在当前问题之前
       const recentHistory = conversationHistory.slice(-10);
       messages.push(...recentHistory);
       
-      // 检查上下文长度，如果过长则截断
       const totalLength = messages.reduce((sum, msg) => sum + (msg.content?.length || 0), 0);
       if (totalLength > CONFIG.maxContextLength) {
-        // 保留系统提示和最近的消息
         const systemMsg = messages[0];
         const recentMsgs = messages.slice(-4);
         messages.length = 0;
         messages.push(systemMsg, ...recentMsgs);
       }
       
-      // 根据问题类型决定是否包含当前页面上下文
       if (!isGlobalQuestion) {
-        // 针对具体内容的问题，添加当前页面上下文
         const pageContext = getPageContext();
         messages.push({ 
           role: 'user', 
           content: `【当前页面信息】\n${pageContext}\n\n【用户问题】\n${message}\n\n请基于上述页面内容回答用户问题，回答要准确、有用、具体。` 
         });
       } else {
-        // 全局性问题，可以包含页面上下文作为参考，但不强制
         messages.push({ 
           role: 'user', 
           content: `${message}\n\n（当前页面：${document.title || '未知'}，可作为参考，但主要回答网站整体情况）`
         });
       }
 
-      // 调用 API（流式）
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 60000);
+
       const response = await fetch(CONFIG.apiEndpoint, {
         method: 'POST',
         headers: {
@@ -676,16 +728,29 @@
           temperature: 0.7,
           max_tokens: 4096,
           stream: true
-        })
+        }),
+        signal: controller.signal
       });
+
+      clearTimeout(timeoutId);
 
       if (!response.ok) {
         const errorText = await response.text();
         console.error('API Error:', response.status, errorText);
-        throw new Error(`API_ERROR_${response.status}`);
+        
+        if (response.status === 401) {
+          throw new Error('API_KEY_INVALID');
+        } else if (response.status === 429) {
+          throw new Error('RATE_LIMITED');
+        } else if (response.status === 503 || response.status === 502) {
+          throw new Error('SERVICE_UNAVAILABLE');
+        } else if (response.status >= 500) {
+          throw new Error('SERVER_ERROR');
+        } else {
+          throw new Error(`API_ERROR_${response.status}`);
+        }
       }
 
-      // 读取流式响应
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
 
@@ -716,32 +781,51 @@
         }
       }
 
-      // 移除光标，显示最终结果
       contentDiv.innerHTML = parseMarkdown(fullAnswer);
 
-      // 更新对话历史
-      const now = Date.now();
+      const timestamp = Date.now();
       conversationHistory.push(
-        { role: 'user', content: message, timestamp: now },
-        { role: 'assistant', content: fullAnswer, timestamp: now }
+        { role: 'user', content: message, timestamp: timestamp },
+        { role: 'assistant', content: fullAnswer, timestamp: timestamp }
       );
       
-      // 保存到本地存储
       saveHistory();
 
     } catch (error) {
       console.error('Chat error:', error);
 
+      messagesDiv.removeChild(messageDiv);
+
       let errorMessage = '抱歉，发生了错误，请稍后再试。';
-      if (error.message === 'API_KEY_MISSING') {
+      let errorType = 'error';
+
+      if (error.name === 'AbortError') {
+        errorMessage = '请求超时，请检查网络后重试。';
+        errorType = 'timeout';
+      } else if (error.message === 'API_KEY_MISSING') {
         errorMessage = 'API Key 未配置，请联系网站管理员。';
-      } else if (error.message.includes('API_ERROR_401')) {
-        errorMessage = 'API 认证失败，请检查配置。';
-      } else if (error.message.includes('API_ERROR_429')) {
-        errorMessage = '请求太频繁，请稍后再试。';
+        errorType = 'config';
+      } else if (error.message === 'API_KEY_INVALID') {
+        errorMessage = 'API 认证失败，请检查配置是否正确。';
+        errorType = 'auth';
+      } else if (error.message === 'RATE_LIMITED') {
+        errorMessage = '请求太频繁，请稍后再试（约 1 分钟后）。';
+        errorType = 'rate';
+      } else if (error.message === 'SERVICE_UNAVAILABLE') {
+        errorMessage = 'AI 服务暂时不可用，请稍后再试。';
+        errorType = 'service';
+      } else if (error.message === 'SERVER_ERROR') {
+        errorMessage = '服务器错误，请稍后再试。';
+        errorType = 'server';
+      } else if (error.message === 'NETWORK_ERROR' || error.message.includes('fetch')) {
+        errorMessage = '网络连接失败，请检查网络后重试。';
+        errorType = 'network';
       }
 
       addMessage(errorMessage, 'bot');
+      showToast(errorMessage);
+    } finally {
+      isSending = false;
     }
   }
 

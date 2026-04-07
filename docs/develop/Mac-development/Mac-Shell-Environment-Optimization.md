@@ -1,3 +1,10 @@
+---
+title: Mac Shell 环境优化指南
+tags:
+  - macOS
+  - Shell
+---
+
 # Mac Shell 环境优化指南
 
 ## 问题背景
@@ -183,7 +190,7 @@ export PATH="$JAVA_HOME/bin:$PATH"
 . "$HOME/.cargo/env"
 
 # Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/wangkewen/.lmstudio/bin"
+export PATH="$PATH:/Users/yourname/.lmstudio/bin"
 ```
 
 ### .zshrc 关键部分
@@ -203,8 +210,8 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # 其他工具路径（每个一行）
-export PATH="/Users/wangkewen/.codeium/windsurf/bin:$PATH"
-export PATH="/Users/wangkewen/.catpawai/bin:$PATH"
+export PATH="/Users/yourname/.codeium/windsurf/bin:$PATH"
+export PATH="/Users/yourname/.catpawai/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 ```
 
@@ -220,14 +227,13 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 ### 2. 正确的 PATH 顺序
 
-```bash
-# 优先级顺序（从高到低）
+优先级顺序（从高到低）：
+
 1. 用户自定义工具
 2. 开发工具（Windsurf, VS Code）
 3. 编程语言（Python, Ruby, Node）
 4. 包管理器（Homebrew, MacPorts）
 5. 系统路径（/usr/bin, /bin）
-```
 
 ### 3. 环境变量配置位置
 

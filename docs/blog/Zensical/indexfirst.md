@@ -51,7 +51,7 @@ tags:
 
 ## 加入友链
 
-[友链申请 :palms_up_together_tone1:](../../link.md){.md-button}
+[友链申请 :palms_up_together_tone1:](../../link/#_3){.md-button}
 
 
 <!-- <script async custom-element="amp-auto-ads"

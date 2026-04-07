@@ -22,6 +22,12 @@ tags:
 
 ## 公众号 logo
 ![7EF61156D14_1_105_c.jpeg](https://s2.loli.net/2024/02/04/C9XfgY4zWPpvEVh.jpg)
+??? tip "公众号(年更UP)"
+    <figure markdown >
+    ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1 }
+    <figcaption>公众号</figcaption>
+    </figure>
+
 
 ***
 ## 早期购物网站制作
@@ -29,17 +35,16 @@ tags:
 
 ***
 ## 果味Apple网站
-学习模仿Austin Li大佬的[果味Apple网站](https://wcowinastro.netlify.app/)
+学习模仿Austin Li大佬的果味Apple网站
 ![image.png](https://s2.loli.net/2024/02/04/w9mTaFPNUq7uihI.png)
 ***
 
 ## Hexo的butterfly主题制作的网站
 
-[Wcowin的个人网站](https://wcowin.gitee.io/myhexo/)
 ![image.png](https://s2.loli.net/2024/02/04/zKJon7wlPGNmAtZ.png)
 ***
 
-# 工具Figma使用
+# Figma的使用
 <svg width="390" height="175" viewBox="0 0 390 175" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="390" height="175" fill="url(#paint0_linear_45_32412)"/>
 <g opacity="0.05" filter="url(#filter0_f_45_32412)">
@@ -582,3 +587,4 @@ tags:
 </defs>
 </svg>
 
+![](https://pic3.zhimg.com/80/v2-0786a6086793ccca444226e9ab3561ec_1440w.webp){width=400}

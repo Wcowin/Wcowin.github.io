@@ -198,7 +198,8 @@ nav = [
     { "开发" = [
         "develop/index.md",
         { "AI" = [
-            { "AI工具(2026最新)" = "develop/AI.md" },
+            "develop/AI/index.md",
+            { "AI工具(2026最新)" = "develop/AItools.md" },
             { "Prompt 工程入门" = "develop/AI/prompt.md" },
             { "AI Agent 入门" = "develop/AI/agent.md" },
             { "Agentic AI：从 Chatbot 到可行动的智能体" = "develop/AI/agentic-ai.md" },
@@ -221,25 +222,25 @@ nav = [
         { "GitHub 解封指南——This account is flagged" = "develop/GitHub-unblocked.md"},
         { "macOS开发" = [
             "develop/Mac-development/index.md",
-            { "OneClip 架构设计与核心模块解析" = "develop/Mac-development/OneClip-Architecture-Design.md" },
-            { "OneClip 开发经验分享：从零到一" = "develop/Mac-development/OneClip-Development-Experience.md" },
-            { "应用分发签名————OneClip为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" },
+            { "Mac 开发环境检查清单" = "develop/Mac-development/Mac-Development-Environment-Checklist.md" },
             { "Mac Shell 环境优化指南" = "develop/Mac-development/Mac-Shell-Environment-Optimization.md" },
-            { "Mac 开发环境检查清单" = "develop/Mac-development/Mac-Development-Environment-Checklist.md" }
+            { "OneClip 开发经验分享：从零到一" = "develop/Mac-development/OneClip-Development-Experience.md" },
+            { "OneClip 架构设计与核心模块解析" = "develop/Mac-development/OneClip-Architecture-Design.md" },
+            { "应用分发签名——以 OneClip 为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" }
         ]},
         { "我的开发项目/作品/应用" = [
             "develop/Mywork/index.md",
             { "OneClip" = "develop/Mywork/OneClip.md" },
-            { "FinderClip(为macOS Finder提供直观的剪切粘贴体验)" = "develop/Mywork/Mac-Finder-Clipboard.md" },
+            { "FinderClip" = "develop/Mywork/Mac-Finder-Clipboard.md" },
             { "Wcowin for MkDocs主题" = "develop/Mywork/mkdocs-wcowin.md" },
             { "Mkdocs相关插件" = "develop/Mywork/mkdocsplugin.md" },
-            { "简单的 JavaScript 音乐播放器" = "develop/Mywork/muplayer.md" },
-            { "人脸识别系统" = "develop/Mywork/face-recognition.md" },
-            { "用AirScript脚本给女/男朋友发送每日早安邮件(极简版本)" = "develop/Mywork/email.md" },
-            { "基于讯飞人脸算法进行人脸比对" = "develop/Mywork/face_compare.md" },
-            { "基于百度API和opencv的智能车牌识别程序" = "develop/Mywork/opencv.md" },
+            { "简单的JavaScript音乐播放器" = "develop/Mywork/muplayer.md" },
+            { "基于OpenCV的人脸识别系统" = "develop/Mywork/face-recognition.md" },
+            { "用AirScript脚本给女/男朋友发送每日早安邮件" = "develop/Mywork/email.md" },
+            { "基于讯飞人脸算法的人脸比对" = "develop/Mywork/face_compare.md" },
+            { "基于百度API和OpenCV的智能车牌识别程序" = "develop/Mywork/opencv.md" },
             { "利用百度API进行植物识别" = "develop/Mywork/aizhiwu.md" },
-            { "玩的设计" = "develop/Mywork/design.md" }
+            { "设计作品" = "develop/Mywork/design.md" }
         ]},
         { "我的设备" = "develop/mydevice.md" },
         { "Markdown" = [

@@ -24,7 +24,7 @@ tags:
     class="github-repo-card"
     data-repo="Wcowin/Mac-Finder-Clipboard"
     data-description="FinderClip 是一款免费开源且轻量级的 macOS 应用，让你可以在 Finder 中使用熟悉的 ⌘X 和 ⌘V 快捷键来剪切和移动文件。"
-    data-stars="78"
+    data-stars="79"
     data-forks="0"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
