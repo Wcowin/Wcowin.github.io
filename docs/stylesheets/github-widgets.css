@@ -340,6 +340,11 @@
   gap: 6px;
 }
 
+/* 无 star 信息时隐藏 star 图标和占位（例如 star 数为 0 时） */
+.github-repo-meta-item:has(.github-repo-stars:empty) {
+  display: none;
+}
+
 /* 无 fork 信息时隐藏 fork 图标和占位（例如 fork 数为 0 时） */
 .github-repo-meta-item:has(.github-repo-forks:empty) {
   display: none;

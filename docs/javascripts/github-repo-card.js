@@ -1,6 +1,5 @@
 (function () {
-  // 缓存配置
-  const CACHE_DURATION = 2 * 60 * 60 * 1000; // 2小时
+  const CACHE_DURATION = 2 * 60 * 60 * 1000;
   const CACHE_KEY_PREFIX = 'github-repo-card-';
 
   function parseRepoFromHref(href) {
@@ -75,7 +74,6 @@
     `;
   }
 
-  // 从缓存获取数据
   function getCachedData(repo) {
     try {
       const cacheKey = CACHE_KEY_PREFIX + repo;
@@ -89,23 +87,19 @@
         }
       }
     } catch (e) {
-      // localStorage 不可用（隐私模式等），静默失败
     }
     return null;
   }
 
-  // 保存数据到缓存
   function setCachedData(repo, data) {
     try {
       const cacheKey = CACHE_KEY_PREFIX + repo;
       localStorage.setItem(cacheKey, JSON.stringify(data));
       localStorage.setItem(cacheKey + '-time', Date.now().toString());
     } catch (e) {
-      // localStorage 不可用或已满，静默失败
     }
   }
 
-  // 填充卡片数据
   function fillCardData(card, data, owner, name) {
     const ownerEl = card.querySelector('.github-repo-owner');
     const nameEl = card.querySelector('.github-repo-name');
@@ -115,7 +109,6 @@
     const forksEl = card.querySelector('.github-repo-forks');
     const licenseEl = card.querySelector('.github-repo-license');
     
-    // 自定义属性
     const customOwner = card.getAttribute('data-owner');
     const customName = card.getAttribute('data-name');
     const customDescription = card.getAttribute('data-description');
@@ -124,7 +117,6 @@
     const customForks = card.getAttribute('data-forks');
     const customLicense = card.getAttribute('data-license');
 
-    // 填充数据，优先使用自定义属性
     if (ownerEl) ownerEl.textContent = customOwner || owner;
     if (nameEl) nameEl.textContent = customName || name;
 
@@ -143,7 +135,6 @@
       }
     }
     if (licenseEl) {
-      // 优先使用自定义许可证
       const licenseText = customLicense !== null ? customLicense : ((data.license && (data.license.spdx_id || data.license.name)) || '');
       licenseEl.textContent = licenseText;
       const metaItem = licenseEl.closest('.github-repo-meta-item');
@@ -171,7 +162,6 @@
     }
   }
 
-  // 从 API 获取数据
   async function fetchRepoData(repo) {
     const apiUrl = `https://api.github.com/repos/${repo}`;
     const res = await fetch(apiUrl, { headers: { Accept: 'application/vnd.github+json' } });
@@ -181,8 +171,25 @@
     return await res.json();
   }
 
+  function hasAllCustomAttributes(card) {
+    const customOwner = card.getAttribute('data-owner');
+    const customName = card.getAttribute('data-name');
+    const customDescription = card.getAttribute('data-description');
+    const customAvatar = card.getAttribute('data-avatar');
+    const customStars = card.getAttribute('data-stars');
+    const customForks = card.getAttribute('data-forks');
+    const customLicense = card.getAttribute('data-license');
+    
+    return customOwner !== null && 
+           customName !== null && 
+           customDescription !== null && 
+           customAvatar !== null && 
+           customStars !== null && 
+           customForks !== null && 
+           customLicense !== null;
+  }
+
   async function initCard(card) {
-    // 避免重复初始化
     if (card.dataset.githubCardInitialized === 'true') return;
     card.dataset.githubCardInitialized = 'true';
 
@@ -193,34 +200,32 @@
 
     const [owner, name] = repo.split('/');
 
-    // 生成卡片结构
     card.innerHTML = buildCardInnerHTML();
 
-    // 尝试获取缓存数据
+    if (hasAllCustomAttributes(card)) {
+      fillCardData(card, {}, owner, name);
+      return;
+    }
+
     const cachedData = getCachedData(repo);
 
     if (cachedData) {
-      // 有缓存：先显示缓存数据
       fillCardData(card, cachedData, owner, name);
 
-      // 后台静默刷新（不阻塞，失败也不影响）
       fetchRepoData(repo)
         .then(data => {
           setCachedData(repo, data);
           fillCardData(card, data, owner, name);
         })
         .catch(() => {
-          // 静默失败，继续使用缓存数据
         });
     } else {
-      // 无缓存：从 API 获取
       try {
         const data = await fetchRepoData(repo);
         setCachedData(repo, data);
         fillCardData(card, data, owner, name);
       } catch (e) {
         console.warn('加载 GitHub 仓库信息失败：', repo, e);
-        // 显示基础信息（仓库名）
         fillCardData(card, {}, owner, name);
       }
     }
