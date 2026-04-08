@@ -25,6 +25,8 @@ tags:
 - **模型自由**：支持 Claude、GPT、Gemini、DeepSeek、豆包（火山引擎）等，也可通过 Ollama 接入本地模型
 - **技能扩展**：有活跃的 Skill 生态，可通过工作区技能、托管技能和社区技能扩展能力
 
+![image.png](https://i.imgant.com/v2/hAZPfhB.png)
+
 ### 名字的演变
 
 OpenClaw 有个有趣的改名史：
