@@ -8,11 +8,11 @@ hide:
   <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="200"/>
   
   <h1>
-    Hey, I'm <a href="https://github.com/Wcowin">Wcowin</a>!
+    Hey, I'm <a href="https://wcowin.work/">Wcowin</a>!
     <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
   </h1>
   <p align="center">
-    <b>Student | Open-source Technology & Math Enthusiast | Coffee Lover | Poetry Lover | Badminton Player</b>
+    <b>Developer & Math Enthusiast | Coffee Lover | Poetry Lover | Badminton Player</b>
   </p>
 </div>
 
@@ -20,44 +20,37 @@ hide:
 
 ## 🌱 About Me
 
-* A student :student:
+* Open Source Developer
 * Heavy coffee drinker ☕
-* Love tossing technology/Math 💻
+* Love tossing technology/Math ⌨️
 * Read books;lover of poetry;like Haruki Murakami 📖
 * good at badminton :badminton:
 
----
 
-<!-- ## 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python" style="margin: 0 10px;"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript" style="margin: 0 10px;"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript" style="margin: 0 10px;"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="40" alt="vue" style="margin: 0 10px;"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs" style="margin: 0 10px;"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github" style="margin: 0 10px;"/>
-</p> -->
-
-## 🚀 Currently Learning & Working On  
-
+## 🚀 Currently Learning & Working On
 - 💻 Try to be an independent developer,I use Swift to develop applications
 - 🤔 Exploring new frameworks and open source ideas
-- 🛠️ Building personal website/blog with [Zensical]
-- 💡 Deeply study the interdisciplinary field of mathematics and programming
+- 🛠️ Building [personal website/blog](https://wcowin.work/) with [Zensical](https://zensical.org/)
+- 💡 Deeply study the interdisciplinary field of mathematics and AI
 
 ---
 
 ## 📫 Connect with Me
 
 <p align="center">
+  <a href="https://twitter.com/Wcowin_" target="_blank"><img src="https://pic3.zhimg.com/80/v2-aa11d437a377f1a0deac132eb800b306_1440w.webp" width="50" /></a>
+  <a href="https://t.me/Wcowin" target="_blank"><img src="https://pica.zhimg.com/v2-61b4731957dba61e9960436dbd06306a_1440w.jpg" width="50" /></a>
+  <a href="mailto:wangkewen821@gmail.com" target="_blank"><img src="https://pic4.zhimg.com/v2-e996df5a7696237b6f924ace7044cd97_1440w.jpg" width="50" /></a>
+</p>
+
+<!-- <p align="center">
   <a href="https://twitter.com/Wcowin_" target="_blank"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>
   <a href="https://www.instagram.com/wcowin_/" target="_blank"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>
   <a href="mailto:wangkewen821@gmail.com" target="_blank"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png" width="50" /></a>
-</p>
+</p> -->
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coffee;I+Love+books;I+Love+Program" alt="Headline;" />
+<div align=center> 
+         <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=32&center=true&vCenter=true&width=600&height=50&lines=My+hobby:+;I+Love+coding;I+Love+books;I+Love+freedom" alt="Headline;" /> 
 </div>
 
 ---

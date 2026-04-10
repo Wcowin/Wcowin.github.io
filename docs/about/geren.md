@@ -339,8 +339,8 @@ hide_comment: true
   ></a>
 </div>
 
-[:material-download: 查看简历](../assets/个人简历.pdf){ .md-button}
-{: style="text-align: center;" }
+<!-- [:material-download: 查看简历](../assets/个人简历.pdf){ .md-button}
+{: style="text-align: center;" } -->
 
 
 <!-- <a href="/assets/个人简历.pdf" target="_blank" class="md-button">下载简历</a> -->
@@ -405,7 +405,7 @@ hide_comment: true
             <div class="qualification__data">
                 <div>
                     <h3 class="qualification__title">家里蹲大学</h3>
-                    <span class="qualification__subtitle">密码学硕士</span>
+                    <span class="qualification__subtitle">硕士</span>
                     <div class="qualification__calendar">
                         <i class="fa-regular fa-calendar"></i>
                         <span>2026 - 2029</span>
