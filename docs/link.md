@@ -1240,7 +1240,17 @@ comments: false
       </div>
      </div>
     </div>
-
+    <div class="card">
+        <img class="ava" src="https://s21.ax1x.com/2024/12/22/pAXtJat.jpg" />
+        <div class="card-header">
+          <div>
+            <a href="https://tianmiao.site" target="_blank">天渺studio</a>
+          </div>
+          <div class="info">
+            天渺studio的小站&amp;日志记录
+          </div>
+        </div>
+      </div>
 
 
    </div>
