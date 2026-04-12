@@ -57,6 +57,14 @@
    margin: 0 1em 0 0 !important;
    border-radius: 50%;
    object-fit: cover; /* 确保图像正确填充 */
+   aspect-ratio: 1 / 1; /* 防止布局抖动(CLS) */
+   background-color: #e8eaed; /* 加载中/失败时的占位背景色 */
+   transition: opacity 0.3s;
+}
+
+/* 头像加载失败时的样式 */
+.card .ava.ava-fallback {
+   background-color: #d0d7de;
 }
 
 .card .card-header {

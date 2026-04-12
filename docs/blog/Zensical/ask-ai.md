@@ -9,9 +9,9 @@ status: draft
 
 # 为 Zensical 网站添加 Ask AI 功能
 
-> 使用硅基流动（SiliconFlow）OpenAI 兼容接口 + `Qwen3-8B` 为你的 Zensical 网站添加智能 AI 助手功能
+> 使用硅基流动 OpenAI 兼容接口 + `Qwen3-8B` 为你的 Zensical 网站添加智能 AI 助手功能
 >
-> 作者：[Wcowin](https://github.com/Wcowin)
+> **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
 
 !!! info "功能预览"
     Ask AI 功能会在网站右下角（可自定义位置）显示一个浮动按钮，点击后弹出聊天窗口，访客可以与 AI 助手对话，AI 会基于当前页面内容回答问题。

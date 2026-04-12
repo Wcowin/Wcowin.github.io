@@ -25,7 +25,7 @@ RAG 由 Lewis 等人于 2020 年在 NeurIPS 发表的论文 *Retrieval-Augmented
 
 ### LLM面临的核心挑战
 
-尽管大型语言模型（如GPT-4、Claude、Llama等）展现出了惊人的语言理解和生成能力，但它们仍然面临几个关键问题：
+尽管大型语言模型（如GPT-5、Claude、Llama等）展现出了惊人的语言理解和生成能力，但它们仍然面临几个关键问题：
 
 | 问题类型 | 描述 | 影响 |
 |---------|------|------|
@@ -644,7 +644,7 @@ print(result)
 | **向量数据库** | Milvus / Qdrant | ChromaDB / Pinecone |
 | **嵌入模型** | BGE / OpenAI Embedding | M3E / Cohere |
 | **重排序** | BGE-Reranker | Cohere Rerank |
-| **LLM** | GPT-4 / Claude | Llama / Qwen |
+| **LLM** | GPT-5 / Claude / DeepSeek | Llama / Qwen |
 
 ### 完整代码示例
 
@@ -655,22 +655,22 @@ print(result)
 RAG 系统完整实现示例（结构示意，导入路径请按所用 LangChain 版本调整）
 """
 
-# 以下导入路径可能随 LangChain 版本变化，请参考官方文档
+# 以下导入路径基于 LangChain 新版（2025+），请参考官方文档
 # 例如: from langchain_community.document_loaders import PyPDFLoader
 #      from langchain_huggingface import HuggingFaceEmbeddings
 #      from langchain_openai import ChatOpenAI
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Milvus
-from langchain.chat_models import ChatOpenAI
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Milvus
+from langchain_openai import ChatOpenAI
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 
 class RAGSystem:
     def __init__(self, 
                  embedding_model="BAAI/bge-large-zh-v1.5",
-                 llm_model="gpt-4",
+                 llm_model="gpt-5",
                  collection_name="my_knowledge_base"):
         
         # 初始化嵌入模型

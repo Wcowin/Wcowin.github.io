@@ -12,33 +12,34 @@ status: new
 
 <div class="grid cards" markdown>
 
--   :octicons-rocket-16:{ .lg .middle } __2026 年最新动态（更新于 2026.3）__
+-   :octicons-rocket-16:{ .lg .middle } __2026 年最新动态（更新于 2026.4）__
 
     ---
 
     **主流模型版本**
-    
-    - OpenAI **GPT-5.4** — 原生电脑操作、Agent 能力强化
-    - Anthropic **Claude Opus 4.6** — 编码与多模态领先
-    - Google **Gemini 3.1 Pro** — 原生多模态、百万级上下文
-    
+
+    - OpenAI **GPT-5.4** — 原生电脑操作、Agent 能力强化（GPT-6 已定档 4 月 14 日发布，上下文窗口翻倍至 200 万 Token）
+    - Anthropic **Claude Opus 4.6** — 编码与多模态领先（4 月 5 日发布 Claude 4.5，推理与安全性提升）
+    - Google **Gemini 3.1 Pro** — 原生多模态、百万级上下文（4 月发布 Gemma 4 开源系列，单卡 H100 可运行）
+
     **趋势**
-    
-    从「生成内容」转向「解决复杂问题」——深度推理（System 2）、智能体化、多模态原生、幻觉率降低
-    
+
+    从「生成内容」转向「解决复杂问题」——深度推理（System 2）、智能体化、多模态原生、开源模型单卡可运行成为新方向
+
     **国内动态**
-    
+
+    - **DeepSeek V4** — 4 月下旬发布，万亿参数、百万级上下文、Apache 2.0 完全开源，双模式已灰度上线
+    - **通义千问 Qwen3.5** — 3 月底发布 Qwen3.5-Omni 全模态原生模型，4 月初发布 Qwen 3.6
     - **Kimi K2.5** — 原生多模态、Agent 集群
-    - **DeepSeek V4** — 性价比突出
-    - **通义千问 Qwen3.5** — 旗舰推理与 Agent
     - **智谱 GLM-5**、**文心 5.0**、**可灵 3.0** 等密集更新
-    - 开源与 Agent 能力成为标配
-    
+    - 开源与 Agent 能力成为标配，国产 AI 编程首超 OpenAI
+
     **Agent 爆发**
-    
+
     - **OpenClaw**（280K+ Stars）— 本地优先 AI Agent
     - **Manus** — 通用型 AI Agent
     - **扣子空间** — 字节跳动多功能智能体
+    - **Hermes Agent** — Nous Research 自进化 Agent，内置学习闭环
 
 </div>
 
@@ -67,15 +68,17 @@ status: new
 
 ## AI 智能体
 
-> 2026 年已进入「智能体时代」：自主执行、多智能体协作成为主流，OpenAI Agents SDK、Google ADK、Anthropic 等均提供智能体框架。
+> 2026 年已进入「智能体时代」：自主执行、多智能体协作成为主流，OpenAI Agents SDK、Google ADK、Anthropic 等均提供智能体框架。Nvidia 在 GTC 2026 推出开源 Agent Toolkit，联合 17 家企业巨头。
 
 - [OpenClaw](https://clawcave.wyld.cc/){target="_blank"} - 2026年最火的本地优先 AI Agent（GitHub 280K+ Stars），支持多智能体协同与强化学习
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent){target="_blank"} - Nous Research 自进化 Agent，内置学习闭环，639 个技能
 - [Manus](https://manus.im/){target="_blank"} - Monica 团队推出的通用型 AI Agent
 - [扣子空间](https://www.coze.cn/){target="_blank"} - 字节跳动推出的多功能 AI 智能体
 - [Operator](https://operator.chatgpt.com/){target="_blank"} - OpenAI 推出的 AI 智能体
 - [码上飞](https://www.mashanfei.com/){target="_blank"} - 一句话生成微信小程序、APP、H5 网页
 - [Tbox](https://tbox.alipay.com/){target="_blank"} - 蚂蚁集团旗下多智能体协同的通用 AI Agent
 - [Genspark](https://www.genspark.ai/){target="_blank"} - 通用 AI 智能体，一站式 AI 工作空间
+- [Nvidia Agent Toolkit](https://developer.nvidia.com/){target="_blank"} - Nvidia 开源 Agent 工具包（GTC 2026 发布，联合 Adobe/Salesforce/SAP 等 17 家企业）
 
 ## AI 搜索引擎
 
@@ -93,12 +96,13 @@ status: new
 
 ## AI 编程工具
 
-> 2026 年 Cursor 2.4 支持子代理并行、内置 AI 作图与代码归因；文心快码、通义灵码在国产平替中表现突出，Codeium 提供免费方案。
+> 2026 年 4 月 Cursor 3 发布，彻底重构为围绕智能体构建的统一工作区，支持并行 Agent 编排和 Design Mode；Claude Code 支持 100 万 Token 上下文窗口，覆盖终端/VS Code/JetBrains/桌面/浏览器全平台。
 
-- [Cursor](https://www.cursor.com/){target="_blank"} - AI 代码编辑器（2.4 起支持多子代理并行、AI 图像生成、代码归因）
+- [Cursor](https://www.cursor.com/){target="_blank"} - AI 代码编辑器（Cursor 3：Agent 工作区、并行 Agent 编排、Design Mode，自愈调试准确率 92%）
 - [TRAE](https://www.trae.ai/){target="_blank"} - 字节跳动推出的 AI IDE 编程工具
 - [GitHub Copilot](https://github.com/features/copilot){target="_blank"} - GitHub 推出的 AI 编程工具（内联补全、多编辑器）
-- [Claude Code](https://claude.ai/code){target="_blank"} - Anthropic 推出的 AI 编程工具（Opus 编码能力强）
+- [Claude Code](https://claude.ai/code){target="_blank"} - Anthropic 推出的终端 AI 编程 Agent（100 万 Token 上下文、全平台覆盖）
+- [Codex](https://chatgpt.com/codex){target="_blank"} - OpenAI 推出的终端 AI 编程 Agent（云端沙箱执行）
 - [Windsurf](https://codeium.com/windsurf){target="_blank"} - Codeium 推出的 AI 编程工具（含免费方案）
 - [通义灵码](https://tongyi.aliyun.com/lingma){target="_blank"} - 阿里推出的免费 AI 编程工具（Java/云原生场景优）
 - [文心快码](https://comate.baidu.com/){target="_blank"} - 百度推出的 AI 编程助手（2026 年全栈 Agent、高采纳率）
@@ -108,6 +112,7 @@ status: new
 - [Lovable](https://lovable.dev/){target="_blank"} - 全栈 AI 编程工具，一句话构建网站应用
 - [Replit Agent](https://replit.com/){target="_blank"} - Replit 推出的 AI 编程与协作工具
 - [Codeium](https://codeium.com/){target="_blank"} - 免费 AI 代码补全与多编辑器支持（含 Windsurf IDE）
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands){target="_blank"} - 开源 AI 软件工程师 Agent（原 SWE-Agent）
 
 ## AI 图像工具
 

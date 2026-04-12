@@ -26,5 +26,5 @@ tags:
 
 ***
 
-顺便一提**安卓手机**去除开屏AD的方法：<https://wwe.lanzouw.com/b01v0g3wj>{target=“_blank”}  密码：1233
+顺便一提**安卓手机**去除开屏AD的方法：
 下载李跳跳即可

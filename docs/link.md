@@ -30,7 +30,7 @@ comments: false
   <div class="links-content">
    <div class="link-navigation">
     <div class="card">
-     <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" />
      <div class="card-header">
       <div>
        <a href="https://wcowin.work/ ">Wcowin's Blog</a>
@@ -41,7 +41,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://picx.zhimg.com/80/v2-34b000e56d1af7ef61092dcd031dfd9a_1440w.webp?source=2c26e567" />
+     <img class="ava" loading="lazy" decoding="async" src="https://picx.zhimg.com/80/v2-34b000e56d1af7ef61092dcd031dfd9a_1440w.webp?source=2c26e567" />
      <div class="card-header">
       <div>
        <a href="https://oneclip.cloud/ ">OneClip</a>
@@ -52,7 +52,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
+      <img class="ava" loading="lazy" decoding="async" src="https://zensical.org/assets/zensical.svg" />
       <div class="card-header">
         <div>
           <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Zensical教程</a>
@@ -63,7 +63,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png" />
+      <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png" />
       <div class="card-header">
         <div>
           <a href="https://wcowin.work/Mkdocs-Wcowin/" target="_blank">Mkdocs教程</a>
@@ -74,7 +74,7 @@ comments: false
       </div>
     </div>
    <!-- <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/07/S8GYheTZmCU96HK.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2024/02/07/S8GYheTZmCU96HK.png" />
      <div class="card-header">
       <div>
        <a href="https://wcowin.work/WH-WKW/" target="_blank">小王和王老师的小站</a>
@@ -85,7 +85,7 @@ comments: false
      </div>
     </div>  -->
     <div class="card">
-      <img class="ava" loading="lazy" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" />
+      <img class="ava" loading="lazy" decoding="async" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" />
       <div class="card-header">
         <div>
           <a href="https://wcowin.work/VitePress/" target="_blank">Wcowin's VitePress</a>
@@ -96,7 +96,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-        <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/jaywhj" />
+        <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/jaywhj" />
         <div class="card-header">
             <div>
                 <a href="https://jaywhj.netlify.app/" target="_blank">极简主义</a>
@@ -105,7 +105,7 @@ comments: false
         </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://picx.zhimg.com/v2-164bee4f6cb4d13ea680f8bada5b6a3e_xll.jpg?source=32738c0c&needBackground=1" />
+      <img class="ava" loading="lazy" decoding="async" src="https://picx.zhimg.com/v2-164bee4f6cb4d13ea680f8bada5b6a3e_xll.jpg?source=32738c0c&needBackground=1" />
       <div class="card-header">
         <div>
           <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a>
@@ -116,7 +116,7 @@ comments: false
       </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://i.111666.best/image/RZ4GuYFkuIvUOezJRC7sjt.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://i.111666.best/image/RZ4GuYFkuIvUOezJRC7sjt.png" />
      <div class="card-header">
       <div>
        <a href="https://lennychen.top/" target="_blank">Lenny's Web</a>
@@ -127,7 +127,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://www.80tz.cn/fluid.png" />
+      <img class="ava" loading="lazy" decoding="async" src="https://www.80tz.cn/fluid.png" />
       <div class="card-header">
         <div>
           <a href="https://www.80tz.cn" target="_blank">80后情感哲学交流</a>
@@ -138,7 +138,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://s2.loli.net/2025/06/16/qdWCDgjEpy4Airl.png" />
+      <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2025/06/16/qdWCDgjEpy4Airl.png" />
       <div class="card-header">
         <div>
           <a href="https://finisky.github.io/" target="_blank">Finisky Garden</a>
@@ -149,7 +149,7 @@ comments: false
       </div>
     </div>
        <!-- <div class="card">
-     <img class="ava" loading="lazy" src="https://img.ixintu.com/upload/jpg/20210524/3a8cbb0f2da716313a3b18984a9ffe73_78863_800_772.jpg!con" />
+     <img class="ava" loading="lazy" decoding="async" src="https://img.ixintu.com/upload/jpg/20210524/3a8cbb0f2da716313a3b18984a9ffe73_78863_800_772.jpg!con" />
      <div class="card-header">
       <div>
        <a href="https://wcowin.work/myhexo/" target="_blank">Myhexo</a>
@@ -160,7 +160,7 @@ comments: false
      </div>
     </div> -->
    <div class="card">
-     <img class="ava" loading="lazy" src="https://www.iszy.cc/images/avatar.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://www.iszy.cc/images/avatar.png" />
      <div class="card-header">
       <div>
        <a href="https://www.iszy.cc/" target="_blank">随遇而安</a>
@@ -171,7 +171,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/01/NcLn4XdMWQKV37f.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2024/02/01/NcLn4XdMWQKV37f.jpg" />
      <div class="card-header">
       <div>
        <a href="https://qiuyuair.com" target="_blank">Qiuyuair的自留地</a>
@@ -182,7 +182,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/01/2Ju6y1fmpWDUBaz.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2024/02/01/2Ju6y1fmpWDUBaz.jpg" />
      <div class="card-header">
       <div>
        <a href="https://www.cnblogs.com/miluluyo/" target="_blank">麋鹿鲁哟</a>
@@ -193,7 +193,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://zhongxiaojie.cn/avatar/_30A1738tuya.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://zhongxiaojie.cn/avatar/_30A1738tuya.webp" />
      <div class="card-header">
       <div>
        <a href="https://zhongxiaojie.cn" target="_blank">obaby@mars</a>
@@ -204,7 +204,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://cdn.dusays.com/avatar.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://cdn.dusays.com/avatar.png" />
      <div class="card-header">
       <div>
        <a href="https://dusays.com" target="_blank">杜老师说</a>
@@ -214,7 +214,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://qkongtao.cn/file/images/favicon.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://qkongtao.cn/file/images/favicon.png" />
      <div class="card-header">
       <div>
        <a href="https://qkongtao.cn/" target="_blank">左眼会陪右眼哭の博客</a>
@@ -225,7 +225,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2024/06/25/59hnlap8m3oyBrk.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2024/06/25/59hnlap8m3oyBrk.webp" />
      <div class="card-header">
       <div>
        <a href="https://xiaofeishu-boke.netlify.app/" target="_blank">没用的小废鼠的Blog</a>
@@ -236,7 +236,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://www.langhai.net/assets/images/langhai-logo.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://www.langhai.net/assets/images/langhai-logo.png" />
      <div class="card-header">
       <div>
        <a href="https://www.langhai.net/" target="_blank">浪海导航</a>
@@ -247,7 +247,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.moraxyc.com/avatar.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://blog.moraxyc.com/avatar.png" />
      <div class="card-header">
       <div>
        <a href="https://moraxyc.com" target="_blank">Moraxyc’s Rhapsody</a>
@@ -258,7 +258,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://cn.cravatar.com/avatar/6eb95597489dd26f15a973e667d71aef?s=100&amp;r=G&amp;d=" />
+     <img class="ava" loading="lazy" decoding="async" src="https://cn.cravatar.com/avatar/6eb95597489dd26f15a973e667d71aef?s=100&amp;r=G&amp;d=" />
      <div class="card-header">
       <div>
        <a href="https://vimin.cc/" target="_blank">XIAOMING'S BLOG</a>
@@ -269,7 +269,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://fastly.jsdelivr.net/gh/wkk-dev/cdn@master/png/kang-qq.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://fastly.jsdelivr.net/gh/wkk-dev/cdn@master/png/kang-qq.jpg" />
      <div class="card-header">
       <div>
        <a href="https://blog.wkk-dev.one" target="_blank">WKK & Blog</a>
@@ -280,7 +280,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://img.zhheo.com/i/67d8fa75943e4.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://img.zhheo.com/i/67d8fa75943e4.webp" />
      <div class="card-header">
       <div>
        <a href="https://blog.zhheo.com/" target="_blank">张洪Heo</a>
@@ -291,7 +291,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://weavatar.com/avatar/0b01396273cca253aa6876c020449b655a9cc12e75f921b38ac088569e814b5e" />
+     <img class="ava" loading="lazy" decoding="async" src="https://weavatar.com/avatar/0b01396273cca253aa6876c020449b655a9cc12e75f921b38ac088569e814b5e" />
      <div class="card-header">
       <div>
        <a href="https://kegongteng.cn/" target="_blank">Kegongteng</a>
@@ -302,7 +302,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.lichenghao.cn/avatar.svg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://blog.lichenghao.cn/avatar.svg" />
      <div class="card-header">
       <div>
        <a href="https://blog.lichenghao.cn" target="_blank">故事的程序猿</a>
@@ -313,7 +313,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://note.isshikih.top/_assets/iro/IroPatch_Brown.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://note.isshikih.top/_assets/iro/IroPatch_Brown.png" />
      <div class="card-header">
       <div>
        <a href="https://note.isshikih.top/" target="_blank">IsshikiHugh</a>
@@ -324,7 +324,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.whispery.cn/img/tou.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://blog.whispery.cn/img/tou.png" />
      <div class="card-header">
       <div>
        <a href="https://blog.whispery.cn/" target="_blank">Whisper</a>
@@ -335,7 +335,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/111767754?v=4" />
+     <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/111767754?v=4" />
      <div class="card-header">
       <div>
        <a href="https://arv-anshul.github.io/about/" target="_blank">Anshul Raj Verma</a>
@@ -346,7 +346,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/81922999?v=4" />
+     <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/81922999?v=4" />
      <div class="card-header">
       <div>
        <a href="https://blog.meta-code.top/" target="_blank">百里飞洋の博客</a>
@@ -357,7 +357,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://assets.guoqi.dev/images/avatar.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://assets.guoqi.dev/images/avatar.png" />
      <div class="card-header">
       <div>
        <a href="https://blog.sunguoqi.com" target="_blank">小孙同学</a>
@@ -368,7 +368,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/109416673?v=4" />
+     <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/109416673?v=4" />
      <div class="card-header">
       <div>
        <a href="https://blog.w1ndys.top/" target="_blank">W1ndysの小屋</a>
@@ -379,7 +379,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://cdn.zerolacqua.top/images/avatar.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://cdn.zerolacqua.top/images/avatar.png" />
      <div class="card-header">
       <div>
        <a href="https://blog.zerolacqua.top" target="_blank">丘卡饮品店</a>
@@ -390,7 +390,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://liveout.cn/usr/uploads/pic/icon1.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://liveout.cn/usr/uploads/pic/icon1.jpg" />
      <div class="card-header">
       <div>
        <a href="https://www.liveout.cn/" target="_blank">Echo 的小窝</a>
@@ -401,7 +401,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg" />
      <div class="card-header">
       <div>
        <a href="https://blog.anheyu.com/" target="_blank">安知鱼</a>
@@ -412,7 +412,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://npm.elemecdn.com/nanshen/avatar.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://npm.elemecdn.com/nanshen/avatar.jpg" />
      <div class="card-header">
       <div>
        <a href="https://blog.imzjw.cn" target="_blank">小嘉的部落格</a>
@@ -423,7 +423,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://npm.elemecdn.com/webxc/logo/logo.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://npm.elemecdn.com/webxc/logo/logo.jpg" />
      <div class="card-header">
       <div>
        <a href="https://webxc.eu.org" target="_blank">小城故事</a>
@@ -434,7 +434,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F7880b046-93bb-4d63-a4e2-64814819b3e8%2Ffea4ed7b-d9d4-419a-b526-de9e020205d4%2Favatar.png?table=block&amp;id=d9b5a704-94ee-45aa-b6fe-f1572c4d9b26&amp;t=d9b5a704-94ee-45aa-b6fe-f1572c4d9b26&amp;width=800&amp;cache=v2" />
+     <img class="ava" loading="lazy" decoding="async" src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F7880b046-93bb-4d63-a4e2-64814819b3e8%2Ffea4ed7b-d9d4-419a-b526-de9e020205d4%2Favatar.png?table=block&amp;id=d9b5a704-94ee-45aa-b6fe-f1572c4d9b26&amp;t=d9b5a704-94ee-45aa-b6fe-f1572c4d9b26&amp;width=800&amp;cache=v2" />
      <div class="card-header">
       <div>
        <a href="https://www.linyunlink.top/" target="_blank">凌云·LinYun</a>
@@ -445,7 +445,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://www.yveji.com/vis/yveji_logo.svg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://www.yveji.com/vis/yveji_logo.svg" />
      <div class="card-header">
       <div>
        <a href="https://www.yveji.com" target="_blank">悦己</a>
@@ -456,7 +456,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.asyncx.top/favicon.svg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://blog.asyncx.top/favicon.svg" />
      <div class="card-header">
       <div>
        <a href="https://blog.asyncx.top/" target="_blank">AsyncX</a>
@@ -467,7 +467,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.meekdai.com/avatar.svg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://blog.meekdai.com/avatar.svg" />
      <div class="card-header">
       <div>
        <a href="https://meekdai.com" target="_blank"> Meekdai</a>
@@ -478,7 +478,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2024/12/31/9aBkXdhf4lczM8N.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2024/12/31/9aBkXdhf4lczM8N.png" />
      <div class="card-header">
       <div>
        <a href="https://blog.imsyy.top/" target="_blank">無名小栈</a>
@@ -489,7 +489,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://tendcode.com/static/blog/img/friend.png" />
+    <img class="ava" loading="lazy" decoding="async" src="https://tendcode.com/static/blog/img/friend.png" />
     <div class="card-header">
       <div>
       <a href="https://tendcode.com" target="_blank">TendCode</a>
@@ -500,7 +500,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://www.chujiaweicode.top/static/favicons/site-logo.png" />
+    <img class="ava" loading="lazy" decoding="async" src="https://www.chujiaweicode.top/static/favicons/site-logo.png" />
     <div class="card-header">
       <div>
       <a href="https://www.chujiaweicode.top/" target="_blank">JW.DEV🚀</a>
@@ -511,7 +511,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://magren.cc/avatar.png" />
+    <img class="ava" loading="lazy" decoding="async" src="https://magren.cc/avatar.png" />
     <div class="card-header">
       <div>
       <a href="https://magren.cc" target="_blank">Magren's Blog</a>
@@ -522,7 +522,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg" />
      <div class="card-header">
       <div>
       <a href="https://vite.xingji.fun" target="_blank">XINGJI</a>
@@ -533,7 +533,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://shenwy.com/assets/logo.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://shenwy.com/assets/logo.png" />
      <div class="card-header">
       <div>
       <a href="https://weiyan.cc" target="_blank">维燕的知识花园</a>
@@ -544,7 +544,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://moshanghua.net/avatar.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://moshanghua.net/avatar.jpg" />
      <div class="card-header">
       <div>
       <a href="https://moshanghua.net" target="_blank">花开陌上</a>
@@ -555,7 +555,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://cravatar.cn/avatar/294fc41a0551cb235455b29356002f46?s=500&r=X" />
+     <img class="ava" loading="lazy" decoding="async" src="https://cravatar.cn/avatar/294fc41a0551cb235455b29356002f46?s=500&r=X" />
      <div class="card-header">
       <div>
       <a href="https://moechu.cn" target="_blank">萌豚 Moechu</a>
@@ -566,7 +566,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://foruda.gitee.com/avatar/1677079600835137184/7470255_svipdada_1642667584.png!avatar200" />
+     <img class="ava" loading="lazy" decoding="async" src="https://foruda.gitee.com/avatar/1677079600835137184/7470255_svipdada_1642667584.png!avatar200" />
      <div class="card-header">
       <div>
       <a href="itzd.cn" target="_blank">ITZD</a>
@@ -577,7 +577,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/58868440?v=4" />
+     <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/58868440?v=4" />
      <div class="card-header">
       <div>
       <a href="https://victorwang712.github.io/Note/" target="_blank">Walker_V's Notebook</a>
@@ -588,7 +588,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2025/02/12/micDLalsuKWzHr4.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2025/02/12/micDLalsuKWzHr4.png" />
      <div class="card-header">
       <div>
       <a href="https://www.nodeloc.com" target="_blank">Nodeloc</a>
@@ -599,7 +599,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://s2.loli.net/2025/02/12/Sw9QAN5cfau8eZr.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2025/02/12/Sw9QAN5cfau8eZr.jpg" />
      <div class="card-header">
       <div>
       <a href="https://dorianine.github.io/brain/" target="_blank">Dorianine's brain</a>
@@ -610,7 +610,7 @@ comments: false
      </div>
     </div>
       <div class="card">
-        <img class="ava" loading="lazy" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg" />
+        <img class="ava" loading="lazy" decoding="async" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg" />
         <div class="card-header">
           <div>
           <a href="https://cangjingyue.top" target="_blank">苍镜月's docs</a>
@@ -621,7 +621,7 @@ comments: false
         </div>
       </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://i.111666.best/image/4rTToahgN3jyhAx1zopHHp.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://i.111666.best/image/4rTToahgN3jyhAx1zopHHp.png" />
      <div class="card-header">
       <div>
        <a href="https://www.yaguwu.com/" target="_blank">雅故小筑</a>
@@ -632,7 +632,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://cdn.jsdelivr.net/gh/Auzers/drawingbed/wechat.jpeg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/Auzers/drawingbed/wechat.jpeg" />
      <div class="card-header">
       <div>
        <a href="https://Auzers.github.io/notes/" target="_blank">am的笔记本</a>
@@ -643,7 +643,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.btwoa.com/screenshot.avif" />
+     <img class="ava" loading="lazy" decoding="async" src="https://blog.btwoa.com/screenshot.avif" />
      <div class="card-header">
       <div>
        <a href="https://blog.btwoa.com" target="_blank">btwoa</a>
@@ -654,7 +654,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.viper3.top/usr/themes/Sunny/style/avatar/04.svg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://blog.viper3.top/usr/themes/Sunny/style/avatar/04.svg" />
      <div class="card-header">
       <div>
       <a href="https://blog.viper3.top/" target="_blank">小霜南风</a>
@@ -665,7 +665,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/04/20/3c8dd9f82076d54db72beaceaf0a308b.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://s1.imagehub.cc/images/2025/04/20/3c8dd9f82076d54db72beaceaf0a308b.png" />
      <div class="card-header">
       <div>
       <a href="https://blog.qianyios.top/" target="_blank">严千屹</a>
@@ -676,7 +676,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/88918522?v=4" />
+     <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/88918522?v=4" />
      <div class="card-header">
       <div>
       <a href="https://www.eurekaimer.icu/" target="_blank">Eurekaimer's Digital Garden</a>
@@ -686,7 +686,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://i.111666.best/image/crFUarrdx5jWQBNXsrgPWp.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://i.111666.best/image/crFUarrdx5jWQBNXsrgPWp.png" />
      <div class="card-header">
       <div>
       <a href="https://zishu.me" target="_blank">子舒的博客</a>
@@ -697,7 +697,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://p1.ssl.qhimg.com/t012bf8e3a395b6d9ab.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://p1.ssl.qhimg.com/t012bf8e3a395b6d9ab.jpg" />
      <div class="card-header">
       <div>
       <a href="https://md5.cc" target="_blank">md5解密</a>
@@ -707,7 +707,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://www.rpzm.com/avatar.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://www.rpzm.com/avatar.jpg" />
      <div class="card-header">
       <div>
       <a href="https://www.rpzm.com" target="_blank">如品之茗</a>
@@ -718,7 +718,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://www.80srz.com/logo.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://www.80srz.com/logo.png" />
      <div class="card-header">
       <div>
       <a href="https://www.80srz.com" target="_blank">荒野孤灯</a>
@@ -729,7 +729,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/05/01/96b63458377dd41261803d9a07d35cd2.png" />
+    <img class="ava" loading="lazy" decoding="async" src="https://s1.imagehub.cc/images/2025/05/01/96b63458377dd41261803d9a07d35cd2.png" />
     <div class="card-header">
       <div>
       <a href="https://yangzhang.site" target="_blank">张杨的博客</a>
@@ -740,7 +740,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://pic1.imgdb.cn/item/681ad56458cb8da5c8e1f5aa.webp" />
+    <img class="ava" loading="lazy" decoding="async" src="https://pic1.imgdb.cn/item/681ad56458cb8da5c8e1f5aa.webp" />
     <div class="card-header">
       <div>
       <a href="https://sufine.top/" target="_blank">Suffine Hub</a>
@@ -751,7 +751,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://shef.cc/logo.png" />
+    <img class="ava" loading="lazy" decoding="async" src="https://shef.cc/logo.png" />
     <div class="card-header">
       <div>
       <a href="https://shef.cc" target="_blank">SheepChef Blog</a>
@@ -762,7 +762,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://mingcy.cn/image/mcy.png" />
+    <img class="ava" loading="lazy" decoding="async" src="https://mingcy.cn/image/mcy.png" />
     <div class="card-header">
       <div>
       <a href="https://mingcy.cn " target="_blank">茗辰原</a>
@@ -773,7 +773,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/121679359?v=4" />
+    <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/121679359?v=4" />
     <div class="card-header">
       <div>
       <a href="https://linexic.top " target="_blank">LineXic书屋</a>
@@ -784,7 +784,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://yanggenjie.cn/assets/avatar.webp" />
+    <img class="ava" loading="lazy" decoding="async" src="https://yanggenjie.cn/assets/avatar.webp" />
     <div class="card-header">
       <div>
       <a href="https://yanggenjie.cn/ " target="_blank">阿杰的自学之路</a>
@@ -795,7 +795,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/06/03/6c3c7438679c077410dd5439d09da78b.jpg" />
+    <img class="ava" loading="lazy" decoding="async" src="https://s1.imagehub.cc/images/2025/06/03/6c3c7438679c077410dd5439d09da78b.jpg" />
     <div class="card-header">
       <div>
       <a href="https://r-z-zhang-ai.github.io/" target="_blank">吉吉学弟的小站</a>
@@ -806,7 +806,7 @@ comments: false
     </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://www.zair.top/img/logo.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://www.zair.top/img/logo.png" />
      <div class="card-header">
       <div>
        <a href="https://www.zair.top/" target="_blank">逐水寻源</a>
@@ -817,7 +817,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://tempmail100.com/assets/image/192x192.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://tempmail100.com/assets/image/192x192.png" />
      <div class="card-header">
       <div>
        <a href="https://tempmail100.com" target="_blank">Temp Mail</a>
@@ -828,7 +828,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://zimingyuan.github.io/img/profile.jpg" />
+    <img class="ava" loading="lazy" decoding="async" src="https://zimingyuan.github.io/img/profile.jpg" />
     <div class="card-header">
       <div>
       <a href="https://zimingyuan.github.io" target="_blank">VnYzm的博客</a>
@@ -839,7 +839,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-        <img class="ava" loading="lazy" src="https://s2.loli.net/2024/10/07/fNIsM1jqOJlYmkz.jpg" />
+        <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2024/10/07/fNIsM1jqOJlYmkz.jpg" />
         <div class="card-header">
             <div>
                 <a href="https://lastwish.icu/" target="_blank">世界天光的笔记本</a>
@@ -848,7 +848,7 @@ comments: false
         </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://cdn.arthals.ink/Arthals.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://cdn.arthals.ink/Arthals.png" />
      <div class="card-header">
       <div>
       <a href="https://arthals.ink/" target="_blank">Arthals' ink</a>
@@ -859,7 +859,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://cdn.jsdmirror.com/gh/momo54181/momo54181@main/avatar.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://cdn.jsdmirror.com/gh/momo54181/momo54181@main/avatar.webp" />
      <div class="card-header">
       <div>
       <a href="https://blog.mocn.top" target="_blank">Momo5418's Blog</a>
@@ -870,7 +870,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://codinglife.online/favicon.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://codinglife.online/favicon.jpg" />
      <div class="card-header">
       <div>
       <a href="https://codinglife.online" target="_blank">CodingLife</a>
@@ -881,7 +881,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://blog.liushen.fun/info/avatar.ico" />
+     <img class="ava" loading="lazy" decoding="async" src="https://blog.liushen.fun/info/avatar.ico" />
      <div class="card-header">
       <div>
       <a href="https://blog.liushen.fun" target="_blank">清羽飞扬</a>
@@ -892,7 +892,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://cn.cravatar.com/avatar/868740183b995d2707e307ce0a89633a?s=200" />
+     <img class="ava" loading="lazy" decoding="async" src="https://cn.cravatar.com/avatar/868740183b995d2707e307ce0a89633a?s=200" />
      <div class="card-header">
       <div>
       <a href="https://feng.pub" target="_blank">Feng</a>
@@ -903,7 +903,7 @@ comments: false
      </div>
     </div>
       <div class="card">
-      <img class="ava" loading="lazy" src="https://img.hestudio.net/img/2022/12/13/639872e717350.png" />
+      <img class="ava" loading="lazy" decoding="async" src="https://img.hestudio.net/img/2022/12/13/639872e717350.png" />
       <div class="card-header">
         <div>
           <a href="https://www.hestudio.net/" target="_blank">heStudio</a>
@@ -914,7 +914,7 @@ comments: false
       </div>
       </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://www.nodeseek.com/static/image/favicon/android-chrome-192x192.png" />
+    <img class="ava" loading="lazy" decoding="async" src="https://www.nodeseek.com/static/image/favicon/android-chrome-192x192.png" />
     <div class="card-header">
       <div>
       <a href="https://www.nodeseek.com/" target="_blank">NodeSeek</a>
@@ -925,7 +925,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640" />
+      <img class="ava" loading="lazy" decoding="async" src="https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640" />
       <div class="card-header">
         <div>
           <a href="https://www.vvhan.com/" target="_blank">韩小韩博客</a>
@@ -936,7 +936,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://cdn.baiwumm.com/logo.png" />
+      <img class="ava" loading="lazy" decoding="async" src="https://cdn.baiwumm.com/logo.png" />
       <div class="card-header">
         <div>
           <a href="https://baiwumm.com" target="_blank">谜叶象限口</a>
@@ -947,7 +947,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://cdn.lusyoe.com/images/person.webp" />
+      <img class="ava" loading="lazy" decoding="async" src="https://cdn.lusyoe.com/images/person.webp" />
       <div class="card-header">
         <div>
           <a href="https://blog.lusyoe.com" target="_blank">青萍叙事</a>
@@ -958,7 +958,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://www.biibii.cn/usr/uploads/2025/07/3155658037.webp" />
+      <img class="ava" loading="lazy" decoding="async" src="https://www.biibii.cn/usr/uploads/2025/07/3155658037.webp" />
       <div class="card-header">
         <div>
           <a href="https://www.biibii.cn" target="_blank">BIIBII</a>
@@ -969,7 +969,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://www.jcblog.com.cn/_next/image?url=%2Fstatic%2Fimages%2Fa.png&w=384&q=75" />
+      <img class="ava" loading="lazy" decoding="async" src="https://www.jcblog.com.cn/_next/image?url=%2Fstatic%2Fimages%2Fa.png&w=384&q=75" />
       <div class="card-header">
         <div>
           <a href="https://www.jcblog.com.cn" target="_blank">间窗札记</a>
@@ -980,7 +980,7 @@ comments: false
       </div>
     </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/56161071?v=4" />
+    <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/56161071?v=4" />
     <div class="card-header">
       <div>
       <a href="https://www.philfan.cn/" target="_blank">PhilFan's Note</a>
@@ -991,7 +991,7 @@ comments: false
     </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://www.collaigo.com/assets/collagelogo-DJwLHSgZ.png" />
+      <img class="ava" loading="lazy" decoding="async" src="https://www.collaigo.com/assets/collagelogo-DJwLHSgZ.png" />
       <div class="card-header">
         <div>
           <a href="https://collaigo.com" target="_blank">Collaigo</a>
@@ -1002,7 +1002,7 @@ comments: false
       </div>
     </div>
     <div class="card"> 
-    <img class="ava" src="https://avatars.githubusercontent.com/u/176311727?s=400&u=953f4d2a796d80a222e47435383aefddf0a94371&v=4" /> 
+    <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/176311727?s=400&u=953f4d2a796d80a222e47435383aefddf0a94371&v=4" /> 
     <div class="card-header"> 
       <div> 
       <a href="https://muchili-code.github.io/ " target="_blank">慕迟离</a> 
@@ -1013,7 +1013,7 @@ comments: false
     </div> 
     </div>    
     <div class="card">
-     <img class="ava" loading="lazy" src="https://i.111666.best/image/4WGNoz2wgNPgxdi51H4SDD.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://i.111666.best/image/4WGNoz2wgNPgxdi51H4SDD.png" />
      <div class="card-header">
       <div>
       <a href="https://xxu.do/" target="_blank">Jayden's site</a>
@@ -1024,7 +1024,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://i.111666.best/image/BxMKaCZk8wypAQma9c4HfR.png" />
+      <img class="ava" loading="lazy" decoding="async" src="https://i.111666.best/image/BxMKaCZk8wypAQma9c4HfR.png" />
       <div class="card-header">
         <div>
           <a href="https://blog.tsoo.net/" target="_blank">bbb-lsy07</a>
@@ -1035,7 +1035,7 @@ comments: false
       </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://avatars.githubusercontent.com/u/40554571?v=4" />
+     <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/40554571?v=4" />
      <div class="card-header">
       <div>
        <a href="https://baiwumm.com/" target="_blank">白雾茫茫</a>
@@ -1046,7 +1046,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://i.111666.best/image/vOWybU9IFt18GcbfLcw88X.png" />
+     <img class="ava" loading="lazy" decoding="async" src="https://i.111666.best/image/vOWybU9IFt18GcbfLcw88X.png" />
      <div class="card-header">
       <div>
        <a href="https://www.edzbe.com" target="_blank">耳朵的主人</a>
@@ -1057,7 +1057,7 @@ comments: false
      </div>
     </div>
       <div class="card">
-        <img class="ava" src="https://s21.ax1x.com/2025/08/06/pVU2ERg.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://s21.ax1x.com/2025/08/06/pVU2ERg.png" />
         <div class="card-header">
           <div>
             <a href="https://www.shiguang.ink/" target="_blank">时光印记</a>
@@ -1068,7 +1068,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://avatars.githubusercontent.com/u/134772645?v=4" />
+        <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/134772645?v=4" />
         <div class="card-header">
           <div>
             <a href="https://blog.oneall.eu.org" target="_blank">r1a dev</a>
@@ -1079,7 +1079,7 @@ comments: false
         </div>
       </div>    
       <div class="card">
-        <img class="ava" src="https://blog.zhipro.com/favicon.ico" />
+        <img class="ava" loading="lazy" decoding="async" src="https://blog.zhipro.com/favicon.ico" />
         <div class="card-header">
           <div>
             <a href="https://blog.zhipro.com" target="_blank">求知学习社</a>
@@ -1088,7 +1088,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://s2.loli.net/2025/08/30/No2OBAn7h3JTtXZ.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2025/08/30/No2OBAn7h3JTtXZ.png" />
         <div class="card-header">
           <div>
             <a href="https://blog.flyburg.cc/" target="_blank">雨露霜雪</a>
@@ -1099,7 +1099,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://i.zhyong.site/i/2026/02/17/6994661354dc2.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://i.zhyong.site/i/2026/02/17/6994661354dc2.png" />
         <div class="card-header">
           <div>
             <a href="https://zhyong.site/" target="_blank">材料与逻辑</a>
@@ -1108,7 +1108,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://blog.keepchen.com/favicon.ico" />
+        <img class="ava" loading="lazy" decoding="async" src="https://blog.keepchen.com/favicon.ico" />
         <div class="card-header">
           <div>
             <a href="https://blog.keepchen.com" target="_blank">希仁之拥</a>
@@ -1117,7 +1117,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://ssshooter.com/logo.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://ssshooter.com/logo.png" />
         <div class="card-header">
           <div>
             <a href="https://ssshooter.com" target="_blank">UsubeniFantasy</a>
@@ -1126,7 +1126,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://blog.zrf.me/img/logo.webp" />
+        <img class="ava" loading="lazy" decoding="async" src="https://blog.zrf.me/img/logo.webp" />
         <div class="card-header">
           <div>
             <a href="https://blog.zrf.me/" target="_blank">周润发</a>
@@ -1135,7 +1135,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://www.qixz.cn/avatar.avif" />
+        <img class="ava" loading="lazy" decoding="async" src="https://www.qixz.cn/avatar.avif" />
         <div class="card-header">
           <div>
             <a href="https://www.qixz.cn/" target="_blank">筱序二十</a>
@@ -1144,7 +1144,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" src="https://www.zhilu.site/api/avatar.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://www.zhilu.site/api/avatar.png" />
         <div class="card-header">
           <div>
             <a href="https://blog.zhilu.site/" target="_blank">纸鹿本鹿</a>
@@ -1153,7 +1153,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-          <img class="ava" src="https://avatars.githubusercontent.com/W-Mai" />
+          <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/W-Mai" />
           <div class="card-header">
             <div>
               <a href="https://benign.host" target="_blank">Benign's Blog</a>
@@ -1164,7 +1164,7 @@ comments: false
           </div>
         </div>
       <div class="card">
-        <img class="ava" src="https://lvyovo-wiki.tech/images/blogger/8bef74996f3f1aeb.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://lvyovo-wiki.tech/images/blogger/8bef74996f3f1aeb.png" />
         <div class="card-header">
           <div>
             <a href="https://lvyovo-wiki.tech" target="_blank">ivyneko</a>
@@ -1175,7 +1175,7 @@ comments: false
         </div>
       </div>
     <div class="card">
-        <img class="ava" src="https://chrjeb.cn/images/avatar.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://chrjeb.cn/images/avatar.png" />
         <div class="card-header">
           <div>
             <a href="https://chrjeb.cn/" target="_blank">星潮星屿</a>
@@ -1186,7 +1186,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-          <img class="ava" src="https://090909.top/assets/images/avatar.webp" />
+          <img class="ava" loading="lazy" decoding="async" src="https://090909.top/assets/images/avatar.webp" />
           <div class="card-header">
             <div>
               <a href="https://090909.top/" target="_blank">梁栋烨</a>
@@ -1197,7 +1197,7 @@ comments: false
           </div>
         </div>
       <div class="card">
-          <img class="ava" src="https://github.com/lm-xiao-fen/lm-xiao-fen.github.io/blob/main/image/MEITU_20260128_220225596.jpg?raw=true" />
+          <img class="ava" loading="lazy" decoding="async" src="https://github.com/lm-xiao-fen/lm-xiao-fen.github.io/blob/main/image/MEITU_20260128_220225596.jpg?raw=true" />
           <div class="card-header">
             <div>
               <a href="https://lm-xiao-fen.github.io/" target="_blank">xf_blog</a>
@@ -1208,7 +1208,7 @@ comments: false
           </div>
         </div>
       <div class="card">
-          <img class="ava" src="https://vpnnew.net/youyou.png" />
+          <img class="ava" loading="lazy" decoding="async" src="https://vpnnew.net/youyou.png" />
           <div class="card-header">
             <div>
               <a href="https://vpnnew.net/blog/" target="_blank">YouYou</a>
@@ -1219,7 +1219,7 @@ comments: false
           </div>
         </div>
       <div class="card">
-        <img class="ava" loading="lazy" src="https://lunashu.org/content/images/2026/04/0B782EC3-E079-4274-B1BC-250F9684646F_1_102.jpeg" />
+        <img class="ava" loading="lazy" decoding="async" src="https://lunashu.org/content/images/2026/04/0B782EC3-E079-4274-B1BC-250F9684646F_1_102.jpeg" />
         <div class="card-header">
           <div>
           <a href="https://lunashu.org/" target="_blank">美兰十三的想疗院</a>
@@ -1230,7 +1230,7 @@ comments: false
         </div>
         </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://ravelloh.com/avatar.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://ravelloh.com/avatar.jpg" />
      <div class="card-header">
       <div>
        <a href="https://ravelloh.com" target="_blank">RavelloH's Blog</a>
@@ -1241,7 +1241,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-        <img class="ava" src="https://s21.ax1x.com/2024/12/22/pAXtJat.jpg" />
+        <img class="ava" loading="lazy" decoding="async" src="https://i.imgant.com/v2/pafFzGG.png" />
         <div class="card-header">
           <div>
             <a href="https://tianmiao.site" target="_blank">天渺studio</a>
@@ -1283,7 +1283,7 @@ comments: false
   <div class="links-content">
    <div class="link-navigation">
     <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://xpmrobot.tech/" target="_blank">Xpm's Robot Lab(打不开)</a>
@@ -1294,7 +1294,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://weizwz.com" target="_blank">唯之为之(未加我方友链)</a>
@@ -1305,7 +1305,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://lxnchan.cn" target="_blank">泠泫凝的异次元空间(未加我方友链)</a>
@@ -1316,7 +1316,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://www.gkcoll.xyz/" target="_blank">极客藏源(打开是广告)</a>
@@ -1327,7 +1327,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://tkqtang.github.io" target="_blank">tkqtang’s Web(打不开)</a>
@@ -1338,7 +1338,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://liis.cc" target="_blank">郝宇博客(打不开)</a>
@@ -1349,7 +1349,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://blog.lvhrn.cn" target="_blank">JayHrn(打不开)</a>
@@ -1360,7 +1360,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://blog.linsnow.cn" target="_blank">L1nSn0w(打不开)</a>
@@ -1371,7 +1371,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://www.luckyzh.cn/" target="_blank">旧梦(打不开)</a>
@@ -1383,7 +1383,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://ejsoon.win" target="_blank">天蒼人頡(打不开)</a>
@@ -1394,7 +1394,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
       <a href="https://www.zlog.us.kg" target="_blank">琅環书生(打不开)</a>
@@ -1405,7 +1405,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://blog.pantheon.press" target="_blank">pantheon(未加我友链)</a>
@@ -1415,7 +1415,7 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://www.crant.cn/" target="_blank">Crant(打不开)</a>
@@ -1426,7 +1426,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+      <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
       <div class="card-header">
         <div>
           <a href="https://www.eilo.uk/" target="_blank">Eilo's Blog(内容不符)</a>
@@ -1437,7 +1437,7 @@ comments: false
       </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://mushuo.xyz/index" target="_blank">沐硕(打不开)</a>
@@ -1448,7 +1448,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web(404了)</a>
@@ -1459,7 +1459,7 @@ comments: false
      </div>
     </div>
       <div class="card">
-      <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+      <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
       <div class="card-header">
         <div>
         <a href="https://www.zeruo.net/" target="_blank">Zeruo(打不开)</a>
@@ -1470,7 +1470,7 @@ comments: false
       </div>
       </div>
     <div class="card">
-    <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+    <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
     <div class="card-header">
       <div>
       <a href="https://MaxLHy0424.github.io" target="_blank">MaxLHy0424(打不开)</a>
@@ -1481,7 +1481,7 @@ comments: false
     </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
        <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a>
@@ -1496,11 +1496,13 @@ comments: false
    </div>
   </div>
   <!-- <HR style="border: none; height: 1px; background: linear-gradient(to right, #EEF3FE, #608DBD, #EEF3FE); box-shadow: 0 2px 4px rgba(96, 141, 189, 0.2);" /> -->
-</div>
+</div>  
+<br>
 
 
 
-## 如何交换友链
+
+# 如何交换友链
 
 <font size=4>请添加**本站友链**后，在下方留言申请，<mark>期望您的站点</mark>:</font>
 
@@ -1683,7 +1685,7 @@ function renderFriendLinkPreview() {
   var desc = document.getElementById('fl_desc').value.trim() || '你的网站简介';
   var html = `
   <div class="card">
-    <img class="ava" src="${escapeHtml(avatar)}" />
+    <img class="ava" loading="lazy" decoding="async" src="${escapeHtml(avatar)}" />
     <div class="card-header">
       <div>
         <a href="${escapeHtml(link)}" target="_blank">${escapeHtml(name)}</a>
@@ -1700,6 +1702,16 @@ function renderFriendLinkPreview() {
   var trimmed = html.trim();
   var fenced = '```html\n' + trimmed + '\n```';
   document.getElementById('fl_preview_code').value = fenced;
+
+  // 保存到 localStorage
+  try {
+    localStorage.setItem('friendlink_form', JSON.stringify({
+      name: document.getElementById('fl_name').value,
+      link: document.getElementById('fl_link').value,
+      avatar: document.getElementById('fl_avatar').value,
+      desc: document.getElementById('fl_desc').value
+    }));
+  } catch (e) {}
 }
 function copyFriendLinkHtml() {
   var codeArea = document.getElementById('fl_preview_code');
@@ -1708,8 +1720,18 @@ function copyFriendLinkHtml() {
   try { document.execCommand('copy'); } catch (e) {}
 }
 
-// 初始化一次预览（使用默认占位内容）
+// 初始化：从 localStorage 恢复数据或使用默认值
 document.addEventListener('DOMContentLoaded', function () {
+  try {
+    var saved = localStorage.getItem('friendlink_form');
+    if (saved) {
+      var data = JSON.parse(saved);
+      if (data.name) document.getElementById('fl_name').value = data.name;
+      if (data.link) document.getElementById('fl_link').value = data.link;
+      if (data.avatar) document.getElementById('fl_avatar').value = data.avatar;
+      if (data.desc) document.getElementById('fl_desc').value = data.desc;
+    }
+  } catch (e) {}
   renderFriendLinkPreview();
 });
 </script>
@@ -1859,7 +1881,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ```html hl_lines="2 5 8"
     <div class="card">
-     <img class="ava" loading="lazy" src="*你的头像链接*" />
+     <img class="ava" loading="lazy" decoding="async" src="*你的头像链接*" />
      <div class="card-header">
       <div>
        <a href="*你的网站地址* " target="_blank">*你的站点名称*</a>
@@ -1914,6 +1936,18 @@ crossorigin="anonymous"
 async>
 </script>
 </head> -->
+
+<!-- 头像加载失败兜底 -->
+<script>
+document.addEventListener('error', function(e) {
+  var img = e.target;
+  if (img && img.classList && img.classList.contains('ava') && !img.dataset.retried) {
+    img.dataset.retried = '1';
+    img.classList.add('ava-fallback');
+    img.src = "https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp";
+  }
+}, true);
+</script>
 
 <script src="https://giscus.app/client.js"
     data-repo="Wcowin/hexo-site-comments"

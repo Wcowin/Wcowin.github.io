@@ -1730,8 +1730,6 @@ CMD ["openclaw-cn", "gateway", "--port", "18789"]
 **docker-compose.yml**：
 
 ```yaml
-version: '3.8'
-
 services:
   openclaw:
     build: .
@@ -1854,7 +1852,7 @@ systemctl start openclaw
   "agent": {
     "model": "anthropic/claude-haiku-4",  // 默认用便宜的
     "fallback": [
-      "anthropic/claude-sonnet-4.5",
+      "anthropic/claude-sonnet-4-5",
       "anthropic/claude-opus-4-6"
     ]
   }
@@ -1888,7 +1886,7 @@ systemctl start openclaw
 curl -fsSL https://ollama.com/install.sh | sh
 
 # 下载模型
-ollama pull llama3.1:70b
+ollama pull llama3.3:70b
 
 # 配置 OpenClaw
 {
@@ -2121,7 +2119,7 @@ openclaw-cn gateway --stop
 
 A: 本地运行不会增加延迟，响应速度取决于：
 
-- **模型选择**：Claude Opus 4.6 和 GPT-5.2 都很快（1-3 秒）
+- **模型选择**：Claude Opus 4.6 和 GPT-5.4 都很快（1-3 秒）
 - **网络延迟**：API 调用受网络影响
 - **工具执行**：复杂工具（如浏览器）需要额外时间
 
@@ -2154,7 +2152,7 @@ ollama pull llama3.1:70b
 ```json
 {
   "agent": {
-    "model": "ollama/llama3.1:70b"  // 完全免费
+    "model": "ollama/llama3.3:70b"  // 完全免费
   }
 }
 ```
@@ -2181,9 +2179,9 @@ cat ~/.openclaw/openclaw.json
 # 3. 测试 API Key
 curl https://api.anthropic.com/v1/messages \
   -H "x-api-key: $ANTHROPIC_API_KEY" \
-  -H "anthropic-version: 2023-06-01" \
+  -H "anthropic-version: 2025-04-14" \
   -H "content-type: application/json" \
-  -d '{"model":"claude-3-haiku-20240307","max_tokens":10,"messages":[{"role":"user","content":"Hi"}]}'
+  -d '{"model":"claude-haiku-4","max_tokens":10,"messages":[{"role":"user","content":"Hi"}]}'
 ```
 
 ---

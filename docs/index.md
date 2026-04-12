@@ -857,8 +857,9 @@ hr {
 
     ---
 
-    - [Claude指南](develop/Claude-Code.md)、[Codex指南](develop/ChatGPT.md)
-    - [AI网站分享](develop/AI.md)、[Skill 使用介绍](develop/AI/skill.md)
+    - [AI网站分享](develop/AItools.md)、[Claude指南](develop/Claude-Code.md)、[Codex指南](develop/ChatGPT.md)
+    - [Hermes Agent](develop/AI/hermes-agent.md)、[OpenClaw](develop/AI/openclaw.md)
+    - [Skill 使用介绍](develop/AI/skill.md)、[MCP](develop/AI/mcp.md)
     - [AI Agent 入门](develop/AI/agent.md)、[深度推理与测试时计算](develop/AI/deep-reasoning.md)
     - [多智能体协作入门](develop/AI/multi-agent.md)、[Prompt 工程入门](develop/AI/prompt.md)
     - [A2A 协议](develop/AI/a2a.md)、[AI 安全与对抗](develop/AI/ai-security.md)

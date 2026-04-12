@@ -214,6 +214,7 @@ nav = [
             { "Claude Code指南" = "develop/Claude-Code.md" },
             { "Codex指南" = "develop/ChatGPT.md" },
             { "OpenClaw：本地开源AI助手" = "develop/AI/openclaw.md" },
+            { "Hermes Agent：自进化的 AI Agent" = "develop/AI/hermes-agent.md" },
             { "nanobot：超轻量级 AI 助手" = "develop/AI/nanobot.md" }
         ]},
         { "Python 环境管理最佳实践" = "develop/environment.md" },

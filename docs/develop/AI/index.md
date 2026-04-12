@@ -51,6 +51,7 @@ hide_comment: true
     - [Claude Code 指南](/develop/Claude-Code/) — Anthropic 的 AI 编程助手
     - [Codex 指南](/develop/ChatGPT.md) — OpenAI 的 AI 编程助手
     - [OpenClaw](/develop/AI/openclaw/) — 本地优先的开源 AI Agent 平台
+    - [Hermes Agent](/develop/AI/hermes-agent/) — 自进化的 AI Agent（内置学习闭环）
     - [nanobot](/develop/AI/nanobot/) — 超轻量级 AI 助手（4000 行代码）
 
 </div>
