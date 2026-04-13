@@ -27,8 +27,8 @@ extra_javascript = [
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
     "javascripts/chat-widget.js",
     # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
-    "javascripts/glm-config.js",                              # 智谱清言翻译配置
-    "javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    # "javascripts/glm-config.js",                              # 智谱清言翻译配置
+    # "javascripts/glm-translate.js",                           # 智谱清言翻译系统
     "javascripts/translate.js",                               # Edge 翻译服务
     "javascripts/translate-edge-init.js",                     # Edge 翻译初始化
     "javascripts/translation-switcher.js",                    # 翻译服务切换器
