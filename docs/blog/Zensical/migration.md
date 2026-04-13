@@ -13,6 +13,9 @@ categories:
 
 ### MkDocs 的现状
 
+!!! warning "MkDocs 的问题"
+    [MKDocs 的缓慢崩溃](../../blog/Mkdocs/collapse-of-mkdocs.md)
+
 - ⚠️ **维护力度下降** - MkDocs 核心长期缺乏新版本维护，Material for MkDocs 进入维护模式（主要以修复为主），官方团队已将主要精力转向 Zensical
 - ⚠️ **功能受限** - MkDocs 本身缺少即时导航、内置博客系统等现代化能力，很多能力依赖额外插件
 - ⚠️ **性能一般** - 构建和加载性能相较 Zensical 有明显差距
@@ -743,6 +746,6 @@ nav = [
 
 **需要帮助？**  
 
-- 查看 [常见问题](../faq.md)
+- 查看 [常见问题](https://wcowin.work/Zensical-Chinese-Tutorial/faq/)
 - 访问 [Zensical 官方文档](https://zensical.org/docs/)
-- 加入 [Zensical-Chinese-Tutorial 社区](https://support.qq.com/products/646913/)
+- 联系我们加入 [Zensical-Chinese-Tutorial 社区](https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp)

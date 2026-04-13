@@ -15,8 +15,8 @@
   const CONFIG = {
     // 硅基流动 OpenAI 兼容 Chat Completions 接口
     apiEndpoint: 'https://api.siliconflow.cn/v1/chat/completions',
-    // 使用硅基流动的 Qwen3-8B 模型
-    model: 'Qwen/Qwen3-8B',
+    // 使用硅基流动的 Qwen2.5-7B-Instruct 模型
+    model: 'Qwen/Qwen2.5-7B-Instruct',
     maxMessageLength: 500,
     maxContextLength: 30000,
     maxContextChars: 15000,
@@ -503,7 +503,12 @@
     contentDiv.className = 'ai-message-content';
     
     if (sender === 'bot') {
-      contentDiv.innerHTML = parseMarkdown(text);
+      // 使用 Marked.js 渲染 Markdown
+      if (window.marked) {
+        contentDiv.innerHTML = window.marked.parse(text);
+      } else {
+        contentDiv.textContent = text;
+      }
     } else {
       contentDiv.textContent = text;
     }
@@ -523,56 +528,6 @@
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
     return messageDiv;
-  }
-
-  function parseMarkdown(text) {
-    if (!text) return '';
-    
-    const codeBlockPlaceholders = [];
-    let processed = text;
-    
-    processed = processed.replace(/```(\w*)\n([\s\S]*?)```/g, (match, lang, code) => {
-      const index = codeBlockPlaceholders.length;
-      let escapedCode = code
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-      const html = `<pre class="ai-code-block"><code class="language-${lang || 'text'}">${escapedCode}</code></pre>`;
-      codeBlockPlaceholders.push(html);
-      return `__CODE_BLOCK_${index}__`;
-    });
-    
-    processed = processed
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
-    
-    codeBlockPlaceholders.forEach((html, index) => {
-      processed = processed.replace(`__CODE_BLOCK_${index}__`, html);
-    });
-    
-    processed = processed
-      .replace(/^###\s+(.+)$/gm, '<strong class="ai-heading ai-heading-3">$1</strong>')
-      .replace(/^##\s+(.+)$/gm, '<strong class="ai-heading ai-heading-2">$1</strong>')
-      .replace(/^#\s+(.+)$/gm, '<strong class="ai-heading ai-heading-1">$1</strong>')
-      .replace(/^>\s*(.+)$/gm, '<blockquote class="ai-quote">$1</blockquote>')
-      .replace(/^\s*[-*+]\s+(.+)$/gm, '<li>$1</li>')
-      .replace(/^\s*(\d+)\.\s+(.+)$/gm, '<li data-num="$1">$2</li>')
-      .replace(/(<li>[\s\S]*?<\/li>\n?)+/g, (match) => `<ul class="ai-list">${match}</ul>`)
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="ai-link">$1</a>')
-      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-      .replace(/__([^_]+)__/g, '<strong>$1</strong>')
-      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
-      .replace(/_([^_]+)_/g, '<em>$1</em>')
-      .replace(/`([^`]+)`/g, '<code class="ai-inline-code">$1</code>')
-      .replace(/\n/g, '<br>');
-    
-    processed = processed
-      .replace(/<\/ul><br><ul class="ai-list">/g, '')
-      .replace(/<br><\/li>/g, '</li>')
-      .replace(/<\/blockquote><br><blockquote class="ai-quote">/g, '<br>');
-    
-    return processed;
   }
 
   function getPageContext() {
@@ -771,7 +726,11 @@
               const delta = json.choices?.[0]?.delta?.content || '';
               if (delta) {
                 fullAnswer += delta;
-                contentDiv.innerHTML = parseMarkdown(fullAnswer) + '<span class="ai-typing-cursor">|</span>';
+                if (window.marked) {
+                  contentDiv.innerHTML = window.marked.parse(fullAnswer) + '<span class="ai-typing-cursor">|</span>';
+                } else {
+                  contentDiv.textContent = fullAnswer + '|';
+                }
                 messagesDiv.scrollTop = messagesDiv.scrollHeight;
               }
             } catch (e) {
@@ -781,7 +740,11 @@
         }
       }
 
-      contentDiv.innerHTML = parseMarkdown(fullAnswer);
+      if (window.marked) {
+        contentDiv.innerHTML = window.marked.parse(fullAnswer);
+      } else {
+        contentDiv.textContent = fullAnswer;
+      }
 
       const timestamp = Date.now();
       conversationHistory.push(
@@ -831,6 +794,17 @@
 
   // 初始化
   function init() {
+    // 配置 Marked.js
+    if (window.marked) {
+      window.marked.setOptions({
+        breaks: true,
+        gfm: true,
+        smartLists: true,
+        smartypants: true
+      });
+      console.log('Marked.js 配置完成');
+    }
+    
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', injectUI);
     } else {

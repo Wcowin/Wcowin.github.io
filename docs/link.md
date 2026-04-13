@@ -1273,11 +1273,36 @@ comments: false
             </div>
           </div>
         </div>
+      <div class="card">
+        <img class="ava" loading="lazy" decoding="async" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg" />
+        <div class="card-header">
+          <div>
+            <a href="https://www.liublog.cn/" target="_blank">老刘博客</a>
+          </div>
+          <div class="info">
+            课件制作和网络生活
+          </div>
+        </div>
+      </div>
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://tc.lleft.cn/PicGo/logo.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://lleft.cn/" target="_blank">巳忆笔记</a>
+        </div>
+        <div class="info">
+          记住所有美好回忆
+        </div>
+      </div>  
+    </div>
 
 
-   </div>
+
+
+
+    
   </div>
-
+</div>
 
 
 

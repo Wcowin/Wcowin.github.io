@@ -4,7 +4,6 @@ date: 2026-02-06
 tags:
   - Zensical
   - AI
-status: draft
 ---
 
 # 为 Zensical 网站添加 Ask AI 功能

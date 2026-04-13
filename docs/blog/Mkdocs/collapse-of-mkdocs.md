@@ -7,7 +7,7 @@ name: shenweiyan
 
 # MKDocs 的缓慢崩溃
 
-本文译者：[shenweiyan](https://github.com/shenweiyan/Digital-Garden)
+**本文译者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://shenwy.com/assets/octocat.png" width="28" height="28" alt="shenweiyan" /><span class="author-name-popover">shenweiyan</span></span>](https://github.com/shenweiyan/Digital-Garden)
 
 
 > 从 2023 年 7 月开始，个人的 [博客站点](https://shenwy.com "博客站点") 从 Hugo 换成了 Material for MkDocs 并在 2026 年换成了 MaterialX，但始终都没有脱离过 MkDocs 的框架。

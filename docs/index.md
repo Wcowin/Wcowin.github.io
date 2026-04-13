@@ -531,8 +531,7 @@ hide:
   const phrasesData = {
     chinese_simplified: [
       "A Swift Developer",
-      "A dreamer",
-      "循此苦旅 以达星辰"
+      "A dreamer"
     ],
     english: [
       "A Swift Developer",
@@ -849,9 +848,10 @@ hr {
     - [Mkdocs配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
     - [MKDocs 的缓慢崩溃](blog/Mkdocs/collapse-of-mkdocs.md)
     ---
-    - [Zensical教程](blog/Zensical/indexfirst.md)(🌟2026最新)
+    - [Zensical教程前言](blog/Zensical/indexfirst.md)(🌟2026最新)
     - [从MkDocs迁移到Zensical](blog/Zensical/migration.md)
     - [5分钟快速开始Zensical](blog/Zensical/quick-start.md)
+    - [Zensical配置详解](blog/Zensical/configuration.md)
 
 -   :material-gamepad-variant-outline:{ .lg .middle } __AI/前沿技术__
 

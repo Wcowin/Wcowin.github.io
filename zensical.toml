@@ -22,14 +22,18 @@ edit_uri = "edit/main/docs"                              # 编辑按钮跳转的
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
 extra_javascript = [
-    # "javascripts/glm-config.js",                              # 智谱清言翻译配置
-    # "javascripts/glm-translate.js",                           # 智谱清言翻译系统
     "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
+    "https://cdn.jsdelivr.net/npm/marked/marked.min.js",        # Markdown 渲染库
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
     "javascripts/chat-widget.js",
     # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
+    "javascripts/glm-config.js",                              # 智谱清言翻译配置
+    "javascripts/glm-translate.js",                           # 智谱清言翻译系统
+    "javascripts/translate.js",                               # Edge 翻译服务
+    "javascripts/translate-edge-init.js",                     # Edge 翻译初始化
+    "javascripts/translation-switcher.js",                    # 翻译服务切换器
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js",    # 智谱清言翻译配置 CDN
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js", # 智谱清言翻译系统 CDN
     # "javascripts/unified-instant-handler.js",                 # 统一的即时导航处理器
     # "javascripts/extra.js",                                   # 额外功能脚本
     # "javascripts/mathjax.js",                                 # MathJax 配置
@@ -102,6 +106,7 @@ nav = [
             { "Vercel 部署指南" = "blog/Zensical/vercel-deployment.md" },
             { "为网站添加 Ask AI 功能" = "blog/Zensical/ask-ai.md" },
             { "添加多语言翻译" = "blog/Zensical/translate-multilang.md" },
+            { "添加 Microsoft 翻译服务" = "blog/Zensical/translate-microsoft.md" },
             { "添加 GitHub 热力图卡片" = "blog/Zensical/github-heatmap.md" },
             { "添加 GitHub 仓库卡片" = "blog/Zensical/github-repo-card.md" },
             { "炫彩光辉头像效果实现" = "blog/websitebeauty/avatar-glow.md" },
@@ -467,14 +472,25 @@ draft = "草稿"
 
 # ===== 多语言切换配置 =====
 # 基于智谱清言翻译系统
+# [[project.extra.alternate]]
+# name = "中文"
+# link = "#glm-translate-chinese_simplified"
+# lang = "zh"
+
+# [[project.extra.alternate]]
+# name = "English"
+# link = "#glm-translate-english"
+# lang = "en"
+
+# 基于 Microsoft 翻译服务（支持所有现代浏览器）
 [[project.extra.alternate]]
 name = "中文"
-link = "#glm-translate-chinese_simplified"
+link = "#edge-translate-chinese_simplified"
 lang = "zh"
 
 [[project.extra.alternate]]
 name = "English"
-link = "#glm-translate-english"
+link = "#edge-translate-english"
 lang = "en"
 
 # [[project.extra.alternate]]
