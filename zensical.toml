@@ -265,6 +265,16 @@ nav = [
         { "写给所有 Mac 用户的摸鱼指北" = "develop/Mac.md" },
         { "看源码才懂" = "develop/kanyuanma.md" }
     ]},
+    { "科研" = [
+        "research/index.md",
+        { "低空技术与工程" = [
+            "research/aerotech/index.md",
+            { "基础理论与方法" = [
+                { "低空交通系统建模" = "research/aerotech/system-modeling.md" },
+                { "低空航线网络规划" = "research/aerotech/route-network.md" }
+            ]}
+        ]}
+    ]},
     { "闲聊" = [
         "relax/index.md",
         { "推荐的Books" = "relax/tuijianyuedu.md" },
@@ -378,7 +388,7 @@ nav = [
             { "2024" = "about/zongjie/2024.md" },
             { "2025" = "about/zongjie/2025.md"}
         ]},
-        { "25考研(已完结)" = "about/kaoyan.md" }
+        { "考研(已完结)" = "about/kaoyan.md" }
     ]},
     { "Mkdocs教程" = "https://wcowin.work/Mkdocs-Wcowin/" },
     { "Zensical教程" = "https://wcowin.github.io/Zensical-Chinese-Tutorial/" },

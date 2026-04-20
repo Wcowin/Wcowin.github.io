@@ -27,13 +27,7 @@
   }
 }
 
-/*==================== BASE ====================*/
-
-
-/* h1, h2, h3, h4 使用默认颜色 */
-
-
-
+/*==================== ABOUT INFO ====================*/
 .about__info {
   display: flex;
   justify-content: space-between;
@@ -62,6 +56,12 @@
   color: inherit;
 }
 
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+
 .about__info-title {
   font-size: 1.05rem;
   font-weight: 600;
@@ -71,12 +71,6 @@
   font-size: 0.8rem;
   margin-top: 0.25rem;
   color: #6b7280;
-}
-
-.about__info-title,
-.about__info-name {
-  display: block;
-  text-align: center;
 }
 
 /* 深色模式适配 */
@@ -120,69 +114,11 @@
   }
 }
 
-/*==================== QUALIFICATION ====================*/
+/*==================== QUALIFICATION TIMELINE ====================*/
 .qualification__tabs {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
   margin-bottom: var(--mb-2);
-}
-
-.qualification__button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  cursor: pointer;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  white-space: nowrap;
-  border: none;
-  background: transparent;
-  padding: 0.3rem 0.8rem;
-  color: var(--md-default-fg-color);
-  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
-  position: relative;
-}
-
-.qualification__button:hover {
-  opacity: 0.7;
-}
-
-.qualification__button:active {
-  transform: scale(0.96);
-}
-
-/* 右上角点击提示图标 */
-.qualification__hover-hint {
-  position: absolute;
-  top: -6px;
-  right: -8px;
-  font-size: 0.65rem;
-  opacity: 0.4;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-.qualification__button:hover .qualification__hover-hint {
-  opacity: 0.8;
-}
-
-.qualification__hover-hint:hover {
-  opacity: 1 !important;
-  transform: scale(1.2);
-}
-
-.qualification__icon {
-  font-size: 1.5rem;
-  margin-right: var(--mb-0-25);
-  -webkit-flex-shrink: 0;
-  flex-shrink: 0;
 }
 
 .qualification__data {
@@ -191,10 +127,7 @@
   column-gap: 0.5rem;
 }
 
-.qualification__data > div:first-child {
-  text-align: center;
-}
-
+.qualification__data > div:first-child,
 .qualification__data > div:last-child {
   text-align: center;
 }
@@ -214,10 +147,7 @@
   font-size: var(--smaller-font-size);
   opacity: 0.7;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: center;
   justify-content: center;
   gap: 0.35rem;
 }
@@ -238,7 +168,7 @@
   transform: translate(6px, -7px);
 }
 
-/* 统一使用 opacity + visibility 实现淡入动画 */
+/* 内容切换动画 */
 .qualification__sections {
   position: relative;
 }
@@ -259,4 +189,127 @@
   position: relative;
 }
 
-/* 深色模式 - 履历时间线（使用默认颜色，无需额外覆盖） */
+/*==================== SLIDER TOGGLE ====================*/
+.qualification__slider-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.qualification__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  margin: 0;
+  cursor: pointer;
+}
+
+.qualification__slider-track {
+  position: relative;
+  width: 260px;
+  height: 44px;
+  background: #e8ecf1;
+  border-radius: 22px;
+  padding: 4px;
+  z-index: 1;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.qualification__slider-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.qualification__checkbox:checked ~ .qualification__slider-track .qualification__slider-thumb {
+  transform: translateX(100%);
+}
+
+.qualification__options {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.qualification__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: var(--small-font-size);
+  font-weight: 600;
+  transition: color 0.35s ease;
+  white-space: nowrap;
+}
+
+.option-left {
+  color: #409eff;
+}
+
+.option-right {
+  color: #8896a7;
+}
+
+.qualification__checkbox:checked ~ .qualification__options .option-left {
+  color: #8896a7;
+}
+
+.qualification__checkbox:checked ~ .qualification__options .option-right {
+  color: #409eff;
+}
+
+/* 深色模式 - 滑动开关 */
+[data-md-color-scheme="slate"] .qualification__slider-track {
+  background: #1f2937;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme="slate"] .qualification__slider-thumb {
+  background: #374151;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+[data-md-color-scheme="slate"] .option-left,
+[data-md-color-scheme="slate"] .qualification__checkbox:checked ~ .qualification__options .option-right {
+  color: #60a5fa;
+}
+
+[data-md-color-scheme="slate"] .option-right,
+[data-md-color-scheme="slate"] .qualification__checkbox:checked ~ .qualification__options .option-left {
+  color: #6b7280;
+}
+
+/* 响应式 */
+@media (max-width: 480px) {
+  .qualification__slider-track {
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  .qualification__slider-thumb {
+    border-radius: 16px;
+  }
+
+  .qualification__option {
+    font-size: var(--smaller-font-size);
+  }
+}

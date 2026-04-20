@@ -7,7 +7,7 @@ status: new
 
 ## 近期目标
 
-- [ ] 考研上岸
+- [x] 考研上岸
 - [x] 四级
 - [ ] 六级
 - [x] 学会做饭
@@ -26,11 +26,12 @@ status: new
 - [x] 遇到对的她
 - [x] 三两知己
 - [ ] 稳定的工作
-- [ ] 创业
+- [ ] 跳出舒适圈创业
 - [ ] 实现财富自由
-- [ ] 保时捷Cayenne
+- [ ] 属于自己的Car
   <!-- ![13383929922691970.jpg.jpeg](https://s2.loli.net/2025/02/13/qm2PTkDoyVeFKSx.jpg) -->
-![qm2PTkDoyVeFKSx.jpg](https://i.imgant.com/v2/n5XGtf4.jpeg)  
+??? info "保时捷Cayenne"
+    ![qm2PTkDoyVeFKSx.jpg](https://i.imgant.com/v2/n5XGtf4.jpeg)  
 
 - [ ] 环游世界
 - [ ] 读完想读的书

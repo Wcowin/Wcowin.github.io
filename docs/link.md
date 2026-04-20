@@ -1296,7 +1296,7 @@ comments: false
       </div>  
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" decoding="async" src="https://mqnu00.github.io/blog/favicon.ico" />
+      <img class="ava" loading="lazy" decoding="async" src="https://i.imgant.com/v2/shdIwU9.png" />
       <div class="card-header">
         <div>
           <a href="https://mqnu00.github.io/blog/" target="_blank">广习习的博客</a>

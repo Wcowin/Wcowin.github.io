@@ -266,28 +266,11 @@ hide_comment: true
 </div>
 
 
-<div class="github-repo-card-wrapper">
-  <a
-    class="github-repo-card"
-    data-repo="Wcowin/OneClip"
-    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    href="https://github.com/Wcowin/OneClip"
-    target="_blank"
-    rel="noopener noreferrer"
-  ></a>
-</div>
-
 <!-- <div class="github-repo-card-wrapper">
   <a
     class="github-repo-card"
     data-repo="Wcowin/OneClip"
-    data-owner="Wcowin"
-    data-name="OneClip"
-    data-description="一个功能强大的 Mac 剪贴板管理器，支持历史记录、搜索和快速访问"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="123"
-    data-forks="45"
-    data-license="MIT"
     href="https://github.com/Wcowin/OneClip"
     target="_blank"
     rel="noopener noreferrer"
@@ -297,13 +280,45 @@ hide_comment: true
 <div class="github-repo-card-wrapper">
   <a
     class="github-repo-card"
+    data-repo="Wcowin/OneClip"
+    data-owner="Wcowin"
+    data-name="OneClip"
+    data-description="一个功能强大的 Mac 剪贴板管理器，支持历史记录、搜索和快速访问"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
+    data-stars="288"
+    data-forks="12"
+    data-license="MIT"
+    href="https://github.com/Wcowin/OneClip"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
+
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
     data-repo="Wcowin/Mac-Finder-Clipboard"
     data-description="FinderClip 是一款免费开源且轻量级的 macOS 应用，让你可以在 Finder 中使用熟悉的 ⌘X 和 ⌘V 快捷键来剪切和移动文件。"
-    data-stars="79"
+    data-stars="80"
     data-forks="0"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/Wcowin/Mac-Finder-Clipboard"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
+
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/Wcowin.github.io"
+    data-description="简单易用的许可证管理系统，支持激活码生成、验证和设备管理、订单发送等等"
+    data-stars="23"
+    data-forks="1"
+    data-license="MIT"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
+    href="https://github.com/Wcowin/OneClip-License-Manager"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
@@ -329,7 +344,7 @@ hide_comment: true
     class="github-repo-card"
     data-repo="Wcowin/Wcowin.github.io"
     data-description="个人博客"
-    data-stars="65"
+    data-stars="70"
     data-forks="10"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
@@ -358,7 +373,7 @@ hide_comment: true
 </div> -->
 
 ---
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
 
 ## 我的履历
 
@@ -366,13 +381,20 @@ hide_comment: true
 
 <div class="qualification">
     <div class="qualification__tabs">
-        <button class="qualification__toggle qualification__button qualification__active" data-target="#education">
-            <i class="qualification__icon fa-solid fa-graduation-cap"></i><span>来时路</span>
-            <i class="qualification__hover-hint fa-solid fa-mouse-pointer"></i>
-        </button>
+        <label class="qualification__toggle qualification__slider-toggle">
+            <input type="checkbox" id="qualToggle" class="qualification__checkbox">
+            <span class="qualification__slider-track">
+                <span class="qualification__slider-thumb"></span>
+            </span>
+            <span class="qualification__options">
+                <span class="qualification__option option-left">来时路</span>
+                <span class="qualification__option option-right">工作经历</span>
+            </span>
+        </label>
     </div>
     <div class="qualification__sections">
         <div class="qualification__content qualification__active" data-content id="education">
+            <!-- 漯河高中 - 左侧 -->
             <div class="qualification__data">
                 <div>
                     <h3 class="qualification__title">漯河高中</h3>
@@ -387,6 +409,7 @@ hide_comment: true
                     <span class="qualification__line"></span>
                 </div>
             </div>
+            <!-- CTBU - 右侧 -->
             <div class="qualification__data">
                 <div></div>
                 <div>
@@ -402,10 +425,11 @@ hide_comment: true
                     </div>
                 </div>
             </div>
+            <!-- HTU - 左侧 -->
             <div class="qualification__data">
                 <div>
-                    <h3 class="qualification__title">家里蹲大学</h3>
-                    <span class="qualification__subtitle">硕士</span>
+                    <h3 class="qualification__title">HTU</h3>
+                    <span class="qualification__subtitle">低空技术与工程硕士</span>
                     <div class="qualification__calendar">
                         <i class="fa-regular fa-calendar"></i>
                         <span>2026 - 2029</span>
@@ -416,6 +440,7 @@ hide_comment: true
                     <span class="qualification__line"></span>
                 </div>
             </div>
+            <!-- 未完待续 - 右侧 -->
             <div class="qualification__data">
                 <div></div>
                 <div>
@@ -433,6 +458,23 @@ hide_comment: true
             </div>
         </div>
         <div class="qualification__content" data-content id="work">
+            <!-- 上海科锐福克斯 - 右侧 -->
+            <div class="qualification__data">
+                <div></div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+                <div>
+                    <h3 class="qualification__title">上海科锐福克斯人才顾问有限公司</h3>
+                    <span class="qualification__subtitle">CSDN 见习校园主理人</span>
+                    <div class="qualification__calendar">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>2024.6 - 2025.6</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 独立开发者 - 左侧 -->
             <div class="qualification__data">
                 <div>
                     <h3 class="qualification__title">独立开发者</h3>
@@ -447,56 +489,71 @@ hide_comment: true
                     <span class="qualification__line"></span>
                 </div>
             </div>
+            <!-- 未完待续 - 右侧 -->
+            <div class="qualification__data">
+                <div></div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+                <div>
+                    <h3 class="qualification__title">未完待续</h3>
+                    <span class="qualification__subtitle">于道各努力，千里自同风</span>
+                    <div class="qualification__calendar">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Before - After</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-// 直接在脚本执行时初始化（脚本写在 DOM 后面，DOMContentLoaded 在某些场景下已经触发）
 (function () {
-  const toggleBtn = document.querySelector('.qualification__toggle');
+  const checkbox = document.getElementById('qualToggle');
   const contents = document.querySelectorAll('.qualification__content');
 
-  if (!toggleBtn) return;
+  if (!checkbox) return;
 
   const states = [
-    { id: '#education', label: '来时路', iconClass: 'fa-solid fa-graduation-cap' },
-    { id: '#work', label: '工作经历', iconClass: 'fa-solid fa-briefcase' },
+    { id: '#education' },
+    { id: '#work' },
   ];
 
-  let current = 0;
-
-  const applyState = () => {
-    const { id, label, iconClass } = states[current];
-    const target = document.querySelector(id);
+  const applyState = (index) => {
+    const target = document.querySelector(states[index].id);
     if (!target) return;
 
     contents.forEach(c => c.classList.remove('qualification__active'));
     target.classList.add('qualification__active');
-
-    toggleBtn.dataset.target = id;
-    toggleBtn.innerHTML = `<i class="qualification__icon ${iconClass}"></i><span>${label}</span><i class="qualification__hover-hint fa-solid fa-mouse-pointer"></i>`;
-
-    // 重新绑定hover事件到新的hint元素
-    bindHoverEvent();
   };
 
-  const bindHoverEvent = () => {
-    const hint = toggleBtn.querySelector('.qualification__hover-hint');
-    if (hint) {
-      hint.addEventListener('mouseenter', () => {
-        current = (current + 1) % states.length;
-        applyState();
-      });
-    }
-  };
+  // 初始化
+  applyState(0);
 
-  toggleBtn.addEventListener('click', () => {
-    current = (current + 1) % states.length;
-    applyState();
+  // 点击/滑动切换
+  checkbox.addEventListener('change', () => {
+    applyState(checkbox.checked ? 1 : 0);
   });
 
-  applyState();
+  // 触摸滑动支持
+  let startX = 0;
+  const toggle = checkbox.closest('.qualification__slider-toggle');
+  
+  toggle.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+
+  toggle.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+    if (Math.abs(diff) > 30) { // 滑动超过30px触发
+      checkbox.checked = diff < 0; // 左滑→checked(工作), 右滑→unchecked(教育)
+      checkbox.dispatchEvent(new Event('change'));
+    }
+  }, { passive: true });
+
 })();
 </script>
 
@@ -526,7 +583,7 @@ hide_comment: true
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target="_blank"}~
     - [x] 咖啡重度爱好者
     - [x] 热爱(xiā)研究/Math，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
-    - [x] 目前的研究领域是[AI](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
+    - [x] 目前的研究领域是低空技术、[AI](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
     - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒知趣，明得失，知进退
 
@@ -660,17 +717,18 @@ hide_comment: true
 
 ---
 
-> 💬我电话号码的`MD5`码：7037F514864088F907CC921687B670EE（破解有奖）
+> 💬我电话号码的`MD5`码：7037F514864088F907CC921687B670EE  
+>（破解有奖|必须附带破解过程｜从简历上看到的不算｜目前已有2人成功破解）
 
 
 ## 须知
 
-如果给我发[邮件](mailto:<wcowin@qq.com>)，或者通过右下角**微信添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。
+如果给我发[邮件](mailto:<wcowin@qq.com>)，或者通过右下角**微信/TG添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。
 
 
 !!! note "与我联系"
     <div style="font-size: 1.2em;">
-    如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) 或直接修改相关文件后提交 Pull Requests。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
+    如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/Wcowin/Wcowin.github.io)提交 [Issues](https://github.com/Wcowin/Wcowin.github.io/issues) ，最好Wechat/TG或者邮箱联系。如果你有其他事情想要咨询，可以通过下方按钮使用邮件联系我,请不要滥用博客的评论功能发表与主题无关言论。
     </div>
 
     ---

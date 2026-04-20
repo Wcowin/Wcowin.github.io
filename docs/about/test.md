@@ -5,6 +5,88 @@ title: 测试组件
 ## 测试中的内容
 ---
 
+## 切换开关演示
+
+<style>
+.toggle-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 0;
+  gap: 1em;
+}
+.pricing-toggle {
+  position: relative;
+  width: 280px;
+  height: 48px;
+  background: #e8eaf0;
+  border-radius: 24px;
+  padding: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+.pricing-toggle input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.pricing-toggle__slider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+.pricing-toggle__options {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  height: 100%;
+}
+.pricing-toggle__option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+.pricing-toggle input:checked ~ .pricing-toggle__slider {
+  transform: translateX(100%);
+}
+.pricing-toggle input:checked ~ .pricing-toggle__options .option-left {
+  color: #666;
+}
+.pricing-toggle input:checked ~ .pricing-toggle__options .option-right {
+  color: #2196F3;
+}
+.pricing-toggle:not(input:checked) ~ .pricing-toggle__options .option-left {
+  color: #2196F3;
+}
+.option-left { color: #2196F3; }
+.option-right { color: #666; }
+</style>
+
+<div class="toggle-demo">
+<label class="pricing-toggle">
+  <input type="checkbox" id="cycleToggle">
+  <span class="pricing-toggle__slider"></span>
+  <div class="pricing-toggle__options">
+    <span class="pricing-toggle__option option-left">Monthly</span>
+    <span class="pricing-toggle__option option-right">Annual</span>
+  </div>
+</label>
+</div>
+
+
 <head>
 
 <script>
