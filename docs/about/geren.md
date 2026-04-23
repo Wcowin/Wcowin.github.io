@@ -285,7 +285,7 @@ hide_comment: true
     data-name="OneClip"
     data-description="一个功能强大的 Mac 剪贴板管理器，支持历史记录、搜索和快速访问"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="288"
+    data-stars="299"
     data-forks="12"
     data-license="MIT"
     href="https://github.com/Wcowin/OneClip"
@@ -428,7 +428,7 @@ hide_comment: true
             <!-- HTU - 左侧 -->
             <div class="qualification__data">
                 <div>
-                    <h3 class="qualification__title">HTU</h3>
+                    <h3 class="qualification__title">HBUT</h3>
                     <span class="qualification__subtitle">低空技术与工程硕士</span>
                     <div class="qualification__calendar">
                         <i class="fa-regular fa-calendar"></i>
@@ -580,12 +580,12 @@ hide_comment: true
 !!! quote "About me"
     <div style="font-size: 1.3em;">
     
-    - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target="_blank"}~
-    - [x] 咖啡重度爱好者
-    - [x] 热爱(xiā)研究/Math，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
-    - [x] 目前的研究领域是低空技术、[AI](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
-    - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
-    - [x] 清醒知趣，明得失，知进退
+    - Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target="_blank"}~
+    - 咖啡重度爱好者
+    - 热爱(xiā)研究/Math业余，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
+    - 目前的研究领域是[低空技术](../research/aerotech/)、[AI](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
+    - 读书明志|诗词爱好者|历史研究|喜欢村上春树|擅长羽毛球
+    - 清醒知趣，明得失，知进退
 
     </div>
 

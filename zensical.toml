@@ -372,7 +372,7 @@ nav = [
     #     "blog/index.md"
     # ]},
     { "关于" = [
-        { "个人简介" = "about/geren.md" },
+        { "关于我" = "about/geren.md" },
         # { "个人简历" = "about/resume.md" },
         { "免责声明" = "about/shengming.md" },
         { "支持作者" = "about/zcw.md" },
