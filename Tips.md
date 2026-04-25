@@ -12,6 +12,8 @@ comments: false  #评论，默认不开启
 https://s3.bmp.ovh/2026/02/18/ZqgpJ3ih.png
 pip install --upgrade --force-reinstall zensical
 
+个人简历：https://wcowin.work/assets/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86.pdf
+
 ## 常用环境与命令
 
 ### 启动虚拟环境（推荐使用 Anaconda 管理 Python 环境）

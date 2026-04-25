@@ -1305,7 +1305,17 @@ comments: false
         </div>
       </div>  
     </div>
-
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://256.dpdns.org/file/images/1777106221376_jinmukun-avatar.webp" />
+      <div class="card-header">
+        <div>
+          <a href="https://jmk.gv.uy" target="_blank">Jiwac’s Blog</a>
+        </div>
+        <div class="info">
+        无限进步
+        </div>
+      </div>  
+    </div>
 
 
 
