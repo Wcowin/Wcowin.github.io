@@ -1316,6 +1316,17 @@ comments: false
         </div>
       </div>  
     </div>
+<div class="card">
+        <img class="ava" loading="lazy" decoding="async" src="https://rdev.qzz.io/favicon.webp" />
+        <div class="card-header">
+          <div>
+            <a href="https://rdev.qzz.io/" target="_blank">Runoneall Develop</a>
+          </div>
+          <div class="info">
+            我的开发记录、随笔、以及其他...
+          </div>
+        </div>
+      </div>
     <div class="card">
         <img class="ava" loading="lazy" decoding="async" src="https://ando.eu.org/img/ando.png" />
         <div class="card-header">
@@ -1327,7 +1338,6 @@ comments: false
           </div>
         </div>
       </div>
-
 
     
   </div>
