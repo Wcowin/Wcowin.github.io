@@ -110,6 +110,7 @@ nav = [
             { "添加 GitHub 热力图卡片" = "blog/Zensical/github-heatmap.md" },
             { "添加 GitHub 仓库卡片" = "blog/Zensical/github-repo-card.md" },
             { "炫彩光辉头像效果实现" = "blog/websitebeauty/avatar-glow.md" },
+            { "Giscus 评论系统明暗主题同步修复教程" = "blog/Zensical/giscus-theme-sync.md" },
         ]},
         { "MKdocs教程" = [
             { "MIT许可声明" = "blog/Mkdocs/MIT.md" },

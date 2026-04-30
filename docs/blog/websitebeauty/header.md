@@ -8,7 +8,6 @@ hide:
   #  - feedback  #隐藏反馈
 tags:
   - Mkdocs
-comments: false  #评论，默认不开启
 ---
 
 # 添加顶部公告栏

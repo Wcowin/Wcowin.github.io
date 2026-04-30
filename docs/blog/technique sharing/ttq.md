@@ -8,7 +8,7 @@ hide:
   #  - feedback  #隐藏反馈
 tags:
   - 技术分享
-comments: false  #评论，默认不开启
+comments: true
 ---
 
 # 甜甜圈🍩代码
