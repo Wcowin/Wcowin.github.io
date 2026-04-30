@@ -4,11 +4,7 @@ hide:
 #   - navigation
 #   - toc
   - feedback
-#   - footer
 status: new
-# ai_summary: true
-hide_reading_time: true
-hide_comment: true
 ---
 
 <link rel="stylesheet" href="/about/sty/portfolio.css">
