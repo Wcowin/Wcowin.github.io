@@ -2043,9 +2043,30 @@ document.addEventListener('error', function(e) {
     data-reactions-enabled="1"
     data-emit-metadata="0"
     data-input-position="top"
-    data-theme="light_tritanopia"
+    data-theme="preferred_color_scheme"
     data-lang="zh-CN"
     data-loading="lazy"
     crossorigin="anonymous"
     async>
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var ref = document.querySelector("[data-md-component=palette]");
+  if (!ref) return;
+  
+  ref.addEventListener("change", function() {
+    var palette = __md_get("__palette");
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light";
+      var frame = document.querySelector(".giscus-frame");
+      if (frame && frame.contentWindow) {
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          "https://giscus.app"
+        );
+      }
+    }
+  });
+});
 </script>
