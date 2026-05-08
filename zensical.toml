@@ -274,7 +274,8 @@ nav = [
                 { "低空交通系统建模" = "research/aerotech/system-modeling.md" },
                 { "低空航线网络规划" = "research/aerotech/route-network.md" }
             ]}
-        ]}
+        ]},
+        "research/UGP.md",
     ]},
     { "闲聊" = [
         "relax/index.md",
