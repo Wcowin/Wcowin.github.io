@@ -1338,6 +1338,17 @@ comments: false
           </div>
         </div>
       </div>
+      <div class="card">
+          <img class="ava" loading="lazy" decoding="async" src="https://upxuu.com/images/20260214145619.jpg" />
+          <div class="card-header">
+            <div>
+              <a href="https://upxuu.com" target="_blank">UpXuu's blog</a>
+            </div>
+            <div class="info">
+              逐光而上!
+            </div>
+          </div>
+        </div>
 
     
   </div>
@@ -1769,24 +1780,48 @@ function renderFriendLinkPreview() {
   var link = document.getElementById('fl_link').value.trim() || 'https://your.site/';
   var avatar = document.getElementById('fl_avatar').value.trim() || 'https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp';
   var desc = document.getElementById('fl_desc').value.trim() || '你的网站简介';
-  var html = `
-  <div class="card">
-    <img class="ava" loading="lazy" decoding="async" src="${escapeHtml(avatar)}" />
-    <div class="card-header">
-      <div>
-        <a href="${escapeHtml(link)}" target="_blank">${escapeHtml(name)}</a>
-      </div>
-      <div class="info">
-        ${escapeHtml(desc)}
-      </div>
-    </div>
-  </div>
-  `;
-  // 预览区域直接渲染 HTML
-  document.getElementById('fl_preview_area').innerHTML = html;
-  // 文本区域输出带 ```html ``` 包裹的代码块，方便直接贴到评论区
-  var trimmed = html.trim();
-  var fenced = '```html\n' + trimmed + '\n```';
+
+  // 使用 DOM 操作构建预览，避免 MkDocs 改写模板字符串中的 URL
+  var card = document.createElement('div');
+  card.className = 'card';
+  var img = document.createElement('img');
+  img.className = 'ava';
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.src = avatar;
+  var cardHeader = document.createElement('div');
+  cardHeader.className = 'card-header';
+  var nameDiv = document.createElement('div');
+  var a = document.createElement('a');
+  a.href = link;
+  a.target = '_blank';
+  a.textContent = name;
+  nameDiv.appendChild(a);
+  var infoDiv = document.createElement('div');
+  infoDiv.className = 'info';
+  infoDiv.textContent = desc;
+  cardHeader.appendChild(nameDiv);
+  cardHeader.appendChild(infoDiv);
+  card.appendChild(img);
+  card.appendChild(cardHeader);
+
+  var previewArea = document.getElementById('fl_preview_area');
+  previewArea.innerHTML = '';
+  previewArea.appendChild(card);
+
+  // 生成 HTML 代码用于复制（拆分标签防止 MkDocs 构建时改写 URL）
+  var htmlStr = '  <div class="card">\n' +
+    '    <img class="ava" loading="lazy" decoding="async" src="' + escapeHtml(avatar) + '" />\n' +
+    '    <div class="card-header">\n' +
+    '      <div>\n' +
+    '        <' + 'a h' + 'ref="' + escapeHtml(link) + '" target="_blank">' + escapeHtml(name) + '</' + 'a>\n' +
+    '      </div>\n' +
+    '      <div class="info">\n' +
+    '        ' + escapeHtml(desc) + '\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '  </div>';
+  var fenced = '```html\n' + htmlStr + '\n```';
   document.getElementById('fl_preview_code').value = fenced;
 
   // 保存到 localStorage
