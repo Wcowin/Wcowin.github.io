@@ -1,6 +1,7 @@
 ---
 title: 西安
-tags: [旅行]
+tags: 
+    - 旅行
 comments: false  #评论，默认不开启
 # ai_summary: true
 ---

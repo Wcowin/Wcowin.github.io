@@ -13,6 +13,7 @@ copyright = "Copyright &copy; 2022~2026 Wcowin" # 左下角的版权声明
 docs_dir = "docs"                                # 文档目录
 site_dir = "site"                                # 生成的网站目录
 use_directory_urls = true                        # 使用目录形式的URL (例如: /page/ 而不是 /page.html)
+# validation = false
 
 # ===== 仓库配置 =====
 repo_url = "https://github.com/Wcowin/Wcowin.github.io"  # 右上角点击跳转的链接
@@ -359,7 +360,7 @@ nav = [
     ]},
     { "旅行" = [
         "trip/index.md",
-        { "重庆" = "trip/InCQ/CQ.md" },
+        { "重庆" = "trip/CQ.md" },
         { "西安" = "trip/Xian.md" },
         { "我的家乡——漯河" = "trip/LH.md" },
         { "足迹" = "trip/footmark.md" }
@@ -675,3 +676,4 @@ custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
 [project.markdown_extensions.tables]
 [project.markdown_extensions.pymdownx.snippets]
+# [project.markdown_extensions.zensical.extensions.glightbox]

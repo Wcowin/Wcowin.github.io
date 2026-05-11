@@ -372,7 +372,6 @@ open dist/OneClip.app
 - macOS 12.0+
 - Xcode 15.0+
 
-详细构建说明请查看 [src/README.md](src/README.md)
 
 > ⚠️ **注意**：开源的是早期版本（基于文件系统），采用 MIT 协议。当前正式版已采用数据库存储，功能更完善，为商业软件。
 

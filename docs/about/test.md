@@ -140,9 +140,7 @@ t.parentNode.insertBefore(e,t)}})();
 -   :material-tooltip-edit:{ .lg .middle } __关于__
 
     ---
-    - [效率][Software]
-    [Software]: javascript:document.getElementById('software').scrollIntoView()
-
+    - [效率](https://github.com/Wcowin/Wcowin.github.io)
 </div>
 
 <div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>

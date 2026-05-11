@@ -1,6 +1,7 @@
 ---
 title: 推荐番剧
-tags: [电影]
+tags: 
+    - 电影
 comments: false  #评论，默认不开启
 ---
 
