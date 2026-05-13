@@ -21,6 +21,9 @@ hide:
     <div class="oneclip-announcement-item">
       🙌🏻 <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank" rel="noopener noreferrer">MaterialX</a> —— 下一代 MkDocs主题，让你继续用熟悉的方式构建漂亮文档
     </div>
+    <div class="oneclip-announcement-item">
+      📱 <a href="https://api.simhaoka.com/?u=Wcowin" target="_blank" rel="noopener noreferrer">办电话卡</a> —— 月租低至29元｜Wcowin严选｜没错就是打广告
+    </div>
   </div>
 </div>
 
