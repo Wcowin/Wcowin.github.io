@@ -85,6 +85,9 @@ nav = [
         { "好用/好玩网站分享" = "blog/Webplay.md" },
         { "甜甜圈🍩代码" = "blog/technique sharing/ttq.md" },
         { "Mac/windows软件网站汇总" = "blog/macsoft.md" },
+        { "好物分享" = [
+            { "2026流量卡推荐：月租低至29元，无合约可随时注销" = "blog/posts/sim-card.md" }
+        ]},
         { "密码学" = [
             "blog/Cryptography/index.md",
             { "数论基础" = "blog/Cryptography/Numbertheory.md" },
