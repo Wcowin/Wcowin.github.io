@@ -281,7 +281,7 @@ status: new
     data-name="OneClip"
     data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，提供主窗口、菜单栏操作、快速粘贴面板等多种使用方式， 支持多种格式内容管理、智能搜索和分类，让您的复制粘贴操作更加便捷高效。"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="322"
+    data-stars="327"
     data-forks="15"
     data-license="MIT"
     href="https://github.com/Wcowin/OneClip"
@@ -573,10 +573,10 @@ status: new
 
 ## 个人简介
 
-!!! quote "About me"
+!!! quote "Who am I?"
     <div style="font-size: 1.3em;">
     
-    - Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target="_blank"}~
+    - Hi, I'm [Wcowin](https://github.com/Wcowin){target="_blank"}~
     - 咖啡重度爱好者
     - 热爱(xiā)研究/Math业余，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
     - 目前的研究领域是[低空技术](../research/aerotech/)、[AI](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
