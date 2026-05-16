@@ -1197,10 +1197,10 @@ comments: false
           </div>
         </div>
       <div class="card">
-          <img class="ava" loading="lazy" decoding="async" src="https://github.com/lm-xiao-fen/lm-xiao-fen.github.io/blob/main/image/MEITU_20260128_220225596.jpg?raw=true" />
+          <img class="ava" loading="lazy" decoding="async" src="https://i.imgant.com/v2/oRWsmMD.png" />
           <div class="card-header">
             <div>
-              <a href="https://lm-xiao-fen.github.io/" target="_blank">xf_blog</a>
+              <a href="https://xfcnl.github.io" target="_blank">xf_blog</a>
             </div>
             <div class="info">
               立志用 cloudflare workers，GitHub pages 和 vercel 做出整个互联网的up（虽然不会成功
