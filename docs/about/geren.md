@@ -509,8 +509,36 @@ status: new
 (function () {
   const checkbox = document.getElementById('qualToggle');
   const contents = document.querySelectorAll('.qualification__content');
+  const thumb = document.querySelector('.qualification__slider-thumb');
+  const toggle = checkbox.closest('.qualification__slider-toggle');
+  const optionLeft = toggle.querySelector('.option-left');
+  const optionRight = toggle.querySelector('.option-right');
 
   if (!checkbox) return;
+
+  // 颜色插值
+  function hexToRgb(hex) {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : null;
+  }
+
+  function interpolateColor(color1, color2, factor) {
+    const c1 = hexToRgb(color1);
+    const c2 = hexToRgb(color2);
+    const r = Math.round(c1.r + (c2.r - c1.r) * factor);
+    const g = Math.round(c1.g + (c2.g - c1.g) * factor);
+    const b = Math.round(c1.b + (c2.b - c1.b) * factor);
+    return 'rgb(' + r + ', ' + g + ', ' + b + ')';
+  }
+
+  const COLOR_LEFT_ACTIVE = '#409eff';
+  const COLOR_LEFT_INACTIVE = '#8896a7';
+  const COLOR_RIGHT_ACTIVE = '#409eff';
+  const COLOR_RIGHT_INACTIVE = '#8896a7';
 
   const states = [
     { id: '#education' },
@@ -533,22 +561,118 @@ status: new
     applyState(checkbox.checked ? 1 : 0);
   });
 
-  // 触摸滑动支持
-  let startX = 0;
-  const toggle = checkbox.closest('.qualification__slider-toggle');
-  
+  // 触摸滑动支持（保留原有行为）
+  let touchStartX = 0;
   toggle.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
+    touchStartX = e.touches[0].clientX;
   }, { passive: true });
 
   toggle.addEventListener('touchend', (e) => {
     const endX = e.changedTouches[0].clientX;
-    const diff = endX - startX;
-    if (Math.abs(diff) > 30) { // 滑动超过30px触发
-      checkbox.checked = diff < 0; // 左滑→checked(工作), 右滑→unchecked(教育)
+    const diff = endX - touchStartX;
+    if (Math.abs(diff) > 30) {
+      checkbox.checked = diff < 0;
       checkbox.dispatchEvent(new Event('change'));
     }
   }, { passive: true });
+
+  // 鼠标拖拽支持（带滑块实时跟随）
+  let isMouseDown = false;
+  let isMouseDragging = false;
+  let mouseDragStartX = 0;
+  let startChecked = false;
+  let maxTranslate = 0;
+
+  toggle.addEventListener('mousedown', (e) => {
+    isMouseDown = true;
+    isMouseDragging = false;
+    mouseDragStartX = e.clientX;
+    startChecked = checkbox.checked;
+    maxTranslate = thumb.offsetWidth;
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isMouseDown) return;
+
+    const diff = e.clientX - mouseDragStartX;
+
+    // 移动超过 3px 才算开始拖拽
+    if (!isMouseDragging && Math.abs(diff) > 3) {
+      isMouseDragging = true;
+      thumb.style.transition = 'none';
+      toggle.style.userSelect = 'none';
+    }
+
+    if (!isMouseDragging) return;
+
+    const baseTranslate = startChecked ? maxTranslate : 0;
+    let newTranslate = baseTranslate + diff;
+
+    // 限制在轨道范围内
+    newTranslate = Math.max(0, Math.min(newTranslate, maxTranslate));
+
+    thumb.style.transform = 'translateX(' + newTranslate + 'px)';
+
+    // 文字颜色跟随滑块位置实时渐变
+    const progress = newTranslate / maxTranslate;
+    if (optionLeft) {
+      optionLeft.style.color = interpolateColor(COLOR_LEFT_ACTIVE, COLOR_LEFT_INACTIVE, progress);
+    }
+    if (optionRight) {
+      optionRight.style.color = interpolateColor(COLOR_RIGHT_INACTIVE, COLOR_RIGHT_ACTIVE, progress);
+    }
+  });
+
+  document.addEventListener('mouseup', (e) => {
+    if (!isMouseDown) return;
+    isMouseDown = false;
+
+    if (!isMouseDragging) {
+      // 纯点击，不干预，让 label 正常处理
+      return;
+    }
+
+    isMouseDragging = false;
+    toggle.style.userSelect = '';
+
+    const diff = e.clientX - mouseDragStartX;
+    const baseTranslate = startChecked ? maxTranslate : 0;
+    let finalTranslate = baseTranslate + diff;
+    finalTranslate = Math.max(0, Math.min(finalTranslate, maxTranslate));
+
+    // 超过一半就切换
+    const shouldCheck = finalTranslate > maxTranslate / 2;
+
+    thumb.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)';
+
+    if (shouldCheck !== startChecked) {
+      checkbox.checked = shouldCheck;
+      checkbox.dispatchEvent(new Event('change'));
+      toggle.dataset.dragged = 'true';
+      setTimeout(function () { delete toggle.dataset.dragged; }, 0);
+    }
+
+    // 弹回或滑到目标位置
+    thumb.style.transform = shouldCheck
+      ? 'translateX(' + maxTranslate + 'px)'
+      : 'translateX(0px)';
+
+    // 动画结束后清除 inline style，让 CSS 选择器接管
+    setTimeout(function () {
+      thumb.style.transition = '';
+      thumb.style.transform = '';
+      if (optionLeft) optionLeft.style.color = '';
+      if (optionRight) optionRight.style.color = '';
+    }, 350);
+  });
+
+  // 拖拽结束后阻止 label 的 click 重复触发
+  toggle.addEventListener('click', (e) => {
+    if (toggle.dataset.dragged === 'true') {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
 
 })();
 </script>

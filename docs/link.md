@@ -1317,7 +1317,7 @@ comments: false
       </div>  
     </div>
 <div class="card">
-        <img class="ava" loading="lazy" decoding="async" src="https://www.nodeloc.com/user_avatar/www.nodeloc.com/runoneall/288/559_2.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://rdev.qzz.io/favicon.webp" />
         <div class="card-header">
           <div>
             <a href="https://vcblog.eu.cc/" target="_blank">维C博客</a>
