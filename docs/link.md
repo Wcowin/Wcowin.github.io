@@ -1317,10 +1317,10 @@ comments: false
       </div>  
     </div>
 <div class="card">
-        <img class="ava" loading="lazy" decoding="async" src="https://rdev.qzz.io/favicon.webp" />
+        <img class="ava" loading="lazy" decoding="async" src="https://www.nodeloc.com/user_avatar/www.nodeloc.com/runoneall/288/559_2.png" />
         <div class="card-header">
           <div>
-            <a href="https://rdev.qzz.io/" target="_blank">Runoneall Develop</a>
+            <a href="https://vcblog.eu.cc/" target="_blank">维C博客</a>
           </div>
           <div class="info">
             我的开发记录、随笔、以及其他...
