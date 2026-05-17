@@ -10,10 +10,19 @@ hide:
 
 
 <!-- OneClip 公告栏 -->
-<div class="oneclip-announcement">
+<div class="oneclip-announcement" id="oneclip-announcement">
+  <button class="oneclip-announcement-close" onclick="closeAnnouncement()" aria-label="关闭公告">
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
   <div class="oneclip-announcement-content">
     <div class="oneclip-announcement-item">
       🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— macOS剪贴板管理工具 <a href="https://github.com/Wcowin/OneClip" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a>
+    </div>
+    <div class="oneclip-announcement-item">
+      ✈️ <a href="https://vpn07.com/index.html#/register?code=F1RDIZXn" target="_blank" rel="noopener noreferrer">好用机场</a> —— 季付低至22元|70+国家线路 千兆带宽|支持流媒体|8折优惠码：VPN07
     </div>
     <div class="oneclip-announcement-item">
       ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" rel="noopener noreferrer">Zensical中文教程</a> —— 最新的Zensical中文教程
@@ -22,10 +31,42 @@ hide:
       🙌🏻 <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank" rel="noopener noreferrer">MaterialX</a> —— 下一代 MkDocs主题，让你继续用熟悉的方式构建漂亮文档
     </div>
     <div class="oneclip-announcement-item">
-      📱 <a href="https://api.simhaoka.com/?u=Wcowin" target="_blank" rel="noopener noreferrer">办电话卡</a> —— 月租低至29元｜Wcowin严选｜没错就是打广告
+      📱 <a href="https://api.simhaoka.com/?u=Wcowin" target="_blank" rel="noopener noreferrer">办电话卡</a> —— 月租低至29元｜Wcowin严选
     </div>
   </div>
 </div>
+
+<!-- 公告栏关闭功能脚本 -->
+<script>
+  // 检查本地存储，如果用户24小时内关闭过公告，则隐藏
+  (function() {
+    var closeTime = localStorage.getItem('oneclip-announcement-closed-time');
+    if (closeTime) {
+      var now = new Date().getTime();
+      var hoursPassed = (now - parseInt(closeTime)) / (1000 * 60 * 60);
+      // 24小时内关闭过，保持隐藏
+      if (hoursPassed < 24) {
+        var announcement = document.getElementById('oneclip-announcement');
+        if (announcement) {
+          announcement.classList.add('is-closed');
+        }
+      } else {
+        // 超过24小时，清除记录
+        localStorage.removeItem('oneclip-announcement-closed-time');
+      }
+    }
+  })();
+
+  // 关闭公告栏函数
+  function closeAnnouncement() {
+    var announcement = document.getElementById('oneclip-announcement');
+    if (announcement) {
+      announcement.classList.add('is-closed');
+      // 记录关闭时间
+      localStorage.setItem('oneclip-announcement-closed-time', new Date().getTime().toString());
+    }
+  }
+</script>
 
 <!-- 加载 Inter 字体 - 使用 font-display: swap 优化加载性能 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

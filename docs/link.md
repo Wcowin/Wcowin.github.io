@@ -20,7 +20,7 @@ comments: false
 </div>
 <div markdown>
 
-- [x] **非常定期**检查
+- [x] **定期**检查
 
 </div>
 </div>
@@ -1621,9 +1621,8 @@ comments: false
 
 
 
-
-本站已经加入[十年之约](https://www.foreverblog.cn/){target="_blank"}
-<a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>，请放心添加本站友链
+!!! tip "须知"
+    本站已经加入[十年之约](https://www.foreverblog.cn/){target="_blank"}，请放心添加本站友链
 
 
 ## 友链预览与代码生成
@@ -1669,26 +1668,40 @@ comments: false
 #friendlink-preview-tool textarea::-webkit-scrollbar {
   display: none;               /* WebKit 隐藏滚动条 */
 }
+#friendlink-preview-tool .form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+#friendlink-preview-tool .form-row label {
+  width: 80px;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: right;
+}
+#friendlink-preview-tool .form-row input {
+  flex: 1;
+}
 #friendlink-preview-tool .btn-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-top: 0.5em;
+  gap: 12px;
+  margin-top: 1em;
 }
-#friendlink-preview-tool button {
-  padding: 7px 18px;
-  border-radius: 6px;
-  background: #2196F3;
-  color: #fff;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s;
+#friendlink-preview-tool .btn-row .md-button {
+  padding: 10px 0;
+  font-size: 0.95rem;
+  width: 120px;
+  text-align: center;
+}
+#friendlink-preview-tool .btn-row .md-button .btn-text {
+  display: inline-block;
 }
 #friendlink-preview-tool button:hover {
-  background: #1976d2;
+  opacity: 0.9;
 }
 #fl_preview_area {
   margin-top: 1.2em;
@@ -1752,15 +1765,25 @@ comments: false
 
 <div id="friendlink-preview-tool">
   <h3>友链效果预览</h3>
-  <div style="display:flex;flex-direction:column;gap:10px;">
-    <input id="fl_name" placeholder="网站名称" oninput="renderFriendLinkPreview()">
-    <input id="fl_link" placeholder="网站链接(含http/https)" oninput="renderFriendLinkPreview()">
-    <input id="fl_avatar" placeholder="头像链接(图片URL)" oninput="renderFriendLinkPreview()">
-    <input id="fl_desc" placeholder="简介" oninput="renderFriendLinkPreview()">
-  </div><br>
+  <div class="form-row">
+    <label for="fl_name">网站名称</label>
+    <input id="fl_name" placeholder="你的网站名称" oninput="renderFriendLinkPreview()">
+  </div>
+  <div class="form-row">
+    <label for="fl_link">网站链接</label>
+    <input id="fl_link" placeholder="https://xxx/" oninput="renderFriendLinkPreview()">
+  </div>
+  <div class="form-row">
+    <label for="fl_avatar">头像链接</label>
+    <input id="fl_avatar" placeholder="https://xxx.png" oninput="renderFriendLinkPreview()">
+  </div>
+  <div class="form-row">
+    <label for="fl_desc">网站简介</label>
+    <input id="fl_desc" placeholder="你的简介" oninput="renderFriendLinkPreview()">
+  </div>
   <div class="btn-row">
-    <button type="button" onclick="renderFriendLinkPreview()">预览效果</button>
-    <button type="button" onclick="copyFriendLinkHtml()">复制HTML</button>
+    <button type="button" id="btn-preview" class="md-button md-button--primary" onclick="renderFriendLinkPreviewWithFeedback()"><span class="btn-text">预览效果</span></button>
+    <button type="button" id="btn-copy" class="md-button" onclick="copyFriendLinkHtmlWithFeedback()"><span class="btn-text">复制HTML</span></button>
   </div>
   <div id="fl_preview_area"></div>
   <div style="margin-top:1em;">
@@ -1776,10 +1799,15 @@ function escapeHtml(str) {
   });
 }
 function renderFriendLinkPreview() {
-  var name = document.getElementById('fl_name').value.trim() || '你的网站名称';
-  var link = document.getElementById('fl_link').value.trim() || 'https://your.site/';
-  var avatar = document.getElementById('fl_avatar').value.trim() || 'https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp';
-  var desc = document.getElementById('fl_desc').value.trim() || '你的网站简介';
+  var nameInput = document.getElementById('fl_name');
+  var linkInput = document.getElementById('fl_link');
+  var avatarInput = document.getElementById('fl_avatar');
+  var descInput = document.getElementById('fl_desc');
+  
+  var name = nameInput.value.trim() || nameInput.placeholder;
+  var link = linkInput.value.trim() || linkInput.placeholder;
+  var avatar = avatarInput.value.trim() || 'https://i.stardots.io/wcowin/1750221795613.jpeg';
+  var desc = descInput.value.trim() || descInput.placeholder;
 
   // 使用 DOM 操作构建预览，避免 MkDocs 改写模板字符串中的 URL
   var card = document.createElement('div');
@@ -1839,6 +1867,26 @@ function copyFriendLinkHtml() {
   codeArea.select();
   codeArea.setSelectionRange(0, codeArea.value.length);
   try { document.execCommand('copy'); } catch (e) {}
+}
+
+function showButtonFeedback(btnId, newText, duration) {
+  var btn = document.getElementById(btnId);
+  var textSpan = btn.querySelector('.btn-text');
+  var originalText = textSpan.textContent;
+  textSpan.textContent = newText;
+  setTimeout(function() {
+    textSpan.textContent = originalText;
+  }, duration);
+}
+
+function renderFriendLinkPreviewWithFeedback() {
+  renderFriendLinkPreview();
+  showButtonFeedback('btn-preview', '已更新', 1500);
+}
+
+function copyFriendLinkHtmlWithFeedback() {
+  copyFriendLinkHtml();
+  showButtonFeedback('btn-copy', '已复制', 1500);
 }
 
 // 初始化：从 localStorage 恢复数据或使用默认值

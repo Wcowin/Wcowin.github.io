@@ -87,6 +87,7 @@
         }
       }
     } catch (e) {
+      // 缓存读取失败时静默处理
     }
     return null;
   }
@@ -97,7 +98,33 @@
       localStorage.setItem(cacheKey, JSON.stringify(data));
       localStorage.setItem(cacheKey + '-time', Date.now().toString());
     } catch (e) {
+      // 缓存写入失败时静默处理（如存储空间不足）
     }
+  }
+
+  function clearCachedData(repo) {
+    try {
+      const cacheKey = CACHE_KEY_PREFIX + repo;
+      localStorage.removeItem(cacheKey);
+      localStorage.removeItem(cacheKey + '-time');
+    } catch (e) {
+      // 缓存清理失败时静默处理
+    }
+  }
+
+  function hasCustomAttributes(card) {
+    const attrs = ['data-owner', 'data-name', 'data-description', 'data-avatar', 'data-stars', 'data-forks', 'data-license'];
+    return attrs.some(attr => {
+      const val = card.getAttribute(attr);
+      return val !== null && val.trim() !== '';
+    });
+  }
+
+  function getCustomValue(card, attr) {
+    const val = card.getAttribute(attr);
+    // 返回 null 表示使用 API 数据
+    if (val === null || val.trim() === '') return null;
+    return val.trim();
   }
 
   function fillCardData(card, data, owner, name) {
@@ -109,17 +136,19 @@
     const forksEl = card.querySelector('.github-repo-forks');
     const licenseEl = card.querySelector('.github-repo-license');
     
-    const customOwner = card.getAttribute('data-owner');
-    const customName = card.getAttribute('data-name');
-    const customDescription = card.getAttribute('data-description');
-    const customAvatar = card.getAttribute('data-avatar');
-    const customStars = card.getAttribute('data-stars');
-    const customForks = card.getAttribute('data-forks');
-    const customLicense = card.getAttribute('data-license');
+    const customOwner = getCustomValue(card, 'data-owner');
+    const customName = getCustomValue(card, 'data-name');
+    const customDescription = getCustomValue(card, 'data-description');
+    const customAvatar = getCustomValue(card, 'data-avatar');
+    const customStars = getCustomValue(card, 'data-stars');
+    const customForks = getCustomValue(card, 'data-forks');
+    const customLicense = getCustomValue(card, 'data-license');
 
-    if (ownerEl) ownerEl.textContent = customOwner || owner;
-    if (nameEl) nameEl.textContent = customName || name;
+    // Owner 和 Name：优先使用自定义，否则使用从 repo 解析的
+    if (ownerEl) ownerEl.textContent = customOwner || owner || '';
+    if (nameEl) nameEl.textContent = customName || name || '';
 
+    // Stars：自定义优先，其次是 API 数据
     if (starsEl) {
       if (customStars !== null) {
         starsEl.textContent = customStars === '0' ? '' : customStars;
@@ -127,6 +156,8 @@
         starsEl.textContent = data.stargazers_count > 0 ? data.stargazers_count.toString() : '';
       }
     }
+
+    // Forks
     if (forksEl) {
       if (customForks !== null) {
         forksEl.textContent = customForks === '0' ? '' : customForks;
@@ -134,8 +165,12 @@
         forksEl.textContent = data.forks_count > 0 ? data.forks_count.toString() : '';
       }
     }
+
+    // License
     if (licenseEl) {
-      const licenseText = customLicense !== null ? customLicense : ((data.license && (data.license.spdx_id || data.license.name)) || '');
+      const licenseText = customLicense !== null 
+        ? customLicense 
+        : ((data.license && (data.license.spdx_id || data.license.name)) || '');
       licenseEl.textContent = licenseText;
       const metaItem = licenseEl.closest('.github-repo-meta-item');
       if (metaItem) {
@@ -146,9 +181,15 @@
         }
       }
     }
+
+    // Description
     if (descEl) {
-      descEl.textContent = customDescription || (data.description || '');
+      descEl.textContent = customDescription !== null 
+        ? customDescription 
+        : (data.description || '');
     }
+
+    // Avatar
     if (avatarEl) {
       if (customAvatar) {
         avatarEl.style.backgroundImage = `url(${customAvatar})`;
@@ -171,24 +212,6 @@
     return await res.json();
   }
 
-  function hasAllCustomAttributes(card) {
-    const customOwner = card.getAttribute('data-owner');
-    const customName = card.getAttribute('data-name');
-    const customDescription = card.getAttribute('data-description');
-    const customAvatar = card.getAttribute('data-avatar');
-    const customStars = card.getAttribute('data-stars');
-    const customForks = card.getAttribute('data-forks');
-    const customLicense = card.getAttribute('data-license');
-    
-    return customOwner !== null && 
-           customName !== null && 
-           customDescription !== null && 
-           customAvatar !== null && 
-           customStars !== null && 
-           customForks !== null && 
-           customLicense !== null;
-  }
-
   async function initCard(card) {
     if (card.dataset.githubCardInitialized === 'true') return;
     card.dataset.githubCardInitialized = 'true';
@@ -198,35 +221,50 @@
     const repo = explicitRepo || parseRepoFromHref(href);
     if (!repo) return;
 
+    // 验证 repo 格式
     const [owner, name] = repo.split('/');
-
-    card.innerHTML = buildCardInnerHTML();
-
-    if (hasAllCustomAttributes(card)) {
-      fillCardData(card, {}, owner, name);
+    if (!owner || !name) {
+      console.warn('Invalid repo format:', repo);
       return;
     }
 
+    card.innerHTML = buildCardInnerHTML();
+
+    // 如果有任何自定义属性，先显示自定义数据
+    const hasCustom = hasCustomAttributes(card);
+    if (hasCustom) {
+      fillCardData(card, {}, owner, name);
+    }
+
+    // 尝试获取缓存数据
     const cachedData = getCachedData(repo);
 
     if (cachedData) {
+      // 有缓存，用缓存数据填充（如果有自定义属性，自定义值会覆盖缓存值）
       fillCardData(card, cachedData, owner, name);
 
+      // 后台刷新数据
       fetchRepoData(repo)
         .then(data => {
           setCachedData(repo, data);
           fillCardData(card, data, owner, name);
         })
         .catch(() => {
+          // 获取失败，清除过期缓存
+          clearCachedData(repo);
         });
     } else {
+      // 无缓存，尝试获取 API 数据
       try {
         const data = await fetchRepoData(repo);
         setCachedData(repo, data);
         fillCardData(card, data, owner, name);
       } catch (e) {
         console.warn('加载 GitHub 仓库信息失败：', repo, e);
-        fillCardData(card, {}, owner, name);
+        // API 失败且没有自定义属性，显示基本信息
+        if (!hasCustom) {
+          fillCardData(card, {}, owner, name);
+        }
       }
     }
   }

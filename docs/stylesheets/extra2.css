@@ -13,12 +13,59 @@
   margin: -20px auto 50px auto;
   border-radius: 20px;
   max-width: 600px;
+  position: relative;
+  transition: opacity 0.3s ease, transform 0.3s ease, max-height 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+}
+
+/* 公告栏关闭按钮 */
+.oneclip-announcement-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: rgba(81, 143, 193, 0.1);
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.oneclip-announcement-close svg {
+  display: block;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.oneclip-announcement-close:hover {
+  background: rgba(81, 143, 193, 0.2);
+  color: var(--md-primary-fg-color, #518FC1);
+}
+
+/* 已关闭的公告栏状态 */
+.oneclip-announcement.is-closed {
+  opacity: 0;
+  transform: translateY(-20px);
+  max-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 /* 电脑端加宽公告栏，避免第三行换行 */
 @media (min-width: 768px) {
   .oneclip-announcement {
-    max-width: 900px;
+    max-width: 1200px;
   }
 }
 
@@ -40,6 +87,14 @@
     margin-left: 8px;
     margin-right: 8px;
     border-radius: 16px;
+  }
+
+  .oneclip-announcement-close {
+    top: 6px;
+    right: 8px;
+    width: 22px;
+    height: 22px;
+    font-size: 16px;
   }
   .oneclip-announcement-content {
     font-size: 14px;
@@ -108,7 +163,7 @@
 .friend-info-row {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .friend-info-label {

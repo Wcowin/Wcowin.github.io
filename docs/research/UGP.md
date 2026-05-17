@@ -1,5 +1,10 @@
 ---
 title: 本科毕设
+hide:
+  # - navigation # 显示右
+  - toc #显示左
+  - footer
+  - feedback
 ---
 
 恳请批评指正！
