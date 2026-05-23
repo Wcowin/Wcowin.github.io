@@ -1349,7 +1349,17 @@ comments: false
             </div>
           </div>
         </div>
-
+      <div class="card">
+        <img class="ava" loading="lazy" decoding="async" src="https://www.bytecho.net/api/v1/uploads/file/302b3355c35d548ce463ffb0480438cb4d32aa06.png" />
+        <div class="card-header">
+          <div>
+            <a href="https://www.bytecho.net" target="_blank">字节星球</a>
+          </div>
+          <div class="info">
+            Code with Passion!
+          </div>
+        </div>
+      </div>
     
   </div>
 </div>

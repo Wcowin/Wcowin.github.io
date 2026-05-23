@@ -12,7 +12,7 @@ status: new
 
 <div class="grid cards" markdown>
 
--   :octicons-rocket-16:{ .lg .middle } __2026 年最新动态（更新于 2026.4）__
+-   :octicons-rocket-16:{ .lg .middle } __2026 年最新动态（更新于 2026.5）__
 
     ---
 

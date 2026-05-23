@@ -223,6 +223,7 @@ nav = [
             { "Attention Residuals：Kimi架构创新" = "develop/AI/attention-residuals.md" },
             { "Claude Code指南" = "develop/Claude-Code.md" },
             { "Codex指南" = "develop/ChatGPT.md" },
+            { "CC Switch：Claude Code / Codex 模型切换工具" = "develop/AI/cc-switch.md" },
             { "OpenClaw：本地开源AI助手" = "develop/AI/openclaw.md" },
             { "Hermes Agent：自进化的 AI Agent" = "develop/AI/hermes-agent.md" },
             { "nanobot：超轻量级 AI 助手" = "develop/AI/nanobot.md" }
