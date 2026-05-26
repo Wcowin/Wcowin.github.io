@@ -3,9 +3,6 @@ title: 测试组件
 ---
 
 ## 测试中的内容
----
-
-## 切换开关演示
 
 <style>
 .toggle-demo {
@@ -408,16 +405,10 @@ def bubble_sort(items):
 - [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
 
 
-$$
-\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
-$$
-
-<!-- ![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" } -->
-
-![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ align=left }
+<!-- ![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ align=left width="800" }   -->
 
 <figure markdown>
-  ![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ width="300" }
+  ![img](https://pic2.zhimg.com/100/v2-864dbf5fe2906aae3f5f18b491320a0d_r.jpg){ width="300" }
   <figcaption>图片说明</figcaption>
 </figure>
 
@@ -455,13 +446,6 @@ sequenceDiagram
     purus auctor massa, nec semper lorem quam in massa. -->
 
 ++ctrl+alt+del++
-
-
-:octicons-arrow-right-24: [点我回到顶部](#)
-
-[Hover me][example]
-
-  [example]: https://example.com "I'm a tooltip!"
 
 
 [Hover me](https://example.com "I'm a tooltip!")

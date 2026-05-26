@@ -527,6 +527,26 @@ claude config list
 
 **推荐工作流**：使用 Claude Code 写代码，使用 Codex 做代码审查和 bug 检测。
 
+## 最新动态
+
+### 微软禁用 Claude Code（2026年5月）
+
+2026年5月，微软突然宣布将于6月30日前取消内部大多数工程师的 Claude Code 许可。这一决定来得猝不及防——仅仅六个月前，微软还在大规模推广这个 AI 编程工具。
+
+> **背景**：微软此前已向数千名工程师授权使用 Claude Code，并将其整合到内部开发流程中。此次禁用决定引发了社区对 AI 编程工具在企业场景可持续性的讨论。
+
+**可能原因分析**：  
+
+- 成本控制：Claude API 调用成本较高
+- 数据安全：企业代码资产外流风险
+- 战略考量：微软正加大力度推广自己的 GitHub Copilot
+
+**对普通开发者的影响**：  
+
+- 如果你在非微软体系工作，影响有限
+- 企业用户需重新评估 AI 编程工具策略
+- 开源/本地部署方案可能成为替代选择
+
 ## 官方资源
 
 - **Claude Code 官方文档**：https://code.claude.com/docs/zh-CN/overview
@@ -545,6 +565,6 @@ claude config list
 
 ---
 
-*最后更新：2026年3月*  
+*最后更新：2026年5月*  
 
 **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

@@ -250,7 +250,7 @@ status: new
         </a>
     </div>
     <div>
-        <span class="about__info-title">3个+</span>
+        <span class="about__info-title">6个+</span>
         <span class="about__info-name">贡献的开源</span>
     </div>
     <div>
@@ -281,7 +281,7 @@ status: new
     data-name="OneClip"
     data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，提供主窗口、菜单栏操作、快速粘贴面板等多种使用方式， 支持多种格式内容管理、智能搜索和分类，让您的复制粘贴操作更加便捷高效。"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="327"
+    data-stars="342"
     data-forks="15"
     data-license="MIT"
     href="https://github.com/Wcowin/OneClip"
@@ -340,7 +340,7 @@ status: new
     class="github-repo-card"
     data-repo="Wcowin/Wcowin.github.io"
     data-description="个人博客"
-    data-stars="70"
+    data-stars="72"
     data-forks="10"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
@@ -703,7 +703,7 @@ status: new
     - Hi, I'm [Wcowin](https://github.com/Wcowin){target="_blank"}~
     - 咖啡重度爱好者
     - 热爱(xiā)研究/Math业余，致力于Mkdocs/Zensical静态网站以及[Mac应用](../develop/Mac-development/index.md)的开发
-    - 目前的研究领域是[低空技术](../research/aerotech/)、[AI](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
+    - 目前的研究领域是[低空技术](../research/aerotech/)、[AI/大模型/具身智能](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
     - 读书明志|诗词爱好者|历史研究|喜欢村上春树|擅长羽毛球
     - 清醒知趣，明得失，知进退
 
@@ -837,8 +837,64 @@ status: new
 
 ---
 
-> 💬我电话号码的`MD5`码：7037F514864088F907CC921687B670EE  
->（破解有奖|必须附带破解过程｜从简历上看到的不算｜目前已有2人成功破解）
+<style>
+.md5-box {
+  background: linear-gradient(145deg, rgba(255,255,255,0.9) 0%, rgba(240,240,240,0.7) 100%);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  color: #444;
+  font-family: 'JetBrains Mono', monospace;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(200,200,200,0.25);
+}
+.md5-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.md5-box .label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 6px;
+}
+.md5-box .code {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+.md5-box .hint {
+  font-size: 11px;
+  color: #888;
+  margin-top: 10px;
+}
+.md5-box .copy-tip {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: #999;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background: rgba(0,0,0,0.05);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.md5-box:hover .copy-tip {
+  opacity: 1;
+}
+</style>
+
+<div class="md5-box" onclick="navigator.clipboard.writeText('7037F514864088F907CC921687B670EE');this.querySelector('.copy-tip').textContent='已复制!';">
+  <div class="label">📞 电话号码的 MD5 哈希</div>
+  <div class="code">7037F514864088F907CC921687B670EE</div>
+  <div class="hint">破解有奖 ☕️ | 必须附带破解过程 | 从简历上看到的不算 | 目前已有 3 人成功破解</div>
+  <div class="copy-tip">点击复制</div>
+</div>
 
 
 ## 须知

@@ -213,6 +213,7 @@ nav = [
             { "Prompt 工程入门" = "develop/AI/prompt.md" },
             { "AI Agent 入门" = "develop/AI/agent.md" },
             { "Agentic AI：从 Chatbot 到可行动的智能体" = "develop/AI/agentic-ai.md" },
+            { "具身智能：当 AI 拥有身体，物理世界迎来新纪元" = "develop/AI/embodied-ai.md" },
             { "What is MCP" = "develop/AI/mcp.md" },
             { "A2A 协议（Agent-to-Agent）" = "develop/AI/a2a.md" },
             { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
@@ -366,6 +367,7 @@ nav = [
         "trip/index.md",
         { "重庆" = "trip/CQ.md" },
         { "西安" = "trip/Xian.md" },
+        { "武汉" = "trip/Wuhan.md" },
         { "我的家乡——漯河" = "trip/LH.md" },
         { "足迹" = "trip/footmark.md" }
     ]},
