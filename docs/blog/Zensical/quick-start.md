@@ -9,6 +9,8 @@ categories:
 
 > 从零到一，快速搭建你的 Zensical 文档站点
 
+本zensical系列由Wcowin原创，禁止转载。  
+
 !!! info "官方文档"
     Zensical 官方网站: [https://zensical.org/](https://zensical.org/)  
     Zensical 官方文档: [https://zensical.org/docs/](https://zensical.org/docs/)
