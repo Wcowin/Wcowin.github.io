@@ -1,8 +1,8 @@
 # OneClip API 用户指南
 
-> 让 OneClip 与你的工作流无缝集成
+> 让 OneClip 与您的工作流无缝集成
 
-OneClip 提供了强大的 URL Scheme API，让你可以通过其他应用、脚本或快捷指令来控制 OneClip。无需编程基础，只需要简单的 URL 调用即可实现自动化。
+OneClip 提供了强大的 URL Scheme API，让您可以通过其他应用、脚本或快捷指令来控制 OneClip。无需编程基础，只需要简单的 URL 调用即可实现自动化。
 
 ---
 
@@ -10,7 +10,7 @@ OneClip 提供了强大的 URL Scheme API，让你可以通过其他应用、脚
 
 ### 什么是 URL Scheme？
 
-URL Scheme 就像是应用之间的"暗号"。通过特定格式的链接，你可以让一个应用去调用另一个应用的功能。
+URL Scheme 就像是应用之间的"暗号"。通过特定格式的链接，您可以让一个应用去调用另一个应用的功能。
 
 OneClip 的 URL Scheme 格式：
 ```
@@ -612,7 +612,7 @@ open "oneclip://show?search=$1"
 
 ### 获取项目 ID
 
-要使用需要 ID 的 API（如收藏、置顶、删除），你需要先获取项目 ID：
+要使用需要 ID 的 API（如收藏、置顶、删除），您需要先获取项目 ID：
 
 ```bash
 # 获取历史列表（包含 ID）
@@ -625,7 +625,7 @@ open "oneclip://list?limit=5"
 
 ### 组合使用
 
-你可以在脚本中组合多个 API：
+您可以在脚本中组合多个 API：
 
 ```bash
 #!/bin/bash
@@ -673,7 +673,7 @@ open "oneclip://search?query=$1"
 
 ### Q: 如何知道 API 是否执行成功？
 
-OneClip 会显示系统通知告知操作结果。你也可以查看日志：
+OneClip 会显示系统通知告知操作结果。您也可以查看日志：
 
 ```bash
 tail -f ~/Library/Application\ Support/OneClip/Logs/*.log
@@ -806,7 +806,7 @@ rm -f "$OUTPUT_FILE"
 
 ```bash
 # 使用 Python
-python3 -c "import urllib.parse; print(urllib.parse.quote('你好世界'))"
+python3 -c "import urllib.parse; print(urllib.parse.quote('您好世界'))"
 
 # 在 URL 中使用
 open "oneclip://search?query=%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C"
@@ -937,7 +937,7 @@ open "oneclip://ai?text=需要格式化的文本&feature=format"
 open "oneclip://translate?text=Hello World&to=zh"
 
 # 翻译为英文
-open "oneclip://translate?text=你好世界&to=en"
+open "oneclip://translate?text=您好世界&to=en"
 ```
 
 **支持的语言**：
@@ -953,4 +953,4 @@ open "oneclip://translate?text=你好世界&to=en"
 
 ---
 
-**让 OneClip 成为你工作流的一部分！** 
+**让 OneClip 成为您工作流的一部分！** 

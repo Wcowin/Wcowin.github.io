@@ -17,7 +17,7 @@ OneClip 是一款简单专业的 macOS 剪贴板管理工具。
 
 ### 最新版本
 
-- **[OneClip 1.5.7](updates/notes/OneClip-1.5.7-zh.html)** - 最新版本
+- **[OneClip 1.5.8](updates/notes/OneClip-1.5.8-zh.html)** - 最新版本
 
 ### 历史版本
 
