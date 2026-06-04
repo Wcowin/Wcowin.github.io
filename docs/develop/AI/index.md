@@ -14,9 +14,10 @@ hide_comment: true
 
     ---
 
-    从 Prompt 到 Agent，建立对 AI 智能体的核心认知
+    从 Prompt 到 Context，建立对 AI 智能体的核心认知
 
     - [Prompt 工程入门](/develop/AI/prompt/) — 提示词技巧与实战
+    - [上下文工程](/develop/AI/context-engineering/) — 从 Prompt Engineering 到 Context Engineering
     - [AI Agent 入门](/develop/AI/agent/) — 概念、组成与最小实战
     - [Agentic AI](/develop/AI/agentic-ai/) — 从 Chatbot 到可行动的智能体
 

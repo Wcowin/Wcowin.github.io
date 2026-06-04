@@ -211,6 +211,7 @@ nav = [
             "develop/AI/index.md",
             { "AI工具(2026最新)" = "develop/AItools.md" },
             { "Prompt 工程入门" = "develop/AI/prompt.md" },
+            { "上下文工程（Context Engineering）" = "develop/AI/context-engineering.md" },
             { "AI Agent 入门" = "develop/AI/agent.md" },
             { "Agentic AI：从 Chatbot 到可行动的智能体" = "develop/AI/agentic-ai.md" },
             { "具身智能：当 AI 拥有身体，物理世界迎来新纪元" = "develop/AI/embodied-ai.md" },
