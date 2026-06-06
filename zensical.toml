@@ -215,6 +215,7 @@ nav = [
             { "AI Agent 入门" = "develop/AI/agent.md" },
             { "Agentic AI：从 Chatbot 到可行动的智能体" = "develop/AI/agentic-ai.md" },
             { "具身智能：当 AI 拥有身体，物理世界迎来新纪元" = "develop/AI/embodied-ai.md" },
+            { "JEPA：联合嵌入预测架构——通往世界模型的非生成之路" = "develop/AI/jepa.md" },
             { "What is MCP" = "develop/AI/mcp.md" },
             { "A2A 协议（Agent-to-Agent）" = "develop/AI/a2a.md" },
             { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },

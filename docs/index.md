@@ -907,6 +907,7 @@ hr {
     - [AI Agent 入门](develop/AI/agent.md)、[深度推理与测试时计算](develop/AI/deep-reasoning.md)
     - [多智能体协作入门](develop/AI/multi-agent.md)、[Prompt 工程入门](develop/AI/prompt.md)
     - [A2A 协议](develop/AI/a2a.md)、[AI 安全与对抗](develop/AI/ai-security.md)
+    - [JEPA-通往世界模型的非生成之路](develop/AI/jepa.md)
 
 -   :material-account-box-outline:{ .lg .middle } __关于__
 
