@@ -26,13 +26,13 @@ tags:
 </div>
 
 <p align="center">
-  <a href="https://github.com/Wcowin/OneClip/releases"><img src="https://img.shields.io/github/v/release/Wcowin/OneClip?style=for-the-badge&color=3b82f6" alt="Release" /></a>
-  <a href="https://github.com/Wcowin/OneClip/releases"><img src="https://img.shields.io/github/downloads/Wcowin/OneClip/total?style=for-the-badge&color=22c55e" alt="Downloads" /></a>
+  <a href="https://github.com/One-Clip/OneClip/releases"><img src="https://img.shields.io/github/v/release/One-Clip/OneClip?style=for-the-badge&color=3b82f6" alt="Release" /></a>
+  <a href="https://github.com/One-Clip/OneClip/releases"><img src="https://img.shields.io/github/downloads/One-Clip/OneClip/total?style=for-the-badge&color=22c55e" alt="Downloads" /></a>
   <img src="https://img.shields.io/badge/Homebrew-Available-orange?style=for-the-badge&logo=homebrew&logoColor=white" alt="Homebrew" />
   <img src="https://img.shields.io/badge/macOS-12%2B-0f172a?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 12+" />
   <img src="https://img.shields.io/badge/Swift-5.9%2B-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 5.9+" />
   <img src="https://img.shields.io/badge/Privacy-Local%20Storage-green?style=for-the-badge" alt="Privacy Local Storage" />
-  <a href="https://github.com/Wcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
+  <a href="https://github.com/One-Clip/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
 </p>
 
 
@@ -358,7 +358,7 @@ flowchart TB
 
 ```bash
 # 克隆仓库
-git clone https://github.com/Wcowin/OneClip.git
+git clone https://github.com/One-Clip/OneClip.git
 cd OneClip/src
 
 # 构建
@@ -539,8 +539,8 @@ open dist/OneClip.app
 | 📧 **邮件** | [vip@oneclip.cloud](mailto:vip@oneclip.cloud) | 任何问题都欢迎发邮件 |
 | 👥 **QQ 群** | [1060157293](https://qm.qq.com/q/xiImGHVMcM) | 用户交流群 |
 
-<!-- | 🐛 **问题反馈** | [GitHub Issues](https://github.com/Wcowin/OneClip/issues) | Bug 报告和问题追踪 |
-| 💡 **功能建议** | [GitHub Discussions](https://github.com/Wcowin/OneClip/discussions) | 功能建议和讨论 | -->
+<!-- | 🐛 **问题反馈** | [GitHub Issues](https://github.com/One-Clip/OneClip/issues) | Bug 报告和问题追踪 |
+| 💡 **功能建议** | [GitHub Discussions](https://github.com/One-Clip/OneClip/discussions) | 功能建议和讨论 | -->
 
 ![IMG_8205.jpeg](https://s2.loli.net/2025/11/08/ogDwexfyWG9142Y.jpg)
 
@@ -568,7 +568,7 @@ open dist/OneClip.app
   
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/OneClip&type=date&legend=top-left)](https://www.star-history.com/#Wcowin/OneClip&type=date&legend=top-left)  
+[![Star History Chart](https://api.star-history.com/svg?repos=One-Clip/OneClip&type=date&legend=top-left)](https://www.star-history.com/#One-Clip/OneClip&type=date&legend=top-left)  
 
 ---
 

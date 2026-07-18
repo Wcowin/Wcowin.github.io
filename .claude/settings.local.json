@@ -15,7 +15,8 @@
       "WebFetch(domain:en.wikipedia.org)",
       "WebFetch(domain:www.quantamagazine.org)",
       "WebFetch(domain:math.mit.edu)",
-      "WebFetch(domain:www.ams.org)"
+      "WebFetch(domain:www.ams.org)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": []
   }

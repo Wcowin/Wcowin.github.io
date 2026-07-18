@@ -2,7 +2,7 @@
 
 ## 简介
 
-基于 PaddleOCR v5 的轻量级 OCR 识别方案，通过 ONNX Runtime 实现离线文字识别。支持中英文混排，无需 GPU，总大小仅 22MB。目前已经作为 [OneClip](https://github.com/Wcowin/OneClip) 的次选OCR 引擎。
+基于 PaddleOCR v5 的轻量级 OCR 识别方案，通过 ONNX Runtime 实现离线文字识别。支持中英文混排，无需 GPU，总大小仅 22MB。目前已经作为 [OneClip](https://github.com/One-Clip/OneClip) 的次选OCR 引擎。
 
 ## 一键下载
 

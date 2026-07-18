@@ -10,7 +10,7 @@ tags:
 <div class="github-repo-card-wrapper">
   <a
     class="github-repo-card"
-    data-repo="Wcowin/OneClip"
+    data-repo="One-Clip/OneClip"
     data-owner="Wcowin"
     data-name="OneClip"
     data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，提供主窗口、菜单栏操作、快速粘贴面板等多种使用方式， 支持多种格式内容管理、智能搜索和分类，让您的复制粘贴操作更加便捷高效。"
@@ -18,7 +18,7 @@ tags:
     data-stars="327"
     data-forks="15"
     data-license="MIT"
-    href="https://github.com/Wcowin/OneClip"
+    href="https://github.com/One-Clip/OneClip"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
@@ -63,13 +63,13 @@ tags:
 <div class="github-repo-card-wrapper">
   <a
     class="github-repo-card"
-    data-repo="Wcowin/Mkdocs-AI-Summary"
+    data-repo="Wcowin/Mkdocs-AI-Summary-Plus"
     data-description="MKdocs AI摘要"
     data-stars="5"
     data-forks="1"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    href="https://github.com/Wcowin/Mkdocs-AI-Summary"
+    href="https://github.com/Wcowin/Mkdocs-AI-Summary-Plus"
     target="_blank"
     rel="noopener noreferrer"
   ></a>

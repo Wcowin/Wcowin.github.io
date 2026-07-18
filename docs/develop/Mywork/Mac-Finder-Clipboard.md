@@ -14,7 +14,7 @@ tags:
 <img src="https://img.shields.io/github/v/release/Wcowin/Mac-Finder-Clipboard?style=for-the-badge&color=3b82f6" alt="Release" />
 <img src="https://img.shields.io/github/downloads/Wcowin/Mac-Finder-Clipboard/total?style=for-the-badge&color=3b82f6" alt="Downloads" />
 <img src="https://img.shields.io/badge/Swift-5.9%2B-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 5.9+" />
-<a href="https://github.com/Wcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
+<a href="https://github.com/One-Clip/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
 
 <p>为 macOS Finder 提供直观的剪切粘贴体验</p>
 
@@ -178,7 +178,7 @@ Mac-Finder-Clipboard/
 
 ---
 
-PS：打个广告，如果你需要 Mac 的粘贴板管理工具，可以试试 [OneClip](https://github.com/Wcowin/OneClip)。OneClip 已经内置了 FinderClip 的功能，更加全面，欢迎体验！
+PS：打个广告，如果你需要 Mac 的粘贴板管理工具，可以试试 [OneClip](https://github.com/One-Clip/OneClip)。OneClip 已经内置了 FinderClip 的功能，更加全面，欢迎体验！
 
 ![screenshot_1.5x_postspark_2025-12-08_18-46-39.png](https://i.imgant.com/v2/RKyVhgF.png)  
 <!-- ![iShot 2025 12 02 20.20.57](https://image.66ghz.com/uploads/6936a835e8747_1765189685.jpeg) -->
