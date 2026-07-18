@@ -11,10 +11,10 @@ tags:
 </div>
 
 <div align="center">
-<img src="https://img.shields.io/github/v/release/Wkwcowin/Mac-Finder-Clipboard?style=for-the-badge&color=3b82f6" alt="Release" />
-<img src="https://img.shields.io/github/downloads/Wkwcowin/Mac-Finder-Clipboard/total?style=for-the-badge&color=3b82f6" alt="Downloads" />
+<img src="https://img.shields.io/github/v/release/Wcowin/Mac-Finder-Clipboard?style=for-the-badge&color=3b82f6" alt="Release" />
+<img src="https://img.shields.io/github/downloads/Wcowin/Mac-Finder-Clipboard/total?style=for-the-badge&color=3b82f6" alt="Downloads" />
 <img src="https://img.shields.io/badge/Swift-5.9%2B-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 5.9+" />
-<a href="https://github.com/Wkwcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
+<a href="https://github.com/Wcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
 
 <p>为 macOS Finder 提供直观的剪切粘贴体验</p>
 
@@ -26,7 +26,7 @@ tags:
 
 FinderClip 是一个轻量级的 macOS 菜单栏应用，让你可以在 Finder 中使用熟悉的 **⌘X** 和 **⌘V** 快捷键来剪切和移动文件，就像在 Windows 中一样自然。
 
-[前往GitHub仓库下载 :fontawesome-solid-download:](https://github.com/Wkwcowin/Mac-Finder-Clipboard/releases){ .md-button }
+[前往GitHub仓库下载 :fontawesome-solid-download:](https://github.com/Wcowin/Mac-Finder-Clipboard/releases){ .md-button }
 
 ## 🎯 功能特点
 
@@ -64,7 +64,7 @@ FinderClip 是一个轻量级的 macOS 菜单栏应用，让你可以在 Finder 
 
 **方式一：使用 Xcode（推荐）**
 ```bash
-git clone https://github.com/Wkwcowin/Mac-Finder-Clipboard.git
+git clone https://github.com/Wcowin/Mac-Finder-Clipboard.git
 cd Mac-Finder-Clipboard
 open FinderClip.xcodeproj
 # 在 Xcode 中按 ⌘R 运行
@@ -72,7 +72,7 @@ open FinderClip.xcodeproj
 
 **方式二：命令行构建**
 ```bash
-git clone https://github.com/Wkwcowin/Mac-Finder-Clipboard.git
+git clone https://github.com/Wcowin/Mac-Finder-Clipboard.git
 cd Mac-Finder-Clipboard
 
 # 构建并运行
@@ -157,7 +157,7 @@ Mac-Finder-Clipboard/
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 打开一个 Pull Request
 
-也欢迎提交 [Issue](https://github.com/Wkwcowin/Mac-Finder-Clipboard/issues) 报告 Bug 或建议新功能！
+也欢迎提交 [Issue](https://github.com/Wcowin/Mac-Finder-Clipboard/issues) 报告 Bug 或建议新功能！
 
 ## 📄 许可证
 
@@ -165,7 +165,7 @@ Mac-Finder-Clipboard/
 
 ## 👨‍💻 作者
 
-**Wkwcowin** - [GitHub](https://github.com/Wkwcowin)
+**Wcowin** - [GitHub](https://github.com/Wcowin)
 
 ## ⭐ Star History
 
@@ -178,7 +178,7 @@ Mac-Finder-Clipboard/
 
 ---
 
-PS：打个广告，如果你需要 Mac 的粘贴板管理工具，可以试试 [OneClip](https://github.com/Wkwcowin/OneClip)。OneClip 已经内置了 FinderClip 的功能，更加全面，欢迎体验！
+PS：打个广告，如果你需要 Mac 的粘贴板管理工具，可以试试 [OneClip](https://github.com/Wcowin/OneClip)。OneClip 已经内置了 FinderClip 的功能，更加全面，欢迎体验！
 
 ![screenshot_1.5x_postspark_2025-12-08_18-46-39.png](https://i.imgant.com/v2/RKyVhgF.png)  
 <!-- ![iShot 2025 12 02 20.20.57](https://image.66ghz.com/uploads/6936a835e8747_1765189685.jpeg) -->

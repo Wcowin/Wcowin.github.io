@@ -6,7 +6,16 @@
       "Bash(python3 scripts/generate_translate_config.py --env production --profile high_performance)",
       "mcp__ide__getDiagnostics",
       "Bash(dig *)",
-      "WebSearch"
+      "WebSearch",
+      "mcp__web-search-prime__web_search_prime",
+      "mcp__fetch__fetch",
+      "mcp__web-reader__webReader",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:terrytao.wordpress.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.quantamagazine.org)",
+      "WebFetch(domain:math.mit.edu)",
+      "WebFetch(domain:www.ams.org)"
     ],
     "deny": []
   }

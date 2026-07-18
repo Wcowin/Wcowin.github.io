@@ -36,7 +36,7 @@ status: new
 假设你已经有了一个基本可运行的 Zensical 项目（`zensical.toml + docs/` 目录结构）。
 如果需要完整参考实现的代码，可以直接查看我的开源仓库，你找到直接下载就行：
 
-- **仓库地址**：[`Wcowin/Wcowin.github.io`](https://github.com/Wkwcowin/Wcowin.github.io)
+- **仓库地址**：[`Wcowin/Wcowin.github.io`](https://github.com/Wcowin/Wcowin.github.io)
 - 与 Microsoft 翻译相关的核心文件：
   - `docs/javascripts/translate.js`
   - `docs/javascripts/translate-edge-init.js`
@@ -227,5 +227,5 @@ Microsoft 翻译服务适合追求速度和响应性的场景，它在客户端�
 - `docs/javascripts/translate.js`
 - `docs/javascripts/translate-edge-init.js`
 
-源码始终以仓库为准：[`Wkwcowin/WKwcowin.github.io`](https://github.com/Wkwcowin/WKwcowin.github.io)。
+源码始终以仓库为准：[`Wcowin/WKwcowin.github.io`](https://github.com/Wcowin/WKwcowin.github.io)。
 欢迎在 Issues 或评论里交流你的使用体验和改进想法。

@@ -323,7 +323,8 @@ nav = [
             { "3" = "relax/wkwMath/3.md" },
             { "4" = "relax/wkwMath/4.md" },
             { "5" = "relax/wkwMath/5.md" },
-            { "6" = "relax/wkwMath/6.md" }
+            { "6" = "relax/wkwMath/6.md" },
+            { "王虹与挂谷猜想" = "relax/wkwMath/王虹与挂谷猜想.md" }
         ]},
         { "观影" = [
             { "推荐的番剧" = "relax/Movie/tuijianfanju.md" },

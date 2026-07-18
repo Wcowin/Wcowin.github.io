@@ -8,9 +8,9 @@ tags:
 
 # 基于Mkdocs/Zensical主题的站点
 
-<!--!!! note "提示"
+!!! note "提示"
     基于 Mkdocs、Zensical 的主题与站点现在汇总在：<https://gist.github.com/Wcowin/d36a31b86aec04c203fec1562bb2391b>         
-    支持评论提交，欢迎补充！-->
+    支持评论提交，欢迎补充！
 
 鉴于 MkDocs /Zensical 的诸多优点，让它被很多知名开源项目选中，用于搭建和项目相关的文档网站。比如 Python 里知名的 Web 圈里的 [django-rest-framework](https://www.django-rest-framework.org/)、[FastAPI](https://fastapi.tiangolo.com/) 以及基于 Go 编写的云网关代理服务器 [traefik](https://github.com/traefik/traefik) 等项目的官方文档站点，都是通过 MkDocs /Zensical 进行搭建。
 
@@ -59,3 +59,4 @@ tags:
 * [Suffine Hub](https://sufine.top/)  (推荐)
 * [Curriculum Vitae](https://joapuiib.github.io/curs-git/)
 * [Kinlau's Blog](https://kinlauu.github.io/Kinlauu/)
+* [liwanr's Blog](https://liwanr.com/)

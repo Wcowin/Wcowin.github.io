@@ -727,7 +727,7 @@ t.parentNode.insertBefore(e,t)}})();
 -   :material-tooltip-edit:{ .lg .middle } __关于__
 
     ---
-    - [效率](https://github.com/Wkwcowin/WKwcowin.github.io)
+    - [效率](https://github.com/Wcowin/WKwcowin.github.io)
 </div>
 
 <div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
@@ -736,7 +736,7 @@ t.parentNode.insertBefore(e,t)}})();
 
     ---
 
-    :material-eye-check:{ .lg .middle } [Wcowin](https://github.com/Wkwcowin/WKwcowin.github.io) - 技术博客
+    :material-eye-check:{ .lg .middle } [Wcowin](https://github.com/Wcowin/WKwcowin.github.io) - 技术博客
 
 <div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
 
@@ -747,7 +747,7 @@ t.parentNode.insertBefore(e,t)}})();
 
     更新中...
 
-    [→ 所有版本](https://github.com/Wkwcowin/WKwcowin.github.io)
+    [→ 所有版本](https://github.com/Wcowin/WKwcowin.github.io)
 
 
 -   :material-flag-variant-minus:{ .lg .middle } __Wcowin__
@@ -756,7 +756,7 @@ t.parentNode.insertBefore(e,t)}})();
 
     更新中...
 
-    [→ 了解更多](https://github.com/Wkwcowin/WKwcowin.github.io)
+    [→ 了解更多](https://github.com/Wcowin/WKwcowin.github.io)
 
 </div>
 

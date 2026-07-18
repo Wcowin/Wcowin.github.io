@@ -26,13 +26,13 @@ tags:
 </div>
 
 <p align="center">
-  <a href="https://github.com/Wkwcowin/OneClip/releases"><img src="https://img.shields.io/github/v/release/Wkwcowin/OneClip?style=for-the-badge&color=3b82f6" alt="Release" /></a>
-  <a href="https://github.com/Wkwcowin/OneClip/releases"><img src="https://img.shields.io/github/downloads/Wkwcowin/OneClip/total?style=for-the-badge&color=22c55e" alt="Downloads" /></a>
+  <a href="https://github.com/Wcowin/OneClip/releases"><img src="https://img.shields.io/github/v/release/Wcowin/OneClip?style=for-the-badge&color=3b82f6" alt="Release" /></a>
+  <a href="https://github.com/Wcowin/OneClip/releases"><img src="https://img.shields.io/github/downloads/Wcowin/OneClip/total?style=for-the-badge&color=22c55e" alt="Downloads" /></a>
   <img src="https://img.shields.io/badge/Homebrew-Available-orange?style=for-the-badge&logo=homebrew&logoColor=white" alt="Homebrew" />
   <img src="https://img.shields.io/badge/macOS-12%2B-0f172a?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 12+" />
   <img src="https://img.shields.io/badge/Swift-5.9%2B-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 5.9+" />
   <img src="https://img.shields.io/badge/Privacy-Local%20Storage-green?style=for-the-badge" alt="Privacy Local Storage" />
-  <a href="https://github.com/Wkwcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
+  <a href="https://github.com/Wcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
 </p>
 
 
@@ -358,7 +358,7 @@ flowchart TB
 
 ```bash
 # 克隆仓库
-git clone https://github.com/Wkwcowin/OneClip.git
+git clone https://github.com/Wcowin/OneClip.git
 cd OneClip/src
 
 # 构建
@@ -523,7 +523,7 @@ open dist/OneClip.app
   <h3>Wcowin</h3>
   <p>
     <a href="https://wcowin.work/blog/Mac/sunhuai/"> 博客</a> |
-    <a href="https://github.com/Wkwcowin"> GitHub</a> |
+    <a href="https://github.com/Wcowin"> GitHub</a> |
     <a href="mailto:vip@oneclip.cloud"> 邮箱</a>
   </p>
 </div>
@@ -568,13 +568,13 @@ open dist/OneClip.app
   
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wkwcowin/OneClip&type=date&legend=top-left)](https://www.star-history.com/#Wkwcowin/OneClip&type=date&legend=top-left)  
+[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/OneClip&type=date&legend=top-left)](https://www.star-history.com/#Wcowin/OneClip&type=date&legend=top-left)  
 
 ---
 
 <div align="center">
   <p><strong>OneClip —— 简单专业的 macOS 剪贴板管理工具</strong></p>
   <p>让复杂的事情变简单，让简单的事情变优雅</p>
-  <p>Made with ❤️ by <a href="https://github.com/Wkwcowin">Wcowin</a></p>
+  <p>Made with ❤️ by <a href="https://github.com/Wcowin">Wcowin</a></p>
   <p>© 2026 Wcowin. All rights reserved.</p>
 </div>
