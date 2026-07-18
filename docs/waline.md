@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script> -->
 
-<!-- Giscus 评论系统开始
+<!-- Giscus 评论系统开始 -->
 <script>
 // 根据网站当前主题设置 Giscus 初始主题
 (function() {
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function() {
   bodyObserver.observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
 });
 </script>
-Giscus 评论系统结束 -->
+<!-- Giscus 评论系统结束 -->
 
 <!-- tw开始 -->
 
@@ -410,7 +410,7 @@ Giscus 评论系统结束 -->
 
 
 <!-- 动态加载 Giscus，根据网站主题设置初始主题 -->
-<script>
+<!-- <script>
 (function() {
   var scheme = document.body.getAttribute("data-md-color-scheme");
   var theme = scheme === "slate" ? "dark" : "light";
@@ -432,10 +432,10 @@ Giscus 评论系统结束 -->
   giscusScript.async = true;
   document.currentScript.parentNode.insertBefore(giscusScript, document.currentScript.nextSibling);
 })();
-</script>
+</script> -->
 
 <!-- 同步 Giscus 主题与网站主题 -->
-<script>
+<!-- <script>
 function syncGiscusTheme() {
   var scheme = document.body.getAttribute("data-md-color-scheme");
   var theme = scheme === "slate" ? "dark" : "light";
@@ -457,4 +457,4 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   bodyObserver.observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
 });
-</script>
+</script> -->

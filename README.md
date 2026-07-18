@@ -49,9 +49,9 @@
 
 <a href="https://www.star-history.com/?repos=Wcowin%2FWcowin.github.io&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Wcowin/Wcowin.github.io&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Wcowin/Wcowin.github.io&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Wcowin/Wcowin.github.io&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Wcowin/Wcowin.github.io&type=date&theme=dark&legend=top-left&sealed_token=zuxz4PmGWmZvsbWWNt0O9PWDpRv1-TwNtXSltFhRZD_0wqlcQOdG_ltZrk0aHCl10-wAnuX7AcwT5bXZFSN3MNRDaF60TF9BGp5E1HSDGYNCgh2eEO-aeA" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Wcowin/Wcowin.github.io&type=date&legend=top-left&sealed_token=zuxz4PmGWmZvsbWWNt0O9PWDpRv1-TwNtXSltFhRZD_0wqlcQOdG_ltZrk0aHCl10-wAnuX7AcwT5bXZFSN3MNRDaF60TF9BGp5E1HSDGYNCgh2eEO-aeA" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Wcowin/Wcowin.github.io&type=date&legend=top-left&sealed_token=zuxz4PmGWmZvsbWWNt0O9PWDpRv1-TwNtXSltFhRZD_0wqlcQOdG_ltZrk0aHCl10-wAnuX7AcwT5bXZFSN3MNRDaF60TF9BGp5E1HSDGYNCgh2eEO-aeA" />
  </picture>
 </a>
 <!-- ![Alt](https://repobeats.axiom.co/api/embed/06de0a1fb9c03714021eaa6ddfb741a847468334.svg "Repobeats analytics image") -->

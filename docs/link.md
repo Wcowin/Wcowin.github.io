@@ -1349,7 +1349,17 @@ comments: false
         </div>
       </div>
     </div>
-
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://aifiee-blog.oss-cn-beijing.aliyuncs.com/blog/images/1782719333889_1414.jpg" />
+      <div class="card-header">
+        <div>
+          <a href="https://www.aifiee.cn" target="_blank">Fiee's Blog</a>
+        </div>
+        <div class="info">
+          长风破浪会有时，直挂云帆济沧海
+        </div>
+      </div>
+    </div>
 
 
   </div>
@@ -2249,7 +2259,7 @@ async>
 })();
 </script>
 
-<!--
+
 <script>
 (function() {
   var scheme = document.body.getAttribute("data-md-color-scheme");
@@ -2293,11 +2303,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   bodyObserver.observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
 });
- </script> -->
+ </script>
 
 
 <!-- 动态加载 Giscus，根据网站主题设置初始主题 -->
-<script>
+<!-- <script>
 (function() {
   var scheme = document.body.getAttribute("data-md-color-scheme");
   var theme = scheme === "slate" ? "dark" : "light";
@@ -2319,7 +2329,7 @@ document.addEventListener("DOMContentLoaded", function() {
   giscusScript.async = true;
   document.currentScript.parentNode.insertBefore(giscusScript, document.currentScript.nextSibling);
 })();
-</script>
+</script> -->
 
 <!-- 同步 Giscus 主题与网站主题 -->
 <script>
