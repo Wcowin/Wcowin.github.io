@@ -54,7 +54,7 @@
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Wcowin/Wcowin.github.io&type=date&legend=top-left&sealed_token=zuxz4PmGWmZvsbWWNt0O9PWDpRv1-TwNtXSltFhRZD_0wqlcQOdG_ltZrk0aHCl10-wAnuX7AcwT5bXZFSN3MNRDaF60TF9BGp5E1HSDGYNCgh2eEO-aeA" />
  </picture>
 </a>
-<!-- ![Alt](https://repobeats.axiom.co/api/embed/06de0a1fb9c03714021eaa6ddfb741a847468334.svg "Repobeats analytics image") -->
+
 <!-- [![Stargazers over time](https://starchart.cc/Wcowin/Wcowin.github.io.svg?variant=adaptive)](https://starchart.cc/Wcowin/Wcowin.github.io) -->
 
 <!-- ## Contributors
