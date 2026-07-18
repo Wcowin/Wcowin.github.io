@@ -16,7 +16,7 @@ use_directory_urls = true                        # 使用目录形式的URL (例
 # validation = false
 
 # ===== 仓库配置 =====
-repo_url = "https://github.com/Wkwcowin/WKwcowin.github.io"  # 右上角点击跳转的链接
+repo_url = "https://github.com/Wcowin/WKwcowin.github.io"  # 右上角点击跳转的链接
 repo_name = "Wcowin"                           # 右上角的名字
 edit_uri = "edit/main/docs"                              # 编辑按钮跳转的链接
 
