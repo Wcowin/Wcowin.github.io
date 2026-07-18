@@ -1219,7 +1219,8 @@ custom_checkbox = true
 
 ---
 
-**参考资料**：
+**参考资料**：  
+
 - [Zensical 官方文档 - Basics](https://zensical.org/docs/setup/basics/)
 - [TOML 规范](https://toml.io/)
 - [Material for MkDocs 配置](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)

@@ -227,9 +227,9 @@ root.mainloop()
 
 ## Github项目地址
 
-<https://github.com/Wcowin/XunFei-Face-compare>
+<https://github.com/Wkwcowin/XunFei-Face-compare>
 
-打包好的地址：<https://github.com/Wcowin/XunFei-Face-compare/releases/download/exe/test4.exe.zip>
+打包好的地址：<https://github.com/Wkwcowin/XunFei-Face-compare/releases/download/exe/test4.exe.zip>
 
 ## 视频
 

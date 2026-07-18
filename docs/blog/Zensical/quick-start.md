@@ -186,7 +186,7 @@ tree -a
     
     ```bash
     # 克隆模板项目
-    git clone https://github.com/Wcowin/Zensical-Chinese-Tutorial.git my-site
+    git clone https://github.com/Wkwcowin/Zensical-Chinese-Tutorial.git my-site
     cd my-site
     
     # （推荐）创建并激活虚拟环境
@@ -486,18 +486,11 @@ zensical --help
 zensical --version
 ```
 
-### 推荐阅读
-
-- 📖 [Zensical 博客系统完全指南](../tutorials/blog-tutorial.md) - （可选）了解博客相关能力
-- ⚙️ [项目配置详解](../tutorials/configuration.md) - 完整的配置选项说明
-- 🎨 [主题定制指南](../tutorials/theme-customization.md) - 自定义网站外观
-- 🚀 [GitHub Pages 部署](../blog/deployment/github-pages.md) - 将网站部署到线上
-
 ### 遇到问题？
 
-- 📋 查看 [常见问题解答](../faq.md)
+- 📋 查看 [常见问题解答](https://wcowin.work/Zensical-Chinese-Tutorial/faq/)
 - 📚 访问 [Zensical 官方文档](https://zensical.org/docs/)
-- 💬 在 [GitHub Issues](https://github.com/Wcowin/Zensical-Chinese-Tutorial/issues) 提问
+- 💬 在 [GitHub Issues](https://github.com/Wkwcowin/Zensical-Chinese-Tutorial/issues) 提问
 
 ---
 

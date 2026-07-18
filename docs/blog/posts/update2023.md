@@ -113,7 +113,7 @@ ai_summary: false  # 禁用AI摘要
 
 ## </p><h1 id="01" name="01"><strong>2023-10-14</strong></h1><p>
 
-* 正式建立[Mkdocs-Wcowin主题](https://github.com/Wcowin/Mkdocs-Wcowin){target="_blank"}
+* 正式建立[Mkdocs-Wcowin主题](https://github.com/Wkwcowin/Mkdocs-Wcowin){target="_blank"}
 * 优化网页渲染速度
 ## </p><h1 id="01" name="01"><strong>2023-10-12</strong></h1><p>
 
@@ -145,4 +145,3 @@ ai_summary: false  # 禁用AI摘要
 * 支持Latex
 * 引入个性化标签，[Markdown扩展](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#inlinehilite)
 * 新增网站搜索功能
-

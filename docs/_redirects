@@ -1,0 +1,12 @@
+# MkDocs 教程重定向（200 代理，URL 保持不变）
+/Mkdocs-Wcowin https://mkdocs-wcowin.netlify.app/ 200
+/Mkdocs-Wcowin/ https://mkdocs-wcowin.netlify.app/ 200
+/Mkdocs-Wcowin/* https://mkdocs-wcowin.netlify.app/:splat 200
+
+# Zensical 中文教程重定向（200 代理，URL 保持不变）
+/Zensical-Chinese-Tutorial https://zensical-chinese-tutorial.netlify.app/ 200
+/Zensical-Chinese-Tutorial/ https://zensical-chinese-tutorial.netlify.app/ 200
+/Zensical-Chinese-Tutorial/* https://zensical-chinese-tutorial.netlify.app/:splat 200
+
+# 将 .html 后缀重定向到目录格式（解决 Google 索引重定向问题）
+/*.html /:splat/ 301

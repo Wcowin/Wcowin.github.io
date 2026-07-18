@@ -3,7 +3,6 @@ title: OneClip 一款简单专业的macOS 剪贴板管理工具
 description: OneClip 是一款专为 macOS 打造的专业级剪贴板管理工具。采用 100% SwiftUI 原生技术，实现更顺滑的动画、更自然的系统融合与更低的资源占用。
 status: new
 tags:
-  - 开发
   - OneClip
 ---
 
@@ -27,13 +26,13 @@ tags:
 </div>
 
 <p align="center">
-  <a href="https://github.com/Wcowin/OneClip/releases"><img src="https://img.shields.io/github/v/release/Wcowin/OneClip?style=for-the-badge&color=3b82f6" alt="Release" /></a>
-  <a href="https://github.com/Wcowin/OneClip/releases"><img src="https://img.shields.io/github/downloads/Wcowin/OneClip/total?style=for-the-badge&color=22c55e" alt="Downloads" /></a>
+  <a href="https://github.com/Wkwcowin/OneClip/releases"><img src="https://img.shields.io/github/v/release/Wkwcowin/OneClip?style=for-the-badge&color=3b82f6" alt="Release" /></a>
+  <a href="https://github.com/Wkwcowin/OneClip/releases"><img src="https://img.shields.io/github/downloads/Wkwcowin/OneClip/total?style=for-the-badge&color=22c55e" alt="Downloads" /></a>
   <img src="https://img.shields.io/badge/Homebrew-Available-orange?style=for-the-badge&logo=homebrew&logoColor=white" alt="Homebrew" />
   <img src="https://img.shields.io/badge/macOS-12%2B-0f172a?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 12+" />
   <img src="https://img.shields.io/badge/Swift-5.9%2B-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 5.9+" />
   <img src="https://img.shields.io/badge/Privacy-Local%20Storage-green?style=for-the-badge" alt="Privacy Local Storage" />
-  <a href="https://github.com/Wcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
+  <a href="https://github.com/Wkwcowin/OneClip/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" /></a>
 </p>
 
 
@@ -106,7 +105,7 @@ OneClip 是一款专为 macOS 打造的**专业级剪贴板管理工具**。采�
 
 **方式一：GitHub Releases（推荐）**
 
-1. 前往 [Releases 页面](https://github.com/Wcowin/OneClip/releases) 下载最新版本
+1. 前往 [Releases 页面](https://github.com/One-Clip/OneClip/releases) 下载最新版本
 2. 将 `OneClip.app` 拖入 `Applications`（应用程序）文件夹
 3. 首次打开若提示"来自未知开发者"，请按以下步骤处理：
 
@@ -156,15 +155,17 @@ sudo xattr -rd com.apple.quarantine /Applications/OneClip.app
 
 - 使用 [macOS 小助手](https://pan.quark.cn/s/f2302b6789b0) 一键处理
 
-> 💡 **仍有问题？**
-> - 详细教程：https://mp.weixin.qq.com/s/qjSx09tqNq1KfVug2WtQFg
+> 💡 **仍有问题？** 
+
+> - 详细教程：https://mp.weixin.qq.com/s/qjSx09tqNq1KfVug2WtQFg  
 > - 联系作者：vip@oneclip.cloud
 
 
 
 ## 🎬 功能演示
 
-> 📹 **视频教程**
+> 📹 **视频教程**  
+
 > - B 站：https://space.bilibili.com/1407028951/lists/5012369?type=series
 
 ### 核心功能展示
@@ -357,7 +358,7 @@ flowchart TB
 
 ```bash
 # 克隆仓库
-git clone https://github.com/Wcowin/OneClip.git
+git clone https://github.com/Wkwcowin/OneClip.git
 cd OneClip/src
 
 # 构建
@@ -513,7 +514,7 @@ open dist/OneClip.app
 - [ ] 团队协作功能
 - [ ] iOS/iPadOS/Windows客户端
 
-💡 有功能建议？欢迎在 [GitHub Discussions](https://github.com/Wcowin/OneClip/discussions) 提出！
+💡 有功能建议？欢迎在 [GitHub Discussions](https://github.com/One-Clip/OneClip/issues) 提出！
 
 ## 关于作者
 
@@ -522,7 +523,7 @@ open dist/OneClip.app
   <h3>Wcowin</h3>
   <p>
     <a href="https://wcowin.work/blog/Mac/sunhuai/"> 博客</a> |
-    <a href="https://github.com/Wcowin"> GitHub</a> |
+    <a href="https://github.com/Wkwcowin"> GitHub</a> |
     <a href="mailto:vip@oneclip.cloud"> 邮箱</a>
   </p>
 </div>
@@ -567,13 +568,13 @@ open dist/OneClip.app
   
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/OneClip&type=date&legend=top-left)](https://www.star-history.com/#Wcowin/OneClip&type=date&legend=top-left)  
+[![Star History Chart](https://api.star-history.com/svg?repos=Wkwcowin/OneClip&type=date&legend=top-left)](https://www.star-history.com/#Wkwcowin/OneClip&type=date&legend=top-left)  
 
 ---
 
 <div align="center">
   <p><strong>OneClip —— 简单专业的 macOS 剪贴板管理工具</strong></p>
   <p>让复杂的事情变简单，让简单的事情变优雅</p>
-  <p>Made with ❤️ by <a href="https://github.com/Wcowin">Wcowin</a></p>
+  <p>Made with ❤️ by <a href="https://github.com/Wkwcowin">Wcowin</a></p>
   <p>© 2026 Wcowin. All rights reserved.</p>
 </div>

@@ -145,7 +145,8 @@ Vercel 部署 Zensical 博客非常简单，只需要两个配置文件即可。
 
 ---
 
-**相关链接**：
+**相关链接**：  
+
 - [Vercel 官方文档](https://vercel.com/docs)
 - [Zensical 官方文档](https://zensical.org)
 - [GitHub Pages 部署指南](github-pages.md)

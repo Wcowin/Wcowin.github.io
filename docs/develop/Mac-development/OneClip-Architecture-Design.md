@@ -10,7 +10,7 @@ tags:
 
 ## 概述
 
-[OneClip](https://github.com/Wcowin/OneClip) 是一款采用 **100% SwiftUI** 原生技术开发的 macOS 剪贴板管理工具。本文深入解析其系统架构、核心模块设计、数据流转机制和性能优化策略，为开发者提供真实可靠的技术参考。
+[OneClip](https://github.com/Wkwcowin/OneClip) 是一款采用 **100% SwiftUI** 原生技术开发的 macOS 剪贴板管理工具。本文深入解析其系统架构、核心模块设计、数据流转机制和性能优化策略，为开发者提供真实可靠的技术参考。
 
 ## 系统架构
 

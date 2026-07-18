@@ -2,7 +2,7 @@
 
 ## 简介
 
-基于 PaddleOCR v5 的轻量级 OCR 识别方案，通过 ONNX Runtime 实现离线文字识别。支持中英文混排，无需 GPU，总大小仅 22MB。目前已经作为 [OneClip](https://github.com/Wcowin/OneClip) 的次选OCR 引擎。
+基于 PaddleOCR v5 的轻量级 OCR 识别方案，通过 ONNX Runtime 实现离线文字识别。支持中英文混排，无需 GPU，总大小仅 22MB。目前已经作为 [OneClip](https://github.com/Wkwcowin/OneClip) 的次选OCR 引擎。
 
 ## 一键下载
 
@@ -14,7 +14,7 @@
 
     一键下载 PP-OCRv5 模型包（22MB）
 
-    [:material-github: GitHub 下载](https://github.com/Wcowin/homebrew-oneclip/releases/download/1.0.0/oneclip_ocr_models_v5.zip){ .md-button .md-button--primary }
+    [:material-github: 下载](https://gitee.com/Wcowin/homebrew-oneclip/releases/tag/1.0.0){ .md-button .md-button--primary }
 
 </div>
 
@@ -185,6 +185,6 @@ Apache 2.0 (遵循 PaddleOCR 开源协议)
 - [RapidOCR 文档](https://rapidai.github.io/RapidOCRDocs/)
 - [ONNX Runtime](https://onnxruntime.ai/)
 
-**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)  
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wkwcowin)  
 
 未经允许不得转载😀

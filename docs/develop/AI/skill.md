@@ -22,7 +22,7 @@ tags:
 
 ## 什么是 Skill
 
-**Skill（技能）** 是一个可移植、可版本控制的「能力包」，用来教 Agent 如何完成某一类具体任务。按照当前官方表述，Agent Skills 是一个由 Anthropic 维护、并向社区开放贡献的开放格式；不同 IDE、CLI 和 Agent 产品可以按各自方式接入它。
+**Skill（技能）** 是一个可移植、可版本控制的「能力包」，用来教 Agent 如何完成某一类具体任务。按照当前官方表述，Agent Skills 是一个向社区开放贡献的开放格式；不同 IDE、CLI 和 Agent 产品可以按各自方式接入它。
 
 一个 Skill 可以包含：
 
@@ -538,4 +538,4 @@ Cursor 提供了多种自定义方式，容易混淆。这里是快速决策指�
 
 ---
 
-**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wkwcowin)

@@ -2,6 +2,596 @@
 title: 测试组件
 ---
 
+## 头像组悬停效果 (Avatar Group Hover)
+
+<style>
+/* ============================================
+   Transitions.dev — Avatar group hover
+   头像组悬停效果
+   ============================================ */
+
+:root {
+  --avatar-lift: -8px;
+  --avatar-dur: 320ms;
+  --avatar-scale: 1.08;
+  --avatar-falloff: 0.45;
+  --avatar-ease-in: cubic-bezier(0.22, 1, 0.36, 1);
+  --avatar-ease-out: cubic-bezier(0.34, 3.85, 0.64, 1);
+}
+
+/* 头像组容器 */
+.t-avatar-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: -8px;
+  padding: 2rem;
+}
+
+/* 头像项 */
+.t-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  overflow: hidden;
+  margin-left: -12px;
+  transform-origin: center;
+  transform:
+    translateY(var(--shift, 0px))
+    scale(var(--scale-active, 1));
+  transition: transform var(--avatar-dur) var(--avatar-ease-in);
+  will-change: transform;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.t-avatar:first-child {
+  margin-left: 0;
+}
+
+.t-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 深色模式 */
+[data-md-color-scheme="slate"] .t-avatar {
+  border-color: #2d333b;
+}
+
+/* 减少动画偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .t-avatar {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+</style>
+
+<div class="t-avatar-group" id="avatarGroup">
+  <div class="t-avatar">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar 1">
+  </div>
+  <div class="t-avatar">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka" alt="Avatar 2">
+  </div>
+  <div class="t-avatar">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Zack" alt="Avatar 3">
+  </div>
+  <div class="t-avatar">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Bella" alt="Avatar 4">
+  </div>
+  <div class="t-avatar">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Leo" alt="Avatar 5">
+  </div>
+  <div class="t-avatar">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Milo" alt="Avatar 6">
+  </div>
+  <div class="t-avatar">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Nina" alt="Avatar 7">
+  </div>
+  <div class="t-avatar">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Oscar" alt="Avatar 8">
+  </div>
+</div>
+
+<script>
+(function() {
+  function initAvatarGroup() {
+    var group = document.getElementById('avatarGroup');
+    if (!group) return;
+    
+    var avatars = group.querySelectorAll('.t-avatar');
+    var lift = -8;
+    var scale = 1.08;
+    var falloff = 0.45;
+    
+    group.addEventListener('mouseleave', function() {
+      avatars.forEach(function(avatar) {
+        avatar.style.transitionTimingFunction = 'cubic-bezier(0.34, 3.85, 0.64, 1)';
+        avatar.style.setProperty('--shift', '0px');
+        avatar.style.setProperty('--scale-active', '1');
+      });
+    });
+    
+    avatars.forEach(function(avatar, index) {
+      avatar.addEventListener('mouseenter', function() {
+        avatars.forEach(function(el, i) {
+          var distance = Math.abs(i - index);
+          var shift = lift * Math.pow(falloff, distance);
+          var scaleValue = i === index ? scale : 1;
+          
+          el.style.transitionTimingFunction = 'cubic-bezier(0.22, 1, 0.36, 1)';
+          el.style.setProperty('--shift', shift.toFixed(3) + 'px');
+          el.style.setProperty('--scale-active', scaleValue);
+        });
+      });
+    });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAvatarGroup);
+  } else {
+    initAvatarGroup();
+  }
+})();
+</script>
+
+## 3D 卡片倾斜效果
+
+<style>
+/* ============================================
+   Transitions.dev — Card hover tilt
+   3D 卡片倾斜效果
+   ============================================ */
+
+:root {
+  --tilt-perspective: 1000px;
+  --tilt-return: 1000ms;
+  --tilt-return-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tilt-follow: 400ms;
+  --tilt-follow-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tilt-glare-opacity: 0.32;
+  --tilt-glare-fade: 300ms;
+  --tilt-glare-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 外层容器作为扁平点击区域，禁用触摸滚动 */
+.t-tilt {
+  touch-action: none;
+  display: inline-block;
+  margin: 1rem;
+}
+
+/* 卡片倾斜效果 - 通过 JS 设置 rotateX/rotateY */
+.t-tilt-card {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform:
+    perspective(var(--tilt-perspective))
+    rotateX(var(--tilt-rx, 0deg))
+    rotateY(var(--tilt-ry, 0deg));
+  transform-style: preserve-3d;
+  transition: transform var(--tilt-return) var(--tilt-return-ease);
+  will-change: transform;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* 鼠标移动时的快速跟随 */
+.t-tilt-card.is-tilting {
+  transition: transform var(--tilt-follow) var(--tilt-follow-ease);
+}
+
+/* 卡片内容 */
+.t-tilt-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  transform: translateZ(30px);
+}
+
+.t-tilt-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.t-tilt-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* 光标追踪光泽效果 */
+.t-tilt-glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: screen;
+  background:
+    radial-gradient(circle 95px at var(--tilt-gx, 50%) var(--tilt-gy, 50%),
+      rgba(255,255,255,0.48), rgba(255,255,255,0.06) 52%, rgba(255,255,255,0) 84%),
+    radial-gradient(circle 200px at var(--tilt-gx, 50%) var(--tilt-gy, 50%),
+      rgba(255,255,255,0.22), rgba(255,255,255,0.04) 58%, rgba(255,255,255,0) 78%),
+    radial-gradient(circle 360px at var(--tilt-gx, 50%) var(--tilt-gy, 50%),
+      rgba(255,255,255,0.10), rgba(255,255,255,0) 88%);
+  transition: opacity var(--tilt-glare-fade) var(--tilt-glare-ease);
+}
+
+.t-tilt.is-hover .t-tilt-glare {
+  opacity: var(--tilt-glare-opacity);
+}
+
+/* 深灰色主题卡片 - 如图片所示 */
+.t-tilt-card.theme-dark {
+  background: linear-gradient(135deg, #5a5a5a 0%, #4a4a4a 100%);
+}
+
+/* 减少动画偏好适配 */
+@media (prefers-reduced-motion: reduce) {
+  .t-tilt-card {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* 演示区域布局 */
+.tilt-demo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+</style>
+
+<div class="tilt-demo-container">
+  <!-- 深灰色主题卡片 -->
+  <div class="t-tilt">
+    <div class="t-tilt-card theme-dark">
+      <div class="t-tilt-content">
+        <h3>Hover Me</h3>
+        <p>Move your cursor to see the 3D tilt effect</p>
+      </div>
+      <div class="t-tilt-glare"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  // 初始化所有倾斜卡片
+  function initTiltCards() {
+    var tilts = document.querySelectorAll('.t-tilt');
+    
+    tilts.forEach(function(tilt) {
+      var card = tilt.querySelector('.t-tilt-card');
+      if (!card) return;
+      
+      // 鼠标进入
+      tilt.addEventListener('mouseenter', function() {
+        tilt.classList.add('is-hover');
+      });
+      
+      // 鼠标移动 - 计算倾斜角度
+      tilt.addEventListener('mousemove', function(e) {
+        var rect = tilt.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        
+        // 计算中心点偏移 (-1 到 1)
+        var centerX = rect.width / 2;
+        var centerY = rect.height / 2;
+        var percentX = (x - centerX) / centerX;
+        var percentY = (y - centerY) / centerY;
+        
+        // 计算旋转角度 (最大 ±15度)
+        var maxRotate = 15;
+        var rx = -percentY * maxRotate; // 绕 X 轴旋转
+        var ry = percentX * maxRotate;  // 绕 Y 轴旋转
+        
+        // 计算光泽位置 (0% 到 100%)
+        var gx = (x / rect.width) * 100;
+        var gy = (y / rect.height) * 100;
+        
+        // 应用样式
+        card.style.setProperty('--tilt-rx', rx + 'deg');
+        card.style.setProperty('--tilt-ry', ry + 'deg');
+        card.style.setProperty('--tilt-gx', gx + '%');
+        card.style.setProperty('--tilt-gy', gy + '%');
+        
+        // 添加快速跟随类
+        card.classList.add('is-tilting');
+      });
+      
+      // 鼠标离开 - 重置
+      tilt.addEventListener('mouseleave', function() {
+        tilt.classList.remove('is-hover');
+        card.classList.remove('is-tilting');
+        card.style.setProperty('--tilt-rx', '0deg');
+        card.style.setProperty('--tilt-ry', '0deg');
+      });
+      
+      // 触摸支持（移动端）
+      tilt.addEventListener('touchstart', function() {
+        tilt.classList.add('is-hover');
+      }, { passive: true });
+      
+      tilt.addEventListener('touchmove', function(e) {
+        if (e.touches.length !== 1) return;
+        var touch = e.touches[0];
+        var rect = tilt.getBoundingClientRect();
+        var x = touch.clientX - rect.left;
+        var y = touch.clientY - rect.top;
+        
+        var centerX = rect.width / 2;
+        var centerY = rect.height / 2;
+        var percentX = (x - centerX) / centerX;
+        var percentY = (y - centerY) / centerY;
+        
+        var maxRotate = 15;
+        var rx = -percentY * maxRotate;
+        var ry = percentX * maxRotate;
+        var gx = (x / rect.width) * 100;
+        var gy = (y / rect.height) * 100;
+        
+        card.style.setProperty('--tilt-rx', rx + 'deg');
+        card.style.setProperty('--tilt-ry', ry + 'deg');
+        card.style.setProperty('--tilt-gx', gx + '%');
+        card.style.setProperty('--tilt-gy', gy + '%');
+        card.classList.add('is-tilting');
+      }, { passive: true });
+      
+      tilt.addEventListener('touchend', function() {
+        tilt.classList.remove('is-hover');
+        card.classList.remove('is-tilting');
+        card.style.setProperty('--tilt-rx', '0deg');
+        card.style.setProperty('--tilt-ry', '0deg');
+      });
+    });
+  }
+  
+  // DOM 加载完成后初始化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTiltCards);
+  } else {
+    initTiltCards();
+  }
+})();
+</script>
+
+## 滑动标签页效果 (Tabs Sliding)
+
+<style>
+/* ============================================
+   Transitions.dev — Tabs sliding
+   滑动标签页效果
+   ============================================ */
+
+:root {
+  --tabs-dur: 250ms;
+  --tabs-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tabs-text-muted: rgba(15, 15, 15, 0.6);
+  --tabs-text-active: #0f0f0f;
+  --tabs-bar-bg: #f1f1f1;
+  --tabs-pill-bg: #ffffff;
+}
+
+/* 标签栏容器 */
+.t-tabs {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 48px;
+  background: var(--tabs-bar-bg);
+  margin: 1rem 0;
+}
+
+/* 标签按钮 */
+.t-tab {
+  position: relative;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  height: 36px;
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tabs-text-muted);
+  cursor: pointer;
+  border-radius: 48px;
+  z-index: 1;
+  transition: color var(--tabs-dur) var(--tabs-ease);
+  white-space: nowrap;
+}
+
+.t-tab:not([aria-selected="true"]):hover,
+.t-tab[aria-selected="true"] {
+  color: var(--tabs-text-active);
+}
+
+/* 滑动药丸背景 */
+.t-tabs-pill {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 36px;
+  background: var(--tabs-pill-bg);
+  border-radius: 48px;
+  transform: translateX(0);
+  transition:
+    transform var(--tabs-dur) var(--tabs-ease),
+    width var(--tabs-dur) var(--tabs-ease);
+  will-change: transform, width;
+  z-index: 0;
+  pointer-events: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] {
+  --tabs-text-muted: rgba(255, 255, 255, 0.6);
+  --tabs-text-active: #ffffff;
+  --tabs-bar-bg: #2d333b;
+  --tabs-pill-bg: #373e47;
+}
+
+/* 减少动画偏好适配 */
+@media (prefers-reduced-motion: reduce) {
+  .t-tabs-pill, .t-tab {
+    transition: none !important;
+  }
+}
+
+/* 演示区域 */
+.tabs-demo-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* 标签内容区域 */
+.tab-content {
+  padding: 2rem;
+  text-align: center;
+  min-height: 100px;
+}
+
+.tab-panel {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-panel.is-active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<div class="tabs-demo-container">
+  <div class="t-tabs" role="tablist">
+    <span class="t-tabs-pill" aria-hidden="true"></span>
+    <button class="t-tab" role="tab" aria-selected="true" data-tab="plan">Plan</button>
+    <button class="t-tab" role="tab" aria-selected="false" data-tab="debug">Debug</button>
+    <button class="t-tab" role="tab" aria-selected="false" data-tab="ask">Ask</button>
+  </div>
+</div>
+
+<div class="tab-content">
+  <div class="tab-panel is-active" data-panel="plan">
+    <h4>Plan Mode</h4>
+    <p>Strategic planning and roadmap visualization tools.</p>
+  </div>
+  <div class="tab-panel" data-panel="debug">
+    <h4>Debug Mode</h4>
+    <p>Advanced debugging and error tracking capabilities.</p>
+  </div>
+  <div class="tab-panel" data-panel="ask">
+    <h4>Ask Mode</h4>
+    <p>Interactive Q&A and knowledge base integration.</p>
+  </div>
+</div>
+
+<script>
+(function() {
+  function initTabs() {
+    var tabsContainers = document.querySelectorAll('.t-tabs');
+    
+    tabsContainers.forEach(function(container) {
+      var pill = container.querySelector('.t-tabs-pill');
+      var tabs = container.querySelectorAll('.t-tab');
+      var tabPanels = document.querySelectorAll('.tab-panel');
+      
+      if (!pill || tabs.length === 0) return;
+      
+      // 更新药丸位置和大小
+      function updatePill(activeTab, immediate) {
+        if (immediate) {
+          pill.style.transition = 'none';
+        }
+        pill.style.width = activeTab.offsetWidth + 'px';
+        pill.style.transform = 'translateX(' + activeTab.offsetLeft + 'px)';
+        
+        if (immediate) {
+          // 强制重绘
+          pill.offsetHeight;
+          pill.style.transition = '';
+        }
+      }
+      
+      // 初始化第一个标签
+      var activeTab = container.querySelector('.t-tab[aria-selected="true"]');
+      if (activeTab) {
+        updatePill(activeTab, true);
+      }
+      
+      // 标签点击事件
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var tabId = tab.getAttribute('data-tab');
+          
+          // 更新标签状态
+          tabs.forEach(function(t) {
+            t.setAttribute('aria-selected', 'false');
+          });
+          tab.setAttribute('aria-selected', 'true');
+          
+          // 更新药丸位置
+          updatePill(tab, false);
+          
+          // 更新内容面板
+          tabPanels.forEach(function(panel) {
+            panel.classList.remove('is-active');
+            if (panel.getAttribute('data-panel') === tabId) {
+              panel.classList.add('is-active');
+            }
+          });
+        });
+      });
+      
+      // 窗口大小改变时重新定位
+      var resizeTimeout;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+          var currentActive = container.querySelector('.t-tab[aria-selected="true"]');
+          if (currentActive) {
+            updatePill(currentActive, true);
+          }
+        }, 100);
+      });
+    });
+  }
+  
+  // DOM 加载完成后初始化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTabs);
+  } else {
+    initTabs();
+  }
+})();
+</script>
+
 ## 测试中的内容
 
 <style>
@@ -137,7 +727,7 @@ t.parentNode.insertBefore(e,t)}})();
 -   :material-tooltip-edit:{ .lg .middle } __关于__
 
     ---
-    - [效率](https://github.com/Wcowin/Wcowin.github.io)
+    - [效率](https://github.com/Wkwcowin/WKwcowin.github.io)
 </div>
 
 <div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
@@ -146,7 +736,7 @@ t.parentNode.insertBefore(e,t)}})();
 
     ---
 
-    :material-eye-check:{ .lg .middle } [Wcowin](https://github.com/Wcowin/Wcowin.github.io) - 技术博客
+    :material-eye-check:{ .lg .middle } [Wcowin](https://github.com/Wkwcowin/WKwcowin.github.io) - 技术博客
 
 <div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
 
@@ -157,7 +747,7 @@ t.parentNode.insertBefore(e,t)}})();
 
     更新中...
 
-    [→ 所有版本](https://github.com/Wcowin/Wcowin.github.io)
+    [→ 所有版本](https://github.com/Wkwcowin/WKwcowin.github.io)
 
 
 -   :material-flag-variant-minus:{ .lg .middle } __Wcowin__
@@ -166,7 +756,7 @@ t.parentNode.insertBefore(e,t)}})();
 
     更新中...
 
-    [→ 了解更多](https://github.com/Wcowin/Wcowin.github.io)
+    [→ 了解更多](https://github.com/Wkwcowin/WKwcowin.github.io)
 
 </div>
 
@@ -848,7 +1438,7 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
 <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 
 <p align="left">
-&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>
+&nbsp; <a href="https://x.com/intent/follow?screen_name=Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>
 &nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>
 &nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
 </p>

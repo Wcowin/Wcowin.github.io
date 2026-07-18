@@ -14,7 +14,7 @@ tags:
 
     ---
     - 入门 MKdocs 请看[Mkdocs 官方教程](https://www.mkdocs.org/user-guide/writing-your-docs/){target=“_blank”}
-    - [Material for MkDocs（只看这个也可以）](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}教程
+    - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}官网教程（只看这个也可以）
     - [令人惊叹的MkDocs项目和插件列表](https://github.com/mkdocs/catalog#-theming){target=“_blank”}
     ---
     我写的中文教程（同步在其他平台）：
@@ -25,52 +25,7 @@ tags:
 
 </div>
 
-```mermaid
-flowchart TD
-    subgraph 内容创作
-        A[Markdown文件创作] --> B{内容分类}
-        B --> C[技术博客/blog]
-        B --> D[开发项目/develop]
-        B --> E[生活随笔/relax]
-        B --> F[旅行记录/trip]
 
-        C & D & E & F --> G[元数据处理]
-    end
-
-    subgraph AI功能
-        G --> H[AI摘要生成]
-        H --> I[缓存/.ai_cache]
-        J[MCP助手] --> K[智能内容处理]
-        K --> H
-    end
-
-    subgraph 构建系统
-        G --> L[MkDocs配置]
-        L --> M[资源处理]
-        M --> N[主题应用]
-        N --> O[多语言支持]
-        O --> P[站点生成]
-    end
-
-    subgraph 部署流程
-        Q[Git推送] --> R[Actions触发]
-        R --> S[自动构建]
-        P --> S
-        S --> T[Vercel部署]
-        T --> U[CDN分发]
-    end
-
-    subgraph 用户体验
-        U --> V[用户访问]
-        V --> W[导航浏览]
-        W --> X[内容阅读]
-        X --> Y[Waline评论]
-        X --> Z[智能搜索]
-        X --> AA[友链访问]
-    end
-
-    I --> L
-```
 
 <!-- 入门 MKdocs 请看官方教程:
 [Mkdocs 官方教程](https://www.mkdocs.org/user-guide/writing-your-docs/){target=“_blank”}

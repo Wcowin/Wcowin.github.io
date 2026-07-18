@@ -18,7 +18,7 @@ status: new
 [Mkdocs AI Summary](../../blog/websitebeauty/Mkdocs-AI-Summary.md)
 ![logo 2](https://s1.imagehub.cc/images/2025/06/06/ee327dc2912fd2f31d38ee8a16a1e1ff.png){.img1}
 
-仓库地址:[https://github.com/Wcowin/Mkdocs-AI-Summary](https://github.com/Wcowin/Mkdocs-AI-Summary)  
+仓库地址:[https://github.com/Wkwcowin/Mkdocs-AI-Summary](https://github.com/Wkwcowin/Mkdocs-AI-Summary)  
 🌐 **在线演示**:[https://wcowin.work/Mkdocs-AI-Summary-Plus/](https://wcowin.work/Mkdocs-AI-Summary-Plus/)
 
 

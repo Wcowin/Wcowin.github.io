@@ -8,7 +8,7 @@ tags:
 
 # macOS 开发经验分享
 
-本系列以 [OneClip](https://github.com/Wcowin/OneClip)（一款 100% SwiftUI 原生开发的 macOS 剪贴板管理工具）为实战案例，覆盖从开发环境搭建、Shell 优化、架构设计、开发踩坑到代码签名与分发的完整流程，适合正在或准备进行 macOS 应用开发的开发者参考。
+本系列以 [OneClip](https://github.com/Wkwcowin/OneClip)（一款 100% SwiftUI 原生开发的 macOS 剪贴板管理工具）为实战案例，覆盖从开发环境搭建、Shell 优化、架构设计、开发踩坑到代码签名与分发的完整流程，适合正在或准备进行 macOS 应用开发的开发者参考。
 
 ## 推荐阅读顺序
 

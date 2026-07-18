@@ -18,7 +18,14 @@ title: 添加 GitHub 仓库卡片
   <a
     class="github-repo-card"
     data-repo="Wcowin/OneClip"
-    href="https://github.com/Wcowin/OneClip"
+    data-owner="Wcowin"
+    data-name="OneClip"
+    data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，提供主窗口、菜单栏操作、快速粘贴面板等多种使用方式， 支持多种格式内容管理、智能搜索和分类，让您的复制粘贴操作更加便捷高效。"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
+    data-stars="342"
+    data-forks="15"
+    data-license="MIT"
+    href="https://github.com/One-Clip/OneClip"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
@@ -39,7 +46,7 @@ title: 添加 GitHub 仓库卡片
   <a
     id="oneclip-github-card"
     class="github-repo-card"
-    href="https://github.com/Wcowin/OneClip"
+    href="https://github.com/Wkwcowin/OneClip"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -408,7 +415,7 @@ title: 添加 GitHub 仓库卡片
    - `oneclip-avatar` → `foo-bar-avatar`
    - `oneclip-stars` / `oneclip-forks` / `oneclip-license` → 对应新 id
    - `Wcowin` / `OneClip` → 仓库实际所有者和名称
-   - `https://api.github.com/repos/Wcowin/OneClip` / `https://github.com/Wcowin/OneClip` → 你的仓库地址
+   - `https://api.github.com/repos/Wcowin/OneClip` / `https://github.com/Wkwcowin/OneClip` → 你的仓库地址
 
 你也可以把这段实现抽到单独的 `partial` 或 JS 组件里，但对大多数文档站来说，直接在需要的位置嵌入这一小段就已经足够简洁实用。
 
@@ -440,7 +447,7 @@ title: 添加 GitHub 仓库卡片
     data-stars="123"
     data-forks="45"
     data-license="MIT"
-    href="https://github.com/Wcowin/OneClip"
+    href="https://github.com/Wkwcowin/OneClip"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
@@ -454,4 +461,3 @@ title: 添加 GitHub 仓库卡片
 - 当设置 `data-license` 为空字符串时，许可证项会被自动隐藏
 - 即使 GitHub API 请求失败，自定义属性也会正常显示
 - 缓存会在2小时后自动刷新，确保数据保持最新
-

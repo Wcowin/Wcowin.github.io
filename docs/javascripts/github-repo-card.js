@@ -120,6 +120,29 @@
     });
   }
 
+  // 检查是否所有必要数据都有自定义值（不需要 API 调用）
+  function hasAllCustomData(card, owner, name) {
+    // 检查 description
+    const hasDescription = card.getAttribute('data-description') !== null && 
+                          card.getAttribute('data-description').trim() !== '';
+    
+    // 检查 owner 和 name：要么有 data-owner/data-name，要么能从 repo 解析出有效的
+    const customOwner = card.getAttribute('data-owner');
+    const customName = card.getAttribute('data-name');
+    const hasOwnerName = (customOwner !== null && customOwner.trim() !== '') ||
+                         (owner !== null && owner.trim() !== '');
+    const hasRepoName = (customName !== null && customName.trim() !== '') ||
+                        (name !== null && name.trim() !== '');
+    
+    // 同时至少有一个统计信息（stars 或 forks）
+    const hasStats = ['data-stars', 'data-forks'].some(attr => {
+      const val = card.getAttribute(attr);
+      return val !== null && val.trim() !== '';
+    });
+    
+    return hasDescription && hasOwnerName && hasRepoName && hasStats;
+  }
+
   function getCustomValue(card, attr) {
     const val = card.getAttribute(attr);
     // 返回 null 表示使用 API 数据
@@ -230,10 +253,18 @@
 
     card.innerHTML = buildCardInnerHTML();
 
+    // 检查是否有所有必要数据的自定义值
+    const hasAllCustom = hasAllCustomData(card, owner, name);
+    
     // 如果有任何自定义属性，先显示自定义数据
     const hasCustom = hasCustomAttributes(card);
     if (hasCustom) {
       fillCardData(card, {}, owner, name);
+    }
+
+    // 如果所有必要数据都有自定义值，跳过 API 调用
+    if (hasAllCustom) {
+      return;
     }
 
     // 尝试获取缓存数据
@@ -275,9 +306,11 @@
     await Promise.all(Array.from(cards).map((card) => initCard(card)));
   }
 
+  // Render cards that are already in the document immediately. Pages can load
+  // this script next to their cards to reserve the final layout before anchor
+  // scrolling runs; the DOMContentLoaded pass picks up any later cards.
+  initGitHubRepoCards();
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initGitHubRepoCards);
-  } else {
-    initGitHubRepoCards();
   }
 })();

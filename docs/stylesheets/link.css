@@ -6,6 +6,155 @@
    width: 100%;
 }
 
+/* ============================================
+   Transitions.dev — Skeleton loader and reveal
+   友链卡片骨架屏加载动画
+   ============================================ */
+
+:root {
+  --link-skel-pulse-dur: 1200ms;
+  --link-skel-pulse-count: infinite;
+  --link-skel-pulse-min: 0.4;
+  --link-skel-reveal-dur: 400ms;
+  --link-skel-reveal-blur: 3px;
+  --link-skel-reveal-ease: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* 卡片骨架屏容器 - 相对定位用于叠加层 */
+.card {
+  position: relative;
+}
+
+/* 骨架层和内容层共享同一空间 */
+.card-skeleton,
+.card-content {
+  position: absolute;
+  inset: 0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.card-skeleton {
+  z-index: 1;
+  opacity: 1;
+  filter: blur(0);
+  transition:
+    opacity var(--link-skel-reveal-dur) var(--link-skel-reveal-ease),
+    filter var(--link-skel-reveal-dur) var(--link-skel-reveal-ease);
+  pointer-events: none;
+}
+
+.card-content {
+  z-index: 2;
+  opacity: 0;
+  filter: blur(var(--link-skel-reveal-blur));
+  transition:
+    opacity var(--link-skel-reveal-dur) var(--link-skel-reveal-ease),
+    filter var(--link-skel-reveal-dur) var(--link-skel-reveal-ease);
+}
+
+/* 加载完成后的状态 */
+.card.is-loaded .card-skeleton {
+  opacity: 0;
+  filter: blur(var(--link-skel-reveal-blur));
+}
+
+.card.is-loaded .card-content {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* 骨架屏元素样式 */
+.skel-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #e8eaed 25%, #f0f2f5 50%, #e8eaed 75%);
+  background-size: 200% 100%;
+  margin-right: 1em;
+  flex-shrink: 0;
+}
+
+.skel-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skel-title {
+  height: 18px;
+  width: 60%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #e8eaed 25%, #f0f2f5 50%, #e8eaed 75%);
+  background-size: 200% 100%;
+}
+
+.skel-desc {
+  height: 14px;
+  width: 80%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #e8eaed 25%, #f0f2f5 50%, #e8eaed 75%);
+  background-size: 200% 100%;
+}
+
+/* 脉冲动画 - 骨架屏加载中 */
+.card.is-loading .skel-avatar,
+.card.is-loading .skel-title,
+.card.is-loading .skel-desc {
+  animation: link-skel-shimmer var(--link-skel-pulse-dur) ease-in-out var(--link-skel-pulse-count);
+}
+
+@keyframes link-skel-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 夜间模式适配 */
+[data-md-color-scheme="slate"] .skel-avatar,
+[data-md-color-scheme="slate"] .skel-title,
+[data-md-color-scheme="slate"] .skel-desc {
+  background: linear-gradient(90deg, #2d333b 25%, #373e47 50%, #2d333b 75%);
+  background-size: 200% 100%;
+}
+
+/* 减少动画偏好适配 */
+@media (prefers-reduced-motion: reduce) {
+  .card-skeleton,
+  .card-content {
+    transition: none !important;
+  }
+  .card.is-loading .skel-avatar,
+  .card.is-loading .skel-title,
+  .card.is-loading .skel-desc {
+    animation: none !important;
+  }
+}
+
+/* 小屏幕适配 */
+@media (max-width: 768px) {
+  .card-skeleton,
+  .card-content {
+    padding: 8px 12px;
+  }
+  
+  .skel-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.75em;
+  }
+  
+  .skel-title {
+    height: 16px;
+  }
+  
+  .skel-desc {
+    height: 12px;
+  }
+}
+
 /* 用于大屏幕和小屏幕的通用样式 */
 .card {
    width: 100%;

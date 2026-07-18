@@ -10,8 +10,8 @@ tags:
 
 ## 概述
 
-苹果官方的开发者证书99美刀一年，独立开发者可能无力承担，本文介绍 [OneClip](https://github.com/Wcowin/OneClip) 如何通过**脚本自动化**实现个人证书对应用签名和应用分发，确保用户首次授权后，后续更新无需重新授权辅助功能。
-
+苹果官方的开发者证书99美刀一年，独立开发者可能无力承担，本文介绍 [OneClip](https://github.com/Wkwcowin/OneClip) 如何通过**脚本自动化**实现个人证书对应用签名和应用分发，确保用户首次授权后，后续更新无需重新授权辅助功能。
+![download.png](https://i.imgant.com/v2/I8I061i.png)  
 [直接看完整脚本示例](#_12)
 
 ## 核心原理
@@ -114,10 +114,10 @@ cat > "$RELEASE_DIR/appcast.xml" << EOF
       <title>Version $VERSION</title>
       <sparkle:version>$VERSION</sparkle:version>
       <sparkle:shortVersionString>$VERSION</sparkle:shortVersionString>
-      <link>https://github.com/Wcowin/OneClip/releases</link>
+      <link>https://github.com/Wkwcowin/OneClip/releases</link>
       <description>OneClip $VERSION 更新</description>
       <pubDate>$(date -u +"%a, %d %b %Y %H:%M:%S +0000")</pubDate>
-      <enclosure url="https://github.com/Wcowin/OneClip/releases/download/$VERSION/OneClip-$VERSION.dmg"
+      <enclosure url="https://github.com/Wkwcowin/OneClip/releases/download/$VERSION/OneClip-$VERSION.dmg"
                  sparkle:version="$VERSION"
                  sparkle:shortVersionString="$VERSION"
                  sparkle:edSignature="$SIGNATURE"
@@ -542,10 +542,10 @@ cat > "$RELEASE_DIR/appcast.xml" << EOF
       <title>Version $VERSION</title>
       <sparkle:version>$VERSION</sparkle:version>
       <sparkle:shortVersionString>$VERSION</sparkle:shortVersionString>
-      <link>https://github.com/Wcowin/OneClip/releases</link>
+      <link>https://github.com/Wkwcowin/OneClip/releases</link>
       <description>$APP_NAME $VERSION 更新</description>
       <pubDate>$PUB_DATE</pubDate>
-      <enclosure url="https://github.com/Wcowin/OneClip/releases/download/v$VERSION/$APP_NAME-$VERSION.dmg"
+      <enclosure url="https://github.com/Wkwcowin/OneClip/releases/download/v$VERSION/$APP_NAME-$VERSION.dmg"
                  sparkle:version="$VERSION"
                  sparkle:shortVersionString="$VERSION"
                  sparkle:edSignature="$SIGNATURE"

@@ -9,7 +9,7 @@ tags:
 
 ## 什么是 CC Switch？
 
-**CC Switch** 是 Claude Code、Codex、Gemini CLI、OpenCode、OpenClaw 和 Hermes Agent 的全方位管理工具，由 [farion1231](https://github.com/farion1231) 开发，基于 Tauri 2 构建的跨平台原生桌面应用，在 GitHub 上已获得 14.5K+ Star。
+**CC Switch** 是 Claude Code、Codex、Gemini CLI、OpenCode、OpenClaw 和 Hermes Agent 的全方位管理工具，由 [farion1231](https://github.com/farion1231) 开发，基于 Tauri 2 构建的跨平台原生桌面应用，在 GitHub 上已获得 14.5K+ Star（截至 2026 年 5 月）。
 
 !!! info "核心价值"
     现代 AI 编程依赖多个 CLI 工具，但每个工具都有自己的配置格式。切换 API 供应商意味着手动编辑 JSON、TOML 或 `.env` 文件。CC Switch 让你用一个桌面应用管理所有 CLI 工具，可视化操作，一键切换供应商，无需手动编辑配置文件。
@@ -313,4 +313,4 @@ CC Switch 遵循「最小侵入」设计原则——即使卸载应用，CLI 工
 *最后更新：2026年5月*
 
 
-**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wkwcowin)

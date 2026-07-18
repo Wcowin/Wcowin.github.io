@@ -55,7 +55,7 @@ comments: false
       <img class="ava" loading="lazy" decoding="async" src="https://zensical.org/assets/zensical.svg" />
       <div class="card-header">
         <div>
-          <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Zensical教程</a>
+          <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank">Zensical教程</a>
         </div>
         <div class="info">
           撰写最新的Zensical中文教程
@@ -522,17 +522,6 @@ comments: false
     </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" decoding="async" src="https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg" />
-     <div class="card-header">
-      <div>
-      <a href="https://vite.xingji.fun" target="_blank">XINGJI</a>
-      </div>
-      <div class="info">
-      迄今所有人生都大写着失败，但不妨碍我继续向前✨
-      </div>
-     </div>
-    </div>
-    <div class="card">
      <img class="ava" loading="lazy" decoding="async" src="https://shenwy.com/assets/logo.png" />
      <div class="card-header">
       <div>
@@ -947,17 +936,6 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" decoding="async" src="https://cdn.lusyoe.com/images/person.webp" />
-      <div class="card-header">
-        <div>
-          <a href="https://blog.lusyoe.com" target="_blank">青萍叙事</a>
-        </div>
-        <div class="info">
-          一个懂技术的产品汪🐶
-        </div>
-      </div>
-    </div>
-    <div class="card">
       <img class="ava" loading="lazy" decoding="async" src="https://www.biibii.cn/usr/uploads/2025/07/3155658037.webp" />
       <div class="card-header">
         <div>
@@ -989,17 +967,6 @@ comments: false
       Learn, Build, Share
       </div>
     </div>
-    </div>
-    <div class="card">
-      <img class="ava" loading="lazy" decoding="async" src="https://www.collaigo.com/assets/collagelogo-DJwLHSgZ.png" />
-      <div class="card-header">
-        <div>
-          <a href="https://collaigo.com" target="_blank">Collaigo</a>
-        </div>
-        <div class="info">
-          好用的免费在线拼图工具
-        </div>
-      </div>
     </div>
     <div class="card"> 
     <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/176311727?s=400&u=953f4d2a796d80a222e47435383aefddf0a94371&v=4" /> 
@@ -1317,7 +1284,7 @@ comments: false
       </div>  
     </div>
 <div class="card">
-        <img class="ava" loading="lazy" decoding="async" src="https://rdev.qzz.io/favicon.webp" />
+        <img class="ava" loading="lazy" decoding="async" src="https://s3.bmp.ovh/2026/06/12/MKCsE8LS.webp" />
         <div class="card-header">
           <div>
             <a href="https://vcblog.eu.cc/" target="_blank">维C博客</a>
@@ -1360,7 +1327,31 @@ comments: false
           </div>
         </div>
       </div>
-    
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://wiki.eryajf.net/img/logo.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://wiki.eryajf.net/" target="_blank">二丫讲梵</a>
+        </div>
+        <div class="info">
+          💻学习📝记录🔗分享
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://re.tsh520.cn/zl/tx.webp" />
+      <div class="card-header">
+        <div>
+          <a href="https://blog.tsh520.cn" target="_blank">团子和蛋糕</a>
+        </div>
+        <div class="info">
+          如果你喜欢那么欢迎来到我的世界！
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 </div>
 
@@ -1595,6 +1586,39 @@ comments: false
       </div>
       <div class="info">
        慈善义工在行动 （多次变动，且未加我方友链）
+      </div>
+     </div>
+    </div>
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+      <div class="card-header">
+        <div>
+          <a href="https://blog.lusyoe.com" target="_blank">青萍叙事(打不开)</a>
+        </div>
+        <div class="info">
+          一个懂技术的产品汪🐶
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+      <div class="card-header">
+        <div>
+          <a href="https://collaigo.com" target="_blank">Collaigo(未加我方友链)</a>
+        </div>
+        <div class="info">
+          好用的免费在线拼图工具
+        </div>
+      </div>
+    </div>
+    <div class="card">
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <div class="card-header">
+      <div>
+      <a href="https://vite.xingji.fun" target="_blank">XINGJI(打不开)</a>
+      </div>
+      <div class="info">
+      迄今所有人生都大写着失败，但不妨碍我继续向前✨
       </div>
      </div>
     </div>
@@ -2116,20 +2140,117 @@ async>
 </script>
 </head> -->
 
-<!-- 头像加载失败兜底 -->
+<!-- 头像加载失败兜底 + 骨架屏加载动画 -->
 <script>
-document.addEventListener('error', function(e) {
-  var img = e.target;
-  if (img && img.classList && img.classList.contains('ava') && !img.dataset.retried) {
-    img.dataset.retried = '1';
-    img.classList.add('ava-fallback');
-    img.src = "https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp";
+(function() {
+  // 头像加载失败兜底
+  document.addEventListener('error', function(e) {
+    var img = e.target;
+    if (img && img.classList && img.classList.contains('ava') && !img.dataset.retried) {
+      img.dataset.retried = '1';
+      img.classList.add('ava-fallback');
+      img.src = "https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp";
+    }
+  }, true);
+
+  // 骨架屏加载动画初始化
+  function initSkeletonLoader() {
+    var cards = document.querySelectorAll('.card');
+    
+    cards.forEach(function(card) {
+      // 如果卡片已经有骨架屏结构，跳过
+      if (card.querySelector('.card-skeleton')) return;
+      
+      // 获取原始内容
+      var originalContent = card.innerHTML;
+      var img = card.querySelector('.ava');
+      
+      // 添加加载中状态
+      card.classList.add('is-loading');
+      
+      // 构建骨架屏结构
+      var skeletonHTML = 
+        '<div class="card-skeleton">' +
+          '<div class="skel-avatar"></div>' +
+          '<div class="skel-text">' +
+            '<div class="skel-title"></div>' +
+            '<div class="skel-desc"></div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="card-content">' + originalContent + '</div>';
+      
+      card.innerHTML = skeletonHTML;
+      
+      // 监听图片加载完成
+      var contentImg = card.querySelector('.card-content .ava');
+      if (contentImg) {
+        // 处理懒加载：如果有 data-src，先设置 src 开始加载
+        var dataSrc = contentImg.getAttribute('data-src');
+        if (dataSrc && !contentImg.src) {
+          contentImg.src = dataSrc;
+          contentImg.removeAttribute('data-src');
+        }
+        
+        // 检查图片是否已加载完成（包括缓存情况）
+        var isImageLoaded = function() {
+          return contentImg.complete && contentImg.naturalWidth > 0;
+        };
+        
+        if (isImageLoaded()) {
+          // 图片已缓存或同步加载完成，短暂延迟后显示
+          setTimeout(function() {
+            card.classList.remove('is-loading');
+            card.classList.add('is-loaded');
+          }, 300);
+        } else {
+          // 图片未加载，等待加载完成
+          var loadHandler = function() {
+            card.classList.remove('is-loading');
+            card.classList.add('is-loaded');
+            contentImg.removeEventListener('load', loadHandler);
+            contentImg.removeEventListener('error', errorHandler);
+          };
+          
+          var errorHandler = function() {
+            // 图片加载失败也显示卡片
+            card.classList.remove('is-loading');
+            card.classList.add('is-loaded');
+            contentImg.removeEventListener('load', loadHandler);
+            contentImg.removeEventListener('error', errorHandler);
+          };
+          
+          contentImg.addEventListener('load', loadHandler);
+          contentImg.addEventListener('error', errorHandler);
+          
+          // 超时处理（3秒后强制显示）
+          setTimeout(function() {
+            if (!card.classList.contains('is-loaded')) {
+              card.classList.remove('is-loading');
+              card.classList.add('is-loaded');
+              contentImg.removeEventListener('load', loadHandler);
+              contentImg.removeEventListener('error', errorHandler);
+            }
+          }, 3000);
+        }
+      } else {
+        // 没有图片，直接显示
+        card.classList.remove('is-loading');
+        card.classList.add('is-loaded');
+      }
+    });
   }
-}, true);
+
+  // DOM加载完成后初始化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSkeletonLoader);
+  } else {
+    initSkeletonLoader();
+  }
+})();
 </script>
 
+<!--
 <script>
-// 根据网站当前主题设置 Giscus 初始主题
 (function() {
   var scheme = document.body.getAttribute("data-md-color-scheme");
   var theme = scheme === "slate" ? "dark" : "light";
@@ -2150,9 +2271,7 @@ document.addEventListener('error', function(e) {
   document.currentScript.parentNode.insertBefore(giscusScript, document.currentScript.nextSibling);
 })();
 </script>
-
 <script>
-// 同步 Giscus 主题与网站主题（主题切换时）
 function syncGiscusTheme() {
   var scheme = document.body.getAttribute("data-md-color-scheme");
   var theme = scheme === "slate" ? "dark" : "light";
@@ -2164,8 +2283,57 @@ function syncGiscusTheme() {
     );
   }
 }
+document.addEventListener("DOMContentLoaded", function() {
+  var bodyObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.attributeName === "data-md-color-scheme") {
+        syncGiscusTheme();
+      }
+    });
+  });
+  bodyObserver.observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
+});
+ </script> -->
 
-// 监听 body 上的 data-md-color-scheme 属性变化（主题切换时）
+
+<!-- 动态加载 Giscus，根据网站主题设置初始主题 -->
+<script>
+(function() {
+  var scheme = document.body.getAttribute("data-md-color-scheme");
+  var theme = scheme === "slate" ? "dark" : "light";
+  var giscusScript = document.createElement("script");
+  giscusScript.src = "https://giscus.app/client.js";
+  giscusScript.setAttribute("data-repo", "Wkwcowin/Comment");
+  giscusScript.setAttribute("data-repo-id", "R_kgDOS6WZ6Q");
+  giscusScript.setAttribute("data-category", "General");
+  giscusScript.setAttribute("data-category-id", "DIC_kwDOS6WZ6c4C_Ik1");
+  giscusScript.setAttribute("data-mapping", "pathname");
+  giscusScript.setAttribute("data-strict", "1");
+  giscusScript.setAttribute("data-reactions-enabled", "1");
+  giscusScript.setAttribute("data-emit-metadata", "0");
+  giscusScript.setAttribute("data-input-position", "top");
+  giscusScript.setAttribute("data-theme", theme);
+  giscusScript.setAttribute("data-lang", "zh-CN");
+  giscusScript.setAttribute("data-loading", "lazy");
+  giscusScript.setAttribute("crossorigin", "anonymous");
+  giscusScript.async = true;
+  document.currentScript.parentNode.insertBefore(giscusScript, document.currentScript.nextSibling);
+})();
+</script>
+
+<!-- 同步 Giscus 主题与网站主题 -->
+<script>
+function syncGiscusTheme() {
+  var scheme = document.body.getAttribute("data-md-color-scheme");
+  var theme = scheme === "slate" ? "dark" : "light";
+  var frame = document.querySelector(".giscus-frame");
+  if (frame && frame.contentWindow) {
+    frame.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: theme } } },
+      "https://giscus.app"
+    );
+  }
+}
 document.addEventListener("DOMContentLoaded", function() {
   var bodyObserver = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {

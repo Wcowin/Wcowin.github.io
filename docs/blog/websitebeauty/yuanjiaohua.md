@@ -130,7 +130,7 @@ border-radius: 25px;
 
 ## 圆角边框
 
-[圆角边框如何实现](https://github.com/Wcowin/hexo-site-comments/discussions/15#discussioncomment-11927654){target="_blank"}
+<!--[圆角边框如何实现](https://github.com/Wcowin/hexo-site-comments/discussions/15#discussioncomment-11927654){target="_blank"}-->
 <div id="rcorners2" >
   <div id="rcorners1">
     <!-- <i class="fa fa-calendar" style="font-size:100"></i> -->

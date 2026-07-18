@@ -10,7 +10,7 @@ tags:
 
 > 使用硅基流动 OpenAI 兼容接口 + `Qwen3-8B` 为你的 Zensical 网站添加智能 AI 助手功能
 >
-> **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
+> **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wkwcowin)
 
 !!! info "功能预览"
     Ask AI 功能会在网站右下角（可自定义位置）显示一个浮动按钮，点击后弹出聊天窗口，访客可以与 AI 助手对话，AI 会基于当前页面内容回答问题。
@@ -92,7 +92,7 @@ window.GLM_API_KEY = 'your-api-key-here';
 > - `docs/javascripts/chat-widget.js`
 > - `docs/stylesheets/chat-widget.css`
 >
-> 这两个文件可以在我的开源仓库中直接查看或复制：[Wcowin/Wcowin.github.io](https://github.com/Wcowin/Wcowin.github.io)。
+> 这两个文件可以在我的开源仓库中直接查看或复制：[Wkwcowin/WKwcowin.github.io](https://github.com/Wkwcowin/WKwcowin.github.io)。
 
 你可以重点核对/自定义的配置只有这一段（`docs/javascripts/chat-widget.js` 顶部的 `CONFIG`）：
 
@@ -396,4 +396,3 @@ A: 可以通过以下方式：
 - [硅基流动文档](https://docs.siliconflow.cn/)
 - [Chat Completions（OpenAI 兼容）](https://docs.siliconflow.cn/cn/api-reference/chat-completions/chat-completions)
 - [Zensical 官方文档](https://zensical.org/docs/)
-

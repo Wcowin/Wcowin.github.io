@@ -11,7 +11,7 @@ tags:
 
 -   :simple-github:{ .lg .middle } __Github地址__
 
-    [Github地址](https://github.com/Wcowin/License-plate-recognition/releases/tag/exe){target="_blank"}   
+    [Github地址](https://github.com/Wkwcowin/License-plate-recognition/releases/tag/exe){target="_blank"}   
 
 -   :simple-bilibili:{ .lg .middle } __视频教程__
 

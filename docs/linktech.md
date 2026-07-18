@@ -502,8 +502,6 @@ function renderFriendLinkPreview() {
     '  </div>';
   var fenced = '```html\n' + htmlStr + '\n```';
   document.getElementById('fl_preview_code').value = fenced;
-
-  // 保存到 localStorage
   try {
     localStorage.setItem('friendlink_form_linktech', JSON.stringify({
       name: document.getElementById('fl_name').value,
@@ -519,8 +517,6 @@ function copyFriendLinkHtml() {
   codeArea.setSelectionRange(0, codeArea.value.length);
   try { document.execCommand('copy'); } catch (e) {}
 }
-
-// 初始化：从 localStorage 恢复数据或使用默认值
 document.addEventListener('DOMContentLoaded', function () {
   try {
     var saved = localStorage.getItem('friendlink_form_linktech');

@@ -49,6 +49,8 @@ hide_comment: true
     架构创新解析与开源 Agent 平台实战
 
     - [Attention Residuals](/develop/AI/attention-residuals/) - Kimi 团队架构创新解读
+    - [JEPA 架构](/develop/AI/jepa/) - 联合嵌入预测架构，通往世界模型的非生成之路
+    - [具身智能](/develop/AI/embodied-ai/) - 当 AI 拥有身体，物理世界迎来新纪元
     - [Claude Code 指南](/develop/Claude-Code/) - Anthropic 的 AI 编程助手
     - [Codex 指南](/develop/ChatGPT.md) - OpenAI 的 AI 编程助手
     - [CC Switch](/develop/AI/cc-switch/) - Claude Code / Codex 模型切换工具

@@ -14,6 +14,24 @@ pip install --upgrade --force-reinstall zensical
 
 个人简历：https://wcowin.work/assets/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86.pdf
 
+Wkwcowin的评论区：
+<script src="https://giscus.app/client.js"
+        data-repo="Wkwcowin/Comment"
+        data-repo-id="R_kgDOS6WZ6Q"
+        data-category="General"
+        data-category-id="DIC_kwDOS6WZ6c4C_Ik1"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
 ## 常用环境与命令
 
 ### 启动虚拟环境（推荐使用 Anaconda 管理 Python 环境）

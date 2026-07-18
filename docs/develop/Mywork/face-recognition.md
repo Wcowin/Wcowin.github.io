@@ -6,7 +6,7 @@ tags:
 
 # 基于OpenCV的人脸识别系统
 
-Github仓库地址：[facial-recognition-system](https://github.com/Wcowin/facial-recognition-system){target="_blank"}
+Github仓库地址：[facial-recognition-system](https://github.com/Wkwcowin/facial-recognition-system){target="_blank"}
 
 **原文：**
 >Bilibili:  [用300行代码实现人脸识别系统_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ZZ4y1S76N/){target="_blank"}

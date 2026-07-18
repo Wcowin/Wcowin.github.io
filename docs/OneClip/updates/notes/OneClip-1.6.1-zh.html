@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneClip 1.6.1 更新说明</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007AFF;
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        h3 {
+            color: #555;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .version {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .tip-box {
+            background-color: #e8f4fd;
+            border-left: 4px solid #007AFF;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .tip-box a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .tip-box a:hover {
+            text-decoration: underline;
+        }
+        .download-section {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #e8e8e8;
+        }
+        .download-section h2 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+        .download-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 1px solid #e8e8e8;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            transition: all 0.2s ease;
+        }
+        .download-card:hover {
+            border-color: #007AFF;
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.08);
+        }
+        .download-card .info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .download-card .text {
+            display: flex;
+            flex-direction: column;
+        }
+        .download-card .title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .download-card .subtitle {
+            font-size: 13px;
+            color: #666;
+            margin-top: 2px;
+        }
+        .download-card .action {
+            color: #007AFF;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(0, 122, 255, 0.08);
+            transition: all 0.2s ease;
+        }
+        .download-card .action:hover {
+            background: rgba(0, 122, 255, 0.15);
+        }
+        .todo-section {
+            margin-top: 32px;
+        }
+        .todo-section h2 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+        .todo-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .todo-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #444;
+            font-size: 14px;
+        }
+        .todo-item:last-child {
+            border-bottom: none;
+        }
+        .todo-checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #d0d0d0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .todo-checkbox.checked {
+            background-color: #007AFF;
+            border-color: #007AFF;
+        }
+        .todo-checkbox.checked::after {
+            content: "✓";
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 1.6.1版本更新日志</h1>
+        <div class="version">版本 1.6.1</div>
+
+        <blockquote class="tip-box">
+            感谢每一位支持OneClip的朋友，OneClip在持续更新中。<br>
+            欢迎加入我们的社区：<a href="https://qm.qq.com/q/xiImGHVMcM">OneClip QQ交流群</a> | <a href="https://t.me/+I7S6R0pw5180YzRl">TG 群组</a>
+        </blockquote>
+
+        <h2>功能修复</h2>
+        <ul>
+            <li>解决了一些已知问题</li>
+            <li>修复堆栈粘贴的格式问题</li>
+            <li>修复存储位置迁移相关 bug</li>
+            <li>主窗口、菜单栏、快速粘贴面板三处搜索机制统一完善</li>
+        </ul>
+
+        <h2>功能新增</h2>
+        <ul>
+            <li>新增对 GitHub 封号的痛恨，MLGB，新仓库在这：<a href="https://github.com/One-Clip/OneClip/issues/1">OneClip 新仓库</a></li>
+            <li>脚本功能新增全局快捷键，工作流更快了</li>
+            <li>AI 翻译功能 26 种全语言</li>
+            <li>带来全局快捷键，快速切换到指定分类！</li>
+        </ul>
+
+        <h2>功能改进</h2>
+        <ul>
+            <li>改进 AI 结果窗口下非流式使用后，后续流式的加载问题</li>
+            <li>脚本功能重写 AI 提示词，使其能引导 AI 生成模板级别的完整脚本</li>
+            <li>AI 结果窗口里的再次翻译 popover 的 UI</li>
+        </ul>
+
+        <div class="download-section">
+            <h2>下载</h2>
+            <div class="download-card">
+                <div class="info">
+                    <div class="text">
+                        <span class="title">OneClip 1.6.1</span>
+                        <span class="subtitle">macOS 应用安装包</span>
+                    </div>
+                </div>
+                <a href="https://gitee.com/Wcowin/OneClip/releases/download/1.6.1/OneClip-1.6.1.dmg" class="action">立即下载</a>
+            </div>
+        </div>
+
+        <p>如果您有好的建议请直接发邮件到<a href="mailto:vip@oneclip.cloud" style="color: #007AFF; text-decoration: none; font-weight: 500;">vip@oneclip.cloud</a></p>
+
+        <div class="todo-section">
+            <h2>TODO</h2>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <span class="todo-checkbox"></span>
+                    <span>待定</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

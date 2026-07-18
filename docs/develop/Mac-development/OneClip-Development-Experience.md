@@ -10,7 +10,7 @@ tags:
 
 ## 前言
 
-[OneClip](https://github.com/Wcowin/OneClip) 从最初的想法到现在的功能完整的应用，经历了多个版本的迭代。本文分享开发过程中的真实经验、遇到的问题、解决方案和最佳实践，希望能为其他 macOS 开发者提供参考。
+[OneClip](https://github.com/Wkwcowin/OneClip) 从最初的想法到现在的功能完整的应用，经历了多个版本的迭代。本文分享开发过程中的真实经验、遇到的问题、解决方案和最佳实践，希望能为其他 macOS 开发者提供参考。
 
 ## 技术选型
 
@@ -565,4 +565,4 @@ OneClip 的开发过程充满了挑战和学习。通过不断的优化和改进
 3. 用户体验至关重要
 4. 社区反馈推动产品进步
 
-如果你正在开发 macOS 应用，希望这些经验能对你有所帮助。欢迎在 [GitHub Discussions](https://github.com/Wcowin/OneClip/discussions) 中分享你的经验和问题！
+如果你正在开发 macOS 应用，希望这些经验能对你有所帮助。欢迎在 [GitHub Discussions](https://github.com/Wkwcowin/OneClip/discussions) 中分享你的经验和问题！

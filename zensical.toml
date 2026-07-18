@@ -16,17 +16,17 @@ use_directory_urls = true                        # 使用目录形式的URL (例
 # validation = false
 
 # ===== 仓库配置 =====
-repo_url = "https://github.com/Wcowin/Wcowin.github.io"  # 右上角点击跳转的链接
-repo_name = "Wcowin.github.io"                           # 右上角的名字
+repo_url = "https://github.com/Wkwcowin/WKwcowin.github.io"  # 右上角点击跳转的链接
+repo_name = "Wcowin"                           # 右上角的名字
 edit_uri = "edit/main/docs"                              # 编辑按钮跳转的链接
 
 # ===== 额外的 JavaScript 文件 =====
 # 按加载顺序排列
 extra_javascript = [
-    "javascripts/glm-api-config.js",                          # Ask AI API Key 配置
+    # "javascripts/glm-api-config.js",                          # Ask AI API Key 配置（已隐藏）
     "https://cdn.jsdelivr.net/npm/marked/marked.min.js",        # Markdown 渲染库
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/chat-widget.js",                             # Ask AI 聊天组件
-    "javascripts/chat-widget.js",
+    # "javascripts/chat-widget.js",                             # Ask AI 聊天组件（已隐藏）
     # "javascripts/twt-chat.js",                                # TWT Chat 在线客服
     # "javascripts/glm-config.js",                              # 智谱清言翻译配置
     # "javascripts/glm-translate.js",                           # 智谱清言翻译系统
@@ -45,31 +45,32 @@ extra_javascript = [
     "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js",            # 1. 先加载 KaTeX 核心库
     "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js",  # 2. 再加载自动渲染插件
     # "javascripts/katex.js",                                    # 3. 最后加载配置文件
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/katex.js",
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/feedback.js",  # Umami 反馈追踪
+    "javascripts/katex.js",
+    "javascripts/feedback.js",  # Umami 反馈追踪
     "javascripts/github-heatmap.js",                        # GitHub 贡献热力图
-    "javascripts/github-repo-card.js"                       # GitHub 仓库卡片
+    "javascripts/github-repo-card.js"                                                    # GitHub 仓库卡片
 ]
 
 # =====  CSS 文件 =====
 extra_css = [
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/chat-widget.css",   # Ask AI 聊天组件样式
-    "stylesheets/chat-widget.css",
+    # "stylesheets/chat-widget.css",                                             # Ask AI 聊天组件样式（已隐藏）
     # "stylesheets/extra.css",        # 额外样式
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css",         # 额外样式
+    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css",         # 额外样式
+    "https://oneclip.cloud/Wcowin/stylesheets/extra.css",
     "stylesheets/extra2.css",        # 额外样式2
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra2.css", # 额外样式2CDN
     # "stylesheets/link.css",          # 友链样式
-    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css", #友链CDN
-    "stylesheets/poem.css",          # 诗词样式
+    "https://oneclip.cloud/Wcowin/stylesheets/link.css", #友链CDN
+    "https://oneclip.cloud/Wcowin/stylesheets/poem.css",          # 诗词样式
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css", # 诗词样式CDN
     # "stylesheets/customize.css",     # 按钮圆角化等自定义样式
-    "stylesheets/ziti.css",          # 字体样式
+    "https://oneclip.cloud/Wcowin/stylesheets/ziti.css",          # 字体样式
     # "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
     # "about/sty/portfolio.css"        # 作品集样式（已移至 geren.md 单独引入）
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
     "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
-    "stylesheets/github-widgets.css",            # GitHub 相关组件样式
+    "https://oneclip.cloud/Wcowin/stylesheets/github-widgets.css",            # GitHub 相关组件样式
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/github-widgets.css"            # GitHub 相关组件样式
 
 ]
@@ -150,7 +151,7 @@ nav = [
             { "为MKdocs添加文章修订时间戳" = "blog/websitebeauty/time.md" },
             { "页脚设置" = "blog/websitebeauty/footer.md" },
             { "加速网站访问的一些心得" = "blog/websitebeauty/accelerate.md" }
-        ]},       
+        ]},
         { "技术分享" = [
             { "语雀" = "blog/yuque.md" },
             { "Win11镜像下载/KMS激活" = "blog/technique sharing/win.md" },
@@ -209,13 +210,11 @@ nav = [
         "develop/index.md",
         { "AI" = [
             "develop/AI/index.md",
-            { "AI工具(2026最新)" = "develop/AItools.md" },
             { "Prompt 工程入门" = "develop/AI/prompt.md" },
             { "上下文工程（Context Engineering）" = "develop/AI/context-engineering.md" },
             { "AI Agent 入门" = "develop/AI/agent.md" },
             { "Agentic AI：从 Chatbot 到可行动的智能体" = "develop/AI/agentic-ai.md" },
-            { "具身智能：当 AI 拥有身体，物理世界迎来新纪元" = "develop/AI/embodied-ai.md" },
-            { "JEPA：联合嵌入预测架构——通往世界模型的非生成之路" = "develop/AI/jepa.md" },
+            { "AI Agent 记忆系统深度解析" = "develop/AI/memory-system.md" },
             { "What is MCP" = "develop/AI/mcp.md" },
             { "A2A 协议（Agent-to-Agent）" = "develop/AI/a2a.md" },
             { "RAG技术(检索增强生成)" = "develop/AI/rag.md" },
@@ -223,13 +222,16 @@ nav = [
             { "多智能体协作入门" = "develop/AI/multi-agent.md" },
             { "深度推理与测试时计算" = "develop/AI/deep-reasoning.md" },
             { "AI 安全与对抗" = "develop/AI/ai-security.md" },
+            { "具身智能：当 AI 拥有身体，物理世界迎来新纪元" = "develop/AI/embodied-ai.md" },
+            { "JEPA：联合嵌入预测架构——通往世界模型的非生成之路" = "develop/AI/jepa.md" },
             { "Attention Residuals：Kimi架构创新" = "develop/AI/attention-residuals.md" },
             { "Claude Code指南" = "develop/Claude-Code.md" },
             { "Codex指南" = "develop/ChatGPT.md" },
             { "CC Switch：Claude Code / Codex 模型切换工具" = "develop/AI/cc-switch.md" },
             { "OpenClaw：本地开源AI助手" = "develop/AI/openclaw.md" },
             { "Hermes Agent：自进化的 AI Agent" = "develop/AI/hermes-agent.md" },
-            { "nanobot：超轻量级 AI 助手" = "develop/AI/nanobot.md" }
+            { "nanobot：超轻量级 AI 助手" = "develop/AI/nanobot.md" },
+            { "AI工具(2026最新)" = "develop/AItools.md" }
         ]},
         { "Python 环境管理最佳实践" = "develop/environment.md" },
         { "Anaconda 使用教程" = "develop/Anaconda.md" },
@@ -403,7 +405,7 @@ nav = [
         { "考研(已完结)" = "about/kaoyan.md" }
     ]},
     { "Mkdocs教程" = "https://wcowin.work/Mkdocs-Wcowin/" },
-    { "Zensical教程" = "https://wcowin.github.io/Zensical-Chinese-Tutorial/" },
+    { "Zensical教程" = "https://wcowin.work/Zensical-Chinese-Tutorial/" },
     # { "开往" = "https://www.travellings.cn/go.html" }
 ]
 
@@ -417,7 +419,7 @@ logo = "https://pic2.zhimg.com/100/v2-864dbf5fe2906aae3f5f18b491320a0d_r.jpg"
 # "https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp"  # 网站 Logo
 favicon = "https://i.stardots.io/wcowin/1750090373988.png"                         # 网站图标
 language = "zh"                   # 网站语言：中文
-font.code = "JetBrains Mono"  
+font.code = "JetBrains Mono"
 
 # 主题功能特性
 features = [
@@ -483,7 +485,7 @@ alternate = "fontawesome/solid/language"               # 语言切换图标
 # 额外配置 [Extra]
 # ==========================================
 [project.extra]
-generator = true  
+generator = true
 
 # ===== 状态标签 =====
 [project.extra.status]
@@ -537,7 +539,7 @@ name = "Twitter"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/Wcowin"
+link = "https://github.com/Wkwcowin"
 name = "Github"
 
 [[project.extra.social]]

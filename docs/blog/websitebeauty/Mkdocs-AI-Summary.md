@@ -8,7 +8,7 @@ tags:
 
 ![logo 2](https://s1.imagehub.cc/images/2025/06/06/ee327dc2912fd2f31d38ee8a16a1e1ff.png){.img1}
 
-仓库地址:[https://github.com/Wcowin/Mkdocs-AI-Summary](https://github.com/Wcowin/Mkdocs-AI-Summary)
+仓库地址:[https://github.com/Wkwcowin/Mkdocs-AI-Summary](https://github.com/Wkwcowin/Mkdocs-AI-Summary)
 🌐 **在线演示**:[https://wcowin.work/Mkdocs-AI-Summary-Plus/](https://wcowin.work/Mkdocs-AI-Summary-Plus/)
 
 <p align="center">
@@ -18,7 +18,7 @@ tags:
 </p>
 
 <p align="center">
-    <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README.md">中文</a> | <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README-en.md">English</a>
+    <a href="https://github.com/Wkwcowin/mkdocs-ai-hooks/blob/main/README.md">中文</a> | <a href="https://github.com/Wkwcowin/mkdocs-ai-hooks/blob/main/README-en.md">English</a>
 </p>
 
 🚀 **您的MkDocs文档首选智能摘要！**
@@ -66,7 +66,7 @@ tags:
 
 **步骤1**: 下载文件
 
-- 从 [Releases页面](https://github.com/Wcowin/mkdocs-ai-hooks/releases) 下载最新版本
+- 从 [Releases页面](https://github.com/Wkwcowin/mkdocs-ai-hooks/releases) 下载最新版本
 - 或直接下载 `ai_summary.py`文件
 
 **步骤2**: 创建目录并放置文件
@@ -89,7 +89,7 @@ theme:
 
 ### 方法2: Git克隆
 ```bash
-git clone https://github.com/Wcowin/mkdocs-ai-hooks.git
+git clone https://github.com/Wkwcowin/mkdocs-ai-hooks.git
 cd mkdocs-ai-hooks
 pip install -r requirements.txt
 ```
@@ -477,7 +477,7 @@ self.summary_language = 'zh'    # 中文摘要
 
 ### 开发环境
 ```bash
-git clone https://github.com/Wcowin/mkdocs-ai-hooks.git
+git clone https://github.com/Wkwcowin/mkdocs-ai-hooks.git
 cd mkdocs-ai-hooks
 pip install -r requirements.txt
 ```
@@ -523,7 +523,7 @@ pip install -r requirements.txt
 
 ## 🐛 问题反馈
 
-遇到问题？请在 [Issues](https://github.com/Wcowin/mkdocs-ai-hooks/issues) 中反馈。
+遇到问题？请在 [Issues](https://github.com/Wkwcowin/mkdocs-ai-hooks/issues) 中反馈。
 
 **反馈时请包含**：
 
@@ -537,7 +537,7 @@ pip install -r requirements.txt
 
 ## 📄 许可证
 
-本项目采用 [MIT License](https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/LICENSE) 开源协议。
+本项目采用 [MIT License](https://github.com/Wkwcowin/mkdocs-ai-hooks/blob/main/LICENSE) 开源协议。
 
 ---
 
@@ -594,10 +594,10 @@ pip install -r requirements.txt
 </p>
 
 <p align="center">
-    <a href="https://github.com/Wcowin/mkdocs-ai-hooks/stargazers">
+    <a href="https://github.com/Wkwcowin/mkdocs-ai-hooks/stargazers">
         <img src="https://img.shields.io/github/stars/Wcowin/mkdocs-ai-hooks?style=social" alt="Stars">
     </a>
-    <a href="https://github.com/Wcowin/mkdocs-ai-hooks/network/members">
+    <a href="https://github.com/Wkwcowin/mkdocs-ai-hooks/network/members">
         <img src="https://img.shields.io/github/forks/Wcowin/mkdocs-ai-hooks?style=social" alt="Forks">
     </a>
 </p>

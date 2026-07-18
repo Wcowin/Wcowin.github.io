@@ -1,14 +1,5 @@
 ---
 title: 导览
-# 隐藏的模块
-hide:
-  - footer
-  #  - navigation # 隐藏左边导航
-  #  - toc #隐藏右边导航
-  #  - footer #隐藏翻页
-  #  - feedback  #隐藏反馈
-comments: false  #评论，默认不开启
-hide_comment: true
 ---
 
 

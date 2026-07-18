@@ -20,7 +20,7 @@ status: new
 
 
 Hello, Mr. or Ms.
-I would like to clarify first, my account is: <a href="https://github.com/Wcowin" target="_blank">https://github.com/Wcowin</a>. I am a college student and I have been using GitHub since my freshman year. Today, I updated my personal blog, and the workflow caused a lag, which was an unintentional action. I thought it was a normal update like usual. I hope you can unblock me.I have used GitHub for four years without any violations. An unintentional workflow submission resulted in my account being flagged, and I am very upset. I hope you can treat me fairly and investigate the truth! Thank you! I hope to receive a reply as soon as possible, thank you!I will continue to maintain the open-source spirit.
+I would like to clarify first, my account is: <a href="https://github.com/Wkwcowin" target="_blank">https://github.com/Wcowin</a>. I am a college student and I have been using GitHub since my freshman year. Today, I updated my personal blog, and the workflow caused a lag, which was an unintentional action. I thought it was a normal update like usual. I hope you can unblock me.I have used GitHub for four years without any violations. An unintentional workflow submission resulted in my account being flagged, and I am very upset. I hope you can treat me fairly and investigate the truth! Thank you! I hope to receive a reply as soon as possible, thank you!I will continue to maintain the open-source spirit.
 
 ---
 

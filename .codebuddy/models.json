@@ -1,0 +1,144 @@
+{
+  "models": [
+    {
+      "id": "hy3-preview",
+      "name": "hy3-preview",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek-v3",
+      "name": "deepseek-v3",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek-r1",
+      "name": "deepseek-r1",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek-v3.2",
+      "name": "deepseek-v3.2",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "name": "deepseek-v4-flash",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "deepseek-v4-pro",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "glm-5.1",
+      "name": "glm-5.1",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "glm-5.0-turbo",
+      "name": "glm-5.0-turbo",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "glm-5v-turbo",
+      "name": "glm-5v-turbo",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "kimi-k2.6",
+      "name": "kimi-k2.6",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "kimi-k2.5",
+      "name": "kimi-k2.5",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "minimax-m3",
+      "name": "minimax-m3",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "minimax-m2.7",
+      "name": "minimax-m2.7",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    },
+    {
+      "id": "auto",
+      "name": "auto",
+      "vendor": "Custom",
+      "url": "http://127.0.0.1:8002/v1",
+      "apiKey": "API Key: sk-4R5DrZ4czqog-Q_TCObCePOYCvJEviG8roQVPwiRcnw",
+      "supportsToolCall": true,
+      "supportsImages": true,
+      "supportsReasoning": true
+    }
+  ]
+}

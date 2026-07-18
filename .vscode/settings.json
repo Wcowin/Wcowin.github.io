@@ -1,4 +1,7 @@
 {
+    "files.associations": {
+        "*.md": "python-markdown"
+    },
     "git.ignoreLimitWarning": true,
     "yaml.schemas": {
       "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"

@@ -153,7 +153,7 @@ Zensical/MkDocs Material 将主题属性 `data-md-color-scheme` 设置在 `<body
 ## 参考链接
 
 - [Giscus 官方文档](https://giscus.app/zh-CN)
-- [Zensical 官方文档 - 添加评论系统](https://zensical.org/docs/setup/adding-a-comment-system/)
+- [Zensical 官方文档 - 添加评论系统](https://zensical.org/docs/setup/comment-system/)
 - [MkDocs Material 评论系统文档](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)
 
 ## 总结

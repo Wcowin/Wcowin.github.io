@@ -158,7 +158,7 @@ if (typeof document$ !== "undefined") {
 
 ## </p><h1 id="01" name="01"><strong>2024-05-05</strong></h1><p>
 
-* 发布[Mkdocs-Wcowin主题|3.0版本](https://github.com/Wcowin/Mkdocs-Wcowin/releases/tag/3.0){target=“_blank”}！！！
+* 发布[Mkdocs-Wcowin主题|3.0版本](https://github.com/Wkwcowin/Mkdocs-Wcowin/releases/tag/3.0){target=“_blank”}！！！
 * 优化网站流畅度（玄学）
 * 和小王一起吃了好吃的
 * 感谢王鹏老哥的打赏
@@ -235,4 +235,3 @@ if (typeof document$ !== "undefined") {
 * 优化网站流畅度（玄学）
 * 引入[git-revision-date-localized-plugin](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)插件，以便记录文档创建和最后一次修改时间
 * 和小王一起看了更多的猫咪
-

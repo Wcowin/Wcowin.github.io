@@ -23,9 +23,9 @@ tags:
 |------|------|
 | **自学习闭环** | 完成复杂任务后自动创建 Skill，使用中自我改进，跨会话积累经验 |
 | **持久记忆** | MEMORY.md + USER.md + FTS5 全文搜索 + LLM 摘要 + 8 种外部记忆提供者 |
-| **639 个技能** | 74 内置 + 44 官方可选 + 521 社区，兼容 agentskills.io 开放标准 |
+| **639 个技能** | 74 内置 + 44 官方可选 + 521 社区，兼容 agentskills.io 开放标准（截至 v0.8.0） |
 | **15+ 平台** | Telegram、Discord、Slack、WhatsApp、Signal、飞书、钉钉、邮件等 |
-| **47 个内置工具** | 文件操作、代码执行、Web 搜索、浏览器、图像生成、TTS 等 |
+| **47 个内置工具** | 文件操作、代码执行、Web 搜索、浏览器、图像生成、TTS 等（截至 v0.8.0） |
 | **随处运行** | 本地、Docker、SSH、Daytona、Singularity、Modal 六种终端后端 |
 | **子代理并行** | 生成隔离的子代理并行处理任务流 |
 | **MCP 支持** | 连接任何 MCP 服务器扩展工具能力 |
@@ -551,4 +551,4 @@ flowchart TB
 - [AI 安全与对抗](/develop/AI/ai-security/) — Agent 安全防护，Hermes 的安全机制参考
 
 
-**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wkwcowin)

@@ -73,7 +73,7 @@ zensical --version
 
 ```markdown
 你是 Zensical 配置助手。请将下面的 MkDocs / Material for MkDocs 的 `mkdocs.yml` 配置转换为 Zensical 使用的 `zensical.toml`。  
-可以参考：https://raw.githubusercontent.com/Wcowin/Wcowin.github.io/refs/heads/main/zensical.toml 中的配置。
+可以参考：https://raw.githubusercontent.com/Wkwcowin/Wkwcowin.github.io/refs/heads/main/zensical.toml 中的配置。
 
 务必严格遵守 Zensical 官方文档中的 `zensical.toml` 规则，特别是 **配置顺序规则**：
 - 只使用一个顶级表 `[project]` 作为项目作用域。
@@ -748,4 +748,4 @@ nav = [
 
 - 查看 [常见问题](https://wcowin.work/Zensical-Chinese-Tutorial/faq/)
 - 访问 [Zensical 官方文档](https://zensical.org/docs/)
-- 联系我们加入 [Zensical-Chinese-Tutorial 社区](https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp)
+- 联系我们加入 [Zensical-Chinese-Tutorial 社区](https://picx.zhimg.com/80/v2-ff732fe4d4b59cd111ca0e4a6eb5e1a9_1440w.webp)

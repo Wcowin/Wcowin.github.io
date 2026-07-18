@@ -1,14 +1,16 @@
 ---
-
-title: 利用Mkdocs部署静态网页至GitHubpages tags:
-
-- Mkdocs
-
+title: 利用Mkdocs部署静态网页至GitHubpages
+comments: false
+tags:
+  - Mkdocs
 ---
 
 # 利用Mkdocs部署静态网页至GitHubpages
+ 
 
-## !!! info Material for MkDocs官方网站: [Material for MkDocs](https://www.mkdocs.org/) MkDocs中文文档: [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
+[Material for MkDocs](https://www.mkdocs.org/)
+
+[MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
 
 推荐看下这个视频： :fontawesome-brands-bilibili:{ style="color: #EE98A7" } [**How to set up Material for MkDocs**](https://space.bilibili.com/1407028951/lists/4566631?type=series) by @Wcowin – :octicons-clock-24: 10m – 用MKdocs构建一个博客网站.
 
@@ -18,7 +20,7 @@ title: 利用Mkdocs部署静态网页至GitHubpages tags:
 
 1.下载[Github Desktop](https://github.com/desktop/desktop){target=“\_blank”}
 
-2.有一个GitHub账号​​​​​​​(有手就行)
+2.有一个GitHub账号(有手就行)
 
 ---
 
@@ -26,7 +28,7 @@ title: 利用Mkdocs部署静态网页至GitHubpages tags:
 
 参考教程：
 
-[利用mkdocs部署静态网页至GitHubpages（更新版）](https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501){target=“\_blank”}[^注](于2025.2.19重写此文)
+[利用mkdocs部署静态网页至GitHubpages（更新版）](https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501){target=“\_blank”}
 
 与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库 ![img](https://s1.imagehub.cc/images/2024/02/02/5074a3e2b7284355e0f777fd9e621ee3.png)
 

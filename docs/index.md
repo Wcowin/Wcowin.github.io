@@ -10,7 +10,7 @@ hide:
 
 
 <!-- OneClip 公告栏 -->
-<div class="oneclip-announcement" id="oneclip-announcement">
+<div class="oneclip-announcement t-resize" id="oneclip-announcement">
   <button class="oneclip-announcement-close" onclick="closeAnnouncement()" aria-label="关闭公告">
     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
       <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -19,20 +19,23 @@ hide:
   </button>
   <div class="oneclip-announcement-content">
     <div class="oneclip-announcement-item">
-      🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— 简单专业的 macOS 剪切板管理工具<a href="https://github.com/Wcowin/OneClip" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a>
+      🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— UP本人开发的macOS 剪切板管理工具<a href="https://github.com/One-Clip/OneClip" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a>
     </div>
     <div class="oneclip-announcement-item">
-      ✈️ <a href="https://vpn07.com/index.html#/register?code=xWecG89k" target="_blank" rel="noopener noreferrer">好用机场</a> —— 季付低至22元|70+国家线路 千兆带宽|支持流媒体|8折优惠码：VPN07
+      ✈️ <a href="https://vpn07.com/index.html#/register?code=xWecG89k" target="_blank" rel="noopener noreferrer">好用机场</a> —— 8折季付低至22元|70+国家线路 千兆带宽|支持流媒体
     </div>
     <div class="oneclip-announcement-item">
-      ☺️ <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" rel="noopener noreferrer">Zensical中文教程</a> —— 最新的Zensical中文教程
+      ☺️ <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank" rel="noopener noreferrer">Zensical中文教程</a> —— 最新Zensical中文教程，零基础搭建本站同款博客
     </div>
     <div class="oneclip-announcement-item">
       🙌🏻 <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank" rel="noopener noreferrer">MaterialX</a> —— 下一代 MkDocs主题，让你继续用熟悉的方式构建漂亮文档
     </div>
     <div class="oneclip-announcement-item">
-      📱 <a href="https://api.simhaoka.com/?u=Wcowin" target="_blank" rel="noopener noreferrer">办电话卡</a> —— 月租低至29元｜Wcowin严选
+      🎬 <a href="https://shorttv.online/s/dtFYMVDv" target="_blank" rel="noopener noreferrer">短剧速看</a> —— 千万热门短剧免费看！剧情高能不断，打开就停不下来
     </div>
+    <!-- <div class="oneclip-announcement-item">
+      📱 <a href="https://api.simhaoka.com/?u=Wcowin" target="_blank" rel="noopener noreferrer">办电话卡</a> —— 月租低至29元｜Wcowin严选
+    </div> -->
   </div>
 </div>
 
@@ -83,7 +86,7 @@ hide:
       </span>
     </div>
     <div class="wcowin-header-btns">
-      <a href="https://github.com/Wcowin" target="_blank" rel="noopener noreferrer" class="md-button md-button--primary">
+      <a href="https://github.com/Wkwcowin" target="_blank" rel="noopener noreferrer" class="md-button md-button--primary">
         <span class="twemoji">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
         </span>
@@ -102,8 +105,8 @@ hide:
     <div class="flip-glow-ultimate">
       <div class="flip-glow-ultimate-glow"></div>
       <div class="flip-glow-ultimate-imgs">
-        <img src="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg" alt="Wcowin头像背面" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="280" height="280">
-        <img src="https://pic2.zhimg.com/100/v2-d6a47de28a761522a8e07ac3b5bd458d_r.jpg" alt="Wcowin头像正面" class="flip-glow-ultimate-back" loading="lazy" width="280" height="280">
+        <img src="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg" alt="Wcowin头像背面" class="flip-glow-ultimate-front" loading="eager" fetchpriority="high" width="260" height="260">
+        <img src="https://pic2.zhimg.com/100/v2-d6a47de28a761522a8e07ac3b5bd458d_r.jpg" alt="Wcowin头像正面" class="flip-glow-ultimate-back" loading="lazy" width="260" height="260">
       </div>
     </div>
   </div>
@@ -312,13 +315,13 @@ hide:
   align-items: center;
   justify-content: center;
   min-width: 240px;
-  flex: 0 0 280px;
+  flex: 0 0 260px;
 }
 
 .flip-glow-ultimate {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -414,7 +417,7 @@ hide:
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 260px; height: 260px;
+  width: 240px; height: 240px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
@@ -449,8 +452,8 @@ hide:
 
 .flip-glow-ultimate-imgs {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   overflow: hidden;
   perspective: 1200px;
@@ -575,18 +578,13 @@ hide:
   const phrasesData = {
     chinese_simplified: [
       "A Swift Developer",
+      "A graduate student",
       "A dreamer"
     ],
     english: [
       "A Swift Developer",
+      "A graduate student",
       "A dreamer",
-      "Through hardship to the stars"
-    ],
-    japanese: [
-      "A college student",
-      "A developer",
-      "A dreamer",
-      "苦難を経て星へ"
     ]
   };
   
@@ -702,7 +700,7 @@ hr {
 <style>
   .greeting-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     padding: 15px;
     border-radius: 10px;
     background-color: rgba(240, 240, 240, 0.5);
@@ -735,7 +733,7 @@ hr {
   @media (max-width: 768px) {
     .greeting-container {
       padding: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 6px;
     }
 
     .greeting-text {
@@ -865,7 +863,7 @@ hr {
 
 
 <!-- GitHub Contribution Heatmap Card -->
-<div class="github-heatmap" data-username="Wcowin"></div>
+<!-- <div class="github-heatmap" data-username="Wcowin"></div> -->
 
 
 
@@ -908,6 +906,7 @@ hr {
     - [多智能体协作入门](develop/AI/multi-agent.md)、[Prompt 工程入门](develop/AI/prompt.md)
     - [A2A 协议](develop/AI/a2a.md)、[AI 安全与对抗](develop/AI/ai-security.md)
     - [JEPA-通往世界模型的非生成之路](develop/AI/jepa.md)
+    - [AI Agent 记忆系统深度解析](develop/AI/memory-system.md)「2026/6/23最新」
 
 -   :material-account-box-outline:{ .lg .middle } __关于__
 
@@ -916,7 +915,7 @@ hr {
     - [留言板](waline.md)
     - [我的开发项目/作品/应用](develop/Mywork/index.md)
     - [:octicons-arrow-right-24: 了解我](about/geren/#_4){ data-preview }
-    - [支持作者](about/zcw/#alipay){ data-preview }
+    - [支持作者](about/zcw/)
 </div>
 
 
@@ -1100,4 +1099,3 @@ body {
 <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
 
 ---
-

@@ -50,7 +50,7 @@ $ tree -a
       <strong>Bilibili</strong>
     </a>
     and
-    <a href="https://twitter.com/Wcowin_">
+    <a href="https://x.com/intent/follow?screen_name=Wcowin_">
       <span class="twemoji twitter">
         {% include ".icons/fontawesome/brands/twitter.svg" %}
       </span>

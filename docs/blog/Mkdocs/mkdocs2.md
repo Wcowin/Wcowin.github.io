@@ -77,7 +77,7 @@ tags:
         repo: fontawesome/brands/github #右上角图标
         logo: logo
     edit_uri: edit/main/docs # 编辑按钮跳转的链接
-    repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
+    repo_url: https://github.com/Wkwcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
     repo_name: Mkdocs-Wcowin # 右上角的名字
     # [Navigtion]
     nav:
@@ -147,9 +147,9 @@ tags:
           link: https://t.me/wecowin
           name: telegram
         - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
-          link: https://twitter.com/wcowin_
+          link: https://x.com/intent/follow?screen_name=Wcowin_
         - icon: fontawesome/brands/github
-          link: https://github.com/Wcowin
+          link: https://github.com/Wkwcowin
 
         - icon: fontawesome/regular/envelope #联系方式图标
           link: mailto:<wangkewen821@gmail.com> #邮件联系方式
@@ -472,9 +472,9 @@ extra:
       link: https://t.me/wecowin
       name: telegram
     - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
-      link: https://twitter.com/wcowin_
+      link: https://x.com/intent/follow?screen_name=Wcowin_
     - icon: fontawesome/brands/github
-      link: https://github.com/Wcowin
+      link: https://github.com/Wkwcowin
 
     - icon: fontawesome/regular/envelope #联系方式图标
       link: mailto:<wangkewen821@gmail.com> #邮件联系方式

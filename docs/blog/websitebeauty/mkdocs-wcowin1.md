@@ -40,8 +40,8 @@ comments: false  #评论，默认不开启
 **博客页**
 ![](https://pic1.zhimg.com/80/v2-652abf2464779ebc6e5790ecaccaadde_1440w.webp)
 
-**关于**
-<img width="1355" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/bfc10737-260c-44c7-b036-8c7dba52be24">
+<!--**关于**
+<img width="1355" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/bfc10737-260c-44c7-b036-8c7dba52be24">-->
 
 
 **标签页**
@@ -51,7 +51,7 @@ comments: false  #评论，默认不开启
 ![](https://pica.zhimg.com/80/v2-5d78061fb38a8f68aab12461798bc147_1440w.webp?source=2c26e567)
 
 **页面底部**
-<img width="1363" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/ac4db87b-396a-4d0e-99b5-51a1b316db33">
+<img width="1363" alt="image" src="https://github.com/Wkwcowin/Mkdocs-Wcowin/assets/99159173/ac4db87b-396a-4d0e-99b5-51a1b316db33">
 
 **Lighthouse测试结果**
 <img width="1363" alt="image" src="https://pic3.zhimg.com/80/v2-afef47cac915ad51071fdc2f6d990b30_1440w.webp">
@@ -97,8 +97,8 @@ comments: false  #评论，默认不开启
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://www.star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
 ## 贡献者
-<a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Wcowin/Mkdocs-Wcowin" />
+<a href="https://github.com/Wkwcowin/Mkdocs-Wcowin/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Wkwcowin/Mkdocs-Wcowin" />
 </a>
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)

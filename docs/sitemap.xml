@@ -2,602 +2,254 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wcowin.work/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/Mkdocs-Wcowin/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/about/geren/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/about/zcw/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/Asymmetriccryptography/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/Bitcoin/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/Groupcipher/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/HashAndMAC/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/Introduction/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/ModernCryptography/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/Numbertheory/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/ProtocolAndApplication/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Cryptography/Symmetriccryptography/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mac/homebrew/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mkdocs/MIT/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mkdocs/click/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mkdocs/collapse-of-mkdocs/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mkdocs/mkdocs1/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mkdocs/mkdocs2/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mkdocs/mkdocs3/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mkdocs/mkdocsblog/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Mkdocs/mkfirst/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/OneClip/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Webplay/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/ask-ai/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/configuration/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/giscus-theme-sync/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/github-heatmap/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/github-pages/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/github-repo-card/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/indexfirst/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/migration/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/quick-start/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/translate-microsoft/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/translate-multilang/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/Zensical/vercel-deployment/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/blog/indexblog/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wcowin.work/blog/macsoft/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <loc>https://wcowin.work/blog/Mac/homebrew/</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wcowin.work/blog/Mkdocs/collapse-of-mkdocs/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wcowin.work/blog/Mkdocs/mkdocs1/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wcowin.work/blog/Mkdocs/mkdocs2/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wcowin.work/blog/Mkdocs/mkfirst/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/blog/py/uv/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/aixin/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <loc>https://wcowin.work/blog/technique sharing/kexue/</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/comkdocs/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <loc>https://wcowin.work/blog/Zensical/configuration/</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/googletranslate/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <loc>https://wcowin.work/blog/Zensical/indexfirst/</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/jiaoben/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <loc>https://wcowin.work/blog/Zensical/migration/</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/kexue/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <loc>https://wcowin.work/blog/Zensical/quick-start/</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/matlabrose/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/ohmuzsh/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/ttq/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/tuchuang/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/technique%20sharing/win/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/temp-email/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/404/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/Customdomain/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/GoogleAD/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/MkDocs-AI-Summary-plus/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/Mkdocs-AI-Summary/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/Relativeaddress/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/accelerate/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/avatar-glow/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/backgroud/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/footer/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/header/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/mkcomments/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/mkdocs-document-dates/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/mkdocs-translate/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/mkdocs-wcowin1/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/mkdocsfont/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/mkpdf/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/reading_time/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/recommend/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/shubiao/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/time/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/webtalknow/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/websitebeauty/yuanjiaohua/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/blog/yuque/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/a2a/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/agent/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/ai-security/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/attention-residuals/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/deep-reasoning/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/hermes-agent/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wcowin.work/develop/AI/jepa/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/mcp/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wcowin.work/develop/AI/memory-system/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/multi-agent/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/openclaw/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/prompt/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/rag/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AI/skill/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/AItools/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/ChatGPT/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/Claude-Code/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/Mac-development/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/develop/Mywork/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://wcowin.work/develop/regex/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/link/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wcowin.work/linktech/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <loc>https://wcowin.work/Mkdocs-Wcowin/</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/relax/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/research/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/trip/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wcowin.work/waline/</loc>
-    <lastmod>2026-05-11T02:55:41Z</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wcowin.work/Zensical-Chinese-Tutorial/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>

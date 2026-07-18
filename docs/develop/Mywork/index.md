@@ -18,7 +18,7 @@ tags:
     data-stars="327"
     data-forks="15"
     data-license="MIT"
-    href="https://github.com/Wcowin/OneClip"
+    href="https://github.com/Wkwcowin/OneClip"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
@@ -35,7 +35,7 @@ tags:
     data-forks="0"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    href="https://github.com/Wcowin/Mac-Finder-Clipboard"
+    href="https://github.com/Wkwcowin/Mac-Finder-Clipboard"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
@@ -52,7 +52,7 @@ tags:
     data-forks="5"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    href="https://github.com/Wcowin/Mkdocs-Wcowin"
+    href="https://github.com/Wkwcowin/Mkdocs-Wcowin"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
@@ -69,7 +69,7 @@ tags:
     data-forks="1"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    href="https://github.com/Wcowin/Mkdocs-AI-Summary"
+    href="https://github.com/Wkwcowin/Mkdocs-AI-Summary"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
