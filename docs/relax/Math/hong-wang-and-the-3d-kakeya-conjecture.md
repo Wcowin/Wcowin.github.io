@@ -2,9 +2,9 @@
 
 ## 摘要
 
-挂谷集合猜想（Kakeya set conjecture）是几何测度论与调和分析中的核心问题之一。它断言：在 $\mathbb{R}^n$ 中，任何包含每个方向上一条单位线段的集合，都必须具有最大的 Minkowski 维数和 Hausdorff 维数 $n$。
+挂谷集合猜想（Kakeya set conjecture）是几何测度论与调和分析中的核心问题之一。挂谷集合猜想断言：在 $\mathbb{R}^n$ 中，任何包含每个方向上一条单位线段的集合，都必须具有最大的 Minkowski 维数和 Hausdorff 维数 $n$。
 
-2025 年 2 月，王虹（Hong Wang）与 Joshua Zahl 发布了 127 页的预印本 *Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions*，证明三维 Kakeya 集的 Minkowski 维数和 Hausdorff 维数均为 $3$。2026 年，Larry Guth、王虹与 Zahl 又给出一份更精简的证明；同年，Guth 为 Séminaire Bourbaki 撰写了面向较广泛数学读者的系统综述。因此，当前数学文献已将三维挂谷集合猜想作为得到解决的问题讨论。
+2025 年 2 月，王虹（Hong Wang）与 Joshua Zahl 发布了 127 页的预印本 *[Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions](https://arxiv.org/abs/2502.17655)*，证明三维 Kakeya 集的 Minkowski 维数和 Hausdorff 维数均为 $3$。2026 年，Larry Guth、王虹与 Zahl 又给出一份更精简的证明；同年，Guth 为 Séminaire Bourbaki 撰写了面向较广泛数学读者的系统综述。因此，当前数学文献已将三维挂谷集合猜想作为得到解决的问题讨论。
 
 本文介绍问题的准确表述、历史进展、Wang–Zahl 证明的主要结构及仍然开放的问题。证明部分只提供有文献依据的概念性路线，不试图用少量公式替代原论文中的技术细节。
 
@@ -46,13 +46,7 @@ Joshua Zahl 从事调和分析、组合几何与几何测度论研究，曾任�
 
 1917 年，日本数学家挂谷宗一（Sōichi Kakeya）研究如下问题：在平面区域内，一根单位长度的针完成所有方向的转动，区域面积最小可以是多少？文献中既有“旋转 $180^\circ$”也有“旋转 $360^\circ$”的说法；由于无向线段旋转 $180^\circ$ 后已经遍历所有方向，这两种表述在相关几何问题中本质等价，但讨论连续运动时应说明所采用的约定。
 
-在区域被要求为凸集时，Gyula Pál 于 1921 年证明最小面积为
-
-$$
-\frac{1}{\sqrt{3}},
-$$
-
-由高为 $1$ 的等边三角形达到。若取消凸性限制，情形则完全不同。
+在区域被要求为凸集时，Gyula Pál 于 1921 年证明最小面积为$\frac{1}{\sqrt{3}}$，由高为 $1$ 的等边三角形达到。若取消凸性限制，情形则完全不同。
 
 ### 1.2 Besicovitch 的零测度构造
 
