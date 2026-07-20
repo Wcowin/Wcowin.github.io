@@ -164,7 +164,7 @@ nav = [
             { "科学上网" = "blog/technique sharing/kexue.md" },
             { "计算机编年史" = "blog/technique sharing/jisuanjibiannianshi.md" }
         ]},
-        { "学术" = [
+        { "Math学术" = [
             { "LaTeX常用符号整理" = "blog/Academic/LaTeX.md" },
             { "一份简短的关于LATEX安装的介绍" = "https://mirrors.sjtug.sjtu.edu.cn/ctan/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf" },
             { "希腊字母总结" = "blog/Academic/希腊字母.pdf" },
@@ -292,7 +292,7 @@ nav = [
         "relax/index.md",
         { "推荐的Books" = "relax/tuijianyuedu.md" },
         { "Apple" = "relax/Apple.md" },
-        { "小米" = "relax/xiaomo.md" },
+        { "小米" = "relax/xiaomi.md" },
         { "诗文" = [
             { "枫桥夜泊" = "relax/shiwen/fqyb.md" },
             { "滕王阁序" = "relax/shiwen/twgx.md" },
@@ -318,13 +318,13 @@ nav = [
             ]}
         ]},
         { "数至十" = [
-            { "1" = "relax/wkwMath/1.md" },
-            { "2" = "relax/wkwMath/2.md" },
-            { "3" = "relax/wkwMath/3.md" },
-            { "4" = "relax/wkwMath/4.md" },
-            { "5" = "relax/wkwMath/5.md" },
-            { "6" = "relax/wkwMath/6.md" },
-            { "王虹与挂谷猜想" = "relax/wkwMath/王虹与挂谷猜想.md" }
+            { "1" = "relax/Math/1.md" },
+            { "2" = "relax/Math/2.md" },
+            { "3" = "relax/Math/3.md" },
+            { "4" = "relax/Math/4.md" },
+            { "5" = "relax/Math/5.md" },
+            { "6" = "relax/Math/6.md" },
+            { "王虹、Joshua Zahl 与三维挂谷猜想的解决" = "relax/Math/hong-wang-and-the-3d-kakeya-conjecture.md" }
         ]},
         { "观影" = [
             { "推荐的番剧" = "relax/Movie/tuijianfanju.md" },

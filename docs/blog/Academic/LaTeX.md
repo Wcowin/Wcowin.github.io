@@ -1,14 +1,10 @@
 ---
 title: LaTeX常用符号整理
 tags:
-  - Mathematic
----
-
-推荐阅读： [常用LaTeX代码](https://flowus.cn/latex/share/66110e84-b24a-4cd5-b8a7-2ba2afb35a30)
+  - Math
+---  
 
 # LaTeX常用符号整理
-
-**本文摘抄自**： [LaTeX常用符号整理](https://github.com/Yang-Xijie/yang-xijie.github.io/edit/main/docs/BLOG/Foundation/Math/latex.md)
 
 ## 希腊字母
 | Name       | Display      | Capital Case   | Display      | Var Case      | Display         |
@@ -49,6 +45,14 @@ tags:
 （也可以使用`\rm`将下一个单词变正，`\text T`的作用范围只是下一个字母；可以尝试加`{}`）
 
 ## 运算
+
+### 微分与导数正体
+
+| Type | Typeset |
+| :-: | :-: |
+|`\mathrm{d}`|$\mathrm{d}$|
+|`\mathrm{d}x`|$\mathrm{d}x$|
+|`\mathrm{d}y`|$\mathrm{d}y$|
 
 ### 简单运算
 | Type | Typeset |
@@ -96,16 +100,40 @@ tags:
 | `\arccos` | $\arccos$ |
 | `\arcsin` | $\arcsin$ |
 |  `\arctan`| $\arctan$ |
+| `\arg` | $\arg$ |
 | `\cos` | $\cos$ |
 | `\cosh` | $\cosh$ |
 | `\cot` | $\cot$ |
+| `\coth` | $\coth$ |
+| `\csc` | $\csc$ |
+| `\deg` | $\deg$ |
+| `\dim` | $\dim$ |
+| `\exp` | $\exp$ |
+| `\gcd` | $\gcd$ |
+| `\hom` | $\hom$ |
+| `\ker` | $\ker$ |
 | `\lg` | $\lg$ |
+| `\liminf` | $\liminf$ |
+| `\limsup` | $\limsup$ |
 | `\ln` | $\ln$ |
 | `\log` | $\log$ |
+| `\Pr` | $\Pr$ |
+| `\sec` | $\sec$ |
 | `\sin` | $\sin$ |
 | `\sinh` | $\sinh$ |
 |`\tan`  | $\tan$ |
 |  `\tanh`| $\tanh$ |
+
+### 自定义算子
+
+| Type | Typeset |
+| :-: | :-: |
+|`\operatorname{diag}`  | $\operatorname{diag}$ |
+| `\operatorname{rank}` | $\operatorname{rank}$ |
+| `\operatorname{tr}` | $\operatorname{tr}$ |
+| `\operatorname{Var}` | $\operatorname{Var}$ |
+| `\operatorname{Cov}` | $\operatorname{Cov}$ |
+| `\operatorname{sgn}` | $\operatorname{sgn}$ |
 
 ### 极限运算符
 
@@ -168,12 +196,28 @@ tags:
 | `\equiv` | $\equiv$ |
 | `\subset` | $\subset$ |
 | `\supset` | $\supset$ |
-| `\subseteq `| $\subseteq$ |
-| `\subsetneqq `| $\subsetneqq$ |
+| `\subseteq`| $\subseteq$ |
+| `\subseteqq` | $\subseteqq$ |
+| `\subsetneq` | $\subsetneq$ |
+| `\subsetneqq`| $\subsetneqq$ |
+| `\supseteq` | $\supseteq$ |
+| `\supseteqq` | $\supseteqq$ |
+| `\supsetneq` | $\supsetneq$ |
+| `\supsetneqq` | $\supsetneqq$ |
 | `\perp` | $\perp$ |
 | `\parallel` | $\parallel$ |
 | `\mid` | $\mid$ |
 | `\propto` | $\propto$ |
+| `\oplus` | $\oplus$ |
+| `\ominus` | $\ominus$ |
+| `\odot` | $\odot$ |
+| `\oslash` | $\oslash$ |
+| `\otimes` | $\otimes$ |
+| `\vdash` | $\vdash$ |
+| `\dashv` | $\dashv$ |
+| `\models` | $\models$ |
+| `\not<` | $\not<$ |
+| `\not=` | $\not=$ |
 
 ### Miscellaneous Symbols
 
@@ -187,22 +231,38 @@ tags:
 |`\varnothing` `\emptyset`  | $\emptyset$ |
 | `\forall` | $\forall$ |
 | `\exists` | $\exists$ |
+| `\nexists` | $\nexists$ |
 | `\triangle` | $\triangle$  |
 |`\angle`  | $\angle$ |
 |  `\surd`| $\surd$ |
 | `\nabla` | $\nabla$ |
-|`\neg` `\lnot`  | $\neg$ |
+| `\hbar` | $\hbar$ |
+| `\aleph` | $\aleph$ |
+| `\Re` | $\Re$ |
+| `\Im` | $\Im$ |
+| `\wp` | $\wp$ |
 |`\ldots`|$\ldots$|
 |`\cdots`  | $\cdots$ |
 |  `\vdots`| $\vdots$ |
 | `\ddots` | $\ddots$ |
+| `\dots` | $\dots$ |
+| `\dotsc` | $\dotsc$ |
+| `\dotsb` | $\dotsb$ |
+| `\dotsm` | $\dotsm$ |
 | `\S` | $\S$ |
 
-### 娱乐
+### 其他
 
 | Type | Typeset |
 | :-: | :-: |
-|  `\spadesuit`| $\spadesuit$ |
+| `\mathbb{R}` | $\mathbb{R}$ |
+| `\mathbb{C}` | $\mathbb{C}$ |
+| `\mathbb{N}` | $\mathbb{N}$ |
+| `\mathbb{Z}` | $\mathbb{Z}$ |
+| `\mathbb{Q}` | $\mathbb{Q}$ |
+| `\mathbb{P}` | $\mathbb{P}$ |
+| `\mathbb{H}` | $\mathbb{H}$ |
+| `\spadesuit`| $\spadesuit$ |
 |  `\heartsuit`| $\heartsuit$ |
 | `\diamondsuit` | $\diamondsuit$ |
 | `\clubsuit` | $\clubsuit$ |
@@ -245,10 +305,32 @@ tags:
 
 使用`\left \(`和`\right \}`打出大的包裹括号. 用`.`代替括号可以空出来一半的括号
 
-### 绝对值/取模
+### 绝对值/范数
 
-`\left | a \right |` $\left | a \right |$
-`\left \| \vec{a} \right \|` $\left \| \vec{a} \right \|$
+| Type | Typeset |
+| :-: | :-: |
+|`\left\lvert a \right\rvert`|$\left\lvert a \right\rvert$|
+|`\left\lVert \vec{a} \right\rVert`|$\left\lVert \vec{a} \right\rVert$|
+|`\left\lfloor a \right\rfloor`|$\left\lfloor a \right\rfloor$|
+|`\left\lceil a \right\rceil`|$\left\lceil a \right\rceil$|
+|`\operatorname{abs}(a)`|$\operatorname{abs}(a)$|
+
+> **注意**：`\lvert` / `\rvert` / `\lVert` / `\rVert` 需要 `amsmath` 宏包。直接写 `|` 或 `\|` 间距不对，且左右无法区分。
+>
+> `\lfloor` `\rfloor` 下取整；`\lceil` `\rceil` 上取整。
+
+### 手动缩放定界符
+
+当 `\left` `\right` 自动缩放不满足需求时：
+
+| Type | Typeset |
+| :-: | :-: |
+|`\big( a \big)` | $\big( a \big)$ |
+|`\Big( a \Big)` | $\Big( a \Big)$ |
+|`\bigg( a \bigg)` | $\bigg( a \bigg)$ |
+|`\Bigg( a \Bigg)` | $\Bigg( a \Bigg)$ |
+
+> 左缩放左括号用 `\bigl`，右括号用 `\bigr`（如 `\bigl(` `\bigr)`），可获得正确间距。
 
 ### 向量
 
@@ -282,6 +364,42 @@ $$
     \end{array}
 \right]
 $$
+
+### 数组与对齐
+
+| Type | Typeset |
+| :-: | :-: |
+| `\begin{cases} x>0 \\ x\le 0 \end{cases}` | $\begin{cases} x>0 \\ x\le 0 \end{cases}$ |
+| `\begin{aligned} a&=b \\ c&=d \end{aligned}` | $\begin{aligned} a&=b \\ c&=d \end{aligned}$ |
+| `\begin{align} a&=b \\ c&=d \end{align}` | $\begin{align} a&=b \\ c&=d \end{align}$ |
+
+**更多左对齐：**
+
+```
+f(x) =
+\begin{cases}
+x,  & x \ge 0 \\
+-x, & x < 0
+\end{cases}
+```
+
+$$
+f(x) =
+\begin{cases}
+x,  & x \ge 0 \\
+-x, & x < 0
+\end{cases}
+$$
+
+### 公式中插入文字
+
+`\text{}` 命令可以在公式中插入正常字体文字
+
+| Type | Typeset |
+| :-: | :-: |
+| `\text{若} x>0` | $\text{若} x>0$ |
+| `\text{当 } n\to\infty` | $\text{当 } n\to\infty$ |
+| `\text{max}` | $\text{max}$ |
 
 ### 方程组
 
@@ -317,6 +435,10 @@ $$
 |interword space| `a\ a` | $a\ a$ |
 |1 em| `a\quad a` | $a\quad a$ |
 |2 em|`a\qquad a`  | $a\qquad a$ |
+|thinspace (3/18 em)| `a\,a` | $a\,a$ |
+|medspace (4/18 em)| `a\:a` | $a\:a$ |
+|thickspace (5/18 em)| `a\;a` | $a\;a$ |
+|normal space | `a\ b` | $a\ b$ |
 
 ### 紧缩
 

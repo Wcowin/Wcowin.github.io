@@ -788,8 +788,6 @@ t.parentNode.insertBefore(e,t)}})();
 - ~~This was deleted~~
 
 
-[![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
-
 
 <div class="miniwebtoolwidget" data-calculator="modulo-calculator" data-width="380"><div class="miniwebtoolh">模计算机</div><p><a href="https://miniwebtool.com/zh-cn/modulo-calculator/" target="_blank"></a></p></div><script async src="https://miniwebtool.com/zh-cn/embed.js?v=1"></script>
 

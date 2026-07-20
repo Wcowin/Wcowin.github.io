@@ -14,7 +14,7 @@
 
     一键下载 PP-OCRv5 模型包（22MB）
 
-    [:material-github: 下载](https://gitee.com/Wcowin/homebrew-oneclip/releases/tag/1.0.0){ .md-button .md-button--primary }
+    [:material-github: 下载](https://github.com/Wcowin/homebrew-oneclip/releases/tag/ocr-v5.0.1){ .md-button .md-button--primary }
 
 </div>
 

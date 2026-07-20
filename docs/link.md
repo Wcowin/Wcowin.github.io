@@ -127,7 +127,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" decoding="async" src="https://www.80tz.cn/fluid.png" />
+      <img class="ava" loading="lazy" decoding="async" src="https://www.80tz.cn/assets/images/sites/logo/logo-blue.svg" />
       <div class="card-header">
         <div>
           <a href="https://www.80tz.cn" target="_blank">80后情感哲学交流</a>
@@ -1360,12 +1360,22 @@ comments: false
         </div>
       </div>
     </div>
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://cdn.lusyoe.com/images/lusyoe-logo.webp" />
+      <div class="card-header">
+        <div>
+          <a href="https://blog.lusyoe.com" target="_blank">青萍叙事</a>
+        </div>
+        <div class="info">
+          一个懂技术的产品汪🐶
+        </div>
+      </div>
+    </div>
+
 
 
   </div>
 </div>
-
-
 
 
 <!--
@@ -1598,17 +1608,6 @@ comments: false
        慈善义工在行动 （多次变动，且未加我方友链）
       </div>
      </div>
-    </div>
-    <div class="card">
-      <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
-      <div class="card-header">
-        <div>
-          <a href="https://blog.lusyoe.com" target="_blank">青萍叙事(打不开)</a>
-        </div>
-        <div class="info">
-          一个懂技术的产品汪🐶
-        </div>
-      </div>
     </div>
     <div class="card">
       <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
@@ -2150,10 +2149,9 @@ async>
 </script>
 </head> -->
 
-<!-- 头像加载失败兜底 + 骨架屏加载动画 -->
+<!-- 头像加载失败兜底 -->
 <script>
 (function() {
-  // 头像加载失败兜底
   document.addEventListener('error', function(e) {
     var img = e.target;
     if (img && img.classList && img.classList.contains('ava') && !img.dataset.retried) {
@@ -2162,100 +2160,6 @@ async>
       img.src = "https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp";
     }
   }, true);
-
-  // 骨架屏加载动画初始化
-  function initSkeletonLoader() {
-    var cards = document.querySelectorAll('.card');
-    
-    cards.forEach(function(card) {
-      // 如果卡片已经有骨架屏结构，跳过
-      if (card.querySelector('.card-skeleton')) return;
-      
-      // 获取原始内容
-      var originalContent = card.innerHTML;
-      var img = card.querySelector('.ava');
-      
-      // 添加加载中状态
-      card.classList.add('is-loading');
-      
-      // 构建骨架屏结构
-      var skeletonHTML = 
-        '<div class="card-skeleton">' +
-          '<div class="skel-avatar"></div>' +
-          '<div class="skel-text">' +
-            '<div class="skel-title"></div>' +
-            '<div class="skel-desc"></div>' +
-          '</div>' +
-        '</div>' +
-        '<div class="card-content">' + originalContent + '</div>';
-      
-      card.innerHTML = skeletonHTML;
-      
-      // 监听图片加载完成
-      var contentImg = card.querySelector('.card-content .ava');
-      if (contentImg) {
-        // 处理懒加载：如果有 data-src，先设置 src 开始加载
-        var dataSrc = contentImg.getAttribute('data-src');
-        if (dataSrc && !contentImg.src) {
-          contentImg.src = dataSrc;
-          contentImg.removeAttribute('data-src');
-        }
-        
-        // 检查图片是否已加载完成（包括缓存情况）
-        var isImageLoaded = function() {
-          return contentImg.complete && contentImg.naturalWidth > 0;
-        };
-        
-        if (isImageLoaded()) {
-          // 图片已缓存或同步加载完成，短暂延迟后显示
-          setTimeout(function() {
-            card.classList.remove('is-loading');
-            card.classList.add('is-loaded');
-          }, 300);
-        } else {
-          // 图片未加载，等待加载完成
-          var loadHandler = function() {
-            card.classList.remove('is-loading');
-            card.classList.add('is-loaded');
-            contentImg.removeEventListener('load', loadHandler);
-            contentImg.removeEventListener('error', errorHandler);
-          };
-          
-          var errorHandler = function() {
-            // 图片加载失败也显示卡片
-            card.classList.remove('is-loading');
-            card.classList.add('is-loaded');
-            contentImg.removeEventListener('load', loadHandler);
-            contentImg.removeEventListener('error', errorHandler);
-          };
-          
-          contentImg.addEventListener('load', loadHandler);
-          contentImg.addEventListener('error', errorHandler);
-          
-          // 超时处理（3秒后强制显示）
-          setTimeout(function() {
-            if (!card.classList.contains('is-loaded')) {
-              card.classList.remove('is-loading');
-              card.classList.add('is-loaded');
-              contentImg.removeEventListener('load', loadHandler);
-              contentImg.removeEventListener('error', errorHandler);
-            }
-          }, 3000);
-        }
-      } else {
-        // 没有图片，直接显示
-        card.classList.remove('is-loading');
-        card.classList.add('is-loaded');
-      }
-    });
-  }
-
-  // DOM加载完成后初始化
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initSkeletonLoader);
-  } else {
-    initSkeletonLoader();
-  }
 })();
 </script>
 
