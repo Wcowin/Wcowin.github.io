@@ -1371,7 +1371,17 @@ comments: false
         </div>
       </div>
     </div>
-
+  <div class="card">
+    <img class="ava" loading="lazy" decoding="async" src="https://blog.xuioo.com/avatar.jpg" />
+    <div class="card-header">
+      <div>
+        <a href="https://blog.xuioo.com/" target="_blank">XUIOO</a>
+      </div>
+      <div class="info">
+        「纯粹祈愿皆成真」
+      </div>
+    </div>
+  </div>
 
 
   </div>
