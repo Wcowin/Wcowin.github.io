@@ -355,32 +355,12 @@ nav.md-nav--secondary ul ul {
   }
 }
 
-/* 修复代码块高亮行横向滚动时背景不全的问题
- * 
- * 原始主题意图：.hll 作为 block，背景覆盖整行
- * 问题：code 容器宽度固定，block 的 100% 宽度无法延伸到滚动区域
- * 
- * 解决方案：让 code 宽度等于内容实际宽度，hll 自然随之扩展
- */
-
-/* pre 负责滚动 */
-.md-typeset .highlight pre,
-.md-typeset pre {
-  overflow-x: auto;
-}
-
-/* code 宽度等于内容实际宽度 */
-.md-typeset pre > code {
-  display: inline-block !important;
-  min-width: 100%;
-  /* 消除 inline-block 底部间隙 */
-  vertical-align: top;
-}
-
-/* hll 作为 block 填满 code 宽度，背景覆盖整行 */
+/* 高亮行随长内容扩展，同时至少铺满代码块的可视宽度 */
 .md-typeset .highlight .hll,
 .md-typeset pre code .hll {
   display: block !important;
+  width: max-content;
+  min-width: 100%;
 }
 
 /* Keep long desktop sidebars in document flow until Zensical constrains them. */
