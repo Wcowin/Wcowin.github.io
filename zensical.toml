@@ -673,6 +673,7 @@ emoji_index = "zensical.extensions.emoji.twemoji"
 pygments_lang_class = true
 auto_title = false
 linenums = true
+line_spans = "__span"
 [project.markdown_extensions.pymdownx.inlinehilite]
 [project.markdown_extensions.pymdownx.keys]
 [project.markdown_extensions.pymdownx.mark]

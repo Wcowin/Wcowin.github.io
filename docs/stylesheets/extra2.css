@@ -349,23 +349,27 @@ nav.md-nav--secondary ul ul {
 }
 
 /* 移动端隐藏侧边栏按钮 */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .md-sidebar-button {
     display: none !important;
   }
-}
+} */
 
 /* 高亮行随长内容扩展，同时至少铺满代码块的可视宽度 */
-.md-typeset .highlight .hll,
+/* .md-typeset .highlight .hll,
 .md-typeset pre code .hll {
   display: block !important;
   width: max-content;
   min-width: 100%;
-}
+  box-shadow:
+    2px 0 0 0 var(--md-code-hl-color) inset,
+    0 0 0 1000vmax var(--md-code-hl-color--light);
+  clip-path: inset(0 -1000vmax);
+} */
 
 /* Keep long desktop sidebars in document flow until Zensical constrains them. */
-@media screen and (min-width: 76.25em) {
+/* @media screen and (min-width: 76.25em) {
   html.js .md-sidebar:has(> .md-sidebar__scrollwrap:not([style*="height"])) {
     height: auto;
   }
-}
+} */
