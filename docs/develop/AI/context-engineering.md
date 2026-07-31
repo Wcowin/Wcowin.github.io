@@ -109,7 +109,9 @@ Anthropic 提出了四条指导性原则：
 
 这是 Context Engineering 最核心的概念之一。
 
-**核心洞察：** LLM 的注意力是一种有限的认知资源，类似于人类的工作记忆容量。
+**核心洞察：**
+
+LLM 的注意力是一种有限的认知资源，类似于人类的工作记忆容量。
 
 - 每引入一个新 Token，都在消耗注意力预算。
 - Transformer 中每个 Token 需要 attend 到所有其他 Token，这是 O(n²) 的关系。
@@ -136,7 +138,9 @@ flowchart LR
 
 这是 Anthropic 内部发现的一个重要问题，也是上下文工程要解决的核心挑战之一。
 
-**定义：** 随着上下文窗口中 Token 数量的增加，以及时间的推移，模型准确回忆和运用信息的能力显著下降。
+**定义：**
+
+随着上下文窗口中 Token 数量的增加，以及时间的推移，模型准确回忆和运用信息的能力显著下降。
 
 **关键数据：**
 
@@ -171,7 +175,9 @@ Anthropic 发现了一个令人不安的现象：**加一条新规则，所有�
 - 使用 Cross-Encoder 进行重排序
 - 余弦相似度 > 0.9 的结果去重
 
-**效果：** 准确率提升约 30%，Token 节省约 40%。
+**效果：**
+
+准确率提升约 30%，Token 节省约 40%。
 
 ### 4.2 上下文压缩（Context Compression）
 
@@ -202,7 +208,9 @@ def compress_context(documents: list[str], max_tokens: int) -> str:
 # 准确率：基本持平
 ```
 
-**效果：** Token 减少 50-75%，准确率基本持平。
+**效果：**
+
+Token 减少 50-75%，准确率基本持平。
 
 ### 4.3 层次化布局（Hierarchical Layout）
 
@@ -219,7 +227,9 @@ def compress_context(documents: list[str], max_tokens: int) -> str:
 
 这和人类阅读的习惯不同——对于 LLM 来说，**开头和结尾的信息获得的注意力最多**，中间部分最容易被"遗忘"。所以最重要的规则和最终的问题应该分别放在最前面和最后面。
 
-**效果：** 准确率提升约 10-20%。
+**效果：**
+
+准确率提升约 10-20%。
 
 ### 4.4 动态查询改写（Dynamic Query Rewriting）
 
@@ -258,7 +268,9 @@ flowchart TB
 | 语义记忆（Semantic） | 你的专业知识库 | 向量化知识库（RAG） | 持久 |
 | 程序记忆（Procedural） | 你的工作习惯和偏好 | 用户偏好、行为模式 | 持久 |
 
-**效果：** 将 20K Token 的历史对话压缩为约 1.8K Token 的聚焦记忆，Token 减少 91%。
+**效果：**
+
+将 20K Token 的历史对话压缩为约 1.8K Token 的聚焦记忆，Token 减少 91%。
 
 ### 4.6 工具感知上下文（Tool-Aware Context）
 
@@ -363,7 +375,9 @@ flowchart LR
 | **信息来源** | 手动编写的文本 | 多源融合（RAG、记忆、工具、文件等） |
 | **本质** | 语言技巧 | 系统工程 |
 
-**一句话总结：** Prompt Engineering 是 Context Engineering 的子集——写好 Prompt 只是填充上下文窗口的一种方式。
+**一句话总结：**
+
+Prompt Engineering 是 Context Engineering 的子集——写好 Prompt 只是填充上下文窗口的一种方式。
 
 ### 7.2 与 RAG 的关系
 

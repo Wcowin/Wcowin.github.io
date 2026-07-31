@@ -1382,6 +1382,18 @@ comments: false
       </div>
     </div>
   </div>
+  <div class="card">
+    <img class="ava" loading="lazy" decoding="async" src="https://winered-0v0.com/assets/images/avatar.png" />
+    <div class="card-header">
+      <div>
+        <a href="https://winered-0v0.com/" target="_blank">WineRed</a>
+      </div>
+      <div class="info">
+        尽管未来是当下每一刻的产物，明日依然不属于今日。
+      </div>
+    </div>
+  </div>
+
 
 
   </div>

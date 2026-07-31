@@ -12,11 +12,11 @@
    height: 90px;
    font-size: 1rem;
    padding: 10px 20px;
-   border-radius: 25px;
-   -webkit-transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
-               box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-   transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
-               box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* 使用更高效的过渡 */
+   border-radius: 32px;
+   -webkit-transition: background-color 250ms cubic-bezier(0.22, 1, 0.36, 1), 
+               box-shadow 250ms cubic-bezier(0.22, 1, 0.36, 1);
+   transition: background-color 250ms cubic-bezier(0.22, 1, 0.36, 1), 
+               box-shadow 250ms cubic-bezier(0.22, 1, 0.36, 1);
    display: -webkit-box;
    display: -webkit-flex;
    display: flex;
@@ -24,12 +24,12 @@
    -webkit-align-items: center;
    align-items: center;
    color: #333;
-   contain: layout style; /* 性能优化：限制重绘范围 */
-   will-change: transform; /* 提前告知浏览器变换意图 */
+   contain: layout style;
+   will-change: background-color, box-shadow;
    -webkit-backface-visibility: hidden;
-   backface-visibility: hidden; /* 减少复合层 */
+   backface-visibility: hidden;
    -webkit-transform: translateZ(0);
-   transform: translateZ(0); /* 强制GPU加速 */
+   transform: translateZ(0);
    box-sizing: border-box;
 }
 
@@ -39,12 +39,10 @@
    float: none;
 }
 
-/* 在大屏幕上保留悬停效果 */
+/* 悬停效果 - 与 pill tab 设计语言统一 */
 .card:hover {
-   -webkit-transform: translateZ(0) scale(1.05);
-   transform: translateZ(0) scale(1.05);
-   box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
-   background-color: rgba(68, 138, 255, 0.1);
+   background-color: rgba(68, 138, 255, 0.06);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .card a {
@@ -59,7 +57,13 @@
    object-fit: cover; /* 确保图像正确填充 */
    aspect-ratio: 1 / 1; /* 防止布局抖动(CLS) */
    background-color: #e8eaed; /* 加载中/失败时的占位背景色 */
-   transition: opacity 0.3s;
+   transition: opacity 250ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 点击态 - 模拟 pill 按下的反馈 */
+.card:active {
+   background-color: rgba(68, 138, 255, 0.1);
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 /* 头像加载失败时的样式 */

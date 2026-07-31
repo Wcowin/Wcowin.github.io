@@ -61,11 +61,11 @@ extra_css = [
     "stylesheets/extra2.css",        # 额外样式2
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra2.css", # 额外样式2CDN
     # "stylesheets/link.css",          # 友链样式
-    "https://oneclip.cloud/Wcowin/stylesheets/link.css", #友链CDN
-    "https://oneclip.cloud/Wcowin/stylesheets/poem.css",          # 诗词样式
+    "stylesheets/link.css", #友链CDN
+    "stylesheets/poem.css",          # 诗词样式
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css", # 诗词样式CDN
     # "stylesheets/customize.css",     # 按钮圆角化等自定义样式
-    "https://oneclip.cloud/Wcowin/stylesheets/ziti.css",          # 字体样式
+    "stylesheets/ziti.css",          # 字体样式
     # "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
     # "about/sty/portfolio.css"        # 作品集样式（已移至 geren.md 单独引入）
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
@@ -210,6 +210,7 @@ nav = [
         "develop/index.md",
         { "AI" = [
             "develop/AI/index.md",
+            { "AI Coding Agent：从代码补全到自主软件工程" = "develop/AI/ai-coding-agent.md" },
             { "Prompt 工程入门" = "develop/AI/prompt.md" },
             { "上下文工程（Context Engineering）" = "develop/AI/context-engineering.md" },
             { "AI Agent 入门" = "develop/AI/agent.md" },

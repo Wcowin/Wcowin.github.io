@@ -48,6 +48,7 @@ hide_comment: true
 
     架构创新解析与开源 Agent 平台实战
 
+    - [AI Coding Agent](ai-coding-agent/) - 从代码补全到自主软件工程
     - [Attention Residuals](/develop/AI/attention-residuals/) - Kimi 团队架构创新解读
     - [JEPA 架构](/develop/AI/jepa/) - 联合嵌入预测架构，通往世界模型的非生成之路
     - [具身智能](/develop/AI/embodied-ai/) - 当 AI 拥有身体，物理世界迎来新纪元
