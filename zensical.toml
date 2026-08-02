@@ -245,7 +245,8 @@ nav = [
             { "OneClip 开发经验分享：从零到一" = "develop/Mac-development/OneClip-Development-Experience.md" },
             { "OneClip 架构设计与核心模块解析" = "develop/Mac-development/OneClip-Architecture-Design.md" },
             { "应用分发签名——以 OneClip 为例" = "develop/Mac-development/OneClip-Code-Signing-Guide.md" },
-            { "PP-OCRv5 轻量级 OCR 识别方案使用指南" = "develop/Mac-development/PP-OCRv5-Guide.md" }
+            { "PP-OCRv5 轻量级 OCR 识别方案使用指南" = "develop/Mac-development/PP-OCRv5-Guide.md" },
+            { "OneClip 原生 PP-OCRv5 ONNX 方案解析" = "develop/Mac-development/PP-OCRv5-Native-ONNX-Guide.md" }
         ]},
         { "我的开发项目/作品/应用" = [
             "develop/Mywork/index.md",
