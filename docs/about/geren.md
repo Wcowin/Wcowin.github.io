@@ -968,7 +968,7 @@ status: new
 <div class="md5-box" onclick="navigator.clipboard.writeText('7037F514864088F907CC921687B670EE');this.querySelector('.copy-tip').textContent='已复制!';">
   <div class="label">📞 电话号码的 MD5 哈希</div>
   <div class="code">7037F514864088F907CC921687B670EE</div>
-  <div class="hint">破解有奖 ☕️ | 必须附带破解过程 | 从简历上看到的不算 | 目前已有 3 人成功破解</div>
+  <div class="hint">破解有奖 ☕️ | 必须附带破解过程 | 从简历/邮箱/WX上看到的不算 | 目前已有 4 人成功破解</div>
   <div class="copy-tip">点击复制</div>
 </div>
 
