@@ -1,6 +1,6 @@
 ---
 title: CC Switch 完全指南
-comments: true
+# comments: true
 tags:
     - AI
 ---

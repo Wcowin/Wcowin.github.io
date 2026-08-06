@@ -1,6 +1,6 @@
 ---
 title: AI Agent 记忆系统深度解析
-comments: true
+# comments: true
 summary: 系统讲解 AI Agent 记忆系统的核心概念、技术实现与最佳实践，从短期记忆到长期记忆，从向量存储到知识图谱，帮助你构建真正"有记忆"的智能体。
 date: 2026-06-23
 status: new

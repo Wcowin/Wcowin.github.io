@@ -1,6 +1,6 @@
 ---
 title: JEPA：联合嵌入预测架构——通往世界模型的非生成之路
-comments: true
+# comments: true
 summary: 深入解读 Yann LeCun 提出的联合嵌入预测架构（JEPA），从核心原理到 I-JEPA、V-JEPA 2、VL-JEPA 三大实现，再到 2026 年 LeCun 创立 AMI Labs 推动 JEPA 工程化拐点的全景分析。
 date: 2026-06-06
 status: new

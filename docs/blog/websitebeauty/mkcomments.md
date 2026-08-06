@@ -1,6 +1,6 @@
 ---
 title: 为网站添加评论系统
-comments: true
+# comments: true
 tags:
   - Mkdocs
 ---

@@ -1,6 +1,6 @@
 ---
 title: AI 工具
-comments: true
+# comments: true
 tags:
     - AI
 status: new

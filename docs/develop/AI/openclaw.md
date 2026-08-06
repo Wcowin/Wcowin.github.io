@@ -1,6 +1,6 @@
 ---
 title: OpenClaw：本地运行的开源 AI 助手指南
-comments: true
+# comments: true
 status: new
 tags:
   - AI

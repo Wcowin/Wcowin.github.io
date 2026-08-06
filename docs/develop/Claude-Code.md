@@ -1,6 +1,6 @@
 ---
 title: Claude Code指南
-comments: true
+# comments: true
 tags:
     - Claude
     - AI

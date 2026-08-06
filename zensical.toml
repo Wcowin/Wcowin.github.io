@@ -48,7 +48,9 @@ extra_javascript = [
     "javascripts/katex.js",
     "javascripts/feedback.js",  # Umami 反馈追踪
     "javascripts/github-heatmap.js",                        # GitHub 贡献热力图
-    "javascripts/github-repo-card.js"                                                    # GitHub 仓库卡片
+    "javascripts/github-repo-card.js",                                                    # GitHub 仓库卡片
+    "https://cdn.jsdelivr.net/npm/twikoo@1.7.15/dist/twikoo.all.min.js",  # Twikoo 评论库
+    "javascripts/twikoo-auto.js"                          # Twikoo 评论区自动注入（默认开启，comments:false 排除）
 ]
 
 # =====  CSS 文件 =====

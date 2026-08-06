@@ -1,6 +1,6 @@
 ---
 title: Prompt 工程入门：提示词技巧与实战
-comments: true
+# comments: true
 tags:
   - AI
   - Prompt

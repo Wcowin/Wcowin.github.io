@@ -1,6 +1,6 @@
 ---
 title: 上下文工程：从 Prompt Engineering 到 Context Engineering 的范式跃迁
-comments: true
+# comments: true
 summary: 系统讲解 2026 年 AI 工程领域最重要的范式转移——上下文工程（Context Engineering）的核心概念、关键技术、工具实践与演进路径。从"怎么写好提示词"到"模型应该看到什么"，一文讲透。
 date: 2026-06-04
 status: new

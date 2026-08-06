@@ -1,6 +1,6 @@
 ---
 title: 具身智能：当 AI 拥有身体，物理世界迎来新纪元
-comments: true
+# comments: true
 summary: 从离身智能到具身智能，系统讲解 Embodied AI 的核心概念、三大技术路线（分层模型/VLA/世界模型）、产业现状与关键玩家，以及 2026 年量产元年的机遇与挑战。
 date: 2026-05-26
 status: new

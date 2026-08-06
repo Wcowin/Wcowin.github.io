@@ -1,6 +1,6 @@
 ---
 title: AI Coding Agent：从代码补全到自主软件工程
-comments: true
+# comments: true
 summary: 2026 年 AI 编程工具已从"补全代码"进化到"自主完成开发任务的 Agent"。本文系统梳理 AI Coding Agent 的范式跃迁、主流工具横评、六大趋势，以及开发者如何选型与应对。
 date: 2026-07-31
 status: new
