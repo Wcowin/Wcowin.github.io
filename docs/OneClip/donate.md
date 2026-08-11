@@ -23,6 +23,9 @@ OneClip 始终把公益牢记在心（按月展示）：
 ## 2026年6月
 ![IMG_0040.png](https://i.imgant.com/v2/RQt7cgJ.png)
 
+## 2026年7月
+![IMG_0360.png](https://i.imgant.com/v2/iyVzu6W.png)
+
 ---
 
 !!! note
