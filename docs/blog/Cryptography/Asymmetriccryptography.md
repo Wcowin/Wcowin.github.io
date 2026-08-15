@@ -79,6 +79,8 @@ $M^{\varphi(n)} \equiv 1 \pmod{n}$
 因此：
 $C^d = (M^e)^d = M^{ed} = M^{1+k\varphi(n)} = M \cdot (M^{\varphi(n)})^k \equiv M \cdot 1^k = M \pmod{n}$
 
+上述证明假设了 $\gcd(M, n) = 1$。当 $\gcd(M, n) \neq 1$ 时（即 $M$ 是 $p$ 或 $q$ 的倍数，这种情况在随机明文下概率极低），可借助中国剩余定理（CRT）或 Carmichael 函数 $\lambda(n)=\mathrm{lcm}(p-1,q-1)$ 完成证明：由于 $ed\equiv 1 \pmod{\lambda(n)}$，有 $M^{ed}\equiv M \pmod p$ 与 $M^{ed}\equiv M \pmod q$ 同时成立，由中国剩余定理即得 $M^{ed}\equiv M \pmod n$。因此对任意明文 $M\in[0,n)$ 解密均正确。
+
 ### 4.2.3 RSA数字签名
 
 **签名生成（使用私钥）：**
@@ -131,7 +133,7 @@ $y^2 = x^3 + ax + b \pmod{p}$
 
 **密钥对：**
 - 私钥：$d$
-- 公钥：$(E, G, Q)$，其中 $E$ 是椭圆曲线，$G$ 是基点
+- 公钥：$Q$（椭圆曲线上的点），其中曲线 $E$ 与基点 $G$ 为公开的系统参数
 
 ### 4.3.4 ECDH密钥交换
 
@@ -325,4 +327,4 @@ HTTPS协议使用非对称密码学建立安全连接：
 - [FIPS 186-4: Digital Signature Standard (DSS)](https://csrc.nist.gov/publications/detail/fips/186/4/final)
 - [IEEE P1363: Standard Specifications for Public Key Cryptography](https://standards.ieee.org/standard/1363-2000.html)
 
-**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/WKwcowin)
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

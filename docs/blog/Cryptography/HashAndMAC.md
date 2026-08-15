@@ -71,6 +71,8 @@ $H: \{0,1\}^* \rightarrow \{0,1\}^n$
 
 强抗碰撞性 $\Rightarrow$ 弱抗碰撞性 $\Rightarrow$ 单向性
 
+注：上述箭头表示**强度递减**的方向（即更强的性质蕴含较弱的性质）：碰撞抗性蕴含第二原像抗性，第二原像抗性蕴含原像抗性；但反向不成立——抗原像并不蕴含抗第二原像，抗第二原像也不蕴含抗碰撞。它们不是同一层面的等价逻辑推导链。
+
 ### 5.2.3 生日攻击与哈希长度
 
 **生日悖论**表明，在一个有 $N$ 个可能值的集合中，只需要大约 $\sqrt{N}$ 次随机选择就有50%的概率出现重复。
@@ -80,10 +82,12 @@ $H: \{0,1\}^* \rightarrow \{0,1\}^n$
 - 暴力破解单向性需要 $2^n$ 次操作
 - 暴力破解抗碰撞性只需要 $2^{n/2}$ 次操作
 
-因此，为了提供 $k$ 比特的安全强度：
+因此，为了提供 $k$ 比特的**抗碰撞**安全强度（基于生日界）：
 
 - 哈希函数的输出长度应至少为 $2k$ 比特
-- 例如，128比特安全强度需要至少256比特的哈希输出
+- 例如，128比特抗碰撞安全强度需要至少256比特的哈希输出
+
+注：上述 $2k$ 结论针对**碰撞抗性**。若仅考虑抗原像（单向性）攻击，由于需穷举 $2^n$ 次，则 $n$ 比特输出即提供约 $n$ 比特抗原像安全强度，无需翻倍。
 
 ### 5.2.4 Merkle-Damgård构造
 
@@ -653,4 +657,4 @@ stored_hash = Argon2id(password, salt, time_cost, memory_cost, parallelism)
 - [Keccak Team: The Keccak SHA-3 submission](https://keccak.team/keccak.html)
 - [Wang, X., et al.: Finding Collisions in the Full SHA-1](https://people.csail.mit.edu/yiqun/SHA1AttackProceedingVersion.pdf)
 
-**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/WKwcowin)
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

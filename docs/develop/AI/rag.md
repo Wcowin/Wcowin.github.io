@@ -557,7 +557,7 @@ def adaptive_retrieval(query, retriever):
 |-----------|--------|------|
 | **GraphRAG (微软)** | Microsoft | 开源方案，社区检测 + 层次化摘要 |
 | **知寰 Hybrid RAG** | 创邻科技 | 面向企业私域知识的图增强检索与生成 |
-| **LangGraph v0.4** | LangChain | 2026年5月发布，原生 GraphRAG 支持 |
+| **LangGraph** | LangChain | 图结构工作流框架，可组合实现 GraphRAG 管线（注意：LangGraph 自身并非"原生内置 GraphRAG"，而是提供编排能力，需接入图数据库/抽取模块） |
 | **Neo4j LLM 集成** | Neo4j | 图数据库与 LLM 深度集成 |
 
 **GraphRAG 适用场景**：

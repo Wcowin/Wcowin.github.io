@@ -383,7 +383,7 @@ pip install -U nanobot-ai
 - **发布日期**：2026 年 2 月 2 日
 - **当前版本**：v0.1.4.post5（2026 年 3 月 16 日）
 - **编程语言**：Python 3.10+
-- **GitHub Stars**：社区增长很快，建议以 GitHub 页面实时数据为准
+- **GitHub 热度**：社区增长很快，具体星标数请以 GitHub 页面实时数据为准
 - **开源协议**：开源
 - **官方网站**：[nanobot.club](https://nanobot.club)
 

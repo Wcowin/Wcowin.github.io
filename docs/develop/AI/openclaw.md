@@ -1,7 +1,6 @@
 ---
 title: OpenClaw：本地运行的开源 AI 助手指南
 # comments: true
-status: new
 tags:
   - AI
   - OpenClaw
@@ -2664,7 +2663,7 @@ A: 根据社区讨论，可能的方向：
 - **中文社区官网**：[clawd.org.cn](https://clawd.org.cn)（中文文档、国内镜像、社区论坛）
 - **中文社区 GitHub**：[github.com/jiulingyun/openclaw-cn](https://github.com/jiulingyun/openclaw-cn)
 - **上游官网**：[openclaw.ai](https://openclaw.ai)
-- **上游 GitHub**：[github.com/openclaw/openclaw](https://github.com/openclaw/openclaw)（截至 2026 年 3 月 23 日约 332k 星）
+- **上游 GitHub**：[github.com/openclaw/openclaw](https://github.com/openclaw/openclaw)（星标数随时间变化，请以 GitHub 页面实时数据为准）
 - **官方文档**：[docs.openclaw.ai](https://docs.openclaw.ai)
 - **Discord**：[discord.com/invite/clawd](https://discord.com/invite/clawd)
 - **ClawHub**：[claw-hub.net](https://claw-hub.net)（技能市场）

@@ -227,5 +227,5 @@ Microsoft 翻译服务适合追求速度和响应性的场景，它在客户端�
 - `docs/javascripts/translate.js`
 - `docs/javascripts/translate-edge-init.js`
 
-源码始终以仓库为准：[`Wcowin/WKwcowin.github.io`](https://github.com/Wcowin/WKwcowin.github.io)。
+源码始终以仓库为准：[`Wcowin/Wcowin.github.io`](https://github.com/Wcowin/Wcowin.github.io)。
 欢迎在 Issues 或评论里交流你的使用体验和改进想法。

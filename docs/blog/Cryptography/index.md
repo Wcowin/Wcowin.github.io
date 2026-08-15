@@ -6,7 +6,8 @@ status: new
 ---
 
 
-![image](https://s1.imagehub.cc/images/2025/05/08/95791bc65fa16772f50c98c3540d5878.png){.img1}
+<!-- ![image](https://s1.imagehub.cc/images/2025/05/08/95791bc65fa16772f50c98c3540d5878.png){.img1} -->
+![image.png](https://i.imgant.com/v2/1JyxLQU.png)
 
 我会持续更新<mark>密码学系列文章</mark>，欢迎有兴趣的同学与我交流🙂
 

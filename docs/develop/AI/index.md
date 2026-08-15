@@ -58,5 +58,6 @@ hide_comment: true
     - [OpenClaw](/develop/AI/openclaw/) - 本地优先的开源 AI Agent 平台
     - [Hermes Agent](/develop/AI/hermes-agent/) - 自进化的 AI Agent（内置学习闭环）
     - [nanobot](/develop/AI/nanobot/) - 超轻量级 AI 助手（4000 行代码）
+    - [DeepSeek Harness (dsh)](/develop/AI/deepseek-harness/) - 用"一切皆插件"重构 Agent 运行时
 
 </div>

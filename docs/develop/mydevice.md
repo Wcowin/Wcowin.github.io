@@ -114,9 +114,7 @@ tags:
   }
 
   .grid.cards img {
-    max-width: 200px !important;
-    height: auto !important;
-    margin-bottom: 1rem !important;
+    display: none !important;
   }
 
   .grid.cards > ul > li {

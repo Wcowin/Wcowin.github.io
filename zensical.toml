@@ -58,8 +58,8 @@ extra_css = [
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/chat-widget.css",   # Ask AI 聊天组件样式
     # "stylesheets/chat-widget.css",                                             # Ask AI 聊天组件样式（已隐藏）
     # "stylesheets/extra.css",        # 额外样式
-    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css",         # 额外样式
-    "https://oneclip.cloud/Wcowin/stylesheets/extra.css",
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css",         # 额外样式
+    # "https://oneclip.cloud/Wcowin/stylesheets/extra.css",
     "stylesheets/extra2.css",        # 额外样式2
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra2.css", # 额外样式2CDN
     # "stylesheets/link.css",          # 友链样式
@@ -72,8 +72,8 @@ extra_css = [
     # "about/sty/portfolio.css"        # 作品集样式（已移至 geren.md 单独引入）
     # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css" # 作品集样式CDN
     "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",  # KaTeX 样式 CDN
-    "https://oneclip.cloud/Wcowin/stylesheets/github-widgets.css",            # GitHub 相关组件样式
-    # "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/github-widgets.css"            # GitHub 相关组件样式
+    # "https://oneclip.cloud/Wcowin/stylesheets/github-widgets.css",            # GitHub 相关组件样式
+    "https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/github-widgets.css"            # GitHub 相关组件样式
 
 ]
 
@@ -212,6 +212,7 @@ nav = [
         "develop/index.md",
         { "AI" = [
             "develop/AI/index.md",
+            { "AI工具(2026最新)" = "develop/AItools.md" },
             { "AI Coding Agent：从代码补全到自主软件工程" = "develop/AI/ai-coding-agent.md" },
             { "Prompt 工程入门" = "develop/AI/prompt.md" },
             { "上下文工程（Context Engineering）" = "develop/AI/context-engineering.md" },
@@ -234,7 +235,7 @@ nav = [
             { "OpenClaw：本地开源AI助手" = "develop/AI/openclaw.md" },
             { "Hermes Agent：自进化的 AI Agent" = "develop/AI/hermes-agent.md" },
             { "nanobot：超轻量级 AI 助手" = "develop/AI/nanobot.md" },
-            { "AI工具(2026最新)" = "develop/AItools.md" }
+            { "DeepSeek Harness" = "develop/AI/deepseek-harness.md" }
         ]},
         { "Python 环境管理最佳实践" = "develop/environment.md" },
         { "Anaconda 使用教程" = "develop/Anaconda.md" },
@@ -278,7 +279,7 @@ nav = [
         { "What is Github" = "develop/Github.md" },
         { "如何将 github pages 迁移到 vercel 上托管" = "develop/vercel.md" },
         { "大厂们的良心软件～" = "develop/fenxiang.md" },
-        { "写给所有 Mac 用户的摸鱼指北" = "develop/Mac.md" },
+        { "写给所有Mac用户的摸鱼指北" = "develop/Mac.md" },
         { "看源码才懂" = "develop/kanyuanma.md" }
     ]},
     { "科研" = [
@@ -588,24 +589,26 @@ note = "感谢您的反馈！"
 separator = '[\s\u200b\-]'  # 搜索分隔符
 
 # ===== 博客插件 =====
-[project.plugins.blog]
-post_date_format = "full"                    # 时间格式：完整日期
-draft = true                                  # 启用草稿功能
-draft_if_future_date = true                   # 自动将具有未来日期的帖子标记为草稿
-post_readtime = true                          # 显示阅读时间
-post_readtime_words_per_minute = 265          # 每分钟阅读字数（中文适配）
-post_url_format = "{date}/{slug}"             # 文章URL格式
-pagination_per_page = 5                       # 每页显示文章数
-pagination_url_format = "page/{page}"         # 分页URL格式
+# [project.plugins.blog]
+# post_date_format = "full"                    # 时间格式：完整日期
+# draft = true                                  # 启用草稿功能
+# draft_if_future_date = true                   # 自动将具有未来日期的帖子标记为草稿
+# post_readtime = true                          # 显示阅读时间
+# post_readtime_words_per_minute = 265          # 每分钟阅读字数（中文适配）
+# post_url_format = "{date}/{slug}"             # 文章URL格式
+# pagination_per_page = 5                       # 每页显示文章数
+# pagination_url_format = "page/{page}"         # 分页URL格式
 
 # ===== 标签插件 =====
-[project.plugins.tags]
+# [project.plugins.tags]
 
 # ===== 最小化插件 =====
-[project.plugins.minify]
-minify_html = true
-minify_css = true
-minify_js = true
+# [project.plugins.minify]
+# minify_html = true
+# minify_css = true
+# minify_js = true
+
+# [project.plugins.markdown-exec]
 
 # ===== 文档日期插件 =====
 # 显示文档的创建和更新时间

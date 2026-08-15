@@ -163,7 +163,7 @@ tags:
 | **底层模型** | GPT-5.5 |
 | **内联 Tab 补全** | ❌ 不支持 |
 | **云端任务** | ✅ 最佳（云沙箱无人值守运行） |
-| **开源** | ✅ 开源（87.2k GitHub stars） |
+| **开源** | ✅ 开源 |
 
 **核心优势：**
 
@@ -344,13 +344,15 @@ Claude Code 的 Dynamic Workflows（v2.1.154）和 Cursor 的 Agents Window 都�
 
 ### 趋势 5：模型军备竞赛白热化
 
-| 模型 | 发布日期 | 关键特性 | SWE-bench |
+| 模型 | 发布日期 | 关键特性 | 编程基准（参考） |
 |------|----------|----------|-----------|
-| Claude Opus 4.7 | 2026-04-16 | 新旗舰，coding/agent 能力大幅提升 | 72.5% |
-| GPT-5.5 | 2026-04-23 | OpenAI 新旗舰，驱动 Codex coding agent | 71.8% |
-| GPT-5.5 Instant | 2026-05-05 | 低延迟版本，成本约为旗舰 1/3 | 65.2% |
-| Claude Opus 4.8 | 2026-05-28 | 代码审查可靠性 4x 提升；Fast mode 2x 费率换 2.5x 速度 | 预计 ≥72.5% |
-| Claude Fable 5 | 2026-06-09 | Mythos 级模型，FrontierCode/CursorBench/FrontierBench 均 #1 | 第三方基准均 #1 |
+| Claude Opus 4.7 | 2026-04-16 | 新旗舰，coding/agent 能力大幅提升 | SWE-bench Verified 约 87.6% |
+| GPT-5.5 | 2026-04-23 | OpenAI 新旗舰，驱动 Codex coding agent | 同期第一梯队（具体分随榜单变动） |
+| GPT-5.5 Instant | 2026-05-05 | 低延迟版本，成本约为旗舰 1/3 | 同期水准 |
+| Claude Opus 4.8 | 2026-05-28 | 代码审查可靠性 4x 提升；Fast mode 2x 费率换 2.5x 速度 | 较 Opus 4.7 进一步提升 |
+| Claude Fable 5 | 2026-06 | Mythos 级模型，FrontierCode/CursorBench/FrontierBench 均 #1 | 第三方基准均 #1 |
+
+注：SWE-bench 有 Verified / Pro / Lite 等多个变体，不同来源、不同时间点的分数会变动，上表以发布时的公开口径为准，不应视为恒定结论。
 
 **社区最佳实践：**
 

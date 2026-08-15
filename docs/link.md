@@ -533,7 +533,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" decoding="async" src="https://moshanghua.net/avatar.jpg" />
+     <img class="ava" loading="lazy" decoding="async" src="https://assets.moshanghua.net/img/mshlogo.png" />
      <div class="card-header">
       <div>
       <a href="https://moshanghua.net" target="_blank">花开陌上</a>
@@ -632,10 +632,10 @@ comments: false
      </div>
     </div>
    <div class="card">
-     <img class="ava" loading="lazy" decoding="async" src="https://blog.btwoa.com/screenshot.avif" />
+     <img class="ava" loading="lazy" decoding="async" src="https://mamama.ma/author.gif" />
      <div class="card-header">
       <div>
-       <a href="https://blog.btwoa.com" target="_blank">btwoa</a>
+       <a href="https://blog.btwoa.com" target="_blank">李则亦</a>
       </div>
       <div class="info">
       世界为你简单
@@ -1390,6 +1390,17 @@ comments: false
       </div>
       <div class="info">
         尽管未来是当下每一刻的产物，明日依然不属于今日。
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img class="ava" loading="lazy" decoding="async" src="https://www.wanweishiyi.com/favicon.ico" />
+    <div class="card-header">
+      <div>
+        <a href="https://www.wanweishiyi.com/" target="_blank">万维思维</a>
+      </div>
+      <div class="info">
+        万维思维，探索知识的边界
       </div>
     </div>
   </div>

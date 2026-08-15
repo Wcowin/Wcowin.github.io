@@ -42,6 +42,6 @@ I would like to clarify first, my account is: <a href="https://github.com/Wcowin
 
 同第一步一样，如果还是卡在需要验证手机号上，那么重复第二步。
 
-提交完工单坐等解封即可
+提交完工单坐等解封即可。需要耐心，一般5-30天才会有结果。
 
-![](https://s.rmimg.com/original/3X/2/c/2cac775cfed33178b949894b7470c5b3644b527a.jpeg)
+![image.png](https://i.imgant.com/v2/cAJH7NX.png)

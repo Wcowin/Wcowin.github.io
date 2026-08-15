@@ -304,7 +304,7 @@ status: new
 <!-- <div class="github-repo-card-wrapper">
   <a
     class="github-repo-card"
-    data-repo="Wkwcowin/OneClip"
+    data-repo="One-Clip/OneClip"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/One-Clip/OneClip"
     target="_blank"
@@ -316,12 +316,12 @@ status: new
   <a
     class="github-repo-card"
     data-repo="One-Clip/OneClip"
-    data-owner="Wcowin"
+    data-owner="One-Clip"
     data-name="OneClip"
-    data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，支持截图、OCR、翻译、拖拽容器、划词、同步。"
+    data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，支持截图、OCR、翻译、拖拽容器、划词、同步。由Wcowin开发并维护。"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="417"
-    data-forks="23"
+    data-stars="435"
+    data-forks="26"
     data-license="MIT"
     href="https://github.com/One-Clip/OneClip"
     target="_blank"
@@ -334,7 +334,7 @@ status: new
     class="github-repo-card"
     data-repo="Wcowin/Mac-Finder-Clipboard"
     data-description="FinderClip 是一款免费开源且轻量级的 macOS 应用，让你可以在 Finder 中使用熟悉的 ⌘X 和 ⌘V 快捷键来剪切和移动文件。"
-    data-stars="89"
+    data-stars="90"
     data-forks="0"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
@@ -779,7 +779,7 @@ status: new
     - Hi, I'm [Wcowin](https://github.com/Wcowin){target="_blank"}~
     - 咖啡和Codex重度爱好者
     - 热爱(xiā)研究/Math业余，致力于Mkdocs/[Zensical](https://zensical.org/)以及[Mac应用](../develop/Mac-development/index.md)的开发
-    - 目前的研究领域是[低空技术](../research/aerotech/)、[AI/大模型/具身智能](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
+    - 目前的研究领域是[低空技术](../research/aerotech/)、[AI/网络安全/具身智能](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
     - 读书明志|诗词爱好者|历史研究|喜欢村上春树|擅长羽毛球
     - 清醒知趣，明得失，知进退
 

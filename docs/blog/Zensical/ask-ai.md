@@ -92,7 +92,7 @@ window.GLM_API_KEY = 'your-api-key-here';
 > - `docs/javascripts/chat-widget.js`
 > - `docs/stylesheets/chat-widget.css`
 >
-> 这两个文件可以在我的开源仓库中直接查看或复制：[Wcowin/WKwcowin.github.io](https://github.com/Wcowin/WKwcowin.github.io)。
+> 这两个文件可以在我的开源仓库中直接查看或复制：[Wcowin/Wcowin.github.io](https://github.com/Wcowin/Wcowin.github.io)。
 
 你可以重点核对/自定义的配置只有这一段（`docs/javascripts/chat-widget.js` 顶部的 `CONFIG`）：
 

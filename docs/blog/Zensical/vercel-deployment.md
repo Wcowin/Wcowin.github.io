@@ -65,7 +65,6 @@ git push
 - **Output Directory**: `site`
 - **Install Command**: `echo 'Skip'`或者不填，建议啥也不填
 
-![iShot Pro 2026-03-08 15.22.09](https://s3.imagency.cn/e/cf718ba06df88d18907cd4ce66c3d42f.png)
 
 ### 5. 部署
 

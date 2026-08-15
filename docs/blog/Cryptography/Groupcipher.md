@@ -114,7 +114,7 @@ $$
 
 其中 $K_i$ 是48位的轮密钥，由56位主密钥通过**密钥调度算法 (Key Schedule)** 生成。
 
-3. **最终置换 (Final Permutation, FP)：** 16轮迭代后，将 $(L_{16}, R_{16})$ 合并（但通常是在 $(R_{16}, L_{16})$ 的顺序上，即最后一轮后不交换或等效于交换），然后经过一个初始置换的逆置换 FP，得到64位密文块。
+3. **最终置换 (Final Permutation, FP)：** 经过 16 轮迭代后，DES 在**最后一轮不交换**左右半部分，直接将 $(R_{16}, L_{16})$ 拼接（注意顺序是右半部分在前），再经过一个与初始置换互逆的最终置换 FP，得到 64 位密文块。
 
 **DES 的轮函数 $F(R, K)$：**
 
@@ -460,4 +460,4 @@ $$
 - [Schneier, Bruce: Applied Cryptography](https://www.schneier.com/books/applied-cryptography/)
 - [Menezes, van Oorschot, Vanstone: Handbook of Applied Cryptography](http://cacr.uwaterloo.ca/hac/)
 
-**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/WKwcowin)
+**本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)

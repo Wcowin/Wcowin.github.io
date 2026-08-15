@@ -466,7 +466,7 @@ Gartner 分析师孙鑫明确指出：
 |:-----|:-------|
 | 2023 年 | Prompt Engineering 成为热门话题，Few-Shot、CoT 等技术成熟 |
 | 2024 年下半年 | 模型能力飞速提升，传统 Prompt 技巧开始显得力不从心 |
-| 2025 年 6 月 | Andrej Karpathy 公开支持"Context Engineering"概念 |
+| 2025 年 7 月 | Andrej Karpathy 公开支持"Context Engineering"概念（"+1 for context engineering over prompt engineering"） |
 | 2025 年 9 月 | Anthropic 发表《Effective Context Engineering for AI Agents》 |
 | 2025 年 10 月 | Gartner 发布 2026 十大战略技术趋势，上下文技术被重点提及 |
 | 2025 年底 | Claude Code、Cursor 等工具大规模实践 Context Engineering |
