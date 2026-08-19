@@ -610,7 +610,7 @@ separator = '[\s\u200b\-]'  # 搜索分隔符
 # minify_css = true
 # minify_js = true
 
-[project.plugins.markdown-exec]
+# [project.plugins.markdown-exec]
 
 # ===== 文档日期插件 =====
 # 显示文档的创建和更新时间
