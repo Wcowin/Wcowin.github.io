@@ -10,25 +10,25 @@ status: new
 
 > 更多 AI 工具请访问 [AI工具集](https://ai-bot.cn/){target="_blank"}
 
-<!-- <div class="grid cards" markdown>
+<div class="grid cards" markdown>
 
--   :octicons-rocket-16:{ .lg .middle } __2026 年最新动态（更新于 2026.5）__
+-   :octicons-rocket-16:{ .lg .middle } __2026 年最新动态（更新于 2026.8）__
 
     ---
 
     **主流模型版本**
 
-    - OpenAI **GPT-5.5/5.6** — GPT-5.5 已成为 ChatGPT 默认模型；GPT-5.6（内部代号 iris-alpha）预计 6 月初发布，上下文窗口翻倍至 150 万 Token
-    - Anthropic **Claude Opus 4.7** — 编码与多模态领先；Mythos 1 曝光，专注漏洞识别和安全分析
-    - Google **Gemini 3.1 Pro** — 原生多模态、百万级上下文（4 月发布 Gemma 4 开源系列，单卡 H100 可运行）
+    - OpenAI **GPT-5.6** — 2026 年 6 月 27 日正式发布（内部代号 iris-alpha），推出 Sol / Terra / Luna 三档，上下文窗口达 150 万 Token；GPT-5.5 仍为默认模型
+    - Anthropic **Claude Opus 4.7** — 2026 年 4 月 17 日发布，主打软件工程，支持超 24 小时自主任务执行，SWE-bench Pro 达 64.3%；Mythos 1 曝光，专注漏洞识别与安全分析
+    - Google **Gemini 3.1 Pro** — 2026 年 2 月 19 日发布，原生多模态、百万级上下文（Gemma 4 开源系列已发布，单卡 H100 可运行）
 
     **趋势**
 
-    从「生成内容」转向「解决复杂问题」——深度推理（System 2）、智能体化、多模态原生、开源模型单卡可运行成为新方向
+    从「生成内容」转向「解决复杂问题」——深度推理（System 2）、智能体化、多模态原生、开源模型单卡可运行成为新方向；AI 原生浏览器与终端 Agent 成为新入口
 
     **国内动态**
 
-    - **DeepSeek V4** — 万亿参数、百万级上下文、Apache 2.0 完全开源，V4 Pro API 5月31日起调整为原定价 1/4
+    - **DeepSeek V4** — 2026 年 4 月 24 日发布，百万级上下文、Apache 2.0 完全开源，V4 Pro API 已调整为原定价 1/4
     - **通义千问 Qwen3.6** — 持续迭代，Qwen3.5-Omni 全模态原生模型已发布
     - **Kimi K2.6** — 月之暗面最新旗舰模型，已完全开源，性能对标 GPT-5.4；K2 系列已于 5 月 25 日下线
     - **智谱 GLM-5**、**文心 5.0**、**可灵 3.0** 等密集更新
@@ -36,18 +36,19 @@ status: new
 
     **Agent 爆发**
 
-    - **OpenClaw**（373K+ Stars）— 本地优先 AI Agent，2026年增长最快的开源项目
-    - **Manus** — 通用型 AI Agent
+    - **OpenClaw**（GitHub 370K+ Stars）— 本地优先 AI Agent，2026 年增长最快的开源项目
+    - **Manus** — 通用型 AI Agent（已被 Meta 收购）
     - **扣子空间** — 字节跳动多功能智能体
+    - **Genspark Super Agent** — 一站式通用智能体工作空间
     - **Hermes Agent** — Nous Research 自进化 Agent，内置学习闭环
 
-</div> -->
+</div>
 
 ---
 
 ## AI 对话/聊天助手
 
-- [ChatGPT](https://chatgpt.com/){target="_blank"} - OpenAI 推出的 AI 聊天机器人（GPT-5.5 默认，GPT-5.6 预计6月初发布）
+- [ChatGPT](https://chatgpt.com/){target="_blank"} - OpenAI 推出的 AI 聊天机器人（GPT-5.5 默认，GPT-5.6 已发布）
 - [Claude](https://claude.ai/){target="_blank"} - Anthropic 推出的对话式 AI（Opus 4.7，编码与写作领先；Mythos 1 曝光）
 - [Gemini](https://gemini.google.com/){target="_blank"} - Google 推出的 AI 聊天机器人（Gemini 3.1 Pro，百万 token 上下文、多模态）
 - [Grok](https://grok.com/){target="_blank"} - 马斯克旗下 xAI 推出的人工智能助手
@@ -70,19 +71,32 @@ status: new
 
 > 2026 年已进入「智能体时代」：自主执行、多智能体协作成为主流，Google I/O 2026 发布多个 Agent 产品，Nvidia 在 GTC 2026 推出开源 Agent Toolkit，联合 17 家企业巨头。
 
-- [OpenClaw](https://openclaw.ai/){target="_blank"} - 2026年最火的本地优先 AI Agent（GitHub 373K+ Stars），支持多智能体协同与强化学习
-- [Manus](https://manus.im/){target="_blank"} - Monica 团队推出的通用型 AI Agent
+- [OpenClaw](https://openclaw.ai/){target="_blank"} - 2026年最火的本地优先 AI Agent（GitHub 370K+ Stars），支持多智能体协同与强化学习
+- [Manus](https://manus.im/){target="_blank"} - Monica 团队推出的通用型 AI Agent（已被 Meta 收购）
 - [扣子空间](https://www.coze.cn/){target="_blank"} - 字节跳动推出的多功能 AI 智能体
+- [Genspark Super Agent](https://www.genspark.ai/){target="_blank"} - 一站式通用智能体工作空间（Super Agent 模式）
 - [Operator](https://operator.chatgpt.com/){target="_blank"} - OpenAI 推出的 AI 智能体
 - [Codex](https://chatgpt.com/codex){target="_blank"} - OpenAI 推出的编程智能体（支持直接画图，GPT Image 2 集成）
-- [Devin](https://devin.ai/){target="_blank"} - Cognition AI 推出的软件工程智能体
+- [Devin](https://devin.ai/){target="_blank"} - Cognition AI 推出的软件工程智能体（Devin 2.0 异步任务 + 云端沙盒）
 - [马维斯 Marvis](https://yuanbao.tencent.com/){target="_blank"} - 腾讯推出的 AI 智能体助手
 - [Tbox](https://tbox.alipay.com/){target="_blank"} - 蚂蚁集团旗下多智能体协同的通用 AI Agent
-- [Genspark](https://www.genspark.ai/){target="_blank"} - 通用 AI 智能体，一站式 AI 工作空间
+- [Fellou](https://fellou.ai/){target="_blank"} - 面向「执行」的新一代 Agent 浏览器，可自动完成跨网页任务
 - [Dify](https://dify.ai/){target="_blank"} - 开源 LLM 应用平台，支持可视化工作流与 Agent 节点
 - [Nvidia Agent Toolkit](https://developer.nvidia.com/){target="_blank"} - Nvidia 开源 Agent 工具包（GTC 2026 发布，联合 Adobe/Salesforce/SAP 等 17 家企业）
 - [LangChain](https://www.langchain.com/){target="_blank"} - AI 应用开发框架，支持 Agent、RAG、多模态
 - [LlamaIndex](https://www.llamaindex.ai/){target="_blank"} - 数据框架，用于构建 LLM 应用和 Agent
+
+## AI 浏览器
+
+> 2026 年 AI 原生浏览器爆发：以 Agent 能力重新定义网页交互，ChatGPT Atlas、Perplexity Comet（已免费）、The Browser Company 的 Dia 三强争霸。
+
+- [ChatGPT Atlas](https://openai.com/chatgpt/atlas/){target="_blank"} - OpenAI 推出的 AI 原生浏览器（Agent 可自主浏览与操作网页）
+- [Perplexity Comet](https://www.perplexity.ai/comet){target="_blank"} - Perplexity 推出的 Agent 浏览器（2026 年 3 月起免费）
+- [Dia](https://dia.com/){target="_blank"} - The Browser Company 推出的 AI 浏览器（对话式上下文记忆）
+- [Fellou](https://fellou.ai/){target="_blank"} - 面向「执行」的 Agent 浏览器，可自动完成跨网页任务（亦见智能体章节）
+- [Arc](https://arc.net/){target="_blank"} - The Browser Company 推出的效率向浏览器（内置 AI 功能）
+- [Brave Leo](https://brave.com/leo/){target="_blank"} - Brave 浏览器内置 AI 助手
+- [Opera Neon](https://www.opera.com/){target="_blank"} - Opera 推出的 AI 浏览器（Neon 智能体模式）
 
 ## AI 搜索引擎
 
@@ -102,13 +116,17 @@ status: new
 
 ## AI 编程工具
 
-> 2026 年 AI 编程工具已从「代码补全助手」进化为「AI 软件工程师」。Cursor 3.0 发布，彻底重构为智能体统一工作区；Trae 已成为国内开发者首选。
+> 2026 年 AI 编程工具已从「代码补全助手」进化为「AI 软件工程师」。Cursor 3.0 发布，彻底重构为智能体统一工作区；Trae 已成为国内开发者首选；终端 Agent（Claude Code / Codex CLI / Cline / Aider）成为新范式。
 
 - [Cursor](https://cursor.sh/){target="_blank"} - AI 代码编辑器（Cursor 3：智能体工作区、并行 Agent 编排、Design Mode，自愈调试准确率 92%）
 - [TRAE](https://trae.bytedance.com/){target="_blank"} - 字节跳动推出的 AI IDE（2026年国内开发者首选，1200万+用户，零使用成本）
-- [GitHub Copilot](https://github.com/features/copilot){target="_blank"} - GitHub 推出的 AI 编程工具（内联补全、多编辑器）
+- [GitHub Copilot](https://github.com/features/copilot){target="_blank"} - GitHub 推出的 AI 编程工具（内联补全、多编辑器、Agent 模式）
 - [Claude Code](https://claude.ai/code){target="_blank"} - Anthropic 推出的终端 AI 编程 Agent（100 万 Token 上下文、全平台覆盖）
-- [Codex](https://chatgpt.com/codex){target="_blank"} - OpenAI 推出的终端 AI 编程 Agent（云端沙箱执行，支持 GPT Image 2）
+- [Codex CLI](https://github.com/openai/codex){target="_blank"} - OpenAI 开源终端编程 Agent（Rust 重写，云端沙箱执行，支持 GPT Image 2）
+- [Cline](https://cline.bot/){target="_blank"} - 开源 VS Code 编程 Agent（4.0：MCP 支持、多文件编辑、计划-执行分离）
+- [Aider](https://aider.chat/){target="_blank"} - 开源终端编程 Agent（Git 深度集成、Diff 工作流、架构师模式）
+- [Roo Code](https://roocode.com/){target="_blank"} - 开源 VS Code 多 Agent 编程插件（可自定义角色与模式）
+- [OpenCode](https://opencode.ai/){target="_blank"} - 开源终端 AI 编程助手（Apache-2.0，180K+ Stars，多模型支持）
 - [Windsurf](https://codeium.com/windsurf){target="_blank"} - Codeium 推出的 AI 编程工具（含免费方案）
 - [通义灵码](https://tongyi.aliyun.com/lingma){target="_blank"} - 阿里推出的免费 AI 编程工具（Java/云原生场景优）
 - [文心快码](https://comate.baidu.com/){target="_blank"} - 百度推出的 AI 编程助手（2026 年全栈 Agent、高采纳率）
@@ -119,18 +137,21 @@ status: new
 - [Replit Agent](https://replit.com/){target="_blank"} - Replit 推出的 AI 编程与协作工具
 - [Codeium](https://codeium.com/){target="_blank"} - 免费 AI 代码补全与多编辑器支持（含 Windsurf IDE）
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands){target="_blank"} - 开源 AI 软件工程师 Agent（原 SWE-Agent）
-- [Devin](https://devin.ai/){target="_blank"} - Cognition AI 推出的自主编程智能体
+- [Devin](https://devin.ai/){target="_blank"} - Cognition AI 推出的自主编程智能体（Devin 2.0）
 - [Tabnine](https://tabnine.com/){target="_blank"} - AI 代码补全工具，支持所有主流语言
 
 ## AI 图像工具
 
-> 2026 年图像生成向高质量与多模态演进：FLUX 2、GPT Image 2（原 Image 1.5 升级版）、Gemini 图像能力等；实时编辑与风格迁移成为新亮点。
+> 2026 年图像生成向高质量与多模态演进：GPT Image 2、Gemini（Nano Banana 2 Pro）、FLUX.2、Midjourney v7 等领跑；实时编辑与风格迁移成为新亮点。
 
 - [即梦](https://jimeng.jianying.com/){target="_blank"} - 抖音旗下免费 AI 图片创作工具（与剪映打通）
-- [Midjourney](https://www.midjourney.com/){target="_blank"} - AI 图像和插画生成工具
+- [Midjourney](https://www.midjourney.com/){target="_blank"} - AI 图像和插画生成工具（v7 已发布）
 - [Stable Diffusion](https://stablediffusionweb.com/){target="_blank"} - Stability AI 推出的文本到图像生成
 - [FLUX](https://blackforestlabs.ai/){target="_blank"} - Black Forest Labs 推出的图像生成模型（FLUX.2 Pro 专业级）
-- [GPT Image](https://openai.com/index/gpt-image-1){target="_blank"} - OpenAI 推出的图像生成工具（GPT Image 2 性能大幅提升）
+- [GPT Image](https://openai.com/index/gpt-image-2/){target="_blank"} - OpenAI 推出的图像生成工具（GPT Image 2 性能大幅提升）
+- [Nano Banana / Gemini 图像](https://gemini.google.com/){target="_blank"} - Google 图像生成（Nano Banana 2 Pro 主打高质感与文字渲染）
+- [Ideogram](https://ideogram.ai/){target="_blank"} - 擅长带文字/标语的图像生成（v3 已发布）
+- [Recraft](https://www.recraft.ai/){target="_blank"} - 矢量+位图 AI 设计生成，适合品牌与图标
 - [堆友AI](https://d.design/){target="_blank"} - 阿里堆友推出的多风格AI绘画生成器
 - [绘蛙](https://huiwa.cn/){target="_blank"} - AI电商营销工具，免费生成商品图
 - [LiblibAI](https://www.liblibai.com/){target="_blank"} - 国内领先的AI图像创作平台和模型分享社区
@@ -144,13 +165,14 @@ status: new
 
 ## AI 视频工具
 
-> 2026 年主流：Sora 2（电影级+原生音频）、Veo 3/3.1（4K、原生音频）、Runway Gen-4.5（画质基准高）；国内可灵 3.0、即梦 AI Seedance 2.0 多模态与智能分镜持续迭代。
+> 2026 年主流：Sora 2（电影级+原生音频）、Veo 3/3.1（4K、原生音频）、Runway Gen-4.5（画质基准高）；国内可灵 3.0、即梦 AI Seedance 2.0、Kling 3.0 多模态与智能分镜持续迭代。
 
 - [Sora](https://sora.chatgpt.com/explore){target="_blank"} - OpenAI 推出的 AI 视频生成（Sora 2：电影级画质、运动连贯、原生音频）
 - [即梦AI](https://jimeng.jianying.com/){target="_blank"} - 一站式 AI 视频、图片、数字人创作工具（2026年国内 TOP1）
 - [可灵AI](https://klingai.kuaishou.com/){target="_blank"} - 快手推出的 AI 视频生成（可灵 3.0 多模态、智能分镜）
+- [Kling 3.0](https://klingai.kuaishou.com/){target="_blank"} - 快手 2026 年 2 月发布的旗舰视频模型（多镜头故事板、原生 4K）
 - [Vidu](https://www.vidu.io/){target="_blank"} - 生数科技推出的 AI 视频生成大模型
-- [海螺视频](https://hailuoai.video/){target="_blank"} - MiniMax 推出的 AI 视频生成工具
+- [海螺视频](https://hailuoai.video/){target="_blank"} - MiniMax 推出的 AI 视频生成工具（海螺 02）
 - [智谱清影](https://chatglm.cn/video){target="_blank"} - 智谱推出的免费 AI 视频生成工具
 - [Runway](https://runwayml.com/){target="_blank"} - Runway Gen-4.5 专业级视频生成与控制（画质领先）
 - [Veo](https://deepmind.google/technologies/veo/){target="_blank"} - Google DeepMind 推出的 AI 视频生成（Veo 3.1 支持 4K）
@@ -159,7 +181,6 @@ status: new
 - [花生AI](https://huasheng.bilibili.com/){target="_blank"} - B 站推出的 AI 视频创作工具
 - [腾讯智影](https://zenvideo.qq.com/){target="_blank"} - 腾讯推出的 AI 视频创作工具
 - [剪映](https://www.capcut.com/){target="_blank"} - 字节跳动旗下视频编辑工具（集成 AI 功能）
-- [HappyHorse](https://github.com/){target="_blank"} - DeepSeek 系开源 AI 视频模型（可本地部署）
 
 ## AI 办公/PPT
 
@@ -194,13 +215,13 @@ status: new
 
 ## AI 音频工具
 
-> 2026 年 AI 音乐进入「格莱美级」时代：Suno V5 人声自然度达新高度，Udio 与环球音乐合作，MiniMax Music 持续迭代。
+> 2026 年 AI 音乐进入「格莱美级」时代：Suno V5 人声自然度达新高度，Udio 2.0 强化 DAW 集成，MiniMax Music 2.5 持续迭代，ElevenLabs Music 多语种表现突出。
 
 - [Suno](https://suno.com/){target="_blank"} - 高质量的AI音乐创作平台（Suno V5 支持 50+ 语言，人声自然）
 - [海绵音乐](https://www.haimianyinyue.com/){target="_blank"} - 字节跳动推出的免费AI音乐创作平台
-- [Udio](https://www.udio.com/){target="_blank"} - 免费的AI音乐创作工具（与环球音乐合作）
+- [Udio](https://www.udio.com/){target="_blank"} - 免费的AI音乐创作工具（Udio 2.0，强化 DAW 集成，与环球音乐合作）
 - [Melo](https://melo.ai/){target="_blank"} - AI 音乐生成工具（旋律贴合度高）
-- [ElevenLabs](https://elevenlabs.io/){target="_blank"} - AI文本转语音，支持28种语言
+- [ElevenLabs](https://elevenlabs.io/){target="_blank"} - AI文本转语音与音乐生成，支持 28+ 语言
 - [魔音工坊](https://www.moyin.com/){target="_blank"} - AI配音工具，轻松配出媲美真人的声音
 - [讯飞智作](https://peiyin.xunfei.cn/){target="_blank"} - 科大讯飞推出的AI转语音和配音工具
 - [网易天音](https://tianyin.163.com/){target="_blank"} - 网易推出的一站式AI音乐创作工具

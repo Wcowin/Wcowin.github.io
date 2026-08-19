@@ -263,7 +263,8 @@ nav = [
             { "基于讯飞人脸算法的人脸比对" = "develop/Mywork/face_compare.md" },
             { "基于百度API和OpenCV的智能车牌识别程序" = "develop/Mywork/opencv.md" },
             { "利用百度API进行植物识别" = "develop/Mywork/aizhiwu.md" },
-            { "设计作品" = "develop/Mywork/design.md" }
+            { "设计作品" = "develop/Mywork/design.md" },
+            { "油猴脚本作品" = "develop/Mywork/tampermonkey.md" }
         ]},
         { "我的设备" = "develop/mydevice.md" },
         { "Markdown" = [
@@ -319,7 +320,8 @@ nav = [
                 { "20250419" = "relax/diary/2025/20250419.md" }
             ]},
             { "2026" = [
-                { "20260407" = "relax/diary/2026/20260407.md" }
+                { "20260407" = "relax/diary/2026/20260407.md" },
+                { "20260818" = "relax/diary/2026/20260818.md" }
             ]}
         ]},
         { "数至十" = [
@@ -608,7 +610,7 @@ separator = '[\s\u200b\-]'  # 搜索分隔符
 # minify_css = true
 # minify_js = true
 
-# [project.plugins.markdown-exec]
+[project.plugins.markdown-exec]
 
 # ===== 文档日期插件 =====
 # 显示文档的创建和更新时间

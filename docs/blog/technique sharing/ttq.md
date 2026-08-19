@@ -18,7 +18,7 @@ tags:
 甜甜圈会动的！！！
 
 代码如下
-```c title="math.py"
+```c
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
