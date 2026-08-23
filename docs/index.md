@@ -19,7 +19,7 @@ hide:
   </button>
   <div class="oneclip-announcement-content">
     <div class="oneclip-announcement-item">
-      🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— UP本人开发的macOS 剪切板管理工具<a href="https://github.com/One-Clip/OneClip" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a>
+      🎉 <a href="https://oneclip.cloud/" target="_blank" rel="noopener noreferrer">OneClip</a> —— UP本人开发的macOS 剪贴板管理工具<a href="https://github.com/One-Clip/OneClip" target="_blank" rel="noopener noreferrer" class="oneclip-cta">了解更多 →</a>
     </div>
     <div class="oneclip-announcement-item">
       ✈️ <a href="https://vpn07.com/index.html#/register?code=xWecG89k" target="_blank" rel="noopener noreferrer">好用机场</a> —— 8折季付低至22元|70+国家线路 千兆带宽|支持流媒体
@@ -863,9 +863,7 @@ hr {
 
 
 <!-- GitHub Contribution Heatmap Card -->
- <div class="github-heatmap" data-username="Wcowin"></div> 
-
-
+<!-- <div class="github-heatmap" data-username="Wcowin"></div>  -->
 
 
 <div class="grid cards" markdown>
