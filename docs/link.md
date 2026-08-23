@@ -1404,6 +1404,17 @@ comments: false
       </div>
     </div>
   </div>
+  <div class="card">
+    <img class="ava" loading="lazy" decoding="async" src="https://blog.share888.top/favicon.ico" />
+    <div class="card-header">
+      <div>
+        <a href="https://blog.share888.top/" target="_blank">敲代码的卡卡罗特</a>
+      </div>
+      <div class="info">
+        灵魂和身体都要在路上
+      </div>
+    </div>
+  </div>
 
 
 
