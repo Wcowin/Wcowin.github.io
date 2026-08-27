@@ -643,17 +643,6 @@ comments: false
      </div>
     </div>
     <div class="card">
-     <img class="ava" loading="lazy" decoding="async" src="https://blog.viper3.top/usr/themes/Sunny/style/avatar/04.svg" />
-     <div class="card-header">
-      <div>
-      <a href="https://blog.viper3.top/" target="_blank">小霜南风</a>
-      </div>
-      <div class="info">
-      “散落一些碎花，凝结一些轻痕”
-      </div>
-     </div>
-    </div>
-    <div class="card">
      <img class="ava" loading="lazy" decoding="async" src="https://s1.imagehub.cc/images/2025/04/20/3c8dd9f82076d54db72beaceaf0a308b.png" />
      <div class="card-header">
       <div>
@@ -1672,6 +1661,17 @@ comments: false
       </div>
       <div class="info">
       迄今所有人生都大写着失败，但不妨碍我继续向前✨
+      </div>
+     </div>
+    </div>
+    <div class="card">
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <div class="card-header">
+      <div>
+      <a href="https://blog.viper3.top/" target="_blank">小霜南风</a>
+      </div>
+      <div class="info">
+      “散落一些碎花，凝结一些轻痕”
       </div>
      </div>
     </div>

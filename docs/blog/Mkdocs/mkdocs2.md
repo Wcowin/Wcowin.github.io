@@ -11,7 +11,10 @@ tags:
 
 **建议详细学习一下上面的官方网站↑↑↑**
 
-我把我目前的配置文件mkdocs.yml代码写在下面👇🏻
+我把我目前的配置文件mkdocs.yml代码写在下面👇🏻  
+
+我现在已经改为zensical架构了，配置文件是zensical.toml了。  
+如果你选择的是Material for MkDocs  就按照下面的mkdocs.yml为准。直接喂给AI就行了。之所以这么多，是因为相关的写法你可以参考，比如缩进等等。
 
 ??? note "点击展开"
     ```yaml
@@ -123,21 +126,8 @@ tags:
       - 个人博客: https://wcowin.work
       - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
 
-    copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
+    copyright: Copyright &copy; 2022~2026 Wcowin/All Rights Reserved. # 左下角的版权声明
     extra:
-      alternate:
-        - name: 简体中文
-          link: /
-          # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-          lang: zh
-        - name: English
-          link: /Mkdocs-Wcowin/en/
-          # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-          lang: en
-        - name: China(TW)
-          link: /Mkdocs-Wcowin/ZH-TW/
-          # https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-          lang: zh-TW
       generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
       social:
         - icon: fontawesome/brands/weixin
@@ -183,58 +173,6 @@ tags:
 
     plugins:
       - search #搜索配置
-      - glightbox:
-          enabled: !ENV [glightbox, false]
-          touchNavigation: true
-          loop: false
-          effect: fade
-          slide_effect: slide
-          width: 100%
-          height: auto
-          zoomable: true
-          draggable: true
-          skip_classes:
-            - custom-skip-class-name
-          auto_caption: false
-          caption_position: bottom
-          background: white
-          shadow: true
-          manual: false
-      - git-committers:
-          enabled: !ENV [git-committers, false]
-          repository: Wcowin/Mkdocs-Wcowin
-          branch: main
-          exclude:
-            - index.md
-            - tag.md
-            - liuyanban.md
-            - blog/posts/update.md
-            - blog/posts/wkw.md
-            - about/link.md
-      - git-revision-date-localized:
-          enabled: !ENV [git-revision-date-localized, false]
-          type: iso_date
-          enable_creation_date: false
-          exclude:
-            - index.md
-            - tag.md
-            - liuyanban.md
-            - blog/posts/update.md
-            - blog/posts/wkw.md
-            - about/link.md
-            - websitebeauty/linktech.md
-      - blog: #博客配置
-          post_date_format: full #时间
-          draft: true
-          draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
-          post_readtime: true
-          post_readtime_words_per_minute: 265 #计算帖子的阅读时间时读者每分钟预计阅读的字数
-          post_url_format: "{date}/{slug}"
-          # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-          #   kwds:
-          #     case: lower
-          pagination_url_format: "page/{page}"
-          authors_file: "{blog}/.authors.yml" #作者信息
       - tags
 
     markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
@@ -276,38 +214,20 @@ tags:
           alternate_style: true
       - pymdownx.tasklist:
           custom_checkbox: true
-      # - markdown.extensions.toc:
-      #     slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-      #     permalink: "\ue157"
 
     extra_javascript:
-      # - javascripts/extra.js #自定义javascript
+      - javascripts/extra.js #自定义javascript
       - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
       - javascripts/mathjax.js #Latex支持
       - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
       - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
-      # - ckplayer/js/ckplayer.js #播放器配置
-      # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
       - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
 
     extra_css:
       - stylesheets/extra.css # 自定义CSS
       - stylesheets/link.css #友链配置
       - stylesheets/customize.css # 搜索圆角优化
-      # - assets/stylesheets/portfolio.css
-      # - stylesheets/video.css #播放器可选配置
-      # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
-      # - ckplayer/css/ckplayer.css   #播放器配置
-      # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
-      # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css  #分享支持
-
       - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
-      # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
-      # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
-      # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
-
-    hooks:
-      - docs/overrides/hooks/socialmedia.py
     ```
 ***
 从头开始分析
@@ -718,25 +638,14 @@ extra_javascript:
   - javascripts/mathjax.js #Latex支持
   - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
-  # - ckplayer/js/ckplayer.js #播放器配置
-  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
 
 extra_css:
   - stylesheets/extra.css # 自定义CSS
   - stylesheets/link.css #友链配置
   - stylesheets/customize.css # 搜索圆角优化
-  # - assets/stylesheets/portfolio.css
-  # - stylesheets/video.css #播放器可选配置
-  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
-  # - ckplayer/css/ckplayer.css   #播放器配置
-  # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
-  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css  #分享支持
 
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
 ```
 javascripts/mathjax.js里有对数学公式的扩展
 

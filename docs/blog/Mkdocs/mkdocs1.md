@@ -64,42 +64,40 @@ mkdocs new mkdocs-site
 
 ---
 
-???note "过时的PublishMySite.yml" (执行下面的代码添加一个GitHub Workflow(**已经过时但是仍然能用，最新方法见下方ci.yml**)
+??? note "过时的PublishMySite.yml"
 
-````
-```
-mkdir .github
-cd .github
-mkdir workflows
-cd workflows
-vim PublishMySite.yml
-```
+    执行下面的代码添加一个GitHub Workflow（**已经过时但是仍然能用，最新方法见下方 ci.yml**）
 
-在PublishMySite.yml里面输入以下内容
+    ````
+    mkdir .github
+    cd .github
+    mkdir workflows
+    cd workflows
+    vim PublishMySite.yml
+    ````
 
-```yaml
-name: publish site
-on: # 在什么时候触发工作流
-  push: # 在从本地main分支被push到GitHub仓库时
-    branches:
-      - main
-  pull_request: # 在main分支合并别人提的pr时
-    branches:
-      - main
-jobs: # 工作流的具体内容
-  deploy:
-    runs-on: ubuntu-latest # 创建一个新的云端虚拟机 使用最新Ubuntu系统
-    steps:
-      - uses: actions/checkout@v2 # 先checkout到main分支
-      - uses: actions/setup-python@v2 # 再安装Python3和相关环境
-        with:
-          python-version: 3.x
-      - run: pip install mkdocs-material # 使用pip包管理工具安装mkdocs-material
-      - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
+    在 PublishMySite.yml 里面输入以下内容：
 
-```
-)
-````
+    ```yaml
+    name: publish site
+    on: # 在什么时候触发工作流
+      push: # 在从本地main分支被push到GitHub仓库时
+        branches:
+          - main
+      pull_request: # 在main分支合并别人提的pr时
+        branches:
+          - main
+    jobs: # 工作流的具体内容
+      deploy:
+        runs-on: ubuntu-latest # 创建一个新的云端虚拟机 使用最新Ubuntu系统
+        steps:
+          - uses: actions/checkout@v2 # 先checkout到main分支
+          - uses: actions/setup-python@v2 # 再安装Python3和相关环境
+            with:
+              python-version: 3.x
+          - run: pip install mkdocs-material # 使用pip包管理工具安装mkdocs-material
+          - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
+    ```
 
 ---
 
@@ -114,11 +112,11 @@ vim ci.yml
 进入.github/workflows/ci.yml，然后复制并粘贴以下内容：
 
 ```yaml
-name: ci
+name: ci 
 on:
   push:
     branches:
-      - master
+      - master 
       - main
 permissions:
   contents: write
@@ -131,17 +129,17 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v3
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
+          path: ~/.cache 
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
+      - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
 ```
 
@@ -159,7 +157,9 @@ Wcowin.github.io
 └── mkdocs.yml
 ```
 
-!!!重点来了 Github仓库setings/Actions/General  勾选这两项 ![](https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png)
+重点来了!!!Github仓库setings/Actions/General  勾选这两项！！    
+
+![](https://s1.imagehub.cc/images/2024/02/02/02fd4e77eb52d4ce18c227f0e29b2c6d.png)
 
 ## 三、配置完善
 

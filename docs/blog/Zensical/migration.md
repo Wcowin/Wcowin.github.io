@@ -69,6 +69,10 @@ zensical --version
 
 ### 第一步：创建 zensical.toml（或继续使用 mkdocs.yml）
 
+强烈建议看看我的zensical.toml的写法做参考：  
+
+<https://github.com/Wcowin/Wcowin.github.io/blob/main/zensical.toml>
+
 然后使用 AI IDE，将 `mkdocs.yml` 转换为 `zensical.toml`，可以直接把下面这段提示词丢给任意一个通用大模型（ChatGPT / Claude / Qwen 等），再把你自己的 `mkdocs.yml` 粘在最后，最好能**联网搜索**：
 
 ```markdown
@@ -281,14 +285,8 @@ plugins:
       blog_dir: blog
 ```
 
-**Zensical (内置):**
-```toml
-[project.plugins.blog]
-post_date_format = "full"
-draft = true
-post_readtime = true
-post_readtime_words_per_minute = 265
-```
+**Zensical (还没开发先不管):**
+
 
 #### 标签插件
 
@@ -298,67 +296,12 @@ plugins:
   - tags
 ```
 
-**Zensical:**
-```toml
-[project.plugins.tags]
-```
+**Zensical(还没开发先不管):**
+
 
 ### 第五步：处理 Hooks
 
-⚠️ **重要：Zensical 不支持 MkDocs hooks**
-
-Zensical 正在开发模块系统来替代 hooks。目前的解决方案：
-
-#### 1. 评论系统
-
-**原 MkDocs Hook:**
-```python
-# hooks/comments.py
-def on_page_markdown(markdown, page, **kwargs):
-    # 添加评论代码
-    pass
-```
-
-**Zensical 替代方案:**
-在 `overrides/partials/comments.html` 中配置：
-
-```html
-{% if page.meta.comments %}
-<div id="comments">
-  <!-- 你的评论系统代码 -->
-</div>
-{% endif %}
-```
-
-#### 2. 阅读时间
-
-**原 MkDocs Hook:**
-```python
-def calculate_reading_time(markdown):
-    # 计算阅读时间
-    pass
-```
-
-**Zensical 替代方案:**
-使用博客插件的内置功能：
-
-```toml
-[project.plugins.blog]
-post_readtime = true
-post_readtime_words_per_minute = 265
-```
-
-#### 3. 相关文章
-
-**原 MkDocs Hook:**
-```python
-def get_related_posts(page):
-    # 获取相关文章
-    pass
-```
-
-**Zensical 替代方案:**
-等待模块系统发布，或使用 JavaScript 实现。
+⚠️ **重要：Zensical 不支持 MkDocs hooks** (还没开发先不管)
 
 ### 第六步：迁移自定义样式
 

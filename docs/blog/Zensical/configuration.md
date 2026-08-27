@@ -138,7 +138,9 @@ Zensical 提供两种主题变体：**modern**（现代）和 **classic**（经�
 
 ### site_name
 
-**必需设置** - 提供网站名称，将显示在浏览器标签页、页面标题和导航栏中。
+**必需设置**   
+
+- 提供网站名称，将显示在浏览器标签页、页面标题和导航栏中。
 
 === "zensical.toml"
 
@@ -153,7 +155,8 @@ Zensical 提供两种主题变体：**modern**（现代）和 **classic**（经�
     site_name: 我的 Zensical 项目
     ```
 
-**实际效果：**
+**实际效果：**  
+
 - 浏览器标签页显示：`我的 Zensical 项目`
 - 页面标题显示：`我的 Zensical 项目 - 页面名称`
 - 导航栏左上角显示：`我的 Zensical 项目`
@@ -208,7 +211,9 @@ site_url = "https://example.com"
 
 ### site_description
 
-**可选** - 网站的描述，用于 SEO 和社交媒体分享。
+**可选**    
+
+- 网站的描述，用于 SEO 和社交媒体分享。
 
 === "zensical.toml"
 
@@ -227,7 +232,8 @@ site_url = "https://example.com"
     site_description: 一个使用 Zensical 构建的文档网站
     ```
 
-**实际效果：**
+**实际效果：**  
+
 - 在 HTML `<meta name="description">` 标签中
 - 社交媒体分享时显示
 - 搜索引擎结果中可能显示
@@ -237,7 +243,9 @@ site_url = "https://example.com"
 
 ### site_author
 
-**可选** - 网站作者名称。
+**可选**   
+
+- 网站作者名称。
 
 === "zensical.toml"
 
@@ -254,13 +262,16 @@ site_url = "https://example.com"
     site_author: 张三
     ```
 
-**实际效果：**
+**实际效果：**  
+
 - 在 HTML `<meta name="author">` 标签中
 - 页脚可能显示作者信息（取决于主题配置）
 
 ### copyright
 
-**可选** - 版权声明，显示在页面页脚。
+**可选**   
+
+- 版权声明，显示在页面页脚。
 
 === "zensical.toml"
 
@@ -275,7 +286,8 @@ site_url = "https://example.com"
     copyright: "Copyright &copy; 2025 张三"
     ```
 
-**实际效果：**
+**实际效果：**  
+
 - 显示在页面左下角页脚
 - 支持 HTML 标签（如 `&copy;` 显示为 ©）
 
@@ -297,7 +309,10 @@ All Rights Reserved
 
 ### docs_dir 和 site_dir
 
-**可选** - 文档目录和输出目录配置。
+**可选**   
+
+
+- 文档目录和输出目录配置。
 
 === "zensical.toml"
 
@@ -314,7 +329,8 @@ All Rights Reserved
     site_dir: site
     ```
 
-**说明：**
+**说明：**  
+
 - `docs_dir`：存放 Markdown 源文件的目录
 - `site_dir`：构建后生成的静态网站文件目录
 
@@ -626,7 +642,7 @@ toggle = { icon = "material/toggle-switch-off-outline", name = "切换至日间�
       favicon: assets/favicon.png
     ```
 
-## 插件配置
+## 插件配置（zensical还没有开发  先不管）
 
 ### 博客插件
 
@@ -723,7 +739,8 @@ toggle = { icon = "material/toggle-switch-off-outline", name = "切换至日间�
       - 配置: configuration.md
     ```
 
-**实际效果：**
+**实际效果：**  
+
 - 导航栏显示三个顶级菜单项
 - 点击后跳转到对应页面
 
@@ -761,7 +778,8 @@ toggle = { icon = "material/toggle-switch-off-outline", name = "切换至日间�
           - 主题定制: tutorials/theme-customization.md
     ```
 
-**实际效果：**
+**实际效果：**  
+
 - "快速开始" 和 "核心教程" 显示为可展开的分组
 - 点击分组名称展开子菜单
 - 子菜单项点击后跳转到对应页面
@@ -790,7 +808,8 @@ toggle = { icon = "material/toggle-switch-off-outline", name = "切换至日间�
       - 个人博客: https://wcowin.work/
     ```
 
-**实际效果：**
+**实际效果：**  
+
 - 外部链接在新标签页中打开
 - 可以混合使用内部页面和外部链接
 
