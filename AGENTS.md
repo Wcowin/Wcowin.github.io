@@ -34,16 +34,8 @@
 推荐使用虚拟环境：
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
+conda activate zensical
 zensical serve
-```
-
-提交前至少执行：
-
-```bash
-zensical build --clean
 ```
 
 构建必须无错误完成。仓库目前没有独立的自动化测试或 lint 命令，完整构建就是主要验证方式。除非任务要求，不要为验证而提交生成的 `site/`。

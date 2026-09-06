@@ -8,9 +8,10 @@ status: new
 ---
 
 <link rel="stylesheet" href="/about/sty/portfolio.css">
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<!-- 今日诗词 SDK：async 并行加载不阻塞渲染；加载失败时保留下方兜底文案 -->
+<script async src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
-# <span id="jinrishici-sentence">今日诗词</span>
+# <span id="jinrishici-sentence">知足且上进，温柔且坚定</span>
 
 ## 关于我
 
@@ -75,7 +76,6 @@ status: new
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #ffffff;
   border: 4px solid #ffffff;
   box-shadow: 0 8px 24px rgba(14, 30, 37, 0.15);
   transition: transform 0.5s ease;
@@ -320,8 +320,8 @@ status: new
     data-name="OneClip"
     data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，支持截图、OCR、翻译、拖拽容器、划词、同步。由Wcowin开发并维护。"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="456"
-    data-forks="27"
+    data-stars="461"
+    data-forks="28"
     data-license="MIT"
     href="https://github.com/One-Clip/OneClip"
     target="_blank"
@@ -333,8 +333,8 @@ status: new
   <a
     class="github-repo-card"
     data-repo="Wcowin/Mac-Finder-Clipboard"
-    data-description="FinderClip 是一款免费开源且轻量级的 macOS 应用，让你可以在 Finder 中使用熟悉的 ⌘X 和 ⌘V 快捷键来剪切和移动文件。"
-    data-stars="90"
+    data-description="FinderClip 是一款免费开源且轻量级的 macOS 应用，让你可以在访达中使用熟悉的 ⌘X 和 ⌘V 快捷键来剪切和移动文件。"
+    data-stars="91"
     data-forks="0"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
@@ -379,8 +379,8 @@ status: new
     class="github-repo-card"
     data-repo="Wcowin/Wcowin.github.io"
     data-description="个人博客"
-    data-stars="75"
-    data-forks="10"
+    data-stars="74"
+    data-forks="11"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/Wcowin/Wcowin.github.io"
@@ -389,8 +389,7 @@ status: new
   ></a>
 </div>
 
-<!-- 在后续标题被解析和锚点定位前生成卡片，避免首屏布局跳动。 -->
-<script src="/javascripts/github-repo-card.js"></script>
+<!-- github-repo-card.js 已由 zensical.toml 的 extra_javascript 全局注入，无需在页面重复引入 -->
 
 <!-- [:material-download: 查看简历](../assets/个人简历.pdf){ .md-button}
 {: style="text-align: center;" } -->
@@ -411,7 +410,6 @@ status: new
 </div> -->
 
 ---
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
 
 <style>
 /* ============================================
@@ -488,8 +486,6 @@ status: new
 
 ## 我的履历
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 <div class="qualification">
     <div class="qualification__tabs">
         <div class="t-tabs" role="tablist">
@@ -506,7 +502,7 @@ status: new
                     <h3 class="qualification__title">漯河高中</h3>
                     <span class="qualification__subtitle">平凡的三年</span>
                     <div class="qualification__calendar">
-                        <i class="fa-regular fa-calendar"></i>
+                        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M120 0c13.3 0 24 10.7 24 24v40h160V24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V24c0-13.3 10.7-24 24-24m0 112H64c-8.8 0-16 7.2-16 16v48h352v-48c0-8.8-7.2-16-16-16zM48 224v192c0 8.8 7.2 16 16 16h320c8.8 0 16-7.2 16-16V224z"/></svg></span>
                         <span>2018 - 2021</span>
                     </div>
                 </div>
@@ -526,7 +522,7 @@ status: new
                     <h3 class="qualification__title">CTBU</h3>
                     <span class="qualification__subtitle">电子信息工程学士</span>
                     <div class="qualification__calendar">
-                        <i class="fa-regular fa-calendar"></i>
+                        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M120 0c13.3 0 24 10.7 24 24v40h160V24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V24c0-13.3 10.7-24 24-24m0 112H64c-8.8 0-16 7.2-16 16v48h352v-48c0-8.8-7.2-16-16-16zM48 224v192c0 8.8 7.2 16 16 16h320c8.8 0 16-7.2 16-16V224z"/></svg></span>
                         <span>2021 - 2025</span>
                     </div>
                 </div>
@@ -537,7 +533,7 @@ status: new
                     <h3 class="qualification__title">HBUT</h3>
                     <span class="qualification__subtitle">低空技术与工程硕士</span>
                     <div class="qualification__calendar">
-                        <i class="fa-regular fa-calendar"></i>
+                        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M120 0c13.3 0 24 10.7 24 24v40h160V24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V24c0-13.3 10.7-24 24-24m0 112H64c-8.8 0-16 7.2-16 16v48h352v-48c0-8.8-7.2-16-16-16zM48 224v192c0 8.8 7.2 16 16 16h320c8.8 0 16-7.2 16-16V224z"/></svg></span>
                         <span>2026 - 2029</span>
                     </div>
                 </div>
@@ -557,7 +553,7 @@ status: new
                     <h3 class="qualification__title">未完待续</h3>
                     <span class="qualification__subtitle">于道各努力，千里自同风</span>
                     <div class="qualification__calendar">
-                        <i class="fa-regular fa-calendar"></i>
+                        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M120 0c13.3 0 24 10.7 24 24v40h160V24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V24c0-13.3 10.7-24 24-24m0 112H64c-8.8 0-16 7.2-16 16v48h352v-48c0-8.8-7.2-16-16-16zM48 224v192c0 8.8 7.2 16 16 16h320c8.8 0 16-7.2 16-16V224z"/></svg></span>
                         <span>Before - After</span>
                     </div>
                 </div>
@@ -575,7 +571,7 @@ status: new
                     <h3 class="qualification__title">上海科锐福克斯人才顾问有限公司</h3>
                     <span class="qualification__subtitle">CSDN 见习校园主理人</span>
                     <div class="qualification__calendar">
-                        <i class="fa-regular fa-calendar"></i>
+                        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M120 0c13.3 0 24 10.7 24 24v40h160V24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V24c0-13.3 10.7-24 24-24m0 112H64c-8.8 0-16 7.2-16 16v48h352v-48c0-8.8-7.2-16-16-16zM48 224v192c0 8.8 7.2 16 16 16h320c8.8 0 16-7.2 16-16V224z"/></svg></span>
                         <span>2024.6 - 2025.6</span>
                     </div>
                 </div>
@@ -586,7 +582,7 @@ status: new
                     <h3 class="qualification__title">独立开发者</h3>
                     <span class="qualification__subtitle">Swift开发/<a href="https://github.com/One-Clip/OneClip" target="_blank" style="color: inherit; text-decoration: underline;">OneClip</a> 作者</span>
                     <div class="qualification__calendar">
-                        <i class="fa-regular fa-calendar"></i>
+                        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M120 0c13.3 0 24 10.7 24 24v40h160V24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V24c0-13.3 10.7-24 24-24m0 112H64c-8.8 0-16 7.2-16 16v48h352v-48c0-8.8-7.2-16-16-16zM48 224v192c0 8.8 7.2 16 16 16h320c8.8 0 16-7.2 16-16V224z"/></svg></span>
                         <span>2025-至今</span>
                     </div>
                 </div>
@@ -606,7 +602,7 @@ status: new
                     <h3 class="qualification__title">未完待续</h3>
                     <span class="qualification__subtitle">于道各努力，千里自同风</span>
                     <div class="qualification__calendar">
-                        <i class="fa-regular fa-calendar"></i>
+                        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M120 0c13.3 0 24 10.7 24 24v40h160V24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V24c0-13.3 10.7-24 24-24m0 112H64c-8.8 0-16 7.2-16 16v48h352v-48c0-8.8-7.2-16-16-16zM48 224v192c0 8.8 7.2 16 16 16h320c8.8 0 16-7.2 16-16V224z"/></svg></span>
                         <span>Before - After</span>
                     </div>
                 </div>
@@ -799,11 +795,37 @@ status: new
 ## 联系我
 
 <style>
-  @media (min-width: 768px) {
-    .mobile-only {
-      display: none;
-    }
+/* 移动端/桌面端互斥显示（断点不重叠，避免 768px 处两者同时隐藏） */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
   }
+}
+
+@media (max-width: 767px) {
+  /* 特异性需高于主题的 .md-typeset .grid，否则 display:grid 会赢过 display:none */
+  .md-typeset .grid.desktop-only {
+    display: none;
+  }
+}
+
+/* 联系区布局：仅覆盖主题 .grid 的自适应列（.md-typeset .grid 已提供 display: grid） */
+.md-typeset .grid.contact-layout {
+  grid-template-columns: 35% 65%;
+}
+.md-typeset .grid.contact-stack {
+  grid-template-columns: 1fr;
+}
+.md-typeset .grid.contact-pairs {
+  grid-template-columns: 49% 49%;
+}
+@media (max-width: 767px) {
+  .md-typeset .grid.contact-layout,
+  .md-typeset .grid.contact-stack,
+  .md-typeset .grid.contact-pairs {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
   <a href="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" target="_blank" class="mobile-only">
    <center>
@@ -821,15 +843,7 @@ status: new
     </center>
   </a>
 
-<style>
-@media (max-width: 768px) { /* 移动端隐藏 */
-  .desktop-only {
-    display: none !important;
-  }
-}
-</style>
-
-<div class="grid desktop-only" style="display: grid;grid-template-columns: 35% 65%" markdown>
+<div class="grid contact-layout desktop-only" markdown>
 <div class="grid cards" markdown>
 
 -   <center>![WeChat](https://picx.zhimg.com/80/v2-21045fd6f42e98fb136c6d7d0958f2f1_1440w.webp#only-light){ .lg .middle style="width: 50px; height: 50px;"} ![WeChat](https://img.icons8.com/?size=100&id=19977&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"}</center>
@@ -843,7 +857,7 @@ status: new
 
 </div>
 
-<div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
+<div class="grid cards contact-stack" markdown>
 
 
 
@@ -853,9 +867,9 @@ status: new
 
     <center><font  color= #757575 size=6>Email</font>
 
-    [发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}</center>
+    [发送电子邮件 :fontawesome-solid-paper-plane:](mailto:wcowin@qq.com){.md-button}</center>
 
-<div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
+<div class="grid cards contact-pairs" markdown>
 
 
 -   <center>![](https://pica.zhimg.com/v2-61b4731957dba61e9960436dbd06306a_1440w.jpg#only-light){ .lg .middle style="width: 50px; height: 50px;" } ![WeChat](https://img.icons8.com/?size=100&id=63306&format=png&color=000000#only-dark){ .lg .middle style="width: 50px; height: 50px;"}</center>
@@ -975,7 +989,7 @@ status: new
 
 ## 须知
 
-如果给我发[邮件](mailto:<wcowin@qq.com>)，或者通过右下角**微信/TG添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。
+如果给我发[邮件](mailto:wcowin@qq.com)，或者通过右下角**微信/TG添加好友**，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。
 
 
 !!! note "与我联系"
@@ -984,7 +998,7 @@ status: new
     </div>
 
     ---
-    <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}</center>
+    <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:wcowin@qq.com){.md-button}</center>
 
 
 

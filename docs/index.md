@@ -10,7 +10,7 @@ hide:
 
 
 <!-- OneClip 公告栏 -->
-<div class="oneclip-announcement t-resize" id="oneclip-announcement">
+<div class="oneclip-announcement oneclip-announcement--top t-resize" id="oneclip-announcement">
   <button class="oneclip-announcement-close" onclick="closeAnnouncement()" aria-label="关闭公告">
     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
       <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -76,14 +76,20 @@ hide:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 
+<!-- 移动端主标语（仅窄屏显示，置于头像之上） -->
+<div class="mobile-motto">
+  <h1>循此苦旅 以达星辰</h1>
+</div>
+
 <div class="wcowin-header-row">
   <!-- 左侧：文字内容 -->
   <div class="wcowin-header-text">
     <div class="wcowin-header-title">Hi, I'm <span class="wcowin-name-box"><span class="name-text">Wcowin</span></span></div>
     <div class="wcowin-header-subtitle">
-      <span class="wcowin-header-subtitle-inner">
+      <span class="wcowin-header-subtitle-inner" aria-hidden="true">
         <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
       </span>
+      <span class="sr-only">A Swift Developer, graduate student, dreamer</span>
     </div>
     <div class="wcowin-header-btns">
       <a href="https://github.com/Wcowin" target="_blank" rel="noopener noreferrer" class="md-button md-button--primary">
@@ -110,11 +116,6 @@ hide:
       </div>
     </div>
   </div>
-</div>
-
-<!-- 移动端显示的标语 -->
-<div class="mobile-motto">
-  <h1>循此苦旅 以达星辰</h1>
 </div>
 
 <style>
@@ -238,6 +239,19 @@ hide:
   min-width: 280px; /* 防止打字时宽度跳动 */
 }
 
+/* 仅屏幕阅读器可见的静态文本 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* 打字机光标样式 */
 .typewriter-cursor {
   display: inline-block;
@@ -267,11 +281,7 @@ hide:
 
 
 
-/* 添加深色模式的文字颜色适配 - 更强烈的对比度 */
-[data-md-color-scheme="slate"] .wcowin-header-subtitle {
-  color: #757575;
-}
-
+/* 深色模式副标题颜色（inner 是实际渲染文本的元素） */
 [data-md-color-scheme="slate"] .wcowin-header-subtitle-inner {
   color: #b0b0b0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* 增强阴影 */
@@ -441,7 +451,7 @@ hide:
   opacity: 0.7;
 }
 
-/* Safari 特定修复 - 减少模糊值以改善性能 */
+/* WebKit/Blink 降低模糊值以改善性能（注：此条件匹配所有 Chrome/Safari/Edge，并非仅 Safari） */
 @supports (-webkit-appearance: none) {
   .flip-glow-ultimate-glow {
     filter: blur(45px);
@@ -490,6 +500,26 @@ hide:
   box-shadow: 0 12px 32px rgba(14, 30, 37, 0.25);
 }
 
+/* 触摸屏没有 hover，改用点击切换正反面 */
+.flip-glow-ultimate-imgs {
+  cursor: pointer;
+}
+.flip-glow-ultimate-imgs.is-flipped img.flip-glow-ultimate-back {
+  transform: rotateY(180deg);
+  z-index: 2;
+  box-shadow: 0 12px 32px rgba(14, 30, 37, 0.25);
+}
+.flip-glow-ultimate-imgs.is-flipped img.flip-glow-ultimate-front {
+  transform: rotateY(0deg);
+  z-index: 3;
+  box-shadow: 0 12px 32px rgba(14, 30, 37, 0.25);
+}
+@media (hover: hover) {
+  .flip-glow-ultimate-imgs {
+    cursor: default;
+  }
+}
+
 /* ====== 响应式布局 ====== */
 @media (max-width: 1100px) {
   .wcowin-header-row {
@@ -508,107 +538,156 @@ hide:
     height: 200px;
   }
 }
-@media (max-width: 700px) {
-  .wcowin-header-row {
-    flex-direction: column-reverse;
-    gap: 0px; /* 减少到最小间距 */
-    min-height: unset;
-    margin: 12px 0 12px 0; /* 减小上下边距 */
-  }
-  .wcowin-header-text {
-    align-items: center;
-    text-align: center;
-    max-width: 98vw;
-    margin-top: -10px; /* 添加负边距拉近与头像的距离 */
-  }
-  .wcowin-header-avatar {
-    margin-bottom: 0px; /* 移除底部间距 */
-  }
-  .wcowin-header-title {
-    margin-bottom: 12px; /* 减小标题下方间距 */
-  }
-  .wcowin-header-subtitle {
-    margin-bottom: 16px; /* 减小副标题下方间距 */
-  }
-
-  /* 调整头像大小，使其在移动端更小 */
-  .flip-glow-ultimate,
-  .flip-glow-ultimate-imgs {
-    width: 220px;
-    height: 220px;
-  }
-  .flip-glow-ultimate-glow {
-    width: 220px;
-    height: 220px;
-  }
-}
-/* 移动端样式 */
+/* ====== 移动端主标语（默认隐藏，仅窄屏显示） ====== */
 .mobile-motto {
   display: none;
   text-align: center;
-  padding: 15px 0;
-  margin: 5px 0;
+  padding: 0;
+  margin: 0;
 }
 
 .mobile-motto h1 {
-  font-size: 1.8rem;
+  font-size: 1.45rem;
+  letter-spacing: 2px;
   color: #757575;
   /* font-family: 'LXGW WenKai', 'Segoe UI', 'PingFang SC', Arial, sans-serif; */
   font-weight: 500;
   margin: 0;
 }
 
+[data-md-color-scheme="slate"] .mobile-motto h1 {
+  color: #b0b0b0;
+}
+
 @media (max-width: 700px) {
-  /* 隐藏原有头部 */
+  /* 移动端保留完整 Hero：改为纵向堆叠 + 收窄尺寸，不再整体隐藏 */
   .wcowin-header-row {
-    display: none !important;
+    flex-direction: column-reverse;
+    gap: 4px;
+    min-height: unset;
+    margin: 14px 0 6px 0;
   }
 
-  /* 显示移动端标语 */
+  /* 收紧主题内容区的顶部留白，让标语直接顶到导航栏下方 */
+  .md-main__inner {
+    margin-top: 0 !important;
+  }
+
+  .md-content__inner {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
   .mobile-motto {
     display: block;
+    margin-bottom: 22px;
+  }
+
+  .wcowin-header-text {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 4px;
+    padding: 0;
+    /* 纵向布局下 flex-basis 会变成高度，重置为 auto 避免被撑出大片空白 */
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .wcowin-header-avatar {
+    margin-bottom: 12px;
+    /* 同上：抵消桌面的 flex: 0 0 260px（纵向时 260px 会变成高度） */
+    flex: 0 0 auto;
+    min-width: 0;
+  }
+
+  .wcowin-header-title {
+    font-size: 1.7rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .wcowin-name-box {
+    padding: 3px 10px;
+    margin-left: 6px;
+    border-radius: 8px;
+  }
+
+  .wcowin-header-subtitle {
+    font-size: 1.15rem;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  .wcowin-header-subtitle-inner {
+    min-width: 200px;
+    letter-spacing: 0;
+  }
+
+  .wcowin-header-btns {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .wcowin-header-btns .md-button {
+    font-size: 0.85rem;
+    padding: 0 14px;
+  }
+
+  /* 头像在窄屏收小，光晕改为静态低透明度以免抢视线 */
+  .flip-glow-ultimate,
+  .flip-glow-ultimate-imgs {
+    width: 168px;
+    height: 168px;
+  }
+  .flip-glow-ultimate-glow {
+    width: 158px;
+    height: 158px;
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
+    opacity: 0.5;
+  }
+  .flip-glow-ultimate-imgs img {
+    border-width: 3px;
+  }
+}
+
+@media (max-width: 360px) {
+  .wcowin-header-title {
+    font-size: 1.45rem;
+  }
+  .wcowin-header-subtitle {
+    font-size: 1.05rem;
+  }
+  .flip-glow-ultimate,
+  .flip-glow-ultimate-imgs {
+    width: 140px;
+    height: 140px;
+  }
+  .flip-glow-ultimate-glow {
+    width: 132px;
+    height: 132px;
   }
 }
 </style>
 
-<!-- 打字机效果脚本 - 支持多语言 -->
+<!-- 打字机效果脚本 -->
 <script>
 (function() {
-  // 多语言文字列表
-  const phrasesData = {
-    chinese_simplified: [
-      "A Swift Developer",
-      "A graduate student",
-      "A dreamer"
-    ],
-    english: [
-      "A Swift Developer",
-      "A graduate student",
-      "A dreamer",
-    ]
-  };
-  
-  // 获取当前语言
-  function getCurrentLanguage() {
-    try {
-      const saved = localStorage.getItem('glm_global_translation_preference');
-      return saved && saved !== 'null' ? saved : 'chinese_simplified';
-    } catch (e) {
-      return 'chinese_simplified';
-    }
-  }
-  
-  // 获取当前语言的短语列表
-  function getPhrases() {
-    const lang = getCurrentLanguage();
-    return phrasesData[lang] || phrasesData.chinese_simplified;
-  }
-  
+  // 轮播短语（如需恢复多语言，参考 zensical.toml 中的翻译切换器存储 key 重新接入）
+  const phrases = [
+    "A Swift Developer",
+    "A graduate student",
+    "A dreamer"
+  ];
+
   let phraseIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
   let typewriterElement = null;
-  
+
   const typeSpeed = 100;
   const deleteSpeed = 50;
   const pauseTime = 2000;
@@ -623,7 +702,6 @@ hide:
       }
     }
     
-    const phrases = getPhrases();
     const currentPhrase = phrases[phraseIndex % phrases.length];
     
     if (isDeleting) {
@@ -660,6 +738,22 @@ hide:
 })();
 </script>
 
+<!-- 移动端点击头像切换正反面 -->
+<script>
+(function() {
+  var stage = document.querySelector('.flip-glow-ultimate-imgs');
+  if (!stage || !window.matchMedia) return;
+  // 仅在无 hover 能力的触摸设备上启用
+  if (!window.matchMedia('(hover: none)').matches) return;
+  stage.setAttribute('role', 'button');
+  stage.setAttribute('tabindex', '0');
+  stage.setAttribute('aria-label', '切换头像');
+  stage.addEventListener('click', function() {
+    stage.classList.toggle('is-flipped');
+  });
+})();
+</script>
+
 
 <!-- 修改分隔线上下的间距 -->
 <style>
@@ -683,12 +777,6 @@ hr {
 .grid.cards > ul {
   gap: 0.5rem !important;
 }
-
-/* 减少问候框的边距 */
-#greeting {
-  margin-bottom: 10px !important;
-  padding: 8px !important;
-}
 </style>
 
 ---
@@ -700,8 +788,8 @@ hr {
 <style>
   .greeting-container {
     text-align: center;
-    margin-bottom: 8px;
-    padding: 15px;
+    margin-bottom: 10px;
+    padding: 8px;
     border-radius: 10px;
     background-color: rgba(240, 240, 240, 0.5);
     border: 1px solid rgba(200, 200, 200, 0.3);
@@ -731,11 +819,6 @@ hr {
 
   /* 响应式调整 */
   @media (max-width: 768px) {
-    .greeting-container {
-      padding: 10px;
-      margin-bottom: 6px;
-    }
-
     .greeting-text {
       font-size: 1.3rem;
     }
@@ -937,10 +1020,10 @@ body {
     display: none; /* 在手机端隐藏网格效果 */
   }
 
-  /* 在移动端禁用复杂动画以提升性能 */
+  /* 在移动端禁用复杂动画以提升性能（改为静态光晕） */
   .flip-glow-ultimate-glow {
     animation: none;
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 
@@ -1090,10 +1173,3 @@ body {
   }
 }
 </style>
-
-
- 
-<!-- Umami Analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
-
----
