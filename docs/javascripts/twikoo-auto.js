@@ -32,7 +32,10 @@
     '=/research/aerotech',        // 空天主页
     '=/trip',                     // 旅行主页
     '=/OneClip',                  // OneClip 主页
-    '=/blog/Cryptography'         // 密码学主页
+    '=/blog/Cryptography',         // 密码学主页
+    '=/blog/Academic',             // 数学与学术主页
+    '=/tags'                      // 标签页
+    
   ];
   // 永远是首页的路径（显式列出，避免被空串跳过）
   var HOME_PATHS = ['', '/', '/index.html', '/index'];

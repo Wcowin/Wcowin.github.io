@@ -12,7 +12,7 @@ site_author = "Wcowin"                    # 网站作者
 copyright = "Copyright &copy; 2022~2026 Wcowin" # 左下角的版权声明
 docs_dir = "docs"                                # 文档目录
 site_dir = "site"                                # 生成的网站目录
-use_directory_urls = true                        # 使用目录形式的URL (例如: /page/ 而不是 /page.html)
+# use_directory_urls = true                        # 使用目录形式的URL (例如: /page/ 而不是 /page.html)
 # validation = false
 
 # ===== 仓库配置 =====
@@ -91,18 +91,6 @@ nav = [
         { "好物分享" = [
             { "2026流量卡推荐：月租低至29元，无合约可随时注销" = "blog/posts/sim-card.md" }
         ]},
-        { "密码学" = [
-            "blog/Cryptography/index.md",
-            { "数论基础" = "blog/Cryptography/Numbertheory.md" },
-            { "密码学引言" = "blog/Cryptography/Introduction.md" },
-            { "流密码" = "blog/Cryptography/Symmetriccryptography.md" },
-            { "分组密码" = "blog/Cryptography/Groupcipher.md" },
-            { "非对称密码" = "blog/Cryptography/Asymmetriccryptography.md" },
-            { "消息认证与哈希函数" = "blog/Cryptography/HashAndMAC.md" },
-            { "比特币体系：从零开始理解加密货币" = "blog/Cryptography/Bitcoin.md" },
-            { "密码协议与应用" = "blog/Cryptography/ProtocolAndApplication.md" },
-            { "现代密码学发展" = "blog/Cryptography/ModernCryptography.md" },
-        ]},
         { "基于Mkdocs/zensical主题的站点" = "blog/technique sharing/comkdocs.md" },
         { "Zensical中文教程" =[
             { "前言" = "blog/Zensical/indexfirst.md" },
@@ -165,18 +153,6 @@ nav = [
             { "用Matlab画玫瑰百合花" = "blog/technique sharing/matlabrose.md" },
             { "科学上网" = "blog/technique sharing/kexue.md" },
             { "计算机编年史" = "blog/technique sharing/jisuanjibiannianshi.md" }
-        ]},
-        { "Math学术" = [
-            { "LaTeX常用符号整理" = "blog/Academic/LaTeX.md" },
-            { "一份简短的关于LATEX安装的介绍" = "https://mirrors.sjtug.sjtu.edu.cn/ctan/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf" },
-            { "希腊字母总结" = "blog/Academic/希腊字母.pdf" },
-            { "Math" = "blog/Academic/math.md" },
-            { "数学竞赛" = [
-                { "第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答" = "blog/Academic/Math/14.md" },
-                { "第十三届全国大学生数学竞赛(非数学类)决赛详细解答" = "blog/Academic/Math/13js.md" }
-            ]},
-            { "电磁场期末复习索引" = "blog/Academic/diancichang.html" },
-            { "电磁场期末公式总结(手写)" = "blog/Academic/ddiancichang.md" }
         ]},
         { "Mac" = [
             { "Mac电脑安装软件报错解决办法汇总" = "https://mp.weixin.qq.com/s/qjSx09tqNq1KfVug2WtQFg" },
@@ -285,12 +261,39 @@ nav = [
     ]},
     { "科研" = [
         "research/index.md",
+        { "网络空间安全" = [
+            "research/cybersec/index.md",
+            { "密码学" = [
+                "blog/Cryptography/index.md",
+                { "数论基础" = "blog/Cryptography/Numbertheory.md" },
+                { "密码学引言" = "blog/Cryptography/Introduction.md" },
+                { "流密码" = "blog/Cryptography/Symmetriccryptography.md" },
+                { "分组密码" = "blog/Cryptography/Groupcipher.md" },
+                { "非对称密码" = "blog/Cryptography/Asymmetriccryptography.md" },
+                { "消息认证与哈希函数" = "blog/Cryptography/HashAndMAC.md" },
+                { "比特币体系：从零开始理解加密货币" = "blog/Cryptography/Bitcoin.md" },
+                { "密码协议与应用" = "blog/Cryptography/ProtocolAndApplication.md" },
+                { "现代密码学发展" = "blog/Cryptography/ModernCryptography.md" },
+            ]},
+        ]},
         { "低空技术与工程" = [
             "research/aerotech/index.md",
             { "基础理论与方法" = [
                 { "低空交通系统建模" = "research/aerotech/system-modeling.md" },
                 { "低空航线网络规划" = "research/aerotech/route-network.md" }
             ]}
+        ]},
+        { "数学与学术" = [
+            "blog/Academic/index.md",            
+            { "LaTeX常用符号整理" = "blog/Academic/LaTeX.md" },
+            { "一份简短的关于LATEX安装的介绍" = "https://mirrors.sjtug.sjtu.edu.cn/ctan/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf" },
+            { "王虹、Joshua Zahl 与三维挂谷猜想的解决" = "relax/Math/hong-wang-and-the-3d-kakeya-conjecture.md" },
+            { "希腊字母总结" = "blog/Academic/希腊字母.pdf" },
+            { "数学竞赛" = [
+                { "第十四届全国大学生数学竞赛(非数学类)初赛补赛详细解答" = "blog/Academic/Math/14.md" }            
+                ]},
+            { "电磁场期末复习索引" = "blog/Academic/diancichang.html" },
+            { "电磁场期末公式总结(手写)" = "blog/Academic/ddiancichang.md" }
         ]},
         "research/UGP.md",
     ]},
@@ -330,8 +333,7 @@ nav = [
             { "3" = "relax/Math/3.md" },
             { "4" = "relax/Math/4.md" },
             { "5" = "relax/Math/5.md" },
-            { "6" = "relax/Math/6.md" },
-            { "王虹、Joshua Zahl 与三维挂谷猜想的解决" = "relax/Math/hong-wang-and-the-3d-kakeya-conjecture.md" }
+            { "6" = "relax/Math/6.md" }
         ]},
         { "观影" = [
             { "推荐的番剧" = "relax/Movie/tuijianfanju.md" },
@@ -384,7 +386,7 @@ nav = [
         { "我的家乡——漯河" = "trip/LH.md" },
         { "足迹" = "trip/footmark.md" }
     ]},
-    # { "标签" = "tag.md" },
+    { "标签" = "tags.md" },
     { "留言板" = "waline.md" },
     { "朋友" = [
         { "友链" = "link.md" },
@@ -602,7 +604,8 @@ separator = '[\s\u200b\-]'  # 搜索分隔符
 # pagination_url_format = "page/{page}"         # 分页URL格式
 
 # ===== 标签插件 =====
-# [project.plugins.tags]
+# 启用后，所有带 front matter tags 的文章底部会渲染标签，并自动生成 /tags/ 标签索引与分类页
+[project.plugins.tags]
 
 # ===== 最小化插件 =====
 # [project.plugins.minify]

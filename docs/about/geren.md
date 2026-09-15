@@ -774,8 +774,8 @@ status: new
     
     - Hi, I'm [Wcowin](https://github.com/Wcowin){target="_blank"}~
     - 咖啡和Codex重度爱好者
-    - 热爱(xiā)研究/Math业余，致力于Mkdocs/[Zensical](https://zensical.org/)以及[Mac应用](../develop/Mac-development/index.md)的开发
-    - 目前的研究领域是[低空技术](../research/aerotech/)、[AI/网络安全/具身智能](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)
+    - 热爱(xiā)研究/Math业余，致力于Mkdocs/[Zensical](https://zensical.org/)博客撰写以及[Mac应用](../develop/Mac-development/index.md)的开发
+    - 目前的研究领域是[AI/网络安全](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)、[低空技术信息安全](../research/aerotech/)
     - 读书明志|诗词爱好者|历史研究|喜欢村上春树|擅长羽毛球
     - 清醒知趣，明得失，知进退
 

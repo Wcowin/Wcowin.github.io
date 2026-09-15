@@ -7,7 +7,9 @@ status: new
 
 
 <!-- ![image](https://s1.imagehub.cc/images/2025/05/08/95791bc65fa16772f50c98c3540d5878.png){.img1} -->
-![image.png](https://i.imgant.com/v2/1JyxLQU.png)
+<!-- ![image.png](https://i.imgant.com/v2/1JyxLQU.png) -->
+
+![image.png](https://wsrv.nl/?url=https%3A%2F%2Fi.mij.rip%2F2026%2F09%2F14%2F6af3f8fbd9e9203f26b914ad2e3258e3.png&default=https%3A%2F%2Fi.mij.rip%2F2026%2F09%2F14%2F6af3f8fbd9e9203f26b914ad2e3258e3.png)
 
 我会持续更新<mark>密码学系列文章</mark>，欢迎有兴趣的同学与我交流🙂
 
