@@ -754,10 +754,10 @@ comments: false
     <img class="ava" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/121679359?v=4" />
     <div class="card-header">
       <div>
-      <a href="https://linexic.top " target="_blank">LineXic书屋</a>
+      <a href="https://linexic.top " target="_blank">LineXic's website</a>
       </div>
       <div class="info">
-      难离难舍，想抱紧些
+      具体问题，具体分析
       </div>
     </div>
     </div>
