@@ -58,6 +58,7 @@ status: new
 
     - [密码协议与应用](../Cryptography/ProtocolAndApplication.md)
     - [现代密码学发展](../Cryptography/ModernCryptography.md)
+    - [zk-SNARK 原理详解：从直觉到可运行实现](../Cryptography/zkSNARK.md)
 
 </div>
 

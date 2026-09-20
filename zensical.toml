@@ -274,6 +274,7 @@ nav = [
                 { "比特币体系：从零开始理解加密货币" = "blog/Cryptography/Bitcoin.md" },
                 { "密码协议与应用" = "blog/Cryptography/ProtocolAndApplication.md" },
                 { "现代密码学发展" = "blog/Cryptography/ModernCryptography.md" },
+                { "zk-SNARK 原理详解：从直觉到可运行实现" = "blog/Cryptography/zkSNARK.md" },
             ]},
         ]},
         { "低空技术与工程" = [

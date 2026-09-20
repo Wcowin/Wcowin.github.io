@@ -6,7 +6,7 @@ tags:
 
 # 现代密码学发展
 
-现代密码学在经典对称/非对称密码与消息认证的基础上，正经历后量子安全、隐私计算与新型应用三大方向的深刻变化。本文基于公开资料与标准化进展，概述后量子密码（PQC）、同态加密、零知识证明及轻量级密码等方向的发展现状与趋势。
+现代密码学在经典对称/非对称密码与消息认证的基础上，正经历后量子安全、隐私计算、人工智能安全与新型应用四大方向的深刻变化。本文基于公开资料与标准化进展，概述后量子密码（PQC）、同态加密、零知识证明、人工智能与密码学交叉，以及轻量级密码等方向的发展现状与趋势。
 
 **注：**
 
@@ -137,6 +137,83 @@ NIST 的立场很明确：**先迁到 2024 年的三个标准，再等备份算�
 
 ZKP 主打的是**可验证性**而非机密性，天然不抗量子（多数 SNARK 依赖离散对数或配对）；抗量子的 ZKP 方向（如基于哈希/格的证明系统）仍以 STARK 类方案与研究性构造为主。
 
+## 人工智能安全与密码学的交叉
+
+AI / 大模型安全是 2025–2026 网络安全圈热度最高的新变量，而密码学在其中扮演"可证明保障"的底座角色——它回答的不是"模型聪不聪明"，而是"数据有没有泄露、结果能不能被相信、来源是否可信"。可归纳为三条主线：**隐私保护机器学习（PPML）**、**可验证机器学习（zkML）**、以及**对抗与投毒安全**。
+
+### 隐私保护机器学习（PPML）
+
+目标是在不暴露原始数据 / 模型权重的前提下完成训练或推理，主力技术是差分隐私（DP）、同态加密（HE）与安全多方计算（MPC）。
+
+**差分隐私（DP）** 提供可量化的隐私保障。对任意相邻数据集 $D, D'$（仅差一条记录）与任意输出集合 $S$：
+
+$$
+\Pr\!\big[M(D)\in S\big] \;\le\; e^{\varepsilon}\,\Pr\!\big[M(D')\in S\big] + \delta
+$$
+
+其中 $\varepsilon$ 控制隐私损失、$\delta$ 允许极小概率失效。工程中常用**高斯机制**：先对梯度做 $L_2$ 裁剪（敏感度 $\le C$），再加 $\mathcal{N}(0, \sigma^2)$ 噪声，使发布的梯度满足 $(\varepsilon,\delta)$-DP。
+
+**同态加密推理** 多用 CKKS 方案在密文上做定点 / 近似算术，直接对加密输入跑神经网络；**联邦学习 + 安全聚合（SecAgg）** 则让服务器只见聚合后的梯度、不见任一方的本地数据。
+
+### 可验证机器学习（zkML）
+
+用零知识证明回答"这个输出到底是不是这个模型、在这份输入上算出来的"，而不暴露模型权重或用户数据：
+
+$$
+\text{关系 } R:\quad \exists\,(w, x)\ \text{s.t.}\ y = f_w(x)\ \land\ \text{公开 } y
+$$
+
+证明者把前向推理电路化，给出 $\pi = \mathsf{Prove}(pk, x, w, y)$，验证者用一次配对校验 $\pi$ 即可相信 $y$ 的正确性。难点在于神经网络的非线性（ReLU / softmax / 归一化）在有限域上昂贵，催生了**量化 + 查找表（lookup）**、**Sumcheck / GKR** 等专项优化；当前 zkML 多用于"小模型推理的可验证性"而非训练。
+
+### 对抗与投毒安全
+
+对抗样本、数据投毒、后门攻击更多属于机器学习鲁棒性范畴；密码学在此的贡献集中在"**数据来源可信**"——用数字签名、TEE、可验证数据管线保证训练数据与推理请求未被篡改。
+
+下面两段可直接运行：第一段演示 $(\varepsilon,\delta)$-DP 的梯度加噪；第二段演示安全聚合（SecAgg）的核心原语——加法秘密共享下的**安全求和**，服务器与客户端各自只看到份额、无法还原个体值。
+
+```python
+# 片段一: (ε,δ)-差分隐私的梯度发布 (高斯机制 + L2 裁剪)
+import random, math
+
+def gaussian_noise(sigma):
+    u1, u2 = random.random(), random.random()
+    z = math.sqrt(-2 * math.log(u1)) * math.cos(2 * math.pi * u2)
+    return sigma * z
+
+def clip_grad(g, C):
+    norm = math.sqrt(sum(v * v for v in g))
+    return [v * (C / norm) for v in g] if norm > C else list(g)
+
+def dp_release(grad, C, sigma):
+    g = clip_grad(grad, C)                      # 裁剪后敏感度 ≤ C
+    return [v + gaussian_noise(sigma) for v in g]
+
+# 相邻数据集 D, D' 仅差一条记录; 加噪后满足 Pr[M(D)∈S] ≤ e^ε Pr[M(D')∈S] + δ
+grad = [0.9, -0.3, 1.2]
+print("加噪后梯度:", [round(v, 3) for v in dp_release(grad, C=1.0, sigma=0.5)])
+```
+
+```python
+# 片段二: 安全聚合 (SecAgg) 原语 —— 两方加法秘密共享下的安全求和
+import random
+P = 2**31 - 1
+
+def split(v):
+    a = random.randrange(P)
+    return a, (v - a) % P          # 份额 (a, b) 满足 a + b = v (mod P)
+
+vals = [42, 17, 8]                # 三个客户端各自的私有本地统计量
+shares = [split(v) for v in vals]
+client_side = [s[0] for s in shares]   # 客户端各自保留第 1 份额
+server_side = [s[1] for s in shares]   # 服务器收集第 2 份额
+
+# 双方只公开"各自汇总的份额", 重建总和, 但任何一方的个体值都未泄露
+total = (sum(client_side) + sum(server_side)) % P
+print("安全求和结果 (= 42+17+8):", total, "| 个体值未被任何单方还原")
+```
+
+**最新趋势：** PPML 走向"产品化"（加密数据库、隐私推理 API）；zkML 与链上可验证推理结合，用于 AI 代理（agentic AI）的可审计执行；同时，用 AI 反制 AI（AI 驱动威胁检测）成为防御侧主流。详见 [IBM 2026 安全趋势](https://www.ibm.com/think/insights/more-2026-cyberthreat-trends) 与 [ethicalhacking.ai 2026 趋势](https://ethicalhacking.ai/blog/cybersecurity-trends-2026)。
+
 ## 轻量级密码与物联网
 
 **轻量级密码**面向资源受限设备（如传感器、嵌入式 MCU、物联网终端），在保证一定安全强度的前提下，优化**面积、功耗、延迟与代码体积**。
@@ -176,9 +253,9 @@ flowchart LR
 
 ## 小结
 
-现代密码学发展围绕**抗量子、可算不可见、可证明不泄露**三条主线展开：后量子密码（PQC）已经从“标准发布”走到“混合部署过半、证书侧几乎未动”的深水区；同态加密与零知识证明支撑隐私计算与区块链等应用，正快速工程化；轻量级密码满足物联网与边缘安全需求。
+现代密码学发展围绕**抗量子、可算不可见、可证明不泄露、可信任 AI**四条主线展开：后量子密码（PQC）已经从"标准发布"走到"混合部署过半、证书侧几乎未动"的深水区；同态加密与零知识证明支撑隐私计算与区块链等应用，正快速工程化；人工智能与密码学的交叉（PPML / zkML / 联邦学习安全）成为 2025–2026 增长最快的新边疆；轻量级密码满足物联网与边缘安全需求。
 
-如果要给当下的实践一句结论，那就是：**先做密码资产清单，再在传输层打开混合密钥交换，同时为证书与签名的后量子化留出排期**——因为最容易被忽略、也最难改的，恰恰是签名与 PKI。
+如果要给当下的实践一句结论，那就是：**先做密码资产清单，再在传输层打开混合密钥交换，同时为证书与签名的后量子化留出排期**——因为最容易被忽略、也最难改的，恰恰是签名与 PKI；而在 AI 落地时，则用差分隐私、同态加密与零知识证明为"数据不泄露、结果可相信"提供可证明保障。
 
 建议结合本系列的[密码协议与应用](ProtocolAndApplication.md)、[消息认证与哈希函数](HashAndMAC.md)与[比特币体系](Bitcoin.md)进一步理解这些技术在协议与系统中的应用。轻量级密码部分可对照[分组密码](Groupcipher.md)中的“发展现状”与 NIST ASCON 相关内容。
 
@@ -199,5 +276,8 @@ flowchart LR
 - 《后量子密码安全能力构建技术指南（2025版）》等行业报告
 - 全同态加密研究进展与标准化（如 ISO/IEC 18033-6、HomomorphicEncryption.org、OpenFHE）
 - ACM 等关于零知识证明与区块链的综述
+- [IBM: 2026 Cybersecurity Threat Trends](https://www.ibm.com/think/insights/more-2026-cyberthreat-trends)
+- [ethicalhacking.ai: Top 10 Cybersecurity Trends 2026 (AI Agents, PQC, Deepfakes)](https://ethicalhacking.ai/blog/cybersecurity-trends-2026)
+- 隐私保护机器学习（PPML / zkML / SecAgg）综述与 OpenFHE、Microsoft SEAL、TFHE-rs 等工程实现
 
 **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
