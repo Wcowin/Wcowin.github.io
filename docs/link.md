@@ -1044,13 +1044,13 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2025/08/30/No2OBAn7h3JTtXZ.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://bee-reg-ab.imagency.cn/mr/6175/26/58ed5b59c6ed9ff04506d982b0dd582c.jpg" />
         <div class="card-header">
           <div>
-            <a href="https://blog.flyburg.cc/" target="_blank">雨露霜雪</a>
+            <a href="https://flyburg.cc" target="_blank">羽城</a>
           </div>
           <div class="info">
-            相信彩虹
+            Alea jacta est!
           </div>
         </div>
       </div>
