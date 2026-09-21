@@ -1035,7 +1035,7 @@ comments: false
         </div>
       </div>    
       <div class="card">
-        <img class="ava" loading="lazy" decoding="async" src="https://blog.zhipro.com/favicon.ico" />
+        <img class="ava" loading="lazy" decoding="async" src="https://i.imgant.com/v2/demG6z0.png" />
         <div class="card-header">
           <div>
             <a href="https://blog.zhipro.com" target="_blank">求知学习社</a>
@@ -1055,7 +1055,7 @@ comments: false
         </div>
       </div>
       <div class="card">
-        <img class="ava" loading="lazy" decoding="async" src="https://i.zhyong.site/i/2026/02/17/6994661354dc2.png" />
+        <img class="ava" loading="lazy" decoding="async" src="https://i.imgant.com/v2/GlImPKs.png" />
         <div class="card-header">
           <div>
             <a href="https://zhyong.site/" target="_blank">材料与逻辑</a>
@@ -1088,15 +1088,6 @@ comments: false
             <a href="https://blog.zrf.me/" target="_blank">周润发</a>
           </div>
           <div class="info">收录开源，好用的互联网项目</div>
-        </div>
-      </div>
-      <div class="card">
-        <img class="ava" loading="lazy" decoding="async" src="https://www.qixz.cn/avatar.avif" />
-        <div class="card-header">
-          <div>
-            <a href="https://www.qixz.cn/" target="_blank">筱序二十</a>
-          </div>
-          <div class="info">青序成栈·向简而生</div>
         </div>
       </div>
       <div class="card">
@@ -1672,6 +1663,17 @@ comments: false
       </div>
       <div class="info">
       “散落一些碎花，凝结一些轻痕”
+      </div>
+     </div>
+    </div>
+    <div class="card">
+     <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+     <div class="card-header">
+      <div>
+       <a href="https://www.qixz.cn/" target="_blank">筱序二十(打不开)</a>
+      </div>
+      <div class="info">
+      青序成栈·向简而生
       </div>
      </div>
     </div>
