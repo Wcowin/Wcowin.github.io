@@ -44,10 +44,8 @@ tags:
 
 ## 推荐机场  
 
+- [三文鱼](https://dll.swywl.com/register?code=2REVDeIr){target=“_blank”}
 - [魔戒](https://mojie.me/#/register?code=5wKWtMbc){target=“_blank”}
-- [鹰云](https://huluyuncloud.site/#/register?code=RNvR2q4E){target=“_blank”}
-- [一元机场](https://一元机场.com/#/dashboard){target=“_blank”}
-- [三分机场](https://三分机场.xyz/){target=“_blank”}
 
 ## 图文教程
 
@@ -56,10 +54,4 @@ tags:
 
 ## 须知
 
-> 声明：科学上网是为了更好的学习，因为很多国外网站要科学上网，如 [Github](https://github.com/) 等，**切勿用于违法用途，切勿相信墙外任何不当言论，反对台独，坚决支持维护国家领土主权。**
-
----
-
-**推荐阅读：**
-
-- [润学之为什么润](../../about/run.md)
+> 声明：科学上网是为了更好的学习，因为很多国外网站要科学上网，如 [Github](https://github.com/) 等，**切勿用于违法用途，切勿相信墙外任何不当言论，反对台独，坚决支持祖国维护国家领土主权。**
