@@ -1395,6 +1395,17 @@ comments: false
       </div>
     </div>
   </div>
+  <div class="card">
+    <img class="ava" loading="lazy" decoding="async" src="https://i.imgant.com/v2/lP015mA.png" />
+    <div class="card-header">
+      <div>
+        <a href="https://mixiao.fan/about/" target="_blank">米小饭饭布吉岛</a>
+      </div>
+      <div class="info">
+        分享自研应用、实用在线工具和技术文章，记录每个想法从灵感到上线的过程
+      </div>
+    </div>
+  </div>
 
 
 
