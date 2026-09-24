@@ -316,6 +316,7 @@ HTTPS协议使用非对称密码学建立安全连接：
 ## 延伸阅读（本系列）
 
 - [第5章 消息认证与哈希函数](HashAndMAC.md) — 数字签名中的哈希与 HMAC
+- [第6章 数字签名与认证协议](DigitalSignatureAndAuth.md) — RSA-PSS、ECDSA/EdDSA 与认证协议的系统化深入
 - [密码协议与应用](ProtocolAndApplication.md) — TLS/SSH 中的证书与密钥交换
 - [现代密码学发展](ModernCryptography.md) — 后量子密码（PQC）对 RSA/ECC 的替代
 

@@ -644,6 +644,7 @@ stored_hash = Argon2id(password, salt, time_cost, memory_cost, parallelism)
 
 ## 延伸阅读（本系列）
 
+- [第6章 数字签名与认证协议](DigitalSignatureAndAuth.md) — 哈希-签名范式、EUF-CMA 安全模型与认证协议
 - [比特币体系](Bitcoin.md) — 哈希与数字签名在区块链中的应用
 - [密码协议与应用](ProtocolAndApplication.md) — TLS/SSH 中的 HMAC、证书与完整性校验
 - [现代密码学发展](ModernCryptography.md) — 后量子哈希与隐私计算

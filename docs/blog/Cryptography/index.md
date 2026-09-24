@@ -46,6 +46,12 @@ status: new
 
     - [第5章 消息认证与哈希函数](../Cryptography/HashAndMAC.md)
 
+-   :octicons-pencil-16:{ .lg .middle } __数字签名与认证__
+
+    ---
+
+    - [第6章 数字签名与认证协议](../Cryptography/DigitalSignatureAndAuth.md)
+
 -   :simple-bitcoin:{ .lg .middle } __区块链与加密货币__
 
     ---
@@ -59,6 +65,7 @@ status: new
     - [密码协议与应用](../Cryptography/ProtocolAndApplication.md)
     - [现代密码学发展](../Cryptography/ModernCryptography.md)
     - [zk-SNARK 原理详解：从直觉到可运行实现](../Cryptography/zkSNARK.md)
+    - [KZG 多项式承诺：原理、构造与研究进展](../Cryptography/KZG.md)
 
 </div>
 
@@ -69,5 +76,7 @@ status: new
 3. **对称密码**：依次学习[流密码](../Cryptography/Symmetriccryptography.md)和[分组密码](../Cryptography/Groupcipher.md)
 4. **非对称密码**：深入理解[非对称密码](../Cryptography/Asymmetriccryptography.md)的原理和应用
 5. **消息认证**：学习[消息认证与哈希函数](../Cryptography/HashAndMAC.md)，掌握数据完整性和认证机制
-6. **实际应用**：通过[比特币体系](../Cryptography/Bitcoin.md)了解密码学在现实世界的应用
-7. **协议与前沿**：学习[密码协议与应用](../Cryptography/ProtocolAndApplication.md)（TLS、SSH 等）与[现代密码学发展](../Cryptography/ModernCryptography.md)（后量子、同态加密、零知识证明），理解密码学在协议与前沿方向的应用
+6. **数字签名与认证**：学习[第6章 数字签名与认证协议](../Cryptography/DigitalSignatureAndAuth.md)，理解 EUF-CMA 安全模型、RSA-PSS/ECDSA/EdDSA 与挑战-响应、Kerberos 等认证协议
+7. **实际应用**：通过[比特币体系](../Cryptography/Bitcoin.md)了解密码学在现实世界的应用
+8. **协议与前沿**：学习[密码协议与应用](../Cryptography/ProtocolAndApplication.md)（TLS、SSH 等）与[现代密码学发展](../Cryptography/ModernCryptography.md)（后量子、同态加密、零知识证明），理解密码学在协议与前沿方向的应用
+8. **可验证计算深入**：先读[zk-SNARK 原理详解](../Cryptography/zkSNARK.md)建立整体直觉，再用[KZG 多项式承诺](../Cryptography/KZG.md)理解其承诺层、商多项式与配对验证式
