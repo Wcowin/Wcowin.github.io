@@ -277,6 +277,7 @@ nav = [
                 { "现代密码学发展" = "blog/Cryptography/ModernCryptography.md" },
                 { "zk-SNARK 原理详解：从直觉到可运行实现" = "blog/Cryptography/zkSNARK.md" },
                 { "KZG 多项式承诺" = "blog/Cryptography/KZG.md" },
+                { "IPA 多项式承诺与 R1CS" = "blog/Cryptography/IPA-R1CS.md" },
             ]},
         ]},
         { "低空技术与工程" = [
