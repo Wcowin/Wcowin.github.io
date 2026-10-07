@@ -88,9 +88,6 @@ nav = [
         { "好用/好玩网站分享" = "blog/Webplay.md" },
         { "甜甜圈🍩代码" = "blog/technique sharing/ttq.md" },
         { "Mac/windows软件网站汇总" = "blog/macsoft.md" },
-        { "好物分享" = [
-            { "2026流量卡推荐：月租低至29元，无合约可随时注销" = "blog/posts/sim-card.md" }
-        ]},
         { "基于Mkdocs/zensical主题的站点" = "blog/technique sharing/comkdocs.md" },
         { "Zensical中文教程" =[
             { "前言" = "blog/Zensical/indexfirst.md" },
@@ -396,9 +393,9 @@ nav = [
         { "友链" = "link.md" },
         { "如何给MKdocs添加友链" = "blog/Mkdocs/linktech.md" }
     ]},
-    # { "博客" = [
-    #     "blog/index.md"
-    # ]},
+    { "博客" = [
+        "blog/index.md"
+    ]},
     { "关于" = [
         { "关于我" = "about/geren.md" },
         # { "个人简历" = "about/resume.md" },
@@ -597,15 +594,15 @@ note = "感谢您的反馈！"
 separator = '[\s\u200b\-]'  # 搜索分隔符
 
 # ===== 博客插件 =====
-# [project.plugins.blog]
-# post_date_format = "full"                    # 时间格式：完整日期
-# draft = true                                  # 启用草稿功能
-# draft_if_future_date = true                   # 自动将具有未来日期的帖子标记为草稿
-# post_readtime = true                          # 显示阅读时间
-# post_readtime_words_per_minute = 265          # 每分钟阅读字数（中文适配）
-# post_url_format = "{date}/{slug}"             # 文章URL格式
-# pagination_per_page = 5                       # 每页显示文章数
-# pagination_url_format = "page/{page}"         # 分页URL格式
+[project.plugins.blog]
+post_date_format = "full"                    # 时间格式：完整日期
+draft = true                                  # 启用草稿功能
+draft_if_future_date = true                   # 自动将具有未来日期的帖子标记为草稿
+post_readtime = true                          # 显示阅读时间
+post_readtime_words_per_minute = 265          # 每分钟阅读字数（中文适配）
+post_url_format = "{date}/{slug}"             # 文章URL格式
+pagination_per_page = 5                       # 每页显示文章数
+pagination_url_format = "page/{page}"         # 分页URL格式
 
 # ===== 标签插件 =====
 # 启用后，所有带 front matter tags 的文章底部会渲染标签，并自动生成 /tags/ 标签索引与分类页
@@ -640,27 +637,19 @@ separator = '[\s\u200b\-]'  # 搜索分隔符
 # ]
 
 # ===== RSS 订阅插件 =====
-# [project.plugins.rss]
-# enabled = true                                                                    # 启用 RSS 订阅
-# match_path = "(blog|develop|relax|trip)/.*"                                       # 包含的路径：博客、开发、闲聊、旅行
-# use_git = false                                                                   # 禁用Git日志读取，避免警告
-# categories = ["tags", "categories"]                                               # 分类标签
-# comments_path = "#__comments"                                                     # 评论区锚点
-# image = "https://wcowin.work/assets/avatar.jpg"                                   # RSS 订阅图片
-# feed_ttl = 1440                                                                   # 订阅更新时间（分钟），24小时
-# length = 20                                                                       # 最新文章数量
-# pretty_print = true                                                               # 格式化输出
-# feed_description = "Wcowin 的个人网站 - 技术分享、开发笔记、生活随笔、旅行记录"        # RSS 描述
-# feed_title = "Wcowin's Blog RSS Feed"                                             # RSS 标题
+# 官方兼容页（#rss，Since 0.0.65，原生实现，无需额外依赖）确认 Zensical 只支持以下键：
+#   enabled / feed_title / length / match_path / abstract_chars_count / date_from_meta
+# 下列 mkdocs-rss-plugin 旧键均被静默忽略（无效）：categories、comments_path、image、
+#   feed_ttl、pretty_print、feed_description、use_git、url_parameters、cache_dir、use_material_social_cards。
+[project.plugins.rss]
+enabled = true                                              # 启用 feed 生成（默认即 true）
+match_path = "(blog|develop|relax|trip)/.*"                # 纳入订阅的路径（正则）；其余页面不进 feed
+length = 20                                                 # 每个 feed 最多条目数
 
-# [project.plugins.rss.date_from_meta]
-# as_creation = "date"           # 创建日期来源
-# as_update = "update"           # 更新日期来源
-# datetime_format = "%Y-%m-%d"   # 日期格式
-
-# [project.plugins.rss.url_parameters]
-# utm_source = "rss"             # UTM 来源标记
-# utm_medium = "feed"            # UTM 媒介标记
+[project.plugins.rss.date_from_meta]
+as_creation = "date"           # 创建日期取文章 front matter 的 date 字段（全站博客文章均含此字段）
+as_update = "date"             # 全站无独立 update 字段，回退为创建日期；无 date 的页面回退为 Git 提交时间
+datetime_format = "%Y-%m-%d"   # 日期格式
 
 # ==========================================
 # Markdown 扩展配置 [Markdown Extensions]

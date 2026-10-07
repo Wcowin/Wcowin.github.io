@@ -73,17 +73,6 @@ comments: false
         </div>
       </div>
     </div>
-   <!-- <div class="card">
-     <img class="ava" loading="lazy" decoding="async" src="https://s2.loli.net/2024/02/07/S8GYheTZmCU96HK.png" />
-     <div class="card-header">
-      <div>
-       <a href="https://wcowin.work/WH-WKW/" target="_blank">小王和王老师的小站</a>
-      </div>
-      <div class="info">
-        无一是你，无一不是你
-      </div>
-     </div>
-    </div>  -->
     <div class="card">
       <img class="ava" loading="lazy" decoding="async" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" />
       <div class="card-header">
