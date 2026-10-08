@@ -148,7 +148,7 @@ ai_summary: false  # 禁用AI摘要
 ## 2025-01-18
 
 * 优化网站流畅度（玄学）
-* 尝试**RSS订阅**功能，欢迎尝试
+* 尝试**[RSS订阅](https://zensical.org/docs/compatibility/mkdocs/plugins/?h=rss#rss)**功能，欢迎尝试
 
 ## 2025-01-12
 
