@@ -65,6 +65,7 @@ status: new
     - [密码协议与应用](../Cryptography/ProtocolAndApplication.md)
     - [现代密码学发展](../Cryptography/ModernCryptography.md)
     - [zk-SNARK 原理详解：从直觉到可运行实现](../Cryptography/zkSNARK.md)
+    - [图像零知识证明：如何证明图片经过了可信且合规的处理](../Cryptography/ImageZeroKnowledgeProof.md)
     - [KZG 多项式承诺：原理、构造与研究进展](../Cryptography/KZG.md)
     - [IPA 多项式承诺与 R1CS：原理、关系及代码实验](../Cryptography/IPA-R1CS.md)
 
