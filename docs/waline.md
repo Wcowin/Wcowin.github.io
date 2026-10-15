@@ -331,13 +331,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
  </head>
 <body>
-  <link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
+  <link rel="preload" href="https://registry.npmmirror.com/twikoo/2.0.14/files/dist/twikoo.min.js" as="script">
 
   <div id="tcomment" class="loading"></div>
   <script>
   function loadTwikoo() {
     const script = document.createElement('script');
-    script.src = 'https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js';
+    script.src = 'https://registry.npmmirror.com/twikoo/2.0.14/files/dist/twikoo.min.js';
     script.onload = function() {
       initTwikoo();
     };
