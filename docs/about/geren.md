@@ -308,7 +308,7 @@ status: new
     data-name="OneClip"
     data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，支持截图、录屏、OCR、翻译、拖拽容器、划词、同步。由Wcowin开发并维护。"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="511"
+    data-stars="512"
     data-forks="23"
     data-license="MIT"
     href="https://github.com/One-Clip/OneClip"
@@ -352,8 +352,8 @@ status: new
     class="github-repo-card"
     data-repo="Wcowin/Mkdocs-Wcowin"
     data-description="MKDocs 中文教程"
-    data-stars="66"
-    data-forks="6"
+    data-stars="67"
+    data-forks="5"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/Wcowin/Mkdocs-Wcowin"
@@ -367,7 +367,7 @@ status: new
     class="github-repo-card"
     data-repo="Wcowin/Wcowin.github.io"
     data-description="个人博客"
-    data-stars="75"
+    data-stars="74"
     data-forks="11"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
@@ -376,8 +376,6 @@ status: new
     rel="noopener noreferrer"
   ></a>
 </div>
-
-<!-- github-repo-card.js 已由 zensical.toml 的 extra_javascript 全局注入，无需在页面重复引入 -->
 
 <!-- [:material-download: 查看简历](../assets/个人简历.pdf){ .md-button}
 {: style="text-align: center;" } -->
@@ -400,10 +398,6 @@ status: new
 ---
 
 <style>
-/* ============================================
-   Transitions.dev — Tabs sliding
-   滑动标签页效果
-   ============================================ */
 
 :root {
   --tabs-dur: 250ms;
@@ -414,9 +408,6 @@ status: new
   --tabs-pill-bg: #ffffff;
 }
 
-/* The bar is just a flex container with padding for the pill
-   to sit inside. Tabs sit on z-index: 1, the pill on z-index: 0,
-   so labels read above the pill background. */
 .t-tabs {
   position: relative;
   display: inline-flex;
@@ -762,7 +753,7 @@ status: new
     
     - Hi, I'm [Wcowin](https://github.com/Wcowin){target="_blank"}~
     - 咖啡重度爱好者
-    - 热爱(xiā)研究技术，业余:simple-materialformkdocs:Mkdocs/[:simple-zensical:Zensical](https://zensical.org/)博客撰写
+    - 热爱(xiā)研究技术，Mkdocs/[Zensical](https://zensical.org/)博客撰写
     - Swift开发者，致力于[Mac应用](../develop/Mac-development/index.md)的开发
     - 目前的研究领域是[AI/网络安全](../develop/AI)、[密码学/区块链](../blog/Cryptography/index.md)、[低空技术信息安全](../research/aerotech/)
     - 读书明志|诗词爱好者|历史研究|喜欢村上春树|擅长羽毛球
@@ -879,35 +870,6 @@ status: new
 </div>
 </div>
 
-
-<!-- ## 联系我
-
-=== "微信"
-    <center>
-    <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: 300px; height: auto;">
-    <br>
-    扫一扫上面的二维码图案，加我为朋友
-    </center>
-
-=== "邮箱"
-    <center>
-    <a href="mailto:wangkewen821@gmail.com" class="md-button">
-        :fontawesome-solid-paper-plane: 发送电子邮件
-    </a>
-    </center>
-
-=== "社交"
-    <center>
-    <a href="https://t.me/Wcowin" class="md-button">
-        :fontawesome-brands-telegram: Telegram
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://x.com/intent/follow?screen_name=kewen9694" class="md-button">
-        :fontawesome-brands-twitter: Twitter
-    </a>
-    </center> -->
-
-
 ??? tip "公众号(年更UP)"
     <figure markdown >
     ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1 }
@@ -944,6 +906,7 @@ status: new
   font-weight: 600;
   letter-spacing: 1.5px;
   color: #333;
+  word-break: break-all;
 }
 .md5-box .hint {
   font-size: 11px;
@@ -952,7 +915,7 @@ status: new
 }
 .md5-box .copy-tip {
   position: absolute;
-  top: 50%;
+  top: 64%;
   right: 16px;
   transform: translateY(-50%);
   font-size: 11px;
@@ -968,10 +931,10 @@ status: new
 }
 </style>
 
-<div class="md5-box" onclick="navigator.clipboard.writeText('7037F514864088F907CC921687B670EE');this.querySelector('.copy-tip').textContent='已复制!';">
-  <div class="label">📞 电话号码的 MD5 哈希</div>
-  <div class="code">7037F514864088F907CC921687B670EE</div>
-  <div class="hint">破解有奖 ☕️ | 必须附带破解过程 | 从简历/邮箱/WX上看到的不算 | 目前已有 4 人成功破解</div>
+<div class="md5-box" onclick="navigator.clipboard.writeText('def633030d31f7abe6213ee5b5efdf0e4addfda121695325660d82f15ed22946');this.querySelector('.copy-tip').textContent='已复制!';">
+  <div class="label">📞 电话号码的SHA256哈希</div>
+  <div class="code">def633030d31f7abe6213ee5b5efdf0e4addfda121695325660d82f15ed22946</div>
+  <div class="hint">破解有奖 ☕️ | 必须附带破解过程 | 从简历/邮箱/WX上看到的/AI自行破解的均不算 | 目前已有 4 人成功破解</div>
   <div class="copy-tip">点击复制</div>
 </div>
 
