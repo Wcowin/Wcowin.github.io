@@ -68,6 +68,7 @@ status: new
     - [图像零知识证明：如何证明图片经过了可信且合规的处理](../Cryptography/ImageZeroKnowledgeProof.md)
     - [KZG 多项式承诺：原理、构造与研究进展](../Cryptography/KZG.md)
     - [IPA 多项式承诺与 R1CS：原理、关系及代码实验](../Cryptography/IPA-R1CS.md)
+    - [可验证计算的本质：用数学代替重做来建立信任](../Cryptography/VerifiableComputation.md)
 
 </div>
 
@@ -81,4 +82,4 @@ status: new
 6. **数字签名与认证**：学习[第6章 数字签名与认证协议](../Cryptography/DigitalSignatureAndAuth.md)，理解 EUF-CMA 安全模型、RSA-PSS/ECDSA/EdDSA 与挑战-响应、Kerberos 等认证协议
 7. **实际应用**：通过[比特币体系](../Cryptography/Bitcoin.md)了解密码学在现实世界的应用
 8. **协议与前沿**：学习[密码协议与应用](../Cryptography/ProtocolAndApplication.md)（TLS、SSH 等）与[现代密码学发展](../Cryptography/ModernCryptography.md)（后量子、同态加密、零知识证明），理解密码学在协议与前沿方向的应用
-9. **可验证计算深入**：从[zk-SNARK 原理详解](../Cryptography/zkSNARK.md)建立整体直觉，用[KZG 多项式承诺](../Cryptography/KZG.md)理解承诺层，再以[IPA 多项式承诺与 R1CS](../Cryptography/IPA-R1CS.md)对照无陷门路线与 R1CS→QAP 的编译
+9. **可验证计算深入**：从[可验证计算的本质](../Cryptography/VerifiableComputation.md)建立整体视角，再用[zk-SNARK 原理详解](../Cryptography/zkSNARK.md)建立直觉，用[KZG 多项式承诺](../Cryptography/KZG.md)理解承诺层，最后以[IPA 多项式承诺与 R1CS](../Cryptography/IPA-R1CS.md)对照无陷门路线与 R1CS→QAP 的编译

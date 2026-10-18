@@ -8,7 +8,9 @@ hide_comment: true
 
 # 网络空间安全
 
-<p align="center">在已知的领域用足力气，在未知的领域鼓足勇气</p>
+<p align="center">在已知的领域用足力气，在未知的领域鼓足勇气 <br>
+
+——张明武</p>
 
 <div class="grid cards" markdown>
 

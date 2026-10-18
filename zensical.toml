@@ -260,7 +260,7 @@ nav = [
         "research/index.md",
         { "网络空间安全" = [
             "research/cybersec/index.md",
-            { "密码学" = [
+            { "网络安全/密码学" = [
                 "blog/Cryptography/index.md",
                 { "数论基础" = "blog/Cryptography/Numbertheory.md" },
                 { "密码学引言" = "blog/Cryptography/Introduction.md" },
@@ -276,14 +276,15 @@ nav = [
                 { "图像零知识证明" = "blog/Cryptography/ImageZeroKnowledgeProof.md" },
                 { "KZG 多项式承诺" = "blog/Cryptography/KZG.md" },
                 { "IPA 多项式承诺与 R1CS" = "blog/Cryptography/IPA-R1CS.md" },
+                { "可验证计算的本质" = "blog/Cryptography/VerifiableComputation.md" },
             ]},
         ]},
-        { "低空技术与工程" = [
-            "research/aerotech/index.md",
-            { "基础理论与方法" = [
+        { "低空无人机安全" = [
+            "research/uav-security/index.md",
+            { "基础资料（暂缓）" = [
                 { "低空交通系统建模" = "research/aerotech/system-modeling.md" },
                 { "低空航线网络规划" = "research/aerotech/route-network.md" }
-            ]}
+            ]},
         ]},
         { "数学与学术" = [
             "blog/Academic/index.md",            
