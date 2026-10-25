@@ -248,6 +248,7 @@ status: new
 
 - [SimplifyAI 文档翻译](https://translate.simplifyai.cn/){target="_blank"} - AI 文档翻译
 - [书译](https://www.booktranslator.app/zh-CN/){target="_blank"} - 专业文档翻译
+- [Scanfile](https://scanfile.online/){target="_blank"} - PDF、EPUB、PowerPoint 与字幕文件翻译（样例依条件提供，额外翻译按量付费）
 - [DeepL](https://www.deepl.com/zh/translator){target="_blank"} - 高质量 AI 翻译工具
 - [沉浸式翻译](https://immersivetranslate.com/){target="_blank"} - 浏览器翻译插件，支持双语对照
 - [网易有道翻译](https://fanyiguan.youdao.com/){target="_blank"} - 有道推出的 AI 翻译
