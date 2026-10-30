@@ -753,11 +753,11 @@ status: new
     
     - Hi, I'm [Wcowin](https://github.com/Wcowin){target="_blank"}~
     - 咖啡重度爱好者
-    - 热爱(xiā)研究技术，Mkdocs/[Zensical](https://zensical.org/)博客撰写
-    - Swift开发者，致力于[Mac应用](../develop/Mac-development/index.md)的开发
+    - 热爱(xiā)研究技术，沉迷Codex，中国计算机学会成员
+    - Swift开发者，致力于[Mac应用](../develop/Mac-development/index.md)的开发;业余Mkdocs/[Zensical](https://zensical.org/)博客撰写
     - 目前研究方向为[密码学/零知识证明](../blog/Cryptography/index.md)、[低空无人机安全](../research/uav-security/)、[AI](../develop/AI)；导师：[张明武](https://bdai.hbut.edu.cn/info/1036/1753.htm){target="_blank"}
-    - 读书明志|诗词爱好者|历史研究|喜欢村上春树|擅长羽毛球
-    - 清醒知趣，明得失，知进退
+    - 读书明志|诗词爱好者|历史研究|爱读村上春树|擅长羽毛球
+    - 清醒，知趣，明得失，知进退
 
     </div>
 

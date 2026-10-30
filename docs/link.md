@@ -1406,6 +1406,17 @@ comments: false
       </div>
     </div>
   </div>
+  <div class="card">
+    <img class="ava" loading="lazy" decoding="async" src="https://www.520691.xyz/images/16456faa-fdea-4a15-9d01-88efd5863791.jpg" />
+    <div class="card-header">
+      <div>
+        <a href="https://www.520691.xyz" target="_blank">渡劫博客</a>
+      </div>
+      <div class="info">
+        个人全栈开发者，cf生态爱好者
+      </div>
+    </div>
+  </div>
 
 
 
