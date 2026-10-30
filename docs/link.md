@@ -2154,6 +2154,7 @@ document.addEventListener('DOMContentLoaded', function () {
     >链接: https://wcowin.work/  
     >头像: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png  
     >简介: 循此苦旅，以达星辰
+    >RSS: https://wcowin.work/feed_rss_created.xml
 
 === "HTML(推荐)"
 
