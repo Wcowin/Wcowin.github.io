@@ -308,7 +308,7 @@ status: new
     data-name="OneClip"
     data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，支持截图、录屏、OCR、翻译、拖拽容器、划词、同步。由Wcowin开发并维护。"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="512"
+    data-stars="532"
     data-forks="23"
     data-license="MIT"
     href="https://github.com/One-Clip/OneClip"
@@ -332,20 +332,35 @@ status: new
   ></a>
 </div>
 
-<!--<div class="github-repo-card-wrapper">
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/pi-claude-rewind"
+    data-description="pi-claude-rewind 为 Pi 提供 Claude Code 风格的同步对话与工作区回溯功能。"
+    data-stars="4"
+    data-forks="2"
+    data-license="MIT"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
+    href="https://github.com/Wcowin/pi-claude-rewind"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
+
+<div class="github-repo-card-wrapper">
   <a
     class="github-repo-card"
     data-repo="Wcowin/Wcowin.github.io"
     data-description="简单易用的许可证管理系统，支持激活码生成、验证和设备管理、订单发送等等"
-    data-stars="24"
-    data-forks="1"
+    data-stars="38"
+    data-forks="2"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/One-Clip/OneClip-License-Manager"
     target="_blank"
     rel="noopener noreferrer"
   ></a>
-</div>-->
+</div>
 
 <div class="github-repo-card-wrapper">
   <a
@@ -755,7 +770,7 @@ status: new
     - 咖啡重度爱好者
     - 热爱(xiā)研究技术，沉迷Codex，中国计算机学会成员
     - Swift开发者，致力于[Mac应用](../develop/Mac-development/index.md)的开发;业余Mkdocs/[Zensical](https://zensical.org/)博客撰写
-    - 目前研究方向为[密码学/零知识证明](../blog/Cryptography/index.md)、[低空无人机安全](../research/uav-security/)、[AI](../develop/AI)；导师：[张明武](https://bdai.hbut.edu.cn/info/1036/1753.htm){target="_blank"}
+    - 目前研究方向为[密码学/零知识证明](../blog/Cryptography/index.md)、[低空无人机安全](../research/uav-security/)、[AI](../develop/AI)｜导师：[张明武](https://bdai.hbut.edu.cn/info/1036/1753.htm){target="_blank"}
     - 读书明志|诗词爱好者|历史研究|爱读村上春树|擅长羽毛球
     - 清醒，知趣，明得失，知进退
 
