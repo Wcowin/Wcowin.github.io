@@ -141,3 +141,7 @@ SNARK（简洁非交互式知识论证）范式给出的答案是**计算不对�
 5. 本系列：[zk-SNARK 原理详解](zkSNARK.md)（算术电路、R1CS/QAP 与 SNARK 基础）、[KZG 多项式承诺](KZG.md)、[IPA 多项式承诺与 R1CS](IPA-R1CS.md)、[图像零知识证明](ImageZeroKnowledgeProof.md)。
 
 **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

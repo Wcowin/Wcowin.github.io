@@ -235,3 +235,7 @@ root.mainloop()
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 540px; height: 315px; max-width: 100%"> </iframe> -->
 <iframe src="https://player.bilibili.com/player.html?aid=406004879&bvid=BV1GV411N7pj&cid=1270928476&p=1&autoplay=0" allowfullscreen="true" style="width: 100%; max-width: 560px; aspect-ratio: 16/9; border: 0;" title="人脸对比演示视频"> </iframe>
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

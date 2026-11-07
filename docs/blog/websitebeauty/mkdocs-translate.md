@@ -674,5 +674,9 @@ function protectSpecialContent() {
 
 希望这个教程能帮助你为自己的 MkDocs 网站添加多语言支持！如果遇到问题，欢迎在评论区讨论。
 
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任
+
 
 

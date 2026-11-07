@@ -487,3 +487,7 @@ $$
 [CSDN | LaTeX数学符号总结](https://blog.csdn.net/qq_39232265/article/details/78868487)
 
 [简书 | LaTeX 导数相关符号](https://www.jianshu.com/p/8aa646fad1c5)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

@@ -274,3 +274,7 @@ status: new
 - [猫猫鱼AI工具窝](https://www.maomaoyu.coffee/zh){target="_blank"} - AI 工具导航
 - [Toolify](https://toolify.ai/){target="_blank"} - 全球 AI 工具导航
 - [There's An AI For That](https://theresanaiforthat.com/){target="_blank"} - AI 工具搜索
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

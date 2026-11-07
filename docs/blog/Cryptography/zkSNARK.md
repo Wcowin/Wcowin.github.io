@@ -596,3 +596,7 @@ flowchart LR
 - **[con18]** Wikipedia contributors. *Constraint satisfaction*. [Wikipedia](https://en.wikipedia.org/wiki/Constraint_satisfaction)
 - **[Pik13]** S. Pike. *Evaluating Polynomial Functions*. [mesacc.edu](http://www.mesacc.edu/~scotz47781/mat120/notes/polynomials/evaluating/evaluating.html)
 - **[Pik14]** S. Pike. *Dividing by a Polynomial*. [mesacc.edu](http://www.mesacc.edu/~scotz47781/mat120/notes/divide_poly/long_division/long_division.html)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

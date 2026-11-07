@@ -578,3 +578,7 @@ open dist/OneClip.app
   <p>Made with ❤️ by <a href="https://github.com/Wcowin">Wcowin</a></p>
   <p>© 2026 Wcowin. All rights reserved.</p>
 </div>
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

@@ -22,3 +22,7 @@ title: 科研
       </li>
     </ul>
 </div>
+
+## 研究与开源贡献记录
+
+- [从研究原型到上游修复：我的 MPyC 安全贡献记录](cybersec/mpyc-security-contribution.md)：记录获上游实名致谢的问题反馈、协作分析与修复验证过程。

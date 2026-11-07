@@ -134,3 +134,7 @@ copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明
 extra:
   generator: false  #删除页脚显示“使用 MkDocs 材料制造”
 ```
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

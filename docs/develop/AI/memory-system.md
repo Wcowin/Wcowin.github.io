@@ -871,3 +871,7 @@ class AdvancedMemory:
 - [向量数据库对比](https://benchmark.vectorview.ai/vectordbs.html)
 - [Mem0 - AI 记忆层](https://mem0.ai/)
 - [认知心理学中的记忆理论](https://en.wikipedia.org/wiki/Theory_of_memory)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

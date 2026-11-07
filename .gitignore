@@ -45,3 +45,32 @@ temp/
 zip_site.sh
 
 site.zip
+
+# 本地 AI / 编辑器工作区（个人配置、协作记忆，不随站点发布）
+.claude/
+.codebuddy/
+.kiro/
+.obsidian/
+.trae/
+.cursor/
+.windsurf/
+.amazonq/
+
+# 本机工具缓存与本地配置
+.vercel/
+.netlify/
+*.local.json
+
+# 密钥与凭据（补充）
+*.p12
+*.pfx
+*.jks
+id_rsa*
+*credentials*
+*.token
+
+# 自动生成的 API 配置（兜底）
+docs/javascripts/*-api-config.js
+
+# 调试残留
+/trace.json

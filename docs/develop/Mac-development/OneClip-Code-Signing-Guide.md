@@ -577,3 +577,7 @@ echo "=========================================="
 - [Apple Code Signing Guide](https://developer.apple.com/documentation/security/code_signing_services)
 - [macOS Entitlements](https://developer.apple.com/documentation/bundleresources/entitlements)
 - [OneClip 官网](https://oneclip.cloud)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

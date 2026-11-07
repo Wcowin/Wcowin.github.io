@@ -396,3 +396,7 @@ A: 可以通过以下方式：
 - [硅基流动文档](https://docs.siliconflow.cn/)
 - [Chat Completions（OpenAI 兼容）](https://docs.siliconflow.cn/cn/api-reference/chat-completions/chat-completions)
 - [Zensical 官方文档](https://zensical.org/docs/)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

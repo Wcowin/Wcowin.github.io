@@ -466,3 +466,7 @@ echo "=== 检查完成 ==="
 ```
 
 保存为 `check-dev-env.sh`，使用 `bash check-dev-env.sh` 运行。
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

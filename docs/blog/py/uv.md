@@ -162,3 +162,7 @@ uv add -r requirements.txt
 - **uv**：一条命令完成项目初始化、依赖安装和运行，速度快、用法简单。
 
 记住三件事就够日常用：**`uv --version` 看版本，`uv add 包名` 加依赖，`uv run python xxx.py` 跑脚本**。
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

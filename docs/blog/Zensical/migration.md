@@ -692,3 +692,7 @@ nav = [
 - 查看 [常见问题](https://wcowin.work/Zensical-Chinese-Tutorial/faq/)
 - 访问 [Zensical 官方文档](https://zensical.org/docs/)
 - 联系我们加入 [Zensical-Chinese-Tutorial 社区](https://picx.zhimg.com/80/v2-ff732fe4d4b59cd111ca0e4a6eb5e1a9_1440w.webp)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

@@ -329,5 +329,9 @@ lang = "ja"
 - `docs/javascripts/glm-config.js`
 - `docs/javascripts/glm-translate.js`
 
-源码始终以仓库为准：[`Wcowin/Wcowin.github.io`](https://github.com/Wcowin/Wcowin.github.io)。  
+源码始终以仓库为准：[`Wcowin/Wcowin.github.io`](https://github.com/Wcowin/Wcowin.github.io)。
 欢迎在 Issues 或评论里交流你的使用体验和改进想法。
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

@@ -530,3 +530,7 @@ https://github-contributions-api.jogruber.de/v4/<你的 GitHub 用户名>?y=last
    - 如有需要，可调整颜色或字体大小。
 
 如果你已经在首页实现了这张卡片，可以把这篇文档当作「拆解说明」，方便之后在其它 Zensical 站点复制复用。
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

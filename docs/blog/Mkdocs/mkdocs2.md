@@ -672,3 +672,7 @@ extra_css:
 [添加评论系统](../websitebeauty/mkcomments.md)
 
 [为MKdocs添加文章修订时间戳](../websitebeauty/time.md)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

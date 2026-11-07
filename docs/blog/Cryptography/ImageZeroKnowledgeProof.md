@@ -264,3 +264,7 @@ PhotoProof（2016）把整张图塞进一个静态电路，在几十万像素以
 11. “zkPyTorch”（面向视觉神经网络推理的零知识证明；IACR eprint 2025/535；本文第七节路线 5）。
 
 **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

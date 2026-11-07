@@ -604,3 +604,7 @@ pip install -r requirements.txt
 
 
 📝 本项目致力于让MkDocs文档更加智能化和用户友好。如有建议或想法，欢迎交流！
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

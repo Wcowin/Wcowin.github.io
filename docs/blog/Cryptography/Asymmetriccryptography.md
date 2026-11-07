@@ -329,3 +329,7 @@ HTTPS协议使用非对称密码学建立安全连接：
 - [IEEE P1363: Standard Specifications for Public Key Cryptography](https://standards.ieee.org/standard/1363-2000.html)
 
 **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

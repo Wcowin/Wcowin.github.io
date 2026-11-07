@@ -187,4 +187,6 @@ Apache 2.0 (遵循 PaddleOCR 开源协议)
 
 **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)  
 
-未经允许不得转载😀
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

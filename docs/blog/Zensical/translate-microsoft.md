@@ -229,3 +229,7 @@ Microsoft 翻译服务适合追求速度和响应性的场景，它在客户端�
 
 源码始终以仓库为准：[`Wcowin/Wcowin.github.io`](https://github.com/Wcowin/Wcowin.github.io)。
 欢迎在 Issues 或评论里交流你的使用体验和改进想法。
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

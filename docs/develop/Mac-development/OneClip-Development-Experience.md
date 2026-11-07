@@ -566,3 +566,7 @@ OneClip 的开发过程充满了挑战和学习。通过不断的优化和改进
 4. 社区反馈推动产品进步
 
 如果你正在开发 macOS 应用，希望这些经验能对你有所帮助。欢迎在 [GitHub Discussions](https://github.com/One-Clip/OneClip/discussions) 中分享你的经验和问题！
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

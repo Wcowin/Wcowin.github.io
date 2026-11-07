@@ -162,3 +162,7 @@ Zensical/MkDocs Material 将主题属性 `data-md-color-scheme` 设置在 `<body
 
 1. **初始化时**：根据网站当前主题设置 Giscus 的 `data-theme`
 2. **切换时**：监听 `data-md-color-scheme` 属性变化，通过 `postMessage` 通知 Giscus 更新主题
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

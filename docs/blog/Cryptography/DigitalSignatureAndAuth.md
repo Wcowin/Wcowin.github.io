@@ -547,3 +547,7 @@ Kerberos 源自 N-S，是**客户端/服务器环境**最成功的工业化认�
 - [Wikipedia: Digital signature](https://en.wikipedia.org/wiki/Digital_signature)、[Needham–Schroeder protocol](https://en.wikipedia.org/wiki/Needham%E2%80%93Schroeder_protocol)
 
 **本文作者：** [<span class="author-avatar-wrapper"><img class="author-avatar" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" width="28" height="28" alt="Wcowin" /><span class="author-name-popover">王科文</span></span>](https://github.com/Wcowin)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

@@ -100,3 +100,7 @@ EXCLUDED_PATTERNS = [
 
 > **推荐阅读**
 > [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

@@ -953,4 +953,8 @@ open "oneclip://translate?text=您好世界&to=en"
 
 ---
 
-**让 OneClip 成为您工作流的一部分！** 
+**让 OneClip 成为您工作流的一部分！**
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任 

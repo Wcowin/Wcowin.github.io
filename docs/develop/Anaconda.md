@@ -240,3 +240,7 @@ conda activate myproject
 - 国内用户建议配置 **清华等镜像** 的 `.condarc`，并执行 `conda clean -i` 后使用。
 
 更多细节可查阅 [Conda 官方文档](https://docs.conda.org.cn/)、[入门指南](https://docs.conda.org.cn/projects/conda/en/stable/user-guide/getting-started.html) 与 [速查表 PDF](https://docs.conda.org.cn/projects/conda/en/stable/user-guide/cheatsheet.html)。本站 [Python 环境管理最佳实践](environment.md) 可与本文搭配使用，用于项目级环境规范。
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

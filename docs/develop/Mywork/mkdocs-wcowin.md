@@ -105,3 +105,7 @@ tags:
 - [利用Mkdocs部署静态网页至GitHub pages](../../blog/Mkdocs/mkdocs1.md)
 - [Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)](../../blog/Mkdocs/mkdocs2.md)
 - [如何给MKdocs添加友链](../../blog/Mkdocs/linktech.md)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

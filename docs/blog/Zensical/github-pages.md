@@ -451,6 +451,10 @@ example.com
 
 **参考资料**：  
 
-- [GitHub Pages 官方文档](https://docs.github.com/pages)  
-- [GitHub Actions 文档](https://docs.github.com/actions)  
+- [GitHub Pages 官方文档](https://docs.github.com/pages)
+- [GitHub Actions 文档](https://docs.github.com/actions)
 - [Zensical 官方文档](https://zensical.org/docs/)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

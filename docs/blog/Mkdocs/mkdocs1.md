@@ -219,3 +219,7 @@ https://你github的名字.github.io/
 4. [Mkdocs 配置和使用](https://zhuanlan.zhihu.com/p/383582472)
 
 5. [Deploy MkDocs](https://github.com/marketplace/actions/deploy-mkdocs)
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

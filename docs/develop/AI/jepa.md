@@ -486,3 +486,7 @@ JEPA 代表着 AI 研究中一条与主流 LLM 不同的道路：
 [13] Meta AI. (2023). *I-JEPA GitHub Repository*. Retrieved from https://github.com/facebookresearch/ijepa
 
 [14] AMI Labs. (2026). *Advanced Machine Intelligence Labs*. Retrieved from https://ami.ai
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

@@ -158,3 +158,7 @@ class Cursor {
     extra_css:
       - stylesheets/extra.css
     ```
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

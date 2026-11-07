@@ -235,3 +235,7 @@ border-radius: 25px;
 ```
 效果：
 [Send Email :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}
+
+**版权声明：**
+
+Wcowin原创 未经允许不得擅自转载 否则一律追究责任

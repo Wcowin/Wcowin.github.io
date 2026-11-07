@@ -260,6 +260,7 @@ nav = [
         "research/index.md",
         { "网络空间安全" = [
             "research/cybersec/index.md",
+            { "MPyC 乘积开值泄漏分析与修复验证" = "research/cybersec/mpyc-security-contribution.md" },
             { "网络安全/密码学" = [
                 "blog/Cryptography/index.md",
                 { "数论基础" = "blog/Cryptography/Numbertheory.md" },
