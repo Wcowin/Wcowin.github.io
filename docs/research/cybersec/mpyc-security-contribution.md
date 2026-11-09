@@ -19,7 +19,9 @@ tags:
 
 > Follow-up handling Kewen Wang's feedback.
 
-两句话分别出自上游提交 [`5849396`](https://github.com/lschoe/mpyc/commit/584939627034f4f99dbbb875657038cbb4aafa98) 和 [`62b0462`](https://github.com/lschoe/mpyc/commit/62b0462bac20afa39680b8bdabea6d64daa86766)。本文记录这项贡献的来由、技术问题、协作过程和验证结果；邮件讨论只作概述，不转载私人通信原文。
+![image](https://s1.imagehub.cc/images/2026/11/07/3b7191dc218fb909cbf8c83c7b97e5e5.png)
+
+上述分别出自上游提交 [`5849396`](https://github.com/lschoe/mpyc/commit/584939627034f4f99dbbb875657038cbb4aafa98) 和 [`62b0462`](https://github.com/lschoe/mpyc/commit/62b0462bac20afa39680b8bdabea6d64daa86766)。本文记录这项贡献的来由、技术问题、协作过程和验证结果；邮件讨论只作概述，不转载私人通信原文。
 
 ## 一、研究为什么会走到 MPyC 底层
 

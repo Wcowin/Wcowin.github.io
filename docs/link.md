@@ -1417,6 +1417,17 @@ comments: false
       </div>
     </div>
   </div>
+    <div class="card">
+      <img class="ava" loading="lazy" decoding="async" src="https://blogqian.com/avatar.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://blogqian.com" target="_blank">Qian</a>
+        </div>
+        <div class="info">
+          From codes to clouds.
+        </div>
+      </div>
+    </div>
 
 
 
