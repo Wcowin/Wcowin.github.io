@@ -74,13 +74,13 @@ comments: false
       </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" decoding="async" src="https://pica.zhimg.com/80/v2-1a0af4c184a27a3af3cea7009b0124d2_1440w.jpg" />
+      <img class="ava" loading="lazy" decoding="async" src="https://en.hbut.edu.cn/images/logo1.png" />
       <div class="card-header">
         <div>
-          <a href="https://wcowin.work/VitePress/" target="_blank">Wcowin's VitePress</a>
+          <a href="https://ishbut.github.io/" target="_blank">Institute of Cyberspace Security</a>
         </div>
         <div class="info">
-          A college student
+          湖工大学网络空间安全研究所
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@ comments: false
      </div>
     </div>
     <div class="card">
-      <img class="ava" loading="lazy" decoding="async" src="https://www.80tz.cn/assets/images/sites/logo/logo-blue.svg" />
+      <img class="ava" loading="lazy" decoding="async" src="https://www.80tz.cn/logo.svg" />
       <div class="card-header">
         <div>
           <a href="https://www.80tz.cn" target="_blank">80后情感哲学交流</a>
@@ -1199,17 +1199,6 @@ comments: false
         </div>
       </div>      
       <div class="card">
-          <img class="ava" loading="lazy" decoding="async" src="https://xhh.ch/upload/IMG_4314.jpeg" />
-          <div class="card-header">
-            <div>
-              <a href="https://xhh.ch" target="_blank">𝕩𝕚𝕒𝕠𝕧'𝕤 𝔹𝕝𝕠𝕘</a>
-            </div>
-            <div class="info">
-              偶尔喜欢摆烂，经常喜欢偶尔！
-            </div>
-          </div>
-        </div>
-      <div class="card">
         <img class="ava" loading="lazy" decoding="async" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg" />
         <div class="card-header">
           <div>
@@ -1615,7 +1604,7 @@ comments: false
      <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
      <div class="card-header">
       <div>
-       <a href="https://mushuo.xyz/index" target="_blank">沐硕(打不开)</a>
+       <a href="https://mushuo.xyz/index" target="_blank">沐硕(无关内容)</a>
       </div>
       <div class="info">
        做一个追求幸福的人
@@ -1710,6 +1699,18 @@ comments: false
       </div>
      </div>
     </div>
+      <div class="card">
+          <img class="ava" loading="lazy" decoding="async" src="https://pic2.zhimg.com/80/v2-ab74f4411a6ba48423f5671fbf04bbad_1440w.webp" />
+          <div class="card-header">
+            <div>
+              <a href="https://xhh.ch" target="_blank">𝕩𝕚𝕒𝕠𝕧'𝕤 𝔹𝕝𝕠𝕘</a>
+            </div>
+            <div class="info">
+              偶尔喜欢摆烂，经常喜欢偶尔！
+            </div>
+          </div>
+        </div>
+
 
 
    </div>
@@ -2163,9 +2164,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     >名称: Wcowin's Blog  
     >链接: https://wcowin.work/  
-    >头像: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png  
-    >简介: 循此苦旅，以达星辰
-    >RSS: https://wcowin.work/feed_rss_created.xml
+    >头像: <https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png>    
+    >简介: 循此苦旅，以达星辰  
+    >RSS(不推荐): <https://wcowin.work/feed_rss_created.xml>
 
 === "HTML(推荐)"
 

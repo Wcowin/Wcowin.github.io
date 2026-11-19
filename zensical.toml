@@ -261,7 +261,7 @@ nav = [
         { "网络空间安全" = [
             "research/cybersec/index.md",
             { "MPyC 乘积开值泄漏分析与修复验证" = "research/cybersec/mpyc-security-contribution.md" },
-            { "网络安全/密码学" = [
+            { "密码学" = [
                 "blog/Cryptography/index.md",
                 { "数论基础" = "blog/Cryptography/Numbertheory.md" },
                 { "密码学引言" = "blog/Cryptography/Introduction.md" },
@@ -273,11 +273,14 @@ nav = [
                 { "比特币体系：从零开始理解加密货币" = "blog/Cryptography/Bitcoin.md" },
                 { "密码协议与应用" = "blog/Cryptography/ProtocolAndApplication.md" },
                 { "现代密码学发展" = "blog/Cryptography/ModernCryptography.md" },
+            ]},
+            { "零知识证明" = [
+                { "可验证计算的本质" = "blog/Cryptography/VerifiableComputation.md" },
                 { "zk-SNARK 原理详解" = "blog/Cryptography/zkSNARK.md" },
-                { "图像零知识证明" = "blog/Cryptography/ImageZeroKnowledgeProof.md" },
                 { "KZG 多项式承诺" = "blog/Cryptography/KZG.md" },
                 { "IPA 多项式承诺与 R1CS" = "blog/Cryptography/IPA-R1CS.md" },
-                { "可验证计算的本质" = "blog/Cryptography/VerifiableComputation.md" },
+                { "图像零知识证明" = "blog/Cryptography/ImageZeroKnowledgeProof.md" },
+                { "零知识图像来源认证综述" = "blog/Cryptography/zk-image-provenance.md" },
             ]},
         ]},
         { "低空无人机安全" = [
@@ -337,7 +340,8 @@ nav = [
             { "3" = "relax/Math/3.md" },
             { "4" = "relax/Math/4.md" },
             { "5" = "relax/Math/5.md" },
-            { "6" = "relax/Math/6.md" }
+            { "6" = "relax/Math/6.md" },
+            { "王冰冰♡" = "relax/wbb.md" }
         ]},
         { "观影" = [
             { "推荐的番剧" = "relax/Movie/tuijianfanju.md" },
@@ -646,7 +650,7 @@ pagination_url_format = "page/{page}"         # 分页URL格式
 #   feed_ttl、pretty_print、feed_description、use_git、url_parameters、cache_dir、use_material_social_cards。
 [project.plugins.rss]
 enabled = true                                              # 启用 feed 生成（默认即 true）
-match_path = "(blog|develop|relax|trip)/.*"                # 纳入订阅的路径（正则）；其余页面不进 feed
+match_path = "(develop/|blog/(Cryptography|Zensical|Mkdocs|Mac|Win|py|iphone|Academic|websitebeauty|technique[^/]*)/|relax/|trip/|research/)"  # 只订阅正文目录；排除 blog/archive|category|page 等插件生成的列表页
 length = 20                                                 # 每个 feed 最多条目数
 
 [project.plugins.rss.date_from_meta]

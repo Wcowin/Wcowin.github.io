@@ -15,8 +15,8 @@ tags:
     data-name="OneClip"
     data-description="OneClip 是一款专为 macOS 设计的剪贴板管理工具，提供主窗口、菜单栏操作、快速粘贴面板等多种使用方式， 支持多种格式内容管理、智能搜索和分类，让您的复制粘贴操作更加便捷高效。"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
-    data-stars="471"
-    data-forks="29"
+    data-stars="552"
+    data-forks="21"
     data-license="MIT"
     href="https://github.com/One-Clip/OneClip"
     target="_blank"
@@ -24,15 +24,15 @@ tags:
   ></a>
 </div>
 
-## FinderClip(为macOS Finder提供直观的剪切粘贴体验)
+## FinderClip
 
 <div class="github-repo-card-wrapper">
   <a
     class="github-repo-card"
     data-repo="Wcowin/Mac-Finder-Clipboard"
     data-description="FinderClip 是一款免费开源且轻量级的 macOS 应用，让你可以在 Finder 中使用熟悉的 ⌘X 和 ⌘V 快捷键来剪切和移动文件。"
-    data-stars="90"
-    data-forks="0"
+    data-stars="91"
+    data-forks="2"
     data-license="MIT"
     data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
     href="https://github.com/Wcowin/Mac-Finder-Clipboard"
@@ -74,5 +74,42 @@ tags:
     rel="noopener noreferrer"
   ></a>
 </div>
+# pi-claude-rewind
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/pi-claude-rewind"
+    data-description="pi-claude-rewind 为 Pi 提供 Claude Code 风格的同步对话与工作区回溯功能。"
+    data-stars="4"
+    data-forks="2"
+    data-license="MIT"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
+    href="https://github.com/Wcowin/pi-claude-rewind"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
 
-还有其他一些瞎折腾的东西，可以查看[人脸识别系统](../../develop/Mywork/face-recognition.md)、[MkDocs文档日期插件](../../blog/websitebeauty/mkdocs-document-dates.md)、[Mkdocs 阅读时间插件](../../blog/websitebeauty/reading_time.md)、[MKdocs页面添加相关文章推荐](../../blog/websitebeauty/recommend.md)
+## OneClip-License-Manager
+<div class="github-repo-card-wrapper">
+  <a
+    class="github-repo-card"
+    data-repo="Wcowin/Wcowin.github.io"
+    data-description="简单易用的许可证管理系统，支持激活码生成、验证和设备管理、订单发送等等"
+    data-stars="38"
+    data-forks="2"
+    data-license="MIT"
+    data-avatar="https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg"
+    href="https://github.com/One-Clip/OneClip-License-Manager"
+    target="_blank"
+    rel="noopener noreferrer"
+  ></a>
+</div>
+
+## 课题组网页
+
+由我制作并维护的课题组站点：[ishbut.github.io](https://ishbut.github.io/){target=_blank}
+
+---
+
+还有其他一些瞎折腾的东西，可以查看AI系列文章、[人脸识别系统](../../develop/Mywork/face-recognition.md)、[MkDocs文档日期插件](../../blog/websitebeauty/mkdocs-document-dates.md)、[Mkdocs 阅读时间插件](../../blog/websitebeauty/reading_time.md)、[MKdocs页面添加相关文章推荐](../../blog/websitebeauty/recommend.md)等不再一一赘述。

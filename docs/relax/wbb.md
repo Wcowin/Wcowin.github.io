@@ -4,7 +4,7 @@ title:  王冰冰
 ---
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=347852412&bvid=BV1rR4y1f7mA&cid=896199338&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe> -->
-![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
+<!-- ![](http://user-assets.sxlcdn.com/images/805944/FsdVhyfxszA5LgymzUs4n-Cdqj7s.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg) -->
 
 ## 履历
 <font color=#F09898 size=7>王冰冰</font>
@@ -163,11 +163,10 @@ title:  王冰冰
 
 **（以上内容由[冰学网](https://mywbb.mysxl.cn/){target=“_blank”}综合各类信息编辑）插一嘴：这站长老哥是真喜欢冰冰[@吃花椒的喵酱](https://space.bilibili.com/2026561407/dynamic)**
 ***
-## **美图奉上😘**
+<!-- ## **美图奉上😘**
 
 ![](http://user-assets.sxlcdn.com/images/805944/FuPmbkF-MeeIgcF7YQJLay7fhp5r.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 ![](http://user-assets.sxlcdn.com/images/805944/Fm0oCwyRA2JHaw-Gu8VmwWjTJ56Q.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png)
-<!-- ![](http://user-assets.sxlcdn.com/images/805944/Fsg-4QEtJ-OvpdsH9BAqi1InddMg.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png) -->
 ![](http://user-assets.sxlcdn.com/images/805944/FiH-mvvoM8HvG7eaf7MmFS_um_NJ.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 ![](http://user-assets.sxlcdn.com/images/805944/FgnNZ5bcMgm4WGqFIJhCZg4H_0Vy.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
 ![](http://user-assets.sxlcdn.com/images/805944/FjE5gIwWJknieTfYvPMWSRs6y84m.jpeg?imageMogr2/strip/auto-orient/thumbnail/!300x300r/gravity/Center/crop/300x300/quality/90!/interlace/1/format/jpeg)
@@ -208,4 +207,4 @@ title:  王冰冰
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FuCfDui64dLhZD3_2XnETzzOwuNE.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)![Alt text](http://user-assets.sxlcdn.com/images/805944/FgrA_oyC1lKcyFWQSbo6UlWw2SjO.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FquKQBluji4tWcAcfYN_I3b1CA4l.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
 ![Alt text](http://user-assets.sxlcdn.com/images/805944/FiwyetIQ0GmXtGwVqJ62PESFhVQB.jpg?imageMogr2%252Fstrip%252Fauto-orient%252Fthumbnail%252F1920x9000%253E%252Fquality%252F90%2521%252Finterlace%252F1%252Fformat%252Fjpeg)
-![](http://user-assets.sxlcdn.com/images/805944/FsGMQC5y3tJRIl2dwHaJ0RQ9uYyt.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg)
+![](http://user-assets.sxlcdn.com/images/805944/FsGMQC5y3tJRIl2dwHaJ0RQ9uYyt.jpeg?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/interlace/1/format/jpeg) -->
