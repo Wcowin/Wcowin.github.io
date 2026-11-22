@@ -3,7 +3,6 @@ title: OpenClaw：本地运行的开源 AI 助手指南
 # comments: true
 tags:
   - AI
-  - OpenClaw
 ---
 
 # OpenClaw：本地运行的开源 AI 助手指南

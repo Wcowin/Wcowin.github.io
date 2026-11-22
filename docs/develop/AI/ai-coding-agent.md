@@ -6,10 +6,6 @@ date: 2026-07-31
 status: new
 tags:
     - AI
-    - Coding Agent
-    - Claude Code
-    - Cursor
-    - Devin
 ---
 
 # AI Coding Agent：从代码补全到自主软件工程

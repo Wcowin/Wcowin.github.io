@@ -6,7 +6,6 @@ date: 2026-06-04
 status: new
 tags:
     - AI
-    - Context Engineering
 ---
 
 # 上下文工程：从 Prompt Engineering 到 Context Engineering 的范式跃迁

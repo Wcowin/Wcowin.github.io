@@ -3,9 +3,6 @@ title: Agent Skills 使用介绍（开放标准）
 # comments: true
 tags:
   - AI
-  - Agent
-  - Skill
-  - MCP
 ---
 
 # Agent Skills 使用介绍（开放标准）

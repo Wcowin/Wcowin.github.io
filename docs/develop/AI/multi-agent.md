@@ -3,7 +3,6 @@ title: 多智能体协作入门：概念、模式与上手路径
 # comments: true
 tags:
   - AI
-  - 多智能体
   - Agent
 ---
 
